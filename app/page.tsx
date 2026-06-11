@@ -65,6 +65,10 @@ export default function HomePage() {
           </div>
         </section>
 
+        <div className="bg-gradient-to-b from-white to-[#f0fdfa]">
+          <CategoryColumns sections={categorySections} />
+        </div>
+
         <section className="bg-gradient-to-b from-white to-[#f0fdfa] py-12">
           <div className="container-page">
             <h2 className="text-center text-2xl font-black text-ink">Frequently Asked Questions</h2>
@@ -88,10 +92,6 @@ export default function HomePage() {
             </div>
           </div>
         </section>
-
-        <div className="bg-gradient-to-b from-white to-[#f0fdfa]">
-          <CategoryColumns sections={categorySections} />
-        </div>
 
         <div className="bg-gradient-to-t from-white to-[#eef2ff]">
           <StateGrid />
