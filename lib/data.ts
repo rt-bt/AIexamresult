@@ -121,10 +121,10 @@ export const documents = toPostCard(scraped?.documents, "Documents", []);
 const admitCards = toPostCard(scraped?.admitCards, "Admit Card", []);
 
 export const categorySections: { label: string; items: PostCard[] }[] = [
-  { label: "Result", items: featuredResults },
-  { label: "Admit Card", items: admitCards },
   { label: "Latest Jobs", items: latestJobs },
+  { label: "Admit Card", items: admitCards },
   { label: "Answer Keys", items: centralExams },
+  { label: "Result", items: featuredResults },
   { label: "Admissions", items: admissions },
   { label: "Documents", items: documents },
 ];
