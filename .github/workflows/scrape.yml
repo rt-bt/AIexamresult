@@ -1,0 +1,24 @@
+name: Auto-Scrape
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npx tsx lib/run-scrape.ts
+      - name: Commit & push if changed
+        run: |
+          git config user.name "AIER Bot"
+          git config user.email "bot@aiexamresult.com"
+          git add -A
+          git diff --quiet && git diff --staged --quiet || git commit -m "Auto scrape $(date +'%d %b %Y %H:%M')"
+          git push

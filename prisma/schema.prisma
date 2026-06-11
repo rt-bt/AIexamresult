@@ -1,0 +1,153 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum RoleName {
+  SUPER_ADMIN
+  ADMIN
+  EDITOR
+  AUTHOR
+  VIEWER
+}
+
+enum PostStatus {
+  DRAFT
+  SCHEDULED
+  PUBLISHED
+  ARCHIVED
+}
+
+enum PostType {
+  RESULT
+  JOB
+  ADMIT_CARD
+  ANSWER_KEY
+  ADMISSION
+  SYLLABUS
+  SCHOLARSHIP
+  BOARD_RESULT
+  UNIVERSITY_RESULT
+  ENTRANCE_EXAM
+  NOTIFICATION
+}
+
+model User {
+  id           String   @id @default(cuid())
+  name         String
+  email        String   @unique
+  passwordHash String
+  roleId       String
+  role         Role     @relation(fields: [roleId], references: [id])
+  posts        Post[]
+  comments     Comment[]
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model Role {
+  id          String   @id @default(cuid())
+  name        RoleName @unique
+  permissions Json
+  users       User[]
+}
+
+model Post {
+  id              String       @id @default(cuid())
+  title           String
+  slug            String       @unique
+  excerpt         String
+  content         Json
+  language        String       @default("en")
+  type            PostType
+  status          PostStatus   @default(DRAFT)
+  state           String?
+  organization    String?
+  qualification   String?
+  featuredImageId String?
+  authorId        String
+  author          User         @relation(fields: [authorId], references: [id])
+  categoryId      String
+  category        Category     @relation(fields: [categoryId], references: [id])
+  tags            Tag[]        @relation("PostTags")
+  seo             SeoMetadata?
+  comments        Comment[]
+  aiGenerations   AiGeneration[]
+  publishedAt     DateTime?
+  scheduledAt     DateTime?
+  createdAt       DateTime     @default(now())
+  updatedAt       DateTime     @updatedAt
+
+  @@index([status, type, publishedAt])
+  @@index([state, qualification])
+}
+
+model Category {
+  id          String @id @default(cuid())
+  name        String
+  slug        String @unique
+  description String?
+  posts       Post[]
+}
+
+model Tag {
+  id    String @id @default(cuid())
+  name  String
+  slug  String @unique
+  posts Post[] @relation("PostTags")
+}
+
+model Notification {
+  id        String   @id @default(cuid())
+  title     String
+  body      String
+  url       String?
+  isPush    Boolean  @default(false)
+  sentAt    DateTime?
+  createdAt DateTime @default(now())
+}
+
+model Comment {
+  id        String   @id @default(cuid())
+  body      String
+  postId    String
+  post      Post     @relation(fields: [postId], references: [id], onDelete: Cascade)
+  userId    String?
+  user      User?    @relation(fields: [userId], references: [id])
+  approved  Boolean  @default(false)
+  createdAt DateTime @default(now())
+}
+
+model Media {
+  id        String   @id @default(cuid())
+  url       String
+  alt       String?
+  mimeType  String
+  size      Int
+  createdAt DateTime @default(now())
+}
+
+model SeoMetadata {
+  id              String @id @default(cuid())
+  title           String
+  description     String
+  canonicalUrl    String?
+  ogImage         String?
+  jsonLd          Json?
+  postId          String @unique
+  post            Post   @relation(fields: [postId], references: [id], onDelete: Cascade)
+}
+
+model AiGeneration {
+  id        String   @id @default(cuid())
+  prompt    String
+  output    Json
+  model     String
+  postId    String?
+  post      Post?    @relation(fields: [postId], references: [id])
+  createdAt DateTime @default(now())
+}

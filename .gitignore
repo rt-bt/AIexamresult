@@ -1,0 +1,11 @@
+.env
+.env*.local
+.next
+node_modules
+dist
+coverage
+*.log
+prisma/migrations/dev.db
+data/analytics/
+data/auto-sync.log
+data/auto-sync-error.log

@@ -1,0 +1,68 @@
+﻿   Ôû▓ Next.js 15.5.19
+   - Experiments (use with caution):
+     ┬À optimizePackageImports
+
+   Creating an optimized production build ...
+ Ô£ô Compiled successfully in 2.3s
+   Linting and checking validity of types ...
+node.exe : 
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Failed to compile.
+
+./app/admin/dashboard/page.tsx
+5:52  Warning: 'Clock' is defined but never used.  @typescript-eslint/no-unused-vars
+5:59  Warning: 'Layers' is defined but never used.  @typescript-eslint/no-unused-vars
+5:77  Warning: 'FileText' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./app/api/admin/stats/route.ts
+30:17  Error: A `require()` style import is forbidden.  @typescript-eslint/no-require-imports
+
+./app/page.tsx
+9:36  Warning: 'Sparkles' is defined but never used.  @typescript-eslint/no-unused-vars
+11:7  Warning: 'SITE_URL' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+
+./app/search/page.tsx
+25:9  Warning: 'router' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+46:6  Warning: React Hook useEffect has missing dependencies: 'doSearch' and 'initialQ'. Either include them or remove 
+the dependency array.  react-hooks/exhaustive-deps
+
+./components/site/footer.tsx
+11:7  Warning: 'socialColors' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+
+./components/site/header.tsx
+9:24  Warning: 'Lang' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./components/site/hero.tsx
+3:53  Warning: 'Sparkles' is defined but never used.  @typescript-eslint/no-unused-vars
+3:63  Warning: 'ChevronRight' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./components/site/install-banner.tsx
+25:24  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+26:24  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./components/site/logo.tsx
+1:51  Warning: 'showTagline' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+
+./components/site/quick-access.tsx
+33:43  Warning: 'gradient' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./lib/auto-sync.ts
+20:17  Error: A `require()` style import is forbidden.  @typescript-eslint/no-require-imports
+158:15  Error: A `require()` style import is forbidden.  @typescript-eslint/no-require-imports
+
+./lib/data.ts
+25:17  Error: A `require()` style import is forbidden.  @typescript-eslint/no-require-imports
+29:19  Error: A `require()` style import is forbidden.  @typescript-eslint/no-require-imports
+
+./lib/sync-daemon.js
+3:22  Error: A `require()` style import is forbidden.  @typescript-eslint/no-require-imports
+4:14  Error: A `require()` style import is forbidden.  @typescript-eslint/no-require-imports
+13:5  Error: A `require()` style import is forbidden.  @typescript-eslint/no-require-imports
+
+info  - Need to disable some ESLint rules? Learn more here: 
+https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
