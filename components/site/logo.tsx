@@ -17,7 +17,7 @@ export function Logo({ className = "h-12 w-auto", showTagline = true, dark = fal
       <text x="54" y="24" fontFamily="Inter, system-ui, sans-serif" fontWeight="900" fontSize="26" letterSpacing="3" fill={c}>AIER</text>
       <text x="54" y="40" fontFamily="Inter, system-ui, sans-serif" fontWeight="700" fontSize="11" letterSpacing="2" fill={c2}>ALL INDIA EXAM RESULT</text>
       <text x="54" y="52" fontFamily="Inter, system-ui, sans-serif" fontWeight="800" fontSize="12" letterSpacing="1.5" fill={accent}>RESULT</text>
-      <text x={dark ? "126" : "124"} y="52" fontFamily="Inter, system-ui, sans-serif" fontWeight="500" fontSize="11" fill={muted} letterSpacing="0.5"> &amp; JOB UPDATES</text>
+      <text x={dark ? "112" : "110"} y="52" fontFamily="Inter, system-ui, sans-serif" fontWeight="500" fontSize="11" fill={muted} letterSpacing="0.5"> &amp; JOB UPDATES</text>
     </svg>
   );
 }
