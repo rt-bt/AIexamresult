@@ -8,6 +8,7 @@ import { Logo } from "@/components/site/logo";
 import { featuredResults, latestJobs, admissions } from "@/lib/data";
 import { useLang } from "@/lib/hooks/use-lang";
 import { MobileBottomNav } from "@/components/site/mobile-bottom-nav";
+import { LanguageSelector } from "@/components/site/language-selector";
 
 const nav: [string, string][] = [
   ["Results", "/results"],
@@ -50,21 +51,7 @@ export function Header() {
         </nav>
 
         <div className="ml-auto flex items-center gap-2 lg:gap-3">
-          <button
-            onClick={() => setLang(lang === "en" ? "hi" : "en")}
-            className="hidden items-center gap-1.5 rounded-full border border-white/20 px-3 py-1.5 text-xs font-bold text-white transition hover:bg-white/15 lg:flex"
-            title={lang === "en" ? "Switch to Hindi" : "अंग्रेज़ी में बदलें"}
-          >
-            <Languages className="h-3.5 w-3.5" />
-            {lang === "en" ? "हिन्दी" : "EN"}
-          </button>
-          <button
-            onClick={() => setLang(lang === "en" ? "hi" : "en")}
-            className="rounded-full border border-white/20 p-2 text-white transition hover:bg-white/15 active:scale-90 lg:hidden"
-            title={lang === "en" ? "Switch to Hindi" : "अंग्रेज़ी में बदलें"}
-          >
-            <Languages className="h-4 w-4" />
-          </button>
+          <LanguageSelector />
           <Link href="/search" className="hidden items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-bold text-[#0D9488] transition hover:bg-white/90 lg:inline-flex">
             <Search className="h-4 w-4" /> {t("nav.search")}
           </Link>
@@ -102,13 +89,9 @@ export function Header() {
                   {t(`nav.${label.toLowerCase().replace(/\s+/g, "-")}`)}
                 </Link>
               ))}
-              <button
-                onClick={() => setLang(lang === "en" ? "hi" : "en")}
-                className="mt-2 flex w-full items-center gap-2 rounded-xl px-3 py-3 text-sm font-semibold text-white/80 transition active:bg-white/10"
-              >
-                <Languages className="h-4 w-4" />
-                {lang === "en" ? "हिन्दी" : "English"}
-              </button>
+              <div className="mt-2">
+                <LanguageSelector />
+              </div>
             </div>
           </div>
       </div>

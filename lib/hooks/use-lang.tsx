@@ -1,152 +1,210 @@
 "use client";
 
 import { createContext, useContext, useState, useEffect, useCallback, type ReactNode } from "react";
+import { LangCode } from "@/lib/languages";
+import { useGeo } from "@/lib/hooks/use-geo";
+import { getLangForState } from "@/lib/languages";
 
-export type Lang = "en" | "hi";
+type Translations = Record<string, string>;
 
-const translations: Record<Lang, Record<string, string>> = {
+const translations: Record<LangCode, Translations> = {
   en: {
     "site.name": "All India Exam Result",
     "site.tagline": "Find verified Sarkari results, government jobs, admit cards & answer keys — all in one blazing-fast portal.",
-    "nav.results": "Results",
-    "nav.latest-jobs": "Latest Jobs",
-    "nav.admit-card": "Admit Card",
-    "nav.answer-key": "Answer Key",
-    "nav.admissions": "Admissions",
-    "nav.syllabus": "Syllabus",
-    "nav.bookmarks": "Bookmarks",
-    "nav.search": "Search",
+    "nav.results": "Results", "nav.latest-jobs": "Latest Jobs", "nav.admit-card": "Admit Card",
+    "nav.answer-key": "Answer Key", "nav.admissions": "Admissions", "nav.syllabus": "Syllabus",
+    "nav.bookmarks": "Bookmarks", "nav.search": "Search",
     "search.placeholder": "Search exam, result, job...",
-    "search.results-for": "results found for",
-    "search.no-results": "No results found for",
-    "search.try-different": "Try a different keyword",
     "hero.title": "Your Gateway to Government Exam Results",
     "hero.trusted": "Trusted exam intelligence since 2024",
-    "stats.results": "Results Tracked",
-    "stats.jobs": "Active Job Posts",
-    "stats.admit-cards": "Admit Card Alerts",
-    "trending.title": "Trending Now",
-    "trending.subtitle": "Most viewed posts today",
-    "latest.title": "Latest Updates",
-    "latest.subtitle": "Newest exam notifications and job alerts",
-    "bookmarks.title": "Saved Posts",
-    "bookmarks.empty": "No saved posts yet",
-    "bookmarks.hint": "Bookmark posts to read later",
-    "bookmarks.save": "Save for Later",
-    "bookmarks.saved": "Saved",
-    "bookmarks.remove": "Remove bookmark",
-    "bookmarks.count": "posts saved",
-    "footer.disclaimer": "Disclaimer: This is an independent information portal. All data is sourced from publicly available government notifications and sarkariexam.com.",
-    "footer.copyright": "All rights reserved.",
-    "filter.all": "All",
-    "filter.filters": "Filters",
-    "filter.sort-newest": "Newest First",
-    "filter.sort-oldest": "Oldest First",
-    "state.title": "State-wise Exam Results & Jobs",
-    "state.desc": "Find government jobs, results and admit cards by state",
-    "state.posts-found": "posts found for",
-    "new.badge": "NEW",
-    "view-all": "View All",
+    "trending.title": "Trending Now", "latest.title": "Latest Updates",
+    "view-all": "View All", "share": "Share",
     "official-website": "Visit Official Website",
-    "important-dates": "Important Dates",
-    "application-fee": "Application Fee",
-    "important-links": "Important Links",
-    "share": "Share",
-    "telegram.title": "Join Telegram",
-    "telegram.desc": "Get instant exam alerts and result notices.",
-    "telegram.btn": "Join Channel",
-    "post.not-found": "Post not found",
-    "post.not-found-desc": "The page you are looking for does not exist.",
-    "coming-soon": "Coming Soon",
-    "coming-soon-desc": "Updates for this section will appear shortly.",
+    "telegram.title": "Join Telegram", "telegram.btn": "Join Channel",
   },
   hi: {
     "site.name": "अखिल भारत परीक्षा परिणाम",
-    "site.tagline": "सरकारी परिणाम, सरकारी नौकरियां, एडमिट कार्ड और उत्तर कुंजी — सब एक तेज़ पोर्टल पर।",
-    "nav.results": "परिणाम",
-    "nav.latest-jobs": "नवीनतम नौकरियां",
-    "nav.admit-card": "एडमिट कार्ड",
-    "nav.answer-key": "उत्तर कुंजी",
-    "nav.admissions": "प्रवेश",
-    "nav.syllabus": "सिलेबस",
-    "nav.bookmarks": "बुकमार्क",
-    "nav.search": "खोजें",
+    "site.tagline": "सरकारी परीणाम, नौकरियां, एडमिट कार्ड और उत्तर कुंजी — सब एक पोर्टल पर।",
+    "nav.results": "परिणाम", "nav.latest-jobs": "नौकरियां", "nav.admit-card": "एडमिट कार्ड",
+    "nav.answer-key": "उत्तर कुंजी", "nav.admissions": "प्रवेश", "nav.syllabus": "सिलेबस",
+    "nav.bookmarks": "बुकमार्क", "nav.search": "खोजें",
     "search.placeholder": "परीक्षा, परिणाम, नौकरी खोजें...",
-    "search.results-for": "परिणाम मिले",
-    "search.no-results": "के लिए कोई परिणाम नहीं मिला",
-    "search.try-different": "कोई दूसरा कीवर्ड आज़माएं",
     "hero.title": "सरकारी परीक्षा परिणामों का प्रवेश द्वार",
-    "hero.trusted": "2024 से विश्वसनीय परीक्षा जानकारी",
-    "stats.results": "परिणाम ट्रैक किए गए",
-    "stats.jobs": "सक्रिय नौकरी पोस्ट",
-    "stats.admit-cards": "एडमिट कार्ड अलर्ट",
-    "trending.title": "ट्रेंडिंग",
-    "trending.subtitle": "आज के सबसे देखे जा रहे पोस्ट",
-    "latest.title": "नवीनतम अपडेट",
-    "latest.subtitle": "नई परीक्षा सूचनाएं और नौकरी अलर्ट",
-    "bookmarks.title": "सेव किए गए पोस्ट",
-    "bookmarks.empty": "अभी तक कोई पोस्ट सेव नहीं किया",
-    "bookmarks.hint": "बाद में पढ़ने के लिए पोस्ट सेव करें",
-    "bookmarks.save": "बाद के लिए सेव करें",
-    "bookmarks.saved": "सेव हो गया",
-    "bookmarks.remove": "बुकमार्क हटाएं",
-    "bookmarks.count": "पोस्ट सेव",
-    "footer.disclaimer": "अस्वीकरण: यह एक स्वतंत्र सूचना पोर्टल है। सभी डेटा सार्वजनिक रूप से उपलब्ध सरकारी सूचनाओं और sarkariexam.com से लिया गया है।",
-    "footer.copyright": "सर्वाधिकार सुरक्षित।",
-    "filter.all": "सभी",
-    "filter.filters": "फ़िल्टर",
-    "filter.sort-newest": "नए पहले",
-    "filter.sort-oldest": "पुराने पहले",
-    "state.title": "राज्यवार परीक्षा परिणाम और नौकरियां",
-    "state.desc": "राज्य के अनुसार सरकारी नौकरियां, परिणाम और एडमिट कार्ड खोजें",
-    "state.posts-found": "पोस्ट मिले",
-    "new.badge": "नया",
-    "view-all": "सभी देखें",
-    "official-website": "आधिकारिक वेबसाइट देखें",
-    "important-dates": "महत्वपूर्ण तिथियां",
-    "application-fee": "आवेदन शुल्क",
-    "important-links": "महत्वपूर्ण लिंक",
-    "share": "शेयर करें",
-    "telegram.title": "टेलीग्राम ज्वाइन करें",
-    "telegram.desc": "तुरंत परीक्षा अलर्ट और परिणाम सूचनाएं प्राप्त करें।",
-    "telegram.btn": "चैनल ज्वाइन करें",
-    "post.not-found": "पोस्ट नहीं मिला",
-    "post.not-found-desc": "आप जिस पेज की तलाश कर रहे हैं वह मौजूद नहीं है।",
-    "coming-soon": "जल्द आ रहा है",
-    "coming-soon-desc": "इस सेक्शन के अपडेट जल्द दिखाई देंगे।",
+    "hero.trusted": "2024 से विश्वसनीय",
+    "trending.title": "ट्रेंडिंग", "latest.title": "नवीनतम अपडेट",
+    "view-all": "सभी देखें", "share": "शेयर करें",
+    "official-website": "आधिकारिक वेबसाइट",
+    "telegram.title": "टेलीग्राम ज्वाइन करें", "telegram.btn": "चैनल ज्वाइन करें",
+  },
+  ta: {
+    "site.name": "அகில இந்திய தேர்வு முடிவுகள்",
+    "site.tagline": "அரசு தேர்வு முடிவுகள், வேலைகள், அனுமதி அட்டைகள் — எல்லாமே ஒரே இடத்தில்.",
+    "nav.results": "முடிவுகள்", "nav.latest-jobs": "அரசு வேலைகள்", "nav.admit-card": "அனுமதி அட்டை",
+    "nav.answer-key": "விடையமைப்பு", "nav.admissions": "சேர்க்கை", "nav.syllabus": "பாடத்திட்டம்",
+    "nav.bookmarks": "புத்தகக்குறி", "nav.search": "தேடல்",
+    "search.placeholder": "தேர்வு, முடிவு, வேலை தேடுங்கள்...",
+    "hero.title": "அரசு தேர்வு முடிவுகளுக்கான வாயில்",
+    "hero.trusted": "2024 முதல் நம்பகமான தேர்வு தகவல்",
+    "trending.title": "இப்போது ட्रेंன்டிங்", "latest.title": "சமீபத்திய பதிவுகள்",
+    "view-all": "எல்லாம் பார்க்க", "share": "பகிர்",
+    "official-website": "அதிகாரப்பூர்வ இணையதளம்",
+    "telegram.title": "டெலிகிராம் சேரவும்", "telegram.btn": "சேனல் சேரவும்",
+  },
+  pa: {
+    "site.name": "ਅਖ਼ਿਲ ਭਾਰਤ ਪ੍ਰੀਖਿਆ ਨਤੀਜ਼",
+    "site.tagline": "ਸਰਕਾਰੀ ਨਤੀਜ਼ੇ, ਨੌਕਰੀਆਂ, ਪ੍ਰਵੇਸ਼ ਕਾਰਡ — ਸਭ ਇੱਕ ਥਾਂ।",
+    "nav.results": "ਨਤੀਜ਼", "nav.latest-jobs": "ਨੌਕਰੀਆਂ", "nav.admit-card": "ਪ੍ਰਵੇਸ਼ ਕਾਰਡ",
+    "nav.answer-key": "ਉੱਤਰ ਕੁੰਜੀ", "nav.admissions": "ਦਾਖਲਾ", "nav.syllabus": "ਸਿਲੇਬਸ",
+    "nav.bookmarks": "ਬੁੱਕਮਾਰਕ", "nav.search": "ਖੋਜ",
+    "search.placeholder": "ਪ੍ਰੀਖਿਆ, ਨਤੀਜ਼ਾ, ਨੌਕਰੀ ਖੋਜੋ...",
+    "hero.title": "ਸਰਕਾਰੀ ਪ੍ਰੀਖਿਆ ਨਤੀਜਿਆਂ ਲਈ ਪ੍ਰਵੇਸ਼ ਦੁਆਰਾ",
+    "hero.trusted": "2024 ਤੋਂ ਭਰੋਸੇਯੋਗ",
+    "trending.title": "ਟ੍ਰੈਂਡਿੰਗ", "latest.title": "ਤਾਜ਼ਾ ਅਪਡੇਟ",
+    "view-all": "ਸਭ ਦੇਖੋ", "share": "ਸ਼ੇਅਰ ਕਰੋ",
+    "official-website": "ਅਧਿਕਾਰਿਕ ਵੈੱਬਸਾਈਟ",
+    "telegram.title": "ਟੈਲੀਗ੍ਰਾਮ ਚੈਨਲ ਜੁਆਈਨ ਕਰੋ", "telegram.btn": "ਚੈਨਲ ਜੁਆਈਨ ਕਰੋ",
+  },
+  mr: {
+    "site.name": "अखिल भारतीय परीक्षा निकाल",
+    "site.tagline": "सरकारी निकाल, नोकर्या, प्रवेश पत्र आणि उत्तर तक्ते — सगळे एकाच ठिकाणी.",
+    "nav.results": "निकाल", "nav.latest-jobs": "नोकर्या", "nav.admit-card": "प्रवेश पत्र",
+    "nav.answer-key": "उत्तर तक्ता", "nav.admissions": "प्रवेश", "nav.syllabus": "अभ्यासक्रम",
+    "nav.bookmarks": "बुकमार्क", "nav.search": "शोध",
+    "search.placeholder": "परीक्षा, निकाल, नोकरी शोधा...",
+    "hero.title": "सरकारी परीक्षा निकालांसाठी द्वार",
+    "hero.trusted": "2024 पासून विश्वासार्ह",
+    "trending.title": "ट्रेंडिंग", "latest.title": "ताज्या अपडेट्स",
+    "view-all": "सर्व पाहा", "share": "शेअर करा",
+    "official-website": "अधिकृत वेबसाइट",
+    "telegram.title": "टेलीग्रामवर सामील व्हा", "telegram.btn": "चैनल जॉइन करा",
+  },
+  gu: {
+    "site.name": "અખિલ ભારતીય પરીક્ષા પરિણામ",
+    "site.tagline": "સરકારી પરિણામો, નોકરીઓ, પ્રવેશ કાર્ડ — બધું એક જગ્યાએ.",
+    "nav.results": "પરિણામો", "nav.latest-jobs": "નોકરીઓ", "nav.admit-card": "પ્રવેશ કાર્ડ",
+    "nav.answer-key": "જવાબ ચાવી", "nav.admissions": "પ્રવેશ", "nav.syllabus": "અભ્યાસક્રમ",
+    "nav.bookmarks": "બુકમાર્ક", "nav.search": "શોધ",
+    "search.placeholder": "પરીક્ષા, પરિણામ, નોકરી શોધો...",
+    "hero.title": "સરકારી પરીક્ષા પરિણામો માટે દ્વાર",
+    "hero.trusted": "2024 થી વિશ્વસનીય",
+    "trending.title": "ટ્રેન્ડિંગ", "latest.title": "તાજા અપડેટ",
+    "view-all": "બધું જુઓ", "share": "શેર કરો",
+    "official-website": "સત્તાવાર વેબસાઇટ",
+    "telegram.title": "ટેલીગ્રામ જોડાઓ", "telegram.btn": "ચેનલ જોડાઓ",
+  },
+  bn: {
+    "site.name": "অখিল ভারতীয় পরীক্ষা ফলাফল",
+    "site.tagline": "সরকারি ফলাফল, চাকরি, প্রবেশপত্র — সব এক জায়গায়।",
+    "nav.results": "ফলাফল", "nav.latest-jobs": "চাকরি", "nav.admit-card": "প্রবেশপত্র",
+    "nav.answer-key": "উত্তর পত্র", "nav.admissions": "ভর্তি", "nav.syllabus": "সিলেবাস",
+    "nav.bookmarks": "বুকমার্ক", "nav.search": "খোঁজ",
+    "search.placeholder": "পরীক্ষা, ফলাফল, চাকরি খুঁজুন...",
+    "hero.title": "সরকারি পরীক্ষার ফলাফলের দ্বার",
+    "hero.trusted": "2024 থেকে বিশ্বস্ত",
+    "trending.title": "ট্রেন্ডিং", "latest.title": "সাম্প্রতিক আপডেট",
+    "view-all": "সব দেখুন", "share": "শেয়ার করুন",
+    "official-website": "অফিসিয়াল ওয়েবসাইট",
+    "telegram.title": "টেলিগ্রামে যোগ দিন", "telegram.btn": "চ্যানেল জয়েন করুন",
+  },
+  kn: {
+    "site.name": "ಅಖಿಲ ಭಾರತ ಪರೀಕ್ಷೆ ಫಲಿತಾಂಶ",
+    "site.tagline": "ಸರ್ಕಾರಿ ಫಲಿತಾಂಶ, ಉದ್ಯೋಗ, ಪ್ರವೇಶ ಕಾರ್ಡ್ — ಎಲ್ಲಾ ಒಂದೇ ಜಾಗದಲ್ಲಿ.",
+    "nav.results": "ಫಲಿತಾಂಶ", "nav.latest-jobs": "ಉದ್ಯೋಗ", "nav.admit-card": "ಪ್ರವೇಶ ಕಾರ್ಡ್",
+    "nav.answer-key": "ಉತ್ತರ ಪತ್ರ", "nav.admissions": "ಭರ್ತಿ", "nav.syllabus": "ಪಠ್ಯಕ್ರಮ",
+    "nav.bookmarks": "ಬುಕ್‌ಮಾರ್ಕ್", "nav.search": "ಹುಡುಕು",
+    "search.placeholder": "ಪರೀಕ್ಷೆ, ಫಲಿತಾಂಶ, ಉದ್ಯೋಗ ಹುಡುಕಿ...",
+    "hero.title": "ಸರ್ಕಾರಿ ಪರೀಕ್ಷೆ ಫಲಿತಾಂಶಗಳಿಗೆ ಪ್ರವೇಶ",
+    "hero.trusted": "2024 ರಿಂದ ವಿಶ್ವಾಸಾರ್ಹ",
+    "trending.title": "ಟ್ರೆಂಡಿಂಗ್", "latest.title": "ಇತ್ತೀಚಿನ ನವೀಕರಣ",
+    "view-all": "ಎಲ್ಲಾ ನೋಡಿ", "share": "ಹಂಚಿಕೊಳ್ಳಿ",
+    "official-website": "ಅಧಿಕೃತ ವೆಬ್‌ಸೈಟ್",
+    "telegram.title": "ಟೆಲಿಗ್ರಾಮ್ ಸೇರಿ", "telegram.btn": "ಚಾನಲ್ ಸೇರಿ",
+  },
+  ml: {
+    "site.name": "അഖില ഇന്ത്യൻ പരീക്ഷ ഫലം",
+    "site.tagline": "സർക്കാർ ഫലം, ജോലികൾ, അഡ്മിറ്റ് കാർഡ് — എല്ലാം ഒരിടത്ത്.",
+    "nav.results": "ഫലം", "nav.latest-jobs": "ജോലികൾ", "nav.admit-card": "അഡ്മിറ്റ് കാർഡ്",
+    "nav.answer-key": "ഉത്തര കീ", "nav.admissions": "ചേർക്കൽ", "nav.syllabus": "സിലബസ്",
+    "nav.bookmarks": "ബുക്ക്മാർക്ക്", "nav.search": "തിരയൽ",
+    "search.placeholder": "പരീക്ഷ, ഫലം, ജോലി തിരയൂ...",
+    "hero.title": "സർക്കാർ പരീക്ഷ ഫലങ്ങൾക്കുള്ള കവാടം",
+    "hero.trusted": "2024 മുതൽ വിശ്വാസ്യം",
+    "trending.title": "ട്രെൻഡിങ്", "latest.title": "ഏറ്റവും പുതിയ അപ്‌ഡേറ്റ്",
+    "view-all": "എല്ലാം കാണുക", "share": "ഷെയർ ചെയ്യുക",
+    "official-website": "ഔദ്യോഗിക വെബ്‌സൈറ്റ്",
+    "telegram.title": "ടെലിഗ്രാം ചേരുക", "telegram.btn": "ചാനൽ ചേരുക",
+  },
+  te: {
+    "site.name": "అఖిల భారత పరీక్ష ఫలితం",
+    "site.tagline": "ప్రభుత్వ ఫలితాలు, ఉద్యోగాలు, ప్రవేశ కార్డులు — అన్నీ ఒకే చోట.",
+    "nav.results": "ఫలితాలు", "nav.latest-jobs": "ఉద్యోగాలు", "nav.admit-card": "ప్రవేశ కార్డు",
+    "nav.answer-key": "జవాబు కీ", "nav.admissions": "ప్రవేశాలు", "nav.syllabus": "సిలబస్",
+    "nav.bookmarks": "బుక్‌మార్క్", "nav.search": "వెతుకు",
+    "search.placeholder": "పరీక్ష, ఫలితం, ఉద్యోగం వెతుకు...",
+    "hero.title": "ప్రభుత్వ పరీక్ష ఫలితాలకు మార్గం",
+    "hero.trusted": "2024 నుండి విశ్వసనీయం",
+    "trending.title": "ట్రెండింగ్", "latest.title": "తాజా అప్‌డేట్",
+    "view-all": "అన్నీ చూడండి", "share": "షేర్ చేయండి",
+    "official-website": "అధికారిక వెబ్‌సైట్",
+    "telegram.title": "టెలిగ్రామ్ జాయిన్ చేయండి", "telegram.btn": "చానెల్ జాయిన్ చేయండి",
+  },
+  or: {
+    "site.name": "ଅଖିଲ ଭାରତ ପରୀକ୍ଷା ଫଳାଫଳ",
+    "site.tagline": "ସରକାରୀ ଫଳାଫଳ, ଚାକରି, ପ୍ରବେଶ ପତ୍ର — ସବୁ ଗୋଟିଏ ସ୍ଥାନରେ।",
+    "nav.results": "ଫଳାଫଳ", "nav.latest-jobs": "ଚାକରି", "nav.admit-card": "ପ୍ରବେଶ ପତ୍ର",
+    "nav.answer-key": "ଉତ୍ତର ଚାବି", "nav.admissions": "ଭର୍ତି", "nav.syllabus": "ପାଠ୍ୟକ୍�ମ",
+    "nav.bookmarks": "ବୁକ୍‌ମାର୍କ", "nav.search": "ଖୋଜ",
+    "search.placeholder": "ପରୀକ୍ଷା, ଫଳାଫଳ, ଚାକରି ଖୋଜ...",
+    "hero.title": "ସରକାରୀ ପରୀକ୍ଷା ଫଳାଫଳର ଦ୍ଵାର",
+    "hero.trusted": "2024 ଠାରୁ ବିଶ୍ଵସ୍ତ",
+    "trending.title": "ଟ୍ରେଣ୍ଡିଂ", "latest.title": "ତାଜା ଅପଡେଟ",
+    "view-all": "ସବୁ ଦେଖନ୍ତୁ", "share": "ଶେର କରନ୍ତୁ",
+    "official-website": "ଅଧିକୃତ ୱେବସାଇଟ",
+    "telegram.title": "ଟେଲିଗ୍ରାମ୍ ଯୋଗାଡନ୍ତୁ", "telegram.btn": "ଚାନେଲ୍ ଯୋଗାଡନ୍ତୁ",
   },
 };
 
 type LangContextType = {
-  lang: Lang;
-  setLang: (l: Lang) => void;
+  lang: LangCode;
+  setLang: (l: LangCode) => void;
   t: (key: string) => string;
+  detectedLang: LangCode | null;
 };
 
 const LangContext = createContext<LangContextType>({
   lang: "en",
   setLang: () => {},
   t: (k) => k,
+  detectedLang: null,
 });
 
 export function LangProvider({ children }: { children: ReactNode }) {
-  const [lang, setLangState] = useState<Lang>("en");
+  const [lang, setLangState] = useState<LangCode>("en");
+  const { geo } = useGeo();
 
   useEffect(() => {
-    const saved = localStorage.getItem("aier_lang") as Lang | null;
-    if (saved === "en" || saved === "hi") setLangState(saved);
-  }, []);
+    const saved = localStorage.getItem("aier_lang") as LangCode | null;
+    if (saved && translations[saved]) {
+      setLangState(saved);
+    } else if (geo?.stateSlug) {
+      const autoLang = getLangForState(geo.stateSlug);
+      if (autoLang !== "en") setLangState(autoLang);
+    }
+  }, [geo]);
 
-  const setLang = useCallback((l: Lang) => {
+  const setLang = useCallback((l: LangCode) => {
     setLangState(l);
     try { localStorage.setItem("aier_lang", l); } catch {}
   }, []);
 
-  const t = useCallback((key: string): string => translations[lang][key] || key, [lang]);
+  const detectedLang = geo?.stateSlug ? getLangForState(geo.stateSlug) : null;
+  const t = useCallback((key: string): string => translations[lang]?.[key] || translations.en[key] || key, [lang]);
 
-  return <LangContext.Provider value={{ lang, setLang, t }}>{children}</LangContext.Provider>;
+  return <LangContext.Provider value={{ lang, setLang, t, detectedLang }}>{children}</LangContext.Provider>;
 }
 
 export function useLang() {
   return useContext(LangContext);
 }
+
+export type { LangCode };
