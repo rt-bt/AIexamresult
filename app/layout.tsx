@@ -19,7 +19,20 @@ export const metadata: Metadata = {
   applicationName: "All India Exam Result",
   manifest: "/manifest.webmanifest",
   alternates: { canonical: "/" },
-  keywords: ["government jobs", "sarkari result", "exam result", "admit card", "UPSC", "SSC", "Railway recruitment", "Bihar board", "UP board"],
+  keywords: [
+    "sarkari result", "government jobs", "exam result", "admit card", "answer key",
+    "SSC CGL", "SSC CHSL", "SSC MTS", "SSC GD Constable", "SSC JE", "SSC CPO", "SSC Stenographer",
+    "UPSC Civil Services", "UPSC IAS", "UPSC NDA", "UPSC CDS", "UPSC EPFO", "UPSC CAPF",
+    "Railway RRB NTPC", "Railway ALP", "RRB Group D", "RRB JE", "Railway recruitment",
+    "IBPS PO", "IBPS Clerk", "IBPS RRB", "SBI PO", "SBI Clerk", "RBI Grade B",
+    "CTET", "UPTET", "REET", "Bihar Teacher", "teaching jobs",
+    "Indian Army", "Indian Navy", "Indian Air Force", "Agniveer", "defence jobs",
+    "UP government jobs", "Bihar government jobs", "Rajasthan government jobs", "state govt jobs",
+    "CBSE result", "BSEB result", "UP board result", "RBSE result", "board exam results",
+    "college admission", "university admission", "entrance exam",
+    "competitive exams", "government exam 2026", "sarkari exam", "sarkari naukri",
+    "admit card download", "answer key download", "exam notification", "result 2026"
+  ],
   openGraph: {
     type: "website",
     siteName: "All India Exam Result",
@@ -63,22 +76,62 @@ const jsonLd = {
       name: "All India Exam Result",
       url: SITE_URL,
       logo: `${SITE_URL}/icon.svg`,
-      description: "India's fastest government exam information portal.",
-      contactPoint: { "@type": "ContactPoint", email: "support@aiexamresult.com", contactType: "customer support" }
+      description: "India's fastest government exam information portal providing verified updates on Sarkari results, job notifications, admit cards, answer keys and admissions.",
+      contactPoint: { "@type": "ContactPoint", email: "support@aiexamresult.com", contactType: "customer support", availableLanguage: ["English", "Hindi"] },
+      sameAs: ["https://facebook.com/aiexamresult", "https://twitter.com/aiexamresult", "https://instagram.com/aiexamresult", "https://youtube.com/@aiexamresult"],
+      address: { "@type": "PostalAddress", addressCountry: "IN" }
     },
     {
       "@type": "WebSite",
       "@id": `${SITE_URL}/#website`,
       url: SITE_URL,
       name: "All India Exam Result",
-      description: "Find latest government jobs, exam results, admit cards and answer keys.",
+      description: "Find latest government jobs, exam results, admit cards, answer keys and admissions 2026. Verified updates for SSC, UPSC, Railway, Banking, State exams and board results.",
       publisher: { "@id": `${SITE_URL}/#organization` },
-      inLanguage: "en-IN",
+      inLanguage: ["en-IN", "hi-IN"],
       potentialAction: {
         "@type": "SearchAction",
         target: { "@type": "EntryPoint", urlTemplate: `${SITE_URL}/search?q={search_term_string}` },
         "query-input": "required name=search_term_string"
       }
+    },
+    {
+      "@type": "WebPage",
+      "@id": `${SITE_URL}/#webpage`,
+      url: SITE_URL,
+      name: "All India Exam Result",
+      description: "India's fastest government exam portal for Sarkari result, job notifications, admit cards, answer keys and admissions 2026.",
+      isPartOf: { "@id": `${SITE_URL}/#website` },
+      about: { "@id": `${SITE_URL}/#organization` },
+      inLanguage: "en-IN",
+      primaryImageOfPage: `${SITE_URL}/og-image.svg`,
+      breadcrumb: { "@id": `${SITE_URL}/#breadcrumb` }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": `${SITE_URL}/#breadcrumb`,
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+        { "@type": "ListItem", position: 2, name: "Results", item: `${SITE_URL}/results` },
+        { "@type": "ListItem", position: 3, name: "Latest Jobs", item: `${SITE_URL}/latest-jobs` },
+        { "@type": "ListItem", position: 4, name: "Admit Card", item: `${SITE_URL}/admit-card` },
+        { "@type": "ListItem", position: 5, name: "Answer Key", item: `${SITE_URL}/answer-key` }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": `${SITE_URL}/#exams`,
+      name: "Government Exams 2026",
+      description: "List of government exams covered including SSC, UPSC, Railway, Banking, Defence and State exams.",
+      url: `${SITE_URL}/exam`,
+      numberOfItems: 48,
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "SSC CGL", url: `${SITE_URL}/exam/ssc-cgl` },
+        { "@type": "ListItem", position: 2, name: "UPSC Civil Services", url: `${SITE_URL}/exam/upsc-cse` },
+        { "@type": "ListItem", position: 3, name: "RRB NTPC", url: `${SITE_URL}/exam/rrb-ntpc` },
+        { "@type": "ListItem", position: 4, name: "IBPS PO", url: `${SITE_URL}/exam/ibps-po` },
+        { "@type": "ListItem", position: 5, name: "CTET", url: `${SITE_URL}/exam/ctet` }
+      ]
     }
   ]
 };

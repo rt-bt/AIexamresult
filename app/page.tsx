@@ -65,6 +65,30 @@ export default function HomePage() {
           </div>
         </section>
 
+        <section className="bg-gradient-to-b from-white to-[#f0fdfa] py-12">
+          <div className="container-page">
+            <h2 className="text-center text-2xl font-black text-ink">Frequently Asked Questions</h2>
+            <p className="mx-auto mt-2 max-w-xl text-center text-slate-500">Quick answers about government exams in India</p>
+            <div className="mx-auto mt-8 grid max-w-3xl gap-4" itemScope itemType="https://schema.org/FAQPage">
+              {[
+                { q: "What is All India Exam Result?", a: "All India Exam Result is India's fastest government exam information portal providing verified updates on Sarkari results, job notifications, admit cards, answer keys and admissions across SSC, UPSC, Railway, Banking, State exams and board results." },
+                { q: "How often is exam data updated?", a: "Our data is synced every 30 minutes directly from official government sources to ensure you get the latest exam notifications, results, admit cards and answer keys." },
+                { q: "How can I find SSC CGL or UPSC exam updates?", a: "Use our exam-specific pages: /exam/ssc-cgl for SSC CGL, /exam/upsc-cse for UPSC Civil Services, /exam/rrb-ntpc for Railway NTPC, or use the search bar at the top." },
+                { q: "Can I download admit cards and answer keys?", a: "Yes, each post includes direct official links to download admit cards, answer keys and results. We link to the respective government commission websites." },
+                { q: "Which government exams are covered?", a: "We cover SSC (CGL, CHSL, MTS, GD, JE, CPO), UPSC (IAS, NDA, CDS), Railway (RRB NTPC, ALP, Group D), Banking (IBPS, SBI, RBI), Teaching (CTET, UPTET), Defence (Army, Navy, Air Force), State govt jobs and board exam results." },
+                { q: "Is this an official government website?", a: "No, this is an independent information portal. All data is sourced from publicly available government notifications. We always link to official websites for final verification." },
+              ].map((faq, i) => (
+                <div key={i} className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+                  <h3 itemProp="name" className="font-bold text-slate-800">{faq.q}</h3>
+                  <div itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
+                    <p itemProp="text" className="mt-2 text-sm leading-6 text-slate-500">{faq.a}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <div className="bg-gradient-to-b from-white to-[#f0fdfa]">
           <CategoryColumns sections={categorySections} />
         </div>
