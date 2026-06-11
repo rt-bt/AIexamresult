@@ -51,7 +51,7 @@ export function Footer() {
       </div>
       <div className="border-t border-slate-100 px-4 py-3 text-center text-[10px] leading-5 text-slate-400">
         <div className="container-page">
-          <p>Disclaimer: This is an independent information portal. All data is sourced from publicly available government notifications and sarkariexam.com. We do not host any copyrighted content. Users are advised to verify all information from the respective official websites before applying.</p>
+          <p>Disclaimer: This is an independent information portal. All data is sourced from publicly available government notifications. Users are advised to verify all information from the respective official websites before applying.</p>
         </div>
       </div>
       <div className="border-t border-slate-100 py-6">
