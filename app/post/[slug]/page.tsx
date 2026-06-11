@@ -213,7 +213,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
             <div className="rounded-2xl bg-ink p-5 text-white">
               <h3 className="text-xl font-black">Join Telegram</h3>
               <p className="mt-2 text-sm text-slate-300">Get instant exam alerts and result notices.</p>
-              <a href="https://t.me/AllIndiaExamResult" target="_blank" rel="noopener noreferrer" className="mt-4 inline-block rounded-full bg-white px-4 py-2 text-sm font-black text-ink transition hover:bg-white/90">Join Channel</a>
+              <a href="https://t.me/aiexamresults" target="_blank" rel="noopener noreferrer" className="mt-4 inline-block rounded-full bg-white px-4 py-2 text-sm font-black text-ink transition hover:bg-white/90">Join Channel</a>
             </div>
             <div className="rounded-2xl border border-slate-200 bg-white p-5 dark:border-white/10 dark:bg-white/10">
               <h3 className="font-black">Save</h3>
