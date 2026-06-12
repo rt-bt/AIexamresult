@@ -32,11 +32,11 @@ function Counter({ to, label }: { to: number; label: string }) {
 
   return (
     <div ref={ref} className="text-center">
-      <div className="flex h-10 w-10 mx-auto items-center justify-center rounded-lg bg-white/10 text-[#5EEAD4]">
-        <TrendingUp className="h-4 w-4" />
+      <div className="flex h-8 w-8 mx-auto items-center justify-center rounded-lg bg-white/10 text-[#5EEAD4]">
+        <TrendingUp className="h-3.5 w-3.5" />
       </div>
-      <p className="mt-2 text-xl sm:text-2xl font-bold text-white tracking-tight">{count.toLocaleString()}<span className="text-[#5EEAD4]">+</span></p>
-      <p className="text-[11px] text-white/50 mt-0.5 font-medium tracking-wide">{label}</p>
+      <p className="mt-1.5 text-lg sm:text-xl font-bold text-white tracking-tight">{count.toLocaleString()}<span className="text-[#5EEAD4]">+</span></p>
+      <p className="text-[10px] text-white/50 mt-0.5 font-medium tracking-wide">{label}</p>
     </div>
   );
 }
@@ -153,15 +153,15 @@ export function Hero() {
         {/* Bottom bar */}
         <div className="mx-auto mt-10 max-w-4xl grid gap-3 sm:grid-cols-3">
           {/* Stats */}
-          <div className="rounded-xl bg-white/5 border border-white/10 p-4">
-            <div className="flex items-start justify-between divide-x divide-white/10">
-              <div className="flex-1 px-3 text-center">
+          <div className="rounded-xl bg-white/5 border border-white/10 p-4 sm:col-span-3">
+            <div className="flex divide-x divide-white/10">
+              <div className="flex-1 min-w-0 px-3 text-center">
                 <Counter to={18240} label="Results Tracked" />
               </div>
-              <div className="flex-1 px-3 text-center">
+              <div className="flex-1 min-w-0 px-3 text-center">
                 <Counter to={3712} label="Active Jobs" />
               </div>
-              <div className="flex-1 px-3 text-center">
+              <div className="flex-1 min-w-0 px-3 text-center">
                 <Counter to={928} label="Alerts Sent" />
               </div>
             </div>
