@@ -38,20 +38,23 @@ export interface ScrapedData {
   fetchedAt: string;
 }
 
-const SOURCE_URL = "https://www.sarkariexam.com/";
-const HEADING_MAP: Record<string, keyof Omit<ScrapedData, "posts" | "fetchedAt">> = {
+const SOURCE_URL = "https://www.sarkariresult.com/";
+
+const CATEGORY_MAP: Record<string, keyof Omit<ScrapedData, "posts" | "fetchedAt">> = {
   "result": "results",
-  "admit card": "admitCards",
-  "top online form": "latestJobs",
-  "answer keys": "answerKeys",
-  "admission form": "admissions",
-  "document verification": "documents",
+  "admitcard": "admitCards",
+  "latestjob": "latestJobs",
+  "answerkey": "answerKeys",
+  "admission": "admissions",
 };
 
-async function fetchHtml(url: string, attempt = 1): Promise<string> {
+// Ordered "View More" button paths on the homepage
+const HOME_CATEGORIES = ["result", "admitcard", "latestjob"];
+
+export async function fetchHtml(url: string, attempt = 1): Promise<string> {
   try {
     const html = await cloudscraper({ uri: url, method: "GET" });
-    if (html && !html.includes("Just a moment")) return html;
+    if (html && !html.includes("Just a moment") && !html.includes("_cf_chl")) return html;
   } catch {}
   const u = new URL(url);
   const mod = u.protocol === "https:" ? https : http;
@@ -94,54 +97,43 @@ function extractSections($: cheerio.CheerioAPI): ScrapedItem[] {
   const items: ScrapedItem[] = [];
   const seen = new Set<string>();
 
-  $(".below-block").each((_, block) => {
-    const $block = $(block);
-    const heading = $block.find("h4.wp-block-heading").text().trim().toLowerCase().replace(/<\/?strong>/g, "");
-    const key = HEADING_MAP[heading];
-    if (!key) return;
-
-    $block.find("ul.wp-block-latest-posts__list li a.wp-block-latest-posts__post-title").each((__, link) => {
-      const $link = $(link);
-      const url = $link.attr("href") || "";
-      if (!url || seen.has(url)) return;
-      seen.add(url);
-      const title = $link.text().trim();
-      const slug = url.replace(/\/$/, "").split("/").pop() || title.toLowerCase().replace(/[^a-z0-9]+/g, "-");
-      items.push({ title, url, category: key, slug });
-    });
-  });
-
-  $(".content-five-post").each((_, block) => {
-    const $block = $(block);
-    const heading = $block.find(".content-mid-sub-heading h2").text().trim().toLowerCase();
-    const key = HEADING_MAP[heading];
-    if (!key) return;
-
-    $block.find("span.block-list-b ul li a").each((__, link) => {
-      const $link = $(link);
-      const url = $link.attr("href") || "";
-      if (!url || seen.has(url)) return;
-      seen.add(url);
-      const title = $link.text().trim();
-      const slug = url.replace(/\/$/, "").split("/").pop() || title.toLowerCase().replace(/[^a-z0-9]+/g, "-");
-      items.push({ title, url, category: key, slug });
-    });
-  });
-
-  return items;
-}
-
-function extractSectionItems($: cheerio.CheerioAPI, $table: cheerio.Cheerio, sectionText: string): string[] {
-  const items: string[] = [];
-  $table.find("h3").each((_, h) => {
-    const $h = $(h);
-    if ($h.text().toLowerCase().includes(sectionText)) {
-      const $td = $h.closest("td.pd-0");
-      $td.find("ul li").each((__, li) => {
-        items.push($(li).text().trim());
-      });
+  // Find "View More" gb-button links to get category order
+  const viewMorePaths: string[] = [];
+  $("a.gb-button").each((_, a) => {
+    const $a = $(a);
+    if ($a.text().trim().toLowerCase() === "view more") {
+      const href = $a.attr("href") || "";
+      const path = href.replace(/https?:\/\/[^/]+\//, "").replace(/\/$/, "");
+      viewMorePaths.push(path);
     }
   });
+
+  // Extract links from gb-containers that have >3 post links
+  let containerIdx = 0;
+  $("div[class*=gb-container]").each((_, el) => {
+    const $el = $(el);
+    const postLinks = $el.find("a[href]").filter((_, a) => $(a).text().trim().length > 15);
+    if (postLinks.length < 3) return;
+
+    // Determine category from viewMorePaths at same index, or from partial URL match
+    const vmPath = viewMorePaths[containerIdx] || "";
+    const category = CATEGORY_MAP[vmPath] || "";
+    containerIdx++;
+
+    // Skip containers whose category isn't in our mapping
+    if (!category) return;
+
+    postLinks.each((_, a) => {
+      const $a = $(a);
+      const url = $a.attr("href") || "";
+      if (!url || seen.has(url)) return;
+      seen.add(url);
+      const title = $a.text().trim();
+      const slug = url.replace(/\/$/, "").split("/").pop() || title.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+      items.push({ title, url, category, slug });
+    });
+  });
+
   return items;
 }
 
@@ -150,42 +142,111 @@ export async function scrapePostDetail(url: string): Promise<PostDetail | null> 
     const html = await fetchHtml(url);
     const $ = cheerio.load(html);
 
-    const title = $("h1.entry-title").text().trim();
-    if (!title) return null;
+    // Title from first table "Name Of Post" or from page heading
+    let title = "";
+    let publishedDate = "";
+    let intro = "";
 
-    const publishedDate = $("time.entry-date.published").attr("datetime") || "";
-    const intro = $("div.post-desc p").text().trim() || $("div.entry-content.clear p").first().text().trim();
-
-    const importantDates: string[] = [];
-    const applicationFee: string[] = [];
-    const $table1 = $("div.newtable1");
-    if ($table1.length) {
-      importantDates.push(...extractSectionItems($, $table1, "important dates"));
-      applicationFee.push(...extractSectionItems($, $table1, "application fee"));
+    // Parse the info table (first table)
+    const $infoTable = $("table").first();
+    if ($infoTable.length) {
+      $infoTable.find("tr").each((_, tr) => {
+        const $tds = $(tr).find("td");
+        const label = $tds.eq(0).text().trim().toLowerCase();
+        const value = $tds.eq(1).text().trim();
+        if (label.includes("name of post")) title = value;
+        else if (label.includes("post date") || label.includes("update")) publishedDate = value;
+        else if (label.includes("short information")) intro = value;
+      });
     }
 
-    const spamLabels = ["sarkari exam mobile app", "join whatsapp channel", "join telegram channel"];
+    if (!title) {
+      title = $("h1.entry-title").text().trim();
+    }
+    if (!title) return null;
+
+    // Parse dates, fees, links from second table
+    const importantDates: string[] = [];
+    const applicationFee: string[] = [];
     const importantLinks: { label: string; url: string | undefined }[] = [];
-    const $table2 = $("div.newtable2");
-    if ($table2.length) {
-      $table2.find("table tbody tr").each((_, row) => {
-        const $tds = $(row).find("td.tcell");
-        if ($tds.length >= 2) {
-          const label = $tds.eq(0).find("h4 span, h4").text().trim();
-          const linkUrl = $tds.eq(1).find("a").attr("href");
-          if (label && !label.toLowerCase().includes("important links")) {
-            const lower = label.toLowerCase();
-            if (spamLabels.some((s) => lower.includes(s))) return;
-            if (linkUrl && (linkUrl.includes("sarkariexam.com") || linkUrl.includes("sarkariresult"))) return;
-            importantLinks.push({ label, url: linkUrl });
-          }
+    const spamLabels = ["join whatsapp", "join telegram", "android app", "apple ios", "mobile app", "sarkari result channel"];
+
+    const $mainTable = $("table").eq(1);
+    if ($mainTable.length) {
+      // First pass: extract Important Dates and Application Fee from the same TR
+      $mainTable.find("h2").each((_, h) => {
+        const $h = $(h);
+        const txt = $h.text().trim().toLowerCase();
+        if (txt.includes("important date")) {
+          const $td = $h.closest("td");
+          $td.find("ul li").each((_, li) => {
+            const t = $(li).text().trim();
+            if (t) importantDates.push(t);
+          });
+        }
+        if (txt.includes("application fee")) {
+          const $td = $h.closest("td");
+          $td.find("ul li").each((_, li) => {
+            const t = $(li).text().trim();
+            if (t) applicationFee.push(t);
+          });
+        }
+      });
+
+      // Second pass: extract Important Links section
+      $mainTable.find("h2").each((_, h) => {
+        const $h = $(h);
+        const txt = $h.text().trim().toLowerCase();
+        if (txt.includes("important links") || txt.includes("useful links")) {
+          // Get all subsequent TRs after this heading's parent TR
+          const $currentTr = $h.closest("tr");
+          let $next = $currentTr.nextAll("tr");
+          $next.each((_, tr) => {
+            const cells = $(tr).find("td");
+            if (cells.length >= 2) {
+              const $labelCell = $(cells[0]);
+              let label = $labelCell.text().trim();
+              if (!label || label.length > 80) return;
+              const linkUrl = $(cells[1]).find("a").attr("href");
+              const lower = label.toLowerCase();
+              if (spamLabels.some(s => lower.includes(s))) return;
+              if (linkUrl && (linkUrl.includes("sarkariresult") || linkUrl.includes("sarkariresults"))) return;
+              if (label && !label.includes("Click Here") && !label.includes("Mobile Apps")) {
+                importantLinks.push({ label, url: linkUrl });
+              }
+            }
+          });
         }
       });
     }
 
-    const $content = $("div.entry-content.clear").first();
-    $content.find("script, style, ins, iframe, .newtable1, .newtable2").remove();
-    const fullContentHtml = $content.html() || "";
+    // Full content HTML - keep tables (they contain the actual content)
+    const fullContentHtml = (() => {
+      const $article = $("article.dynamic-content-template, article[class*=post]");
+      if ($article.length) {
+        const clone = $article.first().clone();
+        // Remove only non-content elements (NOT gb-containers - they hold the content)
+        clone.find("script, style, ins, iframe, .gb-button-wrapper, nav, header, footer").remove();
+        // Remove sarkariresult.com branding/links
+        clone.find("a[href*=sarkariresult], a[href*=sarkariresults]").remove();
+        clone.find("h2:contains('SARKARIRESULT'), h2:contains('WWW.'), h2:contains('Sarkari Result')").remove();
+        clone.find("h2:contains('Mobile Apps'), h2:contains('Android'), h2:contains('Apple'), h2:contains('Telegram')").remove();
+        clone.find("h2:contains('WhatsApp'), h2:contains('Download Mobile'), h2:contains('Join Sarkari')").remove();
+        // Remove spam link rows
+        clone.find("tr").each((_, tr) => {
+          const txt = $(tr).text().toLowerCase();
+          if (txt.includes("join whatsapp") || txt.includes("join telegram") || txt.includes("mobile apps") || txt.includes("apple ios")) {
+            $(tr).remove();
+          }
+        });
+        return clone.html() || "";
+      }
+      const $ec = $("div.entry-content");
+      if ($ec.length) {
+        return $ec.first().html() || "";
+      }
+      return "";
+    })();
 
     const slug = url.replace(/\/$/, "").split("/").pop() || title.toLowerCase().replace(/[^a-z0-9]+/g, "-");
 

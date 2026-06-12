@@ -2,1172 +2,1765 @@
 export const scrapedData = {
   "results": [
     {
-      "title": "UP Polytechnic JEECUP Answer Key 2026",
-      "url": "https://www.sarkariexam.com/up-polytechnic-jeecup-2026/",
+      "title": "Railway RRB NTPC Graduate Level CEN 06/2025 Result",
+      "url": "https://www.sarkariresult.com/railway/rrb-ntpc-graduate-06-2025/",
       "category": "results",
-      "slug": "up-polytechnic-jeecup-2026",
-      "publishedDate": "2026-06-11T15:22:45+05:30"
+      "slug": "rrb-ntpc-graduate-06-2025",
+      "publishedDate": "12 June 2026 | 10:00 AM"
     },
     {
-      "title": "OFSS Bihar 11th 3rd Merit List 2026 – Soon",
-      "url": "https://www.sarkariexam.com/ofss-bihar-11th-admissions-2026/",
+      "title": "Bihar DCECE Result / Rank Card 2026",
+      "url": "https://www.sarkariresult.com/2026/bihar-dcece-2026/",
       "category": "results",
-      "slug": "ofss-bihar-11th-admissions-2026",
-      "publishedDate": "2026-06-11T10:41:45+05:30"
+      "slug": "bihar-dcece-2026",
+      "publishedDate": "11 June 2026 | 09:12 PM"
     },
     {
-      "title": "UPPSC PCS 2024 Marksheet",
-      "url": "https://www.sarkariexam.com/uppsc-pcs-2024/",
+      "title": "DSSSB Naib Tehsildar Post Code 26/25 Result",
+      "url": "https://www.sarkariresult.com/delhi/dsssb-result-apr26/",
       "category": "results",
-      "slug": "uppsc-pcs-2024",
-      "publishedDate": "2026-06-11T10:25:30+05:30"
+      "slug": "dsssb-result-apr26",
+      "publishedDate": "11 June 2026 | 07:21 PM"
     },
     {
-      "title": "BSF Constable Tradesman PET/ PST Result 2026",
-      "url": "https://www.sarkariexam.com/bsf-constable-tradesman-2025/",
+      "title": "HSSC Haryana Police Constable PMT Result 2026 for 5500 Post",
+      "url": "https://www.sarkariresult.com/hssc/hssc-constable-01-2026/",
       "category": "results",
-      "slug": "bsf-constable-tradesman-2025",
-      "publishedDate": "2026-06-10T16:18:52+05:30"
+      "slug": "hssc-constable-01-2026",
+      "publishedDate": "11 June 2026"
     },
     {
-      "title": "UPHESC Assistant Professor 2022 Result 2026",
-      "url": "https://www.sarkariexam.com/uphesc-assistant-professor-2022/",
+      "title": "UPPSC 2024 Marksheet",
+      "url": "https://www.sarkariresult.com/2024/uppsc-pre-2024/",
       "category": "results",
-      "slug": "uphesc-assistant-professor-2022",
-      "publishedDate": "2026-06-10T02:15:44+05:30"
+      "slug": "uppsc-pre-2024",
+      "publishedDate": "10 June 2026 | 08:46 PM"
     },
     {
-      "title": "MPESB Group 5 Paramedical Post Result 2026",
-      "url": "https://www.sarkariexam.com/mpesb-group-5-paramedical-post-2026/",
+      "title": "BSF Constable Tradesman 2025 Result",
+      "url": "https://www.sarkariresult.com/wp-content/uploads/2026/06/SarkariResult.Com_BSF_Constable_Tradesman_Result.pdf",
       "category": "results",
-      "slug": "mpesb-group-5-paramedical-post-2026",
-      "publishedDate": "2026-06-10T02:09:03+05:30"
+      "slug": "SarkariResult.Com_BSF_Constable_Tradesman_Result.pdf"
     },
     {
-      "title": "NTA CUET UG Answer Key 2026 – Out",
-      "url": "https://www.sarkariexam.com/nta-cuet-ug-2026/",
+      "title": "Rajasthan Pre DELED 2026 Result",
+      "url": "https://tinyurl.com/3ktwc4mx",
       "category": "results",
-      "slug": "nta-cuet-ug-2026",
-      "publishedDate": "2026-06-09T16:09:56+05:30"
+      "slug": "3ktwc4mx"
     },
     {
-      "title": "UPSSSC BCG Technician 2024 Result",
-      "url": "https://www.sarkariexam.com/upsssc-bcg-technician-2024/",
+      "title": "MPESB Group 5 Staff Nurse & Other Post Result 2026",
+      "url": "https://www.sarkariresult.com/mp/mpesb-group5-mar26/",
       "category": "results",
-      "slug": "upsssc-bcg-technician-2024",
-      "publishedDate": "2026-06-09T15:18:50+05:30"
+      "slug": "mpesb-group5-mar26",
+      "publishedDate": "10 June 2026"
     },
     {
-      "title": "UPSSSC Technical Assistant Group C 2024 Supplementary List",
-      "url": "https://www.sarkariexam.com/upsssc-technical-assistant-group-c-2025/",
+      "title": "UPHESC Assistant Professor 2022 Result",
+      "url": "https://www.sarkariresult.com/2022/uphesc-asst-professor-51-2022/",
       "category": "results",
-      "slug": "upsssc-technical-assistant-group-c-2025",
-      "publishedDate": "2026-06-09T14:46:52+05:30"
+      "slug": "uphesc-asst-professor-51-2022",
+      "publishedDate": "09 June 2026 | 09:33 PM"
     },
     {
       "title": "India Post GDS 4th Merit List 2026",
-      "url": "https://www.sarkariexam.com/india-post-gds-2026/",
+      "url": "https://www.sarkariresult.com/2026/india-post-gds-2026/",
       "category": "results",
       "slug": "india-post-gds-2026",
-      "publishedDate": "2026-06-08T22:27:56+05:30"
+      "publishedDate": "08 June 2026 | 09:52 PM"
     },
     {
-      "title": "DDA Group A, B & C Various Posts Marks 2026",
-      "url": "https://www.sarkariexam.com/dda-group-a-b-c-post-2025/",
+      "title": "UPSSSC Technical Assistant Group C 2024 Supplementary List",
+      "url": "https://www.sarkariresult.com/upsssc/upsssc-technical-asst-07-2024/",
       "category": "results",
-      "slug": "dda-group-a-b-c-post-2025",
-      "publishedDate": "2026-06-08T14:22:39+05:30"
+      "slug": "upsssc-technical-asst-07-2024",
+      "publishedDate": "08 June 2026 | 07:57 PM"
     },
     {
-      "title": "DSSSB Advt 05/2024 Stenographer Grade-D Result 2026",
-      "url": "https://www.sarkariexam.com/dsssb-various-post-result-2026/",
+      "title": "UPSSSC BCG Technician 2024 Result",
+      "url": "https://www.sarkariresult.com/upsssc/upsssc-bcg-10exam-2024/",
       "category": "results",
-      "slug": "dsssb-various-post-result-2026",
-      "publishedDate": "2026-06-08T14:16:33+05:30"
+      "slug": "upsssc-bcg-10exam-2024",
+      "publishedDate": "08 June 2026 | 07:49 PM"
     },
     {
-      "title": "SSC MTS / Havaldar Result 2026 – Soon",
-      "url": "https://www.sarkariexam.com/ssc-mts-havaldar-2026/",
+      "title": "SSC Delhi Police Head Constable Ministerial 2025 Result, Cutoff",
+      "url": "https://www.sarkariresult.com/ssc/ssc-dp-head-constable-min-2025/",
       "category": "results",
-      "slug": "ssc-mts-havaldar-2026",
-      "publishedDate": "2026-06-08T13:11:06+05:30"
+      "slug": "ssc-dp-head-constable-min-2025",
+      "publishedDate": "05 June 2026"
     },
     {
-      "title": "RSSB Livestock Assistant Final Result 2026 – Out",
-      "url": "https://www.sarkariexam.com/rssb-livestock-assistant-2025/",
-      "category": "results",
-      "slug": "rssb-livestock-assistant-2025",
-      "publishedDate": "2026-06-06T20:20:35+05:30"
-    },
-    {
-      "title": "Indian Airforce Agniveer Vayu 02/2026 Enrolment List",
-      "url": "https://www.sarkariexam.com/indian-airforce-agniveer-vayu-02-2026/",
-      "category": "results",
-      "slug": "indian-airforce-agniveer-vayu-02-2026",
-      "publishedDate": "2026-06-06T10:49:54+05:30"
-    },
-    {
-      "title": "SSC Delhi Police Head Constable Ministerial Result 2026",
-      "url": "https://www.sarkariexam.com/ssc-delhi-police-hcm-2025/",
-      "category": "results",
-      "slug": "ssc-delhi-police-hcm-2025",
-      "publishedDate": "2026-06-05T13:50:07+05:30"
-    },
-    {
-      "title": "RSSB REET Mains Upper Teacher Result 2026 (Update)",
-      "url": "https://www.sarkariexam.com/rssb-reet-mains-upper-teacher-2025/",
-      "category": "results",
-      "slug": "rssb-reet-mains-upper-teacher-2025",
-      "publishedDate": "2026-06-05T10:15:03+05:30"
-    },
-    {
-      "title": "NTA NCET Result / Score Card 2026",
-      "url": "https://www.sarkariexam.com/nta-ncet-2026/",
+      "title": "NTA NCET 2026 Result / Score Card",
+      "url": "https://www.sarkariresult.com/2026/nta-ncet-2026/",
       "category": "results",
       "slug": "nta-ncet-2026",
-      "publishedDate": "2026-06-04T20:56:37+05:30"
+      "publishedDate": "04 June 2026 | 08:32 PM"
     },
     {
-      "title": "DECE-LE Bihar Diploma Result / Rank Card 2026 – Out",
-      "url": "https://www.sarkariexam.com/dece-le-bihar-diploma-2026/",
+      "title": "Bihar ITI CAT 2026 Result",
+      "url": "https://www.sarkariresult.com/2026/bihar-iti-cat/",
       "category": "results",
-      "slug": "dece-le-bihar-diploma-2026",
-      "publishedDate": "2026-06-04T16:05:52+05:30"
+      "slug": "bihar-iti-cat",
+      "publishedDate": "04 June 2026 | 03:20 PM"
     },
     {
-      "title": "Bihar ITI CAT Result / Rank Card 2026 – Out",
-      "url": "https://www.sarkariexam.com/bihar-iti-cat-2026/",
+      "title": "SSC Junior Hindi Translator JHT 2025 Paper II Result",
+      "url": "https://www.sarkariresult.com/ssc/ssc-jht-2025/",
       "category": "results",
-      "slug": "bihar-iti-cat-2026",
-      "publishedDate": "2026-06-04T15:58:27+05:30"
+      "slug": "ssc-jht-2025",
+      "publishedDate": "04 June 2026 | 01:02 PM"
+    },
+    {
+      "title": "MHA IB ACIO 2025 Final Result",
+      "url": "https://doc.sarkariresults.org.in/IBACIO2025_FinalResult_SarkariResult_Com.pdf",
+      "category": "results",
+      "slug": "IBACIO2025_FinalResult_SarkariResult_Com.pdf"
+    },
+    {
+      "title": "UP PGT 2022 Exam Result",
+      "url": "https://www.sarkariresult.com/2022/up-pgt-02-2022/",
+      "category": "results",
+      "slug": "up-pgt-02-2022",
+      "publishedDate": "05 June  2026 | 09:42 PM"
+    },
+    {
+      "title": "UPSSSC Assistant Boring Technician Eligibility Result 2026",
+      "url": "https://www.sarkariresult.com/upsssc/upsssc-asst-boring-tech-04-2026/",
+      "category": "results",
+      "slug": "upsssc-asst-boring-tech-04-2026",
+      "publishedDate": "02 June  2026"
+    },
+    {
+      "title": "IIT JEE Advanced 2026 Result",
+      "url": "https://www.sarkariresult.com/2026/jee-advanced-2026/",
+      "category": "results",
+      "slug": "jee-advanced-2026",
+      "publishedDate": "01 June 2026 | 08:29 AM"
+    },
+    {
+      "title": "Railway RRB Technician Grade III CEN 02/2025 Post Result 2026",
+      "url": "https://www.sarkariresult.com/railway/rrb-technician-cen-02-2025/",
+      "category": "results",
+      "slug": "rrb-technician-cen-02-2025",
+      "publishedDate": "21 May 2026"
+    },
+    {
+      "title": "Railway RRB Paramedical CEN 03/2025 Post Result 2026",
+      "url": "https://www.sarkariresult.com/railway/rrb-paramedical-03-2025/",
+      "category": "results",
+      "slug": "rrb-paramedical-03-2025",
+      "publishedDate": "31March 2026"
+    },
+    {
+      "title": "SSC Delhi Police Head Constable AWO / TPO Result 2026",
+      "url": "https://www.sarkariresult.com/ssc/ssc-delhi-police-hc-awo-tpo-2025/",
+      "category": "results",
+      "slug": "ssc-delhi-police-hc-awo-tpo-2025",
+      "publishedDate": "25 February 2026"
+    },
+    {
+      "title": "Rajasthan RSSB REET 2025 Upper Primary, Primary Teacher Result 2026",
+      "url": "https://tinyurl.com/mry9xpma",
+      "category": "results",
+      "slug": "mry9xpma"
+    },
+    {
+      "title": "CSBC Bihar Police Constable 2025 Final Result",
+      "url": "https://www.sarkariresult.com/bihar/csbc-bp-constable-01-2025/",
+      "category": "results",
+      "slug": "csbc-bp-constable-01-2025",
+      "publishedDate": "10 June 2025"
+    },
+    {
+      "title": "SSC Delhi Police Constable Driver 2025 Marks",
+      "url": "https://www.sarkariresult.com/ssc/ssc-dp-constable-driver-2025/",
+      "category": "results",
+      "slug": "ssc-dp-constable-driver-2025",
+      "publishedDate": "27 April 2026"
+    },
+    {
+      "title": "UPSSSC UP Pollution Control Board Various Post Eligibility Result 2026",
+      "url": "https://www.sarkariresult.com/upsssc/upsssc-02-exam-2026/",
+      "category": "results",
+      "slug": "upsssc-02-exam-2026",
+      "publishedDate": "31 May 2026 | 10:33 PM"
+    },
+    {
+      "title": "Railway RRB NTPC 10+2 CEN 06/2024 Final Result",
+      "url": "https://www.sarkariresult.com/railway/rrb-ntpc-undergraduate-06-2024/",
+      "category": "results",
+      "slug": "rrb-ntpc-undergraduate-06-2024",
+      "publishedDate": "26 May 2026"
+    },
+    {
+      "title": "DRDO CEPTAM 11 Tier I Result 2026",
+      "url": "https://www.sarkariresult.com/2025/drdo-ceptam-11/",
+      "category": "results",
+      "slug": "drdo-ceptam-11",
+      "publishedDate": "09 June 2026 | 01:30 AM"
+    },
+    {
+      "title": "BSF Head Constable RO / RM 2025 Result",
+      "url": "https://doc.sarkariresults.org.in/BSF_HC_RO_RM_Both_Result_2026.pdf",
+      "category": "results",
+      "slug": "BSF_HC_RO_RM_Both_Result_2026.pdf"
+    },
+    {
+      "title": "RBI Assistant Pre Result 2026",
+      "url": "https://www.sarkariresult.com/bank/rbi-assistant-feb26/",
+      "category": "results",
+      "slug": "rbi-assistant-feb26",
+      "publishedDate": "31 May 2026 | 08:51 PM"
+    },
+    {
+      "title": "Indian Navy INCET 01/2024 Reserve List / Result",
+      "url": "https://www.sarkariresult.com/force/navy-incet-01-2024/",
+      "category": "results",
+      "slug": "navy-incet-01-2024",
+      "publishedDate": "23 May 2026"
+    },
+    {
+      "title": "Bihar Board BSEB Class 10th Matric Compartment Result 2026",
+      "url": "https://www.sarkariresult.com/2026/bseb-10-result-2026/",
+      "category": "results",
+      "slug": "bseb-10-result-2026",
+      "publishedDate": "23 May 2026 | 11:16 AM"
+    },
+    {
+      "title": "Bihar Board BSEB Class 12th Inter Compartment Result 2026",
+      "url": "https://www.sarkariresult.com/2026/bseb-12th-result-2026/",
+      "category": "results",
+      "slug": "bseb-12th-result-2026",
+      "publishedDate": "23 May 2026 | 11:11 AM"
     }
   ],
   "admitCards": [
     {
-      "title": "Allahabad University PGAT Admit Card 2026",
-      "url": "https://www.sarkariexam.com/allahabad-university-pgat-admissions-2026/",
+      "title": "SSB Head Constable Ministerial 2020 CBT Exam Date",
+      "url": "https://www.sarkariresult.com/force/ssb-hc-ministerial-jul21/",
       "category": "admitCards",
-      "slug": "allahabad-university-pgat-admissions-2026",
-      "publishedDate": "2026-06-11T11:30:57+05:30"
+      "slug": "ssb-hc-ministerial-jul21",
+      "publishedDate": "11 June 2026 | 10:06 PM"
     },
     {
-      "title": "Bihar Police CSBC Constable GD Exam City / Admit Card 2026",
-      "url": "https://www.sarkariexam.com/bihar-police-csbc-constable-gd-2026/",
+      "title": "UP Police SI DV / PST Exam Admit Card 2026 | Re Print Form",
+      "url": "https://www.sarkariresult.com/2025/up-police-si-03-2025/",
       "category": "admitCards",
-      "slug": "bihar-police-csbc-constable-gd-2026",
-      "publishedDate": "2026-06-11T11:15:33+05:30"
+      "slug": "up-police-si-03-2025",
+      "publishedDate": "11 June 2026 | 07:06 PM"
     },
     {
-      "title": "RRB NTPC 10+2 UG CBT-I Admit Card 2026",
-      "url": "https://www.sarkariexam.com/rrb-ntpc-102-inter-level-2025/",
+      "title": "UPPSC Veterinary Officer Exam Date 2026",
+      "url": "https://www.sarkariresult.com/2025/uppsc-direct-d6-dec2025/",
       "category": "admitCards",
-      "slug": "rrb-ntpc-102-inter-level-2025",
-      "publishedDate": "2026-06-10T15:59:56+05:30"
+      "slug": "uppsc-direct-d6-dec2025",
+      "publishedDate": "11 June 2026 | 06:57 PM"
     },
     {
-      "title": "NTA UGC NET June Exam City Details 2026",
-      "url": "https://www.sarkariexam.com/nta-ugc-net-june-2026/",
+      "title": "Allahabad University PGAT 2026 Admit Card",
+      "url": "https://www.sarkariresult.com/2026/au-pgat-2026/",
+      "category": "admitCards",
+      "slug": "au-pgat-2026",
+      "publishedDate": "11 June 2026 | 10:00 AM"
+    },
+    {
+      "title": "CSBC Bihar Police Constable Special Branch Exam City Details 2026",
+      "url": "https://www.sarkariresult.com/bihar/csbc-bihar-constable-special-01-2026/",
+      "category": "admitCards",
+      "slug": "csbc-bihar-constable-special-01-2026",
+      "publishedDate": "10 June 2026 | 04:18 PM"
+    },
+    {
+      "title": "NTA UGC NET June 2026 Exam City Details",
+      "url": "https://www.sarkariresult.com/2026/nta-ugc-net-june-2026/",
       "category": "admitCards",
       "slug": "nta-ugc-net-june-2026",
-      "publishedDate": "2026-06-10T15:59:03+05:30"
+      "publishedDate": "10 June 2026 | 03:50 PM"
     },
     {
-      "title": "NTA NEET UG Re-Exam City Details 2026",
-      "url": "https://www.sarkariexam.com/nta-neet-ug-2026/",
+      "title": "ABVMU UP GNM Admissions UPGET 2026 Exam City Details",
+      "url": "https://www.sarkariresult.com/2026/up-gnm-get-2026/",
+      "category": "admitCards",
+      "slug": "up-gnm-get-2026",
+      "publishedDate": "10 June 2026 | 12:35 PM"
+    },
+    {
+      "title": "UPSSSC Forest Guard 2023 PMT Admit Card",
+      "url": "https://www.sarkariresult.com/upsssc/upsssc-forest-10-2023/",
+      "category": "admitCards",
+      "slug": "upsssc-forest-10-2023",
+      "publishedDate": "09 June 2026 | 01:12 PM"
+    },
+    {
+      "title": "Bihar Vidhan Parishad Security Guard 2023 Interview Letter",
+      "url": "https://www.sarkariresult.com/bihar/bihar-vidhan-01-04-2023/",
+      "category": "admitCards",
+      "slug": "bihar-vidhan-01-04-2023",
+      "publishedDate": "09 June 2026 | 10:05 AM"
+    },
+    {
+      "title": "Rajasthan PTET 2026 Admit Card",
+      "url": "https://www.sarkariresult.com/2026/rajasthan-ptet-june26/",
+      "category": "admitCards",
+      "slug": "rajasthan-ptet-june26",
+      "publishedDate": "08 June 2026 | 09:30 PM"
+    },
+    {
+      "title": "NTA NEET UG 2026 Exam City Details",
+      "url": "https://www.sarkariresult.com/2026/nta-neet-ug-2026/",
       "category": "admitCards",
       "slug": "nta-neet-ug-2026",
-      "publishedDate": "2026-06-10T14:45:07+05:30"
+      "publishedDate": "07 June 2026"
     },
     {
-      "title": "Indian Army Agniveer CEE Admit Card 2026",
-      "url": "https://www.sarkariexam.com/indian-army-agniveer-cee-2026/",
+      "title": "SGPGI Nursing Officer & Other Post Exam City Details",
+      "url": "https://www.sarkariresult.com/2026/sgpgi-nursing-officer/",
       "category": "admitCards",
-      "slug": "indian-army-agniveer-cee-2026",
-      "publishedDate": "2026-06-10T14:45:03+05:30"
+      "slug": "sgpgi-nursing-officer",
+      "publishedDate": "07 June 2026 | 12:58 PM"
     },
     {
-      "title": "UP GNM Entrance Exam UPGET Exam City Details 2026",
-      "url": "https://www.sarkariexam.com/up-gnm-entrance-exam-upget-2026/",
+      "title": "UPSSSC Pharmacist Mains Exam Fee Payment",
+      "url": "https://www.sarkariresult.com/upsssc/upsssc-pharmacist-01-2026/",
       "category": "admitCards",
-      "slug": "up-gnm-entrance-exam-upget-2026",
-      "publishedDate": "2026-06-10T13:20:26+05:30"
+      "slug": "upsssc-pharmacist-01-2026",
+      "publishedDate": "07 June 2026 | 01:49 PM"
     },
     {
-      "title": "SSB Head Constable Ministerial Written Exam Date 2026",
-      "url": "https://www.sarkariexam.com/ssb-head-constable-ministerial-2021/",
+      "title": "Railway RRB NTPC UG CEN 07/2025 Admit Card",
+      "url": "https://www.sarkariresult.com/railway/rrb-ntpc-ug-07-2025/",
       "category": "admitCards",
-      "slug": "ssb-head-constable-ministerial-2021",
-      "publishedDate": "2026-06-10T02:22:15+05:30"
+      "slug": "rrb-ntpc-ug-07-2025",
+      "publishedDate": "05 June 2026 | 11:04 AM"
     },
     {
-      "title": "UPSSSC Forest/ WildLife Guard 2023 Medical Admit Card 2026",
-      "url": "https://www.sarkariexam.com/upsssc-forest-guard-wild-guard-2023/",
+      "title": "UPPSC LT Assistant Teacher Biology, Urdu Mains Admit Card 2026",
+      "url": "https://www.sarkariresult.com/2025/uppsc-lt-grade-teacher-2025/",
       "category": "admitCards",
-      "slug": "upsssc-forest-guard-wild-guard-2023",
-      "publishedDate": "2026-06-09T15:02:04+05:30"
+      "slug": "uppsc-lt-grade-teacher-2025",
+      "publishedDate": "08 June 2026 | 10:38 PM"
     },
     {
-      "title": "UP LT Grade Assistant Teacher Mains Admit Card 2026 (Update)",
-      "url": "https://www.sarkariexam.com/up-lt-grade-assistant-teacher-2025/",
+      "title": "RBI Officer Grade B Admit Card 2026",
+      "url": "https://www.sarkariresult.com/bank/rbi-grade-b-apr26/",
       "category": "admitCards",
-      "slug": "up-lt-grade-assistant-teacher-2025",
-      "publishedDate": "2026-06-09T11:38:19+05:30"
+      "slug": "rbi-grade-b-apr26",
+      "publishedDate": "05 June 2026 | 12:09 PM"
     },
     {
-      "title": "NTA SWAYAM Exam City Details 2026",
-      "url": "https://www.sarkariexam.com/nta-swayam-2026/",
+      "title": "Haryana HTET 2025 Exam Date",
+      "url": "https://www.sarkariresult.com/2026/htet-dec-2025/",
       "category": "admitCards",
-      "slug": "nta-swayam-2026",
-      "publishedDate": "2026-06-09T11:37:19+05:30"
+      "slug": "htet-dec-2025",
+      "publishedDate": "04 June 2026 | 03:36 PM"
     },
     {
-      "title": "UKSSSC VDO, Patwari & Other Post Admit Card 2026",
-      "url": "https://www.sarkariexam.com/uksssc-vdo-patwari-other-post-2025/",
+      "title": "UPPSC GIC Lecturer Admit Card 2026",
+      "url": "https://www.sarkariresult.com/2025/uppsc-gic-lecturer-2025/",
       "category": "admitCards",
-      "slug": "uksssc-vdo-patwari-other-post-2025",
-      "publishedDate": "2026-06-09T11:11:14+05:30"
+      "slug": "uppsc-gic-lecturer-2025",
+      "publishedDate": "04 June 2026 | 01:18 PM"
     },
     {
-      "title": "Bihar Vidhan Parishad Security Guard Interview Admit Card 2026",
-      "url": "https://www.sarkariexam.com/bihar-vidhan-parishad-2023/",
+      "title": "BPSC Auditor Exam Date 2026",
+      "url": "https://www.sarkariresult.com/bihar/bpsc-auditor-09-2026/",
       "category": "admitCards",
-      "slug": "bihar-vidhan-parishad-2023",
-      "publishedDate": "2026-06-09T10:41:02+05:30"
+      "slug": "bpsc-auditor-09-2026",
+      "publishedDate": "03 June 2026"
     },
     {
-      "title": "Rajasthan PTET Admit Card 2026",
-      "url": "https://www.sarkariexam.com/rajasthan-ptet-2026/",
+      "title": "BPSC Assistant Environmental Scientist AES Admit Card 2026",
+      "url": "https://www.sarkariresult.com/2026/bpsc-aes-88-2025/",
       "category": "admitCards",
-      "slug": "rajasthan-ptet-2026",
-      "publishedDate": "2026-06-08T14:36:37+05:30"
+      "slug": "bpsc-aes-88-2025",
+      "publishedDate": "02 June 2026 | 10:40 PM"
     },
     {
-      "title": "Bihar Police Prohibition Constable Admit Card 2026",
-      "url": "https://www.sarkariexam.com/bihar-police-csbc-prohibition-constable-2025/",
+      "title": "UPSSSC Exam Calendar 2026 New",
+      "url": "https://doc.sarkariresults.org.in/UPSSSC_SarkariResult.Com_Exam_Calendar_2026.pdf",
       "category": "admitCards",
-      "slug": "bihar-police-csbc-prohibition-constable-2025",
-      "publishedDate": "2026-06-08T10:19:52+05:30"
+      "slug": "UPSSSC_SarkariResult.Com_Exam_Calendar_2026.pdf"
     },
     {
-      "title": "Bihar BPSC AES Admit Card 2026",
-      "url": "https://www.sarkariexam.com/bihar-bpsc-aes-2025/",
+      "title": "BPSC Stenographer Admit Card 2026",
+      "url": "https://www.sarkariresult.com/2026/bpsc-stenographer-01-2026/",
       "category": "admitCards",
-      "slug": "bihar-bpsc-aes-2025",
-      "publishedDate": "2026-06-08T10:19:45+05:30"
+      "slug": "bpsc-stenographer-01-2026",
+      "publishedDate": "02 June 2026 | 06:50 PM"
     },
     {
-      "title": "Bihar BPSC Stenographer Admit Card 2026",
-      "url": "https://www.sarkariexam.com/bpsc-stenographer-2026/",
+      "title": "CSBC Prohibition Constable, Jail Warder Admit Card 2026",
+      "url": "https://www.sarkariresult.com/bihar/csbc-bihar-pohibition-03-2025/",
       "category": "admitCards",
-      "slug": "bpsc-stenographer-2026",
-      "publishedDate": "2026-06-08T10:19:40+05:30"
+      "slug": "csbc-bihar-pohibition-03-2025",
+      "publishedDate": "01 June  2026"
     },
     {
-      "title": "UPSSSC Pharmacist Mains Exam Fee Payment 2026",
-      "url": "https://www.sarkariexam.com/upsssc-pharmacist-2026/",
+      "title": "DSSSB June 2026 Exam Admit Card",
+      "url": "https://www.sarkariresult.com/delhi/dsssb-admit-card-download/",
       "category": "admitCards",
-      "slug": "upsssc-pharmacist-2026",
-      "publishedDate": "2026-06-07T14:17:34+05:30"
+      "slug": "dsssb-admit-card-download",
+      "publishedDate": "31 May 2026 : 08:33 PM"
     },
     {
-      "title": "SGPGI Nursing Officer & Other Post Exam City Details 2026",
-      "url": "https://www.sarkariexam.com/sgpgi-nursing-officer-and-non-teaching-post-2025/",
+      "title": "Bihar DELED 2026 Exam Admit Card",
+      "url": "https://tinyurl.com/ynyv96yj",
       "category": "admitCards",
-      "slug": "sgpgi-nursing-officer-and-non-teaching-post-2025",
-      "publishedDate": "2026-06-07T13:38:32+05:30"
+      "slug": "ynyv96yj"
     },
     {
-      "title": "BSF HCM & ASI Steno Exam Date 2026",
-      "url": "https://www.sarkariexam.com/bsf-hcm-asi-steno-2024/",
+      "title": "Railway RRB Section Controller CBAT Exam City / Admit Card 2026",
+      "url": "https://www.sarkariresult.com/railway/rrb-section-controller-04-2025/",
       "category": "admitCards",
-      "slug": "bsf-hcm-asi-steno-2024",
-      "publishedDate": "2026-06-06T10:40:28+05:30"
+      "slug": "rrb-section-controller-04-2025",
+      "publishedDate": "31 May 2026 | 08:56 PM"
+    },
+    {
+      "title": "RPSC School Lecturer PGT Teacher 2025 Admit Card",
+      "url": "https://www.sarkariresult.com/rpsc/rpsc-school-lecturer-pgt-2025/",
+      "category": "admitCards",
+      "slug": "rpsc-school-lecturer-pgt-2025",
+      "publishedDate": "31 May 2026 | 08:42 PM"
+    },
+    {
+      "title": "MPESB Vanrakshak, Jail Prahari Admit Card 2026",
+      "url": "https://www.sarkariresult.com/mp/mpesb-vanrakshak-jail-prahari-feb26/",
+      "category": "admitCards",
+      "slug": "mpesb-vanrakshak-jail-prahari-feb26",
+      "publishedDate": "27 May 2026"
+    },
+    {
+      "title": "CGPSC SSE State Service Exam 2025 Mains Admit Card",
+      "url": "https://www.sarkariresult.com/cg/cgpsc-sse-2025/",
+      "category": "admitCards",
+      "slug": "cgpsc-sse-2025",
+      "publishedDate": "27 May 2026"
+    },
+    {
+      "title": "UP Polytechnic JEECUP 2026 Admit Card",
+      "url": "https://www.sarkariresult.com/2026/jeecup-2026/",
+      "category": "admitCards",
+      "slug": "jeecup-2026",
+      "publishedDate": "11 June 2026 | 02:36 PM"
+    },
+    {
+      "title": "RPSC Senior Teacher TGT 2025 Exam Date",
+      "url": "https://doc.sarkariresults.org.in/RPSC_SR_Teacher_Exam_Date.pdf",
+      "category": "admitCards",
+      "slug": "RPSC_SR_Teacher_Exam_Date.pdf"
     }
   ],
   "latestJobs": [
     {
-      "title": "RRB ALP CEN 01/2026 Online Form 2026 (11,127 Posts)",
-      "url": "https://www.sarkariexam.com/rrb-alp-cen-01-2026/",
+      "title": "MPPSC Assistant Professor Online Form 2026",
+      "url": "https://www.sarkariresult.com/2026/mppsc-assistant-professor-june26/",
       "category": "latestJobs",
-      "slug": "rrb-alp-cen-01-2026",
-      "publishedDate": "2026-06-11T13:14:26+05:30"
+      "slug": "mppsc-assistant-professor-june26",
+      "publishedDate": "12 June 2026 | 11:18 PM"
     },
     {
-      "title": "SSC CGL 2026 Online Form (12,256 Posts)",
-      "url": "https://www.sarkariexam.com/ssc-cgl-2026/",
+      "title": "NALCO Non Executive Various Post Online Form 2026 Extended",
+      "url": "https://www.sarkariresult.com/2026/nalco-non-executive-may26/",
       "category": "latestJobs",
-      "slug": "ssc-cgl-2026",
-      "publishedDate": "2026-06-11T13:14:16+05:30"
+      "slug": "nalco-non-executive-may26",
+      "publishedDate": "11 June 2026 | 07:55 PM"
     },
     {
-      "title": "Coal India CIL Management Trainee Online Form 2026 – Extend",
-      "url": "https://www.sarkariexam.com/coal-india-cil-management-trainee-2026/",
+      "title": "Coal India CIL Management Trainee Online Form 2026 Extended",
+      "url": "https://www.sarkariresult.com/2026/coal-india-mt-2026/",
       "category": "latestJobs",
-      "slug": "coal-india-cil-management-trainee-2026",
-      "publishedDate": "2026-06-11T13:13:21+05:30"
+      "slug": "coal-india-mt-2026",
+      "publishedDate": "11 June 2026 | 07:50 PM"
     },
     {
-      "title": "UPSSSC Agriculture Technical Assistant Group-C Online Form 2026 – Last Date",
-      "url": "https://www.sarkariexam.com/upsssc-agriculture-technical-assistant-group-c-2026/",
+      "title": "RPSC Assistant Prosecution Officer APO Online Form 2026",
+      "url": "https://www.sarkariresult.com/2026/rpsc-apo-june26/",
       "category": "latestJobs",
-      "slug": "upsssc-agriculture-technical-assistant-group-c-2026",
-      "publishedDate": "2026-06-11T13:13:11+05:30"
+      "slug": "rpsc-apo-june26",
+      "publishedDate": "09 June 2026 | 08:40 PM"
     },
     {
-      "title": "UPSC NDA/ NA-II Online Form 2026 – Last Date",
-      "url": "https://www.sarkariexam.com/upsc-nda-na-ii-2026/",
+      "title": "UPSC NDA II Online Form 2026",
+      "url": "https://www.sarkariresult.com/upsc/upsc-nda-ii-exam-2026/",
       "category": "latestJobs",
-      "slug": "upsc-nda-na-ii-2026",
-      "publishedDate": "2026-06-11T13:13:05+05:30"
+      "slug": "upsc-nda-ii-exam-2026",
+      "publishedDate": "09 June  2026"
     },
     {
-      "title": "UPSC CDS-II Online Form 2026  – Last Date",
-      "url": "https://www.sarkariexam.com/upsc-cds-ii-2026/",
+      "title": "UPSC CDS II Online Form 2026",
+      "url": "https://www.sarkariresult.com/upsc/upsc-cds-ii-exam-2026/",
       "category": "latestJobs",
-      "slug": "upsc-cds-ii-2026",
-      "publishedDate": "2026-06-11T13:13:01+05:30"
+      "slug": "upsc-cds-ii-exam-2026",
+      "publishedDate": "09 June 2026"
     },
     {
-      "title": "Railway SECR Bilaspur Apprentices Online Form 2026 (1191 Posts) – Last Date",
-      "url": "https://www.sarkariexam.com/railway-rrc-secr-bilaspur-apprentice-2026/",
+      "title": "UPSSSC UP Vidhan Bhawan Guard / Fireman Online Form 2026",
+      "url": "https://www.sarkariresult.com/upsssc/upsssc-vidhan-09-exam-2026/",
       "category": "latestJobs",
-      "slug": "railway-rrc-secr-bilaspur-apprentice-2026",
-      "publishedDate": "2026-06-11T13:12:55+05:30"
+      "slug": "upsssc-vidhan-09-exam-2026",
+      "publishedDate": "09 June 2026 | 10:43 AM"
     },
     {
-      "title": "Indian Army TGC 144 Online Form 2026 – Last Date",
-      "url": "https://www.sarkariexam.com/indian-army-tgc-144-2026/",
+      "title": "Bank of Baroda Apprentices Online Form 2026 Extended",
+      "url": "https://www.sarkariresult.com/bank/bob-apprentices-2026/",
       "category": "latestJobs",
-      "slug": "indian-army-tgc-144-2026",
-      "publishedDate": "2026-06-11T13:12:51+05:30"
+      "slug": "bob-apprentices-2026",
+      "publishedDate": "09 June 2026"
     },
     {
-      "title": "SSC Junior Engineer JE Online Post Preference Form 2026",
-      "url": "https://www.sarkariexam.com/ssc-junior-engineer-je-2025/",
+      "title": "RPSC RAS Pre 2026 Online Form",
+      "url": "https://www.sarkariresult.com/2026/rpsc-ras-2026/",
       "category": "latestJobs",
-      "slug": "ssc-junior-engineer-je-2025",
-      "publishedDate": "2026-06-11T13:11:54+05:30"
+      "slug": "rpsc-ras-2026",
+      "publishedDate": "08 June 2026 : 07:39 PM"
     },
     {
-      "title": "Allahabad High Court RO, ARO & CA Online Form 2026",
-      "url": "https://www.sarkariexam.com/allahabad-high-court-ro-aro-ca-2026/",
+      "title": "CISF ASI Paramedical Post Online Form 2026",
+      "url": "https://www.sarkariresult.com/2026/cisf-paramadical-june-2026/",
       "category": "latestJobs",
-      "slug": "allahabad-high-court-ro-aro-ca-2026",
-      "publishedDate": "2026-06-11T10:10:17+05:30"
-    },
-    {
-      "title": "UPSSSC Lower PCS 2026 Online Form (2516 Posts)",
-      "url": "https://www.sarkariexam.com/upsssc-lower-pcs-2026/",
-      "category": "latestJobs",
-      "slug": "upsssc-lower-pcs-2026",
-      "publishedDate": "2026-06-11T10:10:13+05:30"
-    },
-    {
-      "title": "UPSSSC Excise Constable Online Form 2026",
-      "url": "https://www.sarkariexam.com/upsssc-excise-constable-2026/",
-      "category": "latestJobs",
-      "slug": "upsssc-excise-constable-2026",
-      "publishedDate": "2026-06-11T10:10:08+05:30"
-    },
-    {
-      "title": "SBI Apprentice Online Form 2026 (7150 Posts) – Extend",
-      "url": "https://www.sarkariexam.com/sbi-apprentice-2026/",
-      "category": "latestJobs",
-      "slug": "sbi-apprentice-2026",
-      "publishedDate": "2026-06-11T10:10:03+05:30"
-    },
-    {
-      "title": "Bank of Baroda Apprentices Online Form 2026 (5000 Posts) – Extend",
-      "url": "https://www.sarkariexam.com/bank-of-baroda-apprentices-2026/",
-      "category": "latestJobs",
-      "slug": "bank-of-baroda-apprentices-2026",
-      "publishedDate": "2026-06-11T10:09:59+05:30"
-    },
-    {
-      "title": "UPSSSC Vidhan Bhawan Guard/ Fire Guard Online Form 2026",
-      "url": "https://www.sarkariexam.com/upsssc-vidhan-bhawan-guard-fire-guard-2026/",
-      "category": "latestJobs",
-      "slug": "upsssc-vidhan-bhawan-guard-fire-guard-2026",
-      "publishedDate": "2026-06-11T10:09:54+05:30"
-    },
-    {
-      "title": "CTET September Online Form 2026",
-      "url": "https://www.sarkariexam.com/ctet-september-2026/",
-      "category": "latestJobs",
-      "slug": "ctet-september-2026",
-      "publishedDate": "2026-06-10T10:16:06+05:30"
-    },
-    {
-      "title": "CISF ASI Paramedical Staff Online Form 2026",
-      "url": "https://www.sarkariexam.com/cisf-asi-paramedical-staff-2026/",
-      "category": "latestJobs",
-      "slug": "cisf-asi-paramedical-staff-2026",
-      "publishedDate": "2026-06-08T10:23:24+05:30"
-    },
-    {
-      "title": "RPSC APO Online Form 2026",
-      "url": "https://www.sarkariexam.com/rpsc-apo-2026/",
-      "category": "latestJobs",
-      "slug": "rpsc-apo-2026",
-      "publishedDate": "2026-06-08T10:22:16+05:30"
+      "slug": "cisf-paramadical-june-2026",
+      "publishedDate": "09 June 2026 | 10:37 PM"
     },
     {
       "title": "Hindustan Copper Limited HCL Executive Online Form 2026",
-      "url": "https://www.sarkariexam.com/hindustan-copper-limited-hcl-executive-2026/",
+      "url": "https://www.sarkariresult.com/2026/hcl-executive-june-2026/",
       "category": "latestJobs",
-      "slug": "hindustan-copper-limited-hcl-executive-2026",
-      "publishedDate": "2026-06-07T14:00:00+05:30"
+      "slug": "hcl-executive-june-2026",
+      "publishedDate": "09 June 2026 | 10:42 PM"
     },
     {
-      "title": "UP Board Class 10th/12th Compartment Online Form 2026",
-      "url": "https://www.sarkariexam.com/up-board-class-10th-12th-2026/",
+      "title": "State Bank of India SBI Apprentices Online Form 2026",
+      "url": "https://www.sarkariresult.com/bank/sbi-apprentices-2026/",
       "category": "latestJobs",
-      "slug": "up-board-class-10th-12th-2026",
-      "publishedDate": "2026-06-06T13:02:51+05:30"
+      "slug": "sbi-apprentices-2026",
+      "publishedDate": "04 June 2026 | 07:17 PM"
+    },
+    {
+      "title": "SSC Stenographer 2026 Tentative Vacancy",
+      "url": "https://www.sarkariresult.com/ssc/ssc-stenographer-2026/",
+      "category": "latestJobs",
+      "slug": "ssc-stenographer-2026",
+      "publishedDate": "04 June 2026 | 12:31 PM"
+    },
+    {
+      "title": "UPSSSC Excise Constable Online Form 2026",
+      "url": "https://www.sarkariresult.com/upsssc/upsssc-excise-constable-08-exam2026/",
+      "category": "latestJobs",
+      "slug": "upsssc-excise-constable-08-exam2026",
+      "publishedDate": "06  June 2026 | 09:02 PM"
+    },
+    {
+      "title": "Indian Navy Agniveer Apprentices INET 02/2026 Online Form",
+      "url": "https://www.sarkariresult.com/2026/navy-inet-02-2026/",
+      "category": "latestJobs",
+      "slug": "navy-inet-02-2026",
+      "publishedDate": "09 June 2026 | 10:40 PM"
+    },
+    {
+      "title": "UPSSSC Auditor and Assistant Accountant Online Form 2026",
+      "url": "https://www.sarkariresult.com/2026/upsssc-14-exam-2026/",
+      "category": "latestJobs",
+      "slug": "upsssc-14-exam-2026",
+      "publishedDate": "03 June 2026 | 05:16 PM"
+    },
+    {
+      "title": "SGPGI Non Teaching Various Post Online Form 2026 (Backlog)",
+      "url": "https://www.sarkariresult.com/2026/sgpgi-non-teaching-june26/",
+      "category": "latestJobs",
+      "slug": "sgpgi-non-teaching-june26",
+      "publishedDate": "03 June 2026 | 07:59 PM"
+    },
+    {
+      "title": "Jharkhand Teacher Eligibility Test JHTET Online Form 2026",
+      "url": "https://www.sarkariresult.com/2026/jac-jhtet-2026/",
+      "category": "latestJobs",
+      "slug": "jac-jhtet-2026",
+      "publishedDate": "03 June 2026 | 02:04 AM"
+    },
+    {
+      "title": "BSNL Junior Telecom Officer JTO Online Form 2026",
+      "url": "https://www.sarkariresult.com/2026/bsnl-jto-2026/",
+      "category": "latestJobs",
+      "slug": "bsnl-jto-2026",
+      "publishedDate": "09 June 2026 | 10:38 AM"
+    },
+    {
+      "title": "Allahabad High Court Research Associate Online Form 2026",
+      "url": "https://www.sarkariresult.com/2026/ahc-research-associates-2026/",
+      "category": "latestJobs",
+      "slug": "ahc-research-associates-2026",
+      "publishedDate": "02 June 2026 | 01:36 AM"
+    },
+    {
+      "title": "DSSSB Various Post Advt No 03/2026 Online Form",
+      "url": "https://www.sarkariresult.com/delhi/dsssb-03-2026/",
+      "category": "latestJobs",
+      "slug": "dsssb-03-2026",
+      "publishedDate": "01 June 2026 | 01:01 PM"
+    },
+    {
+      "title": "RPSC School Lecturer Special Online Form 2026",
+      "url": "https://www.sarkariresult.com/rpsc/school-lecturer-special-june26/",
+      "category": "latestJobs",
+      "slug": "school-lecturer-special-june26",
+      "publishedDate": "01 June 2026 : 11:12 AM"
+    },
+    {
+      "title": "Allahabad High Court RO / ARO / Computer Assistant Online Form 2026",
+      "url": "https://www.sarkariresult.com/2026/ahc-ro-aro-ca-june2026/",
+      "category": "latestJobs",
+      "slug": "ahc-ro-aro-ca-june2026",
+      "publishedDate": "10 June 2026 | 10:18 AM"
+    },
+    {
+      "title": "UPSSSC Lower PCS Graduate Level Online Form 2026",
+      "url": "https://www.sarkariresult.com/upsssc/upsssc-lower-07-exam-2026/",
+      "category": "latestJobs",
+      "slug": "upsssc-lower-07-exam-2026",
+      "publishedDate": "02 June 2026 | 06:30 PM"
+    },
+    {
+      "title": "NTA CSIR UGC NET June 2026 Online Form",
+      "url": "https://www.sarkariresult.com/2026/nta-csir-net-june2026/",
+      "category": "latestJobs",
+      "slug": "nta-csir-net-june2026",
+      "publishedDate": "01 June 2026 | 09:26  PM"
+    },
+    {
+      "title": "RSSB Computer Instructor Online Form 2026",
+      "url": "https://www.sarkariresult.com/rpsc/rssb-computer-instructor-07-2026/",
+      "category": "latestJobs",
+      "slug": "rssb-computer-instructor-07-2026",
+      "publishedDate": "23 May 2026 | 01:06 PM"
+    },
+    {
+      "title": "Indian Navy 10+2 B.Tech Entry Online Form 2026",
+      "url": "https://www.sarkariresult.com/force/navy-btech-jan2027/",
+      "category": "latestJobs",
+      "slug": "navy-btech-jan2027",
+      "publishedDate": "22 May 2026"
+    },
+    {
+      "title": "UPSSSC Technical Assistant Group C Online Form 2026",
+      "url": "https://www.sarkariresult.com/upsssc/upsssc-technical-06-exam-2026/",
+      "category": "latestJobs",
+      "slug": "upsssc-technical-06-exam-2026",
+      "publishedDate": "23 May 2026"
+    },
+    {
+      "title": "SSC Combined Graduate Level CGL Online Form 2026",
+      "url": "https://www.sarkariresult.com/ssc/ssc-cgl-2026/",
+      "category": "latestJobs",
+      "slug": "ssc-cgl-2026",
+      "publishedDate": "02 June 2026"
+    },
+    {
+      "title": "Indian Airforce AFCAT 02/2026 Online Form",
+      "url": "https://www.sarkariresult.com/force/afcat-02-2026/",
+      "category": "latestJobs",
+      "slug": "afcat-02-2026",
+      "publishedDate": "09 June 2026"
+    },
+    {
+      "title": "Railway SECR Nagpur Apprentices Online Form 2026",
+      "url": "https://www.sarkariresult.com/railway/secr-nagpur-apprentices-may26/",
+      "category": "latestJobs",
+      "slug": "secr-nagpur-apprentices-may26",
+      "publishedDate": "19 May 2026"
+    },
+    {
+      "title": "Railway SECR Bilaspur Apprentices Online Form 2026",
+      "url": "https://www.sarkariresult.com/railway/secr-bilaspur-apprentices-may26/",
+      "category": "latestJobs",
+      "slug": "secr-bilaspur-apprentices-may26",
+      "publishedDate": "19 May 2026"
+    },
+    {
+      "title": "Bihar Police BPSSC ASI Technical Online Form 2026",
+      "url": "https://www.sarkariresult.com/bihar/bpssc-asi-technical-07-2026/",
+      "category": "latestJobs",
+      "slug": "bpssc-asi-technical-07-2026",
+      "publishedDate": "21 May 2026"
+    },
+    {
+      "title": "Railway RRB Technician CEN 02/2026 Online Form",
+      "url": "https://www.sarkariresult.com/railway/rrb-technician-cen-02-2026/",
+      "category": "latestJobs",
+      "slug": "rrb-technician-cen-02-2026",
+      "publishedDate": "18 May 2026"
+    },
+    {
+      "title": "Railway RRB ALP CEN 01/2026 Online Form",
+      "url": "https://www.sarkariresult.com/railway/rrb-alp-cen-01-2026/",
+      "category": "latestJobs",
+      "slug": "rrb-alp-cen-01-2026",
+      "publishedDate": "25 May 2026"
     }
   ],
   "answerKeys": [
     {
-      "title": "NTA JIPMAT Answer Key 2026",
-      "url": "https://www.sarkariexam.com/nta-jipmat-2026/",
+      "title": "NTA JIPMAT 2026 Answer Key",
+      "url": "https://www.sarkariresult.com/2026/nta-jipmat-2026/",
       "category": "answerKeys",
       "slug": "nta-jipmat-2026",
-      "publishedDate": "2026-06-11T11:11:56+05:30"
+      "publishedDate": "10 June 2026 | 10:19 PM"
     },
     {
-      "title": "UP CNET Answer Key 2026",
-      "url": "https://www.sarkariexam.com/up-cnet-2026/",
+      "title": "NTA CUET UG 2026 Answer Key",
+      "url": "https://www.sarkariresult.com/2026/nta-cuet-ug-2026/",
       "category": "answerKeys",
-      "slug": "up-cnet-2026",
-      "publishedDate": "2026-06-09T15:30:15+05:30"
+      "slug": "nta-cuet-ug-2026",
+      "publishedDate": "09 June 2026 | 03:54 PM"
     },
     {
-      "title": "Bihar CET B.Ed Answer Key 2026 – Out",
-      "url": "https://www.sarkariexam.com/bihar-cet-b-ed-2026/",
+      "title": "UP CNET 2026 Answer Key",
+      "url": "https://www.sarkariresult.com/2026/abvmu-up-cnet-2026/",
       "category": "answerKeys",
-      "slug": "bihar-cet-b-ed-2026",
-      "publishedDate": "2026-06-08T22:35:46+05:30"
+      "slug": "abvmu-up-cnet-2026",
+      "publishedDate": "09 June 2026  | 03:19 PM"
     },
     {
-      "title": "UPPSC Assistant Professor Answer Key 2026",
-      "url": "https://www.sarkariexam.com/uppsc-assistant-professor-2025/",
+      "title": "Bihar 2 Year BED CET Answer Key 2026",
+      "url": "https://www.sarkariresult.com/2026/bihar-2yr-bed-2/",
       "category": "answerKeys",
-      "slug": "uppsc-assistant-professor-2025",
-      "publishedDate": "2026-06-07T13:23:58+05:30"
+      "slug": "bihar-2yr-bed-2",
+      "publishedDate": "08 June 2026 | 10:40 PM"
     },
     {
-      "title": "UP TGT 2022 Answer Key 2026",
-      "url": "https://www.sarkariexam.com/up-tgt-2022/",
+      "title": "UP TGT 2022 Answer Key",
+      "url": "https://www.sarkariresult.com/2022/up-tgt-01-2022/",
       "category": "answerKeys",
-      "slug": "up-tgt-2022",
-      "publishedDate": "2026-06-07T00:01:19+05:30"
+      "slug": "up-tgt-01-2022",
+      "publishedDate": "06 June 2026 | 09:53 PM"
     },
     {
-      "title": "Bihar BSSC Office Attendant Mains Answer Key 2026 – Out",
-      "url": "https://www.sarkariexam.com/bihar-bssc-office-attendant-2022/",
+      "title": "BSSC Office Attendant 2022 Mains Answer Key",
+      "url": "https://www.sarkariresult.com/bihar/bssc-ssa-02-2022/",
       "category": "answerKeys",
-      "slug": "bihar-bssc-office-attendant-2022",
-      "publishedDate": "2026-06-05T11:24:45+05:30"
+      "slug": "bssc-ssa-02-2022",
+      "publishedDate": "04 June 2026 | 09:43 PM"
     },
     {
-      "title": "JCECEB Jharkhand B.Ed Answer Key 2026",
-      "url": "https://www.sarkariexam.com/jceceb-jharkhand-bed-2026/",
+      "title": "UPPSC Assistant Professor GDC Answer Key 2026",
+      "url": "https://www.sarkariresult.com/2025/uppsc-asst-professor-a7-e1/",
       "category": "answerKeys",
-      "slug": "jceceb-jharkhand-bed-2026",
-      "publishedDate": "2026-06-04T12:35:11+05:30"
+      "slug": "uppsc-asst-professor-a7-e1",
+      "publishedDate": "03 June 2026 | 06:12 PM"
     },
     {
-      "title": "RSSB REET Mains Primary Teacher Final Answer Key 2026",
-      "url": "https://www.sarkariexam.com/rssb-reet-mains-primary-teacher-2025/",
+      "title": "Navy INCET 01/2025 Answer Key",
+      "url": "https://www.sarkariresult.com/force/navy-incet-01-2025/",
       "category": "answerKeys",
-      "slug": "rssb-reet-mains-primary-teacher-2025",
-      "publishedDate": "2026-06-03T16:06:22+05:30"
+      "slug": "navy-incet-01-2025",
+      "publishedDate": "27 January 2026"
+    },
+    {
+      "title": "UPSC Civil Services IAS Pre Answer Key 2026",
+      "url": "https://www.sarkariresult.com/upsc/upsc-ias-ifs-pre-2026/",
+      "category": "answerKeys",
+      "slug": "upsc-ias-ifs-pre-2026",
+      "publishedDate": "18 May 2026"
+    },
+    {
+      "title": "UPSSSC Lekhpal Answer Key 2026",
+      "url": "https://www.sarkariresult.com/upsssc/upsssc-lekhpal-02-exam-2025/",
+      "category": "answerKeys",
+      "slug": "upsssc-lekhpal-02-exam-2025",
+      "publishedDate": "21 May 2026"
     }
   ],
-  "documents": [
-    {
-      "title": "Aadhar Card PVC Download, Correction, Status 2026",
-      "url": "https://www.sarkariexam.com/aadhar-card-print-verification-correction-form/",
-      "category": "documents",
-      "slug": "aadhar-card-print-verification-correction-form",
-      "publishedDate": "2026-01-05T17:18:44+05:30"
-    },
-    {
-      "title": "PAN Card Registration, Correction & Other Service 2026",
-      "url": "https://www.sarkariexam.com/pan-card-registration-correction-other-service-2026/",
-      "category": "documents",
-      "slug": "pan-card-registration-correction-other-service-2026",
-      "publishedDate": "2026-01-05T17:18:40+05:30"
-    },
-    {
-      "title": "Bihar Income, Cast, Residential Certificate Online Apply & Verification 2026",
-      "url": "https://www.sarkariexam.com/bihar-caste-income-residence-certificate-online-form/",
-      "category": "documents",
-      "slug": "bihar-caste-income-residence-certificate-online-form",
-      "publishedDate": "2026-01-05T17:09:48+05:30"
-    },
-    {
-      "title": "UP Caste, Niwas, Income Certificate Online Verification 2026",
-      "url": "https://www.sarkariexam.com/up-caste-niwas-income-certificate-online-verification/",
-      "category": "documents",
-      "slug": "up-caste-niwas-income-certificate-online-verification",
-      "publishedDate": "2026-01-05T16:31:31+05:30"
-    },
-    {
-      "title": "Voter ID Registration & Other Voter Service 2026",
-      "url": "https://www.sarkariexam.com/voter-id-registration-other-voter-service-2026/",
-      "category": "documents",
-      "slug": "voter-id-registration-other-voter-service-2026",
-      "publishedDate": "2026-01-05T14:30:50+05:30"
-    }
-  ],
+  "documents": [],
   "admissions": [
     {
-      "title": "UP DELEd Online Form 2026 – Soon",
-      "url": "https://www.sarkariexam.com/up-deled-admission-2026/",
+      "title": "MUIT Lucknow and Noida Campus Admissions 2026 Online Form",
+      "url": "https://www.sarkariresult.com/2026/muit-admissions-2026/",
       "category": "admissions",
-      "slug": "up-deled-admission-2026",
-      "publishedDate": "2026-06-10T12:46:17+05:30"
+      "slug": "muit-admissions-2026",
+      "publishedDate": "11 June 2026 | 02:47 PM"
     },
     {
-      "title": "MPESB PNST Online Form 2026",
-      "url": "https://www.sarkariexam.com/mpesb-pnst-2026/",
+      "title": "UPDELED 2026 Admissions Online Form",
+      "url": "https://www.sarkariresult.com/2026/updeled-admissions-2/",
       "category": "admissions",
-      "slug": "mpesb-pnst-2026",
-      "publishedDate": "2026-06-09T15:57:50+05:30"
+      "slug": "updeled-admissions-2",
+      "publishedDate": "10 June 2026 | 12:02 PM"
+    },
+    {
+      "title": "UP CAHET Online Form 2026 Extended",
+      "url": "https://www.sarkariresult.com/2026/up-cahet-2026/",
+      "category": "admissions",
+      "slug": "up-cahet-2026",
+      "publishedDate": "11 June 2026 | 07:18 PM"
+    },
+    {
+      "title": "JRDSU Chitrakoot Admissions Online Form 2026",
+      "url": "https://www.sarkariresult.com/2026/jrdsu-admission-june-2026/",
+      "category": "admissions",
+      "slug": "jrdsu-admission-june-2026"
+    },
+    {
+      "title": "UP Board Class 10th, 12th Improvement / Compartment Exam Online Form 2026",
+      "url": "https://www.sarkariresult.com/2026/upmsp-june-2026/",
+      "category": "admissions",
+      "slug": "upmsp-june-2026",
+      "publishedDate": "06 June 2026 | 06:04 PM"
+    },
+    {
+      "title": "MPESB ADDET 2026 Online Form",
+      "url": "https://www.sarkariresult.com/2026/mpesb-addet-2026/",
+      "category": "admissions",
+      "slug": "mpesb-addet-2026",
+      "publishedDate": "09 June 2026 | 10:43  PM"
+    },
+    {
+      "title": "UPTAC 2026 Admissions Online Registration",
+      "url": "https://www.sarkariresult.com/2026/uptac-2026-admissions/",
+      "category": "admissions",
+      "slug": "uptac-2026-admissions",
+      "publishedDate": "06 June 2026 | 09:05 PM"
+    },
+    {
+      "title": "Rajju Bhaiya University Prayagraj PRSU Admissions Online Form 2026",
+      "url": "https://www.sarkariresult.com/2026/rajju-bhaiya-state-university-prsu-cet/",
+      "category": "admissions",
+      "slug": "rajju-bhaiya-state-university-prsu-cet",
+      "publishedDate": "02 June 2026 | 03:03 PM"
+    },
+    {
+      "title": "SWD UP IAS / PCS Free Coaching Admissions Online Form 2026",
+      "url": "https://www.sarkariresult.com/2023/swd-up-free-coaching/",
+      "category": "admissions",
+      "slug": "swd-up-free-coaching",
+      "publishedDate": "03 January 2023 | 04:31 PM"
+    },
+    {
+      "title": "Delhi University DU PG Admissions Online Form 2026",
+      "url": "https://www.sarkariresult.com/2026/du-pg-admissions/",
+      "category": "admissions",
+      "slug": "du-pg-admissions",
+      "publishedDate": "22 May 2026 | 10:25 PM"
     },
     {
       "title": "NTA ICAR AIEEA PG, Phd Admissions Online Form 2026",
-      "url": "https://www.sarkariexam.com/nta-icar-aieea-pg-phd-admissions-2026/",
+      "url": "https://www.sarkariresult.com/2019/nta-icar-aieea/",
       "category": "admissions",
-      "slug": "nta-icar-aieea-pg-phd-admissions-2026",
-      "publishedDate": "2026-06-08T15:42:19+05:30"
+      "slug": "nta-icar-aieea",
+      "publishedDate": "17 July 2019"
     },
     {
-      "title": "UPTAC Admissions Online Registration 2026",
-      "url": "https://www.sarkariexam.com/uptac-admissions-2026/",
+      "title": "UPCATET 2026 Online Form",
+      "url": "https://www.sarkariresult.com/2026/upcatet-2026/",
       "category": "admissions",
-      "slug": "uptac-admissions-2026",
-      "publishedDate": "2026-06-05T13:28:23+05:30"
+      "slug": "upcatet-2026",
+      "publishedDate": "11 May 2026"
     }
   ],
   "posts": {
-    "up-polytechnic-jeecup-2026": {
-      "title": "UP Polytechnic JEECUP Answer Key 2026",
-      "slug": "up-polytechnic-jeecup-2026",
-      "url": "https://www.sarkariexam.com/up-polytechnic-jeecup-2026/",
+    "rrb-ntpc-graduate-06-2025": {
+      "title": "Railway RRB Various posts of Non-Technical Popular Categories (Graduate) CEN 06/2025 Recruitment 2025 Tier I Result 2026",
+      "slug": "rrb-ntpc-graduate-06-2025",
+      "url": "https://www.sarkariresult.com/railway/rrb-ntpc-graduate-06-2025/",
       "category": "",
-      "publishedDate": "2026-06-11T15:22:45+05:30",
-      "intro": "Short Information : UP Joint Entrance Examination JEECUP has released the answer key for Uttar Pradesh Polytechnic Diploma Admission 2026 on its official website. Applications for the UP Polytechnic JEECUP Online Form 2026 were accepted from 15 January 2026, to 10 May 2026. The written examination is going to be conducted on 02-09 June 2026. Candidates who had applied this form can download their UP Polytechnic JEECUP Answer Key 2026 from the link given below."
+      "publishedDate": "12 June 2026 | 10:00 AM",
+      "intro": "Indian Railway Railway Recruitment Board RRB Various posts of Non-Technical Popular Categories (Graduate) CEN 06/2025. Those candidates who are Enrolled in this Railway RRB CEN 06/2025 can Download Answer Key. Read the notification for RRB NTPC Graduate Level eligibility, post information, selection procedure, Details, age limit, pay scale and all other information."
     },
-    "ofss-bihar-11th-admissions-2026": {
-      "title": "OFSS Bihar 11th 3rd Merit List 2026",
-      "slug": "ofss-bihar-11th-admissions-2026",
-      "url": "https://www.sarkariexam.com/ofss-bihar-11th-admissions-2026/",
+    "bihar-dcece-2026": {
+      "title": "Bihar BCECEB Diploma Certificate Entrance Competitive DCECE PM / PE / PMM Admissions Download Result / Rank Card 2026",
+      "slug": "bihar-dcece-2026",
+      "url": "https://www.sarkariresult.com/2026/bihar-dcece-2026/",
       "category": "",
-      "publishedDate": "2026-06-11T10:41:45+05:30",
-      "intro": "Short Information : Bihar School Examination Board (BSEB), will release the 3rd Merit List for admission in Intermediate (11th) Class 2026 through the Online Facilitation System for Students (OFSS). Candidates who applied for OFSS Bihar 11th Admission 2026 can now check their 3rd Selection List / Merit List. Students can download the intimation letter, check allotted school/college, and complete the admission process within the given time. Those Candidates who are enlisted in the 3rd Merit List can proceed for admission through the link given below."
+      "publishedDate": "11 June 2026 | 09:12 PM",
+      "intro": "Bihar Combined Entrance Competitive Examination Board (BCECEB) has released the Information Brochure for Diploma Certificate Entrance Competitive DCECE PE / PM / PMM 2026 Exam Can Apply Online from 19/03/2026 to 21/04/2026.candidates should read the Bihar DCECE 2026 information brochure for all the information related to the entrance exam like syllabus, eligibility, age limit, fees, Course and University List, information and other types of information and then apply."
     },
-    "uppsc-pcs-2024": {
-      "title": "UPPSC PCS Marksheet 2026",
-      "slug": "uppsc-pcs-2024",
-      "url": "https://www.sarkariexam.com/uppsc-pcs-2024/",
+    "dsssb-result-apr26": {
+      "title": "Delhi DSSSB Latest Result, Marks, Cutoff and E-Dossier Form 2026",
+      "slug": "dsssb-result-apr26",
+      "url": "https://www.sarkariresult.com/delhi/dsssb-result-apr26/",
       "category": "",
-      "publishedDate": "2026-06-11T10:25:30+05:30",
-      "intro": "Short Details : Uttar Pradesh Public Service Commission UPSC, has released the marksheet for the State/ Upper Subordinate Services 2024, This recruitment was released for 220 posts. The applications for UPPSC Mains Recruitment 2025 were accepted from 07 March 2025 to 24 March 2025. The Interview was held on 16 February 2026 to 20 March 2026. Candidates who appeared for this examination can download their UPPSC PCS Marksheet 2026 from the link given below."
+      "publishedDate": "11 June 2026 | 07:21 PM",
+      "intro": "Delhi Subordinate Service Selection Board has released the Latest Result, Old Results, and E-Dossier Form for various posts. Candidates who appeared in the examination can check their result, marks, and cutoff details through the official methods. Qualified candidates are required to complete the E-Dossier Form as per the instructions provided in the official notice. It is advised to read the complete notification carefully for all details related to result status, cutoff, and further recruitment process before proceeding."
     },
-    "bsf-constable-tradesman-2025": {
-      "title": "BSF Constable Tradesman PET/ PST Result 2026",
-      "slug": "bsf-constable-tradesman-2025",
-      "url": "https://www.sarkariexam.com/bsf-constable-tradesman-2025/",
+    "hssc-constable-01-2026": {
+      "title": "Haryana Police HSSC Constable GD Recruitment 2026 PMT List and Result for 5500 Post",
+      "slug": "hssc-constable-01-2026",
+      "url": "https://www.sarkariresult.com/hssc/hssc-constable-01-2026/",
       "category": "",
-      "publishedDate": "2026-06-10T16:18:52+05:30",
-      "intro": "Short Information : Border Security Force (BSF) has released the result for the post of Constable (Tradesman). This recruitment was released for 3588 posts. Applications for the BSF Constable Tradesman Recruitment 2025 were accepted from 24 July 2025, to 26 August 2025. The PET/ PST examination was held on December 2025. Candidates who appeared for this examination can download their BSF Constable Tradesman PET/ PST Result 2026 from the link given below."
+      "publishedDate": "11 June 2026",
+      "intro": "Haryana Staff Selection Commission, NOTICE TO THE CANDIDATES FOR PHYSICAL MEASUREMENT TEST (PMT) FOR THE POSTS OF MALE CONSTABLE (GD) AND MALE CONSTABLE (GOVERNMENT RAILWAY POLICE) AGAINST ADVERTISEMENT NO. 01/2026, CATEGORY NO. 01 AND 03 OF POLICE DEPARTMENT, HARYANA. | HSSC Haryana Police Constable GD, Constable Governtment HSSC Police Under Advt No. 01/2026 Notification 2026. Those candidates who are interested in this Haryana Police Vacancy 2026 can Apply Online Re Open from 16/03/2026 to 19/03/2026. Read the notification for recruitment eligibility, post information, selection procedure, Practice Test, pay scale and all other information."
     },
-    "uphesc-assistant-professor-2022": {
-      "title": "UPHESC Assistant Professor Result 2026",
-      "slug": "uphesc-assistant-professor-2022",
-      "url": "https://www.sarkariexam.com/uphesc-assistant-professor-2022/",
+    "uppsc-pre-2024": {
+      "title": "UPPSC UP Pre Examination 2024 Final Result, Marks 2026",
+      "slug": "uppsc-pre-2024",
+      "url": "https://www.sarkariresult.com/2024/uppsc-pre-2024/",
       "category": "",
-      "publishedDate": "2026-06-10T02:15:44+05:30",
-      "intro": "Short Information : Uttar Pradesh Higher Education Service Commission (UPHESC) has released result for selection to the posts of Assistant Professor under the Advt No. : 51-2022. The vacancy came in the year 2022 and it took almost four years to conduct the written examination for the prescribed posts. The written examination was held on 18-19 April 2026. Candidates who appeared for this examination can download their UPHESC Assistant Professor Result 2026 from the link given below."
+      "publishedDate": "10 June 2026 | 08:46 PM",
+      "intro": "Uttar Pradesh Public Service Commission (UPPSC) has issued an Uttar Pradesh Combined State/Upper Subordinate Services Examination 2024 Notification Pre 2024. Any candidate who is interested in this Uttar Pradesh UPPSC Pre Recruitment 2024 can Download Final Result. For Recruitment details, pay scale, age limit, selection procedure, job information and all other information, read the advertisement and then apply."
     },
-    "mpesb-group-5-paramedical-post-2026": {
-      "title": "MPESB Group 5 Paramedical Result 2026",
-      "slug": "mpesb-group-5-paramedical-post-2026",
-      "url": "https://www.sarkariexam.com/mpesb-group-5-paramedical-post-2026/",
+    "mpesb-group5-mar26": {
+      "title": "MPESB MP Group 5 Staff Nurse , Paramedical and Other Post Combined Recruitment Test 2026 Download Result for 291 Post",
+      "slug": "mpesb-group5-mar26",
+      "url": "https://www.sarkariresult.com/mp/mpesb-group5-mar26/",
       "category": "",
-      "publishedDate": "2026-06-10T02:09:03+05:30",
-      "intro": "Short Information : Madhya Pradesh Professional Selection Board (MPESB) has released the result for the recruitment of Group-5 Staff Nurse, Paramedical and Other Combined Posts. This recruitment was released for 373 posts. Applications for the MPESB Group-5 Paramedical Post Recruitment 2026 were accepted from 16 March 2026 to 30 March 2026. The online examination was held on 15 April 2026. Candidates who had appeared in this Examination can download their MPESB Group 5 Paramedical Post Result 2026 from the link given below."
+      "publishedDate": "10 June 2026",
+      "intro": "Madhya Pradesh Employee Selection Board (MPESB) has relased Group 5 Staff Nurse , Paramedical and Other Post Combined Notification 2026. Those candidates who are Enrolled in this MPESB Group 5 Staff Nurse , Paramedical and Other Post Combined Exam 2026 can Download Answer Key. Read the notification for recruitment eligibility, post information, selection procedure, Practice Test, pay scale and all other information"
     },
-    "nta-cuet-ug-2026": {
-      "title": "NTA CUET UG Answer Key 2026",
-      "slug": "nta-cuet-ug-2026",
-      "url": "https://www.sarkariexam.com/nta-cuet-ug-2026/",
+    "uphesc-asst-professor-51-2022": {
+      "title": "Uttar Pradesh Higher UPHESC Assistant Professor Recruitment 2022 Results 2026",
+      "slug": "uphesc-asst-professor-51-2022",
+      "url": "https://www.sarkariresult.com/2022/uphesc-asst-professor-51-2022/",
       "category": "",
-      "publishedDate": "2026-06-09T16:09:56+05:30",
-      "intro": "Short Information : National Testing Agency (NTA) has released the answer key for the Under-Graduate Entrance Test for all Central Universities for Academic Session 2026-27 Examination on the official website of the NTA recently. Applications for the NTA CUET UG Online Form 2026 were accepted from 23 February 2026, to 26 February 2026. The online examination was held on 11-31 May 2026. Candidates who appeared for this examination can download their NTA CUET UG Answer Key 2026 from the link given below."
-    },
-    "upsssc-bcg-technician-2024": {
-      "title": "UPSSSC BCG Technician Result 2026",
-      "slug": "upsssc-bcg-technician-2024",
-      "url": "https://www.sarkariexam.com/upsssc-bcg-technician-2024/",
-      "category": "",
-      "publishedDate": "2026-06-09T15:18:50+05:30",
-      "intro": "Short Information : Uttar Pradesh Subordinate Services Selection Commission (UPSSSC) has released the result for the recruitment of BCG Technician posts on the official website of UPSSSC. This recruitment was released for 255 posts. Applications for the UPSSSC BCG Technician Recruitment 2024 were accepted from 08 July 2024, to 07 August 2024. Candidates who had applied this form can download their UPSSSC BCG Technician Result 2026 from the link given below."
-    },
-    "upsssc-technical-assistant-group-c-2025": {
-      "title": "UPSSSC Technical Assistant Group C Supplementary List 2026",
-      "slug": "upsssc-technical-assistant-group-c-2025",
-      "url": "https://www.sarkariexam.com/upsssc-technical-assistant-group-c-2025/",
-      "category": "",
-      "publishedDate": "2026-06-09T14:46:52+05:30",
-      "intro": "Short Information : Uttar Pradesh Subordinate Service Selection Board (UPSSSC) has released the Supplementary List for selection to the posts of Technical Assistant Group C under the Advt No. : 07-Exam/2024. The vacancy came in the year 2024 and it took almost one year tow month to conduct the written examination for the prescribed posts. UPSSSC was conduct a written examination on 13 July 2025 for the posts of 3446 UPSSSC Technical Assistant Group C in various locations of Uttar Pradesh. Candidates who appeared for this examination can check their UPSSSC Technical Assistant Group C Supplementary List 2026 from the direct link provided below."
+      "publishedDate": "09 June 2026 | 09:33 PM",
+      "intro": "Uttar Pradesh Higher Education Service Commission (UPHESC) Assistant Professor Advt No. 51 has released the Detailed Notification for the recruitment of 917 posts. Any candidate who is Enrolled in this recruitment and fulfils the eligibility can Download Result. For eligibility, age limit, training center, pay scale, selection procedure and all other information in recruitment, read the complete notification issued by NHM Uttar Pradesh and then apply."
     },
     "india-post-gds-2026": {
-      "title": "India Post GDS 4th Merit List 2026",
+      "title": "India Post Gramin Dak Sevaks GDS Recruitment 2026 Download Fourth Result / Merit List for 28635 Post",
       "slug": "india-post-gds-2026",
-      "url": "https://www.sarkariexam.com/india-post-gds-2026/",
+      "url": "https://www.sarkariresult.com/2026/india-post-gds-2026/",
       "category": "",
-      "publishedDate": "2026-06-08T22:27:56+05:30",
-      "intro": "Short Information : Department of Post (India Post) has released the 4th Merit List for the post of Gramin Dak Sevaks GDS on the official website of India Post. This recruitment was released for 28636 posts. The applications for India Post GDS Recruitment 2025 were accepted from 31 January 2026 to 14 February 2026. Candidates who had applied this form can download their India Post GDS 4rt Merit List 2026 from the link given below."
+      "publishedDate": "08 June 2026 | 09:52 PM",
+      "intro": "Department of Post India Post has relased Gramin Dak Sevaks GDS 2026 Notification. Those candidates who are interested in this India Post GDS Recruitment 2026 Exam can Apply Online 31/01/2026 to 14/02/2026. Read the notification for India Post GDS Vacancy 2026, eligibility, Subject Details information, Document Required, age limit, How to Apply and all other information."
     },
-    "dda-group-a-b-c-post-2025": {
-      "title": "DDA Group A, B & C Various Posts Marks 2026",
-      "slug": "dda-group-a-b-c-post-2025",
-      "url": "https://www.sarkariexam.com/dda-group-a-b-c-post-2025/",
+    "upsssc-technical-asst-07-2024": {
+      "title": "UPSSSC UP Agriculture Technical Assistant Group C AGTA Recruitment 2024 Eligibility Result, Mains Exam Fee 2025, Supplementary lList 2026 for 3446 Post",
+      "slug": "upsssc-technical-asst-07-2024",
+      "url": "https://www.sarkariresult.com/upsssc/upsssc-technical-asst-07-2024/",
       "category": "",
-      "publishedDate": "2026-06-08T14:22:39+05:30",
-      "intro": "Short Information : Delhi Development Authority (DDA) has released the marks for the Group A, B & C Various Posts on the official website of the DDA Delhi. This recruitment was released for 1732 posts. Applications for the DDA Group A, B, C Recruitment 2025 were accepted from 06 October 2025, to 05 November 2025. The Skill Test examination was held on 02-03 March 2026. Candidates who appeared for this Examination can download their DDA Group A, B, C Marks 2026 from the link given below."
+      "publishedDate": "08 June 2026 | 07:57 PM",
+      "intro": "Uttar Pradesh Subordinate Service Selection Commission (UPSSSC) Uttar Pradesh Technical Assistant Group C Advt No. 07-Exam/2024 Recruitment Notification. Those candidates who are interested in this UPSSSC Technical Assistant Vacancy 2024 can Upload the DV Exam Letter 2026. Read the notification for recruitment eligibility, post information, selection procedure, Practice Test, pay scale and all other information."
     },
-    "dsssb-various-post-result-2026": {
-      "title": "DSSSB Stenographer Grade-D Result 2026",
-      "slug": "dsssb-various-post-result-2026",
-      "url": "https://www.sarkariexam.com/dsssb-various-post-result-2026/",
+    "upsssc-bcg-10exam-2024": {
+      "title": "UPSSSC B.C.G. Technician Recruitment 2024 Result 2026 for 255 Post",
+      "slug": "upsssc-bcg-10exam-2024",
+      "url": "https://www.sarkariresult.com/upsssc/upsssc-bcg-10exam-2024/",
       "category": "",
-      "publishedDate": "2026-06-08T14:16:33+05:30",
-      "intro": "Short Information : Delhi Subordinate Service Selection Board (DSSSB) had conducted the various posts examination few months ago. As per the official updates, the result for the Delhi DSSSB Various Post Exam has been released on the official website of DSSSB. Candidates who have appeared for the aforesaid examination, are now be able to download their DSSSB Various Post Result 2024 from the direct link provided below."
+      "publishedDate": "08 June 2026 | 07:49 PM",
+      "intro": "Uttar Pradesh Subordinate Service Selection Commission (UPSSSC) Uttar Pradesh B.C.G. Technician Advt No. 10-Exam/2024 Recruitment Notification. Those candidates who are interested in this UPSSSC B.C.G. Technician Vacancy 2024 can apply online from 08 July 2024 to 07 August 2024. Read the notification for recruitment eligibility, post information, selection procedure, Department Wise Vacancy, pay scale and all other information."
     },
-    "ssc-mts-havaldar-2026": {
-      "title": "SSC MTS / Havaldar Result 2026",
-      "slug": "ssc-mts-havaldar-2026",
-      "url": "https://www.sarkariexam.com/ssc-mts-havaldar-2026/",
+    "ssc-dp-head-constable-min-2025": {
+      "title": "SSC Delhi Police Head Constable Ministerial Recruitment 2025 Result 2026 for 509 Post",
+      "slug": "ssc-dp-head-constable-min-2025",
+      "url": "https://www.sarkariresult.com/ssc/ssc-dp-head-constable-min-2025/",
       "category": "",
-      "publishedDate": "2026-06-08T13:11:06+05:30",
-      "intro": "Short Information : Staff Selection Commission (SSC) will shortly announce the result for the MTS / Havaldar posts after evaluating candidates’ performance in the examination. This recruitment was conducted for 7,948 posts. Applications for the SSC MTS / Havaldar Recruitment 2025 were accepted from 26 June 2025 to 24 July 2025. The examination was held from 04 February 2026. Candidates are advised to regularly check the Sarkari Result portal for updates regarding the SSC MTS / Havaldar Result 2026, which will be uploaded shortly."
-    },
-    "rssb-livestock-assistant-2025": {
-      "title": "RSSB Livestock Assistant Final Result 2026",
-      "slug": "rssb-livestock-assistant-2025",
-      "url": "https://www.sarkariexam.com/rssb-livestock-assistant-2025/",
-      "category": "",
-      "publishedDate": "2026-06-06T20:20:35+05:30",
-      "intro": "Short Information : Rajasthan Staff Selection Board (RSSB) has released the final result for the post of Livestock Assistant. This recruitment was released for 1526 posts. Applications for the RSSB Livestock Assistant Recruitment 2025 were accepted from January 31, 2025, to March 01, 2025. The online examination was held on 13 June 2025. Candidates who appeared for this examination can download their RSSB Livestock Assistant Final Result 2026 from the link given below."
-    },
-    "indian-airforce-agniveer-vayu-02-2026": {
-      "title": "Indian Air Force Agniveer Vayu Intake 02/2026 Enrolment List",
-      "slug": "indian-airforce-agniveer-vayu-02-2026",
-      "url": "https://www.sarkariexam.com/indian-airforce-agniveer-vayu-02-2026/",
-      "category": "",
-      "publishedDate": "2026-06-06T10:49:54+05:30",
-      "intro": "Short Information : Indian Air Force (Bhartiya Vayu Sena) has released Enrolment List for the Airforce Agniveer Vayu Intake 02/2026 Recruitment 2025 (Intake 02/2026) on the official website of IAF. Applications for the Indian Airforce Agniveer Vayu 02/2026 Recruitment 2025 were accepted from July 11, 2025, to August 04, 2025. The Phase II examination  was held on January 2026. Candidates who had applied this form can download their Indian Airforce Agniveer Vayu 02/2026 Enrolment List from the link given below."
-    },
-    "ssc-delhi-police-hcm-2025": {
-      "title": "SSC Delhi Police Head Constable Ministerial Result 2026",
-      "slug": "ssc-delhi-police-hcm-2025",
-      "url": "https://www.sarkariexam.com/ssc-delhi-police-hcm-2025/",
-      "category": "",
-      "publishedDate": "2026-06-05T13:50:07+05:30",
-      "intro": "Short Information : Staff Selection Commission, SSC has released the result for the post of Head Constable Ministerial on the official website of SSC. This recruitment was released for 456 posts. Applications for the Delhi Police Head Constable Ministerial Recruitment 2025 were accepted from September 29, 2025, to October 20, 2025. The CBT examination was held on 07-12 January 2026. Candidates who appeared for this examination can download their SSC Delhi Police Constable Ministerial Result 2026 from the link given below."
-    },
-    "rssb-reet-mains-upper-teacher-2025": {
-      "title": "RSSB REET Mains Upper Teacher Result 2026 (Update)",
-      "slug": "rssb-reet-mains-upper-teacher-2025",
-      "url": "https://www.sarkariexam.com/rssb-reet-mains-upper-teacher-2025/",
-      "category": "",
-      "publishedDate": "2026-06-05T10:15:03+05:30",
-      "intro": "Short Information : Rajasthan Staff Selection Board (RSSB) has released the mains result for the post of Level II Upper School Teacher Posts on the official website of RSSB. This recruitment was released for 2133 posts. Applications for the RSSB REET Mains Upper Teacher Recruitment 2025 were accepted from November 07, 2025, to December 06, 2025. The online examination was held on 18-20 January 2026. Candidates who appeared for this examination download their RSSB REET Mains Upper Teacher Mains Result 2026 from the link given below."
+      "publishedDate": "05 June 2026",
+      "intro": "Staff Selection Commission</span></a> SSC has released the notification for Delhi Police Head Constable Ministerial Examination 2025. Those Candidate Are Enrolled with Vacancy Can Check the Result. Before applying, candidates must read the complete advertisement in which selection procedure, exam syllabus, pattern, exam date and other information will be available."
     },
     "nta-ncet-2026": {
-      "title": "NTA NCET Result / Score Card 2026",
+      "title": "NTA National Common Entrance Test NCET 2026 Download Result",
       "slug": "nta-ncet-2026",
-      "url": "https://www.sarkariexam.com/nta-ncet-2026/",
+      "url": "https://www.sarkariresult.com/2026/nta-ncet-2026/",
       "category": "",
-      "publishedDate": "2026-06-04T20:56:37+05:30",
-      "intro": "Short Information : National Testing Agency (NTA) has released the Result / Score Card for the National Common Entrance Test NCET online application for admission 2026 on the official website of the NTA. Applications for the NTA NCET Online Form 2026 were accepted from 12 February 2026 to 10 March 2026. The online examination was held on 17-18 April 2026. Candidates who appeared for this examination can download their NTA NCET Result / Score Card 2026 from the link given below."
+      "publishedDate": "04 June 2026 | 08:32 PM",
+      "intro": "National Testing Agency (NTA) has released the National Common Entrance Test NCET 2026 online application for admission 2026 will start from 12 February 2026 and the last date to apply will be 10 March 2026. Various Institution are participating in NCET 2026, candidates should read the information brochure for all the information related to the entrance exam like syllabus, eligibility, age limit, placement, fees, college information and other types of information and then apply."
     },
-    "dece-le-bihar-diploma-2026": {
-      "title": "DECE-LE Bihar Diploma Result / Rank Card 2026",
-      "slug": "dece-le-bihar-diploma-2026",
-      "url": "https://www.sarkariexam.com/dece-le-bihar-diploma-2026/",
+    "bihar-iti-cat": {
+      "title": "Bihar BCECEB Industrial Training Institute Competitive Admission Test ITICAT Admissions Download Result  2026",
+      "slug": "bihar-iti-cat",
+      "url": "https://www.sarkariresult.com/2026/bihar-iti-cat/",
       "category": "",
-      "publishedDate": "2026-06-04T16:05:52+05:30",
-      "intro": "Short Information : Bihar Combined Entrance Competitive Examination Board (BCECEB) has released the Result / Rank Card for the Diploma Entrance Competitive Examination (Lateral Entry) (DECE-LE) 2026 on its official website. The online registration process for the DECE-LE Bihar Diploma Admission Form 2026 were accepted from 20 March 2026 to 23 April 2026. Candidates are advised to check the complete details for DECE-LE Bihar Diploma Admission Result / Rank Card 2026 given below."
+      "publishedDate": "04 June 2026 | 03:20 PM",
+      "intro": "Bihar Combined Entrance Competitive Examination Board (BCECEB) has released the Information Brochure for Industrial Training Institute Competitive Admission Test I.T.I.C.A.T. 2026 Exam Can Download Admit Card.candidates should read the Bihar ITI 2026 information brochure for all the information related to the entrance exam like syllabus, eligibility, age limit, fees, Course and University List, information and other types of information and then apply."
     },
-    "bihar-iti-cat-2026": {
-      "title": "Bihar ITI CAT Result / Rank Card 2026",
-      "slug": "bihar-iti-cat-2026",
-      "url": "https://www.sarkariexam.com/bihar-iti-cat-2026/",
+    "ssc-jht-2025": {
+      "title": "SSC Combined Hindi Translators JHT Recruitment 2025 Paper II Result 2026",
+      "slug": "ssc-jht-2025",
+      "url": "https://www.sarkariresult.com/ssc/ssc-jht-2025/",
       "category": "",
-      "publishedDate": "2026-06-04T15:58:27+05:30",
-      "intro": "Short Information : Bihar Combined Entrance Competitive Examination Board (BCECEB) has released the Result / Rank Card for the Bihar ITI Competitive Admission Test 2026. Applications for the Bihar ITI CAT 2026 were accepted from 16 March 2026 to 27 April 2026. The written examination was held on 17 May 2026. Candidates who appeared for this examination can download their Bihar ITI CAT Result / Rank Card 2026 from the link given below."
+      "publishedDate": "04 June 2026 | 01:02 PM",
+      "intro": "Staff Selection Commission SSC has released the notification for Combined Hindi Translators Junior / Senior Translator Examination 2025. Students who want to appear in this exam can apply online between 05 June 2025 to 26 June 2025 through SSC website. Before applying, candidates must read the complete SSC Combined Hindi Translators advertisement in which selection procedure, exam syllabus, pattern, exam date and other information will be available."
     },
-    "allahabad-university-pgat-admissions-2026": {
-      "title": "Allahabad University PGAT Admit card 2026",
-      "slug": "allahabad-university-pgat-admissions-2026",
-      "url": "https://www.sarkariexam.com/allahabad-university-pgat-admissions-2026/",
+    "up-pgt-02-2022": {
+      "title": "Uttar Pradesh UPSESSB UP Post Graduate Teacher PGT 2022 Interview Schedule, Letter 2026 for 624 Post",
+      "slug": "up-pgt-02-2022",
+      "url": "https://www.sarkariresult.com/2022/up-pgt-02-2022/",
       "category": "",
-      "publishedDate": "2026-06-11T11:30:57+05:30",
-      "intro": "Short Information : Central University of Allahabad, Prayagraj (U.P.) has released the admit card for the PGAT I and PGAT II (B.Ed, LLB, PG & Other Courses) Admission 2026. The online application process for Allahabad University PGAT Online Form 2026 were accepted from 05 May 2026 to 25 May 2026. The Examination is going to conducted on 11 June 2026 Candidates must check the complete details for Allahabad University PGAT Admit Card 2026, which are given below."
+      "publishedDate": "05 June  2026 | 09:42 PM",
+      "intro": "Uttar Pradesh Secondary Education Service Selection Board (UPSESSB) has released the notification of Post Graduate Teacher PGT Teacher Recruitment for 624 posts. Those who are interested in this recruitment and fulfill the eligibility can Download Exam Result. For the information of eligibility, age limit, selection procedure, pay scale, syllabus in recruitment, read the notification and then apply."
     },
-    "bihar-police-csbc-constable-gd-2026": {
-      "title": "Bihar Police CSBC Constable GD Exam City / Admit Card 2026",
-      "slug": "bihar-police-csbc-constable-gd-2026",
-      "url": "https://www.sarkariexam.com/bihar-police-csbc-constable-gd-2026/",
+    "upsssc-asst-boring-tech-04-2026": {
+      "title": "UPSSSC UP Assistant Boring Technician Recruitment 2026 Eligibility Result  for 402 Post",
+      "slug": "upsssc-asst-boring-tech-04-2026",
+      "url": "https://www.sarkariresult.com/upsssc/upsssc-asst-boring-tech-04-2026/",
       "category": "",
-      "publishedDate": "2026-06-11T11:15:33+05:30",
-      "intro": "Short Information : Central Selection Board of Constable (CSBC) has released the Exam Date, Admit Card & Exam City Details for the post of Constable (General Duty Close Cadre). This recruitment was released for 83 posts. Applications for the Bihar Police CSBC Constable GD Recruitment 2026 were accepted from 06 February 2026 to 05 March 2026. The written examination is going to be conducted on 24 June 2026. Candidates who have applied for this recruitment can download their Bihar Police CSBC Constable GD Admit Card 2026 from the link given below."
+      "publishedDate": "02 June  2026",
+      "intro": "Uttar Pradesh Subordinate Service Selection Commission (UPSSSC) has relased UP Assistant Boring Technician Advt No. 04-Exam/2026 Recruitment Notification. Those candidates who are Enrolled in this UPSSSC Vacancy 2026 can Check the Eligibility Result. Read the notification for recruitment eligibility, post information, selection procedure, Practice Test, pay scale and all other information."
     },
-    "rrb-ntpc-102-inter-level-2025": {
-      "title": "RRB NTPC 10+2 UG Admit Card 2026",
-      "slug": "rrb-ntpc-102-inter-level-2025",
-      "url": "https://www.sarkariexam.com/rrb-ntpc-102-inter-level-2025/",
+    "jee-advanced-2026": {
+      "title": "IIT JEE Advanced Admissions 2026 Download Result",
+      "slug": "jee-advanced-2026",
+      "url": "https://www.sarkariresult.com/2026/jee-advanced-2026/",
       "category": "",
-      "publishedDate": "2026-06-10T15:59:56+05:30",
-      "intro": "Short Information : Railway Recruitment Board (RRB) has released the admit card for the Non Technical Popular Categories NTPC 10+2 Under Graduate Level Post on the official website of RRB. This recruitment was released for 3058 posts. Candidates can also check all the details on the official Sarkari Result website. Applications for the RRB NTPC 10+2 UG Recruitment 2025 were accepted from 28 October 2025, to 04 December 2025. The written examination is going to be conducted on 7, 8, 9 May & 13, 14, 15, 16, 20 June 2026. Candidates who had applied this form can download their RRB NTPC 10+2 UG Admit Card 2026 from the link given below."
+      "publishedDate": "01 June 2026 | 08:29 AM",
+      "intro": "IIT Roorkee has released the Information Brochure for Joint Entrance Examination (Advanced) 2026 Those Candidates are Enrolled to the Admissions in IIT JEE Advanced 2026 Exam Can Download Admit Card. candidates should read the JEE Advanced 2026 information brochure for all the information related to the entrance exam like syllabus, eligibility, age limit, fees, Course and University List, information and other types of information and then apply"
+    },
+    "rrb-technician-cen-02-2025": {
+      "title": "Railway RRB Technician CEN 02/2025 Recruitment 2025 Check Result",
+      "slug": "rrb-technician-cen-02-2025",
+      "url": "https://www.sarkariresult.com/railway/rrb-technician-cen-02-2025/",
+      "category": "",
+      "publishedDate": "21 May 2026",
+      "intro": "Indian Railway Railway Recruitment Board RRB Technician CEN 02/2025. Those candidates who are Enrolled with RRB Technician CEN 02/2025 Exam Can Check the Exam Date. Read the notification for RRB Technician Grade I and Grade III eligibility, post information, selection procedure, Details, age limit, pay scale and all other information."
+    },
+    "rrb-paramedical-03-2025": {
+      "title": "Railway RRB Paramedical CEN 03/2025 Recruitment 2025 Result / Score Card",
+      "slug": "rrb-paramedical-03-2025",
+      "url": "https://www.sarkariresult.com/railway/rrb-paramedical-03-2025/",
+      "category": "",
+      "publishedDate": "31March 2026",
+      "intro": "Indian Railway Railway Recruitment Board RRB Paramedical CEN 03/2025. Those candidates who are Enrolled with RRB Paramedical CEN 03/2025 Exam Can Check the Exam Date. Read the notification for RRB Paramedical Various Post eligibility, post information, selection procedure, Details, age limit, pay scale and all other information."
+    },
+    "ssc-delhi-police-hc-awo-tpo-2025": {
+      "title": "SSC Delhi Police Head Constable AWO / TPO Recruitment 2025 Answer Key for 552 Post",
+      "slug": "ssc-delhi-police-hc-awo-tpo-2025",
+      "url": "https://www.sarkariresult.com/ssc/ssc-delhi-police-hc-awo-tpo-2025/",
+      "category": "",
+      "publishedDate": "25 February 2026",
+      "intro": "Staff Selection Commission SSC has released the notification for Delhi Police Head Constable AWO / TPO Examination 2025. Those Candidate Are Enrolled with Vacancy Can Check the Admit Card. Before applying, candidates must read the complete advertisement in which selection procedure, exam syllabus, pattern, exam date and other information will be available."
+    },
+    "csbc-bp-constable-01-2025": {
+      "title": "Bihar Police CSBC Constable (Sipahi) Recruitment 2025 Exam Date for 19838 Post",
+      "slug": "csbc-bp-constable-01-2025",
+      "url": "https://www.sarkariresult.com/bihar/csbc-bp-constable-01-2025/",
+      "category": "",
+      "publishedDate": "10 June 2025",
+      "intro": "Central Selection Board of Constable CSBC  has released the advertisement Bihar Police Constable 2025 . Those Candidates Are Interested with Bihar Police CSBC Constable Vacancy Can Apply Online from 18/03/2025 to 25/04/2025. For other information related to Bihar Police Constable 2025 recruitment like age limit, qualification, pay scale and all other information read the advertisement and then apply."
+    },
+    "ssc-dp-constable-driver-2025": {
+      "title": "SSC Delhi Police Constable Driver Recruitment 2025 Result with Marks for 737 Post",
+      "slug": "ssc-dp-constable-driver-2025",
+      "url": "https://www.sarkariresult.com/ssc/ssc-dp-constable-driver-2025/",
+      "category": "",
+      "publishedDate": "27 April 2026",
+      "intro": "Staff Selection Commission SSC has released the notification for Delhi Police Constable Driver Examination 2025. Those Candidate Are Enrolled with Vacancy Can Check the Result with Marks. Before applying, candidates must read the complete advertisement in which selection procedure, exam syllabus, pattern, exam date and other information will be available."
+    },
+    "upsssc-02-exam-2026": {
+      "title": "UPSSSC UP Pollution Control Board UPCB Scientific Assistant, Accountant, Law Assistant, Laboratory Assistant, Monitoring Assistant, Junior Engineer Recruitment 2026 Exam Date for 115 Post",
+      "slug": "upsssc-02-exam-2026",
+      "url": "https://www.sarkariresult.com/upsssc/upsssc-02-exam-2026/",
+      "category": "",
+      "publishedDate": "31 May 2026 | 10:33 PM",
+      "intro": "Uttar Pradesh Subordinate Service Selection Commission (UPSSSC) has released UP Pollution Control Board UPCB Scientific Assistant, Accountant, Law Assistant, Laboratory Assistant, Monitoring Assistant, Junior Engineer Advt No. 02-Exam/2026 Recruitment Notification. Those candidates who are Enrolled with Vacancy Can Download the Exam Notice. Read the notification for recruitment eligibility, post information, selection procedure, Practice Test, pay scale and all other information."
+    },
+    "rrb-ntpc-undergraduate-06-2024": {
+      "title": "Railway RRB Non Technical Popular Categories NTPC 10+2 UnderGraduate 12th Level CEN 06/2024 Result, Download Final Result 2026 for 3445 Post",
+      "slug": "rrb-ntpc-undergraduate-06-2024",
+      "url": "https://www.sarkariresult.com/railway/rrb-ntpc-undergraduate-06-2024/",
+      "category": "",
+      "publishedDate": "26 May 2026",
+      "intro": "Indian Railway Recruitment Board RRB Non Technical Popular Categories NTPC UnderGraduate Level Recruitment CEN 06/2024. Those candidates who are interested in this Railway RRB CEN 06/2024 can apply online from 21 September 2024 to 27 October 2024. Read the notification for RRB NTPC 10+2 Level Commercial Cum Ticker Clerk, Train Clerk, Accounts Clerk Cum Typist, Junior Clerk Cum Typist Post 2024 eligibility, post information, selection procedure, Details, age limit, pay scale and all other information."
+    },
+    "drdo-ceptam-11": {
+      "title": "DRDO CEPTAM 11 Recruitment 2025 Download Syllabus / Pattern, Tier I Download Result, Tier II",
+      "slug": "drdo-ceptam-11",
+      "url": "https://www.sarkariresult.com/2025/drdo-ceptam-11/",
+      "category": "",
+      "publishedDate": "09 June 2026 | 01:30 AM",
+      "intro": "Defence Research & Development Organisation DRDO has released the CEPTAM 2025 Notification. Those candidates who are Enrolled DRDO Vacancy Can Download the Exam DRDO CEPTAM 11 Tier I Result 2026. Read the notification for DRDO CEPTAM 11 Exam, eligibility, Subject Details information, Document Required, age limit, How to Apply and all other information."
+    },
+    "rbi-assistant-feb26": {
+      "title": "Reserve Bank of India RBI Assistant Recruitment 2026 Download Pre Result, Mains Admit Card for 650 Post",
+      "slug": "rbi-assistant-feb26",
+      "url": "https://www.sarkariresult.com/bank/rbi-assistant-feb26/",
+      "category": "",
+      "publishedDate": "31 May 2026 | 08:51 PM",
+      "intro": "Reserve Bank of India RBI has released Assistant Recruitment 2026 Notification . Those candidates who are Enrolled in this RBI Assistant recruitment can Download Result. Read the notification for recruitment eligibility, post information, selection procedure, age limit, pay scale and all other information."
+    },
+    "navy-incet-01-2024": {
+      "title": "Indian Navy INCET 01/2024 Chargeman, Tradesman, Fireman, MTS & Other Post Recruitment 2024 Result 2026 for 741 Post",
+      "slug": "navy-incet-01-2024",
+      "url": "https://www.sarkariresult.com/force/navy-incet-01-2024/",
+      "category": "",
+      "publishedDate": "23 May 2026",
+      "intro": "Join Indian Navy (Nausena Bharti) Released Civilian Entrance Test INCET 01/2024 Recruitment. Those candidates who are interested in this Indian Navy INCET 01/2024 Chargeman, MTS, Tradesman, Fireman, Cook & other Various Post Recruitment 2024 can Check Exam Answer Key. Read the notification for Navy INCET 01/2024 recruitment eligibility, post information, selection procedure, age limit, pay scale and all other information."
+    },
+    "bseb-10-result-2026": {
+      "title": "Bihar Board Class 10th Matric Exam Result, Scrutiny and Compartment Result 2026",
+      "slug": "bseb-10-result-2026",
+      "url": "https://www.sarkariresult.com/2026/bseb-10-result-2026/",
+      "category": "",
+      "publishedDate": "23 May 2026 | 11:16 AM",
+      "intro": "Bihar School Examination Board (BSEB) Bihar Board release the results for the Class 10th Matriculation Annual Board Exam 2026. The answer key has already been released for enrolled candidates. Candidates can check it and verify their answers. Candidates with objections to any answers can submit them within the deadline and time specified by the board. After the objection process is complete, the BSEB will declare the final result. Candidates will be able to check their results/marks by entering their roll code and roll number on the official website. The official result 29 March 2026."
+    },
+    "bseb-12th-result-2026": {
+      "title": "Bihar Board Class 12th Inter Exam Compartment Result 2026",
+      "slug": "bseb-12th-result-2026",
+      "url": "https://www.sarkariresult.com/2026/bseb-12th-result-2026/",
+      "category": "",
+      "publishedDate": "23 May 2026 | 11:11 AM",
+      "intro": "Bihar School Examination Board (BSEB) Bihar Board will soon release the results for the Class 12th Intermediate (Inter) Annual Board Exam 2026. The answer key has already been released for enrolled candidates. Candidates can check it and verify their answers. Candidates with objections to any answers can submit them within the deadline and time specified by the board. After the objection process is complete, the BSEB will declare the final result. Candidates will be able to check their results/marks by entering their roll code and roll number on the official website. The official result date will be announced soon."
+    },
+    "ssb-hc-ministerial-jul21": {
+      "title": "Sashastra Seema Bal SSB Head Constable (Min) 2020 CBT Exam Date 2026",
+      "slug": "ssb-hc-ministerial-jul21",
+      "url": "https://www.sarkariresult.com/force/ssb-hc-ministerial-jul21/",
+      "category": "",
+      "publishedDate": "11 June 2026 | 10:06 PM",
+      "intro": "Sashastra Seema Bal (SSB) Are Recently Uploaded Admit Card for the Post of Head Constable Ministerial Recruitment PET/PST Exam Admit Card, Those Candidates Are Enrolled with Vacancies Can Download the Call Letter."
+    },
+    "up-police-si-03-2025": {
+      "title": "UP Police Sub Inspector SI Advt No 03/2025 Recruitment 2025 Exam Result, DV PST Admit Card 2026 for 4543 Post",
+      "slug": "up-police-si-03-2025",
+      "url": "https://www.sarkariresult.com/2025/up-police-si-03-2025/",
+      "category": "",
+      "publishedDate": "11 June 2026 | 07:06 PM",
+      "intro": "Uttar Pradesh Police Recruitment & Promotion Board (UPPRPB) has released Sub Inspector SI Daroga Recruitment Notification. Those candidates who are Enrolled in this UP Police SI Exam 2026 can Check the Exam Date and Download Result. Read the notification for recruitment eligibility, post information, selection procedure, Practice Test, pay scale and all other information."
+    },
+    "uppsc-direct-d6-dec2025": {
+      "title": "UPPSC Medical Officer, Dental Surgeon, Swastha Shiksha Adhikari, Veterinary Officer & Other Post Direct Recruitment 2025 Exam Date for 2158 Post",
+      "slug": "uppsc-direct-d6-dec2025",
+      "url": "https://www.sarkariresult.com/2025/uppsc-direct-d6-dec2025/",
+      "category": "",
+      "publishedDate": "11 June 2026 | 06:57 PM",
+      "intro": "Uttar Pradesh Public Service Commission UPPSC has released the Direct Recruitment Advt No : D-6/E-1/2025 Notification. Those candidates who are interested in this UPPSC Medical Officer, Dental Surgeon, Swastha Shiksha Adhikari, Veterinary Officer & Other Post Direct Recruitment 2025 Direct Recruitment 2025 Exam can Apply Online from 22 December 2025 to 22 January 2026. Read the notification for UPPSC Various Post 2025 Exam, eligibility, Subject Details information, Document Required, age limit, How to Apply and all other information."
+    },
+    "au-pgat-2026": {
+      "title": "Allahabad University AU Pravesh PGAT I and PGAT II Admissions 2026 | Admit Card",
+      "slug": "au-pgat-2026",
+      "url": "https://www.sarkariresult.com/2026/au-pgat-2026/",
+      "category": "",
+      "publishedDate": "11 June 2026 | 10:00 AM",
+      "intro": "Central University of Allahabad, Prayagraj (U.P.) has released the Information Brochure for UOA AU Pravesh PGAT I and PGAT II Various Courses 2026 Those Candidates are Interested to the Admsission in AU PGAT 2026 Exam Can Apply Online from 05/05/2026 to 28/05/2026.candidates should read the AU PGAT 2026 information brochure for all the information related to the entrance exam like syllabus, eligibility, age limit, fees, Course and University List, information and other types of information and then apply."
+    },
+    "csbc-bihar-constable-special-01-2026": {
+      "title": "Bihar Police CSBC Constable Special Branch Recruitment 2026 Exam City / Admit Card for 83 Post",
+      "slug": "csbc-bihar-constable-special-01-2026",
+      "url": "https://www.sarkariresult.com/bihar/csbc-bihar-constable-special-01-2026/",
+      "category": "",
+      "publishedDate": "10 June 2026 | 04:18 PM",
+      "intro": "Central Selection Board of Constable CSBC has released the advertisement Bihar Police Constables (General Duty Close Cadre) in Special Branch of Bihar Police (Advt. No. 01/2026 ) . Those Candidates Are Interested with Bihar Police CSBC Constable GD Special branch Vacancy Can Apply Online from 06/02/2026 to 05/03/2026. For other information related to Bihar Police Constable 2026 recruitment like age limit, qualification, pay scale and all other information read the advertisement and then apply."
     },
     "nta-ugc-net-june-2026": {
-      "title": "NTA UGC NET June Exam City Details 2026",
+      "title": "NTA UGC NET June 2026 Examination Schedule, Exam City Details",
       "slug": "nta-ugc-net-june-2026",
-      "url": "https://www.sarkariexam.com/nta-ugc-net-june-2026/",
+      "url": "https://www.sarkariresult.com/2026/nta-ugc-net-june-2026/",
       "category": "",
-      "publishedDate": "2026-06-10T15:59:03+05:30",
-      "intro": "Short Information : National Testing Agency (NTA) has released the Exam City Details for the University Grant Commission UGC National Eligibility Test NET Assistant Professor / JRF June 2026 Examination. The online application process for NTA UGC NET June Online Form 2026 were accepted from 29 April 2026 to 24 May 2026. The Examination is going to conducted on 22-30 June 2026 Candidates must check the complete details for NTA UGC NET June Exam City Details 2026, which are given below."
+      "publishedDate": "10 June 2026 | 03:50 PM",
+      "intro": "National Testing Agency (NTA)  has released the University Grant Commission UGC National Eligibility Test NET Assistant Professor / JRF June 2026 Examination online application Form 2026 will start from 29 April 2026 and the last date to apply will be 24 May 2026. candidates should read the NTA UGC NET June 2026 information brochure for all the information related to the NET / JRF exam like syllabus, eligibility, age limit, fees, Subject Details, information and other types of information and then apply.."
+    },
+    "up-gnm-get-2026": {
+      "title": "Atal Bihari Vajpayee Medical University ABVMU UP GNM Entrance Test UPGET 2026 Exam City Details",
+      "slug": "up-gnm-get-2026",
+      "url": "https://www.sarkariresult.com/2026/up-gnm-get-2026/",
+      "category": "",
+      "publishedDate": "10 June 2026 | 12:35 PM",
+      "intro": "Atal Bihari Vajpayee Medical University (ABVMU), Uttar Pradesh has released the UP GNM Entrance Test UPGET Notification 2026. Those Candidates are Enrolled to the Following Exam Can Check and Download the Exam City / Admit Card Details. candidates should read the UPGET 2026 information brochure for all the information related to the UPGET exam like syllabus, eligibility, age limit, fees, GNM Nursing Courses, information and other types of information and then apply."
+    },
+    "upsssc-forest-10-2023": {
+      "title": "UPSSSC Forest Guard / Wild Life Guard Recruitment 2023 Download PET Result, PMT Admit Card 2026 for 709 Post",
+      "slug": "upsssc-forest-10-2023",
+      "url": "https://www.sarkariresult.com/upsssc/upsssc-forest-10-2023/",
+      "category": "",
+      "publishedDate": "09 June 2026 | 01:12 PM",
+      "intro": "Uttar Pradesh Subordinate Service Selection Commission (UPSSSC) has released the Forest Guard / Wild Life Guard recruitment advertisement for 709 posts. Those candidates who are interested in this UPSSSC Forest Guard (Van Rakshak) recruitment can Download PET Admit Card. Read the notification for recruitment eligibility, post information, selection procedure, age limit, pay scale and all other information."
+    },
+    "bihar-vidhan-01-04-2023": {
+      "title": "Bihar Bihar Legislative Council Vidhan Parishad Recruitment 2023 : Security Guard Advt No 03/2023 Interview Letter",
+      "slug": "bihar-vidhan-01-04-2023",
+      "url": "https://www.sarkariresult.com/bihar/bihar-vidhan-01-04-2023/",
+      "category": "",
+      "publishedDate": "09 June 2026 | 10:05 AM",
+      "intro": "Bihar Legislative Council (Sachivalaya) has released the notification for the recruitment of 172 Various Post under Advt No. 01/2023, 02/2023, 03/2023 & 04/2023 Recruitment Examination 2023. Those Candidates Are Enrolled to Bihar Vidhan Parishad Vacancy Can Download the Result. See the advertisement for information related to age limit, syllabus, institute wise post, selection procedure, pay scale in Bihar Vidhan Parishad Latest Recruitment 2023."
+    },
+    "rajasthan-ptet-june26": {
+      "title": "Rajasthabn BEd 2 Years and 4 Year Courses PTET 2026 Download Admit Card",
+      "slug": "rajasthan-ptet-june26",
+      "url": "https://www.sarkariresult.com/2026/rajasthan-ptet-june26/",
+      "category": "",
+      "publishedDate": "08 June 2026 | 09:30 PM",
+      "intro": "Vardhman Mahaveer Open University (VMOU), Kota has released the notification for Rajasthan 2 Year B.Ed. and 4 Year B.Ed. Joint Entrance Examination 2026. Candidates Enrolled in Rajasthan B.Ed. Admissions 2026 can Download the Admit Card. Read the official notification for eligibility, admission process, age limit, exam details, participating colleges, counselling procedure, and other important information. These details are also Sarkari Results available in the Admit Card section of SarkariResult.Com"
     },
     "nta-neet-ug-2026": {
-      "title": "NTA NEET UG Online Fee Refund 2026",
+      "title": "NTA National Eligibility Cum Entrance Test NEET UG Admissions 2026 Exam City Details",
       "slug": "nta-neet-ug-2026",
-      "url": "https://www.sarkariexam.com/nta-neet-ug-2026/",
+      "url": "https://www.sarkariresult.com/2026/nta-neet-ug-2026/",
       "category": "",
-      "publishedDate": "2026-06-10T14:45:07+05:30",
-      "intro": "Short Information : National Testing Agency (NTA) has released the NEET UG 2026 Re-Exam City Details on its official website for candidates appearing in the undergraduate medical entrance exam. According to the notification, the NEET UG 2026 Re-Exam is scheduled to be held on 21 June 2026. The last date for submitting the online application form was 11 March 2026. Candidates can access their re-exam details by logging into the portal using their Enrollment Number, Registration Number, or Date of Birth.  Additionally, candidates appearing for the re-exam may receive an extra 15 minutes to complete the examination. Candidates who had applied this form can download their NTA NEET UG Re-Exam City Details 2026 from the link given below."
+      "publishedDate": "07 June 2026",
+      "intro": "National Testing Agency NTA has released the Information Brochure for National Eligibility Cum Entrance Test NEET UG 2026 Those Candidates are Interested to the Admission in NEET UG 2026 Exam Can Download Re Exam Date. candidates should read the NEET UG 2026 information brochure for all the information related to the entrance exam like syllabus, eligibility, age limit, fees, Course and University List, information and other types of information and then apply."
     },
-    "indian-army-agniveer-cee-2026": {
-      "title": "Indian Army Agniveer CEE Admit Card 2026",
-      "slug": "indian-army-agniveer-cee-2026",
-      "url": "https://www.sarkariexam.com/indian-army-agniveer-cee-2026/",
+    "sgpgi-nursing-officer": {
+      "title": "SGPGI Nursing Officer Admit Card 2026",
+      "slug": "sgpgi-nursing-officer",
+      "url": "https://www.sarkariresult.com/2026/sgpgi-nursing-officer/",
       "category": "",
-      "publishedDate": "2026-06-10T14:45:03+05:30",
-      "intro": "Short Information : Join Indian Army (Bhartiya Sena) has released the admit card for the Indian Army Common Entrance Exam (CEE) 2026–2027 on the official website of the Indian Army. Applications for the Indian Army Agniveer CEE Recruitment 2025 were accepted from February 12, 2026, to April 10, 2026. The CEE examination is going to be conducted on 01-16 June 2026. Candidates who had applied this form can download their Indian Army Agniveer CEE Admit Card 2026 from the link given below."
+      "publishedDate": "07 June 2026 | 12:58 PM",
+      "intro": "Sanjay Gandhi Postgraduate Institute of Medical Sciences has released SGPGI Lucknow Non Teaching Various Post Exam City 2026 and Admit Card Released before the Examination. Those candidates who are apply in this SGPGI Vacancy can prepare the Examiantion and Exam Date is 19 to 23 June 2026. Read the notification for SPGIMS eligibility, post information, selection procedure, Details, age limit, pay scale and all other information. More Other Result & Jobs Update Visit Sarkari Result® Official Website of SarkariResult.Com (Since 2012)"
     },
-    "up-gnm-entrance-exam-upget-2026": {
-      "title": "UP GNM Entrance Exam UPGET Exam City Details 2026",
-      "slug": "up-gnm-entrance-exam-upget-2026",
-      "url": "https://www.sarkariexam.com/up-gnm-entrance-exam-upget-2026/",
+    "upsssc-pharmacist-01-2026": {
+      "title": "UPSSSC Pharmacist Recruitment 2026 Download Mains Exam Fee Payment for 560 Post",
+      "slug": "upsssc-pharmacist-01-2026",
+      "url": "https://www.sarkariresult.com/upsssc/upsssc-pharmacist-01-2026/",
       "category": "",
-      "publishedDate": "2026-06-10T13:20:26+05:30",
-      "intro": "Short Information : Atal Bihari Vajpayee Medical University, ABVMU Uttar Pradesh has released the Exam City Details for the UP GNM Entrance Test UPGET 2026. Online applying process for UP GNM Entrance Exam UPGET Online Form 2026 were accepted from 29 April 2026 to 26 May 2026. The examination is going to be conducted on 16 June 2026. Candidates who applied this form can check their UP GNM Entrance Exam UPGET Exam City Details 2026 from the direct link provided below."
+      "publishedDate": "07 June 2026 | 01:49 PM",
+      "intro": "Uttar Pradesh Subordinate Service Selection Commission (UPSSSC) has released Pharmacist Advt No. 01-Exam/2026 Recruitment Notification. Those candidates who are interested in this UPSSSC Pharmacist Vacancy 2026 can Download Pay the Mains Exam Fee. Read the notification for recruitment eligibility, post information, selection procedure, Practice Test, pay scale and all other information."
     },
-    "ssb-head-constable-ministerial-2021": {
-      "title": "SSB Head Constable Ministerial Written Exam Date 2026",
-      "slug": "ssb-head-constable-ministerial-2021",
-      "url": "https://www.sarkariexam.com/ssb-head-constable-ministerial-2021/",
+    "rrb-ntpc-ug-07-2025": {
+      "title": "Railway RRB Non Technical Popular Categories NTPC 10+2 UnderGraduate 12th Level CEN 07/2025 Exam City / Download Admit Card 2026 for 3050 Post",
+      "slug": "rrb-ntpc-ug-07-2025",
+      "url": "https://www.sarkariresult.com/railway/rrb-ntpc-ug-07-2025/",
       "category": "",
-      "publishedDate": "2026-06-10T02:22:15+05:30",
-      "intro": "Short Information : Sashastra Seema Bal (SSB) has released the Written Exam Date for the post of Head Constable (Ministerial). This recruitment was released for 115 posts. Applications for the SSB Head Constable Ministerial Recruitment 2021 were accepted from July 24, 2021, to August 28, 2021. The written examination is going to be started on 07 July 2026. Candidates who had applied this form can download their SSB Head Constable Ministerial Written Exam Date 2026 from the link given below."
+      "publishedDate": "05 June 2026 | 11:04 AM",
+      "intro": "Indian Railway Railway Recruitment Board RRB Non Technical Popular Categories NTPC UnderGraduate Level Recruitment CEN 07/2025. Those candidates who are Enrolled in This Vacancy Can Exam City / Download Admit Card. Read the notification for RRB NTPC 10+2 Level Commercial Cum Ticker Clerk, Train Clerk, Accounts Clerk Cum Typist, Junior Clerk Cum Typist Post 2026 eligibility, post information, selection procedure, Details, age limit, pay scale and all other information."
     },
-    "upsssc-forest-guard-wild-guard-2023": {
-      "title": "UPSSSC Forest/ Wild Life Guard 2023 Medical Admit Card 2026",
-      "slug": "upsssc-forest-guard-wild-guard-2023",
-      "url": "https://www.sarkariexam.com/upsssc-forest-guard-wild-guard-2023/",
+    "uppsc-lt-grade-teacher-2025": {
+      "title": "UPPSC Assistant Grade LT Grade Teacher Recruitment 2025 Result, Download Mains Admit Card Biology, Urdu, Arts",
+      "slug": "uppsc-lt-grade-teacher-2025",
+      "url": "https://www.sarkariresult.com/2025/uppsc-lt-grade-teacher-2025/",
       "category": "",
-      "publishedDate": "2026-06-09T15:02:04+05:30",
-      "intro": "Short Information : Uttar Pradesh Subordinate Service Selection Board (UPSSSC) has released the Medical Admit Card on its official website for the Recruitment of Forest Guard Examination 2025. Applications for the UPSSSC Forest Guard, Wild Life Guard Recruitment 2023 were accepted from September 20, 2023, to October 10, 2023. The vacancy came in the year 2023 and it took almost three year one month to conduct the Medical examination for the prescribed posts. The Medical examination is going to be conducted on 15 June 2026. Candidates who qualified PET/PMT examination can check their UPSSSC Forest/ Wild Life Guard 2023 Medical Admit Card 2026 from the direct link provided below."
+      "publishedDate": "08 June 2026 | 10:38 PM",
+      "intro": "Uttar Pradesh Public Service Commission UPPSC has released the Assistant Teacher LT Grade Examination 2025 Notification. Those candidates who are Enrolled and Appeared in UPPSC LT Grade Teacher Exam Can Download the Master Question Paper with Answer Key, Result. Read the notification for UPPSC LT Grade 2025 Exam, eligibility, Subject Details information, Document Required, age limit, How to Apply and all other information."
     },
-    "up-lt-grade-assistant-teacher-2025": {
-      "title": "UPPSC LT Grade Assistant Teacher Mains Admit Card 2026",
-      "slug": "up-lt-grade-assistant-teacher-2025",
-      "url": "https://www.sarkariexam.com/up-lt-grade-assistant-teacher-2025/",
+    "rbi-grade-b-apr26": {
+      "title": "Reserve Bank of India RBI Officer Grade B Recruitment 2026 Admit Card for 60 Post",
+      "slug": "rbi-grade-b-apr26",
+      "url": "https://www.sarkariresult.com/bank/rbi-grade-b-apr26/",
       "category": "",
-      "publishedDate": "2026-06-09T11:38:19+05:30",
-      "intro": "Short Information : Uttar Pradesh Public Service Commission (UPPSC) has released the mains admit card for the post of Assistant Teacher (TGT). This recruitment was released for 7466 posts. Applications for the UP LT Grade Assistant Teacher Mains Recruitment 2026 were accepted from April 02, 2026, to April 17, 2026. The written examination is going to be conducted on 13 June 2026 and 11 July 2026. Candidates who had applied this form can download their UP LT Grade Assistant Teacher Mains Admit Card 2026 from the link given below."
+      "publishedDate": "05 June 2026 | 12:09 PM",
+      "intro": "Reserve Bank of India RBI has released Officer Grade B Various Post Recruitment 2026. Those candidates Are Enrolled to the Following RBI Officer Grade B Recruitment 2026 Can Download Admit Card. Read the notification for recruitment eligibility, post information, selection procedure, age limit, pay scale and all other information."
     },
-    "nta-swayam-2026": {
-      "title": "NTA SWAYAM Exam City Details 2026",
-      "slug": "nta-swayam-2026",
-      "url": "https://www.sarkariexam.com/nta-swayam-2026/",
+    "htet-dec-2025": {
+      "title": "BSEH Haryana Teacher Eligibility Test HTET Exam Date 2026",
+      "slug": "htet-dec-2025",
+      "url": "https://www.sarkariresult.com/2026/htet-dec-2025/",
       "category": "",
-      "publishedDate": "2026-06-09T11:37:19+05:30",
-      "intro": "Short Information : National Testing Agency (NTA) has released the Exam City Details for the Study Webs of Active Learning for Young Aspiring Minds SWAYAM 2026 (January 2026 Semester) Examination on the official website of the NTA recently. The online application process for NTA SWAYAM January Online Form 2026 were accepted from 15 April 2026 to13 May 2026. The Examination is going to conducted on 17,18,19, 20 and 21 June 2026 Candidates must check the complete details for NTA SWAYAM Exam City Details 2026, which are given below."
+      "publishedDate": "04 June 2026 | 03:36 PM",
+      "intro": "Board of Secondary Education, BSEH Haryana has released the detailed notification of Haryana Teacher Eligibility Test December 2025 exam. All the candidates who are interested in this HTET 2025 exam and want to apply can apply online between 24 December 2025 to 05 January 2026. Read the notification for other information like qualification, age limit, syllabus, sample question paper, OMR sheet and all other information."
     },
-    "uksssc-vdo-patwari-other-post-2025": {
-      "title": "UKSSSC VDO, Patwari & Other Post Admit Card 2026",
-      "slug": "uksssc-vdo-patwari-other-post-2025",
-      "url": "https://www.sarkariexam.com/uksssc-vdo-patwari-other-post-2025/",
+    "uppsc-gic-lecturer-2025": {
+      "title": "UPPSC GIC Lecturer Recruitment 2025 Download Exam Date  2026 for 1516 Post",
+      "slug": "uppsc-gic-lecturer-2025",
+      "url": "https://www.sarkariresult.com/2025/uppsc-gic-lecturer-2025/",
       "category": "",
-      "publishedDate": "2026-06-09T11:11:14+05:30",
-      "intro": "Short Information : Uttarakhand Subordinate Service Selection Commission (UKSSSC) has released the admit card for the post of Village Development Officer (VDO), Patwari, Lekhpal, Village Panchayat Development Officer (VPDO), Personal Assistant & Other Various Post. This recruitment was released for 416 posts. Applications for the UKSSSC VDO, Patwari & Other Post Recruitment 2025 were accepted from April 15, 2025, to May 15, 2025. The written examination is going to be conducted on 14 June 2026. Candidates who had applied this form can download their UKSSSC VDO, Patwari & Other Post Admit Card 2026 from the link given below."
+      "publishedDate": "04 June 2026 | 01:18 PM",
+      "intro": "Uttar Pradesh Public Service Commission UPPSC has released the Recruitment Advt No : ADVT.NO.A-6/E-1/2025, G.I.C. AND SPARSH / Samekit Vishesh Madhyamik Schools Lecturer (Sociology, Economics, Civics, English, History, Hindi, Sanskrit) Candidate Those Are Enrolled with Vacancy Can Modify Application Form as per Schedule.. Read the notification for UPPSC Lecturer 2025 Exam, eligibility, Subject Details information, Document Required, age limit, How to Apply and all other information."
     },
-    "bihar-vidhan-parishad-2023": {
-      "title": "Bihar Vidhan Parishad Security Guard Interview Admit Card 2026",
-      "slug": "bihar-vidhan-parishad-2023",
-      "url": "https://www.sarkariexam.com/bihar-vidhan-parishad-2023/",
+    "bpsc-auditor-09-2026": {
+      "title": "Bihar BPSC Auditor under Panchayati Raj Dept. Govt. of Bihar Recruitment 2026 Exam Date",
+      "slug": "bpsc-auditor-09-2026",
+      "url": "https://www.sarkariresult.com/bihar/bpsc-auditor-09-2026/",
       "category": "",
-      "publishedDate": "2026-06-09T10:41:02+05:30",
-      "intro": "Short Information : Bihar Vidhan Parishad (BVP), Government of Bihar, has release the Interview Admit Card for the Security Guard, Reporter, Assistant, DEO & Various Other Posts. This recruitment was released for 176 posts. Applications for the Bihar Vidhan Parishad Various Posts Recruitment 2024 were accepted from 16 October 2024, to 25 October 2024. The Security Guard physical examination was conducted on 21 to 28 April 2026. Candidates who had appeared in this Examination can download their Bihar Vidhan Parishad Security Guard Interview Admit Card 2026 from the link given below."
+      "publishedDate": "03 June 2026",
+      "intro": "Bihar Public Service Commission (BPSC) has released the notification for the recruitment of Auditor under Panchayati Raj Dept., Govt. of Bihar. Examination 2026. Those Candidates Are Enrolled to the Following BPSC Auditor Vacancy Can Download Exam Notice. See the advertisement for information related to age limit, syllabus, Department wise post, selection procedure, pay scale in BPSC Auditor Recruitment 2026."
     },
-    "rajasthan-ptet-2026": {
-      "title": "Rajasthan PTET Admit Card 2026",
-      "slug": "rajasthan-ptet-2026",
-      "url": "https://www.sarkariexam.com/rajasthan-ptet-2026/",
+    "bpsc-aes-88-2025": {
+      "title": "BPSC AES Assistant Environmental Scientist Admit Card 2026",
+      "slug": "bpsc-aes-88-2025",
+      "url": "https://www.sarkariresult.com/2026/bpsc-aes-88-2025/",
       "category": "",
-      "publishedDate": "2026-06-08T14:36:37+05:30",
-      "intro": "Short Information : Vardhman Mahaveer Open University, MVOU Kota has released the admit card for the Rajasthan 2 Year B.Ed. Joint Entrance Examination 2026. Applications for the Rajasthan PTET Admission Online Form 2026 were accepted from 20 February 2026, to 20 March 2026. The entrance examination is going to be conducted on 14 June 2026. Candidates who had applied this form can download their Rajasthan PTET Admit Card 2026 from the link given below."
+      "publishedDate": "02 June 2026 | 10:40 PM",
+      "intro": "Bihar Public Service Commission (BPSC) has released the notification for the recruitment of AES Assistant Environmental Scientist Exam 2026. Those Candidates Are Interested to the Following BPSC AES Assistant Environmental Scientist Exam 2026 Vacancy Can Apply Online from 27/08/2025 to 19/09/2025. See the advertisement for information related to age limit, syllabus, Department wise post, selection procedure, pay scale in BPSC AES Assistant Environmental Scientist Recruitment 2025."
     },
-    "bihar-police-csbc-prohibition-constable-2025": {
-      "title": "Bihar Police Prohibition Constable Admit Card 2026",
-      "slug": "bihar-police-csbc-prohibition-constable-2025",
-      "url": "https://www.sarkariexam.com/bihar-police-csbc-prohibition-constable-2025/",
+    "bpsc-stenographer-01-2026": {
+      "title": "BPSC Bihar Stenographer Admit Card 2026 Exam Notice for 15 Post",
+      "slug": "bpsc-stenographer-01-2026",
+      "url": "https://www.sarkariresult.com/2026/bpsc-stenographer-01-2026/",
       "category": "",
-      "publishedDate": "2026-06-08T10:19:52+05:30",
-      "intro": "Short Information : Central Selection Board of Constable (CSBC) has released the Exam Date, Admit Card & Exam City Details for the post of Constable posts in Prohibition, Jail Warder, and Mobile Squad units. This recruitment was released for 4236 posts. Applications for the Bihar Police CSBC Prohibition Constable Recruitment 2025 were accepted from 06 October 2025 to 05 November 2025. The written examination is going to be conducted on 14 & 17 June 2026. Candidates who have applied for this recruitment can download their Bihar Police CSBC Prohibition Constable Admit Card 2026 from the link given below."
+      "publishedDate": "02 June 2026 | 06:50 PM",
+      "intro": "Bihar Public Service Commission (BPSC) has released the notification for the recruitment of Stenographer Exam 2026. Those Candidates Are Interested to the Following BPSC Stenographer Exam 2026 Vacancy Can Apply Online from 12/01/2026 to 02/02/2026. See the advertisement for information related to age limit, syllabus, Department wise post, selection procedure, pay scale in BPSC Stenographer Recruitment 2026."
     },
-    "bihar-bpsc-aes-2025": {
-      "title": "BPSC AES Admit Card 2026",
-      "slug": "bihar-bpsc-aes-2025",
-      "url": "https://www.sarkariexam.com/bihar-bpsc-aes-2025/",
+    "csbc-bihar-pohibition-03-2025": {
+      "title": "Bihar Police CSBC Prohibition Constable, Jail Warder and Mobile Squad Constable Recruitment 2025 Exam City / Admit Card for 4128 Post",
+      "slug": "csbc-bihar-pohibition-03-2025",
+      "url": "https://www.sarkariresult.com/bihar/csbc-bihar-pohibition-03-2025/",
       "category": "",
-      "publishedDate": "2026-06-08T10:19:45+05:30",
-      "intro": "Short Information : Bihar Public Service Commission (BPSC) has released the admit card for the post of Assistant Environmental Scientist (AES). This recruitment was released for 17 posts. Online applying process for Bihar BPSC AES Recruitment 2026 were accepted from 27 August 2026 & the candidates can apply till 19 September 2026. The Mains Examination is going to conducted on 11 June 2026 Candidates must check the complete details for Bihar BPSC AES Admit Card 2026 which has given below."
+      "publishedDate": "01 June  2026",
+      "intro": "Central Selection Board of Constable CSBC has released the advertisement Bihar Police Post of Prohibition Constable, Jail Warder & Mobile Squad Constable. (Advt. No. 03/2025). Those Candidates Are Enrolled with Vacancy Can Download the Admit Card. For other information related to Bihar Police Post of Prohibition Constable, Jail Warder & Mobile Squad Constable. (Advt. No. 03/2025) recruitment like age limit, qualification, pay scale and all other information read the advertisement and then apply."
     },
-    "bpsc-stenographer-2026": {
-      "title": "BPSC Stenographer Admit Card 2026",
-      "slug": "bpsc-stenographer-2026",
-      "url": "https://www.sarkariexam.com/bpsc-stenographer-2026/",
+    "dsssb-admit-card-download": {
+      "title": "Delhi DSSSB Various Post Exam 01-30 June 2026 Admit Card, Exam Schedule, Answer Key, Exam Date 2026",
+      "slug": "dsssb-admit-card-download",
+      "url": "https://www.sarkariresult.com/delhi/dsssb-admit-card-download/",
       "category": "",
-      "publishedDate": "2026-06-08T10:19:40+05:30",
-      "intro": "Short Information : Bihar Public Service Commission (BPSC) has released the Admit Card for the post of Stenographer. This recruitment was released for 15 posts. Online applying process for Bihar BPSC Stenographer Recruitment 2026 were accepted from 12 January 2026 & the candidates can apply till 02 February 2026. The written examination is going to conducted on 11 June 2026 Candidates must check the complete details for Bihar BPSC Stenographer Admit Card 2026 which has given below."
+      "publishedDate": "31 May 2026 : 08:33 PM",
+      "intro": "Delhi Subordinate Service Selection Board (DSSSB) Are Recently Uploaded Exam Admit Card / Hall Ticket / Call Letter for the Various Recruitment 2017,2018,2019,2020,2021, 2022,2023, 2024, 2025, 2026. Those Candidates Are Enrolled with Any DSSSB Vacancies Can Download the Admit Card as per Schedule."
     },
-    "upsssc-pharmacist-2026": {
-      "title": "UPSSSC Pharmacist Mains Exam Fee Payment 2026",
-      "slug": "upsssc-pharmacist-2026",
-      "url": "https://www.sarkariexam.com/upsssc-pharmacist-2026/",
+    "rrb-section-controller-04-2025": {
+      "title": "Railway RRB Section Controller CEN 04/2025 Recruitment 2025 Download Result, CBAT Admit Card 2026",
+      "slug": "rrb-section-controller-04-2025",
+      "url": "https://www.sarkariresult.com/railway/rrb-section-controller-04-2025/",
       "category": "",
-      "publishedDate": "2026-06-07T14:17:34+05:30",
-      "intro": "Short Information : Uttar Pradesh Subordinate Services Selection Commission (UPSSSC) has releases the Mains Exam Fee Payment for the post of Pharmacist on the official website of the UPSSSC. Online applying process for UPSSSC Pharmacist Recruitment 2026 were accepted from 09 March 2026 & the candidates can apply till the 31 March 2026. The Examination is Going to conducted on 29 June 2026. Candidates must check the complete details for UPSSSC Pharmacist Revised Exam Date 2026 which has given below."
+      "publishedDate": "31 May 2026 | 08:56 PM",
+      "intro": "Indian Railway Railway Recruitment Board RRB Section Controller CEN 04/2025. Those candidates who are Enrolled with RRB Section Controller CEN 04/2025 Exam Can Check the Download Result. Read the notification for RRB Section Controller Post eligibility, post information, selection procedure, Details, age limit, pay scale and all other information."
     },
-    "sgpgi-nursing-officer-and-non-teaching-post-2025": {
-      "title": "SGPGI Nursing Officer and Non Teaching Post Exam City Details 2026",
-      "slug": "sgpgi-nursing-officer-and-non-teaching-post-2025",
-      "url": "https://www.sarkariexam.com/sgpgi-nursing-officer-and-non-teaching-post-2025/",
+    "rpsc-school-lecturer-pgt-2025": {
+      "title": "Rajasthan RPSC School Lecturer PGT Teacher Recruitment 2025 Admit Card 2026",
+      "slug": "rpsc-school-lecturer-pgt-2025",
+      "url": "https://www.sarkariresult.com/rpsc/rpsc-school-lecturer-pgt-2025/",
       "category": "",
-      "publishedDate": "2026-06-07T13:38:32+05:30",
-      "intro": "Short Information : Sanjay Gandhi Post Graduate Institute of Medical Science (SPPGI) has released the exam city details for the Nursing Officer & Other Post. This recruitment was released for 1479 posts. Applications for the SGPGI Nursing Officer & Other Post Recruitment 2025 were accepted from June 18, 2025, to July 31, 2025. The written examination is going to be conducted on 19-23 June 2026. Candidates who had applied this form can download their SGPGI Nursing Officer & Other Post Exam City Details 2026 from the link given below."
+      "publishedDate": "31 May 2026 | 08:42 PM",
+      "intro": "Rajasthan Public Service Commission (RPSC) has released the advertisement of School Lecturer PGT Teacher Exam 2025 Advt. No. 06/2025 PGT Teacher Exam 2025 Recruitment. Those Candidates Are Enrolled with Vacancy Can Check the Exam City / Download Admit Card. For other information related to RPSC School Lecturer Exam 2025-2026 recruitment like syllabus, age limit, qualification, pay scale and all other information read the advertisement and then apply."
     },
-    "bsf-hcm-asi-steno-2024": {
-      "title": "BSF HCM & ASI Steno Exam Date 2026",
-      "slug": "bsf-hcm-asi-steno-2024",
-      "url": "https://www.sarkariexam.com/bsf-hcm-asi-steno-2024/",
+    "mpesb-vanrakshak-jail-prahari-feb26": {
+      "title": "MPESB MP Van Rakshak & Kshetra Rakshak Karyapalik Van Vibhag, Jail Prahari Karyapalik Jail Vibhag and Jail Superintend Recruitment 2026 Download Admit Card for 1679 Post",
+      "slug": "mpesb-vanrakshak-jail-prahari-feb26",
+      "url": "https://www.sarkariresult.com/mp/mpesb-vanrakshak-jail-prahari-feb26/",
       "category": "",
-      "publishedDate": "2026-06-06T10:40:28+05:30",
-      "intro": "Short Information : Border Security Force (BSF) has released the exam date for the Probationary Assistant Sub Inspector ASI Stenographer and Head Constable HC Ministerial Post. This recruitment was released for 1526 posts. Applications for BSF HC Ministerial and ASI Steno Recruitment 2024 were filled from 09 June 2024 to 08 July 2024. The written examination is going to be conducted in September 2026. Candidates who had applied this form can download their BSF HCM & ASI Steno Exam Date 2026 from the link given below."
+      "publishedDate": "27 May 2026",
+      "intro": "Madhya Pradesh Employee Selection Board (MPESB) has relased Van Rakshak & Kshetra Rakshak Karyapalik Van Vibhag, Jail Prahari Karyapalik Jail Vibhag and Jail Superintend Notification 2026. Those candidates who are Interested in this MPESB Van Rakshak, Jail Prahari & Other Post Exam 2026 can Apply Online from 28/02/2026 to 30/04/2026. Read the notification for recruitment eligibility, post information, selection procedure, Practice Test, pay scale and all other information."
     },
-    "rrb-alp-cen-01-2026": {
-      "title": "RRB ALP 01/2026 Recruitment 2026",
-      "slug": "rrb-alp-cen-01-2026",
-      "url": "https://www.sarkariexam.com/rrb-alp-cen-01-2026/",
+    "cgpsc-sse-2025": {
+      "title": "CGPSC Chhattisgarh State Service Exam SSE Pre Recruitment 2025 Download Mains Admit Card for 238 Post",
+      "slug": "cgpsc-sse-2025",
+      "url": "https://www.sarkariresult.com/cg/cgpsc-sse-2025/",
       "category": "",
-      "publishedDate": "2026-06-11T13:14:26+05:30",
-      "intro": "Short Information : Railway Recruitment Board (RRB) has released the notification for the RRB CEN 01/2026 recruitment of Assistant Loco Pilot (ALP) posts on its official website. The online application process for RRB ALP CEN 01/2026 Recruitment has started from 15 May 2026 & the candidates can apply untill 14 June 2026. Total of 11,127 vacancies have been announced for Assistant Loco Pilot (ALP) posts under RRB ALP CEN 01/2026 Recruitment. Candidates must check the Complete details for RRB ALP CEN 01/2026 Recruitment given below."
+      "publishedDate": "27 May 2026",
+      "intro": "Chhattisgarh Public Service Commission has released the State Service Exam SSE recruitment advertisement for 238 posts. Those candidates who are Enrolled in this Chhattisgarh SSE recruitment can Download Pre Result. Read the notification for recruitment eligibility, post information, selection procedure, age limit, pay scale and all other information."
+    },
+    "jeecup-2026": {
+      "title": "UP Polytechnic JEECUP Admissions 2026 Download Answer Key",
+      "slug": "jeecup-2026",
+      "url": "https://www.sarkariresult.com/2026/jeecup-2026/",
+      "category": "",
+      "publishedDate": "11 June 2026 | 02:36 PM",
+      "intro": "UP Joint Entrance Examination has released the online application for JEECUP admission 2026 will start from 15 January 2026 and the last date to apply will be 10 May 2026.candidates should read the JEECUP 2026 information brochure for all the information related to the entrance exam like syllabus, eligibility, age limit, fees, college and course List, information and other types of information and then apply"
+    },
+    "mppsc-assistant-professor-june26": {
+      "title": "Madhya Pradesh MPPSC Assistant Professor Recruitment 2025 Apply Online for 148 Post",
+      "slug": "mppsc-assistant-professor-june26",
+      "url": "https://www.sarkariresult.com/2026/mppsc-assistant-professor-june26/",
+      "category": "",
+      "publishedDate": "12 June 2026 | 11:18 PM",
+      "intro": "Madhya Pradesh Public Service Commission (MPPSC) has released the notification for Assistant Professor Recruitment Examination 2026. Candidates interested in the MPPSC Assistant Professor Recruitment 2025 can apply online from 25 May 2026 to 26 June 2026. Read the official notification for eligibility details, subject-wise post information, selection process, age limit, pay scale, and other important instructions. These details are also available in the Latest Jobs section of SarkariResult.Com."
+    },
+    "nalco-non-executive-may26": {
+      "title": "National Aluminium Company Limited NALCO Non Executive Recruitment 2026 Apply Online for 268 Post",
+      "slug": "nalco-non-executive-may26",
+      "url": "https://www.sarkariresult.com/2026/nalco-non-executive-may26/",
+      "category": "",
+      "publishedDate": "11 June 2026 | 07:55 PM",
+      "intro": "National Aluminium Company Limited NALCO has released the Non Executive Various Post Notification. Those Candidates are Interested with NALCO Non Executive 2026 Can Apply Online from 21/05/2026 to 17/06/2026. candidates should read the NALCO Non Executive 2026 Vacancy Notification for all the information related to the Nalco Non Executive exam like syllabus, eligibility, age limit, fees, information and other types of information and then apply.."
+    },
+    "coal-india-mt-2026": {
+      "title": "Coal India Limited CIL Management Trainee Recruitment 2026 Apply Online for 660 Post",
+      "slug": "coal-india-mt-2026",
+      "url": "https://www.sarkariresult.com/2026/coal-india-mt-2026/",
+      "category": "",
+      "publishedDate": "11 June 2026 | 07:50 PM",
+      "intro": "Coal India Limited CIL has released Management Trainee in Various Trade Notification. Those candidates who are interested in this CIL Management Trainee Recruitment 2026 Exam can Apply Online from 12 May 2026 to 21 June 2026. Read the notification for CIL MT 2026 Exam, eligibility, Subject Details information, Document Required, age limit, How to Apply and all other information."
+    },
+    "rpsc-apo-june26": {
+      "title": "RPSC Assistant Prosecution Officer APO Recruitment 2026 Apply Online for",
+      "slug": "rpsc-apo-june26",
+      "url": "https://www.sarkariresult.com/2026/rpsc-apo-june26/",
+      "category": "",
+      "publishedDate": "09 June 2026 | 08:40 PM",
+      "intro": "Rajasthan  Public Service Commission (RPSC) has released Assistant Prosecution Officer Recruitment 2026 Notification. Those candidates who are interested in this RPSC Assistant Prosecution Officer APO Vacancy can apply online from 08 June 2026 to 07 July 2026. candidates should read the RPSC APO 2026 Vacancy  information Notification for all the information related to the RPSC exam like syllabus, eligibility, age limit, fees, information and other types of information and then apply."
+    },
+    "upsc-nda-ii-exam-2026": {
+      "title": "UPSC NDA & NDA II Recruitment 2026 Apply Online form 394 Post",
+      "slug": "upsc-nda-ii-exam-2026",
+      "url": "https://www.sarkariresult.com/upsc/upsc-nda-ii-exam-2026/",
+      "category": "",
+      "publishedDate": "09 June  2026",
+      "intro": "Union Public Service Commission (UPSC) has released National Defence Academy NDA & NA Second Examination 2026 Notification. Those candidates who are Interested in this UPSC NDA and NA II Examination 2026 can Apply Online from 20/05/2026 to 11/06/2026. Read the notification for recruitment eligibility, post information, selection procedure, pay scale and all other information."
+    },
+    "upsc-cds-ii-exam-2026": {
+      "title": "UPSC Combined Defence Service CDS II Recruitment 2026 Apply Online For 451 Post",
+      "slug": "upsc-cds-ii-exam-2026",
+      "url": "https://www.sarkariresult.com/upsc/upsc-cds-ii-exam-2026/",
+      "category": "",
+      "publishedDate": "09 June 2026",
+      "intro": "Union Public Service Commission (UPSC) has released Combined Defence Services Exam Second Examination 2026 Notification. Those candidates who are Interested in this UPSC CDS II Vacancy 2026 can Apply Online from 20/05/2026 to 11/06/2026. Read the notification for recruitment eligibility, post information, selection procedure, pay scale and all other information."
+    },
+    "upsssc-vidhan-09-exam-2026": {
+      "title": "UPSSSC UP Sachivalaya Vidhan Bhavan Guard and Vidhan Bhavan Fireman/Fire Guard Recruitment 2026 Apply Online for 170 Post",
+      "slug": "upsssc-vidhan-09-exam-2026",
+      "url": "https://www.sarkariresult.com/upsssc/upsssc-vidhan-09-exam-2026/",
+      "category": "",
+      "publishedDate": "09 June 2026 | 10:43 AM",
+      "intro": "Uttar Pradesh Subordinate Service Selection Commission (UPSSSC) has Released UP Vidhan Bhavan Guard and Vidhan Bhavan Fireman/Fire Guard Advt No. 09-Exam/2026 Recruitment Notification. Those candidates who are interested in this UPSSSC Vidhan Bhavan Guard and Vidhan Bhavan Fireman/Fire Guard Vacancy 2026 can Apply Online from 09/06/2026 to 29/06/2026. Read the notification for recruitment eligibility, post information, selection procedure, pay scale and all other information."
+    },
+    "bob-apprentices-2026": {
+      "title": "Bank of Baroda BOB Apprentices Recruitment 2026 Apply Online for 5000 Post",
+      "slug": "bob-apprentices-2026",
+      "url": "https://www.sarkariresult.com/bank/bob-apprentices-2026/",
+      "category": "",
+      "publishedDate": "09 June 2026",
+      "intro": "Bank of Baroda Apprentices Recruitment 2026. Those candidates who are interested in this Bank of Baroda Apprentices can apply online from 19 May 2026 to 15 June 2026. Read the BOB Bank 5000 Apprentices Post notification 2026 for recruitment eligibility, post information, selection procedure, age limit, pay scale and all other information."
+    },
+    "rpsc-ras-2026": {
+      "title": "Rajasthan RPSC State and Sub. Services Combined Comp Exam Recruitment 2026 Apply Online for 607 Post",
+      "slug": "rpsc-ras-2026",
+      "url": "https://www.sarkariresult.com/2026/rpsc-ras-2026/",
+      "category": "",
+      "publishedDate": "08 June 2026 : 07:39 PM",
+      "intro": "Rajasthan Public Service Commission has released the State and Sub. Services Combined Comp Exam 2026 Recruitment 2026. Those Candidates are Interested to the Following Exam Can Apply Online From 04/06/2026 to 03/07/2026 .candidates should read the RPSC RAS 2026 information brochure for all the information related to the RPSC exam like syllabus, eligibility, age limit, fees, information and other types of information and then apply."
+    },
+    "cisf-paramadical-june-2026": {
+      "title": "CISF ASI Paramedical Staff Recruitment 2026 : Apply Online for 24 Post",
+      "slug": "cisf-paramadical-june-2026",
+      "url": "https://www.sarkariresult.com/2026/cisf-paramadical-june-2026/",
+      "category": "",
+      "publishedDate": "09 June 2026 | 10:37 PM",
+      "intro": "CISF Paramedical Staff has released the notification for the recruitment of CISF Paramedical Exam 2026. Those Candidates Are Interested to the Following CISF Paramedical Staff Exam 2026 Vacancy Can Apply Online from 08/06/2026 to 07/07/2026. See the advertisement for information related to age limit, syllabus, Department wise post, selection procedure, pay scale in CISF Paramedical Staff Recruitment 2026."
+    },
+    "hcl-executive-june-2026": {
+      "title": "HCL Executive Recruitment 2026 Apply Online for 70 Posts",
+      "slug": "hcl-executive-june-2026",
+      "url": "https://www.sarkariresult.com/2026/hcl-executive-june-2026/",
+      "category": "",
+      "publishedDate": "09 June 2026 | 10:42 PM",
+      "intro": "Hindustan Copper Limited HCL has released the notification for the recruitment of Executive Manager, Senior Manager & Deputy Manager Post 2026. Those Candidates Are Interested to the Following HCL Executive Exam 2026 Vacancy Can Apply Online from 06/06/2026 to 25/06/2026.  See the advertisement for information related to age limit, syllabus, selection procedure, pay scale in HCL Executive Recruitment 2026."
+    },
+    "sbi-apprentices-2026": {
+      "title": "State Bank of India SBI Apprentices Recruitment 2026 Apply Online for 7150 Post | Date Extended",
+      "slug": "sbi-apprentices-2026",
+      "url": "https://www.sarkariresult.com/bank/sbi-apprentices-2026/",
+      "category": "",
+      "publishedDate": "04 June 2026 | 07:17 PM",
+      "intro": "SBI Apprentices Recruitment 2026. Those candidates who are interested in this State Bank SBI Apprentices can apply online from 19 May 2026 to 15 June 2026. Read the State Bank of India SBI 7150 Apprentices Post notification 2026 for recruitment eligibility, post information, selection procedure, age limit, pay scale and all other information."
+    },
+    "ssc-stenographer-2026": {
+      "title": "SSC Stenographer Grade C and D Recruitment 2026 Apply Online for 731 Post",
+      "slug": "ssc-stenographer-2026",
+      "url": "https://www.sarkariresult.com/ssc/ssc-stenographer-2026/",
+      "category": "",
+      "publishedDate": "04 June 2026 | 12:31 PM",
+      "intro": "Staff Selection Commission SSC has released the notification for Stenographer Grade C and D Examination 2026. Students who want to appear in this exam can apply online between 24 April 2026 to 15 May 2026 through SSC website. Before applying, candidates must read the complete SSC Stenographer advertisement in which selection procedure, exam syllabus, pattern, exam date and other information will be available."
+    },
+    "upsssc-excise-constable-08-exam2026": {
+      "title": "UPSSSC UP Excise Constable (Aabkari Sipahi) Recruitment 2026 Apply Online for 722 Post",
+      "slug": "upsssc-excise-constable-08-exam2026",
+      "url": "https://www.sarkariresult.com/upsssc/upsssc-excise-constable-08-exam2026/",
+      "category": "",
+      "publishedDate": "06  June 2026 | 09:02 PM",
+      "intro": "Uttar Pradesh Subordinate Service Selection Commission (UPSSSC) has Released UP Excise Constable Advt No. 08-Exam/2026 Recruitment Notification. Those candidates who are interested in this UPSSSC Excise Constable Vacancy 2026 can Apply Online from 04/06/2026 to 24/06/2026. Read the notification for recruitment eligibility, post information, selection procedure, pay scale and all other information."
+    },
+    "navy-inet-02-2026": {
+      "title": "Indian Navy Agniveer (Apprentice) 01/2027 & 02/2027 Batch Online Form 2026",
+      "slug": "navy-inet-02-2026",
+      "url": "https://www.sarkariresult.com/2026/navy-inet-02-2026/",
+      "category": "",
+      "publishedDate": "09 June 2026 | 10:40 PM",
+      "intro": "Join Indian Navy has Released Navy Agniveer Apprentice 01/2027 & 02/2027 Batch Notification. Those candidates who are interested in this Indian Navy Apprentices Vacancy 2026 can Apply Online from 05/06/2026 to 29/06/2026. Read the notification for recruitment eligibility, post information, selection procedure, pay scale and all other information."
+    },
+    "upsssc-14-exam-2026": {
+      "title": "UPSSSC Auditor and Assistant Accountant Advt No 14-Exam/2026 Recruitment 2026 : Apply Online for 1829 Post",
+      "slug": "upsssc-14-exam-2026",
+      "url": "https://www.sarkariresult.com/2026/upsssc-14-exam-2026/",
+      "category": "",
+      "publishedDate": "03 June 2026 | 05:16 PM",
+      "intro": "Uttar Pradesh Subordinate Service Selection Commission (UPSSSC) has Released UP Auditor and Assistant Accountant Advt No. 14-Exam/2026 Recruitment Notification. Those candidates who are interested in this UPSSSC लेखा परीक्षक एवं सहायक लेखाकार Vacancy 2026 can Apply Online from 14/07/2026 to 03/08/2026. Read the notification for recruitment eligibility, post information, selection procedure, pay scale and all other information."
+    },
+    "sgpgi-non-teaching-june26": {
+      "title": "Sanjay Gandhi Post Graduate Institute of Medical Science SGPGI Non Teaching Recruitment 2026 for 47 Post",
+      "slug": "sgpgi-non-teaching-june26",
+      "url": "https://www.sarkariresult.com/2026/sgpgi-non-teaching-june26/",
+      "category": "",
+      "publishedDate": "03 June 2026 | 07:59 PM",
+      "intro": "Sanjay Gandhi Post Graduate Institute of Medical Science (SPPGI)  has released the notification for the recruitment of 47 Various Non Teaching Post Recruitment Examination 2026. Those Candidate Are Interested to the Following Recruitment Can Download Admit Card. See the advertisement for information related to age limit, syllabus, institute wise post, selection procedure, pay scale in SGPGI Lucknow Non Teaching Recruitment 2026."
+    },
+    "jac-jhtet-2026": {
+      "title": "Jharkhand Teacher Eligibility Test JHTET 2026 Apply Online Form | Syllabus Download",
+      "slug": "jac-jhtet-2026",
+      "url": "https://www.sarkariresult.com/2026/jac-jhtet-2026/",
+      "category": "",
+      "publishedDate": "03 June 2026 | 02:04 AM",
+      "intro": "Jharkhand Academic Council has released the Jharkhand Teacher Eligibility Test JHTET 2026 Notification 2026. Those Candidates are Interested to the Following Exam Can Apply Online From 21/04/2026 to 20/06/2026.candidates should read the JAC JHTET 2026 information brochure for all the information related to the JHTET exam like syllabus, eligibility, age limit, fees, Primary and Junior Level, information and other types of information and then apply."
+    },
+    "bsnl-jto-2026": {
+      "title": "BSNL Junior Telecom Officer Telecom Recruitment 2026 : Apply Online for 100 Post",
+      "slug": "bsnl-jto-2026",
+      "url": "https://www.sarkariresult.com/2026/bsnl-jto-2026/",
+      "category": "",
+      "publishedDate": "09 June 2026 | 10:38 AM",
+      "intro": "Bharat Sanchar Nigam Limited BSNL released Junior Telecom Officer JTO Direct Recruitment 2026 Notification. Those candidates who are interested in this BSNL JTO Vacancy can apply online from 04 June 2026 to 03 July 2026. Read the notification for BSNL JTO eligibility, post information, selection procedure, Details, age limit, pay scale and all other information."
+    },
+    "ahc-research-associates-2026": {
+      "title": "Allahabad High Court Research Associates RA Recruitment 2026 Apply Online Form",
+      "slug": "ahc-research-associates-2026",
+      "url": "https://www.sarkariresult.com/2026/ahc-research-associates-2026/",
+      "category": "",
+      "publishedDate": "02 June 2026 | 01:36 AM",
+      "intro": "High Court of Judicature at Allahabad (Prayagraj) AHC has released Research Associates RA Recruitment 2026 Notification. Those candidates who are interested in this AHC Research Associates Vacancy can apply online from 06 June 2026 to 20 June 2026. Read the notification for AHC Research Associates eligibility, post information, selection procedure, Details, age limit, pay scale and all other information."
+    },
+    "dsssb-03-2026": {
+      "title": "Delhi DSSSB Various Post Advt No 03/2026 Recruitment 2026 Apply Online for 1979 Post",
+      "slug": "dsssb-03-2026",
+      "url": "https://www.sarkariresult.com/delhi/dsssb-03-2026/",
+      "category": "",
+      "publishedDate": "01 June 2026 | 01:01 PM",
+      "intro": "Delhi Subordinate Service Selection Board (DSSSB) has released Various Post Exam 2026 Notification. Those candidates who are interested in this Delhi DSSSB Various Post Exam can Apply Online from 16 June 2026 to 15 July 2026. Read the notification for Delhi DSSSB Advt No 03/2026 Various Post Exam, eligibility, Document Required, age limit, How to Apply and all other information."
+    },
+    "school-lecturer-special-june26": {
+      "title": "Rajasthan RPSC School Lecturer PGT Special Teacher Recruitment 2026 Apply Online for 121 Post",
+      "slug": "school-lecturer-special-june26",
+      "url": "https://www.sarkariresult.com/rpsc/school-lecturer-special-june26/",
+      "category": "",
+      "publishedDate": "01 June 2026 : 11:12 AM",
+      "intro": "Rajasthan Public Service Commission has released the School Lecturer (Special) PGT Teacher 2026 Recruitment 2026. Those Candidates are Interested to the Following Recruitment Can Apply Online From 01/06/2026 to 30/06/2026 .candidates should read the RPSC School Lecturer Special 2026 information brochure for all the information related to the RPSC exam like syllabus, eligibility, age limit, fees, information and other types of information and then apply."
+    },
+    "ahc-ro-aro-ca-june2026": {
+      "title": "NTA Allahabad High Court RO / ARO, Computer Assistant Online Form 2026",
+      "slug": "ahc-ro-aro-ca-june2026",
+      "url": "https://www.sarkariresult.com/2026/ahc-ro-aro-ca-june2026/",
+      "category": "",
+      "publishedDate": "10 June 2026 | 10:18 AM",
+      "intro": "Allahabad High Court has released the Review Officer, Assistant Review Officer and Computer Assistant various post recruitment 2026 Through NTA Portal, AHC Review Officer RO (Samiksha Adhikari), Assistant Review Officer RO (Sahayak Samiksha Adhikari), Computer Assistant CA Notification 2026. Those Candidate Are Interested with the Allahabad High Court AHC RO / ARO / CA Vacancy 2026 Can Apply Online from 01 June 2026 to 21 June 2026. Read the notification for recruitment eligibility, post information, selection procedure, pay scale and all other information."
+    },
+    "upsssc-lower-07-exam-2026": {
+      "title": "UPSSSC UP Combined Lower Subordinate Services (Graduate Level) Recruitment 2026 Apply Online for 2516 Post",
+      "slug": "upsssc-lower-07-exam-2026",
+      "url": "https://www.sarkariresult.com/upsssc/upsssc-lower-07-exam-2026/",
+      "category": "",
+      "publishedDate": "02 June 2026 | 06:30 PM",
+      "intro": "Uttar Pradesh Subordinate Service Selection Commission (UPSSSC) has Released UP Combined Lower Subordinate Services (Graduate Level) Advt No. 07-Exam/2026 Recruitment Notification. Those candidates who are interested in this UPSSSC Lower PCS Vacancy 2026 can Apply Online from 29/05/2026 to 18/06/2026. Read the notification for recruitment eligibility, post information, selection procedure, pay scale and all other information."
+    },
+    "nta-csir-net-june2026": {
+      "title": "NTA CSIR UGC NET June 2026 Examination Apply Online Form",
+      "slug": "nta-csir-net-june2026",
+      "url": "https://www.sarkariresult.com/2026/nta-csir-net-june2026/",
+      "category": "",
+      "publishedDate": "01 June 2026 | 09:26  PM",
+      "intro": "National Testing Agency (NTA)  has released the Council of Scientific & Industrial Research CSIR UGC National Eligibility Test NET Assistant Professor / JRF June 2026 Examination online application Form 2026 will start from 27 May 2026 and the last date to apply will be 19 June 2026. candidates should read the NTA CSIR UGC NET June 2026 information brochure for all the information related to the NET / JRF exam like syllabus, eligibility, age limit, fees, Subject Details, information and other types of information and then apply"
+    },
+    "rssb-computer-instructor-07-2026": {
+      "title": "Rajasthan Staff Selection Board RSSB Basic and Senior Computer Instructor Recruitment 2026 Apply Online for 3951 Post",
+      "slug": "rssb-computer-instructor-07-2026",
+      "url": "https://www.sarkariresult.com/rpsc/rssb-computer-instructor-07-2026/",
+      "category": "",
+      "publishedDate": "23 May 2026 | 01:06 PM",
+      "intro": "Rajasthan Staff Selection Board RSSB RSMSSB has released the Basic and Senior Computer Instructor Advt No 07/2026 Notification 2026. Those candidates who are Interested in this Rajasthan Basic and Senior Computer Instructor Recruitment 2026 Exam can Apply Online from 25/05/2026 to 23/06/2026. Read the notification for RSSB Basic and Senior Computer Instructor Exam, eligibility, Subject Details information, Document Required, age limit, How to Apply and all other information."
+    },
+    "navy-btech-jan2027": {
+      "title": "Join Indian Navy 10+2 B.Tech Entry January 2027 Batch Apply Online for 60 Post",
+      "slug": "navy-btech-jan2027",
+      "url": "https://www.sarkariresult.com/force/navy-btech-jan2027/",
+      "category": "",
+      "publishedDate": "22 May 2026",
+      "intro": "Navy Recruitment (Join Indian Navy) has released the advertisement for recruitment to the post of Technical Branch Through 10+2 B.Tech Entry Permanent Commission January 2027 batch. All the candidates who want to apply for this Navy Recruitment can apply online from 29 May 2026 to 18 June 2026. See advertisement for other recruitment related information like syllabus, qualification, age limit, selection procedure."
+    },
+    "upsssc-technical-06-exam-2026": {
+      "title": "UPSSSC UP Technical Assistant Group C Recruitment 2026 Apply Online for 2759 Post",
+      "slug": "upsssc-technical-06-exam-2026",
+      "url": "https://www.sarkariresult.com/upsssc/upsssc-technical-06-exam-2026/",
+      "category": "",
+      "publishedDate": "23 May 2026",
+      "intro": "Uttar Pradesh Subordinate Service Selection Commission (UPSSSC) has released UP Technical Assistant Group C Advt No. 06-Exam/2026 Recruitment Notification. Those candidates who are interested in this UPSSSC Vacancy 2026 can Apply Online from 22/05/2026 to 11/06/2026. Read the notification for recruitment eligibility, post information, selection procedure, Practice Test, pay scale and all other information."
     },
     "ssc-cgl-2026": {
-      "title": "SSC CGL Recruitment 2026",
+      "title": "SSC Combined Graduate Level CGL Recruitment 2026 Apply Online for 12256 Post",
       "slug": "ssc-cgl-2026",
-      "url": "https://www.sarkariexam.com/ssc-cgl-2026/",
+      "url": "https://www.sarkariresult.com/ssc/ssc-cgl-2026/",
       "category": "",
-      "publishedDate": "2026-06-11T13:14:16+05:30",
-      "intro": "Short Information : Staff Selection Commission (SSC) has released the notification for the post of Combined Graduate Level CGL Examination 2026. This recruitment has been issued for 12256 posts. Candidates can also check all the details on the official Sarkari Result 2026 website. The online application process for SSC CGL Recruitment 2026 has started on 21 May 2026, and candidates can apply till 22 June 2026. Candidates must check the complete details for SSC CGL Online Form 2026, which are given below."
+      "publishedDate": "02 June 2026",
+      "intro": "Staff Selection Commission SSC has released the notification for Combined Graduate Level CGL Examination 2026. Those Candidates Are Interested with Vacancy Can Apply Online from 21/05/2026 to 22/06/2026. Before applying, candidates must read the complete advertisement in which selection procedure, exam syllabus, pattern, exam date and other information will be available."
     },
-    "coal-india-cil-management-trainee-2026": {
-      "title": "Coal India CIL Management Trainee MT Recruitment 2026",
-      "slug": "coal-india-cil-management-trainee-2026",
-      "url": "https://www.sarkariexam.com/coal-india-cil-management-trainee-2026/",
+    "afcat-02-2026": {
+      "title": "Indian Airforce AFCAT 02/2026 Batch Recruitment 2026 Apply Online Form",
+      "slug": "afcat-02-2026",
+      "url": "https://www.sarkariresult.com/force/afcat-02-2026/",
       "category": "",
-      "publishedDate": "2026-06-11T13:13:21+05:30",
-      "intro": "Short Information : Coal India Limited (CIL), has released the notification for the post of Management Trainee MT. This recruitment has been issued for 660 posts. Online applying process for Coal India CIL Management Trainee MT Recruitment 2026 has started on 12 May 2026 & the candidates can apply till 11 June 2026. Candidates must check the complete details for Coal India CIL Management Trainee MT Recruitment 2026 which has given below."
+      "publishedDate": "09 June 2026",
+      "intro": "Air Force Join Indian Air Force has released the advertisement of AFCAT July 2027 Recruitment 2026 Batch 02/2026. All the candidates who Interested in this Air Force AFCAT Recruitment can Apply Online from 20/05/2026 to 19/06/2026. See advertisement for other recruitment related information like syllabus, qualification, age limit, selection procedure."
     },
-    "upsssc-agriculture-technical-assistant-group-c-2026": {
-      "title": "UPSSSC Agriculture Technical Assistant Group-C Recruitment 2026",
-      "slug": "upsssc-agriculture-technical-assistant-group-c-2026",
-      "url": "https://www.sarkariexam.com/upsssc-agriculture-technical-assistant-group-c-2026/",
+    "secr-nagpur-apprentices-may26": {
+      "title": "South East Central Railway SECR RRC Nagpur Various Trade Apprentices 2026 Apply Online for 1079 Post",
+      "slug": "secr-nagpur-apprentices-may26",
+      "url": "https://www.sarkariresult.com/railway/secr-nagpur-apprentices-may26/",
       "category": "",
-      "publishedDate": "2026-06-11T13:13:11+05:30",
-      "intro": "Short Information : Uttar Pradesh Subordinate Services Selection Commission (UPSSSC) has released a notification for the recruitment of Agriculture Technical Assistant (AGTA) Group-C posts on the official website of UPSSSC. This recruitment has been issued for 2759 posts. The online application process for UPSSSC Agriculture Technical Assistant AGTA Group-C Recruitment 2026 has started from 22 May 2026, and the candidates can apply until 11 June 2026. Candidates must check the complete details for UPSSSC Agriculture Technical Assistant AGTA Group-C Recruitment 2026 given below."
+      "publishedDate": "19 May 2026",
+      "intro": "Indian Railway South East Central Railway SECR Nagpur has relased Various Trade Apprentices 2026. Those candidates who are interested in this Railway RRC Nagpur SECR Apprentices 2026 can apply online from 19 May 2026 to 18 June 2026. Read the notification for Railway Nagpur Apprentices eligibility, post information, selection procedure, Details, age limit, pay scale and all other information."
     },
-    "upsc-nda-na-ii-2026": {
-      "title": "UPSC NDA/ NA-II Recruitment 2026",
-      "slug": "upsc-nda-na-ii-2026",
-      "url": "https://www.sarkariexam.com/upsc-nda-na-ii-2026/",
+    "secr-bilaspur-apprentices-may26": {
+      "title": "South East Central Railway SECR RRC Bilaspur Various Trade Apprentices 2026 Apply Online for 1191 Post",
+      "slug": "secr-bilaspur-apprentices-may26",
+      "url": "https://www.sarkariresult.com/railway/secr-bilaspur-apprentices-may26/",
       "category": "",
-      "publishedDate": "2026-06-11T13:13:05+05:30",
-      "intro": "Short Information : Union Public Service Commission (UPSC) has released the Nptification for the post of National Defence Academy NDA & Naval Academy NA -II 2026 on the official website of UPSC. This recruitment was released for 394 posts. The online application process for UPSC NDA/ NA-II Recruitment 2026 has started on 20 May 2026, and candidates can apply until 11 June 2026 (Extended). Candidates must check the complete details of UPSC NDA/ NA-II Recruitment 2026 given below."
+      "publishedDate": "19 May 2026",
+      "intro": "Indian Railway South East Central Railway SECR Bilaspur has relased Various Trade Apprentices 2026. Those candidates who are interested in this Railway RRC Bilaspur SECR Apprentices 2026 can apply online from 12 May 2026 to 11 June 2026. Read the notification for Railway Bilaspur Apprentices eligibility, post information, selection procedure, Details, age limit, pay scale and all other information."
     },
-    "upsc-cds-ii-2026": {
-      "title": "UPSC CDS II Recruitment 2026",
-      "slug": "upsc-cds-ii-2026",
-      "url": "https://www.sarkariexam.com/upsc-cds-ii-2026/",
+    "bpssc-asi-technical-07-2026": {
+      "title": "Bihar Police Radio Wireless BPSSC ASI Technical Recruitment 2026 Apply Online for 22 Post",
+      "slug": "bpssc-asi-technical-07-2026",
+      "url": "https://www.sarkariresult.com/bihar/bpssc-asi-technical-07-2026/",
       "category": "",
-      "publishedDate": "2026-06-11T13:13:01+05:30",
-      "intro": "Short Information : Union Public Service Commission (UPSC) has released the notification for Combined Defence Service CDS II posts. This recruitment has been released for 451 posts. The online application process for UPSC CDS-II Recruitment 2026 has started on 20 May 2026, and candidates can apply until 11 June 2026 (Extended). Candidates must check the complete details of UPSC CDS-II Recruitment 2026 given below."
+      "publishedDate": "21 May 2026",
+      "intro": "Bihar Police Subordinate Services Commission BPSSC has released the advertisement Advt. No.-07/2026: For Selection of Assistant Sub-Inspector (Technical) in Bihar Police Radio (Wireless), Govt. of Bihar. Those Candidates Are Interested with BPSSC ASI Technical Can Apply Online from 21/05/2026 to 21/06/2026. For other information related to Bihar Police ASI Technical Advt NO 07/2026 recruitment like age limit, qualification, pay scale and all other information read the advertisement and then apply."
     },
-    "railway-rrc-secr-bilaspur-apprentice-2026": {
-      "title": "Railway RRC SECR Bilaspur Apprentice Recruitment 2026",
-      "slug": "railway-rrc-secr-bilaspur-apprentice-2026",
-      "url": "https://www.sarkariexam.com/railway-rrc-secr-bilaspur-apprentice-2026/",
+    "rrb-technician-cen-02-2026": {
+      "title": "Railway RRB Technician CEN 02/2026 Recruitment 2026 Apply Online for 6565 Post",
+      "slug": "rrb-technician-cen-02-2026",
+      "url": "https://www.sarkariresult.com/railway/rrb-technician-cen-02-2026/",
       "category": "",
-      "publishedDate": "2026-06-11T13:12:55+05:30",
-      "intro": "Short Information : Railway RRC-South East Central Railway (SECR) Bilaspur Division has released the notification for Apprentice posts. This recruitment has been released for 1191 posts. The online application process for Railway RRC SECR Apprentice Recruitment 2026 started on 12 May 2026, and candidates can apply until 11 June 2026. Candidates must check the complete details of Railway RRC SECR Apprentice Recruitment 2026 given below."
+      "publishedDate": "18 May 2026",
+      "intro": "Indian Railway Railway Recruitment Board RRB Technician CEN 02/2026. Those candidates who are Interested with RRB Technician Grade I Signal and Grade III Posts CEN 02/2026 Exam Can Apply Online from 30/06/2026 to 29/07/2026. Read the notification for RRB Technician Grade I and Grade III eligibility, post information, selection procedure, Details, age limit, pay scale and all other information."
     },
-    "indian-army-tgc-144-2026": {
-      "title": "Indian Army TGC 144 Recruitment 2026",
-      "slug": "indian-army-tgc-144-2026",
-      "url": "https://www.sarkariexam.com/indian-army-tgc-144-2026/",
+    "rrb-alp-cen-01-2026": {
+      "title": "Railway RRB Assistant Loco Pilot ALP CEN 01/2026 Recruitment 2026 Apply Online 2026 for 11127* Post",
+      "slug": "rrb-alp-cen-01-2026",
+      "url": "https://www.sarkariresult.com/railway/rrb-alp-cen-01-2026/",
       "category": "",
-      "publishedDate": "2026-06-11T13:12:51+05:30",
-      "intro": "Short Information : Join Indian Army (Govt. Of India) has release the notification for the recruitment of Technical Graduate Course (TGC 144 Entry January 2027) on the official website of Indian Army. Online registration process for Indian Army TGC 144 Recruitment 2026 has start from 13 May 2026 & the candidates can apply till 11 June 2026. Total 30 vacancies has to be issue in the Indian Army TGC 144 Recruitment 2025 for the Technical Graduate Course starting in January 2027. Candidates must check the complete details for Indian Army TGC 144 Online Form 2026 which has given below."
-    },
-    "ssc-junior-engineer-je-2025": {
-      "title": "SSC Junior Engineer JE Online Post Preference Form 2026",
-      "slug": "ssc-junior-engineer-je-2025",
-      "url": "https://www.sarkariexam.com/ssc-junior-engineer-je-2025/",
-      "category": "",
-      "publishedDate": "2026-06-11T13:11:54+05:30",
-      "intro": "Short Information : Staff Selection Commission, SSC has released the Online Post Preference Form on its official website for the Recruitment of Junior Engineer Examination 2025. This recruitment was released for 1731 posts. Online registration process for SSC Junior Engineer JE Recruitment 2025 were accepted from 30 June 2025 to 21 July 2025. The Tier-II Exam was conducted on 07 April 2026. Candidates who qualified the Tier-I Examination can check the complete details for SSC Junior Engineer JE Tier-II Answer Key 2026 which has given below."
-    },
-    "allahabad-high-court-ro-aro-ca-2026": {
-      "title": "Allahabad High Court RO / ARO / Computer Assistant Recruitment 2026",
-      "slug": "allahabad-high-court-ro-aro-ca-2026",
-      "url": "https://www.sarkariexam.com/allahabad-high-court-ro-aro-ca-2026/",
-      "category": "",
-      "publishedDate": "2026-06-11T10:10:17+05:30",
-      "intro": "Short Information : High Court of Judicature at Allahabad (Prayagraj) has released the notification for the post of Review Officer (RO), Assistant Review Officer (ARO) & Computer Assistant (CA). This recruitment has been issued for 543 posts. The online application process for Allahabad High Court RO, ARO & CA Recruitment 2026 has started on 01 June 2026, and candidates can apply till 21 June 2026. Candidates must check the complete details for Allahabad High Court RO, ARO & CA Recruitment 2026, which are given below."
-    },
-    "upsssc-lower-pcs-2026": {
-      "title": "UPSSSC Lower PCS Recruitment 2026",
-      "slug": "upsssc-lower-pcs-2026",
-      "url": "https://www.sarkariexam.com/upsssc-lower-pcs-2026/",
-      "category": "",
-      "publishedDate": "2026-06-11T10:10:13+05:30",
-      "intro": "Short Information : Uttar Pradesh Subordinate Services Selection Commission (UPSSSC) has released a notification for the recruitment of Lower Subordinate Services PCS for various posts such as Mandi Supervisor, Amin / Auctioneer, Assistant Manager (Non-Technical), Clerk cum Typist / Cashier cum Clerk / Accounts Clerk, Assistant Treasury Accountant, Auditor, Centre In Charge, Executive Officer, Assistant Chakbandi Officer, Assistant Manager (Non-Technical) (Special Selection), and District Assistant Immunization Officer on its official website. This recruitment has been announced for a total of 2516 posts. The online application process for UPSSSC Lower PCS Recruitment 2026 has started from 29 May 2026, and candidates can apply until 18 June 2026. Candidates are advised to check the complete details for UPSSSC Lower PCS Recruitment 2026 given below."
-    },
-    "upsssc-excise-constable-2026": {
-      "title": "UPSSSC Excise Constable Recruitment 2026",
-      "slug": "upsssc-excise-constable-2026",
-      "url": "https://www.sarkariexam.com/upsssc-excise-constable-2026/",
-      "category": "",
-      "publishedDate": "2026-06-11T10:10:08+05:30",
-      "intro": "Short Information : Uttar Pradesh Subordinate Services Selection Commission (UPSSSC) has released a notification for the recruitment of Excise Constable posts on the official website of UPSSSC. This recruitment has been issued for 722 posts. The online application process for UPSSSC Excise Constable Recruitment 2026 has started on 04 June 2026, and candidates can apply until 24 June 2026. Candidates must check the complete details for UPSSSC Excise Constable Recruitment 2026 given below."
-    },
-    "sbi-apprentice-2026": {
-      "title": "SBI Apprentice Recruitment 2026",
-      "slug": "sbi-apprentice-2026",
-      "url": "https://www.sarkariexam.com/sbi-apprentice-2026/",
-      "category": "",
-      "publishedDate": "2026-06-11T10:10:03+05:30",
-      "intro": "Short Information : State Bank of India (SBI) has released the notification for the post of Apprentice. This recruitment has been issued for 7150 posts. Online applying process for SBI Apprentice Recruitment 2026 has started on 19 May 2026 & the candidates can apply till 15 June 2026 (Extended). Candidates must check the complete details for SBI Apprentice Recruitment 2026 which has given below."
-    },
-    "bank-of-baroda-apprentices-2026": {
-      "title": "Bank of Baroda Apprentice Recruitment 2026",
-      "slug": "bank-of-baroda-apprentices-2026",
-      "url": "https://www.sarkariexam.com/bank-of-baroda-apprentices-2026/",
-      "category": "",
-      "publishedDate": "2026-06-11T10:09:59+05:30",
-      "intro": "Short Information : Bank of Baroda (BOB) has released the notification for the post of Apprentice. This recruitment has been issued for 2700 posts. This recruitment has been issued for 5000 posts. Online applying process for Bank of Baroda Apprentices Recruitment 2026 has started on 19 May 2026 & the candidates can apply till 15 June 2026. Candidates must check the complete details for Bank of Baroda Apprentices Recruitment 2026 which has given below."
-    },
-    "upsssc-vidhan-bhawan-guard-fire-guard-2026": {
-      "title": "UPSSSC Vidhan Bhawan Guard/ Fire Guard Recruitment 2026",
-      "slug": "upsssc-vidhan-bhawan-guard-fire-guard-2026",
-      "url": "https://www.sarkariexam.com/upsssc-vidhan-bhawan-guard-fire-guard-2026/",
-      "category": "",
-      "publishedDate": "2026-06-11T10:09:54+05:30",
-      "intro": "Short Information : Uttar Pradesh Subordinate Services Selection Commission (UPSSSC) has released a notification for the recruitment of Vidhan Bhawan Guard/ Fire Guard posts on the official website of UPSSSC. This recruitment has been issued for 170 posts. The online application process for UPSSSC Vidhan Bhawan Guard/ Fire Guard Recruitment 2026 has started on 09 June 2026, and candidates can apply until 29 June 2026. Candidates must check the complete details for UPSSSC Vidhan Bhawan Guard/ Fire Guard Recruitment 2026 given below."
-    },
-    "ctet-september-2026": {
-      "title": "CTET September Online Form 2026",
-      "slug": "ctet-september-2026",
-      "url": "https://www.sarkariexam.com/ctet-september-2026/",
-      "category": "",
-      "publishedDate": "2026-06-10T10:16:06+05:30",
-      "intro": "Short Details : Central Board of Secondary Education (CBSE) has invited application for the Central Teacher Eligibility Test (CTET) September 2026 examination. Candidates can also check all the details on the official Sarkari Result website. The online application process for CTET September Recruitment 2026 has started on 11 May 2026, and candidates can apply till 10 June 2026. Candidates must check the complete details for CTET September Recruitment 2026, which are given below."
-    },
-    "cisf-asi-paramedical-staff-2026": {
-      "title": "CISF ASI Paramedical Staff Recruitment 2026",
-      "slug": "cisf-asi-paramedical-staff-2026",
-      "url": "https://www.sarkariexam.com/cisf-asi-paramedical-staff-2026/",
-      "category": "",
-      "publishedDate": "2026-06-08T10:23:24+05:30",
-      "intro": "Short Information : Central Industrial Security Force (CISF) has released the notification for the post of Paramedical Staff. This recruitment has been issued for 24 posts. The online application process for CISF ASI Paramedical Staff Recruitment 2026 has started on 08 June 2026, and candidates can apply till 07 July 2026. Candidates must check the complete details for CISF ASI Paramedical Staff Recruitment 2026, which are given below."
-    },
-    "rpsc-apo-2026": {
-      "title": "RPSC Assistant Prosecution Officer APO Recruitment 2026",
-      "slug": "rpsc-apo-2026",
-      "url": "https://www.sarkariexam.com/rpsc-apo-2026/",
-      "category": "",
-      "publishedDate": "2026-06-08T10:22:16+05:30",
-      "intro": "Short Information : Rajasthan Public Service Commission (RPSC) has released the notification for the post of Assistant Prosecution Officer APO. This recruitment has been issued for 371 posts. Online applying process for Rajasthan RPSC Assistant Prosecution Officer APO Recruitment 2026 has started on 08 June 2026 & the candidates can apply till 07 July 2026. Candidates must check the complete details for Rajasthan RPSC Assistant Prosecution Officer APO Recruitment 2026 which has given below."
-    },
-    "hindustan-copper-limited-hcl-executive-2026": {
-      "title": "Hindustan Copper Limited HCL Executive Recruitment 2026",
-      "slug": "hindustan-copper-limited-hcl-executive-2026",
-      "url": "https://www.sarkariexam.com/hindustan-copper-limited-hcl-executive-2026/",
-      "category": "",
-      "publishedDate": "2026-06-07T14:00:00+05:30",
-      "intro": "Short Information : Hindustan Copper Limited (HCL) has released the notification for the post of Executive Manager, Senior Manager & Deputy Manager. This recruitment has been issued for 70 posts. The online application process for Hindustan Copper Limited HCL Executive Recruitment 2026 has started on 06 June 2026, and candidates can apply till 25 June 2026. Candidates must check the complete details for Hindustan Copper Limited HCL Executive Recruitment 2026, which are given below."
-    },
-    "up-board-class-10th-12th-2026": {
-      "title": "UP Board Class 10th, 12th Compartment Online Form 2026",
-      "slug": "up-board-class-10th-12th-2026",
-      "url": "https://www.sarkariexam.com/up-board-class-10th-12th-2026/",
-      "category": "",
-      "publishedDate": "2026-06-06T13:02:51+05:30",
-      "intro": "Short Details : Uttar Pradesh Madhyamik Shiksha Parishad (UPMSP) has opened the online registration for the 2026 Compartment and Improvement Examinations for both High School (Class 10) and Intermediate (Class 12) students. Students who participated in the UP Board Exams 2026 and either failed in one or more subjects or wish to improve their scores are eligible to apply. The application window is open from June 06, 2026 to June 27, 2026, and submissions can be made through the official website: upmsp.edu.in. Candidates are advised to go through the detailed information regarding the UP Board Compartment Form 2026 provided below."
+      "publishedDate": "25 May 2026",
+      "intro": "Indian Railway Railway Recruitment Board RRB Assistant Loco Pilot ALP CEN 01/2026. Those candidates who are interested in this Railway RRB CEN 01/2026 can Apply Online from 15/05/2026 to 14/06/2026. Read the notification for RRB Assistant Loco Pilot ALP CEN 01/2026 eligibility, post information, selection procedure, Details, age limit, pay scale and all other information."
     },
     "nta-jipmat-2026": {
-      "title": "NTA JIPMAT Answer Key 2026",
+      "title": "NTA JIPMAT 2026 Download Answer Key",
       "slug": "nta-jipmat-2026",
-      "url": "https://www.sarkariexam.com/nta-jipmat-2026/",
+      "url": "https://www.sarkariresult.com/2026/nta-jipmat-2026/",
       "category": "",
-      "publishedDate": "2026-06-11T11:11:56+05:30",
-      "intro": "Short Information : National Testing Agency (NTA) has released the answer key for the Join Integrated Program in Management Admission Test JIPMAT 2026. Applications for the NTA JIPMAT Online Form 2026 were accepted from 16 April 2026, to 10 May 2026. The written examination was held on 07 June 2026. Candidates who appeared for this examination can download their NTA JIPMAT Answer Key 2026 from the link given below."
+      "publishedDate": "10 June 2026 | 10:19 PM",
+      "intro": "National Testing Agency NTA has released the Information Brochure for Joint Integrated Programme in Management Admission Test JIPMAT 2026 Those Candidates are Interested to the Admissions in JIPMAT 2026 Can Download Admit Card Check Exam City .candidates should read the JIPMAT 2026 information brochure for all the information related to the entrance exam like syllabus, eligibility, age limit, fees, Course and University List, information and other types of information and then apply."
     },
-    "up-cnet-2026": {
-      "title": "UP CNET Answer Key 2026",
-      "slug": "up-cnet-2026",
-      "url": "https://www.sarkariexam.com/up-cnet-2026/",
+    "nta-cuet-ug-2026": {
+      "title": "NTA CUET Under Graduate UG Admissions 2026 Download Answer Key",
+      "slug": "nta-cuet-ug-2026",
+      "url": "https://www.sarkariresult.com/2026/nta-cuet-ug-2026/",
       "category": "",
-      "publishedDate": "2026-06-09T15:30:15+05:30",
-      "intro": "Short Information : Atal Bihari Vajpayee Medical University, ABVMU Uttar Pradesh has released the answer key for UP Common Nursing Entrance Test UP CNET 2026 on its official website. Online applying process for UP CNET Online Form 2026 were accepted from 28 March 2026 to 20 May 2026. The Examination was held on 06 June 2026. Candidates who appeared for this examination can download their UP CNET Answer Key 2026 from the link given below."
+      "publishedDate": "09 June 2026 | 03:54 PM",
+      "intro": "National Testing Agency NTA has released the online application for Common University Entrance Test CUET UG 2026 will start from 03 January 2026 and the last date to apply will be 26 February 2026.candidates should read the CUET UG 2026 information brochure for all the information related to the entrance exam like syllabus, eligibility, age limit, fees, Course and University List, information and other types of information and then apply"
     },
-    "bihar-cet-b-ed-2026": {
-      "title": "Bihar CET B.Ed Answer Key 2026",
-      "slug": "bihar-cet-b-ed-2026",
-      "url": "https://www.sarkariexam.com/bihar-cet-b-ed-2026/",
+    "abvmu-up-cnet-2026": {
+      "title": "Atal Bihari Vajpayee Medical University ABVMU UP Common Nursing Entrance Test CNET 2026 Answer Key",
+      "slug": "abvmu-up-cnet-2026",
+      "url": "https://www.sarkariresult.com/2026/abvmu-up-cnet-2026/",
       "category": "",
-      "publishedDate": "2026-06-08T22:35:46+05:30",
-      "intro": "Short Information : Babasahab Bhimrao Ambedkar University, Muzaffaprur (BRABU) has released the answer key for the B. Ed. Common Entrance Test (CET-BED)-2026 For Regular, Distance and Shiksha Shastri 02 Years Course 2026. Online applying process for Bihar CET B.Ed Online Form 2026 were accepted from 27 April 2026 to 18 May 2026. The Examination was conducted on 07 June 2026. Candidates who had applied this form can download their Bihar CET B.Ed Answer Key 2026 from the link given below."
+      "publishedDate": "09 June 2026  | 03:19 PM",
+      "intro": "Atal Bihari Vajpayee Medical University (ABVMU), Uttar Pradesh has released the UP Common Nursing Entrance Test UPCNET Notification 2026. Those Candidates are Interested to the Following Exam Can Apply Online From 28/03/2026 to 20/05/2026.candidates should read the UPCNET 2026 information brochure for all the information related to the UPCNET exam like syllabus, eligibility, age limit, fees, B.SC Nursing, Post B.SC Nursing and M.Sc Nursing Courses, information and other types of information and then apply."
     },
-    "uppsc-assistant-professor-2025": {
-      "title": "UPPSC Assistant Professor Answer Key 2026",
-      "slug": "uppsc-assistant-professor-2025",
-      "url": "https://www.sarkariexam.com/uppsc-assistant-professor-2025/",
+    "bihar-2yr-bed-2": {
+      "title": "Bihar 2 Year B.Ed Admission Test CET BEd Admissions 2026 Download Answer Key",
+      "slug": "bihar-2yr-bed-2",
+      "url": "https://www.sarkariresult.com/2026/bihar-2yr-bed-2/",
       "category": "",
-      "publishedDate": "2026-06-07T13:23:58+05:30",
-      "intro": "Short Information : Uttar Pradesh Public Service Commission (UPPSC) has released the answer Key for the recruitment of Assistant Professor posts on its official website. This recruitment was released for 1236 posts. Applications for the UPPSC Assistant Professor Recruitment 2025 were accepted from 04 September 2025, to 06 October 2025. The online examination was conducted on 31 May 2026. Candidates who had appeared in this Examination can download their UPPSC Assistant Professor Answer Key 2026 from the link given below."
+      "publishedDate": "08 June 2026 | 10:40 PM",
+      "intro": "Babasaheb Bhimrao Ambedkar University (BBAU) </span></a> has released the Information Brochure for Combined B.Ed Entrance Exam Can Apply Online from 27/04/2026 to 18/05/2026.candidates should read the Bihar CET BEd 2026 information brochure for all the information related to the entrance exam like syllabus, eligibility, age limit, fees, Course and University List, information and other types of information and then apply."
     },
-    "up-tgt-2022": {
-      "title": "UP TGT Answer Key 2026",
-      "slug": "up-tgt-2022",
-      "url": "https://www.sarkariexam.com/up-tgt-2022/",
+    "up-tgt-01-2022": {
+      "title": "Uttar Pradesh UPSESSB Trained Graduate Teacher UP TGT 2022 Answer Key 2026 for 3539 Post",
+      "slug": "up-tgt-01-2022",
+      "url": "https://www.sarkariresult.com/2022/up-tgt-01-2022/",
       "category": "",
-      "publishedDate": "2026-06-07T00:01:19+05:30",
-      "intro": "Short Information : Uttar Pardesh Secondary Education Services Selection Board (UPSESSB) has released the answer key for selection to the posts of Trained Graduate Teacher (TGT) the Advt. No. 01/2022. The vacancy came in the year 2022 and it took almost two years to conduct the written examination for the prescribed posts. The written examination was held on 03 – 04 June 2026. Candidates who appeared for this examination can download their UP TGT Answer Key 2026 from the link given below."
+      "publishedDate": "06 June 2026 | 09:53 PM",
+      "intro": "Uttar Pradesh Secondary Education Service Selection Board (UPSESSB) has released the notification of Trained Graduate Teacher TGT Teacher Recruitment for 3539 posts. Those who are interested in this recruitment and fulfill the eligibility can apply online from 09 June 2022 to 03 July 2022. For the information of eligibility, age limit, selection procedure, pay scale, syllabus in recruitment, read the up tgt 2022 notification and then apply."
     },
-    "bihar-bssc-office-attendant-2022": {
-      "title": "Bihar BSSC Office Attendant Mains Answer Key 2026",
-      "slug": "bihar-bssc-office-attendant-2022",
-      "url": "https://www.sarkariexam.com/bihar-bssc-office-attendant-2022/",
+    "bssc-ssa-02-2022": {
+      "title": "Bihar BSSC Senior Scientist Assistant SSA Recruitment 2022 Office Attendant Mains Answer Key 2026 for 100 Post",
+      "slug": "bssc-ssa-02-2022",
+      "url": "https://www.sarkariresult.com/bihar/bssc-ssa-02-2022/",
       "category": "",
-      "publishedDate": "2026-06-05T11:24:45+05:30",
-      "intro": "Short Information : Department of Science & Technology, Govt of Bihar has released the mains answer key for the post of Office Attendant (Karyaly Parichari). This recruitment was released for 238 posts. Applications for the Bihar DST Office Attendant Recruitment 2022 were accepted from September 23, 2022, to October 31, 2022. The mains examination was held on 26 May 2026. Candidates who appeared for this examination can download their Bihar BSSC Office Attendant Mains Answer Key 2026 from the link given below."
+      "publishedDate": "04 June 2026 | 09:43 PM",
+      "intro": "Bihar Staff Selection Commission BSSC has released the recruitment of Senior Scientist Assistant SSA Exam 2022 for 100 posts whose advertisement is 02/2022. This is a great opportunity for the candidates who are looking for government jobs in Bihar. Those Candidates Are Enrolled with Vacancy Can Download the Result. For information related to this recruitment of Bihar BSSC, eligibility, age limit, important date, selection procedure, pay scale and all other information read the advertisement."
     },
-    "jceceb-jharkhand-bed-2026": {
-      "title": "JCECEB Jharkhand B.Ed Answer Key 2026",
-      "slug": "jceceb-jharkhand-bed-2026",
-      "url": "https://www.sarkariexam.com/jceceb-jharkhand-bed-2026/",
+    "uppsc-asst-professor-a7-e1": {
+      "title": "UPPSC Assistant Professor GDC Recruitment 2025 Download Answer Key 2026 for 1253 Post",
+      "slug": "uppsc-asst-professor-a7-e1",
+      "url": "https://www.sarkariresult.com/2025/uppsc-asst-professor-a7-e1/",
       "category": "",
-      "publishedDate": "2026-06-04T12:35:11+05:30",
-      "intro": "Short Information : Jharkhand Combined Entrance Competitive Examination Board (JCECEB) has released the answer key for the B.Ed/M.Ed/B.P.Ed. Combined Entrance Competitive Examination (CECE) Admission on the official website of the JCECEB recently For the two-year B.Ed. course (Academic Session 2026-28. Applications for the JCECEB B.Ed/M.Ed/B.P.Ed Admission Online Form 2026 were accepted from 25 February 2026, to 25 March 2026. The written examination was held on 31 May 2026. Candidates who appeared for this examination can download their JCECEB Jharkhand B.Ed Answer Key 2026 from the link given below."
+      "publishedDate": "03 June 2026 | 06:12 PM",
+      "intro": "Uttar Pradesh Public Service Commission UPPSC has released the Recruitment Advt No : ADVT.NO.A-7/E-1/2025, Government Degree College GDC Assistant Professor Recruitment 2025. Those Candidates Are Enrolled with UPPSC GDC AP Exam 2025 Can Download the Answer Key. Read the notification for UPPSC Assistant Professor 2025 Exam, eligibility, Subject Details information, Document Required, age limit, How to Apply and all other information."
     },
-    "rssb-reet-mains-primary-teacher-2025": {
-      "title": "RSSB REET Mains Primary Teacher Final Answer Key 2026",
-      "slug": "rssb-reet-mains-primary-teacher-2025",
-      "url": "https://www.sarkariexam.com/rssb-reet-mains-primary-teacher-2025/",
+    "navy-incet-01-2025": {
+      "title": "Join Indian Navy Indian Navy Civilian Entrance Test INCET Recruitment 2025 Download Re Exam Admit Card",
+      "slug": "navy-incet-01-2025",
+      "url": "https://www.sarkariresult.com/force/navy-incet-01-2025/",
       "category": "",
-      "publishedDate": "2026-06-03T16:06:22+05:30",
-      "intro": "Short Information : Rajasthan Staff Selection Board (RSSB) has released the final answer key for the post of Level I Primary School Teacher Posts on the official website of RSSB. This recruitment was released for 5636 posts. Applications for the RSSB REET Mains Primary Teacher Recruitment 2025 were accepted from November 07, 2025, to December 06, 2025. The online examination was held on 17-20 January 2026. Candidates who appeared for this examination can download their RSSB REET Mains Primary Teacher Final Answer Key 2026 from the link given below."
+      "publishedDate": "27 January 2026",
+      "intro": "Join Indian Navy Indian Navy Civilian Entrance Test INCET 01/2025 Notification. Those candidates who are Enrolled with Vacancy can Download Admit Card. Read the notification for recruitment eligibility, post information, selection procedure, Physical Eligibility, pay scale and all other information"
     },
-    "aadhar-card-print-verification-correction-form": {
-      "title": "Aadhar Card PVC Download, Correction, Status 2026",
-      "slug": "aadhar-card-print-verification-correction-form",
-      "url": "https://www.sarkariexam.com/aadhar-card-print-verification-correction-form/",
+    "upsc-ias-ifs-pre-2026": {
+      "title": "UPSC Civil Services Services / Forest Services IAS / IFS Pre Examination 2026 Admit Card Direct Link",
+      "slug": "upsc-ias-ifs-pre-2026",
+      "url": "https://www.sarkariresult.com/upsc/upsc-ias-ifs-pre-2026/",
       "category": "",
-      "publishedDate": "2026-01-05T17:18:44+05:30",
-      "intro": "Short Information : Aadhar card by Unique Identification Authority of India UIDAI which citizens also know by the name of my Aadhaar, my identity. This is a unique ID card for all citizens living in India.  How to Download Aadhaar Card, how to update it, how to change mobile number in Aadhaar Card, update address in Aadhaar Card, how to make correction in Aadhaar Card, how to download Aadhaar Card from mobile. Those All The Interested People Checking Aadhaar Card Details all the information related to the Aadhaar Card, Registration is given below and the link to apply is given in the Important Link section below."
+      "publishedDate": "18 May 2026",
+      "intro": "Union Public Service Commission UPSC has released the Civil Services and Forest Services IAS / IFS Pre Examination 2026. Those Candidate Are Interested to the Following Recruitment Can Apply Online from 04/02/2026 to 27/02/2026. Read the notification for recruitment eligibility, post information, selection procedure, age limit, pay scale and all other information"
     },
-    "pan-card-registration-correction-other-service-2026": {
-      "title": "PAN Card Registration, Correction & Other Service 2026",
-      "slug": "pan-card-registration-correction-other-service-2026",
-      "url": "https://www.sarkariexam.com/pan-card-registration-correction-other-service-2026/",
+    "upsssc-lekhpal-02-exam-2025": {
+      "title": "UPSSSC Lekhpal Recruitment 2025 Mains Download Answer Key 2026 for 7994 Post",
+      "slug": "upsssc-lekhpal-02-exam-2025",
+      "url": "https://www.sarkariresult.com/upsssc/upsssc-lekhpal-02-exam-2025/",
       "category": "",
-      "publishedDate": "2026-01-05T17:18:40+05:30",
-      "intro": "Short Information : The PAN (Permanent Account Number) is a vital document for citizens of India. Anyone who has applied for a PAN card can check the status of their application online via the official UTI or NSDL websites. These authorized PAN portals also provide services such as applying for a new PAN card, tracking application progress, making corrections, and updating PAN-related details. Access these services using the link provided below."
+      "publishedDate": "21 May 2026",
+      "intro": "Uttar Pradesh Subordinate Service Selection Commission (UPSSSC)</span></a> has relased Rajasva Lekhpal Advt No. 02-Exam/2025 Recruitment Notification. Those candidates who are Enrolled and Qualified in Eligibility Result in this UPSSSC Lekhpal Vacancy 2025-2026 can Pay Mains Exam Fees. Read the notification for recruitment eligibility, post information, selection procedure, Practice Test, pay scale and all other information."
     },
-    "bihar-caste-income-residence-certificate-online-form": {
-      "title": "Bihar Income, Cast, Residential Certificate Online Apply & Verification 2026",
-      "slug": "bihar-caste-income-residence-certificate-online-form",
-      "url": "https://www.sarkariexam.com/bihar-caste-income-residence-certificate-online-form/",
+    "muit-admissions-2026": {
+      "title": "MUIT Noida & Lucknow Campus Admissions Online Form 2026er Grid",
+      "slug": "muit-admissions-2026",
+      "url": "https://www.sarkariresult.com/2026/muit-admissions-2026/",
       "category": "",
-      "publishedDate": "2026-01-05T17:09:48+05:30",
-      "intro": "Short Information : Under the e-District Mission Mode Project, the Right to Public Service (RTPS) Bihar has invited online applications for several government certificates. These include the Residential Certificate, Caste Certificate, Income Certificate, Character Certificate, Non-Creamy Layer (NCL) Certificate, and Economically Weaker Section (EWS) Certificate. Eligible male and female applicants can submit their applications online through the official RTPS Bihar portal at serviceonline.bihar.gov.in for Nivas Praman Patra, Jati Praman Patra, Aay Praman Patra, Charitra Praman Patra, as well as NCL and EWS certificates."
+      "publishedDate": "11 June 2026 | 02:47 PM",
+      "intro": "Maharishi University </span></a> MUIT Lucknow and Noida Campus has released the UG, PG and Diploma Courses Admissions 2026 online application for admission 2026 will start from March 2026 and the last date to apply will be 15 July 2026.candidates should read the information brochure for all the information related to the entrance exam like syllabus, eligibility, age limit, fees, Placement, information and other types of information and then apply"
     },
-    "up-caste-niwas-income-certificate-online-verification": {
-      "title": "UP Caste, Niwas, Income Certificate Online Verification 2026",
-      "slug": "up-caste-niwas-income-certificate-online-verification",
-      "url": "https://www.sarkariexam.com/up-caste-niwas-income-certificate-online-verification/",
+    "updeled-admissions-2": {
+      "title": "Uttar Pradesh UP DELEd 2 Year Course Admissions 2026 : Apply Online Form",
+      "slug": "updeled-admissions-2",
+      "url": "https://www.sarkariresult.com/2026/updeled-admissions-2/",
       "category": "",
-      "publishedDate": "2026-01-05T16:31:31+05:30",
-      "intro": "Short Information : The Uttar Pradesh Board of Revenue (UP BOR) provides an online facility to search and verify Income, Caste, and Domicile Certificates issued in Uttar Pradesh. Using the UP Document/Certificate Verification Portal, individuals can check the validity of certificates and documents required for different government services, helping to ensure their authenticity. This system enables applicants to determine whether their documents are genuine or fake."
+      "publishedDate": "10 June 2026 | 12:02 PM",
+      "intro": "Examination Regulation Authority UP, PNP Prayagraj Uttar Pradesh UP DELED (BTC) Admissions 2026. Those candidates who are interested in this Admission in 2 Year UPDELED Admissions 2026 can Apply Online from 15 June 2026 to 08 July 2026. Read the notification for Admissions eligibility, Age Limit, Admissions procedure, age limit, Document Required and all other information."
     },
-    "voter-id-registration-other-voter-service-2026": {
-      "title": "Voter ID Registration & Other Voter Service 2026",
-      "slug": "voter-id-registration-other-voter-service-2026",
-      "url": "https://www.sarkariexam.com/voter-id-registration-other-voter-service-2026/",
+    "up-cahet-2026": {
+      "title": "Atal Bihari Vajpayee Medical University ABVMU UP Common Allied Healthcare Entrance Test CAHET 2026 Apply Online Form",
+      "slug": "up-cahet-2026",
+      "url": "https://www.sarkariresult.com/2026/up-cahet-2026/",
       "category": "",
-      "publishedDate": "2026-01-05T14:30:50+05:30",
-      "intro": "Short Information : The Voter ID, formally known as the Election Photo Identity Card (EPIC), is an official photo identification issued by the Election Commission of India (ECI) to eligible Indian voters. It is used to confirm a voter’s identity, ensure a smooth and transparent voting process, and reduce the chances of impersonation and electoral malpractices during elections. Commonly, it is also called an election card, voter’s card, or Voter ID card."
+      "publishedDate": "11 June 2026 | 07:18 PM",
+      "intro": "Atal Bihari Vajpayee Medical University (ABVMU), Uttar Pradesh has released the UP Common Allied Healthcare Entrance Test CAHET Notification 2026. Those Candidates are Interested to the Following Exam Can Apply Online From 02/05/2026 to 14/06/2026.candidates should read the CAHET 2026 information brochure for all the information related to the Common Allied Healthcare Entrance Test CAHET exam like syllabus, eligibility, age limit, fees, GNM Nursing Courses, information and other types of information and then apply."
     },
-    "up-deled-admission-2026": {
-      "title": "UP DELEd Admission 2026",
-      "slug": "up-deled-admission-2026",
-      "url": "https://www.sarkariexam.com/up-deled-admission-2026/",
+    "upmsp-june-2026": {
+      "title": "Uttar Pradesh UP Board Class 12th & Class 10th Annual Exam 2026 Improvement / Compartment Download Result 2026",
+      "slug": "upmsp-june-2026",
+      "url": "https://www.sarkariresult.com/2026/upmsp-june-2026/",
       "category": "",
-      "publishedDate": "2026-06-10T12:46:17+05:30",
-      "intro": "Short Information : Examination Regulation Authority Allahabad Uttar Pradesh has released the notification for the Examination of UP BTC/ DELED Admission 2026. Candidates Can Also Check All Details on Official SarkariResult2026, Online applying process for UP Deled Admission 2026 will be started from 15 June 2026 & the candidates can apply till 08 July 2026. Candidates must check the complete details for UP Deled Admission 2026 Online Form which has given below."
+      "publishedDate": "06 June 2026 | 06:04 PM",
+      "intro": "Uttar Pradesh Madhyamik Shiksha Parishad (UPMSP), Prayagraj has released the official notification for High School and Intermediate Compartment / Improvement Examination 2026. Candidates who want to appear in the Compartment or Improvement Exam can apply online from 06/06/2026 to 27/06/2026. Applicants are advised to read the official notification carefully for details regarding eligibility, application fee, exam process, important dates, and other related information before applying online"
     },
-    "mpesb-pnst-2026": {
-      "title": "MPESB PNST Online Form 2026",
-      "slug": "mpesb-pnst-2026",
-      "url": "https://www.sarkariexam.com/mpesb-pnst-2026/",
+    "mpesb-addet-2026": {
+      "title": "MPESB Animal Husbandry and Dairy Technology Admission Test ADDET Examination 2026 Online Form",
+      "slug": "mpesb-addet-2026",
+      "url": "https://www.sarkariresult.com/2026/mpesb-addet-2026/",
       "category": "",
-      "publishedDate": "2026-06-09T15:57:50+05:30",
-      "intro": "Short Information : Madhya Pradesh Employee Selection Board (MPESB) has released the notification for the Pre Nursing Selection Test (PNST) Admissions 2026 Examination. The online application process for MPESB PNST Online Form 2026 has started on 09 June 2026, and candidates can apply till 23 June 2026. Candidates must check the complete details for MPESB PNST Online Form 2026, which are given below."
+      "publishedDate": "09 June 2026 | 10:43  PM",
+      "intro": "Madhya Pradesh Employee Selection Board MPESB ESB Animal Husbandry and Dairy Technology Admission Test ADDET Admissions 2026 . Those candidates who are interested in this MP ADDET 2026 Examination can Apply Online from 05/06/2026 to 19/06/2026. Read the notification for admissions eligibility, post information, selection procedure, age limit, college list, seat details, and all other information."
     },
-    "nta-icar-aieea-pg-phd-admissions-2026": {
-      "title": "NTA ICAR AIEEA PG, Phd Admissions Online Form 2026",
-      "slug": "nta-icar-aieea-pg-phd-admissions-2026",
-      "url": "https://www.sarkariexam.com/nta-icar-aieea-pg-phd-admissions-2026/",
+    "uptac-2026-admissions": {
+      "title": "UPTAC 2026 Admissions Online Counseling, Choice Filling, Registration, Allotment Result.",
+      "slug": "uptac-2026-admissions",
+      "url": "https://www.sarkariresult.com/2026/uptac-2026-admissions/",
       "category": "",
-      "publishedDate": "2026-06-08T15:42:19+05:30",
-      "intro": "Short Information : National Testing Agency (NTA) has released the notification for the PG/ Ph.D Under NTA ICAR AIEEA Admission Entrance Examination 2026. The online application process for NTA ICAR AIEEA PG, Phd Admissions Online Form 2026 has started on 08 May 2026, and candidates can apply till 10 June 2026. Candidates must check the complete details for NTA ICAR AIEEA PG, Phd Admissions Online Form 2026, which are given below."
+      "publishedDate": "06 June 2026 | 09:05 PM",
+      "intro": "Uttar Pradesh Technical Admission & Counselling (UPTAC) The process of one time counseling registration for admission in various courses B.Tech / M.Tech / B.Arch / MCA / MBA / Other Courses Through CUET UG 2026 , JEEMAIN 2026 , NATA 2026 and CUET PG 2026 under UPTAC has started from 25 May 2026  which will run till 28 July 2026 (Phase Wise). Any student who wants to take admission in any course through UPTAC can register online. Read the information brochure for other admission related information like college list, opening closing rank of previous years, counseling schedule, documents required, seat allotment result, choice filling, allotment letter information."
     },
-    "uptac-admissions-2026": {
-      "title": "UPTAC Admissions Online Registration 2026",
-      "slug": "uptac-admissions-2026",
-      "url": "https://www.sarkariexam.com/uptac-admissions-2026/",
+    "rajju-bhaiya-state-university-prsu-cet": {
+      "title": "Allahabad State University Online Form 2026 | Admission UG, PG Course",
+      "slug": "rajju-bhaiya-state-university-prsu-cet",
+      "url": "https://www.sarkariresult.com/2026/rajju-bhaiya-state-university-prsu-cet/",
       "category": "",
-      "publishedDate": "2026-06-05T13:28:23+05:30",
-      "intro": "Short Information : Uttar Pradesh Technical Admission & Counselling (UPTAC) has released the notification for the B.Tech / M.Tech / B.Arch / MCA / MBA / Other Courses Through CUET UG 2026 , JEEMAIN 2026 , NATA 2026 and CUET PG 2026 under UPTAC. The online application process for UPTAC Admissions Online Registration 2026 has started on 25 May 2026, and candidates can apply till 15 June 2026. Candidates must check the complete details for UPTAC Admissions Online Registration 2026, which are given below."
+      "publishedDate": "02 June 2026 | 03:03 PM",
+      "intro": "Prof Rajendra Singh Rajju Bhaiya State University Prayagraj has released Rajju Bhaiya Admission 2026 Notification for UG & PG Course. Those candidates who are interested in this Rajju Bhaiya State University Admission 2026 Online Form can apply online from 12 May 2026 to Last Date Course Wise Read the notification for Rajju Bhaiya 2026 Admission Notification, Eligibility, Information Details, Admission Procedure, Counseling, and all other information Visit Official Sarkari Result : SarkariResult.Com for More Other Updates."
+    },
+    "swd-up-free-coaching": {
+      "title": "Uttar Pradesh SWD UP IAS PCS Pre 2023 Free Coaching Admission Test Result",
+      "slug": "swd-up-free-coaching",
+      "url": "https://www.sarkariresult.com/2023/swd-up-free-coaching/",
+      "category": "",
+      "publishedDate": "03 January 2023 | 04:31 PM",
+      "intro": "Social Welfare Department, SWD Uttar Pradesh has released online application for admission in free coaching for the preparation of Civil Services and Public Service Commission Preliminary Examination 2023 for OBC, SC and ST candidates of Uttar Pradesh. Those Candidates Are Enrolled with Vacancy Can Download the Result. Read the notification for exam center information, seat information, syllabus and all other information."
+    },
+    "du-pg-admissions": {
+      "title": "Delhi University DU PG Admissions 2026 Apply Online Form",
+      "slug": "du-pg-admissions",
+      "url": "https://www.sarkariresult.com/2026/du-pg-admissions/",
+      "category": "",
+      "publishedDate": "22 May 2026 | 10:25 PM",
+      "intro": "University of Delhi DU has released the online application for Post Graduate PG, BED, LLM and Other Various Coruses Admissions 2026 will start from 16 May 2026 and the last date to apply will be 07 June 2026.candidates should read the DU PG 2026 information brochure for all the information related to the entrance exam like syllabus, eligibility, age limit, fees, Course and University List, information and other types of information and then apply."
+    },
+    "nta-icar-aieea": {
+      "title": "NTA ICAR Admission Entrance Exam Result 2019",
+      "slug": "nta-icar-aieea",
+      "url": "https://www.sarkariresult.com/2019/nta-icar-aieea/",
+      "category": "",
+      "publishedDate": "17 July 2019",
+      "intro": "National Testing Agency NTA Are Invited to Online Application Form for the ICAR AIEEA UG, PG and PHd Examination 2019. Those Candidates Are Interested to the NTA ICAR 2019 and Completed the All Eligibility Criteria Can Read the Full Notification and Apply Online"
+    },
+    "upcatet-2026": {
+      "title": "UPCATET Admissions 2026 Apply Online Form",
+      "slug": "upcatet-2026",
+      "url": "https://www.sarkariresult.com/2026/upcatet-2026/",
+      "category": "",
+      "publishedDate": "11 May 2026",
+      "intro": "Banda University of Agriculture & Technology, Banda has Released UPCATET Admissions 2026 Notification. Those candidates who are interested in this UPCATET Various UG, PG & Other Courses Admissions 2026 can Apply Online from 30/03/2026 to 15/05/2026. Read the notification for admissions eligibility, post information, selection procedure, pay scale and all other information."
     }
   },
-  "fetchedAt": "2026-06-11T10:15:08.726Z"
+  "fetchedAt": "2026-06-12T06:56:53.741Z"
 } as const;

@@ -3,7 +3,7 @@ import * as fs from "fs";
 import * as path from "path";
 
 async function main() {
-  console.log("Scraping sarkariexam.com...");
+  console.log("Scraping sarkariresult.com...");
   const data = await scrapeSarkariResult();
   const allItems = [...data.results, ...data.admitCards, ...data.latestJobs, ...data.answerKeys, ...data.documents, ...data.admissions];
 
