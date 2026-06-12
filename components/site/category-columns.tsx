@@ -74,11 +74,15 @@ export function CategoryColumns({ sections }: { sections: { label: string; items
                               <CalendarDays className="h-3 w-3" />
                               {item.date}
                             </span>
-                            {isWithin7Days(item.date) && (
+                            {isWithin7Days(item.date) ? (
                               <span className="inline-flex items-center gap-0.5 rounded bg-orange-50 px-1.5 py-0.5 text-[10px] font-bold text-[#EA580C] ring-1 ring-orange-200">
                                 <Sparkles className="h-2.5 w-2.5" /> NEW
                               </span>
-                            )}
+                            ) : item.isExpired ? (
+                              <span className="inline-flex items-center gap-0.5 rounded bg-red-50 px-1.5 py-0.5 text-[10px] font-bold text-red-600 ring-1 ring-red-200">
+                                EXPIRED
+                              </span>
+                            ) : null}
                           </div>
                         </div>
                       </Link>

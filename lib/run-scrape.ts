@@ -1,14 +1,33 @@
-import { scrapeSarkariResult, scrapePostDetail, type ScrapedItem, type PostSummary } from "./scraper";
+import { scrapeSarkariResult, scrapePostDetail, type ScrapedItem, type PostDetail } from "./scraper";
+import { scrapeResultBharat, scrapeTestbookResult, scrapeSarkariResultShine } from "./sources";
 import * as fs from "fs";
 import * as path from "path";
 
+function sanitizeSlug(s: string): string {
+  return s.replace(/[<>:"/\\|?*]+/g, "-").replace(/-+/g, "-").replace(/^-+|-+$/g, "") || "post";
+}
+
 async function main() {
-  console.log("Scraping sarkariresult.com...");
-  const data = await scrapeSarkariResult();
-  const allItems = [...data.results, ...data.admitCards, ...data.latestJobs, ...data.answerKeys, ...data.documents, ...data.admissions];
+  // Scrape listings from all 4 sources
+  const sources: [string, Promise<ScrapedItem[]>][] = [
+    ["sarkariresult.com", scrapeSarkariResult().then(d => [...d.results, ...d.admitCards, ...d.latestJobs, ...d.answerKeys, ...d.documents, ...d.admissions] as ScrapedItem[])],
+    ["resultbharat.com", scrapeResultBharat()],
+    ["testbook.com", scrapeTestbookResult()],
+    ["sarkariresultshine.com", scrapeSarkariResultShine()],
+  ];
 
-  console.log(`Found ${allItems.length} total items across all categories`);
+  const allItems: ScrapedItem[] = [];
+  for (const [name, promise] of sources) {
+    try {
+      const items = await promise;
+      console.log(`${name}: ${items.length} items`);
+      allItems.push(...items);
+    } catch (e: unknown) {
+      console.log(`${name}: Error - ${e instanceof Error ? e.message : String(e)}`);
+    }
+  }
 
+  // Deduplicate by URL
   const seen = new Set<string>();
   const uniqueItems: ScrapedItem[] = [];
   for (const item of allItems) {
@@ -17,60 +36,66 @@ async function main() {
       uniqueItems.push(item);
     }
   }
-  console.log(`Fetching details for ${uniqueItems.length} unique posts...`);
+  console.log(`Total unique items: ${uniqueItems.length}`);
 
+  // Scrape post details
   const postsDir = path.resolve(process.cwd(), "data", "posts");
   fs.mkdirSync(postsDir, { recursive: true });
 
+  const posts: Record<string, PostDetail> = {};
   const CONCURRENCY = 5;
   let completed = 0;
+
   for (let i = 0; i < uniqueItems.length; i += CONCURRENCY) {
     const batch = uniqueItems.slice(i, i + CONCURRENCY);
-    const results = await Promise.allSettled(
-      batch.map((item) => scrapePostDetail(item.url))
-    );
+    const results = await Promise.allSettled(batch.map((item) => scrapePostDetail(item.url)));
     for (let j = 0; j < results.length; j++) {
       const result = results[j];
       if (result.status === "fulfilled" && result.value) {
         const post = result.value;
-        data.posts[post.slug] = {
-          title: post.title,
-          slug: post.slug,
-          url: post.url,
-          category: post.category,
-          publishedDate: post.publishedDate,
-          intro: post.intro,
-        } as PostSummary;
-        // Also inject date into the listing item
+        const safeSlug = sanitizeSlug(post.slug);
+        post.slug = safeSlug;
+        posts[safeSlug] = post;
         const listingItem = uniqueItems.find((u) => u.url === post.url);
-        if (listingItem) listingItem.publishedDate = post.publishedDate;
-        fs.writeFileSync(path.join(postsDir, `${post.slug}.json`), JSON.stringify(post, null, 2), "utf-8");
+        if (listingItem) { listingItem.publishedDate = post.publishedDate; listingItem.slug = safeSlug; }
+        fs.writeFileSync(path.join(postsDir, `${safeSlug}.json`), JSON.stringify(post, null, 2), "utf-8");
       }
     }
     completed += batch.length;
     console.log(`  ${completed}/${uniqueItems.length} posts processed`);
   }
 
-  console.log(`Saved ${Object.keys(data.posts).length} individual post files`);
+  console.log(`Saved ${Object.keys(posts).length} individual post files`);
 
+  // Write scraped data
   const outDir = path.resolve(process.cwd(), "data");
   fs.mkdirSync(outDir, { recursive: true });
 
-  const listingOnly = {
-    results: data.results,
-    admitCards: data.admitCards,
-    latestJobs: data.latestJobs,
-    answerKeys: data.answerKeys,
-    documents: data.documents,
-    admissions: data.admissions,
-    posts: data.posts,
-    fetchedAt: data.fetchedAt,
+  // Flatten categories from all items
+  const catItems: Record<string, ScrapedItem[]> = {
+    results: [], admitCards: [], latestJobs: [], answerKeys: [], documents: [], admissions: [],
+  };
+  for (const item of uniqueItems) {
+    const cat = item.category as keyof typeof catItems;
+    if (catItems[cat]) catItems[cat].push(item);
+    else catItems.results.push(item); // default category
+  }
+
+  const output = {
+    results: catItems.results,
+    admitCards: catItems.admitCards,
+    latestJobs: catItems.latestJobs,
+    answerKeys: catItems.answerKeys,
+    documents: catItems.documents,
+    admissions: catItems.admissions,
+    posts,
+    fetchedAt: new Date().toISOString(),
   };
 
-  fs.writeFileSync(path.join(outDir, "scraped.json"), JSON.stringify(data, null, 2), "utf-8");
+  fs.writeFileSync(path.join(outDir, "scraped.json"), JSON.stringify(output, null, 2), "utf-8");
 
   const tsContent = `// Auto-generated by npm run scrape - DO NOT EDIT
-export const scrapedData = ${JSON.stringify(listingOnly, null, 2)} as const;
+export const scrapedData = ${JSON.stringify(output, null, 2)} as const;
 `;
   fs.writeFileSync(path.join(outDir, "scraped-data.ts"), tsContent, "utf-8");
 

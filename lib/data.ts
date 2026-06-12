@@ -5,6 +5,8 @@ export type PostCard = {
   date: string;
   state: string;
   slug: string;
+  lastDate?: string;
+  isExpired?: boolean;
 };
 
 export const trendingExams = ["SSC CGL", "UPSC CSE", "Railway ALP", "NEET UG", "CTET", "UP Police"];
@@ -16,7 +18,7 @@ type ScrapedData = {
   answerKeys: { title: string; url: string; category: string; slug: string }[];
   documents: { title: string; url: string; category: string; slug: string }[];
   admissions: { title: string; url: string; category: string; slug: string }[];
-  posts: Record<string, { title: string; slug: string; url: string; category: string; publishedDate: string; intro: string }>;
+  posts: Record<string, { title: string; slug: string; url: string; category: string; publishedDate: string; intro: string; lastDate?: string; isExpired?: boolean }>;
   fetchedAt: string;
 };
 
@@ -43,14 +45,19 @@ export function getPostBySlug(slug: string) {
 
 function toPostCard(items: ({ title: string; url: string; category: string; slug: string; publishedDate?: string })[] | undefined, _category: string, fallbacks: PostCard[]): PostCard[] {
   if (!items || items.length === 0) return fallbacks;
-  return items.map((item) => ({
-    title: item.title,
-    excerpt: `Latest ${item.category} update from official sources. Check details, important dates and apply online.`,
-    category: formatCategory(item.category),
-    date: item.publishedDate ? new Date(item.publishedDate).toLocaleDateString("en-IN", { day: "2-digit", month: "short", year: "numeric" }) : new Date().toLocaleDateString("en-IN", { day: "2-digit", month: "short", year: "numeric" }),
-    state: guessState(item.title),
-    slug: item.slug,
-  }));
+  return items.map((item) => {
+    const detail = scraped?.posts?.[item.slug];
+    return {
+      title: item.title,
+      excerpt: `Latest ${item.category} update from official sources. Check details, important dates and apply online.`,
+      category: formatCategory(item.category),
+      date: item.publishedDate ? new Date(item.publishedDate).toLocaleDateString("en-IN", { day: "2-digit", month: "short", year: "numeric" }) : new Date().toLocaleDateString("en-IN", { day: "2-digit", month: "short", year: "numeric" }),
+      state: guessState(item.title),
+      slug: item.slug,
+      lastDate: detail?.lastDate,
+      isExpired: detail?.isExpired,
+    };
+  });
 }
 
 function formatCategory(cat: string): string {

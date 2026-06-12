@@ -25,6 +25,8 @@ export interface PostDetail extends PostSummary {
   applicationFee: string[];
   importantLinks: { label: string; url: string | undefined }[];
   fullContentHtml: string;
+  lastDate?: string;
+  isExpired?: boolean;
 }
 
 export interface ScrapedData {
@@ -137,17 +139,45 @@ function extractSections($: cheerio.CheerioAPI): ScrapedItem[] {
   return items;
 }
 
+function parseLastDate(dates: string[]): string | undefined {
+  for (const d of dates) {
+    const lower = d.toLowerCase();
+    if (lower.includes("last date") || lower.includes("apply") || lower.includes("last")) {
+      // Extract date pattern: DD/MM/YYYY or DD Month YYYY
+      const match = d.match(/(\d{1,2}\/\d{1,2}\/\d{4})/);
+      if (match) return match[1];
+      const match2 = d.match(/(\d{1,2}\s+(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{4})/i);
+      if (match2) return match2[1];
+    }
+  }
+  // Fallback: try to find any date pattern in the first few items
+  for (const d of dates.slice(0, 6)) {
+    const lower = d.toLowerCase();
+    if (lower.includes("begin") || lower.includes("start")) continue;
+    const match = d.match(/(\d{1,2}\/\d{1,2}\/\d{4})/);
+    if (match) return match[1];
+  }
+  return undefined;
+}
+
+function isExpired(lastDateStr?: string): boolean {
+  if (!lastDateStr) return false;
+  const parts = lastDateStr.split("/");
+  if (parts.length !== 3) return false;
+  const d = new Date(+parts[2], +parts[1] - 1, +parts[0]);
+  return d < new Date();
+}
+
 export async function scrapePostDetail(url: string): Promise<PostDetail | null> {
   try {
     const html = await fetchHtml(url);
     const $ = cheerio.load(html);
 
-    // Title from first table "Name Of Post" or from page heading
     let title = "";
     let publishedDate = "";
     let intro = "";
 
-    // Parse the info table (first table)
+    // Try table format first (sarkariresult.com, resultbharat.com)
     const $infoTable = $("table").first();
     if ($infoTable.length) {
       $infoTable.find("tr").each((_, tr) => {
@@ -160,12 +190,11 @@ export async function scrapePostDetail(url: string): Promise<PostDetail | null> 
       });
     }
 
-    if (!title) {
-      title = $("h1.entry-title").text().trim();
-    }
+    // Fallback: h1 or h2 title
+    if (!title) title = $("h1.entry-title").text().trim();
+    if (!title) title = $("h1").first().text().trim();
     if (!title) return null;
 
-    // Parse dates, fees, links from second table
     const importantDates: string[] = [];
     const applicationFee: string[] = [];
     const importantLinks: { label: string; url: string | undefined }[] = [];
@@ -173,7 +202,6 @@ export async function scrapePostDetail(url: string): Promise<PostDetail | null> 
 
     const $mainTable = $("table").eq(1);
     if ($mainTable.length) {
-      // First pass: extract Important Dates and Application Fee from the same TR
       $mainTable.find("h2").each((_, h) => {
         const $h = $(h);
         const txt = $h.text().trim().toLowerCase();
@@ -193,19 +221,15 @@ export async function scrapePostDetail(url: string): Promise<PostDetail | null> 
         }
       });
 
-      // Second pass: extract Important Links section
       $mainTable.find("h2").each((_, h) => {
         const $h = $(h);
         const txt = $h.text().trim().toLowerCase();
         if (txt.includes("important links") || txt.includes("useful links")) {
-          // Get all subsequent TRs after this heading's parent TR
           const $currentTr = $h.closest("tr");
-          let $next = $currentTr.nextAll("tr");
-          $next.each((_, tr) => {
+          $currentTr.nextAll("tr").each((_, tr) => {
             const cells = $(tr).find("td");
             if (cells.length >= 2) {
-              const $labelCell = $(cells[0]);
-              let label = $labelCell.text().trim();
+              const label = $(cells[0]).text().trim();
               if (!label || label.length > 80) return;
               const linkUrl = $(cells[1]).find("a").attr("href");
               const lower = label.toLowerCase();
@@ -218,37 +242,45 @@ export async function scrapePostDetail(url: string): Promise<PostDetail | null> 
           });
         }
       });
+    } else {
+      // Fallback for article-based pages: extract any date-like text, links
+      $("p, li, div").each((_, el) => {
+        const txt = $(el).text().trim().toLowerCase();
+        if (txt.includes("last date") || txt.includes("application deadline") || txt.includes("apply before")) {
+          importantDates.push($(el).text().trim());
+        }
+        if (txt.includes("application fee") || txt.includes("exam fee") || txt.includes("registration fee")) {
+          applicationFee.push($(el).text().trim());
+        }
+      });
     }
 
-    // Full content HTML - keep tables (they contain the actual content)
+    // Extract last date
+    const lastDate = parseLastDate(importantDates);
+
+    // Content HTML
     const fullContentHtml = (() => {
-      const $article = $("article.dynamic-content-template, article[class*=post]");
+      const $article = $("article.dynamic-content-template, article[class*=post], article.post, article");
       if ($article.length) {
         const clone = $article.first().clone();
-        // Remove only non-content elements (NOT gb-containers - they hold the content)
         clone.find("script, style, ins, iframe, .gb-button-wrapper, nav, header, footer").remove();
-        // Remove sarkariresult.com branding/links
         clone.find("a[href*=sarkariresult], a[href*=sarkariresults]").remove();
         clone.find("h2:contains('SARKARIRESULT'), h2:contains('WWW.'), h2:contains('Sarkari Result')").remove();
         clone.find("h2:contains('Mobile Apps'), h2:contains('Android'), h2:contains('Apple'), h2:contains('Telegram')").remove();
         clone.find("h2:contains('WhatsApp'), h2:contains('Download Mobile'), h2:contains('Join Sarkari')").remove();
-        // Remove spam link rows
-        clone.find("tr").each((_, tr) => {
-          const txt = $(tr).text().toLowerCase();
-          if (txt.includes("join whatsapp") || txt.includes("join telegram") || txt.includes("mobile apps") || txt.includes("apple ios")) {
-            $(tr).remove();
-          }
-        });
         return clone.html() || "";
       }
       const $ec = $("div.entry-content");
-      if ($ec.length) {
-        return $ec.first().html() || "";
-      }
+      if ($ec.length) return $ec.first().html() || "";
       return "";
     })();
 
-    const slug = url.replace(/\/$/, "").split("/").pop() || title.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+    const slug = (() => {
+      const clean = url.split("?")[0].replace(/\/$/, "");
+      const last = clean.split("/").pop()?.replace(/\.html$/, "") || "";
+      if (last && !last.startsWith("?")) return last;
+      return title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/-+/g, "-").slice(0, 80);
+    })();
 
     return {
       title,
@@ -261,6 +293,8 @@ export async function scrapePostDetail(url: string): Promise<PostDetail | null> 
       applicationFee,
       importantLinks,
       fullContentHtml,
+      lastDate,
+      isExpired: isExpired(lastDate),
     };
   } catch {
     return null;

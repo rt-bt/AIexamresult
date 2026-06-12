@@ -126,6 +126,15 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                   Published: {new Date(post.publishedDate).toLocaleDateString("en-US", { day: "numeric", month: "long", year: "numeric" })}
                 </div>
               )}
+              {post.lastDate && (
+                <div className={`mt-3 flex items-center gap-2 text-sm ${post.isExpired ? "text-red-600" : "text-emerald-600"}`}>
+                  <svg className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" /><path d="M16 2v4M8 2v4M3 10h18" /></svg>
+                  Last Date: {post.lastDate}
+                  {post.isExpired && (
+                    <span className="rounded bg-red-50 px-2 py-0.5 text-[10px] font-bold text-red-600 ring-1 ring-red-200">EXPIRED</span>
+                  )}
+                </div>
+              )}
 
               {post.intro && (
                 <div className="mt-6 rounded-2xl border-l-4 border-brand bg-brand/5 px-5 py-4">
