@@ -1,7 +1,7 @@
 "use client";
 
-import { ShieldCheck, TrendingUp, BarChart3, Award, Search, ArrowRight, ExternalLink, Clock, Sparkles, Bell, Zap, AlertTriangle, ChevronRight } from "lucide-react";
-import { motion } from "framer-motion";
+import { ShieldCheck, TrendingUp, BarChart3, Award, Search, ArrowRight, ExternalLink, Clock, Sparkles, Zap, AlertTriangle, ChevronRight } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect, useRef } from "react";
 import { featuredResults, trendingExams, latestJobs } from "@/lib/data";
 import Link from "next/link";
@@ -55,16 +55,18 @@ function Ticker() {
         LIVE
       </span>
       <div className="relative h-5 flex-1 overflow-hidden">
-        <motion.p
-          key={i}
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          exit={{ y: -20, opacity: 0 }}
-          transition={{ duration: 0.3 }}
-          className="absolute left-0 top-0 text-sm font-semibold text-white/90 truncate w-full"
-        >
-          {items[i]}
-        </motion.p>
+        <AnimatePresence mode="wait">
+          <motion.p
+            key={i}
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: -20, opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="absolute left-0 top-0 text-sm font-semibold text-white/90 truncate w-full"
+          >
+            {items[i]}
+          </motion.p>
+        </AnimatePresence>
       </div>
       <Link href="/results" className="shrink-0 text-[10px] font-bold text-[#5EEAD4] hover:underline">View All</Link>
     </div>
