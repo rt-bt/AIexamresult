@@ -15,12 +15,13 @@ const categoryConfig: Record<string, { slug: string; from: string; via: string }
 };
 
 const now = Date.now();
-const sevenDaysMs = 7 * 24 * 60 * 60 * 1000;
+const threeDaysMs = 3 * 24 * 60 * 60 * 1000;
 
-function isWithin7Days(date: string): boolean {
+function isWithinDays(date: string, days: number): boolean {
   try {
     const d = new Date(date);
-    return (now - d.getTime()) <= sevenDaysMs && d.getTime() <= now;
+    const ms = days * 24 * 60 * 60 * 1000;
+    return (now - d.getTime()) <= ms && d.getTime() <= now;
   } catch { return false; }
 }
 
@@ -74,11 +75,11 @@ export function CategoryColumns({ sections }: { sections: { label: string; items
                               <CalendarDays className="h-3 w-3" />
                               {item.date}
                             </span>
-                            {isWithin7Days(item.date) ? (
+                            {isWithinDays(item.date, 3) ? (
                               <span className="inline-flex items-center gap-0.5 rounded bg-orange-50 px-1.5 py-0.5 text-[10px] font-bold text-[#EA580C] ring-1 ring-orange-200">
                                 <Sparkles className="h-2.5 w-2.5" /> NEW
                               </span>
-                            ) : item.isExpired ? (
+                            ) : section.label === "Latest Jobs" && item.isExpired ? (
                               <span className="inline-flex items-center gap-0.5 rounded bg-red-50 px-1.5 py-0.5 text-[10px] font-bold text-red-600 ring-1 ring-red-200">
                                 EXPIRED
                               </span>

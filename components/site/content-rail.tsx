@@ -3,12 +3,12 @@ import { ArrowUpRight, CalendarDays, MapPin, Sparkles } from "lucide-react";
 import type { PostCard } from "@/lib/data";
 
 const now = Date.now();
-const sevenDaysMs = 7 * 24 * 60 * 60 * 1000;
 
-function isWithin7Days(date: string): boolean {
+function isWithinDays(date: string, days: number): boolean {
   try {
     const d = new Date(date);
-    return (now - d.getTime()) <= sevenDaysMs && d.getTime() <= now;
+    const ms = days * 24 * 60 * 60 * 1000;
+    return (now - d.getTime()) <= ms && d.getTime() <= now;
   } catch { return false; }
 }
 
@@ -59,11 +59,11 @@ export function ContentRail({
               <div className="mt-5 flex flex-wrap gap-3 text-xs font-semibold text-slate-400">
                 <span className="inline-flex items-center gap-1.5"><CalendarDays className="h-3.5 w-3.5" /> {item.date}</span>
                 <span className="inline-flex items-center gap-1.5"><MapPin className="h-3.5 w-3.5" /> {item.state}</span>
-                {isWithin7Days(item.date) ? (
+                {isWithinDays(item.date, 3) ? (
                   <span className="inline-flex items-center gap-0.5 rounded bg-orange-50 px-1.5 py-0.5 text-[10px] font-bold text-[#EA580C] ring-1 ring-orange-200">
                     <Sparkles className="h-2.5 w-2.5" /> NEW
                   </span>
-                ) : item.isExpired ? (
+                ) : item.category === "Latest Job" && item.isExpired ? (
                   <span className="inline-flex items-center gap-0.5 rounded bg-red-50 px-1.5 py-0.5 text-[10px] font-bold text-red-600 ring-1 ring-red-200">
                     EXPIRED
                   </span>
