@@ -1,4 +1,6 @@
 import * as cheerio from "cheerio";
+import * as https from "https";
+import * as http from "http";
 import cloudscraper from "cloudscraper";
 
 export interface ScrapedItem {
@@ -46,8 +48,46 @@ const HEADING_MAP: Record<string, keyof Omit<ScrapedData, "posts" | "fetchedAt">
   "document verification": "documents",
 };
 
-async function fetchHtml(url: string): Promise<string> {
-  return cloudscraper({ uri: url, method: "GET" });
+async function fetchHtml(url: string, attempt = 1): Promise<string> {
+  try {
+    const html = await cloudscraper({ uri: url, method: "GET" });
+    if (html && !html.includes("Just a moment")) return html;
+  } catch {}
+  const u = new URL(url);
+  const mod = u.protocol === "https:" ? https : http;
+  return new Promise((resolve, reject) => {
+    const req = mod.get(
+      url,
+      {
+        headers: {
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
+          Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+          "Accept-Language": "en-US,en;q=0.9",
+        },
+        timeout: 15000,
+      },
+      (res) => {
+        let data = "";
+        res.on("data", (chunk: string) => (data += chunk));
+        res.on("end", () => {
+          if (res.statusCode !== 200 && attempt < 3) {
+            setTimeout(() => resolve(fetchHtml(url, attempt + 1)), 2000);
+          } else {
+            resolve(data);
+          }
+        });
+      }
+    );
+    req.on("error", (err) => {
+      if (attempt < 3) setTimeout(() => resolve(fetchHtml(url, attempt + 1)), 2000);
+      else reject(err);
+    });
+    req.on("timeout", () => {
+      req.destroy();
+      if (attempt < 3) setTimeout(() => resolve(fetchHtml(url, attempt + 1)), 2000);
+      else reject(new Error("Timeout after retries"));
+    });
+  });
 }
 
 function extractSections($: cheerio.CheerioAPI): ScrapedItem[] {
