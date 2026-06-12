@@ -7,6 +7,7 @@ import { Footer } from "@/components/site/footer";
 import { BookmarkBtn } from "@/components/site/bookmark-btn";
 import { ShareButtons } from "@/components/site/share-buttons";
 import { getPostBySlug } from "@/lib/data";
+import { CalendarDays, Clock, ExternalLink, AlertTriangle, CheckCircle, ChevronRight, BadgeInfo, Banknote, ArrowUpRight } from "lucide-react";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.aiexamresult.com";
 
@@ -48,6 +49,39 @@ async function getPostDetail(slug: string) {
     }
   } catch {}
   return null;
+}
+
+function DateBadge({ label, date, isExpired }: { label: string; date: string; isExpired?: boolean }) {
+  return (
+    <div className={`flex items-center gap-3 rounded-xl border p-4 ${isExpired ? "border-red-200 bg-red-50" : "border-emerald-200 bg-emerald-50"}`}>
+      <div className={`flex h-10 w-10 items-center justify-center rounded-lg ${isExpired ? "bg-red-100 text-red-600" : "bg-emerald-100 text-emerald-600"}`}>
+        {isExpired ? <AlertTriangle className="h-5 w-5" /> : <CheckCircle className="h-5 w-5" />}
+      </div>
+      <div className="flex-1">
+        <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">{label}</p>
+        <p className={`text-sm font-bold ${isExpired ? "text-red-700" : "text-emerald-700"}`}>{date}</p>
+      </div>
+      {isExpired && (
+        <span className="rounded-lg bg-red-100 px-3 py-1.5 text-xs font-black text-red-700 ring-1 ring-red-200">Expired</span>
+      )}
+    </div>
+  );
+}
+
+function SectionCard({ icon, title, children, gradient }: { icon: React.ReactNode; title: string; children: React.ReactNode; gradient?: string }) {
+  return (
+    <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+      <div className={`px-5 py-4 ${gradient || "border-b border-slate-100 bg-slate-50"}`}>
+        <h2 className="flex items-center gap-2.5 text-lg font-black text-slate-800">
+          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand/10 text-brand">{icon}</span>
+          {title}
+        </h2>
+      </div>
+      <div className="px-5 py-4">
+        {children}
+      </div>
+    </div>
+  );
 }
 
 export default async function PostPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -96,148 +130,195 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
     ]
   };
 
+  const cleanLinks = (post.importantLinks || []).filter((l: { label: string; url: string | undefined }) =>
+    l.url && !l.url.includes("sarkariexam.com") && !l.url.includes("sarkariresult")
+  );
+
   return (
     <>
       <Header />
-      <main className="container-page py-4 sm:py-10">
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-        <Link href="/" className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-slate-500 transition hover:text-brand lg:hidden mb-3">
-          <svg className="h-3.5 w-3.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7" /></svg>
-          Back to Home
-        </Link>
-        <nav aria-label="Breadcrumb" className="hidden sm:flex text-sm font-semibold text-slate-500">
-          <ol className="flex flex-wrap items-center gap-1.5">
-            <li><Link href="/" className="hover:text-brand transition-colors">Home</Link></li>
-            <li aria-hidden="true">/</li>
-            <li><Link href={`/${catSlug}`} className="hover:text-brand transition-colors">{post.category || "Updates"}</Link></li>
-            <li aria-hidden="true">/</li>
-            <li aria-current="page" className="text-slate-800 truncate max-w-[200px] sm:max-w-[400px]">{title}</li>
-          </ol>
-        </nav>
-        <article className="mt-5 grid gap-6 lg:grid-cols-[1fr_340px]">
-          <div className="overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-lg shadow-slate-200/50 dark:border-white/10 dark:bg-white/10">
-            <div className="bg-gradient-to-r from-brand/5 via-transparent to-transparent p-6 sm:p-8 lg:p-10">
-              <span className="inline-flex items-center gap-1.5 rounded-full bg-brand/10 px-3 py-1 text-xs font-black uppercase tracking-wider text-brand ring-1 ring-brand/20">{post.category || "Verified Update"}</span>
-              <h1 className="mt-4 text-3xl sm:text-4xl lg:text-5xl font-black leading-tight text-ink dark:text-white">{title}</h1>
+      <main className="min-h-screen bg-gradient-to-b from-slate-50 to-white pb-16">
+        <div className="container-page py-4 sm:py-8">
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-              {post.publishedDate && (
-                <div className="mt-4 flex items-center gap-2 text-sm text-slate-500">
-                  <svg className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" /><path d="M16 2v4M8 2v4M3 10h18" /></svg>
-                  Published: {new Date(post.publishedDate).toLocaleDateString("en-US", { day: "numeric", month: "long", year: "numeric" })}
-                </div>
-              )}
-              {post.lastDate && (
-                <div className={`mt-3 flex items-center gap-2 text-sm ${post.isExpired ? "text-red-600" : "text-emerald-600"}`}>
-                  <svg className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" /><path d="M16 2v4M8 2v4M3 10h18" /></svg>
-                  Last Date: {post.lastDate}
-                  {post.isExpired && (
-                    <span className="rounded bg-red-50 px-2 py-0.5 text-[10px] font-bold text-red-600 ring-1 ring-red-200">EXPIRED</span>
+          <nav aria-label="Breadcrumb" className="mb-6 hidden sm:flex">
+            <ol className="flex flex-wrap items-center gap-2 text-sm text-slate-500">
+              <li><Link href="/" className="font-medium transition hover:text-brand">Home</Link></li>
+              <ChevronRight className="h-3.5 w-3.5 text-slate-300" />
+              <li><Link href={`/${catSlug}`} className="font-medium transition hover:text-brand">{post.category || "Updates"}</Link></li>
+              <ChevronRight className="h-3.5 w-3.5 text-slate-300" />
+              <li className="max-w-[260px] truncate font-semibold text-slate-800">{title}</li>
+            </ol>
+          </nav>
+
+          <div className="grid gap-6 lg:grid-cols-[1fr_320px]">
+
+            {/* Main Content */}
+            <div className="space-y-6">
+
+              {/* Hero Card */}
+              <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-lg shadow-slate-200/40">
+                <div className="bg-gradient-to-br from-brand/5 via-brand/[0.02] to-transparent p-6 sm:p-8">
+                  <div className="flex flex-wrap items-center gap-3">
+                    <span className="inline-flex items-center gap-1.5 rounded-full bg-brand/10 px-3.5 py-1 text-xs font-bold uppercase tracking-wider text-brand ring-1 ring-brand/20">
+                      <BadgeInfo className="h-3 w-3" />
+                      {post.category || "Verified Update"}
+                    </span>
+                    <span className="inline-flex items-center gap-1.5 rounded-full bg-slate-100 px-3.5 py-1 text-xs font-bold text-slate-600">
+                      <CalendarDays className="h-3 w-3" />
+                      {publishedDate}
+                    </span>
+                  </div>
+
+                  <h1 className="mt-5 text-2xl font-black leading-tight text-slate-900 sm:text-3xl lg:text-4xl">{title}</h1>
+
+                  {post.lastDate && (
+                    <div className="mt-5 space-y-3">
+                      <DateBadge label="Last Date to Apply" date={post.lastDate} isExpired={post.isExpired} />
+                    </div>
+                  )}
+
+                  {post.intro && (
+                    <div className="mt-6 rounded-xl border-l-4 border-brand bg-white/80 px-5 py-4 shadow-sm backdrop-blur-sm">
+                      <p className="text-base leading-7 text-slate-700 sm:text-lg">{post.intro}</p>
+                    </div>
                   )}
                 </div>
+              </div>
+
+              {/* Important Dates */}
+              {post.importantDates && post.importantDates.length > 0 && (
+                <SectionCard icon={<CalendarDays className="h-4 w-4" />} title="Important Dates" gradient="border-b border-brand/10 bg-brand/[0.04]">
+                  <div className="divide-y divide-slate-100">
+                    {post.importantDates.map((d: string, i: number) => (
+                      <div key={i} className="flex items-start gap-3 py-3 first:pt-0 last:pb-0">
+                        <span className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand/10 text-xs font-black text-brand">{i + 1}</span>
+                        <p className="text-sm leading-6 text-slate-700" dangerouslySetInnerHTML={{ __html: d }} />
+                      </div>
+                    ))}
+                  </div>
+                </SectionCard>
               )}
 
-              {post.intro && (
-                <div className="mt-6 rounded-2xl border-l-4 border-brand bg-brand/5 px-5 py-4">
-                  <p className="text-base sm:text-lg leading-7 sm:leading-8 text-slate-700 dark:text-slate-300">{post.intro}</p>
+              {/* Application Fee */}
+              {post.applicationFee && post.applicationFee.length > 0 && (
+                <SectionCard icon={<Banknote className="h-4 w-4" />} title="Application Fee" gradient="border-b border-orange-100 bg-orange-50/50">
+                  <div className="divide-y divide-slate-100">
+                    {post.applicationFee.map((f: string, i: number) => (
+                      <div key={i} className="flex items-start gap-3 py-3 first:pt-0 last:pb-0">
+                        <span className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-orange-100 text-xs font-black text-orange-600">₹</span>
+                        <p className="text-sm leading-6 text-slate-700" dangerouslySetInnerHTML={{ __html: f }} />
+                      </div>
+                    ))}
+                  </div>
+                </SectionCard>
+              )}
+
+              {/* Important Links */}
+              {cleanLinks.length > 0 && (
+                <SectionCard icon={<ExternalLink className="h-4 w-4" />} title="Important Links" gradient="border-b border-indigo-100 bg-indigo-50/50">
+                  <div className="grid gap-3">
+                    {cleanLinks.map((link: { label: string; url: string | undefined }, i: number) => (
+                      <a
+                        key={i}
+                        href={link.url || "#"}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group flex items-center justify-between gap-4 rounded-xl border border-slate-200 bg-white px-5 py-4 shadow-sm transition-all hover:-translate-y-0.5 hover:border-indigo-200 hover:shadow-md"
+                      >
+                        <span className="flex items-center gap-3">
+                          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-brand to-indigo-500 text-xs font-black text-white shadow-sm">{i + 1}</span>
+                          <span className="text-sm font-bold text-slate-700 transition group-hover:text-brand">{link.label}</span>
+                        </span>
+                        <ArrowUpRight className="h-4 w-4 shrink-0 text-slate-400 transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-brand" />
+                      </a>
+                    ))}
+                  </div>
+                </SectionCard>
+              )}
+
+              {/* Official Website CTA */}
+              {officialUrl && (
+                <div className="overflow-hidden rounded-2xl bg-gradient-to-br from-brand to-emerald-700 p-6 shadow-lg sm:p-8">
+                  <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                    <div>
+                      <h2 className="text-xl font-black text-white">Official Website</h2>
+                      <p className="mt-1 text-sm text-white/80">Visit the official portal for detailed information and online application.</p>
+                    </div>
+                    <a
+                      href={officialUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex shrink-0 items-center gap-2 rounded-xl bg-white px-6 py-3.5 text-sm font-black text-brand shadow-lg transition hover:bg-white/90 hover:shadow-xl"
+                    >
+                      Visit Now
+                      <ExternalLink className="h-4 w-4" />
+                    </a>
+                  </div>
                 </div>
               )}
             </div>
 
-            <div className="space-y-6 px-6 sm:px-8 lg:px-10 pb-8 sm:pb-10">
-              {post.importantDates && post.importantDates.length > 0 && (
-                <section>
-                  <h2 className="flex items-center gap-2 text-xl sm:text-2xl font-black text-ink">
-                    <svg className="h-5 w-5 text-brand" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" /><path d="M16 2v4M8 2v4M3 10h18" /></svg>
-                    Important Dates
-                  </h2>
-                  <div className="mt-4 space-y-3">
-                    {post.importantDates.map((d: string, i: number) => (
-                      <div key={i} className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition hover:shadow-md dark:border-white/10 dark:bg-white/5">
-                        <p className="text-slate-700 dark:text-slate-300 leading-6" dangerouslySetInnerHTML={{ __html: d }} />
-                      </div>
-                    ))}
-                  </div>
-                </section>
-              )}
-
-              {post.applicationFee && post.applicationFee.length > 0 && (
-                <section>
-                  <h2 className="flex items-center gap-2 text-xl sm:text-2xl font-black text-ink">
-                    <svg className="h-5 w-5 text-brand" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" /></svg>
-                    Application Fee
-                  </h2>
-                  <div className="mt-4 space-y-3">
-                    {post.applicationFee.map((f: string, i: number) => (
-                      <div key={i} className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition hover:shadow-md dark:border-white/10 dark:bg-white/5">
-                        <p className="text-slate-700 dark:text-slate-300 leading-6" dangerouslySetInnerHTML={{ __html: f }} />
-                      </div>
-                    ))}
-                  </div>
-                </section>
-              )}
-
-              {(() => {
-                const cleanLinks = (post.importantLinks || []).filter((l: { label: string; url: string | undefined }) =>
-                  l.url && !l.url.includes("sarkariexam.com") && !l.url.includes("sarkariresult")
-                );
-                return cleanLinks.length > 0 ? (
-                  <section>
-                    <h2 className="flex items-center gap-2 text-xl sm:text-2xl font-black text-ink">
-                      <svg className="h-5 w-5 text-brand" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /></svg>
-                      Important Links
-                    </h2>
-                    <div className="mt-4 grid gap-3">
-                      {cleanLinks.map((link: { label: string; url: string | undefined }, i: number) => (
-                        <a key={i} href={link.url || "#"} target="_blank" rel="noopener noreferrer" className="group flex items-center justify-between rounded-xl border border-slate-200 bg-white px-5 py-4 font-bold text-brand shadow-sm transition hover:border-brand/30 hover:shadow-md dark:border-white/10 dark:bg-white/5">
-                          <span className="flex items-center gap-2">
-                            <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand/10 text-brand text-sm font-black">{i + 1}</span>
-                            <span>{link.label}</span>
-                          </span>
-                          <span className="flex items-center gap-1 text-xs font-semibold text-slate-400 transition group-hover:translate-x-1">
-                            Click Here <span aria-hidden="true">&rarr;</span>
-                          </span>
-                        </a>
-                      ))}
+            {/* Sidebar */}
+            <aside className="space-y-5">
+              <div className="sticky top-24 space-y-5">
+                {/* Telegram Card */}
+                <div className="overflow-hidden rounded-2xl bg-gradient-to-br from-[#1E3A5F] to-[#0D2137] p-5 text-white shadow-lg">
+                  <div className="flex items-center gap-3">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/15 backdrop-blur-sm">
+                      <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
                     </div>
-                  </section>
-                ) : null;
-              })()}
-
-              {officialUrl && (
-                <section className="rounded-2xl bg-gradient-to-br from-brand/10 to-transparent p-6 sm:p-8">
-                  <h2 className="flex items-center gap-2 text-xl sm:text-2xl font-black text-ink">
-                    <svg className="h-5 w-5 text-brand" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" /><path d="M2 12h20" /></svg>
-                    Official Website
-                  </h2>
-                  <a href={officialUrl} target="_blank" rel="noopener noreferrer" className="mt-4 inline-flex items-center gap-2 rounded-full bg-brand px-6 py-3 text-sm font-black text-white shadow-lg shadow-brand/30 transition hover:bg-[#0F766E] hover:shadow-xl hover:shadow-brand/40">
-                    Visit Official Website
-                    <svg className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M7 17l9.2-9.2M17 17V7H7" /></svg>
+                    <div>
+                      <h3 className="text-base font-black">Telegram</h3>
+                      <p className="text-xs text-slate-300">Instant exam alerts</p>
+                    </div>
+                  </div>
+                  <a href="https://t.me/aiexamresults" target="_blank" rel="noopener noreferrer" className="mt-4 flex items-center justify-center gap-2 rounded-xl bg-white/15 px-4 py-3 text-sm font-bold backdrop-blur-sm transition hover:bg-white/25">
+                    <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                    Join Channel
                   </a>
-                </section>
-              )}
-            </div>
-          </div>
+                </div>
 
-          <aside className="space-y-4">
-            <div className="rounded-2xl bg-ink p-5 text-white">
-              <h3 className="text-xl font-black">Join Telegram</h3>
-              <p className="mt-2 text-sm text-slate-300">Get instant exam alerts and result notices.</p>
-              <a href="https://t.me/aiexamresults" target="_blank" rel="noopener noreferrer" className="mt-4 inline-block rounded-full bg-white px-4 py-2 text-sm font-black text-ink transition hover:bg-white/90">Join Channel</a>
-            </div>
-            <div className="rounded-2xl border border-slate-200 bg-white p-5 dark:border-white/10 dark:bg-white/10">
-              <h3 className="font-black">Save</h3>
-              <div className="mt-3">
-                <BookmarkBtn slug={slug} title={title} category={post.category || "Update"} date={publishedDate} />
+                {/* Quick Stats */}
+                <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+                  <h3 className="text-sm font-black text-slate-800">Quick Info</h3>
+                  <div className="mt-4 space-y-3">
+                    <div className="flex items-center justify-between text-sm">
+                      <span className="text-slate-500">Category</span>
+                      <span className="font-bold text-slate-800">{post.category || "Update"}</span>
+                    </div>
+                    <div className="h-px bg-slate-100" />
+                    <div className="flex items-center justify-between text-sm">
+                      <span className="text-slate-500">Published</span>
+                      <span className="font-bold text-slate-800">{publishedDate}</span>
+                    </div>
+                    {post.lastDate && (
+                      <>
+                        <div className="h-px bg-slate-100" />
+                        <div className="flex items-center justify-between text-sm">
+                          <span className="text-slate-500">Last Date</span>
+                          <span className={`font-bold ${post.isExpired ? "text-red-600" : "text-emerald-600"}`}>
+                            {post.lastDate} {post.isExpired ? "(Expired)" : ""}
+                          </span>
+                        </div>
+                      </>
+                    )}
+                  </div>
+                </div>
+
+                {/* Save & Share */}
+                <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <BookmarkBtn slug={slug} title={title} category={post.category || "Update"} date={publishedDate} />
+                    <div className="h-8 w-px bg-slate-200" />
+                    <ShareButtons title={title} url={`${SITE_URL}/post/${slug}`} />
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className="rounded-2xl border border-slate-200 bg-white p-5 dark:border-white/10 dark:bg-white/10">
-              <h3 className="font-black">Share</h3>
-              <div className="mt-3">
-                <ShareButtons title={title} url={`${SITE_URL}/post/${slug}`} />
-              </div>
-            </div>
-          </aside>
-        </article>
+            </aside>
+
+          </div>
+        </div>
       </main>
       <Footer />
     </>
