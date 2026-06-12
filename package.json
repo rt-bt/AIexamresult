@@ -11,7 +11,8 @@
     "db:migrate": "prisma migrate deploy",
     "db:studio": "prisma studio",
     "scrape": "tsx lib/run-scrape.ts",
-    "auto-sync": "tsx lib/auto-sync.ts"
+    "auto-sync": "tsx lib/auto-sync.ts",
+    "postinstall": "node -e \"require('fs').copyFileSync('node_modules/pdfjs-dist/build/pdf.worker.min.mjs', 'public/pdf.worker.min.js')\""
   },
   "dependencies": {
     "@capacitor/android": "^8.4.0",
