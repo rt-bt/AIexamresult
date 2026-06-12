@@ -85,10 +85,10 @@ export function Hero() {
   if (!mounted) return null;
 
   return (
-    <section className="relative min-h-[100dvh] flex flex-col justify-center overflow-hidden">
+    <section className="relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-[#0D9488] via-[#0F766E] to-[#0F172A]" />
 
-      <div className="container-page relative py-6 sm:py-10">
+      <div className="container-page relative pt-1 sm:pt-2 pb-6 sm:pb-10">
         <div className="mx-auto max-w-3xl text-center">
 
           {/* Badge */}
