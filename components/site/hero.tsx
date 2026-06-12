@@ -1,9 +1,9 @@
 "use client";
 
-import { ShieldCheck, TrendingUp, BarChart3, Award, Search, ArrowRight, ExternalLink, Clock, Sparkles } from "lucide-react";
+import { ShieldCheck, TrendingUp, BarChart3, Award, Search, ArrowRight, ExternalLink, Clock, Sparkles, Bell, Zap, AlertTriangle, ChevronRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState, useEffect, useRef } from "react";
-import { trendingExams } from "@/lib/data";
+import { featuredResults, trendingExams, latestJobs } from "@/lib/data";
 import Link from "next/link";
 
 function Counter({ to, label, icon: Icon }: { to: number; label: string; icon: typeof TrendingUp }) {
@@ -40,11 +40,44 @@ function Counter({ to, label, icon: Icon }: { to: number; label: string; icon: t
   );
 }
 
+function Ticker() {
+  const items = featuredResults.slice(0, 6).map(p => p.title);
+  const [i, setI] = useState(0);
+  useEffect(() => {
+    const iv = setInterval(() => setI(j => (j + 1) % items.length), 3500);
+    return () => clearInterval(iv);
+  }, [items.length]);
+
+  return (
+    <div className="flex items-center gap-3 overflow-hidden rounded-xl bg-white/10 px-4 py-2.5 backdrop-blur-sm ring-1 ring-white/10">
+      <span className="flex shrink-0 items-center gap-1.5 rounded-full bg-red-500/20 px-2.5 py-0.5 text-[10px] font-bold text-red-300">
+        <span className="h-1.5 w-1.5 rounded-full bg-red-400 animate-pulse" />
+        LIVE
+      </span>
+      <div className="relative h-5 flex-1 overflow-hidden">
+        <motion.p
+          key={i}
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          exit={{ y: -20, opacity: 0 }}
+          transition={{ duration: 0.3 }}
+          className="absolute left-0 top-0 text-sm font-semibold text-white/90 truncate w-full"
+        >
+          {items[i]}
+        </motion.p>
+      </div>
+      <Link href="/results" className="shrink-0 text-[10px] font-bold text-[#5EEAD4] hover:underline">View All</Link>
+    </div>
+  );
+}
+
 export function Hero() {
   const [searchQ, setSearchQ] = useState("");
 
+  const urgentItems = latestJobs.slice(0, 4);
+
   return (
-    <section className="relative overflow-hidden pb-16 pt-6 sm:pt-14 lg:pb-28 lg:pt-20">
+    <section className="relative overflow-hidden pb-16 pt-4 sm:pt-10 lg:pb-28 lg:pt-16">
       <div className="absolute inset-0 bg-gradient-to-br from-[#0D9488] via-[#0F766E] to-[#0F172A]" />
       <div className="absolute inset-0 opacity-30" style={{ backgroundImage: `radial-gradient(circle at 25% 25%, rgba(94,234,212,0.3) 0%, transparent 50%), radial-gradient(circle at 75% 75%, rgba(234,88,12,0.15) 0%, transparent 50%)` }} />
 
@@ -56,29 +89,32 @@ export function Hero() {
       <div className="hidden md:block absolute left-[35%] bottom-[25%] h-2 w-2 rounded-full bg-[#FBBF24]/20 animate-ping" style={{ animationDelay: "1s" }} />
       <div className="hidden md:block absolute right-[15%] bottom-[35%] h-3 w-3 rounded-full bg-white/10 animate-ping" style={{ animationDelay: "1.5s" }} />
 
-      <div className="hidden md:block absolute left-[5%] top-[40%] h-16 w-16 rotate-45 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm" />
-      <div className="hidden md:block absolute right-[8%] top-[25%] h-20 w-20 rotate-12 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm" />
-      <div className="hidden md:block absolute bottom-[20%] left-[50%] h-12 w-12 -rotate-12 rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm" />
-
       <div className="container-page relative">
+
+        {/* Live Ticker */}
+        <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }} className="mb-4">
+          <Ticker />
+        </motion.div>
+
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-center">
           <motion.span initial={{ scale: 0.9 }} animate={{ scale: 1 }} transition={{ duration: 0.4, delay: 0.2 }} className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-sm font-bold text-white backdrop-blur-sm ring-1 ring-white/20">
             <ShieldCheck className="h-4 w-4 text-[#5EEAD4]" />
-            India&apos;s fastest exam result tracker
+            India&apos;s #1 fastest exam result tracker
           </motion.span>
 
           <h1 className="mx-auto mt-4 sm:mt-6 max-w-4xl text-3xl sm:text-5xl lg:text-7xl font-black leading-[1.1] tracking-tight text-white">
-            <span className="text-white">Results, Jobs &</span>{" "}
-            <span className="bg-gradient-to-r from-[#5EEAD4] to-[#FBBF24] bg-clip-text text-transparent">Admit Cards</span>{" "}
-            <span className="text-white/90">—</span>{" "}
-            <span className="bg-gradient-to-r from-[#FBBF24] to-[#F97316] bg-clip-text text-transparent">Real Time.</span>
+            <span className="text-white">Never Miss</span>{" "}
+            <span className="bg-gradient-to-r from-[#5EEAD4] to-[#FBBF24] bg-clip-text text-transparent">a Result,</span>{" "}
+            <span className="text-white">Job or</span>{" "}
+            <span className="bg-gradient-to-r from-[#FBBF24] to-[#F97316] bg-clip-text text-transparent">Deadline</span>
+            <span className="text-white">.</span>
           </h1>
 
           <p className="mx-auto mt-3 sm:mt-5 max-w-2xl text-sm sm:text-lg leading-6 sm:leading-8 text-white/70">
-            From Sarkari results to government job alerts — we bring every update to you the moment it&apos;s out. No delays, no clutter.
+            From Sarkari results to government job alerts with application deadlines — one place for every update that matters to your career.
           </p>
 
-          {/* Search Bar - actionable right in hero */}
+          {/* Search Bar */}
           <div className="mx-auto mt-6 max-w-xl">
             <div className="flex items-center gap-2 rounded-2xl border border-white/20 bg-white/10 p-1.5 backdrop-blur-md ring-1 ring-white/10 transition focus-within:border-[#5EEAD4]/50 focus-within:ring-[#5EEAD4]/30">
               <div className="flex items-center gap-2 pl-3 text-white/50">
@@ -92,13 +128,17 @@ export function Hero() {
                 className="flex-1 bg-transparent px-1 py-3 text-sm text-white placeholder-white/50 outline-none"
                 onKeyDown={(e) => { if (e.key === "Enter" && searchQ.trim()) window.location.href = `/search?q=${encodeURIComponent(searchQ.trim())}`; }}
               />
-              {searchQ.trim() && (
+              {searchQ.trim() ? (
                 <Link
                   href={`/search?q=${encodeURIComponent(searchQ.trim())}`}
                   className="flex items-center gap-1.5 rounded-xl bg-white px-4 py-2.5 text-sm font-bold text-[#0D9488] transition hover:bg-white/90"
                 >
                   Search <ArrowRight className="h-4 w-4" />
                 </Link>
+              ) : (
+                <span className="flex items-center gap-1.5 rounded-xl bg-white/10 px-4 py-2.5 text-[10px] font-bold text-white/50">
+                  <Zap className="h-3 w-3" /> Instant
+                </span>
               )}
             </div>
           </div>
@@ -120,7 +160,7 @@ export function Hero() {
           </div>
 
           {/* Trending Exams */}
-          <div className="mt-6 flex flex-wrap justify-center gap-1.5 sm:gap-2">
+          <div className="mt-5 flex flex-wrap justify-center gap-1.5 sm:gap-2">
             {trendingExams.map((exam) => (
               <Link
                 key={exam}
@@ -133,16 +173,41 @@ export function Hero() {
           </div>
         </motion.div>
 
-        {/* Stats + Quick Cards Row */}
-        <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.3 }} className="mx-auto mt-8 sm:mt-12 max-w-5xl">
-          <div className="grid gap-4 sm:grid-cols-2">
+        {/* Bottom Section: Stats + Urgent Deadlines + Quick Cards */}
+        <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.3 }} className="mx-auto mt-8 sm:mt-12 max-w-6xl">
+          <div className="grid gap-4 lg:grid-cols-3">
+
             {/* Stats */}
             <div className="rounded-2xl border border-white/10 bg-white/5 p-4 sm:p-5 backdrop-blur-sm ring-1 ring-white/5">
               <div className="grid grid-cols-3 gap-4">
                 <Counter to={18240} label="Results Tracked" icon={BarChart3} />
-                <Counter to={3712} label="Active Job Posts" icon={Award} />
-                <Counter to={928} label="Admit Card Alerts" icon={TrendingUp} />
+                <Counter to={3712} label="Active Jobs" icon={Award} />
+                <Counter to={928} label="Admit Alerts" icon={TrendingUp} />
               </div>
+            </div>
+
+            {/* Urgent Deadlines - NEW */}
+            <div className="rounded-2xl border border-red-500/20 bg-white/5 p-4 sm:p-5 backdrop-blur-sm ring-1 ring-red-500/10">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-red-500/20">
+                  <AlertTriangle className="h-3.5 w-3.5 text-red-300" />
+                </span>
+                <h3 className="text-xs font-black text-red-300 uppercase tracking-wider">Urgent Deadlines</h3>
+              </div>
+              <div className="space-y-2">
+                {urgentItems.length > 0 ? urgentItems.map((item, i) => (
+                  <Link key={i} href={item.slug ? `/post/${item.slug}` : "#"} className="flex items-center gap-2 rounded-lg bg-white/5 px-3 py-2 transition hover:bg-white/10">
+                    <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded bg-red-500/20 text-[9px] font-black text-red-300">{i + 1}</span>
+                    <span className="flex-1 truncate text-xs font-semibold text-white/80">{item.title}</span>
+                    <ChevronRight className="h-3 w-3 shrink-0 text-white/30" />
+                  </Link>
+                )) : (
+                  <p className="text-xs text-white/50">No urgent deadlines right now</p>
+                )}
+              </div>
+              <Link href="/latest-jobs" className="mt-2 flex items-center gap-1 text-[10px] font-bold text-red-300 hover:underline">
+                View all deadlines <ArrowRight className="h-3 w-3" />
+              </Link>
             </div>
 
             {/* Quick Value Cards */}
@@ -176,6 +241,7 @@ export function Hero() {
                 <p className="mt-0.5 text-xs text-white/60">Open now</p>
               </Link>
             </div>
+
           </div>
         </motion.div>
       </div>
