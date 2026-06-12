@@ -32,8 +32,8 @@ function Counter({ to, label }: { to: number; label: string }) {
 
   return (
     <div ref={ref} className="text-center">
-      <p className="text-2xl font-bold text-white tabular-nums">{count.toLocaleString()}+</p>
-      <p className="text-xs text-white/60 mt-0.5">{label}</p>
+      <p className="text-xl sm:text-2xl font-bold text-white tracking-tight">{count.toLocaleString()}<span className="text-[#5EEAD4]">+</span></p>
+      <p className="text-[11px] text-white/50 mt-0.5 font-medium tracking-wide">{label}</p>
     </div>
   );
 }
@@ -150,11 +150,17 @@ export function Hero() {
         {/* Bottom bar */}
         <div className="mx-auto mt-10 max-w-4xl grid gap-3 sm:grid-cols-3">
           {/* Stats */}
-          <div className="rounded-xl bg-white/10 backdrop-blur-sm border border-white/10 px-5 py-4">
-            <div className="grid grid-cols-3 gap-2">
-              <Counter to={18240} label="Results" />
-              <Counter to={3712} label="Active Jobs" />
-              <Counter to={928} label="Alerts" />
+          <div className="rounded-xl bg-white/[0.07] border border-white/10 py-3">
+            <div className="flex items-center divide-x divide-white/10">
+              <div className="flex-1 px-3">
+                <Counter to={18240} label="Results Tracked" />
+              </div>
+              <div className="flex-1 px-3">
+                <Counter to={3712} label="Active Jobs" />
+              </div>
+              <div className="flex-1 px-3">
+                <Counter to={928} label="Alerts Sent" />
+              </div>
             </div>
           </div>
 
