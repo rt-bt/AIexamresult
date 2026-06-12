@@ -31,7 +31,7 @@ export default function PdfCompressorPage() {
       const pdfjsLib = await import("pdfjs-dist");
       const { jsPDF } = await import("jspdf");
 
-      const workerUrl = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.mjs`;
+      const workerUrl = "/pdf.worker.min.js";
       pdfjsLib.GlobalWorkerOptions.workerSrc = workerUrl;
 
       const arrayBuffer = await file.arrayBuffer();
