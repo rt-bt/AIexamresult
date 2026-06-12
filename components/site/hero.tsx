@@ -64,7 +64,7 @@ export function Hero() {
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-center">
           <motion.span initial={{ scale: 0.9 }} animate={{ scale: 1 }} transition={{ duration: 0.4, delay: 0.2 }} className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-sm font-bold text-white backdrop-blur-sm ring-1 ring-white/20">
             <ShieldCheck className="h-4 w-4 text-[#5EEAD4]" />
-            India's fastest exam result tracker
+            India&apos;s fastest exam result tracker
           </motion.span>
 
           <h1 className="mx-auto mt-4 sm:mt-6 max-w-4xl text-3xl sm:text-5xl lg:text-7xl font-black leading-[1.1] tracking-tight text-white">
@@ -151,7 +151,7 @@ export function Hero() {
                 <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#5EEAD4]/20 text-[#5EEAD4]">
                   <BarChart3 className="h-4 w-4" />
                 </div>
-                <p className="mt-3 text-sm font-bold text-white">Today's Results</p>
+                <p className="mt-3 text-sm font-bold text-white">Today&apos;s Results</p>
                 <p className="mt-0.5 text-xs text-white/60">Newly declared</p>
               </Link>
               <Link href="/latest-jobs" className="group rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-sm ring-1 ring-white/5 transition hover:bg-white/15">
