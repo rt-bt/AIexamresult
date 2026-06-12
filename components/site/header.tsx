@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { Logo } from "@/components/site/logo";
-import { featuredResults, latestJobs, admissions } from "@/lib/data";
+import { featuredResults, latestJobs } from "@/lib/data";
 import { useLang } from "@/lib/hooks/use-lang";
 import { MobileBottomNav } from "@/components/site/mobile-bottom-nav";
 import { LanguageSelector } from "@/components/site/language-selector";
@@ -15,8 +15,6 @@ const nav: [string, string][] = [
   ["Latest Jobs", "/latest-jobs"],
   ["Admit Card", "/admit-card"],
   ["Answer Key", "/answer-key"],
-  ["Admissions", "/admissions"],
-  ["Syllabus", "/syllabus"],
   ["Bookmarks", "/bookmarks"],
   ["Tools", "/tools"]
 ];
@@ -24,7 +22,6 @@ const nav: [string, string][] = [
 const tickerItems = [
   ...featuredResults.slice(0, 5),
   ...latestJobs.slice(0, 5),
-  ...admissions.slice(0, 2),
 ];
 
 export function Header() {
