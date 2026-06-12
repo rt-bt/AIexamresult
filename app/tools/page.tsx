@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Header } from "@/components/site/header";
 import { Footer } from "@/components/site/footer";
-import { Calculator, ImageDown } from "lucide-react";
+import { Calculator, ImageDown, FileText } from "lucide-react";
 
 const tools = [
   {
@@ -19,6 +19,14 @@ const tools = [
     icon: ImageDown,
     color: "from-orange-500 to-rose-500",
     shadow: "shadow-orange-200",
+  },
+  {
+    title: "PDF Compressor",
+    description: "Reduce PDF file size for exam form uploads — compress scanned documents and certificates",
+    href: "/tools/pdf-compressor",
+    icon: FileText,
+    color: "from-red-500 to-rose-600",
+    shadow: "shadow-red-200",
   },
 ];
 
