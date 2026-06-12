@@ -16,7 +16,7 @@ const nav: [string, string][] = [
   ["Answer Key", "/answer-key"],
   ["Results", "/results"],
   ["Bookmarks", "/bookmarks"],
-  ["Tools", "/tools"]
+  ["Exam Tools", "/tools"]
 ];
 
 const tickerItems = [
