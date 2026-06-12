@@ -41,7 +41,7 @@ export function Header() {
             <Link
               key={href}
               href={href}
-              className="rounded-full px-3 py-2 text-sm font-semibold text-white/80 transition hover:bg-white/15 hover:text-white"
+              className="rounded-full px-4 py-2 text-base font-semibold text-white/80 transition hover:bg-white/15 hover:text-white"
             >
               {t(`nav.${label.toLowerCase().replace(/\s+/g, "-")}`)}
             </Link>
