@@ -89,11 +89,11 @@ export function Hero() {
       <div className="absolute inset-0 bg-gradient-to-br from-[#0D9488] via-[#0F766E] to-[#0F172A]" />
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIvPjwvZz48L2c+PC9zdmc+')] opacity-50" />
 
-      <div className="container-page relative py-6 sm:py-10">
+      <div className="container-page relative py-4 sm:py-6">
         <div className="mx-auto max-w-3xl text-center">
 
           {/* Badge */}
-          <div className="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-0.5 text-[10px] font-semibold text-white/80 border border-white/10 mb-3">
+          <div className="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-0.5 text-[10px] font-semibold text-white/80 border border-white/10 mb-2">
             <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
             Real-time exam updates
           </div>
@@ -106,7 +106,7 @@ export function Hero() {
             <span className="text-[#A78BFA]">Deadline</span>.
           </h1>
 
-          <p className="mx-auto mt-2 max-w-lg text-sm sm:text-base text-white/60 leading-relaxed">
+          <p className="mx-auto mt-1.5 max-w-lg text-sm sm:text-base text-white/60 leading-relaxed">
             Real-time alerts for Sarkari results, government jobs and application deadlines.
           </p>
 
