@@ -11,10 +11,10 @@ import { MobileBottomNav } from "@/components/site/mobile-bottom-nav";
 import { LanguageSelector } from "@/components/site/language-selector";
 
 const nav: [string, string][] = [
-  ["Results", "/results"],
   ["Latest Jobs", "/latest-jobs"],
   ["Admit Card", "/admit-card"],
   ["Answer Key", "/answer-key"],
+  ["Results", "/results"],
   ["Bookmarks", "/bookmarks"],
   ["Tools", "/tools"]
 ];
