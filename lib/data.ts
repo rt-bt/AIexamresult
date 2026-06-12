@@ -43,15 +43,37 @@ export function getPostBySlug(slug: string) {
   return null;
 }
 
+export function parseDate(str: string): Date {
+  const cleaned = str.replace(/\uFFFD/g, " ").replace(/\u00A0/g, " ").replace(/[\s:|]+\d{1,2}:\d{2}\s*(?:AM|PM).*$/i, "").trim();
+  const m = cleaned.match(/^(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})$/);
+  if (m) {
+    const d = new Date(`${m[3]}-${m[2].substring(0, 3)}-${m[1].padStart(2, "0")}`);
+    if (!isNaN(d.getTime())) return d;
+  }
+  const m2 = cleaned.match(/^(\d{1,2})([A-Za-z]+)\s+(\d{4})$/);
+  if (m2) {
+    const d = new Date(`${m2[3]}-${m2[2].substring(0, 3)}-${m2[1].padStart(2, "0")}`);
+    if (!isNaN(d.getTime())) return d;
+  }
+  const d = new Date(cleaned);
+  return isNaN(d.getTime()) ? new Date() : d;
+}
+
 function toPostCard(items: ({ title: string; url: string; category: string; slug: string; publishedDate?: string })[] | undefined, _category: string, fallbacks: PostCard[]): PostCard[] {
   if (!items || items.length === 0) return fallbacks;
-  return items.map((item) => {
+  const sorted = [...items].sort((a, b) => {
+    const da = a.publishedDate ? parseDate(a.publishedDate).getTime() : 0;
+    const db = b.publishedDate ? parseDate(b.publishedDate).getTime() : 0;
+    return db - da;
+  });
+  return sorted.map((item) => {
     const detail = scraped?.posts?.[item.slug];
+    const dt = item.publishedDate ? parseDate(item.publishedDate) : null;
     return {
       title: item.title,
       excerpt: `Latest ${item.category} update from official sources. Check details, important dates and apply online.`,
       category: formatCategory(item.category),
-      date: item.publishedDate ? new Date(item.publishedDate).toLocaleDateString("en-IN", { day: "2-digit", month: "short", year: "numeric" }) : new Date().toLocaleDateString("en-IN", { day: "2-digit", month: "short", year: "numeric" }),
+      date: dt ? dt.toLocaleDateString("en-IN", { day: "2-digit", month: "short", year: "numeric" }) : "",
       state: guessState(item.title),
       slug: item.slug,
       lastDate: detail?.lastDate,
@@ -116,6 +138,12 @@ const defaultAdmissions: PostCard[] = [
   { title: "NTA CSIR UGC NET June Online Form 2026", excerpt: "NET application dates, syllabus and exam pattern.", category: "Admission", date: "09 Jun 2026", state: "India", slug: "" },
 ];
 
+const defaultDocuments: PostCard[] = [
+  { title: "Income Certificate Form & Download", excerpt: "Income certificate application form, eligibility, required documents and download link.", category: "Document", date: "12 Jun 2026", state: "India", slug: "" },
+  { title: "Caste Certificate Application Guide", excerpt: "SC/ST/OBC caste certificate application process, required documents and online apply.", category: "Document", date: "11 Jun 2026", state: "India", slug: "" },
+  { title: "Domicile Certificate Online Apply", excerpt: "State domicile/residence certificate application, documents required and download.", category: "Document", date: "10 Jun 2026", state: "India", slug: "" },
+];
+
 const scrapedNotif = scraped ? [...(scraped.admitCards || []), ...(scraped.answerKeys || [])] : undefined;
 
 export const featuredResults = toPostCard(scraped?.results, "Result", defaultResults);
@@ -123,7 +151,7 @@ export const latestJobs = toPostCard(scraped?.latestJobs, "Jobs", defaultJobs);
 export const notifications = toPostCard(scrapedNotif, "Notification", defaultNotifications);
 export const centralExams = toPostCard(scraped?.answerKeys, "Central Exams", defaultCentral);
 export const admissions = toPostCard(scraped?.admissions, "Admission", defaultAdmissions);
-export const documents = toPostCard(scraped?.documents, "Documents", []);
+export const documents = toPostCard(scraped?.documents, "Documents", defaultDocuments);
 
 const admitCards = toPostCard(scraped?.admitCards, "Admit Card", []);
 

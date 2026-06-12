@@ -243,16 +243,36 @@ export async function scrapePostDetail(url: string): Promise<PostDetail | null> 
         }
       });
     } else {
-      // Fallback for article-based pages: extract any date-like text, links
-      $("p, li, div").each((_, el) => {
-        const txt = $(el).text().trim().toLowerCase();
-        if (txt.includes("last date") || txt.includes("application deadline") || txt.includes("apply before")) {
-          importantDates.push($(el).text().trim());
-        }
-        if (txt.includes("application fee") || txt.includes("exam fee") || txt.includes("registration fee")) {
-          applicationFee.push($(el).text().trim());
-        }
-      });
+      // Fallback for article-based pages: extract date, fee, links from content
+      if (!publishedDate || !intro) {
+        const $firstP = $("p").first();
+        const firstText = $firstP.text().trim();
+        if (!intro && firstText.length > 20) intro = firstText;
+        // Try to find a date from the first paragraph or heading
+        $("p, li, div, h2, h3, h4, span").each((_, el) => {
+          const txt = $(el).text().trim().toLowerCase();
+          if (!publishedDate) {
+            const dateMatch = txt.match(/(?:post|published|updated|start|created|released)\s*(?:date\s*)?[:\-]?\s*(\d{1,2}\s+(?:january|february|march|april|may|june|july|august|september|october|november|december)\s+\d{4})/i);
+            if (dateMatch) publishedDate = dateMatch[1];
+          }
+          // Fallback: any visible DD Month YYYY pattern
+          if (!publishedDate) {
+            const anyDate = txt.match(/(\d{1,2}\s+(?:january|february|march|april|may|june|july|august|september|october|november|december)\s+\d{4})/i);
+            if (anyDate) {
+              const lower = txt;
+              if (!lower.includes("last") && !lower.includes("fee") && !lower.includes("age") && !lower.includes("salary") && !lower.includes("birth") && !lower.includes("exam")) {
+                publishedDate = anyDate[1];
+              }
+            }
+          }
+          if (txt.includes("last date") || txt.includes("application deadline") || txt.includes("apply before")) {
+            importantDates.push($(el).text().trim());
+          }
+          if (txt.includes("application fee") || txt.includes("exam fee") || txt.includes("registration fee")) {
+            applicationFee.push($(el).text().trim());
+          }
+        });
+      }
     }
 
     // Extract last date

@@ -25,7 +25,7 @@ export default function StatePage() {
 
   const allPosts = useMemo<PostCard[]>(() => {
     const all = [...featuredResults, ...latestJobs, ...notifications, ...centralExams, ...admissions, ...documents];
-    return all.filter((p) => p.state.toLowerCase() === stateName.toLowerCase());
+    return all.filter((p) => p.state.toLowerCase() === stateName.toLowerCase()).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
   }, [stateName]);
 
   return (

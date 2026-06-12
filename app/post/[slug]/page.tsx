@@ -6,7 +6,7 @@ import { Header } from "@/components/site/header";
 import { Footer } from "@/components/site/footer";
 import { BookmarkBtn } from "@/components/site/bookmark-btn";
 import { ShareButtons } from "@/components/site/share-buttons";
-import { getPostBySlug } from "@/lib/data";
+import { getPostBySlug, parseDate } from "@/lib/data";
 import { CalendarDays, ExternalLink, AlertTriangle, CheckCircle, ChevronRight, BadgeInfo, Banknote, ArrowUpRight } from "lucide-react";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.aiexamresult.com";
@@ -102,7 +102,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
   }
 
   const title = post.title;
-  const publishedDate = post.publishedDate ? new Date(post.publishedDate).toLocaleDateString("en-US", { day: "numeric", month: "long", year: "numeric" }) : new Date().toLocaleDateString("en-US", { day: "numeric", month: "long", year: "numeric" });
+  const publishedDate = post.publishedDate ? parseDate(post.publishedDate).toLocaleDateString("en-US", { day: "numeric", month: "long", year: "numeric" }) : new Date().toLocaleDateString("en-US", { day: "numeric", month: "long", year: "numeric" });
   const officialUrl = post.importantLinks?.find((l: { label: string; url: string }) =>
     l.label?.toLowerCase().includes("official website") || l.label?.toLowerCase().includes("official site")
   )?.url;

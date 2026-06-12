@@ -33,7 +33,9 @@ function Counter({ to, label, icon: Icon }: { to: number; label: string; icon: t
 
   return (
     <div ref={ref} className="flex flex-col items-center gap-1 py-2 sm:py-0">
-      <Icon className="h-4 w-4 sm:h-5 sm:w-5 text-[#5EEAD4]" />
+      <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-white/10 ring-1 ring-white/20">
+        <Icon className="h-4 w-4 text-[#5EEAD4]" />
+      </span>
       <p className="text-2xl sm:text-3xl font-black text-white">{count.toLocaleString()}+</p>
       <p className="text-[10px] sm:text-xs text-white/70 whitespace-nowrap">{label}</p>
     </div>
@@ -49,8 +51,8 @@ function Ticker() {
   }, [items.length]);
 
   return (
-    <div className="flex items-center gap-3 overflow-hidden rounded-xl bg-white/10 px-4 py-2.5 backdrop-blur-sm ring-1 ring-white/10">
-      <span className="flex shrink-0 items-center gap-1.5 rounded-full bg-red-500/20 px-2.5 py-0.5 text-[10px] font-bold text-red-300">
+    <div className="flex items-center gap-3 overflow-hidden rounded-xl bg-white/10 px-3 py-2 sm:px-4 sm:py-2.5 backdrop-blur-md ring-1 ring-white/10 shadow-lg shadow-black/5">
+      <span className="flex shrink-0 items-center gap-1.5 rounded-full bg-red-500/20 px-2 py-0.5 text-[10px] font-bold text-red-300">
         <span className="h-1.5 w-1.5 rounded-full bg-red-400 animate-pulse" />
         LIVE
       </span>
@@ -68,8 +70,42 @@ function Ticker() {
           </motion.p>
         </AnimatePresence>
       </div>
-      <Link href="/results" className="shrink-0 text-[10px] font-bold text-[#5EEAD4] hover:underline">View All</Link>
+      <Link href="/results" className="shrink-0 text-[10px] font-bold text-[#5EEAD4] hover:text-[#2DD4BF] transition-colors">View All</Link>
     </div>
+  );
+}
+
+function FloatingOrbs() {
+  return (
+    <div className="pointer-events-none absolute inset-0 overflow-hidden">
+      <motion.div
+        animate={{ x: [0, 30, -20, 0], y: [0, -40, 20, 0] }}
+        transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
+        className="absolute left-[15%] top-[20%] h-32 w-32 rounded-full bg-[#5EEAD4]/10 blur-3xl"
+      />
+      <motion.div
+        animate={{ x: [0, -30, 40, 0], y: [0, 30, -30, 0] }}
+        transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
+        className="absolute right-[20%] top-[40%] h-40 w-40 rounded-full bg-[#F97316]/10 blur-3xl"
+      />
+      <motion.div
+        animate={{ x: [0, 20, -30, 0], y: [0, -20, 30, 0] }}
+        transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
+        className="absolute left-[40%] bottom-[10%] h-24 w-24 rounded-full bg-[#A78BFA]/10 blur-3xl"
+      />
+    </div>
+  );
+}
+
+function GlowButton({ href, children }: { href: string; children: React.ReactNode }) {
+  return (
+    <Link
+      href={href}
+      className="group relative inline-flex items-center gap-1.5 rounded-full bg-white/10 px-4 py-2 text-xs font-bold text-white backdrop-blur-sm ring-1 ring-white/15 transition-all hover:bg-white/20 hover:ring-[#5EEAD4]/40 hover:shadow-lg hover:shadow-[#5EEAD4]/10"
+    >
+      <span className="absolute inset-0 rounded-full bg-gradient-to-r from-[#5EEAD4]/0 via-[#5EEAD4]/5 to-[#5EEAD4]/0 opacity-0 group-hover:opacity-100 transition-opacity" />
+      <span className="relative">{children}</span>
+    </Link>
   );
 }
 
@@ -81,15 +117,15 @@ export function Hero() {
   return (
     <section className="relative overflow-hidden pb-16 pt-4 sm:pt-10 lg:pb-28 lg:pt-16">
       <div className="absolute inset-0 bg-gradient-to-br from-[#0D9488] via-[#0F766E] to-[#0F172A]" />
-      <div className="absolute inset-0 opacity-30" style={{ backgroundImage: `radial-gradient(circle at 25% 25%, rgba(94,234,212,0.3) 0%, transparent 50%), radial-gradient(circle at 75% 75%, rgba(234,88,12,0.15) 0%, transparent 50%)` }} />
+      <div className="absolute inset-0 opacity-40" style={{ backgroundImage: `radial-gradient(circle at 20% 30%, rgba(94,234,212,0.25) 0%, transparent 40%), radial-gradient(circle at 80% 70%, rgba(234,88,12,0.12) 0%, transparent 40%)` }} />
+      <FloatingOrbs />
 
-      <div className="hidden md:block shape-blob left-[-10%] top-[-10%] h-[500px] w-[500px] bg-[#14B8A6]/40" />
-      <div className="hidden md:block shape-blob bottom-[-20%] right-[-5%] h-[400px] w-[400px] bg-[#EA580C]/15" />
+      <div className="hidden md:block shape-blob left-[-10%] top-[-10%] h-[500px] w-[500px] bg-[#14B8A6]/30" />
+      <div className="hidden md:block shape-blob bottom-[-20%] right-[-5%] h-[400px] w-[400px] bg-[#EA580C]/10" />
 
       <div className="hidden md:block absolute left-[10%] top-[20%] h-2 w-2 rounded-full bg-white/30 animate-ping" />
       <div className="hidden md:block absolute right-[25%] top-[10%] h-3 w-3 rounded-full bg-[#5EEAD4]/30 animate-ping" style={{ animationDelay: "0.5s" }} />
       <div className="hidden md:block absolute left-[35%] bottom-[25%] h-2 w-2 rounded-full bg-[#FBBF24]/20 animate-ping" style={{ animationDelay: "1s" }} />
-      <div className="hidden md:block absolute right-[15%] bottom-[35%] h-3 w-3 rounded-full bg-white/10 animate-ping" style={{ animationDelay: "1.5s" }} />
 
       <div className="container-page relative">
 
@@ -99,16 +135,16 @@ export function Hero() {
         </motion.div>
 
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-center">
-          <motion.span initial={{ scale: 0.9 }} animate={{ scale: 1 }} transition={{ duration: 0.4, delay: 0.2 }} className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-sm font-bold text-white backdrop-blur-sm ring-1 ring-white/20">
+          <motion.span initial={{ scale: 0.9 }} animate={{ scale: 1 }} transition={{ duration: 0.4, delay: 0.2 }} className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-sm font-bold text-white backdrop-blur-sm ring-1 ring-white/20 shadow-lg">
             <ShieldCheck className="h-4 w-4 text-[#5EEAD4]" />
             India&apos;s #1 fastest exam result tracker
           </motion.span>
 
           <h1 className="mx-auto mt-4 sm:mt-6 max-w-4xl text-3xl sm:text-5xl lg:text-7xl font-black leading-[1.1] tracking-tight text-white">
             <span className="text-white">Never Miss</span>{" "}
-            <span className="bg-gradient-to-r from-[#5EEAD4] to-[#FBBF24] bg-clip-text text-transparent">a Result,</span>{" "}
+            <span className="bg-gradient-to-r from-[#5EEAD4] via-[#2DD4BF] to-[#FBBF24] bg-clip-text text-transparent">a Result,</span>{" "}
             <span className="text-white">Job or</span>{" "}
-            <span className="bg-gradient-to-r from-[#FBBF24] to-[#F97316] bg-clip-text text-transparent">Deadline</span>
+            <span className="bg-gradient-to-r from-[#FBBF24] via-[#F97316] to-[#EA580C] bg-clip-text text-transparent">Deadline</span>
             <span className="text-white">.</span>
           </h1>
 
@@ -118,7 +154,7 @@ export function Hero() {
 
           {/* Search Bar */}
           <div className="mx-auto mt-6 max-w-xl">
-            <div className="flex items-center gap-2 rounded-2xl border border-white/20 bg-white/10 p-1.5 backdrop-blur-md ring-1 ring-white/10 transition focus-within:border-[#5EEAD4]/50 focus-within:ring-[#5EEAD4]/30">
+            <div className="flex items-center gap-2 rounded-2xl border border-white/20 bg-white/10 p-1.5 backdrop-blur-md ring-1 ring-white/10 transition-all duration-300 focus-within:border-[#5EEAD4]/50 focus-within:ring-[#5EEAD4]/30 focus-within:shadow-lg focus-within:shadow-[#5EEAD4]/10">
               <div className="flex items-center gap-2 pl-3 text-white/50">
                 <Search className="h-5 w-5" />
               </div>
@@ -133,7 +169,7 @@ export function Hero() {
               {searchQ.trim() ? (
                 <Link
                   href={`/search?q=${encodeURIComponent(searchQ.trim())}`}
-                  className="flex items-center gap-1.5 rounded-xl bg-white px-4 py-2.5 text-sm font-bold text-[#0D9488] transition hover:bg-white/90"
+                  className="relative flex items-center gap-1.5 rounded-xl bg-white px-4 py-2.5 text-sm font-bold text-[#0D9488] transition-all hover:bg-white/90 hover:shadow-lg hover:shadow-white/20"
                 >
                   Search <ArrowRight className="h-4 w-4" />
                 </Link>
@@ -147,18 +183,10 @@ export function Hero() {
 
           {/* Quick Action Chips */}
           <div className="mx-auto mt-5 flex flex-wrap justify-center gap-2">
-            <Link href="/results" className="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-4 py-2 text-xs font-bold text-white backdrop-blur-sm ring-1 ring-white/15 transition hover:bg-white/20 hover:ring-white/30">
-              <BarChart3 className="h-3.5 w-3.5 text-[#5EEAD4]" /> Latest Results
-            </Link>
-            <Link href="/latest-jobs" className="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-4 py-2 text-xs font-bold text-white backdrop-blur-sm ring-1 ring-white/15 transition hover:bg-white/20 hover:ring-white/30">
-              <Award className="h-3.5 w-3.5 text-[#FBBF24]" /> Active Jobs
-            </Link>
-            <Link href="/admit-card" className="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-4 py-2 text-xs font-bold text-white backdrop-blur-sm ring-1 ring-white/15 transition hover:bg-white/20 hover:ring-white/30">
-              <Clock className="h-3.5 w-3.5 text-[#F97316]" /> Admit Cards
-            </Link>
-            <Link href="/answer-key" className="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-4 py-2 text-xs font-bold text-white backdrop-blur-sm ring-1 ring-white/15 transition hover:bg-white/20 hover:ring-white/30">
-              <Sparkles className="h-3.5 w-3.5 text-[#A78BFA]" /> Answer Keys
-            </Link>
+            <GlowButton href="/results"><BarChart3 className="h-3.5 w-3.5 text-[#5EEAD4]" /> Latest Results</GlowButton>
+            <GlowButton href="/latest-jobs"><Award className="h-3.5 w-3.5 text-[#FBBF24]" /> Active Jobs</GlowButton>
+            <GlowButton href="/admit-card"><Clock className="h-3.5 w-3.5 text-[#F97316]" /> Admit Cards</GlowButton>
+            <GlowButton href="/answer-key"><Sparkles className="h-3.5 w-3.5 text-[#A78BFA]" /> Answer Keys</GlowButton>
           </div>
 
           {/* Trending Exams */}
@@ -167,7 +195,7 @@ export function Hero() {
               <Link
                 key={exam}
                 href={`/search?q=${encodeURIComponent(exam)}`}
-                className="cursor-pointer rounded-full border border-white/15 bg-white/5 px-3 py-1.5 text-sm font-semibold text-white/70 backdrop-blur-sm transition hover:bg-white/15 hover:text-white"
+                className="cursor-pointer rounded-full border border-white/15 bg-white/5 px-3 py-1.5 text-sm font-semibold text-white/60 backdrop-blur-sm transition-all hover:bg-white/15 hover:text-white hover:border-white/30 hover:shadow-lg"
               >
                 {exam}
               </Link>
@@ -175,12 +203,12 @@ export function Hero() {
           </div>
         </motion.div>
 
-        {/* Bottom Section: Stats + Urgent Deadlines + Quick Cards */}
+        {/* Bottom Section */}
         <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.3 }} className="mx-auto mt-8 sm:mt-12 max-w-6xl">
           <div className="grid gap-4 lg:grid-cols-3">
 
             {/* Stats */}
-            <div className="rounded-2xl border border-white/10 bg-white/5 p-4 sm:p-5 backdrop-blur-sm ring-1 ring-white/5">
+            <div className="rounded-2xl border border-white/10 bg-white/[0.06] p-4 sm:p-5 backdrop-blur-xl ring-1 ring-white/5 shadow-lg shadow-black/5">
               <div className="grid grid-cols-3 gap-4">
                 <Counter to={18240} label="Results Tracked" icon={BarChart3} />
                 <Counter to={3712} label="Active Jobs" icon={Award} />
@@ -188,8 +216,8 @@ export function Hero() {
               </div>
             </div>
 
-            {/* Urgent Deadlines - NEW */}
-            <div className="rounded-2xl border border-red-500/20 bg-white/5 p-4 sm:p-5 backdrop-blur-sm ring-1 ring-red-500/10">
+            {/* Urgent Deadlines */}
+            <div className="rounded-2xl border border-red-500/20 bg-white/[0.06] p-4 sm:p-5 backdrop-blur-xl ring-1 ring-red-500/10 shadow-lg shadow-black/5">
               <div className="flex items-center gap-2 mb-3">
                 <span className="flex h-6 w-6 items-center justify-center rounded-full bg-red-500/20">
                   <AlertTriangle className="h-3.5 w-3.5 text-red-300" />
@@ -198,50 +226,40 @@ export function Hero() {
               </div>
               <div className="space-y-2">
                 {urgentItems.length > 0 ? urgentItems.map((item, i) => (
-                  <Link key={i} href={item.slug ? `/post/${item.slug}` : "#"} className="flex items-center gap-2 rounded-lg bg-white/5 px-3 py-2 transition hover:bg-white/10">
-                    <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded bg-red-500/20 text-[9px] font-black text-red-300">{i + 1}</span>
-                    <span className="flex-1 truncate text-xs font-semibold text-white/80">{item.title}</span>
-                    <ChevronRight className="h-3 w-3 shrink-0 text-white/30" />
+                  <Link key={i} href={item.slug ? `/post/${item.slug}` : "#"} className="group flex items-center gap-2 rounded-lg bg-white/5 px-3 py-2 transition-all hover:bg-white/10 hover:shadow-md">
+                    <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded bg-red-500/20 text-[9px] font-black text-red-300 group-hover:bg-red-500/30 transition-colors">{i + 1}</span>
+                    <span className="flex-1 truncate text-xs font-semibold text-white/80 group-hover:text-white transition-colors">{item.title}</span>
+                    <ChevronRight className="h-3 w-3 shrink-0 text-white/30 group-hover:text-white/50 transition-colors" />
                   </Link>
                 )) : (
                   <p className="text-xs text-white/50">No urgent deadlines right now</p>
                 )}
               </div>
-              <Link href="/latest-jobs" className="mt-2 flex items-center gap-1 text-[10px] font-bold text-red-300 hover:underline">
+              <Link href="/latest-jobs" className="mt-2 flex items-center gap-1 text-[10px] font-bold text-red-300 hover:text-red-200 transition-colors">
                 View all deadlines <ArrowRight className="h-3 w-3" />
               </Link>
             </div>
 
             {/* Quick Value Cards */}
             <div className="grid grid-cols-2 gap-3">
-              <Link href="/results" className="group rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-sm ring-1 ring-white/5 transition hover:bg-white/15">
-                <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#5EEAD4]/20 text-[#5EEAD4]">
-                  <BarChart3 className="h-4 w-4" />
-                </div>
-                <p className="mt-3 text-sm font-bold text-white">Today&apos;s Results</p>
-                <p className="mt-0.5 text-xs text-white/60">Newly declared</p>
-              </Link>
-              <Link href="/latest-jobs" className="group rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-sm ring-1 ring-white/5 transition hover:bg-white/15">
-                <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#FBBF24]/20 text-[#FBBF24]">
-                  <Award className="h-4 w-4" />
-                </div>
-                <p className="mt-3 text-sm font-bold text-white">Apply Soon</p>
-                <p className="mt-0.5 text-xs text-white/60">Deadline near</p>
-              </Link>
-              <Link href="/admit-card" className="group rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-sm ring-1 ring-white/5 transition hover:bg-white/15">
-                <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#F97316]/20 text-[#F97316]">
-                  <Clock className="h-4 w-4" />
-                </div>
-                <p className="mt-3 text-sm font-bold text-white">Admit Cards</p>
-                <p className="mt-0.5 text-xs text-white/60">Download now</p>
-              </Link>
-              <Link href="/admissions" className="group rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-sm ring-1 ring-white/5 transition hover:bg-white/15">
-                <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#A78BFA]/20 text-[#A78BFA]">
-                  <ExternalLink className="h-4 w-4" />
-                </div>
-                <p className="mt-3 text-sm font-bold text-white">Admissions</p>
-                <p className="mt-0.5 text-xs text-white/60">Open now</p>
-              </Link>
+              {[
+                { href: "/results", icon: BarChart3, color: "text-[#5EEAD4]", bg: "bg-[#5EEAD4]/20", title: "Today&apos;s Results", sub: "Newly declared" },
+                { href: "/latest-jobs", icon: Award, color: "text-[#FBBF24]", bg: "bg-[#FBBF24]/20", title: "Apply Soon", sub: "Deadline near" },
+                { href: "/admit-card", icon: Clock, color: "text-[#F97316]", bg: "bg-[#F97316]/20", title: "Admit Cards", sub: "Download now" },
+                { href: "/admissions", icon: ExternalLink, color: "text-[#A78BFA]", bg: "bg-[#A78BFA]/20", title: "Admissions", sub: "Open now" },
+              ].map((item, i) => (
+                <Link
+                  key={i}
+                  href={item.href}
+                  className="group relative rounded-2xl border border-white/10 bg-white/[0.06] p-4 backdrop-blur-xl ring-1 ring-white/5 transition-all hover:bg-white/15 hover:scale-[1.02] hover:shadow-xl hover:shadow-black/10"
+                >
+                  <div className={`flex h-9 w-9 items-center justify-center rounded-xl ${item.bg} ${item.color} transition-transform group-hover:scale-110`}>
+                    <item.icon className="h-4 w-4" />
+                  </div>
+                  <p className="mt-3 text-sm font-bold text-white">{item.title}</p>
+                  <p className="mt-0.5 text-xs text-white/50">{item.sub}</p>
+                </Link>
+              ))}
             </div>
 
           </div>
