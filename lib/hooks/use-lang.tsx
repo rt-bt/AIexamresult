@@ -2,8 +2,6 @@
 
 import { createContext, useContext, useState, useEffect, useCallback, type ReactNode } from "react";
 import { LangCode } from "@/lib/languages";
-import { useGeo } from "@/lib/hooks/use-geo";
-import { getLangForState } from "@/lib/languages";
 
 type Translations = Record<string, string>;
 
@@ -45,7 +43,7 @@ const translations: Record<LangCode, Translations> = {
     "search.placeholder": "தேர்வு, முடிவு, வேலை தேடுங்கள்...",
     "hero.title": "அரசு தேர்வு முடிவுகளுக்கான வாயில்",
     "hero.trusted": "2024 முதல் நம்பகமான தேர்வு தகவல்",
-    "trending.title": "இப்போது ட्रेंன்டிங்", "latest.title": "சமீபத்திய பதிவுகள்",
+    "trending.title": "இப்போது ட்ரென்டிங்", "latest.title": "சமீபத்திய பதிவுகள்",
     "view-all": "எல்லாம் பார்க்க", "share": "பகிர்",
     "official-website": "அதிகாரப்பூர்வ இணையதளம்",
     "telegram.title": "டெலிகிராம் சேரவும்", "telegram.btn": "சேனல் சேரவும்",
@@ -152,7 +150,7 @@ const translations: Record<LangCode, Translations> = {
     "site.name": "ଅଖିଲ ଭାରତ ପରୀକ୍ଷା ଫଳାଫଳ",
     "site.tagline": "ସରକାରୀ ଫଳାଫଳ, ଚାକରି, ପ୍ରବେଶ ପତ୍ର — ସବୁ ଗୋଟିଏ ସ୍ଥାନରେ।",
     "nav.results": "ଫଳାଫଳ", "nav.latest-jobs": "ଚାକରି", "nav.admit-card": "ପ୍ରବେଶ ପତ୍ର",
-    "nav.answer-key": "ଉତ୍ତର ଚାବି", "nav.admissions": "ଭର୍ତି", "nav.syllabus": "ପାଠ୍ୟକ୍�ମ",
+    "nav.answer-key": "ଉତ୍ତର ଚାବି", "nav.admissions": "ଭର୍ତି", "nav.syllabus": "ପାଠ୍ୟକ�ମ",
     "nav.bookmarks": "ବୁକ୍‌ମାର୍କ", "nav.search": "ଖୋଜ",
     "search.placeholder": "ପରୀକ୍ଷା, ଫଳାଫଳ, ଚାକରି ଖୋଜ...",
     "hero.title": "ସରକାରୀ ପରୀକ୍ଷା ଫଳାଫଳର ଦ୍ଵାର",
@@ -168,39 +166,32 @@ type LangContextType = {
   lang: LangCode;
   setLang: (l: LangCode) => void;
   t: (key: string) => string;
-  detectedLang: LangCode | null;
 };
 
 const LangContext = createContext<LangContextType>({
   lang: "en",
   setLang: () => {},
   t: (k) => k,
-  detectedLang: null,
 });
 
 export function LangProvider({ children }: { children: ReactNode }) {
   const [lang, setLangState] = useState<LangCode>("en");
-  const { geo } = useGeo();
 
   useEffect(() => {
     const saved = localStorage.getItem("aier_lang") as LangCode | null;
     if (saved && translations[saved]) {
       setLangState(saved);
-    } else if (geo?.stateSlug) {
-      const autoLang = getLangForState(geo.stateSlug);
-      if (autoLang !== "en") setLangState(autoLang);
     }
-  }, [geo]);
+  }, []);
 
   const setLang = useCallback((l: LangCode) => {
     setLangState(l);
     try { localStorage.setItem("aier_lang", l); } catch {}
   }, []);
 
-  const detectedLang = geo?.stateSlug ? getLangForState(geo.stateSlug) : null;
   const t = useCallback((key: string): string => translations[lang]?.[key] || translations.en[key] || key, [lang]);
 
-  return <LangContext.Provider value={{ lang, setLang, t, detectedLang }}>{children}</LangContext.Provider>;
+  return <LangContext.Provider value={{ lang, setLang, t }}>{children}</LangContext.Provider>;
 }
 
 export function useLang() {
