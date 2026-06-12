@@ -150,10 +150,10 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Bottom bar */}
-        <div className="mx-auto mt-10 max-w-4xl grid gap-3 sm:grid-cols-3">
-          {/* Stats */}
-          <div className="rounded-xl bg-white/5 border border-white/10 p-4 sm:col-span-3">
+        {/* Bottom section */}
+        <div className="mx-auto mt-10 max-w-4xl space-y-3">
+          {/* Stats — full width */}
+          <div className="rounded-xl bg-white/5 border border-white/10 p-4">
             <div className="flex divide-x divide-white/10">
               <div className="flex-1 min-w-0 px-3 text-center">
                 <Counter to={18240} label="Results Tracked" />
@@ -167,44 +167,47 @@ export function Hero() {
             </div>
           </div>
 
-          {/* Closing Soon */}
-          <div className="rounded-xl bg-white/10 backdrop-blur-sm border border-white/10 px-5 py-4">
-            <div className="flex items-center gap-2 mb-3">
-              <Clock className="h-4 w-4 text-orange-300" />
-              <h3 className="text-xs font-semibold text-orange-200">Closing Soon</h3>
-            </div>
-            <div className="space-y-1.5">
-              {latestJobs.slice(0, 2).map((item, i) => (
-                <Link key={i} href={item.slug ? `/post/${item.slug}` : "#"} className="flex items-center gap-2 rounded-lg px-2.5 py-2 hover:bg-white/10 transition-colors">
-                  <span className="text-[10px] font-semibold text-white/40 w-4">{i + 1}.</span>
-                  <span className="flex-1 text-xs font-medium text-white/80 truncate">{item.title}</span>
-                  <ChevronRight className="h-3 w-3 text-white/30 shrink-0" />
+          {/* Two cards side by side */}
+          <div className="grid gap-3 sm:grid-cols-2">
+            {/* Closing Soon */}
+            <div className="rounded-xl bg-white/10 border border-white/10 px-5 py-4">
+              <div className="flex items-center gap-2 mb-3">
+                <Clock className="h-4 w-4 text-orange-300" />
+                <h3 className="text-xs font-semibold text-orange-200">Closing Soon</h3>
+              </div>
+              <div className="space-y-1.5">
+                {latestJobs.slice(0, 3).map((item, i) => (
+                  <Link key={i} href={item.slug ? `/post/${item.slug}` : "#"} className="flex items-center gap-2 rounded-lg px-2.5 py-2 hover:bg-white/10 transition-colors">
+                    <span className="text-[10px] font-semibold text-white/40 w-4">{i + 1}.</span>
+                    <span className="flex-1 text-xs font-medium text-white/80 truncate">{item.title}</span>
+                    <ChevronRight className="h-3 w-3 text-white/30 shrink-0" />
+                  </Link>
+                ))}
+                <Link href="/latest-jobs" className="flex items-center gap-1 text-xs font-medium text-orange-300 hover:text-orange-200 transition-colors px-2.5">
+                  View all <ArrowRight className="h-3 w-3" />
                 </Link>
-              ))}
-              <Link href="/latest-jobs" className="flex items-center gap-1 text-xs font-medium text-orange-300 hover:text-orange-200 transition-colors px-2.5">
-                View all <ArrowRight className="h-3 w-3" />
-              </Link>
+              </div>
             </div>
-          </div>
 
-          {/* Quick Links */}
-          <div className="rounded-xl bg-white/10 backdrop-blur-sm border border-white/10 px-5 py-4">
-            <div className="flex items-center gap-2 mb-3">
-              <BookOpen className="h-4 w-4 text-indigo-300" />
-              <h3 className="text-xs font-semibold text-indigo-200">Explore</h3>
-            </div>
-            <div className="space-y-1">
-              {[
-                { href: "/admissions", label: "Open Admissions", icon: Target },
-                { href: "/results", label: "Latest Results", icon: TrendingUp },
-                { href: "/latest-jobs", label: "Active Vacancies", icon: Bell },
-              ].map((link) => (
-                <Link key={link.href} href={link.href} className="flex items-center gap-2.5 rounded-lg px-2.5 py-2 hover:bg-white/10 transition-colors">
-                  <link.icon className="h-3.5 w-3.5 text-white/40" />
-                  <span className="text-xs font-medium text-white/80">{link.label}</span>
-                  <ChevronRight className="h-3 w-3 text-white/30 ml-auto" />
-                </Link>
-              ))}
+            {/* Quick Links */}
+            <div className="rounded-xl bg-white/10 border border-white/10 px-5 py-4">
+              <div className="flex items-center gap-2 mb-3">
+                <BookOpen className="h-4 w-4 text-indigo-300" />
+                <h3 className="text-xs font-semibold text-indigo-200">Explore</h3>
+              </div>
+              <div className="space-y-1">
+                {[
+                  { href: "/admissions", label: "Open Admissions", icon: Target },
+                  { href: "/results", label: "Latest Results", icon: TrendingUp },
+                  { href: "/latest-jobs", label: "Active Vacancies", icon: Bell },
+                ].map((link) => (
+                  <Link key={link.href} href={link.href} className="flex items-center gap-2.5 rounded-lg px-2.5 py-2 hover:bg-white/10 transition-colors">
+                    <link.icon className="h-3.5 w-3.5 text-white/40" />
+                    <span className="text-xs font-medium text-white/80">{link.label}</span>
+                    <ChevronRight className="h-3 w-3 text-white/30 ml-auto" />
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
         </div>
