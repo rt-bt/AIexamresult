@@ -1,5 +1,5 @@
 import { scrapeSarkariResult, scrapePostDetail, type ScrapedItem, type PostDetail } from "./scraper";
-import { scrapeResultBharat, scrapeTestbookResult, scrapeSarkariResultShine } from "./sources";
+import { scrapeResultBharat, scrapeTestbookResult, scrapeSarkariResultShine, scrapeSarkariExam } from "./sources";
 import * as fs from "fs";
 import * as path from "path";
 
@@ -8,12 +8,13 @@ function sanitizeSlug(s: string): string {
 }
 
 async function main() {
-  // Scrape listings from all 4 sources
+  // Scrape listings from all 5 sources
   const sources: [string, Promise<ScrapedItem[]>][] = [
     ["sarkariresult.com", scrapeSarkariResult().then(d => [...d.results, ...d.admitCards, ...d.latestJobs, ...d.answerKeys, ...d.documents, ...d.admissions] as ScrapedItem[])],
     ["resultbharat.com", scrapeResultBharat()],
     ["testbook.com", scrapeTestbookResult()],
     ["sarkariresultshine.com", scrapeSarkariResultShine()],
+    ["sarkariexam.com", scrapeSarkariExam()],
   ];
 
   const allItems: ScrapedItem[] = [];
