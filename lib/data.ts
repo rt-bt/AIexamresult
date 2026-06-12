@@ -18,7 +18,7 @@ type ScrapedData = {
   answerKeys: { title: string; url: string; category: string; slug: string }[];
   documents: { title: string; url: string; category: string; slug: string }[];
   admissions: { title: string; url: string; category: string; slug: string }[];
-  posts: Record<string, { title: string; slug: string; url: string; category: string; publishedDate: string; intro: string; lastDate?: string; isExpired?: boolean }>;
+  posts: Record<string, { lastDate?: string; isExpired?: boolean }>;
   fetchedAt: string;
 };
 
