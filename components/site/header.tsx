@@ -19,10 +19,17 @@ const examSubNav: [string, string][] = [
   ["Syllabus", "/syllabus"],
 ];
 
+const studyHubSubNav: [string, string][] = [
+  ["Current Affairs", "/current-affairs"],
+  ["Mock Test", "/mock-test"],
+  ["IQ Test", "/iq-test"],
+  ["Calendar", "/exam-calendar"],
+];
+
 const nav: [string, string, [string, string][]?][] = [
   ["Home", "/"],
   ["Exam", "/exam", examSubNav],
-  ["Study Hub", "/study-hub"],
+  ["Study Hub", "/study-hub", studyHubSubNav],
   ["Tools", "/tools"],
   ["Contact Us", "/contact"],
   ["About Us", "/about"]
