@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Header } from "@/components/site/header";
 import { Footer } from "@/components/site/footer";
-import { Calculator, ImageDown, FileText } from "lucide-react";
+import { Calculator, ImageDown, FileText, BarChart3 } from "lucide-react";
 
 const tools = [
   {
@@ -11,6 +11,14 @@ const tools = [
     icon: Calculator,
     color: "from-teal-500 to-emerald-500",
     shadow: "shadow-teal-200",
+  },
+  {
+    title: "Exam Comparison Tool",
+    description: "Compare salary, eligibility, selection process & difficulty across SSC, Railway, Banking & more",
+    href: "/exam-comparison",
+    icon: BarChart3,
+    color: "from-indigo-500 to-violet-500",
+    shadow: "shadow-indigo-200",
   },
   {
     title: "Image Compressor & Cropper",
