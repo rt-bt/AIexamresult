@@ -5,9 +5,9 @@ import { QuickAccess } from "@/components/site/quick-access";
 import { NotificationSubscribe } from "@/components/site/nnotification-subscribe";
 import { CategoryColumns } from "@/components/site/category-columns";
 import { StateGrid } from "@/components/site/state-grid";
-import { categorySections, featuredResults } from "@/lib/data";
+import { categorySections, featuredResults, latestJobs } from "@/lib/data";
 import Link from "next/link";
-import { ArrowUpRight, TrendingUp } from "lucide-react";
+import { ArrowUpRight, TrendingUp, Clock, Sparkles } from "lucide-react";
 
 const faqLd = {
   "@context": "https://schema.org",
@@ -29,6 +29,37 @@ export default function HomePage() {
       <Header />
       <main>
         <Hero />
+
+        {/* Latest Updates — mobile only, right after hero */}
+        <section className="lg:hidden -mt-4 pb-2">
+          <div className="container-page">
+            <div className="flex items-center gap-2 mb-3">
+              <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-gradient-to-br from-[#EA580C] to-[#F97316]">
+                <Sparkles className="h-4 w-4 text-white" />
+              </span>
+              <h2 className="text-sm font-black text-ink">Latest Updates</h2>
+              <span className="ml-auto text-[10px] text-slate-400 font-medium"><Clock className="h-3 w-3 inline mr-0.5" />Just now</span>
+            </div>
+            <div className="space-y-2">
+              {latestJobs.slice(0, 6).map((post, i) => (
+                <Link key={i} href={post.slug ? `/post/${post.slug}` : "#"} className="flex items-center gap-3 rounded-xl border border-slate-100 bg-white p-3.5 shadow-sm active:scale-[0.98] transition touch-manipulation">
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-brand to-emerald-600 text-xs font-black text-white shadow-sm">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <div className="min-w-0 flex-1">
+                    <p className="text-[13px] font-bold leading-snug text-slate-800 line-clamp-2">{post.title}</p>
+                    <p className="mt-0.5 text-[11px] text-slate-400">{post.category}{post.date ? ` · ${post.date}` : ""}</p>
+                  </div>
+                  <span className="shrink-0 rounded-full bg-brand/10 px-2 py-0.5 text-[9px] font-bold text-brand">New</span>
+                </Link>
+              ))}
+            </div>
+            <Link href="/results" className="mt-2 flex items-center justify-center gap-1 rounded-xl border border-brand/20 bg-brand/5 py-2.5 text-xs font-bold text-brand active:scale-[0.98] transition touch-manipulation">
+              View All Updates <ArrowUpRight className="h-3.5 w-3.5" />
+            </Link>
+          </div>
+        </section>
+
         <QuickAccess />
 
         <section className="py-10">
