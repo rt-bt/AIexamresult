@@ -10,3 +10,4 @@ data/analytics/
 data/auto-sync.log
 data/auto-sync-error.log
 public/pdf.worker.min.js
+data/scraped.json

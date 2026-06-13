@@ -17,6 +17,9 @@
     "CBT-I Exam Date : 06-12 April 2026",
     "CBT-I Result/ Cutoff : 11 June 2026",
     "CBT-I Score Card : 12 June 2026",
+    "CBT-II Exam Date: 10 July 2026",
+    "CBAT/ CBTST Exam Date: 30 September 2026",
+    "DV Date: December 2026",
     "General / OBC  Candidates : Rs.500/- (Rs. 400/- Refunded After Appear Stage I Exam)",
     "SC / ST / PH/ All Female Candidates : Rs. 250/- (Rs. 250/- Refunded After Appear Stage I Exam)",
     "Payment Mode: Pay the Exam Fee Through Debit Card, Credit Card, Net Banking Fee Mode Only.",
@@ -119,6 +122,9 @@
     "CBT-I Exam Date : 06-12 April 2026",
     "CBT-I Result/ Cutoff : 11 June 2026",
     "CBT-I Score Card : 12 June 2026",
+    "CBT-II Exam Date: 10 July 2026",
+    "CBAT/ CBTST Exam Date: 30 September 2026",
+    "DV Date: December 2026",
     "General / OBC  Candidates : Rs.500/- (Rs. 400/- Refunded After Appear Stage I Exam)",
     "SC / ST / PH/ All Female Candidates : Rs. 250/- (Rs. 250/- Refunded After Appear Stage I Exam)",
     "Payment Mode: Pay the Exam Fee Through Debit Card, Credit Card, Net Banking Fee Mode Only.",
@@ -215,6 +221,10 @@
       "url": "https://rrb.digialm.com/EForms/loginAction.do?subAction=ViewLoginPage&formId=98228&orgId=33128"
     },
     {
+      "label": "Download CBT-II Exam Date Notice",
+      "url": "NOTICE/NTPC-Graduate-Level-06-2025-CBT-2-Exam-Date-2026-Notice.jpg"
+    },
+    {
       "label": "Download CBT-I Result/ Cutoff"
     },
     {
@@ -222,53 +232,56 @@
       "url": "https://www.rrbchennai.gov.in/downloads/Cutoff%20marks%20shorlisted%20for%20CBT-2_06-2025%20NTPC-G.pdf"
     },
     {
-      "label": "RRB Ranchi"
+      "label": "RRB Ranchi",
+      "url": "https://rrbranchi.gov.in/upload/files/pdf/09_49_27pm940136f1251d2386bb1748177c69eff4.pdf"
     },
     {
       "label": "RRB Bilaspur",
       "url": "https://rrbbilaspur.gov.in/file/result/30-BILASPUR-RRB_NTPC_Grad_CEN_06-2025_Provisional_Publishing_Report-v1.1_cutoff.pdf"
     },
     {
-      "label": "RRB Ajmer"
+      "label": "RRB Ajmer",
+      "url": "https://rrbajmer.gov.in/Upload_PDF/Cut_Off_CEN_06_2025_NTPC_G_CBT_I-639168631445394548.pdf"
     },
     {
       "label": "RRB Siliguri",
       "url": "https://www.rrbsiliguri.gov.in/english/downloads/2026_june/notice_11a.pdf"
     },
     {
-      "label": "RRB Bhopal"
+      "label": "RRB Bhopal",
+      "url": "https://rrbbhopal.gov.in/2026/15-BHOPAL-RRB_NTPC_Grad_CEN_06-2025_Provisional_Publishing_Report-v1.1_Cutoff.pdf"
     },
     {
-      "label": "RRB Kolkata"
+      "label": "RRB Kolkata",
+      "url": "https://www.rrbkolkata.gov.in/file/Result%20of%20CBT%201_06_2025NTPC(G)_Cut%20off_12.06.2026.pdf"
     },
     {
-      "label": "RRB Tiruvanantpuram"
+      "label": "RRB Tiruvanantpuram",
+      "url": "https://www.rrbthiruvananthapuram.gov.in/assets/pdf/ntpc_g_cutoff_2025.pdf"
     },
     {
-      "label": "RRB Bangalore"
+      "label": "RRB Bangalore",
+      "url": "http://www.rrbbnc.gov.in/Result/Cut_off_pub_DOC_dated_12-06-2026.pdf"
     },
     {
       "label": "RRB Chandigarh",
       "url": "https://www.resultbharat.com/NOTICE/NTPC-Graduate-Level-06-2025-CBT-I-Cutoff-Chandigarh.jpg"
     },
     {
-      "label": "RRB Gorakhpur"
+      "label": "RRB Gorakhpur",
+      "url": "https://www.rrbgkp.gov.in/results/CutOff%2006_2025%20CBT1.pdf"
     },
     {
-      "label": "RRB Malda"
+      "label": "RRB Malda",
+      "url": "https://rrbmalda.gov.in/Cut%20off%20marks%20(Out%20of%20100%20marks)%20of%20candidates%20shortlisted%20for%202nd%20Stage%20CBT%20under%20CEN%2006-2025%20NTPC%20(G).pdf"
     },
     {
-      "label": "RRB Ahmedabad"
-    },
-    {
-      "label": "RRB Secunderabad"
+      "label": "RRB Ahmedabad",
+      "url": "https://rrbahmedabad.gov.in/wp-content/uploads/2026/06/Cut-off-CBT-1-CEN-06-2025-shortlisting-of-candidates-for-CBT-2.pdf"
     },
     {
       "label": "RRB Guwahati",
       "url": "https://www.rrbguwahati.gov.in/documents/Cut%20Off%20NTPC_Grad_CEN_06-2025%2011.06.2026.pdf"
-    },
-    {
-      "label": "RRB Bhubaneswar"
     },
     {
       "label": "Download CBT-I Answer Key",
