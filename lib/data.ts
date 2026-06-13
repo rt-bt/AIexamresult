@@ -86,7 +86,7 @@ function formatCategory(cat: string): string {
   const map: Record<string, string> = {
     results: "Result",
     admitcards: "Admit Card",
-    latestjobs: "Latest Job",
+    latestjobs: "Latest Vacancy",
     answerkeys: "Answer Key",
     documents: "Documents",
     admissions: "Admission",
@@ -115,7 +115,7 @@ const defaultResults: PostCard[] = [
 ];
 
 const defaultJobs: PostCard[] = [
-  { title: "Railway Technician Recruitment 2026 - 9,144 posts", excerpt: "Eligibility, age limit, zone-wise seats, fee details and direct application link.", category: "Latest Job", date: "11 Jun 2026", state: "India", slug: "" },
+  { title: "Railway Technician Recruitment 2026 - 9,144 posts", excerpt: "Eligibility, age limit, zone-wise seats, fee details and direct application link.", category: "Latest Vacancy", date: "11 Jun 2026", state: "India", slug: "" },
   { title: "UPPSC Staff Nurse Online Form 2026", excerpt: "Application schedule, qualification, reservation and document upload guidelines.", category: "State Job", date: "11 Jun 2026", state: "Uttar Pradesh", slug: "" },
   { title: "Bihar Teacher Phase 4 Vacancy notification", excerpt: "District-wise posts, CTET/STET eligibility and official application process.", category: "Teaching", date: "10 Jun 2026", state: "Bihar", slug: "" },
 ];
@@ -156,7 +156,7 @@ export const documents = toPostCard(scraped?.documents, "Documents", defaultDocu
 const admitCards = toPostCard(scraped?.admitCards, "Admit Card", []);
 
 export const categorySections: { label: string; items: PostCard[] }[] = [
-  { label: "Latest Jobs", items: latestJobs },
+  { label: "Latest Vacancy", items: latestJobs },
   { label: "Admit Card", items: admitCards },
   { label: "Answer Keys", items: centralExams },
   { label: "Result", items: featuredResults },

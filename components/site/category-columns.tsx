@@ -8,7 +8,7 @@ import type { PostCard } from "@/lib/data";
 const categoryConfig: Record<string, { slug: string; from: string; via: string }> = {
   "Result":      { slug: "results",     from: "#0D9488", via: "#14B8A6" },
   "Admit Card":  { slug: "admit-card",  from: "#EA580C", via: "#F97316" },
-  "Latest Jobs": { slug: "latest-jobs", from: "#4F46E5", via: "#6366F1" },
+  "Latest Vacancy": { slug: "latest-jobs", from: "#4F46E5", via: "#6366F1" },
   "Answer Keys": { slug: "answer-key", from: "#7C3AED", via: "#A78BFA" },
   "Admissions":  { slug: "admissions",  from: "#E11D48", via: "#FB7185" },
   "Documents":   { slug: "documents",   from: "#D97706", via: "#FBBF24" },
@@ -79,7 +79,7 @@ export function CategoryColumns({ sections }: { sections: { label: string; items
                               <span className="inline-flex items-center gap-0.5 rounded bg-orange-50 px-1.5 py-0.5 text-[10px] font-bold text-[#EA580C] ring-1 ring-orange-200">
                                 <Sparkles className="h-2.5 w-2.5" /> NEW
                               </span>
-                            ) : section.label === "Latest Jobs" && item.isExpired ? (
+                            ) : section.label === "Latest Vacancy" && item.isExpired ? (
                               <span className="inline-flex items-center gap-0.5 rounded bg-red-50 px-1.5 py-0.5 text-[10px] font-bold text-red-600 ring-1 ring-red-200">
                                 EXPIRED
                               </span>

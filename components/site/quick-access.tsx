@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const links: Array<[string, string, LucideIcon, string, string]> = [
   ["Results", "Board, university & recruitment", FileCheck2, "from-[#0D9488] to-[#14B8A6]", "#0D9488"],
-  ["Latest Jobs", "Central & state vacancies", BriefcaseBusiness, "from-[#F59E0B] to-[#FBBF24]", "#F59E0B"],
+  ["Latest Vacancy", "Central & state vacancies", BriefcaseBusiness, "from-[#F59E0B] to-[#FBBF24]", "#F59E0B"],
   ["Admit Card", "Hall tickets & city info", ClipboardCheck, "from-[#10B981] to-[#34D399]", "#10B981"],
   ["Answer Key", "Official keys & objections", KeyRound, "from-[#EF4444] to-[#F87171]", "#EF4444"],
   ["Admissions", "Entrance & college notices", GraduationCap, "from-[#8B5CF6] to-[#A78BFA]", "#8B5CF6"],

@@ -34,7 +34,7 @@ const moreLinks: [string, string, typeof Home][] = [
   ["States", "/state-map", MapPin],
   ["Results", "/results", Grid3X3],
   ["Exam Calendar", "/exam-calendar", Calendar],
-  ["Latest Jobs", "/latest-jobs", FileText],
+  ["Latest Vacancy", "/latest-jobs", FileText],
   ["Admit Card", "/admit-card", FileText],
   ["Answer Key", "/answer-key", FileText],
   ["Contact Us", "/contact", Phone],

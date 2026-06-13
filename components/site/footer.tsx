@@ -3,7 +3,7 @@ import { ArrowUpRight } from "lucide-react";
 import { Logo } from "@/components/site/logo";
 
 const footerGroups: Array<[string, string[]]> = [
-  ["Quick Links", ["Results", "Latest Jobs", "Admit Card", "Answer Key"]],
+  ["Quick Links", ["Results", "Latest Vacancy", "Admit Card", "Answer Key"]],
   ["Resources", ["Admissions", "Syllabus", "Scholarships", "Board Results"]],
   ["Support", ["About Us", "Contact Us", "Privacy Policy", "Disclaimer"]]
 ];

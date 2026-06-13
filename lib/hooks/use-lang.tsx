@@ -9,7 +9,7 @@ const translations: Record<LangCode, Translations> = {
   en: {
     "site.name": "All India Exam Result",
     "site.tagline": "Find verified Sarkari results, government jobs, admit cards & answer keys — all in one blazing-fast portal.",
-    "nav.results": "Results", "nav.result": "Result", "nav.latest-jobs": "Latest Jobs", "nav.latest-job": "Latest Job", "nav.admit-card": "Admit Card",
+    "nav.results": "Results", "nav.result": "Result", "nav.latest-jobs": "Latest Vacancy", "nav.latest-job": "Latest Vacancy", "nav.admit-card": "Admit Card",
     "nav.answer-key": "Answer Key", "nav.admissions": "Admissions", "nav.syllabus": "Syllabus",
     "nav.bookmarks": "Bookmarks", "nav.search": "Search",
     "nav.home": "Home", "nav.exam": "Exam", "nav.study-hub": "Study Hub", "nav.tools": "Tools",

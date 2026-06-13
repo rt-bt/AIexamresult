@@ -113,7 +113,7 @@ const jsonLd = {
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
         { "@type": "ListItem", position: 2, name: "Results", item: `${SITE_URL}/results` },
-        { "@type": "ListItem", position: 3, name: "Latest Jobs", item: `${SITE_URL}/latest-jobs` },
+        { "@type": "ListItem", position: 3, name: "Latest Vacancy", item: `${SITE_URL}/latest-jobs` },
         { "@type": "ListItem", position: 4, name: "Admit Card", item: `${SITE_URL}/admit-card` },
         { "@type": "ListItem", position: 5, name: "Answer Key", item: `${SITE_URL}/answer-key` }
       ]
