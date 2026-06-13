@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Header } from "@/components/site/header";
 import { Footer } from "@/components/site/footer";
-import { Calculator, ImageDown, FileText, BarChart3 } from "lucide-react";
+import { Calculator, ImageDown, FileText, BarChart3, ClipboardCheck, BookOpen } from "lucide-react";
 
 const tools = [
   {
@@ -19,6 +19,22 @@ const tools = [
     icon: BarChart3,
     color: "from-indigo-500 to-violet-500",
     shadow: "shadow-indigo-200",
+  },
+  {
+    title: "Document Checklist",
+    description: "Category-wise document list for exam application & verification — check what you need",
+    href: "/document-checklist",
+    icon: ClipboardCheck,
+    color: "from-emerald-500 to-teal-500",
+    shadow: "shadow-emerald-200",
+  },
+  {
+    title: "Question Paper Archive",
+    description: "Previous year question papers with answer keys & solutions for SSC, UPSC, Railway, Banking & more",
+    href: "/question-papers",
+    icon: BookOpen,
+    color: "from-purple-500 to-pink-500",
+    shadow: "shadow-purple-200",
   },
   {
     title: "Image Compressor & Cropper",
