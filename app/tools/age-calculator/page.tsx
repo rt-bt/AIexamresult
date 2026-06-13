@@ -13,17 +13,17 @@ export default function AgeCalculatorPage() {
 
   function calc() {
     if (!dob || !reference) return;
-    const from = new Date(dob);
-    const to = new Date(reference);
-    if (from > to) return;
+    const [by, bm, bd] = dob.split("-").map(Number);
+    const [ry, rm, rd] = reference.split("-").map(Number);
+    if (by > ry || (by === ry && bm > rm) || (by === ry && bm === rm && bd > rd)) return;
 
-    let years = to.getFullYear() - from.getFullYear();
-    let months = to.getMonth() - from.getMonth();
-    let days = to.getDate() - from.getDate();
+    let years = ry - by;
+    let months = rm - bm;
+    let days = rd - bd;
 
     if (days < 0) {
       months--;
-      const prevMonth = new Date(to.getFullYear(), to.getMonth(), 0);
+      const prevMonth = new Date(ry, rm - 1, 0);
       days += prevMonth.getDate();
     }
     if (months < 0) {
@@ -33,7 +33,7 @@ export default function AgeCalculatorPage() {
     setAge({ years, months, days });
   }
 
-  const totalDays = age ? age.years * 365 + age.months * 30 + age.days : 0;
+  const totalDays = age ? Math.floor((new Date(reference).getTime() - new Date(dob).getTime()) / (1000 * 60 * 60 * 24)) : 0;
 
   return (
     <>
