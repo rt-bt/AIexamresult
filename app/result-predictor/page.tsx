@@ -91,8 +91,12 @@ export default function ResultPredictorPage() {
               {/* Marks Input */}
               <div>
                 <label className="text-sm font-bold text-gray-700">Estimated Marks (out of {maxMarks})</label>
-                <input type="number" value={marks} onChange={(e) => setMarks(e.target.value)}
-                  placeholder={`Enter your expected marks...`}
+                <input type="number" value={marks} onChange={(e) => {
+                  const v = e.target.value;
+                  if (v === "") { setMarks(""); return; }
+                  const num = parseInt(v);
+                  if (num >= 0 && num <= maxMarks) setMarks(v);
+                }} min={0} max={maxMarks} placeholder={`Enter your expected marks (max ${maxMarks})...`}
                   className="mt-2 w-full rounded-xl border border-gray-200 bg-gray-50 px-4 py-3 text-lg font-bold text-gray-800 outline-none focus:border-brand focus:ring-2 focus:ring-brand/10"
                 />
               </div>
