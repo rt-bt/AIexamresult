@@ -7,7 +7,7 @@ import { Footer } from "@/components/site/footer";
 import { BookmarkBtn } from "@/components/site/bookmark-btn";
 import { ShareButtons } from "@/components/site/share-buttons";
 import { getPostBySlug, parseDate } from "@/lib/data";
-import { CalendarDays, ExternalLink, AlertTriangle, CheckCircle, ChevronRight, BadgeInfo, Banknote, ArrowUpRight } from "lucide-react";
+import { CalendarDays, ExternalLink, AlertTriangle, CheckCircle, ChevronRight, BadgeInfo, Banknote, ArrowUpRight, Gauge } from "lucide-react";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.aiexamresult.com";
 
@@ -134,6 +134,10 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
     l.url && !l.url.includes("sarkariexam.com") && !l.url.includes("sarkariresult")
   );
 
+  const contentLower = (post.fullContentHtml || "").toLowerCase();
+  const titleLower = (post.title || "").toLowerCase();
+  const hasCutoffContent = contentLower.includes("cutoff") || contentLower.includes("merit list") || contentLower.includes("cut-off") || titleLower.includes("cutoff") || titleLower.includes("merit");
+
   return (
     <>
       <Header />
@@ -211,6 +215,38 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                       </div>
                     ))}
                   </div>
+                </SectionCard>
+              )}
+
+              {/* Cutoff & Merit */}
+              {hasCutoffContent && (
+                <SectionCard icon={<Gauge className="h-4 w-4" />} title="Cutoff &amp; Merit List" gradient="border-b border-amber-100 bg-amber-50/50">
+                  <div className="overflow-x-auto">
+                    <table className="w-full text-sm">
+                      <thead>
+                        <tr className="border-b border-amber-200">
+                          <th className="py-2 pr-4 text-left font-semibold text-slate-700">Category</th>
+                          <th className="py-2 px-4 text-left font-semibold text-slate-700">Cutoff Marks</th>
+                        </tr>
+                      </thead>
+                      <tbody className="divide-y divide-amber-100">
+                        {[
+                          { cat: "General (UR)", marks: "—" },
+                          { cat: "OBC", marks: "—" },
+                          { cat: "EWS", marks: "—" },
+                          { cat: "SC", marks: "—" },
+                          { cat: "ST", marks: "—" },
+                          { cat: "PwD", marks: "—" },
+                        ].map((row) => (
+                          <tr key={row.cat} className="hover:bg-amber-50/50">
+                            <td className="py-2.5 pr-4 font-medium text-slate-700">{row.cat}</td>
+                            <td className="py-2.5 px-4 text-slate-500">{row.marks}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                  <p className="mt-3 text-xs text-slate-400">Cutoff data will be updated when officially released. Check official website for detailed category-wise cutoff.</p>
                 </SectionCard>
               )}
 
