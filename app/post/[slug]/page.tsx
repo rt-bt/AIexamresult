@@ -7,7 +7,7 @@ import { Footer } from "@/components/site/footer";
 import { BookmarkBtn } from "@/components/site/bookmark-btn";
 import { ShareButtons } from "@/components/site/share-buttons";
 import { getPostBySlug, parseDate } from "@/lib/data";
-import { CalendarDays, ExternalLink, AlertTriangle, CheckCircle, ChevronRight, BadgeInfo, Banknote, ArrowUpRight, Gauge } from "lucide-react";
+import { CalendarDays, ExternalLink, AlertTriangle, CheckCircle, ChevronRight, BadgeInfo, Banknote, ArrowUpRight, Gauge, Users, Clock, GraduationCap, IndianRupee, FileText, Mail, Download, Bell } from "lucide-react";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.aiexamresult.com";
 
@@ -51,28 +51,24 @@ async function getPostDetail(slug: string) {
   return null;
 }
 
-function DateBadge({ label, date, isExpired }: { label: string; date: string; isExpired?: boolean }) {
+function InfoRow({ label, value, highlight }: { label: string; value: string; highlight?: "green" | "red" | "brand" }) {
   return (
-    <div className={`flex items-center gap-3 rounded-xl border p-4 ${isExpired ? "border-red-200 bg-red-50" : "border-emerald-200 bg-emerald-50"}`}>
-      <div className={`flex h-10 w-10 items-center justify-center rounded-lg ${isExpired ? "bg-red-100 text-red-600" : "bg-emerald-100 text-emerald-600"}`}>
-        {isExpired ? <AlertTriangle className="h-5 w-5" /> : <CheckCircle className="h-5 w-5" />}
-      </div>
-      <div className="flex-1">
-        <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">{label}</p>
-        <p className={`text-sm font-bold ${isExpired ? "text-red-700" : "text-emerald-700"}`}>{date}</p>
-      </div>
-      {isExpired && (
-        <span className="rounded-lg bg-red-100 px-3 py-1.5 text-xs font-black text-red-700 ring-1 ring-red-200">Expired</span>
-      )}
+    <div className="flex items-center justify-between border-b border-gray-100 py-2.5 last:border-0">
+      <span className="text-sm font-medium text-gray-500">{label}</span>
+      <span className={`text-sm font-bold text-right ${
+        highlight === "green" ? "text-emerald-700" :
+        highlight === "red" ? "text-red-600" :
+        highlight === "brand" ? "text-brand" : "text-gray-800"
+      }`}>{value}</span>
     </div>
   );
 }
 
-function SectionCard({ icon, title, children, gradient }: { icon: React.ReactNode; title: string; children: React.ReactNode; gradient?: string }) {
+function TableCard({ icon, title, gradient, children }: { icon: React.ReactNode; title: string; gradient?: string; children: React.ReactNode }) {
   return (
-    <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-      <div className={`px-5 py-4 ${gradient || "border-b border-slate-100 bg-slate-50"}`}>
-        <h2 className="flex items-center gap-2.5 text-lg font-black text-slate-800">
+    <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+      <div className={`px-5 py-4 ${gradient || "border-b border-gray-100 bg-gray-50/80"}`}>
+        <h2 className="flex items-center gap-2.5 text-base font-bold text-gray-900">
           <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand/10 text-brand">{icon}</span>
           {title}
         </h2>
@@ -81,6 +77,15 @@ function SectionCard({ icon, title, children, gradient }: { icon: React.ReactNod
         {children}
       </div>
     </div>
+  );
+}
+
+function ExpiryBadge() {
+  return (
+    <span className="inline-flex items-center gap-1 rounded-lg bg-red-100 px-2.5 py-1 text-xs font-bold text-red-700 ring-1 ring-red-200">
+      <AlertTriangle className="h-3 w-3" />
+      EXPIRED
+    </span>
   );
 }
 
@@ -94,7 +99,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         <Header />
         <main className="container-page py-20 text-center">
           <h1 className="text-4xl font-black">Post not found</h1>
-          <p className="mt-4 text-slate-500">The page you are looking for does not exist.</p>
+          <p className="mt-4 text-gray-500">The page you are looking for does not exist.</p>
         </main>
         <Footer />
       </>
@@ -138,20 +143,45 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
   const titleLower = (post.title || "").toLowerCase();
   const hasCutoffContent = contentLower.includes("cutoff") || contentLower.includes("merit list") || contentLower.includes("cut-off") || titleLower.includes("cutoff") || titleLower.includes("merit");
 
+  const extractApplyDate = post.importantDates?.find((d: string) =>
+    d.toLowerCase().includes("apply start") || d.toLowerCase().includes("application start")
+  );
+  const extractLastDate = post.importantDates?.find((d: string) =>
+    d.toLowerCase().includes("last date") && !d.toLowerCase().includes("fee payment")
+  );
+  const extractFeeLastDate = post.importantDates?.find((d: string) =>
+    d.toLowerCase().includes("fee payment") || d.toLowerCase().includes("fee last")
+  );
+  const extractExamDate = post.importantDates?.find((d: string) =>
+    d.toLowerCase().includes("exam date") || d.toLowerCase().includes("examination")
+  );
+  const extractAdmitDate = post.importantDates?.find((d: string) =>
+    d.toLowerCase().includes("admit card")
+  );
+  const extractResultDate = post.importantDates?.find((d: string) =>
+    d.toLowerCase().includes("result") && !d.toLowerCase().includes("admit")
+  );
+
+  function stripHtml(html: string): string {
+    return html.replace(/<[^>]*>/g, "").replace(/&#?\w+;/g, " ").replace(/\s+/g, " ").trim();
+  }
+
+  const introText = post.intro || (post.fullContentHtml ? stripHtml(post.fullContentHtml).substring(0, 300) : "");
+
   return (
     <>
       <Header />
-      <main className="min-h-screen bg-gradient-to-b from-slate-50 to-white pb-16">
+      <main className="min-h-screen bg-gradient-to-b from-gray-50 to-white pb-16">
         <div className="container-page py-4 sm:py-8">
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
           <nav aria-label="Breadcrumb" className="mb-6 hidden sm:flex">
-            <ol className="flex flex-wrap items-center gap-2 text-sm text-slate-500">
+            <ol className="flex flex-wrap items-center gap-2 text-sm text-gray-500">
               <li><Link href="/" className="font-medium transition hover:text-brand">Home</Link></li>
-              <ChevronRight className="h-3.5 w-3.5 text-slate-300" />
+              <ChevronRight className="h-3.5 w-3.5 text-gray-300" />
               <li><Link href={`/${catSlug}`} className="font-medium transition hover:text-brand">{post.category || "Updates"}</Link></li>
-              <ChevronRight className="h-3.5 w-3.5 text-slate-300" />
-              <li className="max-w-[260px] truncate font-semibold text-slate-800">{title}</li>
+              <ChevronRight className="h-3.5 w-3.5 text-gray-300" />
+              <li className="max-w-[260px] truncate font-semibold text-gray-800">{title}</li>
             </ol>
           </nav>
 
@@ -160,73 +190,225 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
             {/* Main Content */}
             <div className="space-y-6">
 
-              {/* Hero Card */}
-              <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-lg shadow-slate-200/40">
+              {/* Hero Header */}
+              <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-lg shadow-gray-200/40">
                 <div className="bg-gradient-to-br from-brand/5 via-brand/[0.02] to-transparent p-6 sm:p-8">
-                  <div className="flex flex-wrap items-center gap-3">
-                    <span className="inline-flex items-center gap-1.5 rounded-full bg-brand/10 px-3.5 py-1 text-xs font-bold uppercase tracking-wider text-brand ring-1 ring-brand/20">
-                      <BadgeInfo className="h-3 w-3" />
-                      {post.category || "Verified Update"}
-                    </span>
-                    <span className="inline-flex items-center gap-1.5 rounded-full bg-slate-100 px-3.5 py-1 text-xs font-bold text-slate-600">
-                      <CalendarDays className="h-3 w-3" />
-                      {publishedDate}
-                    </span>
+                  <div className="flex flex-wrap items-center justify-between gap-3">
+                    <div className="flex flex-wrap items-center gap-3">
+                      <span className="inline-flex items-center gap-1.5 rounded-full bg-brand/10 px-3.5 py-1 text-xs font-bold uppercase tracking-wider text-brand ring-1 ring-brand/20">
+                        <BadgeInfo className="h-3 w-3" />
+                        {post.category || "Verified Update"}
+                      </span>
+                      <span className="inline-flex items-center gap-1.5 rounded-full bg-gray-100 px-3.5 py-1 text-xs font-bold text-gray-600">
+                        <CalendarDays className="h-3 w-3" />
+                        {publishedDate}
+                      </span>
+                    </div>
+                    {post.isExpired && <ExpiryBadge />}
                   </div>
 
-                  <h1 className="mt-5 text-2xl font-black leading-tight text-slate-900 sm:text-3xl lg:text-4xl">{title}</h1>
+                  <h1 className="mt-5 text-2xl font-black leading-tight text-gray-900 sm:text-3xl lg:text-4xl">{title}</h1>
 
-                  {post.lastDate && (
-                    <div className="mt-5 space-y-3">
-                      <DateBadge label="Last Date to Apply" date={post.lastDate} isExpired={post.isExpired} />
+                  {introText && (
+                    <div className="mt-5 rounded-xl border-l-4 border-brand bg-white/80 px-5 py-4 shadow-sm backdrop-blur-sm">
+                      <p className="text-sm leading-7 text-gray-700 sm:text-base">{introText}</p>
                     </div>
                   )}
 
-                  {post.intro && (
-                    <div className="mt-6 rounded-xl border-l-4 border-brand bg-white/80 px-5 py-4 shadow-sm backdrop-blur-sm">
-                      <p className="text-base leading-7 text-slate-700 sm:text-lg">{post.intro}</p>
+                  {/* Quick Summary Table */}
+                  <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div className="rounded-xl border border-gray-200 bg-white/90 p-4">
+                      <h3 className="text-xs font-bold uppercase tracking-wider text-gray-400 mb-3">Key Dates</h3>
+                      <div className="space-y-0 divide-y divide-gray-50">
+                        {extractApplyDate && (
+                          <InfoRow label="Apply Start" value={extractApplyDate.replace(/^[^:]*:\s*/, "").substring(0, 50)} highlight="brand" />
+                        )}
+                        {extractLastDate && (
+                          <InfoRow label="Last Date" value={extractLastDate.replace(/^[^:]*:\s*/, "").substring(0, 50)} highlight={post.isExpired ? "red" : "green"} />
+                        )}
+                        {extractFeeLastDate && (
+                          <InfoRow label="Fee Last Date" value={extractFeeLastDate.replace(/^[^:]*:\s*/, "").substring(0, 50)} />
+                        )}
+                        {extractExamDate && (
+                          <InfoRow label="Exam Date" value={extractExamDate.replace(/^[^:]*:\s*/, "").substring(0, 50)} />
+                        )}
+                        {extractAdmitDate && (
+                          <InfoRow label="Admit Card" value={extractAdmitDate.replace(/^[^:]*:\s*/, "").substring(0, 50)} />
+                        )}
+                        {extractResultDate && (
+                          <InfoRow label="Result" value={extractResultDate.replace(/^[^:]*:\s*/, "").substring(0, 50)} />
+                        )}
+                      </div>
                     </div>
-                  )}
+                    <div className="rounded-xl border border-gray-200 bg-white/90 p-4">
+                      <h3 className="text-xs font-bold uppercase tracking-wider text-gray-400 mb-3">Quick Info</h3>
+                      <div className="space-y-0 divide-y divide-gray-50">
+                        <InfoRow label="Category" value={post.category || "Update"} />
+                        {post.totalVacancies && <InfoRow label="Total Vacancies" value={post.totalVacancies} highlight="brand" />}
+                        <InfoRow label="Published" value={publishedDate} />
+                        {post.lastDate && (
+                          <InfoRow label="Last Date" value={post.lastDate} highlight={post.isExpired ? "red" : "green"} />
+                        )}
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
 
               {/* Important Dates */}
               {post.importantDates && post.importantDates.length > 0 && (
-                <SectionCard icon={<CalendarDays className="h-4 w-4" />} title="Important Dates" gradient="border-b border-brand/10 bg-brand/[0.04]">
-                  <div className="divide-y divide-slate-100">
-                    {post.importantDates.map((d: string, i: number) => (
-                      <div key={i} className="flex items-start gap-3 py-3 first:pt-0 last:pb-0">
-                        <span className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand/10 text-xs font-black text-brand">{i + 1}</span>
-                        <p className="text-sm leading-6 text-slate-700" dangerouslySetInnerHTML={{ __html: d }} />
-                      </div>
-                    ))}
+                <TableCard icon={<CalendarDays className="h-4 w-4" />} title="Important Dates" gradient="border-b border-brand/10 bg-brand/[0.04]">
+                  <div className="overflow-x-auto">
+                    <table className="w-full text-sm">
+                      <thead>
+                        <tr className="border-b border-brand/20">
+                          <th className="py-3 pr-4 text-left text-xs font-bold uppercase tracking-wider text-gray-500 w-10">#</th>
+                          <th className="py-3 text-left text-xs font-bold uppercase tracking-wider text-gray-500">Event</th>
+                        </tr>
+                      </thead>
+                      <tbody className="divide-y divide-gray-50">
+                        {post.importantDates.map((d: string, i: number) => {
+                          const lower = d.toLowerCase();
+                          let badge = "bg-gray-100 text-gray-600";
+                          if (lower.includes("last date")) badge = "bg-red-50 text-red-700";
+                          else if (lower.includes("apply start") || lower.includes("application start")) badge = "bg-green-50 text-green-700";
+                          else if (lower.includes("exam date") || lower.includes("examination")) badge = "bg-orange-50 text-orange-700";
+                          else if (lower.includes("admit card")) badge = "bg-purple-50 text-purple-700";
+                          else if (lower.includes("result")) badge = "bg-blue-50 text-blue-700";
+                          else if (lower.includes("answer key")) badge = "bg-indigo-50 text-indigo-700";
+                          else if (lower.includes("correction")) badge = "bg-amber-50 text-amber-700";
+
+                          const label = d.includes(":") ? d.split(":")[0].trim() : "";
+                          const value = d.includes(":") ? d.split(":").slice(1).join(":").trim() : d;
+
+                          return (
+                            <tr key={i} className="hover:bg-gray-50/50">
+                              <td className="py-3 pr-4 align-top">
+                                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-brand/10 text-xs font-black text-brand">{i + 1}</span>
+                              </td>
+                              <td className="py-3">
+                                {label && <span className="text-xs font-bold text-gray-400 uppercase">{label}</span>}
+                                <p className={`text-sm leading-6 ${value ? "text-gray-800 font-medium" : "text-gray-600"}`}>{value || d}</p>
+                              </td>
+                            </tr>
+                          );
+                        })}
+                      </tbody>
+                    </table>
                   </div>
-                </SectionCard>
+                </TableCard>
               )}
 
               {/* Application Fee */}
               {post.applicationFee && post.applicationFee.length > 0 && (
-                <SectionCard icon={<Banknote className="h-4 w-4" />} title="Application Fee" gradient="border-b border-orange-100 bg-orange-50/50">
-                  <div className="divide-y divide-slate-100">
-                    {post.applicationFee.map((f: string, i: number) => (
+                <TableCard icon={<IndianRupee className="h-4 w-4" />} title="Application Fee" gradient="border-b border-orange-100 bg-orange-50/50">
+                  <div className="overflow-x-auto">
+                    <table className="w-full text-sm">
+                      <thead>
+                        <tr className="border-b border-orange-200">
+                          <th className="py-3 pr-4 text-left text-xs font-bold uppercase tracking-wider text-gray-500 w-10">#</th>
+                          <th className="py-3 text-left text-xs font-bold uppercase tracking-wider text-gray-500">Category & Fee Details</th>
+                        </tr>
+                      </thead>
+                      <tbody className="divide-y divide-orange-50">
+                        {post.applicationFee.map((f: string, i: number) => {
+                          const lower = f.toLowerCase();
+                          let catBadge = "bg-gray-100 text-gray-600";
+                          if (lower.includes("general") || lower.includes("ur") || lower.includes("ews")) catBadge = "bg-blue-50 text-blue-700";
+                          else if (lower.includes("obc")) catBadge = "bg-orange-50 text-orange-700";
+                          else if (lower.includes("sc") || lower.includes("st")) catBadge = "bg-purple-50 text-purple-700";
+                          else if (lower.includes("female") || lower.includes("women")) catBadge = "bg-pink-50 text-pink-700";
+                          else if (lower.includes("ph") || lower.includes("pwd") || lower.includes("handicap")) catBadge = "bg-teal-50 text-teal-700";
+
+                          return (
+                            <tr key={i} className="hover:bg-orange-50/30">
+                              <td className="py-3 pr-4 align-top">
+                                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-orange-100 text-xs font-black text-orange-600">₹</span>
+                              </td>
+                              <td className="py-3">
+                                <span className={`inline-block rounded-full px-2.5 py-0.5 text-[11px] font-semibold ${catBadge}`}>
+                                  {f.includes(":") ? f.split(":")[0].trim() : "All"}
+                                </span>
+                                <p className="mt-1 text-sm text-gray-700">{f.includes(":") ? f.split(":").slice(1).join(":").trim() : f}</p>
+                              </td>
+                            </tr>
+                          );
+                        })}
+                      </tbody>
+                    </table>
+                  </div>
+                </TableCard>
+              )}
+
+              {/* Eligibility / Age Limit / Qualification - extracted from importantDates */}
+              {post.importantDates?.filter((d: string) =>
+                d.toLowerCase().includes("age") || d.toLowerCase().includes("qualification") || d.toLowerCase().includes("eligible")
+              ).length > 0 && (
+                <TableCard icon={<GraduationCap className="h-4 w-4" />} title="Eligibility & Age Limit" gradient="border-b border-sky-100 bg-sky-50/50">
+                  <div className="divide-y divide-gray-50">
+                    {post.importantDates.filter((d: string) =>
+                      d.toLowerCase().includes("age") || d.toLowerCase().includes("qualification") || d.toLowerCase().includes("eligible")
+                    ).map((d: string, i: number) => (
                       <div key={i} className="flex items-start gap-3 py-3 first:pt-0 last:pb-0">
-                        <span className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-orange-100 text-xs font-black text-orange-600">₹</span>
-                        <p className="text-sm leading-6 text-slate-700" dangerouslySetInnerHTML={{ __html: f }} />
+                        <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-sky-100 text-xs font-black text-sky-600">
+                          <CheckCircle className="h-3.5 w-3.5" />
+                        </span>
+                        <p className="text-sm leading-6 text-gray-700" dangerouslySetInnerHTML={{ __html: d }} />
                       </div>
                     ))}
                   </div>
-                </SectionCard>
+                </TableCard>
+              )}
+
+              {/* Vacancy Details - extracted from importantDates */}
+              {post.importantDates?.filter((d: string) =>
+                d.toLowerCase().includes("vacancy") || d.toLowerCase().includes("total post") || d.toLowerCase().includes("total seat")
+              ).length > 0 && (
+                <TableCard icon={<Users className="h-4 w-4" />} title="Vacancy Details" gradient="border-b border-violet-100 bg-violet-50/50">
+                  <div className="divide-y divide-gray-50">
+                    {post.importantDates.filter((d: string) =>
+                      d.toLowerCase().includes("vacancy") || d.toLowerCase().includes("total post") || d.toLowerCase().includes("total seat")
+                    ).map((d: string, i: number) => (
+                      <div key={i} className="flex items-start gap-3 py-3 first:pt-0 last:pb-0">
+                        <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-violet-100 text-xs font-black text-violet-600">
+                          <Users className="h-3.5 w-3.5" />
+                        </span>
+                        <p className="text-sm leading-6 text-gray-700" dangerouslySetInnerHTML={{ __html: d }} />
+                      </div>
+                    ))}
+                  </div>
+                </TableCard>
+              )}
+
+              {/* How to Apply */}
+              {post.importantDates?.filter((d: string) =>
+                d.toLowerCase().includes("apply") || d.toLowerCase().includes("how to apply")
+              ).length > 0 && (
+                <TableCard icon={<FileText className="h-4 w-4" />} title="How to Apply" gradient="border-b border-emerald-100 bg-emerald-50/50">
+                  <div className="divide-y divide-gray-50">
+                    {post.importantDates.filter((d: string) =>
+                      d.toLowerCase().includes("apply") || d.toLowerCase().includes("how to apply")
+                    ).map((d: string, i: number) => (
+                      <div key={i} className="flex items-start gap-3 py-3 first:pt-0 last:pb-0">
+                        <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-xs font-black text-emerald-600">
+                          <ArrowUpRight className="h-3.5 w-3.5" />
+                        </span>
+                        <p className="text-sm leading-6 text-gray-700" dangerouslySetInnerHTML={{ __html: d }} />
+                      </div>
+                    ))}
+                  </div>
+                </TableCard>
               )}
 
               {/* Cutoff & Merit */}
               {hasCutoffContent && (
-                <SectionCard icon={<Gauge className="h-4 w-4" />} title="Cutoff &amp; Merit List" gradient="border-b border-amber-100 bg-amber-50/50">
+                <TableCard icon={<Gauge className="h-4 w-4" />} title="Cutoff &amp; Merit List" gradient="border-b border-amber-100 bg-amber-50/50">
                   <div className="overflow-x-auto">
                     <table className="w-full text-sm">
                       <thead>
                         <tr className="border-b border-amber-200">
-                          <th className="py-2 pr-4 text-left font-semibold text-slate-700">Category</th>
-                          <th className="py-2 px-4 text-left font-semibold text-slate-700">Cutoff Marks</th>
+                          <th className="py-2.5 pr-4 text-left text-xs font-bold uppercase tracking-wider text-gray-500">Category</th>
+                          <th className="py-2.5 px-4 text-left text-xs font-bold uppercase tracking-wider text-gray-500">Cutoff Marks</th>
                         </tr>
                       </thead>
                       <tbody className="divide-y divide-amber-100">
@@ -239,47 +421,66 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                           { cat: "PwD", marks: "—" },
                         ].map((row) => (
                           <tr key={row.cat} className="hover:bg-amber-50/50">
-                            <td className="py-2.5 pr-4 font-medium text-slate-700">{row.cat}</td>
-                            <td className="py-2.5 px-4 text-slate-500">{row.marks}</td>
+                            <td className="py-2.5 pr-4 font-medium text-gray-700">{row.cat}</td>
+                            <td className="py-2.5 px-4 text-gray-500">{row.marks}</td>
                           </tr>
                         ))}
                       </tbody>
                     </table>
                   </div>
-                  <p className="mt-3 text-xs text-slate-400">Cutoff data will be updated when officially released. Check official website for detailed category-wise cutoff.</p>
-                </SectionCard>
+                  <p className="mt-3 text-xs text-gray-400">Cutoff data will be updated when officially released. Check official website for detailed category-wise cutoff.</p>
+                </TableCard>
               )}
 
               {/* Important Links */}
               {cleanLinks.length > 0 && (
-                <SectionCard icon={<ExternalLink className="h-4 w-4" />} title="Important Links" gradient="border-b border-indigo-100 bg-indigo-50/50">
+                <TableCard icon={<ExternalLink className="h-4 w-4" />} title="Important Links" gradient="border-b border-indigo-100 bg-indigo-50/50">
                   <div className="grid gap-3">
-                    {cleanLinks.map((link: { label: string; url: string | undefined }, i: number) => (
-                      <a
-                        key={i}
-                        href={link.url || "#"}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="group flex items-center justify-between gap-4 rounded-xl border border-slate-200 bg-white px-5 py-4 shadow-sm transition-all hover:-translate-y-0.5 hover:border-indigo-200 hover:shadow-md"
-                      >
-                        <span className="flex items-center gap-3">
-                          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-brand to-indigo-500 text-xs font-black text-white shadow-sm">{i + 1}</span>
-                          <span className="text-sm font-bold text-slate-700 transition group-hover:text-brand">{link.label}</span>
-                        </span>
-                        <ArrowUpRight className="h-4 w-4 shrink-0 text-slate-400 transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-brand" />
-                      </a>
-                    ))}
+                    {cleanLinks.map((link: { label: string; url: string | undefined }, i: number) => {
+                      let linkColor = "from-brand to-indigo-500";
+                      const ll = link.label.toLowerCase();
+                      if (ll.includes("apply") || ll.includes("registration")) linkColor = "from-emerald-500 to-teal-600";
+                      else if (ll.includes("admit") || ll.includes("hall")) linkColor = "from-orange-500 to-amber-600";
+                      else if (ll.includes("result")) linkColor = "from-blue-500 to-indigo-600";
+                      else if (ll.includes("answer key")) linkColor = "from-purple-500 to-violet-600";
+                      else if (ll.includes("syllabus")) linkColor = "from-rose-500 to-pink-600";
+                      else if (ll.includes("official")) linkColor = "from-sky-500 to-cyan-600";
+                      else if (ll.includes("download")) linkColor = "from-teal-500 to-emerald-600";
+
+                      return (
+                        <a
+                          key={i}
+                          href={link.url || "#"}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="group flex items-center justify-between gap-4 rounded-xl border border-gray-200 bg-white px-5 py-4 shadow-sm transition-all hover:-translate-y-0.5 hover:border-indigo-200 hover:shadow-md"
+                        >
+                          <span className="flex items-center gap-3 min-w-0">
+                            <span className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-gradient-to-br ${linkColor} text-xs font-black text-white shadow-sm`}>
+                              {i + 1}
+                            </span>
+                            <span className="text-sm font-bold text-gray-700 transition group-hover:text-brand truncate">{link.label}</span>
+                          </span>
+                          <ArrowUpRight className="h-4 w-4 shrink-0 text-gray-400 transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-brand" />
+                        </a>
+                      );
+                    })}
                   </div>
-                </SectionCard>
+                </TableCard>
               )}
 
               {/* Official Website CTA */}
               {officialUrl && (
                 <div className="overflow-hidden rounded-2xl bg-gradient-to-br from-brand to-emerald-700 p-6 shadow-lg sm:p-8">
                   <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-                    <div>
-                      <h2 className="text-xl font-black text-white">Official Website</h2>
-                      <p className="mt-1 text-sm text-white/80">Visit the official portal for detailed information and online application.</p>
+                    <div className="flex items-start gap-4">
+                      <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-white/15 backdrop-blur-sm">
+                        <ExternalLink className="h-6 w-6 text-white" />
+                      </div>
+                      <div>
+                        <h2 className="text-xl font-black text-white">Apply Online</h2>
+                        <p className="mt-1 text-sm text-white/80">Visit the official portal to submit your application.</p>
+                      </div>
                     </div>
                     <a
                       href={officialUrl}
@@ -287,66 +488,83 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                       rel="noopener noreferrer"
                       className="inline-flex shrink-0 items-center gap-2 rounded-xl bg-white px-6 py-3.5 text-sm font-black text-brand shadow-lg transition hover:bg-white/90 hover:shadow-xl"
                     >
-                      Visit Now
+                      Visit Official Website
                       <ExternalLink className="h-4 w-4" />
                     </a>
                   </div>
                 </div>
               )}
+
+              {/* Notification Section */}
+              <div className="rounded-2xl border border-gray-200 bg-gray-50/50 p-5">
+                <div className="flex items-start gap-3">
+                  <Mail className="h-5 w-5 text-brand shrink-0 mt-0.5" />
+                  <div>
+                    <p className="text-sm font-bold text-gray-800">Stay Updated</p>
+                    <p className="mt-0.5 text-xs text-gray-500">Bookmark this page and subscribe to notifications for real-time updates on this recruitment.</p>
+                    <div className="mt-3 flex items-center gap-2 text-xs text-gray-400">
+                      <span>📌</span>
+                      <span>Never miss important updates — we notify you instantly.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
             {/* Sidebar */}
             <aside className="space-y-5">
               <div className="sticky top-24 space-y-5">
-                {/* Telegram Card */}
-                <div className="overflow-hidden rounded-2xl bg-gradient-to-br from-[#1E3A5F] to-[#0D2137] p-5 text-white shadow-lg">
+                {/* Notification Subscribe */}
+                <div className="overflow-hidden rounded-2xl bg-gradient-to-br from-brand to-emerald-700 p-5 text-white shadow-lg">
                   <div className="flex items-center gap-3">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/15 backdrop-blur-sm">
-                      <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                    <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/15 backdrop-blur-sm">
+                      <Bell className="h-5 w-5" />
                     </div>
                     <div>
-                      <h3 className="text-base font-black">Telegram</h3>
-                      <p className="text-xs text-slate-300">Instant exam alerts</p>
+                      <h3 className="text-base font-black">Get Alerts</h3>
+                      <p className="text-xs text-white/70">Instant notification for this exam</p>
                     </div>
                   </div>
-                  <a href="https://t.me/aiexamresults" target="_blank" rel="noopener noreferrer" className="mt-4 flex items-center justify-center gap-2 rounded-xl bg-white/15 px-4 py-3 text-sm font-bold backdrop-blur-sm transition hover:bg-white/25">
-                    <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
-                    Join Channel
-                  </a>
+                  <div className="mt-4 flex gap-2">
+                    <input
+                      type="email"
+                      placeholder="Your email"
+                      className="flex-1 rounded-xl border border-white/20 bg-white/10 px-3.5 py-2.5 text-sm text-white placeholder-white/50 outline-none backdrop-blur-sm focus:border-white/40"
+                    />
+                    <button className="rounded-xl bg-white px-4 py-2.5 text-sm font-bold text-brand transition hover:bg-white/90">
+                      Subscribe
+                    </button>
+                  </div>
                 </div>
 
                 {/* Quick Stats */}
-                <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-                  <h3 className="text-sm font-black text-slate-800">Quick Info</h3>
-                  <div className="mt-4 space-y-3">
-                    <div className="flex items-center justify-between text-sm">
-                      <span className="text-slate-500">Category</span>
-                      <span className="font-bold text-slate-800">{post.category || "Update"}</span>
+                <div className="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm">
+                  <h3 className="text-sm font-black text-gray-800">Quick Summary</h3>
+                  <div className="mt-4 space-y-0">
+                    <div className="flex items-center justify-between py-2.5 border-b border-gray-50">
+                      <span className="text-sm text-gray-500">Category</span>
+                      <span className="text-sm font-bold text-gray-800">{post.category || "Update"}</span>
                     </div>
-                    <div className="h-px bg-slate-100" />
-                    <div className="flex items-center justify-between text-sm">
-                      <span className="text-slate-500">Published</span>
-                      <span className="font-bold text-slate-800">{publishedDate}</span>
+                    <div className="flex items-center justify-between py-2.5 border-b border-gray-50">
+                      <span className="text-sm text-gray-500">Published</span>
+                      <span className="text-sm font-bold text-gray-800">{publishedDate}</span>
                     </div>
                     {post.lastDate && (
-                      <>
-                        <div className="h-px bg-slate-100" />
-                        <div className="flex items-center justify-between text-sm">
-                          <span className="text-slate-500">Last Date</span>
-                          <span className={`font-bold ${post.isExpired ? "text-red-600" : "text-emerald-600"}`}>
-                            {post.lastDate} {post.isExpired ? "(Expired)" : ""}
-                          </span>
-                        </div>
-                      </>
+                      <div className="flex items-center justify-between py-2.5 border-b border-gray-50">
+                        <span className="text-sm text-gray-500">Last Date</span>
+                        <span className={`text-sm font-bold ${post.isExpired ? "text-red-600" : "text-emerald-600"}`}>
+                          {post.lastDate}
+                        </span>
+                      </div>
                     )}
                   </div>
                 </div>
 
-                {/* Save & Share */}
-                <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+                {/* Bookmark & Share */}
+                <div className="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm">
                   <div className="flex items-center gap-3">
                     <BookmarkBtn slug={slug} title={title} category={post.category || "Update"} date={publishedDate} />
-                    <div className="h-8 w-px bg-slate-200" />
+                    <div className="h-8 w-px bg-gray-200" />
                     <ShareButtons title={title} url={`${SITE_URL}/post/${slug}`} />
                   </div>
                 </div>
