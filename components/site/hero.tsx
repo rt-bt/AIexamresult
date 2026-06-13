@@ -1,9 +1,89 @@
 "use client";
 
-import { Search, ArrowRight, Clock, BarChart3, Award, Sparkles, Bell, TrendingUp, Zap } from "lucide-react";
+import { Search, ArrowRight, Clock, BarChart3, Award, Sparkles } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 import { featuredResults, trendingExams, latestJobs } from "@/lib/data";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+
+const examOptions = [
+  ...trendingExams,
+  "SSC CHSL", "SSC MTS", "SSC GD Constable", "SSC JE", "SSC CPO",
+  "RRB NTPC", "RRB Group D", "RRB JE", "RRB Technician",
+  "UPSC IAS", "UPSC NDA", "UPSC CDS", "UPSC CAPF",
+  "IBPS PO", "IBPS Clerk", "IBPS RRB", "SBI PO", "SBI Clerk",
+  "CTET", "UPTET", "REET", "Bihar Board 10th", "Bihar Board 12th",
+  "UP Board 10th", "UP Board 12th", "CBSE 10th", "CBSE 12th",
+  "NEET UG", "JEE Main", "JEE Advanced", "CUET UG",
+  "Indian Army", "Indian Navy", "Indian Air Force", "Agniveer",
+];
+
+function ResultFinder() {
+  const router = useRouter();
+  const [exam, setExam] = useState("");
+  const [rollNo, setRollNo] = useState("");
+  const [showDropdown, setShowDropdown] = useState(false);
+
+  const filtered = exam
+    ? examOptions.filter((e) => e.toLowerCase().includes(exam.toLowerCase()))
+    : [];
+
+  function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    const q = [exam, rollNo].filter(Boolean).join(" ");
+    if (q.length >= 3) router.push(`/search?q=${encodeURIComponent(q)}`);
+  }
+
+  return (
+    <form onSubmit={handleSubmit} className="relative mx-auto max-w-2xl">
+      <div className="flex flex-col gap-2 sm:flex-row">
+        <div className="relative flex-1">
+          <Search className="absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-white/40" />
+          <input
+            type="text"
+            value={exam}
+            onChange={(e) => { setExam(e.target.value); setShowDropdown(true); }}
+            onFocus={() => setShowDropdown(true)}
+            onBlur={() => setTimeout(() => setShowDropdown(false), 200)}
+            placeholder="Exam name (e.g. SSC CGL, UPSC, Railway)"
+            className="w-full rounded-xl border border-white/20 bg-white/10 px-11 py-3.5 text-sm text-white placeholder-white/40 outline-none backdrop-blur-sm transition-all focus:border-white/40 focus:bg-white/15"
+          />
+          {showDropdown && filtered.length > 0 && (
+            <div className="absolute left-0 right-0 top-full z-20 mt-1 max-h-48 overflow-auto rounded-xl border border-white/10 bg-[#0F172A] shadow-xl">
+              {filtered.map((e) => (
+                <button
+                  key={e}
+                  type="button"
+                  onMouseDown={() => { setExam(e); setShowDropdown(false); }}
+                  className="w-full px-4 py-2.5 text-left text-sm text-white/70 transition hover:bg-white/10 hover:text-white"
+                >
+                  {e}
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
+        <input
+          type="text"
+          value={rollNo}
+          onChange={(e) => setRollNo(e.target.value)}
+          placeholder="Roll number (optional)"
+          className="rounded-xl border border-white/20 bg-white/10 px-4 py-3.5 text-sm text-white placeholder-white/40 outline-none backdrop-blur-sm transition-all focus:border-white/40 focus:bg-white/15 sm:w-44"
+        />
+        <button
+          type="submit"
+          className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-5 py-3.5 text-sm font-bold text-[#0D9488] shadow-lg shadow-black/10 transition hover:bg-white/90 active:scale-[0.98]"
+        >
+          Find Result
+          <ArrowRight className="h-4 w-4" />
+        </button>
+      </div>
+      <p className="mt-2 text-center text-xs text-white/40">
+        Popular: SSC CGL · UPSC · RRB NTPC · CTET · NEET · Bihar Board · UP Board
+      </p>
+    </form>
+  );
+}
 
 function Counter({ to, label }: { to: number; label: string }) {
   const [count, setCount] = useState(0);
@@ -34,46 +114,6 @@ function Counter({ to, label }: { to: number; label: string }) {
     <div ref={ref} className="text-center">
       <p className="text-lg sm:text-xl font-bold text-white tracking-tight">{count.toLocaleString()}<span className="text-[#5EEAD4]">+</span></p>
       <p className="text-[10px] text-white/50 mt-0.5 font-medium">{label}</p>
-    </div>
-  );
-}
-
-function SearchBar() {
-  const [q, setQ] = useState("");
-  const suggestions = trendingExams.filter(e => e.toLowerCase().includes(q.toLowerCase())).slice(0, 4);
-
-  return (
-    <div className="relative mx-auto max-w-lg">
-      <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl px-4 py-3 focus-within:border-white/40 focus-within:bg-white/15 transition-all">
-        <Search className="h-4 w-4 text-white/50 shrink-0" />
-        <input
-          type="text"
-          value={q}
-          onChange={(e) => setQ(e.target.value)}
-          placeholder="Search exam, result or job..."
-          className="flex-1 bg-transparent text-sm text-white placeholder-white/40 outline-none"
-          onKeyDown={(e) => { if (e.key === "Enter" && q.trim()) window.location.href = `/search?q=${encodeURIComponent(q.trim())}`; }}
-        />
-        {q.trim() ? (
-          <Link href={`/search?q=${encodeURIComponent(q.trim())}`} className="flex items-center gap-1 rounded-lg bg-white px-3.5 py-2 text-sm font-semibold text-[#0D9488] hover:bg-white/90 transition-colors">
-            Search <ArrowRight className="h-3.5 w-3.5" />
-          </Link>
-        ) : (
-          <span className="hidden sm:flex items-center gap-1 text-xs text-white/40">
-            <Zap className="h-3 w-3" /> Instant
-          </span>
-        )}
-      </div>
-      {q && suggestions.length > 0 && (
-        <div className="absolute left-0 right-0 top-full mt-1 overflow-hidden rounded-xl bg-[#0F172A] border border-white/10 shadow-xl z-10">
-          {suggestions.map(s => (
-            <Link key={s} href={`/search?q=${encodeURIComponent(s)}`} className="flex items-center gap-3 px-4 py-2.5 text-sm text-white/70 hover:bg-white/10 hover:text-white transition-colors">
-              <Search className="h-3.5 w-3.5 text-white/30" />
-              {s}
-            </Link>
-          ))}
-        </div>
-      )}
     </div>
   );
 }
@@ -109,9 +149,9 @@ export function Hero() {
             Real-time alerts for Sarkari results, government jobs and application deadlines — all in one place.
           </p>
 
-          {/* Search */}
+          {/* Result Finder */}
           <div className="mt-5">
-            <SearchBar />
+            <ResultFinder />
           </div>
 
           {/* Trending */}

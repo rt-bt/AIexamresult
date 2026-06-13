@@ -2,7 +2,6 @@ import { Header } from "@/components/site/header";
 import { Footer } from "@/components/site/footer";
 import { Hero } from "@/components/site/hero";
 import { QuickAccess } from "@/components/site/quick-access";
-import { ResultFinder } from "@/components/site/result-finder";
 import { NotificationSubscribe } from "@/components/site/nnotification-subscribe";
 import { CategoryColumns } from "@/components/site/category-columns";
 import { StateGrid } from "@/components/site/state-grid";
@@ -31,7 +30,6 @@ export default function HomePage() {
       <main>
         <Hero />
         <QuickAccess />
-        <ResultFinder />
 
         <section className="py-10">
           <div className="container-page">
