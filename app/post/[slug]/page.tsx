@@ -436,35 +436,83 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                 </TableCard>
               )}
 
+              {/* Result Timeline Tracker */}
+              {post.importantDates && post.importantDates.length > 0 && (() => {
+                const phases = [
+                  { label: "Notification", key: "notif", done: true },
+                  { label: "Apply Start", key: "apply", done: (post.importantDates || []).some((d: string) => d.toLowerCase().includes("apply") || d.toLowerCase().includes("application")) },
+                  { label: "Admit Card", key: "admit", done: (post.importantDates || []).some((d: string) => d.toLowerCase().includes("admit card")) },
+                  { label: "Exam Date", key: "exam", done: (post.importantDates || []).some((d: string) => d.toLowerCase().includes("exam date") || d.toLowerCase().includes("examination") || d.toLowerCase().includes("exam")) },
+                  { label: "Answer Key", key: "anskey", done: (post.importantDates || []).some((d: string) => d.toLowerCase().includes("answer key")) },
+                  { label: "Result", key: "result", done: (post.importantDates || []).some((d: string) => d.toLowerCase().includes("result")) },
+                  { label: "Merit", key: "merit", done: false },
+                ];
+                const doneCount = phases.filter(p => p.done).length;
+                return (
+                  <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
+                    <div className="border-b border-gray-100 bg-gray-50/80 px-5 py-4">
+                      <h2 className="flex items-center gap-2.5 text-base font-bold text-gray-900">
+                        <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand/10 text-brand">
+                          <Clock className="h-4 w-4" />
+                        </span>
+                        Result Timeline
+                      </h2>
+                    </div>
+                    <div className="px-5 py-5">
+                      <div className="flex items-center justify-between gap-1 mb-4">
+                        {phases.map((p, i) => (
+                          <div key={p.key} className="flex flex-col items-center flex-1">
+                            <div className="flex items-center w-full">
+                              <div className={`h-2 w-full rounded-full ${p.done ? "bg-brand" : "bg-gray-100"}`} />
+                              <div className={`shrink-0 flex h-6 w-6 items-center justify-center rounded-full text-xs font-bold ${
+                                p.done ? "bg-brand text-white" : "bg-gray-100 text-gray-400"
+                              }`}>
+                                {p.done ? <CheckCircle className="h-3.5 w-3.5" /> : <span className="text-[10px]">{i + 1}</span>}
+                              </div>
+                              <div className={`h-2 w-full rounded-full ${i < phases.length - 1 ? (phases[i + 1].done ? "bg-brand" : "bg-gray-100") : "hidden"}`} />
+                            </div>
+                            <span className={`mt-1.5 text-[10px] font-semibold text-center whitespace-nowrap ${p.done ? "text-brand" : "text-gray-400"}`}>
+                              {p.label}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+                      <div className="flex items-center justify-between rounded-xl bg-brand/5 px-4 py-2.5">
+                        <span className="text-xs font-medium text-gray-600">Progress</span>
+                        <span className="text-sm font-bold text-brand">{doneCount}/{phases.length} completed</span>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })()}
+
               {/* Cutoff & Merit */}
               {hasCutoffContent && (
                 <TableCard icon={<Gauge className="h-4 w-4" />} title="Cutoff &amp; Merit List" gradient="border-b border-amber-100 bg-amber-50/50">
-                  <div className="overflow-x-auto">
-                    <table className="w-full text-sm">
-                      <thead>
-                        <tr className="border-b border-amber-200">
-                          <th className="py-2.5 pr-4 text-left text-xs font-bold uppercase tracking-wider text-gray-500">Category</th>
-                          <th className="py-2.5 px-4 text-left text-xs font-bold uppercase tracking-wider text-gray-500">Cutoff Marks</th>
-                        </tr>
-                      </thead>
-                      <tbody className="divide-y divide-amber-100">
-                        {[
-                          { cat: "General (UR)", marks: "—" },
-                          { cat: "OBC", marks: "—" },
-                          { cat: "EWS", marks: "—" },
-                          { cat: "SC", marks: "—" },
-                          { cat: "ST", marks: "—" },
-                          { cat: "PwD", marks: "—" },
-                        ].map((row) => (
-                          <tr key={row.cat} className="hover:bg-amber-50/50">
-                            <td className="py-2.5 pr-4 font-medium text-gray-700">{row.cat}</td>
-                            <td className="py-2.5 px-4 text-gray-500">{row.marks}</td>
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
+                  <div className="space-y-3">
+                    {[
+                      { cat: "General (UR)", marks: "—", pct: 85, color: "bg-blue-500" },
+                      { cat: "OBC", marks: "—", pct: 75, color: "bg-orange-500" },
+                      { cat: "EWS", marks: "—", pct: 72, color: "bg-yellow-500" },
+                      { cat: "SC", marks: "—", pct: 60, color: "bg-purple-500" },
+                      { cat: "ST", marks: "—", pct: 50, color: "bg-teal-500" },
+                      { cat: "PwD", marks: "—", pct: 55, color: "bg-pink-500" },
+                    ].map((row) => (
+                      <div key={row.cat} className="rounded-lg bg-white border border-amber-100 px-4 py-3 hover:border-amber-200 transition">
+                        <div className="flex items-center justify-between mb-1.5">
+                          <span className="text-sm font-semibold text-gray-700">{row.cat}</span>
+                          <span className="text-sm font-bold text-gray-900">{row.marks}</span>
+                        </div>
+                        <div className="h-2 w-full rounded-full bg-amber-50 overflow-hidden">
+                          <div
+                            className={`h-full rounded-full ${row.color} transition-all`}
+                            style={{ width: `${row.pct}%` }}
+                          />
+                        </div>
+                      </div>
+                    ))}
                   </div>
-                  <p className="mt-3 text-xs text-gray-400">Cutoff data will be updated when officially released. Check official website for detailed category-wise cutoff.</p>
+                  <p className="mt-4 text-xs text-gray-400">Cutoff data will be updated when officially released. Check official website for detailed category-wise cutoff.</p>
                 </TableCard>
               )}
 
