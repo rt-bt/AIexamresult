@@ -51,6 +51,63 @@ async function getPostDetail(slug: string) {
   return null;
 }
 
+function extractDatesFromHtml(html: string): string[] {
+  const dates: string[] = [];
+  const patterns = [
+    /<strong>Important Dates<\/strong>[\s\S]*?<\/h[234]>([\s\S]*?)(?=<\/ul>)/gi,
+    /<h[234][^>]*>\s*Important Dates\s*<\/h[234]>\s*<ul[^>]*>([\s\S]*?)<\/ul>/gi,
+    /<h[234][^>]*>\s*<strong>Important Dates[^<]*<\/strong>\s*<\/h[234]>\s*<div[^>]*>([\s\S]*?)<\/ul>/gi,
+  ];
+  for (const pattern of patterns) {
+    const match = pattern.exec(html);
+    if (match) {
+      const ulContent = match[1];
+      const liRegex = /<li[^>]*>([\s\S]*?)<\/li>/gi;
+      let liMatch;
+      while ((liMatch = liRegex.exec(ulContent)) !== null) {
+        const text = liMatch[1].replace(/<[^>]*>/g, "").trim();
+        if (text && text.length > 5) dates.push(text);
+      }
+      if (dates.length > 0) break;
+    }
+  }
+  if (dates.length === 0) {
+    const lines = html.split("\n");
+    let inSection = false;
+    for (const line of lines) {
+      const clean = line.replace(/<[^>]*>/g, "").trim();
+      if (/important\s*dates/i.test(clean)) { inSection = true; continue; }
+      if (inSection) {
+        if (/<\/?table/i.test(line) || clean.startsWith("Application Fee") || clean.startsWith("Age Limit")) break;
+        if (clean.startsWith("•") || clean.startsWith("-") || clean.startsWith("<li")) {
+          const text = clean.replace(/^[•\-]\s*/, "");
+          if (text && text.length > 5) dates.push(text);
+        }
+      }
+    }
+  }
+  return dates;
+}
+
+function extractFeeFromHtml(html: string): string[] {
+  const fees: string[] = [];
+  const feeHeaders = /(Application Fee|Application Fees|Exam Fee)/i;
+  const lines = html.split("\n");
+  let inSection = false;
+  for (const line of lines) {
+    const clean = line.replace(/<[^>]*>/g, "").trim();
+    if (feeHeaders.test(clean) && !inSection) { inSection = true; continue; }
+    if (inSection) {
+      if (/Important Dates|Age Limit|Vacancy Details|Important Links/i.test(clean)) break;
+      if (clean.startsWith("•") || clean.startsWith("-") || clean.startsWith("<li")) {
+        const text = clean.replace(/^[•\-]\s*/, "");
+        if (text && text.length > 3) fees.push(text);
+      }
+    }
+  }
+  return fees;
+}
+
 function InfoRow({ label, value, highlight }: { label: string; value: string; highlight?: "green" | "red" | "brand" }) {
   return (
     <div className="flex items-center justify-between border-b border-gray-100 py-2.5 last:border-0">
@@ -92,6 +149,15 @@ function ExpiryBadge() {
 export default async function PostPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const post = await getPostDetail(slug);
+
+  if (post && post.fullContentHtml) {
+    if (!post.importantDates || post.importantDates.length === 0) {
+      post.importantDates = extractDatesFromHtml(post.fullContentHtml);
+    }
+    if (!post.applicationFee || post.applicationFee.length === 0) {
+      post.applicationFee = extractFeeFromHtml(post.fullContentHtml);
+    }
+  }
 
   if (!post) {
     return (
