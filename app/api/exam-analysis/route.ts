@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { fetchExamAnalysis, fetchAllExamAnalyses, EXAM_SLUGS } from "@/lib/exam-analysis";
+import { fetchExamAnalysis, fetchAllExamAnalyses, DATA } from "@/lib/exam-analysis";
 
 export async function GET(req: NextRequest) {
   const slug = req.nextUrl.searchParams.get("slug");
@@ -12,10 +12,9 @@ export async function GET(req: NextRequest) {
     const all = await fetchAllExamAnalyses();
     return NextResponse.json(all);
   } catch {
-    const { FALLBACK_DATA } = await import("@/lib/exam-analysis");
-    if (slug && FALLBACK_DATA[slug]) {
-      return NextResponse.json({ ...FALLBACK_DATA[slug], lastUpdated: new Date().toISOString() });
+    if (slug && DATA[slug]) {
+      return NextResponse.json({ ...DATA[slug], lastUpdated: new Date().toISOString() });
     }
-    return NextResponse.json(FALLBACK_DATA);
+    return NextResponse.json(DATA);
   }
 }
