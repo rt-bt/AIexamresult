@@ -31,7 +31,7 @@ export default function HomePage() {
         <Hero />
 
         {/* Latest Updates — mobile only, right after hero */}
-        <section className="lg:hidden -mt-4 pb-2">
+        <section className="lg:hidden pt-6 pb-2">
           <div className="container-page">
             <div className="flex items-center gap-2 mb-3">
               <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-gradient-to-br from-[#EA580C] to-[#F97316]">
