@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Header } from "@/components/site/header";
 import { Footer } from "@/components/site/footer";
-import { Calculator, ImageDown, FileText, BarChart3, ClipboardCheck, BookOpen } from "lucide-react";
+import { Calculator, ImageDown, FileText, BarChart3, ClipboardCheck, BookOpen, Zap } from "lucide-react";
 
 const tools = [
   {
@@ -21,6 +21,14 @@ const tools = [
     shadow: "shadow-indigo-200",
   },
   {
+    title: "Result Predictor",
+    description: "Estimate your selection chance & rank range based on marks, category and exam cutoff trends",
+    href: "/result-predictor",
+    icon: Zap,
+    color: "from-amber-500 to-orange-500",
+    shadow: "shadow-amber-200",
+  },
+  {
     title: "Document Checklist",
     description: "Category-wise document list for exam application & verification — check what you need",
     href: "/document-checklist",
@@ -35,6 +43,14 @@ const tools = [
     icon: BookOpen,
     color: "from-purple-500 to-pink-500",
     shadow: "shadow-purple-200",
+  },
+  {
+    title: "State-Wise Map",
+    description: "Board results, government jobs & exams by state — click on India map to explore",
+    href: "/state-map",
+    icon: BarChart3,
+    color: "from-sky-500 to-blue-500",
+    shadow: "shadow-sky-200",
   },
   {
     title: "Image Compressor & Cropper",
