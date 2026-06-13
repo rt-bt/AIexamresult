@@ -2,10 +2,12 @@ import * as fs from "fs";
 import * as path from "path";
 
 const IS_VERCEL = process.env.VERCEL === "1";
-const DATA_DIR = path.join(process.cwd(), "data", "analytics");
+const DATA_DIR = IS_VERCEL
+  ? path.join("/tmp", "data", "analytics")
+  : path.join(process.cwd(), "data", "analytics");
 const LOG_FILE = path.join(DATA_DIR, "visits.jsonl");
 
-function ensureDir() { if (!IS_VERCEL) try { fs.mkdirSync(DATA_DIR, { recursive: true }); } catch {} }
+function ensureDir() { try { fs.mkdirSync(DATA_DIR, { recursive: true }); } catch {} }
 
 export type VisitLog = {
   path: string;
@@ -18,29 +20,16 @@ export type VisitLog = {
 };
 
 export function logVisit(visit: VisitLog) {
-  if (IS_VERCEL) return;
   ensureDir();
   try { fs.appendFileSync(LOG_FILE, JSON.stringify(visit) + "\n", "utf-8"); } catch {}
 }
 
-export function getStats() {
-  if (IS_VERCEL) return null;
-  ensureDir();
-  const lines: VisitLog[] = [];
-  try {
-    const raw = fs.readFileSync(LOG_FILE, "utf-8");
-    for (const line of raw.trim().split("\n").filter(Boolean)) {
-      try { lines.push(JSON.parse(line)); } catch {}
-    }
-  } catch {}
-
+function computeStats(lines: VisitLog[]) {
   const totalViews = lines.length;
   const uniquePaths = new Set(lines.map((l) => l.path)).size;
 
   const viewsByPath: Record<string, number> = {};
-  for (const l of lines) {
-    viewsByPath[l.path] = (viewsByPath[l.path] || 0) + 1;
-  }
+  for (const l of lines) viewsByPath[l.path] = (viewsByPath[l.path] || 0) + 1;
   const topPaths = Object.entries(viewsByPath)
     .sort((a, b) => b[1] - a[1])
     .slice(0, 10)
@@ -76,4 +65,18 @@ export function getStats() {
       Object.entries(viewsByRegion).sort((a, b) => b[1] - a[1])
     ),
   };
+}
+
+export function getStats() {
+  ensureDir();
+  try {
+    const raw = fs.readFileSync(LOG_FILE, "utf-8");
+    const lines: VisitLog[] = raw.trim().split("\n").filter(Boolean).map(l => JSON.parse(l));
+    return computeStats(lines);
+  } catch {
+    return {
+      totalViews: 0, uniquePaths: 0, viewsToday: 0, viewsThisWeek: 0,
+      topPaths: [], viewsByCountry: {}, viewsByRegion: {},
+    };
+  }
 }
