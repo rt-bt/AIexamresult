@@ -625,26 +625,33 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
             <aside className="space-y-5">
               <div className="sticky top-24 space-y-5">
                 {/* Notification Subscribe */}
-                <div className="overflow-hidden rounded-2xl bg-gradient-to-br from-brand to-emerald-700 p-5 text-white shadow-lg">
-                  <div className="flex items-center gap-3">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/15 backdrop-blur-sm">
-                      <Bell className="h-5 w-5" />
+                <div className="rounded-2xl bg-white border border-gray-200 p-5 shadow-sm">
+                  <div className="flex items-start gap-3">
+                    <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-brand/10">
+                      <Bell className="h-4.5 w-4.5 text-brand" />
                     </div>
-                    <div>
-                      <h3 className="text-base font-black">Get Alerts</h3>
-                      <p className="text-xs text-white/70">Instant notification for this exam</p>
+                    <div className="min-w-0 flex-1">
+                      <h3 className="text-sm font-bold text-gray-800">Get Alerts</h3>
+                      <p className="text-xs text-gray-400 mt-0.5">Instant notification for this exam</p>
                     </div>
                   </div>
                   <div className="mt-4 flex gap-2">
-                    <input
-                      type="email"
-                      placeholder="Your email"
-                      className="flex-1 rounded-xl border border-white/20 bg-white/10 px-3.5 py-2.5 text-sm text-white placeholder-white/50 outline-none backdrop-blur-sm focus:border-white/40"
-                    />
-                    <button className="rounded-xl bg-white px-4 py-2.5 text-sm font-bold text-brand transition hover:bg-white/90">
+                    <div className="relative flex-1">
+                      <Mail className="absolute left-3 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-gray-400" />
+                      <input
+                        type="email"
+                        placeholder="Your email"
+                        className="w-full rounded-xl border border-gray-200 bg-gray-50 py-2.5 pl-9 pr-3 text-sm text-gray-700 placeholder-gray-400 outline-none transition focus:border-brand focus:bg-white focus:ring-2 focus:ring-brand/10"
+                      />
+                    </div>
+                    <button className="rounded-xl bg-brand px-4 py-2.5 text-sm font-bold text-white shadow-sm transition hover:bg-brand/90 active:scale-[0.97]">
                       Subscribe
                     </button>
                   </div>
+                  <p className="mt-2.5 text-[11px] text-gray-400 flex items-center gap-1">
+                    <CheckCircle className="h-3 w-3 text-emerald-500" />
+                    Free · No spam · Unsubscribe anytime
+                  </p>
                 </div>
 
                 {/* Quick Stats */}
