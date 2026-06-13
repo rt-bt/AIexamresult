@@ -120,10 +120,10 @@ export function Header() {
           <Link href="/search" className="hidden items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-bold text-[#0D9488] transition hover:bg-white/90 lg:inline-flex">
             <Search className="h-4 w-4" /> {t("nav.search")}
           </Link>
-          <Link href="/search" className="rounded-full border border-white/20 p-2 text-white transition hover:bg-white/15 active:scale-90 lg:hidden">
+          <Link href="/search" className="rounded-full border border-white/20 p-2.5 text-white transition hover:bg-white/15 active:scale-90 flex lg:hidden">
             <Search className="h-4 w-4" />
           </Link>
-          <button onClick={() => setOpen((value) => !value)} className="hidden rounded-full border border-white/20 p-2.5 text-white transition hover:bg-white/15 lg:hidden">
+          <button onClick={() => setOpen((value) => !value)} className="rounded-full border border-white/20 p-2.5 text-white transition hover:bg-white/15 active:scale-90 flex lg:hidden">
             {open ? "✕" : "☰"}
           </button>
         </div>
@@ -151,13 +151,13 @@ export function Header() {
             <div className="rounded-2xl bg-white/10 p-3 backdrop-blur-xl">
               {nav.map(([label, href, dropdown]) => (
                 <div key={href}>
-                  <Link href={href} className="block rounded-xl px-3 py-3 text-sm font-semibold text-white/80 transition active:bg-white/10 active:text-white">
+                  <Link href={href} onClick={() => setOpen(false)} className="block rounded-xl px-3 py-3 text-sm font-semibold text-white/80 transition active:bg-white/10 active:text-white">
                     {t(`nav.${label.toLowerCase().replace(/\s+/g, "-")}`)}
                   </Link>
                   {dropdown && (
                     <div className="ml-3 border-l border-white/10 pl-3">
                       {dropdown.map(([subLabel, subHref]) => (
-                        <Link key={subHref} href={subHref} className="block rounded-lg px-3 py-2 text-xs font-medium text-white/60 transition active:bg-white/10 active:text-white">
+                        <Link key={subHref} href={subHref} onClick={() => setOpen(false)} className="block rounded-lg px-3 py-2 text-xs font-medium text-white/60 transition active:bg-white/10 active:text-white">
                           {t(`nav.${subLabel.toLowerCase().replace(/\s+/g, "-")}`)}
                         </Link>
                       ))}
@@ -165,6 +165,34 @@ export function Header() {
                   )}
                 </div>
               ))}
+              <div className="mt-3 border-t border-white/10 pt-3">
+                <p className="mb-2 px-3 text-[10px] font-bold uppercase tracking-wider text-white/40">All Tools</p>
+                <div className="grid grid-cols-3 gap-1.5">
+                  {["/job-finder","/eligibility-checker","/salary-calculator","/vacancy-analyzer","/fee-calculator","/form-guide","/syllabus-tracker","/mock-tests","/current-affairs","/objection-tracker","/counselling-guide","/difficulty-meter","/exam-comparison","/document-checklist","/question-papers","/state-map","/dashboard","/result-predictor","/exam-calendar","/iq-test"].map((href) => {
+                    const label = href.replace("/","").split("-").map(w => w.charAt(0).toUpperCase()+w.slice(1)).join(" ");
+                    return (
+                      <Link key={href} href={href} onClick={() => setOpen(false)}
+                        className="rounded-lg px-2 py-1.5 text-[10px] font-medium text-white/60 transition active:bg-white/10 active:text-white text-center leading-tight">
+                        {label}
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
+              <div className="mt-3 border-t border-white/10 pt-3">
+                <p className="mb-2 px-3 text-[10px] font-bold uppercase tracking-wider text-white/40">More</p>
+                <div className="grid grid-cols-2 gap-1.5">
+                  {["/dashboard","/state-map","/results","/exam-calendar","/latest-jobs","/admit-card","/answer-key","/contact","/about"].map((href) => {
+                    const label = href.replace("/","").split("-").map(w => w.charAt(0).toUpperCase()+w.slice(1)).join(" ");
+                    return (
+                      <Link key={href} href={href} onClick={() => setOpen(false)}
+                        className="rounded-lg px-2 py-1.5 text-[10px] font-medium text-white/60 transition active:bg-white/10 active:text-white text-center leading-tight">
+                        {label}
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
               <div className="mt-2">
                 <LanguageSelector />
               </div>
