@@ -112,6 +112,33 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
     l.label?.toLowerCase().includes("official website") || l.label?.toLowerCase().includes("official site")
   )?.url;
   const catSlug = post.category?.toLowerCase().replace(/\s+/g, "-") || "updates";
+  const shortTitle = title.replace(/2026|2025|online\s*form|recruitment|notification|batch|result|admit\s*card|answer\s*key/gi, "").trim().substring(0, 60);
+
+  const faqQ = [
+    `How to check ${shortTitle} result?`,
+    `What are the important dates for ${shortTitle}?`,
+    `What is the direct link to apply for ${shortTitle}?`,
+    `What is the official website for ${shortTitle}?`,
+  ];
+  const faqA = [
+    `To check ${shortTitle} result, visit the official website and enter your roll number or registration details. You can also find the direct result link on this page when officially released.`,
+    `The important dates for ${shortTitle} include application start date, last date to apply, exam date, admit card release, and result declaration. Check the Important Dates section above for specific dates.`,
+    `The direct link to apply for ${shortTitle} is available in the Important Links section above. Click on the "Apply Online" link to fill the application form before the last date.`,
+    `The official website for ${shortTitle} is linked in the Important Links section above under "Official Website". Visit it for complete information and updates.`,
+  ];
+  const faqHiQ = [
+    `${shortTitle} का रिजल्ट कैसे देखें?`,
+    `${shortTitle} की महत्वपूर्ण तिथियां क्या हैं?`,
+    `${shortTitle} में आवेदन करने का सीधा लिंक क्या है?`,
+    `${shortTitle} की आधिकारिक वेबसाइट क्या है?`,
+  ];
+  const faqHiA = [
+    `${shortTitle} का रिजल्ट देखने के लिए आधिकारिक वेबसाइट पर जाएं और अपना रोल नंबर या रजिस्ट्रेशन डिटेल्स दर्ज करें। आधिकारिक रूप से जारी होने पर इस पेज पर डायरेक्ट रिजल्ट लिंक भी उपलब्ध होगा।`,
+    `${shortTitle} की महत्वपूर्ण तिथियों में आवेदन शुरू होने की तारीख, आवेदन की अंतिम तिथि, परीक्षा तिथि, एडमिट कार्ड जारी होने और रिजल्ट घोषणा शामिल हैं। विशिष्ट तिथियों के लिए ऊपर Important Dates सेक्शन देखें।`,
+    `${shortTitle} में आवेदन करने का सीधा लिंक ऊपर Important Links सेक्शन में उपलब्ध है। आवेदन पत्र भरने के लिए अंतिम तिथि से पहले "Apply Online" लिंक पर क्लिक करें।`,
+    `${shortTitle} की आधिकारिक वेबसाइट ऊपर Important Links सेक्शन में "Official Website" के तहत लिंक की गई है। पूरी जानकारी और अपडेट के लिए इसे विज़िट करें।`,
+  ];
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -131,6 +158,26 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         publisher: { "@type": "Organization", name: "All India Exam Result" },
         mainEntityOfPage: `${SITE_URL}/post/${slug}`,
         image: `${SITE_URL}/og-image.png`
+      },
+      {
+        "@type": "FAQPage",
+        mainEntity: faqQ.map((q, i) => ({
+          "@type": "Question",
+          name: q,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: faqA[i]
+          },
+          inLanguage: "en"
+        })).concat(faqHiQ.map((q, i) => ({
+          "@type": "Question",
+          name: q,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: faqHiA[i]
+          },
+          inLanguage: "hi"
+        })))
       }
     ]
   };
@@ -483,6 +530,32 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                   </div>
                 </div>
               )}
+
+              {/* FAQ Section */}
+              <div className="rounded-2xl border border-gray-200 bg-white shadow-sm overflow-hidden">
+                <div className="border-b border-gray-100 bg-gray-50/80 px-5 py-4">
+                  <h2 className="flex items-center gap-2.5 text-base font-bold text-gray-900">
+                    <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand/10 text-brand">
+                      <BadgeInfo className="h-4 w-4" />
+                    </span>
+                    Frequently Asked Questions (FAQ)
+                  </h2>
+                </div>
+                <div className="divide-y divide-gray-50 px-5">
+                  {faqQ.map((q, i) => (
+                    <details key={i} className="group py-4 [&[open]>summary_.chevron]:rotate-180">
+                      <summary className="flex cursor-pointer items-start justify-between gap-4 text-sm font-semibold text-gray-800 hover:text-brand transition-colors list-none">
+                        <span className="flex items-start gap-2">
+                          <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-brand/10 text-[10px] font-black text-brand">{i + 1}</span>
+                          {q}
+                        </span>
+                        <ChevronRight className="chevron mt-0.5 h-4 w-4 shrink-0 text-gray-400 transition-transform duration-200" />
+                      </summary>
+                      <p className="mt-3 text-sm leading-6 text-gray-600 pl-7">{faqA[i]}</p>
+                    </details>
+                  ))}
+                </div>
+              </div>
 
               {/* Notification Section */}
               <div className="rounded-2xl border border-gray-200 bg-gray-50/50 p-5">
