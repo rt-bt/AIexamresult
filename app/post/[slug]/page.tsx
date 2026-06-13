@@ -143,24 +143,21 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
   const titleLower = (post.title || "").toLowerCase();
   const hasCutoffContent = contentLower.includes("cutoff") || contentLower.includes("merit list") || contentLower.includes("cut-off") || titleLower.includes("cutoff") || titleLower.includes("merit");
 
-  const extractApplyDate = post.importantDates?.find((d: string) =>
-    d.toLowerCase().includes("apply start") || d.toLowerCase().includes("application start")
-  );
-  const extractLastDate = post.importantDates?.find((d: string) =>
-    d.toLowerCase().includes("last date") && !d.toLowerCase().includes("fee payment")
-  );
-  const extractFeeLastDate = post.importantDates?.find((d: string) =>
-    d.toLowerCase().includes("fee payment") || d.toLowerCase().includes("fee last")
-  );
-  const extractExamDate = post.importantDates?.find((d: string) =>
-    d.toLowerCase().includes("exam date") || d.toLowerCase().includes("examination")
-  );
-  const extractAdmitDate = post.importantDates?.find((d: string) =>
-    d.toLowerCase().includes("admit card")
-  );
-  const extractResultDate = post.importantDates?.find((d: string) =>
-    d.toLowerCase().includes("result") && !d.toLowerCase().includes("admit")
-  );
+  function extractLabel(text: string): { label: string; value: string } {
+    const idx = text.indexOf(":");
+    if (idx === -1) return { label: "", value: text };
+    return {
+      label: text.substring(0, idx).trim(),
+      value: text.substring(idx + 1).trim()
+    };
+  }
+
+  const summaryDates = (post.importantDates || []).filter((d: string) => {
+    const lower = d.toLowerCase();
+    return lower.includes("apply") || lower.includes("last date") || lower.includes("exam date") ||
+           lower.includes("admit") || lower.includes("result") || lower.includes("fee payment") ||
+           lower.includes("correction") || lower.includes("registration");
+  }).slice(0, 6);
 
   function stripHtml(html: string): string {
     return html.replace(/<[^>]*>/g, "").replace(/&#?\w+;/g, " ").replace(/\s+/g, " ").trim();
@@ -220,23 +217,15 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                     <div className="rounded-xl border border-gray-200 bg-white/90 p-4">
                       <h3 className="text-xs font-bold uppercase tracking-wider text-gray-400 mb-3">Key Dates</h3>
                       <div className="space-y-0 divide-y divide-gray-50">
-                        {extractApplyDate && (
-                          <InfoRow label="Apply Start" value={extractApplyDate.replace(/^[^:]*:\s*/, "").substring(0, 50)} highlight="brand" />
-                        )}
-                        {extractLastDate && (
-                          <InfoRow label="Last Date" value={extractLastDate.replace(/^[^:]*:\s*/, "").substring(0, 50)} highlight={post.isExpired ? "red" : "green"} />
-                        )}
-                        {extractFeeLastDate && (
-                          <InfoRow label="Fee Last Date" value={extractFeeLastDate.replace(/^[^:]*:\s*/, "").substring(0, 50)} />
-                        )}
-                        {extractExamDate && (
-                          <InfoRow label="Exam Date" value={extractExamDate.replace(/^[^:]*:\s*/, "").substring(0, 50)} />
-                        )}
-                        {extractAdmitDate && (
-                          <InfoRow label="Admit Card" value={extractAdmitDate.replace(/^[^:]*:\s*/, "").substring(0, 50)} />
-                        )}
-                        {extractResultDate && (
-                          <InfoRow label="Result" value={extractResultDate.replace(/^[^:]*:\s*/, "").substring(0, 50)} />
+                        {summaryDates.length > 0 ? summaryDates.map((d: string, i: number) => {
+                          const { label, value } = extractLabel(d);
+                          const lower = d.toLowerCase();
+                          let hl: "green" | "red" | "brand" | undefined;
+                          if (lower.includes("last date")) hl = post.isExpired ? "red" : "green";
+                          else if (lower.includes("apply")) hl = "brand";
+                          return <InfoRow key={i} label={label || `Date ${i + 1}`} value={value || d} highlight={hl} />;
+                        }) : (
+                          <p className="text-sm text-gray-400 py-2">No key dates available</p>
                         )}
                       </div>
                     </div>
