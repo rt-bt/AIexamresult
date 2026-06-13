@@ -13,6 +13,7 @@ export interface ShiftAnalysis {
 export interface ExamAnalysis {
   examName: string;
   slug: string;
+  mode: "Online (CBT)" | "Offline (Pen & Paper)";
   shifts: ShiftAnalysis[];
   lastUpdated: string;
 }
@@ -114,7 +115,7 @@ function standardizeDifficulty(d: string): string {
 
 const DATA: Record<string, ExamAnalysis> = {
   "ssc-cgl": {
-    examName: "SSC CGL 2025 Tier 1", slug: "ssc-cgl", lastUpdated: new Date().toISOString(),
+    examName: "SSC CGL 2025 Tier 1", slug: "ssc-cgl", mode: "Online (CBT)", lastUpdated: new Date().toISOString(),
     shifts: [
       { shift: "Shift 1", date: "9 Sep 2025", overallDifficulty: "Moderate", subjects: [{ name: "Quantitative Aptitude", difficulty: "Moderate" }, { name: "General Intelligence", difficulty: "Easy" }, { name: "English Comprehension", difficulty: "Moderate" }, { name: "General Awareness", difficulty: "Moderate" }] },
       { shift: "Shift 2", date: "9 Sep 2025", overallDifficulty: "Easy", subjects: [{ name: "Quantitative Aptitude", difficulty: "Easy" }, { name: "General Intelligence", difficulty: "Easy" }, { name: "English Comprehension", difficulty: "Moderate" }, { name: "General Awareness", difficulty: "Easy" }] },
@@ -164,7 +165,7 @@ const DATA: Record<string, ExamAnalysis> = {
     ],
   },
   "ssc-chsl": {
-    examName: "SSC CHSL 2025 Tier 1", slug: "ssc-chsl", lastUpdated: new Date().toISOString(),
+    examName: "SSC CHSL 2025 Tier 1", slug: "ssc-chsl", mode: "Online (CBT)", lastUpdated: new Date().toISOString(),
     shifts: [
       { shift: "Shift 1", date: "1 Jul 2025", overallDifficulty: "Moderate", subjects: [{ name: "General Intelligence", difficulty: "Moderate" }, { name: "Quantitative Aptitude", difficulty: "Hard" }, { name: "English Language", difficulty: "Moderate" }, { name: "General Awareness", difficulty: "Easy" }] },
       { shift: "Shift 2", date: "1 Jul 2025", overallDifficulty: "Moderate", subjects: [{ name: "General Intelligence", difficulty: "Moderate" }, { name: "Quantitative Aptitude", difficulty: "Moderate" }, { name: "English Language", difficulty: "Moderate" }, { name: "General Awareness", difficulty: "Easy" }] },
@@ -184,7 +185,7 @@ const DATA: Record<string, ExamAnalysis> = {
     ],
   },
   "ssc-mts": {
-    examName: "SSC MTS 2025", slug: "ssc-mts", lastUpdated: new Date().toISOString(),
+    examName: "SSC MTS 2025", slug: "ssc-mts", mode: "Online (CBT)", lastUpdated: new Date().toISOString(),
     shifts: [
       { shift: "Shift 1", date: "2 Sep 2025", overallDifficulty: "Easy", subjects: [{ name: "Numerical Aptitude", difficulty: "Easy" }, { name: "General Intelligence", difficulty: "Easy" }, { name: "English", difficulty: "Moderate" }, { name: "General Awareness", difficulty: "Easy" }] },
       { shift: "Shift 2", date: "2 Sep 2025", overallDifficulty: "Easy", subjects: [{ name: "Numerical Aptitude", difficulty: "Easy" }, { name: "General Intelligence", difficulty: "Easy" }, { name: "English", difficulty: "Easy" }, { name: "General Awareness", difficulty: "Easy" }] },
@@ -201,7 +202,7 @@ const DATA: Record<string, ExamAnalysis> = {
     ],
   },
   "rrb-ntpc": {
-    examName: "RRB NTPC 2025 CBT 1", slug: "rrb-ntpc", lastUpdated: new Date().toISOString(),
+    examName: "RRB NTPC 2025 CBT 1", slug: "rrb-ntpc", mode: "Online (CBT)", lastUpdated: new Date().toISOString(),
     shifts: [
       { shift: "Shift 1", date: "15 Mar 2025", overallDifficulty: "Moderate", subjects: [{ name: "Mathematics", difficulty: "Moderate" }, { name: "General Intelligence", difficulty: "Easy" }, { name: "General Science", difficulty: "Moderate" }, { name: "General Awareness", difficulty: "Easy" }] },
       { shift: "Shift 2", date: "15 Mar 2025", overallDifficulty: "Moderate", subjects: [{ name: "Mathematics", difficulty: "Moderate" }, { name: "General Intelligence", difficulty: "Easy" }, { name: "General Science", difficulty: "Moderate" }, { name: "General Awareness", difficulty: "Easy" }] },
@@ -224,7 +225,7 @@ const DATA: Record<string, ExamAnalysis> = {
     ],
   },
   "rrb-group-d": {
-    examName: "RRB Group D 2025 CBT", slug: "rrb-group-d", lastUpdated: new Date().toISOString(),
+    examName: "RRB Group D 2025 CBT", slug: "rrb-group-d", mode: "Online (CBT)", lastUpdated: new Date().toISOString(),
     shifts: [
       { shift: "Shift 1", date: "17 Aug 2025", overallDifficulty: "Moderate", subjects: [{ name: "General Science", difficulty: "Moderate" }, { name: "Mathematics", difficulty: "Moderate" }, { name: "General Intelligence", difficulty: "Easy" }, { name: "General Awareness", difficulty: "Easy" }] },
       { shift: "Shift 2", date: "17 Aug 2025", overallDifficulty: "Easy", subjects: [{ name: "General Science", difficulty: "Easy" }, { name: "Mathematics", difficulty: "Easy" }, { name: "General Intelligence", difficulty: "Easy" }, { name: "General Awareness", difficulty: "Easy" }] },
@@ -241,7 +242,7 @@ const DATA: Record<string, ExamAnalysis> = {
     ],
   },
   "ibps-po": {
-    examName: "IBPS PO 2025 Prelims", slug: "ibps-po", lastUpdated: new Date().toISOString(),
+    examName: "IBPS PO 2025 Prelims", slug: "ibps-po", mode: "Online (CBT)", lastUpdated: new Date().toISOString(),
     shifts: [
       { shift: "Shift 1", date: "19 Oct 2025", overallDifficulty: "Moderate", subjects: [{ name: "Reasoning", difficulty: "Difficult" }, { name: "Quantitative Aptitude", difficulty: "Hard" }, { name: "English", difficulty: "Moderate" }, { name: "General Awareness", difficulty: "Moderate" }] },
       { shift: "Shift 2", date: "19 Oct 2025", overallDifficulty: "Moderate", subjects: [{ name: "Reasoning", difficulty: "Moderate" }, { name: "Quantitative Aptitude", difficulty: "Moderate" }, { name: "English", difficulty: "Moderate" }, { name: "General Awareness", difficulty: "Easy" }] },
@@ -255,7 +256,7 @@ const DATA: Record<string, ExamAnalysis> = {
     ],
   },
   "ibps-clerk": {
-    examName: "IBPS Clerk 2025 Prelims", slug: "ibps-clerk", lastUpdated: new Date().toISOString(),
+    examName: "IBPS Clerk 2025 Prelims", slug: "ibps-clerk", mode: "Online (CBT)", lastUpdated: new Date().toISOString(),
     shifts: [
       { shift: "Shift 1", date: "7 Dec 2025", overallDifficulty: "Moderate", subjects: [{ name: "Reasoning", difficulty: "Moderate" }, { name: "Quantitative Aptitude", difficulty: "Moderate" }, { name: "English", difficulty: "Moderate" }, { name: "General Awareness", difficulty: "Easy" }] },
       { shift: "Shift 2", date: "7 Dec 2025", overallDifficulty: "Moderate", subjects: [{ name: "Reasoning", difficulty: "Moderate" }, { name: "Quantitative Aptitude", difficulty: "Moderate" }, { name: "English", difficulty: "Easy" }, { name: "General Awareness", difficulty: "Moderate" }] },
@@ -268,7 +269,7 @@ const DATA: Record<string, ExamAnalysis> = {
     ],
   },
   "sbi-po": {
-    examName: "SBI PO 2025 Prelims", slug: "sbi-po", lastUpdated: new Date().toISOString(),
+    examName: "SBI PO 2025 Prelims", slug: "sbi-po", mode: "Online (CBT)", lastUpdated: new Date().toISOString(),
     shifts: [
       { shift: "Shift 1", date: "28 Dec 2025", overallDifficulty: "Moderate", subjects: [{ name: "Reasoning", difficulty: "Moderate" }, { name: "Quantitative Aptitude", difficulty: "Hard" }, { name: "English", difficulty: "Moderate" }, { name: "General Awareness", difficulty: "Moderate" }, { name: "Computer", difficulty: "Easy" }] },
       { shift: "Shift 2", date: "28 Dec 2025", overallDifficulty: "Difficult", subjects: [{ name: "Reasoning", difficulty: "Difficult" }, { name: "Quantitative Aptitude", difficulty: "Hard" }, { name: "English", difficulty: "Moderate" }, { name: "General Awareness", difficulty: "Moderate" }, { name: "Computer", difficulty: "Easy" }] },
@@ -279,7 +280,7 @@ const DATA: Record<string, ExamAnalysis> = {
     ],
   },
   "upsc-cse": {
-    examName: "UPSC CSE 2025 Prelims", slug: "upsc-cse", lastUpdated: new Date().toISOString(),
+    examName: "UPSC CSE 2025 Prelims", slug: "upsc-cse", mode: "Offline (Pen & Paper)", lastUpdated: new Date().toISOString(),
     shifts: [
       { shift: "Prelims", date: "25 May 2025", overallDifficulty: "Moderate", subjects: [{ name: "GS Paper 1", difficulty: "Moderate" }, { name: "CSAT", difficulty: "Moderate" }] },
     ],

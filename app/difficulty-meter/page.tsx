@@ -111,6 +111,7 @@ export default function DifficultyMeterPage() {
                       slug === s ? "bg-brand text-white border-brand" : "bg-white text-gray-600 border-gray-200 hover:border-brand/30"
                     )}>
                     {EXAM_LABELS[s]}
+                    {s === "upsc-cse" && <span className="ml-1 text-[10px] text-purple-500 font-bold">📄</span>}
                   </button>
                 ))}
               </div>
@@ -125,6 +126,17 @@ export default function DifficultyMeterPage() {
               </div>
             </div>
 
+            {/* Mode badge */}
+            {data && !loading && (
+              <div className="mt-4">
+                <div className={cn("inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-bold border",
+                  data.mode === "Offline (Pen & Paper)" ? "bg-purple-50 text-purple-700 border-purple-200" : "bg-sky-50 text-sky-700 border-sky-200"
+                )}>
+                  {data.mode === "Offline (Pen & Paper)" ? "📄" : "💻"} {data.mode}
+                </div>
+              </div>
+            )}
+
             {loading ? (
               <div className="mt-6 flex items-center justify-center rounded-2xl bg-white border border-gray-100 p-12 shadow-sm">
                 <Loader2 className="h-6 w-6 animate-spin text-brand" />
@@ -135,7 +147,7 @@ export default function DifficultyMeterPage() {
                 {/* Stats summary */}
                 <div className="mt-6 grid grid-cols-3 gap-3">
                   <div className="rounded-xl bg-white border border-gray-100 p-3 text-center shadow-sm">
-                    <p className="text-xs text-gray-400">Total Shifts</p>
+                    <p className="text-xs text-gray-400">{data.mode === "Offline (Pen & Paper)" ? "Total Papers" : "Total Shifts"}</p>
                     <p className="text-lg font-black text-gray-800">{data.shifts.length}</p>
                   </div>
                   <div className="rounded-xl bg-white border border-gray-100 p-3 text-center shadow-sm">
@@ -150,16 +162,18 @@ export default function DifficultyMeterPage() {
                   </div>
                 </div>
 
-                {/* Shift selector */}
+                {/* Shift/Paper selector */}
                 <div className="mt-4 rounded-2xl bg-white border border-gray-100 p-5 shadow-lg">
-                  <label className="text-xs font-bold text-gray-500 uppercase mb-2 block">Select Shift</label>
+                  <label className="text-xs font-bold text-gray-500 uppercase mb-2 block">
+                    {data.mode === "Offline (Pen & Paper)" ? "Select Paper" : "Select Shift"}
+                  </label>
                   <div className="flex flex-wrap gap-1.5">
                     {data.shifts.map((s, i) => (
                       <button key={i} onClick={() => setShiftIdx(i)}
                         className={cn("rounded-full px-2.5 py-1 text-xs font-semibold border transition",
                           i === shiftIdx ? "bg-brand text-white border-brand" : "bg-white text-gray-600 border-gray-200 hover:border-brand/30"
                         )}>
-                        {s.date} — {s.shift}
+                        {data.mode === "Offline (Pen & Paper)" ? s.date : `${s.date} — ${s.shift}`}
                       </button>
                     ))}
                   </div>
@@ -208,7 +222,7 @@ export default function DifficultyMeterPage() {
 
                 {/* Difficulty distribution */}
                 <div className="mt-4 rounded-2xl bg-white border border-gray-100 p-6 shadow-lg">
-                  <p className="text-xs font-bold text-gray-500 uppercase mb-3">Difficulty Distribution</p>
+                  <p className="text-xs font-bold text-gray-500 uppercase mb-3">{data.mode === "Offline (Pen & Paper)" ? "Difficulty Distribution (Papers)" : "Difficulty Distribution (Shifts)"}</p>
                   {(["Easy", "Moderate", "Difficult"] as const).map((level) => {
                     const count = data.shifts.filter((s) => s.overallDifficulty.toLowerCase().includes(level.toLowerCase()) || (level === "Easy" && (s.overallDifficulty === "Easy" || s.overallDifficulty === "Easy-Moderate")) || (level === "Difficult" && (s.overallDifficulty === "Difficult" || s.overallDifficulty === "Very Difficult"))).length;
                     const pct = data.shifts.length ? Math.round((count / data.shifts.length) * 100) : 0;
@@ -216,7 +230,7 @@ export default function DifficultyMeterPage() {
                       <div key={level} className="mb-2 last:mb-0">
                         <div className="flex justify-between text-xs mb-1">
                           <span className="font-semibold text-gray-600">{level}</span>
-                          <span className="text-gray-400">{count} shifts ({pct}%)</span>
+                          <span className="text-gray-400">{count} {data.mode === "Offline (Pen & Paper)" ? "papers" : "shifts"} ({pct}%)</span>
                         </div>
                         <div className="h-2 w-full rounded-full bg-gray-100">
                           <div className="h-full rounded-full transition-all" style={{ width: `${pct}%`, backgroundColor: DIFFICULTY_COLORS[level] }} />
