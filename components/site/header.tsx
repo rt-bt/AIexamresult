@@ -2,6 +2,7 @@
 
 import { Search, Sparkles, Languages, ChevronDown } from "lucide-react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { Logo } from "@/components/site/logo";
@@ -35,6 +36,7 @@ const tickerItems = [
 export function Header() {
   const [open, setOpen] = useState(false);
   const { lang, setLang, t } = useLang();
+  const pathname = usePathname();
 
   return (
     <header className="sticky top-0 z-50 bg-[#0D9488]">
@@ -44,40 +46,62 @@ export function Header() {
           <Logo className="h-8 w-auto lg:h-10" showTagline={false} dark />
         </Link>
 
-        <nav className="ml-5 hidden items-center gap-0.5 lg:flex">
-          {nav.map(([label, href, dropdown]) =>
-            dropdown ? (
+        <nav className="ml-5 hidden items-center lg:flex">
+          {nav.map(([label, href, dropdown]) => {
+            const isActive = pathname === href || (href !== "/" && pathname.startsWith(href));
+            return dropdown ? (
               <div key={href} className="group relative">
                 <Link
                   href={href}
-                  className="flex items-center gap-1 rounded-lg px-3.5 py-2 text-[15px] font-semibold text-white/80 transition hover:bg-white/15 hover:text-white"
+                  className={cn(
+                    "flex items-center gap-1.5 rounded-lg px-3.5 py-2 text-[15px] font-semibold transition",
+                    isActive ? "bg-white/15 text-white" : "text-white/80 hover:bg-white/15 hover:text-white"
+                  )}
                 >
                   {t(`nav.${label.toLowerCase().replace(/\s+/g, "-")}`)}
                   <ChevronDown className="h-3.5 w-3.5 transition duration-200 group-hover:rotate-180" />
                 </Link>
-                <div className="invisible absolute left-1/2 top-full z-50 mt-2 w-48 -translate-x-1/2 scale-90 rounded-xl bg-white py-1.5 shadow-lg shadow-black/10 ring-1 ring-black/5 opacity-0 transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:scale-100 group-hover:opacity-100">
-                  <div className="absolute -top-1.5 left-1/2 h-3 w-3 -translate-x-1/2 rotate-45 bg-white ring-1 ring-black/5" />
-                  {dropdown.map(([subLabel, subHref], i) => (
-                    <Link
-                      key={subHref}
-                      href={subHref}
-                      className="relative mx-1.5 block rounded-lg px-3.5 py-2.5 text-sm font-medium text-gray-600 transition hover:bg-gradient-to-r hover:from-teal-50 hover:to-white hover:text-teal-700"
-                    >
-                      {t(`nav.${subLabel.toLowerCase().replace(/\s+/g, "-")}`)}
-                    </Link>
-                  ))}
+                <div className="invisible absolute left-1/2 top-full z-50 mt-1.5 w-52 -translate-x-1/2 translate-y-1 scale-95 rounded-xl bg-white py-1.5 shadow-[0_8px_30px_rgba(0,0,0,0.12)] opacity-0 transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:scale-100 group-hover:opacity-100">
+                  <div className="pointer-events-none absolute -top-1 left-1/2 h-3 w-3 -translate-x-1/2 rotate-45 rounded-sm bg-white" />
+                  <div className="absolute left-4 right-4 top-0 h-px bg-gradient-to-r from-transparent via-teal-200 to-transparent" />
+                  <div className="space-y-0.5 p-1.5">
+                    {dropdown.map(([subLabel, subHref]) => {
+                      const isSubActive = pathname === subHref;
+                      return (
+                        <Link
+                          key={subHref}
+                          href={subHref}
+                          className={cn(
+                            "group/sub relative block rounded-lg px-3.5 py-2.5 text-sm font-medium transition-all",
+                            isSubActive
+                              ? "bg-teal-50 text-teal-700"
+                              : "text-gray-600 hover:bg-gray-50 hover:text-gray-900"
+                          )}
+                        >
+                          <span className={cn(
+                            "absolute left-0 top-1/2 h-0 w-0.5 -translate-y-1/2 rounded-full bg-teal-500 transition-all",
+                            "group-hover/sub:h-5"
+                          )} />
+                          {t(`nav.${subLabel.toLowerCase().replace(/\s+/g, "-")}`)}
+                        </Link>
+                      );
+                    })}
+                  </div>
                 </div>
               </div>
             ) : (
               <Link
                 key={href}
                 href={href}
-                className="rounded-lg px-3.5 py-2 text-[15px] font-semibold text-white/80 transition hover:bg-white/15 hover:text-white"
+                className={cn(
+                  "rounded-lg px-3.5 py-2 text-[15px] font-semibold transition",
+                  isActive ? "bg-white/15 text-white" : "text-white/80 hover:bg-white/15 hover:text-white"
+                )}
               >
                 {t(`nav.${label.toLowerCase().replace(/\s+/g, "-")}`)}
               </Link>
-            )
-          )}
+            );
+          })}
         </nav>
 
         <div className="ml-auto flex items-center gap-2 lg:gap-3">
