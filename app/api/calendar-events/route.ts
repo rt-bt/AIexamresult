@@ -6,11 +6,39 @@ export const dynamic = "force-dynamic";
 
 const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
+const AGE_KEYWORDS = [
+  "born between", "born before", "born after", "born on", "born not",
+  "age between", "age limit", "maximum age", "minimum age",
+  "not be born", "candidate born", "year born",
+];
+
+function isAgeRelated(text: string): boolean {
+  const lower = text.toLowerCase();
+  return AGE_KEYWORDS.some((kw) => lower.includes(kw));
+}
+
 function extractDate(text: string): string | null {
+  if (isAgeRelated(text)) return null;
+
   const m = text.match(/(\d{1,2})\s+(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+(\d{4})/i);
-  if (m) return `${m[1]} ${m[2]} ${m[3]}`;
+  if (m) {
+    const day = parseInt(m[1]);
+    const year = parseInt(m[3]);
+    if (day < 1 || day > 31 || year < 2022 || year > 2030) return null;
+    return `${m[1]} ${m[2]} ${m[3]}`;
+  }
+
   const m2 = text.match(/(\d{1,2})-(\d{1,2})-(\d{4})/);
-  if (m2) return `${m2[1]} ${MONTHS[parseInt(m2[2]) - 1]} ${m2[3]}`;
+  if (m2) {
+    const d = parseInt(m2[1]);
+    const mo = parseInt(m2[2]);
+    const yr = parseInt(m2[3]);
+    if (d < 1 || d > 31 || mo < 1 || mo > 12) return null;
+    const monthName = MONTHS[mo - 1];
+    if (!monthName || yr < 2022 || yr > 2030) return null;
+    return `${m2[1]} ${monthName} ${m2[3]}`;
+  }
+
   return null;
 }
 
