@@ -1,6 +1,6 @@
 "use client";
 
-import { Search, Sparkles, Languages } from "lucide-react";
+import { Search, Sparkles, Languages, ChevronDown } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
@@ -44,22 +44,24 @@ export function Header() {
           <Logo className="h-8 w-auto lg:h-10" showTagline={false} dark />
         </Link>
 
-        <nav className="ml-5 hidden items-center gap-1 lg:flex">
+        <nav className="ml-5 hidden items-center gap-0.5 lg:flex">
           {nav.map(([label, href, dropdown]) =>
             dropdown ? (
               <div key={href} className="group relative">
                 <Link
                   href={href}
-                  className="rounded-full px-4 py-2 text-base font-semibold text-white/80 transition hover:bg-white/15 hover:text-white"
+                  className="flex items-center gap-1 rounded-lg px-3.5 py-2 text-[15px] font-semibold text-white/80 transition hover:bg-white/15 hover:text-white"
                 >
                   {t(`nav.${label.toLowerCase().replace(/\s+/g, "-")}`)}
+                  <ChevronDown className="h-3.5 w-3.5 transition duration-200 group-hover:rotate-180" />
                 </Link>
-                <div className="invisible absolute left-0 top-full z-50 mt-1 w-44 origin-top-left scale-95 rounded-xl bg-white p-2 shadow-xl ring-1 ring-black/5 opacity-0 transition-all group-hover:visible group-hover:scale-100 group-hover:opacity-100">
-                  {dropdown.map(([subLabel, subHref]) => (
+                <div className="invisible absolute left-1/2 top-full z-50 mt-2 w-48 -translate-x-1/2 scale-90 rounded-xl bg-white py-1.5 shadow-lg shadow-black/10 ring-1 ring-black/5 opacity-0 transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:scale-100 group-hover:opacity-100">
+                  <div className="absolute -top-1.5 left-1/2 h-3 w-3 -translate-x-1/2 rotate-45 bg-white ring-1 ring-black/5" />
+                  {dropdown.map(([subLabel, subHref], i) => (
                     <Link
                       key={subHref}
                       href={subHref}
-                      className="block rounded-lg px-3 py-2 text-sm font-semibold text-gray-700 transition hover:bg-teal-50 hover:text-teal-700"
+                      className="relative mx-1.5 block rounded-lg px-3.5 py-2.5 text-sm font-medium text-gray-600 transition hover:bg-gradient-to-r hover:from-teal-50 hover:to-white hover:text-teal-700"
                     >
                       {t(`nav.${subLabel.toLowerCase().replace(/\s+/g, "-")}`)}
                     </Link>
@@ -70,7 +72,7 @@ export function Header() {
               <Link
                 key={href}
                 href={href}
-                className="rounded-full px-4 py-2 text-base font-semibold text-white/80 transition hover:bg-white/15 hover:text-white"
+                className="rounded-lg px-3.5 py-2 text-[15px] font-semibold text-white/80 transition hover:bg-white/15 hover:text-white"
               >
                 {t(`nav.${label.toLowerCase().replace(/\s+/g, "-")}`)}
               </Link>
