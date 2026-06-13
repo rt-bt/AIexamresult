@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Header } from "@/components/site/header";
 import { Footer } from "@/components/site/footer";
-import { Calculator, ImageDown, FileText, BarChart3, ClipboardCheck, BookOpen, Zap } from "lucide-react";
+import { Calculator, ImageDown, FileText, BarChart3, ClipboardCheck, BookOpen, Zap, Users, IndianRupee, Briefcase, GraduationCap, Newspaper, AlertTriangle, Signal, BookMarked, TrendingUp, Lightbulb } from "lucide-react";
 
 const tools = [
   {
@@ -67,6 +67,102 @@ const tools = [
     icon: FileText,
     color: "from-red-500 to-rose-600",
     shadow: "shadow-red-200",
+  },
+  {
+    title: "Job Finder",
+    description: "Mere liye kaunsi govt job? Qualification, age & state ke hisaab se find karein",
+    href: "/job-finder",
+    icon: Briefcase,
+    color: "from-teal-500 to-cyan-500",
+    shadow: "shadow-teal-200",
+  },
+  {
+    title: "Eligibility Checker",
+    description: "Age, qualification & category daalein — eligible exams instantly batao",
+    href: "/eligibility-checker",
+    icon: Users,
+    color: "from-emerald-500 to-green-500",
+    shadow: "shadow-emerald-200",
+  },
+  {
+    title: "Salary Calculator",
+    description: "Basic + DA + HRA ke hisaab se in-hand salary estimate dekhein",
+    href: "/salary-calculator",
+    icon: IndianRupee,
+    color: "from-purple-500 to-violet-500",
+    shadow: "shadow-purple-200",
+  },
+  {
+    title: "Vacancy Analyzer",
+    description: "Category-wise vacancy breakdown with visual bar charts",
+    href: "/vacancy-analyzer",
+    icon: TrendingUp,
+    color: "from-orange-500 to-amber-500",
+    shadow: "shadow-orange-200",
+  },
+  {
+    title: "Fee Calculator",
+    description: "Category & gender ke hisaab se application fee calculate karein",
+    href: "/fee-calculator",
+    icon: IndianRupee,
+    color: "from-pink-500 to-rose-500",
+    shadow: "shadow-pink-200",
+  },
+  {
+    title: "Form Filling Guide",
+    description: "Step-by-step guide for filling government job application forms",
+    href: "/form-guide",
+    icon: BookMarked,
+    color: "from-sky-500 to-blue-500",
+    shadow: "shadow-sky-200",
+  },
+  {
+    title: "Syllabus Tracker",
+    description: "Topic-wise syllabus tracking — tick complete, see progress %",
+    href: "/syllabus-tracker",
+    icon: ClipboardCheck,
+    color: "from-teal-500 to-emerald-500",
+    shadow: "shadow-teal-200",
+  },
+  {
+    title: "Mock Test Tips",
+    description: "Exam-specific subject-wise preparation tips & strategy",
+    href: "/mock-tests",
+    icon: Lightbulb,
+    color: "from-amber-500 to-yellow-500",
+    shadow: "shadow-amber-200",
+  },
+  {
+    title: "Current Affairs",
+    description: "Latest GK news with daily quiz for competitive exams",
+    href: "/current-affairs",
+    icon: Newspaper,
+    color: "from-indigo-500 to-purple-500",
+    shadow: "shadow-indigo-200",
+  },
+  {
+    title: "Objection Tracker",
+    description: "Answer key objection dates, fee & step-by-step process",
+    href: "/objection-tracker",
+    icon: AlertTriangle,
+    color: "from-red-500 to-rose-500",
+    shadow: "shadow-red-200",
+  },
+  {
+    title: "Counselling & DV Guide",
+    description: "Post-result counselling, document verification & joining process",
+    href: "/counselling-guide",
+    icon: Users,
+    color: "from-cyan-500 to-teal-500",
+    shadow: "shadow-cyan-200",
+  },
+  {
+    title: "Difficulty Meter",
+    description: "Subject-wise exam difficulty based on past data analysis",
+    href: "/difficulty-meter",
+    icon: Signal,
+    color: "from-violet-500 to-purple-500",
+    shadow: "shadow-violet-200",
   },
 ];
 
