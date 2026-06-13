@@ -10,6 +10,7 @@ import { featuredResults, latestJobs } from "@/lib/data";
 import { useLang } from "@/lib/hooks/use-lang";
 import { MobileBottomNav } from "@/components/site/mobile-bottom-nav";
 import { LanguageSelector } from "@/components/site/language-selector";
+import { VoiceSearchBtn } from "@/components/site/voice-search";
 
 const examSubNav: [string, string][] = [
   ["Latest Job", "/latest-jobs"],
@@ -113,6 +114,7 @@ export function Header() {
 
         <div className="ml-auto flex items-center gap-2 lg:gap-3">
           <LanguageSelector />
+          <VoiceSearchBtn />
           <Link href="/search" className="hidden items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-bold text-[#0D9488] transition hover:bg-white/90 lg:inline-flex">
             <Search className="h-4 w-4" /> {t("nav.search")}
           </Link>
