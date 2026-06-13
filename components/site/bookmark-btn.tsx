@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { useBookmarks } from "@/lib/hooks/use-bookmarks";
 import { Bookmark, BookmarkCheck } from "lucide-react";
 
@@ -10,8 +11,10 @@ export function BookmarkBtn({ slug, title, category, date }: { slug: string; tit
   return (
     <button
       onClick={() => saved ? removeBookmark(slug) : addBookmark({ slug, title, category, date })}
-      className={`flex w-full items-center justify-center gap-2 rounded-full px-4 py-2.5 text-sm font-black transition ${
-        saved ? "bg-amber-100 text-amber-700" : "border border-slate-200 text-slate-600 hover:border-slate-300"
+      className={`flex items-center justify-center gap-2 rounded-xl px-4 py-3 text-sm font-semibold transition-all w-full ${
+        saved
+          ? "bg-amber-50 text-amber-700 border border-amber-200 hover:bg-amber-100"
+          : "bg-gray-50 text-gray-600 border border-gray-200 hover:bg-gray-100 hover:text-gray-800"
       }`}
     >
       {saved ? <BookmarkCheck className="h-4 w-4" /> : <Bookmark className="h-4 w-4" />}

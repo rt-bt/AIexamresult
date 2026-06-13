@@ -1,13 +1,29 @@
 "use client";
 
 import { useState } from "react";
-import { Check, Copy } from "lucide-react";
+import { Check, Copy, MessageCircle, Send } from "lucide-react";
+
+const shareItems = [
+  {
+    label: "WhatsApp",
+    icon: MessageCircle,
+    color: "text-[#25D366]",
+    bg: "bg-[#25D366]/10 hover:bg-[#25D366]/20",
+    getUrl: (title: string, url: string) => `https://wa.me/?text=${encodeURIComponent(`${title} - ${url}`)}`,
+    external: true,
+  },
+  {
+    label: "Telegram",
+    icon: Send,
+    color: "text-[#0088cc]",
+    bg: "bg-[#0088cc]/10 hover:bg-[#0088cc]/20",
+    getUrl: (title: string, url: string) => `https://t.me/share/url?url=${encodeURIComponent(url)}&text=${encodeURIComponent(title)}`,
+    external: true,
+  },
+];
 
 export function ShareButtons({ title, url }: { title: string; url: string }) {
   const [copied, setCopied] = useState(false);
-
-  const whatsapp = `https://wa.me/?text=${encodeURIComponent(`${title} - ${url}`)}`;
-  const telegram = `https://t.me/share/url?url=${encodeURIComponent(url)}&text=${encodeURIComponent(title)}`;
 
   const copyLink = async () => {
     try {
@@ -18,16 +34,32 @@ export function ShareButtons({ title, url }: { title: string; url: string }) {
   };
 
   return (
-    <div className="mt-3 flex flex-wrap gap-2">
-      <a href={whatsapp} target="_blank" rel="noopener noreferrer" className="rounded-full bg-[#25D366] px-4 py-2 text-sm font-black text-white transition hover:bg-[#1DA851]">
-        WhatsApp
-      </a>
-      <a href={telegram} target="_blank" rel="noopener noreferrer" className="rounded-full bg-[#0088cc] px-4 py-2 text-sm font-black text-white transition hover:bg-[#0077b5]">
-        Telegram
-      </a>
-      <button onClick={copyLink} className="inline-flex items-center gap-1.5 rounded-full bg-brand px-4 py-2 text-sm font-black text-white transition hover:bg-[#0F766E]">
-        {copied ? <Check className="h-3.5 w-3.5" /> : <Copy className="h-3.5 w-3.5" />}
-        {copied ? "Copied!" : "Copy Link"}
+    <div className="grid grid-cols-3 gap-2">
+      {shareItems.map((item) => {
+        const Icon = item.icon;
+        return (
+          <a
+            key={item.label}
+            href={item.getUrl(title, url)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`flex flex-col items-center gap-1 rounded-xl ${item.bg} px-2 py-3 transition-all hover:scale-105`}
+          >
+            <Icon className={`h-5 w-5 ${item.color}`} />
+            <span className="text-[11px] font-semibold text-gray-600">{item.label}</span>
+          </a>
+        );
+      })}
+      <button
+        onClick={copyLink}
+        className="flex flex-col items-center gap-1 rounded-xl bg-gray-100 px-2 py-3 transition-all hover:bg-gray-200 hover:scale-105"
+      >
+        {copied ? (
+          <Check className="h-5 w-5 text-emerald-600" />
+        ) : (
+          <Copy className="h-5 w-5 text-gray-500" />
+        )}
+        <span className="text-[11px] font-semibold text-gray-600">{copied ? "Copied!" : "Copy Link"}</span>
       </button>
     </div>
   );

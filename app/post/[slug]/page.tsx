@@ -670,11 +670,11 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                   </div>
                 </div>
 
-                {/* Bookmark & Share */}
-                <div className="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm">
-                  <div className="flex items-center gap-3">
-                    <BookmarkBtn slug={slug} title={title} category={post.category || "Update"} date={publishedDate} />
-                    <div className="h-8 w-px bg-gray-200" />
+                {/* Save & Share */}
+                <div className="rounded-2xl border border-gray-200 bg-white p-4 shadow-sm">
+                  <h3 className="text-xs font-bold uppercase tracking-wider text-gray-400 mb-3">Save & Share</h3>
+                  <BookmarkBtn slug={slug} title={title} category={post.category || "Update"} date={publishedDate} />
+                  <div className="mt-3">
                     <ShareButtons title={title} url={`${SITE_URL}/post/${slug}`} />
                   </div>
                 </div>
