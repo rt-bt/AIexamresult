@@ -9,7 +9,7 @@ const translations: Record<LangCode, Translations> = {
   en: {
     "site.name": "All India Exam Result",
     "site.tagline": "Find verified Sarkari results, government jobs, admit cards & answer keys — all in one blazing-fast portal.",
-    "nav.results": "Results", "nav.latest-jobs": "Latest Jobs", "nav.admit-card": "Admit Card",
+    "nav.results": "Results", "nav.result": "Result", "nav.latest-jobs": "Latest Jobs", "nav.latest-job": "Latest Job", "nav.admit-card": "Admit Card",
     "nav.answer-key": "Answer Key", "nav.admissions": "Admissions", "nav.syllabus": "Syllabus",
     "nav.bookmarks": "Bookmarks", "nav.search": "Search",
     "nav.home": "Home", "nav.exam": "Exam", "nav.study-hub": "Study Hub", "nav.tools": "Tools",
@@ -25,7 +25,7 @@ const translations: Record<LangCode, Translations> = {
   hi: {
     "site.name": "अखिल भारत परीक्षा परिणाम",
     "site.tagline": "सरकारी परीणाम, नौकरियां, एडमिट कार्ड और उत्तर कुंजी — सब एक पोर्टल पर।",
-    "nav.results": "परिणाम", "nav.latest-jobs": "नौकरियां", "nav.admit-card": "एडमिट कार्ड",
+    "nav.results": "परिणाम", "nav.result": "परिणाम", "nav.latest-jobs": "नौकरियां", "nav.latest-job": "लेटेस्ट जॉब", "nav.admit-card": "एडमिट कार्ड",
     "nav.answer-key": "उत्तर कुंजी", "nav.admissions": "प्रवेश", "nav.syllabus": "सिलेबस",
     "nav.bookmarks": "बुकमार्क", "nav.search": "खोजें",
     "nav.home": "होम", "nav.exam": "परीक्षा", "nav.study-hub": "स्टडी हब", "nav.tools": "टूल",

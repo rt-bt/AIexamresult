@@ -10,9 +10,17 @@ import { useLang } from "@/lib/hooks/use-lang";
 import { MobileBottomNav } from "@/components/site/mobile-bottom-nav";
 import { LanguageSelector } from "@/components/site/language-selector";
 
-const nav: [string, string][] = [
+const examSubNav: [string, string][] = [
+  ["Latest Job", "/latest-jobs"],
+  ["Admit Card", "/admit-card"],
+  ["Result", "/results"],
+  ["Answer Key", "/answer-key"],
+  ["Syllabus", "/syllabus"],
+];
+
+const nav: [string, string, [string, string][]?][] = [
   ["Home", "/"],
-  ["Exam", "/exam"],
+  ["Exam", "/exam", examSubNav],
   ["Study Hub", "/study-hub"],
   ["Tools", "/tools"],
   ["Contact Us", "/contact"],
@@ -37,15 +45,37 @@ export function Header() {
         </Link>
 
         <nav className="ml-5 hidden items-center gap-1 lg:flex">
-          {nav.map(([label, href]) => (
-            <Link
-              key={href}
-              href={href}
-              className="rounded-full px-4 py-2 text-base font-semibold text-white/80 transition hover:bg-white/15 hover:text-white"
-            >
-              {t(`nav.${label.toLowerCase().replace(/\s+/g, "-")}`)}
-            </Link>
-          ))}
+          {nav.map(([label, href, dropdown]) =>
+            dropdown ? (
+              <div key={href} className="group relative">
+                <Link
+                  href={href}
+                  className="rounded-full px-4 py-2 text-base font-semibold text-white/80 transition hover:bg-white/15 hover:text-white"
+                >
+                  {t(`nav.${label.toLowerCase().replace(/\s+/g, "-")}`)}
+                </Link>
+                <div className="invisible absolute left-0 top-full z-50 mt-1 w-44 origin-top-left scale-95 rounded-xl bg-white p-2 shadow-xl ring-1 ring-black/5 opacity-0 transition-all group-hover:visible group-hover:scale-100 group-hover:opacity-100">
+                  {dropdown.map(([subLabel, subHref]) => (
+                    <Link
+                      key={subHref}
+                      href={subHref}
+                      className="block rounded-lg px-3 py-2 text-sm font-semibold text-gray-700 transition hover:bg-teal-50 hover:text-teal-700"
+                    >
+                      {t(`nav.${subLabel.toLowerCase().replace(/\s+/g, "-")}`)}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            ) : (
+              <Link
+                key={href}
+                href={href}
+                className="rounded-full px-4 py-2 text-base font-semibold text-white/80 transition hover:bg-white/15 hover:text-white"
+              >
+                {t(`nav.${label.toLowerCase().replace(/\s+/g, "-")}`)}
+              </Link>
+            )
+          )}
         </nav>
 
         <div className="ml-auto flex items-center gap-2 lg:gap-3">
@@ -82,10 +112,21 @@ export function Header() {
         <div className={cn("container-page grid transition-all lg:hidden", open ? "grid-rows-[1fr] pb-4" : "grid-rows-[0fr]")}>
           <div className="overflow-hidden">
             <div className="rounded-2xl bg-white/10 p-3 backdrop-blur-xl">
-              {nav.map(([label, href]) => (
-                <Link key={href} href={href} className="block rounded-xl px-3 py-3 text-sm font-semibold text-white/80 transition active:bg-white/10 active:text-white">
-                  {t(`nav.${label.toLowerCase().replace(/\s+/g, "-")}`)}
-                </Link>
+              {nav.map(([label, href, dropdown]) => (
+                <div key={href}>
+                  <Link href={href} className="block rounded-xl px-3 py-3 text-sm font-semibold text-white/80 transition active:bg-white/10 active:text-white">
+                    {t(`nav.${label.toLowerCase().replace(/\s+/g, "-")}`)}
+                  </Link>
+                  {dropdown && (
+                    <div className="ml-3 border-l border-white/10 pl-3">
+                      {dropdown.map(([subLabel, subHref]) => (
+                        <Link key={subHref} href={subHref} className="block rounded-lg px-3 py-2 text-xs font-medium text-white/60 transition active:bg-white/10 active:text-white">
+                          {t(`nav.${subLabel.toLowerCase().replace(/\s+/g, "-")}`)}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
               ))}
               <div className="mt-2">
                 <LanguageSelector />
