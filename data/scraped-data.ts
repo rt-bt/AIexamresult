@@ -2257,13 +2257,6 @@ export const scrapedData = {
       "publishedDate": "12 June 2026 | 09:31 PM"
     },
     {
-      "title": "VKSU Ara UG Admission Online Form 2026-30",
-      "url": "https://www.resultbharat.com/VKSU-Ara-UG-Admission-2026-30.html",
-      "category": "latestJobs",
-      "slug": "VKSU-Ara-UG-Admission-2026-30",
-      "publishedDate": "11 June 2026 | 10:05 AM"
-    },
-    {
       "title": "MPESB PNST 2026 Online Form",
       "url": "https://www.resultbharat.com/MPESB-PNST-2026.html",
       "category": "latestJobs",
@@ -2271,67 +2264,11 @@ export const scrapedData = {
       "publishedDate": "09 June 2026 | 07:16 PM"
     },
     {
-      "title": "Purnea University UG Admission 2026-30 Online Form",
-      "url": "https://www.resultbharat.com/Purnea-University-UG-Admission-2026-30.html",
-      "category": "latestJobs",
-      "slug": "Purnea-University-UG-Admission-2026-30",
-      "publishedDate": "27 May 2026 | 03:01 PM"
-    },
-    {
-      "title": "LNMU UG Admission Online Form 2026-30",
-      "url": "https://www.resultbharat.com/LNMU-UG-Admission-2026-30.html",
-      "category": "latestJobs",
-      "slug": "LNMU-UG-Admission-2026-30",
-      "publishedDate": ""
-    },
-    {
-      "title": "BNMU UG Admission Online Form 2026-30",
-      "url": "https://www.resultbharat.com/BNMU-UG-Admission-2026-30.html",
-      "category": "latestJobs",
-      "slug": "BNMU-UG-Admission-2026-30",
-      "publishedDate": "Publication of 1st Merit list & Cut-off list"
-    },
-    {
-      "title": "Patna University UG Admission Online Form 2026-30",
-      "url": "https://www.resultbharat.com/Patna-University-UG-Admission-2026-30.html",
-      "category": "latestJobs",
-      "slug": "Patna-University-UG-Admission-2026-30",
-      "publishedDate": "05 June 2026 | 08:55 AM"
-    },
-    {
-      "title": "Patliputra University PPUP UG Admission Online Form 2026-30",
-      "url": "https://www.resultbharat.com/Patliputra-University-UG-Admission-2026-30.html",
-      "category": "latestJobs",
-      "slug": "Patliputra-University-UG-Admission-2026-30",
-      "publishedDate": ""
-    },
-    {
-      "title": "JPU UG Admission Online Form 2026-30",
-      "url": "https://www.resultbharat.com/JPU-University-Admission-2026-30.html",
-      "category": "latestJobs",
-      "slug": "JPU-University-Admission-2026-30",
-      "publishedDate": ""
-    },
-    {
-      "title": "BCECE 2026 Admission Online Form",
-      "url": "https://www.resultbharat.com/BCECE-Entrance-Exam-2026.html",
-      "category": "latestJobs",
-      "slug": "BCECE-Entrance-Exam-2026",
-      "publishedDate": ""
-    },
-    {
       "title": "UPTET 2026 Online Correction/ Edit Form",
       "url": "https://www.resultbharat.com/UPTET-2026.html",
       "category": "latestJobs",
       "slug": "UPTET-2026",
       "publishedDate": "05 April 2026 | 01:24 PM"
-    },
-    {
-      "title": "Munger University UG Admission Online Form 2026-30",
-      "url": "https://www.resultbharat.com/Munger-University-UG-Admission-2026-30.html",
-      "category": "latestJobs",
-      "slug": "Munger-University-UG-Admission-2026-30",
-      "publishedDate": "01 May 2026  |  12:01 PM"
     },
     {
       "title": "UPSSSC Forest Guard & Wildlife Guard Online Form 2026",
@@ -2548,36 +2485,6 @@ export const scrapedData = {
       "url": "https://sarkariresultshine.com/haryana-police-constable-recruitment-2026/",
       "category": "latestJobs",
       "slug": "haryana-police-constable-recruitment-2026"
-    },
-    {
-      "title": "Haryana College UG Admission 2026, Apply Online for UG Courses, Check Notification",
-      "url": "https://sarkariresultshine.com/haryana-college-ug-admission-2026/",
-      "category": "latestJobs",
-      "slug": "haryana-college-ug-admission-2026"
-    },
-    {
-      "title": "KUK UG and Integrated Course Admission Form 2026, Notification & Apply Online",
-      "url": "https://sarkariresultshine.com/kuk-ug-and-integrated-course-admission-form-2026/",
-      "category": "latestJobs",
-      "slug": "kuk-ug-and-integrated-course-admission-form-2026"
-    },
-    {
-      "title": "Haryana ITI Admission Form 2026, Apply Online, Check Full Detail",
-      "url": "https://sarkariresultshine.com/haryana-iti-admission-form-2026/",
-      "category": "latestJobs",
-      "slug": "haryana-iti-admission-form-2026"
-    },
-    {
-      "title": "CBLU Bhiwani UG Admission 2026-27, Apply Online",
-      "url": "https://sarkariresultshine.com/cblu-bhiwani-ug-admission-2026-27/",
-      "category": "latestJobs",
-      "slug": "cblu-bhiwani-ug-admission-2026-27"
-    },
-    {
-      "title": "CBLU Bhiwani PG and Diploma Course Admission Form 2026, Apply Online",
-      "url": "https://sarkariresultshine.com/cblu-bhiwani-pg-and-diploma-course-admission-form-2026-apply-online/",
-      "category": "latestJobs",
-      "slug": "cblu-bhiwani-pg-and-diploma-course-admission-form-2026-apply-online"
     },
     {
       "title": "PM Awas Yojana Gramin Survey 2026-27, पीएम आवास योजना के तहत आपको घर बनाने के लिए 1,20,000 रुपये मिलेंगे",
@@ -4106,10 +4013,103 @@ export const scrapedData = {
       "publishedDate": "11 May 2026"
     },
     {
+      "title": "VKSU Ara UG Admission Online Form 2026-30",
+      "url": "https://www.resultbharat.com/VKSU-Ara-UG-Admission-2026-30.html",
+      "category": "admissions",
+      "slug": "VKSU-Ara-UG-Admission-2026-30",
+      "publishedDate": "11 June 2026 | 10:05 AM"
+    },
+    {
+      "title": "Purnea University UG Admission 2026-30 Online Form",
+      "url": "https://www.resultbharat.com/Purnea-University-UG-Admission-2026-30.html",
+      "category": "admissions",
+      "slug": "Purnea-University-UG-Admission-2026-30",
+      "publishedDate": "27 May 2026 | 03:01 PM"
+    },
+    {
+      "title": "LNMU UG Admission Online Form 2026-30",
+      "url": "https://www.resultbharat.com/LNMU-UG-Admission-2026-30.html",
+      "category": "admissions",
+      "slug": "LNMU-UG-Admission-2026-30",
+      "publishedDate": ""
+    },
+    {
+      "title": "BNMU UG Admission Online Form 2026-30",
+      "url": "https://www.resultbharat.com/BNMU-UG-Admission-2026-30.html",
+      "category": "admissions",
+      "slug": "BNMU-UG-Admission-2026-30",
+      "publishedDate": "Publication of 1st Merit list & Cut-off list"
+    },
+    {
+      "title": "Patna University UG Admission Online Form 2026-30",
+      "url": "https://www.resultbharat.com/Patna-University-UG-Admission-2026-30.html",
+      "category": "admissions",
+      "slug": "Patna-University-UG-Admission-2026-30",
+      "publishedDate": "05 June 2026 | 08:55 AM"
+    },
+    {
+      "title": "Patliputra University PPUP UG Admission Online Form 2026-30",
+      "url": "https://www.resultbharat.com/Patliputra-University-UG-Admission-2026-30.html",
+      "category": "admissions",
+      "slug": "Patliputra-University-UG-Admission-2026-30",
+      "publishedDate": ""
+    },
+    {
+      "title": "JPU UG Admission Online Form 2026-30",
+      "url": "https://www.resultbharat.com/JPU-University-Admission-2026-30.html",
+      "category": "admissions",
+      "slug": "JPU-University-Admission-2026-30",
+      "publishedDate": ""
+    },
+    {
+      "title": "BCECE 2026 Admission Online Form",
+      "url": "https://www.resultbharat.com/BCECE-Entrance-Exam-2026.html",
+      "category": "admissions",
+      "slug": "BCECE-Entrance-Exam-2026",
+      "publishedDate": ""
+    },
+    {
+      "title": "Munger University UG Admission Online Form 2026-30",
+      "url": "https://www.resultbharat.com/Munger-University-UG-Admission-2026-30.html",
+      "category": "admissions",
+      "slug": "Munger-University-UG-Admission-2026-30",
+      "publishedDate": "01 May 2026  |  12:01 PM"
+    },
+    {
+      "title": "Haryana College UG Admission 2026, Apply Online for UG Courses, Check Notification",
+      "url": "https://sarkariresultshine.com/haryana-college-ug-admission-2026/",
+      "category": "admissions",
+      "slug": "haryana-college-ug-admission-2026"
+    },
+    {
       "title": "Chandigarh PGI BSc Nursing Admission Form 2026",
       "url": "https://sarkariresultshine.com/chandigarh-pgi-bsc-nursing-admission-form-2026/",
       "category": "admissions",
       "slug": "chandigarh-pgi-bsc-nursing-admission-form-2026"
+    },
+    {
+      "title": "KUK UG and Integrated Course Admission Form 2026, Notification & Apply Online",
+      "url": "https://sarkariresultshine.com/kuk-ug-and-integrated-course-admission-form-2026/",
+      "category": "admissions",
+      "slug": "kuk-ug-and-integrated-course-admission-form-2026"
+    },
+    {
+      "title": "Haryana ITI Admission Form 2026, Apply Online, Check Full Detail",
+      "url": "https://sarkariresultshine.com/haryana-iti-admission-form-2026/",
+      "category": "admissions",
+      "slug": "haryana-iti-admission-form-2026"
+    },
+    {
+      "title": "CBLU Bhiwani UG Admission 2026-27, Apply Online",
+      "url": "https://sarkariresultshine.com/cblu-bhiwani-ug-admission-2026-27/",
+      "category": "admissions",
+      "slug": "cblu-bhiwani-ug-admission-2026-27"
+    },
+    {
+      "title": "CBLU Bhiwani PG and Diploma Course Admission Form 2026, Apply Online",
+      "url": "https://sarkariresultshine.com/cblu-bhiwani-pg-and-diploma-course-admission-form-2026-apply-online/",
+      "category": "admissions",
+      "slug": "cblu-bhiwani-pg-and-diploma-course-admission-form-2026-apply-online"
     }
   ],
   "posts": {
@@ -5372,6 +5372,7 @@ export const scrapedData = {
       "isExpired": false
     },
     "dsssb-various-post-result-2026": {
+      "lastDate": "05 May 2025",
       "isExpired": false
     },
     "ssc-mts-havaldar-2026": {
@@ -5507,6 +5508,7 @@ export const scrapedData = {
       "isExpired": false
     },
     "railway-rrb-technician-exam-date-admit-card-2024": {
+      "lastDate": "29 December 2024",
       "isExpired": false
     },
     "rajasthan-police-constable-recruitment": {
@@ -5970,5 +5972,5 @@ export const scrapedData = {
       "isExpired": false
     }
   },
-  "fetchedAt": "2026-06-14T12:35:16.182Z"
+  "fetchedAt": "2026-06-14T12:40:35.089Z"
 };
