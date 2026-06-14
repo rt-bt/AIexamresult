@@ -960,7 +960,7 @@ export const scrapedData = {
       "url": "https://www.resultbharat.com/Rajasthan-SET-2026.html",
       "category": "results",
       "slug": "Rajasthan-SET-2026",
-      "publishedDate": "13 June 2026  | 06:36 AM"
+      "publishedDate": "14 June 2026  | 06:55 AM"
     },
     {
       "title": "Central Bank CBI Apprentices Online Form 2026",
@@ -3820,6 +3820,13 @@ export const scrapedData = {
       "publishedDate": ""
     },
     {
+      "title": "Rajasthan State Eligibility Test SET Online Form 2026 – Start",
+      "url": "https://www.sarkariexam.com/rajasthan-state-eligibility-test-set-2026",
+      "category": "latestJobs",
+      "slug": "rajasthan-state-eligibility-test-set-2026",
+      "publishedDate": ""
+    },
+    {
       "title": "AIIMS CRE Group B & C Online Form 2026",
       "url": "https://www.sarkariexam.com/aiims-cre-group-b-c-2026",
       "category": "latestJobs",
@@ -3831,13 +3838,6 @@ export const scrapedData = {
       "url": "https://www.sarkariexam.com/central-bank-of-india-apprentices-2026",
       "category": "latestJobs",
       "slug": "central-bank-of-india-apprentices-2026",
-      "publishedDate": ""
-    },
-    {
-      "title": "Rajasthan State Eligibility Test SET Online Form 2026",
-      "url": "https://www.sarkariexam.com/rajasthan-state-eligibility-test-set-2026",
-      "category": "latestJobs",
-      "slug": "rajasthan-state-eligibility-test-set-2026",
       "publishedDate": ""
     },
     {
@@ -6425,13 +6425,13 @@ export const scrapedData = {
     "uksssc-vdo-patwari-other-post-2025": {
       "isExpired": false
     },
+    "rajasthan-state-eligibility-test-set-2026": {
+      "isExpired": false
+    },
     "aiims-cre-group-b-c-2026": {
       "isExpired": false
     },
     "central-bank-of-india-apprentices-2026": {
-      "isExpired": false
-    },
-    "rajasthan-state-eligibility-test-set-2026": {
       "isExpired": false
     },
     "sbi-apprentice-2026": {
@@ -6982,5 +6982,5 @@ export const scrapedData = {
       "isExpired": false
     }
   },
-  "fetchedAt": "2026-06-14T03:47:31.936Z"
+  "fetchedAt": "2026-06-14T06:21:51.610Z"
 };
