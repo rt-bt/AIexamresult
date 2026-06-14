@@ -94,9 +94,21 @@ const jsonLd = {
       name: "All India Exam Result",
       url: SITE_URL,
       logo: `${SITE_URL}/icon.svg`,
-      description: "India's fastest government exam information portal providing verified updates on Sarkari results, job notifications, admit cards, answer keys and admissions.",
-      contactPoint: { "@type": "ContactPoint", email: "support@aiexamresult.com", contactType: "customer support", availableLanguage: ["English", "Hindi"] },
-      sameAs: ["https://facebook.com/aiexamresult", "https://twitter.com/aiexamresult", "https://instagram.com/aiexamresult", "https://youtube.com/@aiexamresult"],
+      description: "India's fastest government exam information portal providing verified updates on Sarkari results, government job notifications, admit cards, answer keys and admissions across SSC, UPSC, Railway, Banking and State exams.",
+      foundingDate: "2024",
+      email: "info@aiexamresult.com",
+      telephone: "+91-8969799697",
+      contactPoint: [
+        { "@type": "ContactPoint", email: "info@aiexamresult.com", telephone: "+91-8969799697", contactType: "customer support", availableLanguage: ["English", "Hindi"] },
+        { "@type": "ContactPoint", email: "support@aiexamresult.com", contactType: "technical support", availableLanguage: ["English", "Hindi"] }
+      ],
+      sameAs: [
+        "https://facebook.com/aiexamresult",
+        "https://twitter.com/aiexamresult",
+        "https://instagram.com/aiexamresult",
+        "https://youtube.com/@aiexamresult",
+        "https://t.me/aiexamresult"
+      ],
       address: { "@type": "PostalAddress", addressCountry: "IN" }
     },
     {
@@ -104,8 +116,10 @@ const jsonLd = {
       "@id": `${SITE_URL}/#website`,
       url: SITE_URL,
       name: "All India Exam Result",
+      alternateName: ["AI Exam Result", "AIExamResult", "Sarkari Result"],
       description: "Find latest government jobs, exam results, admit cards, answer keys and admissions 2026. Verified updates for SSC, UPSC, Railway, Banking, State exams and board results.",
       publisher: { "@id": `${SITE_URL}/#organization` },
+      copyrightYear: "2026",
       inLanguage: ["en-IN", "hi-IN"],
       potentialAction: {
         "@type": "SearchAction",
@@ -117,13 +131,22 @@ const jsonLd = {
       "@type": "WebPage",
       "@id": `${SITE_URL}/#webpage`,
       url: SITE_URL,
-      name: "All India Exam Result",
-      description: "India's fastest government exam portal for Sarkari result, job notifications, admit cards, answer keys and admissions 2026.",
+      name: "All India Exam Result — Sarkari Result, Govt Jobs, Admit Card 2026",
+      description: "India's fastest government exam portal for Sarkari result, job notifications, admit cards, answer keys and admissions 2026. Covering SSC, UPSC, Railway, Bihar, UP, Rajasthan exams.",
       isPartOf: { "@id": `${SITE_URL}/#website` },
       about: { "@id": `${SITE_URL}/#organization` },
       inLanguage: "en-IN",
       primaryImageOfPage: `${SITE_URL}/og-image.svg`,
-      breadcrumb: { "@id": `${SITE_URL}/#breadcrumb` }
+      dateModified: new Date().toISOString().split("T")[0],
+      significantLink: [
+        `${SITE_URL}/results`,
+        `${SITE_URL}/latest-jobs`,
+        `${SITE_URL}/admit-card`,
+        `${SITE_URL}/answer-key`,
+        `${SITE_URL}/exam`
+      ],
+      breadcrumb: { "@id": `${SITE_URL}/#breadcrumb` },
+      speakable: { "@type": "SpeakableSpecification", cssSelector: ["h1", "h2", ".hero-title"] }
     },
     {
       "@type": "BreadcrumbList",
@@ -133,24 +156,67 @@ const jsonLd = {
         { "@type": "ListItem", position: 2, name: "Results", item: `${SITE_URL}/results` },
         { "@type": "ListItem", position: 3, name: "Latest Vacancy", item: `${SITE_URL}/latest-jobs` },
         { "@type": "ListItem", position: 4, name: "Admit Card", item: `${SITE_URL}/admit-card` },
-        { "@type": "ListItem", position: 5, name: "Answer Key", item: `${SITE_URL}/answer-key` }
+        { "@type": "ListItem", position: 5, name: "Answer Key", item: `${SITE_URL}/answer-key` },
+        { "@type": "ListItem", position: 6, name: "Admissions", item: `${SITE_URL}/admissions` },
+        { "@type": "ListItem", position: 7, name: "Exam Calendar", item: `${SITE_URL}/exam-calendar` },
+        { "@type": "ListItem", position: 8, name: "Tools", item: `${SITE_URL}/tools` }
       ]
     },
     {
       "@type": "ItemList",
       "@id": `${SITE_URL}/#exams`,
       name: "Government Exams 2026",
-      description: "List of government exams covered including SSC, UPSC, Railway, Banking, Defence and State exams.",
+      description: "List of government exams covered including SSC, UPSC, Railway, Banking, Defence and State exams across India.",
       url: `${SITE_URL}/exam`,
       numberOfItems: 48,
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "SSC CGL", url: `${SITE_URL}/exam/ssc-cgl` },
-        { "@type": "ListItem", position: 2, name: "UPSC Civil Services", url: `${SITE_URL}/exam/upsc-cse` },
-        { "@type": "ListItem", position: 3, name: "RRB NTPC", url: `${SITE_URL}/exam/rrb-ntpc` },
-        { "@type": "ListItem", position: 4, name: "IBPS PO", url: `${SITE_URL}/exam/ibps-po` },
-        { "@type": "ListItem", position: 5, name: "CTET", url: `${SITE_URL}/exam/ctet` }
+        { "@type": "ListItem", position: 1, name: "SSC CGL 2026", url: `${SITE_URL}/exam/ssc-cgl` },
+        { "@type": "ListItem", position: 2, name: "SSC CHSL 2026", url: `${SITE_URL}/exam/ssc-chsl` },
+        { "@type": "ListItem", position: 3, name: "SSC MTS 2026", url: `${SITE_URL}/exam/ssc-mts` },
+        { "@type": "ListItem", position: 4, name: "SSC GD Constable 2026", url: `${SITE_URL}/exam/ssc-gd` },
+        { "@type": "ListItem", position: 5, name: "UPSC Civil Services 2026", url: `${SITE_URL}/exam/upsc-cse` },
+        { "@type": "ListItem", position: 6, name: "UPSC NDA 2026", url: `${SITE_URL}/exam/upsc-nda` },
+        { "@type": "ListItem", position: 7, name: "RRB NTPC 2026", url: `${SITE_URL}/exam/rrb-ntpc` },
+        { "@type": "ListItem", position: 8, name: "RRB Group D 2026", url: `${SITE_URL}/exam/rrb-group-d` },
+        { "@type": "ListItem", position: 9, name: "IBPS PO 2026", url: `${SITE_URL}/exam/ibps-po` },
+        { "@type": "ListItem", position: 10, name: "IBPS Clerk 2026", url: `${SITE_URL}/exam/ibps-clerk` },
+        { "@type": "ListItem", position: 11, name: "SBI PO 2026", url: `${SITE_URL}/exam/sbi-po` },
+        { "@type": "ListItem", position: 12, name: "CTET 2026", url: `${SITE_URL}/exam/ctet` },
+        { "@type": "ListItem", position: 13, name: "NEET UG 2026", url: `${SITE_URL}/exam/neet-ug` },
+        { "@type": "ListItem", position: 14, name: "JEE Main 2026", url: `${SITE_URL}/exam/jee-main` },
+        { "@type": "ListItem", position: 15, name: "BPSC 2026", url: `${SITE_URL}/exam/bpsc` }
       ]
-    }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": `${SITE_URL}/#faq`,
+      mainEntity: [
+        {
+          "@type": "Question", name: "What is All India Exam Result?",
+          acceptedAnswer: { "@type": "Answer", text: "All India Exam Result is India's fastest government exam information portal providing verified updates on Sarkari results, job notifications, admit cards, answer keys and admissions across SSC, UPSC, Railway, Banking, State exams and board results." }
+        },
+        {
+          "@type": "Question", name: "How often is the data updated?",
+          acceptedAnswer: { "@type": "Answer", text: "Our data is synced every 30 minutes directly from official government sources to ensure you get the latest exam notifications, results, admit cards and answer keys in real-time." }
+        },
+        {
+          "@type": "Question", name: "Which exams are covered?",
+          acceptedAnswer: { "@type": "Answer", text: "We cover all major Indian government exams including SSC (CGL, CHSL, MTS, GD, JE, CPO), UPSC (IAS, NDA, CDS, EPFO), Railway (RRB NTPC, ALP, Group D, JE), Banking (IBPS, SBI, RBI), Teaching (CTET, UPTET, REET), Defence (Army, Navy, Air Force), State govt jobs (UPSC, BPSC, UPPSC, MPPSC) and board exam results (Bihar Board, UP Board, CBSE, RBSE)." }
+        },
+        {
+          "@type": "Question", name: "Is this an official government website?",
+          acceptedAnswer: { "@type": "Answer", text: "No, this is an independent information portal. All data is sourced from publicly available government notifications. We always link to official websites for final verification and recommend users to check the respective government portals for authoritative information." }
+        },
+        {
+          "@type": "Question", name: "How can I search for specific exams?",
+          acceptedAnswer: { "@type": "Answer", text: "Use our search bar at the top of the page to find any exam, result, job notification, admit card, or answer key instantly. You can also browse by category using the navigation menu or visit the exam-specific pages under the Exam section." }
+        },
+        {
+          "@type": "Question", name: "Can I download admit cards and answer keys?",
+          acceptedAnswer: { "@type": "Answer", text: "Yes, each post includes direct official links to download admit cards, answer keys and results. We link to the respective government commission websites such as ssc.nic.in, upsc.gov.in, indianrailways.gov.in and other official portals." }
+        }
+      ]
+    },
   ]
 };
 

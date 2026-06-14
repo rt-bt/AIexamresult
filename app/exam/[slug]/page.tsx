@@ -98,11 +98,34 @@ export default async function ExamPage({ params }: { params: Promise<{ slug: str
 
   const breadcrumbLd = {
     "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.aiexamresult.com" },
-      { "@type": "ListItem", position: 2, name: name, item: `https://www.aiexamresult.com/exam/${slug}` },
-    ],
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: "https://www.aiexamresult.com" },
+          { "@type": "ListItem", position: 2, name: "Exams", item: "https://www.aiexamresult.com/exam" },
+          { "@type": "ListItem", position: 3, name: name, item: `https://www.aiexamresult.com/exam/${slug}` },
+        ],
+      },
+      {
+        "@type": "CollectionPage",
+        "@id": `https://www.aiexamresult.com/exam/${slug}#page`,
+        name: `${name} 2026 — Latest Updates, Result, Admit Card & Answer Key`,
+        description: desc,
+        isPartOf: { "@id": "https://www.aiexamresult.com/#website" },
+        about: { "@id": "https://www.aiexamresult.com/#organization" },
+        inLanguage: "en-IN",
+        mainEntity: {
+          "@type": "ItemList",
+          itemListElement: filtered.slice(0, 10).map((p, i) => ({
+            "@type": "ListItem",
+            position: i + 1,
+            url: `https://www.aiexamresult.com/post/${p.slug}`,
+            name: p.title
+          }))
+        }
+      }
+    ]
   };
 
   return (

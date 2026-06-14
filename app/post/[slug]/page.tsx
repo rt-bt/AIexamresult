@@ -210,6 +210,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
     "@graph": [
       {
         "@type": "BreadcrumbList",
+        "@id": `${SITE_URL}/#breadcrumb`,
         itemListElement: [
           { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
           { "@type": "ListItem", position: 2, name: post.category || "Updates", item: `${SITE_URL}/${catSlug}` },
@@ -218,15 +219,22 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
       },
       {
         "@type": "Article",
+        "@id": `${SITE_URL}/post/${slug}#article`,
         headline: title,
-        datePublished: post.publishedDate,
-        author: { "@type": "Organization", name: "All India Exam Result" },
-        publisher: { "@type": "Organization", name: "All India Exam Result" },
-        mainEntityOfPage: `${SITE_URL}/post/${slug}`,
-        image: `${SITE_URL}/og-image.png`
+        description: post.intro || `${title} — check latest updates, important dates, application fee, eligibility and official links.`,
+        datePublished: post.publishedDate || new Date().toISOString().split("T")[0],
+        dateModified: new Date().toISOString().split("T")[0],
+        author: { "@id": `${SITE_URL}/#organization` },
+        publisher: { "@id": `${SITE_URL}/#organization` },
+        mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}/post/${slug}` },
+        image: `${SITE_URL}/og-image.png`,
+        articleSection: post.category || "Government Exam",
+        inLanguage: "en-IN",
+        speakable: { "@type": "SpeakableSpecification", cssSelector: ["h1", "h2", "h3"] }
       },
       {
         "@type": "FAQPage",
+        "@id": `${SITE_URL}/post/${slug}#faq`,
         mainEntity: faqQ.map((q, i) => ({
           "@type": "Question",
           name: q,
