@@ -235,27 +235,6 @@ export const scrapedData = {
       "publishedDate": "31 May 2026 | 08:51 PM"
     },
     {
-      "title": "ABVMU UP Common Nursing Entrance Test UP CNET Result 2026",
-      "url": "https://www.resultbharat.com/latestresult_more.html",
-      "category": "results",
-      "slug": "latestresult_more",
-      "publishedDate": ""
-    },
-    {
-      "title": "Railway RRB NTPC Graduate Level CEN 06/2025 CBT-I Result/ Cutoff/ Score Card",
-      "url": "https://www.resultbharat.com/RRB-NTPC-Graduate-Level-CEN-06-2025.html",
-      "category": "results",
-      "slug": "RRB-NTPC-Graduate-Level-CEN-06-2025",
-      "publishedDate": ""
-    },
-    {
-      "title": "Railway RRB ALP CEN 01/2025 CBT-I Result/ Cutoff/ Score Card",
-      "url": "https://www.resultbharat.com/RRB-ALP-2025.html",
-      "category": "results",
-      "slug": "RRB-ALP-2025",
-      "publishedDate": "12 June 2026 | 01:26 PM"
-    },
-    {
       "title": "BRABU UG 2026 1st Merit List",
       "url": "https://www.resultbharat.com/BRABU-UG-Admission-2026-30.html",
       "category": "results",
@@ -305,20 +284,6 @@ export const scrapedData = {
       "publishedDate": "06 June 2026 | 12:02 AM"
     },
     {
-      "title": "India Post GDS 4th Merit List 2026",
-      "url": "https://www.resultbharat.com/India-Post-GDS-2026.html",
-      "category": "results",
-      "slug": "India-Post-GDS-2026",
-      "publishedDate": ""
-    },
-    {
-      "title": "UPSSSC BCG Technician 2024 Result",
-      "url": "https://www.resultbharat.com/UPSSSC-BCG-Technician-2024.html",
-      "category": "results",
-      "slug": "UPSSSC-BCG-Technician-2024",
-      "publishedDate": "08 June 2026 | 07:13 PM"
-    },
-    {
       "title": "RSSB Livestock Assistant 2024 Final Result",
       "url": "https://www.resultbharat.com/RSMSSB-Livestock-Assistant-2024-25.html",
       "category": "results",
@@ -331,13 +296,6 @@ export const scrapedData = {
       "category": "results",
       "slug": "SSC-Delhi-Police-HCM-2025",
       "publishedDate": "05 June 2026 |  01:03 PM"
-    },
-    {
-      "title": "NTA NCET 2026 Result / Score Card",
-      "url": "https://www.resultbharat.com/NTA-NCET-2026.html",
-      "category": "results",
-      "slug": "NTA-NCET-2026",
-      "publishedDate": "04 June 2026  | 08:11 PM"
     },
     {
       "title": "RSSB REET 2025 Mains Result (Update)",
@@ -396,13 +354,6 @@ export const scrapedData = {
       "publishedDate": "06 June 2026  | 09:16 PM"
     },
     {
-      "title": "UPSSSC Assistant Boring Technician Eligibility Result 2026",
-      "url": "https://www.resultbharat.com/UPSSSC-Asst-Boring-Technician-04-2026.html",
-      "category": "results",
-      "slug": "UPSSSC-Asst-Boring-Technician-04-2026",
-      "publishedDate": ""
-    },
-    {
       "title": "UKPSC Upper PCS 2024 Final Result",
       "url": "https://www.resultbharat.com/UKPSC-PCS-Upper-2024.html",
       "category": "results",
@@ -410,32 +361,11 @@ export const scrapedData = {
       "publishedDate": ""
     },
     {
-      "title": "IIT JEE Advanced 2026 Result",
-      "url": "https://www.resultbharat.com/IIT-JEE-Advanced-2026.html",
-      "category": "results",
-      "slug": "IIT-JEE-Advanced-2026",
-      "publishedDate": "01 June 2026  | 07:02 AM"
-    },
-    {
       "title": "HPSC HCS Pre Result 2026 (Revised)",
       "url": "https://www.resultbharat.com/HPSC-HCS_2026.html",
       "category": "results",
       "slug": "HPSC-HCS_2026",
       "publishedDate": "12 June 2026  | 08:11 PM"
-    },
-    {
-      "title": "Railway RRB Technician Gr-1, 3 CEN.No.02/2025 Result/ Cutoff/ Score Card",
-      "url": "https://www.resultbharat.com/RRB-Technician-02-2025.html",
-      "category": "results",
-      "slug": "RRB-Technician-02-2025",
-      "publishedDate": "29 May 2026 | 07:16 PM"
-    },
-    {
-      "title": "RRB Paramedical Staff CEN No. 03/2025 CBT-I Result/ Cutoff/ Score Card 2026",
-      "url": "https://www.resultbharat.com/RRB-Paramedical-Staff-CEN-03-2025.html",
-      "category": "results",
-      "slug": "RRB-Paramedical-Staff-CEN-03-2025",
-      "publishedDate": "29 May 2026 | 06:39 PM"
     },
     {
       "title": "Bihar Board BSEB Class 10th & 12th Compartment Result 2026",
@@ -501,60 +431,11 @@ export const scrapedData = {
       "publishedDate": "27 January 2026"
     },
     {
-      "title": "RRB ALP CBT 1 Result 2026 Out, Merit List Zone Wise PDF, Scorecard Link Active",
-      "url": "https://testbook.com/news/rrb-alp-cbt-1-result-2026-out/",
-      "category": "results",
-      "slug": "rrb-alp-cbt-1-result-2026-out",
-      "publishedDate": "14 June 2026"
-    },
-    {
-      "title": "RRB NTPC CBT 1 Result 2026 Out, Graduate Merit List PDF Zone Wise, Scorecard Link",
-      "url": "https://testbook.com/news/rrb-ntpc-cbt-1-result-2026-out/",
-      "category": "results",
-      "slug": "rrb-ntpc-cbt-1-result-2026-out",
-      "publishedDate": "14 June 2026"
-    },
-    {
-      "title": "[rrb.digialm.com] RRB NTPC Scorecard 2026 Out for Graduate CBT 1, Result PDF Download Link Active",
-      "url": "https://testbook.com/news/rrb-ntpc-cbt-1-scorecard-2026-out/",
-      "category": "results",
-      "slug": "rrb-ntpc-cbt-1-scorecard-2026-out",
-      "publishedDate": "14 June 2026"
-    },
-    {
       "title": "RRB Group D Result 2026 Date Out?, Merit List PDF Zone Wise, CEN 08/2024 Score card Link",
       "url": "https://testbook.com/news/rrb-group-d-result-2026-date-check-question-paper-analysis/",
       "category": "results",
       "slug": "rrb-group-d-result-2026-date-check-question-paper-analysis",
       "publishedDate": "13 June 2026"
-    },
-    {
-      "title": "RRB Paramedical Result 2026 Out, Scorecard Link Active, Cut Off and Result PDF [Zone Wise]",
-      "url": "https://testbook.com/news/rrb-paramedical-staff-result-2026-out/",
-      "category": "results",
-      "slug": "rrb-paramedical-staff-result-2026-out",
-      "publishedDate": "4 June 2026"
-    },
-    {
-      "title": "RRB Technician Grade 3 Result 2026 Out, Zone Wise Merit List PDF (CEN 02/2025), Cut Off Marks",
-      "url": "https://testbook.com/news/rrb-technician-grade-3-result-2026-out/",
-      "category": "results",
-      "slug": "rrb-technician-grade-3-result-2026-out",
-      "publishedDate": "4 June 2026"
-    },
-    {
-      "title": "RRB NTPC UG Result 2025 Out, Merit List PDF, Scorecard Link Active [Zone Wise]",
-      "url": "https://testbook.com/news/rrb-ntpc-ug-results-2025-out/",
-      "category": "results",
-      "slug": "rrb-ntpc-ug-results-2025-out",
-      "publishedDate": "2 June 2026"
-    },
-    {
-      "title": "RRB NTPC Undergraduate Final Result 2026 Out, CEN 06/2024 Merit List PDF, Cut Off Zone Wise",
-      "url": "https://testbook.com/news/rrb-ntpc-ug-final-result-2026-out/",
-      "category": "results",
-      "slug": "rrb-ntpc-ug-final-result-2026-out",
-      "publishedDate": "14 June 2026"
     },
     {
       "title": "BOB LBO Final Result 2026 Out, Download Selected Candidates List PDF",
@@ -793,13 +674,6 @@ export const scrapedData = {
       "category": "results",
       "slug": "uphesc-assistant-professor-result-2026-out",
       "publishedDate": "10 June 2026"
-    },
-    {
-      "title": "REET Mains 2026 Result Out, Scorecard PDF Download Link Active @rssb.rajasthan.gov.in for Level 1 & 2",
-      "url": "https://testbook.com/news/reet-mains-result-2026-out-pdf-link-active/",
-      "category": "results",
-      "slug": "reet-mains-result-2026-out-pdf-link-active",
-      "publishedDate": "27 may 2026"
     },
     {
       "title": "UP PGT Result 2026 Out, upessc.up.gov.in से यूपी पीजीटी रिजल्ट पीडीएफ डाउनलोड करें, परिणाम लिंक जारी",
@@ -1172,28 +1046,10 @@ export const scrapedData = {
       "slug": "sarkariresultshine.com"
     },
     {
-      "title": "India Post GDS 5th Merit List 2026 Date Out, Download PDF",
-      "url": "https://sarkariresultshine.com/india-post-gds-5th-merit-list-2026-date-out-download-pdf/",
-      "category": "results",
-      "slug": "india-post-gds-5th-merit-list-2026-date-out-download-pdf"
-    },
-    {
       "title": "Haryana College UG 1st Merit List 2026 Date Out",
       "url": "https://sarkariresultshine.com/haryana-college-1st-merit-list-2026-out/",
       "category": "results",
       "slug": "haryana-college-1st-merit-list-2026-out"
-    },
-    {
-      "title": "RRB Group D Result 2026 Out, 32438 Posts, Date out",
-      "url": "https://sarkariresultshine.com/rrb-group-d-result-2026-out/",
-      "category": "results",
-      "slug": "rrb-group-d-result-2026-out"
-    },
-    {
-      "title": "RRB NTPC Graduate Level Recruitment 2025 CBT-I Result Score Card",
-      "url": "https://sarkariresultshine.com/rrb-ntpc-graduate-level-recruitment-2025-cbt-i-result/",
-      "category": "results",
-      "slug": "rrb-ntpc-graduate-level-recruitment-2025-cbt-i-result"
     },
     {
       "title": "Railway ALP Recruitment 2025 Result Out",
@@ -1238,34 +1094,6 @@ export const scrapedData = {
       "slug": "#"
     },
     {
-      "title": "UP CNET Result 2026 – Out",
-      "url": "https://www.sarkariexam.com/up-cnet-2026",
-      "category": "results",
-      "slug": "up-cnet-2026",
-      "publishedDate": "13 June 2026"
-    },
-    {
-      "title": "RRB ALP 01/2025 CBT-I Result 2026 – Out",
-      "url": "https://www.sarkariexam.com/railway-rrb-alp-advt-01-2025",
-      "category": "results",
-      "slug": "railway-rrb-alp-advt-01-2025",
-      "publishedDate": "13 June 2026"
-    },
-    {
-      "title": "BRABU UG 1st Merit List 2026-30",
-      "url": "https://www.sarkariexam.com/brabu-ug-admission-2026-30",
-      "category": "results",
-      "slug": "brabu-ug-admission-2026-30",
-      "publishedDate": "12 June 2026"
-    },
-    {
-      "title": "BHU CHS SET Result 2026",
-      "url": "https://www.sarkariexam.com/bhu-chs-set-2026",
-      "category": "results",
-      "slug": "bhu-chs-set-2026",
-      "publishedDate": "12 June 2026"
-    },
-    {
       "title": "Bihar DCECE Polytechnic Result 2026",
       "url": "https://www.sarkariexam.com/dcece-bihar-polytechnic-2026",
       "category": "results",
@@ -1287,34 +1115,6 @@ export const scrapedData = {
       "publishedDate": "10 June 2026"
     },
     {
-      "title": "UPHESC Assistant Professor 2022 Result 2026",
-      "url": "https://www.sarkariexam.com/uphesc-assistant-professor-2022",
-      "category": "results",
-      "slug": "uphesc-assistant-professor-2022",
-      "publishedDate": "10 June 2026"
-    },
-    {
-      "title": "MPESB Group 5 Paramedical Post Result 2026",
-      "url": "https://www.sarkariexam.com/mpesb-group-5-paramedical-post-2026",
-      "category": "results",
-      "slug": "mpesb-group-5-paramedical-post-2026",
-      "publishedDate": "10 June 2026"
-    },
-    {
-      "title": "UPSSSC BCG Technician 2024 Result",
-      "url": "https://www.sarkariexam.com/upsssc-bcg-technician-2024",
-      "category": "results",
-      "slug": "upsssc-bcg-technician-2024",
-      "publishedDate": "9 June 2026"
-    },
-    {
-      "title": "India Post GDS 4th Merit List 2026",
-      "url": "https://www.sarkariexam.com/india-post-gds-2026",
-      "category": "results",
-      "slug": "india-post-gds-2026",
-      "publishedDate": "8 June 2026"
-    },
-    {
       "title": "DSSSB Advt 05/2024 Stenographer Grade-D Result 2026",
       "url": "https://www.sarkariexam.com/dsssb-various-post-result-2026",
       "category": "results",
@@ -1327,20 +1127,6 @@ export const scrapedData = {
       "category": "results",
       "slug": "ssc-mts-havaldar-2026",
       "publishedDate": "8 June 2026"
-    },
-    {
-      "title": "RSSB Livestock Assistant Final Result 2026 – Out",
-      "url": "https://www.sarkariexam.com/rssb-livestock-assistant-2025",
-      "category": "results",
-      "slug": "rssb-livestock-assistant-2025",
-      "publishedDate": "6 June 2026"
-    },
-    {
-      "title": "UPSSSC Assistant Boring Technician Eligibility Result 2026",
-      "url": "https://www.sarkariexam.com/upsssc-assistant-boring-technician-2026",
-      "category": "results",
-      "slug": "upsssc-assistant-boring-technician-2026",
-      "publishedDate": "2 June 2026"
     },
     {
       "title": "Rajasthan Police Constable Final Result 2024 – हुआ जारी",
@@ -1357,25 +1143,11 @@ export const scrapedData = {
       "publishedDate": "30 May 2025"
     },
     {
-      "title": "Railway RRB Technician Gr-III CEN.No 02/2025 Result 2026 – Out",
-      "url": "https://www.sarkariexam.com/railway-rrb-technician-2025",
-      "category": "results",
-      "slug": "railway-rrb-technician-2025",
-      "publishedDate": "31 May 2026"
-    },
-    {
       "title": "Bihar Police CSBC Constable Final Result 2026",
       "url": "https://www.sarkariexam.com/bihar-police-csbc-constable-2025",
       "category": "results",
       "slug": "bihar-police-csbc-constable-2025",
       "publishedDate": "27 May 2026"
-    },
-    {
-      "title": "SSC Delhi Police Head Constable Ministerial Result 2026",
-      "url": "https://www.sarkariexam.com/ssc-delhi-police-hcm-2025",
-      "category": "results",
-      "slug": "ssc-delhi-police-hcm-2025",
-      "publishedDate": "5 June 2026"
     },
     {
       "title": "RSSB REET Mains Upper Teacher Result 2026 (Update)",
@@ -1385,24 +1157,10 @@ export const scrapedData = {
       "publishedDate": "5 June 2026"
     },
     {
-      "title": "NTA NCET Result / Score Card 2026",
-      "url": "https://www.sarkariexam.com/nta-ncet-2026",
-      "category": "results",
-      "slug": "nta-ncet-2026",
-      "publishedDate": "4 June 2026"
-    },
-    {
       "title": "DECE-LE Bihar Diploma Result / Rank Card 2026 – Out",
       "url": "https://www.sarkariexam.com/dece-le-bihar-diploma-2026",
       "category": "results",
       "slug": "dece-le-bihar-diploma-2026",
-      "publishedDate": "4 June 2026"
-    },
-    {
-      "title": "Bihar ITI CAT Result / Rank Card 2026 – Out",
-      "url": "https://www.sarkariexam.com/bihar-iti-cat-2026",
-      "category": "results",
-      "slug": "bihar-iti-cat-2026",
       "publishedDate": "4 June 2026"
     },
     {
@@ -1418,13 +1176,6 @@ export const scrapedData = {
       "category": "results",
       "slug": "ssc-jht-2025",
       "publishedDate": "4 June 2026"
-    },
-    {
-      "title": "NTA NIFT Stage II Result 2026",
-      "url": "https://www.sarkariexam.com/nta-nift-2025",
-      "category": "results",
-      "slug": "nta-nift-2025",
-      "publishedDate": "3 June 2026"
     },
     {
       "title": "IB ACIO Gr-II Executive Tier-II FInal Result 2026",
@@ -1453,20 +1204,6 @@ export const scrapedData = {
       "category": "results",
       "slug": "hpsc-haryana-civil-service-hsc-2026",
       "publishedDate": "1 June 2026"
-    },
-    {
-      "title": "IIT JEE Advanced Result 2026 – Out",
-      "url": "https://www.sarkariexam.com/iit-jee-advanced-2026",
-      "category": "results",
-      "slug": "iit-jee-advanced-2026",
-      "publishedDate": "1 June 2026"
-    },
-    {
-      "title": "Railway RRB Paramedical CEN 03/2025 Post Result 2026",
-      "url": "https://www.sarkariexam.com/rrb-paramedical-staff-cen-no-03-2025",
-      "category": "results",
-      "slug": "rrb-paramedical-staff-cen-no-03-2025",
-      "publishedDate": "30 May 2026"
     }
   ],
   "admitCards": [
@@ -1583,13 +1320,6 @@ export const scrapedData = {
       "publishedDate": "07 June 2026 | 01:49 PM"
     },
     {
-      "title": "Railway RRB NTPC UG CEN 07/2025 Admit Card",
-      "url": "https://www.sarkariresult.com/railway/rrb-ntpc-ug-07-2025/",
-      "category": "admitCards",
-      "slug": "rrb-ntpc-ug-07-2025",
-      "publishedDate": "05 June 2026 | 11:04 AM"
-    },
-    {
       "title": "UPPSC LT Assistant Teacher Biology, Urdu Mains Admit Card 2026",
       "url": "https://www.sarkariresult.com/2025/uppsc-lt-grade-teacher-2025/",
       "category": "admitCards",
@@ -1679,20 +1409,6 @@ export const scrapedData = {
       "publishedDate": ""
     },
     {
-      "title": "UPSC IES / ISS Admit Card 2026",
-      "url": "https://www.resultbharat.com/UPSC-IES-ISS-2026.html",
-      "category": "admitCards",
-      "slug": "UPSC-IES-ISS-2026",
-      "publishedDate": "12 June 2026 | 10:42 PM"
-    },
-    {
-      "title": "UPSC Engineering Services 2026 Mains Admit Card",
-      "url": "https://www.resultbharat.com/UPSC-Engineering-Services-2026.html",
-      "category": "admitCards",
-      "slug": "UPSC-Engineering-Services-2026",
-      "publishedDate": ""
-    },
-    {
       "title": "UPSC Geo Scientist Mains Admit Card 2026",
       "url": "https://www.resultbharat.com/Admitcard_more.html",
       "category": "admitCards",
@@ -1719,13 +1435,6 @@ export const scrapedData = {
       "category": "admitCards",
       "slug": "CSBC-Constable-GD-01-2026",
       "publishedDate": "11 June 2026 | 12:01 AM"
-    },
-    {
-      "title": "NTA UGC NET June 2026 Exam City Details",
-      "url": "https://www.resultbharat.com/NTA-UGC-NET-JRF-June-2026.html",
-      "category": "admitCards",
-      "slug": "NTA-UGC-NET-JRF-June-2026",
-      "publishedDate": "10 June 2026 | 03:33 PM"
     },
     {
       "title": "UPSSSC Forest/ WildLife Guard 2023 PMT Admit Card 2026",
@@ -1763,20 +1472,6 @@ export const scrapedData = {
       "publishedDate": "08 June 2026   |  12:03 AM"
     },
     {
-      "title": "BPSC Stenographer Admit Card 2026",
-      "url": "https://www.resultbharat.com/BPSC-Stenographer-01-2026.html",
-      "category": "admitCards",
-      "slug": "BPSC-Stenographer-01-2026",
-      "publishedDate": "08 June 2026  | 12:06 AM"
-    },
-    {
-      "title": "UPPSC GIC Lecturer Admit Card 2026",
-      "url": "https://www.resultbharat.com/UPPSC-Lecturer-GIC-2025.html",
-      "category": "admitCards",
-      "slug": "UPPSC-Lecturer-GIC-2025",
-      "publishedDate": "08 June 2026 | 04:58 PM"
-    },
-    {
       "title": "NTA NEET UG 2026 Re-Exam City Details",
       "url": "https://www.resultbharat.com/NTA-NEET-UG-2026.html",
       "category": "admitCards",
@@ -1796,13 +1491,6 @@ export const scrapedData = {
       "category": "admitCards",
       "slug": "UP-Police-SI-2025",
       "publishedDate": "05 June 2026 | 03:49 PM"
-    },
-    {
-      "title": "RBI Officer Grade B Admit Card 2026",
-      "url": "https://www.resultbharat.com/RBI-Grade-B-2026.html",
-      "category": "admitCards",
-      "slug": "RBI-Grade-B-2026",
-      "publishedDate": "05 June 2026 |  11:39 AM"
     },
     {
       "title": "UP Police Constable Admit Card 2026",
@@ -1905,12 +1593,6 @@ export const scrapedData = {
       "slug": "hprca-jbt-teacher-vacancy-2026"
     },
     {
-      "title": "SSB Head Constable (Ministerial) Vacancy 2020 Exam Date",
-      "url": "https://sarkariresultshine.com/ssb-head-constable-ministerial-vacancy-2020-exam-date/",
-      "category": "admitCards",
-      "slug": "ssb-head-constable-ministerial-vacancy-2020-exam-date"
-    },
-    {
       "title": "HSSC Sports Quota Vacancy 2024, Advt No. 13/24 Sports Quota PMT List, Admit Card",
       "url": "https://sarkariresultshine.com/hssc-sports-quota-vacancy-2024-advt-no-13-24-sports-quota-pmt-list-admit-card/",
       "category": "admitCards",
@@ -1929,60 +1611,6 @@ export const scrapedData = {
       "slug": "nta-ugc-net-exam-june-2026"
     },
     {
-      "title": "UP Home Guard Admit Card 2026, Answer Key",
-      "url": "https://sarkariresultshine.com/up-home-guard-admit-card-2026/",
-      "category": "admitCards",
-      "slug": "up-home-guard-admit-card-2026"
-    },
-    {
-      "title": "Rajasthan PTET Exam 2026, Admit Card",
-      "url": "https://sarkariresultshine.com/rajasthan-ptet-exam-2026/",
-      "category": "admitCards",
-      "slug": "rajasthan-ptet-exam-2026"
-    },
-    {
-      "title": "RRB NTPC 10+2 UG CBT-I Admit Card 2026",
-      "url": "https://www.sarkariexam.com/rrb-ntpc-102-inter-level-2025",
-      "category": "admitCards",
-      "slug": "rrb-ntpc-102-inter-level-2025",
-      "publishedDate": "13 June 2026"
-    },
-    {
-      "title": "NTA NEET UG Re-Exam City Details 2026",
-      "url": "https://www.sarkariexam.com/nta-neet-ug-2026",
-      "category": "admitCards",
-      "slug": "nta-neet-ug-2026",
-      "publishedDate": "13 June 2026"
-    },
-    {
-      "title": "RRB NTPC CEN 06/2025 Graduate Level CBT II Exam Date 2026",
-      "url": "https://www.sarkariexam.com/rrb-ntpc-graduate-level-2026",
-      "category": "admitCards",
-      "slug": "rrb-ntpc-graduate-level-2026",
-      "publishedDate": "13 June 2026"
-    },
-    {
-      "title": "UPSC IES/ ISS Admit Card 2026",
-      "url": "https://www.sarkariexam.com/upsc-ies-iss-2026",
-      "category": "admitCards",
-      "slug": "upsc-ies-iss-2026",
-      "publishedDate": "13 June 2026"
-    },
-    {
-      "title": "UPSC Engineering Services Mains Admit Card 2026",
-      "url": "https://www.sarkariexam.com/upsc-engineering-services-pre-2026",
-      "category": "admitCards",
-      "slug": "upsc-engineering-services-pre-2026",
-      "publishedDate": "13 June 2026"
-    },
-    {
-      "title": "UPSC Geo Scientist Mains Admit Card 2026",
-      "url": "https://www.sarkariexam.com/upsc-geo-scientist-2026",
-      "category": "admitCards",
-      "slug": "upsc-geo-scientist-2026",
-      "publishedDate": "13 June 2026"
-    },
-    {
       "title": "NTA SWAYAM Admit Card 2026",
       "url": "https://www.sarkariexam.com/nta-swayam-2026",
       "category": "admitCards",
@@ -1997,13 +1625,6 @@ export const scrapedData = {
       "publishedDate": "12 June 2026"
     },
     {
-      "title": "UP Police SI DV/ PST Admit Card/ Re-Print Form 2026",
-      "url": "https://www.sarkariexam.com/up-police-si-2025",
-      "category": "admitCards",
-      "slug": "up-police-si-2025",
-      "publishedDate": "12 June 2026"
-    },
-    {
       "title": "HSSC Police Constable PST Admit Card 2026",
       "url": "https://www.sarkariexam.com/hssc-haryana-police-constable-2026",
       "category": "admitCards",
@@ -2011,39 +1632,11 @@ export const scrapedData = {
       "publishedDate": "12 June 2026"
     },
     {
-      "title": "UPPSC Veterinary Officer Exam Date 2026",
-      "url": "https://www.sarkariexam.com/uppsc-veterinary-officer-2025",
-      "category": "admitCards",
-      "slug": "uppsc-veterinary-officer-2025",
-      "publishedDate": "12 June 2026"
-    },
-    {
-      "title": "Allahabad University PGAT Admit Card 2026",
-      "url": "https://www.sarkariexam.com/allahabad-university-pgat-admissions-2026",
-      "category": "admitCards",
-      "slug": "allahabad-university-pgat-admissions-2026",
-      "publishedDate": "11 June 2026"
-    },
-    {
       "title": "Bihar Police CSBC Constable GD Exam City / Admit Card 2026",
       "url": "https://www.sarkariexam.com/bihar-police-csbc-constable-gd-2026",
       "category": "admitCards",
       "slug": "bihar-police-csbc-constable-gd-2026",
       "publishedDate": "11 June 2026"
-    },
-    {
-      "title": "NTA UGC NET June Exam City Details 2026",
-      "url": "https://www.sarkariexam.com/nta-ugc-net-june-2026",
-      "category": "admitCards",
-      "slug": "nta-ugc-net-june-2026",
-      "publishedDate": "10 June 2026"
-    },
-    {
-      "title": "Indian Army Agniveer CEE Admit Card 2026",
-      "url": "https://www.sarkariexam.com/indian-army-agniveer-cee-2026",
-      "category": "admitCards",
-      "slug": "indian-army-agniveer-cee-2026",
-      "publishedDate": "10 June 2026"
     },
     {
       "title": "UP GNM Entrance Exam UPGET Admit Card 2026",
@@ -2109,46 +1702,11 @@ export const scrapedData = {
       "publishedDate": "10 June 2025"
     },
     {
-      "title": "Bihar Vidhan Parishad Security Guard Interview Admit Card 2026",
-      "url": "https://www.sarkariexam.com/bihar-vidhan-parishad-2023",
-      "category": "admitCards",
-      "slug": "bihar-vidhan-parishad-2023",
-      "publishedDate": "9 June 2026"
-    },
-    {
-      "title": "Rajasthan PTET Admit Card 2026",
-      "url": "https://www.sarkariexam.com/rajasthan-ptet-2026",
-      "category": "admitCards",
-      "slug": "rajasthan-ptet-2026",
-      "publishedDate": "8 June 2026"
-    },
-    {
-      "title": "SGPGI Nursing Officer & Other Post Exam City Details 2026",
-      "url": "https://www.sarkariexam.com/sgpgi-nursing-officer-and-non-teaching-post-2025",
-      "category": "admitCards",
-      "slug": "sgpgi-nursing-officer-and-non-teaching-post-2025",
-      "publishedDate": "7 June 2026"
-    },
-    {
       "title": "BSF HCM & ASI Steno Exam Date 2026",
       "url": "https://www.sarkariexam.com/bsf-hcm-asi-steno-2024",
       "category": "admitCards",
       "slug": "bsf-hcm-asi-steno-2024",
       "publishedDate": "6 June 2026"
-    },
-    {
-      "title": "RBI Officer Grade B Admit Card 2026",
-      "url": "https://www.sarkariexam.com/rbi-grade-b-2026",
-      "category": "admitCards",
-      "slug": "rbi-grade-b-2026",
-      "publishedDate": "5 June 2026"
-    },
-    {
-      "title": "UPPSC GIC Lecturer Admit Card 2026",
-      "url": "https://www.sarkariexam.com/uppsc-gic-lecturer-2025",
-      "category": "admitCards",
-      "slug": "uppsc-gic-lecturer-2025",
-      "publishedDate": "4 June 2026"
     },
     {
       "title": "Bihar BPSC Auditor Exam Date 2026",
@@ -2158,25 +1716,11 @@ export const scrapedData = {
       "publishedDate": "3 June 2026"
     },
     {
-      "title": "Haryana HTET Exam Date 2026",
-      "url": "https://www.sarkariexam.com/haryana-htet-2026",
-      "category": "admitCards",
-      "slug": "haryana-htet-2026",
-      "publishedDate": "3 June 2026"
-    },
-    {
       "title": "UPSSSC UP Pollution Control Board Various Post Exam Date 2026",
       "url": "https://www.sarkariexam.com/upsssc-up-pollution-control-board-various-post-2026",
       "category": "admitCards",
       "slug": "upsssc-up-pollution-control-board-various-post-2026",
       "publishedDate": "1 June 2026"
-    },
-    {
-      "title": "DSSSB June Admit Card 2026",
-      "url": "https://www.sarkariexam.com/dsssb-various-post-2025",
-      "category": "admitCards",
-      "slug": "dsssb-various-post-2025",
-      "publishedDate": "29 May 2026"
     },
     {
       "title": "BSNL Senior Executive Trainee SET Exam Date 2026",
@@ -2190,13 +1734,6 @@ export const scrapedData = {
       "url": "https://www.sarkariexam.com/bseb-bihar-d-el-ed-2026-28",
       "category": "admitCards",
       "slug": "bseb-bihar-d-el-ed-2026-28",
-      "publishedDate": "28 May 2026"
-    },
-    {
-      "title": "RRB Section Controller CBAT Exam City Details 2026",
-      "url": "https://www.sarkariexam.com/rrb-section-controller-2025",
-      "category": "admitCards",
-      "slug": "rrb-section-controller-2025",
       "publishedDate": "28 May 2026"
     },
     {
@@ -2454,25 +1991,11 @@ export const scrapedData = {
       "publishedDate": "19 May 2026"
     },
     {
-      "title": "UPSC CAPF AC 2024 Reserve List",
-      "url": "https://www.resultbharat.com/UPSC-CAPF-AC-Exam_2024.html",
-      "category": "latestJobs",
-      "slug": "UPSC-CAPF-AC-Exam_2024",
-      "publishedDate": "12 June 2026 | 08:46 PM"
-    },
-    {
       "title": "UPPSC PCS 2024 Marksheet",
       "url": "https://www.resultbharat.com/UPPSC-PCS-2024.html",
       "category": "latestJobs",
       "slug": "UPPSC-PCS-2024",
       "publishedDate": "10 June 2026  |  08:36 PM"
-    },
-    {
-      "title": "UPSSSC Technical Assistant Group C 2024 Supplementary List",
-      "url": "https://www.resultbharat.com/UPSSSC-Technical-Assistant-Group-C_07-2024.html",
-      "category": "latestJobs",
-      "slug": "UPSSSC-Technical-Assistant-Group-C_07-2024",
-      "publishedDate": "08 June 2026 | 07:29 PM"
     },
     {
       "title": "DDA 1732 Various Post Marks 2026",
@@ -2508,13 +2031,6 @@ export const scrapedData = {
       "category": "latestJobs",
       "slug": "rcdlstatus",
       "publishedDate": ""
-    },
-    {
-      "title": "Railway RRB ALP CEN 01/2026 Online Form",
-      "url": "https://www.resultbharat.com/RRB-ALP-CEN-No-01-2026.html",
-      "category": "latestJobs",
-      "slug": "RRB-ALP-CEN-No-01-2026",
-      "publishedDate": "15 May 2026 | 12:01 AM"
     },
     {
       "title": "AIIMS CRE-5 Online Form 2026",
@@ -2559,20 +2075,6 @@ export const scrapedData = {
       "publishedDate": "08 June 2026  | 11:06 PM"
     },
     {
-      "title": "RPSC RAS Pre 2026 Online Form",
-      "url": "https://www.resultbharat.com/RPSC-RAS-2026.html",
-      "category": "latestJobs",
-      "slug": "RPSC-RAS-2026",
-      "publishedDate": "04 June 2026"
-    },
-    {
-      "title": "CISF ASI Paramedical Post Online Form 2026",
-      "url": "https://www.resultbharat.com/CISF-ASI-Paramedical-Staff-2026.html",
-      "category": "latestJobs",
-      "slug": "CISF-ASI-Paramedical-Staff-2026",
-      "publishedDate": "08 June 2026 | 07:16 AM"
-    },
-    {
       "title": "RPSC APO Online Form 2026",
       "url": "https://www.resultbharat.com/RPSC-APO-2026.html",
       "category": "latestJobs",
@@ -2615,13 +2117,6 @@ export const scrapedData = {
       "publishedDate": "19 May 2026 | 06:03 AM"
     },
     {
-      "title": "UPSSSC Excise Constable Online Form 2026",
-      "url": "https://www.resultbharat.com/UPSSSC-Excise-Constable-08-2026.html",
-      "category": "latestJobs",
-      "slug": "UPSSSC-Excise-Constable-08-2026",
-      "publishedDate": "04 June 2026"
-    },
-    {
       "title": "BSNL JTO Online Form 2026",
       "url": "https://www.resultbharat.com/BSNL-JTO-2026.html",
       "category": "latestJobs",
@@ -2650,13 +2145,6 @@ export const scrapedData = {
       "publishedDate": "09 June 2026 | 06:01 PM"
     },
     {
-      "title": "UPSC CDS-II Online Form 2026",
-      "url": "https://www.resultbharat.com/UPSC-CDS-II-Exam-2026.html",
-      "category": "latestJobs",
-      "slug": "UPSC-CDS-II-Exam-2026",
-      "publishedDate": "09 June 2026 | 06:00 PM"
-    },
-    {
       "title": "DSSSB Teaching/ Non-Teaching Various Post Online Form 2026",
       "url": "https://www.resultbharat.com/DSSSB-JSA-TGT-Other-Advt-03-2026.html",
       "category": "latestJobs",
@@ -2683,13 +2171,6 @@ export const scrapedData = {
       "category": "latestJobs",
       "slug": "Indian-Navy-12th-BTech-January-2027",
       "publishedDate": "29 May 2026  08:56 AM"
-    },
-    {
-      "title": "NTA CSIR UGC NET June 2026 Online Form",
-      "url": "https://www.resultbharat.com/NTA-CSIR-UGC-NET-June-2026.html",
-      "category": "latestJobs",
-      "slug": "NTA-CSIR-UGC-NET-June-2026",
-      "publishedDate": "28 May 2026 | 10:01 AM"
     },
     {
       "title": "Rajasthan RSSB Computer Instructor Online Form 2026",
@@ -2741,13 +2222,6 @@ export const scrapedData = {
       "publishedDate": "19 May 2026 | 10:01 AM"
     },
     {
-      "title": "Railway RRB Technician CEN 02/2026 Online Form",
-      "url": "https://www.resultbharat.com/RRB-Technician-CEN-02-2026.html",
-      "category": "latestJobs",
-      "slug": "RRB-Technician-CEN-02-2026",
-      "publishedDate": "18 May 2026 | 10:03 AM"
-    },
-    {
       "title": "Railway SECR Bilaspur Apprentice Online Form 2026",
       "url": "https://www.resultbharat.com/Railway-SECR-Bilaspur-Apprentice-2026.html",
       "category": "latestJobs",
@@ -2790,25 +2264,11 @@ export const scrapedData = {
       "publishedDate": "11 June 2026 | 10:05 AM"
     },
     {
-      "title": "UPDELED 2026 Admissions Online Form",
-      "url": "https://www.resultbharat.com/UP-DELEd-2026.html",
-      "category": "latestJobs",
-      "slug": "UP-DELEd-2026",
-      "publishedDate": "15 June 2026"
-    },
-    {
       "title": "MPESB PNST 2026 Online Form",
       "url": "https://www.resultbharat.com/MPESB-PNST-2026.html",
       "category": "latestJobs",
       "slug": "MPESB-PNST-2026",
       "publishedDate": "09 June 2026 | 07:16 PM"
-    },
-    {
-      "title": "MPESB ADDET 2026 Online Form",
-      "url": "https://www.resultbharat.com/MPESB-ADDET-2026.html",
-      "category": "latestJobs",
-      "slug": "MPESB-ADDET-2026",
-      "publishedDate": "05 June 2026 | 05:16 PM"
     },
     {
       "title": "Purnea University UG Admission 2026-30 Online Form",
@@ -2956,13 +2416,6 @@ export const scrapedData = {
       "category": "latestJobs",
       "slug": "bihar-police-driver-scorecard-2026-out-download-marks",
       "publishedDate": "18 May 2026"
-    },
-    {
-      "title": "AIIMS CRE Notification 2026",
-      "url": "https://testbook.com/news/aiims-cre-notification-2026-out/",
-      "category": "latestJobs",
-      "slug": "aiims-cre-notification-2026-out",
-      "publishedDate": "13 June 2026"
     },
     {
       "title": "Rajasthan State Eligibility Test SET 2026, Apply Online",
@@ -3248,13 +2701,6 @@ export const scrapedData = {
       "publishedDate": "14 June 2026"
     },
     {
-      "title": "SSC CGL Online Form 2026 (12,236 Posts)",
-      "url": "https://www.sarkariexam.com/ssc-cgl-2026",
-      "category": "latestJobs",
-      "slug": "ssc-cgl-2026",
-      "publishedDate": "13 June 2026"
-    },
-    {
       "title": "UPSSSC Lower PCS Form (2516 Posts)",
       "url": "https://www.sarkariexam.com/upsssc-lower-pcs-2026",
       "category": "latestJobs",
@@ -3276,13 +2722,6 @@ export const scrapedData = {
       "publishedDate": "22 May 2026"
     },
     {
-      "title": "UPSSSC Excise Constable Online Form",
-      "url": "https://www.sarkariexam.com/upsssc-excise-constable-2026",
-      "category": "latestJobs",
-      "slug": "upsssc-excise-constable-2026",
-      "publishedDate": "13 June 2026"
-    },
-    {
       "title": "BPSC Teacher TRE 4.0 Form (44000+ Posts)",
       "url": "https://www.sarkariexam.com/bpsc-school-teacher-tre-4-0-2026",
       "category": "latestJobs",
@@ -3295,20 +2734,6 @@ export const scrapedData = {
       "category": "latestJobs",
       "slug": "upsc-cpf-assistant-commandant-2024",
       "publishedDate": "13 June 2026"
-    },
-    {
-      "title": "UPPSC PCS 2024 Marksheet",
-      "url": "https://www.sarkariexam.com/uppsc-pcs-2024",
-      "category": "latestJobs",
-      "slug": "uppsc-pcs-2024",
-      "publishedDate": "11 June 2026"
-    },
-    {
-      "title": "UPSSSC Technical Assistant Group C 2024 Supplementary List",
-      "url": "https://www.sarkariexam.com/upsssc-technical-assistant-group-c-2025",
-      "category": "latestJobs",
-      "slug": "upsssc-technical-assistant-group-c-2025",
-      "publishedDate": "9 June 2026"
     },
     {
       "title": "DDA Group A, B & C Various Posts Marks 2026",
@@ -3353,38 +2778,10 @@ export const scrapedData = {
       "publishedDate": "13 June 2026"
     },
     {
-      "title": "UPSSSC Vidhan Bhawan Guard/ Fire Guard Online Form 2026",
-      "url": "https://www.sarkariexam.com/upsssc-vidhan-bhawan-guard-fire-guard-2026",
-      "category": "latestJobs",
-      "slug": "upsssc-vidhan-bhawan-guard-fire-guard-2026",
-      "publishedDate": "13 June 2026"
-    },
-    {
       "title": "Coal India CIL Management Trainee Online Form 2026 – Extend",
       "url": "https://www.sarkariexam.com/coal-india-cil-management-trainee-2026",
       "category": "latestJobs",
       "slug": "coal-india-cil-management-trainee-2026",
-      "publishedDate": "13 June 2026"
-    },
-    {
-      "title": "CISF ASI Paramedical Staff Online Form 2026",
-      "url": "https://www.sarkariexam.com/cisf-asi-paramedical-staff-2026",
-      "category": "latestJobs",
-      "slug": "cisf-asi-paramedical-staff-2026",
-      "publishedDate": "13 June 2026"
-    },
-    {
-      "title": "RPSC APO Online Form 2026",
-      "url": "https://www.sarkariexam.com/rpsc-apo-2026",
-      "category": "latestJobs",
-      "slug": "rpsc-apo-2026",
-      "publishedDate": "13 June 2026"
-    },
-    {
-      "title": "MPPSC Assistant Professor Online Form 2026",
-      "url": "https://www.sarkariexam.com/mppsc-assistant-professor-2026",
-      "category": "latestJobs",
-      "slug": "mppsc-assistant-professor-2026",
       "publishedDate": "13 June 2026"
     },
     {
@@ -3402,32 +2799,11 @@ export const scrapedData = {
       "publishedDate": "11 June 2026"
     },
     {
-      "title": "CTET September Online Form 2026",
-      "url": "https://www.sarkariexam.com/ctet-september-2026",
-      "category": "latestJobs",
-      "slug": "ctet-september-2026",
-      "publishedDate": "10 June 2026"
-    },
-    {
-      "title": "Hindustan Copper Limited HCL Executive Online Form 2026",
-      "url": "https://www.sarkariexam.com/hindustan-copper-limited-hcl-executive-2026",
-      "category": "latestJobs",
-      "slug": "hindustan-copper-limited-hcl-executive-2026",
-      "publishedDate": "7 June 2026"
-    },
-    {
       "title": "UP Board Class 10th/12th Compartment Online Form 2026",
       "url": "https://www.sarkariexam.com/up-board-class-10th-12th-2026",
       "category": "latestJobs",
       "slug": "up-board-class-10th-12th-2026",
       "publishedDate": "6 June 2026"
-    },
-    {
-      "title": "VKSU Ara UG Admission Online Form 2026-30",
-      "url": "https://www.sarkariexam.com/vksu-ara-ug-admission-2026-30",
-      "category": "latestJobs",
-      "slug": "vksu-ara-ug-admission-2026-30",
-      "publishedDate": "12 June 2026"
     },
     {
       "title": "UP CAHET Online Form 2026 – Extend",
@@ -3437,25 +2813,11 @@ export const scrapedData = {
       "publishedDate": "12 June 2026"
     },
     {
-      "title": "MUIT Lucknow and Noida Campus Admissions Online Form 2026",
-      "url": "https://www.sarkariexam.com/muit-admissions-2026",
-      "category": "latestJobs",
-      "slug": "muit-admissions-2026",
-      "publishedDate": "12 June 2026"
-    },
-    {
       "title": "UP DELEd Online Form 2026 – Soon",
       "url": "https://www.sarkariexam.com/up-deled-admission-2026",
       "category": "latestJobs",
       "slug": "up-deled-admission-2026",
       "publishedDate": "10 June 2026"
-    },
-    {
-      "title": "UPSSSC Pharmacist Mains Exam Fee Payment 2026",
-      "url": "https://www.sarkariexam.com/upsssc-pharmacist-2026",
-      "category": "latestJobs",
-      "slug": "upsssc-pharmacist-2026",
-      "publishedDate": "7 June 2026"
     },
     {
       "title": "Jharkhand Teacher Eligibility Test JHTET Online Form 2026 – Extend",
@@ -3470,13 +2832,6 @@ export const scrapedData = {
       "category": "latestJobs",
       "slug": "bpsc-72nd-2026",
       "publishedDate": "31 May 2026"
-    },
-    {
-      "title": "PAN Card Registration, Correction & Other Service 2026",
-      "url": "https://www.sarkariexam.com/pan-card-registration-correction-other-service-2026",
-      "category": "latestJobs",
-      "slug": "pan-card-registration-correction-other-service-2026",
-      "publishedDate": "5 January 2026"
     },
     {
       "title": "Bihar Income, Cast, Residential Certificate Online Apply & Verification 2026",
@@ -3513,32 +2868,11 @@ export const scrapedData = {
       "slug": "live-government-jobs-2024"
     },
     {
-      "title": "RRB NTPC Vacancy 2024: रेलवे एनटीपीसी भर्ती सूचना जारी, डायरेक्ट लिंक से करें आवेदन",
-      "url": "https://www.sarkariexam.com/rrb-ntpc-vacancy-2024",
-      "category": "latestJobs",
-      "slug": "rrb-ntpc-vacancy-2024",
-      "publishedDate": "31 August 2024"
-    },
-    {
       "title": "Sewadar Chowkidar Recruitment 2024: 8वीं पास के लिए मौका, वेतन 18 हजार महिना",
       "url": "https://www.sarkariexam.com/sewadar-chowkidar-recruitment-2024",
       "category": "latestJobs",
       "slug": "sewadar-chowkidar-recruitment-2024",
       "publishedDate": "27 August 2024"
-    },
-    {
-      "title": "UPSSSC Auditor/ Assistant Accountant Online Form 2026",
-      "url": "https://www.sarkariexam.com/upsssc-auditor-assistant-accountant-2026",
-      "category": "latestJobs",
-      "slug": "upsssc-auditor-assistant-accountant-2026",
-      "publishedDate": "4 June 2026"
-    },
-    {
-      "title": "Railway SECR Nagpur Apprentices Online Form 2026 (1079 Posts)",
-      "url": "https://www.sarkariexam.com/railway-secr-nagpur-apprentices-2026",
-      "category": "latestJobs",
-      "slug": "railway-secr-nagpur-apprentices-2026",
-      "publishedDate": "19 May 2026"
     },
     {
       "title": "NFL Field Representative Online Form 2026",
@@ -3667,20 +3001,6 @@ export const scrapedData = {
       "publishedDate": "6 June 2026"
     },
     {
-      "title": "UPSSSC Exam Calendar 2026",
-      "url": "https://www.sarkariexam.com/upsssc-exam-calendar-2026",
-      "category": "latestJobs",
-      "slug": "upsssc-exam-calendar-2026",
-      "publishedDate": "2 June 2026"
-    },
-    {
-      "title": "Indian Navy Agniveer Apprentices INET Online Form 2026",
-      "url": "https://www.sarkariexam.com/indian-navy-agniveer-apprentices-inet-2026",
-      "category": "latestJobs",
-      "slug": "indian-navy-agniveer-apprentices-inet-2026",
-      "publishedDate": "5 June 2026"
-    },
-    {
       "title": "RPSC RAS Pre Online Form 2026 – Start",
       "url": "https://www.sarkariexam.com/rpsc-ras-2026",
       "category": "latestJobs",
@@ -3707,27 +3027,6 @@ export const scrapedData = {
       "category": "latestJobs",
       "slug": "allahabad-high-court-research-associates-2026",
       "publishedDate": "2 June 2026"
-    },
-    {
-      "title": "RPSC School Lecturer (Special) Online Form 2026",
-      "url": "https://www.sarkariexam.com/rpsc-school-lecturer-special-2026",
-      "category": "latestJobs",
-      "slug": "rpsc-school-lecturer-special-2026",
-      "publishedDate": "1 June 2026"
-    },
-    {
-      "title": "Indian Navy 10+2 B.Tech Cadet Entry January 2027 Online Form",
-      "url": "https://www.sarkariexam.com/indian-navy-102-b-tech-cadet-entry-january-2027",
-      "category": "latestJobs",
-      "slug": "indian-navy-102-b-tech-cadet-entry-january-2027",
-      "publishedDate": "30 May 2026"
-    },
-    {
-      "title": "NTA CSIR UGC NET June Online Form 2026",
-      "url": "https://www.sarkariexam.com/nta-csir-ugc-net-june-2026",
-      "category": "latestJobs",
-      "slug": "nta-csir-ugc-net-june-2026",
-      "publishedDate": "28 May 2026"
     },
     {
       "title": "UP Anganwadi Bharti Online Form 2026 (Update)",
@@ -3777,13 +3076,6 @@ export const scrapedData = {
       "category": "latestJobs",
       "slug": "ibps-rrb-xiv-officer-scale-i-ii-iii-2026",
       "publishedDate": "1 June 2026"
-    },
-    {
-      "title": "BCECEB Senior Resident / Tutor Provisional List 2026",
-      "url": "https://www.sarkariexam.com/bihar-bceceb-senior-resident-tutor-2026",
-      "category": "latestJobs",
-      "slug": "bihar-bceceb-senior-resident-tutor-2026",
-      "publishedDate": "29 May 2026"
     },
     {
       "title": "UPSSSC Junior Assistant, Clerk Grade II 2023 DV Document Upload",
@@ -3861,20 +3153,6 @@ export const scrapedData = {
       "category": "latestJobs",
       "slug": "upsssc-forest-guard-wild-life-guard-2026",
       "publishedDate": "24 April 2026"
-    },
-    {
-      "title": "UPSSSC Havildar Instructor Online Form 2026",
-      "url": "https://www.sarkariexam.com/upsssc-havildar-instructor-2026",
-      "category": "latestJobs",
-      "slug": "upsssc-havildar-instructor-2026",
-      "publishedDate": "17 April 2026"
-    },
-    {
-      "title": "UPSSSC Platoon Commander / Block Organizer Online Form 2026",
-      "url": "https://www.sarkariexam.com/upsssc-platoon-commander-block-organizer-2026",
-      "category": "latestJobs",
-      "slug": "upsssc-platoon-commander-block-organizer-2026",
-      "publishedDate": "15 April 2026"
     },
     {
       "title": "MPPSC Assistant Town Planner ATP Online Form 2026",
@@ -4087,13 +3365,6 @@ export const scrapedData = {
       "publishedDate": "27 March 2025"
     },
     {
-      "title": "Allahabad High Court Research Associates Online Form 2025",
-      "url": "https://www.sarkariexam.com/ahc-research-associates-recruitment-2025-start",
-      "category": "latestJobs",
-      "slug": "ahc-research-associates-recruitment-2025-start",
-      "publishedDate": "17 March 2025"
-    },
-    {
       "title": "UPSC Assistant Professor Online Form 2025",
       "url": "https://www.sarkariexam.com/upsc-assistant-professor-recruitment-2025",
       "category": "latestJobs",
@@ -4105,13 +3376,6 @@ export const scrapedData = {
       "url": "https://www.sarkariexam.com/union-bank-of-india-apprentice-recruitment-2025-date-extend",
       "category": "latestJobs",
       "slug": "union-bank-of-india-apprentice-recruitment-2025-date-extend",
-      "publishedDate": "7 March 2025"
-    },
-    {
-      "title": "MPPSC Assistant Professor Online Form 2025",
-      "url": "https://www.sarkariexam.com/mppsc-assistant-professor-recruitment-2025",
-      "category": "latestJobs",
-      "slug": "mppsc-assistant-professor-recruitment-2025",
       "publishedDate": "7 March 2025"
     },
     {
@@ -4222,27 +3486,6 @@ export const scrapedData = {
       "publishedDate": "21 May 2026"
     },
     {
-      "title": "UP Polytechnic JEECUP 2026 Answer Key",
-      "url": "https://www.resultbharat.com/UP-Polytechnic-JEECUP-2026.html",
-      "category": "answerKeys",
-      "slug": "UP-Polytechnic-JEECUP-2026",
-      "publishedDate": "11 June 2026 | 02:18 PM"
-    },
-    {
-      "title": "NTA JIPMAT 2026 Answer Key",
-      "url": "https://www.resultbharat.com/NTA-JIPMAT-2026.html",
-      "category": "answerKeys",
-      "slug": "NTA-JIPMAT-2026",
-      "publishedDate": "10 June 2026 | 09:51 PM"
-    },
-    {
-      "title": "NTA CUET UG 2026 Answer Key",
-      "url": "https://www.resultbharat.com/NTA-CUET-UG-2026.html",
-      "category": "answerKeys",
-      "slug": "NTA-CUET-UG-2026",
-      "publishedDate": "Click Here"
-    },
-    {
       "title": "UP CNET 2026 Answer Key",
       "url": "https://www.resultbharat.com/answerkey_more.html",
       "category": "answerKeys",
@@ -4262,13 +3505,6 @@ export const scrapedData = {
       "category": "answerKeys",
       "slug": "Jharkhand-BEd-2026",
       "publishedDate": "03 June 2026 | 04:33 PM"
-    },
-    {
-      "title": "UPPSC Assistant Professor GDC Answer Key 2026",
-      "url": "https://www.resultbharat.com/UPPSC-Asst-Professor-2025.html",
-      "category": "answerKeys",
-      "slug": "UPPSC-Asst-Professor-2025",
-      "publishedDate": "03 June 2026 | 05:49 PM"
     },
     {
       "title": "JSSC Excise Constable Final Answer Key 2026",
@@ -4340,12 +3576,6 @@ export const scrapedData = {
       "slug": "cuet-ug-test-2026"
     },
     {
-      "title": "RSSB 3rd Grade Teacher Recruitment 2025 Final Answer Key",
-      "url": "https://sarkariresultshine.com/rssb-3rd-grade-teacher-recruitment-2025-final-answer-key/",
-      "category": "answerKeys",
-      "slug": "rssb-3rd-grade-teacher-recruitment-2025-final-answer-key"
-    },
-    {
       "title": "PSSSB Excise Inspector Vacancy 2026, Answer Key",
       "url": "https://sarkariresultshine.com/psssb-excise-inspector-vacancy-2026/",
       "category": "answerKeys",
@@ -4382,34 +3612,6 @@ export const scrapedData = {
       "slug": "upsssc-4612-junior-engineer-civil-vacancy-2024-answer-key-out"
     },
     {
-      "title": "UP Polytechnic JEECUP Answer Key 2026",
-      "url": "https://www.sarkariexam.com/up-polytechnic-jeecup-2026",
-      "category": "answerKeys",
-      "slug": "up-polytechnic-jeecup-2026",
-      "publishedDate": "11 June 2026"
-    },
-    {
-      "title": "NTA CUET UG Answer Key 2026 – Out",
-      "url": "https://www.sarkariexam.com/nta-cuet-ug-2026",
-      "category": "answerKeys",
-      "slug": "nta-cuet-ug-2026",
-      "publishedDate": "9 June 2026"
-    },
-    {
-      "title": "UPSSSC Junior Assistant 12/2024 Revised Answer Key 2026",
-      "url": "https://www.sarkariexam.com/upsssc-junior-assistant-advt-12-2024",
-      "category": "answerKeys",
-      "slug": "upsssc-junior-assistant-advt-12-2024",
-      "publishedDate": "13 June 2026"
-    },
-    {
-      "title": "NTA JIPMAT Answer Key 2026",
-      "url": "https://www.sarkariexam.com/nta-jipmat-2026",
-      "category": "answerKeys",
-      "slug": "nta-jipmat-2026",
-      "publishedDate": "11 June 2026"
-    },
-    {
       "title": "Bihar CET B.Ed Answer Key 2026 – Out",
       "url": "https://www.sarkariexam.com/bihar-cet-b-ed-2026",
       "category": "answerKeys",
@@ -4421,13 +3623,6 @@ export const scrapedData = {
       "url": "https://www.sarkariexam.com/uppsc-assistant-professor-2025",
       "category": "answerKeys",
       "slug": "uppsc-assistant-professor-2025",
-      "publishedDate": "7 June 2026"
-    },
-    {
-      "title": "UP TGT 2022 Answer Key 2026",
-      "url": "https://www.sarkariexam.com/up-tgt-2022",
-      "category": "answerKeys",
-      "slug": "up-tgt-2022",
       "publishedDate": "7 June 2026"
     },
     {
@@ -4459,25 +3654,11 @@ export const scrapedData = {
       "publishedDate": "29 May 2026"
     },
     {
-      "title": "SSC Delhi Police Driver Marks & Final Answer Key 2026",
-      "url": "https://www.sarkariexam.com/ssc-delhi-police-driver-2026",
-      "category": "answerKeys",
-      "slug": "ssc-delhi-police-driver-2026",
-      "publishedDate": "27 May 2026"
-    },
-    {
       "title": "UPSC Civil Services IAS/IFS Pre Answer Key 2026",
       "url": "https://www.sarkariexam.com/upsc-civil-services-ias-ifs-pre-2026",
       "category": "answerKeys",
       "slug": "upsc-civil-services-ias-ifs-pre-2026",
       "publishedDate": "27 May 2026"
-    },
-    {
-      "title": "UPSSSC Lekhpal Answer Key & Objection Link  2026",
-      "url": "https://www.sarkariexam.com/upsssc-up-lekhpal-2026",
-      "category": "answerKeys",
-      "slug": "upsssc-up-lekhpal-2026",
-      "publishedDate": "26 May 2026"
     },
     {
       "title": "NCERT Non Teaching LDC Answer Key 2026",
@@ -4494,25 +3675,11 @@ export const scrapedData = {
       "publishedDate": "19 May 2026"
     },
     {
-      "title": "MPESB Nursing Officer, Sister Tutor Answer Key 2026",
-      "url": "https://www.sarkariexam.com/mpesb-nursing-officer-sister-tutor-2026",
-      "category": "answerKeys",
-      "slug": "mpesb-nursing-officer-sister-tutor-2026",
-      "publishedDate": "18 May 2026"
-    },
-    {
       "title": "Bihar Vidhan Parishad LDC/ DEO Pre Answer Key 2026",
       "url": "https://www.sarkariexam.com/bihar-vidhan-parishad-pa-deo-ldc-stenographer-2026",
       "category": "answerKeys",
       "slug": "bihar-vidhan-parishad-pa-deo-ldc-stenographer-2026",
       "publishedDate": "14 May 2026"
-    },
-    {
-      "title": "EMRS Teaching & Non-Teaching Tier-II Answer Key 2026",
-      "url": "https://www.sarkariexam.com/emrs-teaching-non-teaching-2025",
-      "category": "answerKeys",
-      "slug": "emrs-teaching-non-teaching-2025",
-      "publishedDate": "13 May 2026"
     },
     {
       "title": "KVS NVS Teaching & Non-Teaching Tier-II Answer Key 2026",
@@ -4713,13 +3880,6 @@ export const scrapedData = {
       "publishedDate": ""
     },
     {
-      "title": "RRB NTPC Graduate Level Syllabus 2024",
-      "url": "https://www.resultbharat.com/RRB-NTPC-Graduate-Level-CEN-05_2024.html",
-      "category": "documents",
-      "slug": "RRB-NTPC-Graduate-Level-CEN-05_2024",
-      "publishedDate": ""
-    },
-    {
       "title": "Jute Corporation JCI Various Post Syllabus 2024",
       "url": "https://www.resultbharat.com/JIC-Various-90-Post_2024.html",
       "category": "documents",
@@ -4767,13 +3927,6 @@ export const scrapedData = {
       "category": "documents",
       "slug": "HSSC_Haryana-Police-Constable_Advt-No-14_15-2024",
       "publishedDate": "27 September 2024  |  06:11 PM"
-    },
-    {
-      "title": "RRB Paramedical Syllabus 2024",
-      "url": "https://www.resultbharat.com/RRB-Paramedical-Staff-CEN-04-2024.html",
-      "category": "documents",
-      "slug": "RRB-Paramedical-Staff-CEN-04-2024",
-      "publishedDate": ""
     },
     {
       "title": "RSMSSB CET Graduate Level Syllabus 2024",
@@ -5000,8 +4153,8 @@ export const scrapedData = {
       "isExpired": true
     },
     "india-post-gds-2026": {
-      "lastDate": "14 February 2026",
-      "isExpired": false
+      "lastDate": "14/02/2026",
+      "isExpired": true
     },
     "upsssc-technical-asst-07-2024": {
       "lastDate": "31/05/2024",
@@ -5016,8 +4169,8 @@ export const scrapedData = {
       "isExpired": true
     },
     "nta-ncet-2026": {
-      "lastDate": "10 March 2026",
-      "isExpired": false
+      "lastDate": "10/03/2026",
+      "isExpired": true
     },
     "bihar-iti-cat": {
       "lastDate": "25/04/2026",
@@ -5076,12 +4229,12 @@ export const scrapedData = {
       "isExpired": true
     },
     "upsc-ies-iss-2026": {
-      "lastDate": "03 March 2026",
-      "isExpired": false
+      "lastDate": "03/03/2026",
+      "isExpired": true
     },
     "upsc-geo-scientist-2026": {
-      "lastDate": "23 September 2025",
-      "isExpired": false
+      "lastDate": "23/09/2025",
+      "isExpired": true
     },
     "up-gnm-get-2026": {
       "lastDate": "02/06/2026",
@@ -5112,8 +4265,8 @@ export const scrapedData = {
       "isExpired": true
     },
     "nta-ugc-net-june-2026": {
-      "lastDate": "24 May 2026",
-      "isExpired": false
+      "lastDate": "24/05/2026",
+      "isExpired": true
     },
     "upsssc-forest-10-2023": {
       "lastDate": "10/10/2023",
@@ -5127,18 +4280,14 @@ export const scrapedData = {
       "isExpired": false
     },
     "nta-neet-ug-2026": {
-      "lastDate": "11 March 2026",
-      "isExpired": false
+      "lastDate": "11/03/2026",
+      "isExpired": true
     },
     "sgpgi-nursing-officer": {
       "isExpired": false
     },
     "upsssc-pharmacist-01-2026": {
       "lastDate": "29/03/2026",
-      "isExpired": true
-    },
-    "rrb-ntpc-ug-07-2025": {
-      "lastDate": "04/12/2025",
       "isExpired": true
     },
     "uppsc-lt-grade-teacher-2025": {
@@ -5154,8 +4303,8 @@ export const scrapedData = {
       "isExpired": true
     },
     "uppsc-gic-lecturer-2025": {
-      "lastDate": "12 September 2025",
-      "isExpired": false
+      "lastDate": "12/09/2025",
+      "isExpired": true
     },
     "bpsc-auditor-09-2026": {
       "lastDate": "26/02/2026",
@@ -5295,7 +4444,7 @@ export const scrapedData = {
       "isExpired": true
     },
     "ssc-cgl-2026": {
-      "lastDate": "22 June 2026",
+      "lastDate": "22/06/2026",
       "isExpired": false
     },
     "afcat-02-2026": {
@@ -5315,12 +4464,12 @@ export const scrapedData = {
       "isExpired": true
     },
     "nta-jipmat-2026": {
-      "lastDate": "10 May 2026",
-      "isExpired": false
+      "lastDate": "10/05/2026",
+      "isExpired": true
     },
     "nta-cuet-ug-2026": {
-      "lastDate": "04 February 2026",
-      "isExpired": false
+      "lastDate": "04/02/2026",
+      "isExpired": true
     },
     "bihar-2yr-bed-2": {
       "lastDate": "18/05/2026",
@@ -5351,7 +4500,7 @@ export const scrapedData = {
       "isExpired": true
     },
     "muit-admissions-2026": {
-      "lastDate": "15 July 2026",
+      "lastDate": "15/07/2026",
       "isExpired": false
     },
     "updeled-admissions-2": {
@@ -5392,20 +4541,6 @@ export const scrapedData = {
       "lastDate": "15/05/2026",
       "isExpired": true
     },
-    "latestresult_more": {
-      "isExpired": false
-    },
-    "RRB-NTPC-Graduate-Level-CEN-06-2025": {
-      "lastDate": "21 October 2025",
-      "isExpired": false
-    },
-    "RRB-ALP-2025": {
-      "lastDate": "12 April 2025",
-      "isExpired": false
-    },
-    "UPSC-CAPF-AC-Exam_2024": {
-      "isExpired": false
-    },
     "BRABU-UG-Admission-2026-30": {
       "lastDate": "04 May 2026",
       "isExpired": false
@@ -5436,15 +4571,6 @@ export const scrapedData = {
       "lastDate": "12 January 2026",
       "isExpired": false
     },
-    "India-Post-GDS-2026": {
-      "isExpired": false
-    },
-    "UPSSSC-BCG-Technician-2024": {
-      "isExpired": false
-    },
-    "UPSSSC-Technical-Assistant-Group-C_07-2024": {
-      "isExpired": false
-    },
     "DDA-Group-A-B-C-Post-2025": {
       "lastDate": "06 October 2025",
       "isExpired": false
@@ -5457,10 +4583,6 @@ export const scrapedData = {
     },
     "SSC-Delhi-Police-HCM-2025": {
       "lastDate": "29 September 2025",
-      "isExpired": false
-    },
-    "NTA-NCET-2026": {
-      "lastDate": "12 February 2026",
       "isExpired": false
     },
     "RSSB-REET-RTET-2025": {
@@ -5493,14 +4615,7 @@ export const scrapedData = {
     "UPSESSB-TGT_PGT-4163-Post-2022": {
       "isExpired": false
     },
-    "UPSSSC-Asst-Boring-Technician-04-2026": {
-      "isExpired": false
-    },
     "UKPSC-PCS-Upper-2024": {
-      "isExpired": false
-    },
-    "IIT-JEE-Advanced-2026": {
-      "lastDate": "23 April 2026",
       "isExpired": false
     },
     "HPSC-HCS_2026": {
@@ -5511,28 +4626,8 @@ export const scrapedData = {
       "lastDate": "15 April 2026",
       "isExpired": false
     },
-    "RRB-Technician-02-2025": {
-      "lastDate": "28 June 2025",
-      "isExpired": false
-    },
-    "RRB-Paramedical-Staff-CEN-03-2025": {
-      "lastDate": "09 August 2025",
-      "isExpired": false
-    },
     "BSEB-Exam-2026": {
       "lastDate": "06 March 2026",
-      "isExpired": false
-    },
-    "UP-Polytechnic-JEECUP-2026": {
-      "lastDate": "15 January 2026",
-      "isExpired": false
-    },
-    "NTA-JIPMAT-2026": {
-      "lastDate": "16 April 2026",
-      "isExpired": false
-    },
-    "NTA-CUET-UG-2026": {
-      "lastDate": "23 February 2026",
       "isExpired": false
     },
     "answerkey_more": {
@@ -5544,10 +4639,6 @@ export const scrapedData = {
     },
     "Jharkhand-BEd-2026": {
       "lastDate": "25 February 2026",
-      "isExpired": false
-    },
-    "UPPSC-Asst-Professor-2025": {
-      "lastDate": "04 September 2025",
       "isExpired": false
     },
     "JSSC-Excise-Constable-JECCE-2023": {
@@ -5589,14 +4680,6 @@ export const scrapedData = {
       "lastDate": "29 April 2026",
       "isExpired": false
     },
-    "UPSC-IES-ISS-2026": {
-      "lastDate": "11 February 2026",
-      "isExpired": false
-    },
-    "UPSC-Engineering-Services-2026": {
-      "lastDate": "26 September 2025",
-      "isExpired": false
-    },
     "Admitcard_more": {
       "isExpired": false
     },
@@ -5609,10 +4692,6 @@ export const scrapedData = {
     },
     "CSBC-Constable-GD-01-2026": {
       "lastDate": "06 February 2026",
-      "isExpired": false
-    },
-    "NTA-UGC-NET-JRF-June-2026": {
-      "lastDate": "29 April 2026",
       "isExpired": false
     },
     "UPSSSC-Forest-Guard_Wild-Guard-709_Post-2023": {
@@ -5633,14 +4712,6 @@ export const scrapedData = {
       "lastDate": "27 August 2025",
       "isExpired": false
     },
-    "BPSC-Stenographer-01-2026": {
-      "lastDate": "12 January 2026",
-      "isExpired": false
-    },
-    "UPPSC-Lecturer-GIC-2025": {
-      "lastDate": "12 August 2025",
-      "isExpired": false
-    },
     "NTA-NEET-UG-2026": {
       "lastDate": "08 February 2026",
       "isExpired": false
@@ -5651,10 +4722,6 @@ export const scrapedData = {
     },
     "UP-Police-SI-2025": {
       "lastDate": "12 August 2025",
-      "isExpired": false
-    },
-    "RBI-Grade-B-2026": {
-      "lastDate": "29 April 2026",
       "isExpired": false
     },
     "UP-Police-Constable-2025-26": {
@@ -5712,10 +4779,6 @@ export const scrapedData = {
       "lastDate": "21 September 2024",
       "isExpired": false
     },
-    "RRB-NTPC-Graduate-Level-CEN-05_2024": {
-      "lastDate": "14 September 2024",
-      "isExpired": false
-    },
     "JIC-Various-90-Post_2024": {
       "lastDate": "10 September 2024",
       "isExpired": false
@@ -5739,9 +4802,6 @@ export const scrapedData = {
     "HSSC_Haryana-Police-Constable_Advt-No-14_15-2024": {
       "isExpired": false
     },
-    "RRB-Paramedical-Staff-CEN-04-2024": {
-      "isExpired": false
-    },
     "RSMSSB-CET-Graduate-Level-2024": {
       "isExpired": false
     },
@@ -5758,10 +4818,6 @@ export const scrapedData = {
     },
     "JSSC-Field-Worker-JFWCE-2024": {
       "lastDate": "01 August 2024",
-      "isExpired": false
-    },
-    "RRB-ALP-CEN-No-01-2026": {
-      "lastDate": "15 May 2026",
       "isExpired": false
     },
     "AIIMS-CRE-5-Recruitment-2026": {
@@ -5788,14 +4844,6 @@ export const scrapedData = {
       "lastDate": "19 May 2026",
       "isExpired": false
     },
-    "RPSC-RAS-2026": {
-      "lastDate": "04 June 2026",
-      "isExpired": false
-    },
-    "CISF-ASI-Paramedical-Staff-2026": {
-      "lastDate": "08 June 2026",
-      "isExpired": false
-    },
     "RPSC-APO-2026": {
       "lastDate": "08 June 2026",
       "isExpired": false
@@ -5820,10 +4868,6 @@ export const scrapedData = {
       "lastDate": "19 May 2026",
       "isExpired": false
     },
-    "UPSSSC-Excise-Constable-08-2026": {
-      "lastDate": "04 June 2026",
-      "isExpired": false
-    },
     "BSNL-JTO-2026": {
       "lastDate": "04 June 2026",
       "isExpired": false
@@ -5837,10 +4881,6 @@ export const scrapedData = {
       "isExpired": false
     },
     "UPSC-NDA-II-Exam-2026": {
-      "lastDate": "20 May 2026",
-      "isExpired": false
-    },
-    "UPSC-CDS-II-Exam-2026": {
       "lastDate": "20 May 2026",
       "isExpired": false
     },
@@ -5858,10 +4898,6 @@ export const scrapedData = {
     },
     "Indian-Navy-12th-BTech-January-2027": {
       "lastDate": "18 June 2026",
-      "isExpired": false
-    },
-    "NTA-CSIR-UGC-NET-June-2026": {
-      "lastDate": "27 May 2026",
       "isExpired": false
     },
     "RSSB-Computer-Instructor-2026": {
@@ -5892,10 +4928,6 @@ export const scrapedData = {
       "lastDate": "19 May 2026",
       "isExpired": false
     },
-    "RRB-Technician-CEN-02-2026": {
-      "lastDate": "30 June 2026",
-      "isExpired": false
-    },
     "Railway-SECR-Bilaspur-Apprentice-2026": {
       "lastDate": "12 May 2026",
       "isExpired": false
@@ -5920,16 +4952,8 @@ export const scrapedData = {
       "lastDate": "10 June 2026",
       "isExpired": false
     },
-    "UP-DELEd-2026": {
-      "lastDate": "15 June 2026",
-      "isExpired": false
-    },
     "MPESB-PNST-2026": {
       "lastDate": "09 June 2026",
-      "isExpired": false
-    },
-    "MPESB-ADDET-2026": {
-      "lastDate": "05 June 2026",
       "isExpired": false
     },
     "Purnea-University-UG-Admission-2026-30": {
@@ -6013,15 +5037,6 @@ export const scrapedData = {
     "ib-security-assistant-motor-transport-result-2025-26-out": {
       "isExpired": false
     },
-    "rrb-alp-cbt-1-result-2026-out": {
-      "isExpired": false
-    },
-    "rrb-ntpc-cbt-1-result-2026-out": {
-      "isExpired": false
-    },
-    "rrb-ntpc-cbt-1-scorecard-2026-out": {
-      "isExpired": false
-    },
     "rrb-group-d-result-2026-date-check-question-paper-analysis": {
       "isExpired": false
     },
@@ -6029,18 +5044,6 @@ export const scrapedData = {
       "isExpired": false
     },
     "railway-rrb-ntpc-graduate-result-2026-out": {
-      "isExpired": false
-    },
-    "rrb-paramedical-staff-result-2026-out": {
-      "isExpired": false
-    },
-    "rrb-technician-grade-3-result-2026-out": {
-      "isExpired": false
-    },
-    "rrb-ntpc-ug-results-2025-out": {
-      "isExpired": false
-    },
-    "rrb-ntpc-ug-final-result-2026-out": {
       "isExpired": false
     },
     "bank-of-baroda-lbo-result-2025-out": {
@@ -6149,9 +5152,6 @@ export const scrapedData = {
       "isExpired": false
     },
     "uphesc-assistant-professor-result-2026-out": {
-      "isExpired": false
-    },
-    "reet-mains-result-2026-out-pdf-link-active": {
       "isExpired": false
     },
     "up-pgt-result-2026-out": {
@@ -6332,9 +5332,6 @@ export const scrapedData = {
     "punjab-pcs-result-2025-26-out-at-ppsc-gov-in": {
       "isExpired": false
     },
-    "aiims-cre-notification-2026-out": {
-      "isExpired": false
-    },
     "rrb-alp-cen-01-2026": {
       "lastDate": "14 June 2026",
       "isExpired": false
@@ -6351,67 +5348,23 @@ export const scrapedData = {
       "lastDate": "29 July 2026",
       "isExpired": false
     },
-    "upsssc-excise-constable-2026": {
-      "lastDate": "24 June 2026",
-      "isExpired": false
-    },
     "bpsc-school-teacher-tre-4-0-2026": {
-      "isExpired": false
-    },
-    "up-cnet-2026": {
-      "lastDate": "20 May 2026",
-      "isExpired": false
-    },
-    "railway-rrb-alp-advt-01-2025": {
-      "lastDate": "19 May 2025",
       "isExpired": false
     },
     "upsc-cpf-assistant-commandant-2024": {
       "lastDate": "14 May 2024",
       "isExpired": false
     },
-    "brabu-ug-admission-2026-30": {
-      "lastDate": "25 May 2026",
-      "isExpired": false
-    },
-    "bhu-chs-set-2026": {
-      "lastDate": "20 March 2026",
-      "isExpired": false
-    },
     "dcece-bihar-polytechnic-2026": {
       "lastDate": "27 April 2026",
-      "isExpired": false
-    },
-    "up-polytechnic-jeecup-2026": {
-      "lastDate": "10 May 2026",
       "isExpired": false
     },
     "ofss-bihar-11th-admissions-2026": {
       "lastDate": "25 April 2026",
       "isExpired": false
     },
-    "uppsc-pcs-2024": {
-      "lastDate": "29 January 2024",
-      "isExpired": false
-    },
     "bsf-constable-tradesman-2025": {
       "lastDate": "23 August 2025",
-      "isExpired": false
-    },
-    "uphesc-assistant-professor-2022": {
-      "lastDate": "29 August 2022",
-      "isExpired": false
-    },
-    "mpesb-group-5-paramedical-post-2026": {
-      "lastDate": "30 March 2026",
-      "isExpired": false
-    },
-    "upsssc-bcg-technician-2024": {
-      "lastDate": "07 August 2024",
-      "isExpired": false
-    },
-    "upsssc-technical-assistant-group-c-2025": {
-      "lastDate": "31 May 2024",
       "isExpired": false
     },
     "dda-group-a-b-c-post-2025": {
@@ -6419,27 +5372,10 @@ export const scrapedData = {
       "isExpired": false
     },
     "dsssb-various-post-result-2026": {
-      "lastDate": "05 May 2025",
       "isExpired": false
     },
     "ssc-mts-havaldar-2026": {
       "lastDate": "24 July 2025",
-      "isExpired": false
-    },
-    "rssb-livestock-assistant-2025": {
-      "lastDate": "01 March 2025",
-      "isExpired": false
-    },
-    "rrb-ntpc-102-inter-level-2025": {
-      "lastDate": "04 December 2025",
-      "isExpired": false
-    },
-    "rrb-ntpc-graduate-level-2026": {
-      "lastDate": "27 November 2025",
-      "isExpired": false
-    },
-    "upsc-engineering-services-pre-2026": {
-      "lastDate": "16 October 2025",
       "isExpired": false
     },
     "nta-swayam-2026": {
@@ -6450,28 +5386,12 @@ export const scrapedData = {
       "lastDate": "11 January 2026",
       "isExpired": false
     },
-    "up-police-si-2025": {
-      "lastDate": "11 September 2025",
-      "isExpired": false
-    },
     "hssc-haryana-police-constable-2026": {
       "lastDate": "19 March 2026",
       "isExpired": false
     },
-    "uppsc-veterinary-officer-2025": {
-      "lastDate": "22 January 2026",
-      "isExpired": false
-    },
-    "allahabad-university-pgat-admissions-2026": {
-      "lastDate": "25 May 2026",
-      "isExpired": false
-    },
     "bihar-police-csbc-constable-gd-2026": {
       "lastDate": "05 March 2026",
-      "isExpired": false
-    },
-    "indian-army-agniveer-cee-2026": {
-      "lastDate": "10 April 2026",
       "isExpired": false
     },
     "up-gnm-entrance-exam-upget-2026": {
@@ -6514,24 +5434,8 @@ export const scrapedData = {
       "lastDate": "19 May 2026",
       "isExpired": false
     },
-    "upsssc-vidhan-bhawan-guard-fire-guard-2026": {
-      "lastDate": "29 June 2026",
-      "isExpired": false
-    },
     "coal-india-cil-management-trainee-2026": {
       "lastDate": "12 May 2026",
-      "isExpired": false
-    },
-    "cisf-asi-paramedical-staff-2026": {
-      "lastDate": "07 July 2026",
-      "isExpired": false
-    },
-    "rpsc-apo-2026": {
-      "lastDate": "07 July 2026",
-      "isExpired": false
-    },
-    "mppsc-assistant-professor-2026": {
-      "lastDate": "26 June 2026",
       "isExpired": false
     },
     "nalco-non-executive-2026": {
@@ -6542,20 +5446,8 @@ export const scrapedData = {
       "lastDate": "21 July 2025",
       "isExpired": false
     },
-    "ctet-september-2026": {
-      "lastDate": "10 June 2026",
-      "isExpired": false
-    },
-    "hindustan-copper-limited-hcl-executive-2026": {
-      "lastDate": "25 June 2026",
-      "isExpired": false
-    },
     "up-board-class-10th-12th-2026": {
       "lastDate": "27 June 2026",
-      "isExpired": false
-    },
-    "upsssc-junior-assistant-advt-12-2024": {
-      "lastDate": "22 January 2025",
       "isExpired": false
     },
     "bihar-cet-b-ed-2026": {
@@ -6570,10 +5462,6 @@ export const scrapedData = {
       "lastDate": "19 September 2025",
       "isExpired": false
     },
-    "vksu-ara-ug-admission-2026-30": {
-      "lastDate": "16 June 2026",
-      "isExpired": false
-    },
     "up-deled-admission-2026": {
       "lastDate": "08 July 2026",
       "isExpired": false
@@ -6582,16 +5470,8 @@ export const scrapedData = {
       "lastDate": "02 February 2026",
       "isExpired": false
     },
-    "upsssc-pharmacist-2026": {
-      "lastDate": "31 March 2026",
-      "isExpired": false
-    },
     "jharkhand-jhtet-2026": {
       "lastDate": "20 June 2026",
-      "isExpired": false
-    },
-    "upsssc-assistant-boring-technician-2026": {
-      "lastDate": "05 May 2026",
       "isExpired": false
     },
     "bpsc-72nd-2026": {
@@ -6600,10 +5480,6 @@ export const scrapedData = {
     },
     "uppsc-assistant-professor-2025": {
       "lastDate": "06 October 2025",
-      "isExpired": false
-    },
-    "up-tgt-2022": {
-      "lastDate": "10 July 2022",
       "isExpired": false
     },
     "bihar-bssc-office-attendant-2022": {
@@ -6621,9 +5497,6 @@ export const scrapedData = {
     "aadhar-card-print-verification-correction-form": {
       "isExpired": false
     },
-    "pan-card-registration-correction-other-service-2026": {
-      "isExpired": false
-    },
     "bihar-caste-income-residence-certificate-online-form": {
       "isExpired": false
     },
@@ -6634,25 +5507,13 @@ export const scrapedData = {
       "isExpired": false
     },
     "railway-rrb-technician-exam-date-admit-card-2024": {
-      "lastDate": "29 December 2024",
       "isExpired": false
     },
     "rajasthan-police-constable-recruitment": {
       "lastDate": "27 August 2023",
       "isExpired": false
     },
-    "rrb-ntpc-vacancy-2024": {
-      "isExpired": false
-    },
     "sewadar-chowkidar-recruitment-2024": {
-      "isExpired": false
-    },
-    "upsssc-auditor-assistant-accountant-2026": {
-      "lastDate": "03 August 2026",
-      "isExpired": false
-    },
-    "railway-secr-nagpur-apprentices-2026": {
-      "lastDate": "18 June 2026",
       "isExpired": false
     },
     "nfl-field-representative-2026": {
@@ -6727,18 +5588,6 @@ export const scrapedData = {
       "lastDate": "28 April 2024",
       "isExpired": false
     },
-    "bihar-vidhan-parishad-2023": {
-      "lastDate": "21 August 2023",
-      "isExpired": false
-    },
-    "rajasthan-ptet-2026": {
-      "lastDate": "20 March 2026",
-      "isExpired": false
-    },
-    "sgpgi-nursing-officer-and-non-teaching-post-2025": {
-      "lastDate": "31 July 2025",
-      "isExpired": false
-    },
     "bsf-hcm-asi-steno-2024": {
       "lastDate": "08 July 2024",
       "isExpired": false
@@ -6747,26 +5596,12 @@ export const scrapedData = {
       "lastDate": "10 July 2022",
       "isExpired": false
     },
-    "rbi-grade-b-2026": {
-      "lastDate": "20 May 2026",
-      "isExpired": false
-    },
     "bihar-bpsc-auditor-2026": {
       "lastDate": "26 February 2026",
       "isExpired": false
     },
-    "haryana-htet-2026": {
-      "lastDate": "05 January 2026",
-      "isExpired": false
-    },
-    "upsssc-exam-calendar-2026": {
-      "isExpired": false
-    },
     "upsssc-up-pollution-control-board-various-post-2026": {
       "lastDate": "29 April 2026",
-      "isExpired": false
-    },
-    "dsssb-various-post-2025": {
       "isExpired": false
     },
     "bsnl-senior-executive-trainee-set-2026": {
@@ -6777,16 +5612,8 @@ export const scrapedData = {
       "lastDate": "24 January 2026",
       "isExpired": false
     },
-    "rrb-section-controller-2025": {
-      "lastDate": "14 October 2025",
-      "isExpired": false
-    },
     "mpesb-forest-guard-jail-prahari-2026": {
       "lastDate": "30 April 2026",
-      "isExpired": false
-    },
-    "indian-navy-agniveer-apprentices-inet-2026": {
-      "lastDate": "29 June 2026",
       "isExpired": false
     },
     "delhi-dsssb-various-post-2026": {
@@ -6799,22 +5626,6 @@ export const scrapedData = {
     },
     "allahabad-high-court-research-associates-2026": {
       "lastDate": "20 June 2026",
-      "isExpired": false
-    },
-    "rpsc-school-lecturer-special-2026": {
-      "lastDate": "30 June 2026",
-      "isExpired": false
-    },
-    "railway-rrb-technician-2025": {
-      "lastDate": "07 August 2025",
-      "isExpired": false
-    },
-    "indian-navy-102-b-tech-cadet-entry-january-2027": {
-      "lastDate": "18 June 2026",
-      "isExpired": false
-    },
-    "nta-csir-ugc-net-june-2026": {
-      "lastDate": "19 June 2026",
       "isExpired": false
     },
     "bihar-police-csbc-constable-2025": {
@@ -6836,10 +5647,6 @@ export const scrapedData = {
       "lastDate": "04 August 2025",
       "isExpired": false
     },
-    "ssc-delhi-police-hcm-2025": {
-      "lastDate": "20 October 2025",
-      "isExpired": false
-    },
     "rssb-reet-mains-upper-teacher-2025": {
       "lastDate": "06 December 2025",
       "isExpired": false
@@ -6848,16 +5655,8 @@ export const scrapedData = {
       "lastDate": "27 April 2026",
       "isExpired": false
     },
-    "bihar-iti-cat-2026": {
-      "lastDate": "27 April 2026",
-      "isExpired": false
-    },
     "bihar-vidhan-parishad-driver-office-attendant-2025": {
       "lastDate": "20 October 2025",
-      "isExpired": false
-    },
-    "nta-nift-2025": {
-      "lastDate": "13 January 2026",
       "isExpired": false
     },
     "ib-acio-grade-ii-executive-2025": {
@@ -6882,18 +5681,6 @@ export const scrapedData = {
     },
     "ibps-rrb-xiv-officer-scale-i-ii-iii-2026": {
       "lastDate": "28 September 2025",
-      "isExpired": false
-    },
-    "iit-jee-advanced-2026": {
-      "lastDate": "02 May 2026",
-      "isExpired": false
-    },
-    "rrb-paramedical-staff-cen-no-03-2025": {
-      "lastDate": "18 September 2025",
-      "isExpired": false
-    },
-    "bihar-bceceb-senior-resident-tutor-2026": {
-      "lastDate": "30 April 2026",
       "isExpired": false
     },
     "upsssc-junior-assistant-2025": {
@@ -6937,14 +5724,6 @@ export const scrapedData = {
     },
     "upsssc-forest-guard-wild-life-guard-2026": {
       "lastDate": "20 July 2026",
-      "isExpired": false
-    },
-    "upsssc-havildar-instructor-2026": {
-      "lastDate": "09 July 2026",
-      "isExpired": false
-    },
-    "upsssc-platoon-commander-block-organizer-2026": {
-      "lastDate": "06 July 2026",
       "isExpired": false
     },
     "mppsc-assistant-town-planner-2026": {
@@ -7064,20 +5843,12 @@ export const scrapedData = {
       "lastDate": "24 April 2025",
       "isExpired": false
     },
-    "ahc-research-associates-recruitment-2025-start": {
-      "lastDate": "01 April 2025",
-      "isExpired": false
-    },
     "upsc-assistant-professor-recruitment-2025": {
       "lastDate": "27 March 2025",
       "isExpired": false
     },
     "union-bank-of-india-apprentice-recruitment-2025-date-extend": {
       "lastDate": "12 March 2025",
-      "isExpired": false
-    },
-    "mppsc-assistant-professor-recruitment-2025": {
-      "lastDate": "26 March 2025",
       "isExpired": false
     },
     "indian-army-ncc-special-entry-scheme-58th-course-recruitment-2025-start": {
@@ -7099,16 +5870,8 @@ export const scrapedData = {
       "lastDate": "18 July 2025",
       "isExpired": false
     },
-    "ssc-delhi-police-driver-2026": {
-      "lastDate": "15 October 2025",
-      "isExpired": false
-    },
     "upsc-civil-services-ias-ifs-pre-2026": {
       "lastDate": "27 February 2026",
-      "isExpired": false
-    },
-    "upsssc-up-lekhpal-2026": {
-      "lastDate": "28 January 2026",
       "isExpired": false
     },
     "ncert-group-a-b-c-2026": {
@@ -7118,16 +5881,8 @@ export const scrapedData = {
     "dsssb-various-post-exam-answer-key-2026": {
       "isExpired": false
     },
-    "mpesb-nursing-officer-sister-tutor-2026": {
-      "lastDate": "20 April 2026",
-      "isExpired": false
-    },
     "bihar-vidhan-parishad-pa-deo-ldc-stenographer-2026": {
       "lastDate": "05 January 2026",
-      "isExpired": false
-    },
-    "emrs-teaching-non-teaching-2025": {
-      "lastDate": "28 October 2025",
       "isExpired": false
     },
     "kvs-nvs-teaching-non-teaching-2026": {
@@ -7215,5 +5970,5 @@ export const scrapedData = {
       "isExpired": false
     }
   },
-  "fetchedAt": "2026-06-14T12:14:01.993Z"
+  "fetchedAt": "2026-06-14T12:35:16.182Z"
 };

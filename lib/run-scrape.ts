@@ -29,13 +29,37 @@ async function main() {
   }
 
   // Deduplicate by URL
-  const seen = new Set<string>();
-  const uniqueItems: ScrapedItem[] = [];
+  const urlSeen = new Set<string>();
+  const urlDeduped: ScrapedItem[] = [];
   for (const item of allItems) {
-    if (!seen.has(item.url)) {
-      seen.add(item.url);
-      uniqueItems.push(item);
+    if (!urlSeen.has(item.url)) {
+      urlSeen.add(item.url);
+      urlDeduped.push(item);
     }
+  }
+
+  // Also deduplicate by normalized title (same exam from different sources)
+  function titleKey(title: string): string {
+    let t = title.toLowerCase()
+      .replace(/^\[.*?\]\s*/, "") // remove [domain.com] prefix
+      .replace(/cen\s*\.?\s*(?:no\.?)?\s*[\d\/\-]+\s*/g, "") // CEN 01/2025, CEN.No.02/2025
+      .replace(/advt\s*[\d\/\-]+\s*/g, "") // advt 01-2026
+      .replace(/\bcbt\s*[-i]*\s*\d*\s*/g, "") // cbt, cbt 1, cbt-i, cbti
+      .replace(/\bphase\s*\d+\s*/g, "") // phase 1, phase 2
+      .replace(/\d{4}\s*/g, "") // years 2024-2026
+      // Remove only truly generic/SEO words; keep exam identifiers (alp, ntpc, cgl, graduate, ug etc.)
+      .replace(/\b(result|online\s*form|notification|recruitment|admission|counselling|apply|download|out|pdf|link|active|check|view|merit\s*list|score\s*card|cut\s*off|list|zone|zonal|wise|new|released|declared|announced|available|update|status|posts|post|the|and|for|of|to|in|by|date|details|information|notice|page|railway|exam|level|grade|batch|year|sarkari|answer\s*key|admit\s*card|exam\s*date|syllabus|vacancy|scholarship|scorecard|cutoff|final|marks|staff|gr|iii|ii|ug|undergraduate)\b/g, "");
+    t = t.replace(/[^a-z\s]+/g, " "); // remove all remaining non-alpha chars
+    t = t.replace(/\s+/g, " ").trim();
+    return t.slice(0, 60);
+  }
+  const titleSeen = new Set<string>();
+  const uniqueItems: ScrapedItem[] = [];
+  for (const item of urlDeduped) {
+    const key = titleKey(item.title);
+    if (key.length > 3 && titleSeen.has(key)) continue;
+    if (key.length > 3) titleSeen.add(key);
+    uniqueItems.push(item);
   }
   console.log(`Total unique items: ${uniqueItems.length}`);
 
