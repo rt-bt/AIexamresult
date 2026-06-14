@@ -92,8 +92,8 @@ function categorizeTitle(title: string): string {
   if (lower.includes("result") && !lower.includes("online form") && !lower.includes("exam date") && !lower.includes("admit card")) return "results";
   if (lower.includes("vacancy") || lower.includes("online form") || lower.includes("apply") || lower.includes("recruitment") || lower.includes("apprentice") || lower.includes("posts") || lower.includes("notification")) return "latestJobs";
   if (lower.includes("admission") || lower.includes("counselling") || lower.includes("counseling") || lower.includes("schedule")) return "admissions";
-  if (lower.includes("syllabus") || lower.includes("exam pattern") || lower.includes("documents")) return "documents";
-  return "results";
+  if (lower.includes("syllabus") || lower.includes("exam pattern") || lower.includes("documents") || lower.includes("download")) return "documents";
+  return "latestJobs";
 }
 
 export async function scrapeSarkariExam(): Promise<ScrapedItem[]> {
