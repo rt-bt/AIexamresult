@@ -172,7 +172,7 @@ export default function ToolsPage() {
       <Header />
       <main className="min-h-[calc(100dvh-4rem)] bg-gradient-to-br from-gray-50 to-teal-50 pb-20 lg:pb-10">
         <div className="container-page py-8 sm:py-12">
-          <div className="mx-auto max-w-3xl">
+          <div className="mx-auto max-w-7xl">
             <div className="mb-8 text-center">
               <h1 className="text-3xl sm:text-4xl font-bold text-gray-900">Free Tools</h1>
               <p className="mt-2 text-gray-500 text-sm sm:text-base">
