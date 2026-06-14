@@ -3,10 +3,10 @@
 import { Search, Sparkles, Languages, ChevronDown } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { cn } from "@/lib/utils";
 import { Logo } from "@/components/site/logo";
-import { featuredResults, latestJobs } from "@/lib/data";
+import { sectionItems } from "@/lib/data";
 import { useLang } from "@/lib/hooks/use-lang";
 import { MobileBottomNav } from "@/components/site/mobile-bottom-nav";
 import { LanguageSelector } from "@/components/site/language-selector";
@@ -37,10 +37,14 @@ const nav: [string, string, [string, string][]?][] = [
   ["About Us", "/about"]
 ];
 
-const tickerItems = [
-  ...featuredResults.slice(0, 5),
-  ...latestJobs.slice(0, 5),
-];
+function allTickerItems() {
+  const all = Object.values(sectionItems).flat();
+  return all.sort((a, b) => {
+    const da = a.date ? new Date(a.date.split("/").reverse().join("-") || a.date.split(" ").slice(0, 3).join(" ")).getTime() : 0;
+    const db = b.date ? new Date(b.date.split("/").reverse().join("-") || b.date.split(" ").slice(0, 3).join(" ")).getTime() : 0;
+    return db - da;
+  }).slice(0, 12);
+}
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -136,7 +140,7 @@ export function Header() {
             </span>
             <div className="overflow-hidden">
               <div className="animate-marquee whitespace-nowrap">
-                {tickerItems.map((item, i) => (
+                {allTickerItems().map((item, i) => (
                   <Link key={i} href={item.slug ? `/post/${item.slug}` : "#"} className="mx-4 inline text-white/80 transition hover:text-white">
                     {item.title}
                   </Link>
