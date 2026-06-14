@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Header } from "@/components/site/header";
 import { Footer } from "@/components/site/footer";
 import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
+import { ShieldCheck, BookOpen, Train, Landmark, Swords, GraduationCap, Building2, ScrollText, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "All Exams 2026 - SSC, UPSC, Railway, Banking, State Jobs",
@@ -10,7 +10,9 @@ export const metadata: Metadata = {
   alternates: { canonical: "/exam" },
 };
 
-const examGroups: Array<{ title: string; slug: string; description: string }> = [
+interface Exam { title: string; slug: string; description: string }
+
+const examGroups: Exam[] = [
   { title: "SSC (Staff Selection Commission)", slug: "ssc", description: "CGL, CHSL, MTS, GD Constable, JE, CPO, Stenographer" },
   { title: "SSC CGL", slug: "ssc-cgl", description: "Combined Graduate Level exam" },
   { title: "SSC CHSL", slug: "ssc-chsl", description: "Combined Higher Secondary Level exam" },
@@ -39,15 +41,15 @@ const examGroups: Array<{ title: string; slug: string; description: string }> = 
   { title: "UP Board Result", slug: "up-board-result", description: "UP board exam results" },
 ];
 
-const examGroupsStructured = [
-  { label: "SSC Exams", exams: examGroups.filter(e => e.slug.startsWith("ssc")) },
-  { label: "UPSC Exams", exams: examGroups.filter(e => e.slug.startsWith("upsc")) },
-  { label: "Railway Exams", exams: examGroups.filter(e => e.slug.startsWith("rrb") || e.slug === "railway") },
-  { label: "Banking Exams", exams: examGroups.filter(e => ["ibps", "sbi", "rbi"].some(p => e.slug.startsWith(p))) },
-  { label: "Defence Exams", exams: examGroups.filter(e => ["indian-army", "indian-navy", "indian-airforce", "upsc-nda", "upsc-cds"].includes(e.slug)) },
-  { label: "Teaching Exams", exams: examGroups.filter(e => e.slug === "ctet" || e.slug.startsWith("teaching")) },
-  { label: "State Jobs", exams: examGroups.filter(e => e.slug.includes("govt-jobs") || e.slug.includes("state")) },
-  { label: "Board Results", exams: examGroups.filter(e => e.slug.includes("result") || e.slug.includes("board")) },
+const categories: { label: string; icon: typeof ShieldCheck; gradient: string; badge: string; filter: (e: Exam) => boolean }[] = [
+  { label: "SSC Exams", icon: ShieldCheck, gradient: "from-blue-600 to-blue-700", badge: "Staff Selection Commission", filter: e => e.slug.startsWith("ssc") },
+  { label: "UPSC Exams", icon: BookOpen, gradient: "from-amber-600 to-orange-600", badge: "Union Public Service Commission", filter: e => e.slug.startsWith("upsc") },
+  { label: "Railway Exams", icon: Train, gradient: "from-indigo-600 to-indigo-700", badge: "RRB / Indian Railways", filter: e => e.slug.startsWith("rrb") || e.slug === "railway" },
+  { label: "Banking Exams", icon: Landmark, gradient: "from-emerald-600 to-emerald-700", badge: "IBPS / SBI / RBI", filter: e => ["ibps", "sbi", "rbi"].some(p => e.slug.startsWith(p)) },
+  { label: "Defence Exams", icon: Swords, gradient: "from-red-600 to-red-700", badge: "Army / Navy / Air Force", filter: e => ["indian-army", "indian-navy", "indian-airforce", "upsc-nda", "upsc-cds"].includes(e.slug) },
+  { label: "Teaching Exams", icon: GraduationCap, gradient: "from-violet-600 to-violet-700", badge: "CTET / State TET", filter: e => e.slug === "ctet" || e.slug.startsWith("teaching") },
+  { label: "State Jobs", icon: Building2, gradient: "from-teal-600 to-teal-700", badge: "State Government", filter: e => e.slug.includes("govt-jobs") || e.slug.includes("state") },
+  { label: "Board Results", icon: ScrollText, gradient: "from-pink-600 to-pink-700", badge: "Class 10 & 12 Results", filter: e => e.slug.includes("result") || e.slug.includes("board") },
 ];
 
 export default function ExamIndexPage() {
@@ -64,24 +66,56 @@ export default function ExamIndexPage() {
             </p>
           </div>
         </div>
-        <section className="container-page py-10">
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {examGroupsStructured.map((group) => (
-              <div key={group.label} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-                <h2 className="text-lg font-black text-ink">{group.label}</h2>
-                <ul className="mt-4 space-y-2">
-                  {group.exams.map((exam) => (
-                    <li key={exam.slug}>
-                      <Link href={`/exam/${exam.slug}`} className="group flex items-center gap-2 text-sm font-semibold text-slate-600 transition hover:text-[#0D9488]">
-                        <ArrowUpRight className="h-3 w-3 shrink-0 transition group-hover:translate-x-0.5" />
-                        {exam.title}
-                        <span className="ml-auto text-[10px] text-slate-400">{exam.description}</span>
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+
+        <section className="container-page -mt-7 pb-16">
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {categories.map((cat) => {
+              const exams = examGroups.filter(cat.filter);
+              const Icon = cat.icon;
+              return (
+                <div key={cat.label} className="group rounded-2xl border border-gray-100 bg-white shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden">
+                  {/* Category Header */}
+                  <div className={`bg-gradient-to-r ${cat.gradient} px-5 py-4`}>
+                    <div className="flex items-center gap-3">
+                      <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-white/20 backdrop-blur-sm">
+                        <Icon className="h-5 w-5 text-white" />
+                      </span>
+                      <div>
+                        <h2 className="text-base font-bold text-white">{cat.label}</h2>
+                        <p className="text-[10px] font-medium text-white/70">{cat.badge}</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Exam List */}
+                  <div className="p-4">
+                    <div className="space-y-1">
+                      {exams.map((exam) => (
+                        <Link
+                          key={exam.slug}
+                          href={`/exam/${exam.slug}`}
+                          className="flex items-center justify-between rounded-xl px-3 py-2.5 text-sm text-gray-600 transition hover:bg-gray-50 hover:text-[#0D9488] group/link"
+                        >
+                          <span className="font-medium">{exam.title}</span>
+                          <div className="flex items-center gap-2">
+                            <span className="hidden lg:block text-[11px] text-gray-400">{exam.description}</span>
+                            <ArrowRight className="h-3.5 w-3.5 shrink-0 text-gray-300 transition group-hover/link:translate-x-0.5 group-hover/link:text-[#0D9488]" />
+                          </div>
+                        </Link>
+                      ))}
+                    </div>
+
+                    <Link
+                      href={`/${exams[0]?.slug?.split("-")[0] || ""}`}
+                      className="mt-3 flex items-center justify-center gap-1.5 rounded-xl border border-dashed border-gray-200 py-2.5 text-xs font-semibold text-gray-400 transition hover:border-[#0D9488]/30 hover:text-[#0D9488]"
+                    >
+                      View all {cat.label.toLowerCase()} posts
+                      <ArrowRight className="h-3 w-3" />
+                    </Link>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </section>
       </main>
