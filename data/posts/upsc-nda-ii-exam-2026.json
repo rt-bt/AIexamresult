@@ -95,5 +95,87 @@
   ],
   "fullContentHtml": "",
   "lastDate": "20 May 2026",
-  "isExpired": false
+  "isExpired": false,
+  "divisionWiseVacancy": [
+    {
+      "division": "National Defence Academy",
+      "posts": "208"
+    },
+    {
+      "division": "Navy",
+      "posts": "42"
+    },
+    {
+      "division": "Airforce",
+      "posts": "120"
+    },
+    {
+      "division": "Naval Academy",
+      "posts": "24"
+    },
+    {
+      "division": "National Defence Academy",
+      "posts": "208"
+    },
+    {
+      "division": "Navy",
+      "posts": "42"
+    },
+    {
+      "division": "Airforce",
+      "posts": "120"
+    },
+    {
+      "division": "Naval Academy",
+      "posts": "24"
+    },
+    {
+      "division": "National Defence Academy",
+      "posts": "208"
+    },
+    {
+      "division": "Navy",
+      "posts": "42"
+    },
+    {
+      "division": "Airforce",
+      "posts": "120"
+    },
+    {
+      "division": "Naval Academy",
+      "posts": "24"
+    },
+    {
+      "division": "National Defence Academy",
+      "posts": "208"
+    },
+    {
+      "division": "Navy",
+      "posts": "42"
+    },
+    {
+      "division": "Airforce",
+      "posts": "120"
+    },
+    {
+      "division": "Naval Academy",
+      "posts": "24"
+    },
+    {
+      "division": "National Defence Academy",
+      "posts": "208"
+    },
+    {
+      "division": "Navy",
+      "posts": "42"
+    },
+    {
+      "division": "Airforce",
+      "posts": "120"
+    },
+    {
+      "division": "Naval Academy",
+      "posts": "24"
+    }
+  ]
 }

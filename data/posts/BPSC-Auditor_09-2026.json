@@ -131,5 +131,55 @@
   ],
   "fullContentHtml": "",
   "lastDate": "05 February 2026",
-  "isExpired": false
+  "isExpired": false,
+  "divisionWiseVacancy": [
+    {
+      "division": "Auditor",
+      "posts": "28"
+    },
+    {
+      "division": "B",
+      "posts": "74"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "102"
+    },
+    {
+      "division": "Auditor",
+      "posts": "28"
+    },
+    {
+      "division": "B",
+      "posts": "74"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "102"
+    },
+    {
+      "division": "Auditor",
+      "posts": "28"
+    },
+    {
+      "division": "B",
+      "posts": "74"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "102"
+    },
+    {
+      "division": "Auditor",
+      "posts": "28"
+    },
+    {
+      "division": "B",
+      "posts": "74"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "102"
+    }
+  ]
 }

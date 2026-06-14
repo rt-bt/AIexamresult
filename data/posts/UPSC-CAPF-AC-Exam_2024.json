@@ -71,5 +71,87 @@
     }
   ],
   "fullContentHtml": "",
-  "isExpired": false
+  "isExpired": false,
+  "divisionWiseVacancy": [
+    {
+      "division": "CRPF",
+      "posts": "120"
+    },
+    {
+      "division": "BSF",
+      "posts": "186"
+    },
+    {
+      "division": "CISF",
+      "posts": "100"
+    },
+    {
+      "division": "SSB",
+      "posts": "42"
+    },
+    {
+      "division": "ITBP",
+      "posts": "58"
+    },
+    {
+      "division": "CRPF",
+      "posts": "120"
+    },
+    {
+      "division": "BSF",
+      "posts": "186"
+    },
+    {
+      "division": "CISF",
+      "posts": "100"
+    },
+    {
+      "division": "SSB",
+      "posts": "42"
+    },
+    {
+      "division": "ITBP",
+      "posts": "58"
+    },
+    {
+      "division": "CRPF",
+      "posts": "120"
+    },
+    {
+      "division": "BSF",
+      "posts": "186"
+    },
+    {
+      "division": "CISF",
+      "posts": "100"
+    },
+    {
+      "division": "SSB",
+      "posts": "42"
+    },
+    {
+      "division": "ITBP",
+      "posts": "58"
+    },
+    {
+      "division": "CRPF",
+      "posts": "120"
+    },
+    {
+      "division": "BSF",
+      "posts": "186"
+    },
+    {
+      "division": "CISF",
+      "posts": "100"
+    },
+    {
+      "division": "SSB",
+      "posts": "42"
+    },
+    {
+      "division": "ITBP",
+      "posts": "58"
+    }
+  ]
 }

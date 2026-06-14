@@ -145,5 +145,71 @@
   ],
   "fullContentHtml": "",
   "lastDate": "06 October 2025",
-  "isExpired": false
+  "isExpired": false,
+  "divisionWiseVacancy": [
+    {
+      "division": "Prohibition Constable \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(मद्य निषेध सिपाही)",
+      "posts": "1685"
+    },
+    {
+      "division": "Jail Warder \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(कक्षपाल)",
+      "posts": "2417"
+    },
+    {
+      "division": "Mobile Squad Constable\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(चलंत दस्ता सिपाही)",
+      "posts": "108"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "4210"
+    },
+    {
+      "division": "Prohibition Constable \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(मद्य निषेध सिपाही)",
+      "posts": "1685"
+    },
+    {
+      "division": "Jail Warder \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(कक्षपाल)",
+      "posts": "2417"
+    },
+    {
+      "division": "Mobile Squad Constable\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(चलंत दस्ता सिपाही)",
+      "posts": "108"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "4210"
+    },
+    {
+      "division": "Prohibition Constable \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(मद्य निषेध सिपाही)",
+      "posts": "1685"
+    },
+    {
+      "division": "Jail Warder \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(कक्षपाल)",
+      "posts": "2417"
+    },
+    {
+      "division": "Mobile Squad Constable\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(चलंत दस्ता सिपाही)",
+      "posts": "108"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "4210"
+    },
+    {
+      "division": "Prohibition Constable \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(मद्य निषेध सिपाही)",
+      "posts": "1685"
+    },
+    {
+      "division": "Jail Warder \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(कक्षपाल)",
+      "posts": "2417"
+    },
+    {
+      "division": "Mobile Squad Constable\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(चलंत दस्ता सिपाही)",
+      "posts": "108"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "4210"
+    }
+  ]
 }

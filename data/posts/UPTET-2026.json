@@ -195,5 +195,187 @@
   ],
   "fullContentHtml": "",
   "lastDate": "27 March 2026",
-  "isExpired": false
+  "isExpired": false,
+  "divisionWiseVacancy": [
+    {
+      "division": "1",
+      "posts": "30"
+    },
+    {
+      "division": "2",
+      "posts": "30"
+    },
+    {
+      "division": "3",
+      "posts": "30"
+    },
+    {
+      "division": "4",
+      "posts": "30"
+    },
+    {
+      "division": "5",
+      "posts": "30"
+    },
+    {
+      "division": "1",
+      "posts": "30"
+    },
+    {
+      "division": "2",
+      "posts": "30"
+    },
+    {
+      "division": "3",
+      "posts": "30"
+    },
+    {
+      "division": "4",
+      "posts": "60"
+    },
+    {
+      "division": "1",
+      "posts": "30"
+    },
+    {
+      "division": "2",
+      "posts": "30"
+    },
+    {
+      "division": "3",
+      "posts": "30"
+    },
+    {
+      "division": "4",
+      "posts": "30"
+    },
+    {
+      "division": "5",
+      "posts": "30"
+    },
+    {
+      "division": "1",
+      "posts": "30"
+    },
+    {
+      "division": "2",
+      "posts": "30"
+    },
+    {
+      "division": "3",
+      "posts": "30"
+    },
+    {
+      "division": "4",
+      "posts": "60"
+    },
+    {
+      "division": "1",
+      "posts": "30"
+    },
+    {
+      "division": "2",
+      "posts": "30"
+    },
+    {
+      "division": "3",
+      "posts": "30"
+    },
+    {
+      "division": "4",
+      "posts": "30"
+    },
+    {
+      "division": "5",
+      "posts": "30"
+    },
+    {
+      "division": "1",
+      "posts": "30"
+    },
+    {
+      "division": "2",
+      "posts": "30"
+    },
+    {
+      "division": "3",
+      "posts": "30"
+    },
+    {
+      "division": "4",
+      "posts": "60"
+    },
+    {
+      "division": "1",
+      "posts": "30"
+    },
+    {
+      "division": "2",
+      "posts": "30"
+    },
+    {
+      "division": "3",
+      "posts": "30"
+    },
+    {
+      "division": "4",
+      "posts": "30"
+    },
+    {
+      "division": "5",
+      "posts": "30"
+    },
+    {
+      "division": "1",
+      "posts": "30"
+    },
+    {
+      "division": "2",
+      "posts": "30"
+    },
+    {
+      "division": "3",
+      "posts": "30"
+    },
+    {
+      "division": "4",
+      "posts": "60"
+    },
+    {
+      "division": "1",
+      "posts": "30"
+    },
+    {
+      "division": "2",
+      "posts": "30"
+    },
+    {
+      "division": "3",
+      "posts": "30"
+    },
+    {
+      "division": "4",
+      "posts": "30"
+    },
+    {
+      "division": "5",
+      "posts": "30"
+    },
+    {
+      "division": "1",
+      "posts": "30"
+    },
+    {
+      "division": "2",
+      "posts": "30"
+    },
+    {
+      "division": "3",
+      "posts": "30"
+    },
+    {
+      "division": "4",
+      "posts": "60"
+    }
+  ]
 }

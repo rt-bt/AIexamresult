@@ -123,5 +123,87 @@
   ],
   "fullContentHtml": "",
   "lastDate": "01 June 2026",
-  "isExpired": false
+  "isExpired": false,
+  "divisionWiseVacancy": [
+    {
+      "division": "Review Officer (RO)",
+      "posts": "138"
+    },
+    {
+      "division": "Assistant Review Officer (ARO)",
+      "posts": "380"
+    },
+    {
+      "division": "Computer Assistant (CA)",
+      "posts": "25"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "543"
+    },
+    {
+      "division": "Review Officer (RO)",
+      "posts": "138"
+    },
+    {
+      "division": "Assistant Review Officer (ARO)",
+      "posts": "380"
+    },
+    {
+      "division": "Computer Assistant (CA)",
+      "posts": "25"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "543"
+    },
+    {
+      "division": "Review Officer (RO)",
+      "posts": "138"
+    },
+    {
+      "division": "Assistant Review Officer (ARO)",
+      "posts": "380"
+    },
+    {
+      "division": "Computer Assistant (CA)",
+      "posts": "25"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "543"
+    },
+    {
+      "division": "Review Officer (RO)",
+      "posts": "138"
+    },
+    {
+      "division": "Assistant Review Officer (ARO)",
+      "posts": "380"
+    },
+    {
+      "division": "Computer Assistant (CA)",
+      "posts": "25"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "543"
+    },
+    {
+      "division": "Review Officer (RO)",
+      "posts": "138"
+    },
+    {
+      "division": "Assistant Review Officer (ARO)",
+      "posts": "380"
+    },
+    {
+      "division": "Computer Assistant (CA)",
+      "posts": "25"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "543"
+    }
+  ]
 }

@@ -265,5 +265,391 @@
   ],
   "fullContentHtml": "",
   "lastDate": "28 June 2025",
-  "isExpired": false
+  "isExpired": false,
+  "divisionWiseVacancy": [
+    {
+      "division": "Technician Gr-I (Signal)",
+      "posts": "183"
+    },
+    {
+      "division": "Technician Gr-III",
+      "posts": "6055"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "6238"
+    },
+    {
+      "division": "Ahmedabad",
+      "posts": "161"
+    },
+    {
+      "division": "Ajmer",
+      "posts": "139"
+    },
+    {
+      "division": "Bangalore",
+      "posts": "140"
+    },
+    {
+      "division": "Bhopal",
+      "posts": "210"
+    },
+    {
+      "division": "Bhubaneswar",
+      "posts": "38"
+    },
+    {
+      "division": "Bilaspur",
+      "posts": "71"
+    },
+    {
+      "division": "Chandigarh",
+      "posts": "466"
+    },
+    {
+      "division": "Chennai",
+      "posts": "1347"
+    },
+    {
+      "division": "Gorakhpur",
+      "posts": "68"
+    },
+    {
+      "division": "Guwahati",
+      "posts": "184"
+    },
+    {
+      "division": "Jammu-Srinagar",
+      "posts": "296"
+    },
+    {
+      "division": "Kolkata",
+      "posts": "1434"
+    },
+    {
+      "division": "Malda",
+      "posts": "70"
+    },
+    {
+      "division": "Mumbai",
+      "posts": "891"
+    },
+    {
+      "division": "Muzaffarpur",
+      "posts": "06"
+    },
+    {
+      "division": "Patna",
+      "posts": "07"
+    },
+    {
+      "division": "Prayagraj",
+      "posts": "239"
+    },
+    {
+      "division": "Ranchi",
+      "posts": "35"
+    },
+    {
+      "division": "Secunderabad",
+      "posts": "113"
+    },
+    {
+      "division": "Siliguri",
+      "posts": "133"
+    },
+    {
+      "division": "Thiruvananthpuram",
+      "posts": "197"
+    },
+    {
+      "division": "Technician Gr-I (Signal)",
+      "posts": "183"
+    },
+    {
+      "division": "Technician Gr-III",
+      "posts": "6055"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "6238"
+    },
+    {
+      "division": "Ahmedabad",
+      "posts": "161"
+    },
+    {
+      "division": "Ajmer",
+      "posts": "139"
+    },
+    {
+      "division": "Bangalore",
+      "posts": "140"
+    },
+    {
+      "division": "Bhopal",
+      "posts": "210"
+    },
+    {
+      "division": "Bhubaneswar",
+      "posts": "38"
+    },
+    {
+      "division": "Bilaspur",
+      "posts": "71"
+    },
+    {
+      "division": "Chandigarh",
+      "posts": "466"
+    },
+    {
+      "division": "Chennai",
+      "posts": "1347"
+    },
+    {
+      "division": "Gorakhpur",
+      "posts": "68"
+    },
+    {
+      "division": "Guwahati",
+      "posts": "184"
+    },
+    {
+      "division": "Jammu-Srinagar",
+      "posts": "296"
+    },
+    {
+      "division": "Kolkata",
+      "posts": "1434"
+    },
+    {
+      "division": "Malda",
+      "posts": "70"
+    },
+    {
+      "division": "Mumbai",
+      "posts": "891"
+    },
+    {
+      "division": "Muzaffarpur",
+      "posts": "06"
+    },
+    {
+      "division": "Patna",
+      "posts": "07"
+    },
+    {
+      "division": "Prayagraj",
+      "posts": "239"
+    },
+    {
+      "division": "Ranchi",
+      "posts": "35"
+    },
+    {
+      "division": "Secunderabad",
+      "posts": "113"
+    },
+    {
+      "division": "Siliguri",
+      "posts": "133"
+    },
+    {
+      "division": "Thiruvananthpuram",
+      "posts": "197"
+    },
+    {
+      "division": "Technician Gr-I (Signal)",
+      "posts": "183"
+    },
+    {
+      "division": "Technician Gr-III",
+      "posts": "6055"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "6238"
+    },
+    {
+      "division": "Ahmedabad",
+      "posts": "161"
+    },
+    {
+      "division": "Ajmer",
+      "posts": "139"
+    },
+    {
+      "division": "Bangalore",
+      "posts": "140"
+    },
+    {
+      "division": "Bhopal",
+      "posts": "210"
+    },
+    {
+      "division": "Bhubaneswar",
+      "posts": "38"
+    },
+    {
+      "division": "Bilaspur",
+      "posts": "71"
+    },
+    {
+      "division": "Chandigarh",
+      "posts": "466"
+    },
+    {
+      "division": "Chennai",
+      "posts": "1347"
+    },
+    {
+      "division": "Gorakhpur",
+      "posts": "68"
+    },
+    {
+      "division": "Guwahati",
+      "posts": "184"
+    },
+    {
+      "division": "Jammu-Srinagar",
+      "posts": "296"
+    },
+    {
+      "division": "Kolkata",
+      "posts": "1434"
+    },
+    {
+      "division": "Malda",
+      "posts": "70"
+    },
+    {
+      "division": "Mumbai",
+      "posts": "891"
+    },
+    {
+      "division": "Muzaffarpur",
+      "posts": "06"
+    },
+    {
+      "division": "Patna",
+      "posts": "07"
+    },
+    {
+      "division": "Prayagraj",
+      "posts": "239"
+    },
+    {
+      "division": "Ranchi",
+      "posts": "35"
+    },
+    {
+      "division": "Secunderabad",
+      "posts": "113"
+    },
+    {
+      "division": "Siliguri",
+      "posts": "133"
+    },
+    {
+      "division": "Thiruvananthpuram",
+      "posts": "197"
+    },
+    {
+      "division": "Technician Gr-I (Signal)",
+      "posts": "183"
+    },
+    {
+      "division": "Technician Gr-III",
+      "posts": "6055"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "6238"
+    },
+    {
+      "division": "Ahmedabad",
+      "posts": "161"
+    },
+    {
+      "division": "Ajmer",
+      "posts": "139"
+    },
+    {
+      "division": "Bangalore",
+      "posts": "140"
+    },
+    {
+      "division": "Bhopal",
+      "posts": "210"
+    },
+    {
+      "division": "Bhubaneswar",
+      "posts": "38"
+    },
+    {
+      "division": "Bilaspur",
+      "posts": "71"
+    },
+    {
+      "division": "Chandigarh",
+      "posts": "466"
+    },
+    {
+      "division": "Chennai",
+      "posts": "1347"
+    },
+    {
+      "division": "Gorakhpur",
+      "posts": "68"
+    },
+    {
+      "division": "Guwahati",
+      "posts": "184"
+    },
+    {
+      "division": "Jammu-Srinagar",
+      "posts": "296"
+    },
+    {
+      "division": "Kolkata",
+      "posts": "1434"
+    },
+    {
+      "division": "Malda",
+      "posts": "70"
+    },
+    {
+      "division": "Mumbai",
+      "posts": "891"
+    },
+    {
+      "division": "Muzaffarpur",
+      "posts": "06"
+    },
+    {
+      "division": "Patna",
+      "posts": "07"
+    },
+    {
+      "division": "Prayagraj",
+      "posts": "239"
+    },
+    {
+      "division": "Ranchi",
+      "posts": "35"
+    },
+    {
+      "division": "Secunderabad",
+      "posts": "113"
+    },
+    {
+      "division": "Siliguri",
+      "posts": "133"
+    },
+    {
+      "division": "Thiruvananthpuram",
+      "posts": "197"
+    }
+  ]
 }

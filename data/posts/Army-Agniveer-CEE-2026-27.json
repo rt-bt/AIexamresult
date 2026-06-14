@@ -395,5 +395,103 @@
   ],
   "fullContentHtml": "",
   "lastDate": "10 April 2026",
-  "isExpired": false
+  "isExpired": false,
+  "divisionWiseVacancy": [
+    {
+      "division": "Western Himalayan Region",
+      "posts": "162"
+    },
+    {
+      "division": "Eastern Himalayan Region",
+      "posts": "160"
+    },
+    {
+      "division": "Western Plains Region",
+      "posts": "162"
+    },
+    {
+      "division": "Eastern Plains Region",
+      "posts": "162"
+    },
+    {
+      "division": "Central Region",
+      "posts": "162"
+    },
+    {
+      "division": "Southern Region",
+      "posts": "162"
+    },
+    {
+      "division": "Western Himalayan Region",
+      "posts": "162"
+    },
+    {
+      "division": "Eastern Himalayan Region",
+      "posts": "160"
+    },
+    {
+      "division": "Western Plains Region",
+      "posts": "162"
+    },
+    {
+      "division": "Eastern Plains Region",
+      "posts": "162"
+    },
+    {
+      "division": "Central Region",
+      "posts": "162"
+    },
+    {
+      "division": "Southern Region",
+      "posts": "162"
+    },
+    {
+      "division": "Western Himalayan Region",
+      "posts": "162"
+    },
+    {
+      "division": "Eastern Himalayan Region",
+      "posts": "160"
+    },
+    {
+      "division": "Western Plains Region",
+      "posts": "162"
+    },
+    {
+      "division": "Eastern Plains Region",
+      "posts": "162"
+    },
+    {
+      "division": "Central Region",
+      "posts": "162"
+    },
+    {
+      "division": "Southern Region",
+      "posts": "162"
+    },
+    {
+      "division": "Western Himalayan Region",
+      "posts": "162"
+    },
+    {
+      "division": "Eastern Himalayan Region",
+      "posts": "160"
+    },
+    {
+      "division": "Western Plains Region",
+      "posts": "162"
+    },
+    {
+      "division": "Eastern Plains Region",
+      "posts": "162"
+    },
+    {
+      "division": "Central Region",
+      "posts": "162"
+    },
+    {
+      "division": "Southern Region",
+      "posts": "162"
+    }
+  ]
 }

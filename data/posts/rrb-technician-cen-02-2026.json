@@ -129,5 +129,67 @@
   ],
   "fullContentHtml": "",
   "lastDate": "30 June 2026",
-  "isExpired": false
+  "isExpired": false,
+  "divisionWiseVacancy": [
+    {
+      "division": "Technician Gr-I (Signal)",
+      "posts": "323"
+    },
+    {
+      "division": "Technician Gr-III",
+      "posts": "6242"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "6565"
+    },
+    {
+      "division": "Technician Gr-I (Signal)",
+      "posts": "323"
+    },
+    {
+      "division": "Technician Gr-III",
+      "posts": "6242"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "6565"
+    },
+    {
+      "division": "Technician Gr-I (Signal)",
+      "posts": "323"
+    },
+    {
+      "division": "Technician Gr-III",
+      "posts": "6242"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "6565"
+    },
+    {
+      "division": "Technician Gr-I (Signal)",
+      "posts": "323"
+    },
+    {
+      "division": "Technician Gr-III",
+      "posts": "6242"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "6565"
+    },
+    {
+      "division": "Technician Gr-I (Signal)",
+      "posts": "323"
+    },
+    {
+      "division": "Technician Gr-III",
+      "posts": "6242"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "6565"
+    }
+  ]
 }

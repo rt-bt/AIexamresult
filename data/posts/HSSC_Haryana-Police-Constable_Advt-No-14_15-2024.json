@@ -42,5 +42,87 @@
     }
   ],
   "fullContentHtml": "",
-  "isExpired": false
+  "isExpired": false,
+  "divisionWiseVacancy": [
+    {
+      "division": "Constable (Male) -GD",
+      "posts": "4000"
+    },
+    {
+      "division": "Constable (Female)-GD",
+      "posts": "600"
+    },
+    {
+      "division": "Constable (Male)-IRB",
+      "posts": "1000"
+    },
+    {
+      "division": "Constable (Male)-MAP",
+      "posts": "66"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "5666"
+    },
+    {
+      "division": "Constable (Male) -GD",
+      "posts": "4000"
+    },
+    {
+      "division": "Constable (Female)-GD",
+      "posts": "600"
+    },
+    {
+      "division": "Constable (Male)-IRB",
+      "posts": "1000"
+    },
+    {
+      "division": "Constable (Male)-MAP",
+      "posts": "66"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "5666"
+    },
+    {
+      "division": "Constable (Male) -GD",
+      "posts": "4000"
+    },
+    {
+      "division": "Constable (Female)-GD",
+      "posts": "600"
+    },
+    {
+      "division": "Constable (Male)-IRB",
+      "posts": "1000"
+    },
+    {
+      "division": "Constable (Male)-MAP",
+      "posts": "66"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "5666"
+    },
+    {
+      "division": "Constable (Male) -GD",
+      "posts": "4000"
+    },
+    {
+      "division": "Constable (Female)-GD",
+      "posts": "600"
+    },
+    {
+      "division": "Constable (Male)-IRB",
+      "posts": "1000"
+    },
+    {
+      "division": "Constable (Male)-MAP",
+      "posts": "66"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "5666"
+    }
+  ]
 }

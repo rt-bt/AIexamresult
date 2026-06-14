@@ -163,5 +163,135 @@
   ],
   "fullContentHtml": "",
   "lastDate": "31 December 2025",
-  "isExpired": false
+  "isExpired": false,
+  "divisionWiseVacancy": [
+    {
+      "division": "Constable Civil Police (Male/ Female)",
+      "posts": "10469"
+    },
+    {
+      "division": "Constable PAC Armed Force (Male)",
+      "posts": "15131"
+    },
+    {
+      "division": "Constable PAC Special Force (Male)",
+      "posts": "1341"
+    },
+    {
+      "division": "Constable Battalion (Female)",
+      "posts": "2282"
+    },
+    {
+      "division": "Constable Mounted Police Horse Rider (Male)",
+      "posts": "71"
+    },
+    {
+      "division": "Jail Warden (Male)",
+      "posts": "3279"
+    },
+    {
+      "division": "Jail Warden (Female)",
+      "posts": "106"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "32679"
+    },
+    {
+      "division": "Constable Civil Police (Male/ Female)",
+      "posts": "10469"
+    },
+    {
+      "division": "Constable PAC Armed Force (Male)",
+      "posts": "15131"
+    },
+    {
+      "division": "Constable PAC Special Force (Male)",
+      "posts": "1341"
+    },
+    {
+      "division": "Constable Battalion (Female)",
+      "posts": "2282"
+    },
+    {
+      "division": "Constable Mounted Police Horse Rider (Male)",
+      "posts": "71"
+    },
+    {
+      "division": "Jail Warden (Male)",
+      "posts": "3279"
+    },
+    {
+      "division": "Jail Warden (Female)",
+      "posts": "106"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "32679"
+    },
+    {
+      "division": "Constable Civil Police (Male/ Female)",
+      "posts": "10469"
+    },
+    {
+      "division": "Constable PAC Armed Force (Male)",
+      "posts": "15131"
+    },
+    {
+      "division": "Constable PAC Special Force (Male)",
+      "posts": "1341"
+    },
+    {
+      "division": "Constable Battalion (Female)",
+      "posts": "2282"
+    },
+    {
+      "division": "Constable Mounted Police Horse Rider (Male)",
+      "posts": "71"
+    },
+    {
+      "division": "Jail Warden (Male)",
+      "posts": "3279"
+    },
+    {
+      "division": "Jail Warden (Female)",
+      "posts": "106"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "32679"
+    },
+    {
+      "division": "Constable Civil Police (Male/ Female)",
+      "posts": "10469"
+    },
+    {
+      "division": "Constable PAC Armed Force (Male)",
+      "posts": "15131"
+    },
+    {
+      "division": "Constable PAC Special Force (Male)",
+      "posts": "1341"
+    },
+    {
+      "division": "Constable Battalion (Female)",
+      "posts": "2282"
+    },
+    {
+      "division": "Constable Mounted Police Horse Rider (Male)",
+      "posts": "71"
+    },
+    {
+      "division": "Jail Warden (Male)",
+      "posts": "3279"
+    },
+    {
+      "division": "Jail Warden (Female)",
+      "posts": "106"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "32679"
+    }
+  ]
 }

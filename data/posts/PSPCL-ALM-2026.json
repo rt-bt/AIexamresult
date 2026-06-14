@@ -119,5 +119,363 @@
   ],
   "fullContentHtml": "",
   "lastDate": "19 June 2026",
-  "isExpired": false
+  "isExpired": false,
+  "divisionWiseVacancy": [
+    {
+      "division": "Assistant Lineman ALM",
+      "posts": "3000"
+    },
+    {
+      "division": "1",
+      "posts": "330"
+    },
+    {
+      "division": "2",
+      "posts": "90"
+    },
+    {
+      "division": "3",
+      "posts": "120"
+    },
+    {
+      "division": "6",
+      "posts": "120"
+    },
+    {
+      "division": "9",
+      "posts": "120"
+    },
+    {
+      "division": "11",
+      "posts": "120"
+    },
+    {
+      "division": "12",
+      "posts": "60"
+    },
+    {
+      "division": "13",
+      "posts": "30"
+    },
+    {
+      "division": "14",
+      "posts": "15"
+    },
+    {
+      "division": "Related to Concerned Discipline",
+      "posts": "50"
+    },
+    {
+      "division": "Part-II",
+      "posts": "20"
+    },
+    {
+      "division": "General Knowledge",
+      "posts": "10"
+    },
+    {
+      "division": "Reasoning",
+      "posts": "10"
+    },
+    {
+      "division": "Arithmetic",
+      "posts": "10"
+    },
+    {
+      "division": "Assistant Lineman ALM",
+      "posts": "3000"
+    },
+    {
+      "division": "1",
+      "posts": "330"
+    },
+    {
+      "division": "2",
+      "posts": "90"
+    },
+    {
+      "division": "3",
+      "posts": "120"
+    },
+    {
+      "division": "6",
+      "posts": "120"
+    },
+    {
+      "division": "9",
+      "posts": "120"
+    },
+    {
+      "division": "11",
+      "posts": "120"
+    },
+    {
+      "division": "12",
+      "posts": "60"
+    },
+    {
+      "division": "13",
+      "posts": "30"
+    },
+    {
+      "division": "14",
+      "posts": "15"
+    },
+    {
+      "division": "Related to Concerned Discipline",
+      "posts": "50"
+    },
+    {
+      "division": "Part-II",
+      "posts": "20"
+    },
+    {
+      "division": "General Knowledge",
+      "posts": "10"
+    },
+    {
+      "division": "Reasoning",
+      "posts": "10"
+    },
+    {
+      "division": "Arithmetic",
+      "posts": "10"
+    },
+    {
+      "division": "Assistant Lineman ALM",
+      "posts": "3000"
+    },
+    {
+      "division": "1",
+      "posts": "330"
+    },
+    {
+      "division": "2",
+      "posts": "90"
+    },
+    {
+      "division": "3",
+      "posts": "120"
+    },
+    {
+      "division": "6",
+      "posts": "120"
+    },
+    {
+      "division": "9",
+      "posts": "120"
+    },
+    {
+      "division": "11",
+      "posts": "120"
+    },
+    {
+      "division": "12",
+      "posts": "60"
+    },
+    {
+      "division": "13",
+      "posts": "30"
+    },
+    {
+      "division": "14",
+      "posts": "15"
+    },
+    {
+      "division": "Related to Concerned Discipline",
+      "posts": "50"
+    },
+    {
+      "division": "Part-II",
+      "posts": "20"
+    },
+    {
+      "division": "General Knowledge",
+      "posts": "10"
+    },
+    {
+      "division": "Reasoning",
+      "posts": "10"
+    },
+    {
+      "division": "Arithmetic",
+      "posts": "10"
+    },
+    {
+      "division": "Assistant Lineman ALM",
+      "posts": "3000"
+    },
+    {
+      "division": "1",
+      "posts": "330"
+    },
+    {
+      "division": "2",
+      "posts": "90"
+    },
+    {
+      "division": "3",
+      "posts": "120"
+    },
+    {
+      "division": "6",
+      "posts": "120"
+    },
+    {
+      "division": "9",
+      "posts": "120"
+    },
+    {
+      "division": "11",
+      "posts": "120"
+    },
+    {
+      "division": "12",
+      "posts": "60"
+    },
+    {
+      "division": "13",
+      "posts": "30"
+    },
+    {
+      "division": "14",
+      "posts": "15"
+    },
+    {
+      "division": "Related to Concerned Discipline",
+      "posts": "50"
+    },
+    {
+      "division": "Part-II",
+      "posts": "20"
+    },
+    {
+      "division": "General Knowledge",
+      "posts": "10"
+    },
+    {
+      "division": "Reasoning",
+      "posts": "10"
+    },
+    {
+      "division": "Arithmetic",
+      "posts": "10"
+    },
+    {
+      "division": "Assistant Lineman ALM",
+      "posts": "3000"
+    },
+    {
+      "division": "1",
+      "posts": "330"
+    },
+    {
+      "division": "2",
+      "posts": "90"
+    },
+    {
+      "division": "3",
+      "posts": "120"
+    },
+    {
+      "division": "6",
+      "posts": "120"
+    },
+    {
+      "division": "9",
+      "posts": "120"
+    },
+    {
+      "division": "11",
+      "posts": "120"
+    },
+    {
+      "division": "12",
+      "posts": "60"
+    },
+    {
+      "division": "13",
+      "posts": "30"
+    },
+    {
+      "division": "14",
+      "posts": "15"
+    },
+    {
+      "division": "Related to Concerned Discipline",
+      "posts": "50"
+    },
+    {
+      "division": "Part-II",
+      "posts": "20"
+    },
+    {
+      "division": "General Knowledge",
+      "posts": "10"
+    },
+    {
+      "division": "Reasoning",
+      "posts": "10"
+    },
+    {
+      "division": "Arithmetic",
+      "posts": "10"
+    },
+    {
+      "division": "1",
+      "posts": "330"
+    },
+    {
+      "division": "2",
+      "posts": "90"
+    },
+    {
+      "division": "3",
+      "posts": "120"
+    },
+    {
+      "division": "6",
+      "posts": "120"
+    },
+    {
+      "division": "9",
+      "posts": "120"
+    },
+    {
+      "division": "11",
+      "posts": "120"
+    },
+    {
+      "division": "12",
+      "posts": "60"
+    },
+    {
+      "division": "13",
+      "posts": "30"
+    },
+    {
+      "division": "14",
+      "posts": "15"
+    },
+    {
+      "division": "Related to Concerned Discipline",
+      "posts": "50"
+    },
+    {
+      "division": "Part-II",
+      "posts": "20"
+    },
+    {
+      "division": "General Knowledge",
+      "posts": "10"
+    },
+    {
+      "division": "Reasoning",
+      "posts": "10"
+    },
+    {
+      "division": "Arithmetic",
+      "posts": "10"
+    }
+  ]
 }

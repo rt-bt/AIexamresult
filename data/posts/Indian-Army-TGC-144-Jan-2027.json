@@ -97,5 +97,147 @@
   ],
   "fullContentHtml": "",
   "lastDate": "13 May 2026",
-  "isExpired": false
+  "isExpired": false,
+  "divisionWiseVacancy": [
+    {
+      "division": "Civil \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Civil Building Construction/ Technology)",
+      "posts": "08"
+    },
+    {
+      "division": "Computer Science\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Computer Sc & Engg/ Computer Technology/ Information Technology/ M.Sc. Computer Science)",
+      "posts": "06"
+    },
+    {
+      "division": "Electrical \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Electrical/ Electrical and Electronics & Instrumentation, Instrumentation)",
+      "posts": "02"
+    },
+    {
+      "division": "Electronics \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Electronics/  Electronics & Telecom/ Electronics & Communication/ Fibre Optics/ Telecommunication/ Micro Electronics & Microwave/ Opto Electronics/  Satellite Communication)",
+      "posts": "06"
+    },
+    {
+      "division": "Mechanical\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Mechanical/  Production/ Automobile/ Industrial/ \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tIndustrial/ Manufacturing/ Industrial Engg & Mgt/ \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tWorkshop Technology/ Aeronautical/ \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAerospace/ Avionics)",
+      "posts": "06"
+    },
+    {
+      "division": "Misc Engineering Stream\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Architecture/ Plastic Tech/ Remote Sensing/ Ballistics/\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(e) Bio Medical Engg/  Food Tech/ Agriculture/\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(h) Metallurgical/ Metallurgy and Explosive/\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tLaser Tech/ Bio Tech/ Rubber Technology/\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tChemical Engg/ Transportation Engineering/\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMining/  Nuclear Technology/ Textile)",
+      "posts": "02"
+    },
+    {
+      "division": "Total",
+      "posts": "30"
+    },
+    {
+      "division": "Civil \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Civil Building Construction/ Technology)",
+      "posts": "08"
+    },
+    {
+      "division": "Computer Science\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Computer Sc & Engg/ Computer Technology/ Information Technology/ M.Sc. Computer Science)",
+      "posts": "06"
+    },
+    {
+      "division": "Electrical \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Electrical/ Electrical and Electronics & Instrumentation, Instrumentation)",
+      "posts": "02"
+    },
+    {
+      "division": "Electronics \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Electronics/  Electronics & Telecom/ Electronics & Communication/ Fibre Optics/ Telecommunication/ Micro Electronics & Microwave/ Opto Electronics/  Satellite Communication)",
+      "posts": "06"
+    },
+    {
+      "division": "Mechanical\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Mechanical/  Production/ Automobile/ Industrial/ \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tIndustrial/ Manufacturing/ Industrial Engg & Mgt/ \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tWorkshop Technology/ Aeronautical/ \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAerospace/ Avionics)",
+      "posts": "06"
+    },
+    {
+      "division": "Misc Engineering Stream\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Architecture/ Plastic Tech/ Remote Sensing/ Ballistics/\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(e) Bio Medical Engg/  Food Tech/ Agriculture/\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(h) Metallurgical/ Metallurgy and Explosive/\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tLaser Tech/ Bio Tech/ Rubber Technology/\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tChemical Engg/ Transportation Engineering/\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMining/  Nuclear Technology/ Textile)",
+      "posts": "02"
+    },
+    {
+      "division": "Total",
+      "posts": "30"
+    },
+    {
+      "division": "Civil \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Civil Building Construction/ Technology)",
+      "posts": "08"
+    },
+    {
+      "division": "Computer Science\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Computer Sc & Engg/ Computer Technology/ Information Technology/ M.Sc. Computer Science)",
+      "posts": "06"
+    },
+    {
+      "division": "Electrical \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Electrical/ Electrical and Electronics & Instrumentation, Instrumentation)",
+      "posts": "02"
+    },
+    {
+      "division": "Electronics \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Electronics/  Electronics & Telecom/ Electronics & Communication/ Fibre Optics/ Telecommunication/ Micro Electronics & Microwave/ Opto Electronics/  Satellite Communication)",
+      "posts": "06"
+    },
+    {
+      "division": "Mechanical\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Mechanical/  Production/ Automobile/ Industrial/ \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tIndustrial/ Manufacturing/ Industrial Engg & Mgt/ \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tWorkshop Technology/ Aeronautical/ \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAerospace/ Avionics)",
+      "posts": "06"
+    },
+    {
+      "division": "Misc Engineering Stream\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Architecture/ Plastic Tech/ Remote Sensing/ Ballistics/\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(e) Bio Medical Engg/  Food Tech/ Agriculture/\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(h) Metallurgical/ Metallurgy and Explosive/\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tLaser Tech/ Bio Tech/ Rubber Technology/\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tChemical Engg/ Transportation Engineering/\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMining/  Nuclear Technology/ Textile)",
+      "posts": "02"
+    },
+    {
+      "division": "Total",
+      "posts": "30"
+    },
+    {
+      "division": "Civil \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Civil Building Construction/ Technology)",
+      "posts": "08"
+    },
+    {
+      "division": "Computer Science\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Computer Sc & Engg/ Computer Technology/ Information Technology/ M.Sc. Computer Science)",
+      "posts": "06"
+    },
+    {
+      "division": "Electrical \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Electrical/ Electrical and Electronics & Instrumentation, Instrumentation)",
+      "posts": "02"
+    },
+    {
+      "division": "Electronics \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Electronics/  Electronics & Telecom/ Electronics & Communication/ Fibre Optics/ Telecommunication/ Micro Electronics & Microwave/ Opto Electronics/  Satellite Communication)",
+      "posts": "06"
+    },
+    {
+      "division": "Mechanical\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Mechanical/  Production/ Automobile/ Industrial/ \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tIndustrial/ Manufacturing/ Industrial Engg & Mgt/ \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tWorkshop Technology/ Aeronautical/ \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAerospace/ Avionics)",
+      "posts": "06"
+    },
+    {
+      "division": "Misc Engineering Stream\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Architecture/ Plastic Tech/ Remote Sensing/ Ballistics/\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(e) Bio Medical Engg/  Food Tech/ Agriculture/\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(h) Metallurgical/ Metallurgy and Explosive/\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tLaser Tech/ Bio Tech/ Rubber Technology/\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tChemical Engg/ Transportation Engineering/\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMining/  Nuclear Technology/ Textile)",
+      "posts": "02"
+    },
+    {
+      "division": "Total",
+      "posts": "30"
+    },
+    {
+      "division": "Civil \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Civil Building Construction/ Technology)",
+      "posts": "08"
+    },
+    {
+      "division": "Computer Science\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Computer Sc & Engg/ Computer Technology/ Information Technology/ M.Sc. Computer Science)",
+      "posts": "06"
+    },
+    {
+      "division": "Electrical \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Electrical/ Electrical and Electronics & Instrumentation, Instrumentation)",
+      "posts": "02"
+    },
+    {
+      "division": "Electronics \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Electronics/  Electronics & Telecom/ Electronics & Communication/ Fibre Optics/ Telecommunication/ Micro Electronics & Microwave/ Opto Electronics/  Satellite Communication)",
+      "posts": "06"
+    },
+    {
+      "division": "Mechanical\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Mechanical/  Production/ Automobile/ Industrial/ \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tIndustrial/ Manufacturing/ Industrial Engg & Mgt/ \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tWorkshop Technology/ Aeronautical/ \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAerospace/ Avionics)",
+      "posts": "06"
+    },
+    {
+      "division": "Misc Engineering Stream\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Architecture/ Plastic Tech/ Remote Sensing/ Ballistics/\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(e) Bio Medical Engg/  Food Tech/ Agriculture/\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(h) Metallurgical/ Metallurgy and Explosive/\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tLaser Tech/ Bio Tech/ Rubber Technology/\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tChemical Engg/ Transportation Engineering/\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMining/  Nuclear Technology/ Textile)",
+      "posts": "02"
+    },
+    {
+      "division": "Total",
+      "posts": "30"
+    }
+  ]
 }

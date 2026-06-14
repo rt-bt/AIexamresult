@@ -219,5 +219,119 @@
   ],
   "fullContentHtml": "",
   "lastDate": "19 March 2026",
-  "isExpired": false
+  "isExpired": false,
+  "divisionWiseVacancy": [
+    {
+      "division": "Constable GD (Male)",
+      "posts": "3870"
+    },
+    {
+      "division": "ESM",
+      "posts": "630"
+    },
+    {
+      "division": "Constable GD (Female)",
+      "posts": "516"
+    },
+    {
+      "division": "ESM",
+      "posts": "84"
+    },
+    {
+      "division": "Constable GD Male (GRP)",
+      "posts": "344"
+    },
+    {
+      "division": "ESM",
+      "posts": "56"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "5500"
+    },
+    {
+      "division": "Constable GD (Male)",
+      "posts": "3870"
+    },
+    {
+      "division": "ESM",
+      "posts": "630"
+    },
+    {
+      "division": "Constable GD (Female)",
+      "posts": "516"
+    },
+    {
+      "division": "ESM",
+      "posts": "84"
+    },
+    {
+      "division": "Constable GD Male (GRP)",
+      "posts": "344"
+    },
+    {
+      "division": "ESM",
+      "posts": "56"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "5500"
+    },
+    {
+      "division": "Constable GD (Male)",
+      "posts": "3870"
+    },
+    {
+      "division": "ESM",
+      "posts": "630"
+    },
+    {
+      "division": "Constable GD (Female)",
+      "posts": "516"
+    },
+    {
+      "division": "ESM",
+      "posts": "84"
+    },
+    {
+      "division": "Constable GD Male (GRP)",
+      "posts": "344"
+    },
+    {
+      "division": "ESM",
+      "posts": "56"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "5500"
+    },
+    {
+      "division": "Constable GD (Male)",
+      "posts": "3870"
+    },
+    {
+      "division": "ESM",
+      "posts": "630"
+    },
+    {
+      "division": "Constable GD (Female)",
+      "posts": "516"
+    },
+    {
+      "division": "ESM",
+      "posts": "84"
+    },
+    {
+      "division": "Constable GD Male (GRP)",
+      "posts": "344"
+    },
+    {
+      "division": "ESM",
+      "posts": "56"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "5500"
+    }
+  ]
 }

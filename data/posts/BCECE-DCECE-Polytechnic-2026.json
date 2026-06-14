@@ -193,5 +193,363 @@
   ],
   "fullContentHtml": "",
   "lastDate": "19 March 2026",
-  "isExpired": false
+  "isExpired": false,
+  "divisionWiseVacancy": [
+    {
+      "division": "📘 Bihar Polytechnic Syllabus & Exam Pattern 2026\n\n\n\n\nPolytechnic Engineering (PE) Group\n\nExam Duration: 2 Hours 15 Minutes\nTotal Marks: 450\n\n\n\n\n\nSubject\nQuestions\nMarks\n\n\nPhysics\n30\n150\n\n\nChemistry\n30\n150\n\n\nMathematics\n30\n150\n\n\nTotal\n90\n450\n\n\n\n\nNote: Level of Exam: Secondary (10th Level)\n\n\n\n\nPara Medical (Intermediate Level) PM Group\n\nExam Duration: 2 Hours 15 Minutes\nTotal Marks: 450\n\n\n\n\n\nSubject\nQuestions\nMarks\n\n\nGeneral Science (Physics, Chemistry, Biology)\n25\n125\n\n\nMathematical Ability\n15\n75\n\n\nHindi\n15\n75\n\n\nGeneral Knowledge\n20\n100\n\n\nTotal\n90\n450\n\n\n\n\nNote: Questions based on Intermediate Level Science, Hindi and General Knowledge.\n\n\n\n\nPara Medical (Matric Level) PMM Group\n\nExam Duration: 2 Hours 15 Minutes\nTotal Marks: 450\n\n\n\n\n\nSubject\nQuestions\nMarks\n\n\nPhysics\n20\n100\n\n\nChemistry\n20\n100\n\n\nMathematics\n10\n50\n\n\nBiology\n10\n50\n\n\nHindi\n10\n50\n\n\nEnglish\n10\n50\n\n\nGeneral Knowledge\n10\n50\n\n\nTotal\n90\n450\n\n\n\n\nImportant Information\n\nPE Group exam is based on Secondary (10th Level) syllabus.\nPM Group questions are based on Intermediate Level Science, Hindi and General Knowledge.\nPMM Group exam is based on Secondary (10th Level) syllabus.\nEach group carries a total of 90 questions and 450 marks.\nCheck the official prospectus for detailed syllabus and subject-wise topics.",
+      "posts": "450"
+    },
+    {
+      "division": "Physics",
+      "posts": "150"
+    },
+    {
+      "division": "Chemistry",
+      "posts": "150"
+    },
+    {
+      "division": "Mathematics",
+      "posts": "150"
+    },
+    {
+      "division": "Total",
+      "posts": "450"
+    },
+    {
+      "division": "General Science (Physics, Chemistry, Biology)",
+      "posts": "125"
+    },
+    {
+      "division": "Mathematical Ability",
+      "posts": "75"
+    },
+    {
+      "division": "Hindi",
+      "posts": "75"
+    },
+    {
+      "division": "General Knowledge",
+      "posts": "100"
+    },
+    {
+      "division": "Total",
+      "posts": "450"
+    },
+    {
+      "division": "Physics",
+      "posts": "100"
+    },
+    {
+      "division": "Chemistry",
+      "posts": "100"
+    },
+    {
+      "division": "Mathematics",
+      "posts": "50"
+    },
+    {
+      "division": "Biology",
+      "posts": "50"
+    },
+    {
+      "division": "Hindi",
+      "posts": "50"
+    },
+    {
+      "division": "English",
+      "posts": "50"
+    },
+    {
+      "division": "General Knowledge",
+      "posts": "50"
+    },
+    {
+      "division": "Total",
+      "posts": "450"
+    },
+    {
+      "division": "📘 Bihar Polytechnic Syllabus & Exam Pattern 2026\n\n\n\n\nPolytechnic Engineering (PE) Group\n\nExam Duration: 2 Hours 15 Minutes\nTotal Marks: 450\n\n\n\n\n\nSubject\nQuestions\nMarks\n\n\nPhysics\n30\n150\n\n\nChemistry\n30\n150\n\n\nMathematics\n30\n150\n\n\nTotal\n90\n450\n\n\n\n\nNote: Level of Exam: Secondary (10th Level)\n\n\n\n\nPara Medical (Intermediate Level) PM Group\n\nExam Duration: 2 Hours 15 Minutes\nTotal Marks: 450\n\n\n\n\n\nSubject\nQuestions\nMarks\n\n\nGeneral Science (Physics, Chemistry, Biology)\n25\n125\n\n\nMathematical Ability\n15\n75\n\n\nHindi\n15\n75\n\n\nGeneral Knowledge\n20\n100\n\n\nTotal\n90\n450\n\n\n\n\nNote: Questions based on Intermediate Level Science, Hindi and General Knowledge.\n\n\n\n\nPara Medical (Matric Level) PMM Group\n\nExam Duration: 2 Hours 15 Minutes\nTotal Marks: 450\n\n\n\n\n\nSubject\nQuestions\nMarks\n\n\nPhysics\n20\n100\n\n\nChemistry\n20\n100\n\n\nMathematics\n10\n50\n\n\nBiology\n10\n50\n\n\nHindi\n10\n50\n\n\nEnglish\n10\n50\n\n\nGeneral Knowledge\n10\n50\n\n\nTotal\n90\n450\n\n\n\n\nImportant Information\n\nPE Group exam is based on Secondary (10th Level) syllabus.\nPM Group questions are based on Intermediate Level Science, Hindi and General Knowledge.\nPMM Group exam is based on Secondary (10th Level) syllabus.\nEach group carries a total of 90 questions and 450 marks.\nCheck the official prospectus for detailed syllabus and subject-wise topics.",
+      "posts": "450"
+    },
+    {
+      "division": "Physics",
+      "posts": "150"
+    },
+    {
+      "division": "Chemistry",
+      "posts": "150"
+    },
+    {
+      "division": "Mathematics",
+      "posts": "150"
+    },
+    {
+      "division": "Total",
+      "posts": "450"
+    },
+    {
+      "division": "General Science (Physics, Chemistry, Biology)",
+      "posts": "125"
+    },
+    {
+      "division": "Mathematical Ability",
+      "posts": "75"
+    },
+    {
+      "division": "Hindi",
+      "posts": "75"
+    },
+    {
+      "division": "General Knowledge",
+      "posts": "100"
+    },
+    {
+      "division": "Total",
+      "posts": "450"
+    },
+    {
+      "division": "Physics",
+      "posts": "100"
+    },
+    {
+      "division": "Chemistry",
+      "posts": "100"
+    },
+    {
+      "division": "Mathematics",
+      "posts": "50"
+    },
+    {
+      "division": "Biology",
+      "posts": "50"
+    },
+    {
+      "division": "Hindi",
+      "posts": "50"
+    },
+    {
+      "division": "English",
+      "posts": "50"
+    },
+    {
+      "division": "General Knowledge",
+      "posts": "50"
+    },
+    {
+      "division": "Total",
+      "posts": "450"
+    },
+    {
+      "division": "📘 Bihar Polytechnic Syllabus & Exam Pattern 2026\n\n\n\n\nPolytechnic Engineering (PE) Group\n\nExam Duration: 2 Hours 15 Minutes\nTotal Marks: 450\n\n\n\n\n\nSubject\nQuestions\nMarks\n\n\nPhysics\n30\n150\n\n\nChemistry\n30\n150\n\n\nMathematics\n30\n150\n\n\nTotal\n90\n450\n\n\n\n\nNote: Level of Exam: Secondary (10th Level)\n\n\n\n\nPara Medical (Intermediate Level) PM Group\n\nExam Duration: 2 Hours 15 Minutes\nTotal Marks: 450\n\n\n\n\n\nSubject\nQuestions\nMarks\n\n\nGeneral Science (Physics, Chemistry, Biology)\n25\n125\n\n\nMathematical Ability\n15\n75\n\n\nHindi\n15\n75\n\n\nGeneral Knowledge\n20\n100\n\n\nTotal\n90\n450\n\n\n\n\nNote: Questions based on Intermediate Level Science, Hindi and General Knowledge.\n\n\n\n\nPara Medical (Matric Level) PMM Group\n\nExam Duration: 2 Hours 15 Minutes\nTotal Marks: 450\n\n\n\n\n\nSubject\nQuestions\nMarks\n\n\nPhysics\n20\n100\n\n\nChemistry\n20\n100\n\n\nMathematics\n10\n50\n\n\nBiology\n10\n50\n\n\nHindi\n10\n50\n\n\nEnglish\n10\n50\n\n\nGeneral Knowledge\n10\n50\n\n\nTotal\n90\n450\n\n\n\n\nImportant Information\n\nPE Group exam is based on Secondary (10th Level) syllabus.\nPM Group questions are based on Intermediate Level Science, Hindi and General Knowledge.\nPMM Group exam is based on Secondary (10th Level) syllabus.\nEach group carries a total of 90 questions and 450 marks.\nCheck the official prospectus for detailed syllabus and subject-wise topics.",
+      "posts": "450"
+    },
+    {
+      "division": "Physics",
+      "posts": "150"
+    },
+    {
+      "division": "Chemistry",
+      "posts": "150"
+    },
+    {
+      "division": "Mathematics",
+      "posts": "150"
+    },
+    {
+      "division": "Total",
+      "posts": "450"
+    },
+    {
+      "division": "General Science (Physics, Chemistry, Biology)",
+      "posts": "125"
+    },
+    {
+      "division": "Mathematical Ability",
+      "posts": "75"
+    },
+    {
+      "division": "Hindi",
+      "posts": "75"
+    },
+    {
+      "division": "General Knowledge",
+      "posts": "100"
+    },
+    {
+      "division": "Total",
+      "posts": "450"
+    },
+    {
+      "division": "Physics",
+      "posts": "100"
+    },
+    {
+      "division": "Chemistry",
+      "posts": "100"
+    },
+    {
+      "division": "Mathematics",
+      "posts": "50"
+    },
+    {
+      "division": "Biology",
+      "posts": "50"
+    },
+    {
+      "division": "Hindi",
+      "posts": "50"
+    },
+    {
+      "division": "English",
+      "posts": "50"
+    },
+    {
+      "division": "General Knowledge",
+      "posts": "50"
+    },
+    {
+      "division": "Total",
+      "posts": "450"
+    },
+    {
+      "division": "📘 Bihar Polytechnic Syllabus & Exam Pattern 2026\n\n\n\n\nPolytechnic Engineering (PE) Group\n\nExam Duration: 2 Hours 15 Minutes\nTotal Marks: 450\n\n\n\n\n\nSubject\nQuestions\nMarks\n\n\nPhysics\n30\n150\n\n\nChemistry\n30\n150\n\n\nMathematics\n30\n150\n\n\nTotal\n90\n450\n\n\n\n\nNote: Level of Exam: Secondary (10th Level)\n\n\n\n\nPara Medical (Intermediate Level) PM Group\n\nExam Duration: 2 Hours 15 Minutes\nTotal Marks: 450\n\n\n\n\n\nSubject\nQuestions\nMarks\n\n\nGeneral Science (Physics, Chemistry, Biology)\n25\n125\n\n\nMathematical Ability\n15\n75\n\n\nHindi\n15\n75\n\n\nGeneral Knowledge\n20\n100\n\n\nTotal\n90\n450\n\n\n\n\nNote: Questions based on Intermediate Level Science, Hindi and General Knowledge.\n\n\n\n\nPara Medical (Matric Level) PMM Group\n\nExam Duration: 2 Hours 15 Minutes\nTotal Marks: 450\n\n\n\n\n\nSubject\nQuestions\nMarks\n\n\nPhysics\n20\n100\n\n\nChemistry\n20\n100\n\n\nMathematics\n10\n50\n\n\nBiology\n10\n50\n\n\nHindi\n10\n50\n\n\nEnglish\n10\n50\n\n\nGeneral Knowledge\n10\n50\n\n\nTotal\n90\n450\n\n\n\n\nImportant Information\n\nPE Group exam is based on Secondary (10th Level) syllabus.\nPM Group questions are based on Intermediate Level Science, Hindi and General Knowledge.\nPMM Group exam is based on Secondary (10th Level) syllabus.\nEach group carries a total of 90 questions and 450 marks.\nCheck the official prospectus for detailed syllabus and subject-wise topics.",
+      "posts": "450"
+    },
+    {
+      "division": "Physics",
+      "posts": "150"
+    },
+    {
+      "division": "Chemistry",
+      "posts": "150"
+    },
+    {
+      "division": "Mathematics",
+      "posts": "150"
+    },
+    {
+      "division": "Total",
+      "posts": "450"
+    },
+    {
+      "division": "General Science (Physics, Chemistry, Biology)",
+      "posts": "125"
+    },
+    {
+      "division": "Mathematical Ability",
+      "posts": "75"
+    },
+    {
+      "division": "Hindi",
+      "posts": "75"
+    },
+    {
+      "division": "General Knowledge",
+      "posts": "100"
+    },
+    {
+      "division": "Total",
+      "posts": "450"
+    },
+    {
+      "division": "Physics",
+      "posts": "100"
+    },
+    {
+      "division": "Chemistry",
+      "posts": "100"
+    },
+    {
+      "division": "Mathematics",
+      "posts": "50"
+    },
+    {
+      "division": "Biology",
+      "posts": "50"
+    },
+    {
+      "division": "Hindi",
+      "posts": "50"
+    },
+    {
+      "division": "English",
+      "posts": "50"
+    },
+    {
+      "division": "General Knowledge",
+      "posts": "50"
+    },
+    {
+      "division": "Total",
+      "posts": "450"
+    },
+    {
+      "division": "Physics",
+      "posts": "150"
+    },
+    {
+      "division": "Chemistry",
+      "posts": "150"
+    },
+    {
+      "division": "Mathematics",
+      "posts": "150"
+    },
+    {
+      "division": "Total",
+      "posts": "450"
+    },
+    {
+      "division": "General Science (Physics, Chemistry, Biology)",
+      "posts": "125"
+    },
+    {
+      "division": "Mathematical Ability",
+      "posts": "75"
+    },
+    {
+      "division": "Hindi",
+      "posts": "75"
+    },
+    {
+      "division": "General Knowledge",
+      "posts": "100"
+    },
+    {
+      "division": "Total",
+      "posts": "450"
+    },
+    {
+      "division": "Physics",
+      "posts": "100"
+    },
+    {
+      "division": "Chemistry",
+      "posts": "100"
+    },
+    {
+      "division": "Mathematics",
+      "posts": "50"
+    },
+    {
+      "division": "Biology",
+      "posts": "50"
+    },
+    {
+      "division": "Hindi",
+      "posts": "50"
+    },
+    {
+      "division": "English",
+      "posts": "50"
+    },
+    {
+      "division": "General Knowledge",
+      "posts": "50"
+    },
+    {
+      "division": "Total",
+      "posts": "450"
+    }
+  ]
 }

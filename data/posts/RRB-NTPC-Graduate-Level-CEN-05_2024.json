@@ -459,5 +459,103 @@
   ],
   "fullContentHtml": "",
   "lastDate": "14 September 2024",
-  "isExpired": false
+  "isExpired": false,
+  "divisionWiseVacancy": [
+    {
+      "division": "3494",
+      "posts": "635"
+    },
+    {
+      "division": "RRB Prayagraj",
+      "posts": "227"
+    },
+    {
+      "division": "RRB Ranchi",
+      "posts": "322"
+    },
+    {
+      "division": "RRB Thrivandrum",
+      "posts": "174"
+    },
+    {
+      "division": "90",
+      "posts": "100"
+    },
+    {
+      "division": "90",
+      "posts": "120"
+    },
+    {
+      "division": "3494",
+      "posts": "635"
+    },
+    {
+      "division": "RRB Prayagraj",
+      "posts": "227"
+    },
+    {
+      "division": "RRB Ranchi",
+      "posts": "322"
+    },
+    {
+      "division": "RRB Thrivandrum",
+      "posts": "174"
+    },
+    {
+      "division": "90",
+      "posts": "100"
+    },
+    {
+      "division": "90",
+      "posts": "120"
+    },
+    {
+      "division": "3494",
+      "posts": "635"
+    },
+    {
+      "division": "RRB Prayagraj",
+      "posts": "227"
+    },
+    {
+      "division": "RRB Ranchi",
+      "posts": "322"
+    },
+    {
+      "division": "RRB Thrivandrum",
+      "posts": "174"
+    },
+    {
+      "division": "90",
+      "posts": "100"
+    },
+    {
+      "division": "90",
+      "posts": "120"
+    },
+    {
+      "division": "3494",
+      "posts": "635"
+    },
+    {
+      "division": "RRB Prayagraj",
+      "posts": "227"
+    },
+    {
+      "division": "RRB Ranchi",
+      "posts": "322"
+    },
+    {
+      "division": "RRB Thrivandrum",
+      "posts": "174"
+    },
+    {
+      "division": "90",
+      "posts": "100"
+    },
+    {
+      "division": "90",
+      "posts": "120"
+    }
+  ]
 }

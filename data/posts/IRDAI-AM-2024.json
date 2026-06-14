@@ -66,5 +66,151 @@
     }
   ],
   "fullContentHtml": "",
-  "isExpired": false
+  "isExpired": false,
+  "divisionWiseVacancy": [
+    {
+      "division": "21",
+      "posts": "04"
+    },
+    {
+      "division": "Test of Reasoning",
+      "posts": "40"
+    },
+    {
+      "division": "Test of English Language",
+      "posts": "40"
+    },
+    {
+      "division": "Test of General Awareness",
+      "posts": "40"
+    },
+    {
+      "division": "Test of Quantitative Aptitude",
+      "posts": "40"
+    },
+    {
+      "division": "Total",
+      "posts": "160"
+    },
+    {
+      "division": "Paper-I:  English",
+      "posts": "60"
+    },
+    {
+      "division": "Paper-II: Economic and Social Issues impacting Insurance",
+      "posts": "60"
+    },
+    {
+      "division": "Paper-III: Insurance & Management.",
+      "posts": "60"
+    },
+    {
+      "division": "21",
+      "posts": "04"
+    },
+    {
+      "division": "Test of Reasoning",
+      "posts": "40"
+    },
+    {
+      "division": "Test of English Language",
+      "posts": "40"
+    },
+    {
+      "division": "Test of General Awareness",
+      "posts": "40"
+    },
+    {
+      "division": "Test of Quantitative Aptitude",
+      "posts": "40"
+    },
+    {
+      "division": "Total",
+      "posts": "160"
+    },
+    {
+      "division": "Paper-I:  English",
+      "posts": "60"
+    },
+    {
+      "division": "Paper-II: Economic and Social Issues impacting Insurance",
+      "posts": "60"
+    },
+    {
+      "division": "Paper-III: Insurance & Management.",
+      "posts": "60"
+    },
+    {
+      "division": "21",
+      "posts": "04"
+    },
+    {
+      "division": "Test of Reasoning",
+      "posts": "40"
+    },
+    {
+      "division": "Test of English Language",
+      "posts": "40"
+    },
+    {
+      "division": "Test of General Awareness",
+      "posts": "40"
+    },
+    {
+      "division": "Test of Quantitative Aptitude",
+      "posts": "40"
+    },
+    {
+      "division": "Total",
+      "posts": "160"
+    },
+    {
+      "division": "Paper-I:  English",
+      "posts": "60"
+    },
+    {
+      "division": "Paper-II: Economic and Social Issues impacting Insurance",
+      "posts": "60"
+    },
+    {
+      "division": "Paper-III: Insurance & Management.",
+      "posts": "60"
+    },
+    {
+      "division": "21",
+      "posts": "04"
+    },
+    {
+      "division": "Test of Reasoning",
+      "posts": "40"
+    },
+    {
+      "division": "Test of English Language",
+      "posts": "40"
+    },
+    {
+      "division": "Test of General Awareness",
+      "posts": "40"
+    },
+    {
+      "division": "Test of Quantitative Aptitude",
+      "posts": "40"
+    },
+    {
+      "division": "Total",
+      "posts": "160"
+    },
+    {
+      "division": "Paper-I:  English",
+      "posts": "60"
+    },
+    {
+      "division": "Paper-II: Economic and Social Issues impacting Insurance",
+      "posts": "60"
+    },
+    {
+      "division": "Paper-III: Insurance & Management.",
+      "posts": "60"
+    }
+  ]
 }

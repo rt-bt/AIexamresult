@@ -171,5 +171,87 @@
   ],
   "fullContentHtml": "",
   "lastDate": "12 August 2025",
-  "isExpired": false
+  "isExpired": false,
+  "divisionWiseVacancy": [
+    {
+      "division": "Lecturer GIC",
+      "posts": "777"
+    },
+    {
+      "division": "Female",
+      "posts": "694"
+    },
+    {
+      "division": "Visually Impaired",
+      "posts": "45"
+    },
+    {
+      "division": "UP State Jail Training School",
+      "posts": "02"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "1518"
+    },
+    {
+      "division": "Lecturer GIC",
+      "posts": "777"
+    },
+    {
+      "division": "Female",
+      "posts": "694"
+    },
+    {
+      "division": "Visually Impaired",
+      "posts": "45"
+    },
+    {
+      "division": "UP State Jail Training School",
+      "posts": "02"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "1518"
+    },
+    {
+      "division": "Lecturer GIC",
+      "posts": "777"
+    },
+    {
+      "division": "Female",
+      "posts": "694"
+    },
+    {
+      "division": "Visually Impaired",
+      "posts": "45"
+    },
+    {
+      "division": "UP State Jail Training School",
+      "posts": "02"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "1518"
+    },
+    {
+      "division": "Lecturer GIC",
+      "posts": "777"
+    },
+    {
+      "division": "Female",
+      "posts": "694"
+    },
+    {
+      "division": "Visually Impaired",
+      "posts": "45"
+    },
+    {
+      "division": "UP State Jail Training School",
+      "posts": "02"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "1518"
+    }
+  ]
 }

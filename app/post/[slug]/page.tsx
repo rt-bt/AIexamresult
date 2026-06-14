@@ -458,10 +458,60 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                 </TableCard>
               )}
 
-              {/* Vacancy Details - extracted from importantDates */}
-              {post.importantDates?.filter((d: string) =>
+              {/* Vacancy Details - structured from scraper or extracted from importantDates */}
+              {post.vacancyDetails && post.vacancyDetails.length > 0 ? (
+                <TableCard icon={<Users className="h-4 w-4" />} title="Vacancy Details" gradient="border-b border-violet-100 bg-violet-50/50">
+                  <div className="divide-y divide-violet-100">
+                    {post.vacancyDetails.map((v: string, i: number) => {
+                      const lower = v.toLowerCase();
+                      if (lower.includes("total post") || lower.includes("total posts")) {
+                        return (
+                          <div key={i} className="flex items-center justify-between py-3 first:pt-0">
+                            <span className="text-sm font-semibold text-violet-700">Total Posts</span>
+                            <span className="text-lg font-black text-violet-800">{v.split(":")[1]?.trim() || v}</span>
+                          </div>
+                        );
+                      }
+                      const parts = v.split(":");
+                      const name = parts[0]?.trim() || "";
+                      const count = parts.slice(1).join(":").trim();
+                      return (
+                        <div key={i} className="flex items-center justify-between py-2.5 first:pt-0 last:pb-0">
+                          <span className="text-sm font-medium text-gray-700">{name}</span>
+                          <span className="text-sm font-bold text-gray-900">{count}</span>
+                        </div>
+                      );
+                    })}
+                  </div>
+                  {post.divisionWiseVacancy && post.divisionWiseVacancy.length > 0 && (
+                    <details className="group mt-3">
+                      <summary className="cursor-pointer text-xs font-semibold text-violet-600 hover:text-violet-700 select-none">
+                        Division Wise Vacancy ({post.divisionWiseVacancy.length} divisions) ▼
+                      </summary>
+                      <div className="mt-3 max-h-64 overflow-y-auto border border-violet-100 rounded-lg">
+                        <table className="w-full text-xs">
+                          <thead>
+                            <tr className="bg-violet-50">
+                              <th className="py-2 px-3 text-left font-semibold text-violet-700">Division</th>
+                              <th className="py-2 px-3 text-right font-semibold text-violet-700">Posts</th>
+                            </tr>
+                          </thead>
+                          <tbody className="divide-y divide-violet-50">
+                            {post.divisionWiseVacancy.map((d: { division: string; posts: string }, i: number) => (
+                              <tr key={i} className="hover:bg-violet-50/50">
+                                <td className="py-1.5 px-3 text-gray-700">{d.division}</td>
+                                <td className="py-1.5 px-3 text-right font-semibold text-gray-900">{d.posts}</td>
+                              </tr>
+                            ))}
+                          </tbody>
+                        </table>
+                      </div>
+                    </details>
+                  )}
+                </TableCard>
+              ) : post.importantDates?.filter((d: string) =>
                 d.toLowerCase().includes("vacancy") || d.toLowerCase().includes("total post") || d.toLowerCase().includes("total seat")
-              ).length > 0 && (
+              ).length > 0 ? (
                 <TableCard icon={<Users className="h-4 w-4" />} title="Vacancy Details" gradient="border-b border-violet-100 bg-violet-50/50">
                   <div className="divide-y divide-gray-50">
                     {post.importantDates.filter((d: string) =>
@@ -476,7 +526,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                     ))}
                   </div>
                 </TableCard>
-              )}
+              ) : null}
 
               {/* How to Apply */}
               {post.importantDates?.filter((d: string) =>

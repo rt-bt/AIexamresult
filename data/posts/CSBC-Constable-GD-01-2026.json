@@ -129,5 +129,135 @@
   ],
   "fullContentHtml": "",
   "lastDate": "06 February 2026",
-  "isExpired": false
+  "isExpired": false,
+  "divisionWiseVacancy": [
+    {
+      "division": "01",
+      "posts": "34"
+    },
+    {
+      "division": "02",
+      "posts": "08"
+    },
+    {
+      "division": "03",
+      "posts": "13"
+    },
+    {
+      "division": "04",
+      "posts": "01"
+    },
+    {
+      "division": "05",
+      "posts": "15"
+    },
+    {
+      "division": "06",
+      "posts": "10"
+    },
+    {
+      "division": "07",
+      "posts": "02"
+    },
+    {
+      "division": "Total Vacancy",
+      "posts": "83"
+    },
+    {
+      "division": "01",
+      "posts": "34"
+    },
+    {
+      "division": "02",
+      "posts": "08"
+    },
+    {
+      "division": "03",
+      "posts": "13"
+    },
+    {
+      "division": "04",
+      "posts": "01"
+    },
+    {
+      "division": "05",
+      "posts": "15"
+    },
+    {
+      "division": "06",
+      "posts": "10"
+    },
+    {
+      "division": "07",
+      "posts": "02"
+    },
+    {
+      "division": "Total Vacancy",
+      "posts": "83"
+    },
+    {
+      "division": "01",
+      "posts": "34"
+    },
+    {
+      "division": "02",
+      "posts": "08"
+    },
+    {
+      "division": "03",
+      "posts": "13"
+    },
+    {
+      "division": "04",
+      "posts": "01"
+    },
+    {
+      "division": "05",
+      "posts": "15"
+    },
+    {
+      "division": "06",
+      "posts": "10"
+    },
+    {
+      "division": "07",
+      "posts": "02"
+    },
+    {
+      "division": "Total Vacancy",
+      "posts": "83"
+    },
+    {
+      "division": "01",
+      "posts": "34"
+    },
+    {
+      "division": "02",
+      "posts": "08"
+    },
+    {
+      "division": "03",
+      "posts": "13"
+    },
+    {
+      "division": "04",
+      "posts": "01"
+    },
+    {
+      "division": "05",
+      "posts": "15"
+    },
+    {
+      "division": "06",
+      "posts": "10"
+    },
+    {
+      "division": "07",
+      "posts": "02"
+    },
+    {
+      "division": "Total Vacancy",
+      "posts": "83"
+    }
+  ]
 }

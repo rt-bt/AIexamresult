@@ -95,5 +95,935 @@
   ],
   "fullContentHtml": "",
   "lastDate": "12 June 2026",
-  "isExpired": false
+  "isExpired": false,
+  "divisionWiseVacancy": [
+    {
+      "division": "Apprentices",
+      "posts": "4500"
+    },
+    {
+      "division": "States & UT\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tUR\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOBC\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tEWS\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSC\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tST\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTotal\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAndaman And Nicobar Islands (UT)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAndhra Pradesh\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t51\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t35\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t13\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t20\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t09\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t128\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tArunachal Pradesh\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t08\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAssam\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t52\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t32\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t12\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t08\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t14\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t118\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tBihar\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t200\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t117\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t43\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t69\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t433\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tChandigarh (UT)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t09\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tChhattisgarh\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t46\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t07\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t11\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t14\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t36\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t114\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDadra Nagar Haveli\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDaman And Diu (UT)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDelhi\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t39\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t26\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t10\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t15\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t07\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t97\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tGoa\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t05\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t28\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tGujarat\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t125\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t82\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t31\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t21\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t46\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t305\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tHaryana\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t60\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t37\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t14\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t26\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t137\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tHimachal Pradesh\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t22\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t11\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t06\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t14\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t55\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tJammu & Kashmir (UT)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t06\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t13\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tJharkhand\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t35\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t10\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t09\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t10\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t23\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t87\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tKarnataka\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t42\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t28\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t11\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t17\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t07\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t105\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tKerala\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t60\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t31\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t12\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t12\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t116\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tLadakh (UT)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMadhya Pradesh\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t183\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t69\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t46\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t69\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t92\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t459\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMaharashtra\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t257\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t158\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t59\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t59\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t53\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t586\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tManipur\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t07\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMeghalaya\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t08\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMizoram\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tNagaland\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t07\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOrissa\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t42\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t12\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t10\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t23\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t103\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPondicherry (UT)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPunjab\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t57\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t30\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t14\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t41\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t142\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tRajasthan\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t68\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t34\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t17\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t29\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t22\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t170\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSikkim\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t05\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t15\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTamil Nadu\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t87\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t55\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t20\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t38\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t202\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTelangana\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t40\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t27\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t10\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t07\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t100\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTripura\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t05\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tUttar Pradesh\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t237\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t157\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t58\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t122\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t06\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t580\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tUttarakhand\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t24\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t05\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t07\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t41\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tWest Bengal\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t126\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t69\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t32\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t72\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t315\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tGrand Total\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1903\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1049\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t454\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t701\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t393\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t4500",
+      "posts": "4500"
+    },
+    {
+      "division": "Andaman And Nicobar Islands (UT)",
+      "posts": "01"
+    },
+    {
+      "division": "Andhra Pradesh",
+      "posts": "128"
+    },
+    {
+      "division": "Arunachal Pradesh",
+      "posts": "08"
+    },
+    {
+      "division": "Assam",
+      "posts": "118"
+    },
+    {
+      "division": "Bihar",
+      "posts": "433"
+    },
+    {
+      "division": "Chandigarh (UT)",
+      "posts": "09"
+    },
+    {
+      "division": "Chhattisgarh",
+      "posts": "114"
+    },
+    {
+      "division": "Dadra Nagar Haveli",
+      "posts": "01"
+    },
+    {
+      "division": "Daman And Diu (UT)",
+      "posts": "01"
+    },
+    {
+      "division": "Delhi",
+      "posts": "97"
+    },
+    {
+      "division": "Goa",
+      "posts": "28"
+    },
+    {
+      "division": "Gujarat",
+      "posts": "305"
+    },
+    {
+      "division": "Haryana",
+      "posts": "137"
+    },
+    {
+      "division": "Himachal Pradesh",
+      "posts": "55"
+    },
+    {
+      "division": "Jammu & Kashmir (UT)",
+      "posts": "13"
+    },
+    {
+      "division": "Jharkhand",
+      "posts": "87"
+    },
+    {
+      "division": "Karnataka",
+      "posts": "105"
+    },
+    {
+      "division": "Kerala",
+      "posts": "116"
+    },
+    {
+      "division": "Ladakh (UT)",
+      "posts": "01"
+    },
+    {
+      "division": "Madhya Pradesh",
+      "posts": "459"
+    },
+    {
+      "division": "Maharashtra",
+      "posts": "586"
+    },
+    {
+      "division": "Manipur",
+      "posts": "07"
+    },
+    {
+      "division": "Meghalaya",
+      "posts": "08"
+    },
+    {
+      "division": "Mizoram",
+      "posts": "01"
+    },
+    {
+      "division": "Nagaland",
+      "posts": "07"
+    },
+    {
+      "division": "Orissa",
+      "posts": "103"
+    },
+    {
+      "division": "Pondicherry (UT)",
+      "posts": "02"
+    },
+    {
+      "division": "Punjab",
+      "posts": "142"
+    },
+    {
+      "division": "Rajasthan",
+      "posts": "170"
+    },
+    {
+      "division": "Sikkim",
+      "posts": "15"
+    },
+    {
+      "division": "Tamil Nadu",
+      "posts": "202"
+    },
+    {
+      "division": "Telangana",
+      "posts": "100"
+    },
+    {
+      "division": "Tripura",
+      "posts": "05"
+    },
+    {
+      "division": "Uttar Pradesh",
+      "posts": "580"
+    },
+    {
+      "division": "Uttarakhand",
+      "posts": "41"
+    },
+    {
+      "division": "West Bengal",
+      "posts": "315"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "4500"
+    },
+    {
+      "division": "Apprentices",
+      "posts": "4500"
+    },
+    {
+      "division": "States & UT\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tUR\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOBC\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tEWS\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSC\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tST\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTotal\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAndaman And Nicobar Islands (UT)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAndhra Pradesh\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t51\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t35\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t13\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t20\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t09\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t128\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tArunachal Pradesh\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t08\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAssam\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t52\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t32\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t12\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t08\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t14\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t118\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tBihar\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t200\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t117\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t43\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t69\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t433\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tChandigarh (UT)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t09\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tChhattisgarh\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t46\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t07\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t11\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t14\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t36\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t114\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDadra Nagar Haveli\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDaman And Diu (UT)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDelhi\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t39\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t26\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t10\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t15\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t07\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t97\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tGoa\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t05\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t28\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tGujarat\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t125\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t82\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t31\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t21\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t46\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t305\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tHaryana\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t60\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t37\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t14\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t26\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t137\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tHimachal Pradesh\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t22\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t11\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t06\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t14\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t55\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tJammu & Kashmir (UT)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t06\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t13\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tJharkhand\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t35\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t10\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t09\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t10\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t23\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t87\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tKarnataka\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t42\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t28\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t11\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t17\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t07\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t105\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tKerala\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t60\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t31\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t12\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t12\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t116\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tLadakh (UT)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMadhya Pradesh\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t183\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t69\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t46\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t69\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t92\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t459\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMaharashtra\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t257\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t158\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t59\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t59\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t53\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t586\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tManipur\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t07\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMeghalaya\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t08\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMizoram\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tNagaland\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t07\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOrissa\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t42\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t12\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t10\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t23\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t103\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPondicherry (UT)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPunjab\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t57\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t30\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t14\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t41\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t142\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tRajasthan\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t68\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t34\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t17\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t29\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t22\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t170\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSikkim\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t05\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t15\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTamil Nadu\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t87\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t55\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t20\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t38\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t202\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTelangana\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t40\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t27\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t10\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t07\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t100\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTripura\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t05\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tUttar Pradesh\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t237\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t157\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t58\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t122\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t06\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t580\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tUttarakhand\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t24\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t05\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t07\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t41\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tWest Bengal\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t126\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t69\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t32\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t72\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t315\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tGrand Total\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1903\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1049\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t454\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t701\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t393\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t4500",
+      "posts": "4500"
+    },
+    {
+      "division": "Andaman And Nicobar Islands (UT)",
+      "posts": "01"
+    },
+    {
+      "division": "Andhra Pradesh",
+      "posts": "128"
+    },
+    {
+      "division": "Arunachal Pradesh",
+      "posts": "08"
+    },
+    {
+      "division": "Assam",
+      "posts": "118"
+    },
+    {
+      "division": "Bihar",
+      "posts": "433"
+    },
+    {
+      "division": "Chandigarh (UT)",
+      "posts": "09"
+    },
+    {
+      "division": "Chhattisgarh",
+      "posts": "114"
+    },
+    {
+      "division": "Dadra Nagar Haveli",
+      "posts": "01"
+    },
+    {
+      "division": "Daman And Diu (UT)",
+      "posts": "01"
+    },
+    {
+      "division": "Delhi",
+      "posts": "97"
+    },
+    {
+      "division": "Goa",
+      "posts": "28"
+    },
+    {
+      "division": "Gujarat",
+      "posts": "305"
+    },
+    {
+      "division": "Haryana",
+      "posts": "137"
+    },
+    {
+      "division": "Himachal Pradesh",
+      "posts": "55"
+    },
+    {
+      "division": "Jammu & Kashmir (UT)",
+      "posts": "13"
+    },
+    {
+      "division": "Jharkhand",
+      "posts": "87"
+    },
+    {
+      "division": "Karnataka",
+      "posts": "105"
+    },
+    {
+      "division": "Kerala",
+      "posts": "116"
+    },
+    {
+      "division": "Ladakh (UT)",
+      "posts": "01"
+    },
+    {
+      "division": "Madhya Pradesh",
+      "posts": "459"
+    },
+    {
+      "division": "Maharashtra",
+      "posts": "586"
+    },
+    {
+      "division": "Manipur",
+      "posts": "07"
+    },
+    {
+      "division": "Meghalaya",
+      "posts": "08"
+    },
+    {
+      "division": "Mizoram",
+      "posts": "01"
+    },
+    {
+      "division": "Nagaland",
+      "posts": "07"
+    },
+    {
+      "division": "Orissa",
+      "posts": "103"
+    },
+    {
+      "division": "Pondicherry (UT)",
+      "posts": "02"
+    },
+    {
+      "division": "Punjab",
+      "posts": "142"
+    },
+    {
+      "division": "Rajasthan",
+      "posts": "170"
+    },
+    {
+      "division": "Sikkim",
+      "posts": "15"
+    },
+    {
+      "division": "Tamil Nadu",
+      "posts": "202"
+    },
+    {
+      "division": "Telangana",
+      "posts": "100"
+    },
+    {
+      "division": "Tripura",
+      "posts": "05"
+    },
+    {
+      "division": "Uttar Pradesh",
+      "posts": "580"
+    },
+    {
+      "division": "Uttarakhand",
+      "posts": "41"
+    },
+    {
+      "division": "West Bengal",
+      "posts": "315"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "4500"
+    },
+    {
+      "division": "Apprentices",
+      "posts": "4500"
+    },
+    {
+      "division": "States & UT\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tUR\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOBC\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tEWS\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSC\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tST\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTotal\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAndaman And Nicobar Islands (UT)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAndhra Pradesh\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t51\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t35\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t13\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t20\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t09\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t128\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tArunachal Pradesh\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t08\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAssam\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t52\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t32\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t12\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t08\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t14\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t118\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tBihar\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t200\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t117\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t43\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t69\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t433\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tChandigarh (UT)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t09\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tChhattisgarh\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t46\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t07\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t11\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t14\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t36\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t114\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDadra Nagar Haveli\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDaman And Diu (UT)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDelhi\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t39\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t26\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t10\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t15\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t07\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t97\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tGoa\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t05\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t28\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tGujarat\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t125\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t82\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t31\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t21\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t46\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t305\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tHaryana\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t60\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t37\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t14\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t26\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t137\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tHimachal Pradesh\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t22\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t11\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t06\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t14\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t55\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tJammu & Kashmir (UT)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t06\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t13\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tJharkhand\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t35\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t10\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t09\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t10\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t23\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t87\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tKarnataka\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t42\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t28\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t11\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t17\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t07\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t105\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tKerala\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t60\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t31\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t12\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t12\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t116\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tLadakh (UT)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMadhya Pradesh\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t183\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t69\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t46\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t69\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t92\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t459\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMaharashtra\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t257\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t158\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t59\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t59\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t53\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t586\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tManipur\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t07\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMeghalaya\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t08\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMizoram\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tNagaland\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t07\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOrissa\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t42\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t12\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t10\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t23\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t103\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPondicherry (UT)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPunjab\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t57\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t30\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t14\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t41\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t142\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tRajasthan\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t68\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t34\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t17\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t29\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t22\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t170\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSikkim\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t05\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t15\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTamil Nadu\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t87\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t55\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t20\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t38\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t202\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTelangana\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t40\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t27\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t10\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t07\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t100\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTripura\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t05\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tUttar Pradesh\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t237\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t157\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t58\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t122\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t06\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t580\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tUttarakhand\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t24\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t05\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t07\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t41\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tWest Bengal\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t126\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t69\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t32\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t72\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t315\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tGrand Total\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1903\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1049\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t454\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t701\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t393\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t4500",
+      "posts": "4500"
+    },
+    {
+      "division": "Andaman And Nicobar Islands (UT)",
+      "posts": "01"
+    },
+    {
+      "division": "Andhra Pradesh",
+      "posts": "128"
+    },
+    {
+      "division": "Arunachal Pradesh",
+      "posts": "08"
+    },
+    {
+      "division": "Assam",
+      "posts": "118"
+    },
+    {
+      "division": "Bihar",
+      "posts": "433"
+    },
+    {
+      "division": "Chandigarh (UT)",
+      "posts": "09"
+    },
+    {
+      "division": "Chhattisgarh",
+      "posts": "114"
+    },
+    {
+      "division": "Dadra Nagar Haveli",
+      "posts": "01"
+    },
+    {
+      "division": "Daman And Diu (UT)",
+      "posts": "01"
+    },
+    {
+      "division": "Delhi",
+      "posts": "97"
+    },
+    {
+      "division": "Goa",
+      "posts": "28"
+    },
+    {
+      "division": "Gujarat",
+      "posts": "305"
+    },
+    {
+      "division": "Haryana",
+      "posts": "137"
+    },
+    {
+      "division": "Himachal Pradesh",
+      "posts": "55"
+    },
+    {
+      "division": "Jammu & Kashmir (UT)",
+      "posts": "13"
+    },
+    {
+      "division": "Jharkhand",
+      "posts": "87"
+    },
+    {
+      "division": "Karnataka",
+      "posts": "105"
+    },
+    {
+      "division": "Kerala",
+      "posts": "116"
+    },
+    {
+      "division": "Ladakh (UT)",
+      "posts": "01"
+    },
+    {
+      "division": "Madhya Pradesh",
+      "posts": "459"
+    },
+    {
+      "division": "Maharashtra",
+      "posts": "586"
+    },
+    {
+      "division": "Manipur",
+      "posts": "07"
+    },
+    {
+      "division": "Meghalaya",
+      "posts": "08"
+    },
+    {
+      "division": "Mizoram",
+      "posts": "01"
+    },
+    {
+      "division": "Nagaland",
+      "posts": "07"
+    },
+    {
+      "division": "Orissa",
+      "posts": "103"
+    },
+    {
+      "division": "Pondicherry (UT)",
+      "posts": "02"
+    },
+    {
+      "division": "Punjab",
+      "posts": "142"
+    },
+    {
+      "division": "Rajasthan",
+      "posts": "170"
+    },
+    {
+      "division": "Sikkim",
+      "posts": "15"
+    },
+    {
+      "division": "Tamil Nadu",
+      "posts": "202"
+    },
+    {
+      "division": "Telangana",
+      "posts": "100"
+    },
+    {
+      "division": "Tripura",
+      "posts": "05"
+    },
+    {
+      "division": "Uttar Pradesh",
+      "posts": "580"
+    },
+    {
+      "division": "Uttarakhand",
+      "posts": "41"
+    },
+    {
+      "division": "West Bengal",
+      "posts": "315"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "4500"
+    },
+    {
+      "division": "Apprentices",
+      "posts": "4500"
+    },
+    {
+      "division": "States & UT\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tUR\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOBC\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tEWS\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSC\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tST\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTotal\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAndaman And Nicobar Islands (UT)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAndhra Pradesh\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t51\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t35\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t13\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t20\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t09\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t128\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tArunachal Pradesh\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t08\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAssam\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t52\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t32\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t12\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t08\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t14\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t118\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tBihar\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t200\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t117\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t43\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t69\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t433\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tChandigarh (UT)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t09\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tChhattisgarh\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t46\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t07\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t11\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t14\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t36\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t114\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDadra Nagar Haveli\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDaman And Diu (UT)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDelhi\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t39\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t26\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t10\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t15\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t07\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t97\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tGoa\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t05\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t28\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tGujarat\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t125\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t82\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t31\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t21\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t46\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t305\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tHaryana\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t60\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t37\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t14\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t26\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t137\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tHimachal Pradesh\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t22\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t11\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t06\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t14\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t55\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tJammu & Kashmir (UT)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t06\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t13\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tJharkhand\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t35\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t10\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t09\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t10\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t23\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t87\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tKarnataka\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t42\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t28\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t11\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t17\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t07\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t105\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tKerala\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t60\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t31\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t12\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t12\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t116\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tLadakh (UT)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMadhya Pradesh\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t183\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t69\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t46\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t69\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t92\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t459\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMaharashtra\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t257\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t158\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t59\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t59\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t53\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t586\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tManipur\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t07\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMeghalaya\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t08\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMizoram\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tNagaland\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t07\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOrissa\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t42\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t12\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t10\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t23\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t103\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPondicherry (UT)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPunjab\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t57\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t30\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t14\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t41\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t142\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tRajasthan\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t68\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t34\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t17\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t29\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t22\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t170\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSikkim\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t05\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t15\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTamil Nadu\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t87\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t55\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t20\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t38\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t202\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTelangana\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t40\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t27\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t10\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t07\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t100\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTripura\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t05\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tUttar Pradesh\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t237\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t157\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t58\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t122\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t06\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t580\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tUttarakhand\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t24\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t05\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t07\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t41\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tWest Bengal\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t126\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t69\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t32\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t72\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t315\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tGrand Total\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1903\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1049\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t454\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t701\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t393\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t4500",
+      "posts": "4500"
+    },
+    {
+      "division": "Andaman And Nicobar Islands (UT)",
+      "posts": "01"
+    },
+    {
+      "division": "Andhra Pradesh",
+      "posts": "128"
+    },
+    {
+      "division": "Arunachal Pradesh",
+      "posts": "08"
+    },
+    {
+      "division": "Assam",
+      "posts": "118"
+    },
+    {
+      "division": "Bihar",
+      "posts": "433"
+    },
+    {
+      "division": "Chandigarh (UT)",
+      "posts": "09"
+    },
+    {
+      "division": "Chhattisgarh",
+      "posts": "114"
+    },
+    {
+      "division": "Dadra Nagar Haveli",
+      "posts": "01"
+    },
+    {
+      "division": "Daman And Diu (UT)",
+      "posts": "01"
+    },
+    {
+      "division": "Delhi",
+      "posts": "97"
+    },
+    {
+      "division": "Goa",
+      "posts": "28"
+    },
+    {
+      "division": "Gujarat",
+      "posts": "305"
+    },
+    {
+      "division": "Haryana",
+      "posts": "137"
+    },
+    {
+      "division": "Himachal Pradesh",
+      "posts": "55"
+    },
+    {
+      "division": "Jammu & Kashmir (UT)",
+      "posts": "13"
+    },
+    {
+      "division": "Jharkhand",
+      "posts": "87"
+    },
+    {
+      "division": "Karnataka",
+      "posts": "105"
+    },
+    {
+      "division": "Kerala",
+      "posts": "116"
+    },
+    {
+      "division": "Ladakh (UT)",
+      "posts": "01"
+    },
+    {
+      "division": "Madhya Pradesh",
+      "posts": "459"
+    },
+    {
+      "division": "Maharashtra",
+      "posts": "586"
+    },
+    {
+      "division": "Manipur",
+      "posts": "07"
+    },
+    {
+      "division": "Meghalaya",
+      "posts": "08"
+    },
+    {
+      "division": "Mizoram",
+      "posts": "01"
+    },
+    {
+      "division": "Nagaland",
+      "posts": "07"
+    },
+    {
+      "division": "Orissa",
+      "posts": "103"
+    },
+    {
+      "division": "Pondicherry (UT)",
+      "posts": "02"
+    },
+    {
+      "division": "Punjab",
+      "posts": "142"
+    },
+    {
+      "division": "Rajasthan",
+      "posts": "170"
+    },
+    {
+      "division": "Sikkim",
+      "posts": "15"
+    },
+    {
+      "division": "Tamil Nadu",
+      "posts": "202"
+    },
+    {
+      "division": "Telangana",
+      "posts": "100"
+    },
+    {
+      "division": "Tripura",
+      "posts": "05"
+    },
+    {
+      "division": "Uttar Pradesh",
+      "posts": "580"
+    },
+    {
+      "division": "Uttarakhand",
+      "posts": "41"
+    },
+    {
+      "division": "West Bengal",
+      "posts": "315"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "4500"
+    },
+    {
+      "division": "Apprentices",
+      "posts": "4500"
+    },
+    {
+      "division": "States & UT\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tUR\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOBC\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tEWS\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSC\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tST\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTotal\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAndaman And Nicobar Islands (UT)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAndhra Pradesh\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t51\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t35\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t13\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t20\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t09\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t128\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tArunachal Pradesh\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t08\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAssam\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t52\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t32\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t12\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t08\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t14\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t118\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tBihar\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t200\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t117\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t43\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t69\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t433\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tChandigarh (UT)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t09\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tChhattisgarh\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t46\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t07\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t11\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t14\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t36\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t114\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDadra Nagar Haveli\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDaman And Diu (UT)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDelhi\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t39\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t26\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t10\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t15\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t07\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t97\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tGoa\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t05\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t28\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tGujarat\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t125\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t82\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t31\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t21\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t46\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t305\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tHaryana\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t60\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t37\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t14\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t26\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t137\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tHimachal Pradesh\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t22\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t11\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t06\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t14\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t55\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tJammu & Kashmir (UT)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t06\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t13\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tJharkhand\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t35\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t10\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t09\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t10\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t23\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t87\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tKarnataka\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t42\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t28\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t11\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t17\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t07\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t105\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tKerala\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t60\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t31\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t12\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t12\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t116\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tLadakh (UT)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMadhya Pradesh\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t183\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t69\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t46\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t69\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t92\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t459\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMaharashtra\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t257\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t158\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t59\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t59\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t53\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t586\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tManipur\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t07\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMeghalaya\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t08\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMizoram\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tNagaland\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t07\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOrissa\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t42\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t12\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t10\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t23\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t103\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPondicherry (UT)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPunjab\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t57\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t30\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t14\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t41\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t142\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tRajasthan\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t68\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t34\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t17\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t29\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t22\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t170\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSikkim\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t05\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t15\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTamil Nadu\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t87\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t55\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t20\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t38\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t202\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTelangana\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t40\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t27\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t10\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t07\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t100\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTripura\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t05\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tUttar Pradesh\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t237\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t157\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t58\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t122\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t06\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t580\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tUttarakhand\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t24\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t05\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t07\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t41\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tWest Bengal\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t126\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t69\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t32\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t72\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t315\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tGrand Total\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1903\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1049\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t454\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t701\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t393\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t4500",
+      "posts": "4500"
+    },
+    {
+      "division": "Andaman And Nicobar Islands (UT)",
+      "posts": "01"
+    },
+    {
+      "division": "Andhra Pradesh",
+      "posts": "128"
+    },
+    {
+      "division": "Arunachal Pradesh",
+      "posts": "08"
+    },
+    {
+      "division": "Assam",
+      "posts": "118"
+    },
+    {
+      "division": "Bihar",
+      "posts": "433"
+    },
+    {
+      "division": "Chandigarh (UT)",
+      "posts": "09"
+    },
+    {
+      "division": "Chhattisgarh",
+      "posts": "114"
+    },
+    {
+      "division": "Dadra Nagar Haveli",
+      "posts": "01"
+    },
+    {
+      "division": "Daman And Diu (UT)",
+      "posts": "01"
+    },
+    {
+      "division": "Delhi",
+      "posts": "97"
+    },
+    {
+      "division": "Goa",
+      "posts": "28"
+    },
+    {
+      "division": "Gujarat",
+      "posts": "305"
+    },
+    {
+      "division": "Haryana",
+      "posts": "137"
+    },
+    {
+      "division": "Himachal Pradesh",
+      "posts": "55"
+    },
+    {
+      "division": "Jammu & Kashmir (UT)",
+      "posts": "13"
+    },
+    {
+      "division": "Jharkhand",
+      "posts": "87"
+    },
+    {
+      "division": "Karnataka",
+      "posts": "105"
+    },
+    {
+      "division": "Kerala",
+      "posts": "116"
+    },
+    {
+      "division": "Ladakh (UT)",
+      "posts": "01"
+    },
+    {
+      "division": "Madhya Pradesh",
+      "posts": "459"
+    },
+    {
+      "division": "Maharashtra",
+      "posts": "586"
+    },
+    {
+      "division": "Manipur",
+      "posts": "07"
+    },
+    {
+      "division": "Meghalaya",
+      "posts": "08"
+    },
+    {
+      "division": "Mizoram",
+      "posts": "01"
+    },
+    {
+      "division": "Nagaland",
+      "posts": "07"
+    },
+    {
+      "division": "Orissa",
+      "posts": "103"
+    },
+    {
+      "division": "Pondicherry (UT)",
+      "posts": "02"
+    },
+    {
+      "division": "Punjab",
+      "posts": "142"
+    },
+    {
+      "division": "Rajasthan",
+      "posts": "170"
+    },
+    {
+      "division": "Sikkim",
+      "posts": "15"
+    },
+    {
+      "division": "Tamil Nadu",
+      "posts": "202"
+    },
+    {
+      "division": "Telangana",
+      "posts": "100"
+    },
+    {
+      "division": "Tripura",
+      "posts": "05"
+    },
+    {
+      "division": "Uttar Pradesh",
+      "posts": "580"
+    },
+    {
+      "division": "Uttarakhand",
+      "posts": "41"
+    },
+    {
+      "division": "West Bengal",
+      "posts": "315"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "4500"
+    },
+    {
+      "division": "Andaman And Nicobar Islands (UT)",
+      "posts": "01"
+    },
+    {
+      "division": "Andhra Pradesh",
+      "posts": "128"
+    },
+    {
+      "division": "Arunachal Pradesh",
+      "posts": "08"
+    },
+    {
+      "division": "Assam",
+      "posts": "118"
+    },
+    {
+      "division": "Bihar",
+      "posts": "433"
+    },
+    {
+      "division": "Chandigarh (UT)",
+      "posts": "09"
+    },
+    {
+      "division": "Chhattisgarh",
+      "posts": "114"
+    },
+    {
+      "division": "Dadra Nagar Haveli",
+      "posts": "01"
+    },
+    {
+      "division": "Daman And Diu (UT)",
+      "posts": "01"
+    },
+    {
+      "division": "Delhi",
+      "posts": "97"
+    },
+    {
+      "division": "Goa",
+      "posts": "28"
+    },
+    {
+      "division": "Gujarat",
+      "posts": "305"
+    },
+    {
+      "division": "Haryana",
+      "posts": "137"
+    },
+    {
+      "division": "Himachal Pradesh",
+      "posts": "55"
+    },
+    {
+      "division": "Jammu & Kashmir (UT)",
+      "posts": "13"
+    },
+    {
+      "division": "Jharkhand",
+      "posts": "87"
+    },
+    {
+      "division": "Karnataka",
+      "posts": "105"
+    },
+    {
+      "division": "Kerala",
+      "posts": "116"
+    },
+    {
+      "division": "Ladakh (UT)",
+      "posts": "01"
+    },
+    {
+      "division": "Madhya Pradesh",
+      "posts": "459"
+    },
+    {
+      "division": "Maharashtra",
+      "posts": "586"
+    },
+    {
+      "division": "Manipur",
+      "posts": "07"
+    },
+    {
+      "division": "Meghalaya",
+      "posts": "08"
+    },
+    {
+      "division": "Mizoram",
+      "posts": "01"
+    },
+    {
+      "division": "Nagaland",
+      "posts": "07"
+    },
+    {
+      "division": "Orissa",
+      "posts": "103"
+    },
+    {
+      "division": "Pondicherry (UT)",
+      "posts": "02"
+    },
+    {
+      "division": "Punjab",
+      "posts": "142"
+    },
+    {
+      "division": "Rajasthan",
+      "posts": "170"
+    },
+    {
+      "division": "Sikkim",
+      "posts": "15"
+    },
+    {
+      "division": "Tamil Nadu",
+      "posts": "202"
+    },
+    {
+      "division": "Telangana",
+      "posts": "100"
+    },
+    {
+      "division": "Tripura",
+      "posts": "05"
+    },
+    {
+      "division": "Uttar Pradesh",
+      "posts": "580"
+    },
+    {
+      "division": "Uttarakhand",
+      "posts": "41"
+    },
+    {
+      "division": "West Bengal",
+      "posts": "315"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "4500"
+    }
+  ]
 }

@@ -212,5 +212,439 @@
   ],
   "fullContentHtml": "",
   "lastDate": "09 August 2025",
-  "isExpired": false
+  "isExpired": false,
+  "divisionWiseVacancy": [
+    {
+      "division": "Paramedical Staff",
+      "posts": "434"
+    },
+    {
+      "division": "RRB Ahemdabad",
+      "posts": "11"
+    },
+    {
+      "division": "RRB Ajmer",
+      "posts": "10"
+    },
+    {
+      "division": "RRB Bangalore",
+      "posts": "09"
+    },
+    {
+      "division": "RRB Bhopal",
+      "posts": "09"
+    },
+    {
+      "division": "RRB Bhubaneshwar",
+      "posts": "08"
+    },
+    {
+      "division": "RRB Bilaspur",
+      "posts": "25"
+    },
+    {
+      "division": "RRB Chandigarh",
+      "posts": "04"
+    },
+    {
+      "division": "RRB Chennai",
+      "posts": "67"
+    },
+    {
+      "division": "RRB Gorakhpur",
+      "posts": "11"
+    },
+    {
+      "division": "RRB Guwahati",
+      "posts": "12"
+    },
+    {
+      "division": "RRB Jammu Srinagar",
+      "posts": "15"
+    },
+    {
+      "division": "RRB Kolkata",
+      "posts": "68"
+    },
+    {
+      "division": "RRB Malda",
+      "posts": "05"
+    },
+    {
+      "division": "RRB Mumbai",
+      "posts": "80"
+    },
+    {
+      "division": "RRB Muzaffarpur",
+      "posts": "12"
+    },
+    {
+      "division": "RRB Patna",
+      "posts": "25"
+    },
+    {
+      "division": "RRB Prayagraj",
+      "posts": "27"
+    },
+    {
+      "division": "RRB Ranchi",
+      "posts": "11"
+    },
+    {
+      "division": "RRB Secunderabad",
+      "posts": "10"
+    },
+    {
+      "division": "RRB Siliguri",
+      "posts": "15"
+    },
+    {
+      "division": "Total",
+      "posts": "434"
+    },
+    {
+      "division": "Professional ability",
+      "posts": "70"
+    },
+    {
+      "division": "General Awareness",
+      "posts": "10"
+    },
+    {
+      "division": "General Arithmetic, General Intelligence and reasoning",
+      "posts": "10"
+    },
+    {
+      "division": "General science",
+      "posts": "10"
+    },
+    {
+      "division": "Total",
+      "posts": "100"
+    },
+    {
+      "division": "Paramedical Staff",
+      "posts": "434"
+    },
+    {
+      "division": "RRB Ahemdabad",
+      "posts": "11"
+    },
+    {
+      "division": "RRB Ajmer",
+      "posts": "10"
+    },
+    {
+      "division": "RRB Bangalore",
+      "posts": "09"
+    },
+    {
+      "division": "RRB Bhopal",
+      "posts": "09"
+    },
+    {
+      "division": "RRB Bhubaneshwar",
+      "posts": "08"
+    },
+    {
+      "division": "RRB Bilaspur",
+      "posts": "25"
+    },
+    {
+      "division": "RRB Chandigarh",
+      "posts": "04"
+    },
+    {
+      "division": "RRB Chennai",
+      "posts": "67"
+    },
+    {
+      "division": "RRB Gorakhpur",
+      "posts": "11"
+    },
+    {
+      "division": "RRB Guwahati",
+      "posts": "12"
+    },
+    {
+      "division": "RRB Jammu Srinagar",
+      "posts": "15"
+    },
+    {
+      "division": "RRB Kolkata",
+      "posts": "68"
+    },
+    {
+      "division": "RRB Malda",
+      "posts": "05"
+    },
+    {
+      "division": "RRB Mumbai",
+      "posts": "80"
+    },
+    {
+      "division": "RRB Muzaffarpur",
+      "posts": "12"
+    },
+    {
+      "division": "RRB Patna",
+      "posts": "25"
+    },
+    {
+      "division": "RRB Prayagraj",
+      "posts": "27"
+    },
+    {
+      "division": "RRB Ranchi",
+      "posts": "11"
+    },
+    {
+      "division": "RRB Secunderabad",
+      "posts": "10"
+    },
+    {
+      "division": "RRB Siliguri",
+      "posts": "15"
+    },
+    {
+      "division": "Total",
+      "posts": "434"
+    },
+    {
+      "division": "Professional ability",
+      "posts": "70"
+    },
+    {
+      "division": "General Awareness",
+      "posts": "10"
+    },
+    {
+      "division": "General Arithmetic, General Intelligence and reasoning",
+      "posts": "10"
+    },
+    {
+      "division": "General science",
+      "posts": "10"
+    },
+    {
+      "division": "Total",
+      "posts": "100"
+    },
+    {
+      "division": "Paramedical Staff",
+      "posts": "434"
+    },
+    {
+      "division": "RRB Ahemdabad",
+      "posts": "11"
+    },
+    {
+      "division": "RRB Ajmer",
+      "posts": "10"
+    },
+    {
+      "division": "RRB Bangalore",
+      "posts": "09"
+    },
+    {
+      "division": "RRB Bhopal",
+      "posts": "09"
+    },
+    {
+      "division": "RRB Bhubaneshwar",
+      "posts": "08"
+    },
+    {
+      "division": "RRB Bilaspur",
+      "posts": "25"
+    },
+    {
+      "division": "RRB Chandigarh",
+      "posts": "04"
+    },
+    {
+      "division": "RRB Chennai",
+      "posts": "67"
+    },
+    {
+      "division": "RRB Gorakhpur",
+      "posts": "11"
+    },
+    {
+      "division": "RRB Guwahati",
+      "posts": "12"
+    },
+    {
+      "division": "RRB Jammu Srinagar",
+      "posts": "15"
+    },
+    {
+      "division": "RRB Kolkata",
+      "posts": "68"
+    },
+    {
+      "division": "RRB Malda",
+      "posts": "05"
+    },
+    {
+      "division": "RRB Mumbai",
+      "posts": "80"
+    },
+    {
+      "division": "RRB Muzaffarpur",
+      "posts": "12"
+    },
+    {
+      "division": "RRB Patna",
+      "posts": "25"
+    },
+    {
+      "division": "RRB Prayagraj",
+      "posts": "27"
+    },
+    {
+      "division": "RRB Ranchi",
+      "posts": "11"
+    },
+    {
+      "division": "RRB Secunderabad",
+      "posts": "10"
+    },
+    {
+      "division": "RRB Siliguri",
+      "posts": "15"
+    },
+    {
+      "division": "Total",
+      "posts": "434"
+    },
+    {
+      "division": "Professional ability",
+      "posts": "70"
+    },
+    {
+      "division": "General Awareness",
+      "posts": "10"
+    },
+    {
+      "division": "General Arithmetic, General Intelligence and reasoning",
+      "posts": "10"
+    },
+    {
+      "division": "General science",
+      "posts": "10"
+    },
+    {
+      "division": "Total",
+      "posts": "100"
+    },
+    {
+      "division": "Paramedical Staff",
+      "posts": "434"
+    },
+    {
+      "division": "RRB Ahemdabad",
+      "posts": "11"
+    },
+    {
+      "division": "RRB Ajmer",
+      "posts": "10"
+    },
+    {
+      "division": "RRB Bangalore",
+      "posts": "09"
+    },
+    {
+      "division": "RRB Bhopal",
+      "posts": "09"
+    },
+    {
+      "division": "RRB Bhubaneshwar",
+      "posts": "08"
+    },
+    {
+      "division": "RRB Bilaspur",
+      "posts": "25"
+    },
+    {
+      "division": "RRB Chandigarh",
+      "posts": "04"
+    },
+    {
+      "division": "RRB Chennai",
+      "posts": "67"
+    },
+    {
+      "division": "RRB Gorakhpur",
+      "posts": "11"
+    },
+    {
+      "division": "RRB Guwahati",
+      "posts": "12"
+    },
+    {
+      "division": "RRB Jammu Srinagar",
+      "posts": "15"
+    },
+    {
+      "division": "RRB Kolkata",
+      "posts": "68"
+    },
+    {
+      "division": "RRB Malda",
+      "posts": "05"
+    },
+    {
+      "division": "RRB Mumbai",
+      "posts": "80"
+    },
+    {
+      "division": "RRB Muzaffarpur",
+      "posts": "12"
+    },
+    {
+      "division": "RRB Patna",
+      "posts": "25"
+    },
+    {
+      "division": "RRB Prayagraj",
+      "posts": "27"
+    },
+    {
+      "division": "RRB Ranchi",
+      "posts": "11"
+    },
+    {
+      "division": "RRB Secunderabad",
+      "posts": "10"
+    },
+    {
+      "division": "RRB Siliguri",
+      "posts": "15"
+    },
+    {
+      "division": "Total",
+      "posts": "434"
+    },
+    {
+      "division": "Professional ability",
+      "posts": "70"
+    },
+    {
+      "division": "General Awareness",
+      "posts": "10"
+    },
+    {
+      "division": "General Arithmetic, General Intelligence and reasoning",
+      "posts": "10"
+    },
+    {
+      "division": "General science",
+      "posts": "10"
+    },
+    {
+      "division": "Total",
+      "posts": "100"
+    }
+  ]
 }

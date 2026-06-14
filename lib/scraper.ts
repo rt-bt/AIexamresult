@@ -27,6 +27,8 @@ export interface PostDetail extends PostSummary {
   fullContentHtml: string;
   lastDate?: string;
   isExpired?: boolean;
+  vacancyDetails?: string[];
+  divisionWiseVacancy?: { division: string; posts: string }[];
 }
 
 export interface ScrapedData {
@@ -405,6 +407,86 @@ export async function scrapePostDetail(url: string): Promise<PostDetail | null> 
       return "";
     })();
 
+    // Extract vacancy details from first table (sarkariexam.com format)
+    const vacancyDetails: string[] = [];
+    const divisionWiseVacancy: { division: string; posts: string }[] = [];
+    if ($infoTable.length) {
+      $infoTable.find("tr").each((_, tr) => {
+        const $cells = $(tr).find("td");
+        if ($cells.length === 0) return;
+        const fullText = $cells.first().text().trim();
+        const lines = fullText.split("\n").map((l) => l.trim()).filter(Boolean);
+        const header = lines[0]?.toLowerCase() || "";
+        if (header.includes("vacancy details") || header.includes("total post")) {
+          const totalMatch = fullText.match(/Total\s*Post[:\s]*([\d,]+)/i);
+          if (totalMatch) vacancyDetails.push(`Total Posts : ${totalMatch[1]}`);
+          // Check for nested table with post name/count
+          $cells.first().find("table").each((_, nt) => {
+            $(nt).find("tr").each((j, r) => {
+              const tds = $(r).find("td, th");
+              if (tds.length >= 2) {
+                const name = $(tds[0]).text().trim();
+                const count = $(tds[1]).text().trim();
+                if (name && !name.toLowerCase().includes("post name") && count && !count.toLowerCase().includes("no. of post") && !isNaN(Number(count.replace(/,/g, "")))) {
+                  vacancyDetails.push(`${name} : ${count}`);
+                }
+              }
+            });
+          });
+        }
+        if (header.includes("division") || header.includes("zone")) {
+          const isHeaderRow = lines[0]?.toLowerCase().includes("division") || lines[0]?.toLowerCase().includes("zone");
+          const rows = isHeaderRow ? lines.slice(1) : lines;
+          for (const line of rows) {
+            const parts = line.split("\t").map(s => s.trim()).filter(Boolean);
+            if (parts.length >= 2) {
+              const divName = parts[0];
+              const divCount = parts[parts.length - 1];
+              if (divName && divCount && !divName.toLowerCase().includes("division") && !isNaN(Number(divCount.replace(/,/g, "")))) {
+                divisionWiseVacancy.push({ division: divName, posts: divCount });
+              }
+            }
+          }
+          // Also check nested tables
+          $cells.first().find("table").each((_, nt) => {
+            $(nt).find("tr").each((j, r) => {
+              const tds = $(r).find("td, th");
+              if (tds.length >= 2) {
+                const divName = $(tds[0]).text().trim();
+                const divCount = $(tds[tds.length - 1]).text().trim();
+                if (divName && !divName.toLowerCase().includes("division") && !divName.toLowerCase().includes("name") && divCount && !divCount.toLowerCase().includes("post") && !isNaN(Number(divCount.replace(/,/g, "")))) {
+                  // Avoid duplicates
+                  if (!divisionWiseVacancy.some(d => d.division === divName)) {
+                    divisionWiseVacancy.push({ division: divName, posts: divCount });
+                  }
+                }
+              }
+            });
+          });
+        }
+      });
+    }
+    // Also check stand-alone tables for division vacancy (table 2+)
+    if (divisionWiseVacancy.length === 0) {
+      $("table").slice(1).each((_, t) => {
+        const rows: { division: string; posts: string }[] = [];
+        $(t).find("tr").each((j, r) => {
+          const tds = $(r).find("td, th");
+          if (tds.length >= 2) {
+            const hdr = $(tds[0]).text().trim().toLowerCase();
+            const val = $(tds[tds.length - 1]).text().trim();
+            if (j === 0 && (hdr.includes("division") || hdr.includes("zone") || hdr.includes("name"))) return;
+            if (hdr && !hdr.includes("division") && !hdr.includes("name") && !hdr.includes("post") && val && !isNaN(Number(val.replace(/,/g, "")))) {
+              rows.push({ division: $(tds[0]).text().trim(), posts: val });
+            }
+          }
+        });
+        if (rows.length >= 3) {
+          divisionWiseVacancy.push(...rows);
+        }
+      });
+    }
+
     const slug = (() => {
       const clean = url.split("?")[0].replace(/\/$/, "");
       const last = clean.split("/").pop()?.replace(/\.html$/, "") || "";
@@ -425,6 +507,8 @@ export async function scrapePostDetail(url: string): Promise<PostDetail | null> 
       fullContentHtml,
       lastDate,
       isExpired: isExpired(lastDate),
+      vacancyDetails: vacancyDetails.length > 0 ? vacancyDetails : undefined,
+      divisionWiseVacancy: divisionWiseVacancy.length > 0 ? divisionWiseVacancy : undefined,
     };
   } catch {
     return null;

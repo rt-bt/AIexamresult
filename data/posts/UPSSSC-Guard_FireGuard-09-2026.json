@@ -143,5 +143,67 @@
   ],
   "fullContentHtml": "",
   "lastDate": "09 June 2026",
-  "isExpired": false
+  "isExpired": false,
+  "divisionWiseVacancy": [
+    {
+      "division": "Guard (Vidhan Bhawan Rakshak)\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Secretariat Administration Dept.)",
+      "posts": "120"
+    },
+    {
+      "division": "Fire Guard (Vidhan Bhawan Agnik/ Agnirakshak)\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Secretariat Administration Dept.)",
+      "posts": "50"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "170"
+    },
+    {
+      "division": "Guard (Vidhan Bhawan Rakshak)\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Secretariat Administration Dept.)",
+      "posts": "120"
+    },
+    {
+      "division": "Fire Guard (Vidhan Bhawan Agnik/ Agnirakshak)\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Secretariat Administration Dept.)",
+      "posts": "50"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "170"
+    },
+    {
+      "division": "Guard (Vidhan Bhawan Rakshak)\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Secretariat Administration Dept.)",
+      "posts": "120"
+    },
+    {
+      "division": "Fire Guard (Vidhan Bhawan Agnik/ Agnirakshak)\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Secretariat Administration Dept.)",
+      "posts": "50"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "170"
+    },
+    {
+      "division": "Guard (Vidhan Bhawan Rakshak)\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Secretariat Administration Dept.)",
+      "posts": "120"
+    },
+    {
+      "division": "Fire Guard (Vidhan Bhawan Agnik/ Agnirakshak)\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Secretariat Administration Dept.)",
+      "posts": "50"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "170"
+    },
+    {
+      "division": "Guard (Vidhan Bhawan Rakshak)\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Secretariat Administration Dept.)",
+      "posts": "120"
+    },
+    {
+      "division": "Fire Guard (Vidhan Bhawan Agnik/ Agnirakshak)\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Secretariat Administration Dept.)",
+      "posts": "50"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "170"
+    }
+  ]
 }

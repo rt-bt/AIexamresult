@@ -350,5 +350,231 @@
   ],
   "fullContentHtml": "",
   "lastDate": "21 October 2025",
-  "isExpired": false
+  "isExpired": false,
+  "divisionWiseVacancy": [
+    {
+      "division": "2321",
+      "posts": "457"
+    },
+    {
+      "division": "RRB Ajmer",
+      "posts": "345"
+    },
+    {
+      "division": "RRB Bhopal",
+      "posts": "382"
+    },
+    {
+      "division": "RRB Bilaspur",
+      "posts": "864"
+    },
+    {
+      "division": "RRB Chandigarh",
+      "posts": "199"
+    },
+    {
+      "division": "RRB Gorakhpur",
+      "posts": "111"
+    },
+    {
+      "division": "RRB Jammu Srinagar",
+      "posts": "32"
+    },
+    {
+      "division": "RRB Malda",
+      "posts": "522"
+    },
+    {
+      "division": "RRB Muzaffarpur",
+      "posts": "21"
+    },
+    {
+      "division": "RRB Prayagraj",
+      "posts": "110"
+    },
+    {
+      "division": "RRB Secunderabad",
+      "posts": "196"
+    },
+    {
+      "division": "RRB Thrivandrum",
+      "posts": "58"
+    },
+    {
+      "division": "90",
+      "posts": "100"
+    },
+    {
+      "division": "90",
+      "posts": "120"
+    },
+    {
+      "division": "2321",
+      "posts": "457"
+    },
+    {
+      "division": "RRB Ajmer",
+      "posts": "345"
+    },
+    {
+      "division": "RRB Bhopal",
+      "posts": "382"
+    },
+    {
+      "division": "RRB Bilaspur",
+      "posts": "864"
+    },
+    {
+      "division": "RRB Chandigarh",
+      "posts": "199"
+    },
+    {
+      "division": "RRB Gorakhpur",
+      "posts": "111"
+    },
+    {
+      "division": "RRB Jammu Srinagar",
+      "posts": "32"
+    },
+    {
+      "division": "RRB Malda",
+      "posts": "522"
+    },
+    {
+      "division": "RRB Muzaffarpur",
+      "posts": "21"
+    },
+    {
+      "division": "RRB Prayagraj",
+      "posts": "110"
+    },
+    {
+      "division": "RRB Secunderabad",
+      "posts": "196"
+    },
+    {
+      "division": "RRB Thrivandrum",
+      "posts": "58"
+    },
+    {
+      "division": "90",
+      "posts": "100"
+    },
+    {
+      "division": "90",
+      "posts": "120"
+    },
+    {
+      "division": "2321",
+      "posts": "457"
+    },
+    {
+      "division": "RRB Ajmer",
+      "posts": "345"
+    },
+    {
+      "division": "RRB Bhopal",
+      "posts": "382"
+    },
+    {
+      "division": "RRB Bilaspur",
+      "posts": "864"
+    },
+    {
+      "division": "RRB Chandigarh",
+      "posts": "199"
+    },
+    {
+      "division": "RRB Gorakhpur",
+      "posts": "111"
+    },
+    {
+      "division": "RRB Jammu Srinagar",
+      "posts": "32"
+    },
+    {
+      "division": "RRB Malda",
+      "posts": "522"
+    },
+    {
+      "division": "RRB Muzaffarpur",
+      "posts": "21"
+    },
+    {
+      "division": "RRB Prayagraj",
+      "posts": "110"
+    },
+    {
+      "division": "RRB Secunderabad",
+      "posts": "196"
+    },
+    {
+      "division": "RRB Thrivandrum",
+      "posts": "58"
+    },
+    {
+      "division": "90",
+      "posts": "100"
+    },
+    {
+      "division": "90",
+      "posts": "120"
+    },
+    {
+      "division": "2321",
+      "posts": "457"
+    },
+    {
+      "division": "RRB Ajmer",
+      "posts": "345"
+    },
+    {
+      "division": "RRB Bhopal",
+      "posts": "382"
+    },
+    {
+      "division": "RRB Bilaspur",
+      "posts": "864"
+    },
+    {
+      "division": "RRB Chandigarh",
+      "posts": "199"
+    },
+    {
+      "division": "RRB Gorakhpur",
+      "posts": "111"
+    },
+    {
+      "division": "RRB Jammu Srinagar",
+      "posts": "32"
+    },
+    {
+      "division": "RRB Malda",
+      "posts": "522"
+    },
+    {
+      "division": "RRB Muzaffarpur",
+      "posts": "21"
+    },
+    {
+      "division": "RRB Prayagraj",
+      "posts": "110"
+    },
+    {
+      "division": "RRB Secunderabad",
+      "posts": "196"
+    },
+    {
+      "division": "RRB Thrivandrum",
+      "posts": "58"
+    },
+    {
+      "division": "90",
+      "posts": "100"
+    },
+    {
+      "division": "90",
+      "posts": "120"
+    }
+  ]
 }

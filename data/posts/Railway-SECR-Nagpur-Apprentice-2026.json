@@ -81,5 +81,647 @@
   ],
   "fullContentHtml": "",
   "lastDate": "19 May 2026",
-  "isExpired": false
+  "isExpired": false,
+  "divisionWiseVacancy": [
+    {
+      "division": "Fitter",
+      "posts": "90"
+    },
+    {
+      "division": "Carpenter",
+      "posts": "41"
+    },
+    {
+      "division": "Welder",
+      "posts": "22"
+    },
+    {
+      "division": "COPA",
+      "posts": "158"
+    },
+    {
+      "division": "Electrician",
+      "posts": "267"
+    },
+    {
+      "division": "Stenographer (English)/ Secretarial Assistant--",
+      "posts": "25"
+    },
+    {
+      "division": "Plumber",
+      "posts": "33"
+    },
+    {
+      "division": "Painter",
+      "posts": "44"
+    },
+    {
+      "division": "Wireman",
+      "posts": "46"
+    },
+    {
+      "division": "Electronics Mechanic",
+      "posts": "21"
+    },
+    {
+      "division": "Diesel Mechanic",
+      "posts": "124"
+    },
+    {
+      "division": "Machinist",
+      "posts": "17"
+    },
+    {
+      "division": "Turner",
+      "posts": "05"
+    },
+    {
+      "division": "Dental Laboratory Technician",
+      "posts": "01"
+    },
+    {
+      "division": "Hospital Waste Management Technician",
+      "posts": "03"
+    },
+    {
+      "division": "Health Sanitary Inspector",
+      "posts": "05"
+    },
+    {
+      "division": "Stenographer (Hindi)",
+      "posts": "11"
+    },
+    {
+      "division": "Cable Jointer",
+      "posts": "21"
+    },
+    {
+      "division": "Digital Photographer",
+      "posts": "02"
+    },
+    {
+      "division": "Driver cum Mechanic (LMV)",
+      "posts": "02"
+    },
+    {
+      "division": "Mechanic Machine Tool Maintenance",
+      "posts": "23"
+    },
+    {
+      "division": "Mason (Building Constructor)",
+      "posts": "16"
+    },
+    {
+      "division": "Total",
+      "posts": "977"
+    },
+    {
+      "division": "Fitter",
+      "posts": "44"
+    },
+    {
+      "division": "Welder",
+      "posts": "06"
+    },
+    {
+      "division": "Carpenter",
+      "posts": "10"
+    },
+    {
+      "division": "Painter",
+      "posts": "04"
+    },
+    {
+      "division": "Turner",
+      "posts": "04"
+    },
+    {
+      "division": "Secretarial Steno (Eng) Practice",
+      "posts": "03"
+    },
+    {
+      "division": "Electrician",
+      "posts": "18"
+    },
+    {
+      "division": "COPA",
+      "posts": "13"
+    },
+    {
+      "division": "Total",
+      "posts": "102"
+    },
+    {
+      "division": "Fitter",
+      "posts": "90"
+    },
+    {
+      "division": "Carpenter",
+      "posts": "41"
+    },
+    {
+      "division": "Welder",
+      "posts": "22"
+    },
+    {
+      "division": "COPA",
+      "posts": "158"
+    },
+    {
+      "division": "Electrician",
+      "posts": "267"
+    },
+    {
+      "division": "Stenographer (English)/ Secretarial Assistant--",
+      "posts": "25"
+    },
+    {
+      "division": "Plumber",
+      "posts": "33"
+    },
+    {
+      "division": "Painter",
+      "posts": "44"
+    },
+    {
+      "division": "Wireman",
+      "posts": "46"
+    },
+    {
+      "division": "Electronics Mechanic",
+      "posts": "21"
+    },
+    {
+      "division": "Diesel Mechanic",
+      "posts": "124"
+    },
+    {
+      "division": "Machinist",
+      "posts": "17"
+    },
+    {
+      "division": "Turner",
+      "posts": "05"
+    },
+    {
+      "division": "Dental Laboratory Technician",
+      "posts": "01"
+    },
+    {
+      "division": "Hospital Waste Management Technician",
+      "posts": "03"
+    },
+    {
+      "division": "Health Sanitary Inspector",
+      "posts": "05"
+    },
+    {
+      "division": "Stenographer (Hindi)",
+      "posts": "11"
+    },
+    {
+      "division": "Cable Jointer",
+      "posts": "21"
+    },
+    {
+      "division": "Digital Photographer",
+      "posts": "02"
+    },
+    {
+      "division": "Driver cum Mechanic (LMV)",
+      "posts": "02"
+    },
+    {
+      "division": "Mechanic Machine Tool Maintenance",
+      "posts": "23"
+    },
+    {
+      "division": "Mason (Building Constructor)",
+      "posts": "16"
+    },
+    {
+      "division": "Total",
+      "posts": "977"
+    },
+    {
+      "division": "Fitter",
+      "posts": "44"
+    },
+    {
+      "division": "Welder",
+      "posts": "06"
+    },
+    {
+      "division": "Carpenter",
+      "posts": "10"
+    },
+    {
+      "division": "Painter",
+      "posts": "04"
+    },
+    {
+      "division": "Turner",
+      "posts": "04"
+    },
+    {
+      "division": "Secretarial Steno (Eng) Practice",
+      "posts": "03"
+    },
+    {
+      "division": "Electrician",
+      "posts": "18"
+    },
+    {
+      "division": "COPA",
+      "posts": "13"
+    },
+    {
+      "division": "Total",
+      "posts": "102"
+    },
+    {
+      "division": "Fitter",
+      "posts": "90"
+    },
+    {
+      "division": "Carpenter",
+      "posts": "41"
+    },
+    {
+      "division": "Welder",
+      "posts": "22"
+    },
+    {
+      "division": "COPA",
+      "posts": "158"
+    },
+    {
+      "division": "Electrician",
+      "posts": "267"
+    },
+    {
+      "division": "Stenographer (English)/ Secretarial Assistant--",
+      "posts": "25"
+    },
+    {
+      "division": "Plumber",
+      "posts": "33"
+    },
+    {
+      "division": "Painter",
+      "posts": "44"
+    },
+    {
+      "division": "Wireman",
+      "posts": "46"
+    },
+    {
+      "division": "Electronics Mechanic",
+      "posts": "21"
+    },
+    {
+      "division": "Diesel Mechanic",
+      "posts": "124"
+    },
+    {
+      "division": "Machinist",
+      "posts": "17"
+    },
+    {
+      "division": "Turner",
+      "posts": "05"
+    },
+    {
+      "division": "Dental Laboratory Technician",
+      "posts": "01"
+    },
+    {
+      "division": "Hospital Waste Management Technician",
+      "posts": "03"
+    },
+    {
+      "division": "Health Sanitary Inspector",
+      "posts": "05"
+    },
+    {
+      "division": "Stenographer (Hindi)",
+      "posts": "11"
+    },
+    {
+      "division": "Cable Jointer",
+      "posts": "21"
+    },
+    {
+      "division": "Digital Photographer",
+      "posts": "02"
+    },
+    {
+      "division": "Driver cum Mechanic (LMV)",
+      "posts": "02"
+    },
+    {
+      "division": "Mechanic Machine Tool Maintenance",
+      "posts": "23"
+    },
+    {
+      "division": "Mason (Building Constructor)",
+      "posts": "16"
+    },
+    {
+      "division": "Total",
+      "posts": "977"
+    },
+    {
+      "division": "Fitter",
+      "posts": "44"
+    },
+    {
+      "division": "Welder",
+      "posts": "06"
+    },
+    {
+      "division": "Carpenter",
+      "posts": "10"
+    },
+    {
+      "division": "Painter",
+      "posts": "04"
+    },
+    {
+      "division": "Turner",
+      "posts": "04"
+    },
+    {
+      "division": "Secretarial Steno (Eng) Practice",
+      "posts": "03"
+    },
+    {
+      "division": "Electrician",
+      "posts": "18"
+    },
+    {
+      "division": "COPA",
+      "posts": "13"
+    },
+    {
+      "division": "Total",
+      "posts": "102"
+    },
+    {
+      "division": "Fitter",
+      "posts": "90"
+    },
+    {
+      "division": "Carpenter",
+      "posts": "41"
+    },
+    {
+      "division": "Welder",
+      "posts": "22"
+    },
+    {
+      "division": "COPA",
+      "posts": "158"
+    },
+    {
+      "division": "Electrician",
+      "posts": "267"
+    },
+    {
+      "division": "Stenographer (English)/ Secretarial Assistant--",
+      "posts": "25"
+    },
+    {
+      "division": "Plumber",
+      "posts": "33"
+    },
+    {
+      "division": "Painter",
+      "posts": "44"
+    },
+    {
+      "division": "Wireman",
+      "posts": "46"
+    },
+    {
+      "division": "Electronics Mechanic",
+      "posts": "21"
+    },
+    {
+      "division": "Diesel Mechanic",
+      "posts": "124"
+    },
+    {
+      "division": "Machinist",
+      "posts": "17"
+    },
+    {
+      "division": "Turner",
+      "posts": "05"
+    },
+    {
+      "division": "Dental Laboratory Technician",
+      "posts": "01"
+    },
+    {
+      "division": "Hospital Waste Management Technician",
+      "posts": "03"
+    },
+    {
+      "division": "Health Sanitary Inspector",
+      "posts": "05"
+    },
+    {
+      "division": "Stenographer (Hindi)",
+      "posts": "11"
+    },
+    {
+      "division": "Cable Jointer",
+      "posts": "21"
+    },
+    {
+      "division": "Digital Photographer",
+      "posts": "02"
+    },
+    {
+      "division": "Driver cum Mechanic (LMV)",
+      "posts": "02"
+    },
+    {
+      "division": "Mechanic Machine Tool Maintenance",
+      "posts": "23"
+    },
+    {
+      "division": "Mason (Building Constructor)",
+      "posts": "16"
+    },
+    {
+      "division": "Total",
+      "posts": "977"
+    },
+    {
+      "division": "Fitter",
+      "posts": "44"
+    },
+    {
+      "division": "Welder",
+      "posts": "06"
+    },
+    {
+      "division": "Carpenter",
+      "posts": "10"
+    },
+    {
+      "division": "Painter",
+      "posts": "04"
+    },
+    {
+      "division": "Turner",
+      "posts": "04"
+    },
+    {
+      "division": "Secretarial Steno (Eng) Practice",
+      "posts": "03"
+    },
+    {
+      "division": "Electrician",
+      "posts": "18"
+    },
+    {
+      "division": "COPA",
+      "posts": "13"
+    },
+    {
+      "division": "Total",
+      "posts": "102"
+    },
+    {
+      "division": "Fitter",
+      "posts": "90"
+    },
+    {
+      "division": "Carpenter",
+      "posts": "41"
+    },
+    {
+      "division": "Welder",
+      "posts": "22"
+    },
+    {
+      "division": "COPA",
+      "posts": "158"
+    },
+    {
+      "division": "Electrician",
+      "posts": "267"
+    },
+    {
+      "division": "Stenographer (English)/ Secretarial Assistant--",
+      "posts": "25"
+    },
+    {
+      "division": "Plumber",
+      "posts": "33"
+    },
+    {
+      "division": "Painter",
+      "posts": "44"
+    },
+    {
+      "division": "Wireman",
+      "posts": "46"
+    },
+    {
+      "division": "Electronics Mechanic",
+      "posts": "21"
+    },
+    {
+      "division": "Diesel Mechanic",
+      "posts": "124"
+    },
+    {
+      "division": "Machinist",
+      "posts": "17"
+    },
+    {
+      "division": "Turner",
+      "posts": "05"
+    },
+    {
+      "division": "Dental Laboratory Technician",
+      "posts": "01"
+    },
+    {
+      "division": "Hospital Waste Management Technician",
+      "posts": "03"
+    },
+    {
+      "division": "Health Sanitary Inspector",
+      "posts": "05"
+    },
+    {
+      "division": "Stenographer (Hindi)",
+      "posts": "11"
+    },
+    {
+      "division": "Cable Jointer",
+      "posts": "21"
+    },
+    {
+      "division": "Digital Photographer",
+      "posts": "02"
+    },
+    {
+      "division": "Driver cum Mechanic (LMV)",
+      "posts": "02"
+    },
+    {
+      "division": "Mechanic Machine Tool Maintenance",
+      "posts": "23"
+    },
+    {
+      "division": "Mason (Building Constructor)",
+      "posts": "16"
+    },
+    {
+      "division": "Total",
+      "posts": "977"
+    },
+    {
+      "division": "Fitter",
+      "posts": "44"
+    },
+    {
+      "division": "Welder",
+      "posts": "06"
+    },
+    {
+      "division": "Carpenter",
+      "posts": "10"
+    },
+    {
+      "division": "Painter",
+      "posts": "04"
+    },
+    {
+      "division": "Turner",
+      "posts": "04"
+    },
+    {
+      "division": "Secretarial Steno (Eng) Practice",
+      "posts": "03"
+    },
+    {
+      "division": "Electrician",
+      "posts": "18"
+    },
+    {
+      "division": "COPA",
+      "posts": "13"
+    },
+    {
+      "division": "Total",
+      "posts": "102"
+    }
+  ]
 }

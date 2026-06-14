@@ -243,5 +243,735 @@
   ],
   "fullContentHtml": "",
   "lastDate": "16 June 2026",
-  "isExpired": false
+  "isExpired": false,
+  "divisionWiseVacancy": [
+    {
+      "division": "21/26",
+      "posts": "44"
+    },
+    {
+      "division": "22/26",
+      "posts": "18"
+    },
+    {
+      "division": "23/26",
+      "posts": "37"
+    },
+    {
+      "division": "24/26",
+      "posts": "12"
+    },
+    {
+      "division": "25/26",
+      "posts": "15"
+    },
+    {
+      "division": "26/26",
+      "posts": "05"
+    },
+    {
+      "division": "27/26",
+      "posts": "14"
+    },
+    {
+      "division": "28/26",
+      "posts": "81"
+    },
+    {
+      "division": "29/26",
+      "posts": "46"
+    },
+    {
+      "division": "30/26",
+      "posts": "01"
+    },
+    {
+      "division": "31/26",
+      "posts": "16"
+    },
+    {
+      "division": "32/26",
+      "posts": "01"
+    },
+    {
+      "division": "33/26",
+      "posts": "04"
+    },
+    {
+      "division": "34/26",
+      "posts": "125"
+    },
+    {
+      "division": "35/26",
+      "posts": "36"
+    },
+    {
+      "division": "36/26",
+      "posts": "13"
+    },
+    {
+      "division": "37/26",
+      "posts": "15"
+    },
+    {
+      "division": "38/26",
+      "posts": "37"
+    },
+    {
+      "division": "39/26",
+      "posts": "21"
+    },
+    {
+      "division": "40/26",
+      "posts": "02"
+    },
+    {
+      "division": "41/26",
+      "posts": "675"
+    },
+    {
+      "division": "42/26",
+      "posts": "129"
+    },
+    {
+      "division": "43/26",
+      "posts": "163"
+    },
+    {
+      "division": "44/26",
+      "posts": "450"
+    },
+    {
+      "division": "45/26",
+      "posts": "19"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "1979"
+    },
+    {
+      "division": "21/26",
+      "posts": "44"
+    },
+    {
+      "division": "22/26",
+      "posts": "18"
+    },
+    {
+      "division": "23/26",
+      "posts": "37"
+    },
+    {
+      "division": "24/26",
+      "posts": "12"
+    },
+    {
+      "division": "25/26",
+      "posts": "15"
+    },
+    {
+      "division": "26/26",
+      "posts": "05"
+    },
+    {
+      "division": "27/26",
+      "posts": "14"
+    },
+    {
+      "division": "28/26",
+      "posts": "81"
+    },
+    {
+      "division": "29/26",
+      "posts": "46"
+    },
+    {
+      "division": "30/26",
+      "posts": "01"
+    },
+    {
+      "division": "31/26",
+      "posts": "16"
+    },
+    {
+      "division": "32/26",
+      "posts": "01"
+    },
+    {
+      "division": "33/26",
+      "posts": "04"
+    },
+    {
+      "division": "34/26",
+      "posts": "125"
+    },
+    {
+      "division": "35/26",
+      "posts": "36"
+    },
+    {
+      "division": "36/26",
+      "posts": "13"
+    },
+    {
+      "division": "37/26",
+      "posts": "15"
+    },
+    {
+      "division": "38/26",
+      "posts": "37"
+    },
+    {
+      "division": "39/26",
+      "posts": "21"
+    },
+    {
+      "division": "40/26",
+      "posts": "02"
+    },
+    {
+      "division": "41/26",
+      "posts": "675"
+    },
+    {
+      "division": "42/26",
+      "posts": "129"
+    },
+    {
+      "division": "43/26",
+      "posts": "163"
+    },
+    {
+      "division": "44/26",
+      "posts": "450"
+    },
+    {
+      "division": "45/26",
+      "posts": "19"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "1979"
+    },
+    {
+      "division": "21/26",
+      "posts": "44"
+    },
+    {
+      "division": "22/26",
+      "posts": "18"
+    },
+    {
+      "division": "23/26",
+      "posts": "37"
+    },
+    {
+      "division": "24/26",
+      "posts": "12"
+    },
+    {
+      "division": "25/26",
+      "posts": "15"
+    },
+    {
+      "division": "26/26",
+      "posts": "05"
+    },
+    {
+      "division": "27/26",
+      "posts": "14"
+    },
+    {
+      "division": "28/26",
+      "posts": "81"
+    },
+    {
+      "division": "29/26",
+      "posts": "46"
+    },
+    {
+      "division": "30/26",
+      "posts": "01"
+    },
+    {
+      "division": "31/26",
+      "posts": "16"
+    },
+    {
+      "division": "32/26",
+      "posts": "01"
+    },
+    {
+      "division": "33/26",
+      "posts": "04"
+    },
+    {
+      "division": "34/26",
+      "posts": "125"
+    },
+    {
+      "division": "35/26",
+      "posts": "36"
+    },
+    {
+      "division": "36/26",
+      "posts": "13"
+    },
+    {
+      "division": "37/26",
+      "posts": "15"
+    },
+    {
+      "division": "38/26",
+      "posts": "37"
+    },
+    {
+      "division": "39/26",
+      "posts": "21"
+    },
+    {
+      "division": "40/26",
+      "posts": "02"
+    },
+    {
+      "division": "41/26",
+      "posts": "675"
+    },
+    {
+      "division": "42/26",
+      "posts": "129"
+    },
+    {
+      "division": "43/26",
+      "posts": "163"
+    },
+    {
+      "division": "44/26",
+      "posts": "450"
+    },
+    {
+      "division": "45/26",
+      "posts": "19"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "1979"
+    },
+    {
+      "division": "21/26",
+      "posts": "44"
+    },
+    {
+      "division": "22/26",
+      "posts": "18"
+    },
+    {
+      "division": "23/26",
+      "posts": "37"
+    },
+    {
+      "division": "24/26",
+      "posts": "12"
+    },
+    {
+      "division": "25/26",
+      "posts": "15"
+    },
+    {
+      "division": "26/26",
+      "posts": "05"
+    },
+    {
+      "division": "27/26",
+      "posts": "14"
+    },
+    {
+      "division": "28/26",
+      "posts": "81"
+    },
+    {
+      "division": "29/26",
+      "posts": "46"
+    },
+    {
+      "division": "30/26",
+      "posts": "01"
+    },
+    {
+      "division": "31/26",
+      "posts": "16"
+    },
+    {
+      "division": "32/26",
+      "posts": "01"
+    },
+    {
+      "division": "33/26",
+      "posts": "04"
+    },
+    {
+      "division": "34/26",
+      "posts": "125"
+    },
+    {
+      "division": "35/26",
+      "posts": "36"
+    },
+    {
+      "division": "36/26",
+      "posts": "13"
+    },
+    {
+      "division": "37/26",
+      "posts": "15"
+    },
+    {
+      "division": "38/26",
+      "posts": "37"
+    },
+    {
+      "division": "39/26",
+      "posts": "21"
+    },
+    {
+      "division": "40/26",
+      "posts": "02"
+    },
+    {
+      "division": "41/26",
+      "posts": "675"
+    },
+    {
+      "division": "42/26",
+      "posts": "129"
+    },
+    {
+      "division": "43/26",
+      "posts": "163"
+    },
+    {
+      "division": "44/26",
+      "posts": "450"
+    },
+    {
+      "division": "45/26",
+      "posts": "19"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "1979"
+    },
+    {
+      "division": "21/26",
+      "posts": "44"
+    },
+    {
+      "division": "22/26",
+      "posts": "18"
+    },
+    {
+      "division": "23/26",
+      "posts": "37"
+    },
+    {
+      "division": "24/26",
+      "posts": "12"
+    },
+    {
+      "division": "25/26",
+      "posts": "15"
+    },
+    {
+      "division": "26/26",
+      "posts": "05"
+    },
+    {
+      "division": "27/26",
+      "posts": "14"
+    },
+    {
+      "division": "28/26",
+      "posts": "81"
+    },
+    {
+      "division": "29/26",
+      "posts": "46"
+    },
+    {
+      "division": "30/26",
+      "posts": "01"
+    },
+    {
+      "division": "31/26",
+      "posts": "16"
+    },
+    {
+      "division": "32/26",
+      "posts": "01"
+    },
+    {
+      "division": "33/26",
+      "posts": "04"
+    },
+    {
+      "division": "34/26",
+      "posts": "125"
+    },
+    {
+      "division": "35/26",
+      "posts": "36"
+    },
+    {
+      "division": "36/26",
+      "posts": "13"
+    },
+    {
+      "division": "37/26",
+      "posts": "15"
+    },
+    {
+      "division": "38/26",
+      "posts": "37"
+    },
+    {
+      "division": "39/26",
+      "posts": "21"
+    },
+    {
+      "division": "40/26",
+      "posts": "02"
+    },
+    {
+      "division": "41/26",
+      "posts": "675"
+    },
+    {
+      "division": "42/26",
+      "posts": "129"
+    },
+    {
+      "division": "43/26",
+      "posts": "163"
+    },
+    {
+      "division": "44/26",
+      "posts": "450"
+    },
+    {
+      "division": "45/26",
+      "posts": "19"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "1979"
+    },
+    {
+      "division": "21/26",
+      "posts": "44"
+    },
+    {
+      "division": "22/26",
+      "posts": "18"
+    },
+    {
+      "division": "23/26",
+      "posts": "37"
+    },
+    {
+      "division": "24/26",
+      "posts": "12"
+    },
+    {
+      "division": "25/26",
+      "posts": "15"
+    },
+    {
+      "division": "26/26",
+      "posts": "05"
+    },
+    {
+      "division": "27/26",
+      "posts": "14"
+    },
+    {
+      "division": "28/26",
+      "posts": "81"
+    },
+    {
+      "division": "29/26",
+      "posts": "46"
+    },
+    {
+      "division": "30/26",
+      "posts": "01"
+    },
+    {
+      "division": "31/26",
+      "posts": "16"
+    },
+    {
+      "division": "32/26",
+      "posts": "01"
+    },
+    {
+      "division": "33/26",
+      "posts": "04"
+    },
+    {
+      "division": "34/26",
+      "posts": "125"
+    },
+    {
+      "division": "35/26",
+      "posts": "36"
+    },
+    {
+      "division": "36/26",
+      "posts": "13"
+    },
+    {
+      "division": "37/26",
+      "posts": "15"
+    },
+    {
+      "division": "38/26",
+      "posts": "37"
+    },
+    {
+      "division": "39/26",
+      "posts": "21"
+    },
+    {
+      "division": "40/26",
+      "posts": "02"
+    },
+    {
+      "division": "41/26",
+      "posts": "675"
+    },
+    {
+      "division": "42/26",
+      "posts": "129"
+    },
+    {
+      "division": "43/26",
+      "posts": "163"
+    },
+    {
+      "division": "44/26",
+      "posts": "450"
+    },
+    {
+      "division": "45/26",
+      "posts": "19"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "1979"
+    },
+    {
+      "division": "21/26",
+      "posts": "44"
+    },
+    {
+      "division": "22/26",
+      "posts": "18"
+    },
+    {
+      "division": "23/26",
+      "posts": "37"
+    },
+    {
+      "division": "24/26",
+      "posts": "12"
+    },
+    {
+      "division": "25/26",
+      "posts": "15"
+    },
+    {
+      "division": "26/26",
+      "posts": "05"
+    },
+    {
+      "division": "27/26",
+      "posts": "14"
+    },
+    {
+      "division": "28/26",
+      "posts": "81"
+    },
+    {
+      "division": "29/26",
+      "posts": "46"
+    },
+    {
+      "division": "30/26",
+      "posts": "01"
+    },
+    {
+      "division": "31/26",
+      "posts": "16"
+    },
+    {
+      "division": "32/26",
+      "posts": "01"
+    },
+    {
+      "division": "33/26",
+      "posts": "04"
+    },
+    {
+      "division": "34/26",
+      "posts": "125"
+    },
+    {
+      "division": "35/26",
+      "posts": "36"
+    },
+    {
+      "division": "36/26",
+      "posts": "13"
+    },
+    {
+      "division": "37/26",
+      "posts": "15"
+    },
+    {
+      "division": "38/26",
+      "posts": "37"
+    },
+    {
+      "division": "39/26",
+      "posts": "21"
+    },
+    {
+      "division": "40/26",
+      "posts": "02"
+    },
+    {
+      "division": "41/26",
+      "posts": "675"
+    },
+    {
+      "division": "42/26",
+      "posts": "129"
+    },
+    {
+      "division": "43/26",
+      "posts": "163"
+    },
+    {
+      "division": "44/26",
+      "posts": "450"
+    },
+    {
+      "division": "45/26",
+      "posts": "19"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "1979"
+    }
+  ]
 }

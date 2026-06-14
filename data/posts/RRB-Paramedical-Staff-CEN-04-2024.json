@@ -189,5 +189,119 @@
     }
   ],
   "fullContentHtml": "",
-  "isExpired": false
+  "isExpired": false,
+  "divisionWiseVacancy": [
+    {
+      "division": "686",
+      "posts": "109"
+    },
+    {
+      "division": "RRB Patna",
+      "posts": "35"
+    },
+    {
+      "division": "Professional ability",
+      "posts": "70"
+    },
+    {
+      "division": "General Awareness",
+      "posts": "10"
+    },
+    {
+      "division": "General Arithmetic, General Intelligence and reasoning",
+      "posts": "10"
+    },
+    {
+      "division": "General science",
+      "posts": "10"
+    },
+    {
+      "division": "Total",
+      "posts": "100"
+    },
+    {
+      "division": "686",
+      "posts": "109"
+    },
+    {
+      "division": "RRB Patna",
+      "posts": "35"
+    },
+    {
+      "division": "Professional ability",
+      "posts": "70"
+    },
+    {
+      "division": "General Awareness",
+      "posts": "10"
+    },
+    {
+      "division": "General Arithmetic, General Intelligence and reasoning",
+      "posts": "10"
+    },
+    {
+      "division": "General science",
+      "posts": "10"
+    },
+    {
+      "division": "Total",
+      "posts": "100"
+    },
+    {
+      "division": "686",
+      "posts": "109"
+    },
+    {
+      "division": "RRB Patna",
+      "posts": "35"
+    },
+    {
+      "division": "Professional ability",
+      "posts": "70"
+    },
+    {
+      "division": "General Awareness",
+      "posts": "10"
+    },
+    {
+      "division": "General Arithmetic, General Intelligence and reasoning",
+      "posts": "10"
+    },
+    {
+      "division": "General science",
+      "posts": "10"
+    },
+    {
+      "division": "Total",
+      "posts": "100"
+    },
+    {
+      "division": "686",
+      "posts": "109"
+    },
+    {
+      "division": "RRB Patna",
+      "posts": "35"
+    },
+    {
+      "division": "Professional ability",
+      "posts": "70"
+    },
+    {
+      "division": "General Awareness",
+      "posts": "10"
+    },
+    {
+      "division": "General Arithmetic, General Intelligence and reasoning",
+      "posts": "10"
+    },
+    {
+      "division": "General science",
+      "posts": "10"
+    },
+    {
+      "division": "Total",
+      "posts": "100"
+    }
+  ]
 }

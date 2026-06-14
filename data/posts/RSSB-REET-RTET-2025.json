@@ -229,5 +229,327 @@
   ],
   "fullContentHtml": "",
   "lastDate": "07 November 2025",
-  "isExpired": false
+  "isExpired": false,
+  "divisionWiseVacancy": [
+    {
+      "division": "Non-TSP",
+      "posts": "4500"
+    },
+    {
+      "division": "Total",
+      "posts": "5000"
+    },
+    {
+      "division": "Non-TSP",
+      "posts": "187"
+    },
+    {
+      "division": "Total",
+      "posts": "187"
+    },
+    {
+      "division": "Primary School Teacher (General) Class 1 to 5 (Sanskrit Edu. Dept.)\n\n\t\t\tAdvt No 08/2025",
+      "posts": "27"
+    },
+    {
+      "division": "Non-TSP",
+      "posts": "422"
+    },
+    {
+      "division": "Total",
+      "posts": "449"
+    },
+    {
+      "division": "Non-TSP",
+      "posts": "319"
+    },
+    {
+      "division": "Total",
+      "posts": "389"
+    },
+    {
+      "division": "Non-TSP",
+      "posts": "156"
+    },
+    {
+      "division": "Total",
+      "posts": "174"
+    },
+    {
+      "division": "Upper Primary School Teacher (English Subject)\n\n\t\t\tClass 6 to 8 (Sanskrit Edu. Dept.)\n\n\t\t\tAdvt. No. 09/2025",
+      "posts": "19"
+    },
+    {
+      "division": "Non-TSP",
+      "posts": "202"
+    },
+    {
+      "division": "Total",
+      "posts": "221"
+    },
+    {
+      "division": "Upper Primary School Teacher (Social Science Subject)\n\n\t\t\tClass 6 to 8 (Sanskrit Edu. Dept.)\n\n\t\t\tAdvt. No. 09/2025",
+      "posts": "24"
+    },
+    {
+      "division": "Non-TSP",
+      "posts": "272"
+    },
+    {
+      "division": "Total",
+      "posts": "296"
+    },
+    {
+      "division": "Upper Primary School Teacher (Mathematics-Science Subject)\n\n\t\t\tClass 6 to 8 (Sanskrit Edu. Dept.)\n\n\t\t\tAdvt. No. 09/2025",
+      "posts": "73"
+    },
+    {
+      "division": "Non-TSP",
+      "posts": "970"
+    },
+    {
+      "division": "Total",
+      "posts": "1043"
+    },
+    {
+      "division": "Non-TSP",
+      "posts": "4500"
+    },
+    {
+      "division": "Total",
+      "posts": "5000"
+    },
+    {
+      "division": "Non-TSP",
+      "posts": "187"
+    },
+    {
+      "division": "Total",
+      "posts": "187"
+    },
+    {
+      "division": "Primary School Teacher (General) Class 1 to 5 (Sanskrit Edu. Dept.)\n\n\t\t\tAdvt No 08/2025",
+      "posts": "27"
+    },
+    {
+      "division": "Non-TSP",
+      "posts": "422"
+    },
+    {
+      "division": "Total",
+      "posts": "449"
+    },
+    {
+      "division": "Non-TSP",
+      "posts": "319"
+    },
+    {
+      "division": "Total",
+      "posts": "389"
+    },
+    {
+      "division": "Non-TSP",
+      "posts": "156"
+    },
+    {
+      "division": "Total",
+      "posts": "174"
+    },
+    {
+      "division": "Upper Primary School Teacher (English Subject)\n\n\t\t\tClass 6 to 8 (Sanskrit Edu. Dept.)\n\n\t\t\tAdvt. No. 09/2025",
+      "posts": "19"
+    },
+    {
+      "division": "Non-TSP",
+      "posts": "202"
+    },
+    {
+      "division": "Total",
+      "posts": "221"
+    },
+    {
+      "division": "Upper Primary School Teacher (Social Science Subject)\n\n\t\t\tClass 6 to 8 (Sanskrit Edu. Dept.)\n\n\t\t\tAdvt. No. 09/2025",
+      "posts": "24"
+    },
+    {
+      "division": "Non-TSP",
+      "posts": "272"
+    },
+    {
+      "division": "Total",
+      "posts": "296"
+    },
+    {
+      "division": "Upper Primary School Teacher (Mathematics-Science Subject)\n\n\t\t\tClass 6 to 8 (Sanskrit Edu. Dept.)\n\n\t\t\tAdvt. No. 09/2025",
+      "posts": "73"
+    },
+    {
+      "division": "Non-TSP",
+      "posts": "970"
+    },
+    {
+      "division": "Total",
+      "posts": "1043"
+    },
+    {
+      "division": "Non-TSP",
+      "posts": "4500"
+    },
+    {
+      "division": "Total",
+      "posts": "5000"
+    },
+    {
+      "division": "Non-TSP",
+      "posts": "187"
+    },
+    {
+      "division": "Total",
+      "posts": "187"
+    },
+    {
+      "division": "Primary School Teacher (General) Class 1 to 5 (Sanskrit Edu. Dept.)\n\n\t\t\tAdvt No 08/2025",
+      "posts": "27"
+    },
+    {
+      "division": "Non-TSP",
+      "posts": "422"
+    },
+    {
+      "division": "Total",
+      "posts": "449"
+    },
+    {
+      "division": "Non-TSP",
+      "posts": "319"
+    },
+    {
+      "division": "Total",
+      "posts": "389"
+    },
+    {
+      "division": "Non-TSP",
+      "posts": "156"
+    },
+    {
+      "division": "Total",
+      "posts": "174"
+    },
+    {
+      "division": "Upper Primary School Teacher (English Subject)\n\n\t\t\tClass 6 to 8 (Sanskrit Edu. Dept.)\n\n\t\t\tAdvt. No. 09/2025",
+      "posts": "19"
+    },
+    {
+      "division": "Non-TSP",
+      "posts": "202"
+    },
+    {
+      "division": "Total",
+      "posts": "221"
+    },
+    {
+      "division": "Upper Primary School Teacher (Social Science Subject)\n\n\t\t\tClass 6 to 8 (Sanskrit Edu. Dept.)\n\n\t\t\tAdvt. No. 09/2025",
+      "posts": "24"
+    },
+    {
+      "division": "Non-TSP",
+      "posts": "272"
+    },
+    {
+      "division": "Total",
+      "posts": "296"
+    },
+    {
+      "division": "Upper Primary School Teacher (Mathematics-Science Subject)\n\n\t\t\tClass 6 to 8 (Sanskrit Edu. Dept.)\n\n\t\t\tAdvt. No. 09/2025",
+      "posts": "73"
+    },
+    {
+      "division": "Non-TSP",
+      "posts": "970"
+    },
+    {
+      "division": "Total",
+      "posts": "1043"
+    },
+    {
+      "division": "Non-TSP",
+      "posts": "4500"
+    },
+    {
+      "division": "Total",
+      "posts": "5000"
+    },
+    {
+      "division": "Non-TSP",
+      "posts": "187"
+    },
+    {
+      "division": "Total",
+      "posts": "187"
+    },
+    {
+      "division": "Primary School Teacher (General) Class 1 to 5 (Sanskrit Edu. Dept.)\n\n\t\t\tAdvt No 08/2025",
+      "posts": "27"
+    },
+    {
+      "division": "Non-TSP",
+      "posts": "422"
+    },
+    {
+      "division": "Total",
+      "posts": "449"
+    },
+    {
+      "division": "Non-TSP",
+      "posts": "319"
+    },
+    {
+      "division": "Total",
+      "posts": "389"
+    },
+    {
+      "division": "Non-TSP",
+      "posts": "156"
+    },
+    {
+      "division": "Total",
+      "posts": "174"
+    },
+    {
+      "division": "Upper Primary School Teacher (English Subject)\n\n\t\t\tClass 6 to 8 (Sanskrit Edu. Dept.)\n\n\t\t\tAdvt. No. 09/2025",
+      "posts": "19"
+    },
+    {
+      "division": "Non-TSP",
+      "posts": "202"
+    },
+    {
+      "division": "Total",
+      "posts": "221"
+    },
+    {
+      "division": "Upper Primary School Teacher (Social Science Subject)\n\n\t\t\tClass 6 to 8 (Sanskrit Edu. Dept.)\n\n\t\t\tAdvt. No. 09/2025",
+      "posts": "24"
+    },
+    {
+      "division": "Non-TSP",
+      "posts": "272"
+    },
+    {
+      "division": "Total",
+      "posts": "296"
+    },
+    {
+      "division": "Upper Primary School Teacher (Mathematics-Science Subject)\n\n\t\t\tClass 6 to 8 (Sanskrit Edu. Dept.)\n\n\t\t\tAdvt. No. 09/2025",
+      "posts": "73"
+    },
+    {
+      "division": "Non-TSP",
+      "posts": "970"
+    },
+    {
+      "division": "Total",
+      "posts": "1043"
+    }
+  ]
 }

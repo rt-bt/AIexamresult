@@ -293,5 +293,279 @@
   ],
   "fullContentHtml": "",
   "lastDate": "28 October 2025",
-  "isExpired": false
+  "isExpired": false,
+  "divisionWiseVacancy": [
+    {
+      "division": "1280",
+      "posts": "264"
+    },
+    {
+      "division": "RRB Ajmer",
+      "posts": "116"
+    },
+    {
+      "division": "RRB Bangalore",
+      "posts": "54"
+    },
+    {
+      "division": "RRB Bhubaneshwar",
+      "posts": "18"
+    },
+    {
+      "division": "RRB Bilaspur",
+      "posts": "69"
+    },
+    {
+      "division": "RRB Chennai",
+      "posts": "80"
+    },
+    {
+      "division": "RRB Gorakhpur",
+      "posts": "173"
+    },
+    {
+      "division": "RRB Jammu Srinagar",
+      "posts": "137"
+    },
+    {
+      "division": "RRB Kolkata",
+      "posts": "499"
+    },
+    {
+      "division": "RRB Mumbai",
+      "posts": "494"
+    },
+    {
+      "division": "RRB Muzaffarpur",
+      "posts": "39"
+    },
+    {
+      "division": "RRB Prayagraj",
+      "posts": "303"
+    },
+    {
+      "division": "RRB Ranchi",
+      "posts": "56"
+    },
+    {
+      "division": "RRB Secunderabad",
+      "posts": "272"
+    },
+    {
+      "division": "RRB Thrivandrum",
+      "posts": "86"
+    },
+    {
+      "division": "90",
+      "posts": "100"
+    },
+    {
+      "division": "90",
+      "posts": "120"
+    },
+    {
+      "division": "1280",
+      "posts": "264"
+    },
+    {
+      "division": "RRB Ajmer",
+      "posts": "116"
+    },
+    {
+      "division": "RRB Bangalore",
+      "posts": "54"
+    },
+    {
+      "division": "RRB Bhubaneshwar",
+      "posts": "18"
+    },
+    {
+      "division": "RRB Bilaspur",
+      "posts": "69"
+    },
+    {
+      "division": "RRB Chennai",
+      "posts": "80"
+    },
+    {
+      "division": "RRB Gorakhpur",
+      "posts": "173"
+    },
+    {
+      "division": "RRB Jammu Srinagar",
+      "posts": "137"
+    },
+    {
+      "division": "RRB Kolkata",
+      "posts": "499"
+    },
+    {
+      "division": "RRB Mumbai",
+      "posts": "494"
+    },
+    {
+      "division": "RRB Muzaffarpur",
+      "posts": "39"
+    },
+    {
+      "division": "RRB Prayagraj",
+      "posts": "303"
+    },
+    {
+      "division": "RRB Ranchi",
+      "posts": "56"
+    },
+    {
+      "division": "RRB Secunderabad",
+      "posts": "272"
+    },
+    {
+      "division": "RRB Thrivandrum",
+      "posts": "86"
+    },
+    {
+      "division": "90",
+      "posts": "100"
+    },
+    {
+      "division": "90",
+      "posts": "120"
+    },
+    {
+      "division": "1280",
+      "posts": "264"
+    },
+    {
+      "division": "RRB Ajmer",
+      "posts": "116"
+    },
+    {
+      "division": "RRB Bangalore",
+      "posts": "54"
+    },
+    {
+      "division": "RRB Bhubaneshwar",
+      "posts": "18"
+    },
+    {
+      "division": "RRB Bilaspur",
+      "posts": "69"
+    },
+    {
+      "division": "RRB Chennai",
+      "posts": "80"
+    },
+    {
+      "division": "RRB Gorakhpur",
+      "posts": "173"
+    },
+    {
+      "division": "RRB Jammu Srinagar",
+      "posts": "137"
+    },
+    {
+      "division": "RRB Kolkata",
+      "posts": "499"
+    },
+    {
+      "division": "RRB Mumbai",
+      "posts": "494"
+    },
+    {
+      "division": "RRB Muzaffarpur",
+      "posts": "39"
+    },
+    {
+      "division": "RRB Prayagraj",
+      "posts": "303"
+    },
+    {
+      "division": "RRB Ranchi",
+      "posts": "56"
+    },
+    {
+      "division": "RRB Secunderabad",
+      "posts": "272"
+    },
+    {
+      "division": "RRB Thrivandrum",
+      "posts": "86"
+    },
+    {
+      "division": "90",
+      "posts": "100"
+    },
+    {
+      "division": "90",
+      "posts": "120"
+    },
+    {
+      "division": "1280",
+      "posts": "264"
+    },
+    {
+      "division": "RRB Ajmer",
+      "posts": "116"
+    },
+    {
+      "division": "RRB Bangalore",
+      "posts": "54"
+    },
+    {
+      "division": "RRB Bhubaneshwar",
+      "posts": "18"
+    },
+    {
+      "division": "RRB Bilaspur",
+      "posts": "69"
+    },
+    {
+      "division": "RRB Chennai",
+      "posts": "80"
+    },
+    {
+      "division": "RRB Gorakhpur",
+      "posts": "173"
+    },
+    {
+      "division": "RRB Jammu Srinagar",
+      "posts": "137"
+    },
+    {
+      "division": "RRB Kolkata",
+      "posts": "499"
+    },
+    {
+      "division": "RRB Mumbai",
+      "posts": "494"
+    },
+    {
+      "division": "RRB Muzaffarpur",
+      "posts": "39"
+    },
+    {
+      "division": "RRB Prayagraj",
+      "posts": "303"
+    },
+    {
+      "division": "RRB Ranchi",
+      "posts": "56"
+    },
+    {
+      "division": "RRB Secunderabad",
+      "posts": "272"
+    },
+    {
+      "division": "RRB Thrivandrum",
+      "posts": "86"
+    },
+    {
+      "division": "90",
+      "posts": "100"
+    },
+    {
+      "division": "90",
+      "posts": "120"
+    }
+  ]
 }

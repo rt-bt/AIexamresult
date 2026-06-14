@@ -147,5 +147,67 @@
   ],
   "fullContentHtml": "",
   "lastDate": "16 June 2026",
-  "isExpired": false
+  "isExpired": false,
+  "divisionWiseVacancy": [
+    {
+      "division": "Block Organizer\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Home Guards Dept, Uttar Pradesh)",
+      "posts": "243"
+    },
+    {
+      "division": "Platoon Commander\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Home Guards Dept, Uttar Pradesh)",
+      "posts": "52"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "295"
+    },
+    {
+      "division": "Block Organizer\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Home Guards Dept, Uttar Pradesh)",
+      "posts": "243"
+    },
+    {
+      "division": "Platoon Commander\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Home Guards Dept, Uttar Pradesh)",
+      "posts": "52"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "295"
+    },
+    {
+      "division": "Block Organizer\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Home Guards Dept, Uttar Pradesh)",
+      "posts": "243"
+    },
+    {
+      "division": "Platoon Commander\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Home Guards Dept, Uttar Pradesh)",
+      "posts": "52"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "295"
+    },
+    {
+      "division": "Block Organizer\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Home Guards Dept, Uttar Pradesh)",
+      "posts": "243"
+    },
+    {
+      "division": "Platoon Commander\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Home Guards Dept, Uttar Pradesh)",
+      "posts": "52"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "295"
+    },
+    {
+      "division": "Block Organizer\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Home Guards Dept, Uttar Pradesh)",
+      "posts": "243"
+    },
+    {
+      "division": "Platoon Commander\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Home Guards Dept, Uttar Pradesh)",
+      "posts": "52"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "295"
+    }
+  ]
 }

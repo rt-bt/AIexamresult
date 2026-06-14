@@ -319,5 +319,103 @@
   ],
   "fullContentHtml": "",
   "lastDate": "05 September 2024",
-  "isExpired": false
+  "isExpired": false,
+  "divisionWiseVacancy": [
+    {
+      "division": "Constable GD (M)",
+      "posts": "48,320"
+    },
+    {
+      "division": "Constable GD (F)",
+      "posts": "5,370"
+    },
+    {
+      "division": "Total",
+      "posts": "53690"
+    },
+    {
+      "division": "B",
+      "posts": "40"
+    },
+    {
+      "division": "C",
+      "posts": "40"
+    },
+    {
+      "division": "D",
+      "posts": "40"
+    },
+    {
+      "division": "Constable GD (M)",
+      "posts": "48,320"
+    },
+    {
+      "division": "Constable GD (F)",
+      "posts": "5,370"
+    },
+    {
+      "division": "Total",
+      "posts": "53690"
+    },
+    {
+      "division": "B",
+      "posts": "40"
+    },
+    {
+      "division": "C",
+      "posts": "40"
+    },
+    {
+      "division": "D",
+      "posts": "40"
+    },
+    {
+      "division": "Constable GD (M)",
+      "posts": "48,320"
+    },
+    {
+      "division": "Constable GD (F)",
+      "posts": "5,370"
+    },
+    {
+      "division": "Total",
+      "posts": "53690"
+    },
+    {
+      "division": "B",
+      "posts": "40"
+    },
+    {
+      "division": "C",
+      "posts": "40"
+    },
+    {
+      "division": "D",
+      "posts": "40"
+    },
+    {
+      "division": "Constable GD (M)",
+      "posts": "48,320"
+    },
+    {
+      "division": "Constable GD (F)",
+      "posts": "5,370"
+    },
+    {
+      "division": "Total",
+      "posts": "53690"
+    },
+    {
+      "division": "B",
+      "posts": "40"
+    },
+    {
+      "division": "C",
+      "posts": "40"
+    },
+    {
+      "division": "D",
+      "posts": "40"
+    }
+  ]
 }

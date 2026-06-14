@@ -74,5 +74,55 @@
     }
   ],
   "fullContentHtml": "",
-  "isExpired": false
+  "isExpired": false,
+  "divisionWiseVacancy": [
+    {
+      "division": "General Awareness",
+      "posts": "25"
+    },
+    {
+      "division": "Quantitative Aptitude",
+      "posts": "25"
+    },
+    {
+      "division": "English Language",
+      "posts": "25"
+    },
+    {
+      "division": "General Awareness",
+      "posts": "25"
+    },
+    {
+      "division": "Quantitative Aptitude",
+      "posts": "25"
+    },
+    {
+      "division": "English Language",
+      "posts": "25"
+    },
+    {
+      "division": "General Awareness",
+      "posts": "25"
+    },
+    {
+      "division": "Quantitative Aptitude",
+      "posts": "25"
+    },
+    {
+      "division": "English Language",
+      "posts": "25"
+    },
+    {
+      "division": "General Awareness",
+      "posts": "25"
+    },
+    {
+      "division": "Quantitative Aptitude",
+      "posts": "25"
+    },
+    {
+      "division": "English Language",
+      "posts": "25"
+    }
+  ]
 }

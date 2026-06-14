@@ -167,5 +167,87 @@
   ],
   "fullContentHtml": "",
   "lastDate": "21 September 2024",
-  "isExpired": false
+  "isExpired": false,
+  "divisionWiseVacancy": [
+    {
+      "division": "1563",
+      "posts": "311"
+    },
+    {
+      "division": "RRB Prayagraj",
+      "posts": "389"
+    },
+    {
+      "division": "RRB Thrivandrum",
+      "posts": "112"
+    },
+    {
+      "division": "90",
+      "posts": "100"
+    },
+    {
+      "division": "90",
+      "posts": "120"
+    },
+    {
+      "division": "1563",
+      "posts": "311"
+    },
+    {
+      "division": "RRB Prayagraj",
+      "posts": "389"
+    },
+    {
+      "division": "RRB Thrivandrum",
+      "posts": "112"
+    },
+    {
+      "division": "90",
+      "posts": "100"
+    },
+    {
+      "division": "90",
+      "posts": "120"
+    },
+    {
+      "division": "1563",
+      "posts": "311"
+    },
+    {
+      "division": "RRB Prayagraj",
+      "posts": "389"
+    },
+    {
+      "division": "RRB Thrivandrum",
+      "posts": "112"
+    },
+    {
+      "division": "90",
+      "posts": "100"
+    },
+    {
+      "division": "90",
+      "posts": "120"
+    },
+    {
+      "division": "1563",
+      "posts": "311"
+    },
+    {
+      "division": "RRB Prayagraj",
+      "posts": "389"
+    },
+    {
+      "division": "RRB Thrivandrum",
+      "posts": "112"
+    },
+    {
+      "division": "90",
+      "posts": "100"
+    },
+    {
+      "division": "90",
+      "posts": "120"
+    }
+  ]
 }

@@ -93,5 +93,67 @@
   ],
   "fullContentHtml": "",
   "lastDate": "19 May 2026",
-  "isExpired": false
+  "isExpired": false,
+  "divisionWiseVacancy": [
+    {
+      "division": "Apprentices",
+      "posts": "5000"
+    },
+    {
+      "division": "Quantitative & Reasoning Aptitude",
+      "posts": "25"
+    },
+    {
+      "division": "Computer Knowledge",
+      "posts": "25"
+    },
+    {
+      "division": "Apprentices",
+      "posts": "5000"
+    },
+    {
+      "division": "Quantitative & Reasoning Aptitude",
+      "posts": "25"
+    },
+    {
+      "division": "Computer Knowledge",
+      "posts": "25"
+    },
+    {
+      "division": "Apprentices",
+      "posts": "5000"
+    },
+    {
+      "division": "Quantitative & Reasoning Aptitude",
+      "posts": "25"
+    },
+    {
+      "division": "Computer Knowledge",
+      "posts": "25"
+    },
+    {
+      "division": "Apprentices",
+      "posts": "5000"
+    },
+    {
+      "division": "Quantitative & Reasoning Aptitude",
+      "posts": "25"
+    },
+    {
+      "division": "Computer Knowledge",
+      "posts": "25"
+    },
+    {
+      "division": "Apprentices",
+      "posts": "5000"
+    },
+    {
+      "division": "Quantitative & Reasoning Aptitude",
+      "posts": "25"
+    },
+    {
+      "division": "Computer Knowledge",
+      "posts": "25"
+    }
+  ]
 }

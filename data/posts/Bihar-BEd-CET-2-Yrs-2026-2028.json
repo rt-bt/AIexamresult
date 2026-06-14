@@ -176,5 +176,107 @@
   ],
   "fullContentHtml": "",
   "lastDate": "27 April 2026",
-  "isExpired": false
+  "isExpired": false,
+  "divisionWiseVacancy": [
+    {
+      "division": "General Hindi",
+      "posts": "15"
+    },
+    {
+      "division": "General English Comprehension",
+      "posts": "15"
+    },
+    {
+      "division": "Logical & Analytical Reasoning",
+      "posts": "25"
+    },
+    {
+      "division": "Teaching-Learning\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tEnvironment in Schools",
+      "posts": "25"
+    },
+    {
+      "division": "General Awareness",
+      "posts": "40"
+    },
+    {
+      "division": "General Hindi",
+      "posts": "15"
+    },
+    {
+      "division": "General English Comprehension",
+      "posts": "15"
+    },
+    {
+      "division": "Logical & Analytical Reasoning",
+      "posts": "25"
+    },
+    {
+      "division": "Teaching-Learning\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tEnvironment in Schools",
+      "posts": "25"
+    },
+    {
+      "division": "General Awareness",
+      "posts": "40"
+    },
+    {
+      "division": "General Hindi",
+      "posts": "15"
+    },
+    {
+      "division": "General English Comprehension",
+      "posts": "15"
+    },
+    {
+      "division": "Logical & Analytical Reasoning",
+      "posts": "25"
+    },
+    {
+      "division": "Teaching-Learning\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tEnvironment in Schools",
+      "posts": "25"
+    },
+    {
+      "division": "General Awareness",
+      "posts": "40"
+    },
+    {
+      "division": "General Hindi",
+      "posts": "15"
+    },
+    {
+      "division": "General English Comprehension",
+      "posts": "15"
+    },
+    {
+      "division": "Logical & Analytical Reasoning",
+      "posts": "25"
+    },
+    {
+      "division": "Teaching-Learning\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tEnvironment in Schools",
+      "posts": "25"
+    },
+    {
+      "division": "General Awareness",
+      "posts": "40"
+    },
+    {
+      "division": "General Hindi",
+      "posts": "15"
+    },
+    {
+      "division": "General English Comprehension",
+      "posts": "15"
+    },
+    {
+      "division": "Logical & Analytical Reasoning",
+      "posts": "25"
+    },
+    {
+      "division": "Teaching-Learning\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tEnvironment in Schools",
+      "posts": "25"
+    },
+    {
+      "division": "General Awareness",
+      "posts": "40"
+    }
+  ]
 }

@@ -165,5 +165,603 @@
   ],
   "fullContentHtml": "",
   "lastDate": "04 September 2025",
-  "isExpired": false
+  "isExpired": false,
+  "divisionWiseVacancy": [
+    {
+      "division": "Assistant Professor",
+      "posts": "1253"
+    },
+    {
+      "division": "1",
+      "posts": "07"
+    },
+    {
+      "division": "2",
+      "posts": "08"
+    },
+    {
+      "division": "3",
+      "posts": "15"
+    },
+    {
+      "division": "4",
+      "posts": "00"
+    },
+    {
+      "division": "5",
+      "posts": "06"
+    },
+    {
+      "division": "6",
+      "posts": "01"
+    },
+    {
+      "division": "7",
+      "posts": "09"
+    },
+    {
+      "division": "8",
+      "posts": "04"
+    },
+    {
+      "division": "9",
+      "posts": "08"
+    },
+    {
+      "division": "10",
+      "posts": "05"
+    },
+    {
+      "division": "11",
+      "posts": "02"
+    },
+    {
+      "division": "12",
+      "posts": "07"
+    },
+    {
+      "division": "13",
+      "posts": "00"
+    },
+    {
+      "division": "14",
+      "posts": "01"
+    },
+    {
+      "division": "15",
+      "posts": "05"
+    },
+    {
+      "division": "16",
+      "posts": "06"
+    },
+    {
+      "division": "17",
+      "posts": "05"
+    },
+    {
+      "division": "18",
+      "posts": "03"
+    },
+    {
+      "division": "19",
+      "posts": "00"
+    },
+    {
+      "division": "20",
+      "posts": "00"
+    },
+    {
+      "division": "21",
+      "posts": "00"
+    },
+    {
+      "division": "22",
+      "posts": "05"
+    },
+    {
+      "division": "23",
+      "posts": "07"
+    },
+    {
+      "division": "24",
+      "posts": "00"
+    },
+    {
+      "division": "25",
+      "posts": "07"
+    },
+    {
+      "division": "26",
+      "posts": "00"
+    },
+    {
+      "division": "27",
+      "posts": "00"
+    },
+    {
+      "division": "28",
+      "posts": "00"
+    },
+    {
+      "division": "Total",
+      "posts": "111"
+    },
+    {
+      "division": "Assistant Professor",
+      "posts": "1253"
+    },
+    {
+      "division": "1",
+      "posts": "07"
+    },
+    {
+      "division": "2",
+      "posts": "08"
+    },
+    {
+      "division": "3",
+      "posts": "15"
+    },
+    {
+      "division": "4",
+      "posts": "00"
+    },
+    {
+      "division": "5",
+      "posts": "06"
+    },
+    {
+      "division": "6",
+      "posts": "01"
+    },
+    {
+      "division": "7",
+      "posts": "09"
+    },
+    {
+      "division": "8",
+      "posts": "04"
+    },
+    {
+      "division": "9",
+      "posts": "08"
+    },
+    {
+      "division": "10",
+      "posts": "05"
+    },
+    {
+      "division": "11",
+      "posts": "02"
+    },
+    {
+      "division": "12",
+      "posts": "07"
+    },
+    {
+      "division": "13",
+      "posts": "00"
+    },
+    {
+      "division": "14",
+      "posts": "01"
+    },
+    {
+      "division": "15",
+      "posts": "05"
+    },
+    {
+      "division": "16",
+      "posts": "06"
+    },
+    {
+      "division": "17",
+      "posts": "05"
+    },
+    {
+      "division": "18",
+      "posts": "03"
+    },
+    {
+      "division": "19",
+      "posts": "00"
+    },
+    {
+      "division": "20",
+      "posts": "00"
+    },
+    {
+      "division": "21",
+      "posts": "00"
+    },
+    {
+      "division": "22",
+      "posts": "05"
+    },
+    {
+      "division": "23",
+      "posts": "07"
+    },
+    {
+      "division": "24",
+      "posts": "00"
+    },
+    {
+      "division": "25",
+      "posts": "07"
+    },
+    {
+      "division": "26",
+      "posts": "00"
+    },
+    {
+      "division": "27",
+      "posts": "00"
+    },
+    {
+      "division": "28",
+      "posts": "00"
+    },
+    {
+      "division": "Total",
+      "posts": "111"
+    },
+    {
+      "division": "Assistant Professor",
+      "posts": "1253"
+    },
+    {
+      "division": "1",
+      "posts": "07"
+    },
+    {
+      "division": "2",
+      "posts": "08"
+    },
+    {
+      "division": "3",
+      "posts": "15"
+    },
+    {
+      "division": "4",
+      "posts": "00"
+    },
+    {
+      "division": "5",
+      "posts": "06"
+    },
+    {
+      "division": "6",
+      "posts": "01"
+    },
+    {
+      "division": "7",
+      "posts": "09"
+    },
+    {
+      "division": "8",
+      "posts": "04"
+    },
+    {
+      "division": "9",
+      "posts": "08"
+    },
+    {
+      "division": "10",
+      "posts": "05"
+    },
+    {
+      "division": "11",
+      "posts": "02"
+    },
+    {
+      "division": "12",
+      "posts": "07"
+    },
+    {
+      "division": "13",
+      "posts": "00"
+    },
+    {
+      "division": "14",
+      "posts": "01"
+    },
+    {
+      "division": "15",
+      "posts": "05"
+    },
+    {
+      "division": "16",
+      "posts": "06"
+    },
+    {
+      "division": "17",
+      "posts": "05"
+    },
+    {
+      "division": "18",
+      "posts": "03"
+    },
+    {
+      "division": "19",
+      "posts": "00"
+    },
+    {
+      "division": "20",
+      "posts": "00"
+    },
+    {
+      "division": "21",
+      "posts": "00"
+    },
+    {
+      "division": "22",
+      "posts": "05"
+    },
+    {
+      "division": "23",
+      "posts": "07"
+    },
+    {
+      "division": "24",
+      "posts": "00"
+    },
+    {
+      "division": "25",
+      "posts": "07"
+    },
+    {
+      "division": "26",
+      "posts": "00"
+    },
+    {
+      "division": "27",
+      "posts": "00"
+    },
+    {
+      "division": "28",
+      "posts": "00"
+    },
+    {
+      "division": "Total",
+      "posts": "111"
+    },
+    {
+      "division": "Assistant Professor",
+      "posts": "1253"
+    },
+    {
+      "division": "1",
+      "posts": "07"
+    },
+    {
+      "division": "2",
+      "posts": "08"
+    },
+    {
+      "division": "3",
+      "posts": "15"
+    },
+    {
+      "division": "4",
+      "posts": "00"
+    },
+    {
+      "division": "5",
+      "posts": "06"
+    },
+    {
+      "division": "6",
+      "posts": "01"
+    },
+    {
+      "division": "7",
+      "posts": "09"
+    },
+    {
+      "division": "8",
+      "posts": "04"
+    },
+    {
+      "division": "9",
+      "posts": "08"
+    },
+    {
+      "division": "10",
+      "posts": "05"
+    },
+    {
+      "division": "11",
+      "posts": "02"
+    },
+    {
+      "division": "12",
+      "posts": "07"
+    },
+    {
+      "division": "13",
+      "posts": "00"
+    },
+    {
+      "division": "14",
+      "posts": "01"
+    },
+    {
+      "division": "15",
+      "posts": "05"
+    },
+    {
+      "division": "16",
+      "posts": "06"
+    },
+    {
+      "division": "17",
+      "posts": "05"
+    },
+    {
+      "division": "18",
+      "posts": "03"
+    },
+    {
+      "division": "19",
+      "posts": "00"
+    },
+    {
+      "division": "20",
+      "posts": "00"
+    },
+    {
+      "division": "21",
+      "posts": "00"
+    },
+    {
+      "division": "22",
+      "posts": "05"
+    },
+    {
+      "division": "23",
+      "posts": "07"
+    },
+    {
+      "division": "24",
+      "posts": "00"
+    },
+    {
+      "division": "25",
+      "posts": "07"
+    },
+    {
+      "division": "26",
+      "posts": "00"
+    },
+    {
+      "division": "27",
+      "posts": "00"
+    },
+    {
+      "division": "28",
+      "posts": "00"
+    },
+    {
+      "division": "Total",
+      "posts": "111"
+    },
+    {
+      "division": "1",
+      "posts": "07"
+    },
+    {
+      "division": "2",
+      "posts": "08"
+    },
+    {
+      "division": "3",
+      "posts": "15"
+    },
+    {
+      "division": "4",
+      "posts": "00"
+    },
+    {
+      "division": "5",
+      "posts": "06"
+    },
+    {
+      "division": "6",
+      "posts": "01"
+    },
+    {
+      "division": "7",
+      "posts": "09"
+    },
+    {
+      "division": "8",
+      "posts": "04"
+    },
+    {
+      "division": "9",
+      "posts": "08"
+    },
+    {
+      "division": "10",
+      "posts": "05"
+    },
+    {
+      "division": "11",
+      "posts": "02"
+    },
+    {
+      "division": "12",
+      "posts": "07"
+    },
+    {
+      "division": "13",
+      "posts": "00"
+    },
+    {
+      "division": "14",
+      "posts": "01"
+    },
+    {
+      "division": "15",
+      "posts": "05"
+    },
+    {
+      "division": "16",
+      "posts": "06"
+    },
+    {
+      "division": "17",
+      "posts": "05"
+    },
+    {
+      "division": "18",
+      "posts": "03"
+    },
+    {
+      "division": "19",
+      "posts": "00"
+    },
+    {
+      "division": "20",
+      "posts": "00"
+    },
+    {
+      "division": "21",
+      "posts": "00"
+    },
+    {
+      "division": "22",
+      "posts": "05"
+    },
+    {
+      "division": "23",
+      "posts": "07"
+    },
+    {
+      "division": "24",
+      "posts": "00"
+    },
+    {
+      "division": "25",
+      "posts": "07"
+    },
+    {
+      "division": "26",
+      "posts": "00"
+    },
+    {
+      "division": "27",
+      "posts": "00"
+    },
+    {
+      "division": "28",
+      "posts": "00"
+    },
+    {
+      "division": "Total",
+      "posts": "111"
+    }
+  ]
 }

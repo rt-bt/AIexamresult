@@ -2170,6 +2170,12 @@ export const scrapedData = {
       "slug": "haryana-police-cutoff-pdf-2026-download-here"
     },
     {
+      "title": "Haryana College UG 1st Merit List 2026 Date Out",
+      "url": "https://sarkariresultshine.com/haryana-college-1st-merit-list-2026-out/",
+      "category": "results",
+      "slug": "haryana-college-1st-merit-list-2026-out"
+    },
+    {
       "title": "SD Mahila Mahavidyalaya Hansi Vacancy 2026, Apply Online",
       "url": "https://sarkariresultshine.com/sd-mahila-mahavidyalaya-hansi-vacancy-2026/",
       "category": "results",
@@ -2222,12 +2228,6 @@ export const scrapedData = {
       "url": "https://sarkariresultshine.com/haryana-dbc-vacancy-2026/",
       "category": "results",
       "slug": "haryana-dbc-vacancy-2026"
-    },
-    {
-      "title": "Charkhi Dadri Volunteer Vacancy 2026, Free Application Form & Apply Now",
-      "url": "https://sarkariresultshine.com/charkhi-dadri-volunteer-vacancy-2026-free-application-form-apply-now/",
-      "category": "results",
-      "slug": "charkhi-dadri-volunteer-vacancy-2026-free-application-form-apply-now"
     },
     {
       "title": "HPSC HCS Recruitment 2026, Mains Exam Admit Card Notice",
@@ -2330,6 +2330,12 @@ export const scrapedData = {
       "url": "https://sarkariresultshine.com/nta-ugc-net-exam-june-2026/",
       "category": "results",
       "slug": "nta-ugc-net-exam-june-2026"
+    },
+    {
+      "title": "Charkhi Dadri Volunteer Vacancy 2026, Free Application Form & Apply Now",
+      "url": "https://sarkariresultshine.com/charkhi-dadri-volunteer-vacancy-2026-free-application-form-apply-now/",
+      "category": "results",
+      "slug": "charkhi-dadri-volunteer-vacancy-2026-free-application-form-apply-now"
     },
     {
       "title": "Lansdowne Forest Division Working Plan Associate Vacancy 2026, Apply Now",
@@ -2510,12 +2516,6 @@ export const scrapedData = {
       "url": "https://sarkariresultshine.com/cblu-bhiwani-pg-and-diploma-course-admission-form-2026-apply-online/",
       "category": "results",
       "slug": "cblu-bhiwani-pg-and-diploma-course-admission-form-2026-apply-online"
-    },
-    {
-      "title": "HARTRON Advanced Skill Centre Courses Admission 2026, AI और Cyber Security सहित विभिन्न कोर्स में एडमिशन",
-      "url": "https://sarkariresultshine.com/hartron-advanced-skill-centre-courses-admission-2026/",
-      "category": "results",
-      "slug": "hartron-advanced-skill-centre-courses-admission-2026"
     },
     {
       "title": "PM Awas Yojana Gramin Survey 2026-27, पीएम आवास योजना के तहत आपको घर बनाने के लिए 1,20,000 रुपये मिलेंगे",
@@ -6620,6 +6620,7 @@ export const scrapedData = {
       "isExpired": false
     },
     "railway-rrb-technician-exam-date-admit-card-2024": {
+      "lastDate": "29 December 2024",
       "isExpired": false
     },
     "rajasthan-police-constable-recruitment": {
@@ -7200,5 +7201,5 @@ export const scrapedData = {
       "isExpired": false
     }
   },
-  "fetchedAt": "2026-06-14T07:30:34.200Z"
+  "fetchedAt": "2026-06-14T07:42:43.624Z"
 };

@@ -147,5 +147,107 @@
   ],
   "fullContentHtml": "",
   "lastDate": "30 June 2026",
-  "isExpired": false
+  "isExpired": false,
+  "divisionWiseVacancy": [
+    {
+      "division": "Forest Guard \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Regular)",
+      "posts": "318"
+    },
+    {
+      "division": "Forest Guard \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Special Recruitment)",
+      "posts": "329"
+    },
+    {
+      "division": "Wildlife Guard\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Regular)",
+      "posts": "10"
+    },
+    {
+      "division": "Wildlife Guard\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Special Recruitment)",
+      "posts": "51"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "708"
+    },
+    {
+      "division": "Forest Guard \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Regular)",
+      "posts": "318"
+    },
+    {
+      "division": "Forest Guard \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Special Recruitment)",
+      "posts": "329"
+    },
+    {
+      "division": "Wildlife Guard\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Regular)",
+      "posts": "10"
+    },
+    {
+      "division": "Wildlife Guard\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Special Recruitment)",
+      "posts": "51"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "708"
+    },
+    {
+      "division": "Forest Guard \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Regular)",
+      "posts": "318"
+    },
+    {
+      "division": "Forest Guard \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Special Recruitment)",
+      "posts": "329"
+    },
+    {
+      "division": "Wildlife Guard\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Regular)",
+      "posts": "10"
+    },
+    {
+      "division": "Wildlife Guard\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Special Recruitment)",
+      "posts": "51"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "708"
+    },
+    {
+      "division": "Forest Guard \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Regular)",
+      "posts": "318"
+    },
+    {
+      "division": "Forest Guard \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Special Recruitment)",
+      "posts": "329"
+    },
+    {
+      "division": "Wildlife Guard\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Regular)",
+      "posts": "10"
+    },
+    {
+      "division": "Wildlife Guard\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Special Recruitment)",
+      "posts": "51"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "708"
+    },
+    {
+      "division": "Forest Guard \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Regular)",
+      "posts": "318"
+    },
+    {
+      "division": "Forest Guard \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Special Recruitment)",
+      "posts": "329"
+    },
+    {
+      "division": "Wildlife Guard\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Regular)",
+      "posts": "10"
+    },
+    {
+      "division": "Wildlife Guard\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Special Recruitment)",
+      "posts": "51"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "708"
+    }
+  ]
 }

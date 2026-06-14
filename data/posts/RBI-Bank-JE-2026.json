@@ -119,5 +119,207 @@
   ],
   "fullContentHtml": "",
   "lastDate": "16 April 2026",
-  "isExpired": false
+  "isExpired": false,
+  "divisionWiseVacancy": [
+    {
+      "division": "East",
+      "posts": "01"
+    },
+    {
+      "division": "West",
+      "posts": "04"
+    },
+    {
+      "division": "South",
+      "posts": "02"
+    },
+    {
+      "division": "Total",
+      "posts": "07"
+    },
+    {
+      "division": "West",
+      "posts": "03"
+    },
+    {
+      "division": "South",
+      "posts": "01"
+    },
+    {
+      "division": "Total",
+      "posts": "04"
+    },
+    {
+      "division": "02",
+      "posts": "100"
+    },
+    {
+      "division": "03",
+      "posts": "100"
+    },
+    {
+      "division": "04",
+      "posts": "50"
+    },
+    {
+      "division": "East",
+      "posts": "01"
+    },
+    {
+      "division": "West",
+      "posts": "04"
+    },
+    {
+      "division": "South",
+      "posts": "02"
+    },
+    {
+      "division": "Total",
+      "posts": "07"
+    },
+    {
+      "division": "West",
+      "posts": "03"
+    },
+    {
+      "division": "South",
+      "posts": "01"
+    },
+    {
+      "division": "Total",
+      "posts": "04"
+    },
+    {
+      "division": "02",
+      "posts": "100"
+    },
+    {
+      "division": "03",
+      "posts": "100"
+    },
+    {
+      "division": "04",
+      "posts": "50"
+    },
+    {
+      "division": "East",
+      "posts": "01"
+    },
+    {
+      "division": "West",
+      "posts": "04"
+    },
+    {
+      "division": "South",
+      "posts": "02"
+    },
+    {
+      "division": "Total",
+      "posts": "07"
+    },
+    {
+      "division": "West",
+      "posts": "03"
+    },
+    {
+      "division": "South",
+      "posts": "01"
+    },
+    {
+      "division": "Total",
+      "posts": "04"
+    },
+    {
+      "division": "02",
+      "posts": "100"
+    },
+    {
+      "division": "03",
+      "posts": "100"
+    },
+    {
+      "division": "04",
+      "posts": "50"
+    },
+    {
+      "division": "East",
+      "posts": "01"
+    },
+    {
+      "division": "West",
+      "posts": "04"
+    },
+    {
+      "division": "South",
+      "posts": "02"
+    },
+    {
+      "division": "Total",
+      "posts": "07"
+    },
+    {
+      "division": "West",
+      "posts": "03"
+    },
+    {
+      "division": "South",
+      "posts": "01"
+    },
+    {
+      "division": "Total",
+      "posts": "04"
+    },
+    {
+      "division": "02",
+      "posts": "100"
+    },
+    {
+      "division": "03",
+      "posts": "100"
+    },
+    {
+      "division": "04",
+      "posts": "50"
+    },
+    {
+      "division": "East",
+      "posts": "01"
+    },
+    {
+      "division": "West",
+      "posts": "04"
+    },
+    {
+      "division": "South",
+      "posts": "02"
+    },
+    {
+      "division": "Total",
+      "posts": "07"
+    },
+    {
+      "division": "West",
+      "posts": "03"
+    },
+    {
+      "division": "South",
+      "posts": "01"
+    },
+    {
+      "division": "Total",
+      "posts": "04"
+    },
+    {
+      "division": "02",
+      "posts": "100"
+    },
+    {
+      "division": "03",
+      "posts": "100"
+    },
+    {
+      "division": "04",
+      "posts": "50"
+    }
+  ]
 }

@@ -60,5 +60,87 @@
     }
   ],
   "fullContentHtml": "",
-  "isExpired": false
+  "isExpired": false,
+  "divisionWiseVacancy": [
+    {
+      "division": "EWS",
+      "posts": "34"
+    },
+    {
+      "division": "SC",
+      "posts": "39"
+    },
+    {
+      "division": "ST",
+      "posts": "69"
+    },
+    {
+      "division": "OBC",
+      "posts": "92"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "373"
+    },
+    {
+      "division": "EWS",
+      "posts": "34"
+    },
+    {
+      "division": "SC",
+      "posts": "39"
+    },
+    {
+      "division": "ST",
+      "posts": "69"
+    },
+    {
+      "division": "OBC",
+      "posts": "92"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "373"
+    },
+    {
+      "division": "EWS",
+      "posts": "34"
+    },
+    {
+      "division": "SC",
+      "posts": "39"
+    },
+    {
+      "division": "ST",
+      "posts": "69"
+    },
+    {
+      "division": "OBC",
+      "posts": "92"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "373"
+    },
+    {
+      "division": "EWS",
+      "posts": "34"
+    },
+    {
+      "division": "SC",
+      "posts": "39"
+    },
+    {
+      "division": "ST",
+      "posts": "69"
+    },
+    {
+      "division": "OBC",
+      "posts": "92"
+    },
+    {
+      "division": "Grand Total",
+      "posts": "373"
+    }
+  ]
 }
