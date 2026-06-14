@@ -412,48 +412,28 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
               {/* Application Fee */}
               {post.applicationFee && post.applicationFee.length > 0 && (
                 <TableCard icon={<IndianRupee className="h-4 w-4" />} title="Application Fee" gradient="border-b border-orange-100 bg-orange-50/50">
-                  <div className="overflow-x-auto">
-                    <table className="w-full text-sm">
-                      <thead>
-                        <tr className="border-b border-orange-200">
-                          <th className="py-3 pr-4 text-left text-xs font-bold uppercase tracking-wider text-gray-500">Category</th>
-                          <th className="py-3 text-right text-xs font-bold uppercase tracking-wider text-gray-500">Fee (₹)</th>
-                        </tr>
-                      </thead>
-                      <tbody className="divide-y divide-orange-50">
-                        {post.applicationFee.map((f: string, i: number) => {
-                          const lower = f.toLowerCase().replace(/[^\x20-\x7E₹a-z0-9\/\s]/g, "");
-                          const isSection = lower.includes("fee refund") || lower.includes("correction") || lower.includes("payment mode") || lower.includes("pay their") || lower.includes("through");
-                          if (isSection) {
-                            return (
-                              <tr key={i}>
-                                <td colSpan={2} className="py-2.5 text-xs font-bold uppercase tracking-wider text-orange-600 bg-orange-50/50">{f.replace(/[^\x20-\x7E₹]/g, "").replace(/�/g, "").trim()}</td>
-                              </tr>
-                            );
-                          }
-                          let catLabel = f; let amt = "";
-                          const colonIdx = f.indexOf(":");
-                          if (colonIdx > 0) { catLabel = f.substring(0, colonIdx).trim(); amt = f.substring(colonIdx + 1).trim(); }
-                          const amtMatch = amt.match(/[₹]?\s*([\d,]+)\s*\/?\-?/);
-                          const displayAmt = amtMatch ? `₹${amtMatch[1].replace(/,/, "")}/-` : (amt || "—");
-                          let catBadge = "bg-gray-100 text-gray-600";
-                          if (lower.includes("general") || lower.includes("ur") || lower.includes("ews")) catBadge = "bg-blue-50 text-blue-700";
-                          else if (lower.includes("obc")) catBadge = "bg-orange-50 text-orange-700";
-                          else if (lower.includes("sc") || lower.includes("st")) catBadge = "bg-purple-50 text-purple-700";
-                          else if (lower.includes("female") || lower.includes("women")) catBadge = "bg-pink-50 text-pink-700";
-                          else if (lower.includes("ph") || lower.includes("pwd") || lower.includes("handicap")) catBadge = "bg-teal-50 text-teal-700";
-
-                          return (
-                            <tr key={i} className="hover:bg-orange-50/30">
-                              <td className="py-3 pr-4">
-                                <span className={`inline-block rounded-full px-3 py-0.5 text-xs font-semibold ${catBadge}`}>{catLabel}</span>
-                              </td>
-                              <td className="py-3 text-right font-bold text-gray-800">{displayAmt}</td>
-                            </tr>
-                          );
-                        })}
-                      </tbody>
-                    </table>
+                  <div className="divide-y divide-orange-100">
+                    {post.applicationFee.map((f: string, i: number) => {
+                      const clean = f.replace(/[^\x20-\x7E₹:\/.,\-\s\w]/g, "").trim();
+                      const lower = clean.toLowerCase();
+                      const isSection = lower.includes("fee refund") || lower.includes("correction charges") || lower.includes("payment mode") || lower.includes("pay their") || lower.includes("through") || lower.includes("candidates have");
+                      if (isSection) {
+                        return (
+                          <div key={i} className="py-3 first:pt-0">
+                            <p className="text-xs font-bold uppercase tracking-wider text-orange-700">{clean.replace(/^:\s*/, "")}</p>
+                          </div>
+                        );
+                      }
+                      const parts = clean.split(":");
+                      const cat = parts[0]?.trim() || "";
+                      const amt = parts.slice(1).join(":").trim().replace(/^Rs\.?\s*/i, "₹").replace(/\/–$/, "/-");
+                      return (
+                        <div key={i} className="flex items-center justify-between py-2.5 first:pt-0 last:pb-0">
+                          <span className="text-sm font-medium text-gray-700">{cat}</span>
+                          <span className="text-sm font-bold text-gray-900">{amt}</span>
+                        </div>
+                      );
+                    })}
                   </div>
                 </TableCard>
               )}
