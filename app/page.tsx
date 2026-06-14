@@ -78,7 +78,7 @@ export default function HomePage() {
 
         <NotificationSubscribe />
 
-        <section className="border-t border-slate-100 bg-white py-16 sm:py-20">
+        <section className="border-t border-slate-100 bg-white dark:border-slate-800 dark:bg-slate-900 py-16 sm:py-20">
           <div className="container-page">
             <div className="mx-auto max-w-2xl text-center">
               <h2 className="text-3xl font-bold tracking-tight text-slate-900 dark:text-white">Frequently Asked Questions</h2>
