@@ -21,8 +21,8 @@ export function QuickAccess() {
         <div className="mb-6 flex items-center gap-3">
           <span className="h-8 w-1.5 rounded-full bg-gradient-to-b from-[#0D9488] via-[#EA580C] to-[#4F46E5]" />
           <div>
-            <h2 className="text-lg font-black text-slate-800">Browse Categories</h2>
-            <p className="text-xs text-slate-500">Quick access to all exam updates</p>
+            <h2 className="text-lg font-black text-slate-800 dark:text-white">Browse Categories</h2>
+            <p className="text-xs text-slate-500 dark:text-slate-300">Quick access to all exam updates</p>
           </div>
         </div>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
