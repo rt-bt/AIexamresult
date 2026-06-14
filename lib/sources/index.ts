@@ -23,7 +23,7 @@ export async function scrapeResultBharat(): Promise<ScrapedItem[]> {
     items.push({
       title: text,
       url: href,
-      category: "results",
+      category: categorizeTitle(text),
       slug: slugFromUrl(href),
     });
   });
@@ -47,7 +47,7 @@ export async function scrapeTestbookResult(): Promise<ScrapedItem[]> {
     items.push({
       title: text,
       url: href,
-      category: "results",
+      category: categorizeTitle(text),
       slug: slugFromUrl(href),
     });
   });
@@ -76,7 +76,7 @@ export async function scrapeSarkariResultShine(): Promise<ScrapedItem[]> {
     items.push({
       title: text,
       url: href,
-      category: "results",
+      category: categorizeTitle(text),
       slug: slugFromUrl(href),
     });
   });
@@ -86,13 +86,13 @@ export async function scrapeSarkariResultShine(): Promise<ScrapedItem[]> {
 
 function categorizeTitle(title: string): string {
   const lower = title.toLowerCase();
-  if (lower.includes("admit card") || lower.includes("exam city") || lower.includes("hall ticket") || lower.includes("call letter")) return "admitCards";
+  if (lower.includes("admit card") || lower.includes("exam city") || lower.includes("hall ticket") || lower.includes("call letter") || lower.includes("exam date")) return "admitCards";
   if (lower.includes("answer key") || lower.includes("answer-key") || lower.includes("response sheet")) return "answerKeys";
   if (lower.includes("cutoff") || lower.includes("cut-off") || lower.includes("merit list") || lower.includes("merit-list")) return "results";
-  if (lower.includes("result") && !lower.includes("online form")) return "results";
-  if (lower.includes("vacancy") || lower.includes("online form") || lower.includes("apply") || lower.includes("recruitment") || lower.includes("apprentice") || lower.includes("posts")) return "latestJobs";
+  if (lower.includes("result") && !lower.includes("online form") && !lower.includes("exam date") && !lower.includes("admit card")) return "results";
+  if (lower.includes("vacancy") || lower.includes("online form") || lower.includes("apply") || lower.includes("recruitment") || lower.includes("apprentice") || lower.includes("posts") || lower.includes("notification")) return "latestJobs";
   if (lower.includes("admission") || lower.includes("counselling") || lower.includes("counseling") || lower.includes("schedule")) return "admissions";
-  if (lower.includes("syllabus") || lower.includes("syllabus") || lower.includes("exam pattern") || lower.includes("documents")) return "documents";
+  if (lower.includes("syllabus") || lower.includes("exam pattern") || lower.includes("documents")) return "documents";
   return "results";
 }
 

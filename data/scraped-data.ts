@@ -487,104 +487,6 @@ export const scrapedData = {
       "publishedDate": ""
     },
     {
-      "title": "UP Polytechnic JEECUP 2026 Answer Key",
-      "url": "https://www.resultbharat.com/UP-Polytechnic-JEECUP-2026.html",
-      "category": "results",
-      "slug": "UP-Polytechnic-JEECUP-2026",
-      "publishedDate": "11 June 2026 | 02:18 PM"
-    },
-    {
-      "title": "NTA JIPMAT 2026 Answer Key",
-      "url": "https://www.resultbharat.com/NTA-JIPMAT-2026.html",
-      "category": "results",
-      "slug": "NTA-JIPMAT-2026",
-      "publishedDate": "10 June 2026 | 09:51 PM"
-    },
-    {
-      "title": "NTA CUET UG 2026 Answer Key",
-      "url": "https://www.resultbharat.com/NTA-CUET-UG-2026.html",
-      "category": "results",
-      "slug": "NTA-CUET-UG-2026",
-      "publishedDate": "Click Here"
-    },
-    {
-      "title": "UP CNET 2026 Answer Key",
-      "url": "https://www.resultbharat.com/answerkey_more.html",
-      "category": "results",
-      "slug": "answerkey_more",
-      "publishedDate": "09 June 2026  | 02:56 PM"
-    },
-    {
-      "title": "Bihar 02 Years CET B.Ed 2026 Answer Key",
-      "url": "https://www.resultbharat.com/Bihar-BEd-CET-2-Yrs-2026-2028.html",
-      "category": "results",
-      "slug": "Bihar-BEd-CET-2-Yrs-2026-2028",
-      "publishedDate": "08 June 2026 | 09:19 PM"
-    },
-    {
-      "title": "JCECEB Jharkhand BEd Entrance Exam Answer Key 2026",
-      "url": "https://www.resultbharat.com/Jharkhand-BEd-2026.html",
-      "category": "results",
-      "slug": "Jharkhand-BEd-2026",
-      "publishedDate": "03 June 2026 | 04:33 PM"
-    },
-    {
-      "title": "UPPSC Assistant Professor GDC Answer Key 2026",
-      "url": "https://www.resultbharat.com/UPPSC-Asst-Professor-2025.html",
-      "category": "results",
-      "slug": "UPPSC-Asst-Professor-2025",
-      "publishedDate": "03 June 2026 | 05:49 PM"
-    },
-    {
-      "title": "JSSC Excise Constable Final Answer Key 2026",
-      "url": "https://www.resultbharat.com/JSSC-Excise-Constable-JECCE-2023.html",
-      "category": "results",
-      "slug": "JSSC-Excise-Constable-JECCE-2023",
-      "publishedDate": "02 June 2026 | 02:56 PM"
-    },
-    {
-      "title": "Indian Navy INCET 01/2025 Answer Key",
-      "url": "https://www.resultbharat.com/Indian-Navy-INCET-01-2025.html",
-      "category": "results",
-      "slug": "Indian-Navy-INCET-01-2025",
-      "publishedDate": "29 May 2026  |  10:51 AM"
-    },
-    {
-      "title": "UPSC Civil Services CSE 2026 Pre Answer Key",
-      "url": "https://www.resultbharat.com/UPSC-IAS-IFS-2026.html",
-      "category": "results",
-      "slug": "UPSC-IAS-IFS-2026",
-      "publishedDate": ""
-    },
-    {
-      "title": "UPSSSC Lekhpal 2025 Answer Key/ Objection 2026",
-      "url": "https://www.resultbharat.com/UPSSSC-Lekhpal-AdvtNo-02-Exam-2025.html",
-      "category": "results",
-      "slug": "UPSSSC-Lekhpal-AdvtNo-02-Exam-2025",
-      "publishedDate": "26 May 2026 | 07:43 PM"
-    },
-    {
-      "title": "SSC Delhi Police Driver 2025 Final Answer Key",
-      "url": "https://www.resultbharat.com/SSC-Delhi-Police-Constable-Driver-2025.html",
-      "category": "results",
-      "slug": "SSC-Delhi-Police-Constable-Driver-2025",
-      "publishedDate": "26 May 2026 |  06:01 PM"
-    },
-    {
-      "title": "MPESB Nursing Officer & Sister Tutor Answer Key 2026",
-      "url": "https://www.resultbharat.com/MPESB-Nursing-Officer_Sister-Tutor-2026.html",
-      "category": "results",
-      "slug": "MPESB-Nursing-Officer_Sister-Tutor-2026",
-      "publishedDate": "18 May 2026 | 06:38 PM"
-    },
-    {
-      "title": "EMRS TGT, PGT & Other Post Tier II Answer Key 2026",
-      "url": "https://www.resultbharat.com/EMRS-Teaching_Non-Teaching-Post-2025.html",
-      "category": "results",
-      "slug": "EMRS-Teaching_Non-Teaching-Post-2025",
-      "publishedDate": "13 May 2026 | 08:19 AM"
-    },
-    {
       "title": "Adhaar Card Download, Correction 2024",
       "url": "https://www.resultbharat.com/adharservices.html",
       "category": "results",
@@ -606,606 +508,11 @@ export const scrapedData = {
       "publishedDate": ""
     },
     {
-      "title": "ABVMU UP GNM Admissions UPGET 2026 Admit Card",
-      "url": "https://www.resultbharat.com/UP-GNM-UPGET-2026.html",
-      "category": "results",
-      "slug": "UP-GNM-UPGET-2026",
-      "publishedDate": ""
-    },
-    {
-      "title": "UPSC IES / ISS Admit Card 2026",
-      "url": "https://www.resultbharat.com/UPSC-IES-ISS-2026.html",
-      "category": "results",
-      "slug": "UPSC-IES-ISS-2026",
-      "publishedDate": "12 June 2026 | 10:42 PM"
-    },
-    {
-      "title": "UPSC Engineering Services 2026 Mains Admit Card",
-      "url": "https://www.resultbharat.com/UPSC-Engineering-Services-2026.html",
-      "category": "results",
-      "slug": "UPSC-Engineering-Services-2026",
-      "publishedDate": ""
-    },
-    {
-      "title": "UPSC Geo Scientist Mains Admit Card 2026",
-      "url": "https://www.resultbharat.com/Admitcard_more.html",
-      "category": "results",
-      "slug": "Admitcard_more",
-      "publishedDate": ""
-    },
-    {
-      "title": "BPSC APO Exam Date 2026",
-      "url": "https://www.resultbharat.com/BPSC-APO-2026.html",
-      "category": "results",
-      "slug": "BPSC-APO-2026",
-      "publishedDate": "12 June 2026  | 05:01 PM"
-    },
-    {
-      "title": "DRDO CEPTAM-11 STA-B & Tech-A 2025 Tier-2 Admit Card 2026",
-      "url": "https://www.resultbharat.com/DRDO-CEPTAM-11-Rectt.html",
-      "category": "results",
-      "slug": "DRDO-CEPTAM-11-Rectt",
-      "publishedDate": "12 June 2026 | 04:52 AM"
-    },
-    {
-      "title": "CSBC Bihar Police Constable GD Exam City/ Admit Card 2026",
-      "url": "https://www.resultbharat.com/CSBC-Constable-GD-01-2026.html",
-      "category": "results",
-      "slug": "CSBC-Constable-GD-01-2026",
-      "publishedDate": "11 June 2026 | 12:01 AM"
-    },
-    {
-      "title": "NTA UGC NET June 2026 Exam City Details",
-      "url": "https://www.resultbharat.com/NTA-UGC-NET-JRF-June-2026.html",
-      "category": "results",
-      "slug": "NTA-UGC-NET-JRF-June-2026",
-      "publishedDate": "10 June 2026 | 03:33 PM"
-    },
-    {
-      "title": "UPSSSC Forest/ WildLife Guard 2023 PMT Admit Card 2026",
-      "url": "https://www.resultbharat.com/UPSSSC-Forest-Guard_Wild-Guard-709_Post-2023.html",
-      "category": "results",
-      "slug": "UPSSSC-Forest-Guard_Wild-Guard-709_Post-2023",
-      "publishedDate": "09 June 2026 | 01:19 PM"
-    },
-    {
-      "title": "Bihar Vidhan Parishad Security Guard 03/2023 Interview Admit Card",
-      "url": "https://www.resultbharat.com/Bihar-Vidhan-Parishad Advt-No_01-to-04_2023.html",
-      "category": "results",
-      "slug": "Bihar-Vidhan-Parishad Advt-No_01-to-04_2023",
-      "publishedDate": "08 June 2026   | 11:16 PM"
-    },
-    {
-      "title": "UKSSSC Patwari, VDO & Other Post 2025 Admit Card",
-      "url": "https://www.resultbharat.com/UKSSSC-VDO-Other_Advt-70-2025.html",
-      "category": "results",
-      "slug": "UKSSSC-VDO-Other_Advt-70-2025",
-      "publishedDate": "08 June 2026 | 05:16 PM"
-    },
-    {
-      "title": "CSBC Bihar Prohibition Constable, Jail Warder & Moble Squad Admit Card 2026",
-      "url": "https://www.resultbharat.com/CSBC-Porhibition_Mobile_Jail-03-2025.html",
-      "category": "results",
-      "slug": "CSBC-Porhibition_Mobile_Jail-03-2025",
-      "publishedDate": "08 June 2026 | 12:03 AM"
-    },
-    {
-      "title": "BPSC AES Admit Card 2026",
-      "url": "https://www.resultbharat.com/BPSC-AES-Advt-88-2025.html",
-      "category": "results",
-      "slug": "BPSC-AES-Advt-88-2025",
-      "publishedDate": "08 June 2026   |  12:03 AM"
-    },
-    {
-      "title": "BPSC Stenographer Admit Card 2026",
-      "url": "https://www.resultbharat.com/BPSC-Stenographer-01-2026.html",
-      "category": "results",
-      "slug": "BPSC-Stenographer-01-2026",
-      "publishedDate": "08 June 2026  | 12:06 AM"
-    },
-    {
-      "title": "UPPSC GIC Lecturer Admit Card 2026",
-      "url": "https://www.resultbharat.com/UPPSC-Lecturer-GIC-2025.html",
-      "category": "results",
-      "slug": "UPPSC-Lecturer-GIC-2025",
-      "publishedDate": "08 June 2026 | 04:58 PM"
-    },
-    {
-      "title": "NTA NEET UG 2026 Re-Exam City Details",
-      "url": "https://www.resultbharat.com/NTA-NEET-UG-2026.html",
-      "category": "results",
-      "slug": "NTA-NEET-UG-2026",
-      "publishedDate": "Click Here"
-    },
-    {
-      "title": "Railway RRB NTPC UG 10+2 CEN 07/2025 Exam City/ Admit Card 2026",
-      "url": "https://www.resultbharat.com/RRB-NTPC-Under-Graduate-CEN-07-2025.html",
-      "category": "results",
-      "slug": "RRB-NTPC-Under-Graduate-CEN-07-2025",
-      "publishedDate": ""
-    },
-    {
-      "title": "UP Police SI 2025 DV / PST Exam Admit Card 2026",
-      "url": "https://www.resultbharat.com/UP-Police-SI-2025.html",
-      "category": "results",
-      "slug": "UP-Police-SI-2025",
-      "publishedDate": "05 June 2026 | 03:49 PM"
-    },
-    {
-      "title": "RBI Officer Grade B Admit Card 2026",
-      "url": "https://www.resultbharat.com/RBI-Grade-B-2026.html",
-      "category": "results",
-      "slug": "RBI-Grade-B-2026",
-      "publishedDate": "05 June 2026 |  11:39 AM"
-    },
-    {
-      "title": "UP Police Constable Admit Card 2026",
-      "url": "https://www.resultbharat.com/UP-Police-Constable-2025-26.html",
-      "category": "results",
-      "slug": "UP-Police-Constable-2025-26",
-      "publishedDate": ""
-    },
-    {
-      "title": "BPSC Auditor Pre Exam Date 2026",
-      "url": "https://www.resultbharat.com/BPSC-Auditor_09-2026.html",
-      "category": "results",
-      "slug": "BPSC-Auditor_09-2026",
-      "publishedDate": "02 July 2026  | 12:06 PM"
-    },
-    {
-      "title": "Haryan HTET 2025 New Exam Date 2026",
-      "url": "https://www.resultbharat.com/HTET-Haryana-TET-2025.html",
-      "category": "results",
-      "slug": "HTET-Haryana-TET-2025",
-      "publishedDate": "25 May 2026 | 08:46 PM"
-    },
-    {
-      "title": "BSEB DELED 2026 Admit Card",
-      "url": "https://www.resultbharat.com/BSEB-DElEd-2026-28.html",
-      "category": "results",
-      "slug": "BSEB-DElEd-2026-28",
-      "publishedDate": "28 May 2026 | 07:09 AM"
-    },
-    {
-      "title": "UPSSSC UP Pollution Control Board Exam Date 2026",
-      "url": "https://www.resultbharat.com/UPSSSC-UPPCB-Various-Post-Rectt-2026.html",
-      "category": "results",
-      "slug": "UPSSSC-UPPCB-Various-Post-Rectt-2026",
-      "publishedDate": "30 May 2026 | 10:22 PM"
-    },
-    {
-      "title": "MPESB Vanrakshak, Jail Prahari Admit Card 2026",
-      "url": "https://www.resultbharat.com/MPESB-Vanrakshak-Jail-Prahari-2026.html",
-      "category": "results",
-      "slug": "MPESB-Vanrakshak-Jail-Prahari-2026",
-      "publishedDate": "08 June 2026 | 04:36 PM"
-    },
-    {
-      "title": "RBI JE Admit Card 2026",
-      "url": "https://www.resultbharat.com/RBI-Bank-JE-2026.html",
-      "category": "results",
-      "slug": "RBI-Bank-JE-2026",
-      "publishedDate": "27 May 2026 | 06:00 PM"
-    },
-    {
-      "title": "CSBC Bihar Police Constable Operator Revised Exam City/ Admit Card Date 2026",
-      "url": "https://www.resultbharat.com/CSBC-Constable-Operator-02-2026.html",
-      "category": "results",
-      "slug": "CSBC-Constable-Operator-02-2026",
-      "publishedDate": "26 June 2026 | 04:32 PM"
-    },
-    {
-      "title": "Indian Army Agniveer CEE Admit Card 2026",
-      "url": "https://www.resultbharat.com/Army-Agniveer-CEE-2026-27.html",
-      "category": "results",
-      "slug": "Army-Agniveer-CEE-2026-27",
-      "publishedDate": "15 May 2026  | 05:18 AM"
-    },
-    {
-      "title": "UPSSSC Auditor/ Asst Accountant Syllabus 2026",
-      "url": "https://www.resultbharat.com/UPSSSC-Advt-14-2026_Auditor-Asst-Accountant.html",
-      "category": "results",
-      "slug": "UPSSSC-Advt-14-2026_Auditor-Asst-Accountant",
-      "publishedDate": "03 June 2026 | 05:12 PM"
-    },
-    {
-      "title": "UP TET/ Super TET 2026 Syllabus",
-      "url": "https://www.resultbharat.com/syllabus_more.html",
-      "category": "results",
-      "slug": "syllabus_more",
-      "publishedDate": "09 June 2026  | 04:51 PM"
-    },
-    {
-      "title": "BPSC Bihar SAV School Teacher 2024 Mains Syllabus",
-      "url": "https://www.resultbharat.com/BPSC-Simultala-School-Teacher-2024.html",
-      "category": "results",
-      "slug": "BPSC-Simultala-School-Teacher-2024",
-      "publishedDate": "21 February 2025  | 06:14 PM"
-    },
-    {
-      "title": "NTA JEE Mains 2025 Syllabus",
-      "url": "https://www.resultbharat.com/NTA-JEE-Mains-S1-2025.html",
-      "category": "results",
-      "slug": "NTA-JEE-Mains-S1-2025",
-      "publishedDate": "23 February 2025  | 04:44 PM"
-    },
-    {
-      "title": "CTET December 2024 Syllabus",
-      "url": "https://www.resultbharat.com/CTET-December-2024.html",
-      "category": "results",
-      "slug": "CTET-December-2024",
-      "publishedDate": ""
-    },
-    {
-      "title": "RRB NTPC 10+2 Inter Level Syllabus 2024",
-      "url": "https://www.resultbharat.com/RRB-NTPC-CEN-06-2024.html",
-      "category": "results",
-      "slug": "RRB-NTPC-CEN-06-2024",
-      "publishedDate": ""
-    },
-    {
-      "title": "RRB NTPC Graduate Level Syllabus 2024",
-      "url": "https://www.resultbharat.com/RRB-NTPC-Graduate-Level-CEN-05_2024.html",
-      "category": "results",
-      "slug": "RRB-NTPC-Graduate-Level-CEN-05_2024",
-      "publishedDate": ""
-    },
-    {
-      "title": "Jute Corporation JCI Various Post Syllabus 2024",
-      "url": "https://www.resultbharat.com/JIC-Various-90-Post_2024.html",
-      "category": "results",
-      "slug": "JIC-Various-90-Post_2024",
-      "publishedDate": "12 August 2025 | 06:02 PM"
-    },
-    {
-      "title": "NIACL AO Scale-I Syllabus 2024",
-      "url": "https://www.resultbharat.com/NIACL-AO-2024.html",
-      "category": "results",
-      "slug": "NIACL-AO-2024",
-      "publishedDate": ""
-    },
-    {
-      "title": "SSC GD Constable Syllabus 2024",
-      "url": "https://www.resultbharat.com/SSC-Constable-GD-Rectt-2024.html",
-      "category": "results",
-      "slug": "SSC-Constable-GD-Rectt-2024",
-      "publishedDate": ""
-    },
-    {
-      "title": "Indian Navy SSR Medical Assistant Syllabus 2024",
-      "url": "https://www.resultbharat.com/Indian-Navy-SSR-Medical-Assistant_02-2024-Batch.html",
-      "category": "results",
-      "slug": "Indian-Navy-SSR-Medical-Assistant_02-2024-Batch",
-      "publishedDate": ""
-    },
-    {
-      "title": "RSMSSB CET 10+2 Inter Level Syllabus 2024",
-      "url": "https://www.resultbharat.com/RSMSSB-CET-10+2-Level_2024.html",
-      "category": "results",
-      "slug": "RSMSSB-CET-10+2-Level_2024",
-      "publishedDate": "12 March 2025 | 06:42 PM"
-    },
-    {
-      "title": "IRDAI Assistant Manager Syllabus 2024",
-      "url": "https://www.resultbharat.com/IRDAI-AM-2024.html",
-      "category": "results",
-      "slug": "IRDAI-AM-2024",
-      "publishedDate": "23 December 2024 | 08:31 PM"
-    },
-    {
-      "title": "HSSC Haryana Police Constable Syllabus 2024",
-      "url": "https://www.resultbharat.com/HSSC_Haryana-Police-Constable_Advt-No-14_15-2024.html",
-      "category": "results",
-      "slug": "HSSC_Haryana-Police-Constable_Advt-No-14_15-2024",
-      "publishedDate": "27 September 2024  |  06:11 PM"
-    },
-    {
-      "title": "RRB Paramedical Syllabus 2024",
-      "url": "https://www.resultbharat.com/RRB-Paramedical-Staff-CEN-04-2024.html",
-      "category": "results",
-      "slug": "RRB-Paramedical-Staff-CEN-04-2024",
-      "publishedDate": ""
-    },
-    {
-      "title": "RSMSSB CET Graduate Level Syllabus 2024",
-      "url": "https://www.resultbharat.com/RSMSSB-CET-Graduate-Level-2024.html",
-      "category": "results",
-      "slug": "RSMSSB-CET-Graduate-Level-2024",
-      "publishedDate": "17 February 2025 | 08:33 PM"
-    },
-    {
-      "title": "HPSC MVO Syllabus 2024",
-      "url": "https://www.resultbharat.com/HPSC-Motor-Vehicle-Officer-2024.html",
-      "category": "results",
-      "slug": "HPSC-Motor-Vehicle-Officer-2024",
-      "publishedDate": "05 September 2024  | 03:16 PM"
-    },
-    {
-      "title": "SSC JHT Syllabus 2024",
-      "url": "https://www.resultbharat.com/SSC-JHT-Rectt-2024.html",
-      "category": "results",
-      "slug": "SSC-JHT-Rectt-2024",
-      "publishedDate": ""
-    },
-    {
-      "title": "HPSC Assistant Professor Syllabus 2024",
-      "url": "https://www.resultbharat.com/HPSC-Assistant-Professor-Rectt-2024.html",
-      "category": "results",
-      "slug": "HPSC-Assistant-Professor-Rectt-2024",
-      "publishedDate": ""
-    },
-    {
-      "title": "JSSC Field Worker JFWCE Syllabus 2024",
-      "url": "https://www.resultbharat.com/JSSC-Field-Worker-JFWCE-2024.html",
-      "category": "results",
-      "slug": "JSSC-Field-Worker-JFWCE-2024",
-      "publishedDate": ""
-    },
-    {
-      "title": "Railway RRB ALP CEN 01/2026 Online Form",
-      "url": "https://www.resultbharat.com/RRB-ALP-CEN-No-01-2026.html",
-      "category": "results",
-      "slug": "RRB-ALP-CEN-No-01-2026",
-      "publishedDate": "15 May 2026 | 12:01 AM"
-    },
-    {
-      "title": "AIIMS CRE-5 Online Form 2026",
-      "url": "https://www.resultbharat.com/AIIMS-CRE-5-Recruitment-2026.html",
-      "category": "results",
-      "slug": "AIIMS-CRE-5-Recruitment-2026",
-      "publishedDate": "13 June 2026  | 06:55 AM"
-    },
-    {
-      "title": "Rajasthan State Eligibility Test SET 2026 Online Form",
-      "url": "https://www.resultbharat.com/Rajasthan-SET-2026.html",
-      "category": "results",
-      "slug": "Rajasthan-SET-2026",
-      "publishedDate": "14 June 2026  | 06:55 AM"
-    },
-    {
-      "title": "Central Bank CBI Apprentices Online Form 2026",
-      "url": "https://www.resultbharat.com/Central-Bank-CBI-Apprentices-2026.html",
-      "category": "results",
-      "slug": "Central-Bank-CBI-Apprentices-2026",
-      "publishedDate": "12 June 2026  | 11:31 AM"
-    },
-    {
       "title": "SSC JE 2025 Online Post Preference Form",
       "url": "https://www.resultbharat.com/SSC-JE-Exam-2025.html",
       "category": "results",
       "slug": "SSC-JE-Exam-2025",
       "publishedDate": "10 June 2026  |  05:21 PM"
-    },
-    {
-      "title": "UPSSSC Vidhan Bhawan Guard / Fire Guard Online Form 2026",
-      "url": "https://www.resultbharat.com/UPSSSC-Guard_FireGuard-09-2026.html",
-      "category": "results",
-      "slug": "UPSSSC-Guard_FireGuard-09-2026",
-      "publishedDate": "09 June 2026 | 10:19 AM"
-    },
-    {
-      "title": "BOB Apprentice Online Form 2026",
-      "url": "https://www.resultbharat.com/BOB-Apprentices-2026.html",
-      "category": "results",
-      "slug": "BOB-Apprentices-2026",
-      "publishedDate": "08 June 2026  | 11:06 PM"
-    },
-    {
-      "title": "RPSC RAS Pre 2026 Online Form",
-      "url": "https://www.resultbharat.com/RPSC-RAS-2026.html",
-      "category": "results",
-      "slug": "RPSC-RAS-2026",
-      "publishedDate": "04 June 2026"
-    },
-    {
-      "title": "CISF ASI Paramedical Post Online Form 2026",
-      "url": "https://www.resultbharat.com/CISF-ASI-Paramedical-Staff-2026.html",
-      "category": "results",
-      "slug": "CISF-ASI-Paramedical-Staff-2026",
-      "publishedDate": "08 June 2026 | 07:16 AM"
-    },
-    {
-      "title": "RPSC APO Online Form 2026",
-      "url": "https://www.resultbharat.com/RPSC-APO-2026.html",
-      "category": "results",
-      "slug": "RPSC-APO-2026",
-      "publishedDate": "08 June 2026 | 07:11 AM"
-    },
-    {
-      "title": "PSPCL ALM (NAC) Online Form 2026 (3289 Post)",
-      "url": "https://www.resultbharat.com/PSPCL-ALM-NAC-3289-Post-2026.html",
-      "category": "results",
-      "slug": "PSPCL-ALM-NAC-3289-Post-2026",
-      "publishedDate": "08 June 2026  | 11:36 AM"
-    },
-    {
-      "title": "PSPCL ALM (ITI) Online Form 2026 (3000 Post)",
-      "url": "https://www.resultbharat.com/PSPCL-ALM-2026.html",
-      "category": "results",
-      "slug": "PSPCL-ALM-2026",
-      "publishedDate": "08 June 2026  | 11:09 AM"
-    },
-    {
-      "title": "Hindustan Copper Ltd HCL Executive Online Form 2026",
-      "url": "https://www.resultbharat.com/HCL-Executive-2026.html",
-      "category": "results",
-      "slug": "HCL-Executive-2026",
-      "publishedDate": "06 June 2026 | 11:01 AM"
-    },
-    {
-      "title": "Indian Navy INET 02/2026 Agniveer Apprentices Online Form",
-      "url": "https://www.resultbharat.com/Indian-Navy-Agniveer-Apprentice-01-2027-02-2027-Batch.html",
-      "category": "results",
-      "slug": "Indian-Navy-Agniveer-Apprentice-01-2027-02-2027-Batch",
-      "publishedDate": "05 June 2026 | 06:44 AM"
-    },
-    {
-      "title": "SBI Apprentice Online Form 2026",
-      "url": "https://www.resultbharat.com/SBI-Apprentices-2026.html",
-      "category": "results",
-      "slug": "SBI-Apprentices-2026",
-      "publishedDate": "19 May 2026 | 06:03 AM"
-    },
-    {
-      "title": "UPSSSC Excise Constable Online Form 2026",
-      "url": "https://www.resultbharat.com/UPSSSC-Excise-Constable-08-2026.html",
-      "category": "results",
-      "slug": "UPSSSC-Excise-Constable-08-2026",
-      "publishedDate": "04 June 2026"
-    },
-    {
-      "title": "BSNL JTO Online Form 2026",
-      "url": "https://www.resultbharat.com/BSNL-JTO-2026.html",
-      "category": "results",
-      "slug": "BSNL-JTO-2026",
-      "publishedDate": "04 June 2026  | 12:01 AM"
-    },
-    {
-      "title": "Jharkhand TET JHTET 2026 Online Form",
-      "url": "https://www.resultbharat.com/Jharkhand-JHTET-2026.html",
-      "category": "results",
-      "slug": "Jharkhand-JHTET-2026",
-      "publishedDate": "02 June 2026 | 09:52 PM"
-    },
-    {
-      "title": "Allahabad High Court RO, ARO & CA Online Form 2026",
-      "url": "https://www.resultbharat.com/Allahabad-HC-RO-ARO-CA-2026.html",
-      "category": "results",
-      "slug": "Allahabad-HC-RO-ARO-CA-2026",
-      "publishedDate": "01 June 2026 | 07:02 PM"
-    },
-    {
-      "title": "UPSC NDA/ NA-II Online Form 2026",
-      "url": "https://www.resultbharat.com/UPSC-NDA-II-Exam-2026.html",
-      "category": "results",
-      "slug": "UPSC-NDA-II-Exam-2026",
-      "publishedDate": "09 June 2026 | 06:01 PM"
-    },
-    {
-      "title": "UPSC CDS-II Online Form 2026",
-      "url": "https://www.resultbharat.com/UPSC-CDS-II-Exam-2026.html",
-      "category": "results",
-      "slug": "UPSC-CDS-II-Exam-2026",
-      "publishedDate": "09 June 2026 | 06:00 PM"
-    },
-    {
-      "title": "DSSSB Teaching/ Non-Teaching Various Post Online Form 2026",
-      "url": "https://www.resultbharat.com/DSSSB-JSA-TGT-Other-Advt-03-2026.html",
-      "category": "results",
-      "slug": "DSSSB-JSA-TGT-Other-Advt-03-2026",
-      "publishedDate": "01 June 2026 | 11:46 AM"
-    },
-    {
-      "title": "RPSC 1st Grade Teacher (Special Edu.) Online Form 2026",
-      "url": "https://www.resultbharat.com/RPSC-1st-Grade-Teacher-SPL-Edu-2026.html",
-      "category": "results",
-      "slug": "RPSC-1st-Grade-Teacher-SPL-Edu-2026",
-      "publishedDate": "01 June 2026  |  08:55 AM"
-    },
-    {
-      "title": "UPSSSC Lower PCS Online Form 2026 (2516 Post)",
-      "url": "https://www.resultbharat.com/UPSSSC-Lower-PCS-07-2026.html",
-      "category": "results",
-      "slug": "UPSSSC-Lower-PCS-07-2026",
-      "publishedDate": "29 May 2026 | 06:02 PM"
-    },
-    {
-      "title": "Indian Navy 10+2 -B.Tech Cadet Entry January 2027 Online Form",
-      "url": "https://www.resultbharat.com/Indian-Navy-12th-BTech-January-2027.html",
-      "category": "results",
-      "slug": "Indian-Navy-12th-BTech-January-2027",
-      "publishedDate": "29 May 2026  08:56 AM"
-    },
-    {
-      "title": "NTA CSIR UGC NET June 2026 Online Form",
-      "url": "https://www.resultbharat.com/NTA-CSIR-UGC-NET-June-2026.html",
-      "category": "results",
-      "slug": "NTA-CSIR-UGC-NET-June-2026",
-      "publishedDate": "28 May 2026 | 10:01 AM"
-    },
-    {
-      "title": "Rajasthan RSSB Computer Instructor Online Form 2026",
-      "url": "https://www.resultbharat.com/RSSB-Computer-Instructor-2026.html",
-      "category": "results",
-      "slug": "RSSB-Computer-Instructor-2026",
-      "publishedDate": "25 May 2026 | 09:31 AM"
-    },
-    {
-      "title": "UPSSSC Agriculture Technical Assistant Group-C Online Form 2026",
-      "url": "https://www.resultbharat.com/UPSSSC-AGTA-06-2026.html",
-      "category": "results",
-      "slug": "UPSSSC-AGTA-06-2026",
-      "publishedDate": "22 May 2026 | 01:01 PM"
-    },
-    {
-      "title": "SSC CGL 2026 Online Form",
-      "url": "https://www.resultbharat.com/SSC-CGL-2026.html",
-      "category": "results",
-      "slug": "SSC-CGL-2026",
-      "publishedDate": "21 May 2026 | 06:13 PM"
-    },
-    {
-      "title": "BPSSC Bihar Police ASI Technical Online Form 2026",
-      "url": "https://www.resultbharat.com/BPSSC-ASI-Technical-2026.html",
-      "category": "results",
-      "slug": "BPSSC-ASI-Technical-2026",
-      "publishedDate": "21 May 2026  |  12:01 AM"
-    },
-    {
-      "title": "AFCAT 02/2026 Batch Online Form",
-      "url": "https://www.resultbharat.com/AFCAT_02_2026_Batch.html",
-      "category": "results",
-      "slug": "AFCAT_02_2026_Batch",
-      "publishedDate": "20 May 2026 | 07:00 AM"
-    },
-    {
-      "title": "Bihar BTSC Food Analyst Online Form 2026",
-      "url": "https://www.resultbharat.com/BTSC-Food-Analyst-2026.html",
-      "category": "results",
-      "slug": "BTSC-Food-Analyst-2026",
-      "publishedDate": "20 May 2026 | 11:01 AM"
-    },
-    {
-      "title": "Railway SECR Nagpur Apprentice Online Form 2026",
-      "url": "https://www.resultbharat.com/Railway-SECR-Nagpur-Apprentice-2026.html",
-      "category": "results",
-      "slug": "Railway-SECR-Nagpur-Apprentice-2026",
-      "publishedDate": "19 May 2026 | 10:01 AM"
-    },
-    {
-      "title": "Railway RRB Technician CEN 02/2026 Online Form",
-      "url": "https://www.resultbharat.com/RRB-Technician-CEN-02-2026.html",
-      "category": "results",
-      "slug": "RRB-Technician-CEN-02-2026",
-      "publishedDate": "18 May 2026 | 10:03 AM"
-    },
-    {
-      "title": "Railway SECR Bilaspur Apprentice Online Form 2026",
-      "url": "https://www.resultbharat.com/Railway-SECR-Bilaspur-Apprentice-2026.html",
-      "category": "results",
-      "slug": "Railway-SECR-Bilaspur-Apprentice-2026",
-      "publishedDate": "19 May 2026 | 09:56 AM"
-    },
-    {
-      "title": "Indian Army TGC 144 January 2027 Online Form",
-      "url": "https://www.resultbharat.com/Indian-Army-TGC-144-Jan-2027.html",
-      "category": "results",
-      "slug": "Indian-Army-TGC-144-Jan-2027",
-      "publishedDate": "13 May 2026 | 03:01 PM"
-    },
-    {
-      "title": "CTET September 2026 Online Form",
-      "url": "https://www.resultbharat.com/CTET-September-2026.html",
-      "category": "results",
-      "slug": "CTET-September-2026",
-      "publishedDate": "11 May 2026  | 04:31 PM"
-    },
-    {
-      "title": "BPSSC Havildar Instructor (Bihar HG) Online Form 2026",
-      "url": "https://www.resultbharat.com/BPSSC-Havildar-Instructor_06-2026.html",
-      "category": "results",
-      "slug": "BPSSC-Havildar-Instructor_06-2026",
-      "publishedDate": "09 May 2026  |  12:01 AM"
     },
     {
       "title": "NTA ICAR AIEEA PG/ Ph.D 2026 Correction Form",
@@ -1215,123 +522,11 @@ export const scrapedData = {
       "publishedDate": "12 June 2026 | 09:31 PM"
     },
     {
-      "title": "VKSU Ara UG Admission Online Form 2026-30",
-      "url": "https://www.resultbharat.com/VKSU-Ara-UG-Admission-2026-30.html",
-      "category": "results",
-      "slug": "VKSU-Ara-UG-Admission-2026-30",
-      "publishedDate": "11 June 2026 | 10:05 AM"
-    },
-    {
-      "title": "UPDELED 2026 Admissions Online Form",
-      "url": "https://www.resultbharat.com/UP-DELEd-2026.html",
-      "category": "results",
-      "slug": "UP-DELEd-2026",
-      "publishedDate": "15 June 2026"
-    },
-    {
-      "title": "MPESB PNST 2026 Online Form",
-      "url": "https://www.resultbharat.com/MPESB-PNST-2026.html",
-      "category": "results",
-      "slug": "MPESB-PNST-2026",
-      "publishedDate": "09 June 2026 | 07:16 PM"
-    },
-    {
-      "title": "MPESB ADDET 2026 Online Form",
-      "url": "https://www.resultbharat.com/MPESB-ADDET-2026.html",
-      "category": "results",
-      "slug": "MPESB-ADDET-2026",
-      "publishedDate": "05 June 2026 | 05:16 PM"
-    },
-    {
-      "title": "Purnea University UG Admission 2026-30 Online Form",
-      "url": "https://www.resultbharat.com/Purnea-University-UG-Admission-2026-30.html",
-      "category": "results",
-      "slug": "Purnea-University-UG-Admission-2026-30",
-      "publishedDate": "27 May 2026 | 03:01 PM"
-    },
-    {
-      "title": "LNMU UG Admission Online Form 2026-30",
-      "url": "https://www.resultbharat.com/LNMU-UG-Admission-2026-30.html",
-      "category": "results",
-      "slug": "LNMU-UG-Admission-2026-30",
-      "publishedDate": ""
-    },
-    {
-      "title": "BNMU UG Admission Online Form 2026-30",
-      "url": "https://www.resultbharat.com/BNMU-UG-Admission-2026-30.html",
-      "category": "results",
-      "slug": "BNMU-UG-Admission-2026-30",
-      "publishedDate": "Publication of 1st Merit list & Cut-off list"
-    },
-    {
-      "title": "Patna University UG Admission Online Form 2026-30",
-      "url": "https://www.resultbharat.com/Patna-University-UG-Admission-2026-30.html",
-      "category": "results",
-      "slug": "Patna-University-UG-Admission-2026-30",
-      "publishedDate": "05 June 2026 | 08:55 AM"
-    },
-    {
-      "title": "Patliputra University PPUP UG Admission Online Form 2026-30",
-      "url": "https://www.resultbharat.com/Patliputra-University-UG-Admission-2026-30.html",
-      "category": "results",
-      "slug": "Patliputra-University-UG-Admission-2026-30",
-      "publishedDate": ""
-    },
-    {
-      "title": "JPU UG Admission Online Form 2026-30",
-      "url": "https://www.resultbharat.com/JPU-University-Admission-2026-30.html",
-      "category": "results",
-      "slug": "JPU-University-Admission-2026-30",
-      "publishedDate": ""
-    },
-    {
-      "title": "BCECE 2026 Admission Online Form",
-      "url": "https://www.resultbharat.com/BCECE-Entrance-Exam-2026.html",
-      "category": "results",
-      "slug": "BCECE-Entrance-Exam-2026",
-      "publishedDate": ""
-    },
-    {
       "title": "UPTET 2026 Online Correction/ Edit Form",
       "url": "https://www.resultbharat.com/UPTET-2026.html",
       "category": "results",
       "slug": "UPTET-2026",
       "publishedDate": "05 April 2026 | 01:24 PM"
-    },
-    {
-      "title": "Munger University UG Admission Online Form 2026-30",
-      "url": "https://www.resultbharat.com/Munger-University-UG-Admission-2026-30.html",
-      "category": "results",
-      "slug": "Munger-University-UG-Admission-2026-30",
-      "publishedDate": "01 May 2026  |  12:01 PM"
-    },
-    {
-      "title": "UPSSSC Forest Guard & Wildlife Guard Online Form 2026",
-      "url": "https://www.resultbharat.com/UPSSSC-Forest-Guard-12-2026.html",
-      "category": "results",
-      "slug": "UPSSSC-Forest-Guard-12-2026",
-      "publishedDate": "23 April 2026 | 06:46 AM"
-    },
-    {
-      "title": "UPSSSC Havildar Instructor Online Form 2026",
-      "url": "https://www.resultbharat.com/UPSSSC-Havildar-Instructor_11-2026.html",
-      "category": "results",
-      "slug": "UPSSSC-Havildar-Instructor_11-2026",
-      "publishedDate": "18 April 2026 | 04:46 AM"
-    },
-    {
-      "title": "UPSSSC Platoon Commander & Block Organizer Online Form 2026",
-      "url": "https://www.resultbharat.com/UPSSSC-Platoon-Commander-BO_10-2026.html",
-      "category": "results",
-      "slug": "UPSSSC-Platoon-Commander-BO_10-2026",
-      "publishedDate": "15 April 2026 | 04:05 PM"
-    },
-    {
-      "title": "BPSC School Teacher TRE 4.0 Online Form 2025",
-      "url": "https://www.resultbharat.com/BPSC-TRE-4-2025.html",
-      "category": "results",
-      "slug": "BPSC-TRE-4-2025",
-      "publishedDate": "10 June 2026 | 08:02 AM"
     },
     {
       "title": "SSC MTS Result 2026, Check Cut Off Marks, Merit List PDF Link Active at ssc.gov.in",
@@ -1404,13 +599,6 @@ export const scrapedData = {
       "publishedDate": "27 January 2026"
     },
     {
-      "title": "[rrb.digialm.com] RRB NTPC Scorecard 2026 Out for Graduate CBT 1, Result PDF Download Link Active",
-      "url": "https://testbook.com/news/rrb-ntpc-cbt-1-scorecard-2026-out/",
-      "category": "results",
-      "slug": "rrb-ntpc-cbt-1-scorecard-2026-out",
-      "publishedDate": "14 June 2026"
-    },
-    {
       "title": "RRB ALP CBT 1 Result 2026 Out, Merit List Zone Wise PDF, Scorecard Link Active",
       "url": "https://testbook.com/news/rrb-alp-cbt-1-result-2026-out/",
       "category": "results",
@@ -1418,17 +606,24 @@ export const scrapedData = {
       "publishedDate": "14 June 2026"
     },
     {
-      "title": "RRB Group D Result 2026 Date Out?, Merit List PDF Zone Wise, CEN 08/2024 Score card Link",
-      "url": "https://testbook.com/news/rrb-group-d-result-2026-date-check-question-paper-analysis/",
-      "category": "results",
-      "slug": "rrb-group-d-result-2026-date-check-question-paper-analysis",
-      "publishedDate": "13 June 2026"
-    },
-    {
       "title": "RRB NTPC CBT 1 Result 2026 Out, Graduate Merit List PDF Zone Wise, Scorecard Link",
       "url": "https://testbook.com/news/rrb-ntpc-cbt-1-result-2026-out/",
       "category": "results",
       "slug": "rrb-ntpc-cbt-1-result-2026-out",
+      "publishedDate": "14 June 2026"
+    },
+    {
+      "title": "[rrb.digialm.com] RRB NTPC Scorecard 2026 Out for Graduate CBT 1, Result PDF Download Link Active",
+      "url": "https://testbook.com/news/rrb-ntpc-cbt-1-scorecard-2026-out/",
+      "category": "results",
+      "slug": "rrb-ntpc-cbt-1-scorecard-2026-out",
+      "publishedDate": "14 June 2026"
+    },
+    {
+      "title": "RRB Group D Result 2026 Date Out?, Merit List PDF Zone Wise, CEN 08/2024 Score card Link",
+      "url": "https://testbook.com/news/rrb-group-d-result-2026-date-check-question-paper-analysis/",
+      "category": "results",
+      "slug": "rrb-group-d-result-2026-date-check-question-paper-analysis",
       "publishedDate": "13 June 2026"
     },
     {
@@ -1471,7 +666,7 @@ export const scrapedData = {
       "url": "https://testbook.com/news/rrb-ntpc-ug-final-result-2026-out/",
       "category": "results",
       "slug": "rrb-ntpc-ug-final-result-2026-out",
-      "publishedDate": "13 June 2026"
+      "publishedDate": "14 June 2026"
     },
     {
       "title": "BOB LBO Final Result 2026 Out, Download Selected Candidates List PDF",
@@ -1754,13 +949,6 @@ export const scrapedData = {
       "publishedDate": "30 May 2026"
     },
     {
-      "title": "DRDO CEPTAM 11 Result 2026 Out, CBT 2 Exam Date, Download STA, Technician Merit List PDF",
-      "url": "https://testbook.com/news/drdo-ceptam-11-result-2026-out/",
-      "category": "results",
-      "slug": "drdo-ceptam-11-result-2026-out",
-      "publishedDate": "31 May 2026"
-    },
-    {
       "title": "RRB JE CBT 1 Result 2026 Out, Merit List Zone Wise PDF, Cut Off Marks",
       "url": "https://testbook.com/news/rrb-je-cbt-1-result-2026-out/",
       "category": "results",
@@ -1915,13 +1103,6 @@ export const scrapedData = {
       "publishedDate": "31 December 2025"
     },
     {
-      "title": "TANCET Result 2026 Out at tancet.annauniv.edu, Direct Link to Download MBA Scorecard, Rank List, Final Answer Key",
-      "url": "https://testbook.com/news/tancet-result-2026/",
-      "category": "results",
-      "slug": "tancet-result-2026",
-      "publishedDate": "22 May 2026"
-    },
-    {
       "title": "MAH MBA CET निकाल २०२६ लवकरच जाहीर: निकाल पाहण्याची तारीख, लिंक आणि स्कोअरकार्ड डाउनलोड प्रक्रिया येथे पहा!",
       "url": "https://testbook.com/news/mah-mba-cet-result-2026-in-marathi/",
       "category": "results",
@@ -1941,13 +1122,6 @@ export const scrapedData = {
       "category": "results",
       "slug": "cuet-pg-result-2026-live",
       "publishedDate": "25 April 2026"
-    },
-    {
-      "title": "CMAT 2026 Result Out @cmat.nta.nic.in, Scorecard PDF Download Link, Final Answer Key",
-      "url": "https://testbook.com/news/cmat-result-2026-out/",
-      "category": "results",
-      "slug": "cmat-result-2026-out",
-      "publishedDate": "17 February 2026"
     },
     {
       "title": "KMAT Result 2025 Out, Cut Off, Topper List, Scorecard Link Active @kmatindia.com",
@@ -2139,35 +1313,22 @@ export const scrapedData = {
       "publishedDate": "10 January 2026"
     },
     {
-      "title": "AIIMS CRE Notification 2026",
-      "url": "https://testbook.com/news/aiims-cre-notification-2026-out/",
-      "category": "results",
-      "slug": "aiims-cre-notification-2026-out",
-      "publishedDate": "13 June 2026"
-    },
-    {
       "title": "sarkariresultshine.com",
       "url": "https://sarkariresultshine.com/",
       "category": "results",
       "slug": "sarkariresultshine.com"
     },
     {
-      "title": "DRDO CEPTAM-11 (STA, Technician) Recruitment 2025 Tier-II Admit Card",
-      "url": "https://sarkariresultshine.com/drdo-ceptam-11-sta-technician-recruitment-2025-tier-ii-admit-card/",
+      "title": "HSSC Exams Free Bus Travel Facility For All Candidates",
+      "url": "https://sarkariresultshine.com/hssc-exams-free-bus-travel-facility-for-all-candidates/",
       "category": "results",
-      "slug": "drdo-ceptam-11-sta-technician-recruitment-2025-tier-ii-admit-card"
+      "slug": "hssc-exams-free-bus-travel-facility-for-all-candidates"
     },
     {
-      "title": "Haryana Police Constable 2026, List of Candidates Qualified in PMT & Admit Card",
-      "url": "https://sarkariresultshine.com/haryana-police-constable-admit-card-2026-pst-pmt/",
+      "title": "India Post GDS 5th Merit List 2026 Date Out, Download PDF",
+      "url": "https://sarkariresultshine.com/india-post-gds-5th-merit-list-2026-date-out-download-pdf/",
       "category": "results",
-      "slug": "haryana-police-constable-admit-card-2026-pst-pmt"
-    },
-    {
-      "title": "Haryana Police Cutoff PDF 2026, List of candidates qualified in PMT & Admit Card",
-      "url": "https://sarkariresultshine.com/haryana-police-cutoff-pdf-2026-download-here/",
-      "category": "results",
-      "slug": "haryana-police-cutoff-pdf-2026-download-here"
+      "slug": "india-post-gds-5th-merit-list-2026-date-out-download-pdf"
     },
     {
       "title": "Haryana College UG 1st Merit List 2026 Date Out",
@@ -2176,64 +1337,10 @@ export const scrapedData = {
       "slug": "haryana-college-1st-merit-list-2026-out"
     },
     {
-      "title": "SD Mahila Mahavidyalaya Hansi Vacancy 2026, Apply Online",
-      "url": "https://sarkariresultshine.com/sd-mahila-mahavidyalaya-hansi-vacancy-2026/",
+      "title": "RRB Group D Result 2026 Out, 32438 Posts, Date out",
+      "url": "https://sarkariresultshine.com/rrb-group-d-result-2026-out/",
       "category": "results",
-      "slug": "sd-mahila-mahavidyalaya-hansi-vacancy-2026"
-    },
-    {
-      "title": "Adarsh ​​Mahila Mahavidyalaya Bhiwani Recruitment 2026, Apply Online Check Notification",
-      "url": "https://sarkariresultshine.com/adarsh-mahila-mahavidyalaya-bhiwani-recruitment-2026/",
-      "category": "results",
-      "slug": "adarsh-mahila-mahavidyalaya-bhiwani-recruitment-2026"
-    },
-    {
-      "title": "SVSU Recruitment 2026, Notification Out, Apply Offline",
-      "url": "https://sarkariresultshine.com/svsu-recruitment-2026/",
-      "category": "results",
-      "slug": "svsu-recruitment-2026"
-    },
-    {
-      "title": "Jal Shakti Vibhag Vacancy 2026, Apply For Para Fitter, Para Pump Operator and Multi-Purpose Worker Posts",
-      "url": "https://sarkariresultshine.com/jal-shakti-vibhag-vacancy-2026-apply-for-para-fitter-para-pump-operator-and-multi-purpose-worker-posts/",
-      "category": "results",
-      "slug": "jal-shakti-vibhag-vacancy-2026-apply-for-para-fitter-para-pump-operator-and-multi-purpose-worker-posts"
-    },
-    {
-      "title": "JNV Rewari Recruitment 2026, Apply For Teaching & Non Teaching Posts",
-      "url": "https://sarkariresultshine.com/jnv-rewari-recruitment-2026-apply-for-teaching-non-teaching-posts/",
-      "category": "results",
-      "slug": "jnv-rewari-recruitment-2026-apply-for-teaching-non-teaching-posts"
-    },
-    {
-      "title": "Railway RRB Updated Exam Calendar 2026",
-      "url": "https://sarkariresultshine.com/railway-rrb-updated-exam-calendar-2026/",
-      "category": "results",
-      "slug": "railway-rrb-updated-exam-calendar-2026"
-    },
-    {
-      "title": "HKRN Recruitment 2026, Executive Assistant / Office Executive & Other Posts",
-      "url": "https://sarkariresultshine.com/hkrn-recruitment-2026-executive-assistant-office-executive-other-posts/",
-      "category": "results",
-      "slug": "hkrn-recruitment-2026-executive-assistant-office-executive-other-posts"
-    },
-    {
-      "title": "BBMB Ambala Recruitment 2026, Apply For Lineman & Electrician Posts",
-      "url": "https://sarkariresultshine.com/bbmb-ambala-recruitment-2026/",
-      "category": "results",
-      "slug": "bbmb-ambala-recruitment-2026"
-    },
-    {
-      "title": "Haryana DBC Vacancy 2026, Notification Check For District-wise",
-      "url": "https://sarkariresultshine.com/haryana-dbc-vacancy-2026/",
-      "category": "results",
-      "slug": "haryana-dbc-vacancy-2026"
-    },
-    {
-      "title": "HPSC HCS Recruitment 2026, Mains Exam Admit Card Notice",
-      "url": "https://sarkariresultshine.com/hpsc-hcs-recruitment-2026-2/",
-      "category": "results",
-      "slug": "hpsc-hcs-recruitment-2026-2"
+      "slug": "rrb-group-d-result-2026-out"
     },
     {
       "title": "RRB NTPC Graduate Level Recruitment 2025 CBT-I Result Score Card",
@@ -2278,244 +1385,16 @@ export const scrapedData = {
       "slug": "bsf-constable-tradesmen-3588-posts-physical-test-result-out-download-pdf"
     },
     {
-      "title": "Delhi DDA Recruitment 2025  Various Vacancy Exam Marks",
-      "url": "https://sarkariresultshine.com/delhi-dda-recruitment-2025-various-vacancy-exam-marks/",
-      "category": "results",
-      "slug": "delhi-dda-recruitment-2025-various-vacancy-exam-marks"
-    },
-    {
-      "title": "DSSSB Group B, C 1499 Vacancy 2024  Caretaker, Stenographer Result",
-      "url": "https://sarkariresultshine.com/dsssb-group-b-c-1499-vacancy-2024-caretaker-stenographer-result/",
-      "category": "results",
-      "slug": "dsssb-group-b-c-1499-vacancy-2024-caretaker-stenographer-result"
-    },
-    {
-      "title": "HPRCA JBT Teacher Vacancy 2026, Admit Card",
-      "url": "https://sarkariresultshine.com/hprca-jbt-teacher-vacancy-2026/",
-      "category": "results",
-      "slug": "hprca-jbt-teacher-vacancy-2026"
-    },
-    {
-      "title": "SSB Head Constable (Ministerial) Vacancy 2020 Exam Date",
-      "url": "https://sarkariresultshine.com/ssb-head-constable-ministerial-vacancy-2020-exam-date/",
-      "category": "results",
-      "slug": "ssb-head-constable-ministerial-vacancy-2020-exam-date"
-    },
-    {
-      "title": "HSSC Sports Quota Vacancy 2024, Advt No. 13/24 Sports Quota PMT List, Admit Card",
-      "url": "https://sarkariresultshine.com/hssc-sports-quota-vacancy-2024-advt-no-13-24-sports-quota-pmt-list-admit-card/",
-      "category": "results",
-      "slug": "hssc-sports-quota-vacancy-2024-advt-no-13-24-sports-quota-pmt-list-admit-card"
-    },
-    {
-      "title": "Haryana Forest Guard Recruitment 2026, PMT List, Admit Card",
-      "url": "https://sarkariresultshine.com/haryana-forest-guard-recruitment-2026/",
-      "category": "results",
-      "slug": "haryana-forest-guard-recruitment-2026"
-    },
-    {
-      "title": "HSSC Advt 04/2026 Group C Post Vacancies 2026, PMT, PST Date For Various Posts, Check Notice",
-      "url": "https://sarkariresultshine.com/hssc-advt-04-2026-group-c-post-vacancies-2026/",
-      "category": "results",
-      "slug": "hssc-advt-04-2026-group-c-post-vacancies-2026"
-    },
-    {
-      "title": "HSSC Group C Recruitment 2026, PMT, PST Date For Various Posts, Check Notice",
-      "url": "https://sarkariresultshine.com/hssc-group-c-recruitment-2026/",
-      "category": "results",
-      "slug": "hssc-group-c-recruitment-2026"
-    },
-    {
-      "title": "NTA UGC NET Exam June 2026, Exam City Intimation Slip OUT",
-      "url": "https://sarkariresultshine.com/nta-ugc-net-exam-june-2026/",
-      "category": "results",
-      "slug": "nta-ugc-net-exam-june-2026"
-    },
-    {
-      "title": "Charkhi Dadri Volunteer Vacancy 2026, Free Application Form & Apply Now",
-      "url": "https://sarkariresultshine.com/charkhi-dadri-volunteer-vacancy-2026-free-application-form-apply-now/",
-      "category": "results",
-      "slug": "charkhi-dadri-volunteer-vacancy-2026-free-application-form-apply-now"
-    },
-    {
-      "title": "Lansdowne Forest Division Working Plan Associate Vacancy 2026, Apply Now",
-      "url": "https://sarkariresultshine.com/lansdowne-forest-division-working-plan-associate-vacancy-2026/",
-      "category": "results",
-      "slug": "lansdowne-forest-division-working-plan-associate-vacancy-2026"
-    },
-    {
-      "title": "HARTRON Manager and Accounts Assistant Recruitment 2026, Notification Out, Apply Now",
-      "url": "https://sarkariresultshine.com/hartron-manager-and-accounts-assistant-recruitment-2026/",
-      "category": "results",
-      "slug": "hartron-manager-and-accounts-assistant-recruitment-2026"
-    },
-    {
-      "title": "Chandigarh Civil Hospital Recruitment 2026, Notification Out, Check Full Details",
-      "url": "https://sarkariresultshine.com/chandigarh-civil-hospital-recruitment-2026/",
-      "category": "results",
-      "slug": "chandigarh-civil-hospital-recruitment-2026"
-    },
-    {
-      "title": "Haryana NTT Teacher Recruitment 2026, Vacancy Notification, Check Full Detail",
-      "url": "https://sarkariresultshine.com/haryana-ntt-teacher-recruitment-2026/",
-      "category": "results",
-      "slug": "haryana-ntt-teacher-recruitment-2026"
-    },
-    {
-      "title": "CUET UG Test 2026, Answer Key",
-      "url": "https://sarkariresultshine.com/cuet-ug-test-2026/",
-      "category": "results",
-      "slug": "cuet-ug-test-2026"
-    },
-    {
-      "title": "RSSB 3rd Grade Teacher Recruitment 2025 Final Answer Key",
-      "url": "https://sarkariresultshine.com/rssb-3rd-grade-teacher-recruitment-2025-final-answer-key/",
-      "category": "results",
-      "slug": "rssb-3rd-grade-teacher-recruitment-2025-final-answer-key"
-    },
-    {
-      "title": "PSSSB Excise Inspector Vacancy 2026, Answer Key",
-      "url": "https://sarkariresultshine.com/psssb-excise-inspector-vacancy-2026/",
-      "category": "results",
-      "slug": "psssb-excise-inspector-vacancy-2026"
-    },
-    {
-      "title": "UPSC Civil Services Exam 2026, Prelims Answer Key",
-      "url": "https://sarkariresultshine.com/upsc-civil-services-exam-2026/",
-      "category": "results",
-      "slug": "upsc-civil-services-exam-2026"
-    },
-    {
-      "title": "EMRS Teaching and Non-Teaching Recruitment 2025 Tier-II Answer Key",
-      "url": "https://sarkariresultshine.com/emrs-teaching-and-non-teaching-recruitment-2025-tier-ii-answer-key/",
-      "category": "results",
-      "slug": "emrs-teaching-and-non-teaching-recruitment-2025-tier-ii-answer-key"
-    },
-    {
-      "title": "RSSB Agriculture Supervisor Recruitment 2026, Answer Key Out",
-      "url": "https://sarkariresultshine.com/rssb-agriculture-supervisor-recruitment-2026/",
-      "category": "results",
-      "slug": "rssb-agriculture-supervisor-recruitment-2026"
-    },
-    {
-      "title": "KVS NVS Recruitment 2025, Tier-II Answer Key",
-      "url": "https://sarkariresultshine.com/kvs-nvs-recruitment-2025/",
-      "category": "results",
-      "slug": "kvs-nvs-recruitment-2025"
-    },
-    {
-      "title": "UP Home Guard Admit Card 2026, Answer Key",
-      "url": "https://sarkariresultshine.com/up-home-guard-admit-card-2026/",
-      "category": "results",
-      "slug": "up-home-guard-admit-card-2026"
-    },
-    {
-      "title": "CTET Notification February 2026, Certificate Issued",
-      "url": "https://sarkariresultshine.com/ctet-notification-february-2026/",
-      "category": "results",
-      "slug": "ctet-notification-february-2026"
-    },
-    {
-      "title": "UPSSSC 4612 Junior Engineer (Civil) Vacancy 2024 Answer Key OUT",
-      "url": "https://sarkariresultshine.com/upsssc-4612-junior-engineer-civil-vacancy-2024-answer-key-out/",
-      "category": "results",
-      "slug": "upsssc-4612-junior-engineer-civil-vacancy-2024-answer-key-out"
-    },
-    {
-      "title": "Rajasthan PTET Exam 2026, Admit Card",
-      "url": "https://sarkariresultshine.com/rajasthan-ptet-exam-2026/",
-      "category": "results",
-      "slug": "rajasthan-ptet-exam-2026"
-    },
-    {
-      "title": "SSC CGL Exam Syllabus / Pattern 2026 released, Tier-1 और Tier-2 का पूरा पैटर्न देखें",
-      "url": "https://sarkariresultshine.com/ssc-cgl-exam-syllabus-pattern-2026-released/",
-      "category": "results",
-      "slug": "ssc-cgl-exam-syllabus-pattern-2026-released"
-    },
-    {
-      "title": "BSEH Class 1st to 12th Question Paper Design and Syllabus Academic Session 2026 -27",
-      "url": "https://sarkariresultshine.com/bseh-class-1st-to-12th-question-paper-design-and-syllabus-academic-session-2026-27/",
-      "category": "results",
-      "slug": "bseh-class-1st-to-12th-question-paper-design-and-syllabus-academic-session-2026-27"
-    },
-    {
       "title": "CBSE Curriculum 2026-27 Released, New Changes for Class 9, 10, 11, 12, Download PDF",
       "url": "https://sarkariresultshine.com/cbse-curriculum-2026-27-new-changes/",
       "category": "results",
       "slug": "cbse-curriculum-2026-27-new-changes"
     },
     {
-      "title": "Haryana Police Constable Recruitment 2026 PMT/PST Date Release",
-      "url": "https://sarkariresultshine.com/haryana-police-constable-recruitment-2026-pmt-pst-date-release/",
-      "category": "results",
-      "slug": "haryana-police-constable-recruitment-2026-pmt-pst-date-release"
-    },
-    {
-      "title": "HSSC CET Mains Syllabus 2026 PDF Download, Group Wise All 63 Groups, hssc.gov.in",
-      "url": "https://sarkariresultshine.com/hssc-cet-group-c-mains-syllabus-2026-group-wise-pdf-download/",
-      "category": "results",
-      "slug": "hssc-cet-group-c-mains-syllabus-2026-group-wise-pdf-download"
-    },
-    {
       "title": "RSSB New Exam Rules 2026 – Negative Marking, OMR System aur Uniform Weightage ki Poori Jankari",
       "url": "https://sarkariresultshine.com/rssb-new-exam-rules-2026/",
       "category": "results",
       "slug": "rssb-new-exam-rules-2026"
-    },
-    {
-      "title": "HSSC CET Group D Syllabus 2026",
-      "url": "https://sarkariresultshine.com/hssc-cet-group-d-syllabus-2026/",
-      "category": "results",
-      "slug": "hssc-cet-group-d-syllabus-2026"
-    },
-    {
-      "title": "Haryana Police Constable Recruitment 2026, Re-open",
-      "url": "https://sarkariresultshine.com/haryana-police-constable-recruitment-2026/",
-      "category": "results",
-      "slug": "haryana-police-constable-recruitment-2026"
-    },
-    {
-      "title": "UP Police Constable Exam Syllabus / Pattern 2026",
-      "url": "https://sarkariresultshine.com/up-police-constable-exam-syllabus-pattern-2026/",
-      "category": "results",
-      "slug": "up-police-constable-exam-syllabus-pattern-2026"
-    },
-    {
-      "title": "Haryana College UG Admission 2026, Apply Online for UG Courses, Check Notification",
-      "url": "https://sarkariresultshine.com/haryana-college-ug-admission-2026/",
-      "category": "results",
-      "slug": "haryana-college-ug-admission-2026"
-    },
-    {
-      "title": "Chandigarh PGI BSc Nursing Admission Form 2026",
-      "url": "https://sarkariresultshine.com/chandigarh-pgi-bsc-nursing-admission-form-2026/",
-      "category": "results",
-      "slug": "chandigarh-pgi-bsc-nursing-admission-form-2026"
-    },
-    {
-      "title": "KUK UG and Integrated Course Admission Form 2026, Notification & Apply Online",
-      "url": "https://sarkariresultshine.com/kuk-ug-and-integrated-course-admission-form-2026/",
-      "category": "results",
-      "slug": "kuk-ug-and-integrated-course-admission-form-2026"
-    },
-    {
-      "title": "Haryana ITI Admission Form 2026, Apply Online, Check Full Detail",
-      "url": "https://sarkariresultshine.com/haryana-iti-admission-form-2026/",
-      "category": "results",
-      "slug": "haryana-iti-admission-form-2026"
-    },
-    {
-      "title": "CBLU Bhiwani UG Admission 2026-27, Apply Online",
-      "url": "https://sarkariresultshine.com/cblu-bhiwani-ug-admission-2026-27/",
-      "category": "results",
-      "slug": "cblu-bhiwani-ug-admission-2026-27"
-    },
-    {
-      "title": "CBLU Bhiwani PG and Diploma Course Admission Form 2026, Apply Online",
-      "url": "https://sarkariresultshine.com/cblu-bhiwani-pg-and-diploma-course-admission-form-2026-apply-online/",
-      "category": "results",
-      "slug": "cblu-bhiwani-pg-and-diploma-course-admission-form-2026-apply-online"
     },
     {
       "title": "PM Awas Yojana Gramin Survey 2026-27, पीएम आवास योजना के तहत आपको घर बनाने के लिए 1,20,000 रुपये मिलेंगे",
@@ -2564,12 +1443,6 @@ export const scrapedData = {
       "url": "https://sarkariresultshine.com/haryana-e-kshatipurti-portal/",
       "category": "results",
       "slug": "haryana-e-kshatipurti-portal"
-    },
-    {
-      "title": "PMKVY 4.0 Yojana Form 2026, फ्री ट्रेनिंग के साथ 8000 रुपए, Apply Online",
-      "url": "https://sarkariresultshine.com/pmkvy-4-0-yojana-form-2026/",
-      "category": "results",
-      "slug": "pmkvy-4-0-yojana-form-2026"
     },
     {
       "title": "Mukhyamantri Bal Vikas Yojana 2026, बच्चों को 18 साल की उम्र तक मिलती है 2500 रुपये से 4000 रुपये प्रतिमाह की सहायता राशि",
@@ -2770,27 +1643,6 @@ export const scrapedData = {
       "publishedDate": "6 June 2026"
     },
     {
-      "title": "RRB NTPC CEN 06/2025 Graduate Level CBT II Exam Date 2026",
-      "url": "https://www.sarkariexam.com/rrb-ntpc-graduate-level-2026",
-      "category": "results",
-      "slug": "rrb-ntpc-graduate-level-2026",
-      "publishedDate": "13 June 2026"
-    },
-    {
-      "title": "UPPSC Veterinary Officer Exam Date 2026",
-      "url": "https://www.sarkariexam.com/uppsc-veterinary-officer-2025",
-      "category": "results",
-      "slug": "uppsc-veterinary-officer-2025",
-      "publishedDate": "12 June 2026"
-    },
-    {
-      "title": "SSB Head Constable Ministerial Written Exam Date 2026",
-      "url": "https://www.sarkariexam.com/ssb-head-constable-ministerial-2021",
-      "category": "results",
-      "slug": "ssb-head-constable-ministerial-2021",
-      "publishedDate": "10 June 2026"
-    },
-    {
       "title": "SSC Junior Engineer JE Online Post Preference Form 2026",
       "url": "https://www.sarkariexam.com/ssc-junior-engineer-je-2025",
       "category": "results",
@@ -2902,13 +1754,6 @@ export const scrapedData = {
       "publishedDate": "30 May 2025"
     },
     {
-      "title": "BSF HCM & ASI Steno Exam Date 2026",
-      "url": "https://www.sarkariexam.com/bsf-hcm-asi-steno-2024",
-      "category": "results",
-      "slug": "bsf-hcm-asi-steno-2024",
-      "publishedDate": "6 June 2026"
-    },
-    {
       "title": "UP PGT 2022 Interview Letter 2026",
       "url": "https://www.sarkariexam.com/up-pgt-2022",
       "category": "results",
@@ -2916,39 +1761,11 @@ export const scrapedData = {
       "publishedDate": "6 June 2026"
     },
     {
-      "title": "Bihar BPSC Auditor Exam Date 2026",
-      "url": "https://www.sarkariexam.com/bihar-bpsc-auditor-2026",
-      "category": "results",
-      "slug": "bihar-bpsc-auditor-2026",
-      "publishedDate": "3 June 2026"
-    },
-    {
-      "title": "Haryana HTET Exam Date 2026",
-      "url": "https://www.sarkariexam.com/haryana-htet-2026",
-      "category": "results",
-      "slug": "haryana-htet-2026",
-      "publishedDate": "3 June 2026"
-    },
-    {
       "title": "UPSSSC Exam Calendar 2026",
       "url": "https://www.sarkariexam.com/upsssc-exam-calendar-2026",
       "category": "results",
       "slug": "upsssc-exam-calendar-2026",
       "publishedDate": "2 June 2026"
-    },
-    {
-      "title": "UPSSSC UP Pollution Control Board Various Post Exam Date 2026",
-      "url": "https://www.sarkariexam.com/upsssc-up-pollution-control-board-various-post-2026",
-      "category": "results",
-      "slug": "upsssc-up-pollution-control-board-various-post-2026",
-      "publishedDate": "1 June 2026"
-    },
-    {
-      "title": "BSNL Senior Executive Trainee SET Exam Date 2026",
-      "url": "https://www.sarkariexam.com/bsnl-senior-executive-trainee-set-2026",
-      "category": "results",
-      "slug": "bsnl-senior-executive-trainee-set-2026",
-      "publishedDate": "28 May 2026"
     },
     {
       "title": "Railway RRB Technician Gr-III CEN.No 02/2025 Result 2026 – Out",
@@ -3322,6 +2139,275 @@ export const scrapedData = {
       "publishedDate": "31 May 2026 | 08:56 PM"
     },
     {
+      "title": "ABVMU UP GNM Admissions UPGET 2026 Admit Card",
+      "url": "https://www.resultbharat.com/UP-GNM-UPGET-2026.html",
+      "category": "admitCards",
+      "slug": "UP-GNM-UPGET-2026",
+      "publishedDate": ""
+    },
+    {
+      "title": "UPSC IES / ISS Admit Card 2026",
+      "url": "https://www.resultbharat.com/UPSC-IES-ISS-2026.html",
+      "category": "admitCards",
+      "slug": "UPSC-IES-ISS-2026",
+      "publishedDate": "12 June 2026 | 10:42 PM"
+    },
+    {
+      "title": "UPSC Engineering Services 2026 Mains Admit Card",
+      "url": "https://www.resultbharat.com/UPSC-Engineering-Services-2026.html",
+      "category": "admitCards",
+      "slug": "UPSC-Engineering-Services-2026",
+      "publishedDate": ""
+    },
+    {
+      "title": "UPSC Geo Scientist Mains Admit Card 2026",
+      "url": "https://www.resultbharat.com/Admitcard_more.html",
+      "category": "admitCards",
+      "slug": "Admitcard_more",
+      "publishedDate": ""
+    },
+    {
+      "title": "BPSC APO Exam Date 2026",
+      "url": "https://www.resultbharat.com/BPSC-APO-2026.html",
+      "category": "admitCards",
+      "slug": "BPSC-APO-2026",
+      "publishedDate": "12 June 2026  | 05:01 PM"
+    },
+    {
+      "title": "DRDO CEPTAM-11 STA-B & Tech-A 2025 Tier-2 Admit Card 2026",
+      "url": "https://www.resultbharat.com/DRDO-CEPTAM-11-Rectt.html",
+      "category": "admitCards",
+      "slug": "DRDO-CEPTAM-11-Rectt",
+      "publishedDate": "12 June 2026 | 04:52 AM"
+    },
+    {
+      "title": "CSBC Bihar Police Constable GD Exam City/ Admit Card 2026",
+      "url": "https://www.resultbharat.com/CSBC-Constable-GD-01-2026.html",
+      "category": "admitCards",
+      "slug": "CSBC-Constable-GD-01-2026",
+      "publishedDate": "11 June 2026 | 12:01 AM"
+    },
+    {
+      "title": "NTA UGC NET June 2026 Exam City Details",
+      "url": "https://www.resultbharat.com/NTA-UGC-NET-JRF-June-2026.html",
+      "category": "admitCards",
+      "slug": "NTA-UGC-NET-JRF-June-2026",
+      "publishedDate": "10 June 2026 | 03:33 PM"
+    },
+    {
+      "title": "UPSSSC Forest/ WildLife Guard 2023 PMT Admit Card 2026",
+      "url": "https://www.resultbharat.com/UPSSSC-Forest-Guard_Wild-Guard-709_Post-2023.html",
+      "category": "admitCards",
+      "slug": "UPSSSC-Forest-Guard_Wild-Guard-709_Post-2023",
+      "publishedDate": "09 June 2026 | 01:19 PM"
+    },
+    {
+      "title": "Bihar Vidhan Parishad Security Guard 03/2023 Interview Admit Card",
+      "url": "https://www.resultbharat.com/Bihar-Vidhan-Parishad Advt-No_01-to-04_2023.html",
+      "category": "admitCards",
+      "slug": "Bihar-Vidhan-Parishad Advt-No_01-to-04_2023",
+      "publishedDate": "08 June 2026   | 11:16 PM"
+    },
+    {
+      "title": "UKSSSC Patwari, VDO & Other Post 2025 Admit Card",
+      "url": "https://www.resultbharat.com/UKSSSC-VDO-Other_Advt-70-2025.html",
+      "category": "admitCards",
+      "slug": "UKSSSC-VDO-Other_Advt-70-2025",
+      "publishedDate": "08 June 2026 | 05:16 PM"
+    },
+    {
+      "title": "CSBC Bihar Prohibition Constable, Jail Warder & Moble Squad Admit Card 2026",
+      "url": "https://www.resultbharat.com/CSBC-Porhibition_Mobile_Jail-03-2025.html",
+      "category": "admitCards",
+      "slug": "CSBC-Porhibition_Mobile_Jail-03-2025",
+      "publishedDate": "08 June 2026 | 12:03 AM"
+    },
+    {
+      "title": "BPSC AES Admit Card 2026",
+      "url": "https://www.resultbharat.com/BPSC-AES-Advt-88-2025.html",
+      "category": "admitCards",
+      "slug": "BPSC-AES-Advt-88-2025",
+      "publishedDate": "08 June 2026   |  12:03 AM"
+    },
+    {
+      "title": "BPSC Stenographer Admit Card 2026",
+      "url": "https://www.resultbharat.com/BPSC-Stenographer-01-2026.html",
+      "category": "admitCards",
+      "slug": "BPSC-Stenographer-01-2026",
+      "publishedDate": "08 June 2026  | 12:06 AM"
+    },
+    {
+      "title": "UPPSC GIC Lecturer Admit Card 2026",
+      "url": "https://www.resultbharat.com/UPPSC-Lecturer-GIC-2025.html",
+      "category": "admitCards",
+      "slug": "UPPSC-Lecturer-GIC-2025",
+      "publishedDate": "08 June 2026 | 04:58 PM"
+    },
+    {
+      "title": "NTA NEET UG 2026 Re-Exam City Details",
+      "url": "https://www.resultbharat.com/NTA-NEET-UG-2026.html",
+      "category": "admitCards",
+      "slug": "NTA-NEET-UG-2026",
+      "publishedDate": "Click Here"
+    },
+    {
+      "title": "Railway RRB NTPC UG 10+2 CEN 07/2025 Exam City/ Admit Card 2026",
+      "url": "https://www.resultbharat.com/RRB-NTPC-Under-Graduate-CEN-07-2025.html",
+      "category": "admitCards",
+      "slug": "RRB-NTPC-Under-Graduate-CEN-07-2025",
+      "publishedDate": ""
+    },
+    {
+      "title": "UP Police SI 2025 DV / PST Exam Admit Card 2026",
+      "url": "https://www.resultbharat.com/UP-Police-SI-2025.html",
+      "category": "admitCards",
+      "slug": "UP-Police-SI-2025",
+      "publishedDate": "05 June 2026 | 03:49 PM"
+    },
+    {
+      "title": "RBI Officer Grade B Admit Card 2026",
+      "url": "https://www.resultbharat.com/RBI-Grade-B-2026.html",
+      "category": "admitCards",
+      "slug": "RBI-Grade-B-2026",
+      "publishedDate": "05 June 2026 |  11:39 AM"
+    },
+    {
+      "title": "UP Police Constable Admit Card 2026",
+      "url": "https://www.resultbharat.com/UP-Police-Constable-2025-26.html",
+      "category": "admitCards",
+      "slug": "UP-Police-Constable-2025-26",
+      "publishedDate": ""
+    },
+    {
+      "title": "BPSC Auditor Pre Exam Date 2026",
+      "url": "https://www.resultbharat.com/BPSC-Auditor_09-2026.html",
+      "category": "admitCards",
+      "slug": "BPSC-Auditor_09-2026",
+      "publishedDate": "02 July 2026  | 12:06 PM"
+    },
+    {
+      "title": "Haryan HTET 2025 New Exam Date 2026",
+      "url": "https://www.resultbharat.com/HTET-Haryana-TET-2025.html",
+      "category": "admitCards",
+      "slug": "HTET-Haryana-TET-2025",
+      "publishedDate": "25 May 2026 | 08:46 PM"
+    },
+    {
+      "title": "BSEB DELED 2026 Admit Card",
+      "url": "https://www.resultbharat.com/BSEB-DElEd-2026-28.html",
+      "category": "admitCards",
+      "slug": "BSEB-DElEd-2026-28",
+      "publishedDate": "28 May 2026 | 07:09 AM"
+    },
+    {
+      "title": "UPSSSC UP Pollution Control Board Exam Date 2026",
+      "url": "https://www.resultbharat.com/UPSSSC-UPPCB-Various-Post-Rectt-2026.html",
+      "category": "admitCards",
+      "slug": "UPSSSC-UPPCB-Various-Post-Rectt-2026",
+      "publishedDate": "30 May 2026 | 10:22 PM"
+    },
+    {
+      "title": "MPESB Vanrakshak, Jail Prahari Admit Card 2026",
+      "url": "https://www.resultbharat.com/MPESB-Vanrakshak-Jail-Prahari-2026.html",
+      "category": "admitCards",
+      "slug": "MPESB-Vanrakshak-Jail-Prahari-2026",
+      "publishedDate": "08 June 2026 | 04:36 PM"
+    },
+    {
+      "title": "RBI JE Admit Card 2026",
+      "url": "https://www.resultbharat.com/RBI-Bank-JE-2026.html",
+      "category": "admitCards",
+      "slug": "RBI-Bank-JE-2026",
+      "publishedDate": "27 May 2026 | 06:00 PM"
+    },
+    {
+      "title": "CSBC Bihar Police Constable Operator Revised Exam City/ Admit Card Date 2026",
+      "url": "https://www.resultbharat.com/CSBC-Constable-Operator-02-2026.html",
+      "category": "admitCards",
+      "slug": "CSBC-Constable-Operator-02-2026",
+      "publishedDate": "26 June 2026 | 04:32 PM"
+    },
+    {
+      "title": "Indian Army Agniveer CEE Admit Card 2026",
+      "url": "https://www.resultbharat.com/Army-Agniveer-CEE-2026-27.html",
+      "category": "admitCards",
+      "slug": "Army-Agniveer-CEE-2026-27",
+      "publishedDate": "15 May 2026  | 05:18 AM"
+    },
+    {
+      "title": "DRDO CEPTAM 11 Result 2026 Out, CBT 2 Exam Date, Download STA, Technician Merit List PDF",
+      "url": "https://testbook.com/news/drdo-ceptam-11-result-2026-out/",
+      "category": "admitCards",
+      "slug": "drdo-ceptam-11-result-2026-out",
+      "publishedDate": "31 May 2026"
+    },
+    {
+      "title": "DRDO CEPTAM-11 (STA, Technician) Recruitment 2025 Tier-II Admit Card",
+      "url": "https://sarkariresultshine.com/drdo-ceptam-11-sta-technician-recruitment-2025-tier-ii-admit-card/",
+      "category": "admitCards",
+      "slug": "drdo-ceptam-11-sta-technician-recruitment-2025-tier-ii-admit-card"
+    },
+    {
+      "title": "Haryana Police Constable 2026, List of Candidates Qualified in PMT & Admit Card",
+      "url": "https://sarkariresultshine.com/haryana-police-constable-admit-card-2026-pst-pmt/",
+      "category": "admitCards",
+      "slug": "haryana-police-constable-admit-card-2026-pst-pmt"
+    },
+    {
+      "title": "Haryana Police Cutoff PDF 2026, List of candidates qualified in PMT & Admit Card",
+      "url": "https://sarkariresultshine.com/haryana-police-cutoff-pdf-2026-download-here/",
+      "category": "admitCards",
+      "slug": "haryana-police-cutoff-pdf-2026-download-here"
+    },
+    {
+      "title": "HPSC HCS Recruitment 2026, Mains Exam Admit Card Notice",
+      "url": "https://sarkariresultshine.com/hpsc-hcs-recruitment-2026-2/",
+      "category": "admitCards",
+      "slug": "hpsc-hcs-recruitment-2026-2"
+    },
+    {
+      "title": "HPRCA JBT Teacher Vacancy 2026, Admit Card",
+      "url": "https://sarkariresultshine.com/hprca-jbt-teacher-vacancy-2026/",
+      "category": "admitCards",
+      "slug": "hprca-jbt-teacher-vacancy-2026"
+    },
+    {
+      "title": "SSB Head Constable (Ministerial) Vacancy 2020 Exam Date",
+      "url": "https://sarkariresultshine.com/ssb-head-constable-ministerial-vacancy-2020-exam-date/",
+      "category": "admitCards",
+      "slug": "ssb-head-constable-ministerial-vacancy-2020-exam-date"
+    },
+    {
+      "title": "HSSC Sports Quota Vacancy 2024, Advt No. 13/24 Sports Quota PMT List, Admit Card",
+      "url": "https://sarkariresultshine.com/hssc-sports-quota-vacancy-2024-advt-no-13-24-sports-quota-pmt-list-admit-card/",
+      "category": "admitCards",
+      "slug": "hssc-sports-quota-vacancy-2024-advt-no-13-24-sports-quota-pmt-list-admit-card"
+    },
+    {
+      "title": "Haryana Forest Guard Recruitment 2026, PMT List, Admit Card",
+      "url": "https://sarkariresultshine.com/haryana-forest-guard-recruitment-2026/",
+      "category": "admitCards",
+      "slug": "haryana-forest-guard-recruitment-2026"
+    },
+    {
+      "title": "NTA UGC NET Exam June 2026, Exam City Intimation Slip OUT",
+      "url": "https://sarkariresultshine.com/nta-ugc-net-exam-june-2026/",
+      "category": "admitCards",
+      "slug": "nta-ugc-net-exam-june-2026"
+    },
+    {
+      "title": "UP Home Guard Admit Card 2026, Answer Key",
+      "url": "https://sarkariresultshine.com/up-home-guard-admit-card-2026/",
+      "category": "admitCards",
+      "slug": "up-home-guard-admit-card-2026"
+    },
+    {
+      "title": "Rajasthan PTET Exam 2026, Admit Card",
+      "url": "https://sarkariresultshine.com/rajasthan-ptet-exam-2026/",
+      "category": "admitCards",
+      "slug": "rajasthan-ptet-exam-2026"
+    },
+    {
       "title": "RRB NTPC 10+2 UG CBT-I Admit Card 2026",
       "url": "https://www.sarkariexam.com/rrb-ntpc-102-inter-level-2025",
       "category": "admitCards",
@@ -3333,6 +2419,13 @@ export const scrapedData = {
       "url": "https://www.sarkariexam.com/nta-neet-ug-2026",
       "category": "admitCards",
       "slug": "nta-neet-ug-2026",
+      "publishedDate": "13 June 2026"
+    },
+    {
+      "title": "RRB NTPC CEN 06/2025 Graduate Level CBT II Exam Date 2026",
+      "url": "https://www.sarkariexam.com/rrb-ntpc-graduate-level-2026",
+      "category": "admitCards",
+      "slug": "rrb-ntpc-graduate-level-2026",
       "publishedDate": "13 June 2026"
     },
     {
@@ -3385,6 +2478,13 @@ export const scrapedData = {
       "publishedDate": "12 June 2026"
     },
     {
+      "title": "UPPSC Veterinary Officer Exam Date 2026",
+      "url": "https://www.sarkariexam.com/uppsc-veterinary-officer-2025",
+      "category": "admitCards",
+      "slug": "uppsc-veterinary-officer-2025",
+      "publishedDate": "12 June 2026"
+    },
+    {
       "title": "Allahabad University PGAT Admit Card 2026",
       "url": "https://www.sarkariexam.com/allahabad-university-pgat-admissions-2026",
       "category": "admitCards",
@@ -3417,6 +2517,13 @@ export const scrapedData = {
       "url": "https://www.sarkariexam.com/up-gnm-entrance-exam-upget-2026",
       "category": "admitCards",
       "slug": "up-gnm-entrance-exam-upget-2026",
+      "publishedDate": "10 June 2026"
+    },
+    {
+      "title": "SSB Head Constable Ministerial Written Exam Date 2026",
+      "url": "https://www.sarkariexam.com/ssb-head-constable-ministerial-2021",
+      "category": "admitCards",
+      "slug": "ssb-head-constable-ministerial-2021",
       "publishedDate": "10 June 2026"
     },
     {
@@ -3490,6 +2597,13 @@ export const scrapedData = {
       "publishedDate": "7 June 2026"
     },
     {
+      "title": "BSF HCM & ASI Steno Exam Date 2026",
+      "url": "https://www.sarkariexam.com/bsf-hcm-asi-steno-2024",
+      "category": "admitCards",
+      "slug": "bsf-hcm-asi-steno-2024",
+      "publishedDate": "6 June 2026"
+    },
+    {
       "title": "RBI Officer Grade B Admit Card 2026",
       "url": "https://www.sarkariexam.com/rbi-grade-b-2026",
       "category": "admitCards",
@@ -3504,11 +2618,39 @@ export const scrapedData = {
       "publishedDate": "4 June 2026"
     },
     {
+      "title": "Bihar BPSC Auditor Exam Date 2026",
+      "url": "https://www.sarkariexam.com/bihar-bpsc-auditor-2026",
+      "category": "admitCards",
+      "slug": "bihar-bpsc-auditor-2026",
+      "publishedDate": "3 June 2026"
+    },
+    {
+      "title": "Haryana HTET Exam Date 2026",
+      "url": "https://www.sarkariexam.com/haryana-htet-2026",
+      "category": "admitCards",
+      "slug": "haryana-htet-2026",
+      "publishedDate": "3 June 2026"
+    },
+    {
+      "title": "UPSSSC UP Pollution Control Board Various Post Exam Date 2026",
+      "url": "https://www.sarkariexam.com/upsssc-up-pollution-control-board-various-post-2026",
+      "category": "admitCards",
+      "slug": "upsssc-up-pollution-control-board-various-post-2026",
+      "publishedDate": "1 June 2026"
+    },
+    {
       "title": "DSSSB June Admit Card 2026",
       "url": "https://www.sarkariexam.com/dsssb-various-post-2025",
       "category": "admitCards",
       "slug": "dsssb-various-post-2025",
       "publishedDate": "29 May 2026"
+    },
+    {
+      "title": "BSNL Senior Executive Trainee SET Exam Date 2026",
+      "url": "https://www.sarkariexam.com/bsnl-senior-executive-trainee-set-2026",
+      "category": "admitCards",
+      "slug": "bsnl-senior-executive-trainee-set-2026",
+      "publishedDate": "28 May 2026"
     },
     {
       "title": "BSEB Bihar D.El.Ed Admit Card 2026",
@@ -3777,6 +2919,540 @@ export const scrapedData = {
       "category": "latestJobs",
       "slug": "secr-nagpur-apprentices-may26",
       "publishedDate": "19 May 2026"
+    },
+    {
+      "title": "Railway RRB ALP CEN 01/2026 Online Form",
+      "url": "https://www.resultbharat.com/RRB-ALP-CEN-No-01-2026.html",
+      "category": "latestJobs",
+      "slug": "RRB-ALP-CEN-No-01-2026",
+      "publishedDate": "15 May 2026 | 12:01 AM"
+    },
+    {
+      "title": "AIIMS CRE-5 Online Form 2026",
+      "url": "https://www.resultbharat.com/AIIMS-CRE-5-Recruitment-2026.html",
+      "category": "latestJobs",
+      "slug": "AIIMS-CRE-5-Recruitment-2026",
+      "publishedDate": "13 June 2026  | 06:55 AM"
+    },
+    {
+      "title": "Rajasthan State Eligibility Test SET 2026 Online Form",
+      "url": "https://www.resultbharat.com/Rajasthan-SET-2026.html",
+      "category": "latestJobs",
+      "slug": "Rajasthan-SET-2026",
+      "publishedDate": "14 June 2026  | 06:55 AM"
+    },
+    {
+      "title": "Central Bank CBI Apprentices Online Form 2026",
+      "url": "https://www.resultbharat.com/Central-Bank-CBI-Apprentices-2026.html",
+      "category": "latestJobs",
+      "slug": "Central-Bank-CBI-Apprentices-2026",
+      "publishedDate": "12 June 2026  | 11:31 AM"
+    },
+    {
+      "title": "UPSSSC Vidhan Bhawan Guard / Fire Guard Online Form 2026",
+      "url": "https://www.resultbharat.com/UPSSSC-Guard_FireGuard-09-2026.html",
+      "category": "latestJobs",
+      "slug": "UPSSSC-Guard_FireGuard-09-2026",
+      "publishedDate": "09 June 2026 | 10:19 AM"
+    },
+    {
+      "title": "BOB Apprentice Online Form 2026",
+      "url": "https://www.resultbharat.com/BOB-Apprentices-2026.html",
+      "category": "latestJobs",
+      "slug": "BOB-Apprentices-2026",
+      "publishedDate": "08 June 2026  | 11:06 PM"
+    },
+    {
+      "title": "RPSC RAS Pre 2026 Online Form",
+      "url": "https://www.resultbharat.com/RPSC-RAS-2026.html",
+      "category": "latestJobs",
+      "slug": "RPSC-RAS-2026",
+      "publishedDate": "04 June 2026"
+    },
+    {
+      "title": "CISF ASI Paramedical Post Online Form 2026",
+      "url": "https://www.resultbharat.com/CISF-ASI-Paramedical-Staff-2026.html",
+      "category": "latestJobs",
+      "slug": "CISF-ASI-Paramedical-Staff-2026",
+      "publishedDate": "08 June 2026 | 07:16 AM"
+    },
+    {
+      "title": "RPSC APO Online Form 2026",
+      "url": "https://www.resultbharat.com/RPSC-APO-2026.html",
+      "category": "latestJobs",
+      "slug": "RPSC-APO-2026",
+      "publishedDate": "08 June 2026 | 07:11 AM"
+    },
+    {
+      "title": "PSPCL ALM (NAC) Online Form 2026 (3289 Post)",
+      "url": "https://www.resultbharat.com/PSPCL-ALM-NAC-3289-Post-2026.html",
+      "category": "latestJobs",
+      "slug": "PSPCL-ALM-NAC-3289-Post-2026",
+      "publishedDate": "08 June 2026  | 11:36 AM"
+    },
+    {
+      "title": "PSPCL ALM (ITI) Online Form 2026 (3000 Post)",
+      "url": "https://www.resultbharat.com/PSPCL-ALM-2026.html",
+      "category": "latestJobs",
+      "slug": "PSPCL-ALM-2026",
+      "publishedDate": "08 June 2026  | 11:09 AM"
+    },
+    {
+      "title": "Hindustan Copper Ltd HCL Executive Online Form 2026",
+      "url": "https://www.resultbharat.com/HCL-Executive-2026.html",
+      "category": "latestJobs",
+      "slug": "HCL-Executive-2026",
+      "publishedDate": "06 June 2026 | 11:01 AM"
+    },
+    {
+      "title": "Indian Navy INET 02/2026 Agniveer Apprentices Online Form",
+      "url": "https://www.resultbharat.com/Indian-Navy-Agniveer-Apprentice-01-2027-02-2027-Batch.html",
+      "category": "latestJobs",
+      "slug": "Indian-Navy-Agniveer-Apprentice-01-2027-02-2027-Batch",
+      "publishedDate": "05 June 2026 | 06:44 AM"
+    },
+    {
+      "title": "SBI Apprentice Online Form 2026",
+      "url": "https://www.resultbharat.com/SBI-Apprentices-2026.html",
+      "category": "latestJobs",
+      "slug": "SBI-Apprentices-2026",
+      "publishedDate": "19 May 2026 | 06:03 AM"
+    },
+    {
+      "title": "UPSSSC Excise Constable Online Form 2026",
+      "url": "https://www.resultbharat.com/UPSSSC-Excise-Constable-08-2026.html",
+      "category": "latestJobs",
+      "slug": "UPSSSC-Excise-Constable-08-2026",
+      "publishedDate": "04 June 2026"
+    },
+    {
+      "title": "BSNL JTO Online Form 2026",
+      "url": "https://www.resultbharat.com/BSNL-JTO-2026.html",
+      "category": "latestJobs",
+      "slug": "BSNL-JTO-2026",
+      "publishedDate": "04 June 2026  | 12:01 AM"
+    },
+    {
+      "title": "Jharkhand TET JHTET 2026 Online Form",
+      "url": "https://www.resultbharat.com/Jharkhand-JHTET-2026.html",
+      "category": "latestJobs",
+      "slug": "Jharkhand-JHTET-2026",
+      "publishedDate": "02 June 2026 | 09:52 PM"
+    },
+    {
+      "title": "Allahabad High Court RO, ARO & CA Online Form 2026",
+      "url": "https://www.resultbharat.com/Allahabad-HC-RO-ARO-CA-2026.html",
+      "category": "latestJobs",
+      "slug": "Allahabad-HC-RO-ARO-CA-2026",
+      "publishedDate": "01 June 2026 | 07:02 PM"
+    },
+    {
+      "title": "UPSC NDA/ NA-II Online Form 2026",
+      "url": "https://www.resultbharat.com/UPSC-NDA-II-Exam-2026.html",
+      "category": "latestJobs",
+      "slug": "UPSC-NDA-II-Exam-2026",
+      "publishedDate": "09 June 2026 | 06:01 PM"
+    },
+    {
+      "title": "UPSC CDS-II Online Form 2026",
+      "url": "https://www.resultbharat.com/UPSC-CDS-II-Exam-2026.html",
+      "category": "latestJobs",
+      "slug": "UPSC-CDS-II-Exam-2026",
+      "publishedDate": "09 June 2026 | 06:00 PM"
+    },
+    {
+      "title": "DSSSB Teaching/ Non-Teaching Various Post Online Form 2026",
+      "url": "https://www.resultbharat.com/DSSSB-JSA-TGT-Other-Advt-03-2026.html",
+      "category": "latestJobs",
+      "slug": "DSSSB-JSA-TGT-Other-Advt-03-2026",
+      "publishedDate": "01 June 2026 | 11:46 AM"
+    },
+    {
+      "title": "RPSC 1st Grade Teacher (Special Edu.) Online Form 2026",
+      "url": "https://www.resultbharat.com/RPSC-1st-Grade-Teacher-SPL-Edu-2026.html",
+      "category": "latestJobs",
+      "slug": "RPSC-1st-Grade-Teacher-SPL-Edu-2026",
+      "publishedDate": "01 June 2026  |  08:55 AM"
+    },
+    {
+      "title": "UPSSSC Lower PCS Online Form 2026 (2516 Post)",
+      "url": "https://www.resultbharat.com/UPSSSC-Lower-PCS-07-2026.html",
+      "category": "latestJobs",
+      "slug": "UPSSSC-Lower-PCS-07-2026",
+      "publishedDate": "29 May 2026 | 06:02 PM"
+    },
+    {
+      "title": "Indian Navy 10+2 -B.Tech Cadet Entry January 2027 Online Form",
+      "url": "https://www.resultbharat.com/Indian-Navy-12th-BTech-January-2027.html",
+      "category": "latestJobs",
+      "slug": "Indian-Navy-12th-BTech-January-2027",
+      "publishedDate": "29 May 2026  08:56 AM"
+    },
+    {
+      "title": "NTA CSIR UGC NET June 2026 Online Form",
+      "url": "https://www.resultbharat.com/NTA-CSIR-UGC-NET-June-2026.html",
+      "category": "latestJobs",
+      "slug": "NTA-CSIR-UGC-NET-June-2026",
+      "publishedDate": "28 May 2026 | 10:01 AM"
+    },
+    {
+      "title": "Rajasthan RSSB Computer Instructor Online Form 2026",
+      "url": "https://www.resultbharat.com/RSSB-Computer-Instructor-2026.html",
+      "category": "latestJobs",
+      "slug": "RSSB-Computer-Instructor-2026",
+      "publishedDate": "25 May 2026 | 09:31 AM"
+    },
+    {
+      "title": "UPSSSC Agriculture Technical Assistant Group-C Online Form 2026",
+      "url": "https://www.resultbharat.com/UPSSSC-AGTA-06-2026.html",
+      "category": "latestJobs",
+      "slug": "UPSSSC-AGTA-06-2026",
+      "publishedDate": "22 May 2026 | 01:01 PM"
+    },
+    {
+      "title": "SSC CGL 2026 Online Form",
+      "url": "https://www.resultbharat.com/SSC-CGL-2026.html",
+      "category": "latestJobs",
+      "slug": "SSC-CGL-2026",
+      "publishedDate": "21 May 2026 | 06:13 PM"
+    },
+    {
+      "title": "BPSSC Bihar Police ASI Technical Online Form 2026",
+      "url": "https://www.resultbharat.com/BPSSC-ASI-Technical-2026.html",
+      "category": "latestJobs",
+      "slug": "BPSSC-ASI-Technical-2026",
+      "publishedDate": "21 May 2026  |  12:01 AM"
+    },
+    {
+      "title": "AFCAT 02/2026 Batch Online Form",
+      "url": "https://www.resultbharat.com/AFCAT_02_2026_Batch.html",
+      "category": "latestJobs",
+      "slug": "AFCAT_02_2026_Batch",
+      "publishedDate": "20 May 2026 | 07:00 AM"
+    },
+    {
+      "title": "Bihar BTSC Food Analyst Online Form 2026",
+      "url": "https://www.resultbharat.com/BTSC-Food-Analyst-2026.html",
+      "category": "latestJobs",
+      "slug": "BTSC-Food-Analyst-2026",
+      "publishedDate": "20 May 2026 | 11:01 AM"
+    },
+    {
+      "title": "Railway SECR Nagpur Apprentice Online Form 2026",
+      "url": "https://www.resultbharat.com/Railway-SECR-Nagpur-Apprentice-2026.html",
+      "category": "latestJobs",
+      "slug": "Railway-SECR-Nagpur-Apprentice-2026",
+      "publishedDate": "19 May 2026 | 10:01 AM"
+    },
+    {
+      "title": "Railway RRB Technician CEN 02/2026 Online Form",
+      "url": "https://www.resultbharat.com/RRB-Technician-CEN-02-2026.html",
+      "category": "latestJobs",
+      "slug": "RRB-Technician-CEN-02-2026",
+      "publishedDate": "18 May 2026 | 10:03 AM"
+    },
+    {
+      "title": "Railway SECR Bilaspur Apprentice Online Form 2026",
+      "url": "https://www.resultbharat.com/Railway-SECR-Bilaspur-Apprentice-2026.html",
+      "category": "latestJobs",
+      "slug": "Railway-SECR-Bilaspur-Apprentice-2026",
+      "publishedDate": "19 May 2026 | 09:56 AM"
+    },
+    {
+      "title": "Indian Army TGC 144 January 2027 Online Form",
+      "url": "https://www.resultbharat.com/Indian-Army-TGC-144-Jan-2027.html",
+      "category": "latestJobs",
+      "slug": "Indian-Army-TGC-144-Jan-2027",
+      "publishedDate": "13 May 2026 | 03:01 PM"
+    },
+    {
+      "title": "CTET September 2026 Online Form",
+      "url": "https://www.resultbharat.com/CTET-September-2026.html",
+      "category": "latestJobs",
+      "slug": "CTET-September-2026",
+      "publishedDate": "11 May 2026  | 04:31 PM"
+    },
+    {
+      "title": "BPSSC Havildar Instructor (Bihar HG) Online Form 2026",
+      "url": "https://www.resultbharat.com/BPSSC-Havildar-Instructor_06-2026.html",
+      "category": "latestJobs",
+      "slug": "BPSSC-Havildar-Instructor_06-2026",
+      "publishedDate": "09 May 2026  |  12:01 AM"
+    },
+    {
+      "title": "VKSU Ara UG Admission Online Form 2026-30",
+      "url": "https://www.resultbharat.com/VKSU-Ara-UG-Admission-2026-30.html",
+      "category": "latestJobs",
+      "slug": "VKSU-Ara-UG-Admission-2026-30",
+      "publishedDate": "11 June 2026 | 10:05 AM"
+    },
+    {
+      "title": "UPDELED 2026 Admissions Online Form",
+      "url": "https://www.resultbharat.com/UP-DELEd-2026.html",
+      "category": "latestJobs",
+      "slug": "UP-DELEd-2026",
+      "publishedDate": "15 June 2026"
+    },
+    {
+      "title": "MPESB PNST 2026 Online Form",
+      "url": "https://www.resultbharat.com/MPESB-PNST-2026.html",
+      "category": "latestJobs",
+      "slug": "MPESB-PNST-2026",
+      "publishedDate": "09 June 2026 | 07:16 PM"
+    },
+    {
+      "title": "MPESB ADDET 2026 Online Form",
+      "url": "https://www.resultbharat.com/MPESB-ADDET-2026.html",
+      "category": "latestJobs",
+      "slug": "MPESB-ADDET-2026",
+      "publishedDate": "05 June 2026 | 05:16 PM"
+    },
+    {
+      "title": "Purnea University UG Admission 2026-30 Online Form",
+      "url": "https://www.resultbharat.com/Purnea-University-UG-Admission-2026-30.html",
+      "category": "latestJobs",
+      "slug": "Purnea-University-UG-Admission-2026-30",
+      "publishedDate": "27 May 2026 | 03:01 PM"
+    },
+    {
+      "title": "LNMU UG Admission Online Form 2026-30",
+      "url": "https://www.resultbharat.com/LNMU-UG-Admission-2026-30.html",
+      "category": "latestJobs",
+      "slug": "LNMU-UG-Admission-2026-30",
+      "publishedDate": ""
+    },
+    {
+      "title": "BNMU UG Admission Online Form 2026-30",
+      "url": "https://www.resultbharat.com/BNMU-UG-Admission-2026-30.html",
+      "category": "latestJobs",
+      "slug": "BNMU-UG-Admission-2026-30",
+      "publishedDate": "Publication of 1st Merit list & Cut-off list"
+    },
+    {
+      "title": "Patna University UG Admission Online Form 2026-30",
+      "url": "https://www.resultbharat.com/Patna-University-UG-Admission-2026-30.html",
+      "category": "latestJobs",
+      "slug": "Patna-University-UG-Admission-2026-30",
+      "publishedDate": "05 June 2026 | 08:55 AM"
+    },
+    {
+      "title": "Patliputra University PPUP UG Admission Online Form 2026-30",
+      "url": "https://www.resultbharat.com/Patliputra-University-UG-Admission-2026-30.html",
+      "category": "latestJobs",
+      "slug": "Patliputra-University-UG-Admission-2026-30",
+      "publishedDate": ""
+    },
+    {
+      "title": "JPU UG Admission Online Form 2026-30",
+      "url": "https://www.resultbharat.com/JPU-University-Admission-2026-30.html",
+      "category": "latestJobs",
+      "slug": "JPU-University-Admission-2026-30",
+      "publishedDate": ""
+    },
+    {
+      "title": "BCECE 2026 Admission Online Form",
+      "url": "https://www.resultbharat.com/BCECE-Entrance-Exam-2026.html",
+      "category": "latestJobs",
+      "slug": "BCECE-Entrance-Exam-2026",
+      "publishedDate": ""
+    },
+    {
+      "title": "Munger University UG Admission Online Form 2026-30",
+      "url": "https://www.resultbharat.com/Munger-University-UG-Admission-2026-30.html",
+      "category": "latestJobs",
+      "slug": "Munger-University-UG-Admission-2026-30",
+      "publishedDate": "01 May 2026  |  12:01 PM"
+    },
+    {
+      "title": "UPSSSC Forest Guard & Wildlife Guard Online Form 2026",
+      "url": "https://www.resultbharat.com/UPSSSC-Forest-Guard-12-2026.html",
+      "category": "latestJobs",
+      "slug": "UPSSSC-Forest-Guard-12-2026",
+      "publishedDate": "23 April 2026 | 06:46 AM"
+    },
+    {
+      "title": "UPSSSC Havildar Instructor Online Form 2026",
+      "url": "https://www.resultbharat.com/UPSSSC-Havildar-Instructor_11-2026.html",
+      "category": "latestJobs",
+      "slug": "UPSSSC-Havildar-Instructor_11-2026",
+      "publishedDate": "18 April 2026 | 04:46 AM"
+    },
+    {
+      "title": "UPSSSC Platoon Commander & Block Organizer Online Form 2026",
+      "url": "https://www.resultbharat.com/UPSSSC-Platoon-Commander-BO_10-2026.html",
+      "category": "latestJobs",
+      "slug": "UPSSSC-Platoon-Commander-BO_10-2026",
+      "publishedDate": "15 April 2026 | 04:05 PM"
+    },
+    {
+      "title": "BPSC School Teacher TRE 4.0 Online Form 2025",
+      "url": "https://www.resultbharat.com/BPSC-TRE-4-2025.html",
+      "category": "latestJobs",
+      "slug": "BPSC-TRE-4-2025",
+      "publishedDate": "10 June 2026 | 08:02 AM"
+    },
+    {
+      "title": "AIIMS CRE Notification 2026",
+      "url": "https://testbook.com/news/aiims-cre-notification-2026-out/",
+      "category": "latestJobs",
+      "slug": "aiims-cre-notification-2026-out",
+      "publishedDate": "13 June 2026"
+    },
+    {
+      "title": "Rajasthan State Eligibility Test SET 2026, Apply Online",
+      "url": "https://sarkariresultshine.com/rajasthan-state-eligibility-test-set-2026/",
+      "category": "latestJobs",
+      "slug": "rajasthan-state-eligibility-test-set-2026"
+    },
+    {
+      "title": "AIIMS 5th CRE Group B, C Posts Exam Form 2026, Apply Online",
+      "url": "https://sarkariresultshine.com/aiims-5th-cre-group-b-c-posts-exam-form-2026/",
+      "category": "latestJobs",
+      "slug": "aiims-5th-cre-group-b-c-posts-exam-form-2026"
+    },
+    {
+      "title": "India Post Ludhiana PLI Agent Recruitment 2026, Notification Out",
+      "url": "https://sarkariresultshine.com/india-post-ludhiana-pli-agent-recruitment-2026/",
+      "category": "latestJobs",
+      "slug": "india-post-ludhiana-pli-agent-recruitment-2026"
+    },
+    {
+      "title": "RSSB Computer Instructor Vacancy 2026, Check Full Details & Apply Online",
+      "url": "https://sarkariresultshine.com/rssb-computer-instructor-vacancy-2026/",
+      "category": "latestJobs",
+      "slug": "rssb-computer-instructor-vacancy-2026"
+    },
+    {
+      "title": "SD Mahila Mahavidyalaya Hansi Vacancy 2026, Apply Online",
+      "url": "https://sarkariresultshine.com/sd-mahila-mahavidyalaya-hansi-vacancy-2026/",
+      "category": "latestJobs",
+      "slug": "sd-mahila-mahavidyalaya-hansi-vacancy-2026"
+    },
+    {
+      "title": "Adarsh ​​Mahila Mahavidyalaya Bhiwani Recruitment 2026, Apply Online Check Notification",
+      "url": "https://sarkariresultshine.com/adarsh-mahila-mahavidyalaya-bhiwani-recruitment-2026/",
+      "category": "latestJobs",
+      "slug": "adarsh-mahila-mahavidyalaya-bhiwani-recruitment-2026"
+    },
+    {
+      "title": "SVSU Recruitment 2026, Notification Out, Apply Offline",
+      "url": "https://sarkariresultshine.com/svsu-recruitment-2026/",
+      "category": "latestJobs",
+      "slug": "svsu-recruitment-2026"
+    },
+    {
+      "title": "HSSC Advt 04/2026 Group C Post Vacancies 2026, PMT, PST Date For Various Posts, Check Notice",
+      "url": "https://sarkariresultshine.com/hssc-advt-04-2026-group-c-post-vacancies-2026/",
+      "category": "latestJobs",
+      "slug": "hssc-advt-04-2026-group-c-post-vacancies-2026"
+    },
+    {
+      "title": "HSSC Group C Recruitment 2026, PMT, PST Date For Various Posts, Check Notice",
+      "url": "https://sarkariresultshine.com/hssc-group-c-recruitment-2026/",
+      "category": "latestJobs",
+      "slug": "hssc-group-c-recruitment-2026"
+    },
+    {
+      "title": "Jal Shakti Vibhag Vacancy 2026, Apply For Para Fitter, Para Pump Operator and Multi-Purpose Worker Posts",
+      "url": "https://sarkariresultshine.com/jal-shakti-vibhag-vacancy-2026-apply-for-para-fitter-para-pump-operator-and-multi-purpose-worker-posts/",
+      "category": "latestJobs",
+      "slug": "jal-shakti-vibhag-vacancy-2026-apply-for-para-fitter-para-pump-operator-and-multi-purpose-worker-posts"
+    },
+    {
+      "title": "JNV Rewari Recruitment 2026, Apply For Teaching & Non Teaching Posts",
+      "url": "https://sarkariresultshine.com/jnv-rewari-recruitment-2026-apply-for-teaching-non-teaching-posts/",
+      "category": "latestJobs",
+      "slug": "jnv-rewari-recruitment-2026-apply-for-teaching-non-teaching-posts"
+    },
+    {
+      "title": "HKRN Recruitment 2026, Executive Assistant / Office Executive & Other Posts",
+      "url": "https://sarkariresultshine.com/hkrn-recruitment-2026-executive-assistant-office-executive-other-posts/",
+      "category": "latestJobs",
+      "slug": "hkrn-recruitment-2026-executive-assistant-office-executive-other-posts"
+    },
+    {
+      "title": "Haryana DBC Vacancy 2026, Notification Check For District-wise",
+      "url": "https://sarkariresultshine.com/haryana-dbc-vacancy-2026/",
+      "category": "latestJobs",
+      "slug": "haryana-dbc-vacancy-2026"
+    },
+    {
+      "title": "Charkhi Dadri Volunteer Vacancy 2026, Free Application Form & Apply Now",
+      "url": "https://sarkariresultshine.com/charkhi-dadri-volunteer-vacancy-2026-free-application-form-apply-now/",
+      "category": "latestJobs",
+      "slug": "charkhi-dadri-volunteer-vacancy-2026-free-application-form-apply-now"
+    },
+    {
+      "title": "Lansdowne Forest Division Working Plan Associate Vacancy 2026, Apply Now",
+      "url": "https://sarkariresultshine.com/lansdowne-forest-division-working-plan-associate-vacancy-2026/",
+      "category": "latestJobs",
+      "slug": "lansdowne-forest-division-working-plan-associate-vacancy-2026"
+    },
+    {
+      "title": "HARTRON Manager and Accounts Assistant Recruitment 2026, Notification Out, Apply Now",
+      "url": "https://sarkariresultshine.com/hartron-manager-and-accounts-assistant-recruitment-2026/",
+      "category": "latestJobs",
+      "slug": "hartron-manager-and-accounts-assistant-recruitment-2026"
+    },
+    {
+      "title": "Chandigarh Civil Hospital Recruitment 2026, Notification Out, Check Full Details",
+      "url": "https://sarkariresultshine.com/chandigarh-civil-hospital-recruitment-2026/",
+      "category": "latestJobs",
+      "slug": "chandigarh-civil-hospital-recruitment-2026"
+    },
+    {
+      "title": "CTET Notification February 2026, Certificate Issued",
+      "url": "https://sarkariresultshine.com/ctet-notification-february-2026/",
+      "category": "latestJobs",
+      "slug": "ctet-notification-february-2026"
+    },
+    {
+      "title": "Haryana Police Constable Recruitment 2026 PMT/PST Date Release",
+      "url": "https://sarkariresultshine.com/haryana-police-constable-recruitment-2026-pmt-pst-date-release/",
+      "category": "latestJobs",
+      "slug": "haryana-police-constable-recruitment-2026-pmt-pst-date-release"
+    },
+    {
+      "title": "Haryana Police Constable Recruitment 2026, Re-open",
+      "url": "https://sarkariresultshine.com/haryana-police-constable-recruitment-2026/",
+      "category": "latestJobs",
+      "slug": "haryana-police-constable-recruitment-2026"
+    },
+    {
+      "title": "Haryana College UG Admission 2026, Apply Online for UG Courses, Check Notification",
+      "url": "https://sarkariresultshine.com/haryana-college-ug-admission-2026/",
+      "category": "latestJobs",
+      "slug": "haryana-college-ug-admission-2026"
+    },
+    {
+      "title": "KUK UG and Integrated Course Admission Form 2026, Notification & Apply Online",
+      "url": "https://sarkariresultshine.com/kuk-ug-and-integrated-course-admission-form-2026/",
+      "category": "latestJobs",
+      "slug": "kuk-ug-and-integrated-course-admission-form-2026"
+    },
+    {
+      "title": "Haryana ITI Admission Form 2026, Apply Online, Check Full Detail",
+      "url": "https://sarkariresultshine.com/haryana-iti-admission-form-2026/",
+      "category": "latestJobs",
+      "slug": "haryana-iti-admission-form-2026"
+    },
+    {
+      "title": "CBLU Bhiwani UG Admission 2026-27, Apply Online",
+      "url": "https://sarkariresultshine.com/cblu-bhiwani-ug-admission-2026-27/",
+      "category": "latestJobs",
+      "slug": "cblu-bhiwani-ug-admission-2026-27"
+    },
+    {
+      "title": "CBLU Bhiwani PG and Diploma Course Admission Form 2026, Apply Online",
+      "url": "https://sarkariresultshine.com/cblu-bhiwani-pg-and-diploma-course-admission-form-2026-apply-online/",
+      "category": "latestJobs",
+      "slug": "cblu-bhiwani-pg-and-diploma-course-admission-form-2026-apply-online"
+    },
+    {
+      "title": "PMKVY 4.0 Yojana Form 2026, फ्री ट्रेनिंग के साथ 8000 रुपए, Apply Online",
+      "url": "https://sarkariresultshine.com/pmkvy-4-0-yojana-form-2026/",
+      "category": "latestJobs",
+      "slug": "pmkvy-4-0-yojana-form-2026"
     },
     {
       "title": "RRB ALP CEN 01/2026 Online Form 2026 (11,127 Posts) – Apply Here",
@@ -4579,6 +4255,166 @@ export const scrapedData = {
       "publishedDate": "21 May 2026"
     },
     {
+      "title": "UP Polytechnic JEECUP 2026 Answer Key",
+      "url": "https://www.resultbharat.com/UP-Polytechnic-JEECUP-2026.html",
+      "category": "answerKeys",
+      "slug": "UP-Polytechnic-JEECUP-2026",
+      "publishedDate": "11 June 2026 | 02:18 PM"
+    },
+    {
+      "title": "NTA JIPMAT 2026 Answer Key",
+      "url": "https://www.resultbharat.com/NTA-JIPMAT-2026.html",
+      "category": "answerKeys",
+      "slug": "NTA-JIPMAT-2026",
+      "publishedDate": "10 June 2026 | 09:51 PM"
+    },
+    {
+      "title": "NTA CUET UG 2026 Answer Key",
+      "url": "https://www.resultbharat.com/NTA-CUET-UG-2026.html",
+      "category": "answerKeys",
+      "slug": "NTA-CUET-UG-2026",
+      "publishedDate": "Click Here"
+    },
+    {
+      "title": "UP CNET 2026 Answer Key",
+      "url": "https://www.resultbharat.com/answerkey_more.html",
+      "category": "answerKeys",
+      "slug": "answerkey_more",
+      "publishedDate": "09 June 2026  | 02:56 PM"
+    },
+    {
+      "title": "Bihar 02 Years CET B.Ed 2026 Answer Key",
+      "url": "https://www.resultbharat.com/Bihar-BEd-CET-2-Yrs-2026-2028.html",
+      "category": "answerKeys",
+      "slug": "Bihar-BEd-CET-2-Yrs-2026-2028",
+      "publishedDate": "08 June 2026 | 09:19 PM"
+    },
+    {
+      "title": "JCECEB Jharkhand BEd Entrance Exam Answer Key 2026",
+      "url": "https://www.resultbharat.com/Jharkhand-BEd-2026.html",
+      "category": "answerKeys",
+      "slug": "Jharkhand-BEd-2026",
+      "publishedDate": "03 June 2026 | 04:33 PM"
+    },
+    {
+      "title": "UPPSC Assistant Professor GDC Answer Key 2026",
+      "url": "https://www.resultbharat.com/UPPSC-Asst-Professor-2025.html",
+      "category": "answerKeys",
+      "slug": "UPPSC-Asst-Professor-2025",
+      "publishedDate": "03 June 2026 | 05:49 PM"
+    },
+    {
+      "title": "JSSC Excise Constable Final Answer Key 2026",
+      "url": "https://www.resultbharat.com/JSSC-Excise-Constable-JECCE-2023.html",
+      "category": "answerKeys",
+      "slug": "JSSC-Excise-Constable-JECCE-2023",
+      "publishedDate": "02 June 2026 | 02:56 PM"
+    },
+    {
+      "title": "Indian Navy INCET 01/2025 Answer Key",
+      "url": "https://www.resultbharat.com/Indian-Navy-INCET-01-2025.html",
+      "category": "answerKeys",
+      "slug": "Indian-Navy-INCET-01-2025",
+      "publishedDate": "29 May 2026  |  10:51 AM"
+    },
+    {
+      "title": "UPSC Civil Services CSE 2026 Pre Answer Key",
+      "url": "https://www.resultbharat.com/UPSC-IAS-IFS-2026.html",
+      "category": "answerKeys",
+      "slug": "UPSC-IAS-IFS-2026",
+      "publishedDate": ""
+    },
+    {
+      "title": "UPSSSC Lekhpal 2025 Answer Key/ Objection 2026",
+      "url": "https://www.resultbharat.com/UPSSSC-Lekhpal-AdvtNo-02-Exam-2025.html",
+      "category": "answerKeys",
+      "slug": "UPSSSC-Lekhpal-AdvtNo-02-Exam-2025",
+      "publishedDate": "26 May 2026 | 07:43 PM"
+    },
+    {
+      "title": "SSC Delhi Police Driver 2025 Final Answer Key",
+      "url": "https://www.resultbharat.com/SSC-Delhi-Police-Constable-Driver-2025.html",
+      "category": "answerKeys",
+      "slug": "SSC-Delhi-Police-Constable-Driver-2025",
+      "publishedDate": "26 May 2026 |  06:01 PM"
+    },
+    {
+      "title": "MPESB Nursing Officer & Sister Tutor Answer Key 2026",
+      "url": "https://www.resultbharat.com/MPESB-Nursing-Officer_Sister-Tutor-2026.html",
+      "category": "answerKeys",
+      "slug": "MPESB-Nursing-Officer_Sister-Tutor-2026",
+      "publishedDate": "18 May 2026 | 06:38 PM"
+    },
+    {
+      "title": "EMRS TGT, PGT & Other Post Tier II Answer Key 2026",
+      "url": "https://www.resultbharat.com/EMRS-Teaching_Non-Teaching-Post-2025.html",
+      "category": "answerKeys",
+      "slug": "EMRS-Teaching_Non-Teaching-Post-2025",
+      "publishedDate": "13 May 2026 | 08:19 AM"
+    },
+    {
+      "title": "TANCET Result 2026 Out at tancet.annauniv.edu, Direct Link to Download MBA Scorecard, Rank List, Final Answer Key",
+      "url": "https://testbook.com/news/tancet-result-2026/",
+      "category": "answerKeys",
+      "slug": "tancet-result-2026",
+      "publishedDate": "22 May 2026"
+    },
+    {
+      "title": "CMAT 2026 Result Out @cmat.nta.nic.in, Scorecard PDF Download Link, Final Answer Key",
+      "url": "https://testbook.com/news/cmat-result-2026-out/",
+      "category": "answerKeys",
+      "slug": "cmat-result-2026-out",
+      "publishedDate": "17 February 2026"
+    },
+    {
+      "title": "CUET UG Test 2026, Answer Key",
+      "url": "https://sarkariresultshine.com/cuet-ug-test-2026/",
+      "category": "answerKeys",
+      "slug": "cuet-ug-test-2026"
+    },
+    {
+      "title": "RSSB 3rd Grade Teacher Recruitment 2025 Final Answer Key",
+      "url": "https://sarkariresultshine.com/rssb-3rd-grade-teacher-recruitment-2025-final-answer-key/",
+      "category": "answerKeys",
+      "slug": "rssb-3rd-grade-teacher-recruitment-2025-final-answer-key"
+    },
+    {
+      "title": "PSSSB Excise Inspector Vacancy 2026, Answer Key",
+      "url": "https://sarkariresultshine.com/psssb-excise-inspector-vacancy-2026/",
+      "category": "answerKeys",
+      "slug": "psssb-excise-inspector-vacancy-2026"
+    },
+    {
+      "title": "UPSC Civil Services Exam 2026, Prelims Answer Key",
+      "url": "https://sarkariresultshine.com/upsc-civil-services-exam-2026/",
+      "category": "answerKeys",
+      "slug": "upsc-civil-services-exam-2026"
+    },
+    {
+      "title": "EMRS Teaching and Non-Teaching Recruitment 2025 Tier-II Answer Key",
+      "url": "https://sarkariresultshine.com/emrs-teaching-and-non-teaching-recruitment-2025-tier-ii-answer-key/",
+      "category": "answerKeys",
+      "slug": "emrs-teaching-and-non-teaching-recruitment-2025-tier-ii-answer-key"
+    },
+    {
+      "title": "RSSB Agriculture Supervisor Recruitment 2026, Answer Key Out",
+      "url": "https://sarkariresultshine.com/rssb-agriculture-supervisor-recruitment-2026/",
+      "category": "answerKeys",
+      "slug": "rssb-agriculture-supervisor-recruitment-2026"
+    },
+    {
+      "title": "KVS NVS Recruitment 2025, Tier-II Answer Key",
+      "url": "https://sarkariresultshine.com/kvs-nvs-recruitment-2025/",
+      "category": "answerKeys",
+      "slug": "kvs-nvs-recruitment-2025"
+    },
+    {
+      "title": "UPSSSC 4612 Junior Engineer (Civil) Vacancy 2024 Answer Key OUT",
+      "url": "https://sarkariresultshine.com/upsssc-4612-junior-engineer-civil-vacancy-2024-answer-key-out/",
+      "category": "answerKeys",
+      "slug": "upsssc-4612-junior-engineer-civil-vacancy-2024-answer-key-out"
+    },
+    {
       "title": "UP Polytechnic JEECUP Answer Key 2026",
       "url": "https://www.sarkariexam.com/up-polytechnic-jeecup-2026",
       "category": "answerKeys",
@@ -4859,7 +4695,178 @@ export const scrapedData = {
       "publishedDate": "19 March 2026"
     }
   ],
-  "documents": [],
+  "documents": [
+    {
+      "title": "UPSSSC Auditor/ Asst Accountant Syllabus 2026",
+      "url": "https://www.resultbharat.com/UPSSSC-Advt-14-2026_Auditor-Asst-Accountant.html",
+      "category": "documents",
+      "slug": "UPSSSC-Advt-14-2026_Auditor-Asst-Accountant",
+      "publishedDate": "03 June 2026 | 05:12 PM"
+    },
+    {
+      "title": "UP TET/ Super TET 2026 Syllabus",
+      "url": "https://www.resultbharat.com/syllabus_more.html",
+      "category": "documents",
+      "slug": "syllabus_more",
+      "publishedDate": "09 June 2026  | 04:51 PM"
+    },
+    {
+      "title": "BPSC Bihar SAV School Teacher 2024 Mains Syllabus",
+      "url": "https://www.resultbharat.com/BPSC-Simultala-School-Teacher-2024.html",
+      "category": "documents",
+      "slug": "BPSC-Simultala-School-Teacher-2024",
+      "publishedDate": "21 February 2025  | 06:14 PM"
+    },
+    {
+      "title": "NTA JEE Mains 2025 Syllabus",
+      "url": "https://www.resultbharat.com/NTA-JEE-Mains-S1-2025.html",
+      "category": "documents",
+      "slug": "NTA-JEE-Mains-S1-2025",
+      "publishedDate": "23 February 2025  | 04:44 PM"
+    },
+    {
+      "title": "CTET December 2024 Syllabus",
+      "url": "https://www.resultbharat.com/CTET-December-2024.html",
+      "category": "documents",
+      "slug": "CTET-December-2024",
+      "publishedDate": ""
+    },
+    {
+      "title": "RRB NTPC 10+2 Inter Level Syllabus 2024",
+      "url": "https://www.resultbharat.com/RRB-NTPC-CEN-06-2024.html",
+      "category": "documents",
+      "slug": "RRB-NTPC-CEN-06-2024",
+      "publishedDate": ""
+    },
+    {
+      "title": "RRB NTPC Graduate Level Syllabus 2024",
+      "url": "https://www.resultbharat.com/RRB-NTPC-Graduate-Level-CEN-05_2024.html",
+      "category": "documents",
+      "slug": "RRB-NTPC-Graduate-Level-CEN-05_2024",
+      "publishedDate": ""
+    },
+    {
+      "title": "Jute Corporation JCI Various Post Syllabus 2024",
+      "url": "https://www.resultbharat.com/JIC-Various-90-Post_2024.html",
+      "category": "documents",
+      "slug": "JIC-Various-90-Post_2024",
+      "publishedDate": "12 August 2025 | 06:02 PM"
+    },
+    {
+      "title": "NIACL AO Scale-I Syllabus 2024",
+      "url": "https://www.resultbharat.com/NIACL-AO-2024.html",
+      "category": "documents",
+      "slug": "NIACL-AO-2024",
+      "publishedDate": ""
+    },
+    {
+      "title": "SSC GD Constable Syllabus 2024",
+      "url": "https://www.resultbharat.com/SSC-Constable-GD-Rectt-2024.html",
+      "category": "documents",
+      "slug": "SSC-Constable-GD-Rectt-2024",
+      "publishedDate": ""
+    },
+    {
+      "title": "Indian Navy SSR Medical Assistant Syllabus 2024",
+      "url": "https://www.resultbharat.com/Indian-Navy-SSR-Medical-Assistant_02-2024-Batch.html",
+      "category": "documents",
+      "slug": "Indian-Navy-SSR-Medical-Assistant_02-2024-Batch",
+      "publishedDate": ""
+    },
+    {
+      "title": "RSMSSB CET 10+2 Inter Level Syllabus 2024",
+      "url": "https://www.resultbharat.com/RSMSSB-CET-10+2-Level_2024.html",
+      "category": "documents",
+      "slug": "RSMSSB-CET-10+2-Level_2024",
+      "publishedDate": "12 March 2025 | 06:42 PM"
+    },
+    {
+      "title": "IRDAI Assistant Manager Syllabus 2024",
+      "url": "https://www.resultbharat.com/IRDAI-AM-2024.html",
+      "category": "documents",
+      "slug": "IRDAI-AM-2024",
+      "publishedDate": "23 December 2024 | 08:31 PM"
+    },
+    {
+      "title": "HSSC Haryana Police Constable Syllabus 2024",
+      "url": "https://www.resultbharat.com/HSSC_Haryana-Police-Constable_Advt-No-14_15-2024.html",
+      "category": "documents",
+      "slug": "HSSC_Haryana-Police-Constable_Advt-No-14_15-2024",
+      "publishedDate": "27 September 2024  |  06:11 PM"
+    },
+    {
+      "title": "RRB Paramedical Syllabus 2024",
+      "url": "https://www.resultbharat.com/RRB-Paramedical-Staff-CEN-04-2024.html",
+      "category": "documents",
+      "slug": "RRB-Paramedical-Staff-CEN-04-2024",
+      "publishedDate": ""
+    },
+    {
+      "title": "RSMSSB CET Graduate Level Syllabus 2024",
+      "url": "https://www.resultbharat.com/RSMSSB-CET-Graduate-Level-2024.html",
+      "category": "documents",
+      "slug": "RSMSSB-CET-Graduate-Level-2024",
+      "publishedDate": "17 February 2025 | 08:33 PM"
+    },
+    {
+      "title": "HPSC MVO Syllabus 2024",
+      "url": "https://www.resultbharat.com/HPSC-Motor-Vehicle-Officer-2024.html",
+      "category": "documents",
+      "slug": "HPSC-Motor-Vehicle-Officer-2024",
+      "publishedDate": "05 September 2024  | 03:16 PM"
+    },
+    {
+      "title": "SSC JHT Syllabus 2024",
+      "url": "https://www.resultbharat.com/SSC-JHT-Rectt-2024.html",
+      "category": "documents",
+      "slug": "SSC-JHT-Rectt-2024",
+      "publishedDate": ""
+    },
+    {
+      "title": "HPSC Assistant Professor Syllabus 2024",
+      "url": "https://www.resultbharat.com/HPSC-Assistant-Professor-Rectt-2024.html",
+      "category": "documents",
+      "slug": "HPSC-Assistant-Professor-Rectt-2024",
+      "publishedDate": ""
+    },
+    {
+      "title": "JSSC Field Worker JFWCE Syllabus 2024",
+      "url": "https://www.resultbharat.com/JSSC-Field-Worker-JFWCE-2024.html",
+      "category": "documents",
+      "slug": "JSSC-Field-Worker-JFWCE-2024",
+      "publishedDate": ""
+    },
+    {
+      "title": "SSC CGL Exam Syllabus / Pattern 2026 released, Tier-1 और Tier-2 का पूरा पैटर्न देखें",
+      "url": "https://sarkariresultshine.com/ssc-cgl-exam-syllabus-pattern-2026-released/",
+      "category": "documents",
+      "slug": "ssc-cgl-exam-syllabus-pattern-2026-released"
+    },
+    {
+      "title": "BSEH Class 1st to 12th Question Paper Design and Syllabus Academic Session 2026 -27",
+      "url": "https://sarkariresultshine.com/bseh-class-1st-to-12th-question-paper-design-and-syllabus-academic-session-2026-27/",
+      "category": "documents",
+      "slug": "bseh-class-1st-to-12th-question-paper-design-and-syllabus-academic-session-2026-27"
+    },
+    {
+      "title": "HSSC CET Mains Syllabus 2026 PDF Download, Group Wise All 63 Groups, hssc.gov.in",
+      "url": "https://sarkariresultshine.com/hssc-cet-group-c-mains-syllabus-2026-group-wise-pdf-download/",
+      "category": "documents",
+      "slug": "hssc-cet-group-c-mains-syllabus-2026-group-wise-pdf-download"
+    },
+    {
+      "title": "HSSC CET Group D Syllabus 2026",
+      "url": "https://sarkariresultshine.com/hssc-cet-group-d-syllabus-2026/",
+      "category": "documents",
+      "slug": "hssc-cet-group-d-syllabus-2026"
+    },
+    {
+      "title": "UP Police Constable Exam Syllabus / Pattern 2026",
+      "url": "https://sarkariresultshine.com/up-police-constable-exam-syllabus-pattern-2026/",
+      "category": "documents",
+      "slug": "up-police-constable-exam-syllabus-pattern-2026"
+    }
+  ],
   "admissions": [
     {
       "title": "MUIT Lucknow and Noida Campus Admissions 2026 Online Form",
@@ -4944,6 +4951,12 @@ export const scrapedData = {
       "category": "admissions",
       "slug": "upcatet-2026",
       "publishedDate": "11 May 2026"
+    },
+    {
+      "title": "Chandigarh PGI BSc Nursing Admission Form 2026",
+      "url": "https://sarkariresultshine.com/chandigarh-pgi-bsc-nursing-admission-form-2026/",
+      "category": "admissions",
+      "slug": "chandigarh-pgi-bsc-nursing-admission-form-2026"
     }
   ],
   "posts": {
@@ -6000,16 +6013,16 @@ export const scrapedData = {
     "ib-security-assistant-motor-transport-result-2025-26-out": {
       "isExpired": false
     },
-    "rrb-ntpc-cbt-1-scorecard-2026-out": {
-      "isExpired": false
-    },
     "rrb-alp-cbt-1-result-2026-out": {
       "isExpired": false
     },
-    "rrb-group-d-result-2026-date-check-question-paper-analysis": {
+    "rrb-ntpc-cbt-1-result-2026-out": {
       "isExpired": false
     },
-    "rrb-ntpc-cbt-1-result-2026-out": {
+    "rrb-ntpc-cbt-1-scorecard-2026-out": {
+      "isExpired": false
+    },
+    "rrb-group-d-result-2026-date-check-question-paper-analysis": {
       "isExpired": false
     },
     "railway-rrb-alp-cbt-1-result-and-scorecard-2026-out": {
@@ -7201,5 +7214,5 @@ export const scrapedData = {
       "isExpired": false
     }
   },
-  "fetchedAt": "2026-06-14T07:42:43.624Z"
+  "fetchedAt": "2026-06-14T12:07:30.885Z"
 };
