@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import * as fs from "fs";
 import * as path from "path";
 import Link from "next/link";

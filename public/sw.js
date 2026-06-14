@@ -1,5 +1,5 @@
-const CACHE_NAME = "aier-v3";
-const SW_VERSION = self.location.search?.match(/v=([\d.]+)/)?.[1] || "3.0";
+const CACHE_NAME = "aier-v4";
+const SW_VERSION = self.location.search?.match(/v=([\d.]+)/)?.[1] || "4.0";
 
 const STATIC_ASSETS = ["/", "/manifest.webmanifest", "/offline"];
 
@@ -34,9 +34,9 @@ self.addEventListener("fetch", (event) => {
     return event.respondWith(networkFirst(event.request, 5000));
   }
 
-  // Navigation requests (HTML) — network first
+  // Navigation requests (HTML) — network only, never cache
   if (event.request.mode === "navigate") {
-    return event.respondWith(networkFirst(event.request));
+    return event.respondWith(networkOnly(event.request));
   }
 
   // Static assets with content hashes (JS, CSS from Next.js) — cache first
@@ -77,6 +77,10 @@ async function cacheFirst(request) {
     caches.open(CACHE_NAME).then((cache) => cache.put(request, clone));
   }
   return res;
+}
+
+async function networkOnly(request) {
+  return fetch(request);
 }
 
 async function staleWhileRevalidate(request) {

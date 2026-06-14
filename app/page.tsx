@@ -1,15 +1,17 @@
+export const dynamic = "force-dynamic";
+
 import { Header } from "@/components/site/header";
 import { Footer } from "@/components/site/footer";
 import { Hero } from "@/components/site/hero";
-import dynamic from "next/dynamic";
+import dynamicImport from "next/dynamic";
 import { NotificationSubscribe } from "@/components/site/nnotification-subscribe";
 import { StateGrid } from "@/components/site/state-grid";
 import { categorySections, featuredResults } from "@/lib/data";
 import Link from "next/link";
 import { ArrowUpRight, TrendingUp } from "lucide-react";
 
-const QuickAccess = dynamic(() => import("@/components/site/quick-access").then(m => m.QuickAccess), { ssr: true });
-const CategoryColumns = dynamic(() => import("@/components/site/category-columns").then(m => m.CategoryColumns), { ssr: true });
+const QuickAccess = dynamicImport(() => import("@/components/site/quick-access").then(m => m.QuickAccess), { ssr: true });
+const CategoryColumns = dynamicImport(() => import("@/components/site/category-columns").then(m => m.CategoryColumns), { ssr: true });
 
 const faqLd = {
   "@context": "https://schema.org",
