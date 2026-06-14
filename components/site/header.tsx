@@ -1,6 +1,6 @@
 "use client";
 
-import { Search, Sparkles, Languages, ChevronDown, Moon, Sun } from "lucide-react";
+import { Search, Sparkles, Languages, ChevronDown } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useMemo } from "react";
@@ -8,7 +8,6 @@ import { cn } from "@/lib/utils";
 import { Logo } from "@/components/site/logo";
 import { sectionItems } from "@/lib/data";
 import { useLang } from "@/lib/hooks/use-lang";
-import { useTheme } from "@/components/theme-provider";
 import { MobileBottomNav } from "@/components/site/mobile-bottom-nav";
 import { LanguageSelector } from "@/components/site/language-selector";
 import { VoiceSearchBtn } from "@/components/site/voice-search";
@@ -50,7 +49,6 @@ function allTickerItems() {
 export function Header() {
   const [open, setOpen] = useState(false);
   const { lang, setLang, t } = useLang();
-  const { theme, toggle: toggleTheme } = useTheme();
   const pathname = usePathname();
 
   return (
@@ -121,9 +119,6 @@ export function Header() {
 
         <div className="ml-auto flex items-center gap-2 lg:gap-3">
           <LanguageSelector />
-          <button onClick={toggleTheme} className="rounded-full border border-white/20 p-2.5 text-white transition hover:bg-white/15 active:scale-90" aria-label="Toggle dark mode">
-            {theme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
-          </button>
           <BookmarkListBtn />
           <VoiceSearchBtn />
           <Link href="/search" className="hidden items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-bold text-[#0D9488] transition hover:bg-white/90 lg:inline-flex">
