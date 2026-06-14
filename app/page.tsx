@@ -106,9 +106,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        <div className="bg-gradient-to-t from-white to-[#eef2ff]">
-          <StateGrid />
-        </div>
+        <StateGrid />
       </main>
       <Footer />
     </>
