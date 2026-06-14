@@ -180,24 +180,24 @@ export default function ToolsPage() {
               </p>
             </div>
 
-            <div className="grid gap-5 sm:grid-cols-2">
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {tools.map((t) => {
                 const Icon = t.icon;
                 return (
                   <Link
                     key={t.href}
                     href={t.href}
-                    className="group rounded-2xl bg-white p-6 shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-0.5 transition-all"
+                    className="group rounded-2xl bg-white p-4 lg:p-5 shadow-lg border border-gray-100 hover:shadow-xl hover:-translate-y-0.5 transition-all"
                   >
                     <span
-                      className={`inline-flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br ${t.color} ${t.shadow} shadow-sm`}
+                      className={`inline-flex h-9 w-9 lg:h-10 lg:w-10 items-center justify-center rounded-xl bg-gradient-to-br ${t.color} ${t.shadow} shadow-sm`}
                     >
-                      <Icon className="h-5 w-5 text-white" />
+                      <Icon className="h-4.5 w-4.5 lg:h-5 lg:w-5 text-white" />
                     </span>
-                    <h2 className="mt-4 font-semibold text-gray-900 group-hover:text-teal-600 transition-colors">
+                    <h2 className="mt-3 text-sm lg:text-base font-semibold text-gray-900 group-hover:text-teal-600 transition-colors">
                       {t.title}
                     </h2>
-                    <p className="mt-1 text-sm text-gray-500 leading-relaxed">{t.description}</p>
+                    <p className="mt-1 text-xs lg:text-sm text-gray-500 leading-relaxed line-clamp-2">{t.description}</p>
                   </Link>
                 );
               })}
