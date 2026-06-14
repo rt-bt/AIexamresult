@@ -51,13 +51,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
     routes.push({ url: `${base}/state/${state}`, lastModified: now, changeFrequency: "daily" as const, priority: 0.7 });
   });
 
-  // Post pages
+  // Post pages — read actual published date from each post JSON for accurate lastModified
   try {
     const postsDir = path.join(process.cwd(), "data", "posts");
     if (fs.existsSync(postsDir)) {
-      const slugs = fs.readdirSync(postsDir).filter((f) => f.endsWith(".json")).map((f) => f.replace(".json", ""));
-      slugs.forEach((slug) => {
-        routes.push({ url: `${base}/post/${slug}`, lastModified: now, changeFrequency: "weekly" as const, priority: 0.6 });
+      const files = fs.readdirSync(postsDir).filter((f) => f.endsWith(".json"));
+      files.forEach((file) => {
+        const slug = file.replace(".json", "");
+        let lastMod = now;
+        let cat = "";
+        try {
+          const post = JSON.parse(fs.readFileSync(path.join(postsDir, file), "utf-8")) as { publishedDate?: string; category?: string };
+          if (post.publishedDate && post.publishedDate.length > 5) {
+            const d = new Date(post.publishedDate);
+            if (!isNaN(d.getTime())) lastMod = d;
+          }
+          cat = post.category ?? "";
+        } catch {}
+        const priority = cat === "results" ? 0.8 : ["latestJobs","admitCards","answerKeys"].includes(cat) ? 0.7 : 0.6;
+        routes.push({ url: `${base}/post/${slug}`, lastModified: lastMod, changeFrequency: "daily" as const, priority });
       });
     }
   } catch {}

@@ -16,10 +16,16 @@ export const metadata: Metadata = {
     template: "%s | All India Exam Result"
   },
   description:
-    "Find latest government jobs, exam results, admit cards, answer keys and admissions 2026. Verified updates for SSC, UPSC, Railway, Bihar, UP, Rajasthan exams.",
+    "Get fastest government job alerts, exam results, admit cards & answer keys 2026. Verified official updates for SSC, UPSC, Railway RRB, Banking, UP, Bihar & all India exams. Daily new vacancies.",
   applicationName: "All India Exam Result",
   manifest: "/manifest.webmanifest",
-  alternates: { canonical: "/" },
+  alternates: {
+    canonical: "/",
+    languages: {
+      "en-IN": SITE_URL,
+      "hi-IN": SITE_URL,
+    }
+  },
   keywords: [
     "sarkari result", "government jobs", "exam result", "admit card", "answer key",
     "SSC Result", "Railway Result", "UPSC Result", "Bihar Board Result", "CBSE Result",
@@ -227,6 +233,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <meta name="color-scheme" content="light dark" />
         <meta httpEquiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
         <meta httpEquiv="Pragma" content="no-cache" />
         <meta httpEquiv="Expires" content="0" />
