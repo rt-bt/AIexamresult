@@ -36,7 +36,11 @@
     "Junior Assistant: CBT, Typing Test, DV, and Shortlisting",
     "Accountant: CBT, DV, and Shortlisting"
   ],
-  "applicationFee": [],
+  "applicationFee": [
+    "General/ OBC/ EWS : Rs. 250/-",
+    "SC/ ST/ PH Candidates : Rs. 00/-",
+    "Payment Mode: Pay the Exam Fee Through Credit Card, Debit Card, Net Banking, Fee Mode."
+  ],
   "importantLinks": [
     {
       "label": "Download Result (Junior Assistant)",

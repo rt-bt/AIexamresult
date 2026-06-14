@@ -195,6 +195,12 @@ export async function scrapePostDetail(url: string): Promise<PostDetail | null> 
     if (!title) title = $("h1").first().text().trim();
     if (!title) return null;
 
+    // Prefer <title> tag when it's more descriptive
+    const titleTag = $("title").text().trim().replace(/\s*[–-].+\w+\s*$/, "").trim();
+    if (titleTag && titleTag.length > title.length && !titleTag.includes("Just a moment")) {
+      title = titleTag;
+    }
+
     const importantDates: string[] = [];
     const applicationFee: string[] = [];
     const importantLinks: { label: string; url: string | undefined }[] = [];
@@ -273,6 +279,25 @@ export async function scrapePostDetail(url: string): Promise<PostDetail | null> 
           }
         });
       }
+    }
+
+    // Fallback: extract dates/fee from first table (sarkariexam.com format)
+    if ((importantDates.length === 0 || applicationFee.length === 0) && $infoTable.length) {
+      $infoTable.find("tr").each((_, tr) => {
+        const $cells = $(tr).find("td");
+        if ($cells.length === 0) return;
+        // Some rows have colspan with all content in one cell
+        const fullText = $cells.first().text().trim();
+        const lines = fullText.split("\n").map((l) => l.trim()).filter(Boolean);
+        const header = lines[0]?.toLowerCase() || "";
+        const contentLines = lines.slice(1).filter((l) => !l.includes("(adsbygoogle") && !l.includes("window."));
+        if (importantDates.length === 0 && (header.includes("important date") || header.includes("important dates"))) {
+          contentLines.forEach((l) => { if (l) importantDates.push(l); });
+        }
+        if (applicationFee.length === 0 && (header.includes("application fee") || header.includes("exam fee"))) {
+          contentLines.forEach((l) => { if (l) applicationFee.push(l); });
+        }
+      });
     }
 
     // Extract last date

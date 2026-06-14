@@ -4993,6 +4993,7 @@ export const scrapedData = {
       "isExpired": true
     },
     "india-post-gds-2026": {
+      "lastDate": "14 February 2026",
       "isExpired": false
     },
     "upsssc-technical-asst-07-2024": {
@@ -5008,6 +5009,7 @@ export const scrapedData = {
       "isExpired": true
     },
     "nta-ncet-2026": {
+      "lastDate": "10 March 2026",
       "isExpired": false
     },
     "bihar-iti-cat": {
@@ -5015,6 +5017,7 @@ export const scrapedData = {
       "isExpired": true
     },
     "ssc-jht-2025": {
+      "lastDate": "26 June 2025",
       "isExpired": false
     },
     "up-pgt-02-2022": {
@@ -5066,9 +5069,11 @@ export const scrapedData = {
       "isExpired": true
     },
     "upsc-ies-iss-2026": {
+      "lastDate": "03 March 2026",
       "isExpired": false
     },
     "upsc-geo-scientist-2026": {
+      "lastDate": "23 September 2025",
       "isExpired": false
     },
     "up-gnm-get-2026": {
@@ -5100,6 +5105,7 @@ export const scrapedData = {
       "isExpired": true
     },
     "nta-ugc-net-june-2026": {
+      "lastDate": "24 May 2026",
       "isExpired": false
     },
     "upsssc-forest-10-2023": {
@@ -5114,6 +5120,7 @@ export const scrapedData = {
       "isExpired": false
     },
     "nta-neet-ug-2026": {
+      "lastDate": "11 March 2026",
       "isExpired": false
     },
     "sgpgi-nursing-officer": {
@@ -5140,6 +5147,7 @@ export const scrapedData = {
       "isExpired": true
     },
     "uppsc-gic-lecturer-2025": {
+      "lastDate": "12 September 2025",
       "isExpired": false
     },
     "bpsc-auditor-09-2026": {
@@ -5206,6 +5214,7 @@ export const scrapedData = {
       "isExpired": false
     },
     "rpsc-ras-2026": {
+      "lastDate": "03 July 2026",
       "isExpired": false
     },
     "cisf-paramadical-june-2026": {
@@ -5279,9 +5288,11 @@ export const scrapedData = {
       "isExpired": true
     },
     "ssc-cgl-2026": {
+      "lastDate": "22 June 2026",
       "isExpired": false
     },
     "afcat-02-2026": {
+      "lastDate": "19 June 2026",
       "isExpired": false
     },
     "secr-nagpur-apprentices-may26": {
@@ -5297,9 +5308,11 @@ export const scrapedData = {
       "isExpired": true
     },
     "nta-jipmat-2026": {
+      "lastDate": "10 May 2026",
       "isExpired": false
     },
     "nta-cuet-ug-2026": {
+      "lastDate": "04 February 2026",
       "isExpired": false
     },
     "bihar-2yr-bed-2": {
@@ -5331,12 +5344,14 @@ export const scrapedData = {
       "isExpired": true
     },
     "muit-admissions-2026": {
+      "lastDate": "15 July 2026",
       "isExpired": false
     },
     "updeled-admissions-2": {
       "isExpired": false
     },
     "up-cahet-2026": {
+      "lastDate": "14 June 2026",
       "isExpired": false
     },
     "jrdsu-admission-june-2026": {
@@ -5490,6 +5505,7 @@ export const scrapedData = {
       "isExpired": false
     },
     "RRB-Technician-02-2025": {
+      "lastDate": "28 June 2025",
       "isExpired": false
     },
     "RRB-Paramedical-Staff-CEN-03-2025": {
@@ -5596,6 +5612,7 @@ export const scrapedData = {
       "isExpired": false
     },
     "Bihar-Vidhan-Parishad Advt-No_01-to-04_2023": {
+      "lastDate": "16 October 2024",
       "isExpired": false
     },
     "UKSSSC-VDO-Other_Advt-70-2025": {
@@ -5685,6 +5702,7 @@ export const scrapedData = {
       "isExpired": false
     },
     "RRB-NTPC-CEN-06-2024": {
+      "lastDate": "21 September 2024",
       "isExpired": false
     },
     "RRB-NTPC-Graduate-Level-CEN-05_2024": {
@@ -5721,15 +5739,18 @@ export const scrapedData = {
       "isExpired": false
     },
     "HPSC-Motor-Vehicle-Officer-2024": {
+      "lastDate": "02 August 2024",
       "isExpired": false
     },
     "SSC-JHT-Rectt-2024": {
+      "lastDate": "02 August 2024",
       "isExpired": false
     },
     "HPSC-Assistant-Professor-Rectt-2024": {
       "isExpired": false
     },
     "JSSC-Field-Worker-JFWCE-2024": {
+      "lastDate": "01 August 2024",
       "isExpired": false
     },
     "RRB-ALP-CEN-No-01-2026": {
@@ -5749,6 +5770,7 @@ export const scrapedData = {
       "isExpired": false
     },
     "SSC-JE-Exam-2025": {
+      "lastDate": "30 June 2025",
       "isExpired": false
     },
     "UPSSSC-Guard_FireGuard-09-2026": {
@@ -5928,6 +5950,7 @@ export const scrapedData = {
       "isExpired": false
     },
     "BCECE-Entrance-Exam-2026": {
+      "lastDate": "15 April 2026",
       "isExpired": false
     },
     "UPTET-2026": {
@@ -6306,216 +6329,285 @@ export const scrapedData = {
       "isExpired": false
     },
     "rrb-alp-cen-01-2026": {
+      "lastDate": "14 June 2026",
       "isExpired": false
     },
     "upsssc-lower-pcs-2026": {
+      "lastDate": "18 June 2026",
       "isExpired": false
     },
     "allahabad-high-court-ro-aro-ca-2026": {
+      "lastDate": "21 June 2026",
       "isExpired": false
     },
     "rrb-technician-grade-i-iii-2026": {
+      "lastDate": "29 July 2026",
       "isExpired": false
     },
     "upsssc-excise-constable-2026": {
+      "lastDate": "24 June 2026",
       "isExpired": false
     },
     "bpsc-school-teacher-tre-4-0-2026": {
       "isExpired": false
     },
     "up-cnet-2026": {
+      "lastDate": "20 May 2026",
       "isExpired": false
     },
     "railway-rrb-alp-advt-01-2025": {
+      "lastDate": "19 May 2025",
       "isExpired": false
     },
     "upsc-cpf-assistant-commandant-2024": {
+      "lastDate": "14 May 2024",
       "isExpired": false
     },
     "brabu-ug-admission-2026-30": {
+      "lastDate": "25 May 2026",
       "isExpired": false
     },
     "bhu-chs-set-2026": {
+      "lastDate": "20 March 2026",
       "isExpired": false
     },
     "dcece-bihar-polytechnic-2026": {
+      "lastDate": "27 April 2026",
       "isExpired": false
     },
     "up-polytechnic-jeecup-2026": {
+      "lastDate": "10 May 2026",
       "isExpired": false
     },
     "ofss-bihar-11th-admissions-2026": {
+      "lastDate": "25 April 2026",
       "isExpired": false
     },
     "uppsc-pcs-2024": {
+      "lastDate": "29 January 2024",
       "isExpired": false
     },
     "bsf-constable-tradesman-2025": {
+      "lastDate": "23 August 2025",
       "isExpired": false
     },
     "uphesc-assistant-professor-2022": {
+      "lastDate": "29 August 2022",
       "isExpired": false
     },
     "mpesb-group-5-paramedical-post-2026": {
+      "lastDate": "30 March 2026",
       "isExpired": false
     },
     "upsssc-bcg-technician-2024": {
+      "lastDate": "07 August 2024",
       "isExpired": false
     },
     "upsssc-technical-assistant-group-c-2025": {
+      "lastDate": "31 May 2024",
       "isExpired": false
     },
     "dda-group-a-b-c-post-2025": {
+      "lastDate": "05 November 2025",
       "isExpired": false
     },
     "dsssb-various-post-result-2026": {
       "isExpired": false
     },
     "ssc-mts-havaldar-2026": {
+      "lastDate": "24 July 2025",
       "isExpired": false
     },
     "rssb-livestock-assistant-2025": {
+      "lastDate": "01 March 2025",
       "isExpired": false
     },
     "rrb-ntpc-102-inter-level-2025": {
+      "lastDate": "04 December 2025",
       "isExpired": false
     },
     "rrb-ntpc-graduate-level-2026": {
+      "lastDate": "27 November 2025",
       "isExpired": false
     },
     "upsc-engineering-services-pre-2026": {
+      "lastDate": "16 October 2025",
       "isExpired": false
     },
     "nta-swayam-2026": {
+      "lastDate": "13 May 2026",
       "isExpired": false
     },
     "drdo-ceptam-11-2026": {
+      "lastDate": "11 January 2026",
       "isExpired": false
     },
     "up-police-si-2025": {
+      "lastDate": "11 September 2025",
       "isExpired": false
     },
     "hssc-haryana-police-constable-2026": {
+      "lastDate": "19 March 2026",
       "isExpired": false
     },
     "uppsc-veterinary-officer-2025": {
+      "lastDate": "22 January 2026",
       "isExpired": false
     },
     "allahabad-university-pgat-admissions-2026": {
+      "lastDate": "25 May 2026",
       "isExpired": false
     },
     "bihar-police-csbc-constable-gd-2026": {
+      "lastDate": "05 March 2026",
       "isExpired": false
     },
     "indian-army-agniveer-cee-2026": {
+      "lastDate": "10 April 2026",
       "isExpired": false
     },
     "up-gnm-entrance-exam-upget-2026": {
+      "lastDate": "26 May 2026",
       "isExpired": false
     },
     "ssb-head-constable-ministerial-2021": {
+      "lastDate": "28 August 2021",
       "isExpired": false
     },
     "upsssc-forest-guard-wild-guard-2023": {
+      "lastDate": "10 October 2023",
       "isExpired": false
     },
     "up-lt-grade-assistant-teacher-2025": {
+      "lastDate": "28 August 2025",
       "isExpired": false
     },
     "uksssc-vdo-patwari-other-post-2025": {
+      "lastDate": "15 May 2025",
       "isExpired": false
     },
     "rajasthan-state-eligibility-test-set-2026": {
+      "lastDate": "15 July 2026",
       "isExpired": false
     },
     "aiims-cre-group-b-c-2026": {
+      "lastDate": "03 July 2026",
       "isExpired": false
     },
     "central-bank-of-india-apprentices-2026": {
+      "lastDate": "12 June 2026",
       "isExpired": false
     },
     "sbi-apprentice-2026": {
+      "lastDate": "15 June 2026",
       "isExpired": false
     },
     "bank-of-baroda-apprentices-2026": {
+      "lastDate": "19 May 2026",
       "isExpired": false
     },
     "upsssc-vidhan-bhawan-guard-fire-guard-2026": {
+      "lastDate": "29 June 2026",
       "isExpired": false
     },
     "coal-india-cil-management-trainee-2026": {
+      "lastDate": "12 May 2026",
       "isExpired": false
     },
     "cisf-asi-paramedical-staff-2026": {
+      "lastDate": "07 July 2026",
       "isExpired": false
     },
     "rpsc-apo-2026": {
+      "lastDate": "07 July 2026",
       "isExpired": false
     },
     "mppsc-assistant-professor-2026": {
+      "lastDate": "26 June 2026",
       "isExpired": false
     },
     "nalco-non-executive-2026": {
+      "lastDate": "17 June 2026",
       "isExpired": false
     },
     "ssc-junior-engineer-je-2025": {
+      "lastDate": "21 July 2025",
       "isExpired": false
     },
     "ctet-september-2026": {
+      "lastDate": "10 June 2026",
       "isExpired": false
     },
     "hindustan-copper-limited-hcl-executive-2026": {
+      "lastDate": "25 June 2026",
       "isExpired": false
     },
     "up-board-class-10th-12th-2026": {
+      "lastDate": "27 June 2026",
       "isExpired": false
     },
     "upsssc-junior-assistant-advt-12-2024": {
+      "lastDate": "22 January 2025",
       "isExpired": false
     },
     "bihar-cet-b-ed-2026": {
+      "lastDate": "18 May 2026",
       "isExpired": false
     },
     "bihar-police-csbc-prohibition-constable-2025": {
+      "lastDate": "05 November 2025",
       "isExpired": false
     },
     "bihar-bpsc-aes-2025": {
+      "lastDate": "19 September 2025",
       "isExpired": false
     },
     "vksu-ara-ug-admission-2026-30": {
+      "lastDate": "16 June 2026",
       "isExpired": false
     },
     "up-deled-admission-2026": {
+      "lastDate": "08 July 2026",
       "isExpired": false
     },
     "bpsc-stenographer-2026": {
+      "lastDate": "02 February 2026",
       "isExpired": false
     },
     "upsssc-pharmacist-2026": {
+      "lastDate": "31 March 2026",
       "isExpired": false
     },
     "jharkhand-jhtet-2026": {
+      "lastDate": "20 June 2026",
       "isExpired": false
     },
     "upsssc-assistant-boring-technician-2026": {
+      "lastDate": "05 May 2026",
       "isExpired": false
     },
     "bpsc-72nd-2026": {
+      "lastDate": "31 May 2026",
       "isExpired": false
     },
     "uppsc-assistant-professor-2025": {
+      "lastDate": "06 October 2025",
       "isExpired": false
     },
     "up-tgt-2022": {
+      "lastDate": "10 July 2022",
       "isExpired": false
     },
     "bihar-bssc-office-attendant-2022": {
+      "lastDate": "31 October 2022",
       "isExpired": false
     },
     "jceceb-jharkhand-bed-2026": {
+      "lastDate": "25 March 2026",
       "isExpired": false
     },
     "rssb-reet-mains-primary-teacher-2025": {
+      "lastDate": "06 December 2025",
       "isExpired": false
     },
     "aadhar-card-print-verification-correction-form": {
@@ -6538,6 +6630,7 @@ export const scrapedData = {
       "isExpired": false
     },
     "rajasthan-police-constable-recruitment": {
+      "lastDate": "27 August 2023",
       "isExpired": false
     },
     "rrb-ntpc-vacancy-2024": {
@@ -6547,15 +6640,19 @@ export const scrapedData = {
       "isExpired": false
     },
     "upsssc-auditor-assistant-accountant-2026": {
+      "lastDate": "03 August 2026",
       "isExpired": false
     },
     "railway-secr-nagpur-apprentices-2026": {
+      "lastDate": "18 June 2026",
       "isExpired": false
     },
     "nfl-field-representative-2026": {
+      "lastDate": "12 June 2026",
       "isExpired": false
     },
     "air-force-group-c-civilian-offline-form-2026": {
+      "lastDate": "01 June 2026",
       "isExpired": false
     },
     "up-khasra-khatauni-online-form": {
@@ -6565,422 +6662,550 @@ export const scrapedData = {
       "isExpired": false
     },
     "up-scholarship-online-form-2025-26": {
+      "lastDate": "30 October 2025",
       "isExpired": false
     },
     "ssc-otr-correction-notice-2025": {
       "isExpired": false
     },
     "rajasthan-scholarship-scooty-yojana-2025-26-start": {
+      "lastDate": "31 October 2025",
       "isExpired": false
     },
     "iocl-pipelines-apprentice-online-form-2025": {
+      "lastDate": "28 September 2025",
       "isExpired": false
     },
     "cipet-admit-card-2025": {
+      "lastDate": "29 May 2025",
       "isExpired": false
     },
     "iocl-refineries-division-recruitment-2025-online-form": {
+      "lastDate": "02 June 2025",
       "isExpired": false
     },
     "rail-wheel-factory-rwf-apprentices-recruitment-2025": {
+      "lastDate": "01 April 2025",
       "isExpired": false
     },
     "kgmu-non-teaching-recruitment-2025-extended": {
+      "lastDate": "03 March 2025",
       "isExpired": false
     },
     "bsnl-junior-telecom-officer-jto-2026": {
+      "lastDate": "03 July 2026",
       "isExpired": false
     },
     "rssb-computer-instructor-2026": {
+      "lastDate": "23 June 2026",
       "isExpired": false
     },
     "rssb-support-engineer-recruitment-2025": {
       "isExpired": false
     },
     "drdo-rac-scientist-b-online-form-2025-extend-apply-now": {
+      "lastDate": "08 August 2025",
       "isExpired": false
     },
     "air-force-afcat-2-2024-merit-list": {
+      "lastDate": "28 June 2024",
       "isExpired": false
     },
     "indian-army-tgc-142-recruitment-2025-last-date-today": {
+      "lastDate": "29 May 2025",
       "isExpired": false
     },
     "uiic-apprentice-recruitment-2025": {
+      "lastDate": "28 April 2024",
       "isExpired": false
     },
     "bihar-vidhan-parishad-2023": {
+      "lastDate": "21 August 2023",
       "isExpired": false
     },
     "rajasthan-ptet-2026": {
+      "lastDate": "20 March 2026",
       "isExpired": false
     },
     "sgpgi-nursing-officer-and-non-teaching-post-2025": {
+      "lastDate": "31 July 2025",
       "isExpired": false
     },
     "bsf-hcm-asi-steno-2024": {
+      "lastDate": "08 July 2024",
       "isExpired": false
     },
     "up-pgt-2022": {
+      "lastDate": "10 July 2022",
       "isExpired": false
     },
     "rbi-grade-b-2026": {
+      "lastDate": "20 May 2026",
       "isExpired": false
     },
     "bihar-bpsc-auditor-2026": {
+      "lastDate": "26 February 2026",
       "isExpired": false
     },
     "haryana-htet-2026": {
+      "lastDate": "05 January 2026",
       "isExpired": false
     },
     "upsssc-exam-calendar-2026": {
       "isExpired": false
     },
     "upsssc-up-pollution-control-board-various-post-2026": {
+      "lastDate": "29 April 2026",
       "isExpired": false
     },
     "dsssb-various-post-2025": {
       "isExpired": false
     },
     "bsnl-senior-executive-trainee-set-2026": {
+      "lastDate": "30 April 2026",
       "isExpired": false
     },
     "bseb-bihar-d-el-ed-2026-28": {
+      "lastDate": "24 January 2026",
       "isExpired": false
     },
     "rrb-section-controller-2025": {
+      "lastDate": "14 October 2025",
       "isExpired": false
     },
     "mpesb-forest-guard-jail-prahari-2026": {
+      "lastDate": "30 April 2026",
       "isExpired": false
     },
     "indian-navy-agniveer-apprentices-inet-2026": {
+      "lastDate": "29 June 2026",
       "isExpired": false
     },
     "delhi-dsssb-various-post-2026": {
+      "lastDate": "15 July 2026",
       "isExpired": false
     },
     "ssc-stenographer-group-c-d-2026": {
+      "lastDate": "15 May 2026",
       "isExpired": false
     },
     "allahabad-high-court-research-associates-2026": {
+      "lastDate": "20 June 2026",
       "isExpired": false
     },
     "rpsc-school-lecturer-special-2026": {
+      "lastDate": "30 June 2026",
       "isExpired": false
     },
     "railway-rrb-technician-2025": {
+      "lastDate": "07 August 2025",
       "isExpired": false
     },
     "indian-navy-102-b-tech-cadet-entry-january-2027": {
+      "lastDate": "18 June 2026",
       "isExpired": false
     },
     "nta-csir-ugc-net-june-2026": {
+      "lastDate": "19 June 2026",
       "isExpired": false
     },
     "bihar-police-csbc-constable-2025": {
+      "lastDate": "25 April 2025",
       "isExpired": false
     },
     "up-anganwadi-bharti-2026": {
       "isExpired": false
     },
     "bpssc-bihar-police-asi-technical-2026": {
+      "lastDate": "21 June 2026",
       "isExpired": false
     },
     "btsc-food-analyst-2026": {
+      "lastDate": "19 June 2026",
       "isExpired": false
     },
     "indian-airforce-agniveer-vayu-02-2026": {
+      "lastDate": "04 August 2025",
       "isExpired": false
     },
     "ssc-delhi-police-hcm-2025": {
+      "lastDate": "20 October 2025",
       "isExpired": false
     },
     "rssb-reet-mains-upper-teacher-2025": {
+      "lastDate": "06 December 2025",
       "isExpired": false
     },
     "dece-le-bihar-diploma-2026": {
+      "lastDate": "27 April 2026",
       "isExpired": false
     },
     "bihar-iti-cat-2026": {
+      "lastDate": "27 April 2026",
       "isExpired": false
     },
     "bihar-vidhan-parishad-driver-office-attendant-2025": {
+      "lastDate": "20 October 2025",
       "isExpired": false
     },
     "nta-nift-2025": {
+      "lastDate": "13 January 2026",
       "isExpired": false
     },
     "ib-acio-grade-ii-executive-2025": {
+      "lastDate": "10 August 2025",
       "isExpired": false
     },
     "rrb-ntpc-graduate-level-05-2024": {
+      "lastDate": "20 October 2024",
       "isExpired": false
     },
     "mppsc-ses-2025": {
+      "lastDate": "19 February 2026",
       "isExpired": false
     },
     "ukpsc-upper-pcs-2024-mains-result": {
+      "lastDate": "03 April 2024",
       "isExpired": false
     },
     "hpsc-haryana-civil-service-hsc-2026": {
+      "lastDate": "26 February 2026",
       "isExpired": false
     },
     "ibps-rrb-xiv-officer-scale-i-ii-iii-2026": {
+      "lastDate": "28 September 2025",
       "isExpired": false
     },
     "iit-jee-advanced-2026": {
+      "lastDate": "02 May 2026",
       "isExpired": false
     },
     "rrb-paramedical-staff-cen-no-03-2025": {
+      "lastDate": "18 September 2025",
       "isExpired": false
     },
     "bihar-bceceb-senior-resident-tutor-2026": {
+      "lastDate": "30 April 2026",
       "isExpired": false
     },
     "upsssc-junior-assistant-2025": {
+      "lastDate": "03 October 2023",
       "isExpired": false
     },
     "sbi-trade-finance-officer-2026": {
+      "lastDate": "02 June 2026",
       "isExpired": false
     },
     "nfl-management-trainee-2026": {
+      "lastDate": "12 June 2026",
       "isExpired": false
     },
     "upsssc-cane-supervisor-2026": {
+      "lastDate": "28 July 2026",
       "isExpired": false
     },
     "indian-army-102-tes-56th-entry-2026": {
+      "lastDate": "12 June 2026",
       "isExpired": false
     },
     "mppsc-scientific-officer-biology-2026": {
+      "lastDate": "20 May 2026",
       "isExpired": false
     },
     "mp-guest-teacher-online-form-2026": {
+      "lastDate": "11 May 2026",
       "isExpired": false
     },
     "coal-india-cil-management-trainee-mt-through-gate-2026": {
+      "lastDate": "08 May 2026",
       "isExpired": false
     },
     "upessc-assistant-professor-bed-2026": {
+      "lastDate": "21 June 2025",
       "isExpired": false
     },
     "up-police-01-lakh-new-bharti-2026": {
       "isExpired": false
     },
     "upsssc-forest-guard-wild-life-guard-2026": {
+      "lastDate": "20 July 2026",
       "isExpired": false
     },
     "upsssc-havildar-instructor-2026": {
+      "lastDate": "09 July 2026",
       "isExpired": false
     },
     "upsssc-platoon-commander-block-organizer-2026": {
+      "lastDate": "06 July 2026",
       "isExpired": false
     },
     "mppsc-assistant-town-planner-2026": {
+      "lastDate": "31 July 2026",
       "isExpired": false
     },
     "bank-of-maharashtra-apprentice-recruitment-2026": {
+      "lastDate": "25 January 2026",
       "isExpired": false
     },
     "sbi-bank-so-recruitment-2026": {
+      "lastDate": "10 January 2026",
       "isExpired": false
     },
     "bank-of-india-apprentice-recruitment-2026": {
+      "lastDate": "10 January 2026",
       "isExpired": false
     },
     "up-police-jail-warder-recruitment-2025-sarkari-result-notice-out": {
       "isExpired": false
     },
     "railway-rrc-nwr-apprentice-online-form-2025": {
+      "lastDate": "02 November 2025",
       "isExpired": false
     },
     "canara-bank-apprentice-recruitment-2025": {
+      "lastDate": "12 October 2025",
       "isExpired": false
     },
     "bihar-shs-laboratory-technician-online-form-2025": {
       "isExpired": false
     },
     "bombay-high-court-personal-assistant-recruitment-2025": {
+      "lastDate": "01 September 2025",
       "isExpired": false
     },
     "railway-rrc-er-apprentices-recruitment-2025": {
+      "lastDate": "13 September 2025",
       "isExpired": false
     },
     "bank-of-baroda-sales-manager-officer-recruitment-2025": {
+      "lastDate": "26 August 2025",
       "isExpired": false
     },
     "indian-army-jag-123rd-course-april-2026-online-form": {
+      "lastDate": "03 September 2025",
       "isExpired": false
     },
     "up-police-otr-registration-2025": {
       "isExpired": false
     },
     "uppsc-statistics-officer-assistant-geologist-direct-recruitment-2025": {
+      "lastDate": "21 July 2025",
       "isExpired": false
     },
     "rssb-lab-attendant-recruitment-2025": {
+      "lastDate": "09 August 2025",
       "isExpired": false
     },
     "ibps-hindi-officer-recruitment-2025": {
+      "lastDate": "15 July 2025",
       "isExpired": false
     },
     "hvf-junior-technician-online-form-2025": {
+      "lastDate": "19 July 2025",
       "isExpired": false
     },
     "bihar-shs-ayush-medical-officer-recruitment-2025-start": {
+      "lastDate": "15 June 2025",
       "isExpired": false
     },
     "csir-iitr-junior-stenographer-recruitment-2025-apply": {
+      "lastDate": "31 May 2025",
       "isExpired": false
     },
     "army-102-tes-54-recruitment-2025-start-apply": {
+      "lastDate": "12 June 2025",
       "isExpired": false
     },
     "mp-high-court-class-iv-recruitment-2025-apply": {
+      "lastDate": "28 May 2025",
       "isExpired": false
     },
     "uppsc-various-post-direct-recruitment-2025-apply-here": {
+      "lastDate": "09 June 2025",
       "isExpired": false
     },
     "kgmu-nursing-officer-recruitment-2025-online-apply": {
+      "lastDate": "25 May 2025",
       "isExpired": false
     },
     "uksssc-assistant-accountant-recruitment-2025": {
+      "lastDate": "29 April 2025",
       "isExpired": false
     },
     "up-board-scrutiny-form-2025": {
+      "lastDate": "19 May 2025",
       "isExpired": false
     },
     "bhu-junior-clerk-online-form-2025-extend": {
+      "lastDate": "30 April 2025",
       "isExpired": false
     },
     "army-afms-recruitment-2025": {
+      "lastDate": "12 May 2025",
       "isExpired": false
     },
     "allahabad-university-teaching-recruitment-2025": {
+      "lastDate": "02 May 2025",
       "isExpired": false
     },
     "mppsc-food-safety-officer-fso-recruitment-2025": {
+      "lastDate": "27 April 2025",
       "isExpired": false
     },
     "uppsc-various-post-direct-recruitment-2025": {
+      "lastDate": "24 April 2025",
       "isExpired": false
     },
     "ahc-research-associates-recruitment-2025-start": {
+      "lastDate": "01 April 2025",
       "isExpired": false
     },
     "upsc-assistant-professor-recruitment-2025": {
+      "lastDate": "27 March 2025",
       "isExpired": false
     },
     "union-bank-of-india-apprentice-recruitment-2025-date-extend": {
+      "lastDate": "12 March 2025",
       "isExpired": false
     },
     "mppsc-assistant-professor-recruitment-2025": {
+      "lastDate": "26 March 2025",
       "isExpired": false
     },
     "indian-army-ncc-special-entry-scheme-58th-course-recruitment-2025-start": {
+      "lastDate": "15 March 2025",
       "isExpired": false
     },
     "ntpc-assistant-executive-recruitment-2025": {
+      "lastDate": "01 March 2025",
       "isExpired": false
     },
     "up-scholarship-application-status-2025": {
+      "lastDate": "31 January 2025",
       "isExpired": false
     },
     "up-aganwadi-bharti-online-form-2025-updated": {
       "isExpired": false
     },
     "indian-navy-incet-civilian-01-2025": {
+      "lastDate": "18 July 2025",
       "isExpired": false
     },
     "ssc-delhi-police-driver-2026": {
+      "lastDate": "15 October 2025",
       "isExpired": false
     },
     "upsc-civil-services-ias-ifs-pre-2026": {
+      "lastDate": "27 February 2026",
       "isExpired": false
     },
     "upsssc-up-lekhpal-2026": {
+      "lastDate": "28 January 2026",
       "isExpired": false
     },
     "ncert-group-a-b-c-2026": {
+      "lastDate": "02 February 2026",
       "isExpired": false
     },
     "dsssb-various-post-exam-answer-key-2026": {
       "isExpired": false
     },
     "mpesb-nursing-officer-sister-tutor-2026": {
+      "lastDate": "20 April 2026",
       "isExpired": false
     },
     "bihar-vidhan-parishad-pa-deo-ldc-stenographer-2026": {
+      "lastDate": "05 January 2026",
       "isExpired": false
     },
     "emrs-teaching-non-teaching-2025": {
+      "lastDate": "28 October 2025",
       "isExpired": false
     },
     "kvs-nvs-teaching-non-teaching-2026": {
+      "lastDate": "11 December 2025",
       "isExpired": false
     },
     "mpesb-mp-pat-2026": {
+      "lastDate": "07 April 2026",
       "isExpired": false
     },
     "upsssc-junior-engineer-2024": {
+      "lastDate": "13 July 2024",
       "isExpired": false
     },
     "ncl-assistant-foreman-2026": {
+      "lastDate": "05 March 2026",
       "isExpired": false
     },
     "rpsc-assistant-agriculture-engineer-2025": {
+      "lastDate": "26 August 2025",
       "isExpired": false
     },
     "rpsc-veterinary-officer-2025": {
+      "lastDate": "03 September 2025",
       "isExpired": false
     },
     "rssb-aayush-officer-2026": {
+      "lastDate": "08 November 2025",
       "isExpired": false
     },
     "jssc-excise-constable-jecce-2023": {
+      "lastDate": "10 July 2023",
       "isExpired": false
     },
     "ssc-chsl-2025": {
+      "lastDate": "18 July 2025",
       "isExpired": false
     },
     "upsssc-female-health-worker-2026": {
+      "lastDate": "27 November 2024",
       "isExpired": false
     },
     "jpsc-civil-services-pre-2026": {
+      "lastDate": "20 February 2026",
       "isExpired": false
     },
     "rpsc-si-platoon-commander-2025": {
+      "lastDate": "08 September 2025",
       "isExpired": false
     },
     "bihar-bpsc-special-school-teacher-2025": {
+      "lastDate": "28 July 2025",
       "isExpired": false
     },
     "bpsc-aso-mains-2025": {
+      "lastDate": "23 June 2025",
       "isExpired": false
     },
     "airforce-group-y-medical-assistant-airmen-intake-01-2027": {
+      "lastDate": "01 February 2026",
       "isExpired": false
     },
     "upsssc-stenographer-2023": {
+      "lastDate": "06 November 2023",
       "isExpired": false
     },
     "upsssc-stenographer-2024": {
+      "lastDate": "25 January 2025",
       "isExpired": false
     },
     "jssc-madhyamik-acharya-jtmacce-2026": {
+      "lastDate": "29 July 2025",
       "isExpired": false
     },
     "ssc-phase-13-2026": {
+      "lastDate": "23 June 2025",
       "isExpired": false
     },
     "bpsc-dso-2026": {
+      "lastDate": "26 September 2025",
       "isExpired": false
     },
     "uppsc-staff-nurse-unani-2025": {
+      "lastDate": "03 July 2025",
       "isExpired": false
     }
   },
-  "fetchedAt": "2026-06-14T06:21:51.610Z"
+  "fetchedAt": "2026-06-14T06:39:54.193Z"
 };
