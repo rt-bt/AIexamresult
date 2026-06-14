@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import nodemailer from "nodemailer";
 
 export async function POST(req: Request) {
   try {
@@ -10,10 +11,31 @@ export async function POST(req: Request) {
 
     const fullMsg = `Name: ${name}\nEmail: ${email}\nSubject: ${subject || "N/A"}\nMessage: ${message}`;
 
-    // Try using the built-infetch to send via a simple webhook or log
     console.log("=== Contact Form Submission ===");
     console.log(fullMsg);
     console.log("===============================");
+
+    const smtpHost = process.env.SMTP_HOST;
+    const smtpPort = process.env.SMTP_PORT;
+    const smtpUser = process.env.SMTP_USER;
+    const smtpPass = process.env.SMTP_PASS;
+    const notifyEmail = process.env.NOTIFY_EMAIL;
+
+    if (smtpHost && smtpUser && smtpPass && notifyEmail) {
+      const transporter = nodemailer.createTransport({
+        host: smtpHost,
+        port: Number(smtpPort) || 587,
+        secure: Number(smtpPort) === 465,
+        auth: { user: smtpUser, pass: smtpPass },
+      });
+      await transporter.sendMail({
+        from: `"${name}" <${smtpUser}>`,
+        replyTo: email,
+        to: notifyEmail,
+        subject: `[AI Exam Result] ${subject || "Contact Form"} from ${name}`,
+        text: fullMsg,
+      });
+    }
 
     return NextResponse.json({ success: true });
   } catch {
