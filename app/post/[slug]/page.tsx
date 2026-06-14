@@ -6,7 +6,7 @@ import { Header } from "@/components/site/header";
 import { Footer } from "@/components/site/footer";
 import { BookmarkBtn } from "@/components/site/bookmark-btn";
 import { ShareButtons } from "@/components/site/share-buttons";
-import { getPostBySlug, parseDate } from "@/lib/data";
+import { getPostBySlug, parseDate, sectionItems } from "@/lib/data";
 import { CalendarDays, ExternalLink, AlertTriangle, CheckCircle, ChevronRight, BadgeInfo, Banknote, ArrowUpRight, Gauge, Users, Clock, GraduationCap, IndianRupee, FileText, Mail, Download, Bell } from "lucide-react";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.aiexamresult.com";
@@ -759,6 +759,28 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                     <ShareButtons title={title} url={`${SITE_URL}/post/${slug}`} />
                   </div>
                 </div>
+
+                {/* Related Posts */}
+                {(() => {
+                  const cat = post.category || "";
+                  const related = Object.values(sectionItems).flat()
+                    .filter(p => p.slug !== slug && (p.category === cat || p.title.toLowerCase().includes(title.split(" ").slice(0,2).join(" ").toLowerCase())))
+                    .slice(0, 5);
+                  if (related.length === 0) return null;
+                  return (
+                    <div className="rounded-2xl border border-gray-200 bg-white p-4 shadow-sm">
+                      <h3 className="text-xs font-bold uppercase tracking-wider text-gray-400 mb-3">Related Posts</h3>
+                      <div className="space-y-3">
+                        {related.map((p, i) => (
+                          <Link key={i} href={`/post/${p.slug}`} className="group block">
+                            <p className="text-sm font-semibold text-gray-700 transition group-hover:text-brand line-clamp-2">{p.title}</p>
+                            <p className="mt-0.5 text-xs text-gray-400">{p.category} · {p.date}</p>
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  );
+                })()}
               </div>
             </aside>
 

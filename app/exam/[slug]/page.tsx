@@ -71,6 +71,9 @@ function titleCase(slug: string): string {
   return slug.split("-").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
 }
 
+export const revalidate = 3600;
+export const dynamicParams = true;
+
 export async function generateStaticParams() {
   return Object.keys(examNames).map((slug) => ({ slug }));
 }

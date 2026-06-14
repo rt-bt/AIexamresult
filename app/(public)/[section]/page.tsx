@@ -4,6 +4,9 @@ import { Footer } from "@/components/site/footer";
 import { SectionContent } from "@/components/site/section-content";
 import { sectionItems } from "@/lib/data";
 
+export const revalidate = 3600;
+export const dynamicParams = true;
+
 const sections: Record<string, string> = {
   results: "Results",
   "latest-jobs": "Latest Government Jobs",
