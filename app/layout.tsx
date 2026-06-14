@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 import { Providers } from "@/components/providers";
 import { InstallBanner } from "@/components/site/install-banner";
 import "./globals.css";
@@ -149,6 +150,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <script dangerouslySetInnerHTML={{ __html: `"serviceWorker"in navigator&&window.addEventListener("load",function(){navigator.serviceWorker.register("/sw.js")})` }} />
         <script dangerouslySetInnerHTML={{ __html: `addEventListener("load",function(){fetch("/api/analytics/track?path="+encodeURIComponent(location.pathname)+"&ref="+encodeURIComponent(document.referrer),{signal:AbortSignal.timeout(2000)}).catch(function(){})})` }} />
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-9MS5NTFB7W" strategy="afterInteractive" />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-9MS5NTFB7W');`}
+        </Script>
       </head>
       <body className={`${inter.variable} font-sans antialiased`}>
         <Providers>{children}</Providers>
