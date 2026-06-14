@@ -78,11 +78,14 @@ export default function HomePage() {
 
         <NotificationSubscribe />
 
-        <section className="bg-gradient-to-b from-white to-[#f0fdfa] py-12">
+        <section className="bg-gradient-to-b from-slate-50 to-white py-16">
           <div className="container-page">
-            <h2 className="text-center text-2xl font-black text-ink">Frequently Asked Questions</h2>
-            <p className="mx-auto mt-2 max-w-xl text-center text-slate-500">Quick answers about government exams in India</p>
-            <div className="mx-auto mt-8 grid max-w-3xl gap-4" itemScope itemType="https://schema.org/FAQPage">
+            <div className="mx-auto max-w-2xl text-center">
+              <span className="inline-block rounded-full bg-teal-100 px-3 py-1 text-xs font-bold tracking-wider text-teal-700 uppercase">FAQ</span>
+              <h2 className="mt-3 text-2xl font-black text-slate-800 dark:text-white">Frequently Asked Questions</h2>
+              <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">Quick answers about government exams in India</p>
+            </div>
+            <div className="mx-auto mt-10 grid max-w-3xl gap-5" itemScope itemType="https://schema.org/FAQPage">
               {[
                 { q: "What is All India Exam Result?", a: "All India Exam Result is India's fastest government exam information portal providing verified updates on Sarkari results, job notifications, admit cards, answer keys and admissions across SSC, UPSC, Railway, Banking, State exams and board results." },
                 { q: "How often is exam data updated?", a: "Our data is synced every 30 minutes directly from official government sources to ensure you get the latest exam notifications, results, admit cards and answer keys." },
@@ -91,12 +94,21 @@ export default function HomePage() {
                 { q: "Which government exams are covered?", a: "We cover SSC (CGL, CHSL, MTS, GD, JE, CPO), UPSC (IAS, NDA, CDS), Railway (RRB NTPC, ALP, Group D), Banking (IBPS, SBI, RBI), Teaching (CTET, UPTET), Defence (Army, Navy, Air Force), State govt jobs and board exam results." },
                 { q: "Is this an official government website?", a: "No, this is an independent information portal. All data is sourced from publicly available government notifications. We always link to official websites for final verification." },
               ].map((faq, i) => (
-                <div key={i} className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
-                  <h3 itemProp="name" className="font-bold text-slate-800">{faq.q}</h3>
-                  <div itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
-                    <p itemProp="text" className="mt-2 text-sm leading-6 text-slate-500">{faq.a}</p>
+                <details
+                  key={i}
+                  className="group overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-200 open:shadow-md"
+                  itemScope itemProp="mainEntity" itemType="https://schema.org/Question"
+                >
+                  <summary className="flex cursor-pointer items-center justify-between gap-4 px-6 py-4 text-sm font-bold text-slate-800 transition-colors hover:text-teal-600 [&::-webkit-details-marker]:hidden">
+                    <span itemProp="name">{faq.q}</span>
+                    <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-slate-100 text-slate-400 transition-all duration-200 group-open:rotate-180 group-open:bg-teal-100 group-open:text-teal-600">
+                      <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                    </span>
+                  </summary>
+                  <div className="border-t border-slate-100 px-6 pb-5 pt-4" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
+                    <p itemProp="text" className="text-sm leading-6 text-slate-600">{faq.a}</p>
                   </div>
-                </div>
+                </details>
               ))}
             </div>
           </div>
