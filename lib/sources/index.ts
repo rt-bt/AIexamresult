@@ -86,11 +86,13 @@ export async function scrapeSarkariResultShine(): Promise<ScrapedItem[]> {
 
 function categorizeTitle(title: string): string {
   const lower = title.toLowerCase();
-  if (lower.includes("admit card")) return "admitCards";
-  if (lower.includes("answer key")) return "answerKeys";
+  if (lower.includes("admit card") || lower.includes("exam city") || lower.includes("hall ticket") || lower.includes("call letter")) return "admitCards";
+  if (lower.includes("answer key") || lower.includes("answer-key") || lower.includes("response sheet")) return "answerKeys";
+  if (lower.includes("cutoff") || lower.includes("cut-off") || lower.includes("merit list") || lower.includes("merit-list")) return "results";
   if (lower.includes("result") && !lower.includes("online form")) return "results";
-  if (lower.includes("online form") || lower.includes("apply") || lower.includes("recruitment") || lower.includes("apprentice") || lower.includes("posts")) return "latestJobs";
-  if (lower.includes("admission") || lower.includes("merit list") || lower.includes("counselling")) return "admissions";
+  if (lower.includes("vacancy") || lower.includes("online form") || lower.includes("apply") || lower.includes("recruitment") || lower.includes("apprentice") || lower.includes("posts")) return "latestJobs";
+  if (lower.includes("admission") || lower.includes("counselling") || lower.includes("counseling") || lower.includes("schedule")) return "admissions";
+  if (lower.includes("syllabus") || lower.includes("syllabus") || lower.includes("exam pattern") || lower.includes("documents")) return "documents";
   return "results";
 }
 
@@ -116,8 +118,10 @@ export async function scrapeSarkariExam(): Promise<ScrapedItem[]> {
         let href = $a.attr("href") || "";
         const text = $a.text().trim();
         if (!href || text.length < 15 || seen.has(href)) return;
-        if (!href.includes("sarkariexam.com") || href.includes("#") || href.includes("facebook") || href.includes("twitter") || href.includes("telegram") || href.startsWith("javascript")) return;
+        if (!href.includes("sarkariexam.com") || href.includes("#") || href.includes("facebook") || href.includes("twitter") || href.includes("telegram") || href.includes("instagram") || href.includes("youtube") || href.includes("whatsapp") || href.startsWith("javascript")) return;
         if (href.includes("/category/") || href.includes("/tag/") || href.includes("/author/") || href.includes("/page/") || href.includes("feed") || href.includes("comment") || href.includes("replytocom") || href.includes("sarkariresult")) return;
+        const lowerText = text.toLowerCase();
+        if (lowerText.includes("@instagram") || lowerText.includes("@facebook") || lowerText.includes("@twitter") || lowerText.includes("join our") || lowerText.includes("follow us")) return;
 
         seen.add(href);
         if (!href.startsWith("http")) href = "https://www.sarkariexam.com" + (href.startsWith("/") ? href : "/" + href);

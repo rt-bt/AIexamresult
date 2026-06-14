@@ -300,6 +300,90 @@ export async function scrapePostDetail(url: string): Promise<PostDetail | null> 
       });
     }
 
+    // Fallback: extract importantLinks from div.newtable2 (sarkariexam.com format)
+    if (importantLinks.length === 0) {
+      const newtable = $("div.newtable2 table");
+      if (newtable.length) {
+        newtable.find("tr").each((_, tr) => {
+          const tds = $(tr).find("td");
+          if (tds.length >= 2) {
+            const label = $(tds[0]).text().trim();
+            if (label && label.length < 80) {
+              const linkUrl = $(tds[1]).find("a").attr("href");
+              const lower = label.toLowerCase();
+              if (!spamLabels.some(s => lower.includes(s)) && !lower.includes("click here") && !lower.includes("mobile app")) {
+                importantLinks.push({ label, url: linkUrl });
+              }
+            }
+          }
+        });
+      }
+      // Also check for section with linked buttons (common on many sites)
+      if (importantLinks.length === 0) {
+        $("h2, h3, h4").each((_, h) => {
+          const $h = $(h);
+          const txt = $h.text().trim().toLowerCase();
+          if (txt.includes("important links") || txt.includes("useful links")) {
+            const $next = $h.nextAll("table, div, ul").first();
+            if ($next.length) {
+              $next.find("a[href]").each((_, a) => {
+                const $a = $(a);
+                const label = $a.text().trim();
+                const linkUrl = $a.attr("href");
+                if (label && label.length < 80 && linkUrl && !linkUrl.includes("sarkariresult") && !spamLabels.some(s => label.toLowerCase().includes(s))) {
+                  importantLinks.push({ label, url: linkUrl });
+                }
+              });
+            }
+          }
+        });
+      }
+    }
+
+    // Better publishedDate extraction for all sources
+    if (!publishedDate) {
+      const datePattern = /(\d{1,2}\s+(?:January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{4})/i;
+      const postDateEl = $("time[datetime]").first().attr("datetime");
+      if (postDateEl) {
+        const d = new Date(postDateEl);
+        if (!isNaN(d.getTime())) {
+          publishedDate = d.toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric" });
+        }
+      }
+      if (!publishedDate) {
+        const metaDate = $('meta[property="article:published_time"]').attr("content") || $('meta[name="pubdate"]').attr("content") || $('meta[name="publish-date"]').attr("content");
+        if (metaDate) {
+          const d = new Date(metaDate);
+          if (!isNaN(d.getTime())) {
+            publishedDate = d.toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric" });
+          }
+        }
+      }
+      // Last resort: scan first few paragraphs for a date
+      if (!publishedDate) {
+        $("p").slice(0, 3).each((_, p) => {
+          const txt = $(p).text().trim();
+          const m = txt.match(datePattern);
+          if (m && !txt.toLowerCase().includes("last date") && !txt.toLowerCase().includes("fee")) {
+            publishedDate = m[1];
+            return false;
+          }
+        });
+      }
+    }
+
+    // Better intro extraction
+    if (!intro) {
+      const $firstP = $("p").first();
+      const firstText = $firstP.text().trim();
+      if (firstText.length > 30 && firstText.length < 500) intro = firstText;
+      if (!intro) {
+        const $introEl = $("div.entry-content p, div.post-content p, article p").first();
+        const t = $introEl.text().trim();
+        if (t.length > 30) intro = t;
+      }
+    }
+
     // Extract last date
     const lastDate = parseLastDate(importantDates);
 

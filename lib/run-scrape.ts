@@ -56,9 +56,15 @@ async function main() {
         const post = result.value;
         const safeSlug = sanitizeSlug(post.slug);
         post.slug = safeSlug;
-        posts[safeSlug] = post;
         const listingItem = uniqueItems.find((u) => u.url === post.url);
-        if (listingItem) { listingItem.publishedDate = post.publishedDate; listingItem.slug = safeSlug; }
+        if (listingItem) {
+          listingItem.publishedDate = post.publishedDate;
+          listingItem.slug = safeSlug;
+          if (post.category !== listingItem.category) {
+            post.category = listingItem.category;
+          }
+        }
+        posts[safeSlug] = post;
         fs.writeFileSync(path.join(postsDir, `${safeSlug}.json`), JSON.stringify(post, null, 2), "utf-8");
       }
     }
