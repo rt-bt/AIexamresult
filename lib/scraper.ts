@@ -221,7 +221,7 @@ export async function scrapePostDetail(url: string): Promise<PostDetail | null> 
         if (txt.includes("application fee")) {
           const $td = $h.closest("td");
           $td.find("ul li").each((_, li) => {
-            const t = $(li).text().trim();
+            const t = $(li).text().trim().replace(/[^\x20-\x7E₹]/g, "").replace(/�/g, "").replace(/[\uFFFD\u2013\u2014]/g, "-");
             if (t) applicationFee.push(t);
           });
         }
@@ -294,8 +294,9 @@ export async function scrapePostDetail(url: string): Promise<PostDetail | null> 
         if (importantDates.length === 0 && (header.includes("important date") || header.includes("important dates"))) {
           contentLines.forEach((l) => { if (l) importantDates.push(l); });
         }
-        if (applicationFee.length === 0 && (header.includes("application fee") || header.includes("exam fee"))) {
-          contentLines.forEach((l) => { if (l) applicationFee.push(l); });
+        if ((applicationFee.length === 0 || applicationFee.length < 3) && (header.includes("application fee") || header.includes("exam fee"))) {
+          const cleanLines = contentLines.map(l => l.replace(/[^\x20-\x7E₹]/g, "").replace(/�/g, "").replace(/[\uFFFD\u2013\u2014]/g, "-").trim()).filter(Boolean);
+          cleanLines.forEach((l) => { if (l) applicationFee.push(l); });
         }
       });
     }

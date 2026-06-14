@@ -6406,7 +6406,6 @@ export const scrapedData = {
       "isExpired": false
     },
     "dsssb-various-post-result-2026": {
-      "lastDate": "05 May 2025",
       "isExpired": false
     },
     "ssc-mts-havaldar-2026": {
@@ -6621,7 +6620,6 @@ export const scrapedData = {
       "isExpired": false
     },
     "railway-rrb-technician-exam-date-admit-card-2024": {
-      "lastDate": "29 December 2024",
       "isExpired": false
     },
     "rajasthan-police-constable-recruitment": {
@@ -7202,5 +7200,5 @@ export const scrapedData = {
       "isExpired": false
     }
   },
-  "fetchedAt": "2026-06-14T07:13:32.898Z"
+  "fetchedAt": "2026-06-14T07:30:34.200Z"
 };

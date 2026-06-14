@@ -95,12 +95,12 @@ function extractFeeFromHtml(html: string): string[] {
   const lines = html.split("\n");
   let inSection = false;
   for (const line of lines) {
-    const clean = line.replace(/<[^>]*>/g, "").trim();
+    const clean = line.replace(/<[^>]*>/g, "").replace(/[^\x20-\x7E₹]/g, "").replace(/�/g, "").replace(/[\uFFFD\u2013\u2014]/g, "-").trim();
     if (feeHeaders.test(clean) && !inSection) { inSection = true; continue; }
     if (inSection) {
       if (/Important Dates|Age Limit|Vacancy Details|Important Links/i.test(clean)) break;
       if (clean.startsWith("•") || clean.startsWith("-") || clean.startsWith("<li")) {
-        const text = clean.replace(/^[•\-]\s*/, "");
+        const text = clean.replace(/^[•\-]\s*/, "").replace(/[^\x20-\x7E₹]/g, "").replace(/�/g, "").trim();
         if (text && text.length > 3) fees.push(text);
       }
     }
@@ -416,13 +416,26 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                     <table className="w-full text-sm">
                       <thead>
                         <tr className="border-b border-orange-200">
-                          <th className="py-3 pr-4 text-left text-xs font-bold uppercase tracking-wider text-gray-500 w-10">#</th>
-                          <th className="py-3 text-left text-xs font-bold uppercase tracking-wider text-gray-500">Category & Fee Details</th>
+                          <th className="py-3 pr-4 text-left text-xs font-bold uppercase tracking-wider text-gray-500">Category</th>
+                          <th className="py-3 text-right text-xs font-bold uppercase tracking-wider text-gray-500">Fee (₹)</th>
                         </tr>
                       </thead>
                       <tbody className="divide-y divide-orange-50">
                         {post.applicationFee.map((f: string, i: number) => {
-                          const lower = f.toLowerCase();
+                          const lower = f.toLowerCase().replace(/[^\x20-\x7E₹a-z0-9\/\s]/g, "");
+                          const isSection = lower.includes("fee refund") || lower.includes("correction") || lower.includes("payment mode") || lower.includes("pay their") || lower.includes("through");
+                          if (isSection) {
+                            return (
+                              <tr key={i}>
+                                <td colSpan={2} className="py-2.5 text-xs font-bold uppercase tracking-wider text-orange-600 bg-orange-50/50">{f.replace(/[^\x20-\x7E₹]/g, "").replace(/�/g, "").trim()}</td>
+                              </tr>
+                            );
+                          }
+                          let catLabel = f; let amt = "";
+                          const colonIdx = f.indexOf(":");
+                          if (colonIdx > 0) { catLabel = f.substring(0, colonIdx).trim(); amt = f.substring(colonIdx + 1).trim(); }
+                          const amtMatch = amt.match(/[₹]?\s*([\d,]+)\s*\/?\-?/);
+                          const displayAmt = amtMatch ? `₹${amtMatch[1].replace(/,/, "")}/-` : (amt || "—");
                           let catBadge = "bg-gray-100 text-gray-600";
                           if (lower.includes("general") || lower.includes("ur") || lower.includes("ews")) catBadge = "bg-blue-50 text-blue-700";
                           else if (lower.includes("obc")) catBadge = "bg-orange-50 text-orange-700";
@@ -432,15 +445,10 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
 
                           return (
                             <tr key={i} className="hover:bg-orange-50/30">
-                              <td className="py-3 pr-4 align-top">
-                                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-orange-100 text-xs font-black text-orange-600">₹</span>
+                              <td className="py-3 pr-4">
+                                <span className={`inline-block rounded-full px-3 py-0.5 text-xs font-semibold ${catBadge}`}>{catLabel}</span>
                               </td>
-                              <td className="py-3">
-                                <span className={`inline-block rounded-full px-2.5 py-0.5 text-[11px] font-semibold ${catBadge}`}>
-                                  {f.includes(":") ? f.split(":")[0].trim() : "All"}
-                                </span>
-                                <p className="mt-1 text-sm text-gray-700">{f.includes(":") ? f.split(":").slice(1).join(":").trim() : f}</p>
-                              </td>
+                              <td className="py-3 text-right font-bold text-gray-800">{displayAmt}</td>
                             </tr>
                           );
                         })}
