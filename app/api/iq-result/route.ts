@@ -60,23 +60,32 @@ Q${i + 1}: ${d.question}
     const smtpPass = process.env.SMTP_PASS;
     const notifyEmail = "adityaraj.1@outlook.com";
 
+    let emailSent = false;
     if (smtpHost && smtpUser && smtpPass) {
-      const transporter = nodemailer.createTransport({
-        host: smtpHost,
-        port: Number(smtpPort) || 587,
-        secure: Number(smtpPort) === 465,
-        auth: { user: smtpUser, pass: smtpPass },
-      });
-      await transporter.sendMail({
-        from: `"IQ Test System" <${smtpUser}>`,
-        replyTo: email,
-        to: notifyEmail,
-        subject,
-        text,
-      });
+      try {
+        const transporter = nodemailer.createTransport({
+          host: smtpHost,
+          port: Number(smtpPort) || 587,
+          secure: Number(smtpPort) === 465,
+          auth: { user: smtpUser, pass: smtpPass },
+        });
+        await transporter.sendMail({
+          from: `"IQ Test System" <${smtpUser}>`,
+          replyTo: email,
+          to: notifyEmail,
+          subject,
+          text,
+        });
+        emailSent = true;
+        console.log("Email sent successfully to", notifyEmail);
+      } catch (mailErr) {
+        console.error("Failed to send email:", mailErr);
+      }
+    } else {
+      console.log("SMTP not configured. Set SMTP_HOST, SMTP_USER, SMTP_PASS env vars.");
     }
 
-    return NextResponse.json({ success: true, iq, correct, total, pct, label });
+    return NextResponse.json({ success: true, iq, correct, total, pct, label, emailSent });
   } catch (err) {
     console.error("IQ result error:", err);
     return NextResponse.json({ error: "Internal error" }, { status: 500 });
