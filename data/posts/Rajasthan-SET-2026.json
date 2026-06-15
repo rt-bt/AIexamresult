@@ -62,6 +62,10 @@
   "importantLinks": [
     {
       "label": "Apply Online",
+      "url": "https://sso.rajasthan.gov.in/signin"
+    },
+    {
+      "label": "Application Home Page >",
       "url": "https://uok.ac.in/category.php?catid=89&pageid=721&page=SET%20Examination%202026"
     },
     {
