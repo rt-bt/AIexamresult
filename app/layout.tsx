@@ -12,11 +12,11 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.aiexamresult.c
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "All India Exam Result",
-    template: "%s | All India Exam Result"
+    default: "Sarkari Result 2026 - Govt Jobs, Admit Card, Answer Key | All India Exam Result",
+    template: "%s | Sarkari Result, Govt Jobs | All India Exam Result"
   },
   description:
-    "Get fastest government job alerts, exam results, admit cards & answer keys 2026. Verified official updates for SSC, UPSC, Railway RRB, Banking, UP, Bihar & all India exams. Daily new vacancies.",
+    "Sarkari result 2026: Get fastest government job alerts, sarkari naukri, exam results, admit cards & answer keys. SSC, UPSC, Railway, Banking, UP, Bihar & all India exams — daily rojgar result updates.",
   applicationName: "All India Exam Result",
   manifest: "/manifest.webmanifest",
   alternates: {
@@ -27,18 +27,19 @@ export const metadata: Metadata = {
     }
   },
   keywords: [
-    "sarkari result", "government jobs", "exam result", "admit card", "answer key",
+    "sarkari result", "sarkari results", "government jobs", "exam result", "admit card", "answer key",
+    "rojgar result", "sarkari rojgar", "sarkari naukri", "sarkari job alert", "sarkari job",
     "SSC Result", "Railway Result", "UPSC Result", "Bihar Board Result", "CBSE Result",
     "CUET Result", "NEET Result", "JEE Result", "Police Result", "ITI Result",
     "Diploma Result", "University Result", "Semester Result", "BPSC Result", "UPPSC Result",
     "SSC Admit Card", "Railway Admit Card", "Bank Admit Card", "UPSC Admit Card",
     "Bihar Police Admit Card", "CUET Admit Card", "NEET Admit Card",
     "RRB NTPC Admit Card", "Group D Admit Card",
-    "Govt Jobs 2026", "Sarkari Naukri", "Railway Vacancy", "SSC Vacancy",
+    "Govt Jobs 2026", "Railway Vacancy", "SSC Vacancy",
     "Bank Vacancy", "Bihar Govt Jobs", "Teaching Jobs", "Police Recruitment",
     "Army Recruitment", "Clerk Vacancy",
     "Exam Date", "Exam Pattern", "Syllabus", "Previous Year Paper",
-    "Cut Off", "Merit List", "Selection Process", "Answer Key",
+    "Cut Off", "Merit List", "Selection Process",
     "Bihar Result", "UP Result", "Jharkhand Result", "MP Result",
     "Rajasthan Result", "Maharashtra Result", "Tamil Nadu Result",
     "ssc cgl result 2026", "railway group d admit card 2026",
@@ -54,21 +55,22 @@ export const metadata: Metadata = {
     "UP government jobs", "Bihar government jobs", "Rajasthan government jobs", "state govt jobs",
     "CBSE result", "BSEB result", "UP board result", "RBSE result", "board exam results",
     "college admission", "university admission", "entrance exam",
-    "competitive exams", "government exam 2026", "sarkari exam", "sarkari naukri",
-    "admit card download", "answer key download", "exam notification", "result 2026"
+    "competitive exams", "government exam 2026", "sarkari exam",
+    "admit card download", "answer key download", "exam notification", "result 2026",
+    "nokari", "exam sarkari result", "sarkari result 2026", "government result"
   ],
   openGraph: {
     type: "website",
     siteName: "All India Exam Result",
     url: SITE_URL,
-    title: "All India Exam Result",
-    description: "India's fastest exam portal. Find verified Sarkari results, government job notifications, admit cards, answer keys & admissions.",
+    title: "Sarkari Result 2026 - Govt Jobs, Admit Card, Answer Key | All India Exam Result",
+    description: "Sarkari result 2026: Find verified sarkari naukri, government job notifications, exam results, admit cards, answer keys & rojgar result updates.",
     locale: "en_IN",
-    images: [{ url: `${SITE_URL}/og-image.svg`, width: 1200, height: 630, alt: "All India Exam Result" }]
+    images: [{ url: `${SITE_URL}/og-image.svg`, width: 1200, height: 630, alt: "Sarkari Result 2026 | All India Exam Result" }]
   },
   twitter: {
     card: "summary_large_image",
-    title: "All India Exam Result",
+    title: "Sarkari Result 2026 - Govt Jobs, Admit Card | All India Exam Result",
     description: "Government jobs, exam results, admit cards and admission updates 2026.",
     images: [`${SITE_URL}/og-image.svg`]
   },
@@ -122,7 +124,7 @@ const jsonLd = {
       "@id": `${SITE_URL}/#website`,
       url: SITE_URL,
       name: "All India Exam Result",
-      alternateName: ["AI Exam Result", "AIExamResult", "Sarkari Result"],
+      alternateName: ["AI Exam Result", "AIExamResult", "Sarkari Result", "Sarkari Naukri", "Rojgar Result", "Government Exam Result"],
       description: "Find latest government jobs, exam results, admit cards, answer keys and admissions 2026. Verified updates for SSC, UPSC, Railway, Banking, State exams and board results.",
       publisher: { "@id": `${SITE_URL}/#organization` },
       copyrightYear: "2026",
@@ -137,8 +139,8 @@ const jsonLd = {
       "@type": "WebPage",
       "@id": `${SITE_URL}/#webpage`,
       url: SITE_URL,
-      name: "All India Exam Result — Sarkari Result, Govt Jobs, Admit Card 2026",
-      description: "India's fastest government exam portal for Sarkari result, job notifications, admit cards, answer keys and admissions 2026. Covering SSC, UPSC, Railway, Bihar, UP, Rajasthan exams.",
+      name: "Sarkari Result 2026 - Govt Jobs, Admit Card, Answer Key | All India Exam Result",
+      description: "Sarkari result 2026: India's fastest government exam portal for sarkari naukri, rojgar result, job notifications, admit cards, answer keys and admissions. Covering SSC, UPSC, Railway, Bihar, UP, Rajasthan exams.",
       isPartOf: { "@id": `${SITE_URL}/#website` },
       about: { "@id": `${SITE_URL}/#organization` },
       inLanguage: "en-IN",
@@ -198,28 +200,28 @@ const jsonLd = {
       "@id": `${SITE_URL}/#faq`,
       mainEntity: [
         {
-          "@type": "Question", name: "What is All India Exam Result?",
-          acceptedAnswer: { "@type": "Answer", text: "All India Exam Result is India's fastest government exam information portal providing verified updates on Sarkari results, job notifications, admit cards, answer keys and admissions across SSC, UPSC, Railway, Banking, State exams and board results." }
+          "@type": "Question", name: "What is Sarkari Result and how does All India Exam Result help?",
+          acceptedAnswer: { "@type": "Answer", text: "Sarkari Result refers to Indian government exam results. All India Exam Result is India's fastest government exam portal providing verified sarkari result updates, job notifications (sarkari naukri), admit cards, answer keys and admissions across SSC, UPSC, Railway, Banking, State exams and board results." }
         },
         {
-          "@type": "Question", name: "How often is the data updated?",
-          acceptedAnswer: { "@type": "Answer", text: "Our data is synced every 30 minutes directly from official government sources to ensure you get the latest exam notifications, results, admit cards and answer keys in real-time." }
+          "@type": "Question", name: "How to get latest Sarkari job alert and rojgar result updates?",
+          acceptedAnswer: { "@type": "Answer", text: "Our data is synced every 30 minutes directly from official government sources. You get real-time sarkari job alerts, rojgar result updates, exam notifications, admit cards and answer keys on our website and through our notification subscription service." }
         },
         {
-          "@type": "Question", name: "Which exams are covered?",
-          acceptedAnswer: { "@type": "Answer", text: "We cover all major Indian government exams including SSC (CGL, CHSL, MTS, GD, JE, CPO), UPSC (IAS, NDA, CDS, EPFO), Railway (RRB NTPC, ALP, Group D, JE), Banking (IBPS, SBI, RBI), Teaching (CTET, UPTET, REET), Defence (Army, Navy, Air Force), State govt jobs (UPSC, BPSC, UPPSC, MPPSC) and board exam results (Bihar Board, UP Board, CBSE, RBSE)." }
+          "@type": "Question", name: "Which government exams are covered for Sarkari naukri?",
+          acceptedAnswer: { "@type": "Answer", text: "We cover all major Indian government exams for sarkari naukri including SSC (CGL, CHSL, MTS, GD, JE, CPO), UPSC (IAS, NDA, CDS, EPFO), Railway (RRB NTPC, ALP, Group D, JE), Banking (IBPS, SBI, RBI), Teaching (CTET, UPTET, REET), Defence (Army, Navy, Air Force), State govt jobs (BPSC, UPPSC, MPPSC) and board exam results." }
         },
         {
-          "@type": "Question", name: "Is this an official government website?",
-          acceptedAnswer: { "@type": "Answer", text: "No, this is an independent information portal. All data is sourced from publicly available government notifications. We always link to official websites for final verification and recommend users to check the respective government portals for authoritative information." }
+          "@type": "Question", name: "Is this an official Sarkari result website?",
+          acceptedAnswer: { "@type": "Answer", text: "No, this is an independent information portal. All sarkari result data is sourced from publicly available government notifications. We always link to official websites for final verification and recommend users to check respective government portals for authoritative information." }
         },
         {
-          "@type": "Question", name: "How can I search for specific exams?",
-          acceptedAnswer: { "@type": "Answer", text: "Use our search bar at the top of the page to find any exam, result, job notification, admit card, or answer key instantly. You can also browse by category using the navigation menu or visit the exam-specific pages under the Exam section." }
+          "@type": "Question", name: "How to search Sarkari exam results and admit cards?",
+          acceptedAnswer: { "@type": "Answer", text: "Use our search bar to find any sarkari exam result, job notification, admit card, or answer key instantly. You can also browse by category (results, latest jobs, admit cards, answer keys) using the navigation menu or visit exam-specific pages." }
         },
         {
-          "@type": "Question", name: "Can I download admit cards and answer keys?",
-          acceptedAnswer: { "@type": "Answer", text: "Yes, each post includes direct official links to download admit cards, answer keys and results. We link to the respective government commission websites such as ssc.nic.in, upsc.gov.in, indianrailways.gov.in and other official portals." }
+          "@type": "Question", name: "How to download Sarkari admit cards and answer keys?",
+          acceptedAnswer: { "@type": "Answer", text: "Yes, each post includes direct official links to download sarkari admit cards, answer keys and exam results. We link to respective government commission websites such as ssc.nic.in, upsc.gov.in, indianrailways.gov.in and other official portals for verification." }
         }
       ]
     },

@@ -6,7 +6,10 @@
   "publishedDate": "13 April 2024  | 07:41 PM",
   "intro": "The PAN (Permanent Account Number) Is one of the documents for Indian Citizen.All candidate who have registerd for the PAN,can track their PAN Card Status Online through the official website of PAN UTI/NSDL.On the Officail website of PAN you can make correction of PAN ,Apply for the new PAN, Check PAN transaction Status,Make Correction and Update Your PAN Now in the Given Link Below.",
   "importantDates": [],
-  "applicationFee": [],
+  "applicationFee": [
+    "Card dispatch within India: Rs. 107/-",
+    "Dispatch outside India (Foreign Address) : Rs. 994/-"
+  ],
   "importantLinks": [
     {
       "label": "Apply for Instant Pan Card",

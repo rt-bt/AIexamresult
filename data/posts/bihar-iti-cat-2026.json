@@ -5,7 +5,15 @@
   "category": "results",
   "publishedDate": "",
   "intro": "Bihar Combined Enterance Competetive Examination Board (BCECEB: Bihar ITI CAT 2025) has Officially Released Result/ Rank Card for Industrial Training Institute Competitive Admission Test (I.T.I.C.A.T) 2026. All Details, Like Age Limit, Eligibility Details, Post Information, Pay Scale, Selection Process & More Details Related to RRC SCR Apprentice Jobs. Exam Held On May 17, 2026 & Result/ Rank Card Released On June 4, 2026. All Interested Candidates Can Download Result/ Rank Card Now in the Given Link Below.",
-  "importantDates": [],
+  "importantDates": [
+    "Online Apply Start On : 16 March 2026",
+    "Last Date For Apply Online : 27 April 2026 (11:59 PM)",
+    "Last Date For Online Fee Payment : 27 April 2026 (11:59 PM)",
+    "Online Editing-Application Form: 29-30 April 2026 (11:59 PM)",
+    "Admit Card Available on: 10 May 2026",
+    "Date of Examination: 17 May 2026",
+    "Result Declared: 04 June 2026"
+  ],
   "applicationFee": [
     "General/ OBC/ EBC Candidates:Rs. 750/-",
     "SC/ ST Candidates :Rs. 100/-",
@@ -58,5 +66,6 @@
     }
   ],
   "fullContentHtml": "",
+  "lastDate": "16 March 2026",
   "isExpired": false
 }

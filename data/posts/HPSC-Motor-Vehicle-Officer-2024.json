@@ -13,7 +13,14 @@
     "Exam Date : 08 September 2024",
     "Answer Key Objection : 12-14 September 2024"
   ],
-  "applicationFee": [],
+  "applicationFee": [
+    "General (Male- Haryana) :Rs. 1000/-",
+    "Other State (Male-All Category) :Rs. 1000/-",
+    "SC/ BC/ ESM/ EWS Candidates :Rs. 250/-",
+    "All Female of Haryana/ Other State:Rs. 250/-",
+    "PH Candidates : Rs. 00/-",
+    "Payment Mode: Pay Exam Fee Through Credit Card, Debit Card, Net Banking Fee Mode."
+  ],
   "importantLinks": [
     {
       "label": "Download Answer Key",

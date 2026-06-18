@@ -5,7 +5,14 @@
   "category": "documents",
   "publishedDate": "12 March 2025 | 06:42 PM",
   "intro": "Rajasthan Staff Selection Board (RSMSSB-Jaipur) Are Recently Uploaded Result for the Common Eligibility Test (CET Inter Level ) 10+2 Level Examination 2024 for Upcoming Recruitment. All Registered Candidates Can Download Result Now in the Given Link Below.",
-  "importantDates": [],
+  "importantDates": [
+    "Online Apply Start On : 02 September 2024",
+    "Registration Last Date : 01 October 2024",
+    "Fee Payment Last Date : 01 October 2024",
+    "Exam Date : 23-26 October 2024",
+    "Admit Card : 14 October 2024",
+    "Result Declared : 17 February 2025"
+  ],
   "applicationFee": [
     "General/ OBC/ Other State Rs. : 600/-",
     "OBC (NCL)/ MBC of Rajasthan Rs. : 400/-",
@@ -80,5 +87,6 @@
     }
   ],
   "fullContentHtml": "",
+  "lastDate": "02 September 2024",
   "isExpired": false
 }

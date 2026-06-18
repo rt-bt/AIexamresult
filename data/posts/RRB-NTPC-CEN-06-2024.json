@@ -26,7 +26,11 @@
     "CBTST Date: 13 February 2026",
     "Final Result: 26 May 2026"
   ],
-  "applicationFee": [],
+  "applicationFee": [
+    "General / OBC Candidates : Rs.500/- (Rs. 400/- Refunded After Appear Stage I Exam)",
+    "SC / ST / PH/ All Female Candidates : Rs. 250/- (Rs. 250/- Refunded After Appear Stage I Exam)",
+    "Payment Mode: Pay the Exam Fee Through Debit Card, Credit Card, Net Banking Fee Mode Only."
+  ],
   "importantLinks": [
     {
       "label": "Download Score Card",

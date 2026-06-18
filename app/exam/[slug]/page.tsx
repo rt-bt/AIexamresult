@@ -4,6 +4,7 @@ import { Footer } from "@/components/site/footer";
 import { SectionContent } from "@/components/site/section-content";
 import { sectionItems } from "@/lib/data";
 import type { PostCard } from "@/lib/data";
+import { SITE_URL } from "@/lib/seo";
 
 const examNames: Record<string, string> = {
   ssc: "SSC (Staff Selection Commission)",
@@ -57,14 +58,24 @@ const examNames: Record<string, string> = {
 };
 
 const examDescriptions: Record<string, string> = {
-  ssc: "Find latest SSC recruitment 2026 notifications, admit cards, answer keys and results for CGL, CHSL, MTS, GD Constable, JE, CPO and Stenographer exams.",
-  "ssc-cgl": "SSC CGL 2026 recruitment notification, online application, eligibility, exam pattern, syllabus, admit card, answer key and result.",
-  upsc: "UPSC 2026 exam calendar, notification, application, admit card, answer key and result for Civil Services (IAS), NDA, CDS, CAPF and other exams.",
-  railway: "Railway recruitment 2026 notifications for RRB NTPC, ALP, Group D, JE and other posts. Application forms, admit cards and results.",
-  banking: "Banking exam 2026 notifications for IBPS PO, Clerk, RRB, SBI PO, Clerk and RBI Grade B. Apply online, download admit cards.",
-  ctet: "CTET 2026 notification, application form, exam date, admit card, answer key and result. Central Teacher Eligibility Test updates.",
-  "state-govt-jobs": "Latest state government job notifications 2026 for UP, Bihar, Rajasthan, MP, Maharashtra and all Indian states.",
-  "board-exams": "Board exam results 2026 for CBSE, Bihar Board (BSEB), UP Board, Rajasthan Board (RBSE) and other state boards.",
+  ssc: "Sarkari result SSC 2026: Find latest SSC recruitment notifications, admit cards, answer keys and results for CGL, CHSL, MTS, GD Constable, JE, CPO and Stenographer exams.",
+  "ssc-cgl": "SSC CGL Sarkari result 2026: Recruitment notification, online application, eligibility, exam pattern, syllabus, admit card, answer key and result.",
+  "ssc-chsl": "SSC CHSL Sarkari result 2026: Combined Higher Secondary Level exam notification, admit card, answer key and result updates.",
+  "ssc-mts": "SSC MTS Sarkari result 2026: Multi-Tasking Staff exam notification, application, admit card, answer key and result.",
+  "ssc-gd": "SSC GD Constable Sarkari result 2026: Notification, admit card, answer key and result for General Duty exam.",
+  upsc: "UPSC Sarkari result 2026: Exam calendar, notification, application, admit card, answer key and result for Civil Services (IAS), NDA, CDS, CAPF and other exams.",
+  "upsc-nda": "UPSC NDA Sarkari result 2026: National Defence Academy exam notification, admit card, answer key and result.",
+  "upsc-cds": "UPSC CDS Sarkari result 2026: Combined Defence Services exam notification, admit card, answer key and result.",
+  railway: "Railway Sarkari result 2026: RRB recruitment notifications for NTPC, ALP, Group D, JE and other posts. Application forms, admit cards and results.",
+  "rrb-ntpc": "RRB NTPC Sarkari result 2026: Notification, admit card, answer key and result for Railway NTPC exam.",
+  "rrb-alp": "RRB ALP Sarkari result 2026: Assistant Loco Pilot exam notification, admit card, answer key and result.",
+  "rrb-group-d": "RRB Group D Sarkari result 2026: Notification, admit card, answer key and result for Group D exam.",
+  banking: "Banking Sarkari result 2026: IBPS PO, Clerk, RRB, SBI PO, Clerk and RBI Grade B exam notifications, admit cards, answer keys and results.",
+  "ibps-po": "IBPS PO Sarkari result 2026: Probationary Officer exam notification, admit card, answer key and result.",
+  "ibps-clerk": "IBPS Clerk Sarkari result 2026: Clerk exam notification, admit card, answer key and result.",
+  ctet: "CTET Sarkari result 2026: Central Teacher Eligibility Test notification, application form, exam date, admit card, answer key and result.",
+  "state-govt-jobs": "Latest state government Sarkari result and job notifications 2026 for UP, Bihar, Rajasthan, MP, Maharashtra and all Indian states.",
+  "board-exams": "Board exam Sarkari result 2026: CBSE, Bihar Board (BSEB), UP Board, Rajasthan Board (RBSE) and other state board results.",
 };
 
 function titleCase(slug: string): string {
@@ -83,10 +94,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const name = examNames[slug] || titleCase(slug);
   const desc = examDescriptions[slug] || `Find latest ${name} 2026 updates including notifications, application forms, admit cards, answer keys and results.`;
   return {
-    title: `${name} 2026 - Notification, Admit Card, Answer Key, Result`,
+    title: `${name} Sarkari Result 2026 - Notification, Admit Card, Answer Key`,
     description: desc,
     alternates: { canonical: `/exam/${slug}` },
-    openGraph: { title: `${name} 2026 | All India Exam Result`, description: desc },
+    openGraph: { title: `${name} Sarkari Result 2026 | All India Exam Result`, description: desc, images: [{ url: `${SITE_URL}/og-image.svg`, width: 1200, height: 630 }] },
+    twitter: { card: "summary_large_image", title: `${name} Sarkari Result 2026 | All India Exam Result`, description: desc },
+    robots: { index: true, follow: true },
   };
 }
 

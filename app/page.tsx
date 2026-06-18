@@ -17,11 +17,11 @@ const faqLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
-    { "@type": "Question", name: "What is All India Exam Result?", acceptedAnswer: { "@type": "Answer", text: "All India Exam Result is India's fastest government exam information portal providing verified updates on Sarkari results, job notifications, admit cards, answer keys and admissions." } },
-    { "@type": "Question", name: "How often is the data updated?", acceptedAnswer: { "@type": "Answer", text: "Our data is synced every 30 minutes directly from official government sources to ensure you get the latest exam notifications and results." } },
-    { "@type": "Question", name: "Is this an official government website?", acceptedAnswer: { "@type": "Answer", text: "No, this is an independent information portal. All data is sourced from publicly available government notifications. We always link to official websites for final verification." } },
-    { "@type": "Question", name: "Which exams are covered?", acceptedAnswer: { "@type": "Answer", text: "We cover all major Indian government exams including SSC, UPSC, Railway, Bihar Board, UP Board, CTET, NEET, JEE and state-level exams across all Indian states." } },
-    { "@type": "Question", name: "How can I search for specific exams?", acceptedAnswer: { "@type": "Answer", text: "Use our search bar at the top of the page to find any exam, result, or job notification instantly." } },
+    { "@type": "Question", name: "What is Sarkari Result and how to check online?", acceptedAnswer: { "@type": "Answer", text: "Sarkari Result means Indian government exam results. All India Exam Result provides verified sarkari result updates, job alerts, admit cards, answer keys and admissions." } },
+    { "@type": "Question", name: "How to get latest Sarkari job alert updates?", acceptedAnswer: { "@type": "Answer", text: "Our data is synced every 30 minutes from official sources. You get real-time sarkari job alerts, rojgar result updates, exam notifications and results." } },
+    { "@type": "Question", name: "Is this an official Sarkari result website?", acceptedAnswer: { "@type": "Answer", text: "No, this is an independent information portal. All sarkari result data is sourced from publicly available government notifications. We link to official websites for verification." } },
+    { "@type": "Question", name: "Which Sarkari exams are covered for naukri?", acceptedAnswer: { "@type": "Answer", text: "We cover all major sarkari exams: SSC, UPSC, Railway RRB, Banking, Teaching (CTET, UPTET), Defence, state govt jobs and board results across India." } },
+    { "@type": "Question", name: "How to search Sarkari exam results and admit cards?", acceptedAnswer: { "@type": "Answer", text: "Use our search bar to find any sarkari exam result, admit card, or job notification instantly. Browse by category or visit exam-specific pages." } },
   ]
 };
 
@@ -32,6 +32,7 @@ export default function HomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
       <Header />
       <main>
+        <h1 className="sr-only">All India Exam Result - Sarkari Result, Govt Jobs, Admit Card, Answer Key 2026</h1>
         <Hero />
 
         {/* 6 Main Sections: Latest Jobs, Admit Card, Answer Keys, Result, Admissions, Documents */}
@@ -87,12 +88,12 @@ export default function HomePage() {
             <div className="mx-auto mt-12 max-w-4xl" itemScope itemType="https://schema.org/FAQPage">
               <div className="grid gap-x-12 gap-y-10 sm:grid-cols-2">
                 {[
-                  { q: "What is All India Exam Result?", a: "India's fastest government exam information portal providing verified updates on Sarkari results, job notifications, admit cards, answer keys and admissions across SSC, UPSC, Railway, Banking, State exams and board results." },
-                  { q: "How often is exam data updated?", a: "Every 30 minutes directly from official government sources to ensure you get the latest exam notifications, results, admit cards and answer keys." },
-                  { q: "How do I find SSC CGL or UPSC updates?", a: "Use exam-specific pages like /exam/ssc-cgl for SSC CGL or /exam/upsc-cse for UPSC Civil Services, or use the search bar at the top of the page." },
-                  { q: "Can I download admit cards here?", a: "Yes, each post page includes direct official links to download admit cards, answer keys and results from government commission websites." },
-                  { q: "Which exams does this site cover?", a: "All major exams: SSC, UPSC, Railway RRB, Banking (IBPS, SBI, RBI), Teaching (CTET, UPTET), Defence, State govt jobs, and board results." },
-                  { q: "Is this an official government site?", a: "No, this is an independent information portal. All data is sourced from publicly available government notifications with links to official websites." },
+                  { q: "What is Sarkari Result and how to check sarkari results online?", a: "Sarkari Result means Indian government exam results. All India Exam Result is India's fastest portal providing verified sarkari result updates, job alerts, admit cards, answer keys and admissions across all Indian government exams." },
+                  { q: "How to get latest Sarkari job alert and rojgar result?", a: "Every 30 minutes we sync data from official sources. You get real-time sarkari job alerts, rojgar result updates, exam notifications, admit cards and answer keys on our site." },
+                  { q: "How to find SSC CGL Sarkari result or UPSC exam updates?", a: "Use exam-specific pages like /exam/ssc-cgl for SSC CGL sarkari result or /exam/upsc-cse for UPSC exams, or use the search bar at the top." },
+                  { q: "Can I download Sarkari admit cards and answer keys here?", a: "Yes, each post includes direct official links to download sarkari admit cards, answer keys and exam results from government websites." },
+                  { q: "Which Sarkari exams are covered for government jobs?", a: "All major sarkari exams: SSC, UPSC, Railway RRB, Banking (IBPS, SBI, RBI), Teaching (CTET, UPTET), Defence, State govt jobs, and board results." },
+                  { q: "Is this an official Sarkari result website?", a: "No, this is an independent information portal. All sarkari result data is sourced from publicly available government notifications with links to official websites." },
                 ].map((faq, i) => (
                   <div key={i} itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
                     <h3 itemProp="name" className="text-[15px] font-semibold leading-6 text-slate-900 dark:text-white">{faq.q}</h3>

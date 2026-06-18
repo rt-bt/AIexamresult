@@ -14,7 +14,11 @@
     "Admit Card Available :  June 2026",
     "Exam Date :  05 July 2026"
   ],
-  "applicationFee": [],
+  "applicationFee": [
+    "General/ EBC/ BC/ EWS Candidates : Rs. 100/-",
+    "SC/ ST of JH : Rs. 50/-",
+    "Payment Details: Pay the Exam Fee Through Credit Card / Debit Card / Net Banking Fee Mode Only."
+  ],
   "importantLinks": [
     {
       "label": "Download Exam Date Notice",

@@ -30,6 +30,15 @@ function loadExistingSlugs(): Set<string> {
   } catch { return new Set(); }
 }
 
+function categorizeByTitle(title: string): string | null {
+  const lower = title.toLowerCase();
+  if (lower.includes("admit card") || lower.includes("hall ticket") || lower.includes("call letter") || lower.includes("exam city") || lower.includes("exam date")) return "admitCards";
+  if (lower.includes("answer key") || lower.includes("response sheet")) return "answerKeys";
+  if (lower.includes("admission") || lower.includes("counselling") || lower.includes("counseling")) return "admissions";
+  if (lower.includes("online form") || lower.includes("apply") || lower.includes("recruitment") || lower.includes("apprentice") || lower.includes("vacancy")) return "latestJobs";
+  return null;
+}
+
 function extractListings(html: string): { title: string; url: string; category: string; slug: string }[] {
   const $ = cheerio.load(html);
   const items: { title: string; url: string; category: string; slug: string }[] = [];
@@ -48,7 +57,10 @@ function extractListings(html: string): { title: string; url: string; category: 
       seen.add(url);
       const title = $link.text().trim();
       const slug = url.replace(/\/$/, "").split("/").pop() || "";
-      items.push({ title, url, category: key, slug });
+      // Use title-based categorization to override section-based when title clearly indicates a different type
+      const titleCat = categorizeByTitle(title);
+      const finalCat = titleCat || key;
+      items.push({ title, url, category: finalCat, slug });
     });
   });
   return items;

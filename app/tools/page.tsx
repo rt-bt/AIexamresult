@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Header } from "@/components/site/header";
 import { Footer } from "@/components/site/footer";
@@ -165,6 +166,11 @@ const tools = [
     shadow: "shadow-violet-200",
   },
 ];
+
+export const metadata: Metadata = {
+  title: "Free Tools | All India Exam Result",
+  description: "Handy utilities for competitive exam preparation — age calculator, exam comparison, result predictor, document checklist & more.",
+};
 
 export default function ToolsPage() {
   return (

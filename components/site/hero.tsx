@@ -146,7 +146,7 @@ export function Hero() {
           </h1>
 
           <p className="mx-auto mt-3 max-w-lg text-sm sm:text-base text-white/60 leading-relaxed">
-            Real-time alerts for Sarkari results, government jobs and application deadlines — all in one place.
+            Real-time Sarkari result alerts, government jobs (sarkari naukri), admit cards and answer keys — all in one place.
           </p>
 
           {/* Result Finder */}

@@ -3,6 +3,7 @@ import { Header } from "@/components/site/header";
 import { Footer } from "@/components/site/footer";
 import { SectionContent } from "@/components/site/section-content";
 import { sectionItems } from "@/lib/data";
+import { SITE_URL } from "@/lib/seo";
 
 export const dynamic = "force-dynamic";
 export const dynamicParams = true;
@@ -24,18 +25,21 @@ export async function generateMetadata({ params }: { params: Promise<{ section: 
   const { section } = await params;
   const title = sections[section] ?? "Updates";
   const descs: Record<string, string> = {
-    results: "Find latest government exam results 2026 including SSC, UPSC, Railway, UP Board, Bihar Board and more. Verified result updates with direct official links.",
-    "latest-jobs": "Latest government job notifications 2026. Find central and state government vacancies, application forms, eligibility criteria and important dates.",
-    "admit-card": "Download admit cards for upcoming government exams 2026. Get hall tickets for SSC, Railway, UPSC, state exams with direct links.",
-    "answer-key": "Download official answer keys for government exams 2026. Raise objections, check expected scores and calculate marks.",
+    results: "Sarkari result 2026: Find latest government exam results including SSC, UPSC, Railway, UP Board, Bihar Board and more. Verified result updates with direct official links.",
+    "latest-jobs": "Sarkari naukri 2026: Latest government job notifications, central and state government vacancies, application forms, eligibility criteria and important dates for sarkari exam.",
+    "admit-card": "Download sarkari admit cards for upcoming government exams 2026. Get hall tickets for SSC, Railway, UPSC, state exams with direct official links.",
+    "answer-key": "Download official sarkari answer keys for government exams 2026. Raise objections, check expected scores and calculate marks for SSC, Railway, UPSC.",
     admissions: "University and college admission notifications 2026. Find entrance exam dates, application forms, merit lists and counselling schedules.",
-    syllabus: "Exam syllabus and preparation resources for SSC, UPSC, Railway, Banking and state government exams 2026.",
+    syllabus: "Exam syllabus and preparation resources for SSC, UPSC, Railway, Banking and state government sarkari exams 2026.",
   };
+  const desc = descs[section] || `${title} updates with verified official links, important dates and eligibility details.`;
   return {
     title,
-    description: descs[section] || `${title} updates with verified official links, important dates and eligibility details.`,
+    description: desc,
     alternates: { canonical: `/${section}` },
-    openGraph: { title: `${title} 2026 | All India Exam Result`, description: descs[section] || `${title} updates with official links.` }
+    openGraph: { title: `Sarkari Result ${title} 2026 | All India Exam Result`, description: desc, url: `${SITE_URL}/${section}`, images: [{ url: `${SITE_URL}/og-image.svg`, width: 1200, height: 630 }] },
+    twitter: { card: "summary_large_image", title: `Sarkari ${title} 2026 | All India Exam Result`, description: desc },
+    robots: { index: true, follow: true }
   };
 }
 
@@ -44,6 +48,7 @@ export default async function SectionPage({ params }: { params: Promise<{ sectio
   const title = sections[section] ?? "Updates";
   const informational = ["contact", "about", "privacy-policy", "disclaimer"].includes(section);
   const items = sectionItems[section];
+  const h1Prefix = ["results", "admit-card", "answer-key", "latest-jobs"].includes(section) ? "Sarkari " : "";
 
   return (
     <>
@@ -52,7 +57,7 @@ export default async function SectionPage({ params }: { params: Promise<{ sectio
         <div className="bg-gradient-to-br from-[#0D9488] via-[#0F766E] to-[#115E59] py-16">
           <div className="container-page">
             <p className="text-sm font-bold uppercase tracking-wide text-[#5EEAD4]">All India Exam Result</p>
-            <h1 className="mt-3 text-4xl font-black text-white">{title}</h1>
+            <h1 className="mt-3 text-4xl font-black text-white">{h1Prefix}{title}</h1>
             <p className="mt-3 max-w-2xl text-white/80">
               {informational
                 ? "Transparent information, editorial standards and contact details for the portal."

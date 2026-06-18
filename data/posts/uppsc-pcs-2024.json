@@ -5,8 +5,31 @@
   "category": "latestJobs",
   "publishedDate": "10 June 2026  |  08:36 PM",
   "intro": "Uttar Pradesh Public Service Commission (UPPSC) has Officially Released Final Result with Marks for the Combined Upper Subordinate Service UP PSC Pre 2024 Recruitment. , Interview Held on 16 February to 20 March 2026 & Final Result Released On March 29, 2026. All Registered Candidates Can Download Final Result with Marks Now in the Given Link Below.",
-  "importantDates": [],
+  "importantDates": [
+    "Online Apply Start On : 01 January 2024",
+    "Last Date For Apply Online : 29 January 2024",
+    "Last Date Pay Exam Fee : 29 January 2024",
+    "Last Date Completed Form : 02 February 2024",
+    "Last Date for Correction : 08 February 2024",
+    "Admit Card Available : 11 December 2024",
+    "Pre New Exam Date :  22 December 2024",
+    "Pre Answer Key :  25 December 2024",
+    "Pre Result : 28 February 2025",
+    "Mains Online:  07-24 March 2025",
+    "Last Date Receipt Hard Copy :: 01 April 2025",
+    "Mains Admit Card:  19 June 2025",
+    "Mains Exam Date:  29, 30 June & 01, 02 July 2025",
+    "Mains Result:  04 February 2026",
+    "Interview Letter:  05 February 2026",
+    "Interview Date:  16 Feb. to 20 March 2026",
+    "Final Result:  29 March 2026"
+  ],
   "applicationFee": [
+    "General / EWS/ OBC :Rs. 225/-",
+    "SC/ ST Candidates :Rs. 105/-",
+    "EX-Service Candidates :Rs. 65/-",
+    "PH Candidates: Rs.25/-",
+    "Payment Mode: Pay the Examination Fee Through Debit Card / Credit Card / Net Banking Fee Mode.",
     "General / EWS/ OBC :Rs. 225/-",
     "SC/ ST Candidates :Rs. 105/-",
     "EX-Service Candidates :Rs. 65/-",
@@ -183,5 +206,6 @@
     }
   ],
   "fullContentHtml": "",
+  "lastDate": "01 January 2024",
   "isExpired": false
 }

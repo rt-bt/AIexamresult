@@ -5,7 +5,23 @@
   "category": "results",
   "publishedDate": "06 June 2026  | 09:16 PM",
   "intro": "Uttar Pardesh Secondary Education Services Selection Borad (UPSESSB) Are Recently Uploaded TGT Answer Key Recruitment 2022.  All Registered Candidates Can Download TGT Answer Key Now in the Given Link Below.",
-  "importantDates": [],
+  "importantDates": [
+    "Online Apply Start On : 09 June 2022",
+    "Registration Last Date : 10 July 2022",
+    "Pay Exam Fee Last Date: 13 July 2022",
+    "Form Submit Last Date:  16 July 2022",
+    "Exam City Details (PGT): 30 April 2026",
+    "Admit Card (PGT): 06 May 2026",
+    "Exam Date (PGT): 09-10 May 2026",
+    "Answer Key (PGT): 12 May 2026",
+    "Exam City Details (TGT): 23 May 2026",
+    "Admit Card (TGT):  May 2026",
+    "Exam Date (TGT): 03, 04 June 2026",
+    "Result (PGT): 02 June 2026",
+    "Interview Letter (PGT): 05 June 2026",
+    "Interview Date (PGT): 15-27 June 2026",
+    "Answer Key (TGT): 06 June 2026"
+  ],
   "applicationFee": [
     "Gen/ OBC Candidates: Rs.750/-",
     "EWS Candidates: Rs. 650",
@@ -105,5 +121,6 @@
     }
   ],
   "fullContentHtml": "",
+  "lastDate": "09 June 2022",
   "isExpired": false
 }

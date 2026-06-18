@@ -5,7 +5,18 @@
   "category": "answerKeys",
   "publishedDate": "13 June 2026 | 03:56 PM",
   "intro": "Uttar Pradesh Subordinate Service Selection Commission (UPSSSC) has Officially Released Revised Answer Key for the Post of 10+2 Level Junior Assistant Recruitment 2024 for Mains Exam. Exam Held on February 1, 2026 & Revised Answer Key Available On June 13, 2026. All Interested Candidates Can Download Revised Answer Key Now in the Given Link Below.",
-  "importantDates": [],
+  "importantDates": [
+    "Online Apply Start On : 23 December 2024",
+    "Registration Last Date : 22 January 2025",
+    "Fee Payment Last Date : 22 January 2025",
+    "Correction Last Date : 29 January 2024",
+    "Eligibility Result : 09 October 2025",
+    "Exan City Available : 22 January 2026",
+    "Admit Card Available : 28 January 2026",
+    "Exam Date : 01 February 2026",
+    "Answer Key Available : 02 February 2026",
+    "Revised Answer Key Available : 13 June 2026"
+  ],
   "applicationFee": [
     "General/ OBC/ EWS Candidates :Rs. 25/-",
     "SC/ ST Candidates :Rs. 25/-",
@@ -87,5 +98,6 @@
     }
   ],
   "fullContentHtml": "",
+  "lastDate": "23 December 2024",
   "isExpired": false
 }

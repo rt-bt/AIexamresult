@@ -5,7 +5,18 @@
   "category": "documents",
   "publishedDate": "",
   "intro": "Railway Recruitment Board (RRB)  has Officially Released Result for the Post of Staff Nurse and Other Various Post in Paramedical Category Recruitment 2024 (1376 Post). Result Declared On August 11, 2025All Registered Candidates Can Download Result Now in the Given Link Below.",
-  "importantDates": [],
+  "importantDates": [
+    "Online Apply Start On: 17 August 2024",
+    "Registration Last Date : 16 September 2024",
+    "Fee Payment Last Date (Online) : 16 September 2024",
+    "Edit/ Modify Form: 17 to 26 September 2024",
+    "Exam City Details Available : 19 April 2025",
+    "Admit Card Available : 24 April 2025",
+    "CBT I Exam Date :  28-30 April 2025",
+    "Answer Key Available :  06 May 2025 @04:00 PM",
+    "Re-Open Answer Key Available :  15-20 May 2025",
+    "Result Declared : 11 August 2025"
+  ],
   "applicationFee": [
     "General / OBC/ EWS Candidates : Rs.500/-",
     "SC / ST / PH/ All Female Candidates : Rs. 250/-",
@@ -189,6 +200,7 @@
     }
   ],
   "fullContentHtml": "",
+  "lastDate": "17 August 2024",
   "isExpired": false,
   "divisionWiseVacancy": [
     {

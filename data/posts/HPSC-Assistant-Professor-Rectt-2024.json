@@ -5,7 +5,17 @@
   "category": "documents",
   "publishedDate": "",
   "intro": "Haryana Public Service Commission (HPSC) has officially released Result for the Post of Assistant Professor (College Cadre) in various subjects in Higher Education Dept. Recruitment 2024 for 2424 Post. All Interested Candidates Can Download Result Now in the Given Link Below.",
-  "importantDates": [],
+  "importantDates": [
+    "Re_Open",
+    "Online Apply Start On : 01 March 2025",
+    "Registration Last Date  : 15 March 2022 (11:55 PM)",
+    "Fee Payment Last Date :  15 March 2025",
+    "Exam Date : 30 October 2024 & 24 Feb 2025",
+    "Result Declared : 11 July 2025",
+    "Online Apply Start On : 07 August 2024",
+    "Registration Last Date  : 02 September 2024 (11:55 PM)",
+    "Fee Payment Last Date : 02 September 2024"
+  ],
   "applicationFee": [
     "General/ EWS) :Rs. 1000/-",
     "SC/ BC/ ESM :Rs.250/-",
@@ -51,5 +61,6 @@
     }
   ],
   "fullContentHtml": "",
+  "lastDate": "01 March 2025",
   "isExpired": false
 }

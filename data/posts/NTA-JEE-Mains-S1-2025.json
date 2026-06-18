@@ -5,7 +5,18 @@
   "category": "documents",
   "publishedDate": "23 February 2025  | 04:44 PM",
   "intro": "National Testing Agency (NTA) Are Recently Uploaded Result for the Engineering Course as B.Tech/ B.Arch Through JEE MAIN 2025 (Session-I) Admission 2025. All Registered Candidate Can Download Result Now in The Given Link Below",
-  "importantDates": [],
+  "importantDates": [
+    "Online Apply Start On : 28 October 2024",
+    "Last Date for Apply Online : 22 November2024 (10:50 PM)",
+    "Pay Exam Fee : 22 November 2024 (11:50 PM)",
+    "Correction/ Edit Form : 26-27 November 2025",
+    "Exam City/ Date Available on : 10 January 2025",
+    "Admit Card Available on : 3 Days Before Exam Date",
+    "Exam Date : 22, 23, 24, 28, 29 & 30 January 2025",
+    "Answer Key : 04 February 2025",
+    "Final Answer Key : 10 February 2025",
+    "Result Declared : 11 February 2025"
+  ],
   "applicationFee": [
     "General / OBC/ EWS :Rs. 1000 to 2000/-",
     "SC / ST/ PwD :Rs. 500 to 1000/-",
@@ -98,5 +109,6 @@
     }
   ],
   "fullContentHtml": "",
+  "lastDate": "28 October 2024",
   "isExpired": false
 }

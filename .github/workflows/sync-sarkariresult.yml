@@ -1,0 +1,41 @@
+name: Sync SarkariResult
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci || npm install
+
+      - name: Run sync-sarkariresult
+        run: node scripts/sync-sarkariresult.mjs
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name "sarkariresult-bot"
+          git config user.email "rtbtrack@gmail.com"
+          git add -A
+          if ! git diff --quiet || ! git diff --staged --quiet; then
+            git commit -m "Sync sarkariresult $(date +'%d %b %Y %H:%M')"
+            git push
+          fi
+
+      - name: Deploy to Vercel
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: |
+          npx vercel deploy --prod --yes --token=$VERCEL_TOKEN

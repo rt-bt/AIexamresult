@@ -5,7 +5,22 @@
   "category": "admitCards",
   "publishedDate": "09 June 2026 | 01:19 PM",
   "intro": "Uttar Pradesh Subordinate Service Selection Commission (UPSSSC) Are Recently Uploaded PMT Admit Card for the Post of Forest Guard and Wild Life Guard Recruitment 2023. All Registered Candidates Can Download PMT Admit Card Now in The Given Link Below.",
-  "importantDates": [],
+  "importantDates": [
+    "Online Apply Start On : 20 September 2023",
+    "Registration Last Date : 10 October 2023",
+    "Fee Payment Last Date : 10 October 2023",
+    "Correction Last Date : 17 October 2023",
+    "Eligibility Result :  07 October 2024",
+    "Exam City Details Available : 30 October 2025",
+    "Exam Date :  09 November 2025",
+    "Admit Card Available : 06 November 2025",
+    "Result Declared : 08 January 2026",
+    "PET Admit Card: 04 February 2026",
+    "PET Exam Date: 10 February 2026",
+    "PET Result: 30 April 2026",
+    "PMT Admit Card: 09 June 2026",
+    "Medical Exam Date: 15 June 2026"
+  ],
   "applicationFee": [
     "General/ OBC/ EWS Candidates :Rs. 25/-",
     "SC/ ST/ PH Candidates :Rs. 25/-",
@@ -94,5 +109,6 @@
     }
   ],
   "fullContentHtml": "",
+  "lastDate": "20 September 2023",
   "isExpired": false
 }

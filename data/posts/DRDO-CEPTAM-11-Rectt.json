@@ -5,7 +5,19 @@
   "category": "admitCards",
   "publishedDate": "12 June 2026 | 04:52 AM",
   "intro": "Defence Research & Development Organization DRDO has Officially Released Tier 2 Admit Card the posts of Senior Technical Assistant-B (STA-B) & Technician-A (Tech-A) of DRDO CEPTAM 11 Entry Test Recruitment 2025-26 for 764 Post. Tier-2 Exam Held OnJune 15, 2026 & Tier-2 Admit Card Available OnJune 12 , 2026. All Interested Candidate Can Download Tier 2 Admit Card Now in The Given Link Below",
-  "importantDates": [],
+  "importantDates": [
+    "Online Apply Start On   11 December 2025",
+    "Last Date for Registration: 11 January 2026",
+    "Fee Payment Last Date : 13 January 2026",
+    "Correction Date : 14-16 January 2026",
+    "Exam City Available: March 2026",
+    "Admit Card Available: 20 March 2026",
+    "Exam Date:  23 March 2026",
+    "Answer Key Available:   March 2026",
+    "Result Declared:  25 May 2026",
+    "Tier-2 Admit Card:  12 June 2026",
+    "Tier-2 Exam Date:  15 June 2026"
+  ],
   "applicationFee": [
     "Gen / OBC / EWS / MSP (For STA Post) : Rs.750/-",
     "Gen / OBC / EWS / MSP (For Tech. A Post) : Rs.600/-",
@@ -88,5 +100,6 @@
     }
   ],
   "fullContentHtml": "",
+  "lastDate": "11 December 2025",
   "isExpired": false
 }

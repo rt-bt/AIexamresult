@@ -5,7 +5,17 @@
   "category": "documents",
   "publishedDate": "21 February 2025  | 06:14 PM",
   "intro": "Bihar Public Service Commission (BPSC) Are Recently Uploaded Invited to the Mains Online Form Post of Senior/ Higher Secondary Teacher in Secondary & Higher Secondary Teacher in Simultala Residential School, Jamui under Education Department, Govt. of Bihar, Recruitment 2024. All Registered Candidates Can Apply for Mains Online Now in the Given Link Below.",
-  "importantDates": [],
+  "importantDates": [
+    "Online Apply Start On : 25 April 2024",
+    "Registration Last Date : 16 May 2024",
+    "Fee Payment Last Date : 16 May 2024",
+    "Exam Date :  16 August 2024",
+    "Admit Card Available : 09 August 2024",
+    "Answer Key Available : 22 September 2024",
+    "Final Answer Key Available : 24 October 2024",
+    "Result Declared : 06 December 2024",
+    "Mains Online : 18 Feb to 10 March 2025"
+  ],
   "applicationFee": [
     "General/ EWS/ BC/ EBC/ Other :Rs. 600/-",
     "SC/ ST/ PH Candidates of Bihar :Rs. 150/-",
@@ -83,5 +93,6 @@
     }
   ],
   "fullContentHtml": "",
+  "lastDate": "25 April 2024",
   "isExpired": false
 }

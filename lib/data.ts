@@ -69,11 +69,12 @@ function toPostCard(items: ({ title: string; url: string; category: string; slug
   return sorted.map((item) => {
     const detail = scraped?.posts?.[item.slug];
     const dt = item.publishedDate ? parseDate(item.publishedDate) : null;
+    const displayDate = dt && !isNaN(dt.getTime()) && dt > new Date() ? new Date() : dt;
     return {
       title: item.title,
       excerpt: `Latest ${item.category} update from official sources. Check details, important dates and apply online.`,
       category: formatCategory(item.category),
-      date: dt ? dt.toLocaleDateString("en-IN", { day: "2-digit", month: "short", year: "numeric" }) : "",
+      date: displayDate ? displayDate.toLocaleDateString("en-IN", { day: "2-digit", month: "short", year: "numeric" }) : "",
       state: guessState(item.title),
       slug: item.slug,
       lastDate: detail?.lastDate,

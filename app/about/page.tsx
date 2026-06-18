@@ -2,10 +2,15 @@ import type { Metadata } from "next";
 import { Header } from "@/components/site/header";
 import { Footer } from "@/components/site/footer";
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.aiexamresult.com";
+
 export const metadata: Metadata = {
   title: "About Us - All India Exam Result",
   description: "All India Exam Result is India's fastest government exam information portal. We aggregate verified updates from official sources across SSC, UPSC, Railway, Banking, State exams and board results.",
   alternates: { canonical: "/about" },
+  openGraph: { title: "About Us | All India Exam Result", description: "India's fastest government exam information portal covering SSC, UPSC, Railway, Banking, State exams.", url: `${SITE_URL}/about`, images: [{ url: `${SITE_URL}/og-image.svg`, width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image", title: "About Us | All India Exam Result", description: "India's fastest government exam information portal." },
+  robots: { index: true, follow: true },
 };
 
 export default function AboutPage() {

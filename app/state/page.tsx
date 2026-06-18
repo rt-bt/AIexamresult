@@ -1,6 +1,12 @@
+import type { Metadata } from "next";
 import { Header } from "@/components/site/header";
 import { Footer } from "@/components/site/footer";
 import { StateGrid } from "@/components/site/state-grid";
+
+export const metadata: Metadata = {
+  title: "State-wise Exam Results & Jobs | All India Exam Result",
+  description: "Find government job results, admit cards and exam notifications by state — UP, Bihar, Rajasthan, MP, Maharashtra & more.",
+};
 
 export default function StateIndexPage() {
   return (

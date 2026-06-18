@@ -20,19 +20,19 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const cat = post.category || "Government Exam";
   const desc = post.intro ? post.intro.substring(0, 160) : `Latest ${cat} update with important dates, application fee and official links.`;
   return {
-    title: `${post.title} - ${cat}`,
+    title: `${post.title} - ${cat} | Sarkari Result 2026`,
     description: desc,
     alternates: { canonical: `/post/${slug}` },
     openGraph: {
-      title: `${post.title} - ${cat} 2026`,
+      title: `${post.title} - ${cat} | Sarkari Result 2026`,
       description: desc,
       type: "article",
       publishedTime: post.publishedDate,
-      images: [{ url: `${SITE_URL}/og-image.png`, width: 1200, height: 630 }]
+      images: [{ url: `${SITE_URL}/og-image.svg`, width: 1200, height: 630 }]
     },
     twitter: {
       card: "summary_large_image",
-      title: `${post.title} - ${cat}`,
+      title: `${post.title} - ${cat} | Sarkari Result`,
       description: desc,
     },
     robots: { index: true, follow: true }
@@ -175,7 +175,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
   }
 
   const title = post.title;
-  const publishedDate = post.publishedDate ? parseDate(post.publishedDate).toLocaleDateString("en-US", { day: "numeric", month: "long", year: "numeric" }) : new Date().toLocaleDateString("en-US", { day: "numeric", month: "long", year: "numeric" });
+  const publishedDate = post.publishedDate ? (() => { const d = parseDate(post.publishedDate); return isNaN(d.getTime()) || d > new Date() ? new Date().toLocaleDateString("en-US", { day: "numeric", month: "long", year: "numeric" }) : d.toLocaleDateString("en-US", { day: "numeric", month: "long", year: "numeric" }); })() : new Date().toLocaleDateString("en-US", { day: "numeric", month: "long", year: "numeric" });
   const officialUrl = post.importantLinks?.find((l: { label: string; url: string }) =>
     l.label?.toLowerCase().includes("official website") || l.label?.toLowerCase().includes("official site")
   )?.url;
@@ -229,7 +229,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         author: { "@id": `${SITE_URL}/#organization` },
         publisher: { "@id": `${SITE_URL}/#organization` },
         mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}/post/${slug}` },
-        image: `${SITE_URL}/og-image.png`,
+        image: `${SITE_URL}/og-image.svg`,
         articleSection: post.category || "Government Exam",
         inLanguage: "en-IN",
         speakable: { "@type": "SpeakableSpecification", cssSelector: ["h1", "h2", "h3"] }
@@ -552,14 +552,56 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
 
               {/* Result Timeline Tracker */}
               {post.importantDates && post.importantDates.length > 0 && (() => {
+                function isFuture(val: string): boolean {
+                  const v = val.toLowerCase().trim();
+                  if (/notify later|before exam|available soon|tentative|to be announced|will be notified|soon|update soon/i.test(v)) return true;
+                  const now = new Date();
+                  const months = ["january","february","march","april","may","june","july","august","september","october","november","december"];
+                  const monthIdx: Record<string, number> = {};
+                  months.forEach((m, i) => { monthIdx[m] = i; });
+                  const ddmmyy = v.match(/(\d{1,2})[\/-](\d{1,2})[\/-](\d{4})/);
+                  if (ddmmyy) {
+                    const d = new Date(parseInt(ddmmyy[3]), parseInt(ddmmyy[2]) - 1, parseInt(ddmmyy[1]));
+                    if (!isNaN(d.getTime())) return d > now;
+                  }
+                  const ddmonyy = v.match(/(\d{1,2})\s+(january|february|march|april|may|june|july|august|september|october|november|december),?\s+(\d{4})/i);
+                  if (ddmonyy) {
+                    const d = new Date(parseInt(ddmonyy[3]), monthIdx[ddmonyy[2].toLowerCase()], parseInt(ddmonyy[1]));
+                    if (!isNaN(d.getTime())) return d > now;
+                  }
+                  const monyy = v.match(/(january|february|march|april|may|june|july|august|september|october|november|december)\s+(\d{4})/i);
+                  if (monyy) {
+                    const m = monthIdx[monyy[1].toLowerCase()];
+                    const y = parseInt(monyy[2]);
+                    if (y > now.getFullYear()) return true;
+                    if (y === now.getFullYear() && m > now.getMonth()) return true;
+                  }
+                  for (let m = now.getMonth() + 1; m < 12; m++) {
+                    if (v.includes(months[m])) return true;
+                  }
+                  for (let y = now.getFullYear() + 1; y <= 2030; y++) {
+                    if (v.includes(y.toString())) return true;
+                  }
+                  return false;
+                }
+                function isDone(keyword: string): boolean {
+                  return (post.importantDates || []).some((d: string) => {
+                    const lower = d.toLowerCase();
+                    if (!lower.includes(keyword.toLowerCase())) return false;
+                    const parts = d.split(/[:–-]/).map((s: string) => s.trim());
+                    if (parts.length < 2) return true;
+                    const val = parts.slice(1).join(" ");
+                    return !isFuture(val);
+                  });
+                }
                 const phases = [
                   { label: "Notification", key: "notif", done: true },
-                  { label: "Apply Start", key: "apply", done: (post.importantDates || []).some((d: string) => d.toLowerCase().includes("apply") || d.toLowerCase().includes("application")) },
-                  { label: "Admit Card", key: "admit", done: (post.importantDates || []).some((d: string) => d.toLowerCase().includes("admit card")) },
-                  { label: "Exam Date", key: "exam", done: (post.importantDates || []).some((d: string) => d.toLowerCase().includes("exam date") || d.toLowerCase().includes("examination") || d.toLowerCase().includes("exam")) },
-                  { label: "Answer Key", key: "anskey", done: (post.importantDates || []).some((d: string) => d.toLowerCase().includes("answer key")) },
-                  { label: "Result", key: "result", done: (post.importantDates || []).some((d: string) => d.toLowerCase().includes("result")) },
-                  { label: "Merit", key: "merit", done: false },
+                  { label: "Apply Start", key: "apply", done: isDone("Apply Start") || isDone("Application Start") || (post.importantDates || []).some((d: string) => (d.toLowerCase().includes("apply") || d.toLowerCase().includes("application")) && !isFuture(d.split(/[:–-]/).slice(1).join(" "))) },
+                  { label: "Admit Card", key: "admit", done: isDone("Admit Card") },
+                  { label: "Exam Date", key: "exam", done: isDone("Exam Date") || isDone("Exam") },
+                  { label: "Answer Key", key: "anskey", done: isDone("Answer Key") },
+                  { label: "Result", key: "result", done: isDone("Result") },
+                  { label: "Merit", key: "merit", done: isDone("Merit") || isDone("Merit List") },
                 ];
                 const doneCount = phases.filter(p => p.done).length;
                 return (
@@ -692,6 +734,44 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                   </div>
                 </div>
               )}
+
+              {/* Full Article Content */}
+              {post.fullContentHtml && (() => {
+                const articleHtml = post.fullContentHtml
+                  .replace(/<style[^>]*>[\s\S]*?<\/style>/gi, "")
+                  .replace(/<script[^>]*>[\s\S]*?<\/script>/gi, "")
+                  .replace(/<svg[^>]*>[\s\S]*?<\/svg>/gi, "")
+                  .replace(/<div[^>]*id="shareBtnWrap"[^>]*>[\s\S]*?<\/div>/gi, "")
+                  .replace(/<img[^>]*>/gi, "")
+                  .replace(/class="[^"]*"/g, "")
+                  .replace(/<nav[\s\S]*?<\/nav>/gi, "")
+                  .replace(/<header[\s\S]*?<\/header>/gi, "")
+                  .replace(/<footer[\s\S]*?<\/footer>/gi, "")
+                  .replace(/<a[^>]*>You May Also Like[\s\S]*?(?=<h|<div|$)/gi, "")
+                  .replace(/<div[^>]*>[\s\S]*?Post navigation[\s\S]*?<\/div>/gi, "")
+                  .replace(/<div class="entry-details">[\s\S]*?<div class="entry-content">/, '<div class="entry-content">')
+                  .replace(/<div class="entry-image[\s\S]*?<\/div>/, "")
+                  .replace(/\s*style="[^"]*"/g, "")
+                  .replace(/<br\s*\/?>/g, " ")
+                  .replace(/\s{2,}/g, " ")
+                  .replace(/>\s+</g, "><")
+                  .trim();
+                const hasContent = articleHtml.length > 200 && /<h[1-4]|<p|<ul|<ol/.test(articleHtml);
+                if (!hasContent) return null;
+                return (
+                  <div className="rounded-2xl border border-gray-200 bg-white shadow-sm overflow-hidden">
+                    <div className="border-b border-gray-100 bg-gray-50/80 px-5 py-4">
+                      <h2 className="flex items-center gap-2.5 text-base font-bold text-gray-900">
+                        <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand/10 text-brand">
+                          <FileText className="h-4 w-4" />
+                        </span>
+                        Full Article
+                      </h2>
+                    </div>
+                    <div className="prose prose-sm max-w-none p-5 text-gray-700 [&_h2]:mt-6 [&_h2]:mb-3 [&_h2]:text-lg [&_h2]:font-bold [&_h2]:text-gray-900 [&_h3]:mt-5 [&_h3]:mb-2 [&_h3]:text-base [&_h3]:font-semibold [&_h3]:text-gray-800 [&_p]:mb-3 [&_p]:leading-7 [&_ul]:mb-3 [&_ul]:list-disc [&_ul]:pl-5 [&_ol]:mb-3 [&_ol]:list-decimal [&_ol]:pl-5 [&_li]:mb-1 [&_li]:leading-7 [&_a]:text-brand [&_a]:underline [&_a]:font-medium" dangerouslySetInnerHTML={{ __html: articleHtml }} />
+                  </div>
+                );
+              })()}
 
               {/* FAQ Section */}
               <div className="rounded-2xl border border-gray-200 bg-white shadow-sm overflow-hidden">

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Header } from "@/components/site/header";
 import { Footer } from "@/components/site/footer";
@@ -11,6 +12,11 @@ const resources = [
   { title: "Teaching Exams", desc: "CTET, UPTET, REET, Bihar Teacher — subject-wise notes", href: "/exam/ctet", icon: HelpCircle },
   { title: "State Govt Jobs", desc: "UP, Bihar, Rajasthan, MP, Maharashtra — state exam prep", href: "/state/uttar-pradesh", icon: BookOpen },
 ];
+
+export const metadata: Metadata = {
+  title: "Study Hub | All India Exam Result",
+  description: "Preparation resources, guides and study material for SSC, UPSC, Railway, Banking, Teaching & state government exams.",
+};
 
 export default function StudyHubPage() {
   return (

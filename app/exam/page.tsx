@@ -4,10 +4,15 @@ import { Footer } from "@/components/site/footer";
 import Link from "next/link";
 import { ShieldCheck, BookOpen, Train, Landmark, Swords, GraduationCap, Building2, ScrollText, ArrowRight } from "lucide-react";
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.aiexamresult.com";
+
 export const metadata: Metadata = {
   title: "All Exams 2026 - SSC, UPSC, Railway, Banking, State Jobs",
   description: "Browse all government exam categories in one place. SSC, UPSC, Railway RRB, Banking IBPS SBI, Teaching CTET, Defence, State government jobs and board exam results 2026.",
   alternates: { canonical: "/exam" },
+  openGraph: { title: "All Exams 2026 | All India Exam Result", description: "Browse SSC, UPSC, Railway, Banking, Teaching, Defence and State government exams.", url: `${SITE_URL}/exam`, images: [{ url: `${SITE_URL}/og-image.svg`, width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image", title: "All Exams 2026 | All India Exam Result", description: "Browse all government exams in one place." },
+  robots: { index: true, follow: true },
 };
 
 interface Exam { title: string; slug: string; description: string }

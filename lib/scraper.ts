@@ -210,7 +210,7 @@ export async function scrapePostDetail(url: string): Promise<PostDetail | null> 
 
     const $mainTable = $("table").eq(1);
     if ($mainTable.length) {
-      $mainTable.find("h2").each((_, h) => {
+      $mainTable.find("h2, h3, h4").each((_, h) => {
         const $h = $(h);
         const txt = $h.text().trim().toLowerCase();
         if (txt.includes("important date")) {
@@ -229,7 +229,7 @@ export async function scrapePostDetail(url: string): Promise<PostDetail | null> 
         }
       });
 
-      $mainTable.find("h2").each((_, h) => {
+      $mainTable.find("h2, h3, h4").each((_, h) => {
         const $h = $(h);
         const txt = $h.text().trim().toLowerCase();
         if (txt.includes("important links") || txt.includes("useful links")) {
@@ -372,6 +372,16 @@ export async function scrapePostDetail(url: string): Promise<PostDetail | null> 
             return false;
           }
         });
+      }
+    }
+
+    // Discard published dates that are in the future (source data errors)
+    if (publishedDate) {
+      const m = publishedDate.match(/(\d{1,2})\s+(January|February|March|April|May|June|July|August|September|October|November|December),?\s+(\d{4})/i);
+      if (m) {
+        const months: Record<string, number> = {january:0,february:1,march:2,april:3,may:4,june:5,july:6,august:7,september:8,october:9,november:10,december:11};
+        const d = new Date(+m[3], months[m[2].toLowerCase()], +m[1]);
+        if (!isNaN(d.getTime()) && d > new Date()) publishedDate = "";
       }
     }
 

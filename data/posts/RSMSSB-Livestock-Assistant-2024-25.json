@@ -5,7 +5,17 @@
   "category": "results",
   "publishedDate": "06 June 2026 | 02:46 PM",
   "intro": "Rajasthan Staff Selection Board (RSSB/ RMSSSB) has Officially Released Final Result for the Post of Livestock Assistant (Pashudhan Sahayak) for 2041 Post Recruitment 2025.  All Interested Candidates Can Download Final Result Now in the Given Link Below.",
-  "importantDates": [],
+  "importantDates": [
+    "Online Apply Start On : 31 January 2025",
+    "Registration Last Date : 01 March 2025",
+    "Fee Payment Last Date : 01 March 025",
+    "Exam Date : 13 June 2025",
+    "Exam City Details Date : 09 June 2025",
+    "Admit Card : 11 June 2025",
+    "Answer Key :21 August 2025",
+    "Result Declared :17 October 2025",
+    "Final Result Declared : 05 June 2026"
+  ],
   "applicationFee": [
     "General/ OBC/ EBC (CL) Rs.600/-",
     "OBC/ EBC/ EWS/ SC/ ST of Raj. Rs.400/-",
@@ -77,5 +87,6 @@
     }
   ],
   "fullContentHtml": "",
+  "lastDate": "31 January 2025",
   "isExpired": false
 }

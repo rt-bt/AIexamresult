@@ -43,7 +43,7 @@ function allTickerItems() {
     const da = a.date ? new Date(a.date.split("/").reverse().join("-") || a.date.split(" ").slice(0, 3).join(" ")).getTime() : 0;
     const db = b.date ? new Date(b.date.split("/").reverse().join("-") || b.date.split(" ").slice(0, 3).join(" ")).getTime() : 0;
     return db - da;
-  }).slice(0, 12);
+  }).slice(0, 40);
 }
 
 export function Header() {

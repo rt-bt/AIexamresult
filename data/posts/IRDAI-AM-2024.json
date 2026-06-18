@@ -5,7 +5,17 @@
   "category": "documents",
   "publishedDate": "23 December 2024 | 08:31 PM",
   "intro": "Insurance Regulatory and Development Authority of India (IRDAI) Are Recently Uploaded Phase-I Score Card for the Post of Assistant Manger (Various Stream) Recruitment 2024 (1376 Post). All Registered Candidates Can Download Phase-I Score Card Now in the Given Link Below.",
-  "importantDates": [],
+  "importantDates": [
+    "Online Apply Start On: 21 August 2024",
+    "Registration Last Date : 20 September 2024",
+    "Last Date for Fee Payment : 20 September 2024",
+    "Admit Card Available : 23 October 2024",
+    "Tier-I Exam Date : 06 November 2024",
+    "Tier-I Result : 26 November 2024",
+    "Tier-I Marks : 23 December 2024",
+    "Tier-II Admit Card: 11 December 2024",
+    "Tier-II Exam Date : 21 December 2024"
+  ],
   "applicationFee": [
     "General / OBC/ EWS Candidates : Rs.750/-",
     "SC / ST / PwDB Candidates : Rs. 100/-",
@@ -66,6 +76,7 @@
     }
   ],
   "fullContentHtml": "",
+  "lastDate": "21 August 2024",
   "isExpired": false,
   "divisionWiseVacancy": [
     {

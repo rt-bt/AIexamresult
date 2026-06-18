@@ -5,13 +5,38 @@
   "category": "documents",
   "publishedDate": "",
   "intro": "Central Board of Secondary Education (CBSE) Are Recently Uploaded Result For the Central Teacher Eligibility Test CTET December2024. All Eligible & Interested Candidates Can Download Result Now in the Given Link Below.",
-  "importantDates": [],
+  "importantDates": [
+    "Online Apply Start On : 17 September 2024",
+    "Last Date of Registration : 16 October 2024",
+    "Fee Payment Last Date: 16 October 2024",
+    "Online Correction: 21-25 October 2024",
+    "Exam Date/ City Link: 03 December 2024",
+    "Admit Card Available : 12 December 2024",
+    "New Exam Date : 14, 15 December 2024",
+    "Answer Key Available : 01-05 January 2025",
+    "Result Declared : 08 January 2025"
+  ],
   "applicationFee": [
     "General / OBC (SingleSubject) : Rs. 1000/-",
     "SC / ST / PH(SingleSubject): Rs. 500/-",
     "General / OBC (Both Paper) : Rs. 1200/-",
     "SC / ST / PH(Both Paper): Rs. 600/-",
-    "Payment Details: Pay the Exam Fee through Debit Card / Credit Card / Net Banking Mode."
+    "Payment Details: Pay the Exam Fee through Debit Card / Credit Card / Net Banking Mode.",
+    "Paper I: For teaching classes I to V, you need at least 50% marks in Senior Secondary (or its equivalent) with a 2-year D.El.Ed or a Bachelors Degree in Education (B.Ed).",
+    "Paper II: For teaching classes VI to VIII, you need a Bachelors Degree with a 1-year B.Ed or equivalent.",
+    "Go to the official CTET website ctet.nic.in. Ensure you are on the correct site to avoid fraudulent activities.",
+    "Create an Account: Click on the \"New Registration\" link. Fill in the required details such as name, contact information, and email address.",
+    "Generate Login Credentials: After registering, you will receive a registration number and password. Keep these details secure for future use.",
+    "Log In: Use your registration number and password to log in.",
+    "Complete the Form: Enter personal details, educational qualifications, and preferred exam centers. Ensure all details are accurate.",
+    "Choose Papers: Select Paper I, Paper II, or both, depending on your eligibility and preference.",
+    "Photograph and Signature: Upload a recent passport-sized photograph and your signature as per the specifications provided (usually JPEG format and specific dimensions).",
+    "Other Documents: If required, upload any additional documents like caste certificates or educational qualifications.",
+    "Fee Payment: The fee varies based on the category and the number of papers. You can pay via online methods such as debit/credit cards or net banking.",
+    "Fee Structure: Check the specific fee details on the official website.",
+    "Preview Application: Review all the information entered to ensure accuracy.",
+    "Submit Application: Once confirmed, submit the application form.",
+    "Download and Print: After submission, download and print the confirmation page and payment receipt for your records."
   ],
   "importantLinks": [
     {
@@ -72,5 +97,6 @@
     }
   ],
   "fullContentHtml": "",
+  "lastDate": "17 September 2024",
   "isExpired": false
 }

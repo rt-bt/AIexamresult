@@ -21,7 +21,12 @@
     "Final Result :  25 July 2025",
     "Marks Available :  27 Aug to 12 Sept 2025"
   ],
-  "applicationFee": [],
+  "applicationFee": [
+    "General / OBC/ EWS Candidates :Rs.100/-",
+    "SC / ST / PH Candidates :Rs. 00/-",
+    "All Category Female : 00/-",
+    "Payment Mode: Pay the Exam Fee Through Credit Card, Debit Card, Net Banking Fee Mode."
+  ],
   "importantLinks": [
     {
       "label": "Download Marks",
