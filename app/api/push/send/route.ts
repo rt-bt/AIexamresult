@@ -19,6 +19,11 @@ function readSubs(): Subscription[] {
 
 export async function POST(request: Request) {
   try {
+    const apiKey = request.headers.get("x-api-key");
+    if (apiKey !== process.env.PUSH_API_KEY) {
+      return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+    }
+
     const publicKey = process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY;
     const privateKey = process.env.VAPID_PRIVATE_KEY;
     if (!publicKey || !privateKey) {

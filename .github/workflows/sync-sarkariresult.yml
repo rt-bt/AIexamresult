@@ -39,3 +39,13 @@ jobs:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
         run: |
           npx vercel deploy --prod --yes --token=$VERCEL_TOKEN
+
+      - name: Send push notifications
+        if: always()
+        env:
+          PUSH_API_KEY: ${{ secrets.PUSH_API_KEY }}
+        run: |
+          curl -s -X POST https://www.aiexamresult.com/api/push/send \
+            -H "Content-Type: application/json" \
+            -H "x-api-key: $PUSH_API_KEY" \
+            -d '{"title":"New Update on AI Exam Result","body":"Latest govt job updates are now available","url":"https://www.aiexamresult.com"}'
