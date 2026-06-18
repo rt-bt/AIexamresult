@@ -5,6 +5,7 @@ import { Footer } from "@/components/site/footer";
 import { Hero } from "@/components/site/hero";
 import dynamicImport from "next/dynamic";
 import { NotificationSubscribe } from "@/components/site/nnotification-subscribe";
+import { PushNotificationPrompt } from "@/components/push-notification-prompt";
 import { StateGrid } from "@/components/site/state-grid";
 import { categorySections, featuredResults } from "@/lib/data";
 import Link from "next/link";
@@ -78,6 +79,8 @@ export default function HomePage() {
         </section>
 
         <NotificationSubscribe />
+
+        <PushNotificationPrompt />
 
         <section className="border-t border-slate-100 bg-white dark:border-slate-800 dark:bg-slate-900 py-16 sm:py-20">
           <div className="container-page">

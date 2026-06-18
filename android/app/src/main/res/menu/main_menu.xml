@@ -5,4 +5,10 @@
         android:icon="@drawable/ic_sync"
         android:title="Sync"
         app:showAsAction="always" />
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="Token"
+        android:contentDescription="GitHub Token"
+        app:showAsAction="always" />
 </menu>
