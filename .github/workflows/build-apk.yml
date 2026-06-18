@@ -22,8 +22,8 @@ jobs:
       - name: Build Next.js
         run: npm run build
 
-      - name: Sync Capacitor
-        run: npx cap sync android
+      - name: Copy Capacitor web assets
+        run: npx cap copy android
 
       - name: Setup Java
         uses: actions/setup-java@v4
