@@ -21,10 +21,6 @@ export const metadata: Metadata = {
   manifest: "/manifest.webmanifest",
   alternates: {
     canonical: "/",
-    languages: {
-      "en-IN": SITE_URL,
-      "hi-IN": SITE_URL,
-    }
   },
   keywords: [
     "sarkari result", "sarkari results", "government jobs", "exam result", "admit card", "answer key",
@@ -153,12 +149,12 @@ const jsonLd = {
         `${SITE_URL}/answer-key`,
         `${SITE_URL}/exam`
       ],
-      breadcrumb: { "@id": `${SITE_URL}/#breadcrumb` },
+      breadcrumb: { "@id": `${SITE_URL}/#homepage-breadcrumb` },
       speakable: { "@type": "SpeakableSpecification", cssSelector: ["h1", "h2", ".hero-title"] }
     },
     {
       "@type": "BreadcrumbList",
-      "@id": `${SITE_URL}/#breadcrumb`,
+      "@id": `${SITE_URL}/#homepage-breadcrumb`,
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
         { "@type": "ListItem", position: 2, name: "Results", item: `${SITE_URL}/results` },
@@ -236,9 +232,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <meta name="color-scheme" content="light" />
-        <meta httpEquiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-        <meta httpEquiv="Pragma" content="no-cache" />
-        <meta httpEquiv="Expires" content="0" />
+        <meta httpEquiv="Cache-Control" content="public, max-age=60, must-revalidate" />
         <script>{`document.documentElement.classList.remove("dark");localStorage.removeItem("aier_theme");`}</script>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <script dangerouslySetInnerHTML={{ __html: `"serviceWorker"in navigator&&window.addEventListener("load",function(){navigator.serviceWorker.register("/sw.js")})` }} />

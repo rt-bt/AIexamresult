@@ -29,6 +29,7 @@ export interface PostDetail extends PostSummary {
   isExpired?: boolean;
   vacancyDetails?: string[];
   divisionWiseVacancy?: { division: string; posts: string }[];
+  cutoff?: Record<string, string>;
 }
 
 export interface ScrapedData {

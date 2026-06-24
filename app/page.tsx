@@ -14,23 +14,10 @@ import { ArrowUpRight, TrendingUp } from "lucide-react";
 const QuickAccess = dynamicImport(() => import("@/components/site/quick-access").then(m => m.QuickAccess), { ssr: true });
 const CategoryColumns = dynamicImport(() => import("@/components/site/category-columns").then(m => m.CategoryColumns), { ssr: true });
 
-const faqLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    { "@type": "Question", name: "What is Sarkari Result and how to check online?", acceptedAnswer: { "@type": "Answer", text: "Sarkari Result means Indian government exam results. All India Exam Result provides verified sarkari result updates, job alerts, admit cards, answer keys and admissions." } },
-    { "@type": "Question", name: "How to get latest Sarkari job alert updates?", acceptedAnswer: { "@type": "Answer", text: "Our data is synced every 30 minutes from official sources. You get real-time sarkari job alerts, rojgar result updates, exam notifications and results." } },
-    { "@type": "Question", name: "Is this an official Sarkari result website?", acceptedAnswer: { "@type": "Answer", text: "No, this is an independent information portal. All sarkari result data is sourced from publicly available government notifications. We link to official websites for verification." } },
-    { "@type": "Question", name: "Which Sarkari exams are covered for naukri?", acceptedAnswer: { "@type": "Answer", text: "We cover all major sarkari exams: SSC, UPSC, Railway RRB, Banking, Teaching (CTET, UPTET), Defence, state govt jobs and board results across India." } },
-    { "@type": "Question", name: "How to search Sarkari exam results and admit cards?", acceptedAnswer: { "@type": "Answer", text: "Use our search bar to find any sarkari exam result, admit card, or job notification instantly. Browse by category or visit exam-specific pages." } },
-  ]
-};
-
 export default function HomePage() {
   const trending = featuredResults.slice(0, 4);
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
       <Header />
       <main>
         <h1 className="sr-only">All India Exam Result - Sarkari Result, Govt Jobs, Admit Card, Answer Key 2026</h1>

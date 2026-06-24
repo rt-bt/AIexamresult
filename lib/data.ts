@@ -24,22 +24,25 @@ type ScrapedData = {
 
 function loadScraped(): ScrapedData | null {
   try {
-    const mod = require("@/data/scraped-data");
-    return mod.scrapedData;
-  } catch {
-    try {
-      const mod = require("../data/scraped-data");
-      return mod.scrapedData;
-    } catch {
-      return null;
+    const fs = require("fs") as typeof import("fs");
+    const path = require("path") as typeof import("path");
+    const jsonPath = path.join(process.cwd(), "data", "scraped.json");
+    if (fs.existsSync(jsonPath)) {
+      return JSON.parse(fs.readFileSync(jsonPath, "utf8"));
     }
-  }
+  } catch {}
+  return null;
 }
 
-const scraped = loadScraped();
+let _scraped: ScrapedData | null | undefined = undefined;
+function getScraped(): ScrapedData | null {
+  if (_scraped === undefined) _scraped = loadScraped();
+  return _scraped;
+}
 
 export function getPostBySlug(slug: string) {
-  if (scraped?.posts?.[slug]) return scraped.posts[slug];
+  const s = getScraped();
+  if (s?.posts?.[slug]) return s.posts[slug];
   return null;
 }
 
@@ -67,7 +70,8 @@ function toPostCard(items: ({ title: string; url: string; category: string; slug
     return db - da;
   });
   return sorted.map((item) => {
-    const detail = scraped?.posts?.[item.slug];
+    const s2 = getScraped();
+    const detail = s2?.posts?.[item.slug];
     const dt = item.publishedDate ? parseDate(item.publishedDate) : null;
     const displayDate = dt && !isNaN(dt.getTime()) && dt > new Date() ? new Date() : dt;
     return {
@@ -145,16 +149,17 @@ const defaultDocuments: PostCard[] = [
   { title: "Domicile Certificate Online Apply", excerpt: "State domicile/residence certificate application, documents required and download.", category: "Document", date: "10 Jun 2026", state: "India", slug: "" },
 ];
 
-const scrapedNotif = scraped ? [...(scraped.admitCards || []), ...(scraped.answerKeys || [])] : undefined;
+const s3 = getScraped();
+const scrapedNotif = s3 ? [...(s3.admitCards || []), ...(s3.answerKeys || [])] : undefined;
 
-export const featuredResults = toPostCard(scraped?.results, "Result", defaultResults);
-export const latestJobs = toPostCard(scraped?.latestJobs, "Jobs", defaultJobs);
+export const featuredResults = toPostCard(s3?.results, "Result", defaultResults);
+export const latestJobs = toPostCard(s3?.latestJobs, "Jobs", defaultJobs);
 export const notifications = toPostCard(scrapedNotif, "Notification", defaultNotifications);
-export const centralExams = toPostCard(scraped?.answerKeys, "Central Exams", defaultCentral);
-export const admissions = toPostCard(scraped?.admissions, "Admission", defaultAdmissions);
-export const documents = toPostCard(scraped?.documents, "Documents", defaultDocuments);
+export const centralExams = toPostCard(s3?.answerKeys, "Central Exams", defaultCentral);
+export const admissions = toPostCard(s3?.admissions, "Admission", defaultAdmissions);
+export const documents = toPostCard(s3?.documents, "Documents", defaultDocuments);
 
-const admitCards = toPostCard(scraped?.admitCards, "Admit Card", []);
+const admitCards = toPostCard(s3?.admitCards, "Admit Card", []);
 
 export const categorySections: { label: string; items: PostCard[] }[] = [
   { label: "Latest Vacancy", items: latestJobs },

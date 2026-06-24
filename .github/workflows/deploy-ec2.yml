@@ -1,0 +1,54 @@
+name: Deploy to EC2
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Build Next.js
+        run: npm run build
+        env:
+          NODE_OPTIONS: --max-old-space-size=4096
+
+      - name: Compress .next
+        run: zip -r .next.zip .next/ -x ".next/cache/**"
+
+      - name: Upload .next to EC2
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: 65.0.146.40
+          username: ubuntu
+          key: ${{ secrets.EC2_SSH_KEY }}
+          source: ".next.zip"
+          target: /home/ubuntu/a-iexamresult
+
+      - name: Deploy on EC2
+        uses: appleboy/ssh-action@v1.2.2
+        with:
+          host: 65.0.146.40
+          username: ubuntu
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            cd /home/ubuntu/a-iexamresult
+            git pull origin master
+            npm ci --omit=dev
+            sudo rm -rf .next
+            unzip -q .next.zip -d .next
+            rm -f .next.zip
+            sudo chown -R ubuntu:ubuntu .next
+            sudo chmod -R 755 .next
+            pm2 restart aiexamresult --update-env
+            pm2 save

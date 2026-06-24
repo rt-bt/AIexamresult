@@ -1,13 +1,14 @@
 @echo off
-title Sync SarkariResult - AI Exam Result
+title Sync All - AI Exam Result
 cd /d "%~dp0"
 echo ==========================================
 echo   Sync Data from SarkariResult.com
+echo   (sarkariexam.com disabled - Cloudflare block)
 echo ==========================================
 echo.
 echo Step 1: Syncing new data...
 echo.
-node scripts/sync-sarkariresult.mjs
+node scripts/sync-all.mjs
 echo.
 echo Step 2: Deploying to Vercel...
 echo.

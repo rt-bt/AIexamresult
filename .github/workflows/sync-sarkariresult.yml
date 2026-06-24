@@ -1,4 +1,4 @@
-name: Sync SarkariResult
+name: Sync All Sources
 on:
   schedule:
     - cron: "0 */6 * * *"
@@ -10,7 +10,7 @@ permissions:
 jobs:
   sync:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
 
@@ -21,16 +21,16 @@ jobs:
 
       - run: npm ci || npm install
 
-      - name: Run sync-sarkariresult
-        run: node scripts/sync-sarkariresult.mjs
+      - name: Run sync-all (sarkariresult.com + sarkariexam.com)
+        run: node scripts/sync-all.mjs
 
       - name: Commit & push if changed
         run: |
-          git config user.name "sarkariresult-bot"
+          git config user.name "sync-bot"
           git config user.email "rtbtrack@gmail.com"
           git add -A
           if ! git diff --quiet || ! git diff --staged --quiet; then
-            git commit -m "Sync sarkariresult $(date +'%d %b %Y %H:%M')"
+            git commit -m "Sync all sources $(date +'%d %b %Y %H:%M')"
             git push
           fi
 

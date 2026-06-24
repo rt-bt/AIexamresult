@@ -10,6 +10,6 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: "Bingbot", allow: "/", disallow: ["/admin", "/api/auth"] },
       { userAgent: "*", allow: "/", disallow: ["/admin", "/api/auth"], crawlDelay: 10 },
     ],
-    sitemap: `${base}/sitemap.xml`
+    sitemap: `${base}/sitemap-index.xml`
   };
 }

@@ -212,7 +212,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
     "@graph": [
       {
         "@type": "BreadcrumbList",
-        "@id": `${SITE_URL}/#breadcrumb`,
+        "@id": `${SITE_URL}/post/${slug}#breadcrumb`,
         itemListElement: [
           { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
           { "@type": "ListItem", position: 2, name: post.category || "Updates", item: `${SITE_URL}/${catSlug}` },
@@ -225,7 +225,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         headline: title,
         description: post.intro || `${title} — check latest updates, important dates, application fee, eligibility and official links.`,
         datePublished: post.publishedDate || new Date().toISOString().split("T")[0],
-        dateModified: new Date().toISOString().split("T")[0],
+        dateModified: post.lastDate || post.publishedDate || new Date().toISOString().split("T")[0],
         author: { "@id": `${SITE_URL}/#organization` },
         publisher: { "@id": `${SITE_URL}/#organization` },
         mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}/post/${slug}` },
@@ -295,7 +295,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         <div className="container-page py-4 sm:py-8">
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-          <nav aria-label="Breadcrumb" className="mb-6 hidden sm:flex">
+          <nav aria-label="Breadcrumb" className="mb-6 flex">
             <ol className="flex flex-wrap items-center gap-2 text-sm text-gray-500">
               <li><Link href="/" className="font-medium transition hover:text-brand">Home</Link></li>
               <ChevronRight className="h-3.5 w-3.5 text-gray-300" />
@@ -643,32 +643,40 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
               })()}
 
               {/* Cutoff & Merit */}
-              {hasCutoffContent && (
+              {(post.cutoff || hasCutoffContent) && (
                 <TableCard icon={<Gauge className="h-4 w-4" />} title="Cutoff &amp; Merit List" gradient="border-b border-amber-100 bg-amber-50/50">
                   <div className="space-y-3">
-                    {[
-                      { cat: "General (UR)", marks: "—", pct: 85, color: "bg-blue-500" },
-                      { cat: "OBC", marks: "—", pct: 75, color: "bg-orange-500" },
-                      { cat: "EWS", marks: "—", pct: 72, color: "bg-yellow-500" },
-                      { cat: "SC", marks: "—", pct: 60, color: "bg-purple-500" },
-                      { cat: "ST", marks: "—", pct: 50, color: "bg-teal-500" },
-                      { cat: "PwD", marks: "—", pct: 55, color: "bg-pink-500" },
-                    ].map((row) => (
-                      <div key={row.cat} className="rounded-lg bg-white border border-amber-100 px-4 py-3 hover:border-amber-200 transition">
-                        <div className="flex items-center justify-between mb-1.5">
-                          <span className="text-sm font-semibold text-gray-700">{row.cat}</span>
-                          <span className="text-sm font-bold text-gray-900">{row.marks}</span>
+                    {post.cutoff ? (
+                      (Object.entries(post.cutoff) as [string, string][]).map(([cat, marks]) => (
+                        <div key={cat} className="rounded-lg bg-white border border-amber-100 px-4 py-3 hover:border-amber-200 transition">
+                          <div className="flex items-center justify-between mb-1.5">
+                            <span className="text-sm font-semibold text-gray-700">{cat}</span>
+                            <span className="text-sm font-bold text-gray-900">{marks}</span>
+                          </div>
                         </div>
-                        <div className="h-2 w-full rounded-full bg-amber-50 overflow-hidden">
-                          <div
-                            className={`h-full rounded-full ${row.color} transition-all`}
-                            style={{ width: `${row.pct}%` }}
-                          />
+                      ))
+                    ) : (
+                      [
+                        { cat: "General (UR)", marks: "—", color: "bg-blue-500", pct: 85 },
+                        { cat: "OBC", marks: "—", color: "bg-orange-500", pct: 75 },
+                        { cat: "EWS", marks: "—", color: "bg-yellow-500", pct: 72 },
+                        { cat: "SC", marks: "—", color: "bg-purple-500", pct: 60 },
+                        { cat: "ST", marks: "—", color: "bg-teal-500", pct: 50 },
+                        { cat: "PwD", marks: "—", color: "bg-pink-500", pct: 55 },
+                      ].map((row) => (
+                        <div key={row.cat} className="rounded-lg bg-white border border-amber-100 px-4 py-3 hover:border-amber-200 transition">
+                          <div className="flex items-center justify-between mb-1.5">
+                            <span className="text-sm font-semibold text-gray-700">{row.cat}</span>
+                            <span className="text-sm font-bold text-gray-900">{row.marks}</span>
+                          </div>
+                          <div className="h-2 w-full rounded-full bg-amber-50 overflow-hidden">
+                            <div className={`h-full rounded-full ${row.color} transition-all`} style={{ width: `${row.pct}%` }} />
+                          </div>
                         </div>
-                      </div>
-                    ))}
+                      ))
+                    )}
                   </div>
-                  <p className="mt-4 text-xs text-gray-400">Cutoff data will be updated when officially released. Check official website for detailed category-wise cutoff.</p>
+                  {!post.cutoff && <p className="mt-4 text-xs text-gray-400">Cutoff data will be updated when officially released. Check official website for detailed category-wise cutoff.</p>}
                 </TableCard>
               )}
 

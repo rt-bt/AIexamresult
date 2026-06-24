@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Header } from "@/components/site/header";
 import { Footer } from "@/components/site/footer";
-import { SectionContent } from "@/components/site/section-content";
+import { TableContent } from "@/components/site/table-content";
 import { sectionItems } from "@/lib/data";
 import type { PostCard } from "@/lib/data";
 import { SITE_URL } from "@/lib/seo";
@@ -103,6 +103,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   };
 }
 
+import { ChevronRight } from "lucide-react";
+import Link from "next/link";
+
 export default async function ExamPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const name = examNames[slug] || titleCase(slug);
@@ -117,26 +120,27 @@ export default async function ExamPage({ params }: { params: Promise<{ slug: str
     "@graph": [
       {
         "@type": "BreadcrumbList",
+        "@id": `${SITE_URL}/exam/${slug}#breadcrumb`,
         itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Home", item: "https://www.aiexamresult.com" },
-          { "@type": "ListItem", position: 2, name: "Exams", item: "https://www.aiexamresult.com/exam" },
-          { "@type": "ListItem", position: 3, name: name, item: `https://www.aiexamresult.com/exam/${slug}` },
+          { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+          { "@type": "ListItem", position: 2, name: "Exams", item: `${SITE_URL}/exam` },
+          { "@type": "ListItem", position: 3, name: name, item: `${SITE_URL}/exam/${slug}` },
         ],
       },
       {
         "@type": "CollectionPage",
-        "@id": `https://www.aiexamresult.com/exam/${slug}#page`,
+        "@id": `${SITE_URL}/exam/${slug}#page`,
         name: `${name} 2026 — Latest Updates, Result, Admit Card & Answer Key`,
         description: desc,
-        isPartOf: { "@id": "https://www.aiexamresult.com/#website" },
-        about: { "@id": "https://www.aiexamresult.com/#organization" },
+        isPartOf: { "@id": `${SITE_URL}/#website` },
+        about: { "@id": `${SITE_URL}/#organization` },
         inLanguage: "en-IN",
         mainEntity: {
           "@type": "ItemList",
           itemListElement: filtered.slice(0, 10).map((p, i) => ({
             "@type": "ListItem",
             position: i + 1,
-            url: `https://www.aiexamresult.com/post/${p.slug}`,
+            url: `${SITE_URL}/post/${p.slug}`,
             name: p.title
           }))
         }
@@ -151,13 +155,22 @@ export default async function ExamPage({ params }: { params: Promise<{ slug: str
       <main>
         <div className="bg-gradient-to-br from-[#0D9488] via-[#0F766E] to-[#115E59] py-16">
           <div className="container-page">
+            <nav aria-label="Breadcrumb" className="mb-4 flex">
+              <ol className="flex flex-wrap items-center gap-2 text-sm text-white/70">
+                <li><Link href="/" className="font-medium transition hover:text-white">Home</Link></li>
+                <ChevronRight className="h-3.5 w-3.5" />
+                <li><Link href="/exam" className="font-medium transition hover:text-white">Exams</Link></li>
+                <ChevronRight className="h-3.5 w-3.5" />
+                <li className="font-semibold text-white">{name}</li>
+              </ol>
+            </nav>
             <p className="text-sm font-bold uppercase tracking-wide text-[#5EEAD4]">Exam Wise Updates</p>
             <h1 className="mt-3 text-3xl font-black text-white sm:text-4xl">{name} 2026</h1>
             <p className="mt-3 max-w-2xl text-white/80">{desc}</p>
           </div>
         </div>
         {filtered.length > 0 ? (
-          <SectionContent title={name} items={filtered} />
+          <TableContent title={name} items={filtered} />
         ) : (
           <section className="container-page py-20 text-center">
             <h2 className="text-2xl font-black text-ink">Updates Coming Soon</h2>

@@ -11,7 +11,10 @@ const nextConfig: NextConfig = {
     ]
   },
   experimental: {
-    optimizePackageImports: ["lucide-react", "framer-motion"]
+    optimizePackageImports: ["lucide-react", "framer-motion"],
+  },
+  outputFileTracingExcludes: {
+    "/*": ["./data/posts/**", "./data/scraped.json", "./data/scraped-data.ts"],
   },
   async headers() {
     return [
