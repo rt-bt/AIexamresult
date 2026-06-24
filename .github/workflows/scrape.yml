@@ -21,6 +21,7 @@ jobs:
           cache: npm
       - run: npm ci || npm install
       - run: npm run scrape || echo "Scrape completed with some errors"
+      - run: node scripts/seo-optimize.mjs || echo "SEO optimization skipped"
       - name: Commit & push if changed
         run: |
           git config user.name "Aditya"

@@ -24,6 +24,9 @@ jobs:
       - name: Run sync-all (sarkariresult.com + sarkariexam.com)
         run: node scripts/sync-all.mjs
 
+      - name: Run SEO optimization
+        run: node scripts/seo-optimize.mjs
+
       - name: Commit & push if changed
         run: |
           git config user.name "sync-bot"
@@ -33,12 +36,6 @@ jobs:
             git commit -m "Sync all sources $(date +'%d %b %Y %H:%M')"
             git push
           fi
-
-      - name: Deploy to Vercel
-        env:
-          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-        run: |
-          npx vercel deploy --prod --yes --token=$VERCEL_TOKEN
 
       - name: Send push notifications
         if: always()
