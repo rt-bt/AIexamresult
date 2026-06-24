@@ -27,5 +27,84 @@
       "division": "ST",
       "posts": "20"
     }
-  ]
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://www.aiexamresult.com/post/ib-acio-tier-2-result-2026-out",
+        "url": "https://www.aiexamresult.com/post/ib-acio-tier-2-result-2026-out",
+        "name": "IB ACIO Tier 2 Result 2026 Out @mha.gov.in, Executive/Grade 2 Result Direct Download Link",
+        "description": "The Intelligence Bureau, Ministry of Home Affairs has released the IB ACIO Tier 2 Result 2026 on 5th March 2026 at mha.gov.in. The Tier 2 Written exam was succe",
+        "inLanguage": "en-IN",
+        "isPartOf": {
+          "@id": "https://www.aiexamresult.com/#website"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://www.aiexamresult.com/og-image.svg"
+        },
+        "datePublished": "5 March 2026",
+        "dateModified": "2026-06-24",
+        "author": {
+          "@type": "Organization",
+          "name": "All India Exam Result",
+          "url": "https://www.aiexamresult.com"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.aiexamresult.com/post/ib-acio-tier-2-result-2026-out#faq",
+        "url": "https://www.aiexamresult.com/post/ib-acio-tier-2-result-2026-out#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is IB ACIO Tier 2 Result 2026 Out @mha.gov.in, Executive/Grade 2 Result Direct Download Link?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "IB ACIO Tier 2 Result 2026 Out @mha.gov.in, Executive/Grade 2 Result Direct Download Link is a government exam related notification. Complete details including important dates, fee, eligibility and official links are provided on this page."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How to download the result?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Click on the relevant link in the Important Links section above or visit the official website directly to download the result."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.aiexamresult.com/post/ib-acio-tier-2-result-2026-out#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.aiexamresult.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Results",
+            "item": "https://www.aiexamresult.com/results"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "IB ACIO Tier 2 Result 2026 Out @mha.gov.in, Executive/Grade 2 Result Direct Download Link",
+            "item": "https://www.aiexamresult.com/post/ib-acio-tier-2-result-2026-out"
+          }
+        ]
+      }
+    ]
+  },
+  "seoMeta": {
+    "title": "IB ACIO Tier 2 Result 2026 Out @mha.gov.in, Executive/Grade 2 Result Direct Download Link",
+    "description": "The Intelligence Bureau, Ministry of Home Affairs has released the IB ACIO Tier 2 Result 2026 on 5th March 2026 at mha.gov.in. The Tier 2 Written exam was succe",
+    "canonical": "https://www.aiexamresult.com/post/ib-acio-tier-2-result-2026-out"
+  }
 }

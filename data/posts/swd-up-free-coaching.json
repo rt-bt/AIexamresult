@@ -85,5 +85,100 @@
       "division": "Gorakhpur Center",
       "posts": "100"
     }
-  ]
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://www.aiexamresult.com/post/swd-up-free-coaching",
+        "url": "https://www.aiexamresult.com/post/swd-up-free-coaching",
+        "name": "Uttar Pradesh SWD UP IAS PCS Pre 2023 Free Coaching Admission Test Result",
+        "description": "Social Welfare Department, SWD Uttar Pradesh has released online application for admission in free coaching for the preparation of Civil Services and Public Ser",
+        "inLanguage": "en-IN",
+        "isPartOf": {
+          "@id": "https://www.aiexamresult.com/#website"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://www.aiexamresult.com/og-image.svg"
+        },
+        "datePublished": "03 January 2023 | 04:31 PM",
+        "dateModified": "2026-06-24",
+        "author": {
+          "@type": "Organization",
+          "name": "All India Exam Result",
+          "url": "https://www.aiexamresult.com"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.aiexamresult.com/post/swd-up-free-coaching#faq",
+        "url": "https://www.aiexamresult.com/post/swd-up-free-coaching#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Uttar Pradesh SWD UP IAS PCS Pre 2023 Free Coaching Admission Test Result?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Uttar Pradesh SWD UP IAS PCS Pre 2023 Free Coaching Admission Test Result is a government exam related notification. Complete details including important dates, fee, eligibility and official links are provided on this page."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the last date to apply?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The last date to apply is 30/11/2022."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where is the official website?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The official website is http://socialwelfareup.upsdc.gov.in/."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How to download the notification?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Click on the relevant link in the Important Links section above or visit the official website directly to download the notification."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.aiexamresult.com/post/swd-up-free-coaching#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.aiexamresult.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Admissions",
+            "item": "https://www.aiexamresult.com/admissions"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Uttar Pradesh SWD UP IAS PCS Pre 2023 Free Coaching Admission Test Result",
+            "item": "https://www.aiexamresult.com/post/swd-up-free-coaching"
+          }
+        ]
+      }
+    ]
+  },
+  "seoMeta": {
+    "title": "Uttar Pradesh SWD UP IAS PCS Pre 2023 Free Coaching Admission Test Result",
+    "description": "Social Welfare Department, SWD Uttar Pradesh has released online application for admission in free coaching for the preparation of Civil Services and Public Ser",
+    "canonical": "https://www.aiexamresult.com/post/swd-up-free-coaching"
+  }
 }

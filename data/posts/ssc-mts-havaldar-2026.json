@@ -105,5 +105,100 @@
   "vacancyDetails": [
     "Multi Tasking Staff (MTS) : 6810",
     "Havaldar : 1138"
-  ]
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://www.aiexamresult.com/post/ssc-mts-havaldar-2026",
+        "url": "https://www.aiexamresult.com/post/ssc-mts-havaldar-2026",
+        "name": "SSC MTS Result 2026 Soon, Check Cut Off Marks, Merit List PDF",
+        "description": "Author: Sarkari Exam Team\nTag: 10th Pass Job",
+        "inLanguage": "en-IN",
+        "isPartOf": {
+          "@id": "https://www.aiexamresult.com/#website"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://www.aiexamresult.com/og-image.svg"
+        },
+        "datePublished": "8 June 2026",
+        "dateModified": "2026-06-24",
+        "author": {
+          "@type": "Organization",
+          "name": "All India Exam Result",
+          "url": "https://www.aiexamresult.com"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.aiexamresult.com/post/ssc-mts-havaldar-2026#faq",
+        "url": "https://www.aiexamresult.com/post/ssc-mts-havaldar-2026#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is SSC MTS Result 2026 Soon, Check Cut Off Marks, Merit List PDF?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "SSC MTS Result 2026 Soon, Check Cut Off Marks, Merit List PDF is a government exam related notification. Complete details including important dates, fee, eligibility and official links are provided on this page."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the last date to apply?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The last date to apply is 24 July 2025."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where is the official website?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The official website is https://ssc.gov.in/."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How to download the result?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Click on the relevant link in the Important Links section above or visit the official website directly to download the result."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.aiexamresult.com/post/ssc-mts-havaldar-2026#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.aiexamresult.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Results",
+            "item": "https://www.aiexamresult.com/results"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "SSC MTS Result 2026 Soon, Check Cut Off Marks, Merit List PDF",
+            "item": "https://www.aiexamresult.com/post/ssc-mts-havaldar-2026"
+          }
+        ]
+      }
+    ]
+  },
+  "seoMeta": {
+    "title": "SSC MTS Result 2026 Soon, Check Cut Off Marks, Merit List PDF",
+    "description": "Author: Sarkari Exam Team\nTag: 10th Pass Job",
+    "canonical": "https://www.aiexamresult.com/post/ssc-mts-havaldar-2026"
+  }
 }

@@ -91,5 +91,84 @@
       "division": "RRB Thiruvananthapuram",
       "posts": "2016"
     }
-  ]
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://www.aiexamresult.com/post/rrb-alp-cbt-1-result-2026-out",
+        "url": "https://www.aiexamresult.com/post/rrb-alp-cbt-1-result-2026-out",
+        "name": "RRB ALP CBT 1 Result 2026 Out, Merit List Zone Wise PDF, Scorecard Link Active",
+        "description": "The Railway Recruitment Board has conducted the RRB ALP CBT 1 examination for Assistant Loco Pilot recruitment to fill 10,970 revised vacancies. The ALP CBT 1 E",
+        "inLanguage": "en-IN",
+        "isPartOf": {
+          "@id": "https://www.aiexamresult.com/#website"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://www.aiexamresult.com/og-image.svg"
+        },
+        "datePublished": "14 June 2026",
+        "dateModified": "2026-06-24",
+        "author": {
+          "@type": "Organization",
+          "name": "All India Exam Result",
+          "url": "https://www.aiexamresult.com"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.aiexamresult.com/post/rrb-alp-cbt-1-result-2026-out#faq",
+        "url": "https://www.aiexamresult.com/post/rrb-alp-cbt-1-result-2026-out#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is RRB ALP CBT 1 Result 2026 Out, Merit List Zone Wise PDF, Scorecard Link Active?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "RRB ALP CBT 1 Result 2026 Out, Merit List Zone Wise PDF, Scorecard Link Active is a government exam related notification. Complete details including important dates, fee, eligibility and official links are provided on this page."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How to download the result?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Click on the relevant link in the Important Links section above or visit the official website directly to download the result."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.aiexamresult.com/post/rrb-alp-cbt-1-result-2026-out#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.aiexamresult.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Results",
+            "item": "https://www.aiexamresult.com/results"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "RRB ALP CBT 1 Result 2026 Out, Merit List Zone Wise PDF, Scorecard Link Active",
+            "item": "https://www.aiexamresult.com/post/rrb-alp-cbt-1-result-2026-out"
+          }
+        ]
+      }
+    ]
+  },
+  "seoMeta": {
+    "title": "RRB ALP CBT 1 Result 2026 Out, Merit List Zone Wise PDF, Scorecard Link Active",
+    "description": "The Railway Recruitment Board has conducted the RRB ALP CBT 1 examination for Assistant Loco Pilot recruitment to fill 10,970 revised vacancies. The ALP CBT 1 E",
+    "canonical": "https://www.aiexamresult.com/post/rrb-alp-cbt-1-result-2026-out"
+  }
 }

@@ -123,5 +123,84 @@
       "division": "West Bengal",
       "posts": "42.50"
     }
-  ]
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://www.aiexamresult.com/post/ibps-clerk-mains-result-2025-26-out-ibps-in",
+        "url": "https://www.aiexamresult.com/post/ibps-clerk-mains-result-2025-26-out-ibps-in",
+        "name": "IBPS Clerk Mains Result 2026 Out @ibps.in, Phase II Result, Cut Off, Direct Download Link Active",
+        "description": "The Institute of Banking Personnel Selection has officially released the IBPS Clerk Mains Result 2026 for the Common Recruitment Process for Clerical Cadre (CRP",
+        "inLanguage": "en-IN",
+        "isPartOf": {
+          "@id": "https://www.aiexamresult.com/#website"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://www.aiexamresult.com/og-image.svg"
+        },
+        "datePublished": "2 March 2026",
+        "dateModified": "2026-06-24",
+        "author": {
+          "@type": "Organization",
+          "name": "All India Exam Result",
+          "url": "https://www.aiexamresult.com"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.aiexamresult.com/post/ibps-clerk-mains-result-2025-26-out-ibps-in#faq",
+        "url": "https://www.aiexamresult.com/post/ibps-clerk-mains-result-2025-26-out-ibps-in#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is IBPS Clerk Mains Result 2026 Out @ibps.in, Phase II Result, Cut Off, Direct Download Link Active?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "IBPS Clerk Mains Result 2026 Out @ibps.in, Phase II Result, Cut Off, Direct Download Link Active is a government exam related notification. Complete details including important dates, fee, eligibility and official links are provided on this page."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How to download the result?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Click on the relevant link in the Important Links section above or visit the official website directly to download the result."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.aiexamresult.com/post/ibps-clerk-mains-result-2025-26-out-ibps-in#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.aiexamresult.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Results",
+            "item": "https://www.aiexamresult.com/results"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "IBPS Clerk Mains Result 2026 Out @ibps.in, Phase II Result, Cut Off, Direct Download Link Active",
+            "item": "https://www.aiexamresult.com/post/ibps-clerk-mains-result-2025-26-out-ibps-in"
+          }
+        ]
+      }
+    ]
+  },
+  "seoMeta": {
+    "title": "IBPS Clerk Mains Result 2026 Out @ibps.in, Phase II Result, Cut Off, Direct Download Link Active",
+    "description": "The Institute of Banking Personnel Selection has officially released the IBPS Clerk Mains Result 2026 for the Common Recruitment Process for Clerical Cadre (CRP",
+    "canonical": "https://www.aiexamresult.com/post/ibps-clerk-mains-result-2025-26-out-ibps-in"
+  }
 }

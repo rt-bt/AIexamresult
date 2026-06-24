@@ -8,6 +8,85 @@
   "importantDates": [],
   "applicationFee": [],
   "importantLinks": [],
-  "fullContentHtml": "",
-  "isExpired": false
+  "fullContentHtml": "<h2>SSC MTS Result 2026, Download Tier 1 Merit List PDF - Complete Details</h2>\n<p>SSC MTS Result 2026, Download Tier 1 Merit List PDF.</p>\n<h3>Frequently Asked Questions</h3>\n<p><strong>What is SSC MTS Result 2026, Download Tier 1 Merit List PDF?</strong></p>\n<p>SSC MTS Result 2026, Download Tier 1 Merit List PDF is a government exam notification. All details including dates, fee, eligibility and links are provided above.</p>",
+  "isExpired": false,
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://www.aiexamresult.com/post/ssc-mts-exam-result-2026",
+        "url": "https://www.aiexamresult.com/post/ssc-mts-exam-result-2026",
+        "name": "SSC MTS Result 2026, Download Tier 1 Merit List PDF",
+        "description": "",
+        "inLanguage": "en-IN",
+        "isPartOf": {
+          "@id": "https://www.aiexamresult.com/#website"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://www.aiexamresult.com/og-image.svg"
+        },
+        "datePublished": "2026-06-24",
+        "dateModified": "2026-06-24",
+        "author": {
+          "@type": "Organization",
+          "name": "All India Exam Result",
+          "url": "https://www.aiexamresult.com"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.aiexamresult.com/post/ssc-mts-exam-result-2026#faq",
+        "url": "https://www.aiexamresult.com/post/ssc-mts-exam-result-2026#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is SSC MTS Result 2026, Download Tier 1 Merit List PDF?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "SSC MTS Result 2026, Download Tier 1 Merit List PDF is a government exam related notification. Complete details including important dates, fee, eligibility and official links are provided on this page."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How to download the result?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Click on the relevant link in the Important Links section above or visit the official website directly to download the result."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.aiexamresult.com/post/ssc-mts-exam-result-2026#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.aiexamresult.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Results",
+            "item": "https://www.aiexamresult.com/results"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "SSC MTS Result 2026, Download Tier 1 Merit List PDF",
+            "item": "https://www.aiexamresult.com/post/ssc-mts-exam-result-2026"
+          }
+        ]
+      }
+    ]
+  },
+  "seoMeta": {
+    "title": "SSC MTS Result 2026, Download Tier 1 Merit List PDF",
+    "description": "SSC MTS Result 2026, Download Tier 1 Merit List PDF",
+    "canonical": "https://www.aiexamresult.com/post/ssc-mts-exam-result-2026"
+  }
 }

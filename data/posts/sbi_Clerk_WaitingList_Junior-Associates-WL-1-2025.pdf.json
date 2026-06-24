@@ -7,5 +7,84 @@
   "importantDates": [],
   "applicationFee": [],
   "importantLinks": [],
-  "fullContentHtml": ""
+  "fullContentHtml": "<h2> - Complete Details</h2>\n<p>.</p>\n<h3>Frequently Asked Questions</h3>\n<p><strong>What is ?</strong></p>\n<p> is a government exam notification. All details including dates, fee, eligibility and links are provided above.</p>",
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://www.aiexamresult.com/post/sbi_Clerk_WaitingList_Junior-Associates-WL-1-2025.pdf",
+        "url": "https://www.aiexamresult.com/post/sbi_Clerk_WaitingList_Junior-Associates-WL-1-2025.pdf",
+        "name": "",
+        "description": "",
+        "inLanguage": "en-IN",
+        "isPartOf": {
+          "@id": "https://www.aiexamresult.com/#website"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://www.aiexamresult.com/og-image.svg"
+        },
+        "datePublished": "2026-06-24",
+        "dateModified": "2026-06-24",
+        "author": {
+          "@type": "Organization",
+          "name": "All India Exam Result",
+          "url": "https://www.aiexamresult.com"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.aiexamresult.com/post/sbi_Clerk_WaitingList_Junior-Associates-WL-1-2025.pdf#faq",
+        "url": "https://www.aiexamresult.com/post/sbi_Clerk_WaitingList_Junior-Associates-WL-1-2025.pdf#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": " is a government exam related notification. Complete details including important dates, fee, eligibility and official links are provided on this page."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How to download the notification?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Click on the relevant link in the Important Links section above or visit the official website directly to download the notification."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.aiexamresult.com/post/sbi_Clerk_WaitingList_Junior-Associates-WL-1-2025.pdf#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.aiexamresult.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "",
+            "item": "https://www.aiexamresult.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "",
+            "item": "https://www.aiexamresult.com/post/sbi_Clerk_WaitingList_Junior-Associates-WL-1-2025.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  "seoMeta": {
+    "title": "",
+    "description": "",
+    "canonical": "https://www.aiexamresult.com/post/sbi_Clerk_WaitingList_Junior-Associates-WL-1-2025.pdf"
+  }
 }

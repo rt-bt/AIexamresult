@@ -206,5 +206,100 @@
       "division": "Home Science",
       "posts": "06"
     }
-  ]
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://www.aiexamresult.com/post/up-pgt-02-2022",
+        "url": "https://www.aiexamresult.com/post/up-pgt-02-2022",
+        "name": "Uttar Pradesh UPSESSB UP Post Graduate Teacher PGT 2022 Interview Schedule, Letter 2026 for 624 Post",
+        "description": "Uttar Pradesh Secondary Education Service Selection Board (UPSESSB) has released the notification of Post Graduate Teacher PGT Teacher Recruitment for 624 posts",
+        "inLanguage": "en-IN",
+        "isPartOf": {
+          "@id": "https://www.aiexamresult.com/#website"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://www.aiexamresult.com/og-image.svg"
+        },
+        "datePublished": "05 June  2026 | 09:42 PM",
+        "dateModified": "2026-06-24",
+        "author": {
+          "@type": "Organization",
+          "name": "All India Exam Result",
+          "url": "https://www.aiexamresult.com"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.aiexamresult.com/post/up-pgt-02-2022#faq",
+        "url": "https://www.aiexamresult.com/post/up-pgt-02-2022#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Uttar Pradesh UPSESSB UP Post Graduate Teacher PGT 2022 Interview Schedule, Letter 2026 for 624 Post?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Uttar Pradesh UPSESSB UP Post Graduate Teacher PGT 2022 Interview Schedule, Letter 2026 for 624 Post is a government exam related notification. Complete details including important dates, fee, eligibility and official links are provided on this page."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the last date to apply?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The last date to apply is 10/07/2022 Extended."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where is the official website?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The official website is https://upessc.up.gov.in/."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How to download the admit card?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Click on the relevant link in the Important Links section above or visit the official website directly to download the admit card."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.aiexamresult.com/post/up-pgt-02-2022#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.aiexamresult.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Admit Card",
+            "item": "https://www.aiexamresult.com/admit-card"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Uttar Pradesh UPSESSB UP Post Graduate Teacher PGT 2022 Interview Schedule, Letter 2026 for 624 Post",
+            "item": "https://www.aiexamresult.com/post/up-pgt-02-2022"
+          }
+        ]
+      }
+    ]
+  },
+  "seoMeta": {
+    "title": "Uttar Pradesh UPSESSB UP Post Graduate Teacher PGT 2022 Interview Schedule, Letter 2026 for 624 Post",
+    "description": "Uttar Pradesh Secondary Education Service Selection Board (UPSESSB) has released the notification of Post Graduate Teacher PGT Teacher Recruitment for 624 posts",
+    "canonical": "https://www.aiexamresult.com/post/up-pgt-02-2022"
+  }
 }

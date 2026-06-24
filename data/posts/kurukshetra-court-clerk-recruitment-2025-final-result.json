@@ -7,5 +7,84 @@
   "importantDates": [],
   "applicationFee": [],
   "importantLinks": [],
-  "fullContentHtml": ""
+  "fullContentHtml": "<h2>Sarkari Result  Kurukshetra Court Clerk Recruitment 2025 Final Result - Sarkari Result - Complete Details</h2>\n<p>Sarkari Result  Kurukshetra Court Clerk Recruitment 2025 Final Result - Sarkari Result.</p>\n<h3>Frequently Asked Questions</h3>\n<p><strong>What is Sarkari Result  Kurukshetra Court Clerk Recruitment 2025 Final Result - Sarkari Result?</strong></p>\n<p>Sarkari Result  Kurukshetra Court Clerk Recruitment 2025 Final Result - Sarkari Result is a government exam notification. All details including dates, fee, eligibility and links are provided above.</p>",
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://www.aiexamresult.com/post/kurukshetra-court-clerk-recruitment-2025-final-result",
+        "url": "https://www.aiexamresult.com/post/kurukshetra-court-clerk-recruitment-2025-final-result",
+        "name": "Sarkari Result  Kurukshetra Court Clerk Recruitment 2025 Final Result - Sarkari Result",
+        "description": "",
+        "inLanguage": "en-IN",
+        "isPartOf": {
+          "@id": "https://www.aiexamresult.com/#website"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://www.aiexamresult.com/og-image.svg"
+        },
+        "datePublished": "16 June 2026",
+        "dateModified": "2026-06-24",
+        "author": {
+          "@type": "Organization",
+          "name": "All India Exam Result",
+          "url": "https://www.aiexamresult.com"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.aiexamresult.com/post/kurukshetra-court-clerk-recruitment-2025-final-result#faq",
+        "url": "https://www.aiexamresult.com/post/kurukshetra-court-clerk-recruitment-2025-final-result#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Sarkari Result  Kurukshetra Court Clerk Recruitment 2025 Final Result - Sarkari Result?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sarkari Result  Kurukshetra Court Clerk Recruitment 2025 Final Result - Sarkari Result is a government exam related notification. Complete details including important dates, fee, eligibility and official links are provided on this page."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How to download the notification?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Click on the relevant link in the Important Links section above or visit the official website directly to download the notification."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.aiexamresult.com/post/kurukshetra-court-clerk-recruitment-2025-final-result#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.aiexamresult.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "",
+            "item": "https://www.aiexamresult.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Sarkari Result  Kurukshetra Court Clerk Recruitment 2025 Final Result - Sarkari Result",
+            "item": "https://www.aiexamresult.com/post/kurukshetra-court-clerk-recruitment-2025-final-result"
+          }
+        ]
+      }
+    ]
+  },
+  "seoMeta": {
+    "title": "Sarkari Result  Kurukshetra Court Clerk Recruitment 2025 Final Result - Sarkari Result",
+    "description": "Sarkari Result  Kurukshetra Court Clerk Recruitment 2025 Final Result - Sarkari Result",
+    "canonical": "https://www.aiexamresult.com/post/kurukshetra-court-clerk-recruitment-2025-final-result"
+  }
 }

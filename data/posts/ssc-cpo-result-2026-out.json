@@ -31,5 +31,84 @@
       "division": "EWS",
       "posts": "120.78203"
     }
-  ]
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://www.aiexamresult.com/post/ssc-cpo-result-2026-out",
+        "url": "https://www.aiexamresult.com/post/ssc-cpo-result-2026-out",
+        "name": "SSC CPO Result 2026 Out @ssc.gov.in, Paper 1 Cut Off, Result Direct Link Active",
+        "description": "The Staff Selection Commission has announced the SSC CPO 2026 result on the official website. The result is released in the form of a PDF separately for male, f",
+        "inLanguage": "en-IN",
+        "isPartOf": {
+          "@id": "https://www.aiexamresult.com/#website"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://www.aiexamresult.com/og-image.svg"
+        },
+        "datePublished": "30 March 2026",
+        "dateModified": "2026-06-24",
+        "author": {
+          "@type": "Organization",
+          "name": "All India Exam Result",
+          "url": "https://www.aiexamresult.com"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.aiexamresult.com/post/ssc-cpo-result-2026-out#faq",
+        "url": "https://www.aiexamresult.com/post/ssc-cpo-result-2026-out#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is SSC CPO Result 2026 Out @ssc.gov.in, Paper 1 Cut Off, Result Direct Link Active?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "SSC CPO Result 2026 Out @ssc.gov.in, Paper 1 Cut Off, Result Direct Link Active is a government exam related notification. Complete details including important dates, fee, eligibility and official links are provided on this page."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How to download the result?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Click on the relevant link in the Important Links section above or visit the official website directly to download the result."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.aiexamresult.com/post/ssc-cpo-result-2026-out#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.aiexamresult.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Results",
+            "item": "https://www.aiexamresult.com/results"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "SSC CPO Result 2026 Out @ssc.gov.in, Paper 1 Cut Off, Result Direct Link Active",
+            "item": "https://www.aiexamresult.com/post/ssc-cpo-result-2026-out"
+          }
+        ]
+      }
+    ]
+  },
+  "seoMeta": {
+    "title": "SSC CPO Result 2026 Out @ssc.gov.in, Paper 1 Cut Off, Result Direct Link Active",
+    "description": "The Staff Selection Commission has announced the SSC CPO 2026 result on the official website. The result is released in the form of a PDF separately for male, f",
+    "canonical": "https://www.aiexamresult.com/post/ssc-cpo-result-2026-out"
+  }
 }

@@ -127,5 +127,84 @@
       "division": "PWD-Others",
       "posts": "18"
     }
-  ]
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://www.aiexamresult.com/post/ssc-cgl-final-result-2025-26-out",
+        "url": "https://www.aiexamresult.com/post/ssc-cgl-final-result-2025-26-out",
+        "name": "SSC CGL Final Result 2025-26 Out @ssc.gov.in, Download Merit List PDF, Link Active",
+        "description": "The Staff Selection Commission (SSC) has released the SSC CGL final result 2025-26 for phase 2. As per the new list, a total of 452 candidates are shortlisted f",
+        "inLanguage": "en-IN",
+        "isPartOf": {
+          "@id": "https://www.aiexamresult.com/#website"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://www.aiexamresult.com/og-image.svg"
+        },
+        "datePublished": "14 April 2026",
+        "dateModified": "2026-06-24",
+        "author": {
+          "@type": "Organization",
+          "name": "All India Exam Result",
+          "url": "https://www.aiexamresult.com"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.aiexamresult.com/post/ssc-cgl-final-result-2025-26-out#faq",
+        "url": "https://www.aiexamresult.com/post/ssc-cgl-final-result-2025-26-out#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is SSC CGL Final Result 2025-26 Out @ssc.gov.in, Download Merit List PDF, Link Active?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "SSC CGL Final Result 2025-26 Out @ssc.gov.in, Download Merit List PDF, Link Active is a government exam related notification. Complete details including important dates, fee, eligibility and official links are provided on this page."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How to download the result?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Click on the relevant link in the Important Links section above or visit the official website directly to download the result."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.aiexamresult.com/post/ssc-cgl-final-result-2025-26-out#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.aiexamresult.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Results",
+            "item": "https://www.aiexamresult.com/results"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "SSC CGL Final Result 2025-26 Out @ssc.gov.in, Download Merit List PDF, Link Active",
+            "item": "https://www.aiexamresult.com/post/ssc-cgl-final-result-2025-26-out"
+          }
+        ]
+      }
+    ]
+  },
+  "seoMeta": {
+    "title": "SSC CGL Final Result 2025-26 Out @ssc.gov.in, Download Merit List PDF, Link Active",
+    "description": "The Staff Selection Commission (SSC) has released the SSC CGL final result 2025-26 for phase 2. As per the new list, a total of 452 candidates are shortlisted f",
+    "canonical": "https://www.aiexamresult.com/post/ssc-cgl-final-result-2025-26-out"
+  }
 }

@@ -67,5 +67,100 @@
       "division": "SSB",
       "posts": "42"
     }
-  ]
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://www.aiexamresult.com/post/upsc-cpf-ac-2024",
+        "url": "https://www.aiexamresult.com/post/upsc-cpf-ac-2024",
+        "name": "UPSC Central Armed Police Force CAPF AC Examination 2024, Final Result with Reserve List 2026 for 506 Post",
+        "description": "Union Public Service Commission UPSC Central Armed Police Force CAPF Assistant Commandant (CPF AC) Recruitment 2024. Those candidates who are interested in this",
+        "inLanguage": "en-IN",
+        "isPartOf": {
+          "@id": "https://www.aiexamresult.com/#website"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://www.aiexamresult.com/og-image.svg"
+        },
+        "datePublished": "12 June 2026",
+        "dateModified": "2026-06-24",
+        "author": {
+          "@type": "Organization",
+          "name": "All India Exam Result",
+          "url": "https://www.aiexamresult.com"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.aiexamresult.com/post/upsc-cpf-ac-2024#faq",
+        "url": "https://www.aiexamresult.com/post/upsc-cpf-ac-2024#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is UPSC Central Armed Police Force CAPF AC Examination 2024, Final Result with Reserve List 2026 for 506 Post?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "UPSC Central Armed Police Force CAPF AC Examination 2024, Final Result with Reserve List 2026 for 506 Post is a government exam related notification. Complete details including important dates, fee, eligibility and official links are provided on this page."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the last date to apply?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The last date to apply is 14/05/2024 Upto 06:00 PM Only."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where is the official website?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The official website is https://upsc.gov.in/whats-new."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How to download the result?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Click on the relevant link in the Important Links section above or visit the official website directly to download the result."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.aiexamresult.com/post/upsc-cpf-ac-2024#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.aiexamresult.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Results",
+            "item": "https://www.aiexamresult.com/results"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "UPSC Central Armed Police Force CAPF AC Examination 2024, Final Result with Reserve List 2026 for 506 Post",
+            "item": "https://www.aiexamresult.com/post/upsc-cpf-ac-2024"
+          }
+        ]
+      }
+    ]
+  },
+  "seoMeta": {
+    "title": "UPSC Central Armed Police Force CAPF AC Examination 2024, Final Result with Reserve List 2026 for 506 Post",
+    "description": "Union Public Service Commission UPSC Central Armed Police Force CAPF Assistant Commandant (CPF AC) Recruitment 2024. Those candidates who are interested in this",
+    "canonical": "https://www.aiexamresult.com/post/upsc-cpf-ac-2024"
+  }
 }

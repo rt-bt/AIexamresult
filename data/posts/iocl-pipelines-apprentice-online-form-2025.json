@@ -42,5 +42,100 @@
   "isExpired": false,
   "vacancyDetails": [
     "Pipeline Division Apprentice : 537"
-  ]
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://www.aiexamresult.com/post/iocl-pipelines-apprentice-online-form-2025",
+        "url": "https://www.aiexamresult.com/post/iocl-pipelines-apprentice-online-form-2025",
+        "name": "IOCL Pipelines Apprentice Online Form 2025 Notification Out For 537 Posts",
+        "description": "Author: Sarkari Exam Team\nTag: Graduate Job",
+        "inLanguage": "en-IN",
+        "isPartOf": {
+          "@id": "https://www.aiexamresult.com/#website"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://www.aiexamresult.com/og-image.svg"
+        },
+        "datePublished": "19 September 2025",
+        "dateModified": "2026-06-24",
+        "author": {
+          "@type": "Organization",
+          "name": "All India Exam Result",
+          "url": "https://www.aiexamresult.com"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.aiexamresult.com/post/iocl-pipelines-apprentice-online-form-2025#faq",
+        "url": "https://www.aiexamresult.com/post/iocl-pipelines-apprentice-online-form-2025#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is IOCL Pipelines Apprentice Online Form 2025 Notification Out For 537 Posts?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "IOCL Pipelines Apprentice Online Form 2025 Notification Out For 537 Posts is a government exam related notification. Complete details including important dates, fee, eligibility and official links are provided on this page."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the last date to apply?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The last date to apply is 28 September 2025."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where is the official website?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The official website is https://www.iocl.com/."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How to download the notification?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Click on the relevant link in the Important Links section above or visit the official website directly to download the notification."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.aiexamresult.com/post/iocl-pipelines-apprentice-online-form-2025#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.aiexamresult.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Latest Vacancy",
+            "item": "https://www.aiexamresult.com/latest-jobs"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "IOCL Pipelines Apprentice Online Form 2025 Notification Out For 537 Posts",
+            "item": "https://www.aiexamresult.com/post/iocl-pipelines-apprentice-online-form-2025"
+          }
+        ]
+      }
+    ]
+  },
+  "seoMeta": {
+    "title": "IOCL Pipelines Apprentice Online Form 2025 Notification Out For 537 Posts",
+    "description": "Author: Sarkari Exam Team\nTag: Graduate Job",
+    "canonical": "https://www.aiexamresult.com/post/iocl-pipelines-apprentice-online-form-2025"
+  }
 }

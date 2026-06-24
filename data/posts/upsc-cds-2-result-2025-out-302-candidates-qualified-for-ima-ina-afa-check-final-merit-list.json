@@ -27,5 +27,84 @@
       "division": "Total",
       "posts": "302"
     }
-  ]
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://www.aiexamresult.com/post/upsc-cds-2-result-2025-out-302-candidates-qualified-for-ima-ina-afa-check-final-merit-list",
+        "url": "https://www.aiexamresult.com/post/upsc-cds-2-result-2025-out-302-candidates-qualified-for-ima-ina-afa-check-final-merit-list",
+        "name": "UPSC CDS 2 Result 2025 Out, 302 Candidates Qualified for IMA, INA & AFA, Check Final Merit List",
+        "description": "The Union Public Service Commission (UPSC) has declared the UPSC CDS (II) 2025 Final Result on 30 March 2026. A total of 302 candidates have qualified based on ",
+        "inLanguage": "en-IN",
+        "isPartOf": {
+          "@id": "https://www.aiexamresult.com/#website"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://www.aiexamresult.com/og-image.svg"
+        },
+        "datePublished": "30 March 2026",
+        "dateModified": "2026-06-24",
+        "author": {
+          "@type": "Organization",
+          "name": "All India Exam Result",
+          "url": "https://www.aiexamresult.com"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.aiexamresult.com/post/upsc-cds-2-result-2025-out-302-candidates-qualified-for-ima-ina-afa-check-final-merit-list#faq",
+        "url": "https://www.aiexamresult.com/post/upsc-cds-2-result-2025-out-302-candidates-qualified-for-ima-ina-afa-check-final-merit-list#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is UPSC CDS 2 Result 2025 Out, 302 Candidates Qualified for IMA, INA & AFA, Check Final Merit List?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "UPSC CDS 2 Result 2025 Out, 302 Candidates Qualified for IMA, INA & AFA, Check Final Merit List is a government exam related notification. Complete details including important dates, fee, eligibility and official links are provided on this page."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How to download the result?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Click on the relevant link in the Important Links section above or visit the official website directly to download the result."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.aiexamresult.com/post/upsc-cds-2-result-2025-out-302-candidates-qualified-for-ima-ina-afa-check-final-merit-list#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.aiexamresult.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Results",
+            "item": "https://www.aiexamresult.com/results"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "UPSC CDS 2 Result 2025 Out, 302 Candidates Qualified for IMA, INA & AFA, Check Final Merit List",
+            "item": "https://www.aiexamresult.com/post/upsc-cds-2-result-2025-out-302-candidates-qualified-for-ima-ina-afa-check-final-merit-list"
+          }
+        ]
+      }
+    ]
+  },
+  "seoMeta": {
+    "title": "UPSC CDS 2 Result 2025 Out, 302 Candidates Qualified for IMA, INA & AFA, Check Final Merit List",
+    "description": "The Union Public Service Commission (UPSC) has declared the UPSC CDS (II) 2025 Final Result on 30 March 2026. A total of 302 candidates have qualified based on ",
+    "canonical": "https://www.aiexamresult.com/post/upsc-cds-2-result-2025-out-302-candidates-qualified-for-ima-ina-afa-check-final-merit-list"
+  }
 }

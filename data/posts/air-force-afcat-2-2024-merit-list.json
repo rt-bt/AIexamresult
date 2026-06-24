@@ -59,5 +59,100 @@
   "isExpired": false,
   "vacancyDetails": [
     "Total Posts : 304"
-  ]
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://www.aiexamresult.com/post/air-force-afcat-2-2024-merit-list",
+        "url": "https://www.aiexamresult.com/post/air-force-afcat-2-2024-merit-list",
+        "name": "Air Force AFCAT 2/2024 Merit List, Cutoff at afcat.cdac.in",
+        "description": "",
+        "inLanguage": "en-IN",
+        "isPartOf": {
+          "@id": "https://www.aiexamresult.com/#website"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://www.aiexamresult.com/og-image.svg"
+        },
+        "datePublished": "30 May 2025",
+        "dateModified": "2026-06-24",
+        "author": {
+          "@type": "Organization",
+          "name": "All India Exam Result",
+          "url": "https://www.aiexamresult.com"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.aiexamresult.com/post/air-force-afcat-2-2024-merit-list#faq",
+        "url": "https://www.aiexamresult.com/post/air-force-afcat-2-2024-merit-list#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Air Force AFCAT 2/2024 Merit List, Cutoff at afcat.cdac.in?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Air Force AFCAT 2/2024 Merit List, Cutoff at afcat.cdac.in is a government exam related notification. Complete details including important dates, fee, eligibility and official links are provided on this page."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the last date to apply?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The last date to apply is 28 June 2024."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where is the official website?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The official website is https://rectt.bsf.gov.in/."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How to download the result?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Click on the relevant link in the Important Links section above or visit the official website directly to download the result."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.aiexamresult.com/post/air-force-afcat-2-2024-merit-list#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.aiexamresult.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Results",
+            "item": "https://www.aiexamresult.com/results"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Air Force AFCAT 2/2024 Merit List, Cutoff at afcat.cdac.in",
+            "item": "https://www.aiexamresult.com/post/air-force-afcat-2-2024-merit-list"
+          }
+        ]
+      }
+    ]
+  },
+  "seoMeta": {
+    "title": "Air Force AFCAT 2/2024 Merit List, Cutoff at afcat.cdac.in",
+    "description": "Air Force AFCAT 2/2024 Merit List, Cutoff at afcat.cdac.in",
+    "canonical": "https://www.aiexamresult.com/post/air-force-afcat-2-2024-merit-list"
+  }
 }

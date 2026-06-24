@@ -43,5 +43,100 @@
   "vacancyDetails": [
     "SSC Medical Officer (Male) : 300",
     "SSC Medical Officer (Female) : 100"
-  ]
+  ],
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://www.aiexamresult.com/post/army-afms-recruitment-2025",
+        "url": "https://www.aiexamresult.com/post/army-afms-recruitment-2025",
+        "name": "Armed Forces AFMS SSC Medical Officer Recruitment 2025",
+        "description": "Author: Sarkari Exam Team\nTag: AFMS Job",
+        "inLanguage": "en-IN",
+        "isPartOf": {
+          "@id": "https://www.aiexamresult.com/#website"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://www.aiexamresult.com/og-image.svg"
+        },
+        "datePublished": "21 April 2025",
+        "dateModified": "2026-06-24",
+        "author": {
+          "@type": "Organization",
+          "name": "All India Exam Result",
+          "url": "https://www.aiexamresult.com"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.aiexamresult.com/post/army-afms-recruitment-2025#faq",
+        "url": "https://www.aiexamresult.com/post/army-afms-recruitment-2025#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Armed Forces AFMS SSC Medical Officer Recruitment 2025?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Armed Forces AFMS SSC Medical Officer Recruitment 2025 is a government exam related notification. Complete details including important dates, fee, eligibility and official links are provided on this page."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the last date to apply?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The last date to apply is 12 May 2025."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where is the official website?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The official website is https://join.afms.gov.in/."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How to download the notification?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Click on the relevant link in the Important Links section above or visit the official website directly to download the notification."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.aiexamresult.com/post/army-afms-recruitment-2025#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.aiexamresult.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Latest Vacancy",
+            "item": "https://www.aiexamresult.com/latest-jobs"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Armed Forces AFMS SSC Medical Officer Recruitment 2025",
+            "item": "https://www.aiexamresult.com/post/army-afms-recruitment-2025"
+          }
+        ]
+      }
+    ]
+  },
+  "seoMeta": {
+    "title": "Armed Forces AFMS SSC Medical Officer Recruitment 2025",
+    "description": "Author: Sarkari Exam Team\nTag: AFMS Job",
+    "canonical": "https://www.aiexamresult.com/post/army-afms-recruitment-2025"
+  }
 }
