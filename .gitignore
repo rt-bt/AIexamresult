@@ -11,6 +11,7 @@ data/auto-sync.log
 data/auto-sync-error.log
 public/pdf.worker.min.js
 data/scraped.json
+data/scraped-data.ts
 *.zip
 *.pem
 *ecosystem*
