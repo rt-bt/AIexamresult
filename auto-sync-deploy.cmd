@@ -57,8 +57,21 @@ if errorlevel 1 echo [INFO] No changes to commit
 echo OK
 echo.
 
-REM ---- Step 6: Direct upload to EC2 ----
-echo [6/6] Uploading data to EC2...
+REM ---- Step 6: Upload to S3 (cloud backup) ----
+echo [6/7] Uploading data to S3 bucket...
+aws s3 cp data\scraped.json s3://aiexamresult-data/scraped.json --quiet
+aws s3 sync data\posts\ s3://aiexamresult-data\posts\ --exclude "*" --include "*.json" --quiet
+aws s3 cp data/current-affairs.ts s3://aiexamresult-data/current-affairs.ts --quiet
+if errorlevel 1 (
+  echo [WARNING] S3 upload failed (AWS CLI not configured?)
+) else (
+  echo Data uploaded to S3 bucket: aiexamresult-data
+)
+echo OK
+echo.
+
+REM ---- Step 7: Direct upload to EC2 ----
+echo [7/7] Uploading data to EC2...
 if exist "C:\Users\Adity\aiexamresult.pem" (
   scp -i "C:\Users\Adity\aiexamresult.pem" -o StrictHostKeyChecking=no data\scraped.json ubuntu@65.0.146.40:/home/ubuntu/a-iexamresult/data/scraped.json
   echo Data uploaded to EC2!
@@ -71,6 +84,7 @@ echo.
 echo ==============================================
 echo   ALL DONE!
 echo   Data synced, SEO optimized, pushed to GitHub
+echo   Backup on S3 + EC2 live
 echo ==============================================
 echo.
 pause

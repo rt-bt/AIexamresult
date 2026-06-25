@@ -6,9 +6,6 @@ on:
   push:
     branches: [master]
 
-permissions:
-  contents: write
-
 jobs:
   scrape:
     runs-on: ubuntu-latest
@@ -22,12 +19,24 @@ jobs:
       - run: npm ci || npm install
       - run: npm run scrape || echo "Scrape completed with some errors"
       - run: node scripts/seo-optimize.mjs || echo "SEO optimization skipped"
-      - name: Commit & push if changed
+
+      - name: Upload data to S3 backup
+        if: success()
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: ap-south-1
         run: |
-          git config user.name "Aditya"
-          git config user.email "rtbtrack@gmail.com"
-          git add -A
-          if ! git diff --quiet || ! git diff --staged --quiet; then
-            git commit -m "Auto scrape $(date +'%d %b %Y %H:%M')"
-            git push
-          fi
+          aws s3 cp data/scraped.json s3://aiexamresult-data/scraped.json --quiet
+          aws s3 sync data/posts/ s3://aiexamresult-data/posts/ --exclude "*" --include "*.json" --quiet
+
+      - name: Push data to EC2 and reload
+        uses: appleboy/ssh-action@v1.2.2
+        with:
+          host: 65.0.146.40
+          username: ubuntu
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            cd /home/ubuntu/a-iexamresult
+            curl -s -o data/scraped.json https://aiexamresult-data.s3.ap-south-1.amazonaws.com/scraped.json
+            pm2 restart aiexamresult

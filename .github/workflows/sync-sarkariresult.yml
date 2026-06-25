@@ -1,11 +1,8 @@
 name: Sync All Sources
 on:
   schedule:
-    - cron: "0 */6 * * *"
+    - cron: "0 * * * *"
   workflow_dispatch:
-
-permissions:
-  contents: write
 
 jobs:
   sync:
@@ -27,15 +24,26 @@ jobs:
       - name: Run SEO optimization
         run: node scripts/seo-optimize.mjs
 
-      - name: Commit & push if changed
+      - name: Upload data to S3 backup
+        if: success()
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: ap-south-1
         run: |
-          git config user.name "sync-bot"
-          git config user.email "rtbtrack@gmail.com"
-          git add -A
-          if ! git diff --quiet || ! git diff --staged --quiet; then
-            git commit -m "Sync all sources $(date +'%d %b %Y %H:%M')"
-            git push
-          fi
+          aws s3 cp data/scraped.json s3://aiexamresult-data/scraped.json --quiet
+          aws s3 sync data/posts/ s3://aiexamresult-data/posts/ --exclude "*" --include "*.json" --quiet
+
+      - name: Push data to EC2 and reload
+        uses: appleboy/ssh-action@v1.2.2
+        with:
+          host: 65.0.146.40
+          username: ubuntu
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            cd /home/ubuntu/a-iexamresult
+            curl -s -o data/scraped.json https://aiexamresult-data.s3.ap-south-1.amazonaws.com/scraped.json
+            pm2 restart aiexamresult
 
       - name: Send push notifications
         if: always()
