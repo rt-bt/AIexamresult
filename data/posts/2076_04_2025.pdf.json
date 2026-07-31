@@ -1,0 +1,90 @@
+{
+  "title": "",
+  "slug": "2076_04_2025.pdf",
+  "url": "https://btsc.bihar.gov.in/sites/default/files/circulars/2076_04_2025.pdf",
+  "publishedDate": "",
+  "intro": ". Check important dates, application fee, eligibility criteria and official links below.",
+  "importantDates": [],
+  "applicationFee": [],
+  "importantLinks": [],
+  "fullContentHtml": "<h2> - Complete Details</h2>\n<p>. Check important dates, application fee, eligibility criteria and official links below.</p>\n<h2>Frequently Asked Questions (FAQ)</h2>\n<h3>What is ?</h3>\n<p> is a government exam related notification. Complete details including important dates, fee, eligibility and links are provided above.</p>\n<h3>Where can I find the official website?</h3>\n<p>The official website is: <a href=\"https://btsc.bihar.gov.in/sites/default/files/circulars/2076_04_2025.pdf\">https://btsc.bihar.gov.in/sites/default/files/circulars/2076_04_2025.pdf</a></p>\n<h3>How to download notification?</h3>\n<p>Click on the relevant link in the Important Links section above or visit the official website directly.</p>",
+  "jsonLd": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://www.aiexamresult.com/post/2076_04_2025.pdf",
+        "url": "https://www.aiexamresult.com/post/2076_04_2025.pdf",
+        "name": "",
+        "description": ". Check important dates, application fee, eligibility criteria and official links below.",
+        "inLanguage": "en-IN",
+        "isPartOf": {
+          "@id": "https://www.aiexamresult.com/#website"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://www.aiexamresult.com/og-image.svg"
+        },
+        "datePublished": "2026-07-31",
+        "dateModified": "2026-07-31",
+        "author": {
+          "@type": "Organization",
+          "name": "All India Exam Result",
+          "url": "https://www.aiexamresult.com"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.aiexamresult.com/post/2076_04_2025.pdf#faq",
+        "url": "https://www.aiexamresult.com/post/2076_04_2025.pdf#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": " is a government exam related notification. Complete details including important dates, fee, eligibility and official links are provided on this page."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How to download the notification?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Click on the relevant link in the Important Links section above or visit the official website directly to download the notification."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.aiexamresult.com/post/2076_04_2025.pdf#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.aiexamresult.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "",
+            "item": "https://www.aiexamresult.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "",
+            "item": "https://www.aiexamresult.com/post/2076_04_2025.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  "seoMeta": {
+    "title": "",
+    "description": ". Check important dates, application fee, eligibility criteria and official links below.",
+    "canonical": "https://www.aiexamresult.com/post/2076_04_2025.pdf"
+  }
+}

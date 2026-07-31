@@ -178,6 +178,13 @@
   },
   "active": "ac9615782d5a265b",
   "lastOpenFiles": [
+    "docs/rules/jsx-closing-tag-location.md",
+    "docs/rules",
+    "node_modules/ms/license.md",
+    "docs/promise.md",
+    "docs",
+    "examples",
+    "node_modules/safe-array-concat/README.md",
     "node_modules/fast-check/CHANGELOG.md",
     "node_modules/eslint-plugin-react/README.md",
     "node_modules/plist/History.md",
