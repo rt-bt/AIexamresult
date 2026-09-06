@@ -233,6 +233,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <meta name="color-scheme" content="light" />
         <meta httpEquiv="Cache-Control" content="public, max-age=60, must-revalidate" />
+        <meta name="google-adsense-account" content="ca-pub-2439432844260170" />
         <script>{`document.documentElement.classList.remove("dark");localStorage.removeItem("aier_theme");`}</script>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <script dangerouslySetInnerHTML={{ __html: `"serviceWorker"in navigator&&window.addEventListener("load",function(){navigator.serviceWorker.register("/sw.js")})` }} />
