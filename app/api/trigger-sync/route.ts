@@ -160,7 +160,15 @@ async function commitFile(token: string, content: string, sha: string | undefine
   return res.ok;
 }
 
-export const maxDuration = 60; // seconds
+const corsHeaders = {
+  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+  "Access-Control-Allow-Headers": "Content-Type, Authorization",
+};
+
+export async function OPTIONS() {
+  return new Response(null, { status: 200, headers: corsHeaders });
+}
 
 export async function POST(request: Request) {
   let providedSecret = "";
@@ -177,7 +185,7 @@ export async function POST(request: Request) {
   const isManual = providedSecret === serverSecret;
 
   if (!isCron && !isManual) {
-    return NextResponse.json({ error: "Incorrect Secret Password. Access Denied." }, { status: 401 });
+    return NextResponse.json({ error: "Incorrect Secret Password. Access Denied." }, { status: 401, headers: corsHeaders });
   }
 
   const token = process.env.GH_TOKEN;
@@ -185,9 +193,9 @@ export async function POST(request: Request) {
     // Fallback: Trigger Vercel Deploy Hook directly if GH_TOKEN is missing
     try {
       await fetch("https://api.vercel.com/v1/integrations/deploy/prj_cqllpAD5gXemlwOlswAzxCj9asDw/tQVf4ENFS7", { method: "POST" });
-      return NextResponse.json({ ok: true, message: "Deploy hook triggered directly (GH_TOKEN not set in Vercel)" });
+      return NextResponse.json({ ok: true, message: "Deploy hook triggered directly (GH_TOKEN not set in Vercel)" }, { headers: corsHeaders });
     } catch (deployErr: any) {
-      return NextResponse.json({ error: "GH_TOKEN not set and Deploy Hook failed" }, { status: 500 });
+      return NextResponse.json({ error: "GH_TOKEN not set and Deploy Hook failed" }, { status: 500, headers: corsHeaders });
     }
   }
 
@@ -251,10 +259,10 @@ export async function POST(request: Request) {
       committed,
       counts: Object.fromEntries(Object.entries(merged).map(([k, v]) => [k, v.length])),
       fetchedAt: finalData.fetchedAt,
-    });
+    }, { headers: corsHeaders });
 
   } catch (e) {
-    return NextResponse.json({ error: String(e) }, { status: 500 });
+    return NextResponse.json({ error: String(e) }, { status: 500, headers: corsHeaders });
   }
 }
 
