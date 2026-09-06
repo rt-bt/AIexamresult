@@ -1,2 +1,7 @@
-
 aiexamresult.pem
+data/posts
+data/scraped-data.ts
+.git
+node_modules
+.next
+scripts
