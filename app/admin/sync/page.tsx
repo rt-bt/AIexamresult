@@ -82,12 +82,15 @@ export default function AdminSyncPage() {
 
         {/* Secret Key Input */}
         <div className="space-y-1.5">
-          <label className="text-xs font-bold text-slate-400">Sync Security Secret</label>
+          <div className="flex justify-between items-center text-xs">
+            <label className="font-bold text-slate-400">Sync Security Secret</label>
+            <span className="text-slate-500 font-mono text-[10px]">(Default: sync2024secret)</span>
+          </div>
           <input
-            type="password"
+            type="text"
             value={secretKey}
             onChange={(e) => setSecretKey(e.target.value)}
-            placeholder="Enter Sync Secret Key"
+            placeholder="sync2024secret"
             className="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-xl text-sm font-mono text-emerald-400 focus:outline-none focus:border-teal-500"
           />
         </div>
