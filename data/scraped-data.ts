@@ -7661,9 +7661,9 @@ export const scrapedData = {
     "mailto-teamsarkarialert@gmail.com": {},
     "live-government-jobs-2024": {}
   },
-  "fetchedAt": "2026-09-06T10:32:33.392Z",
+  "fetchedAt": "2026-09-06T10:37:03.950Z",
   "seo": {
-    "lastOptimized": "2026-09-06T10:32:37.996Z",
+    "lastOptimized": "2026-09-06T10:37:08.708Z",
     "totalPosts": 1756,
     "websiteName": "All India Exam Result",
     "websiteUrl": "https://www.aiexamresult.com",
