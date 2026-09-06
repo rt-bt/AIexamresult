@@ -190,7 +190,7 @@ export async function GET(request: Request) {
     }
 
     // 2. Scrape fresh data
-    let newItems: Record<string, PostItem[]> = {
+    const newItems: Record<string, PostItem[]> = {
       latestJobs: [], admitCards: [], results: [],
       answerKeys: [], admissions: [], documents: [],
     };
