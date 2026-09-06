@@ -297,8 +297,8 @@
     "@graph": [
       {
         "@type": "WebPage",
-        "@id": "https://www.aiexamresult.com/post/DDA-Group-A-B-C-Post-2025",
-        "url": "https://www.aiexamresult.com/post/DDA-Group-A-B-C-Post-2025",
+        "@id": "https://www.aiexamresult.com/post/dda-group-a-b-c-post-2025",
+        "url": "https://www.aiexamresult.com/post/dda-group-a-b-c-post-2025",
         "name": "DDA Group A, B & C Various Posts Marks 2026 Out Check to Direct Link",
         "description": "Author: Sarkari Exam Team\nTag: 10th, 12th, Graduate Job",
         "inLanguage": "en-IN",
@@ -310,7 +310,7 @@
           "url": "https://www.aiexamresult.com/og-image.svg"
         },
         "datePublished": "8 June 2026",
-        "dateModified": "2026-07-31",
+        "dateModified": "2026-09-06",
         "author": {
           "@type": "Organization",
           "name": "All India Exam Result",
@@ -319,8 +319,8 @@
       },
       {
         "@type": "FAQPage",
-        "@id": "https://www.aiexamresult.com/post/DDA-Group-A-B-C-Post-2025#faq",
-        "url": "https://www.aiexamresult.com/post/DDA-Group-A-B-C-Post-2025#faq",
+        "@id": "https://www.aiexamresult.com/post/dda-group-a-b-c-post-2025#faq",
+        "url": "https://www.aiexamresult.com/post/dda-group-a-b-c-post-2025#faq",
         "mainEntity": [
           {
             "@type": "Question",
@@ -358,7 +358,7 @@
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://www.aiexamresult.com/post/DDA-Group-A-B-C-Post-2025#breadcrumb",
+        "@id": "https://www.aiexamresult.com/post/dda-group-a-b-c-post-2025#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
@@ -376,7 +376,7 @@
             "@type": "ListItem",
             "position": 3,
             "name": "DDA Group A, B & C Various Posts Marks 2026 Out Check to Direct Link",
-            "item": "https://www.aiexamresult.com/post/DDA-Group-A-B-C-Post-2025"
+            "item": "https://www.aiexamresult.com/post/dda-group-a-b-c-post-2025"
           }
         ]
       }
@@ -385,6 +385,6 @@
   "seoMeta": {
     "title": "DDA Group A, B & C Various Posts Marks 2026 Out Check to Direct Link",
     "description": "Author: Sarkari Exam Team\nTag: 10th, 12th, Graduate Job",
-    "canonical": "https://www.aiexamresult.com/post/DDA-Group-A-B-C-Post-2025"
+    "canonical": "https://www.aiexamresult.com/post/dda-group-a-b-c-post-2025"
   }
 }

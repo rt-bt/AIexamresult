@@ -68,8 +68,8 @@
     "@graph": [
       {
         "@type": "WebPage",
-        "@id": "https://www.aiexamresult.com/post/MPESB-PNST-2026",
-        "url": "https://www.aiexamresult.com/post/MPESB-PNST-2026",
+        "@id": "https://www.aiexamresult.com/post/mpesb-pnst-2026",
+        "url": "https://www.aiexamresult.com/post/mpesb-pnst-2026",
         "name": "MPESB Pre Nursing Selection Test (PNST) Admissions 2026 Admit Card",
         "description": "Madhya Pradesh Employee Selection Board MPESB ESB Pre Nursing Selection Test (PNST) 2026 Admissions Notification / Rulebook 2026. Those candidates who are inter",
         "inLanguage": "en-IN",
@@ -81,7 +81,7 @@
           "url": "https://www.aiexamresult.com/og-image.svg"
         },
         "datePublished": "3 July 2026",
-        "dateModified": "2026-07-31",
+        "dateModified": "2026-09-06",
         "author": {
           "@type": "Organization",
           "name": "All India Exam Result",
@@ -90,8 +90,8 @@
       },
       {
         "@type": "FAQPage",
-        "@id": "https://www.aiexamresult.com/post/MPESB-PNST-2026#faq",
-        "url": "https://www.aiexamresult.com/post/MPESB-PNST-2026#faq",
+        "@id": "https://www.aiexamresult.com/post/mpesb-pnst-2026#faq",
+        "url": "https://www.aiexamresult.com/post/mpesb-pnst-2026#faq",
         "mainEntity": [
           {
             "@type": "Question",
@@ -129,7 +129,7 @@
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://www.aiexamresult.com/post/MPESB-PNST-2026#breadcrumb",
+        "@id": "https://www.aiexamresult.com/post/mpesb-pnst-2026#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
@@ -147,7 +147,7 @@
             "@type": "ListItem",
             "position": 3,
             "name": "MPESB Pre Nursing Selection Test (PNST) Admissions 2026 Admit Card",
-            "item": "https://www.aiexamresult.com/post/MPESB-PNST-2026"
+            "item": "https://www.aiexamresult.com/post/mpesb-pnst-2026"
           }
         ]
       }
@@ -156,6 +156,6 @@
   "seoMeta": {
     "title": "MPESB Pre Nursing Selection Test (PNST) Admissions 2026 Admit Card",
     "description": "Madhya Pradesh Employee Selection Board MPESB ESB Pre Nursing Selection Test (PNST) 2026 Admissions Notification / Rulebook 2026. Those candidates who are inter",
-    "canonical": "https://www.aiexamresult.com/post/MPESB-PNST-2026"
+    "canonical": "https://www.aiexamresult.com/post/mpesb-pnst-2026"
   }
 }

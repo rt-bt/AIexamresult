@@ -11,10 +11,19 @@ const nextConfig: NextConfig = {
     ]
   },
   experimental: {
-    optimizePackageImports: ["lucide-react", "framer-motion"],
+    optimizePackageImports: ["lucide-react"],
   },
   outputFileTracingExcludes: {
     "/*": ["./data/posts/**", "./data/scraped.json", "./data/scraped-data.ts"],
+  },
+  webpack(config) {
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      "framer-motion$": require
+        .resolve("framer-motion/package.json")
+        .replace(/package\.json$/, "dist/cjs/index.js"),
+    };
+    return config;
   },
   async headers() {
     return [
