@@ -39,15 +39,26 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   };
 }
 
+const GITHUB_RAW = "https://raw.githubusercontent.com/rt-bt/AIexamresult/master/data/posts";
+
 async function getPostDetail(slug: string) {
-  const summary = getPostBySlug(slug);
-  if (!summary) return null;
+  // Try local filesystem first (works in local dev)
   try {
     const filePath = path.join(process.cwd(), "data", "posts", `${slug}.json`);
     if (fs.existsSync(filePath)) {
       let raw = fs.readFileSync(filePath, "utf-8");
       if (raw.charCodeAt(0) === 0xFEFF) raw = raw.substring(1);
       return JSON.parse(raw);
+    }
+  } catch {}
+  // Fallback: fetch from GitHub raw content (works on Vercel where files are excluded)
+  try {
+    const res = await fetch(`${GITHUB_RAW}/${encodeURIComponent(slug)}.json`, {
+      next: { revalidate: 3600 }, // cache for 1 hour
+    });
+    if (res.ok) {
+      const text = await res.text();
+      return JSON.parse(text.charCodeAt(0) === 0xFEFF ? text.substring(1) : text);
     }
   } catch {}
   return null;
