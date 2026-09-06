@@ -2,10 +2,10 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { RefreshCw, CheckCircle2, AlertCircle, ArrowLeft, Zap, ShieldCheck } from "lucide-react";
+import { RefreshCw, CheckCircle2, AlertCircle, ArrowLeft, Zap, ShieldCheck, Lock } from "lucide-react";
 
 export default function AdminSyncPage() {
-  const [secretKey, setSecretKey] = useState("sync2024secret");
+  const [secretKey, setSecretKey] = useState("");
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState<"idle" | "syncing" | "success" | "error">("idle");
   const [log, setLog] = useState<string[]>([]);
@@ -15,26 +15,33 @@ export default function AdminSyncPage() {
   };
 
   const handleSync = async () => {
+    if (!secretKey) {
+      setStatus("error");
+      addLog("❌ Please enter your Secret Password");
+      return;
+    }
+
     setLoading(true);
     setStatus("syncing");
     setLog([]);
 
-    addLog("🚀 Starting Manual Sync...");
+    addLog("🚀 Verifying Secret Password & starting Sync...");
 
     try {
-      // 1. Call trigger-sync API
-      addLog("📡 Scraping SarkariExam & updating GitHub data...");
-      const res = await fetch(`/api/trigger-sync?secret=${encodeURIComponent(secretKey)}`, {
-        method: "GET",
+      // 1. Call trigger-sync API securely via POST
+      const res = await fetch("/api/trigger-sync", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ secret: secretKey }),
       });
 
       const data = await res.json();
 
       if (!res.ok || data.error) {
-        throw new Error(data.error || "Failed to trigger sync");
+        throw new Error(data.error || "Access Denied: Incorrect Secret Password");
       }
 
-      addLog(`✅ GitHub Updated! Counts: ${JSON.stringify(data.counts)}`);
+      addLog(`✅ Authorization Granted! GitHub Updated.`);
 
       // 2. Trigger Vercel Deploy Hook
       addLog("⚡ Triggering Vercel Production Deployment...");
@@ -67,7 +74,7 @@ export default function AdminSyncPage() {
             <ArrowLeft className="w-5 h-5" />
           </Link>
           <span className="text-xs font-bold px-3 py-1 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full flex items-center gap-1.5">
-            <ShieldCheck className="w-3.5 h-3.5" /> Mobile Sync Console
+            <ShieldCheck className="w-3.5 h-3.5" /> Secure Sync Console
           </span>
         </div>
 
@@ -83,14 +90,16 @@ export default function AdminSyncPage() {
         {/* Secret Key Input */}
         <div className="space-y-1.5">
           <div className="flex justify-between items-center text-xs">
-            <label className="font-bold text-slate-400">Sync Security Secret</label>
-            <span className="text-slate-500 font-mono text-[10px]">(Default: sync2024secret)</span>
+            <label className="font-bold text-slate-400 flex items-center gap-1">
+              <Lock className="w-3.5 h-3.5 text-teal-400" /> Admin Secret Password
+            </label>
+            <span className="text-slate-500 text-[10px]">Required</span>
           </div>
           <input
-            type="text"
+            type="password"
             value={secretKey}
             onChange={(e) => setSecretKey(e.target.value)}
-            placeholder="sync2024secret"
+            placeholder="Enter Secret Password"
             className="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-xl text-sm font-mono text-emerald-400 focus:outline-none focus:border-teal-500"
           />
         </div>
@@ -126,8 +135,8 @@ export default function AdminSyncPage() {
           <div className="p-4 bg-rose-950/60 border border-rose-800/60 rounded-2xl flex items-start gap-3 text-rose-300 text-xs">
             <AlertCircle className="w-5 h-5 text-rose-400 shrink-0 mt-0.5" />
             <div>
-              <p className="font-bold text-rose-200">Sync Failed</p>
-              <p className="mt-0.5 text-rose-400/80">Please check your Secret Key or Vercel GH_TOKEN settings.</p>
+              <p className="font-bold text-rose-200">Access Denied / Failed</p>
+              <p className="mt-0.5 text-rose-400/80">Incorrect Secret Password. Please enter the correct password.</p>
             </div>
           </div>
         )}
@@ -149,7 +158,7 @@ export default function AdminSyncPage() {
         {/* Footer instructions */}
         <div className="text-center pt-2">
           <p className="text-[11px] text-slate-500 leading-relaxed">
-            💡 <strong className="text-slate-400">Android App Tip:</strong> Open <span className="text-teal-400">https://www.aiexamresult.com/admin/sync</span> in Chrome on mobile, tap <span className="text-teal-400">⋮ Menu</span> → <span className="text-teal-400">Add to Home Screen</span> to install as a 1-tap App!
+            🔒 <strong className="text-slate-400">100% Secure:</strong> Password is verified on the Vercel server side. Zero tokens in browser bundle.
           </p>
         </div>
 

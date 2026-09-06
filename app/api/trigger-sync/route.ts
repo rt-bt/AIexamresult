@@ -162,16 +162,22 @@ async function commitFile(token: string, content: string, sha: string | undefine
 
 export const maxDuration = 60; // seconds
 
-export async function GET(request: Request) {
-  // Allow Vercel Cron OR manual call with secret
-  const secret = process.env.CRON_SECRET || "sync2024secret";
-  const authHeader = request.headers.get("authorization");
-  const isCron = authHeader === `Bearer ${secret}`;
-  const querySecret = new URL(request.url).searchParams.get("secret");
-  const isManual = !querySecret || querySecret === secret || querySecret === "sync2024secret";
+export async function POST(request: Request) {
+  let providedSecret = "";
+  try {
+    const body = await request.json();
+    providedSecret = body.secret || "";
+  } catch {
+    providedSecret = new URL(request.url).searchParams.get("secret") || "";
+  }
 
-  if (secret && !isCron && !isManual) {
-    return NextResponse.json({ error: "Unauthorized secret key" }, { status: 401 });
+  const serverSecret = process.env.CRON_SECRET || "AdityaSync2026#SecurePin";
+  const authHeader = request.headers.get("authorization");
+  const isCron = authHeader === `Bearer ${serverSecret}`;
+  const isManual = providedSecret === serverSecret;
+
+  if (!isCron && !isManual) {
+    return NextResponse.json({ error: "Incorrect Secret Password. Access Denied." }, { status: 401 });
   }
 
   const token = process.env.GH_TOKEN;
@@ -252,6 +258,6 @@ export async function GET(request: Request) {
   }
 }
 
-export async function POST() {
-  return GET(new Request("https://aiexamresult.com/api/trigger-sync"));
+export async function GET(request: Request) {
+  return POST(request);
 }
