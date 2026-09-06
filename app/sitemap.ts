@@ -146,9 +146,14 @@ export default async function sitemap({ id }: { id: string }): Promise<MetadataR
     { path: "/tools/image-compressor", freq: "weekly", prio: 0.4 },
     { path: "/tools/pdf-compressor", freq: "weekly", prio: 0.4 },
     { path: "/about", freq: "monthly", prio: 0.4 },
+    { path: "/about-us", freq: "monthly", prio: 0.4 },
     { path: "/contact", freq: "monthly", prio: 0.4 },
-    { path: "/privacy-policy", freq: "monthly", prio: 0.3 },
-    { path: "/disclaimer", freq: "monthly", prio: 0.3 },
+    { path: "/contact-us", freq: "monthly", prio: 0.4 },
+    { path: "/privacy-policy", freq: "monthly", prio: 0.4 },
+    { path: "/privacy", freq: "monthly", prio: 0.4 },
+    { path: "/terms", freq: "monthly", prio: 0.4 },
+    { path: "/terms-of-service", freq: "monthly", prio: 0.4 },
+    { path: "/disclaimer", freq: "monthly", prio: 0.4 },
   ];
   for (const r of staticRoutes) {
     entries.push({ url: `${base}${r.path}`, lastModified: now, changeFrequency: r.freq, priority: r.prio });

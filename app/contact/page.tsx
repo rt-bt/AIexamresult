@@ -1,8 +1,9 @@
-import type { Metadata } from "next";
+import ContactUsPage from "../contact-us/page";
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Contact Us | All India Exam Result",
-  description: "Have a question or feedback? Contact us by phone, email or the contact form. We reply within 24-48 hours.",
+  description: "Contact All India Exam Result team for queries, corrections, or student support. Email: contact@aiexamresult.com, help@aiexamresult.com, Phone: +91 8969799697.",
+  alternates: { canonical: "/contact" },
 };
 
-export { default } from "./page-client";
+export default ContactUsPage;
