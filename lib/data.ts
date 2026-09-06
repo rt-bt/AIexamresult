@@ -12,18 +12,27 @@ export type PostCard = {
 export const trendingExams = ["SSC CGL", "UPSC CSE", "Railway ALP", "NEET UG", "CTET", "UP Police"];
 
 type ScrapedData = {
-  results: { title: string; url: string; category: string; slug: string }[];
-  admitCards: { title: string; url: string; category: string; slug: string }[];
-  latestJobs: { title: string; url: string; category: string; slug: string }[];
-  answerKeys: { title: string; url: string; category: string; slug: string }[];
-  documents: { title: string; url: string; category: string; slug: string }[];
-  admissions: { title: string; url: string; category: string; slug: string }[];
+  results: { title: string; url: string; category: string; slug: string; publishedDate?: string }[];
+  admitCards: { title: string; url: string; category: string; slug: string; publishedDate?: string }[];
+  latestJobs: { title: string; url: string; category: string; slug: string; publishedDate?: string }[];
+  answerKeys: { title: string; url: string; category: string; slug: string; publishedDate?: string }[];
+  documents: { title: string; url: string; category: string; slug: string; publishedDate?: string }[];
+  admissions: { title: string; url: string; category: string; slug: string; publishedDate?: string }[];
   posts: Record<string, { lastDate?: string; isExpired?: boolean }>;
   fetchedAt: string;
 };
 
+// Primary: import from TypeScript file (always bundled by Vercel at build time)
+// Fallback: read scraped.json at runtime (for local dev)
 function loadScraped(): ScrapedData | null {
   try {
+    // Try direct import from bundled TypeScript data file
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const mod = require("../data/scraped-data") as { scrapedData: ScrapedData };
+    if (mod?.scrapedData?.latestJobs?.length) return mod.scrapedData as ScrapedData;
+  } catch {}
+  try {
+    // Fallback: read JSON file directly (works in local dev)
     const fs = require("fs") as typeof import("fs");
     const path = require("path") as typeof import("path");
     const jsonPath = path.join(process.cwd(), "data", "scraped.json");
