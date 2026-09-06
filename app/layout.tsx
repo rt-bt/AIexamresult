@@ -241,6 +241,12 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <Script id="google-analytics" strategy="afterInteractive">
           {`window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-9MS5NTFB7W');`}
         </Script>
+        {/* Google AdSense */}
+        <Script
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2439432844260170"
+          strategy="afterInteractive"
+          crossOrigin="anonymous"
+        />
       </head>
       <body className={`${inter.variable} font-sans antialiased`}>
         <Providers>{children}</Providers>
