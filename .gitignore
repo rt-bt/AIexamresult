@@ -21,3 +21,8 @@ data/scraped-data.ts
 .env*
 
 aiexamresult.pem
+
+.next.zip
+*.zip
+tsconfig.tsbuildinfo
+test.html

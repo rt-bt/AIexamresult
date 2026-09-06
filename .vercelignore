@@ -5,3 +5,8 @@ data/scraped-data.ts
 node_modules
 .next
 scripts
+
+.next.zip
+test.html
+tsconfig.tsbuildinfo
+*.zip
