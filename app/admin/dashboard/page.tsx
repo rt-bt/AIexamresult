@@ -109,7 +109,10 @@ export default function DashboardPage() {
             <Sparkles className="h-8 w-8" />
             <h2 className="mt-4 text-2xl font-black">AI generation health</h2>
             <p className="mt-2 text-[#5EEAD4]">OpenAI content generation, humanizing, SEO metadata ready.</p>
-            <Link href="/admin/ai-generator" className="mt-5 inline-flex rounded-full bg-white px-4 py-2 text-sm font-black text-[#0D9488]">Open AI Generator</Link>
+            <div className="mt-5 flex flex-wrap gap-2">
+              <Link href="/admin/ai-generator" className="inline-flex rounded-full bg-white px-4 py-2 text-sm font-black text-[#0D9488]">Open AI Generator</Link>
+              <Link href="/admin/sync" className="inline-flex rounded-full bg-slate-950 px-4 py-2 text-sm font-black text-white hover:bg-slate-900">⚡ Mobile Sync App</Link>
+            </div>
           </section>
         </div>
       </div>
