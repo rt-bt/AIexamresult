@@ -75,11 +75,11 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true, "max-video-preview": -1, "max-image-preview": "large", "max-snippet": -1 }
   },
-  verification: { google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION ?? "" },
+  verification: { google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION || "gF7-AsRKqORQGaYyLfqV4im0wQOI_Bwium6dxH7kZ8E" },
   category: "education",
   classification: "Government Exam Information Portal",
   other: {
-    "google-site-verification": process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION ?? "",
+    "google-site-verification": process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION || "gF7-AsRKqORQGaYyLfqV4im0wQOI_Bwium6dxH7kZ8E",
     "google-adsense-account": "ca-pub-2439432844260170"
   }
 };
