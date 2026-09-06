@@ -79,7 +79,8 @@ export const metadata: Metadata = {
   category: "education",
   classification: "Government Exam Information Portal",
   other: {
-    "google-site-verification": process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION ?? ""
+    "google-site-verification": process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION ?? "",
+    "google-adsense-account": "ca-pub-2439432844260170"
   }
 };
 
