@@ -7661,10 +7661,10 @@ export const scrapedData = {
     "mailto-teamsarkarialert@gmail.com": {},
     "live-government-jobs-2024": {}
   },
-  "fetchedAt": "2026-09-06T08:06:12.632Z",
+  "fetchedAt": "2026-09-06T08:54:41.087Z",
   "seo": {
-    "lastOptimized": "2026-09-06T08:06:25.265Z",
-    "totalPosts": 1752,
+    "lastOptimized": "2026-09-06T08:56:20.096Z",
+    "totalPosts": 1756,
     "websiteName": "All India Exam Result",
     "websiteUrl": "https://www.aiexamresult.com",
     "description": "Sarkari Result 2026 - Get fastest government job alerts, sarkari naukri, exam results, admit cards & answer keys. SSC, UPSC, Railway, Banking, UP, Bihar & all India exams."

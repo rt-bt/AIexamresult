@@ -168,8 +168,8 @@
     "@graph": [
       {
         "@type": "WebPage",
-        "@id": "https://www.aiexamresult.com/post/UPSC-NDA-II-Exam-2026",
-        "url": "https://www.aiexamresult.com/post/UPSC-NDA-II-Exam-2026",
+        "@id": "https://www.aiexamresult.com/post/upsc-nda-ii-exam-2026",
+        "url": "https://www.aiexamresult.com/post/upsc-nda-ii-exam-2026",
         "name": "UPSC NDA/ NA-II Admit Card 2026 Out for 394 Post",
         "description": "UPSC National Defence Academy & Naval Academy NDA/NA II 2026 Admit Card Out! 394 Posts (Army, Navy, Air Force). Online Form 20 May 2026 to 11 June 2026. Exam on",
         "inLanguage": "en-IN",
@@ -190,8 +190,8 @@
       },
       {
         "@type": "FAQPage",
-        "@id": "https://www.aiexamresult.com/post/UPSC-NDA-II-Exam-2026#faq",
-        "url": "https://www.aiexamresult.com/post/UPSC-NDA-II-Exam-2026#faq",
+        "@id": "https://www.aiexamresult.com/post/upsc-nda-ii-exam-2026#faq",
+        "url": "https://www.aiexamresult.com/post/upsc-nda-ii-exam-2026#faq",
         "mainEntity": [
           {
             "@type": "Question",
@@ -229,7 +229,7 @@
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://www.aiexamresult.com/post/UPSC-NDA-II-Exam-2026#breadcrumb",
+        "@id": "https://www.aiexamresult.com/post/upsc-nda-ii-exam-2026#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
@@ -247,7 +247,7 @@
             "@type": "ListItem",
             "position": 3,
             "name": "UPSC NDA/ NA-II Admit Card 2026 Out for 394 Post",
-            "item": "https://www.aiexamresult.com/post/UPSC-NDA-II-Exam-2026"
+            "item": "https://www.aiexamresult.com/post/upsc-nda-ii-exam-2026"
           }
         ]
       }
@@ -256,6 +256,6 @@
   "seoMeta": {
     "title": "UPSC NDA/ NA-II Admit Card 2026 Out for 394 Post",
     "description": "UPSC National Defence Academy & Naval Academy NDA/NA II 2026 Admit Card Out! 394 Posts (Army, Navy, Air Force). Online Form 20 May 2026 to 11 June 2026. Exam on",
-    "canonical": "https://www.aiexamresult.com/post/UPSC-NDA-II-Exam-2026"
+    "canonical": "https://www.aiexamresult.com/post/upsc-nda-ii-exam-2026"
   }
 }
