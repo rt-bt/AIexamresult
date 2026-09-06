@@ -17,3 +17,7 @@ data/scraped-data.ts
 *ecosystem*
 
 .vercel
+
+.env*
+
+aiexamresult.pem
