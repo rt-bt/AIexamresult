@@ -14,7 +14,8 @@ const nextConfig: NextConfig = {
     optimizePackageImports: ["lucide-react"],
   },
   
-  outputFileTracingIncludes: { "/*": ["./data/posts/**", "./data/scraped.json", "./data/scraped-data.ts"] },
+  outputFileTracingIncludes: { "/*": ["./data/scraped.json", "./data/posts/**"] },
+
   webpack(config) {
     config.resolve.alias = {
       ...config.resolve.alias,

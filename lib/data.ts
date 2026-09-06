@@ -22,17 +22,11 @@ type ScrapedData = {
   fetchedAt: string;
 };
 
-// Primary: import from TypeScript file (always bundled by Vercel at build time)
-// Fallback: read scraped.json at runtime (for local dev)
+// Read scraped.json at runtime.
+// next.config.ts outputFileTracingIncludes ensures this file is packaged
+// alongside the serverless function on Vercel (as a file, NOT bundled into JS).
 function loadScraped(): ScrapedData | null {
   try {
-    // Try direct import from bundled TypeScript data file
-    // eslint-disable-next-line @typescript-eslint/no-require-imports
-    const mod = require("../data/scraped-data") as { scrapedData: ScrapedData };
-    if (mod?.scrapedData?.latestJobs?.length) return mod.scrapedData as ScrapedData;
-  } catch {}
-  try {
-    // Fallback: read JSON file directly (works in local dev)
     const fs = require("fs") as typeof import("fs");
     const path = require("path") as typeof import("path");
     const jsonPath = path.join(process.cwd(), "data", "scraped.json");
