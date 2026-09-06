@@ -14,7 +14,12 @@ const nextConfig: NextConfig = {
     optimizePackageImports: ["lucide-react"],
   },
   
-  outputFileTracingIncludes: { "/*": ["./data/scraped.json"] },
+  // Only include scraped.json for listing pages (~500KB, safe)
+  outputFileTracingIncludes: { "/**": ["./data/scraped.json"] },
+  // Explicitly exclude 1756 individual post JSON files (372MB total) from ALL
+  // serverless functions. Without this, Next.js auto-traces them because
+  // post/[slug]/page.tsx uses fs.readFileSync, causing 382MB > 250MB limit.
+  outputFileTracingExcludes: { "/**": ["./data/posts/**", "./data/scraped-data.ts"] },
 
   webpack(config) {
     config.resolve.alias = {
