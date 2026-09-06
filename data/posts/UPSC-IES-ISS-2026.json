@@ -157,8 +157,8 @@
     "@graph": [
       {
         "@type": "WebPage",
-        "@id": "https://www.aiexamresult.com/post/upsc-ies-iss-2026",
-        "url": "https://www.aiexamresult.com/post/upsc-ies-iss-2026",
+        "@id": "https://www.aiexamresult.com/post/UPSC-IES-ISS-2026",
+        "url": "https://www.aiexamresult.com/post/UPSC-IES-ISS-2026",
         "name": "UPSC IES ISS Admit Card 2026 for 44 Post",
         "description": "UPSC IES ISS Admit Card 2026 Apply Online Form | Indian Economic Service (IES) / Indian Statistical Service (ISS) Visit Rojgar Result: RojgarResult.Com",
         "inLanguage": "en-IN",
@@ -179,8 +179,8 @@
       },
       {
         "@type": "FAQPage",
-        "@id": "https://www.aiexamresult.com/post/upsc-ies-iss-2026#faq",
-        "url": "https://www.aiexamresult.com/post/upsc-ies-iss-2026#faq",
+        "@id": "https://www.aiexamresult.com/post/UPSC-IES-ISS-2026#faq",
+        "url": "https://www.aiexamresult.com/post/UPSC-IES-ISS-2026#faq",
         "mainEntity": [
           {
             "@type": "Question",
@@ -210,7 +210,7 @@
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://www.aiexamresult.com/post/upsc-ies-iss-2026#breadcrumb",
+        "@id": "https://www.aiexamresult.com/post/UPSC-IES-ISS-2026#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
@@ -228,7 +228,7 @@
             "@type": "ListItem",
             "position": 3,
             "name": "UPSC IES ISS Admit Card 2026 for 44 Post",
-            "item": "https://www.aiexamresult.com/post/upsc-ies-iss-2026"
+            "item": "https://www.aiexamresult.com/post/UPSC-IES-ISS-2026"
           }
         ]
       }
@@ -237,6 +237,6 @@
   "seoMeta": {
     "title": "UPSC IES ISS Admit Card 2026 for 44 Post",
     "description": "UPSC IES ISS Admit Card 2026 Apply Online Form | Indian Economic Service (IES) / Indian Statistical Service (ISS) Visit Rojgar Result: RojgarResult.Com",
-    "canonical": "https://www.aiexamresult.com/post/upsc-ies-iss-2026"
+    "canonical": "https://www.aiexamresult.com/post/UPSC-IES-ISS-2026"
   }
 }

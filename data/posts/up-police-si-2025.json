@@ -125,8 +125,8 @@
     "@graph": [
       {
         "@type": "WebPage",
-        "@id": "https://www.aiexamresult.com/post/UP-Police-SI-2025",
-        "url": "https://www.aiexamresult.com/post/UP-Police-SI-2025",
+        "@id": "https://www.aiexamresult.com/post/up-police-si-2025",
+        "url": "https://www.aiexamresult.com/post/up-police-si-2025",
         "name": "UP Police SI PET Exam Date 2026",
         "description": "Short Information : Uttar Pradesh Police Recruitment and Promotion Board (UPPRPB) has released the PET Exam Date for the UP Police Sub-Inspector (SI) Recruitmen",
         "inLanguage": "en-IN",
@@ -147,8 +147,8 @@
       },
       {
         "@type": "FAQPage",
-        "@id": "https://www.aiexamresult.com/post/UP-Police-SI-2025#faq",
-        "url": "https://www.aiexamresult.com/post/UP-Police-SI-2025#faq",
+        "@id": "https://www.aiexamresult.com/post/up-police-si-2025#faq",
+        "url": "https://www.aiexamresult.com/post/up-police-si-2025#faq",
         "mainEntity": [
           {
             "@type": "Question",
@@ -186,7 +186,7 @@
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://www.aiexamresult.com/post/UP-Police-SI-2025#breadcrumb",
+        "@id": "https://www.aiexamresult.com/post/up-police-si-2025#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
@@ -204,7 +204,7 @@
             "@type": "ListItem",
             "position": 3,
             "name": "UP Police SI PET Exam Date 2026",
-            "item": "https://www.aiexamresult.com/post/UP-Police-SI-2025"
+            "item": "https://www.aiexamresult.com/post/up-police-si-2025"
           }
         ]
       }
@@ -213,6 +213,6 @@
   "seoMeta": {
     "title": "UP Police SI PET Exam Date 2026",
     "description": "Short Information : Uttar Pradesh Police Recruitment and Promotion Board (UPPRPB) has released the PET Exam Date for the UP Police Sub-Inspector (SI) Recruitmen",
-    "canonical": "https://www.aiexamresult.com/post/UP-Police-SI-2025"
+    "canonical": "https://www.aiexamresult.com/post/up-police-si-2025"
   }
 }

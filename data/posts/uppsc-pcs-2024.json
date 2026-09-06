@@ -213,8 +213,8 @@
     "@graph": [
       {
         "@type": "WebPage",
-        "@id": "https://www.aiexamresult.com/post/UPPSC-PCS-2024",
-        "url": "https://www.aiexamresult.com/post/UPPSC-PCS-2024",
+        "@id": "https://www.aiexamresult.com/post/uppsc-pcs-2024",
+        "url": "https://www.aiexamresult.com/post/uppsc-pcs-2024",
         "name": "UPPSC Combined State/ Upper Subordinate Services 2024 Final Result with Marks 2026 - Out",
         "description": "Uttar Pradesh Public Service Commission (UPPSC) has Officially Released Final Result with Marks for the Combined Upper Subordinate Service UP PSC Pre 2024 Recru",
         "inLanguage": "en-IN",
@@ -235,8 +235,8 @@
       },
       {
         "@type": "FAQPage",
-        "@id": "https://www.aiexamresult.com/post/UPPSC-PCS-2024#faq",
-        "url": "https://www.aiexamresult.com/post/UPPSC-PCS-2024#faq",
+        "@id": "https://www.aiexamresult.com/post/uppsc-pcs-2024#faq",
+        "url": "https://www.aiexamresult.com/post/uppsc-pcs-2024#faq",
         "mainEntity": [
           {
             "@type": "Question",
@@ -274,7 +274,7 @@
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://www.aiexamresult.com/post/UPPSC-PCS-2024#breadcrumb",
+        "@id": "https://www.aiexamresult.com/post/uppsc-pcs-2024#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
@@ -292,7 +292,7 @@
             "@type": "ListItem",
             "position": 3,
             "name": "UPPSC Combined State/ Upper Subordinate Services 2024 Final Result with Marks 2026 - Out",
-            "item": "https://www.aiexamresult.com/post/UPPSC-PCS-2024"
+            "item": "https://www.aiexamresult.com/post/uppsc-pcs-2024"
           }
         ]
       }
@@ -301,6 +301,6 @@
   "seoMeta": {
     "title": "UPPSC Combined State/ Upper Subordinate Services 2024 Final Result with Marks 2026 - Out",
     "description": "Uttar Pradesh Public Service Commission (UPPSC) has Officially Released Final Result with Marks for the Combined Upper Subordinate Service UP PSC Pre 2024 Recru",
-    "canonical": "https://www.aiexamresult.com/post/UPPSC-PCS-2024"
+    "canonical": "https://www.aiexamresult.com/post/uppsc-pcs-2024"
   }
 }
