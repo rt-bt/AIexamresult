@@ -1256,7 +1256,7 @@ export const scrapedData = {
       "publishedDate": "18 August 2026"
     },
     {
-      "title": "EMRS Teaching & Non-Teaching Tier-II Result 2026",
+      "title": "EMRS Teaching & Non-Teaching Tier-II Result 2026 – Updated",
       "url": "/post/emrs-teaching-non-teaching-2025",
       "category": "results",
       "slug": "emrs-teaching-non-teaching-2025",
@@ -3333,7 +3333,7 @@ export const scrapedData = {
       "publishedDate": "20 August 2026"
     },
     {
-      "title": "Bank Of Baroda LBO Online Form 2026 – Last Date",
+      "title": "Bank Of Baroda LBO Online Form 2026 – Extended",
       "url": "/post/bank-of-baroda-lbo-2026",
       "category": "latestJobs",
       "slug": "bank-of-baroda-lbo-2026",
@@ -4396,6 +4396,12 @@ export const scrapedData = {
     }
   ],
   "answerKeys": [
+    {
+      "title": "RPSC Statistical Officer Answer Key 2026",
+      "url": "/post/rpsc-statistical-officer-recruitment-2025",
+      "category": "answerKeys",
+      "slug": "rpsc-statistical-officer-recruitment-2025"
+    },
     {
       "title": "RPSC APO Answer Key 2026",
       "url": "/post/rpsc-apo-2026",
@@ -6919,7 +6925,7 @@ export const scrapedData = {
       "lastDate": "27 October 2026"
     },
     "bank-of-baroda-lbo-2026": {
-      "lastDate": "07 September 2026"
+      "lastDate": "17 September 2026 Extended"
     },
     "ctet-september-2026": {
       "lastDate": "10 June 2026"
@@ -7027,8 +7033,7 @@ export const scrapedData = {
       "isExpired": false
     },
     "rpsc-statistical-officer-recruitment-2025": {
-      "lastDate": "26 November 2025",
-      "isExpired": false
+      "lastDate": "26 November 2025"
     },
     "upsssc-pharmacist-ayurvedic-2024": {
       "lastDate": "03 March 2024",
@@ -7747,9 +7752,9 @@ export const scrapedData = {
       "lastDate": "07 July 2026"
     }
   },
-  "fetchedAt": "2026-09-07T12:26:07.688Z",
+  "fetchedAt": "2026-09-07T12:36:18.755Z",
   "seo": {
-    "lastOptimized": "2026-09-07T12:26:12.359Z",
+    "lastOptimized": "2026-09-07T12:36:23.475Z",
     "totalPosts": 1762,
     "websiteName": "All India Exam Result",
     "websiteUrl": "https://www.aiexamresult.com",
