@@ -1964,7 +1964,7 @@ export const scrapedData = {
       "publishedDate": "5 September 2026"
     },
     {
-      "title": "NTA UGC NET June Re-Exam Admit Card 2026 – Out",
+      "title": "NTA UGC NET June Re-Exam Admit Card 2026",
       "url": "/post/nta-ugc-net-june-2026",
       "category": "admitCards",
       "slug": "nta-ugc-net-june-2026",
@@ -2243,6 +2243,30 @@ export const scrapedData = {
     }
   ],
   "latestJobs": [
+    {
+      "title": "NTPC NGEL Engineer and Executive Online Form 2026 – Last Date",
+      "url": "/post/ntpc-ngel-engineer-and-executive-2026",
+      "category": "latestJobs",
+      "slug": "ntpc-ngel-engineer-and-executive-2026"
+    },
+    {
+      "title": "AAI Junior Executive & Manager Online Form 2026 – Last Date",
+      "url": "/post/aai-junior-executive-manager-2026",
+      "category": "latestJobs",
+      "slug": "aai-junior-executive-manager-2026"
+    },
+    {
+      "title": "UIIC Administrative Officers AO Online Form 2026",
+      "url": "/post/uiic-ao-2026",
+      "category": "latestJobs",
+      "slug": "uiic-ao-2026"
+    },
+    {
+      "title": "RCFL Apprentice Online Form 2026",
+      "url": "/post/rcfl-apprentice-2026",
+      "category": "latestJobs",
+      "slug": "rcfl-apprentice-2026"
+    },
     {
       "title": "UP Anganwadi Worker Bharti Amroha Online Form 2026",
       "url": "https://www.sarkariresult.com/2026/up-anganwadi-worker/",
@@ -3285,7 +3309,7 @@ export const scrapedData = {
       "publishedDate": "20 August 2026"
     },
     {
-      "title": "Bank Of Baroda LBO Online Form 2026",
+      "title": "Bank Of Baroda LBO Online Form 2026 – Last Date",
       "url": "/post/bank-of-baroda-lbo-2026",
       "category": "latestJobs",
       "slug": "bank-of-baroda-lbo-2026",
@@ -3578,8 +3602,8 @@ export const scrapedData = {
       "publishedDate": "14 August 2026"
     },
     {
-      "title": "GIMS Noida Staff Nurse Online Form 2026",
-      "url": "https://www.sarkariexam.com/gims-noida-staff-nurse-2026",
+      "title": "GIMS Noida Staff Nurse Online Form 2026 – Last Date",
+      "url": "/post/gims-noida-staff-nurse-2026",
       "category": "latestJobs",
       "slug": "gims-noida-staff-nurse-2026",
       "publishedDate": "11 August 2026"
@@ -3886,7 +3910,7 @@ export const scrapedData = {
       "publishedDate": "28 November 2024"
     },
     {
-      "title": "UPSSSC PET Online Form 2026 – Extended",
+      "title": "UPSSSC PET Online Form 2026 – Last Date",
       "url": "/post/upsssc-pet-2026",
       "category": "latestJobs",
       "slug": "upsssc-pet-2026",
@@ -7098,8 +7122,7 @@ export const scrapedData = {
       "isExpired": false
     },
     "gims-noida-staff-nurse-2026": {
-      "lastDate": "07 September 2026",
-      "isExpired": false
+      "lastDate": "07 September 2026"
     },
     "iocl-marketing-division-nr-apprentices-2026": {
       "lastDate": "06 September 2026",
@@ -7659,12 +7682,24 @@ export const scrapedData = {
     "terms-and-conditions": {},
     "sarkari-jobs": {},
     "mailto-teamsarkarialert@gmail.com": {},
-    "live-government-jobs-2024": {}
+    "live-government-jobs-2024": {},
+    "rcfl-apprentice-2026": {
+      "lastDate": "20 September 2026"
+    },
+    "uiic-ao-2026": {
+      "lastDate": "28 September 2026"
+    },
+    "aai-junior-executive-manager-2026": {
+      "lastDate": "07 September 2026"
+    },
+    "ntpc-ngel-engineer-and-executive-2026": {
+      "lastDate": "07 September 2026"
+    }
   },
-  "fetchedAt": "2026-09-07T03:08:12.419Z",
+  "fetchedAt": "2026-09-07T11:03:04.820Z",
   "seo": {
-    "lastOptimized": "2026-09-07T03:08:19.553Z",
-    "totalPosts": 1756,
+    "lastOptimized": "2026-09-07T11:03:10.633Z",
+    "totalPosts": 1760,
     "websiteName": "All India Exam Result",
     "websiteUrl": "https://www.aiexamresult.com",
     "description": "Sarkari Result 2026 - Get fastest government job alerts, sarkari naukri, exam results, admit cards & answer keys. SSC, UPSC, Railway, Banking, UP, Bihar & all India exams."
