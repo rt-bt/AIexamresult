@@ -1563,6 +1563,24 @@ export const scrapedData = {
   ],
   "admitCards": [
     {
+      "title": "RRB NTPC 10+2 UG Mock Test Link 2026",
+      "url": "/post/rrb-ntpc-102-inter-level-2025",
+      "category": "admitCards",
+      "slug": "rrb-ntpc-102-inter-level-2025"
+    },
+    {
+      "title": "Rajasthan State Eligibility Test SET Admit Card 2026",
+      "url": "/post/rajasthan-state-eligibility-test-set-2026",
+      "category": "admitCards",
+      "slug": "rajasthan-state-eligibility-test-set-2026"
+    },
+    {
+      "title": "UPCISB Cooperative Bank Various Posts Exam Date 2026",
+      "url": "/post/upcisb-cooperative-bank-various-post-2026",
+      "category": "admitCards",
+      "slug": "upcisb-cooperative-bank-various-post-2026"
+    },
+    {
       "title": "KVS NVS Teaching & Non-Teaching Interview Letter 2026",
       "url": "/post/kvs-nvs-teaching-non-teaching-2026",
       "category": "admitCards",
@@ -2243,6 +2261,12 @@ export const scrapedData = {
     }
   ],
   "latestJobs": [
+    {
+      "title": "CSIR NGRI Technician Online Form 2026",
+      "url": "/post/csir-ngri-technician-2026",
+      "category": "latestJobs",
+      "slug": "csir-ngri-technician-2026"
+    },
     {
       "title": "NTPC NGEL Engineer and Executive Online Form 2026 – Last Date",
       "url": "/post/ntpc-ngel-engineer-and-executive-2026",
@@ -4373,6 +4397,12 @@ export const scrapedData = {
   ],
   "answerKeys": [
     {
+      "title": "RPSC APO Answer Key 2026",
+      "url": "/post/rpsc-apo-2026",
+      "category": "answerKeys",
+      "slug": "rpsc-apo-2026"
+    },
+    {
       "title": "Haryana HTET OMR Answer Sheet 2026",
       "url": "/post/haryana-htet-2026",
       "category": "answerKeys",
@@ -5123,6 +5153,12 @@ export const scrapedData = {
     }
   ],
   "admissions": [
+    {
+      "title": "BCECE Admission Mop-up Allotment Result 2026",
+      "url": "/post/bcece-admission-2026",
+      "category": "admissions",
+      "slug": "bcece-admission-2026"
+    },
     {
       "title": "Bihar Library Eligibility Test BLET Online Form 2026",
       "url": "https://www.sarkariresult.com/2026/blet-september26/",
@@ -7694,12 +7730,27 @@ export const scrapedData = {
     },
     "ntpc-ngel-engineer-and-executive-2026": {
       "lastDate": "07 September 2026"
+    },
+    "bcece-admission-2026": {
+      "lastDate": "13 May 2026 (Extended)"
+    },
+    "upcisb-cooperative-bank-various-post-2026": {
+      "lastDate": "15 May 2026"
+    },
+    "rajasthan-state-eligibility-test-set-2026": {
+      "lastDate": "10 August 2026"
+    },
+    "csir-ngri-technician-2026": {
+      "lastDate": "04 October 2026"
+    },
+    "rpsc-apo-2026": {
+      "lastDate": "07 July 2026"
     }
   },
-  "fetchedAt": "2026-09-07T11:03:04.820Z",
+  "fetchedAt": "2026-09-07T12:26:07.688Z",
   "seo": {
-    "lastOptimized": "2026-09-07T11:03:10.633Z",
-    "totalPosts": 1760,
+    "lastOptimized": "2026-09-07T12:26:12.359Z",
+    "totalPosts": 1762,
     "websiteName": "All India Exam Result",
     "websiteUrl": "https://www.aiexamresult.com",
     "description": "Sarkari Result 2026 - Get fastest government job alerts, sarkari naukri, exam results, admit cards & answer keys. SSC, UPSC, Railway, Banking, UP, Bihar & all India exams."
