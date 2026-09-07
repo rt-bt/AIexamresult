@@ -6,6 +6,7 @@ const GITHUB_FILE = "data/scraped.json";
 const GITHUB_BRANCH = "master";
 const GITHUB_RAW_BASE = `https://raw.githubusercontent.com/${GITHUB_REPO}/${GITHUB_BRANCH}`;
 const GITHUB_API_BASE = `https://api.github.com/repos/${GITHUB_REPO}`;
+const SOURCE_HOME = "https://www.sarkariexam.com/";
 
 const SOURCES = [
   { url: "https://www.sarkariexam.com/", host: "sarkariexam.com" },
@@ -160,6 +161,118 @@ async function commitFile(token: string, content: string, sha: string | undefine
   return res.ok;
 }
 
+// Commit a single post detail file to GitHub
+async function commitPostFile(token: string, slug: string, content: string): Promise<void> {
+  const filePath = `data/posts/${slug}.json`;
+  // Check if file already exists to get SHA
+  let sha: string | undefined;
+  try {
+    const r = await fetch(`${GITHUB_API_BASE}/contents/${filePath}?ref=${GITHUB_BRANCH}`, {
+      headers: { Authorization: `Bearer ${token}`, "User-Agent": "aiexamresult-sync" },
+    });
+    if (r.ok) {
+      const d = await r.json() as { sha: string };
+      sha = d.sha;
+    }
+  } catch {}
+
+  const body: Record<string, unknown> = {
+    message: `chore: sync post ${slug}`,
+    content: Buffer.from(content).toString("base64"),
+    branch: GITHUB_BRANCH,
+  };
+  if (sha) body.sha = sha;
+
+  await fetch(`${GITHUB_API_BASE}/contents/${filePath}`, {
+    method: "PUT",
+    headers: {
+      Authorization: `Bearer ${token}`,
+      "Content-Type": "application/json",
+      "User-Agent": "aiexamresult-sync",
+    },
+    body: JSON.stringify(body),
+  });
+}
+
+function cleanText(text: string): string {
+  return (text || "")
+    .replace(/sarkari\s*exam/gi, "")
+    .replace(/sarkariexam\.com/gi, "")
+    .replace(/join\s+our\s+(whatsapp|telegram)\s+(channel|group)/gi, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function isPublicLink(href: string): boolean {
+  if (!href || href === "#" || href.startsWith("javascript")) return false;
+  try {
+    const u = new URL(href, SOURCE_HOME);
+    return u.hostname !== "www.sarkariexam.com" && !u.hostname.includes("sarkariresult");
+  } catch { return false; }
+}
+
+function isSpamLabel(label: string): boolean {
+  const lower = label.toLowerCase();
+  return !lower || lower.includes("whatsapp") || lower.includes("telegram") ||
+    lower.includes("facebook") || lower.includes("youtube") || lower.includes("home page");
+}
+
+async function scrapePostDetail(sourceUrl: string, item: { title: string; slug: string; category: string }) {
+  try {
+    const res = await fetch(sourceUrl, {
+      headers: { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/125 Safari/537.36" },
+      signal: AbortSignal.timeout(12000),
+    });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const html = await res.text();
+    const $ = cheerio.load(html);
+
+    const publishedDate = $("time.entry-date.published").attr("datetime") || $("time").first().attr("datetime") || "";
+    const intro = cleanText($("div.post-desc p").text() || $("div.entry-content p").first().text() || "");
+    const importantDates: string[] = [];
+    const applicationFee: string[] = [];
+
+    $("table tr").each((_, row) => {
+      const cells = $(row).find("td, th");
+      if (cells.length < 2) return;
+      const first = cleanText($(cells[0]).text());
+      const second = cleanText($(cells[1]).text());
+      const lower = first.toLowerCase();
+      if (first && second && (lower.includes("date") || lower.includes("last") || lower.includes("exam") || lower.includes("admit"))) {
+        importantDates.push(`${first}: ${second}`);
+      }
+    });
+
+    const importantLinks: { label: string; url: string }[] = [];
+    $("table tr").each((_, row) => {
+      const label = cleanText($(row).find("td").first().text());
+      const href = $(row).find("a[href]").first().attr("href") || "";
+      if (!isSpamLabel(label) && isPublicLink(href)) {
+        importantLinks.push({ label, url: new URL(href, SOURCE_HOME).toString() });
+      }
+    });
+
+    return {
+      title: item.title,
+      slug: item.slug,
+      url: `/post/${item.slug}`,
+      category: item.category,
+      publishedDate,
+      intro,
+      importantDates: [...new Set(importantDates.map(cleanText).filter(Boolean))],
+      applicationFee: [...new Set(applicationFee.map(cleanText).filter(Boolean))],
+      importantLinks: importantLinks.slice(0, 12),
+      fullContentHtml: "",
+    };
+  } catch {
+    return {
+      title: item.title, slug: item.slug, url: `/post/${item.slug}`,
+      category: item.category, publishedDate: "", intro: "",
+      importantDates: [], applicationFee: [], importantLinks: [], fullContentHtml: "",
+    };
+  }
+}
+
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
@@ -244,13 +357,27 @@ export async function POST(request: Request) {
       merged[cat] = combined.slice(0, 200); // keep max 200 per category
     }
 
+    // 4. Scrape and commit post detail files for NEW items only (max 10 to stay within timeout)
+    const allFreshItems = Object.values(newItems).flat();
+    const existingSlugs = new Set(Object.keys((existing.posts as Record<string, unknown>) || {}));
+    const newPostItems = allFreshItems.filter(item => !existingSlugs.has(item.slug)).slice(0, 10);
+
+    // Also get sourceUrl from homepage scrape to build sarkariexam.com post URL
+    const postCommitPromises = newPostItems.map(async (item) => {
+      // Reconstruct the source URL from sarkariexam.com based on slug
+      const guessedUrl = `https://www.sarkariexam.com/${item.slug}/`;
+      const detail = await scrapePostDetail(guessedUrl, item);
+      await commitPostFile(token, item.slug, JSON.stringify(detail, null, 2));
+    });
+    await Promise.allSettled(postCommitPromises);
+
     const finalData = {
       ...merged,
       posts: (existing.posts as Record<string, unknown>) || {},
       fetchedAt: new Date().toISOString(),
     };
 
-    // 4. Commit to GitHub → triggers Vercel redeploy
+    // 5. Commit scraped.json to GitHub → triggers Vercel redeploy
     const newContent = JSON.stringify(finalData, null, 2);
     const committed = await commitFile(token, newContent, currentFile?.sha);
 
@@ -258,6 +385,7 @@ export async function POST(request: Request) {
       ok: true,
       committed,
       counts: Object.fromEntries(Object.entries(merged).map(([k, v]) => [k, v.length])),
+      newPostsCommitted: newPostItems.length,
       fetchedAt: finalData.fetchedAt,
     }, { headers: corsHeaders });
 
