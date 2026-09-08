@@ -50,33 +50,45 @@ export function getPostBySlug(slug: string) {
 }
 
 export function parseDate(str: string): Date {
-  const cleaned = str.replace(/\uFFFD/g, " ").replace(/\u00A0/g, " ").replace(/[\s:|]+\d{1,2}:\d{2}\s*(?:AM|PM).*$/i, "").trim();
-  const m = cleaned.match(/^(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})$/);
+  // Strip pipe-separated time part e.g. "05 September 2026 | 08:20 PM"
+  const withoutTime = str
+    .replace(/\uFFFD/g, " ")
+    .replace(/\u00A0/g, " ")
+    .replace(/\s*\|\s*\d{1,2}:\d{2}\s*(?:AM|PM).*/i, "")   // "| 08:20 PM" style
+    .replace(/[\s:|]+\d{1,2}:\d{2}\s*(?:AM|PM).*$/i, "")   // plain "08:20 PM" suffix
+    .trim();
+  // "05 September 2026" or "5 Sep 2026"
+  const m = withoutTime.match(/^(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})$/);
   if (m) {
     const d = new Date(`${m[3]}-${m[2].substring(0, 3)}-${m[1].padStart(2, "0")}`);
     if (!isNaN(d.getTime())) return d;
   }
-  const m2 = cleaned.match(/^(\d{1,2})([A-Za-z]+)\s+(\d{4})$/);
+  // "05September 2026" (no space)
+  const m2 = withoutTime.match(/^(\d{1,2})([A-Za-z]+)\s+(\d{4})$/);
   if (m2) {
     const d = new Date(`${m2[3]}-${m2[2].substring(0, 3)}-${m2[1].padStart(2, "0")}`);
     if (!isNaN(d.getTime())) return d;
   }
-  const d = new Date(cleaned);
+  // ISO / RFC2822 / any other JS-parseable format
+  const d = new Date(withoutTime);
   return isNaN(d.getTime()) ? new Date() : d;
 }
 
 function toPostCard(items: ({ title: string; url: string; category: string; slug: string; publishedDate?: string })[] | undefined, _category: string, fallbacks: PostCard[]): PostCard[] {
   if (!items || items.length === 0) return fallbacks;
+  const NOW = Date.now();
   const sorted = [...items].sort((a, b) => {
-    const da = a.publishedDate ? parseDate(a.publishedDate).getTime() : 0;
-    const db = b.publishedDate ? parseDate(b.publishedDate).getTime() : 0;
+    // Items without publishedDate are treated as "today" so they float to the top
+    const da = a.publishedDate ? parseDate(a.publishedDate).getTime() : NOW;
+    const db = b.publishedDate ? parseDate(b.publishedDate).getTime() : NOW;
     return db - da;
   });
   return sorted.map((item) => {
     const s2 = getScraped();
     const detail = s2?.posts?.[item.slug];
-    const dt = item.publishedDate ? parseDate(item.publishedDate) : null;
-    const displayDate = dt && !isNaN(dt.getTime()) && dt > new Date() ? new Date() : dt;
+    const dt = item.publishedDate ? parseDate(item.publishedDate) : new Date();
+    // Cap dates that are in the future (data artifacts) to today
+    const displayDate = dt > new Date() ? new Date() : dt;
     return {
       title: item.title,
       excerpt: `Latest ${item.category} update from official sources. Check details, important dates and apply online.`,
