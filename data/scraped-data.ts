@@ -1575,6 +1575,18 @@ export const scrapedData = {
   ],
   "admitCards": [
     {
+      "title": "MPESB MP Police HC Computer and ASI Computer Practical Exam Admit Card 2026",
+      "url": "/post/mp-police-hc-and-asi-2026",
+      "category": "admitCards",
+      "slug": "mp-police-hc-and-asi-2026"
+    },
+    {
+      "title": "SBI Clerk JA Backlog Pre Admit Card 2026",
+      "url": "/post/sbi-junior-associates-clerk-backlog-2026",
+      "category": "admitCards",
+      "slug": "sbi-junior-associates-clerk-backlog-2026"
+    },
+    {
       "title": "UPSSSC Forest Guard/ Wild Life Guard Mains Exam Fee Payment 2026",
       "url": "/post/upsssc-forest-guard-wild-life-guard-2026",
       "category": "admitCards",
@@ -2321,6 +2333,36 @@ export const scrapedData = {
     }
   ],
   "latestJobs": [
+    {
+      "title": "SSC JHT Option Cum Preference Form 2026",
+      "url": "/post/ssc-jht-2025",
+      "category": "latestJobs",
+      "slug": "ssc-jht-2025"
+    },
+    {
+      "title": "UPSSSC Livestock Extension Officer Online Form 2026",
+      "url": "/post/upsssc-livestock-extension-officer-2026",
+      "category": "latestJobs",
+      "slug": "upsssc-livestock-extension-officer-2026"
+    },
+    {
+      "title": "UPESSC UP Assistant Professor Online Form 2026",
+      "url": "/post/upessc-up-assistant-professor-2026",
+      "category": "latestJobs",
+      "slug": "upessc-up-assistant-professor-2026"
+    },
+    {
+      "title": "MPESB MP Police SI, Subedar Online Form 2026",
+      "url": "/post/mpesb-mp-police-si-subedar-2026",
+      "category": "latestJobs",
+      "slug": "mpesb-mp-police-si-subedar-2026"
+    },
+    {
+      "title": "MP Police GD Constable Online Form 2026 (7500 Posts)",
+      "url": "/post/mpesb-mp-police-gd-constable-2026",
+      "category": "latestJobs",
+      "slug": "mpesb-mp-police-gd-constable-2026"
+    },
     {
       "title": "SSC CHSL 10+2 Online Form 2026",
       "url": "/post/ssc-chsl-2026",
@@ -7882,12 +7924,33 @@ export const scrapedData = {
     },
     "sav-bihar-class-6-pre-admission-2027-28": {
       "lastDate": "28 August 2026"
+    },
+    "sbi-junior-associates-clerk-backlog-2026": {
+      "lastDate": "27 August 2026"
+    },
+    "mp-police-hc-and-asi-2026": {
+      "lastDate": "19 February 2026"
+    },
+    "mpesb-mp-police-gd-constable-2026": {
+      "lastDate": "06 October 2026"
+    },
+    "mpesb-mp-police-si-subedar-2026": {
+      "lastDate": "23 September 2026"
+    },
+    "upessc-up-assistant-professor-2026": {
+      "lastDate": "07 October 2026"
+    },
+    "upsssc-livestock-extension-officer-2026": {
+      "lastDate": "29 September 2026"
+    },
+    "ssc-jht-2025": {
+      "lastDate": "26 June 2025"
     }
   },
-  "fetchedAt": "2026-09-09T07:35:53.368Z",
+  "fetchedAt": "2026-09-09T13:03:17.109Z",
   "seo": {
-    "lastOptimized": "2026-09-09T07:35:59.537Z",
-    "totalPosts": 1771,
+    "lastOptimized": "2026-09-09T13:03:23.829Z",
+    "totalPosts": 1777,
     "websiteName": "All India Exam Result",
     "websiteUrl": "https://www.aiexamresult.com",
     "description": "Sarkari Result 2026 - Get fastest government job alerts, sarkari naukri, exam results, admit cards & answer keys. SSC, UPSC, Railway, Banking, UP, Bihar & all India exams."
