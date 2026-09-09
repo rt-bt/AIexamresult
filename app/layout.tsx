@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: "%s | Sarkari Result, Govt Jobs | All India Exam Result"
   },
   description:
-    "Sarkari result 2026: Get fastest government job alerts, sarkari naukri, exam results, admit cards & answer keys. SSC, UPSC, Railway, Banking, UP, Bihar & all India exams — daily rojgar result updates.",
+    "Sarkari Result 2026: Check latest govt jobs, admit cards & exam results instantly. SSC, UPSC, Railway, IBPS, BPSC — 26,000+ notifications updated daily. Find your result, admit card & vacancy here.",
   applicationName: "All India Exam Result",
   manifest: "/manifest.webmanifest",
   alternates: {
@@ -60,14 +60,14 @@ export const metadata: Metadata = {
     siteName: "All India Exam Result",
     url: SITE_URL,
     title: "Sarkari Result 2026 - Govt Jobs, Admit Card, Answer Key | All India Exam Result",
-    description: "Sarkari result 2026: Find verified sarkari naukri, government job notifications, exam results, admit cards, answer keys & rojgar result updates.",
+    description: "Check latest sarkari result 2026 — govt jobs, admit cards, answer keys & exam notifications. SSC, UPSC, Railway, IBPS, Bihar, UP — all updated daily.",
     locale: "en_IN",
     images: [{ url: `${SITE_URL}/og-image.svg`, width: 1200, height: 630, alt: "Sarkari Result 2026 | All India Exam Result" }]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sarkari Result 2026 - Govt Jobs, Admit Card | All India Exam Result",
-    description: "Government jobs, exam results, admit cards and admission updates 2026.",
+    title: "Sarkari Result 2026 - Latest Govt Jobs, Admit Card & Exam Result",
+    description: "Get instant sarkari result, admit card & govt job alerts 2026. SSC, UPSC, Railway, Banking — 26k+ updates daily.",
     images: [`${SITE_URL}/og-image.svg`]
   },
   robots: {

@@ -91,7 +91,7 @@ function scrapeItems(html: string): Record<string, PostItem[]> {
         url: `/post/${slug}`,
         category,
         slug,
-        publishedDate: new Date().toISOString().split("T")[0],
+        publishedDate: "", // populated later from scrapePostDetail
       });
     });
   });
@@ -119,7 +119,7 @@ function scrapeItems(html: string): Record<string, PostItem[]> {
         url: `/post/${slug}`,
         category,
         slug,
-        publishedDate: new Date().toISOString().split("T")[0],
+        publishedDate: "", // populated later from scrapePostDetail
       });
     });
   }
@@ -341,16 +341,26 @@ export async function POST(request: Request) {
       }
     }
 
-    // 3. Merge: new items first, then old ones (dedupe by slug)
     const merged: Record<string, PostItem[]> = {};
     for (const cat of ["latestJobs", "admitCards", "results", "answerKeys", "admissions", "documents"]) {
       const oldItems = (existing[cat] as PostItem[] | undefined) || [];
       const fresh = newItems[cat] || [];
       const seen = new Set<string>();
       const combined: PostItem[] = [];
+
+      // Build a map of old items by slug to preserve their publishedDate
+      const oldBySlug = new Map<string, PostItem>();
+      for (const item of oldItems) {
+        if (item.slug) oldBySlug.set(item.slug, item);
+      }
+
       for (const item of [...fresh, ...oldItems]) {
         if (!seen.has(item.slug)) {
           seen.add(item.slug);
+          // If fresh item has no publishedDate, restore from existing record
+          if (!item.publishedDate && oldBySlug.has(item.slug)) {
+            item.publishedDate = oldBySlug.get(item.slug)!.publishedDate || "";
+          }
           combined.push(item);
         }
       }
@@ -367,6 +377,17 @@ export async function POST(request: Request) {
       // Reconstruct the source URL from sarkariexam.com based on slug
       const guessedUrl = `https://www.sarkariexam.com/${item.slug}/`;
       const detail = await scrapePostDetail(guessedUrl, item);
+
+      // Sync real publishedDate back into the listing item (so scraped.json gets the actual date)
+      if (detail.publishedDate) {
+        item.publishedDate = detail.publishedDate;
+        // Also update in merged data
+        for (const cat of Object.values(merged)) {
+          const found = (cat as PostItem[]).find(m => m.slug === item.slug);
+          if (found) found.publishedDate = detail.publishedDate;
+        }
+      }
+
       await commitPostFile(token, item.slug, JSON.stringify(detail, null, 2));
     });
     await Promise.allSettled(postCommitPromises);

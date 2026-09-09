@@ -128,10 +128,48 @@ function guessState(title: string): string {
   return "India";
 }
 
+// ─── Board Keywords ──────────────────────────────────────────────────────────
+const BOARD_KEYWORDS = [
+  "board", "class 10", "class 12", "10th", "12th", "matric", "intermediate",
+  "hsc", "ssc result", "cbse", "icse", "isc", "bseb", "rbse", "mpbse",
+  "upmsp", "up board", "msbshse", "hbse", "ubse", "jac", "tnresults",
+  "sslc", "higher secondary", "secondary school",
+];
+
+export function isBoardResult(title: string): boolean {
+  const lower = title.toLowerCase();
+  return BOARD_KEYWORDS.some(kw => lower.includes(kw));
+}
+
+// ─── Static Fallback Data ─────────────────────────────────────────────────────
+
 const defaultResults: PostCard[] = [
   { title: "SSC GD Constable Final Result 2026 declared", excerpt: "Download merit list, cut-off marks and state-wise selection status from the official commission notice.", category: "Result", date: "11 Jun 2026", state: "India", slug: "" },
   { title: "Bihar Board Class 10 Scrutiny Result live", excerpt: "Students can check roll number-wise marks update, revaluation status and next steps.", category: "Board Result", date: "10 Jun 2026", state: "Bihar", slug: "" },
   { title: "Rajasthan CET Graduation Level Result update", excerpt: "Scorecard, normalized marks and category-wise cut-off analysis are available.", category: "Result", date: "09 Jun 2026", state: "Rajasthan", slug: "" },
+];
+
+const defaultBoardResults: PostCard[] = [
+  { title: "CBSE Class 10th Result 2026 - Check Roll Number Wise Marks", excerpt: "CBSE 10th board result 2026 declared at cbseresults.nic.in. Check roll number wise marks, download marksheet.", category: "Board Result", date: "08 Sep 2026", state: "India", slug: "cbse-class-10-result-2026" },
+  { title: "CBSE Class 12th Result 2026 - Science, Commerce, Arts", excerpt: "CBSE 12th board result 2026 out. Check stream-wise marks, pass percentage and toppers list at cbse.gov.in.", category: "Board Result", date: "08 Sep 2026", state: "India", slug: "cbse-class-12-result-2026" },
+  { title: "UP Board 10th Result 2026 - UPMSP Highschool Result", excerpt: "UP Board Highschool result 2026 at upresults.nic.in. Check roll number wise marks and download marksheet.", category: "Board Result", date: "07 Sep 2026", state: "Uttar Pradesh", slug: "up-board-10th-result-2026" },
+  { title: "UP Board 12th Result 2026 - UPMSP Intermediate Result", excerpt: "UP Board Intermediate result 2026 declared. Check subject wise marks, pass/fail status at upmsp.edu.in.", category: "Board Result", date: "07 Sep 2026", state: "Uttar Pradesh", slug: "up-board-12th-result-2026" },
+  { title: "Bihar Board 10th Result 2026 - BSEB Matric Result", excerpt: "BSEB Matric result 2026 at biharboardonline.bihar.gov.in. Check marks, division and download marksheet.", category: "Board Result", date: "06 Sep 2026", state: "Bihar", slug: "bihar-board-10th-result-2026" },
+  { title: "Bihar Board 12th Result 2026 - BSEB Inter Result", excerpt: "Bihar Board Intermediate result 2026 declared at biharboardonline.com. Check stream-wise result and topper list.", category: "Board Result", date: "06 Sep 2026", state: "Bihar", slug: "bihar-board-12th-result-2026" },
+  { title: "Rajasthan Board 10th Result 2026 - RBSE Secondary Result", excerpt: "RBSE Class 10 result 2026 at rajresults.nic.in. Check district-wise, school-wise result and download marksheet.", category: "Board Result", date: "05 Sep 2026", state: "Rajasthan", slug: "rbse-10th-result-2026" },
+  { title: "Rajasthan Board 12th Result 2026 - RBSE Senior Secondary", excerpt: "RBSE 12th result 2026 for all streams at rajresults.nic.in. Check marks and download marksheet.", category: "Board Result", date: "05 Sep 2026", state: "Rajasthan", slug: "rbse-12th-result-2026" },
+  { title: "MP Board 10th Result 2026 - MPBSE Class X Result", excerpt: "MPBSE High School result 2026 at mpresults.nic.in. Check roll number wise marks and download marksheet.", category: "Board Result", date: "04 Sep 2026", state: "Madhya Pradesh", slug: "mp-board-10th-result-2026" },
+  { title: "MP Board 12th Result 2026 - MPBSE Higher Secondary", excerpt: "MPBSE 12th result 2026 declared for all streams. Check marks at mpresults.nic.in.", category: "Board Result", date: "04 Sep 2026", state: "Madhya Pradesh", slug: "mp-board-12th-result-2026" },
+  { title: "Maharashtra Board SSC Result 2026 - MSBSHSE 10th", excerpt: "Maharashtra SSC board result 2026 at mahresult.nic.in. Check roll number wise marks and school report.", category: "Board Result", date: "03 Sep 2026", state: "Maharashtra", slug: "maharashtra-ssc-result-2026" },
+  { title: "Maharashtra Board HSC Result 2026 - MSBSHSE 12th", excerpt: "Maharashtra HSC result 2026 at mahahsscboard.in for all divisions. Check subject wise marks.", category: "Board Result", date: "03 Sep 2026", state: "Maharashtra", slug: "maharashtra-hsc-result-2026" },
+  { title: "Tamil Nadu 10th Result 2026 - SSLC Board Result", excerpt: "TN SSLC result 2026 at tnresults.nic.in. Check district, school wise result and download marksheet.", category: "Board Result", date: "02 Sep 2026", state: "Tamil Nadu", slug: "tn-sslc-result-2026" },
+  { title: "Tamil Nadu 12th Result 2026 - HSC Board Result", excerpt: "TN HSC result 2026 for Science, Commerce, Arts at tnresults.nic.in. Check marks and download marksheet.", category: "Board Result", date: "02 Sep 2026", state: "Tamil Nadu", slug: "tn-hsc-result-2026" },
+  { title: "Haryana Board 10th Result 2026 - HBSE Secondary", excerpt: "HBSE Class 10 result 2026 at bseh.org.in. Check roll number wise result and download marksheet.", category: "Board Result", date: "01 Sep 2026", state: "Haryana", slug: "hbse-10th-result-2026" },
+  { title: "Haryana Board 12th Result 2026 - HBSE Senior Secondary", excerpt: "HBSE 12th result 2026 for all streams at bseh.org.in. Check marks, pass percentage.", category: "Board Result", date: "01 Sep 2026", state: "Haryana", slug: "hbse-12th-result-2026" },
+  { title: "Uttarakhand Board 10th Result 2026 - UBSE High School", excerpt: "UBSE Class 10 result 2026 at ubse.uk.gov.in. Check roll number wise marks and marksheet.", category: "Board Result", date: "31 Aug 2026", state: "Uttarakhand", slug: "ubse-10th-result-2026" },
+  { title: "Jharkhand Board 10th Result 2026 - JAC Matric", excerpt: "JAC 10th result 2026 at jac.jharkhand.gov.in. Check marks, division and download marksheet.", category: "Board Result", date: "30 Aug 2026", state: "Jharkhand", slug: "jac-10th-result-2026" },
+  { title: "ICSE 10th Result 2026 - CISCE Board Result", excerpt: "CISCE ICSE result 2026 at cisce.org. Check subject wise marks and download marksheet.", category: "Board Result", date: "29 Aug 2026", state: "India", slug: "icse-10th-result-2026" },
+  { title: "ISC 12th Result 2026 - CISCE Board Result", excerpt: "CISCE ISC result 2026 for all streams at cisce.org. Check marks and download certificate.", category: "Board Result", date: "29 Aug 2026", state: "India", slug: "isc-12th-result-2026" },
 ];
 
 const defaultJobs: PostCard[] = [
@@ -164,10 +202,20 @@ const defaultDocuments: PostCard[] = [
   { title: "Domicile Certificate Online Apply", excerpt: "State domicile/residence certificate application, documents required and download.", category: "Document", date: "10 Jun 2026", state: "India", slug: "" },
 ];
 
+// ─── Exports ──────────────────────────────────────────────────────────────────
+
 const s3 = getScraped();
 const scrapedNotif = s3 ? [...(s3.admitCards || []), ...(s3.answerKeys || [])] : undefined;
 
+// Filter scraped results for board exam items
+const scrapedBoardResults = s3?.results?.filter(r => isBoardResult(r.title));
+
 export const featuredResults = toPostCard(s3?.results, "Result", defaultResults);
+export const boardResults = toPostCard(
+  scrapedBoardResults && scrapedBoardResults.length > 0 ? scrapedBoardResults : undefined,
+  "Board Result",
+  defaultBoardResults,
+);
 export const latestJobs = toPostCard(s3?.latestJobs, "Jobs", defaultJobs);
 export const notifications = toPostCard(scrapedNotif, "Notification", defaultNotifications);
 export const centralExams = toPostCard(s3?.answerKeys, "Central Exams", defaultCentral);

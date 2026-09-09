@@ -17,25 +17,52 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const post = await getPostDetail(slug);
   if (!post) return { title: "Post not found" };
+
+  const title = post.title || "";
   const cat = post.category || "Government Exam";
-  const desc = post.intro ? post.intro.substring(0, 160) : `Latest ${cat} update with important dates, application fee and official links.`;
+
+  // Build a click-worthy, keyword-rich description with CTA
+  let desc = "";
+  if (post.intro && post.intro.length > 60) {
+    desc = post.intro.substring(0, 155).replace(/\s+\S*$/, "") + "…";
+  } else {
+    const dateHint = post.importantDates?.find((d: string) =>
+      d.toLowerCase().includes("last") || d.toLowerCase().includes("apply")
+    );
+    const dateStr = dateHint ? " " + dateHint.replace(/^.*?:/, "").trim() + "." : ".";
+    desc = `${title} — Check important dates, application fee, eligibility & official links. Last date to apply${dateStr} Get all details here.`;
+  }
+  if (desc.length > 160) desc = desc.substring(0, 157) + "…";
+
+  // Keyword-rich title: "EXAM NAME 2026 | Category | Sarkari Result"
+  const hasYear = /202[4-9]|203\d/.test(title);
+  const seoTitle = `${title}${hasYear ? "" : " 2026"} | ${cat} | Sarkari Result`;
+
+  // Absolute canonical URL (required for Google to deduplicate)
+  const canonicalUrl = `${SITE_URL}/post/${slug}`;
+
   return {
-    title: `${post.title} - ${cat} | Sarkari Result 2026`,
+    title: seoTitle,
     description: desc,
-    alternates: { canonical: `/post/${slug}` },
+    alternates: { canonical: canonicalUrl },
     openGraph: {
-      title: `${post.title} - ${cat} | Sarkari Result 2026`,
+      title: seoTitle,
       description: desc,
       type: "article",
-      publishedTime: post.publishedDate,
-      images: [{ url: `${SITE_URL}/og-image.svg`, width: 1200, height: 630 }]
+      url: canonicalUrl,
+      publishedTime: post.publishedDate || undefined,
+      modifiedTime: post.lastDate || post.publishedDate || undefined,
+      images: [{ url: `${SITE_URL}/og-image.svg`, width: 1200, height: 630, alt: title }],
+      siteName: "All India Exam Result",
+      locale: "en_IN",
     },
     twitter: {
       card: "summary_large_image",
-      title: `${post.title} - ${cat} | Sarkari Result`,
+      title: seoTitle,
       description: desc,
+      images: [`${SITE_URL}/og-image.svg`],
     },
-    robots: { index: true, follow: true }
+    robots: { index: true, follow: true },
   };
 }
 
@@ -186,7 +213,15 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
   }
 
   const title = post.title;
-  const publishedDate = post.publishedDate ? (() => { const d = parseDate(post.publishedDate); return isNaN(d.getTime()) || d > new Date() ? new Date().toLocaleDateString("en-US", { day: "numeric", month: "long", year: "numeric" }) : d.toLocaleDateString("en-US", { day: "numeric", month: "long", year: "numeric" }); })() : new Date().toLocaleDateString("en-US", { day: "numeric", month: "long", year: "numeric" });
+  const publishedDate = post.publishedDate
+    ? (() => {
+        const d = parseDate(post.publishedDate);
+        // Use stored date as-is — never replace with today's date
+        return isNaN(d.getTime())
+          ? post.publishedDate // show raw string if unparseable
+          : d.toLocaleDateString("en-US", { day: "numeric", month: "long", year: "numeric" });
+      })()
+    : "";
   const officialUrl = post.importantLinks?.find((l: { label: string; url: string }) =>
     l.label?.toLowerCase().includes("official website") || l.label?.toLowerCase().includes("official site")
   )?.url;
@@ -235,8 +270,8 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         "@id": `${SITE_URL}/post/${slug}#article`,
         headline: title,
         description: post.intro || `${title} — check latest updates, important dates, application fee, eligibility and official links.`,
-        datePublished: post.publishedDate || new Date().toISOString().split("T")[0],
-        dateModified: post.lastDate || post.publishedDate || new Date().toISOString().split("T")[0],
+        ...(post.publishedDate && { datePublished: post.publishedDate }),
+        ...(post.lastDate || post.publishedDate ? { dateModified: post.lastDate || post.publishedDate } : {}),
         author: { "@id": `${SITE_URL}/#organization` },
         publisher: { "@id": `${SITE_URL}/#organization` },
         mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}/post/${slug}` },

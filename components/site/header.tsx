@@ -55,8 +55,12 @@ export function Header() {
     <header className="sticky top-0 z-50 bg-[#0D9488]">
       <div className="h-1 bg-gradient-to-r from-[#F97316] via-[#EA580C] to-[#4F46E5]" />
       <div className="container-page flex h-14 lg:h-[4.5rem] items-center gap-4 py-2 lg:py-3">
-        <Link href="/" className="flex items-center gap-2">
-          <Logo className="h-8 w-auto lg:h-10" showTagline={false} dark />
+        <Link href="/" className="flex items-center gap-2.5">
+          <Logo className="h-9 w-9 lg:h-11 lg:w-11" dark />
+          <span className="hidden sm:flex flex-col leading-tight">
+            <span className="text-[15px] font-black tracking-tight text-white">All India</span>
+            <span className="text-[11px] font-bold tracking-wide text-white/70">EXAM RESULT</span>
+          </span>
         </Link>
 
         <nav className="ml-5 hidden items-center lg:flex">

@@ -15,7 +15,13 @@ export function Footer() {
       <div className="container-page py-14">
         <div className="grid gap-10 md:grid-cols-[1.5fr_1fr_1fr_1fr]">
           <div>
-            <Logo className="h-14 w-auto" />
+            <div className="flex items-center gap-3">
+              <Logo className="h-14 w-14" />
+              <div className="flex flex-col leading-tight">
+                <span className="text-lg font-black tracking-tight text-gray-900">All India</span>
+                <span className="text-[13px] font-bold tracking-widest text-brand">EXAM RESULT</span>
+              </div>
+            </div>
             <p className="mt-4 max-w-sm text-sm leading-7 text-slate-500">
               A fast, structured multilingual exam information portal for Indian government jobs, results, admit cards and public notices.
             </p>

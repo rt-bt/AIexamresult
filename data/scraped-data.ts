@@ -2,6 +2,12 @@
 export const scrapedData = {
   "results": [
     {
+      "title": "AFCAT 02/2026 Result – Out",
+      "url": "/post/afcat-02-2026",
+      "category": "results",
+      "slug": "afcat-02-2026"
+    },
+    {
       "title": "UPSSSC Draftsman, Cartographer Mains Result 2026",
       "url": "/post/upsssc-draftsman-cartographer-2023",
       "category": "results",
@@ -1569,6 +1575,30 @@ export const scrapedData = {
   ],
   "admitCards": [
     {
+      "title": "UPSSSC Forest Guard/ Wild Life Guard Mains Exam Fee Payment 2026",
+      "url": "/post/upsssc-forest-guard-wild-life-guard-2026",
+      "category": "admitCards",
+      "slug": "upsssc-forest-guard-wild-life-guard-2026"
+    },
+    {
+      "title": "UPSSSC Forensic Science Laboratory Mains Exam Fee Payment 2026",
+      "url": "/post/upsssc-forensic-science-laboratory-2026",
+      "category": "admitCards",
+      "slug": "upsssc-forensic-science-laboratory-2026"
+    },
+    {
+      "title": "SAV Bihar Class 6 Dummy Admit Card 2027-28",
+      "url": "/post/sav-bihar-class-6-pre-admission-2027-28",
+      "category": "admitCards",
+      "slug": "sav-bihar-class-6-pre-admission-2027-28"
+    },
+    {
+      "title": "UPPSC Assistant Professor Mains Admit Card 2026",
+      "url": "/post/uppsc-assistant-professor-2025",
+      "category": "admitCards",
+      "slug": "uppsc-assistant-professor-2025"
+    },
+    {
       "title": "Patna High Court Assistant Exam Date 2026",
       "url": "/post/patna-high-court-assistant-2026",
       "category": "admitCards",
@@ -2040,7 +2070,7 @@ export const scrapedData = {
       "publishedDate": "3 September 2026"
     },
     {
-      "title": "AIIMS NORCET 11th Exam City Details 2026",
+      "title": "AIIMS NORCET 11th Admit Card 2026",
       "url": "/post/aiims-norcet-11th-2026",
       "category": "admitCards",
       "slug": "aiims-norcet-11th-2026",
@@ -4973,6 +5003,12 @@ export const scrapedData = {
   ],
   "documents": [
     {
+      "title": "UPSSSC PET Online Correction Form 2026",
+      "url": "/post/upsssc-pet-2026",
+      "category": "documents",
+      "slug": "upsssc-pet-2026"
+    },
+    {
       "title": "UPTET 2026 Certificate",
       "url": "/post/uptet-2026",
       "category": "documents",
@@ -5940,8 +5976,7 @@ export const scrapedData = {
       "isExpired": true
     },
     "afcat-02-2026": {
-      "lastDate": "21 June 2026",
-      "isExpired": false
+      "lastDate": "21 June 2026 (Extend)"
     },
     "rrb-alp-cen-01-2025": {
       "lastDate": "19/05/2025",
@@ -7204,8 +7239,7 @@ export const scrapedData = {
       "isExpired": false
     },
     "uppsc-assistant-professor-2025": {
-      "lastDate": "06 October 2025",
-      "isExpired": false
+      "lastDate": "06 October 2025"
     },
     "bihar-police-csbc-prohibition-constable-2025": {
       "lastDate": "05 November 2025",
@@ -7845,12 +7879,15 @@ export const scrapedData = {
     },
     "patna-high-court-assistant-2026": {
       "lastDate": "27 August 2026"
+    },
+    "sav-bihar-class-6-pre-admission-2027-28": {
+      "lastDate": "28 August 2026"
     }
   },
-  "fetchedAt": "2026-09-09T03:05:06.979Z",
+  "fetchedAt": "2026-09-09T07:35:53.368Z",
   "seo": {
-    "lastOptimized": "2026-09-09T03:05:14.566Z",
-    "totalPosts": 1770,
+    "lastOptimized": "2026-09-09T07:35:59.537Z",
+    "totalPosts": 1771,
     "websiteName": "All India Exam Result",
     "websiteUrl": "https://www.aiexamresult.com",
     "description": "Sarkari Result 2026 - Get fastest government job alerts, sarkari naukri, exam results, admit cards & answer keys. SSC, UPSC, Railway, Banking, UP, Bihar & all India exams."
