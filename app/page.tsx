@@ -12,6 +12,7 @@ import Link from "next/link";
 import { ArrowUpRight, TrendingUp } from "lucide-react";
 
 import { SeoContentSection } from "@/components/site/seo-content-section";
+import { AdUnit } from "@/components/ads/ad-unit";
 
 const QuickAccess = dynamicImport(() => import("@/components/site/quick-access").then(m => m.QuickAccess), { ssr: true });
 const CategoryColumns = dynamicImport(() => import("@/components/site/category-columns").then(m => m.CategoryColumns), { ssr: true });
@@ -27,6 +28,11 @@ export default function HomePage() {
         {/* 6 Main Sections: Latest Jobs, Admit Card, Answer Keys, Result, Admissions, Documents */}
         <div className="bg-gradient-to-b from-white to-[#f0fdfa]">
           <CategoryColumns sections={categorySections} />
+        </div>
+
+        {/* Homepage Leaderboard Ad */}
+        <div className="container-page py-2">
+          <AdUnit format="horizontal" />
         </div>
 
         <QuickAccess />
@@ -99,6 +105,10 @@ export default function HomePage() {
         </section>
 
         <SeoContentSection />
+
+        <div className="container-page py-4">
+          <AdUnit format="horizontal" />
+        </div>
 
         <StateGrid />
       </main>

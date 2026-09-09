@@ -10,6 +10,7 @@ import { BookmarkBtn } from "@/components/site/bookmark-btn";
 import { ShareButtons } from "@/components/site/share-buttons";
 import { getPostBySlug, parseDate, sectionItems } from "@/lib/data";
 import { CalendarDays, ExternalLink, AlertTriangle, CheckCircle, ChevronRight, BadgeInfo, Banknote, ArrowUpRight, Gauge, Users, Clock, GraduationCap, IndianRupee, FileText, Mail, Download, Bell } from "lucide-react";
+import { AdUnit } from "@/components/ads/ad-unit";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.aiexamresult.com";
 
@@ -69,8 +70,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
   if (desc.length > 165) desc = desc.substring(0, 160) + "…";
 
-  // Absolute canonical URL (required for Google to deduplicate)
+  // Absolute canonical URL
   const canonicalUrl = `${SITE_URL}/post/${slug}`;
+
+  // Dynamic 1200x630 Feature Image for Google Discover & Social sharing
+  const publishedDateStr = post.publishedDate ? post.publishedDate.split("T")[0] : "2026";
+  const ogImageUrl = `${SITE_URL}/api/og?title=${encodeURIComponent(title)}&cat=${encodeURIComponent(cat)}&date=${encodeURIComponent(publishedDateStr)}`;
 
   return {
     title: seoTitle,
@@ -83,7 +88,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       url: canonicalUrl,
       publishedTime: post.publishedDate || undefined,
       modifiedTime: post.lastDate || post.publishedDate || undefined,
-      images: [{ url: `${SITE_URL}/og-image.svg`, width: 1200, height: 630, alt: title }],
+      images: [{ url: ogImageUrl, width: 1200, height: 630, alt: title, type: "image/png" }],
       siteName: "All India Exam Result",
       locale: "en_IN",
     },
@@ -91,7 +96,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       card: "summary_large_image",
       title: seoTitle,
       description: desc,
-      images: [`${SITE_URL}/og-image.svg`],
+      images: [ogImageUrl],
     },
     robots: {
       index: true,
@@ -348,7 +353,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         author: { "@id": `${SITE_URL}/#organization` },
         publisher: { "@id": `${SITE_URL}/#organization` },
         mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}/post/${slug}` },
-        image: `${SITE_URL}/og-image.svg`,
+        image: `${SITE_URL}/api/og?title=${encodeURIComponent(title)}&cat=${encodeURIComponent(post.category || "Sarkari Result")}&date=${encodeURIComponent(post.publishedDate ? post.publishedDate.split("T")[0] : "2026")}`,
         articleSection: post.category || "Government Exam",
         inLanguage: "en-IN",
         speakable: { "@type": "SpeakableSpecification", cssSelector: ["h1", "h2", "h3"] }
@@ -429,6 +434,9 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
 
   const introText = post.intro || (post.fullContentHtml ? stripHtml(post.fullContentHtml).substring(0, 300) : "");
 
+  const postDateStr = post.publishedDate ? post.publishedDate.split("T")[0] : "2026";
+  const postOgImageUrl = `${SITE_URL}/api/og?title=${encodeURIComponent(title)}&cat=${encodeURIComponent(post.category || "Sarkari Result")}&date=${encodeURIComponent(postDateStr)}`;
+
   return (
     <>
       <Header />
@@ -436,7 +444,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         <div className="container-page py-4 sm:py-8">
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-          <nav aria-label="Breadcrumb" className="mb-6 flex">
+          <nav aria-label="Breadcrumb" className="mb-4 flex">
             <ol className="flex flex-wrap items-center gap-2 text-sm text-gray-500">
               <li><Link href="/" className="font-medium transition hover:text-brand">Home</Link></li>
               <ChevronRight className="h-3.5 w-3.5 text-gray-300" />
@@ -450,6 +458,21 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
 
             {/* Main Content */}
             <div className="space-y-6">
+
+              {/* Google Discover 1200x630 Feature Image Banner */}
+              <div className="overflow-hidden rounded-2xl border border-slate-200 bg-slate-950 shadow-md">
+                <img
+                  src={postOgImageUrl}
+                  alt={title}
+                  width={1200}
+                  height={630}
+                  className="h-auto w-full object-cover"
+                  loading="eager"
+                />
+              </div>
+
+              {/* Top Leaderboard Ad Slot */}
+              <AdUnit format="horizontal" />
 
               {/* Hero Header */}
               <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-lg shadow-gray-200/40">
@@ -600,6 +623,9 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                   </div>
                 </TableCard>
               )}
+
+              {/* In-Article Responsive Ad Unit */}
+              <AdUnit format="in-article" />
 
               {/* Vacancy Details - structured from scraper or extracted from importantDates */}
               {post.vacancyDetails && post.vacancyDetails.length > 0 ? (
@@ -821,6 +847,9 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                 </TableCard>
               )}
 
+              {/* High-CTR Ad Slot (Directly above Important Links) */}
+              <AdUnit format="rectangle" className="my-6 shadow-sm border-indigo-100 bg-indigo-50/20" />
+
               {/* Important Links */}
               {cleanLinks.length > 0 && (
                 <TableCard icon={<ExternalLink className="h-4 w-4" />} title="Important Links" gradient="border-b border-indigo-100 bg-indigo-50/50">
@@ -1019,6 +1048,9 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                     )}
                   </div>
                 </div>
+
+                {/* Sidebar Sticky Ad Unit */}
+                <AdUnit format="rectangle" />
 
                 {/* Save & Share */}
                 <div className="rounded-2xl border border-gray-200 bg-white p-4 shadow-sm">
