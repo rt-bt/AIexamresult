@@ -60,6 +60,7 @@ export default function PrivacyPolicyPage() {
                 <li>Google's use of advertising cookies enables it and its partners to serve ads to users based on their visit to our site and/or other sites on the Internet.</li>
                 <li>Users may opt-out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-teal-700 underline font-bold">Google Ads Settings</a>.</li>
                 <li>Alternatively, you can opt out of a third-party vendor's use of cookies for personalized advertising by visiting <a href="https://www.aboutads.info" target="_blank" rel="noopener noreferrer" className="text-teal-700 underline font-bold">www.aboutads.info</a>.</li>
+                <li>For a complete breakdown of all cookies we use, cookie categories, and browser controls, please read our dedicated <Link href="/cookies-policy" className="text-teal-700 underline font-bold">Cookies Policy</Link>.</li>
               </ul>
             </section>
 

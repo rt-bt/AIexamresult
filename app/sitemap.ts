@@ -160,6 +160,8 @@ export default async function sitemap({ id }: { id: string }): Promise<MetadataR
     { path: "/contact-us", freq: "monthly", prio: 0.4 },
     { path: "/privacy-policy", freq: "monthly", prio: 0.4 },
     { path: "/privacy", freq: "monthly", prio: 0.4 },
+    { path: "/cookies-policy", freq: "monthly", prio: 0.4 },
+    { path: "/cookies", freq: "monthly", prio: 0.4 },
     { path: "/terms", freq: "monthly", prio: 0.4 },
     { path: "/terms-of-service", freq: "monthly", prio: 0.4 },
     { path: "/disclaimer", freq: "monthly", prio: 0.4 },

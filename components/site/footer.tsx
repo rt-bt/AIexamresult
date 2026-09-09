@@ -5,7 +5,7 @@ import { Logo } from "@/components/site/logo";
 const footerGroups: Array<[string, string[]]> = [
   ["Quick Links", ["Results", "Latest Vacancy", "Admit Card", "Answer Key"]],
   ["Resources", ["Admissions", "Syllabus", "Scholarships", "Board Results"]],
-  ["Support", ["About Us", "Contact Us", "Privacy Policy", "Disclaimer"]]
+  ["Support", ["About Us", "Contact Us", "Privacy Policy", "Cookies Policy", "Disclaimer"]]
 ];
 
 export function Footer() {
@@ -65,6 +65,7 @@ export function Footer() {
           <p>&copy; {new Date().getFullYear()} All India Exam Result. All rights reserved.</p>
           <div className="flex gap-4">
             <Link href="/privacy-policy">Privacy Policy</Link>
+            <Link href="/cookies-policy">Cookies Policy</Link>
             <Link href="/terms">Terms of Service</Link>
             <Link href="/disclaimer">Disclaimer</Link>
           </div>

@@ -20,6 +20,8 @@ const sections: Record<string, string> = {
   contact: "Contact Us",
   about: "About Us",
   "privacy-policy": "Privacy Policy",
+  "cookies-policy": "Cookies Policy",
+  cookies: "Cookies Policy",
   disclaimer: "Disclaimer"
 };
 
@@ -33,6 +35,8 @@ const sectionDescriptions: Record<string, string> = {
   contact: "Contact All India Exam Result for support, partnership or feedback. Get in touch via email or phone for government exam related queries.",
   about: "All India Exam Result is India's fastest government exam information portal. Learn about our mission to provide verified sarkari result updates.",
   "privacy-policy": "Privacy policy of All India Exam Result. Learn how we collect, use and protect your personal information when you visit our website.",
+  "cookies-policy": "Cookies policy of All India Exam Result. Understand how we use cookies, Google AdSense (ca-pub-2439432844260170), analytics, and how to manage your privacy settings.",
+  cookies: "Cookies policy of All India Exam Result. Understand how we use cookies, Google AdSense (ca-pub-2439432844260170), analytics, and how to manage your privacy settings.",
   disclaimer: "Disclaimer for All India Exam Result. All exam data is sourced from public government notifications. We are not an official government website.",
 };
 
