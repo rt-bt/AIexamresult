@@ -74,6 +74,19 @@ export function parseDate(str: string): Date {
   return isNaN(d.getTime()) ? new Date() : d;
 }
 
+function cleanLastDate(raw?: string): string | undefined {
+  if (!raw) return undefined;
+  const trimmed = raw.trim();
+  const m1 = trimmed.match(/(\d{1,2}[\/\-]\d{1,2}[\/\-]\d{4})/);
+  if (m1) return m1[1];
+  const m2 = trimmed.match(/(\d{1,2}\s+(?:January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d{4})/i);
+  if (m2) return m2[1];
+  if (trimmed.length <= 20 && !trimmed.includes("\n") && !trimmed.includes("<") && !/short info|apply|exam|fee/i.test(trimmed)) {
+    return trimmed;
+  }
+  return undefined;
+}
+
 function toPostCard(items: ({ title: string; url: string; category: string; slug: string; publishedDate?: string })[] | undefined, _category: string, fallbacks: PostCard[]): PostCard[] {
   if (!items || items.length === 0) return fallbacks;
   const NOW = Date.now();
@@ -96,7 +109,7 @@ function toPostCard(items: ({ title: string; url: string; category: string; slug
       date: displayDate ? displayDate.toLocaleDateString("en-IN", { day: "2-digit", month: "short", year: "numeric" }) : "",
       state: guessState(item.title),
       slug: item.slug,
-      lastDate: detail?.lastDate,
+      lastDate: cleanLastDate(detail?.lastDate),
       isExpired: detail?.isExpired,
     };
   });

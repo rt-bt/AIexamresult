@@ -22,7 +22,7 @@ export const dynamicParams = true;
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.aiexamresult.com";
 
-export interface QualConfig {
+interface QualConfig {
   title: string;
   seoTitle: string;
   metaDesc: string;
@@ -34,7 +34,7 @@ export interface QualConfig {
   overview: string;
 }
 
-export const QUAL_MAP: Record<string, QualConfig> = {
+const QUAL_MAP: Record<string, QualConfig> = {
   "10th-pass": {
     title: "10th Pass Govt Jobs 2026",
     seoTitle: "10th Pass Govt Jobs 2026 : Latest Matric Pass Vacancy, Online Form",
@@ -194,7 +194,7 @@ export const QUAL_MAP: Record<string, QualConfig> = {
     badge: "Education & Academic",
     heading: "Government Teaching Jobs 2026 (TET, PRT, TGT, PGT)",
     subheading: "Central and state school teacher vacancies, eligibility test notifications, and university faculty recruitment.",
-    keywords: ["teacher", "teaching", "tgt", "pgt", "prt", "ctet", "tet", "professor", "lecturer", "kvs", "nvs", "dsssb", "bed", "b.ed", "deled", "d.el.ed", "shikshak", "assistant teacher"],
+    keywords: ["teacher", "teaching", "tgt", "pgt", "prt", "ctet", "tet", "stet", "uptet", "htet", "reet", "professor", "lecturer", "kvs", "nvs", "dsssb", "b.ed", "bed", "deled", "d.el.ed", "shikshak", "assistant teacher"],
     faqs: [
       {
         q: "What is the difference between PRT, TGT, and PGT teachers?",
@@ -283,11 +283,27 @@ export default async function QualificationPage({ params }: { params: Promise<{ 
   const matchedPosts: PostCard[] = [];
   const seenSlugs = new Set<string>();
 
+function matchesQualification(qualification: string, title: string, keywords: string[]): boolean {
+  // If teaching jobs, reject non-teaching / non-faculty explicitly
+  if (qualification === "teaching-jobs") {
+    if (/\bnon[-\s]teaching\b/i.test(title) || /\bnon[-\s]faculty\b/i.test(title)) {
+      return false;
+    }
+  }
+
+  for (const kw of keywords) {
+    const escaped = kw.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const reg = new RegExp(`\\b${escaped}\\b`, "i");
+    if (reg.test(title)) {
+      return true;
+    }
+  }
+  return false;
+}
+
   for (const post of allPosts) {
     if (!post.slug || seenSlugs.has(post.slug)) continue;
-    const textToMatch = `${post.title} ${post.excerpt || ""}`.toLowerCase();
-    const isMatch = config.keywords.some((kw) => textToMatch.includes(kw.toLowerCase()));
-    if (isMatch) {
+    if (matchesQualification(qualification, post.title, config.keywords)) {
       matchedPosts.push(post);
       seenSlugs.add(post.slug);
     }
@@ -448,7 +464,7 @@ export default async function QualificationPage({ params }: { params: Promise<{ 
                     className="group flex flex-col justify-between gap-3 p-4 transition-colors hover:bg-slate-50 sm:flex-row sm:items-center sm:gap-4"
                   >
                     <div className="min-w-0 flex-1">
-                      <div className="flex items-center gap-2 text-xs text-slate-500">
+                      <div className="flex flex-wrap items-center gap-2 text-xs text-slate-500">
                         <span className="font-semibold text-teal-700">
                           {job.state || "Central Govt"}
                         </span>
@@ -457,7 +473,7 @@ export default async function QualificationPage({ params }: { params: Promise<{ 
                         {job.lastDate && (
                           <>
                             <span>•</span>
-                            <span className="text-amber-700 font-medium">
+                            <span className="rounded-md bg-amber-50 px-2 py-0.5 text-xs font-semibold text-amber-800 border border-amber-200">
                               Last Date: {job.lastDate}
                             </span>
                           </>
@@ -470,8 +486,8 @@ export default async function QualificationPage({ params }: { params: Promise<{ 
                         {job.title}
                       </Link>
                       {job.excerpt && (
-                        <p className="mt-1 line-clamp-1 text-xs text-slate-600">
-                          {job.excerpt}
+                        <p className="mt-1 line-clamp-1 max-w-2xl text-xs text-slate-500 overflow-hidden text-ellipsis">
+                          {job.excerpt.length > 90 ? job.excerpt.substring(0, 87) + "…" : job.excerpt}
                         </p>
                       )}
                     </div>

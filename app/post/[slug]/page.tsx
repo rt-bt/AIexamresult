@@ -134,6 +134,31 @@ async function getPostDetail(slug: string) {
       return JSON.parse(text.charCodeAt(0) === 0xFEFF ? text.substring(1) : text);
     }
   } catch {}
+
+  // Fallback: check listing data so users never see a dead page
+  try {
+    const allItems = Object.values(sectionItems).flat();
+    const found = allItems.find((item) => item.slug === slug);
+    if (found) {
+      return {
+        title: found.title,
+        category: found.category || "Updates",
+        publishedDate: found.date || "2026",
+        lastDate: found.lastDate,
+        intro: `${found.title} — check latest notification, eligibility criteria, application process, and official download links.`,
+        importantDates: [
+          `Notification Date: ${found.date || "2026"}`,
+          ...(found.lastDate ? [`Last Date to Apply: ${found.lastDate}`] : ["Application Schedule: As per official notification"])
+        ],
+        importantLinks: [
+          { label: "Official Notification / Apply Online", url: "https://www.aiexamresult.com" },
+          { label: "Official Website", url: "https://www.aiexamresult.com" }
+        ],
+        fullContentHtml: `<p>Official update for ${found.title} has been announced. Candidates are advised to review eligibility criteria, important dates, and official guidelines before applying.</p>`
+      };
+    }
+  } catch {}
+
   return null;
 }
 
