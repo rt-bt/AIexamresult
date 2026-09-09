@@ -16,7 +16,7 @@ export function Footer() {
         <div className="grid gap-10 md:grid-cols-[1.5fr_1fr_1fr_1fr]">
           <div>
             <div className="flex items-center gap-3">
-              <Logo className="h-14 w-14" />
+              <Logo className="h-28 w-28" />
               <div className="flex flex-col leading-tight">
                 <span className="text-lg font-black tracking-tight text-gray-900">All India</span>
                 <span className="text-[13px] font-bold tracking-widest text-brand">EXAM RESULT</span>
