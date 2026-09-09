@@ -86,18 +86,19 @@ function ResultFinder() {
 }
 
 function Counter({ to, label }: { to: number; label: string }) {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(to);
   const ref = useRef<HTMLDivElement>(null);
   const done = useRef(false);
 
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
+    setCount(0);
     const obs = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting && !done.current) {
         done.current = true;
         let start = 0;
-        const dur = 2000;
+        const dur = 1500;
         const step = Math.ceil(to / (dur / 16));
         const iv = setInterval(() => {
           start += step;
@@ -113,40 +114,35 @@ function Counter({ to, label }: { to: number; label: string }) {
   return (
     <div ref={ref} className="text-center">
       <p className="text-lg sm:text-xl font-bold text-white tracking-tight">{count.toLocaleString()}<span className="text-[#5EEAD4]">+</span></p>
-      <p className="text-[10px] text-white/50 mt-0.5 font-medium">{label}</p>
+      <p className="text-[10px] text-white/70 mt-0.5 font-medium">{label}</p>
     </div>
   );
 }
 
 export function Hero() {
-  const [mounted, setMounted] = useState(false);
-  useEffect(() => setMounted(true), []);
-
-  if (!mounted) return null;
-
   return (
     <section className="relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-[#0D9488] via-[#0F766E] to-[#0F172A]" />
 
-      <div className="container-page relative pt-1 sm:pt-2 pb-6 sm:pb-10">
+      <div className="container-page relative pt-2 sm:pt-4 pb-6 sm:pb-10">
         <div className="mx-auto max-w-3xl text-center">
 
           {/* Badge */}
-          <div className="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3.5 py-1 text-xs font-semibold text-white/80 border border-white/10 mb-4">
+          <div className="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3.5 py-1 text-xs font-semibold text-white/90 border border-white/10 mb-4 backdrop-blur-sm">
             <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
-            Real-time exam updates
+            Live Sarkari Result &amp; Job Alerts 2026
           </div>
 
           {/* Headline */}
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight text-white">
-            Never Miss a{' '}
-            <span className="text-[#5EEAD4]">Result</span>,{' '}
-            <span className="text-[#FBBF24]">Job</span> or{' '}
-            <span className="text-[#A78BFA]">Deadline</span>.
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.15] tracking-tight text-white">
+            Sarkari Result 2026 : Latest{' '}
+            <span className="text-[#5EEAD4]">Sarkari Exam</span>,{' '}
+            <span className="text-[#FBBF24]">Govt Jobs</span> &amp;{' '}
+            <span className="text-[#A78BFA]">Admit Card</span>
           </h1>
 
-          <p className="mx-auto mt-3 max-w-lg text-sm sm:text-base text-white/60 leading-relaxed">
-            Real-time Sarkari result alerts, government jobs (sarkari naukri), admit cards and answer keys — all in one place.
+          <p className="mx-auto mt-3 max-w-2xl text-sm sm:text-base text-white/80 leading-relaxed font-medium">
+            India&apos;s leading portal for verified Sarkari Result, Sarkari Naukri (Online Form), Admit Card download, Answer Key &amp; Rojgar Result alerts.
           </p>
 
           {/* Result Finder */}

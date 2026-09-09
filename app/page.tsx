@@ -11,6 +11,8 @@ import { categorySections, featuredResults } from "@/lib/data";
 import Link from "next/link";
 import { ArrowUpRight, TrendingUp } from "lucide-react";
 
+import { SeoContentSection } from "@/components/site/seo-content-section";
+
 const QuickAccess = dynamicImport(() => import("@/components/site/quick-access").then(m => m.QuickAccess), { ssr: true });
 const CategoryColumns = dynamicImport(() => import("@/components/site/category-columns").then(m => m.CategoryColumns), { ssr: true });
 
@@ -20,7 +22,6 @@ export default function HomePage() {
     <>
       <Header />
       <main>
-        <h1 className="sr-only">All India Exam Result - Sarkari Result, Govt Jobs, Admit Card, Answer Key 2026</h1>
         <Hero />
 
         {/* 6 Main Sections: Latest Jobs, Admit Card, Answer Keys, Result, Admissions, Documents */}
@@ -96,6 +97,8 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+
+        <SeoContentSection />
 
         <StateGrid />
       </main>

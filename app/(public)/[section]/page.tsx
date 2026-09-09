@@ -11,25 +11,25 @@ export const dynamic = "force-dynamic";
 export const dynamicParams = true;
 
 const sections: Record<string, string> = {
-  results: "Results",
-  "latest-jobs": "Latest Government Jobs",
-  "admit-card": "Admit Card",
-  "answer-key": "Answer Key",
-  admissions: "Admissions",
-  syllabus: "Syllabus",
-  contact: "Contact",
-  about: "About",
+  results: "Sarkari Result 2026 : Check Government Exam Results Online",
+  "latest-jobs": "Sarkari Naukri 2026 : Latest Jobs Online Form, Notification",
+  "admit-card": "Sarkari Admit Card 2026 : Download Hall Ticket & Exam City",
+  "answer-key": "Sarkari Answer Key 2026 : Download Question Paper & Solution",
+  admissions: "Sarkari Admission 2026 : Entrance Exam Form & Counselling",
+  syllabus: "Sarkari Exam Syllabus 2026 : Download Syllabus & Exam Pattern PDF",
+  contact: "Contact Us",
+  about: "About Us",
   "privacy-policy": "Privacy Policy",
   disclaimer: "Disclaimer"
 };
 
 const sectionDescriptions: Record<string, string> = {
-  results: "Sarkari result 2026: Find latest government exam results including SSC, UPSC, Railway, UP Board, Bihar Board and more. Verified result updates with direct official links.",
-  "latest-jobs": "Sarkari naukri 2026: Latest government job notifications, central and state government vacancies, application forms, eligibility criteria and important dates for sarkari exam.",
-  "admit-card": "Download sarkari admit cards for upcoming government exams 2026. Get hall tickets for SSC, Railway, UPSC, state exams with direct official links.",
-  "answer-key": "Download official sarkari answer keys for government exams 2026. Raise objections, check expected scores and calculate marks for SSC, Railway, UPSC.",
-  admissions: "University and college admission notifications 2026. Find entrance exam dates, application forms, merit lists and counselling schedules.",
-  syllabus: "Exam syllabus and preparation resources for SSC, UPSC, Railway, Banking and state government sarkari exams 2026.",
+  results: "Sarkari Result 2026: Check latest government exam results including SSC, UPSC, Railway, UP Board, Bihar Board and state exams. Verified result updates with direct official download links.",
+  "latest-jobs": "Sarkari Naukri 2026: Latest government job notifications, central and state government vacancies, online application forms, eligibility criteria and important dates for Sarkari exams.",
+  "admit-card": "Download Sarkari Admit Cards 2026 for upcoming government competitive exams. Get hall tickets, exam dates, and city slips for SSC, Railway, UPSC, Police and State exams.",
+  "answer-key": "Download official Sarkari Answer Keys 2026 for government exams. Raise online objections, calculate marks, and check response sheets for SSC, Railway, UPSC, State PSC exams.",
+  admissions: "Sarkari Admissions 2026: University and college admission notifications, entrance exam forms (CUET, NEET, JEE, B.Ed, Polytechnic), counseling schedules and merit lists.",
+  syllabus: "Download official Sarkari Exam Syllabus 2026 and exam pattern in PDF format. Detailed subject-wise syllabus, marks weightage, and selection process for SSC, UPSC, Railway, Police.",
   contact: "Contact All India Exam Result for support, partnership or feedback. Get in touch via email or phone for government exam related queries.",
   about: "All India Exam Result is India's fastest government exam information portal. Learn about our mission to provide verified sarkari result updates.",
   "privacy-policy": "Privacy policy of All India Exam Result. Learn how we collect, use and protect your personal information when you visit our website.",
@@ -40,15 +40,22 @@ export async function generateMetadata({ params }: { params: Promise<{ section: 
   const { section } = await params;
   const title = sections[section] ?? "Updates";
   const desc = sectionDescriptions[section] || `${title} updates with verified official links, important dates and eligibility details.`;
-  const ogTitle = ["results", "admit-card", "answer-key", "latest-jobs"].includes(section)
-    ? `Sarkari ${title} 2026 | All India Exam Result`
-    : `${title} | All India Exam Result`;
+  const canonicalUrl = `${SITE_URL}/${section}`;
   return {
     title,
     description: desc,
-    alternates: { canonical: `/${section}` },
-    openGraph: { title: ogTitle, description: desc, url: `${SITE_URL}/${section}`, images: [{ url: `${SITE_URL}/og-image.svg`, width: 1200, height: 630 }] },
-    twitter: { card: "summary_large_image", title: ogTitle, description: desc },
+    alternates: { canonical: canonicalUrl },
+    openGraph: {
+      title: `${title} | Sarkari Result - Sarkari Exam`,
+      description: desc,
+      url: canonicalUrl,
+      images: [{ url: `${SITE_URL}/og-image.svg`, width: 1200, height: 630 }]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${title} | Sarkari Result - Sarkari Exam`,
+      description: desc
+    },
     robots: { index: true, follow: true }
   };
 }

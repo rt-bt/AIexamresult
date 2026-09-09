@@ -18,25 +18,56 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const post = await getPostDetail(slug);
   if (!post) return { title: "Post not found" };
 
-  const title = post.title || "";
+  const title = (post.title || "").trim();
   const cat = post.category || "Government Exam";
+  const tLower = title.toLowerCase();
+  const catLower = cat.toLowerCase();
 
-  // Build a click-worthy, keyword-rich description with CTA
+  // Intent-targeted suffix for top search engine match
+  let intentSuffix = "";
+  if (catLower.includes("job") || tLower.includes("recruitment") || tLower.includes("vacancy") || tLower.includes("apply") || tLower.includes("online form")) {
+    intentSuffix = tLower.includes("online form") ? "Apply Online" : "Online Form 2026, Notification PDF";
+  } else if (catLower.includes("admit") || tLower.includes("admit card") || tLower.includes("hall ticket")) {
+    intentSuffix = "Admit Card 2026 Download Link";
+  } else if (catLower.includes("result") || tLower.includes("result") || tLower.includes("score")) {
+    intentSuffix = "Result 2026 Direct Link, Scorecard";
+  } else if (catLower.includes("answer") || tLower.includes("answer key")) {
+    intentSuffix = "Answer Key 2026 Objection Link";
+  } else if (catLower.includes("syllabus")) {
+    intentSuffix = "Syllabus & Exam Pattern 2026 PDF";
+  } else if (catLower.includes("admission")) {
+    intentSuffix = "Admission Online Form 2026";
+  }
+
+  const hasYear = /202[4-9]|203\d/.test(title);
+  const yearStr = hasYear ? "" : " 2026";
+  const seoTitle = intentSuffix
+    ? `${title}${yearStr} : ${intentSuffix} - Sarkari Result | Sarkari Exam`
+    : `${title}${yearStr} - Sarkari Result | Sarkari Exam`;
+
+  // Build high-CTR meta description (strip any adinserter / shortcodes)
+  let rawIntro = (post.intro || "").replace(/\[adinserter[^\]]*\]/gi, "").replace(/<[^>]*>/g, "").trim();
   let desc = "";
-  if (post.intro && post.intro.length > 60) {
-    desc = post.intro.substring(0, 155).replace(/\s+\S*$/, "") + "…";
+
+  if (rawIntro.length > 50) {
+    desc = rawIntro.substring(0, 150).replace(/\s+\S*$/, "") + "… Check full notification & apply at Sarkari Result.";
   } else {
     const dateHint = post.importantDates?.find((d: string) =>
-      d.toLowerCase().includes("last") || d.toLowerCase().includes("apply")
+      /last|apply|exam date|admit/i.test(d)
     );
     const dateStr = dateHint ? " " + dateHint.replace(/^.*?:/, "").trim() + "." : ".";
-    desc = `${title} — Check important dates, application fee, eligibility & official links. Last date to apply${dateStr} Get all details here.`;
+    if (intentSuffix.includes("Online Form") || catLower.includes("job")) {
+      desc = `${title}: Check eligibility criteria, age limit, application fee, last date to apply${dateStr} Download official notification PDF at Sarkari Result | Sarkari Exam.`;
+    } else if (intentSuffix.includes("Admit Card") || catLower.includes("admit")) {
+      desc = `${title}: Download Sarkari admit card, check exam date, reporting time & exam city slip${dateStr} Direct login link at Sarkari Result | Sarkari Exam.`;
+    } else if (intentSuffix.includes("Result") || catLower.includes("result")) {
+      desc = `${title}: Check Sarkari result, download scorecard, cut-off marks & qualifying merit list${dateStr} Direct official link at Sarkari Result | Sarkari Exam.`;
+    } else {
+      desc = `${title}: Check important dates, application fee, eligibility & official direct links${dateStr} Complete details at Sarkari Result | Sarkari Exam.`;
+    }
   }
-  if (desc.length > 160) desc = desc.substring(0, 157) + "…";
 
-  // Keyword-rich title: "EXAM NAME 2026 | Category | Sarkari Result"
-  const hasYear = /202[4-9]|203\d/.test(title);
-  const seoTitle = `${title}${hasYear ? "" : " 2026"} | ${cat} | Sarkari Result`;
+  if (desc.length > 165) desc = desc.substring(0, 160) + "…";
 
   // Absolute canonical URL (required for Google to deduplicate)
   const canonicalUrl = `${SITE_URL}/post/${slug}`;
@@ -62,7 +93,17 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       description: desc,
       images: [`${SITE_URL}/og-image.svg`],
     },
-    robots: { index: true, follow: true },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-snippet": -1,
+        "max-image-preview": "large",
+        "max-video-preview": -1,
+      }
+    },
   };
 }
 
@@ -253,6 +294,38 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
     `${shortTitle} की आधिकारिक वेबसाइट ऊपर Important Links सेक्शन में "Official Website" के तहत लिंक की गई है। पूरी जानकारी और अपडेट के लिए इसे विज़िट करें।`,
   ];
 
+  // Detect if post is a job recruitment for Google Jobs (JobPosting schema)
+  const isJobPost = (post.category || "").toLowerCase().includes("job") ||
+    title.toLowerCase().includes("recruitment") ||
+    title.toLowerCase().includes("online form") ||
+    title.toLowerCase().includes("vacancy");
+
+  let validThroughDate = "";
+  if (post.lastDate) {
+    const d = parseDate(post.lastDate);
+    if (d && !isNaN(d.getTime())) validThroughDate = d.toISOString();
+  }
+  if (!validThroughDate && post.importantDates) {
+    for (const item of post.importantDates) {
+      if (/last date|apply/i.test(item)) {
+        const clean = item.replace(/^.*?:/, "").trim();
+        const d = parseDate(clean);
+        if (d && !isNaN(d.getTime())) {
+          validThroughDate = d.toISOString();
+          break;
+        }
+      }
+    }
+  }
+
+  const orgMatch = title.match(/^(SSC|UPSC|UPSSSC|UPPSC|BPSC|BSSC|RRB|RRC|Railway|SBI|IBPS|RBI|DSSSB|NTA|UKSSSC|HSSC|RSMSSB|JSSC|MPSC|MPPEB|CGPSC|APPSC|TSPSC|AFCAT|Army|Navy|Airforce)/i);
+  const hiringOrg = orgMatch ? orgMatch[0].toUpperCase() : "Government of India";
+
+  const cleanIntro = (post.intro || `${title} — check latest updates, important dates, application fee, eligibility and official links.`)
+    .replace(/\[adinserter[^\]]*\]/gi, "")
+    .replace(/<[^>]*>/g, "")
+    .trim();
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -269,7 +342,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         "@type": "Article",
         "@id": `${SITE_URL}/post/${slug}#article`,
         headline: title,
-        description: post.intro || `${title} — check latest updates, important dates, application fee, eligibility and official links.`,
+        description: cleanIntro,
         ...(post.publishedDate && { datePublished: post.publishedDate }),
         ...(post.lastDate || post.publishedDate ? { dateModified: post.lastDate || post.publishedDate } : {}),
         author: { "@id": `${SITE_URL}/#organization` },
@@ -280,6 +353,28 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         inLanguage: "en-IN",
         speakable: { "@type": "SpeakableSpecification", cssSelector: ["h1", "h2", "h3"] }
       },
+      ...(isJobPost ? [{
+        "@type": "JobPosting",
+        "@id": `${SITE_URL}/post/${slug}#jobposting`,
+        title: title,
+        description: cleanIntro,
+        datePosted: post.publishedDate ? (parseDate(post.publishedDate)?.toISOString() || new Date().toISOString()) : new Date().toISOString(),
+        ...(validThroughDate ? { validThrough: validThroughDate } : {}),
+        employmentType: "FULL_TIME",
+        hiringOrganization: {
+          "@type": "Organization",
+          name: hiringOrg,
+          sameAs: officialUrl || SITE_URL
+        },
+        jobLocation: {
+          "@type": "Place",
+          address: {
+            "@type": "PostalAddress",
+            addressCountry: "IN"
+          }
+        },
+        directApply: true
+      }] : []),
       {
         "@type": "FAQPage",
         "@id": `${SITE_URL}/post/${slug}#faq`,

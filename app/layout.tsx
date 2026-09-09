@@ -12,11 +12,11 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.aiexamresult.c
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Sarkari Result 2026 - Govt Jobs, Admit Card, Answer Key | All India Exam Result",
-    template: "%s | Sarkari Result, Govt Jobs | All India Exam Result"
+    default: "Sarkari Result 2026, Sarkari Exam, Sarkari Naukri, Rojgar Result | All India Exam Result",
+    template: "%s | Sarkari Result - Sarkari Exam"
   },
   description:
-    "Sarkari Result 2026: Check latest govt jobs, admit cards & exam results instantly. SSC, UPSC, Railway, IBPS, BPSC — 26,000+ notifications updated daily. Find your result, admit card & vacancy here.",
+    "Sarkari Result 2026: Get fastest Sarkari Exam alerts, Sarkari Naukri, Rojgar Result, Admit Card, Answer Key & Results. Check latest central & state government jobs online form 2026.",
   applicationName: "All India Exam Result",
   manifest: "/manifest.webmanifest",
   alternates: {
@@ -59,15 +59,15 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "All India Exam Result",
     url: SITE_URL,
-    title: "Sarkari Result 2026 - Govt Jobs, Admit Card, Answer Key | All India Exam Result",
-    description: "Check latest sarkari result 2026 — govt jobs, admit cards, answer keys & exam notifications. SSC, UPSC, Railway, IBPS, Bihar, UP — all updated daily.",
+    title: "Sarkari Result 2026, Sarkari Exam, Sarkari Naukri, Rojgar Result | All India Exam Result",
+    description: "Check latest Sarkari Result 2026 — Govt Jobs, Admit Cards, Answer Keys & Exam Notifications. SSC, UPSC, Railway, IBPS, Bihar, UP — all updated daily.",
     locale: "en_IN",
     images: [{ url: `${SITE_URL}/og-image.svg`, width: 1200, height: 630, alt: "Sarkari Result 2026 | All India Exam Result" }]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sarkari Result 2026 - Latest Govt Jobs, Admit Card & Exam Result",
-    description: "Get instant sarkari result, admit card & govt job alerts 2026. SSC, UPSC, Railway, Banking — 26k+ updates daily.",
+    title: "Sarkari Result 2026, Sarkari Exam, Sarkari Naukri & Admit Card",
+    description: "Get instant Sarkari Result, Admit Card & Govt Job alerts 2026. SSC, UPSC, Railway, Banking — 26k+ updates daily.",
     images: [`${SITE_URL}/og-image.svg`]
   },
   icons: {

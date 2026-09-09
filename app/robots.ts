@@ -8,8 +8,11 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: "Googlebot-Image", allow: "/" },
       { userAgent: "Googlebot-News", allow: "/", disallow: ["/admin", "/api"] },
       { userAgent: "Bingbot", allow: "/", disallow: ["/admin", "/api/auth"] },
-      { userAgent: "*", allow: "/", disallow: ["/admin", "/api/auth"], crawlDelay: 10 },
+      { userAgent: "*", allow: "/", disallow: ["/admin", "/api/auth"] },
     ],
-    sitemap: `${base}/sitemap-index.xml`
+    sitemap: [
+      `${base}/sitemap-index.xml`,
+      `${base}/sitemap.xml`,
+    ]
   };
 }
