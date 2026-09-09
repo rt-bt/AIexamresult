@@ -70,6 +70,20 @@ export const metadata: Metadata = {
     description: "Get instant sarkari result, admit card & govt job alerts 2026. SSC, UPSC, Railway, Banking — 26k+ updates daily.",
     images: [`${SITE_URL}/og-image.svg`]
   },
+  icons: {
+    icon: [
+      { url: "/logo.svg", type: "image/svg+xml" },
+      { url: "/icon-48.png",  sizes: "48x48",  type: "image/png" },
+      { url: "/icon-96.png",  sizes: "96x96",  type: "image/png" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: [
+      { url: "/icon-152.png", sizes: "152x152", type: "image/png" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+    ],
+    shortcut: "/logo.svg",
+  },
   robots: {
     index: true,
     follow: true,
@@ -98,7 +112,13 @@ const jsonLd = {
       "@id": `${SITE_URL}/#organization`,
       name: "All India Exam Result",
       url: SITE_URL,
-      logo: `${SITE_URL}/icon.svg`,
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE_URL}/logo.svg`,
+        width: 1000,
+        height: 1000,
+        caption: "All India Exam Result Logo",
+      },
       description: "India's fastest government exam information portal providing verified updates on Sarkari results, government job notifications, admit cards, answer keys and admissions across SSC, UPSC, Railway, Banking and State exams.",
       foundingDate: "2024",
       email: "info@aiexamresult.com",

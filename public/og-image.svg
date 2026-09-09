@@ -1,8 +1,8 @@
-<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0D9488"/>
-      <stop offset="50%" stop-color="#0F766E"/>
+      <stop offset="60%" stop-color="#0F766E"/>
       <stop offset="100%" stop-color="#0F172A"/>
     </linearGradient>
     <linearGradient id="txt" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -10,10 +10,67 @@
       <stop offset="50%" stop-color="#FBBF24"/>
       <stop offset="100%" stop-color="#F97316"/>
     </linearGradient>
+    <clipPath id="logoClip">
+      <rect x="60" y="80" width="460" height="460" rx="40"/>
+    </clipPath>
   </defs>
+
+  <!-- Background -->
   <rect width="1200" height="630" fill="url(#bg)"/>
-  <rect x="50" y="50" width="1100" height="530" rx="30" fill="white" fill-opacity="0.05" stroke="white" stroke-opacity="0.1" stroke-width="2"/>
-  <text x="600" y="260" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="72" font-weight="900" fill="white">All India Exam Result</text>
-  <text x="600" y="360" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="36" font-weight="700" fill="url(#txt)">Government Jobs &bull; Results &bull; Admit Cards</text>
-  <text x="600" y="440" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="24" fill="white" fill-opacity="0.6">India&apos;s Fastest Exam Intelligence Hub</text>
+  <rect x="30" y="30" width="1140" height="570" rx="30" fill="white" fill-opacity="0.04" stroke="white" stroke-opacity="0.08" stroke-width="2"/>
+
+  <!-- Logo box on left (white bg so colors show) -->
+  <rect x="60" y="80" width="460" height="460" rx="40" fill="white"/>
+
+  <!-- Logo SVG artwork embedded and scaled into the white box -->
+  <g transform="translate(60,80) scale(0.46)">
+    <g transform="translate(53.479 118.87)">
+      <g transform="translate(55.018 174.13)">
+        <g>
+          <g>
+            <g transform="translate(270.508,0)">
+              <g transform="translate(243.565 0.06)">
+                <path d="M676.567,362.917l-19.379-29.469-41.361-.02c-.18,4.174.741,7.788-.7,11.962-7.768-2.573-14.985-4.845-22.662-6.116-7.778-1.041-15.115-.42-23.734.26l-.09-65.945,139.779-.12c6.416,0,12.492-1.9,16.747-6.346a17.879,17.879,0,0,0-.15-24.294c-3.834-3.884-8.709-4.765-14.2-5.525l-142.171-.05-.06-63.063,152.651.04c29.619.961,59.509,8.929,76.626,33.934,12.412,18.138,14.985,45.315,10.34,66.806-6.677,30.931-30.61,50.05-61.3,56.456l88.918,130.279a2.889,2.889,0,0,1,.7,1.8,1.874,1.874,0,0,1-2.082,1.532l-78.638-.03-35.235-50.54c-10.58-15.175-20.8-29.81-33.844-42.873l-10.16-8.679Z" transform="translate(-568.58 -174.19)" fill="#010501"/>
+                <path d="M693.15,373.6c-4.2-6.807-11.6-8.909-15.906-15.565l-18.128-28.048H612.9l-.931,10.871c-13.023-4.655-26.246-7.027-39.88-5.025l-.06-58.929,136.485-.07c14.7,0,25.615-8.949,24.765-23.163-.761-12.773-10.39-19.009-23.2-19.85l-138.027.02V177.64l144.914-.02c36.336-.25,75.125,12.442,86.055,49.339A96.62,96.62,0,0,1,804.4,276.4a65.7,65.7,0,0,1-21.131,34.364c-11.792,9.99-26.1,15.676-42.242,18.188l90.62,132.7-73.963.05-45.655-65.445c-6.056-8.138-11.6-15.756-18.869-22.662Z" transform="translate(-568.576 -174.187)" fill="#0a6c34"/>
+              </g>
+              <g>
+                <path d="M554.127,238.174H357.782l-32.132-60.8a2.792,2.792,0,0,1-.29-2.132c.16-.4.681-.871,1.782-1.071l228.467-.04Z" transform="translate(-325.257 -174.13)" fill="#080302"/>
+                <path d="M550.8,234.7l-191.05.03L329.74,177.65l222.721-.03Z" transform="translate(-325.253 -174.127)" fill="#f97b0b"/>
+              </g>
+              <g transform="translate(43.626 94.444)">
+                <path d="M552.212,330.962l-152.511.08-30.52-59.209a4.588,4.588,0,0,1-.08-3.313l185.054-.04L552.2,330.952Z" transform="translate(-368.84 -268.48)" fill="#080302"/>
+                <path d="M395.591,314.932l-20.831-40.32-.33-1.812c57.717-.51,117.687-1.011,175.434.18l-1.131,53.813-145.995.11a18.87,18.87,0,0,1-4.665-8.248l-2.482-3.714Z" transform="translate(-368.834 -268.476)" fill="#f9790c"/>
+              </g>
+            </g>
+            <g transform="translate(9.29 0.14)">
+              <g>
+                <path d="M255.43,270.636,160.345,432.276c-3.764,6.406-11.081,8.789-17.888,9.96l-75.605-.17a2.722,2.722,0,0,1-2.232-.821,2.322,2.322,0,0,1,.11-2.533L217.242,187.944c4.765-7.838,11.5-13.594,21.131-13.6l41.671-.07a24.23,24.23,0,0,1,19.409,9.72l94.063,175.774c-25.235,9.129-48.7,19.239-72.932,30.68l-65.155-119.8Z" transform="translate(-64.299 -174.27)" fill="#010205"/>
+                <path d="M257.307,266.538a2.2,2.2,0,0,0-2.1-1.391c-.6.04-1.031.43-1.582,1.371L181.642,389.17,159.26,427.538c-3.343,4.985-8.318,10.871-15.055,10.881l-75.245.2L222.8,185.788c2.913-4.795,9.96-7.9,15.015-7.908l43.894-.07c5.6,0,10.33,3.483,14.344,7.107l37.647,70.56,55.075,102.492c-18.358,6.577-35.425,13.714-52.622,21.481l-14.174,6.406L257.307,266.528Z" transform="translate(-64.294 -174.266)" fill="#094284"/>
+              </g>
+            </g>
+            <g transform="translate(0 165.239)">
+              <g>
+                <path d="M224.668,513.212C172.716,511,119.043,497.126,75.71,467.817c3.984.661,6.687,2.392,10.39,3.684a325.2,325.2,0,0,0,147.206,15.876c28.258-3.453,55.075-9.91,82.112-18.288,20.821-6.456,40.26-14.054,60.72-21.391l55.946-20.08c21.321-7.648,42.722-12.332,65.245-15.235a194.649,194.649,0,0,1,53.163.581c-3.353,13.764-3.033,27.217-.03,41-27.818-3.994-54.944-1.672-81.631,5.866-19.92,4.925-38.4,11.471-57.747,18.258-61.931,21.722-119.869,37.938-186.425,35.1Z" transform="translate(-54.997 -339.133)" fill="#0f7f24"/>
+                <path d="M332.677,427.354c-61.851,25.075-119.639,45.635-187.756,41.371-28.178-1.762-55.665-6.977-81.661-18,103.8,14.885,180.459-18.979,271.449-58.959,60.55-26.606,121.961-52.112,189.328-48.919a245.106,245.106,0,0,1,71.4,13.193c-11.612,6.3-21.912,13.984-29.99,25.165a187.228,187.228,0,0,0-45.435-5.966,251.643,251.643,0,0,0-58.308,6.156,444.543,444.543,0,0,0-68.418,21.371l-60.61,24.574Z" transform="translate(-55.01 -339.201)" fill="#f9790c"/>
+              </g>
+              <g transform="translate(499.618 16.372)">
+                <circle cx="77.947" cy="77.947" r="77.947" fill="#010205"/>
+                <circle cx="74.464" cy="74.464" r="74.464" transform="translate(3.493 3.493)" fill="#0f4081"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- Right side text -->
+  <text x="660" y="240" font-family="Arial, sans-serif" font-size="68" font-weight="900" fill="white">All India</text>
+  <text x="660" y="320" font-family="Arial, sans-serif" font-size="68" font-weight="900" fill="url(#txt)">Exam Result</text>
+  <text x="660" y="390" font-family="Arial, sans-serif" font-size="28" font-weight="600" fill="white" fill-opacity="0.75">Govt Jobs • Results • Admit Cards</text>
+  <text x="660" y="440" font-family="Arial, sans-serif" font-size="22" fill="white" fill-opacity="0.5">aiexamresult.com</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="595" width="1200" height="35" fill="white" fill-opacity="0.07"/>
+  <text x="600" y="618" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="white" fill-opacity="0.5">SSC • UPSC • Railway • Banking • State Exams • Board Results</text>
 </svg>
