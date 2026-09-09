@@ -331,6 +331,107 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
     .replace(/<[^>]*>/g, "")
     .trim();
 
+  // Determine HowTo steps based on post intent
+  const postType = catSlug.includes("job") || isJobPost
+    ? "job"
+    : catSlug.includes("result")
+    ? "result"
+    : catSlug.includes("admit")
+    ? "admit"
+    : catSlug.includes("answer")
+    ? "answer"
+    : "general";
+
+  let howToTitle = `How to Apply for ${shortTitle} Online Form 2026`;
+  let howToDescription = `Step-by-step complete instructions to register, fill online form, upload documents, and submit fees for ${shortTitle}.`;
+  let howToSteps = [
+    {
+      name: "Check Eligibility & Read Notification",
+      text: `Carefully read the official notification to verify educational qualification, age limit, and category eligibility for ${shortTitle}.`,
+    },
+    {
+      name: "Visit Official Portal & Register",
+      text: "Go to the official website or click the 'Apply Online' link below. Complete the initial registration using your mobile number and email ID.",
+    },
+    {
+      name: "Fill Online Application Form",
+      text: "Log in with your registration credentials and accurately fill personal details, education details, and preferred exam cities.",
+    },
+    {
+      name: "Upload Photo, Signature & Documents",
+      text: "Upload scanned copies of recent passport size photograph, signature, and necessary certificates in the prescribed format and size.",
+    },
+    {
+      name: "Pay Application Fee & Submit",
+      text: "Pay the required application fee through online payment mode (UPI, Net Banking, Cards). Submit the form and download the confirmation printout for future reference.",
+    },
+  ];
+
+  if (postType === "result") {
+    howToTitle = `How to Check & Download ${shortTitle} Result 2026`;
+    howToDescription = `Step-by-step procedure to check scorecard, cut-off marks, and merit list for ${shortTitle}.`;
+    howToSteps = [
+      {
+        name: "Visit Official Result Portal",
+        text: `Open the official website link provided in the Important Links table below for ${shortTitle}.`,
+      },
+      {
+        name: "Locate Result / Scorecard Link",
+        text: `Click on '${shortTitle} Result 2026' or Scorecard link on the notification panel.`,
+      },
+      {
+        name: "Enter Roll Number & Credentials",
+        text: "Submit your Examination Roll Number, Registration Number, and Date of Birth / Password.",
+      },
+      {
+        name: "Download Scorecard & Check Cut-off",
+        text: "View your subject-wise marks and qualifying status. Download and print the result scorecard PDF.",
+      },
+    ];
+  } else if (postType === "admit") {
+    howToTitle = `How to Download ${shortTitle} Admit Card 2026`;
+    howToDescription = `Step-by-step procedure to download hall ticket, exam city slip, and candidate instructions for ${shortTitle}.`;
+    howToSteps = [
+      {
+        name: "Open Examination Portal",
+        text: `Access the official examination website through the direct link in the Important Links section below.`,
+      },
+      {
+        name: "Click on Admit Card Download Link",
+        text: `Click on the notification link for '${shortTitle} Admit Card / Hall Ticket 2026'.`,
+      },
+      {
+        name: "Login with Candidate Details",
+        text: "Enter your Application Number / Roll Number and Password or Date of Birth.",
+      },
+      {
+        name: "Verify Details & Print Hall Ticket",
+        text: "Confirm your exam venue address, shift time, and exam-day guidelines. Print two clear copies of the admit card.",
+      },
+    ];
+  } else if (postType === "answer") {
+    howToTitle = `How to Download & Check ${shortTitle} Answer Key 2026`;
+    howToDescription = `Step-by-step guide to download provisional answer key, candidate response sheet, and submit objections for ${shortTitle}.`;
+    howToSteps = [
+      {
+        name: "Visit Answer Key Portal",
+        text: `Click on the official link provided below to access the answer key portal for ${shortTitle}.`,
+      },
+      {
+        name: "Login to View Response Sheet",
+        text: "Enter your examination Roll Number and Date of Birth to view your submitted answers.",
+      },
+      {
+        name: "Cross-check Answers with Official Key",
+        text: "Compare each question's response with the official provisional answer key and calculate your score.",
+      },
+      {
+        name: "Submit Online Objection (If Any)",
+        text: "If you detect an incorrect answer, submit an online objection with supporting documentary proof before the last date.",
+      },
+    ];
+  }
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -380,6 +481,19 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         },
         directApply: true
       }] : []),
+      {
+        "@type": "HowTo",
+        "@id": `${SITE_URL}/post/${slug}#howto`,
+        name: howToTitle,
+        description: howToDescription,
+        step: howToSteps.map((s, i) => ({
+          "@type": "HowToStep",
+          position: i + 1,
+          name: s.name,
+          text: s.text,
+          url: `${SITE_URL}/post/${slug}#step-${i + 1}`
+        }))
+      },
       {
         "@type": "FAQPage",
         "@id": `${SITE_URL}/post/${slug}#faq`,
@@ -852,7 +966,8 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
 
               {/* Important Links */}
               {cleanLinks.length > 0 && (
-                <TableCard icon={<ExternalLink className="h-4 w-4" />} title="Important Links" gradient="border-b border-indigo-100 bg-indigo-50/50">
+                <div id="important-links" className="scroll-mt-24">
+                  <TableCard icon={<ExternalLink className="h-4 w-4" />} title="Important Links" gradient="border-b border-indigo-100 bg-indigo-50/50">
                   <div className="grid gap-3">
                     {cleanLinks.map((link: { label: string; url: string | undefined }, i: number) => {
                       let linkColor = "from-brand to-indigo-500";
@@ -885,7 +1000,8 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                     })}
                   </div>
                 </TableCard>
-              )}
+              </div>
+            )}
 
               {/* Official Website CTA */}
               {officialUrl && (
@@ -950,6 +1066,55 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                   </div>
                 );
               })()}
+
+              {/* HowTo Step-by-Step Interactive Guide */}
+              <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
+                <div className="border-b border-gray-100 bg-gradient-to-r from-teal-50 to-emerald-50/50 px-5 py-4">
+                  <div className="flex items-center gap-2.5">
+                    <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-teal-600 text-white font-bold text-sm shadow-xs">
+                      📋
+                    </span>
+                    <div>
+                      <h2 className="text-base font-bold text-gray-900">
+                        {howToTitle}
+                      </h2>
+                      <p className="text-xs text-gray-500">
+                        Official step-by-step instructions & application procedure
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="p-5 space-y-4">
+                  <p className="text-xs leading-relaxed text-gray-600">
+                    {howToDescription}
+                  </p>
+                  <ol className="relative border-l border-teal-200 pl-4 space-y-4 ml-2">
+                    {howToSteps.map((step, idx) => (
+                      <li key={idx} id={`step-${idx + 1}`} className="relative group">
+                        <span className="absolute -left-[23px] top-0 flex h-6 w-6 items-center justify-center rounded-full bg-teal-600 text-white text-[11px] font-black ring-4 ring-white shadow-xs">
+                          {idx + 1}
+                        </span>
+                        <div className="rounded-xl bg-gray-50/80 p-3.5 border border-gray-100 group-hover:border-teal-200 group-hover:bg-teal-50/40 transition">
+                          <h3 className="text-sm font-bold text-gray-900">
+                            {step.name}
+                          </h3>
+                          <p className="mt-1 text-xs text-gray-600 leading-relaxed">
+                            {step.text}
+                          </p>
+                        </div>
+                      </li>
+                    ))}
+                  </ol>
+                  {cleanLinks.length > 0 && (
+                    <div className="mt-4 flex items-center justify-between rounded-xl bg-teal-50/70 p-3.5 border border-teal-100 text-xs">
+                      <span className="text-teal-950 font-medium">Ready to take action? Check direct links below.</span>
+                      <a href="#important-links" className="font-bold text-teal-700 hover:text-teal-900 underline flex items-center gap-1">
+                        Go to Links ↓
+                      </a>
+                    </div>
+                  )}
+                </div>
+              </div>
 
               {/* FAQ Section */}
               <div className="rounded-2xl border border-gray-200 bg-white shadow-sm overflow-hidden">

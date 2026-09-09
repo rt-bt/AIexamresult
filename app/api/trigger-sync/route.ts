@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import * as cheerio from "cheerio";
+import { submitToIndexNow } from "@/lib/indexnow";
 
 const GITHUB_REPO = "rt-bt/AIexamresult";
 const GITHUB_FILE = "data/scraped.json";
@@ -402,11 +403,18 @@ export async function POST(request: Request) {
     const newContent = JSON.stringify(finalData, null, 2);
     const committed = await commitFile(token, newContent, currentFile?.sha);
 
+    // 6. Automatically ping IndexNow for all fresh URLs (fast search engine indexing)
+    const freshUrls = newPostItems.map(item => `https://www.aiexamresult.com/post/${item.slug}`);
+    if (freshUrls.length > 0) {
+      submitToIndexNow(freshUrls).catch(() => {});
+    }
+
     return NextResponse.json({
       ok: true,
       committed,
       counts: Object.fromEntries(Object.entries(merged).map(([k, v]) => [k, v.length])),
       newPostsCommitted: newPostItems.length,
+      indexNowSubmitted: freshUrls.length,
       fetchedAt: finalData.fetchedAt,
     }, { headers: corsHeaders });
 
