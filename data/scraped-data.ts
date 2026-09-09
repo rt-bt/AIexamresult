@@ -1569,6 +1569,12 @@ export const scrapedData = {
   ],
   "admitCards": [
     {
+      "title": "Patna High Court Assistant Exam Date 2026",
+      "url": "/post/patna-high-court-assistant-2026",
+      "category": "admitCards",
+      "slug": "patna-high-court-assistant-2026"
+    },
+    {
       "title": "Bihar BPSC Factory Inspector Revised DV Schedule 2026",
       "url": "/post/bpsc-factory-inspector-2026",
       "category": "admitCards",
@@ -7836,11 +7842,14 @@ export const scrapedData = {
     },
     "ssc-chsl-2026": {
       "lastDate": "07 October 2026"
+    },
+    "patna-high-court-assistant-2026": {
+      "lastDate": "27 August 2026"
     }
   },
-  "fetchedAt": "2026-09-08T13:57:41.099Z",
+  "fetchedAt": "2026-09-09T03:05:06.979Z",
   "seo": {
-    "lastOptimized": "2026-09-08T13:57:47.767Z",
+    "lastOptimized": "2026-09-09T03:05:14.566Z",
     "totalPosts": 1770,
     "websiteName": "All India Exam Result",
     "websiteUrl": "https://www.aiexamresult.com",
