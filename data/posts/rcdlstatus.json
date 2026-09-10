@@ -3,7 +3,7 @@
   "slug": "rcdlstatus",
   "url": "https://parivahan.gov.in/rcdlstatus/?pur_cd=101",
   "category": "latestJobs",
-  "publishedDate": "",
+  "publishedDate": "1 September 2026",
   "intro": "",
   "importantDates": [],
   "applicationFee": [],
@@ -88,5 +88,7 @@
     "title": "Terms Of Uses",
     "description": "Terms Of Uses",
     "canonical": "https://www.aiexamresult.com/post/rcdlstatus"
-  }
+  },
+  "publishedAt": "2026-09-01T00:00:00.000Z",
+  "createdAt": "2026-09-01T00:00:00.000Z"
 }

@@ -152,13 +152,22 @@ async function main() {
     let createdAt: string;
     let updatedAt: string;
 
+    const nowMs = Date.now();
+    const isValidPastDate = (val?: string) => {
+      if (!val) return false;
+      const d = new Date(val);
+      return !isNaN(d.getTime()) && d.getTime() <= nowMs;
+    };
+
     if (existingPost) {
-      publishedAt = existingPost.publishedAt || existingPost.createdAt || existingPost.publishedDate || detail.publishedDate || new Date().toISOString();
-      publishedDate = existingPost.publishedDate || detail.publishedDate || publishedAt;
-      createdAt = existingPost.createdAt || publishedAt;
+      const validOldAt = isValidPastDate(existingPost.publishedAt) ? existingPost.publishedAt : (isValidPastDate(existingPost.createdAt) ? existingPost.createdAt : null);
+      const validOldDate = isValidPastDate(existingPost.publishedDate) ? existingPost.publishedDate : null;
+      publishedAt = validOldAt || (validOldDate ? new Date(validOldDate).toISOString() : new Date().toISOString());
+      publishedDate = validOldDate || (validOldAt ? new Date(validOldAt).toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric" }) : publishedAt);
+      createdAt = isValidPastDate(existingPost.createdAt) ? existingPost.createdAt : publishedAt;
       updatedAt = new Date().toISOString();
     } else {
-      publishedDate = detail.publishedDate || "";
+      publishedDate = (detail.publishedDate && isValidPastDate(detail.publishedDate)) ? detail.publishedDate : "";
       publishedAt = publishedDate ? (new Date(publishedDate).toISOString() || new Date().toISOString()) : new Date().toISOString();
       createdAt = publishedAt;
       updatedAt = publishedAt;

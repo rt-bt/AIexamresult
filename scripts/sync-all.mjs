@@ -140,7 +140,11 @@ async function scrapeSarkariResultDetail(url) {
     if (publishedDate) {
       const d = new Date(publishedDate);
       if (!isNaN(d.getTime())) {
-        publishedDate = d.toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric" });
+        if (d > new Date()) {
+          publishedDate = "";
+        } else {
+          publishedDate = d.toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric" });
+        }
       }
     }
 
@@ -255,7 +259,11 @@ async function scrapeSarkariExamDetail(url) {
       return { publishedDate: "", intro: "", importantDates: [], applicationFee: [], importantLinks: [] };
     }
 
-    const publishedDate = $("time.entry-date.published").attr("datetime") || "";
+    let publishedDate = $("time.entry-date.published").attr("datetime") || "";
+    if (publishedDate) {
+      const d = new Date(publishedDate);
+      if (!isNaN(d.getTime()) && d > new Date()) publishedDate = "";
+    }
     const intro = $("div.post-desc p").text().trim() || $("div.entry-content p").first().text().trim() || "";
 
     const importantDates = [];
@@ -410,7 +418,25 @@ async function scrapeGenericDetail(url) {
     let publishedDate = $("meta[property='article:published_time']").attr("content") || $("time").attr("datetime") || "";
     if (publishedDate) {
       const d = new Date(publishedDate);
-      if (!isNaN(d.getTime())) publishedDate = d.toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric" });
+      if (!isNaN(d.getTime())) {
+        if (d > new Date()) {
+          publishedDate = "";
+        } else {
+          publishedDate = d.toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric" });
+        }
+      }
+    }
+    // Content search for real Post Date / Start Date if publishedDate is missing
+    if (!publishedDate) {
+      const pageText = $("body").text();
+      const match = pageText.match(/Post\s*(?:Time|Date)\s*:\s*(\d{1,2}\s+[A-Za-z]+\s+\d{4})/i) ||
+                    pageText.match(/(?:Online\s*Apply\s*Start\s*on|Apply\s*Start\s*Date|Start\s*Date)\s*[:\-]?\s*(\d{1,2}\s+[A-Za-z]+\s+\d{4})/i);
+      if (match) {
+        const d = new Date(match[1]);
+        if (!isNaN(d.getTime()) && d <= new Date()) {
+          publishedDate = d.toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric" });
+        }
+      }
     }
     let intro = $("meta[name='description']").attr("content") || "";
     if (intro.length < 10) intro = $("article p, .entry-content p, .post-content p").first().text().trim().slice(0, 300);
@@ -756,31 +782,47 @@ async function main() {
   }
 
   function mergeExistingFields(slug, detail) {
+    const now = new Date();
+    const nowIso = now.toISOString();
+
+    function isValidPastDate(val) {
+      if (!val) return false;
+      const d = new Date(val);
+      return !isNaN(d.getTime()) && d.getTime() <= now.getTime();
+    }
+
     try {
       const oldPath = POSTS_DIR + "/" + slug + ".json";
       if (fs.existsSync(oldPath)) {
         const old = JSON.parse(fs.readFileSync(oldPath, "utf8"));
         if (old.cutoff) detail.cutoff = old.cutoff;
-        // PRESERVE ORIGINAL PUBLICATION AND CREATION DATES
-        const originalDate = old.publishedAt || old.createdAt || old.publishedDate;
-        if (originalDate) {
-          detail.publishedAt = old.publishedAt || originalDate;
-          detail.createdAt = old.createdAt || detail.publishedAt;
-          detail.publishedDate = old.publishedDate || detail.publishedAt;
+        // PRESERVE ORIGINAL PUBLICATION AND CREATION DATES (rejecting any corrupted future dates)
+        const oldPublishedValid = isValidPastDate(old.publishedAt) ? old.publishedAt : (isValidPastDate(old.createdAt) ? old.createdAt : null);
+        const oldDateValid = isValidPastDate(old.publishedDate) ? old.publishedDate : null;
+
+        if (oldPublishedValid || oldDateValid) {
+          detail.publishedAt = oldPublishedValid || (oldDateValid ? new Date(oldDateValid).toISOString() : nowIso);
+          detail.createdAt = isValidPastDate(old.createdAt) ? old.createdAt : detail.publishedAt;
+          detail.publishedDate = oldDateValid || (oldPublishedValid ? new Date(oldPublishedValid).toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric" }) : detail.publishedAt);
+        } else {
+          // If previous date was corrupted/future, repair it
+          detail.publishedAt = (detail.publishedDate && isValidPastDate(detail.publishedDate)) ? new Date(detail.publishedDate).toISOString() : nowIso;
+          detail.createdAt = detail.publishedAt;
+          detail.publishedDate = (detail.publishedDate && isValidPastDate(detail.publishedDate)) ? detail.publishedDate : detail.publishedAt;
         }
-        detail.updatedAt = new Date().toISOString();
+        detail.updatedAt = nowIso;
         return detail;
       }
     } catch {}
+
     // New post: set permanent publication dates once
-    const nowIso = new Date().toISOString();
-    if (!detail.publishedAt) {
-      detail.publishedAt = detail.publishedDate ? (new Date(detail.publishedDate).toISOString() || nowIso) : nowIso;
+    if (!detail.publishedAt || !isValidPastDate(detail.publishedAt)) {
+      detail.publishedAt = (detail.publishedDate && isValidPastDate(detail.publishedDate)) ? (new Date(detail.publishedDate).toISOString() || nowIso) : nowIso;
     }
-    if (!detail.createdAt) {
+    if (!detail.createdAt || !isValidPastDate(detail.createdAt)) {
       detail.createdAt = detail.publishedAt;
     }
-    if (!detail.publishedDate) {
+    if (!detail.publishedDate || !isValidPastDate(detail.publishedDate)) {
       detail.publishedDate = detail.publishedAt;
     }
     return detail;

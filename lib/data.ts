@@ -28,6 +28,7 @@ type ScrapedData = {
 // next.config.ts outputFileTracingIncludes ensures this file is packaged
 // alongside the serverless function on Vercel (as a file, NOT bundled into JS).
 function loadScraped(): ScrapedData | null {
+  if (typeof window !== "undefined") return null;
   try {
     const fs = require("fs") as typeof import("fs");
     const path = require("path") as typeof import("path");
@@ -91,10 +92,19 @@ export function formatDisplayDate(raw?: string | null): string {
   if (!raw) return "";
   const d = parseDate(raw);
   if (d) {
+    // Sanity check: A publication/upload date can NEVER be in the future!
+    if (d.getTime() > Date.now()) {
+      return "";
+    }
     return d.toLocaleDateString("en-IN", { day: "2-digit", month: "short", year: "numeric" });
   }
-  // If parsing failed but string has a 4-digit year, return trimmed string as fallback
-  return /\d{4}/.test(raw) ? raw.trim() : "";
+  // If parsing failed but string has a 4-digit year, check that it's not a future year
+  if (/\d{4}/.test(raw)) {
+    const yr = raw.match(/\b(20\d{2})\b/);
+    if (yr && parseInt(yr[1]) > new Date().getFullYear()) return "";
+    return raw.trim();
+  }
+  return "";
 }
 
 function cleanLastDate(raw?: string): string | undefined {
@@ -113,19 +123,29 @@ function cleanLastDate(raw?: string): string | undefined {
 function toPostCard(items: ({ title: string; url: string; category: string; slug: string; publishedDate?: string; publishedAt?: string })[] | undefined, _category: string, fallbacks: PostCard[]): PostCard[] {
   if (!items || items.length === 0) return fallbacks;
   const s2 = getScraped();
+  const nowMs = Date.now();
 
   const sorted = [...items].sort((a, b) => {
     const dateStrA = a.publishedAt || a.publishedDate || s2?.posts?.[a.slug]?.publishedAt || s2?.posts?.[a.slug]?.publishedDate;
     const dateStrB = b.publishedAt || b.publishedDate || s2?.posts?.[b.slug]?.publishedAt || s2?.posts?.[b.slug]?.publishedDate;
-    const da = dateStrA ? (parseDate(dateStrA)?.getTime() ?? 0) : 0;
-    const db = dateStrB ? (parseDate(dateStrB)?.getTime() ?? 0) : 0;
+    let da = dateStrA ? (parseDate(dateStrA)?.getTime() ?? 0) : 0;
+    let db = dateStrB ? (parseDate(dateStrB)?.getTime() ?? 0) : 0;
+    if (da > nowMs) da = 0;
+    if (db > nowMs) db = 0;
     return db - da;
   });
 
   return sorted.map((item) => {
     const detail = s2?.posts?.[item.slug];
-    const permanentDate = item.publishedAt || item.publishedDate || detail?.publishedAt || detail?.publishedDate || "";
+    let permanentDate = item.publishedAt || item.publishedDate || detail?.publishedAt || detail?.publishedDate || "";
+    const parsedPerm = parseDate(permanentDate);
+    if (parsedPerm && parsedPerm.getTime() > nowMs) {
+      permanentDate = "";
+    }
     const displayDate = formatDisplayDate(permanentDate);
+
+    const safePublishedAt = item.publishedAt && parseDate(item.publishedAt)?.getTime()! <= nowMs ? item.publishedAt : detail?.publishedAt;
+    const safePublishedDate = item.publishedDate && parseDate(item.publishedDate)?.getTime()! <= nowMs ? item.publishedDate : detail?.publishedDate;
 
     return {
       title: item.title,
@@ -136,8 +156,8 @@ function toPostCard(items: ({ title: string; url: string; category: string; slug
       slug: item.slug,
       lastDate: cleanLastDate(detail?.lastDate),
       isExpired: detail?.isExpired,
-      publishedAt: item.publishedAt || detail?.publishedAt,
-      publishedDate: item.publishedDate || detail?.publishedDate,
+      publishedAt: safePublishedAt,
+      publishedDate: safePublishedDate,
     };
   });
 }

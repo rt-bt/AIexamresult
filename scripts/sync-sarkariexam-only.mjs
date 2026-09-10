@@ -280,18 +280,27 @@ async function main() {
     let createdAt;
     let updatedAt;
 
+    const nowMs = Date.now();
+    const isValidPastDate = (val) => {
+      if (!val) return false;
+      const d = new Date(val);
+      return !isNaN(d.getTime()) && d.getTime() <= nowMs;
+    };
+
     if (existingPost) {
-      publishedAt = existingPost.publishedAt || existingPost.createdAt || existingPost.publishedDate || oldListing?.publishedAt || oldListing?.publishedDate || detail.publishedDate || new Date().toISOString();
-      publishedDate = existingPost.publishedDate || oldListing?.publishedDate || detail.publishedDate || publishedAt;
-      createdAt = existingPost.createdAt || publishedAt;
+      const validOldAt = isValidPastDate(existingPost.publishedAt) ? existingPost.publishedAt : (isValidPastDate(existingPost.createdAt) ? existingPost.createdAt : null);
+      const validOldDate = isValidPastDate(existingPost.publishedDate) ? existingPost.publishedDate : null;
+      publishedAt = validOldAt || (validOldDate ? new Date(validOldDate).toISOString() : new Date().toISOString());
+      publishedDate = validOldDate || (validOldAt ? new Date(validOldAt).toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric" }) : publishedAt);
+      createdAt = isValidPastDate(existingPost.createdAt) ? existingPost.createdAt : publishedAt;
       updatedAt = new Date().toISOString();
-    } else if (oldListing && (oldListing.publishedAt || oldListing.publishedDate)) {
-      publishedAt = oldListing.publishedAt || oldListing.publishedDate || detail.publishedDate || new Date().toISOString();
-      publishedDate = oldListing.publishedDate || detail.publishedDate || publishedAt;
+    } else if (oldListing && (isValidPastDate(oldListing.publishedAt) || isValidPastDate(oldListing.publishedDate))) {
+      publishedAt = isValidPastDate(oldListing.publishedAt) ? oldListing.publishedAt : new Date(oldListing.publishedDate).toISOString();
+      publishedDate = isValidPastDate(oldListing.publishedDate) ? oldListing.publishedDate : publishedAt;
       createdAt = publishedAt;
       updatedAt = new Date().toISOString();
     } else {
-      publishedDate = detail.publishedDate || "";
+      publishedDate = (detail.publishedDate && isValidPastDate(detail.publishedDate)) ? detail.publishedDate : "";
       publishedAt = publishedDate ? (new Date(publishedDate).toISOString() || new Date().toISOString()) : new Date().toISOString();
       createdAt = publishedAt;
       updatedAt = publishedAt;

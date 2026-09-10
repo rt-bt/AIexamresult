@@ -75,12 +75,15 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
   // Dynamic 1200x630 Feature Image for Google Discover & Social sharing
   const rawDateStr = post.publishedAt || post.publishedDate || post.createdAt;
-  const parsedDateObj = parseDate(rawDateStr);
-  const publishedDateStr = parsedDateObj ? parsedDateObj.toISOString().split("T")[0] : (rawDateStr && /\d{4}/.test(rawDateStr) ? rawDateStr.split("T")[0] : "2026");
+  let parsedDateObj = parseDate(rawDateStr);
+  if (parsedDateObj && parsedDateObj.getTime() > Date.now()) {
+    parsedDateObj = null;
+  }
+  const publishedDateStr = parsedDateObj ? parsedDateObj.toISOString().split("T")[0] : "2026-09-01";
   const ogImageUrl = `${SITE_URL}/api/og?title=${encodeURIComponent(title)}&cat=${encodeURIComponent(cat)}&date=${encodeURIComponent(publishedDateStr)}`;
 
-  const publishedIso = parsedDateObj ? parsedDateObj.toISOString() : (post.publishedAt || post.publishedDate || undefined);
-  const modifiedIso = post.updatedAt ? new Date(post.updatedAt).toISOString() : (post.lastDate || publishedIso || undefined);
+  const publishedIso = parsedDateObj ? parsedDateObj.toISOString() : undefined;
+  const modifiedIso = post.updatedAt ? new Date(post.updatedAt).toISOString() : (publishedIso || undefined);
 
   return {
     title: seoTitle,
@@ -293,12 +296,15 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
 
   const title = post.title;
   const rawPostDate = post.publishedAt || post.publishedDate || post.createdAt;
-  const parsedPostDate = parseDate(rawPostDate);
+  let parsedPostDate = parseDate(rawPostDate);
+  if (parsedPostDate && parsedPostDate.getTime() > Date.now()) {
+    parsedPostDate = null;
+  }
   const publishedDate = parsedPostDate
     ? parsedPostDate.toLocaleDateString("en-US", { day: "numeric", month: "long", year: "numeric" })
-    : (rawPostDate && /\d{4}/.test(rawPostDate) ? rawPostDate : "");
-  const publishedIso = parsedPostDate ? parsedPostDate.toISOString() : (post.publishedAt || (rawPostDate && /\d{4}/.test(rawPostDate) ? rawPostDate : undefined));
-  const modifiedIso = post.updatedAt ? new Date(post.updatedAt).toISOString() : (post.lastDate || publishedIso || undefined);
+    : "";
+  const publishedIso = parsedPostDate ? parsedPostDate.toISOString() : undefined;
+  const modifiedIso = post.updatedAt ? new Date(post.updatedAt).toISOString() : (publishedIso || undefined);
   const officialUrl = post.importantLinks?.find((l: { label: string; url: string }) =>
     l.label?.toLowerCase().includes("official website") || l.label?.toLowerCase().includes("official site")
   )?.url;

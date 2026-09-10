@@ -3,11 +3,30 @@ import { resolve, dirname } from "path";
 import { fileURLToPath } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const POSTS_DIR = resolve(__dirname, "..", "data", "posts");
-const DATA_FILE = resolve(__dirname, "..", "data", "scraped-data.ts");
-const JSON_FILE = resolve(__dirname, "..", "data", "scraped.json");
+const ROOT = resolve(__dirname, "..");
+const POSTS_DIR = resolve(ROOT, "data", "posts");
+const DATA_FILE = resolve(ROOT, "data", "scraped-data.ts");
+const JSON_FILE = resolve(ROOT, "data", "scraped.json");
 
 const CATEGORIES = ["results", "admitCards", "latestJobs", "answerKeys", "documents", "admissions"];
+
+const NOW = new Date();
+
+// Verified historical dates for posts where scrapers picked application deadlines or future exam months
+const KNOWN_CORRECTIONS = {
+  "bcece-bsfc-259-post-2026": {
+    publishedDate: "25 August 2026",
+    publishedAt: "2026-08-25T03:03:00.000Z", // Official post time: 25 August 2026 | 08:33 AM
+  },
+  "haryana-htet-form-november-2026": {
+    publishedDate: "05 September 2026",
+    publishedAt: "2026-09-05T03:00:31.000Z", // Official source date: 05 Sep 2026 08:30:31 IST
+  },
+  "mpesb-si-subedar-2026": {
+    publishedDate: "01 September 2026",
+    publishedAt: "2026-09-01T13:45:00.000Z", // Official post date: 01 September 2026 | 07:15 PM
+  },
+};
 
 function parseDateRobust(str) {
   if (!str || typeof str !== "string") return null;
@@ -49,30 +68,77 @@ function parseDateRobust(str) {
   return null;
 }
 
-function extractDateFromImportantDates(dates) {
+function isFutureDate(d) {
+  if (!d || isNaN(d.getTime())) return false;
+  return d.getTime() > NOW.getTime();
+}
+
+function extractDateFromContent(content) {
+  if (!content || typeof content !== "string") return null;
+
+  // Direct patterns for Post Time / Post Date
+  const postTimeMatch = content.match(/Post\s*(?:Time|Date)\s*:\s*(\d{1,2}\s+[A-Za-z]+\s+\d{4})/i);
+  if (postTimeMatch) {
+    const d = parseDateRobust(postTimeMatch[1]);
+    if (d && !isFutureDate(d)) return d;
+  }
+
+  const startMatch = content.match(/(?:Online\s*Apply\s*Start\s*on|Apply\s*Start\s*Date|Start\s*Date)\s*[:\-]?\s*(\d{1,2}\s+[A-Za-z]+\s+\d{4})/i);
+  if (startMatch) {
+    const d = parseDateRobust(startMatch[1]);
+    if (d && !isFutureDate(d)) return d;
+  }
+
+  const notificationMatch = content.match(/(?:Notification\s*Released|Release\s*Date|Notification\s*Date)\s*[:\-]?\s*(\d{1,2}\s+[A-Za-z]+\s+\d{4})/i);
+  if (notificationMatch) {
+    const d = parseDateRobust(notificationMatch[1]);
+    if (d && !isFutureDate(d)) return d;
+  }
+
+  return null;
+}
+
+function extractDateFromImportantDates(dates, fullText = "") {
+  // First check if fullText or raw text contains an explicit Post Date
+  if (fullText) {
+    const d = extractDateFromContent(fullText);
+    if (d) return d;
+  }
+
   if (!dates || !Array.isArray(dates)) return null;
-  const priorityPatterns = [
+
+  // Scan entries for explicit Post Time / Start Date
+  for (const entry of dates) {
+    const d = extractDateFromContent(entry);
+    if (d) return d;
+  }
+
+  const negativeRegex = /last\s*date|apply\s*online\s*last|closing|deadline|exam\s*date|exam\s*start|fee\s*payment|correction|admit\s*card/i;
+  const positivePatterns = [
     /notification\s*date/i,
     /application\s*start/i,
     /start\s*date/i,
     /online\s*start/i,
-    /date/i,
+    /released/i,
   ];
 
-  for (const pat of priorityPatterns) {
+  for (const pat of positivePatterns) {
     for (const entry of dates) {
+      if (negativeRegex.test(entry)) continue;
       if (pat.test(entry)) {
         const val = entry.replace(/^.*?:/, "").trim();
         const d = parseDateRobust(val);
-        if (d) return d;
+        if (d && !isFutureDate(d)) return d;
       }
     }
   }
 
+  // General fallback: any entry not matching negative keywords
   for (const entry of dates) {
+    if (negativeRegex.test(entry)) continue;
     const val = entry.replace(/^.*?:/, "").trim();
     const d = parseDateRobust(val);
-    if (d) return d;
+    if (d && !isFutureDate(d)) return d;
   }
 
   return null;
@@ -85,6 +151,7 @@ function formatStandardDate(d) {
 function main() {
   console.log("Safe Publication Date Repair & Synchronization");
   console.log("=============================================\n");
+  console.log("Current time:", NOW.toISOString());
 
   if (!existsSync(JSON_FILE)) {
     console.error("data/scraped.json does not exist!");
@@ -106,38 +173,16 @@ function main() {
     const filePath = resolve(POSTS_DIR, file);
     try {
       const post = JSON.parse(readFileSync(filePath, "utf8"));
-      let existingDateStr = post.publishedAt || post.publishedDate || post.createdAt;
-      let validDate = parseDateRobust(existingDateStr);
 
-      if (!validDate) {
-        validDate = extractDateFromImportantDates(post.importantDates);
-      }
-
-      if (validDate) {
-        const iso = validDate.toISOString();
-        const standardStr = formatStandardDate(validDate);
-
-        let changed = false;
-        if (!post.publishedAt) {
-          post.publishedAt = iso;
-          changed = true;
-        }
-        if (!post.createdAt) {
-          post.createdAt = post.publishedAt || iso;
-          changed = true;
-        }
-        if (!post.publishedDate || !parseDateRobust(post.publishedDate)) {
-          post.publishedDate = standardStr;
-          changed = true;
-        }
-
-        if (changed) {
-          writeFileSync(filePath, JSON.stringify(post, null, 2), "utf8");
-          postRepaired++;
-        } else {
-          postAlreadyValid++;
-        }
-
+      // Check if known verified correction exists
+      const known = KNOWN_CORRECTIONS[lowerSlug] || KNOWN_CORRECTIONS[slug];
+      if (known) {
+        post.publishedDate = known.publishedDate;
+        post.publishedAt = known.publishedAt;
+        post.createdAt = known.publishedAt;
+        post.updatedAt = known.publishedAt;
+        writeFileSync(filePath, JSON.stringify(post, null, 2), "utf8");
+        postRepaired++;
         const record = {
           publishedAt: post.publishedAt,
           createdAt: post.createdAt,
@@ -146,22 +191,68 @@ function main() {
         };
         postMap.set(slug, record);
         postMap.set(lowerSlug, record);
-      } else {
-        const record = {
-          publishedAt: post.publishedAt || undefined,
-          createdAt: post.createdAt || undefined,
-          publishedDate: post.publishedDate || undefined,
-          lastDate: post.lastDate,
-        };
-        postMap.set(slug, record);
-        postMap.set(lowerSlug, record);
+        console.log(`  [KNOWN FIX] ${file} -> ${post.publishedDate} (${post.publishedAt})`);
+        continue;
       }
+
+      let existingDateStr = post.publishedAt || post.publishedDate || post.createdAt;
+      let validDate = parseDateRobust(existingDateStr);
+
+      // If existing date is in the future, it is INVALID! Discard it.
+      if (validDate && isFutureDate(validDate)) {
+        console.warn(`  [FUTURE DATE REJECTED] ${file}: ${existingDateStr} is in future!`);
+        validDate = null;
+      }
+
+      if (!validDate) {
+        // Search content and importantDates
+        const allText = (post.intro || "") + " " + (post.fullContentHtml || "") + " " + (post.importantDates || []).join(" ");
+        validDate = extractDateFromImportantDates(post.importantDates, allText);
+      }
+
+      // If still no past date found, fall back to safe baseline (01 September 2026)
+      if (!validDate || isFutureDate(validDate)) {
+        validDate = new Date("2026-09-01T00:00:00.000Z");
+      }
+
+      const iso = validDate.toISOString();
+      const standardStr = formatStandardDate(validDate);
+
+      let changed = false;
+      if (post.publishedAt !== iso || !post.publishedAt || isFutureDate(new Date(post.publishedAt))) {
+        post.publishedAt = iso;
+        changed = true;
+      }
+      if (!post.createdAt || isFutureDate(new Date(post.createdAt))) {
+        post.createdAt = post.publishedAt || iso;
+        changed = true;
+      }
+      if (post.publishedDate !== standardStr || !post.publishedDate || isFutureDate(parseDateRobust(post.publishedDate))) {
+        post.publishedDate = standardStr;
+        changed = true;
+      }
+
+      if (changed) {
+        writeFileSync(filePath, JSON.stringify(post, null, 2), "utf8");
+        postRepaired++;
+      } else {
+        postAlreadyValid++;
+      }
+
+      const record = {
+        publishedAt: post.publishedAt,
+        createdAt: post.createdAt,
+        publishedDate: post.publishedDate,
+        lastDate: post.lastDate,
+      };
+      postMap.set(slug, record);
+      postMap.set(lowerSlug, record);
     } catch (err) {
       console.warn(`Error reading post file ${file}:`, err.message);
     }
   }
 
-  console.log(`Post files: ${postAlreadyValid} already valid, ${postRepaired} normalized.`);
+  console.log(`Post files: ${postAlreadyValid} already valid, ${postRepaired} repaired/normalized.`);
 
   // Synchronize listing items in scraped.json
   console.log("\nSynchronizing listing items in scraped.json...");
@@ -175,42 +266,40 @@ function main() {
     const items = data[cat] || [];
     for (const item of items) {
       const slug = item.slug || "";
-      const fromPost = postMap.get(slug) || postMap.get(slug.toLowerCase());
+      const lowerSlug = slug.toLowerCase();
+      const fromPost = postMap.get(slug) || postMap.get(lowerSlug);
+      const known = KNOWN_CORRECTIONS[lowerSlug] || KNOWN_CORRECTIONS[slug];
 
-      const existingParsed = parseDateRobust(item.publishedDate);
-      if (existingParsed) {
-        // Already has a valid publishedDate! Preserve it.
-        if (!item.publishedAt) {
-          item.publishedAt = existingParsed.toISOString();
-        }
-        listingAlreadyValid++;
+      if (known) {
+        item.publishedDate = known.publishedDate;
+        item.publishedAt = known.publishedAt;
+        listingRepaired++;
       } else if (fromPost && (fromPost.publishedDate || fromPost.publishedAt)) {
         // Recover from post file!
         item.publishedDate = fromPost.publishedDate || (fromPost.publishedAt ? formatStandardDate(new Date(fromPost.publishedAt)) : "");
         item.publishedAt = fromPost.publishedAt || (fromPost.publishedDate ? parseDateRobust(fromPost.publishedDate)?.toISOString() : undefined);
         listingRepaired++;
       } else {
-        // Post genuinely had NO stored date anywhere. Establish a permanent historical date once.
-        // Try to see if title has a month / year
-        const titleMonth = (item.title || "").match(/(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{4})/i);
-        let fallbackDate;
-        if (titleMonth) {
-          const monthMap = { january:0, february:1, march:2, april:3, may:4, june:5, july:6, august:7, september:8, october:9, november:10, december:11 };
-          fallbackDate = new Date(parseInt(titleMonth[2]), monthMap[titleMonth[1].toLowerCase()], 1);
+        const existingParsed = parseDateRobust(item.publishedDate);
+        if (existingParsed && !isFutureDate(existingParsed)) {
+          if (!item.publishedAt || isFutureDate(new Date(item.publishedAt))) {
+            item.publishedAt = existingParsed.toISOString();
+          }
+          listingAlreadyValid++;
         } else {
-          // Fixed static baseline date so it never shifts day to day
-          fallbackDate = new Date("2026-09-01T00:00:00.000Z");
+          // Safe past baseline
+          const fallbackDate = new Date("2026-09-01T00:00:00.000Z");
+          item.publishedDate = formatStandardDate(fallbackDate);
+          item.publishedAt = fallbackDate.toISOString();
+          listingAssignedPermanent++;
         }
-        item.publishedDate = formatStandardDate(fallbackDate);
-        item.publishedAt = fallbackDate.toISOString();
-        listingAssignedPermanent++;
       }
 
-      // Update posts summary cache in scraped.json so listings don't need file reads
+      // Update posts summary cache in scraped.json
       if (slug) {
         if (!data.posts[slug]) data.posts[slug] = {};
-        if (item.publishedDate) data.posts[slug].publishedDate = item.publishedDate;
-        if (item.publishedAt) data.posts[slug].publishedAt = item.publishedAt;
+        data.posts[slug].publishedDate = item.publishedDate;
+        data.posts[slug].publishedAt = item.publishedAt;
       }
     }
   }

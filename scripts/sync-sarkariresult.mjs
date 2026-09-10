@@ -202,18 +202,27 @@ async function main() {
           let createdAt;
           let updatedAt;
 
+          const nowMs = Date.now();
+          const isValidPastDate = (val) => {
+            if (!val) return false;
+            const d = new Date(val);
+            return !isNaN(d.getTime()) && d.getTime() <= nowMs;
+          };
+
           if (existingPost) {
-            publishedAt = existingPost.publishedAt || existingPost.createdAt || existingPost.publishedDate || item.publishedAt || item.publishedDate || post.publishedDate || new Date().toISOString();
-            publishedDate = existingPost.publishedDate || item.publishedDate || post.publishedDate || publishedAt;
-            createdAt = existingPost.createdAt || publishedAt;
+            const validOldAt = isValidPastDate(existingPost.publishedAt) ? existingPost.publishedAt : (isValidPastDate(existingPost.createdAt) ? existingPost.createdAt : null);
+            const validOldDate = isValidPastDate(existingPost.publishedDate) ? existingPost.publishedDate : null;
+            publishedAt = validOldAt || (validOldDate ? new Date(validOldDate).toISOString() : new Date().toISOString());
+            publishedDate = validOldDate || (validOldAt ? new Date(validOldAt).toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric" }) : publishedAt);
+            createdAt = isValidPastDate(existingPost.createdAt) ? existingPost.createdAt : publishedAt;
             updatedAt = new Date().toISOString();
-          } else if (item.publishedAt || item.publishedDate) {
-            publishedAt = item.publishedAt || item.publishedDate || post.publishedDate || new Date().toISOString();
-            publishedDate = item.publishedDate || post.publishedDate || publishedAt;
+          } else if (isValidPastDate(item.publishedAt) || isValidPastDate(item.publishedDate)) {
+            publishedAt = isValidPastDate(item.publishedAt) ? item.publishedAt : new Date(item.publishedDate).toISOString();
+            publishedDate = isValidPastDate(item.publishedDate) ? item.publishedDate : item.publishedAt;
             createdAt = publishedAt;
             updatedAt = new Date().toISOString();
           } else {
-            publishedDate = post.publishedDate || "";
+            publishedDate = (post.publishedDate && isValidPastDate(post.publishedDate)) ? post.publishedDate : "";
             publishedAt = publishedDate ? (new Date(publishedDate).toISOString() || new Date().toISOString()) : new Date().toISOString();
             createdAt = publishedAt;
             updatedAt = publishedAt;

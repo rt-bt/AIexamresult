@@ -382,11 +382,16 @@ export async function scrapePostDetail(url: string): Promise<PostDetail | null> 
 
     // Discard published dates that are in the future (source data errors)
     if (publishedDate) {
-      const m = publishedDate.match(/(\d{1,2})\s+(January|February|March|April|May|June|July|August|September|October|November|December),?\s+(\d{4})/i);
-      if (m) {
-        const months: Record<string, number> = {january:0,february:1,march:2,april:3,may:4,june:5,july:6,august:7,september:8,october:9,november:10,december:11};
-        const d = new Date(+m[3], months[m[2].toLowerCase()], +m[1]);
-        if (!isNaN(d.getTime()) && d > new Date()) publishedDate = "";
+      const d = new Date(publishedDate);
+      if (!isNaN(d.getTime()) && d.getTime() > Date.now()) {
+        publishedDate = "";
+      } else {
+        const m = publishedDate.match(/(\d{1,2})\s+(January|February|March|April|May|June|July|August|September|October|November|December),?\s+(\d{4})/i);
+        if (m) {
+          const months: Record<string, number> = {january:0,february:1,march:2,april:3,may:4,june:5,july:6,august:7,september:8,october:9,november:10,december:11};
+          const dm = new Date(+m[3], months[m[2].toLowerCase()], +m[1]);
+          if (!isNaN(dm.getTime()) && dm.getTime() > Date.now()) publishedDate = "";
+        }
       }
     }
 
