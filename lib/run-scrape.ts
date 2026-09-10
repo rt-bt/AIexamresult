@@ -80,16 +80,48 @@ async function main() {
         const post = result.value;
         const safeSlug = sanitizeSlug(post.slug);
         post.slug = safeSlug;
+
+        const postFilePath = path.join(postsDir, `${safeSlug}.json`);
+        let existingPostFile: any = null;
+        if (fs.existsSync(postFilePath)) {
+          try {
+            existingPostFile = JSON.parse(fs.readFileSync(postFilePath, "utf-8"));
+          } catch {}
+        }
+
+        let publishedAt: string;
+        let publishedDate: string;
+        let createdAt: string;
+        let updatedAt: string;
+
+        if (existingPostFile) {
+          publishedAt = existingPostFile.publishedAt || existingPostFile.createdAt || existingPostFile.publishedDate || post.publishedDate || new Date().toISOString();
+          publishedDate = existingPostFile.publishedDate || post.publishedDate || publishedAt;
+          createdAt = existingPostFile.createdAt || publishedAt;
+          updatedAt = new Date().toISOString();
+        } else {
+          publishedDate = post.publishedDate || "";
+          publishedAt = publishedDate ? (new Date(publishedDate).toISOString() || new Date().toISOString()) : new Date().toISOString();
+          createdAt = publishedAt;
+          updatedAt = publishedAt;
+        }
+
+        post.publishedAt = publishedAt;
+        post.publishedDate = publishedDate;
+        post.createdAt = createdAt;
+        post.updatedAt = updatedAt;
+
         const listingItem = uniqueItems.find((u) => u.url === post.url);
         if (listingItem) {
-          listingItem.publishedDate = post.publishedDate;
+          listingItem.publishedDate = publishedDate;
+          listingItem.publishedAt = publishedAt;
           listingItem.slug = safeSlug;
           if (post.category !== listingItem.category) {
             post.category = listingItem.category;
           }
         }
         posts[safeSlug] = post;
-        fs.writeFileSync(path.join(postsDir, `${safeSlug}.json`), JSON.stringify(post, null, 2), "utf-8");
+        fs.writeFileSync(postFilePath, JSON.stringify(post, null, 2), "utf-8");
       }
     }
     completed += batch.length;
@@ -102,20 +134,47 @@ async function main() {
   const outDir = path.resolve(process.cwd(), "data");
   fs.mkdirSync(outDir, { recursive: true });
 
+  const scrapedJsonPath = path.join(outDir, "scraped.json");
+  let existingScraped: any = null;
+  if (fs.existsSync(scrapedJsonPath)) {
+    try {
+      existingScraped = JSON.parse(fs.readFileSync(scrapedJsonPath, "utf-8"));
+    } catch {}
+  }
+
+  const existingMap = new Map<string, any>();
+  if (existingScraped) {
+    for (const cat of ["results", "admitCards", "latestJobs", "answerKeys", "documents", "admissions"]) {
+      for (const it of existingScraped[cat] || []) {
+        if (it.slug) existingMap.set(it.slug, it);
+      }
+    }
+  }
+
   // Flatten categories from all items
   const catItems: Record<string, ScrapedItem[]> = {
     results: [], admitCards: [], latestJobs: [], answerKeys: [], documents: [], admissions: [],
   };
   for (const item of uniqueItems) {
+    if (existingMap.has(item.slug)) {
+      const old = existingMap.get(item.slug);
+      item.publishedDate = old.publishedDate || item.publishedDate || "";
+      item.publishedAt = old.publishedAt || item.publishedAt || (item.publishedDate ? new Date(item.publishedDate).toISOString() : "");
+    }
     const cat = item.category as keyof typeof catItems;
     if (catItems[cat]) catItems[cat].push(item);
     else catItems.results.push(item); // default category
   }
 
   // Build slim listing (no full post content) + lastDate/isExpired lookup
-  const slimPosts: Record<string, { lastDate?: string; isExpired?: boolean }> = {};
+  const slimPosts: Record<string, { lastDate?: string; isExpired?: boolean; publishedDate?: string; publishedAt?: string }> = {};
   for (const [slug, p] of Object.entries(posts)) {
-    slimPosts[slug] = { lastDate: p.lastDate, isExpired: p.isExpired };
+    slimPosts[slug] = {
+      lastDate: p.lastDate,
+      isExpired: p.isExpired,
+      publishedDate: p.publishedDate,
+      publishedAt: p.publishedAt,
+    };
   }
 
   const output = {

@@ -258,15 +258,59 @@ async function main() {
   let updated = 0;
 
   for (const item of fresh) {
+    const bucket = existing[item.category] || [];
+    const index = bucket.findIndex((old) => old.slug === item.slug || old.title.toLowerCase() === item.title.toLowerCase());
+    const oldListing = index !== -1 ? bucket[index] : null;
+
+    const postPath = resolve(POSTS_DIR, `${item.slug}.json`);
+    let existingPost = null;
+    if (existsSync(postPath)) {
+      try {
+        existingPost = JSON.parse(readFileSync(postPath, "utf8"));
+      } catch {}
+    }
+
+    const detail = await scrapeDetail(item);
+
+    // Publication date preservation:
+    // If post already exists, permanently retain existing publishedAt, createdAt, publishedDate.
+    // If it is a new post, assign permanent publishedAt once upon creation.
+    let publishedAt;
+    let publishedDate;
+    let createdAt;
+    let updatedAt;
+
+    if (existingPost) {
+      publishedAt = existingPost.publishedAt || existingPost.createdAt || existingPost.publishedDate || oldListing?.publishedAt || oldListing?.publishedDate || detail.publishedDate || new Date().toISOString();
+      publishedDate = existingPost.publishedDate || oldListing?.publishedDate || detail.publishedDate || publishedAt;
+      createdAt = existingPost.createdAt || publishedAt;
+      updatedAt = new Date().toISOString();
+    } else if (oldListing && (oldListing.publishedAt || oldListing.publishedDate)) {
+      publishedAt = oldListing.publishedAt || oldListing.publishedDate || detail.publishedDate || new Date().toISOString();
+      publishedDate = oldListing.publishedDate || detail.publishedDate || publishedAt;
+      createdAt = publishedAt;
+      updatedAt = new Date().toISOString();
+    } else {
+      publishedDate = detail.publishedDate || "";
+      publishedAt = publishedDate ? (new Date(publishedDate).toISOString() || new Date().toISOString()) : new Date().toISOString();
+      createdAt = publishedAt;
+      updatedAt = publishedAt;
+    }
+
+    detail.publishedAt = publishedAt;
+    detail.publishedDate = publishedDate;
+    detail.createdAt = createdAt;
+    detail.updatedAt = updatedAt;
+
     const publicItem = {
       title: item.title,
       url: publicUrl(item.slug),
       category: item.category,
       slug: item.slug,
+      publishedDate,
+      publishedAt,
     };
 
-    const bucket = existing[item.category] || [];
-    const index = bucket.findIndex((old) => old.slug === item.slug || old.title.toLowerCase() === item.title.toLowerCase());
     if (index === -1) {
       bucket.unshift(publicItem);
       added++;
@@ -276,11 +320,13 @@ async function main() {
     }
     existing[item.category] = bucket;
 
-    const detail = await scrapeDetail(item);
     existing.posts[item.slug] = {
+      ...(existing.posts[item.slug] || {}),
       lastDate: detail.importantDates.find((d) => d.toLowerCase().includes("last"))?.replace(/^.*?:/, "").trim(),
+      publishedDate,
+      publishedAt,
     };
-    writeFileSync(resolve(POSTS_DIR, `${item.slug}.json`), JSON.stringify(detail, null, 2), "utf8");
+    writeFileSync(postPath, JSON.stringify(detail, null, 2), "utf8");
   }
 
   for (const category of CATEGORIES) {

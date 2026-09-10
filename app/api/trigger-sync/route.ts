@@ -32,6 +32,7 @@ interface PostItem {
   category: string;
   slug: string;
   publishedDate: string;
+  publishedAt?: string;
 }
 
 async function fetchPage(url: string): Promise<string> {
@@ -253,12 +254,17 @@ async function scrapePostDetail(sourceUrl: string, item: { title: string; slug: 
       }
     });
 
+    const publishedAt = publishedDate ? (new Date(publishedDate).toISOString() || new Date().toISOString()) : new Date().toISOString();
+
     return {
       title: item.title,
       slug: item.slug,
       url: `/post/${item.slug}`,
       category: item.category,
       publishedDate,
+      publishedAt,
+      createdAt: publishedAt,
+      updatedAt: publishedAt,
       intro,
       importantDates: [...new Set(importantDates.map(cleanText).filter(Boolean))],
       applicationFee: [...new Set(applicationFee.map(cleanText).filter(Boolean))],
@@ -266,9 +272,11 @@ async function scrapePostDetail(sourceUrl: string, item: { title: string; slug: 
       fullContentHtml: "",
     };
   } catch {
+    const publishedAt = new Date().toISOString();
     return {
       title: item.title, slug: item.slug, url: `/post/${item.slug}`,
-      category: item.category, publishedDate: "", intro: "",
+      category: item.category, publishedDate: "", publishedAt,
+      createdAt: publishedAt, updatedAt: publishedAt, intro: "",
       importantDates: [], applicationFee: [], importantLinks: [], fullContentHtml: "",
     };
   }
@@ -358,9 +366,11 @@ export async function POST(request: Request) {
       for (const item of [...fresh, ...oldItems]) {
         if (!seen.has(item.slug)) {
           seen.add(item.slug);
-          // If fresh item has no publishedDate, restore from existing record
-          if (!item.publishedDate && oldBySlug.has(item.slug)) {
-            item.publishedDate = oldBySlug.get(item.slug)!.publishedDate || "";
+          // If fresh item has no publishedDate or publishedAt, restore from existing record
+          if (oldBySlug.has(item.slug)) {
+            const old = oldBySlug.get(item.slug)!;
+            item.publishedDate = old.publishedDate || item.publishedDate || "";
+            item.publishedAt = old.publishedAt || item.publishedAt || (item.publishedDate ? new Date(item.publishedDate).toISOString() : "");
           }
           combined.push(item);
         }
@@ -379,13 +389,17 @@ export async function POST(request: Request) {
       const guessedUrl = `https://www.sarkariexam.com/${item.slug}/`;
       const detail = await scrapePostDetail(guessedUrl, item);
 
-      // Sync real publishedDate back into the listing item (so scraped.json gets the actual date)
-      if (detail.publishedDate) {
-        item.publishedDate = detail.publishedDate;
+      // Sync real publishedDate and publishedAt back into the listing item (so scraped.json gets the actual date)
+      if (detail.publishedDate || detail.publishedAt) {
+        item.publishedDate = detail.publishedDate || "";
+        item.publishedAt = detail.publishedAt || (detail.publishedDate ? new Date(detail.publishedDate).toISOString() : "");
         // Also update in merged data
         for (const cat of Object.values(merged)) {
           const found = (cat as PostItem[]).find(m => m.slug === item.slug);
-          if (found) found.publishedDate = detail.publishedDate;
+          if (found) {
+            found.publishedDate = item.publishedDate;
+            found.publishedAt = item.publishedAt;
+          }
         }
       }
 

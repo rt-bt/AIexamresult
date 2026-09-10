@@ -63,10 +63,19 @@ function generateFAQs(title, dates, links, type) {
   return faqs;
 }
 
+function formatIsoDate(d) {
+  if (!d) return undefined;
+  const parsed = new Date(d);
+  if (isNaN(parsed.getTime())) return undefined;
+  return parsed.toISOString().split("T")[0];
+}
+
 function addJsonLd(post, slug) {
   const type = post.category || "";
   const url = `https://www.aiexamresult.com/post/${slug}`;
   const faqs = generateFAQs(post.title, post.importantDates, post.importantLinks, type);
+  const datePublished = formatIsoDate(post.publishedAt) || formatIsoDate(post.createdAt) || formatIsoDate(post.publishedDate) || (typeof post.publishedDate === "string" && post.publishedDate.trim() ? post.publishedDate : undefined);
+  const dateModified = formatIsoDate(post.updatedAt) || datePublished;
   const schema = {
     "@context": "https://schema.org",
     "@graph": [
@@ -84,8 +93,8 @@ function addJsonLd(post, slug) {
           "@type": "ImageObject",
           url: "https://www.aiexamresult.com/og-image.svg"
         },
-        datePublished: post.publishedDate || new Date().toISOString().split("T")[0],
-        dateModified: new Date().toISOString().split("T")[0],
+        ...(datePublished ? { datePublished } : {}),
+        ...(dateModified ? { dateModified } : {}),
         author: {
           "@type": "Organization",
           name: "All India Exam Result",

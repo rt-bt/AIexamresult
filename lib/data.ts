@@ -7,18 +7,20 @@ export type PostCard = {
   slug: string;
   lastDate?: string;
   isExpired?: boolean;
+  publishedAt?: string;
+  publishedDate?: string;
 };
 
 export const trendingExams = ["SSC CGL", "UPSC CSE", "Railway ALP", "NEET UG", "CTET", "UP Police"];
 
 type ScrapedData = {
-  results: { title: string; url: string; category: string; slug: string; publishedDate?: string }[];
-  admitCards: { title: string; url: string; category: string; slug: string; publishedDate?: string }[];
-  latestJobs: { title: string; url: string; category: string; slug: string; publishedDate?: string }[];
-  answerKeys: { title: string; url: string; category: string; slug: string; publishedDate?: string }[];
-  documents: { title: string; url: string; category: string; slug: string; publishedDate?: string }[];
-  admissions: { title: string; url: string; category: string; slug: string; publishedDate?: string }[];
-  posts: Record<string, { lastDate?: string; isExpired?: boolean }>;
+  results: { title: string; url: string; category: string; slug: string; publishedDate?: string; publishedAt?: string }[];
+  admitCards: { title: string; url: string; category: string; slug: string; publishedDate?: string; publishedAt?: string }[];
+  latestJobs: { title: string; url: string; category: string; slug: string; publishedDate?: string; publishedAt?: string }[];
+  answerKeys: { title: string; url: string; category: string; slug: string; publishedDate?: string; publishedAt?: string }[];
+  documents: { title: string; url: string; category: string; slug: string; publishedDate?: string; publishedAt?: string }[];
+  admissions: { title: string; url: string; category: string; slug: string; publishedDate?: string; publishedAt?: string }[];
+  posts: Record<string, { lastDate?: string; isExpired?: boolean; publishedAt?: string; publishedDate?: string }>;
   fetchedAt: string;
 };
 
@@ -49,7 +51,8 @@ export function getPostBySlug(slug: string) {
   return null;
 }
 
-export function parseDate(str: string): Date {
+export function parseDate(str?: string | null): Date | null {
+  if (!str || typeof str !== "string") return null;
   // Strip pipe-separated time part e.g. "05 September 2026 | 08:20 PM"
   const withoutTime = str
     .replace(/\uFFFD/g, " ")
@@ -57,6 +60,10 @@ export function parseDate(str: string): Date {
     .replace(/\s*\|\s*\d{1,2}:\d{2}\s*(?:AM|PM).*/i, "")   // "| 08:20 PM" style
     .replace(/[\s:|]+\d{1,2}:\d{2}\s*(?:AM|PM).*$/i, "")   // plain "08:20 PM" suffix
     .trim();
+
+  // Exclude non-date link or button text
+  if (/^(click here|download|view|official|notification|merit list)/i.test(withoutTime)) return null;
+
   // "05 September 2026" or "5 Sep 2026"
   const m = withoutTime.match(/^(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})$/);
   if (m) {
@@ -69,9 +76,25 @@ export function parseDate(str: string): Date {
     const d = new Date(`${m2[3]}-${m2[2].substring(0, 3)}-${m2[1].padStart(2, "0")}`);
     if (!isNaN(d.getTime())) return d;
   }
+  // "DD-MM-YYYY" or "DD/MM/YYYY"
+  const m3 = withoutTime.match(/^(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{4})$/);
+  if (m3) {
+    const d = new Date(`${m3[3]}-${m3[2].padStart(2, "0")}-${m3[1].padStart(2, "0")}`);
+    if (!isNaN(d.getTime())) return d;
+  }
   // ISO / RFC2822 / any other JS-parseable format
   const d = new Date(withoutTime);
-  return isNaN(d.getTime()) ? new Date() : d;
+  return isNaN(d.getTime()) ? null : d;
+}
+
+export function formatDisplayDate(raw?: string | null): string {
+  if (!raw) return "";
+  const d = parseDate(raw);
+  if (d) {
+    return d.toLocaleDateString("en-IN", { day: "2-digit", month: "short", year: "numeric" });
+  }
+  // If parsing failed but string has a 4-digit year, return trimmed string as fallback
+  return /\d{4}/.test(raw) ? raw.trim() : "";
 }
 
 function cleanLastDate(raw?: string): string | undefined {
@@ -87,30 +110,34 @@ function cleanLastDate(raw?: string): string | undefined {
   return undefined;
 }
 
-function toPostCard(items: ({ title: string; url: string; category: string; slug: string; publishedDate?: string })[] | undefined, _category: string, fallbacks: PostCard[]): PostCard[] {
+function toPostCard(items: ({ title: string; url: string; category: string; slug: string; publishedDate?: string; publishedAt?: string })[] | undefined, _category: string, fallbacks: PostCard[]): PostCard[] {
   if (!items || items.length === 0) return fallbacks;
-  const NOW = Date.now();
+  const s2 = getScraped();
+
   const sorted = [...items].sort((a, b) => {
-    // Items without publishedDate are treated as "today" so they float to the top
-    const da = a.publishedDate ? parseDate(a.publishedDate).getTime() : NOW;
-    const db = b.publishedDate ? parseDate(b.publishedDate).getTime() : NOW;
+    const dateStrA = a.publishedAt || a.publishedDate || s2?.posts?.[a.slug]?.publishedAt || s2?.posts?.[a.slug]?.publishedDate;
+    const dateStrB = b.publishedAt || b.publishedDate || s2?.posts?.[b.slug]?.publishedAt || s2?.posts?.[b.slug]?.publishedDate;
+    const da = dateStrA ? (parseDate(dateStrA)?.getTime() ?? 0) : 0;
+    const db = dateStrB ? (parseDate(dateStrB)?.getTime() ?? 0) : 0;
     return db - da;
   });
+
   return sorted.map((item) => {
-    const s2 = getScraped();
     const detail = s2?.posts?.[item.slug];
-    const dt = item.publishedDate ? parseDate(item.publishedDate) : new Date();
-    // Cap dates that are in the future (data artifacts) to today
-    const displayDate = dt > new Date() ? new Date() : dt;
+    const permanentDate = item.publishedAt || item.publishedDate || detail?.publishedAt || detail?.publishedDate || "";
+    const displayDate = formatDisplayDate(permanentDate);
+
     return {
       title: item.title,
       excerpt: `Latest ${item.category} update from official sources. Check details, important dates and apply online.`,
       category: formatCategory(item.category),
-      date: displayDate ? displayDate.toLocaleDateString("en-IN", { day: "2-digit", month: "short", year: "numeric" }) : "",
+      date: displayDate,
       state: guessState(item.title),
       slug: item.slug,
       lastDate: cleanLastDate(detail?.lastDate),
       isExpired: detail?.isExpired,
+      publishedAt: item.publishedAt || detail?.publishedAt,
+      publishedDate: item.publishedDate || detail?.publishedDate,
     };
   });
 }

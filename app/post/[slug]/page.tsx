@@ -74,8 +74,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const canonicalUrl = `${SITE_URL}/post/${slug}`;
 
   // Dynamic 1200x630 Feature Image for Google Discover & Social sharing
-  const publishedDateStr = post.publishedDate ? post.publishedDate.split("T")[0] : "2026";
+  const rawDateStr = post.publishedAt || post.publishedDate || post.createdAt;
+  const parsedDateObj = parseDate(rawDateStr);
+  const publishedDateStr = parsedDateObj ? parsedDateObj.toISOString().split("T")[0] : (rawDateStr && /\d{4}/.test(rawDateStr) ? rawDateStr.split("T")[0] : "2026");
   const ogImageUrl = `${SITE_URL}/api/og?title=${encodeURIComponent(title)}&cat=${encodeURIComponent(cat)}&date=${encodeURIComponent(publishedDateStr)}`;
+
+  const publishedIso = parsedDateObj ? parsedDateObj.toISOString() : (post.publishedAt || post.publishedDate || undefined);
+  const modifiedIso = post.updatedAt ? new Date(post.updatedAt).toISOString() : (post.lastDate || publishedIso || undefined);
 
   return {
     title: seoTitle,
@@ -86,8 +91,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       description: desc,
       type: "article",
       url: canonicalUrl,
-      publishedTime: post.publishedDate || undefined,
-      modifiedTime: post.lastDate || post.publishedDate || undefined,
+      publishedTime: publishedIso,
+      modifiedTime: modifiedIso,
       images: [{ url: ogImageUrl, width: 1200, height: 630, alt: title, type: "image/png" }],
       siteName: "All India Exam Result",
       locale: "en_IN",
@@ -140,14 +145,17 @@ async function getPostDetail(slug: string) {
     const allItems = Object.values(sectionItems).flat();
     const found = allItems.find((item) => item.slug === slug);
     if (found) {
+      const foundDate = found.publishedAt || found.publishedDate || found.date || "";
       return {
         title: found.title,
         category: found.category || "Updates",
-        publishedDate: found.date || "2026",
+        publishedAt: found.publishedAt,
+        publishedDate: foundDate,
+        createdAt: found.publishedAt || foundDate,
         lastDate: found.lastDate,
         intro: `${found.title} — check latest notification, eligibility criteria, application process, and official download links.`,
         importantDates: [
-          `Notification Date: ${found.date || "2026"}`,
+          `Notification Date: ${foundDate || "As per official notification"}`,
           ...(found.lastDate ? [`Last Date to Apply: ${found.lastDate}`] : ["Application Schedule: As per official notification"])
         ],
         importantLinks: [
@@ -284,15 +292,13 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
   }
 
   const title = post.title;
-  const publishedDate = post.publishedDate
-    ? (() => {
-        const d = parseDate(post.publishedDate);
-        // Use stored date as-is — never replace with today's date
-        return isNaN(d.getTime())
-          ? post.publishedDate // show raw string if unparseable
-          : d.toLocaleDateString("en-US", { day: "numeric", month: "long", year: "numeric" });
-      })()
-    : "";
+  const rawPostDate = post.publishedAt || post.publishedDate || post.createdAt;
+  const parsedPostDate = parseDate(rawPostDate);
+  const publishedDate = parsedPostDate
+    ? parsedPostDate.toLocaleDateString("en-US", { day: "numeric", month: "long", year: "numeric" })
+    : (rawPostDate && /\d{4}/.test(rawPostDate) ? rawPostDate : "");
+  const publishedIso = parsedPostDate ? parsedPostDate.toISOString() : (post.publishedAt || (rawPostDate && /\d{4}/.test(rawPostDate) ? rawPostDate : undefined));
+  const modifiedIso = post.updatedAt ? new Date(post.updatedAt).toISOString() : (post.lastDate || publishedIso || undefined);
   const officialUrl = post.importantLinks?.find((l: { label: string; url: string }) =>
     l.label?.toLowerCase().includes("official website") || l.label?.toLowerCase().includes("official site")
   )?.url;
@@ -474,12 +480,12 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         "@id": `${SITE_URL}/post/${slug}#article`,
         headline: title,
         description: cleanIntro,
-        ...(post.publishedDate && { datePublished: post.publishedDate }),
-        ...(post.lastDate || post.publishedDate ? { dateModified: post.lastDate || post.publishedDate } : {}),
+        ...(publishedIso && { datePublished: publishedIso }),
+        ...(modifiedIso ? { dateModified: modifiedIso } : {}),
         author: { "@id": `${SITE_URL}/#organization` },
         publisher: { "@id": `${SITE_URL}/#organization` },
         mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}/post/${slug}` },
-        image: `${SITE_URL}/api/og?title=${encodeURIComponent(title)}&cat=${encodeURIComponent(post.category || "Sarkari Result")}&date=${encodeURIComponent(post.publishedDate ? post.publishedDate.split("T")[0] : "2026")}`,
+        image: `${SITE_URL}/api/og?title=${encodeURIComponent(title)}&cat=${encodeURIComponent(post.category || "Sarkari Result")}&date=${encodeURIComponent(publishedIso ? publishedIso.split("T")[0] : (rawPostDate && /\d{4}/.test(rawPostDate) ? rawPostDate.split("T")[0] : "2026"))}`,
         articleSection: post.category || "Government Exam",
         inLanguage: "en-IN",
         speakable: { "@type": "SpeakableSpecification", cssSelector: ["h1", "h2", "h3"] }
@@ -489,7 +495,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         "@id": `${SITE_URL}/post/${slug}#jobposting`,
         title: title,
         description: cleanIntro,
-        datePosted: post.publishedDate ? (parseDate(post.publishedDate)?.toISOString() || new Date().toISOString()) : new Date().toISOString(),
+        datePosted: publishedIso || (parsedPostDate?.toISOString() || "2026-09-01T00:00:00.000Z"),
         ...(validThroughDate ? { validThrough: validThroughDate } : {}),
         employmentType: "FULL_TIME",
         hiringOrganization: {
@@ -573,7 +579,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
 
   const introText = post.intro || (post.fullContentHtml ? stripHtml(post.fullContentHtml).substring(0, 300) : "");
 
-  const postDateStr = post.publishedDate ? post.publishedDate.split("T")[0] : "2026";
+  const postDateStr = publishedIso ? publishedIso.split("T")[0] : (rawPostDate && /\d{4}/.test(rawPostDate) ? rawPostDate.split("T")[0] : "2026");
   const postOgImageUrl = `${SITE_URL}/api/og?title=${encodeURIComponent(title)}&cat=${encodeURIComponent(post.category || "Sarkari Result")}&date=${encodeURIComponent(postDateStr)}`;
 
   return (

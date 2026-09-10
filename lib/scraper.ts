@@ -9,6 +9,7 @@ export interface ScrapedItem {
   category: string;
   slug: string;
   publishedDate?: string;
+  publishedAt?: string;
 }
 
 export interface PostSummary {
@@ -17,6 +18,9 @@ export interface PostSummary {
   url: string;
   category: string;
   publishedDate: string;
+  publishedAt?: string;
+  createdAt?: string;
+  updatedAt?: string;
   intro: string;
 }
 

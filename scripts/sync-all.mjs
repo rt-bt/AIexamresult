@@ -761,8 +761,28 @@ async function main() {
       if (fs.existsSync(oldPath)) {
         const old = JSON.parse(fs.readFileSync(oldPath, "utf8"));
         if (old.cutoff) detail.cutoff = old.cutoff;
+        // PRESERVE ORIGINAL PUBLICATION AND CREATION DATES
+        const originalDate = old.publishedAt || old.createdAt || old.publishedDate;
+        if (originalDate) {
+          detail.publishedAt = old.publishedAt || originalDate;
+          detail.createdAt = old.createdAt || detail.publishedAt;
+          detail.publishedDate = old.publishedDate || detail.publishedAt;
+        }
+        detail.updatedAt = new Date().toISOString();
+        return detail;
       }
     } catch {}
+    // New post: set permanent publication dates once
+    const nowIso = new Date().toISOString();
+    if (!detail.publishedAt) {
+      detail.publishedAt = detail.publishedDate ? (new Date(detail.publishedDate).toISOString() || nowIso) : nowIso;
+    }
+    if (!detail.createdAt) {
+      detail.createdAt = detail.publishedAt;
+    }
+    if (!detail.publishedDate) {
+      detail.publishedDate = detail.publishedAt;
+    }
     return detail;
   }
 
@@ -777,7 +797,6 @@ async function main() {
         importantDates: d.importantDates || [], applicationFee: d.applicationFee || [],
         importantLinks: d.importantLinks || [], fullContentHtml: "",
       };
-      item.publishedDate = d.publishedDate;
       item.slug = slug;
     } else if (item.url.includes("resultbharat.com") || item.url.includes("sarkarialert.net") || item.url.includes("rojgarresult.com")) {
       const d = await scrapeGenericDetail(item.url);
@@ -792,10 +811,19 @@ async function main() {
     }
     detail = mergeExistingFields(slug, detail);
     detail = generateSEOContent(detail);
+
+    // Propagate permanent publication dates to listing item
+    item.publishedDate = detail.publishedDate;
+    item.publishedAt = detail.publishedAt;
+
     if (!existing.posts) existing.posts = {};
-    // Store only slim listing data, not full detail (keeps scraped.json < 1MB)
+    // Store slim listing data + permanent date lookup
     const lastDate = detail.importantDates?.find(d => d.toLowerCase().includes("last") || d.toLowerCase().includes("apply"));
-    existing.posts[slug] = { lastDate: lastDate ? lastDate.replace(/^.*?:/, "").trim() : undefined };
+    existing.posts[slug] = {
+      lastDate: lastDate ? lastDate.replace(/^.*?:/, "").trim() : undefined,
+      publishedDate: detail.publishedDate,
+      publishedAt: detail.publishedAt,
+    };
     writeFileSync(POSTS_DIR + "/" + slug + ".json", JSON.stringify(detail, null, 2), "utf8");
     return 1;
   }
