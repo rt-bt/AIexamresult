@@ -2,6 +2,14 @@
 export const scrapedData = {
   "results": [
     {
+      "title": "UPSSSC Junior Assistant, Clerk Grade II 2023 Final Result 2026",
+      "url": "/post/upsssc-junior-assistant-2025",
+      "category": "results",
+      "slug": "upsssc-junior-assistant-2025",
+      "publishedDate": "19 May 2026",
+      "publishedAt": "2026-05-18T18:30:00.000Z"
+    },
+    {
       "title": "AFCAT 02/2026 Result – Out",
       "url": "/post/afcat-02-2026",
       "category": "results",
@@ -1859,6 +1867,14 @@ export const scrapedData = {
     }
   ],
   "admitCards": [
+    {
+      "title": "UPSSSC PET Exam Date 2026",
+      "url": "/post/upsssc-pet-2026",
+      "category": "admitCards",
+      "slug": "upsssc-pet-2026",
+      "publishedDate": "8 September 2026",
+      "publishedAt": "2026-09-08T05:18:58.000Z"
+    },
     {
       "title": "MPESB MP Police HC Computer and ASI Computer Practical Exam Admit Card 2026",
       "url": "/post/mp-police-hc-and-asi-2026",
@@ -7305,7 +7321,7 @@ export const scrapedData = {
       "publishedAt": "2026-07-05T18:30:00.000Z"
     },
     "afcat-02-2026": {
-      "lastDate": "21 June 2026",
+      "lastDate": "21 June 2026 (Extend)",
       "publishedDate": "9 September 2026",
       "publishedAt": "2026-09-09T07:13:58.000Z"
     },
@@ -8798,7 +8814,7 @@ export const scrapedData = {
       "publishedAt": "2026-09-09T04:47:00.000Z"
     },
     "up-scvtup-iti-admissions-2026": {
-      "lastDate": "07 August 2026",
+      "lastDate": "07 August 2026 (Extended)",
       "publishedDate": "27 August 2026",
       "publishedAt": "2026-08-27T09:07:30.000Z"
     },
@@ -8953,7 +8969,7 @@ export const scrapedData = {
       "publishedAt": "2026-08-20T12:02:45.000Z"
     },
     "bank-of-baroda-lbo-2026": {
-      "lastDate": "17 September 2026",
+      "lastDate": "17 September 2026 Extended",
       "publishedDate": "7 September 2026",
       "publishedAt": "2026-09-07T12:31:14.000Z"
     },
@@ -8992,7 +9008,7 @@ export const scrapedData = {
       "publishedAt": "2024-10-24T11:40:24.000Z"
     },
     "rajasthan-police-constable-recruitment": {
-      "lastDate": null,
+      "lastDate": "APPLICATION FEE • General / OBC / EWS – Rs. 600/- • SC / ST – Rs. 400/- Make the payment ‘online’ through Cash at Rajasthan Emitra or Pay Through Debit Card, Credit Card, Net Banking.",
       "publishedDate": "5 October 2024",
       "publishedAt": "2024-10-05T15:19:38.000Z"
     },
@@ -9031,12 +9047,12 @@ export const scrapedData = {
       "publishedAt": "2026-01-05T09:00:50.000Z"
     },
     "up-khasra-khatauni-online-form": {
-      "lastDate": null,
+      "lastDate": "Last Date for Check Online Verification – As Per Schedule",
       "publishedDate": "5 January 2026",
       "publishedAt": "2026-01-05T07:35:02.000Z"
     },
     "bihar-jamin-dakhil-kharij-online-apply-2026": {
-      "lastDate": null,
+      "lastDate": "Last Date for Check Online Verification – As Per Schedule",
       "publishedDate": "5 January 2026",
       "publishedAt": "2026-01-05T07:28:14.000Z"
     },
@@ -10463,7 +10479,7 @@ export const scrapedData = {
       "publishedAt": "2026-09-07T04:43:13.000Z"
     },
     "bcece-admission-2026": {
-      "lastDate": "13 May 2026",
+      "lastDate": "13 May 2026 (Extended)",
       "publishedDate": "7 September 2026",
       "publishedAt": "2026-09-07T11:37:27.000Z"
     },
@@ -10488,7 +10504,7 @@ export const scrapedData = {
       "publishedAt": "2026-09-07T12:18:52.000Z"
     },
     "rrb-railway-group-d-2026": {
-      "lastDate": "09 March 2026",
+      "lastDate": "09 March 2026 (Extend)",
       "publishedDate": "8 September 2026",
       "publishedAt": "2026-09-08T06:22:41.000Z"
     },
@@ -10918,10 +10934,10 @@ export const scrapedData = {
       "publishedAt": "2026-09-01T00:00:00.000Z"
     }
   },
-  "fetchedAt": "2026-09-09T13:03:17.109Z",
+  "fetchedAt": "2026-09-10T04:23:42.337Z",
   "seo": {
-    "lastOptimized": "2026-09-09T13:03:23.829Z",
-    "totalPosts": 1777,
+    "lastOptimized": "2026-09-10T04:23:47.343Z",
+    "totalPosts": 1778,
     "websiteName": "All India Exam Result",
     "websiteUrl": "https://www.aiexamresult.com",
     "description": "Sarkari Result 2026 - Get fastest government job alerts, sarkari naukri, exam results, admit cards & answer keys. SSC, UPSC, Railway, Banking, UP, Bihar & all India exams."
