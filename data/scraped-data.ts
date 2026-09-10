@@ -2605,7 +2605,7 @@ export const scrapedData = {
     },
     {
       "title": "SSC Delhi Police Constable Executive PE & MT Admit Card 2026",
-      "url": "https://www.sarkariexam.com/ssc-delhi-police-constable-executive-2026",
+      "url": "/post/ssc-delhi-police-constable-executive-2026",
       "category": "admitCards",
       "slug": "ssc-delhi-police-constable-executive-2026",
       "publishedDate": "19 June 2026",
@@ -5431,6 +5431,14 @@ export const scrapedData = {
     }
   ],
   "answerKeys": [
+    {
+      "title": "BSF HCM & ASI Steno Answer Key 2026",
+      "url": "/post/bsf-hcm-asi-steno-2024",
+      "category": "answerKeys",
+      "slug": "bsf-hcm-asi-steno-2024",
+      "publishedDate": "6 June 2026",
+      "publishedAt": "2026-06-05T18:30:00.000Z"
+    },
     {
       "title": "Railway RRB Group D Answer Key 2026 – Out",
       "url": "/post/rrb-railway-group-d-2026",
@@ -8969,7 +8977,7 @@ export const scrapedData = {
       "publishedAt": "2026-08-20T12:02:45.000Z"
     },
     "bank-of-baroda-lbo-2026": {
-      "lastDate": "17 September 2026 Extended",
+      "lastDate": "07 September 2026",
       "publishedDate": "7 September 2026",
       "publishedAt": "2026-09-07T12:31:14.000Z"
     },
@@ -10934,9 +10942,9 @@ export const scrapedData = {
       "publishedAt": "2026-09-01T00:00:00.000Z"
     }
   },
-  "fetchedAt": "2026-09-10T04:23:42.337Z",
+  "fetchedAt": "2026-09-10T06:14:55.420Z",
   "seo": {
-    "lastOptimized": "2026-09-10T04:23:47.343Z",
+    "lastOptimized": "2026-09-10T06:15:01.289Z",
     "totalPosts": 1778,
     "websiteName": "All India Exam Result",
     "websiteUrl": "https://www.aiexamresult.com",

@@ -11,6 +11,7 @@ import { ShareButtons } from "@/components/site/share-buttons";
 import { getPostBySlug, parseDate, sectionItems } from "@/lib/data";
 import { CalendarDays, ExternalLink, AlertTriangle, CheckCircle, ChevronRight, BadgeInfo, Banknote, ArrowUpRight, Gauge, Users, Clock, GraduationCap, IndianRupee, FileText, Mail, Download, Bell } from "lucide-react";
 import { AdUnit } from "@/components/ads/ad-unit";
+import { isActualJobPost, resolveJobLocation, resolveJobSalary } from "@/lib/job-schema";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.aiexamresult.com";
 
@@ -336,11 +337,10 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
     `${shortTitle} की आधिकारिक वेबसाइट ऊपर Important Links सेक्शन में "Official Website" के तहत लिंक की गई है। पूरी जानकारी और अपडेट के लिए इसे विज़िट करें।`,
   ];
 
-  // Detect if post is a job recruitment for Google Jobs (JobPosting schema)
-  const isJobPost = (post.category || "").toLowerCase().includes("job") ||
-    title.toLowerCase().includes("recruitment") ||
-    title.toLowerCase().includes("online form") ||
-    title.toLowerCase().includes("vacancy");
+  // Detect if post is a valid job recruitment for Google Jobs (JobPosting schema)
+  const isJobPost = isActualJobPost(post.category || "", title);
+  const jobLocation = resolveJobLocation(title, post.intro || "");
+  const jobSalary = resolveJobSalary(title, post);
 
   let validThroughDate = "";
   if (post.lastDate) {
@@ -506,14 +506,28 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         employmentType: "FULL_TIME",
         hiringOrganization: {
           "@type": "Organization",
-          name: hiringOrg,
+          name: jobLocation.hiringOrgName || hiringOrg,
           sameAs: officialUrl || SITE_URL
         },
         jobLocation: {
           "@type": "Place",
           address: {
             "@type": "PostalAddress",
+            streetAddress: jobLocation.streetAddress,
+            addressLocality: jobLocation.addressLocality,
+            addressRegion: jobLocation.addressRegion,
+            postalCode: jobLocation.postalCode,
             addressCountry: "IN"
+          }
+        },
+        baseSalary: {
+          "@type": "MonetaryAmount",
+          currency: "INR",
+          value: {
+            "@type": "QuantitativeValue",
+            minValue: jobSalary.minValue,
+            maxValue: jobSalary.maxValue,
+            unitText: "MONTH"
           }
         },
         directApply: true
@@ -672,6 +686,12 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                       <div className="space-y-0 divide-y divide-gray-50">
                         <InfoRow label="Category" value={post.category || "Update"} />
                         {post.totalVacancies && <InfoRow label="Total Vacancies" value={post.totalVacancies} highlight="brand" />}
+                        {isJobPost && (
+                          <InfoRow label="Pay Scale" value={jobSalary.display} highlight="green" />
+                        )}
+                        {isJobPost && (
+                          <InfoRow label="Job Location" value={`${jobLocation.addressLocality}, ${jobLocation.addressRegion}`} />
+                        )}
                         <InfoRow label="Published" value={publishedDate} />
                         {post.lastDate && (
                           <InfoRow label="Last Date" value={post.lastDate} highlight={post.isExpired ? "red" : "green"} />
