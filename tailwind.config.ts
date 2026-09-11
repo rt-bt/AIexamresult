@@ -35,7 +35,7 @@ const config: Config = {
         "fade-up": "fadeUp 0.6s ease-out forwards",
         "fade-in": "fadeIn 0.6s ease-out forwards",
         float: "float 3s ease-in-out infinite",
-        marquee: "marquee 45s linear infinite",
+        marquee: "marquee 90s linear infinite",
         "slide-up": "slideUp 0.3s ease-out",
       },
       keyframes: {
