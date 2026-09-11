@@ -79,13 +79,16 @@ export default async function sitemap({ id }: { id: string }): Promise<MetadataR
   if (catKey) {
     const data = loadListing();
     if (data && data[catKey]) {
-      for (const item of data[catKey]) {
+      const items = data[catKey];
+      for (let idx = 0; idx < items.length; idx++) {
+        const item = items[idx];
         const d = item.publishedDate ? parseDate(item.publishedDate) : null;
+        const isFresh = idx < 30 || (d && (now.getTime() - d.getTime() < 7 * 86400 * 1000));
         entries.push({
           url: `${base}/post/${item.slug}`,
           lastModified: d || now,
-          changeFrequency: "daily" as const,
-          priority: 0.7,
+          changeFrequency: isFresh ? ("hourly" as const) : ("daily" as const),
+          priority: isFresh ? 0.9 : 0.8,
         });
       }
     }

@@ -14638,7 +14638,7 @@ export const scrapedData = {
   },
   "fetchedAt": "2026-09-11T15:17:15.800Z",
   "seo": {
-    "lastOptimized": "2026-09-11T15:17:32.575Z",
+    "lastOptimized": "2026-09-11T16:38:22.359Z",
     "totalPosts": 1877,
     "websiteName": "All India Exam Result",
     "websiteUrl": "https://www.aiexamresult.com",

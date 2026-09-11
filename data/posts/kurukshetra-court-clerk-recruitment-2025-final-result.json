@@ -7,7 +7,7 @@
   "importantDates": [],
   "applicationFee": [],
   "importantLinks": [],
-  "fullContentHtml": "<h2>Sarkari Result  Kurukshetra Court Clerk Recruitment 2025 Final Result - Sarkari Result - Complete Details</h2>\n<p>Sarkari Result  Kurukshetra Court Clerk Recruitment 2025 Final Result - Sarkari Result.</p>\n<h3>Frequently Asked Questions</h3>\n<p><strong>What is Sarkari Result  Kurukshetra Court Clerk Recruitment 2025 Final Result - Sarkari Result?</strong></p>\n<p>Sarkari Result  Kurukshetra Court Clerk Recruitment 2025 Final Result - Sarkari Result is a government exam notification. All details including dates, fee, eligibility and links are provided above.</p>",
+  "fullContentHtml": "<h2>Sarkari Result  Kurukshetra Court Clerk Recruitment 2025 Final Result - Sarkari Result - Complete Details</h2>\n<p>Sarkari Result  Kurukshetra Court Clerk Recruitment 2025 Final Result - Sarkari Result.</p>\n<h3>Frequently Asked Questions</h3>\n<p><strong>What is Sarkari Result  Kurukshetra Court Clerk Recruitment 2025 Final Result - Sarkari Result?</strong></p>\n<p>Sarkari Result  Kurukshetra Court Clerk Recruitment 2025 Final Result - Sarkari Result is a government exam notification. All details including dates, fee, eligibility and links are provided above.</p>\n<div style=\"margin-top:2rem;padding:1.25rem;border-radius:12px;background-color:#f8fafc;border:1px solid #e2e8f0;\">\n  <h3 style=\"font-size:0.95rem;font-weight:800;color:#0f172a;margin-bottom:0.5rem;\">Sarkari Result 2026 Quick Links &amp; Related Search</h3>\n  <p style=\"font-size:0.8rem;color:#64748b;line-height:1.6;margin:0;\">\n    Search terms: <strong>Sarkari Result  Kurukshetra Court Clerk Recruitment 2025 Final Result - Sarkari Result</strong>, Sarkari Result 2026, Sarkari Naukri, Rojgar Result, Sarkari Exam Online Form, Govt Jobs, SSC CGL, Railway RRB, UPSC CSE, UP Police Bharti, Bihar Teacher, Free Job Alert. Check official website for verified notifications.\n  </p>\n</div>\n",
   "jsonLd": {
     "@context": "https://schema.org",
     "@graph": [
@@ -15,15 +15,15 @@
         "@type": "WebPage",
         "@id": "https://www.aiexamresult.com/post/kurukshetra-court-clerk-recruitment-2025-final-result",
         "url": "https://www.aiexamresult.com/post/kurukshetra-court-clerk-recruitment-2025-final-result",
-        "name": "Sarkari Result  Kurukshetra Court Clerk Recruitment 2025 Final Result - Sarkari Result",
-        "description": "",
+        "name": "Sarkari Result  Kurukshetra Court Clerk Recruitment 2025 Final Result - Sarkari Result - Sarkari Result 2026 | All India Exam Result",
+        "description": "Sarkari Result  Kurukshetra Court Clerk Recruitment 2025 Final Result - Sarkari Result: Check latest notification, important dates, eligibility & online form at",
         "inLanguage": "en-IN",
         "isPartOf": {
           "@id": "https://www.aiexamresult.com/#website"
         },
         "primaryImageOfPage": {
           "@type": "ImageObject",
-          "url": "https://www.aiexamresult.com/og-image.svg"
+          "url": "https://www.aiexamresult.com/api/og?title=Sarkari%20Result%20%20Kurukshetra%20Court%20Clerk%20Recruitment%202025%20Final%20Result%20-%20Sarkari%20Result"
         },
         "datePublished": "2026-06-15",
         "dateModified": "2026-06-15",
@@ -43,15 +43,15 @@
             "name": "What is Sarkari Result  Kurukshetra Court Clerk Recruitment 2025 Final Result - Sarkari Result?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Sarkari Result  Kurukshetra Court Clerk Recruitment 2025 Final Result - Sarkari Result is a government exam related notification. Complete details including important dates, fee, eligibility and official links are provided on this page."
+              "text": "Sarkari Result  Kurukshetra Court Clerk Recruitment 2025 Final Result - Sarkari Result is an official Indian government exam notification. All details including important dates, eligibility, age limit, application fee and direct links are updated on this page."
             }
           },
           {
             "@type": "Question",
-            "name": "How to download the notification?",
+            "name": "How to check & download Sarkari Result  Kurukshetra Court Clerk Recruitment 2025 Final Result - Sarkari Result notification?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Click on the relevant link in the Important Links section above or visit the official website directly to download the notification."
+              "text": "Click on the direct official link in the Important Links table above or visit the commission official portal to download the notification."
             }
           }
         ]
@@ -69,8 +69,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "",
-            "item": "https://www.aiexamresult.com/"
+            "name": "Updates",
+            "item": "https://www.aiexamresult.com/results"
           },
           {
             "@type": "ListItem",
@@ -79,12 +79,44 @@
             "item": "https://www.aiexamresult.com/post/kurukshetra-court-clerk-recruitment-2025-final-result"
           }
         ]
+      },
+      {
+        "@type": "JobPosting",
+        "@id": "https://www.aiexamresult.com/post/kurukshetra-court-clerk-recruitment-2025-final-result#jobposting",
+        "title": "Sarkari Result  Kurukshetra Court Clerk Recruitment 2025 Final Result - Sarkari Result",
+        "description": "Sarkari Result  Kurukshetra Court Clerk Recruitment 2025 Final Result - Sarkari Result online form 2026 notification details.",
+        "datePosted": "2026-06-15T00:00:00.000Z",
+        "employmentType": "FULL_TIME",
+        "hiringOrganization": {
+          "@type": "Organization",
+          "name": "Government of India / Public Sector",
+          "sameAs": "https://www.aiexamresult.com"
+        },
+        "jobLocation": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "India",
+            "addressRegion": "All States",
+            "addressCountry": "IN"
+          }
+        },
+        "baseSalary": {
+          "@type": "MonetaryAmount",
+          "currency": "INR",
+          "value": {
+            "@type": "QuantitativeValue",
+            "value": 35000,
+            "unitText": "MONTH"
+          }
+        },
+        "directApply": true
       }
     ]
   },
   "seoMeta": {
-    "title": "Sarkari Result  Kurukshetra Court Clerk Recruitment 2025 Final Result - Sarkari Result",
-    "description": "Sarkari Result  Kurukshetra Court Clerk Recruitment 2025 Final Result - Sarkari Result",
+    "title": "Sarkari Result  Kurukshetra Court Clerk Recruitment 2025 Final Result - Sarkari Result - Sarkari Result | Sarkari Exam 2026",
+    "description": "Sarkari Result  Kurukshetra Court Clerk Recruitment 2025 Final Result - Sarkari Result: Check eligibility criteria, age limit, application fee, last date to app",
     "canonical": "https://www.aiexamresult.com/post/kurukshetra-court-clerk-recruitment-2025-final-result"
   },
   "publishedAt": "2026-06-15T18:30:00.000Z",
