@@ -74,6 +74,11 @@ export function Header() {
   const { lang, setLang, t } = useLang();
   const pathname = usePathname();
 
+  const tickerList = useMemo(() => {
+    const items = getTickerItems();
+    return [...items, ...items];
+  }, []);
+
   return (
     <header className="sticky top-0 z-50 bg-[#0D9488]">
       <div className="h-1 bg-gradient-to-r from-[#F97316] via-[#EA580C] to-[#4F46E5]" />
@@ -166,12 +171,12 @@ export function Header() {
               <Sparkles className="h-3 w-3 animate-pulse" /> Latest Updates
             </span>
             <div className="overflow-hidden relative flex-1">
-              <div className="animate-marquee whitespace-nowrap inline-block">
-                {getTickerItems().map((item, i) => (
+              <div className="animate-marquee whitespace-nowrap inline-block hover:[animation-play-state:paused]">
+                {tickerList.map((item, i) => (
                   <Link
                     key={i}
                     href={item.slug ? `/post/${item.slug}` : "#"}
-                    className="mx-3.5 inline-flex items-center gap-1.5 text-white/90 transition hover:text-white"
+                    className="mx-3.5 inline-flex items-center gap-1.5 text-white/90 transition hover:text-white hover:underline"
                   >
                     <span className="rounded bg-white/15 px-1.5 py-0.5 text-[10px] font-bold text-amber-300 border border-white/10">
                       {item.category || "Update"}

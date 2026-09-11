@@ -35,7 +35,7 @@ const config: Config = {
         "fade-up": "fadeUp 0.6s ease-out forwards",
         "fade-in": "fadeIn 0.6s ease-out forwards",
         float: "float 3s ease-in-out infinite",
-        marquee: "marquee 120s linear infinite",
+        marquee: "marquee 45s linear infinite",
         "slide-up": "slideUp 0.3s ease-out",
       },
       keyframes: {
@@ -52,8 +52,8 @@ const config: Config = {
           "50%": { transform: "translateY(-10px)" },
         },
         marquee: {
-          "0%": { transform: "translateX(50%)" },
-          "100%": { transform: "translateX(-250%)" },
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-50%)" },
         },
         slideUp: {
           "0%": { opacity: "0", transform: "translateY(10px)" },
