@@ -38,35 +38,39 @@ const nav: [string, string, [string, string][]?][] = [
 ];
 
 function getTickerItems() {
-  const all = [...Object.values(sectionItems).flat(), ...boardResults];
-  const seen = new Set<string>();
-  const unique = all.filter((item) => {
-    const key = item.slug || item.title;
-    if (!key || seen.has(key)) return false;
-    seen.add(key);
-    return true;
-  });
+  const categoryLists = [
+    sectionItems["latest-jobs"] || [],
+    sectionItems["results"] || [],
+    sectionItems["admit-card"] || [],
+    sectionItems["answer-key"] || [],
+    sectionItems["admissions"] || [],
+    sectionItems["documents"] || [],
+    boardResults || [],
+  ];
 
-  return unique
-    .sort((a, b) => {
-      const getTs = (it: typeof a) => {
-        if (it.publishedAt) {
-          const t = new Date(it.publishedAt).getTime();
-          if (!isNaN(t) && t <= Date.now()) return t;
+  const mixed: (typeof categoryLists[0][0])[] = [];
+  const seen = new Set<string>();
+
+  let maxLen = 0;
+  for (const list of categoryLists) {
+    if (list.length > maxLen) maxLen = list.length;
+  }
+
+  for (let i = 0; i < maxLen && mixed.length < 40; i++) {
+    for (const list of categoryLists) {
+      if (i < list.length) {
+        const item = list[i];
+        const key = item.slug || item.title;
+        if (key && !seen.has(key)) {
+          seen.add(key);
+          mixed.push(item);
+          if (mixed.length >= 40) break;
         }
-        if (it.publishedDate) {
-          const t = new Date(it.publishedDate).getTime();
-          if (!isNaN(t) && t <= Date.now()) return t;
-        }
-        if (it.date) {
-          const d = parseDate(it.date);
-          if (d && d.getTime() <= Date.now()) return d.getTime();
-        }
-        return 0;
-      };
-      return getTs(b) - getTs(a);
-    })
-    .slice(0, 50);
+      }
+    }
+  }
+
+  return mixed;
 }
 
 export function Header() {
