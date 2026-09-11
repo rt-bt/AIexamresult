@@ -569,9 +569,22 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
     ]
   };
 
-  const cleanLinks = (post.importantLinks || []).filter((l: { label: string; url: string | undefined }) =>
-    l.url && !l.url.includes("sarkariexam.com") && !l.url.includes("sarkariresult")
-  );
+  const cleanLinks = (post.importantLinks || []).map((l: { label: string; url: string | undefined }) => {
+    let label = (l.label || "").trim();
+    const half = Math.floor(label.length / 2);
+    if (label.length > 4 && label.slice(0, half) === label.slice(half)) {
+      label = label.slice(0, half).trim();
+    }
+    return { ...l, label };
+  }).filter((l: { label: string; url: string | undefined }) => {
+    if (!l.url || l.url === "#" || l.url.startsWith("javascript")) return false;
+    const lowerUrl = l.url.toLowerCase();
+    const lowerLabel = (l.label || "").toLowerCase();
+    if (lowerLabel.includes("whatsapp") || lowerLabel.includes("telegram") || lowerLabel.includes("mobile app") || lowerLabel.includes("join channel")) return false;
+    if (lowerUrl.includes("t.me/") || lowerUrl.includes("whatsapp.com") || lowerUrl.includes("play.google.com")) return false;
+    if ((lowerUrl === "https://www.sarkariresult.com/" || lowerUrl === "https://www.sarkariresult.com" || lowerUrl === "https://www.sarkariexam.com/" || lowerUrl === "https://www.sarkariexam.com") && (lowerLabel.includes("home") || lowerLabel.includes("sarkari"))) return false;
+    return true;
+  });
 
   const contentLower = (post.fullContentHtml || "").toLowerCase();
   const titleLower = (post.title || "").toLowerCase();

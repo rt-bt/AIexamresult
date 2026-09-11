@@ -128,6 +128,16 @@ async function scrapeSarkariResult() {
   return items;
 }
 
+function cleanLinkLabel(label) {
+  if (!label) return "";
+  let clean = label.trim();
+  const half = Math.floor(clean.length / 2);
+  if (clean.length > 4 && clean.slice(0, half) === clean.slice(half)) {
+    clean = clean.slice(0, half).trim();
+  }
+  return clean;
+}
+
 async function scrapeSarkariResultDetail(url) {
   try {
     const html = await fetchHtml(url);
@@ -173,14 +183,51 @@ async function scrapeSarkariResultDetail(url) {
     });
 
     const importantLinks = [];
-    $("table a, .entry-content a").each((_, link) => {
-      const $link = $(link);
-      const label = $link.text().trim();
-      const href = $link.attr("href") || "";
-      if (label && href && href !== "#" && !href.startsWith("javascript")) {
-        importantLinks.push({ label, url: href });
+    const seenUrls = new Set();
+    $("table tr").each((_, row) => {
+      const cells = $(row).find("td, th");
+      if (cells.length >= 2) {
+        const col0Text = $(cells[0]).text().trim();
+        const $links = $(cells[1]).find("a[href]");
+        if ($links.length > 0) {
+          $links.each((_, a) => {
+            const $a = $(a);
+            const aText = $a.text().trim();
+            const href = $a.attr("href") || "";
+            if (!href || href === "#" || href.startsWith("javascript") || seenUrls.has(href)) return;
+
+            let label = col0Text;
+            if (!label || label.toLowerCase().includes("click here") || label.length < 3) {
+              label = aText;
+            } else if (aText && !aText.toLowerCase().includes("click here") && aText.toLowerCase() !== label.toLowerCase()) {
+              label = `${col0Text} (${aText})`;
+            }
+
+            label = cleanLinkLabel(label);
+            const lowerLabel = label.toLowerCase();
+            if (lowerLabel.includes("whatsapp") || lowerLabel.includes("telegram") || lowerLabel.includes("mobile app") || lowerLabel.includes("join")) return;
+
+            seenUrls.add(href);
+            importantLinks.push({ label, url: href });
+          });
+        }
       }
     });
+
+    if (importantLinks.length === 0) {
+      $("table a, .entry-content a").each((_, link) => {
+        const $link = $(link);
+        const label = cleanLinkLabel($link.text().trim());
+        const href = $link.attr("href") || "";
+        if (label && href && href !== "#" && !href.startsWith("javascript") && !seenUrls.has(href)) {
+          const lower = label.toLowerCase();
+          if (!lower.includes("whatsapp") && !lower.includes("telegram")) {
+            seenUrls.add(href);
+            importantLinks.push({ label, url: href });
+          }
+        }
+      });
+    }
 
     return { title, slug, url, publishedDate, intro, importantDates, applicationFee: [], importantLinks, fullContentHtml: "" };
   } catch {
@@ -297,29 +344,73 @@ async function scrapeSarkariExamDetail(url) {
 
     const spamLabels = ["sarkari exam mobile app", "join whatsapp channel", "join telegram channel"];
     const importantLinks = [];
+    const seenUrls = new Set();
     const $table2 = $("div.newtable2");
     if ($table2.length) {
       $table2.find("table tbody tr").each((_, row) => {
         const $tds = $(row).find("td.tcell");
         if ($tds.length >= 2) {
-          const label = $tds.eq(0).find("h4 span, h4").text().trim();
-          const linkUrl = $tds.eq(1).find("a").attr("href");
-          if (label && !label.toLowerCase().includes("important links")) {
+          const col0Text = $tds.eq(0).find("h4 span, h4").text().trim() || $tds.eq(0).text().trim();
+          const $links = $tds.eq(1).find("a[href]");
+          $links.each((_, a) => {
+            const linkUrl = $(a).attr("href") || "";
+            const aText = $(a).text().trim();
+            if (!linkUrl || linkUrl === "#" || linkUrl.startsWith("javascript") || seenUrls.has(linkUrl)) return;
+
+            let label = col0Text;
+            if (!label || label.toLowerCase().includes("important links")) {
+              label = aText;
+            } else if (aText && !aText.toLowerCase().includes("click here") && aText.toLowerCase() !== label.toLowerCase()) {
+              label = `${col0Text} (${aText})`;
+            }
+            label = cleanLinkLabel(label);
             const lower = label.toLowerCase();
             if (spamLabels.some((s) => lower.includes(s))) return;
-            if (linkUrl && (linkUrl.includes("sarkariexam.com") || linkUrl.includes("sarkariresult"))) return;
+
+            seenUrls.add(linkUrl);
             importantLinks.push({ label, url: linkUrl });
-          }
+          });
         }
       });
     }
+
+    if (importantLinks.length === 0) {
+      $("table tr").each((_, row) => {
+        const cells = $(row).find("td, th");
+        if (cells.length >= 2) {
+          const col0Text = $(cells[0]).text().trim();
+          const $links = $(cells[1]).find("a[href]");
+          $links.each((_, a) => {
+            const href = $(a).attr("href") || "";
+            const aText = $(a).text().trim();
+            if (!href || href === "#" || href.startsWith("javascript") || seenUrls.has(href)) return;
+
+            let label = col0Text || aText;
+            if (aText && !aText.toLowerCase().includes("click here") && aText.toLowerCase() !== col0Text.toLowerCase()) {
+              label = `${col0Text} (${aText})`;
+            }
+            label = cleanLinkLabel(label);
+            const lower = label.toLowerCase();
+            if (spamLabels.some((s) => lower.includes(s))) return;
+
+            seenUrls.add(href);
+            importantLinks.push({ label, url: href });
+          });
+        }
+      });
+    }
+
     if (importantLinks.length === 0) {
       $("a[href]").each((_, a) => {
         const $a = $(a);
-        const label = $a.text().trim();
+        const label = cleanLinkLabel($a.text().trim());
         const href = $a.attr("href") || "";
-        if (label && href && href !== "#" && !href.startsWith("javascript") && !href.includes("sarkariexam.com") && !href.includes("sarkariresult")) {
-          importantLinks.push({ label, url: href });
+        if (label && href && href !== "#" && !href.startsWith("javascript") && !seenUrls.has(href)) {
+          const lower = label.toLowerCase();
+          if (!spamLabels.some((s) => lower.includes(s))) {
+            seenUrls.add(href);
+            importantLinks.push({ label, url: href });
+          }
         }
       });
     }

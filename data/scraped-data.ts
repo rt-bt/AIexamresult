@@ -2328,6 +2328,14 @@ export const scrapedData = {
       "slug": "upsssc-aso-2026",
       "publishedDate": "7 September 2026",
       "publishedAt": "2026-09-06T18:30:00.000Z"
+    },
+    {
+      "title": "MPPSC Assistant Professor Result 2026",
+      "url": "https://www.sarkariexam.com/mppsc-assistant-professor-2026/",
+      "category": "results",
+      "slug": "mppsc-assistant-professor-2026",
+      "publishedDate": "2026-09-11T22:14:02+05:30",
+      "publishedAt": "2026-09-11T16:44:02.000Z"
     }
   ],
   "admitCards": [
@@ -14634,11 +14642,16 @@ export const scrapedData = {
       "lastDate": "05/10/2026",
       "publishedDate": "5 September 2026",
       "publishedAt": "2026-09-04T18:30:00.000Z"
+    },
+    "mppsc-assistant-professor-2026": {
+      "lastDate": "26 June 2026",
+      "publishedDate": "2026-09-11T22:14:02+05:30",
+      "publishedAt": "2026-09-11T16:44:02.000Z"
     }
   },
-  "fetchedAt": "2026-09-11T15:17:15.800Z",
+  "fetchedAt": "2026-09-11T16:48:37.126Z",
   "seo": {
-    "lastOptimized": "2026-09-11T16:38:22.359Z",
+    "lastOptimized": "2026-09-11T16:48:45.477Z",
     "totalPosts": 1877,
     "websiteName": "All India Exam Result",
     "websiteUrl": "https://www.aiexamresult.com",
