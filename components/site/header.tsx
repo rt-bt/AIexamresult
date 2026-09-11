@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { useState, useMemo } from "react";
 import { cn } from "@/lib/utils";
 import { Logo } from "@/components/site/logo";
-import { sectionItems } from "@/lib/data";
+import { sectionItems, boardResults, parseDate } from "@/lib/data";
 import { useLang } from "@/lib/hooks/use-lang";
 import { MobileBottomNav } from "@/components/site/mobile-bottom-nav";
 import { LanguageSelector } from "@/components/site/language-selector";
@@ -37,13 +37,36 @@ const nav: [string, string, [string, string][]?][] = [
   ["About Us", "/about"]
 ];
 
-function allTickerItems() {
-  const all = Object.values(sectionItems).flat();
-  return all.sort((a, b) => {
-    const da = a.date ? new Date(a.date.split("/").reverse().join("-") || a.date.split(" ").slice(0, 3).join(" ")).getTime() : 0;
-    const db = b.date ? new Date(b.date.split("/").reverse().join("-") || b.date.split(" ").slice(0, 3).join(" ")).getTime() : 0;
-    return db - da;
-  }).slice(0, 40);
+function getTickerItems() {
+  const all = [...Object.values(sectionItems).flat(), ...boardResults];
+  const seen = new Set<string>();
+  const unique = all.filter((item) => {
+    const key = item.slug || item.title;
+    if (!key || seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+
+  return unique
+    .sort((a, b) => {
+      const getTs = (it: typeof a) => {
+        if (it.publishedAt) {
+          const t = new Date(it.publishedAt).getTime();
+          if (!isNaN(t) && t <= Date.now()) return t;
+        }
+        if (it.publishedDate) {
+          const t = new Date(it.publishedDate).getTime();
+          if (!isNaN(t) && t <= Date.now()) return t;
+        }
+        if (it.date) {
+          const d = parseDate(it.date);
+          if (d && d.getTime() <= Date.now()) return d.getTime();
+        }
+        return 0;
+      };
+      return getTs(b) - getTs(a);
+    })
+    .slice(0, 50);
 }
 
 export function Header() {
@@ -137,16 +160,24 @@ export function Header() {
         </div>
         </div>
 
-        <div className="hidden lg:block overflow-hidden border-t border-white/10 bg-[#0F766E]">
-          <div className="flex items-center gap-3 px-4 py-1.5 text-xs">
-            <span className="flex shrink-0 items-center gap-1.5 rounded bg-[#EA580C] px-2 py-1 font-bold text-white">
-              <Sparkles className="h-3 w-3" /> Latest
+        <div className="overflow-hidden border-t border-white/10 bg-[#0F766E]">
+          <div className="flex items-center gap-2.5 px-3 py-1.5 text-xs">
+            <span className="flex shrink-0 items-center gap-1 rounded-md bg-[#EA580C] px-2 py-0.5 text-[11px] font-extrabold text-white shadow-sm">
+              <Sparkles className="h-3 w-3 animate-pulse" /> Latest Updates
             </span>
-            <div className="overflow-hidden">
-              <div className="animate-marquee whitespace-nowrap">
-                {allTickerItems().map((item, i) => (
-                  <Link key={i} href={item.slug ? `/post/${item.slug}` : "#"} className="mx-4 inline text-white/80 transition hover:text-white">
-                    {item.title}
+            <div className="overflow-hidden relative flex-1">
+              <div className="animate-marquee whitespace-nowrap inline-block">
+                {getTickerItems().map((item, i) => (
+                  <Link
+                    key={i}
+                    href={item.slug ? `/post/${item.slug}` : "#"}
+                    className="mx-3.5 inline-flex items-center gap-1.5 text-white/90 transition hover:text-white"
+                  >
+                    <span className="rounded bg-white/15 px-1.5 py-0.5 text-[10px] font-bold text-amber-300 border border-white/10">
+                      {item.category || "Update"}
+                    </span>
+                    <span className="text-[12px] font-medium">{item.title}</span>
+                    <span className="ml-2 text-white/30">•</span>
                   </Link>
                 ))}
               </div>
