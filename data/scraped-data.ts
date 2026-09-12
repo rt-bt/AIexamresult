@@ -2956,7 +2956,7 @@ export const scrapedData = {
       "publishedAt": "2026-09-04T16:51:56.000Z"
     },
     {
-      "title": "UP Home Guard PET Exam 2026 – Postponed",
+      "title": "UP Home Guard PET New Exam Date / Admit Card Date 2026",
       "url": "/post/up-home-guard-2025",
       "category": "admitCards",
       "slug": "up-home-guard-2025",
@@ -3700,8 +3700,8 @@ export const scrapedData = {
       "publishedAt": "2026-09-10T18:30:00.000Z"
     },
     {
-      "title": "UPSSSC Excise Constable 2026 Exam City Details",
-      "url": "https://rojgarresult.com/upsssc-excise-constable-2026/",
+      "title": "UPSSSC Excise Constable Exam City Details 2026",
+      "url": "/post/upsssc-excise-constable-2026",
       "category": "admitCards",
       "slug": "upsssc-excise-constable-2026",
       "publishedDate": "11 September 2026",
@@ -6718,7 +6718,7 @@ export const scrapedData = {
       "publishedAt": "2026-09-04T18:30:00.000Z"
     },
     {
-      "title": "UPSC EPFO APFC Online Form 2026 – Last Date",
+      "title": "UPSC EPFO APFC Online Form 2026 – Extend",
       "url": "/post/upsc-epfo-apfc-2026",
       "category": "latestJobs",
       "slug": "upsc-epfo-apfc-2026",
@@ -11813,7 +11813,7 @@ export const scrapedData = {
       "publishedAt": "2026-08-24T18:30:00.000Z"
     },
     "upsssc-excise-constable-2026": {
-      "lastDate": "24/06/2026",
+      "lastDate": "24 June 2026",
       "publishedDate": "11 September 2026",
       "publishedAt": "2026-09-10T18:30:00.000Z"
     },
@@ -13829,7 +13829,7 @@ export const scrapedData = {
       "publishedAt": "2026-09-10T18:09:45.000Z"
     },
     "upsc-epfo-apfc-2026": {
-      "lastDate": "11 September 2026",
+      "lastDate": "14 September 2026",
       "publishedDate": "11 September 2026",
       "publishedAt": "2026-09-10T18:30:00.000Z"
     },
@@ -14674,9 +14674,9 @@ export const scrapedData = {
       "publishedAt": "2026-09-11T16:44:02.000Z"
     }
   },
-  "fetchedAt": "2026-09-11T17:12:04.184Z",
+  "fetchedAt": "2026-09-12T02:17:08.817Z",
   "seo": {
-    "lastOptimized": "2026-09-11T17:12:09.096Z",
+    "lastOptimized": "2026-09-12T02:17:15.248Z",
     "totalPosts": 1877,
     "websiteName": "All India Exam Result",
     "websiteUrl": "https://www.aiexamresult.com",
