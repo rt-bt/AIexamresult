@@ -2,6 +2,14 @@
 export const scrapedData = {
   "results": [
     {
+      "title": "Bihar BSEB DElEd 3rd Merit List 2026",
+      "url": "/post/bseb-bihar-d-el-ed-2026-28",
+      "category": "results",
+      "slug": "bseb-bihar-d-el-ed-2026-28",
+      "publishedDate": "2 July 2026",
+      "publishedAt": "2026-07-02T05:30:24.000Z"
+    },
+    {
       "title": "UPPSC Assistant Town Planner Pre Result 2026",
       "url": "/post/uppsc-assistant-town-planner-2025",
       "category": "results",
@@ -2348,6 +2356,22 @@ export const scrapedData = {
   ],
   "admitCards": [
     {
+      "title": "RPSC Factories & Boiler Inspector Exam City Details 2026",
+      "url": "/post/rpsc-factories-boiler-inspector-2025",
+      "category": "admitCards",
+      "slug": "rpsc-factories-boiler-inspector-2025",
+      "publishedDate": "2026-09-12T13:57:29+05:30",
+      "publishedAt": "2026-09-12T08:27:29.000Z"
+    },
+    {
+      "title": "SSC CGL Exam Date 2026",
+      "url": "/post/ssc-cgl-2026",
+      "category": "admitCards",
+      "slug": "ssc-cgl-2026",
+      "publishedDate": "21 June 2026",
+      "publishedAt": "2026-06-20T18:30:00.000Z"
+    },
+    {
       "title": "Railway RRB Technician CEN 02/2026 Application Status 2026",
       "url": "/post/rrb-technician-grade-i-iii-2026",
       "category": "admitCards",
@@ -2420,12 +2444,12 @@ export const scrapedData = {
       "publishedAt": "2026-09-09T05:51:10.000Z"
     },
     {
-      "title": "Patna High Court Assistant Exam Date 2026",
+      "title": "Patna High Court Assistant Admit Card 2026",
       "url": "/post/patna-high-court-assistant-2026",
       "category": "admitCards",
       "slug": "patna-high-court-assistant-2026",
-      "publishedDate": "8 September 2026",
-      "publishedAt": "2026-09-08T13:01:00.000Z"
+      "publishedDate": "9 September 2026",
+      "publishedAt": "2026-09-08T18:30:00.000Z"
     },
     {
       "title": "Bihar BPSC Factory Inspector Revised DV Schedule 2026",
@@ -6022,7 +6046,7 @@ export const scrapedData = {
       "publishedAt": "2026-09-03T12:02:25.000Z"
     },
     {
-      "title": "MPESB Group 3 Sub Engineer & Other Post Online Form 2026",
+      "title": "MPESB Group 3 Sub Engineer & Other Post Online Form 2026 – Last Date",
       "url": "/post/mpesb-group-3-sub-engineer-other-post-2026",
       "category": "latestJobs",
       "slug": "mpesb-group-3-sub-engineer-other-post-2026",
@@ -8064,8 +8088,8 @@ export const scrapedData = {
       "publishedAt": "2026-06-09T18:30:00.000Z"
     },
     {
-      "title": "UPSSSC Teacher Cadre JTC Answer Key 2026",
-      "url": "https://www.sarkariexam.com/upsssc-teacher-cadre-jtc-2026",
+      "title": "UPSSSC Teacher Cadre JTC Final Answer Key 2026",
+      "url": "/post/upsssc-teacher-cadre-jtc-2026",
       "category": "answerKeys",
       "slug": "upsssc-teacher-cadre-jtc-2026",
       "publishedDate": "16 June 2026",
@@ -8504,8 +8528,8 @@ export const scrapedData = {
       "publishedAt": "2026-07-19T18:30:00.000Z"
     },
     {
-      "title": "UPSSSC Assistant Boring Technician Answer Key 2026 for 402 Post",
-      "url": "https://rojgarresult.com/upsssc-assistant-boring-technician-2026/",
+      "title": "UPSSSC Assistant Boring Technician Final Answer Key 2026",
+      "url": "/post/upsssc-assistant-boring-technician-2026",
       "category": "answerKeys",
       "slug": "upsssc-assistant-boring-technician-2026",
       "publishedDate": "14 July 2026",
@@ -11499,7 +11523,7 @@ export const scrapedData = {
       "publishedAt": "2026-09-10T18:12:10.000Z"
     },
     "upsc-nda-na-ii-2026": {
-      "lastDate": "11 June 2026",
+      "lastDate": "11 June 2026 (Extended)",
       "publishedDate": "3 September 2026",
       "publishedAt": "2026-09-03T15:12:20.000Z"
     },
@@ -12444,7 +12468,7 @@ export const scrapedData = {
       "publishedAt": "2026-08-31T15:21:13.000Z"
     },
     "upsc-cds-ii-2026": {
-      "lastDate": "11 June 2026",
+      "lastDate": "11 June 2026 (Extended)",
       "publishedDate": "3 September 2026",
       "publishedAt": "2026-09-03T15:07:27.000Z"
     },
@@ -13199,7 +13223,7 @@ export const scrapedData = {
       "publishedAt": "2026-09-09T18:30:00.000Z"
     },
     "patna-high-court-assistant-2026": {
-      "lastDate": "27/08/2026",
+      "lastDate": "27 August 2026",
       "publishedDate": "9 September 2026",
       "publishedAt": "2026-09-08T18:30:00.000Z"
     },
@@ -14326,7 +14350,7 @@ export const scrapedData = {
       "publishedAt": "2026-07-12T18:30:00.000Z"
     },
     "upsssc-assistant-boring-technician-2026": {
-      "lastDate": "5 May 2026",
+      "lastDate": "05 May 2026",
       "publishedDate": "14 July 2026",
       "publishedAt": "2026-07-13T18:30:00.000Z"
     },
@@ -14672,12 +14696,22 @@ export const scrapedData = {
       "lastDate": "26 June 2026",
       "publishedDate": "2026-09-11T22:14:02+05:30",
       "publishedAt": "2026-09-11T16:44:02.000Z"
+    },
+    "bseb-bihar-d-el-ed-2026-28": {
+      "lastDate": "24 January 2026 (Extend)",
+      "publishedDate": "2 July 2026",
+      "publishedAt": "2026-07-02T05:30:24.000Z"
+    },
+    "rpsc-factories-boiler-inspector-2025": {
+      "lastDate": "12 January 2026",
+      "publishedDate": "2026-09-12T13:57:29+05:30",
+      "publishedAt": "2026-09-12T08:27:29.000Z"
     }
   },
-  "fetchedAt": "2026-09-12T02:17:08.817Z",
+  "fetchedAt": "2026-09-13T03:18:02.027Z",
   "seo": {
-    "lastOptimized": "2026-09-12T02:17:15.248Z",
-    "totalPosts": 1877,
+    "lastOptimized": "2026-09-13T03:18:07.910Z",
+    "totalPosts": 1878,
     "websiteName": "All India Exam Result",
     "websiteUrl": "https://www.aiexamresult.com",
     "description": "Sarkari Result 2026 - Get fastest government job alerts, sarkari naukri, exam results, admit cards & answer keys. SSC, UPSC, Railway, Banking, UP, Bihar & all India exams."
