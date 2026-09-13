@@ -6,8 +6,8 @@ export const scrapedData = {
       "url": "/post/bseb-bihar-d-el-ed-2026-28",
       "category": "results",
       "slug": "bseb-bihar-d-el-ed-2026-28",
-      "publishedDate": "2 July 2026",
-      "publishedAt": "2026-07-02T05:30:24.000Z"
+      "publishedDate": "2026-09-12T11:41:43+05:30",
+      "publishedAt": "2026-09-12T06:11:43.000Z"
     },
     {
       "title": "UPPSC Assistant Town Planner Pre Result 2026",
@@ -2392,8 +2392,8 @@ export const scrapedData = {
       "url": "/post/ssc-cgl-2026",
       "category": "admitCards",
       "slug": "ssc-cgl-2026",
-      "publishedDate": "21 June 2026",
-      "publishedAt": "2026-06-20T18:30:00.000Z"
+      "publishedDate": "12 September 2026",
+      "publishedAt": "2026-09-11T18:30:00.000Z"
     },
     {
       "title": "Railway RRB Technician CEN 02/2026 Application Status 2026",
@@ -2472,8 +2472,8 @@ export const scrapedData = {
       "url": "/post/patna-high-court-assistant-2026",
       "category": "admitCards",
       "slug": "patna-high-court-assistant-2026",
-      "publishedDate": "9 September 2026",
-      "publishedAt": "2026-09-08T18:30:00.000Z"
+      "publishedDate": "2026-09-12T14:08:43+05:30",
+      "publishedAt": "2026-09-12T08:38:43.000Z"
     },
     {
       "title": "Bihar BPSC Factory Inspector Revised DV Schedule 2026",
@@ -3016,8 +3016,8 @@ export const scrapedData = {
       "url": "/post/upsc-nda-na-ii-2026",
       "category": "admitCards",
       "slug": "upsc-nda-na-ii-2026",
-      "publishedDate": "3 September 2026",
-      "publishedAt": "2026-09-03T15:12:20.000Z"
+      "publishedDate": "2026-09-12T11:42:31+05:30",
+      "publishedAt": "2026-09-12T06:12:31.000Z"
     },
     {
       "title": "BPSC 72nd CCE New Exam Date 2026",
@@ -3200,8 +3200,8 @@ export const scrapedData = {
       "url": "/post/upsc-cds-ii-2026",
       "category": "admitCards",
       "slug": "upsc-cds-ii-2026",
-      "publishedDate": "3 September 2026",
-      "publishedAt": "2026-09-03T15:07:27.000Z"
+      "publishedDate": "2026-09-12T11:43:20+05:30",
+      "publishedAt": "2026-09-12T06:13:20.000Z"
     },
     {
       "title": "CISF ASI Paramedical Staff PST Admit Card 2026",
@@ -3504,8 +3504,8 @@ export const scrapedData = {
       "url": "/post/indian-airforce-agniveer-vayu-intake-02-2027",
       "category": "admitCards",
       "slug": "indian-airforce-agniveer-vayu-intake-02-2027",
-      "publishedDate": "2026-09-11T15:16:20.363Z",
-      "publishedAt": "2026-09-11T15:16:20.363Z"
+      "publishedDate": "2026-09-11T14:21:40+05:30",
+      "publishedAt": "2026-09-11T08:51:40.000Z"
     },
     {
       "title": "Indian Airforce Airmen Group Y Medical Assistant 02/2027 Exam City / Admit Card",
@@ -6754,8 +6754,8 @@ export const scrapedData = {
       "url": "/post/ssc-cpo-si-capf-2026",
       "category": "latestJobs",
       "slug": "ssc-cpo-si-capf-2026",
-      "publishedDate": "2026-09-11T17:25:37+05:30",
-      "publishedAt": "2026-09-11T11:55:37.000Z"
+      "publishedDate": "13 September 2026",
+      "publishedAt": "2026-09-12T18:30:00.000Z"
     },
     {
       "title": "Bank of India BOI Specialist Officers SO Online Form 2026",
@@ -6898,8 +6898,8 @@ export const scrapedData = {
       "url": "/post/upsc-epfo-apfc-2026",
       "category": "latestJobs",
       "slug": "upsc-epfo-apfc-2026",
-      "publishedDate": "11 September 2026",
-      "publishedAt": "2026-09-10T18:30:00.000Z"
+      "publishedDate": "2026-09-12T00:28:59+05:30",
+      "publishedAt": "2026-09-11T18:58:59.000Z"
     },
     {
       "title": "India Post Office GDS Online Form 2026 (23757 Posts)",
@@ -8284,8 +8284,8 @@ export const scrapedData = {
       "url": "/post/upsssc-teacher-cadre-jtc-2026",
       "category": "answerKeys",
       "slug": "upsssc-teacher-cadre-jtc-2026",
-      "publishedDate": "16 June 2026",
-      "publishedAt": "2026-06-16T06:47:11.000Z"
+      "publishedDate": "2026-09-12T14:55:56+05:30",
+      "publishedAt": "2026-09-12T09:25:56.000Z"
     },
     {
       "title": "RRB Junior Engineer CEN.No: 05/2025 CBT 2 Answer Key 2026 – Out",
@@ -8724,8 +8724,8 @@ export const scrapedData = {
       "url": "/post/upsssc-assistant-boring-technician-2026",
       "category": "answerKeys",
       "slug": "upsssc-assistant-boring-technician-2026",
-      "publishedDate": "14 July 2026",
-      "publishedAt": "2026-07-13T18:30:00.000Z"
+      "publishedDate": "2026-09-12T14:53:59+05:30",
+      "publishedAt": "2026-09-12T09:23:59.000Z"
     },
     {
       "title": "SSB Head Constable Answer Key 2026 – Reopen",
@@ -12313,7 +12313,7 @@ export const scrapedData = {
       "publishedAt": "2026-06-28T18:30:00.000Z"
     },
     "ssc-cgl-2026": {
-      "lastDate": "Staff Selection Commission SSC has released the notification for Combined Graduate Level CGL Examination 2026. Those Candidates Are Interested with Vacancy Can Apply Online from 21/05/2026 to 25/06/2026. Before applying, candidates must read the complete advertisement in which selection procedure, exam syllabus, pattern, exam date and other information will be available.",
+      "lastDate": "25 June 2026",
       "publishedDate": "12 September 2026",
       "publishedAt": "2026-09-11T18:30:00.000Z"
     },
@@ -13953,7 +13953,7 @@ export const scrapedData = {
       "publishedAt": "2026-09-09T18:30:00.000Z"
     },
     "ssc-cpo-si-capf-2026": {
-      "lastDate": ": SSC Sub-Inspector in Delhi Police and Central Armed Police Forces Exam CPO SI 2026 : Apply Online for 1871 Post",
+      "lastDate": "30 September 2026",
       "publishedDate": "13 September 2026",
       "publishedAt": "2026-09-12T18:30:00.000Z"
     },
@@ -14958,9 +14958,9 @@ export const scrapedData = {
       "publishedAt": "2026-09-11T18:30:00.000Z"
     }
   },
-  "fetchedAt": "2026-09-13T09:52:26.282Z",
+  "fetchedAt": "2026-09-13T10:06:47.379Z",
   "seo": {
-    "lastOptimized": "2026-09-13T09:54:32.602Z",
+    "lastOptimized": "2026-09-13T10:06:52.430Z",
     "totalPosts": 1879,
     "websiteName": "All India Exam Result",
     "websiteUrl": "https://www.aiexamresult.com",
