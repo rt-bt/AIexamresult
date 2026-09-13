@@ -2352,6 +2352,30 @@ export const scrapedData = {
       "slug": "mppsc-assistant-professor-2026",
       "publishedDate": "2026-09-11T22:14:02+05:30",
       "publishedAt": "2026-09-11T16:44:02.000Z"
+    },
+    {
+      "title": "UPSSSC Lekhpal Result 2026",
+      "url": "https://www.sarkariresult.com/upsssc/upsssc-lekhpal-02-exam-2025/",
+      "category": "results",
+      "slug": "upsssc-lekhpal-02-exam-2025",
+      "publishedDate": "11 September 2026",
+      "publishedAt": "2026-09-10T18:30:00.000Z"
+    },
+    {
+      "title": "MPPSC Assistant Professor Result 2026",
+      "url": "https://www.sarkariresult.com/2026/mppsc-assistant-professor-june26/",
+      "category": "results",
+      "slug": "mppsc-assistant-professor-june26",
+      "publishedDate": "12 September 2026",
+      "publishedAt": "2026-09-11T18:30:00.000Z"
+    },
+    {
+      "title": "Bihar BSEB DElEd 3rd Merit List 2026",
+      "url": "https://www.sarkariexam.com/bseb-bihar-d-el-ed-2026-28/",
+      "category": "results",
+      "slug": "bseb-bihar-d-el-ed-2026-28",
+      "publishedDate": "2026-09-12T11:41:43+05:30",
+      "publishedAt": "2026-09-12T06:11:43.000Z"
     }
   ],
   "admitCards": [
@@ -3938,6 +3962,134 @@ export const scrapedData = {
       "slug": "nainital-bank-so-2026",
       "publishedDate": "9 September 2026",
       "publishedAt": "2026-09-08T18:30:00.000Z"
+    },
+    {
+      "title": "SSC Combined Graduate Level CGL Exam Schedule 2026",
+      "url": "https://www.sarkariresult.com/ssc/ssc-cgl-2026/",
+      "category": "admitCards",
+      "slug": "ssc-cgl-2026",
+      "publishedDate": "12 September 2026",
+      "publishedAt": "2026-09-11T18:30:00.000Z"
+    },
+    {
+      "title": "Railway RRB Section Controller Exam Date 2026",
+      "url": "https://www.sarkariresult.com/2026/rrb-section-controller-03-2026/",
+      "category": "admitCards",
+      "slug": "rrb-section-controller-03-2026",
+      "publishedDate": "11 September 2026",
+      "publishedAt": "2026-09-10T18:30:00.000Z"
+    },
+    {
+      "title": "MPPSC Assistant Town Planner ATP Admit Card 2026",
+      "url": "https://www.sarkariresult.com/2026/mppsc-atp-july26/",
+      "category": "admitCards",
+      "slug": "mppsc-atp-july26",
+      "publishedDate": "10 September 2026",
+      "publishedAt": "2026-09-09T18:30:00.000Z"
+    },
+    {
+      "title": "Patna High Court Assistant Admit Card 2026",
+      "url": "https://www.sarkariexam.com/patna-high-court-assistant-2026/",
+      "category": "admitCards",
+      "slug": "patna-high-court-assistant-2026",
+      "publishedDate": "2026-09-12T14:08:43+05:30",
+      "publishedAt": "2026-09-12T08:38:43.000Z"
+    },
+    {
+      "title": "RPSC Factories & Boiler Inspector Exam City Details 2026",
+      "url": "https://www.sarkariexam.com/rpsc-factories-boiler-inspector-2025/",
+      "category": "admitCards",
+      "slug": "rpsc-factories-boiler-inspector-2025",
+      "publishedDate": "2026-09-12T13:57:29+05:30",
+      "publishedAt": "2026-09-12T08:27:29.000Z"
+    },
+    {
+      "title": "UPSC CDS-II Admit Card 2026",
+      "url": "https://www.sarkariexam.com/upsc-cds-ii-2026/",
+      "category": "admitCards",
+      "slug": "upsc-cds-ii-2026",
+      "publishedDate": "2026-09-12T11:43:20+05:30",
+      "publishedAt": "2026-09-12T06:13:20.000Z"
+    },
+    {
+      "title": "UPSC NDA/ NA-II Admit Card 2026",
+      "url": "https://www.sarkariexam.com/upsc-nda-na-ii-2026/",
+      "category": "admitCards",
+      "slug": "upsc-nda-na-ii-2026",
+      "publishedDate": "2026-09-12T11:42:31+05:30",
+      "publishedAt": "2026-09-12T06:12:31.000Z"
+    },
+    {
+      "title": "Indian Navy 10+2 B.Tech Cadet Entry January 2027 Admit Card",
+      "url": "https://www.sarkariexam.com/indian-navy-102-b-tech-cadet-entry-january-2027/",
+      "category": "admitCards",
+      "slug": "indian-navy-102-b-tech-cadet-entry-january-2027",
+      "publishedDate": "2026-09-11T18:03:33+05:30",
+      "publishedAt": "2026-09-11T12:33:33.000Z"
+    },
+    {
+      "title": "Uttarakhand TET UTET Admit Card 2026",
+      "url": "https://www.sarkariexam.com/uttarakhand-tet-utet-2026/",
+      "category": "admitCards",
+      "slug": "uttarakhand-tet-utet-2026",
+      "publishedDate": "2026-09-11T17:37:03+05:30",
+      "publishedAt": "2026-09-11T12:07:03.000Z"
+    },
+    {
+      "title": "Indian Airforce Agniveer Vayu Intake 02/2027 Exam City / Admit Card",
+      "url": "https://www.sarkariexam.com/indian-airforce-agniveer-vayu-intake-02-2027/",
+      "category": "admitCards",
+      "slug": "indian-airforce-agniveer-vayu-intake-02-2027",
+      "publishedDate": "2026-09-11T14:21:40+05:30",
+      "publishedAt": "2026-09-11T08:51:40.000Z"
+    },
+    {
+      "title": "Indian Airforce Airmen Group Y Medical Assistant 02/2027 Exam City / Admit Card",
+      "url": "https://www.sarkariexam.com/indian-airforce-group-y-medical-assistant-airmen-02-2027/",
+      "category": "admitCards",
+      "slug": "indian-airforce-group-y-medical-assistant-airmen-02-2027",
+      "publishedDate": "2026-09-11T14:13:13+05:30",
+      "publishedAt": "2026-09-11T08:43:13.000Z"
+    },
+    {
+      "title": "MPESB Krashi Vistar Adhikari Admit Card 2026",
+      "url": "https://www.sarkariexam.com/mpesb-krashi-vistar-adhikari-2026/",
+      "category": "admitCards",
+      "slug": "mpesb-krashi-vistar-adhikari-2026",
+      "publishedDate": "2026-09-10T23:49:56+05:30",
+      "publishedAt": "2026-09-10T18:19:56.000Z"
+    },
+    {
+      "title": "RPSC Sub Inspector 2021 Exam City / Admit Card Date 2026",
+      "url": "https://www.sarkariexam.com/rpsc-sub-inspector-2021/",
+      "category": "admitCards",
+      "slug": "rpsc-sub-inspector-2021",
+      "publishedDate": "2026-09-10T23:39:45+05:30",
+      "publishedAt": "2026-09-10T18:09:45.000Z"
+    },
+    {
+      "title": "CGPSC ADPO Admit Card 2026",
+      "url": "https://www.sarkariexam.com/cgpsc-adpo-2026/",
+      "category": "admitCards",
+      "slug": "cgpsc-adpo-2026",
+      "publishedDate": "2026-09-10T23:25:04+05:30",
+      "publishedAt": "2026-09-10T17:55:04.000Z"
+    },
+    {
+      "title": "ISRO Assistant, UDC, JPA, Stenographer Admit Card 2026",
+      "url": "https://www.sarkariexam.com/isro-assistant-udc-jpa-stenographer-2026/",
+      "category": "admitCards",
+      "slug": "isro-assistant-udc-jpa-stenographer-2026",
+      "publishedDate": "2026-09-10T18:04:17+05:30",
+      "publishedAt": "2026-09-10T12:34:17.000Z"
+    },
+    {
+      "title": "SSC CGL Tier-I Exam Date 2026",
+      "url": "https://www.resultbharat.com/SSC-CGL-2026.html",
+      "category": "admitCards",
+      "slug": "SSC-CGL-2026",
+      "publishedDate": "12 September 2026",
+      "publishedAt": "2026-09-11T18:30:00.000Z"
     }
   ],
   "latestJobs": [
@@ -7700,6 +7852,46 @@ export const scrapedData = {
       "slug": "dhc-personal-assistant-2026",
       "publishedDate": "5 September 2026",
       "publishedAt": "2026-09-04T18:30:00.000Z"
+    },
+    {
+      "title": "UPSSSC Senior Instructor Online Form 2026",
+      "url": "https://www.sarkariresult.com/2026/upsssc-s-instructor-21-exam-2026/",
+      "category": "latestJobs",
+      "slug": "upsssc-s-instructor-21-exam-2026",
+      "publishedDate": "12 September 2026",
+      "publishedAt": "2026-09-11T18:30:00.000Z"
+    },
+    {
+      "title": "SSC CPO SI CAPF Online Form 2026",
+      "url": "https://www.sarkariresult.com/2026/ssc-cpo-si-capf-2026/",
+      "category": "latestJobs",
+      "slug": "ssc-cpo-si-capf-2026",
+      "publishedDate": "13 September 2026",
+      "publishedAt": "2026-09-12T18:30:00.000Z"
+    },
+    {
+      "title": "UPSC EPFO APFC Online Form 2026 – Extend",
+      "url": "https://www.sarkariexam.com/upsc-epfo-apfc-2026/",
+      "category": "latestJobs",
+      "slug": "upsc-epfo-apfc-2026",
+      "publishedDate": "2026-09-12T00:28:59+05:30",
+      "publishedAt": "2026-09-11T18:58:59.000Z"
+    },
+    {
+      "title": "RCFL Management Trainee MT Online Form 2026",
+      "url": "https://www.sarkariexam.com/rcfl-management-trainee-mt-2026/",
+      "category": "latestJobs",
+      "slug": "rcfl-management-trainee-mt-2026",
+      "publishedDate": "2026-09-11T17:24:26+05:30",
+      "publishedAt": "2026-09-11T11:54:26.000Z"
+    },
+    {
+      "title": "UPSC Various Post Online Form 2026",
+      "url": "https://www.sarkariexam.com/upsc-various-post-2026/",
+      "category": "latestJobs",
+      "slug": "upsc-various-post-2026",
+      "publishedDate": "2026-09-11T17:19:22+05:30",
+      "publishedAt": "2026-09-11T11:49:22.000Z"
     }
   ],
   "answerKeys": [
@@ -8638,6 +8830,46 @@ export const scrapedData = {
       "slug": "bihar-board-bseb-dummy-admit-card-2026",
       "publishedDate": "7 March 2026",
       "publishedAt": "2026-03-06T18:30:00.000Z"
+    },
+    {
+      "title": "UPSSSC Teacher Cadre JTC Revised Answer Key 2026",
+      "url": "https://www.sarkariresult.com/upsssc/upsssc-teacher-03-exam-2026/",
+      "category": "answerKeys",
+      "slug": "upsssc-teacher-03-exam-2026",
+      "publishedDate": "12 September 2026",
+      "publishedAt": "2026-09-11T18:30:00.000Z"
+    },
+    {
+      "title": "UPSSSC Assistant Boring Technician Revised Answer Key 2026",
+      "url": "https://www.sarkariresult.com/upsssc/upsssc-asst-boring-tech-04-2026/",
+      "category": "answerKeys",
+      "slug": "upsssc-asst-boring-tech-04-2026",
+      "publishedDate": "12 September 2026",
+      "publishedAt": "2026-09-11T18:30:00.000Z"
+    },
+    {
+      "title": "UPSSSC Teacher Cadre JTC Final Answer Key 2026",
+      "url": "https://www.sarkariexam.com/upsssc-teacher-cadre-jtc-2026/",
+      "category": "answerKeys",
+      "slug": "upsssc-teacher-cadre-jtc-2026",
+      "publishedDate": "2026-09-12T14:55:56+05:30",
+      "publishedAt": "2026-09-12T09:25:56.000Z"
+    },
+    {
+      "title": "UPSSSC Assistant Boring Technician Final Answer Key 2026",
+      "url": "https://www.sarkariexam.com/upsssc-assistant-boring-technician-2026/",
+      "category": "answerKeys",
+      "slug": "upsssc-assistant-boring-technician-2026",
+      "publishedDate": "2026-09-12T14:53:59+05:30",
+      "publishedAt": "2026-09-12T09:23:59.000Z"
+    },
+    {
+      "title": "NTA UGC NET June Re-Exam Answer Key 2026",
+      "url": "https://www.sarkariexam.com/nta-ugc-net-june-2026/",
+      "category": "answerKeys",
+      "slug": "nta-ugc-net-june-2026",
+      "publishedDate": "2026-09-10T22:06:46+05:30",
+      "publishedAt": "2026-09-10T16:36:46.000Z"
     }
   ],
   "documents": [
@@ -11524,8 +11756,8 @@ export const scrapedData = {
     },
     "upsc-nda-na-ii-2026": {
       "lastDate": "11 June 2026 (Extended)",
-      "publishedDate": "3 September 2026",
-      "publishedAt": "2026-09-03T15:12:20.000Z"
+      "publishedDate": "2026-09-12T11:42:31+05:30",
+      "publishedAt": "2026-09-12T06:12:31.000Z"
     },
     "bpsc-72nd-2026": {
       "lastDate": "31 May 2026",
@@ -12081,10 +12313,9 @@ export const scrapedData = {
       "publishedAt": "2026-06-28T18:30:00.000Z"
     },
     "ssc-cgl-2026": {
-      "lastDate": "25 June 2026",
-      "isExpired": false,
-      "publishedDate": "21 June 2026",
-      "publishedAt": "2026-06-20T18:30:00.000Z"
+      "lastDate": "Staff Selection Commission SSC has released the notification for Combined Graduate Level CGL Examination 2026. Those Candidates Are Interested with Vacancy Can Apply Online from 21/05/2026 to 25/06/2026. Before applying, candidates must read the complete advertisement in which selection procedure, exam syllabus, pattern, exam date and other information will be available.",
+      "publishedDate": "12 September 2026",
+      "publishedAt": "2026-09-11T18:30:00.000Z"
     },
     "bank-of-baroda-manager-2026": {
       "lastDate": "16 June 2026",
@@ -12337,9 +12568,8 @@ export const scrapedData = {
     },
     "upsssc-teacher-cadre-jtc-2026": {
       "lastDate": "27 April 2026",
-      "isExpired": false,
-      "publishedDate": "16 June 2026",
-      "publishedAt": "2026-06-16T06:47:11.000Z"
+      "publishedDate": "2026-09-12T14:55:56+05:30",
+      "publishedAt": "2026-09-12T09:25:56.000Z"
     },
     "rrb-junior-engineer-je-2025": {
       "lastDate": "10 December 2025",
@@ -12469,8 +12699,8 @@ export const scrapedData = {
     },
     "upsc-cds-ii-2026": {
       "lastDate": "11 June 2026 (Extended)",
-      "publishedDate": "3 September 2026",
-      "publishedAt": "2026-09-03T15:07:27.000Z"
+      "publishedDate": "2026-09-12T11:43:20+05:30",
+      "publishedAt": "2026-09-12T06:13:20.000Z"
     },
     "cisf-asi-paramedical-staff-2026": {
       "lastDate": "07 July 2026",
@@ -13224,8 +13454,8 @@ export const scrapedData = {
     },
     "patna-high-court-assistant-2026": {
       "lastDate": "27 August 2026",
-      "publishedDate": "9 September 2026",
-      "publishedAt": "2026-09-08T18:30:00.000Z"
+      "publishedDate": "2026-09-12T14:08:43+05:30",
+      "publishedAt": "2026-09-12T08:38:43.000Z"
     },
     "sav-bihar-class-6-pre-admission-2027-28": {
       "lastDate": "28 August 2026",
@@ -13619,8 +13849,8 @@ export const scrapedData = {
     },
     "mppsc-assistant-professor-june26": {
       "lastDate": "Madhya Pradesh Public Service Commission (MPPSC) has released the notification for Assistant Professor Recruitment Examination 2026. Candidates interested in the MPPSC Assistant Professor Recruitment 2025 can apply online from 25 May 2026 to 26 June 2026. Read the official notification for eligibility details, subject-wise post information, selection process, age limit, pay scale, and other important instructions. These details are also available in the Latest Jobs section of SarkariResult.Com.",
-      "publishedDate": "11 September 2026",
-      "publishedAt": "2026-09-10T18:30:00.000Z"
+      "publishedDate": "12 September 2026",
+      "publishedAt": "2026-09-11T18:30:00.000Z"
     },
     "upsssc-lekhpal-02-exam-2025": {
       "lastDate": "Important Dates\n\nApplication Begin : 29/12/2025\nLast Date for Registration :28/01/2026\nFee Payment Last Date :28/01/2026\nCorrection Last Date :04/02/2026\nEligibility Result Available : 26/02/2026\nMains Exam Fee Payment : 04/05/2026\nExam Date : 21/05/2026\n\nAdmit Card Available : 16/05/2026\nAnswer Key Available :22/05/2026\nRevised Answer Key Available : 01/07/2026\nResult Available : 11/09/2026 : Application Fee\n\nGeneral / OBC / EWS : 25/-\nSC / ST : 25/-\nPH (Divyang) : 25/-\nPay the Examination Fee Through State Bank of India SBI I Collect Fee Mode or Pay the Exam Fee Through E Challan",
@@ -13723,9 +13953,9 @@ export const scrapedData = {
       "publishedAt": "2026-09-09T18:30:00.000Z"
     },
     "ssc-cpo-si-capf-2026": {
-      "lastDate": "30 September 2026",
-      "publishedDate": "2026-09-11T17:25:37+05:30",
-      "publishedAt": "2026-09-11T11:55:37.000Z"
+      "lastDate": ": SSC Sub-Inspector in Delhi Police and Central Armed Police Forces Exam CPO SI 2026 : Apply Online for 1871 Post",
+      "publishedDate": "13 September 2026",
+      "publishedAt": "2026-09-12T18:30:00.000Z"
     },
     "ssc-chsl-2026-sep": {
       "lastDate": ": SSC Combined Higher Secondary (10+2) Examination 2026 : Apply Online for 2536 Post",
@@ -13829,8 +14059,8 @@ export const scrapedData = {
     },
     "indian-airforce-agniveer-vayu-intake-02-2027": {
       "lastDate": "26 July 2026",
-      "publishedDate": "2026-09-11T15:16:20.363Z",
-      "publishedAt": "2026-09-11T15:16:20.363Z"
+      "publishedDate": "2026-09-11T14:21:40+05:30",
+      "publishedAt": "2026-09-11T08:51:40.000Z"
     },
     "mpesb-krashi-vistar-adhikari-2026": {
       "lastDate": "17 July 2026",
@@ -13854,8 +14084,8 @@ export const scrapedData = {
     },
     "upsc-epfo-apfc-2026": {
       "lastDate": "14 September 2026",
-      "publishedDate": "11 September 2026",
-      "publishedAt": "2026-09-10T18:30:00.000Z"
+      "publishedDate": "2026-09-12T00:28:59+05:30",
+      "publishedAt": "2026-09-11T18:58:59.000Z"
     },
     "upsc-various-post-2026": {
       "lastDate": "02 October 2026",
@@ -14351,8 +14581,8 @@ export const scrapedData = {
     },
     "upsssc-assistant-boring-technician-2026": {
       "lastDate": "05 May 2026",
-      "publishedDate": "14 July 2026",
-      "publishedAt": "2026-07-13T18:30:00.000Z"
+      "publishedDate": "2026-09-12T14:53:59+05:30",
+      "publishedAt": "2026-09-12T09:23:59.000Z"
     },
     "ssb-head-constable-admit-card": {
       "publishedDate": "13 July 2026",
@@ -14699,19 +14929,39 @@ export const scrapedData = {
     },
     "bseb-bihar-d-el-ed-2026-28": {
       "lastDate": "24 January 2026 (Extend)",
-      "publishedDate": "2 July 2026",
-      "publishedAt": "2026-07-02T05:30:24.000Z"
+      "publishedDate": "2026-09-12T11:41:43+05:30",
+      "publishedAt": "2026-09-12T06:11:43.000Z"
     },
     "rpsc-factories-boiler-inspector-2025": {
       "lastDate": "12 January 2026",
       "publishedDate": "2026-09-12T13:57:29+05:30",
       "publishedAt": "2026-09-12T08:27:29.000Z"
+    },
+    "upsssc-asst-boring-tech-04-2026": {
+      "lastDate": "Important Dates\n\nApplication Begin : 15/04/2026\nLast Date for Registration :05/05/2026\nFee Payment Last Date :05/05/2026\nCorrection Last Date :12/05/2026\nEligibility Result : 02/06/2026\nMains Fees Payment Start : 27/06/2026\nMains Exam Date : 12/07/2026\n\nAdmit Card Available : 08/07/2026\nExam City Available: 02/07/2026\nAnswer Key Available : 14/07/2026\nRevised Answer Key : 12/09/2026 : Application Fee\n\nGeneral / OBC / EWS : 25/-\nSC / ST : 25/-\nPH (Dviyang) : 25/-\nPay the Examination Fee Through State Bank of India SBI I Collect Fee Mode or Pay the Exam Fee Through E Challan",
+      "publishedDate": "12 September 2026",
+      "publishedAt": "2026-09-11T18:30:00.000Z"
+    },
+    "upsssc-teacher-03-exam-2026": {
+      "lastDate": "Important Dates\n\nApplication Begin : 06/04/2026\nLast Date for Registration :27/04/2026\nFee Payment Last Date :27/04/2026\nCorrection Last Date :04/05/2026\nEligibility Result Available : 16/06/2026 \nMains Fees Payment Start : 27/06/2026\nMains Exam Date : 12/07/2026\n\nExam City Available : 02/07/2026\nAdmit Card Available : 08/07/2026\nAnswer Key Available : 13/07/2026\nRevised Answer Key Available : 12/09/2026 : Application Fee\n\nGeneral / OBC / EWS : 25/-\nSC / ST : 25/-\nPH (Dviyang) : 25/-\nPay the Examination Fee Through State Bank of India SBI I Collect Fee Mode or Pay the Exam Fee Through E Challan",
+      "publishedDate": "12 September 2026",
+      "publishedAt": "2026-09-11T18:30:00.000Z"
+    },
+    "upsssc-s-instructor-21-exam-2026": {
+      "lastDate": ": UPSSSC State Rural Development Institute Senior Instructor Cadre Main Examination 2026 Apply Online for 132 Post",
+      "publishedDate": "12 September 2026",
+      "publishedAt": "2026-09-11T18:30:00.000Z"
+    },
+    "SSC-CGL-2026": {
+      "lastDate": "SSC CGL 2026 Tier-I Exam Date Out for 12256 Post\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPost Date:\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t12 September 2026 | 06:10 PM\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tShort Information :\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tStaff Selection Commission (SSC) has Download Tier-I Exam Date for the Various Post Under Combined Graduate Level CGL Exam 2026 Recruitment for 12256 Post. Check All Details, Like Age Limit, Eligibility Details, Post Information, Pay Scale, Selection Process & More Details Related to this Jobs.Online Apply Start On May 21, 2026 & Last Date is June 22, 2026. All Interested Candidates Can Download Tier-I Exam Date Now in The Given Link Below.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t \n\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tStaff Selection Commission (SSC)\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCombined Graduate Level  Exam (CGL-2026) Recruitment 2026\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tWWW.RESULTBHARAT.COM\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tApplication Fee\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tGeneral/ OBC Candidates : Rs.100/-\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSC/ ST/ PH Candidates : Rs.00/-\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAll Category Female Candidates : Rs.00/-\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPayment Mode: Pay  the Exam Fee Through Debit Card, Credit Card, Net Banking Fee Mode.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tImportant Dates\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOnline Apply Start On: 21 May 2026\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tLast Date For Apply Online: 25 June 2026 (11:00 PM)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tLast Date For Payment Online : 26 June 2026 (11:00 PM)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOnline Correction :  01 to 03 July 2026 (11:00 PM)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTier I Exam City : Notify Later\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTier I Admit Card: Notify Later\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTier I Exam Date: 30 September to 30 October 2026\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTier II Exam Date: December 2026\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tVacancy Details | Age Limit: 01-08-2026 |   Eligibility Criteria\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTotal Vacancy: 12256 Post \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPost Code\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPost Name & Department\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAge Limit\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tEligibility Criteria as on 01-08-2025\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAssistant Audit Officer in India Audit & Account \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-30 Yrs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAssistant Account Officer in India Audit & Account \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-30 Yrs\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAssistant Section Officer in Central Secretariat Service \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t20-30 Yrs\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAssistant Section Officer in Intelligence Bureau \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-30 Yrs  \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t05\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAssistant Section Officer in Ministry of Railway \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t20-30 Yrs. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t06\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAssistant Section Officer in Ministry of External Affairs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t20-30 Yrs.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t07\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAssistant Section Officer in AFHQ \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t20-30 Yrs. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t08\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAssistant in Other Ministries/ Dept./ Org. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-30 Yrs. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t09\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAssistant in Other Ministries/ Dept./ Org. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t20-30 Yrs.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t10\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAssistant Section Officer in Other Ministries/ Dept./ Org. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-30 Yrs\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t11\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tInspector of Income Tax in CBDT \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 18-30 Yrs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t12\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tInspector (Central Excise) in CBIC \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-30 Yrs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t13\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tInspector (Preventive Officer) in CBIC \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-30 Yrs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t14\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tInspector (Examiner) in CBIC \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-30 Yrs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t15\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAsst. Enforcement Officer Dept. of Revenue \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-30 Yrs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSub Inspector in CBI \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t20-30 Yrs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t17\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tInspector Posts in DOP \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-30 Yrs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tInspector in Central of Narcotics \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-30 Yrs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAssistant/ Superintendent in Indian Coast Guard\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-30 Yrs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t20\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAssistant in Other Ministries/ Dept./ Org. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  18-30 Yrs  \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t21\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAssistant in (NCLAT)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-30 Yrs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t22\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tResearch Assistant (NHRC)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-30 Yrs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t23\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDivisional Accountant in Offices C & AG \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-30 Yrs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t24\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSub Inspector in NIA \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 18-30 Yrs\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t25\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tJunior Statistical Officer in MSPI \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-32 Yrs\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tBachelor Degree in Any Stream with at Least 60% Marks in Math Subject in 12th Standard OR Bachelor Degree with Statistics Subject.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t26\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tStatistical\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tInvestigator Grade-II in RGI\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-30 Yrs\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  Bachelor Degree in Any Stream with Statistics as a Subject\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t27\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAuditor in C & AG \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-27 Yrs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tBachelor Degree in Any Stream.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t28\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAuditor in Other Ministries/ Dept. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-27 Yrs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tBachelor Degree in Any Stream.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t29\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAuditor in CGDA \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-27 Yrs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tBachelor Degree in Any Stream.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t30\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAccountant in C & AG \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-27 Yrs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tBachelor Degree in Any Stream.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t31\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAccountant / Junior Accountant in Other Ministry Dept. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-27 Yrs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tBachelor Degree in Any Stream.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t32\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSr. Secretarial Assistant in  Ministry of Electronics and\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tInformation Technology \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-27 Yrs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tBachelor Degree in Any Stream.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t33\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSr. Secretarial Asst./UDC in CGO/ CSCS \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-27 Yrs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tBachelor Degree in Any Stream.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t34\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTax Assistant in CBDT \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-27 Yrs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tBachelor Degree in Any Stream.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t35\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTax Assistant in CBIC \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-27 Yrs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tBachelor Degree in Any Stream.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t36\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSub Inspector in CBN \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-27 Yrs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tBachelor Degree in Any Stream.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPay Scale & Mode of Selection\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPay Scale:- As Per Rule.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSelection Process:- Selection on the Basis of Tier-I, Tier-II Exam\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\n\t📋 How to Download SSC CGL Tier-I Exam City / Admit Card 2026 Out for 12256 Post\n\n\t\n\t\tVisit the official website ssc.gov.in or your concerned SSC Regional website.\n\t\tClick on the “Admit Card” tab and open the Combined Graduate Level Examination, 2026 (Tier-I) City Intimation / Admit Card link.\n\t\tLog in with your Registration Number and Date of Birth / Password.\n\t\tDownload the Exam City Intimation Slip first (about 10 days before exam) and later the Admit Card (2–3 days before exam).\n\t\tPrint the Admit Card and carry it to the exam centre with a valid Photo ID and recent photographs.\n\t\n\n\tNote: City Intimation Slip only shows exam city. Full centre address, date and shift are on the Admit Card. Check details carefully and contact SSC helpline for any issue.\n\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here to Join ResultBharat Facebook Group \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAll Interested Candidates Can Download Tier-I Exam Date Notice Now\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDisclaimer : The Examination Results / Marks published in this Website is simplest for the instant Information to the Examinees an does now not to be a represent to be a Legal Document. While all efforts had been made to make the Information to be had on this Website as Authentic as feasible. We are not accountable for any Inadvertent Error which can have crept in the Examination Results / Marks being published in this Website nad for any loss to absolutely everyone or anything caused by any Shortcoming, Defect or Inaccuracy of the Information in this Website.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t           \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tIMPORTANT LINKS\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDownload Tier-I Exam Date Notice \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tApply Online \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tRegistration   ||   Login\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDownload Re-Open Notice \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDownload Official Notification \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDownload CGL 2026 Exam Pattern/ Syllabus \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOfficial Website\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tJoin Our Whatsapp Channel\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tJoin Our Telegram Group\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTop Online Form 2026 (All Current Job List)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSSC CGL 2026 Exam Pattern/ Syllabus:-\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTier-I: Computer Based Examination (CBT)\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tExam Mode: Online (Computer Based Test)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDuration: 60 minutes (80 minutes for visually handicapped candidates)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSections:\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tGeneral Intelligence and Reasoning\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tGeneral Awareness\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tQuantitative Aptitude\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tEnglish Comprehension\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTotal Marks: 200 (50 marks per section)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMarking Scheme: +2 marks for each correct answer, -0.5 marks for each incorrect answer\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSyllabus for Tier-I:\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tGeneral Intelligence and Reasoning: Analogies, similarities and differences, spatial visualization, spatial orientation, problem-solving, analysis, judgment, decision making, visual memory, etc.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tGeneral Awareness: Current affairs, history, culture, geography, economic scene, general policy and scientific research, etc.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tQuantitative Aptitude: Whole numbers, decimals, fractions and relationships between numbers, percentage, ratio and proportion, square roots, averages, interest, profit and loss, algebra, geometry, trigonometry, statistical charts, etc.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tEnglish Comprehension: Reading comprehension, fill in the blanks, spelling, idioms and phrases, one-word substitution, sentence correction, error spotting, synonyms, antonyms, etc.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTier-II: Computer Based Examination (CBT)\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tExam Mode: Online (Computer Based Test)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDuration: 120 minutes per paper (160 minutes for visually handicapped candidates)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPapers:\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPaper-I: Quantitative Abilities\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPaper-II: English Language and Comprehension\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPaper-III: Statistics (only for Statistical Investigator Grade II & Compiler posts)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPaper-IV: General Studies (Finance and Economics) (only for Assistant Audit Officer/Assistant Accounts Officer posts)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTotal Marks: Varies (200 marks per paper for Paper I and II, 100 marks per paper for Paper III and IV)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMarking Scheme: +2 marks for each correct answer in Paper I, II, and IV, +1 mark for each correct answer in Paper III. Negative marking of -0.5 marks for each incorrect answer in Paper I, II, and IV, and -0.25 marks for Paper III.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSyllabus for Tier-II:\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPaper-I: Quantitative Abilities: Same as Tier-I but more advanced level questions.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPaper-II: English Language and Comprehension: Same as Tier-I but more advanced level questions.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPaper-III: Statistics: Collection and representation of data, measure of dispersion, moments, skewness and kurtosis, correlation and regression, probability theory, sampling theory, etc.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPaper-IV: General Studies (Finance and Economics): Finance Commission, Basic Concept of Economics and Introduction to Micro Economics, Theory of Demand and Supply, Theory of Production and Cost, Forms of Market and Price Determination in Different Markets, Indian Economy, Economic Reforms in India, Money and Banking, Role of IT in Governance\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\n\t\t\t\t\t\t\n \n\n\n\n🚨 SSC CGL 2026 Tier-I Exam City/ Admit Card: Out for 12256 Posts #SSCCGL2026 #SSC CGL Tier 1\nStaff Selection Commission (SSC) ne **Combined Graduate Level CGL 2026** ke liye official notification release kar diya hai। Total 12256 posts ke liye online application **21 May 2026** se **25 June 2026** tak chalegi। Tier-I Exam August/September 2026 में होगा। Bahut badi vacancy – trending on Google & AI Mode!\n\n🔥 Hot Trends: SSC CGL 2026 Buzz\n12 September 2026: SSC CGL 2026 Google aur AI Mode mein bahut trending! Searches exploding for \"SSC CGL form 2026\", \"CGL 12256 vacancy\", \"SSC CGL Tier 1\". Golden opportunity for graduates! #SSCCGL2026 #SarkariNaukri\n\n📰 Latest Updates for SSC CGL 2026\n\n  21 May 2026: Online Application Started!\n  25 June 2026: Last date for registration (11:00 PM).\n  Fee Payment Last Date: 26 June 2026\n  Tier-I Exam: 30 September to 30 October 2026\n\n\n📅 Important Dates\n\n  \n    EventDate\n    Online Application Start21 May 2026\n    Registration Last Date25 June 2026 (11:00 PM)\n    Fee Payment Last Date26 June 2026 (11:00 PM)\n    Correction Window01 to 03 July 2026\n    Tier-I Exam30 September to 30 October 2026\n    Tier-II ExamDecember 2026\n  \n\n\n💸 Application Fee\n\n  \n    CategoryFee\n    General / OBCRs. 100/-\n    SC / ST / PH / FemaleRs. 00/-\n  \n\n\n🎓 Eligibility Criteria\n\n  Bachelor’s Degree in Any Stream from Recognized University.\n  Age Limit (as on 01-08-2026): 18-32 Years (Post Wise).\n\n\n📋 How to Apply for SSC CGL 2026\n\n  Visit official website ssc.gov.in\n  Click on CGL 2026 Registration\n  Register with valid Email & Mobile Number\n  Fill application form and upload documents\n  Pay fee and submit\n  Take printout of confirmation page\n\n\n🌟 Why Apply for SSC CGL 2026?\n\n  Huge 12256 Vacancies in Various Ministries\n  Group B & Group C Posts with Good Salary\n  Excellent Government Job Opportunity\n  Trending SSC Exam 2026! #SSCCGL2026\n\n\nExplore more SSC & Government Job Updates on Result Bharat!\n\n❓ SSC CGL 2026 – Frequently Asked Questions\n📅 Q1. SSC CGL 2026 form kab start hai?21 May 2026.\n📅 Q2. Last date kya hai?25 June 2026.\n💸 Q3. Application fee kitna hai?Rs.100/- (Gen/OBC), Free for SC/ST/PH/Female.\n🎓 Q4. Eligibility?Graduation Degree.\n📅 Q5. एसएससी सीजीएल 2026 फॉर्म कब शुरू?21 मई 2026 से।\n📅 Q6. अंतिम तिथि?25 जून 2026।\n\n\n\n\n \n\t\t\t\t\t\t\n\n\n \n\n\n\n \n\n \n \n \n\n\n\n\n\n\n\n\n\n\n\n/* Footer Styling */\n    .pageFooter {\n        background-color: #00004d; /* Dark blue background */\n        padding: 20px 0;\n        text-align: center;\n        border-top: 2px solid #ddd;\n        color: white; /* White text for better contrast */\n    }\n\n    .pageFooter p {\n        margin: 10px 0;\n        font-family: 'Times New Roman', Times, serif;\n        font-size: 16px;\n        color: white; /* White text */\n    }\n\n    .pageFooter a {\n        text-decoration: none;\n        color: #66ccff; /* Light blue link color */\n        font-weight: bold;\n    }\n\n    .pageFooter a:hover {\n        color: #ff6347; /* Hover effect - tomato color */\n    }\n\n    .pageFooter .footer-links {\n        font-size: 18px;\n        margin-top: 20px;\n    }\n\n    .pageFooter .footer-links a {\n        margin: 0 8px;\n        color: #66ccff; /* Light blue link color */\n        font-weight: bold;\n    }\n\n    .pageFooter .footer-links a:hover {\n        color: #ff6347; /* Hover effect for links */\n    }\n\n    .pageFooter img {\n        margin: 10px 0; /* Space above and below the image */\n    }\n\n    .pageFooter .copyright {\n        margin-top: 10px;\n        font-size: 16px;\n    }\n\n\n\n\n\nContact Email:   official.resultbharat@gmail.com \n\n\nHome | About Us | Contact Us | Privacy Policy | Disclaimer | Terms of Use\n\n\n\n\n\n© Copyright 2017-2026 at www.resultbharat.com\n  \n\n\n\n\n\n\n\n'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpsh-oh'},{'server':'sg2plzcpnl506243'},{'dcenter':'sg2'},{'cp_id':'3459397'},{'cp_cl':'8'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support. : Name of Post:\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSSC CGL 2026 Tier-I Exam Date Out for 12256 Post\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPost Date:\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t12 September 2026 | 06:10 PM\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tShort Information :\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tStaff Selection Commission (SSC) has Download Tier-I Exam Date for the Various Post Under Combined Graduate Level CGL Exam 2026 Recruitment for 12256 Post. Check All Details, Like Age Limit, Eligibility Details, Post Information, Pay Scale, Selection Process & More Details Related to this Jobs.Online Apply Start On May 21, 2026 & Last Date is June 22, 2026. All Interested Candidates Can Download Tier-I Exam Date Now in The Given Link Below.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t \n\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tStaff Selection Commission (SSC)\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCombined Graduate Level  Exam (CGL-2026) Recruitment 2026\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tWWW.RESULTBHARAT.COM\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tApplication Fee\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tGeneral/ OBC Candidates : Rs.100/-\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSC/ ST/ PH Candidates : Rs.00/-\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAll Category Female Candidates : Rs.00/-\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPayment Mode: Pay  the Exam Fee Through Debit Card, Credit Card, Net Banking Fee Mode.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tImportant Dates\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOnline Apply Start On: 21 May 2026\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tLast Date For Apply Online: 25 June 2026 (11:00 PM)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tLast Date For Payment Online : 26 June 2026 (11:00 PM)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOnline Correction :  01 to 03 July 2026 (11:00 PM)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTier I Exam City : Notify Later\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTier I Admit Card: Notify Later\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTier I Exam Date: 30 September to 30 October 2026\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTier II Exam Date: December 2026\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tVacancy Details | Age Limit: 01-08-2026 |   Eligibility Criteria\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTotal Vacancy: 12256 Post \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPost Code\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPost Name & Department\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAge Limit\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tEligibility Criteria as on 01-08-2025\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAssistant Audit Officer in India Audit & Account \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-30 Yrs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAssistant Account Officer in India Audit & Account \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-30 Yrs\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAssistant Section Officer in Central Secretariat Service \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t20-30 Yrs\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAssistant Section Officer in Intelligence Bureau \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-30 Yrs  \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t05\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAssistant Section Officer in Ministry of Railway \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t20-30 Yrs. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t06\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAssistant Section Officer in Ministry of External Affairs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t20-30 Yrs.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t07\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAssistant Section Officer in AFHQ \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t20-30 Yrs. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t08\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAssistant in Other Ministries/ Dept./ Org. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-30 Yrs. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t09\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAssistant in Other Ministries/ Dept./ Org. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t20-30 Yrs.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t10\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAssistant Section Officer in Other Ministries/ Dept./ Org. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-30 Yrs\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t11\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tInspector of Income Tax in CBDT \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 18-30 Yrs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t12\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tInspector (Central Excise) in CBIC \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-30 Yrs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t13\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tInspector (Preventive Officer) in CBIC \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-30 Yrs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t14\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tInspector (Examiner) in CBIC \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-30 Yrs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t15\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAsst. Enforcement Officer Dept. of Revenue \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-30 Yrs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSub Inspector in CBI \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t20-30 Yrs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t17\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tInspector Posts in DOP \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-30 Yrs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tInspector in Central of Narcotics \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-30 Yrs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAssistant/ Superintendent in Indian Coast Guard\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-30 Yrs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t20\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAssistant in Other Ministries/ Dept./ Org. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  18-30 Yrs  \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t21\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAssistant in (NCLAT)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-30 Yrs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t22\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tResearch Assistant (NHRC)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-30 Yrs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t23\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDivisional Accountant in Offices C & AG \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-30 Yrs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t24\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSub Inspector in NIA \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 18-30 Yrs\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Bachelor Degree in Any Stream. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t25\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tJunior Statistical Officer in MSPI \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-32 Yrs\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tBachelor Degree in Any Stream with at Least 60% Marks in Math Subject in 12th Standard OR Bachelor Degree with Statistics Subject.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t26\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tStatistical\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tInvestigator Grade-II in RGI\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-30 Yrs\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  Bachelor Degree in Any Stream with Statistics as a Subject\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t27\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAuditor in C & AG \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-27 Yrs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tBachelor Degree in Any Stream.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t28\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAuditor in Other Ministries/ Dept. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-27 Yrs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tBachelor Degree in Any Stream.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t29\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAuditor in CGDA \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-27 Yrs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tBachelor Degree in Any Stream.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t30\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAccountant in C & AG \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-27 Yrs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tBachelor Degree in Any Stream.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t31\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAccountant / Junior Accountant in Other Ministry Dept. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-27 Yrs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tBachelor Degree in Any Stream.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t32\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSr. Secretarial Assistant in  Ministry of Electronics and\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tInformation Technology \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-27 Yrs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tBachelor Degree in Any Stream.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t33\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSr. Secretarial Asst./UDC in CGO/ CSCS \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-27 Yrs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tBachelor Degree in Any Stream.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t34\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTax Assistant in CBDT \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-27 Yrs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tBachelor Degree in Any Stream.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t35\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTax Assistant in CBIC \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-27 Yrs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tBachelor Degree in Any Stream.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t36\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSub Inspector in CBN \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18-27 Yrs \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tBachelor Degree in Any Stream.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPay Scale & Mode of Selection\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPay Scale:- As Per Rule.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSelection Process:- Selection on the Basis of Tier-I, Tier-II Exam\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\n\t📋 How to Download SSC CGL Tier-I Exam City / Admit Card 2026 Out for 12256 Post\n\n\t\n\t\tVisit the official website ssc.gov.in or your concerned SSC Regional website.\n\t\tClick on the “Admit Card” tab and open the Combined Graduate Level Examination, 2026 (Tier-I) City Intimation / Admit Card link.\n\t\tLog in with your Registration Number and Date of Birth / Password.\n\t\tDownload the Exam City Intimation Slip first (about 10 days before exam) and later the Admit Card (2–3 days before exam).\n\t\tPrint the Admit Card and carry it to the exam centre with a valid Photo ID and recent photographs.\n\t\n\n\tNote: City Intimation Slip only shows exam city. Full centre address, date and shift are on the Admit Card. Check details carefully and contact SSC helpline for any issue.\n\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here to Join ResultBharat Facebook Group \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAll Interested Candidates Can Download Tier-I Exam Date Notice Now\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDisclaimer : The Examination Results / Marks published in this Website is simplest for the instant Information to the Examinees an does now not to be a represent to be a Legal Document. While all efforts had been made to make the Information to be had on this Website as Authentic as feasible. We are not accountable for any Inadvertent Error which can have crept in the Examination Results / Marks being published in this Website nad for any loss to absolutely everyone or anything caused by any Shortcoming, Defect or Inaccuracy of the Information in this Website.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t           \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tIMPORTANT LINKS\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDownload Tier-I Exam Date Notice \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tApply Online \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tRegistration   ||   Login\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDownload Re-Open Notice \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDownload Official Notification \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDownload CGL 2026 Exam Pattern/ Syllabus \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOfficial Website\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tJoin Our Whatsapp Channel\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tJoin Our Telegram Group\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTop Online Form 2026 (All Current Job List)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSSC CGL 2026 Exam Pattern/ Syllabus:-\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTier-I: Computer Based Examination (CBT)\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tExam Mode: Online (Computer Based Test)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDuration: 60 minutes (80 minutes for visually handicapped candidates)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSections:\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tGeneral Intelligence and Reasoning\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tGeneral Awareness\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tQuantitative Aptitude\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tEnglish Comprehension\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTotal Marks: 200 (50 marks per section)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMarking Scheme: +2 marks for each correct answer, -0.5 marks for each incorrect answer\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSyllabus for Tier-I:\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tGeneral Intelligence and Reasoning: Analogies, similarities and differences, spatial visualization, spatial orientation, problem-solving, analysis, judgment, decision making, visual memory, etc.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tGeneral Awareness: Current affairs, history, culture, geography, economic scene, general policy and scientific research, etc.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tQuantitative Aptitude: Whole numbers, decimals, fractions and relationships between numbers, percentage, ratio and proportion, square roots, averages, interest, profit and loss, algebra, geometry, trigonometry, statistical charts, etc.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tEnglish Comprehension: Reading comprehension, fill in the blanks, spelling, idioms and phrases, one-word substitution, sentence correction, error spotting, synonyms, antonyms, etc.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTier-II: Computer Based Examination (CBT)\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tExam Mode: Online (Computer Based Test)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDuration: 120 minutes per paper (160 minutes for visually handicapped candidates)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPapers:\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPaper-I: Quantitative Abilities\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPaper-II: English Language and Comprehension\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPaper-III: Statistics (only for Statistical Investigator Grade II & Compiler posts)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPaper-IV: General Studies (Finance and Economics) (only for Assistant Audit Officer/Assistant Accounts Officer posts)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTotal Marks: Varies (200 marks per paper for Paper I and II, 100 marks per paper for Paper III and IV)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMarking Scheme: +2 marks for each correct answer in Paper I, II, and IV, +1 mark for each correct answer in Paper III. Negative marking of -0.5 marks for each incorrect answer in Paper I, II, and IV, and -0.25 marks for Paper III.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSyllabus for Tier-II:\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPaper-I: Quantitative Abilities: Same as Tier-I but more advanced level questions.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPaper-II: English Language and Comprehension: Same as Tier-I but more advanced level questions.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPaper-III: Statistics: Collection and representation of data, measure of dispersion, moments, skewness and kurtosis, correlation and regression, probability theory, sampling theory, etc.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPaper-IV: General Studies (Finance and Economics): Finance Commission, Basic Concept of Economics and Introduction to Micro Economics, Theory of Demand and Supply, Theory of Production and Cost, Forms of Market and Price Determination in Different Markets, Indian Economy, Economic Reforms in India, Money and Banking, Role of IT in Governance\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\n\t\t\t\t\t\t\n \n\n\n\n🚨 SSC CGL 2026 Tier-I Exam City/ Admit Card: Out for 12256 Posts #SSCCGL2026 #SSC CGL Tier 1\nStaff Selection Commission (SSC) ne **Combined Graduate Level CGL 2026** ke liye official notification release kar diya hai। Total 12256 posts ke liye online application **21 May 2026** se **25 June 2026** tak chalegi। Tier-I Exam August/September 2026 में होगा। Bahut badi vacancy – trending on Google & AI Mode!\n\n🔥 Hot Trends: SSC CGL 2026 Buzz\n12 September 2026: SSC CGL 2026 Google aur AI Mode mein bahut trending! Searches exploding for \"SSC CGL form 2026\", \"CGL 12256 vacancy\", \"SSC CGL Tier 1\". Golden opportunity for graduates! #SSCCGL2026 #SarkariNaukri\n\n📰 Latest Updates for SSC CGL 2026\n\n  21 May 2026: Online Application Started!\n  25 June 2026: Last date for registration (11:00 PM).\n  Fee Payment Last Date: 26 June 2026\n  Tier-I Exam: 30 September to 30 October 2026\n\n\n📅 Important Dates\n\n  \n    EventDate\n    Online Application Start21 May 2026\n    Registration Last Date25 June 2026 (11:00 PM)\n    Fee Payment Last Date26 June 2026 (11:00 PM)\n    Correction Window01 to 03 July 2026\n    Tier-I Exam30 September to 30 October 2026\n    Tier-II ExamDecember 2026\n  \n\n\n💸 Application Fee\n\n  \n    CategoryFee\n    General / OBCRs. 100/-\n    SC / ST / PH / FemaleRs. 00/-\n  \n\n\n🎓 Eligibility Criteria\n\n  Bachelor’s Degree in Any Stream from Recognized University.\n  Age Limit (as on 01-08-2026): 18-32 Years (Post Wise).\n\n\n📋 How to Apply for SSC CGL 2026\n\n  Visit official website ssc.gov.in\n  Click on CGL 2026 Registration\n  Register with valid Email & Mobile Number\n  Fill application form and upload documents\n  Pay fee and submit\n  Take printout of confirmation page\n\n\n🌟 Why Apply for SSC CGL 2026?\n\n  Huge 12256 Vacancies in Various Ministries\n  Group B & Group C Posts with Good Salary\n  Excellent Government Job Opportunity\n  Trending SSC Exam 2026! #SSCCGL2026\n\n\nExplore more SSC & Government Job Updates on Result Bharat!\n\n❓ SSC CGL 2026 – Frequently Asked Questions\n📅 Q1. SSC CGL 2026 form kab start hai?21 May 2026.\n📅 Q2. Last date kya hai?25 June 2026.\n💸 Q3. Application fee kitna hai?Rs.100/- (Gen/OBC), Free for SC/ST/PH/Female.\n🎓 Q4. Eligibility?Graduation Degree.\n📅 Q5. एसएससी सीजीएल 2026 फॉर्म कब शुरू?21 मई 2026 से।\n📅 Q6. अंतिम तिथि?25 जून 2026।\n\n\n\n\n \n\t\t\t\t\t\t\n\n\n \n\n\n\n \n\n \n \n \n\n\n\n\n\n\n\n\n\n\n\n/* Footer Styling */\n    .pageFooter {\n        background-color: #00004d; /* Dark blue background */\n        padding: 20px 0;\n        text-align: center;\n        border-top: 2px solid #ddd;\n        color: white; /* White text for better contrast */\n    }\n\n    .pageFooter p {\n        margin: 10px 0;\n        font-family: 'Times New Roman', Times, serif;\n        font-size: 16px;\n        color: white; /* White text */\n    }\n\n    .pageFooter a {\n        text-decoration: none;\n        color: #66ccff; /* Light blue link color */\n        font-weight: bold;\n    }\n\n    .pageFooter a:hover {\n        color: #ff6347; /* Hover effect - tomato color */\n    }\n\n    .pageFooter .footer-links {\n        font-size: 18px;\n        margin-top: 20px;\n    }\n\n    .pageFooter .footer-links a {\n        margin: 0 8px;\n        color: #66ccff; /* Light blue link color */\n        font-weight: bold;\n    }\n\n    .pageFooter .footer-links a:hover {\n        color: #ff6347; /* Hover effect for links */\n    }\n\n    .pageFooter img {\n        margin: 10px 0; /* Space above and below the image */\n    }\n\n    .pageFooter .copyright {\n        margin-top: 10px;\n        font-size: 16px;\n    }\n\n\n\n\n\nContact Email:   official.resultbharat@gmail.com \n\n\nHome | About Us | Contact Us | Privacy Policy | Disclaimer | Terms of Use\n\n\n\n\n\n© Copyright 2017-2026 at www.resultbharat.com\n  \n\n\n\n\n\n\n\n'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpsh-oh'},{'server':'sg2plzcpnl506243'},{'dcenter':'sg2'},{'cp_id':'3459397'},{'cp_cl':'8'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.",
+      "publishedDate": "12 September 2026",
+      "publishedAt": "2026-09-11T18:30:00.000Z"
     }
   },
-  "fetchedAt": "2026-09-13T03:18:02.027Z",
+  "fetchedAt": "2026-09-13T09:52:26.282Z",
   "seo": {
-    "lastOptimized": "2026-09-13T03:18:07.910Z",
-    "totalPosts": 1878,
+    "lastOptimized": "2026-09-13T09:54:32.602Z",
+    "totalPosts": 1879,
     "websiteName": "All India Exam Result",
     "websiteUrl": "https://www.aiexamresult.com",
     "description": "Sarkari Result 2026 - Get fastest government job alerts, sarkari naukri, exam results, admit cards & answer keys. SSC, UPSC, Railway, Banking, UP, Bihar & all India exams."
