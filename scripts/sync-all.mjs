@@ -585,6 +585,7 @@ async function main() {
 
   let totalNew = 0;
   const newItems = [];
+  const newSlugs = []; // Track slugs of new posts for IndexNow
 
   // ---- Source 1: sarkariresult.com ----
   console.log("\n[1/6] Fetching sarkariresult.com...");
@@ -958,6 +959,7 @@ async function main() {
       publishedAt: detail.publishedAt,
     };
     writeFileSync(POSTS_DIR + "/" + slug + ".json", JSON.stringify(detail, null, 2), "utf8");
+    newSlugs.push(slug); // collect for IndexNow submission
     return 1;
   }
 
@@ -996,6 +998,37 @@ async function main() {
     console.log(`\nDone in ${elapsed}s. No new items. Re-scraped ${reScrapeQueue.length} empty posts.`);
   }
   console.log("Updated data/scraped-data.ts and data/posts/");
+
+  // ── IndexNow: submit newly added URLs to search engines ──────────────────
+  if (totalNew > 0 && newSlugs.length > 0) {
+    try {
+      const INDEXNOW_KEY = "4a08f378de91444e4e079f36629f76de";
+      const HOST = "www.aiexamresult.com";
+      const newUrls = [
+        `https://${HOST}/`,
+        ...newSlugs.slice(0, 99).map((s) => `https://${HOST}/post/${s}`),
+      ];
+      const payload = {
+        host: HOST,
+        key: INDEXNOW_KEY,
+        keyLocation: `https://${HOST}/${INDEXNOW_KEY}.txt`,
+        urlList: newUrls,
+      };
+      const res = await fetch("https://api.indexnow.org/indexnow", {
+        method: "POST",
+        headers: { "Content-Type": "application/json; charset=utf-8" },
+        body: JSON.stringify(payload),
+      });
+      if (res.ok || res.status === 202) {
+        console.log(`✅ IndexNow: submitted ${newUrls.length} URLs (status ${res.status})`);
+      } else {
+        console.log(`⚠️  IndexNow: status ${res.status} — ${await res.text().catch(() => "")}`);
+      }
+    } catch (err) {
+      console.log(`⚠️  IndexNow submit failed: ${err.message}`);
+    }
+  }
+  // ─────────────────────────────────────────────────────────────────────────
 }
 
 main().catch((e) => { console.error("Error:", e.message); process.exit(1); });

@@ -52,7 +52,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   let desc = "";
 
   if (rawIntro.length > 50) {
-    desc = rawIntro.substring(0, 150).replace(/\s+\S*$/, "") + "… Check full notification & apply at Sarkari Result.";
+    // Use up to 200 chars of intro for richer context
+    const introSnip = rawIntro.substring(0, 200).replace(/\s+\S*$/, "");
+    desc = introSnip + "… Check full notification & apply at Sarkari Result.";
   } else {
     const dateHint = post.importantDates?.find((d: string) =>
       /last|apply|exam date|admit/i.test(d)
@@ -67,6 +69,18 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     } else {
       desc = `${title}: Check important dates, application fee, eligibility & official direct links${dateStr} Complete details at Sarkari Result | Sarkari Exam.`;
     }
+  }
+
+  // Ensure minimum 120 chars — append extra context if too short
+  if (desc.length < 120) {
+    const extra = catLower.includes("job") || tLower.includes("recruitment")
+      ? " Apply online for latest govt job 2026 at Sarkari Result | Sarkari Exam."
+      : catLower.includes("result") || tLower.includes("result")
+      ? " Download result & scorecard 2026 at Sarkari Result | Sarkari Exam."
+      : catLower.includes("admit") || tLower.includes("admit card")
+      ? " Download admit card & check exam date 2026 at Sarkari Result | Sarkari Exam."
+      : " Get latest govt exam updates 2026 at Sarkari Result | Sarkari Exam.";
+    desc = desc.replace(/\.\s*$/, "") + extra;
   }
 
   if (desc.length > 165) desc = desc.substring(0, 160) + "…";
