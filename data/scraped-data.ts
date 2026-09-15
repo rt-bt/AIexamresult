@@ -2,6 +2,22 @@
 export const scrapedData = {
   "results": [
     {
+      "title": "Bihar Vidhan Parishad LDC, DEO Final Result 2026",
+      "url": "/post/bihar-vidhan-parishad-pa-deo-ldc-stenographer-2026",
+      "category": "results",
+      "slug": "bihar-vidhan-parishad-pa-deo-ldc-stenographer-2026",
+      "publishedDate": "14 May 2026",
+      "publishedAt": "2026-05-13T18:30:00.000Z"
+    },
+    {
+      "title": "IBPS Clerk CSA 15th Reserve List 2026",
+      "url": "/post/ibps-clerk-csa-15th-xv-mains-2025",
+      "category": "results",
+      "slug": "ibps-clerk-csa-15th-xv-mains-2025",
+      "publishedDate": "15 June 2026",
+      "publishedAt": "2026-06-14T18:30:00.000Z"
+    },
+    {
       "title": "Bihar BSEB DElEd 3rd Merit List 2026",
       "url": "/post/bseb-bihar-d-el-ed-2026-28",
       "category": "results",
@@ -2380,6 +2396,22 @@ export const scrapedData = {
   ],
   "admitCards": [
     {
+      "title": "UPESSC Principal Exam City Details 2026",
+      "url": "/post/upessc-up-principal-2026",
+      "category": "admitCards",
+      "slug": "upessc-up-principal-2026",
+      "publishedDate": "22 July 2026",
+      "publishedAt": "2026-07-21T18:30:00.000Z"
+    },
+    {
+      "title": "Indian Overseas Bank LBO Exam Date 2026",
+      "url": "/post/indian-overseas-bank-lbo-2026",
+      "category": "admitCards",
+      "slug": "indian-overseas-bank-lbo-2026",
+      "publishedDate": "2026-09-15T19:14:36+05:30",
+      "publishedAt": "2026-09-15T13:44:36.000Z"
+    },
+    {
       "title": "CTET September Exam Date 2026",
       "url": "/post/ctet-september-2026",
       "category": "admitCards",
@@ -2524,7 +2556,7 @@ export const scrapedData = {
       "publishedAt": "2026-09-07T11:23:28.000Z"
     },
     {
-      "title": "UPCISB Cooperative Bank Various Posts Exam Date 2026",
+      "title": "UPCISB Cooperative Bank Various Posts Admit Card 2026",
       "url": "/post/upcisb-cooperative-bank-various-post-2026",
       "category": "admitCards",
       "slug": "upcisb-cooperative-bank-various-post-2026",
@@ -3844,8 +3876,8 @@ export const scrapedData = {
       "publishedAt": "2026-09-08T18:30:00.000Z"
     },
     {
-      "title": "SBI Junior Associates Clerk Backlog Admit Card 2026 for 1538 Post",
-      "url": "https://rojgarresult.com/sbi-junior-associates-clerk-2026/",
+      "title": "SBI Junior Associates Clerk PET Admit Card 2026",
+      "url": "/post/sbi-junior-associates-clerk-2026",
       "category": "admitCards",
       "slug": "sbi-junior-associates-clerk-2026",
       "publishedDate": "9 September 2026",
@@ -4101,6 +4133,14 @@ export const scrapedData = {
     }
   ],
   "latestJobs": [
+    {
+      "title": "MP High Court Assistant Grade III Online Form 2026 – Extend",
+      "url": "/post/mp-high-court-assistant-grade-iii-online-form-2026",
+      "category": "latestJobs",
+      "slug": "mp-high-court-assistant-grade-iii-online-form-2026",
+      "publishedDate": "2026-09-15T14:11:58+05:30",
+      "publishedAt": "2026-09-15T08:41:58.000Z"
+    },
     {
       "title": "Indian Army Dental Corps Online Form 2026",
       "url": "/post/indian-army-dental-corps-2026",
@@ -5422,7 +5462,7 @@ export const scrapedData = {
       "publishedAt": "2026-09-10T09:18:26.000Z"
     },
     {
-      "title": "Railway RRC ECoR Apprentice Online Form 2026 (1599 Posts)",
+      "title": "Railway RRC ECoR Apprentice Online Form 2026 – Last Date",
       "url": "/post/railway-rrc-ecor-apprentices-2026",
       "category": "latestJobs",
       "slug": "railway-rrc-ecor-apprentices-2026",
@@ -5791,7 +5831,7 @@ export const scrapedData = {
     },
     {
       "title": "UPSSSC Veterinary Pharmacist Online Form 2026",
-      "url": "https://www.sarkariexam.com/upsssc-veterinary-pharmacist-2026",
+      "url": "/post/upsssc-veterinary-pharmacist-2026",
       "category": "latestJobs",
       "slug": "upsssc-veterinary-pharmacist-2026",
       "publishedDate": "14 August 2026",
@@ -6190,7 +6230,7 @@ export const scrapedData = {
       "publishedAt": "2026-09-10T09:18:48.000Z"
     },
     {
-      "title": "Bihar STET Online Form 2026",
+      "title": "Bihar STET Online Form 2026 – Extend",
       "url": "/post/bihar-stet-2026-2",
       "category": "latestJobs",
       "slug": "bihar-stet-2026-2",
@@ -9219,6 +9259,14 @@ export const scrapedData = {
     }
   ],
   "admissions": [
+    {
+      "title": "IIM CAT Admission Online Form 2026 – Extend",
+      "url": "/post/iim-cat-admission-2026",
+      "category": "admissions",
+      "slug": "iim-cat-admission-2026",
+      "publishedDate": "27 July 2026",
+      "publishedAt": "2026-07-27T08:46:32.000Z"
+    },
     {
       "title": "BCECE Admission Mop-up Allotment Result 2026",
       "url": "/post/bcece-admission-2026",
@@ -12259,7 +12307,7 @@ export const scrapedData = {
       "publishedAt": "2026-08-13T18:30:00.000Z"
     },
     "upsssc-veterinary-pharmacist-2026": {
-      "lastDate": "05 October 2026",
+      "lastDate": "05 October 2026",
       "isExpired": false,
       "publishedDate": "14 August 2026",
       "publishedAt": "2026-08-13T18:30:00.000Z"
@@ -12759,7 +12807,7 @@ export const scrapedData = {
       "publishedAt": "2026-09-10T09:18:48.000Z"
     },
     "bihar-stet-2026-2": {
-      "lastDate": "15 September 2026",
+      "lastDate": "22 September 2026",
       "publishedDate": "5 September 2026",
       "publishedAt": "2026-09-05T04:49:03.000Z"
     },
@@ -14492,7 +14540,7 @@ export const scrapedData = {
       "publishedAt": "2026-09-09T18:30:00.000Z"
     },
     "sbi-junior-associates-clerk-2026": {
-      "lastDate": "27/08/2026",
+      "lastDate": "31 August 2026",
       "publishedDate": "9 September 2026",
       "publishedAt": "2026-09-08T18:30:00.000Z"
     },
@@ -14977,12 +15025,37 @@ export const scrapedData = {
       "lastDate": "22 October 2026",
       "publishedDate": "2026-09-14T17:39:28+05:30",
       "publishedAt": "2026-09-14T12:09:28.000Z"
+    },
+    "ibps-clerk-csa-15th-xv-mains-2025": {
+      "lastDate": "28 August 2025",
+      "publishedDate": "15 June 2026",
+      "publishedAt": "2026-06-14T18:30:00.000Z"
+    },
+    "bihar-vidhan-parishad-pa-deo-ldc-stenographer-2026": {
+      "lastDate": "05 January 2026 (Extend)",
+      "publishedDate": "14 May 2026",
+      "publishedAt": "2026-05-13T18:30:00.000Z"
+    },
+    "indian-overseas-bank-lbo-2026": {
+      "lastDate": "24 August 2026",
+      "publishedDate": "2026-09-15T19:14:36+05:30",
+      "publishedAt": "2026-09-15T13:44:36.000Z"
+    },
+    "mp-high-court-assistant-grade-iii-online-form-2026": {
+      "lastDate": "30 September 2026",
+      "publishedDate": "2026-09-15T14:11:58+05:30",
+      "publishedAt": "2026-09-15T08:41:58.000Z"
+    },
+    "iim-cat-admission-2026": {
+      "lastDate": "22 September 2026",
+      "publishedDate": "27 July 2026",
+      "publishedAt": "2026-07-27T08:46:32.000Z"
     }
   },
-  "fetchedAt": "2026-09-14T13:52:08.529Z",
+  "fetchedAt": "2026-09-15T14:03:51.830Z",
   "seo": {
-    "lastOptimized": "2026-09-14T13:52:14.828Z",
-    "totalPosts": 1880,
+    "lastOptimized": "2026-09-15T14:03:59.702Z",
+    "totalPosts": 1882,
     "websiteName": "All India Exam Result",
     "websiteUrl": "https://www.aiexamresult.com",
     "description": "Sarkari Result 2026 - Get fastest government job alerts, sarkari naukri, exam results, admit cards & answer keys. SSC, UPSC, Railway, Banking, UP, Bihar & all India exams."
