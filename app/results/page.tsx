@@ -10,7 +10,7 @@ import type { PostCard } from "@/lib/data";
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.aiexamresult.com";
 
 export const metadata: Metadata = {
-  title: "Sarkari Result 2026 : Check All Government Exam Results Online",
+  title: "Sarkari Result 2026 | All Govt Exam Results Online",
   description: "Sarkari Result 2026: Check latest Sarkari exam results, score cards, cut off marks, merit list & direct download links for SSC, UPSC, Railway, Banking, Police, UP & Bihar Board exams.",
   alternates: { canonical: `${SITE_URL}/results` },
   openGraph: {

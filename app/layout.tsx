@@ -13,8 +13,8 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.aiexamresult.c
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Sarkari Result 2026, Sarkari Exam, Sarkari Naukri, Rojgar Result | All India Exam Result",
-    template: "%s | Sarkari Result - Sarkari Exam"
+    default: "Sarkari Result 2026 | Sarkari Exam & Naukri",
+    template: "%s | Sarkari Result"
   },
   description:
     "Sarkari Result 2026: Get fastest Sarkari Exam alerts, Sarkari Naukri, Rojgar Result, Admit Card, Answer Key & Results. Check latest central & state government jobs online form 2026.",

@@ -7,7 +7,7 @@ import { Building2, Mail, Phone, ShieldCheck, Zap, Award, CheckCircle2, Globe, H
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.aiexamresult.com";
 
 export const metadata: Metadata = {
-  title: "About Us | All India Exam Result - Sarkari Result 2026 Portal",
+  title: "About Us | All India Exam Result",
   description: "Learn about All India Exam Result (aiexamresult.com), India's leading independent government recruitment news and exam information portal.",
   alternates: { canonical: "/about-us" },
   openGraph: {

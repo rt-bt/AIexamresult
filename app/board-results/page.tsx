@@ -9,7 +9,7 @@ import Link from "next/link";
 import { GraduationCap, ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Board Results 2026 - CBSE, UP Board, Bihar Board, RBSE, MP Board Results",
+  title: "Board Results 2026 - CBSE, UP, Bihar, RBSE, MP Board",
   description:
     "Check all Board Results 2026 — CBSE Class 10th & 12th, UP Board, Bihar Board (BSEB), Rajasthan Board (RBSE), MP Board (MPBSE), Maharashtra Board, Tamil Nadu Board and more. Download marksheets from official websites.",
   keywords: [
