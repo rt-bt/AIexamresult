@@ -2,6 +2,14 @@
 export const scrapedData = {
   "results": [
     {
+      "title": "RRB Junior Engineer CEN.No: 05/2025 CBT 2 Result 2026",
+      "url": "/post/rrb-junior-engineer-je-2025",
+      "category": "results",
+      "slug": "rrb-junior-engineer-je-2025",
+      "publishedDate": "22 June 2026",
+      "publishedAt": "2026-06-22T15:03:41.000Z"
+    },
+    {
       "title": "UPSSSC Junior Assistant 12/2024 Result 2026",
       "url": "/post/upsssc-junior-assistant-advt-12-2024",
       "category": "results",
@@ -2420,6 +2428,14 @@ export const scrapedData = {
   ],
   "admitCards": [
     {
+      "title": "Railway RRB JE CBT I Exam Date 2026",
+      "url": "/post/rrb-junior-engineer-je-2026",
+      "category": "admitCards",
+      "slug": "rrb-junior-engineer-je-2026",
+      "publishedDate": "2026-09-10T14:48:48+05:30",
+      "publishedAt": "2026-09-10T09:18:48.000Z"
+    },
+    {
       "title": "UPESSC Principal Exam City Details 2026",
       "url": "/post/upessc-up-principal-2026",
       "category": "admitCards",
@@ -2444,7 +2460,7 @@ export const scrapedData = {
       "publishedAt": "2026-09-08T18:30:00.000Z"
     },
     {
-      "title": "RPSC Factories & Boiler Inspector Exam City Details 2026",
+      "title": "RPSC Factories & Boiler Inspector Admit Card 2026",
       "url": "/post/rpsc-factories-boiler-inspector-2025",
       "category": "admitCards",
       "slug": "rpsc-factories-boiler-inspector-2025",
@@ -2468,7 +2484,7 @@ export const scrapedData = {
       "publishedAt": "2026-05-21T18:30:00.000Z"
     },
     {
-      "title": "UPSSSC Pharmacist Ayurvedic Exam City Details 2026",
+      "title": "UPSSSC Pharmacist Ayurvedic Admit Card 2026",
       "url": "/post/upsssc-pharmacist-ayurvedic-2024",
       "category": "admitCards",
       "slug": "upsssc-pharmacist-ayurvedic-2024",
@@ -3404,7 +3420,7 @@ export const scrapedData = {
       "publishedAt": "2026-09-10T18:30:00.000Z"
     },
     {
-      "title": "Railway RRB Section Controller Exam Date 2026",
+      "title": "Railway RRB Section Controller Application Status 2026",
       "url": "/post/railway-rrb-section-controller-2026",
       "category": "admitCards",
       "slug": "railway-rrb-section-controller-2026",
@@ -3812,7 +3828,7 @@ export const scrapedData = {
       "publishedAt": "2026-09-10T18:30:00.000Z"
     },
     {
-      "title": "UPSSSC Excise Constable Exam City Details 2026",
+      "title": "UPSSSC Excise Constable Admit Card 2026",
       "url": "/post/upsssc-excise-constable-2026",
       "category": "admitCards",
       "slug": "upsssc-excise-constable-2026",
@@ -4157,6 +4173,30 @@ export const scrapedData = {
     }
   ],
   "latestJobs": [
+    {
+      "title": "Railway RRC NFR Apprentice Online Form 2024 (5,647 Posts)",
+      "url": "/post/railway-rrc-nfr-apprentice-recruitment-2024-sarkari-result-chk",
+      "category": "latestJobs",
+      "slug": "railway-rrc-nfr-apprentice-recruitment-2024-sarkari-result-chk",
+      "publishedDate": "2024-11-28T16:09:04+05:30",
+      "publishedAt": "2024-11-28T10:39:04.000Z"
+    },
+    {
+      "title": "UKSSSC Group C Scaler Online Form 2026",
+      "url": "/post/uksssc-group-c-scaler-2026",
+      "category": "latestJobs",
+      "slug": "uksssc-group-c-scaler-2026",
+      "publishedDate": "2026-09-16T16:41:47+05:30",
+      "publishedAt": "2026-09-16T11:11:47.000Z"
+    },
+    {
+      "title": "RUHS Medical Officer Online Form 2026",
+      "url": "/post/ruhs-medical-officer-2026",
+      "category": "latestJobs",
+      "slug": "ruhs-medical-officer-2026",
+      "publishedDate": "2026-09-16T17:06:42+05:30",
+      "publishedAt": "2026-09-16T11:36:42.000Z"
+    },
     {
       "title": "UPESSC PRT Assistant Teacher Online Form 2026 (12405 Posts)",
       "url": "/post/upessc-prt-assistant-teacher-2026",
@@ -7991,6 +8031,22 @@ export const scrapedData = {
     }
   ],
   "answerKeys": [
+    {
+      "title": "UPSC NDA/ NA-II Answer Key 2026",
+      "url": "/post/upsc-nda-na-ii-2026",
+      "category": "answerKeys",
+      "slug": "upsc-nda-na-ii-2026",
+      "publishedDate": "2026-09-12T11:42:31+05:30",
+      "publishedAt": "2026-09-12T06:12:31.000Z"
+    },
+    {
+      "title": "UPSC CDS-II Answer Key 2026",
+      "url": "/post/upsc-cds-ii-2026",
+      "category": "answerKeys",
+      "slug": "upsc-cds-ii-2026",
+      "publishedDate": "2026-09-12T11:43:20+05:30",
+      "publishedAt": "2026-09-12T06:13:20.000Z"
+    },
     {
       "title": "BSF HCM & ASI Steno Answer Key 2026",
       "url": "/post/bsf-hcm-asi-steno-2024",
@@ -12684,7 +12740,7 @@ export const scrapedData = {
       "publishedAt": "2026-09-12T09:25:56.000Z"
     },
     "rrb-junior-engineer-je-2025": {
-      "lastDate": "10 December 2025",
+      "lastDate": "10 December 2025 (Extended)",
       "isExpired": false,
       "publishedDate": "22 June 2026",
       "publishedAt": "2026-06-22T15:03:41.000Z"
@@ -15118,12 +15174,27 @@ export const scrapedData = {
       "lastDate": "15 October 2026",
       "publishedDate": "2026-09-16T00:19:56+05:30",
       "publishedAt": "2026-09-15T18:49:56.000Z"
+    },
+    "ruhs-medical-officer-2026": {
+      "lastDate": "13 October 2026",
+      "publishedDate": "2026-09-16T17:06:42+05:30",
+      "publishedAt": "2026-09-16T11:36:42.000Z"
+    },
+    "uksssc-group-c-scaler-2026": {
+      "lastDate": "22 October 2026",
+      "publishedDate": "2026-09-16T16:41:47+05:30",
+      "publishedAt": "2026-09-16T11:11:47.000Z"
+    },
+    "railway-rrc-nfr-apprentice-recruitment-2024-sarkari-result-chk": {
+      "lastDate": "03 December 2024",
+      "publishedDate": "2024-11-28T16:09:04+05:30",
+      "publishedAt": "2024-11-28T10:39:04.000Z"
     }
   },
-  "fetchedAt": "2026-09-16T02:52:52.124Z",
+  "fetchedAt": "2026-09-16T13:00:46.007Z",
   "seo": {
-    "lastOptimized": "2026-09-16T02:53:00.377Z",
-    "totalPosts": 1885,
+    "lastOptimized": "2026-09-16T13:00:53.723Z",
+    "totalPosts": 1888,
     "websiteName": "All India Exam Result",
     "websiteUrl": "https://www.aiexamresult.com",
     "description": "Sarkari Result 2026 - Get fastest government job alerts, sarkari naukri, exam results, admit cards & answer keys. SSC, UPSC, Railway, Banking, UP, Bihar & all India exams."
