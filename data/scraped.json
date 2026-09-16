@@ -1,6 +1,30 @@
 {
   "results": [
     {
+      "title": "UPSSSC Junior Assistant 12/2024 Result 2026",
+      "url": "/post/upsssc-junior-assistant-advt-12-2024",
+      "category": "results",
+      "slug": "upsssc-junior-assistant-advt-12-2024",
+      "publishedDate": "13 June 2026",
+      "publishedAt": "2026-06-13T11:47:52.000Z"
+    },
+    {
+      "title": "RPSC SI / Platoon Commander PET Result 2026",
+      "url": "/post/rpsc-si-platoon-commander-2025",
+      "category": "results",
+      "slug": "rpsc-si-platoon-commander-2025",
+      "publishedDate": "7 April 2026",
+      "publishedAt": "2026-04-06T18:30:00.000Z"
+    },
+    {
+      "title": "Indian Overseas Bank IOB Apprentice Result 2026",
+      "url": "/post/indian-overseas-bank-iob-apprentice-2026",
+      "category": "results",
+      "slug": "indian-overseas-bank-iob-apprentice-2026",
+      "publishedDate": "2026-09-16T01:08:15+05:30",
+      "publishedAt": "2026-09-15T19:38:15.000Z"
+    },
+    {
       "title": "Bihar Vidhan Parishad LDC, DEO Final Result 2026",
       "url": "/post/bihar-vidhan-parishad-pa-deo-ldc-stenographer-2026",
       "category": "results",
@@ -4132,6 +4156,22 @@
     }
   ],
   "latestJobs": [
+    {
+      "title": "UPESSC PRT Assistant Teacher Online Form 2026 (12405 Posts)",
+      "url": "/post/upessc-prt-assistant-teacher-2026",
+      "category": "latestJobs",
+      "slug": "upessc-prt-assistant-teacher-2026",
+      "publishedDate": "2026-09-16T00:19:56+05:30",
+      "publishedAt": "2026-09-15T18:49:56.000Z"
+    },
+    {
+      "title": "UPESSC PGT Teacher Online Form 2026",
+      "url": "/post/upessc-pgt-teacher-2026",
+      "category": "latestJobs",
+      "slug": "upessc-pgt-teacher-2026",
+      "publishedDate": "2026-09-16T00:52:58+05:30",
+      "publishedAt": "2026-09-15T19:22:58.000Z"
+    },
     {
       "title": "MP High Court Assistant Grade III Online Form 2026 – Extend",
       "url": "/post/mp-high-court-assistant-grade-iii-online-form-2026",
@@ -8928,6 +8968,14 @@
     }
   ],
   "documents": [
+    {
+      "title": "UPSSSC Lekhpal Mains Document Upload 2026",
+      "url": "/post/upsssc-up-lekhpal-2026",
+      "category": "documents",
+      "slug": "upsssc-up-lekhpal-2026",
+      "publishedDate": "1 July 2026",
+      "publishedAt": "2026-07-01T13:58:52.000Z"
+    },
     {
       "title": "UPSSSC PET Online Correction Form 2026",
       "url": "/post/upsssc-pet-2026",
@@ -15049,12 +15097,32 @@
       "lastDate": "22 September 2026",
       "publishedDate": "27 July 2026",
       "publishedAt": "2026-07-27T08:46:32.000Z"
+    },
+    "indian-overseas-bank-iob-apprentice-2026": {
+      "lastDate": "27 July 2026",
+      "publishedDate": "2026-09-16T01:08:15+05:30",
+      "publishedAt": "2026-09-15T19:38:15.000Z"
+    },
+    "rpsc-si-platoon-commander-2025": {
+      "lastDate": "08 September 2025",
+      "publishedDate": "7 April 2026",
+      "publishedAt": "2026-04-06T18:30:00.000Z"
+    },
+    "upessc-pgt-teacher-2026": {
+      "lastDate": "17 October 2026",
+      "publishedDate": "2026-09-16T00:52:58+05:30",
+      "publishedAt": "2026-09-15T19:22:58.000Z"
+    },
+    "upessc-prt-assistant-teacher-2026": {
+      "lastDate": "15 October 2026",
+      "publishedDate": "2026-09-16T00:19:56+05:30",
+      "publishedAt": "2026-09-15T18:49:56.000Z"
     }
   },
-  "fetchedAt": "2026-09-15T14:03:51.830Z",
+  "fetchedAt": "2026-09-16T02:52:52.124Z",
   "seo": {
-    "lastOptimized": "2026-09-15T14:03:59.702Z",
-    "totalPosts": 1882,
+    "lastOptimized": "2026-09-16T02:53:00.377Z",
+    "totalPosts": 1885,
     "websiteName": "All India Exam Result",
     "websiteUrl": "https://www.aiexamresult.com",
     "description": "Sarkari Result 2026 - Get fastest government job alerts, sarkari naukri, exam results, admit cards & answer keys. SSC, UPSC, Railway, Banking, UP, Bihar & all India exams."
