@@ -130,12 +130,12 @@ export const scrapedData = {
       "publishedAt": "2026-09-01T18:30:00.000Z"
     },
     {
-      "title": "UPTET Result 2026",
+      "title": "UPTET 2026 Result New Notice",
       "url": "/post/uptet-2026",
       "category": "results",
       "slug": "uptet-2026",
-      "publishedDate": "8 September 2026",
-      "publishedAt": "2026-09-08T05:24:29.000Z"
+      "publishedDate": "9 September 2026",
+      "publishedAt": "2026-09-08T18:30:00.000Z"
     },
     {
       "title": "UPPSC Computer Assistant 2025 Typing Test Result",
@@ -2428,6 +2428,38 @@ export const scrapedData = {
   ],
   "admitCards": [
     {
+      "title": "MPESB Forest Guard & Jail Prahari PET Exam Date 2026",
+      "url": "/post/mpesb-forest-guard-jail-prahari-2026",
+      "category": "admitCards",
+      "slug": "mpesb-forest-guard-jail-prahari-2026",
+      "publishedDate": "22 June 2026",
+      "publishedAt": "2026-06-22T13:17:12.000Z"
+    },
+    {
+      "title": "UPSSSC Junior Assistant 12/2024 Typing Test Exam Date 2026",
+      "url": "/post/upsssc-junior-assistant-advt-12-2024",
+      "category": "admitCards",
+      "slug": "upsssc-junior-assistant-advt-12-2024",
+      "publishedDate": "13 June 2026",
+      "publishedAt": "2026-06-13T11:47:52.000Z"
+    },
+    {
+      "title": "NTA Exam Calendar 2027",
+      "url": "/post/nta-exam-calendar-2027",
+      "category": "admitCards",
+      "slug": "nta-exam-calendar-2027",
+      "publishedDate": "2026-09-17T11:16:17+05:30",
+      "publishedAt": "2026-09-17T05:46:17.000Z"
+    },
+    {
+      "title": "Delhi Cantonment Board DCB AE and JE Exam Date 2026",
+      "url": "/post/delhi-cantonment-board-dcb-ae-and-je-2026",
+      "category": "admitCards",
+      "slug": "delhi-cantonment-board-dcb-ae-and-je-2026",
+      "publishedDate": "2026-09-17T13:27:07+05:30",
+      "publishedAt": "2026-09-17T07:57:07.000Z"
+    },
+    {
       "title": "Railway RRB JE CBT I Exam Date 2026",
       "url": "/post/rrb-junior-engineer-je-2026",
       "category": "admitCards",
@@ -3236,8 +3268,8 @@ export const scrapedData = {
       "publishedAt": "2026-09-10T04:42:27.000Z"
     },
     {
-      "title": "SSC Delhi Police HC Ministerial PE & MT Admit Card 2026",
-      "url": "https://www.sarkariexam.com/ssc-delhi-police-hcm-2025",
+      "title": "SSC Delhi Police HC Ministerial Physical Admit Card 2026",
+      "url": "/post/ssc-delhi-police-hcm-2025",
       "category": "admitCards",
       "slug": "ssc-delhi-police-hcm-2025",
       "publishedDate": "22 June 2026",
@@ -3620,7 +3652,7 @@ export const scrapedData = {
       "publishedAt": "2026-09-10T18:12:10.000Z"
     },
     {
-      "title": "RPSC Sub Inspector 2021 Exam City / Admit Card Date 2026",
+      "title": "RPSC Sub Inspector 2021 Admit Card 2026",
       "url": "/post/rpsc-sub-inspector-2021",
       "category": "admitCards",
       "slug": "rpsc-sub-inspector-2021",
@@ -4173,6 +4205,14 @@ export const scrapedData = {
     }
   ],
   "latestJobs": [
+    {
+      "title": "UPSC Engineering Services Pre Online Form 2027",
+      "url": "/post/upsc-engineering-services-pre-2027",
+      "category": "latestJobs",
+      "slug": "upsc-engineering-services-pre-2027",
+      "publishedDate": "2026-09-16T23:21:45+05:30",
+      "publishedAt": "2026-09-16T17:51:45.000Z"
+    },
     {
       "title": "Railway RRC NFR Apprentice Online Form 2024 (5,647 Posts)",
       "url": "/post/railway-rrc-nfr-apprentice-recruitment-2024-sarkari-result-chk",
@@ -5582,7 +5622,7 @@ export const scrapedData = {
       "publishedAt": "2026-08-20T12:02:45.000Z"
     },
     {
-      "title": "Bank Of Baroda LBO Online Form 2026 – Extended",
+      "title": "Bank Of Baroda LBO Online Form 2026 – Last Date",
       "url": "/post/bank-of-baroda-lbo-2026",
       "category": "latestJobs",
       "slug": "bank-of-baroda-lbo-2026",
@@ -5903,7 +5943,7 @@ export const scrapedData = {
     },
     {
       "title": "UPSSSC Junior Engineer JE Agriculture Online Form 2026",
-      "url": "https://www.sarkariexam.com/upsssc-junior-engineer-je-agriculture-2026",
+      "url": "/post/upsssc-junior-engineer-je-agriculture-2026",
       "category": "latestJobs",
       "slug": "upsssc-junior-engineer-je-agriculture-2026",
       "publishedDate": "14 August 2026",
@@ -7007,9 +7047,9 @@ export const scrapedData = {
     },
     {
       "title": "SBI SCO Wealth & Other Post Online Form 2026",
-      "url": "https://www.sarkariresult.com/2026/sbi-sco-sep26/",
+      "url": "/post/sbi-sco-wealth-other-post-2026",
       "category": "latestJobs",
-      "slug": "sbi-sco-sep26",
+      "slug": "sbi-sco-wealth-other-post-2026",
       "publishedDate": "6 September 2026",
       "publishedAt": "2026-09-05T18:30:00.000Z"
     },
@@ -12405,7 +12445,7 @@ export const scrapedData = {
       "publishedAt": "2026-08-17T18:30:00.000Z"
     },
     "upsssc-junior-engineer-je-agriculture-2026": {
-      "lastDate": "07 October 2026",
+      "lastDate": "07 October 2026",
       "isExpired": false,
       "publishedDate": "14 August 2026",
       "publishedAt": "2026-08-13T18:30:00.000Z"
@@ -15189,12 +15229,36 @@ export const scrapedData = {
       "lastDate": "03 December 2024",
       "publishedDate": "2024-11-28T16:09:04+05:30",
       "publishedAt": "2024-11-28T10:39:04.000Z"
+    },
+    "delhi-cantonment-board-dcb-ae-and-je-2026": {
+      "lastDate": "14 August 2026",
+      "publishedDate": "2026-09-17T13:27:07+05:30",
+      "publishedAt": "2026-09-17T07:57:07.000Z"
+    },
+    "nta-exam-calendar-2027": {
+      "publishedDate": "2026-09-17T11:16:17+05:30",
+      "publishedAt": "2026-09-17T05:46:17.000Z"
+    },
+    "mpesb-forest-guard-jail-prahari-2026": {
+      "lastDate": "30 April 2026",
+      "publishedDate": "22 June 2026",
+      "publishedAt": "2026-06-22T13:17:12.000Z"
+    },
+    "upsc-engineering-services-pre-2027": {
+      "lastDate": "06 October 2026",
+      "publishedDate": "2026-09-16T23:21:45+05:30",
+      "publishedAt": "2026-09-16T17:51:45.000Z"
+    },
+    "sbi-sco-wealth-other-post-2026": {
+      "lastDate": "25 September 2026",
+      "publishedDate": "6 September 2026",
+      "publishedAt": "2026-09-05T18:30:00.000Z"
     }
   },
-  "fetchedAt": "2026-09-16T13:00:46.007Z",
+  "fetchedAt": "2026-09-17T09:36:03.641Z",
   "seo": {
-    "lastOptimized": "2026-09-16T13:00:53.723Z",
-    "totalPosts": 1888,
+    "lastOptimized": "2026-09-17T09:36:10.206Z",
+    "totalPosts": 1892,
     "websiteName": "All India Exam Result",
     "websiteUrl": "https://www.aiexamresult.com",
     "description": "Sarkari Result 2026 - Get fastest government job alerts, sarkari naukri, exam results, admit cards & answer keys. SSC, UPSC, Railway, Banking, UP, Bihar & all India exams."
