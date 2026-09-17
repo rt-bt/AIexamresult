@@ -35,12 +35,30 @@ export function VoiceSearchBtn({ onResult, className }: VoiceSearchBtnProps) {
   }, []);
 
   const startRecognition = useCallback(
-    (selectedLang = lang) => {
+    async (selectedLang = lang) => {
       stopRecognition();
       setErrorMsg(null);
       setTranscript("");
 
       if (typeof window === "undefined") return;
+
+      // 1. Proactively prompt for native microphone permission
+      if (navigator?.mediaDevices?.getUserMedia) {
+        try {
+          const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+          // Stop tracks immediately so SpeechRecognition can take over the microphone
+          stream.getTracks().forEach((track) => track.stop());
+        } catch (err: any) {
+          setIsListening(false);
+          if (err.name === "NotAllowedError" || err.name === "PermissionDeniedError") {
+            setErrorMsg(
+              "PERMISSION_DENIED"
+            );
+            return;
+          }
+        }
+      }
+
       const SpeechRecognition =
         (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
 
@@ -81,7 +99,6 @@ export function VoiceSearchBtn({ onResult, className }: VoiceSearchBtnProps) {
           if (isFinal && currentTranscript.trim()) {
             const finalQuery = currentTranscript.trim();
             stopRecognition();
-            // Allow user to briefly see recognized search query
             setTimeout(() => {
               setIsOpen(false);
               if (onResult) {
@@ -97,9 +114,7 @@ export function VoiceSearchBtn({ onResult, className }: VoiceSearchBtnProps) {
           setIsListening(false);
           const err = event.error;
           if (err === "not-allowed" || err === "service-not-allowed") {
-            setErrorMsg(
-              "Microphone access was denied. Please click the lock or camera/mic icon in your browser address bar to allow microphone access, then retry."
-            );
+            setErrorMsg("PERMISSION_DENIED");
           } else if (err === "no-speech") {
             setErrorMsg("No voice heard. Please speak clearly into your microphone and try again.");
           } else if (err === "network") {
@@ -115,14 +130,13 @@ export function VoiceSearchBtn({ onResult, className }: VoiceSearchBtnProps) {
 
         recognition.start();
 
-        // Safety timeout in case no response after 12s
         timeoutRef.current = setTimeout(() => {
           stopRecognition();
           setErrorMsg("Listening timed out. Tap the microphone to try again.");
         }, 12000);
       } catch (e: any) {
         setIsListening(false);
-        setErrorMsg("Could not access microphone. Please check browser permissions.");
+        setErrorMsg("PERMISSION_DENIED");
       }
     },
     [lang, onResult, router, stopRecognition]
@@ -266,15 +280,37 @@ export function VoiceSearchBtn({ onResult, className }: VoiceSearchBtnProps) {
               </div>
             )}
 
-            {/* Error Message */}
-            {errorMsg && (
+            {/* Error Message & Permission Guide */}
+            {errorMsg === "PERMISSION_DENIED" ? (
+              <div className="mt-4 rounded-2xl bg-amber-50 p-4 border border-amber-200/80 text-amber-900 text-xs text-left">
+                <div className="flex items-center gap-2 mb-2 font-bold text-amber-800 text-sm">
+                  <AlertCircle className="h-4 w-4 text-amber-600 shrink-0" />
+                  <span>Microphone Access Blocked</span>
+                </div>
+                <p className="text-amber-800/90 mb-2 leading-relaxed">
+                  Aapke browser ne microphone block kar diya hai. Ise allow karne ke liye:
+                </p>
+                <ol className="list-decimal list-inside space-y-1 text-slate-700 bg-white/70 p-2.5 rounded-xl border border-amber-200/50">
+                  <li>Browser address bar me left side <strong>Lock 🔒</strong> ya <strong>Site Settings 🎚️</strong> icon par click karein.</li>
+                  <li><strong>Microphone</strong> ko <strong>&quot;Allow&quot;</strong> ya <strong>ON</strong> karein.</li>
+                  <li>Neeche <strong>&quot;Retry&quot;</strong> button par click karein.</li>
+                </ol>
+                <button
+                  type="button"
+                  onClick={() => startRecognition()}
+                  className="mt-3 w-full rounded-xl bg-teal-600 py-2.5 text-xs font-bold text-white shadow-sm hover:bg-teal-700 active:scale-95 transition"
+                >
+                  Microphone Allow kiya, Ab Retry karein 🎤
+                </button>
+              </div>
+            ) : errorMsg ? (
               <div className="mt-4 rounded-2xl bg-amber-50 p-3.5 border border-amber-200/80 text-amber-800 text-xs flex items-start gap-2.5 text-left">
                 <AlertCircle className="h-4 w-4 shrink-0 text-amber-600 mt-0.5" />
                 <div>
                   <p className="font-semibold leading-relaxed">{errorMsg}</p>
                 </div>
               </div>
-            )}
+            ) : null}
 
             {/* Footer helper */}
             <div className="mt-6 border-t border-slate-100 pt-3 text-[11px] text-slate-400">
