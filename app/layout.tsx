@@ -162,7 +162,15 @@ const jsonLd = {
       isPartOf: { "@id": `${SITE_URL}/#website` },
       about: { "@id": `${SITE_URL}/#organization` },
       inLanguage: "en-IN",
-      primaryImageOfPage: `${SITE_URL}/og-image.svg`,
+      primaryImageOfPage: {
+        "@type": "ImageObject",
+        "@id": `${SITE_URL}/#primaryimage`,
+        url: `${SITE_URL}/og-image.svg`,
+        contentUrl: `${SITE_URL}/og-image.svg`,
+        width: 1200,
+        height: 630,
+        caption: "Sarkari Result 2026 | All India Exam Result"
+      },
       dateModified: new Date().toISOString().split("T")[0],
       significantLink: [
         `${SITE_URL}/results`,
