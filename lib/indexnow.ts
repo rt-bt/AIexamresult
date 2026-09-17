@@ -1,4 +1,4 @@
-﻿export const INDEXNOW_KEY = "4a08f378de91444e4e079f36629f76de";
+export const INDEXNOW_KEY = "def212d6b0d3407cb3a51212813102f4";
 const HOST = "www.aiexamresult.com";
 const KEY_LOCATION = `https://${HOST}/${INDEXNOW_KEY}.txt`;
 
