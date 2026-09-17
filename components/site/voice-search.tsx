@@ -14,11 +14,13 @@ export function VoiceSearchBtn({ onResult, className }: VoiceSearchBtnProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [isListening, setIsListening] = useState(false);
   const [transcript, setTranscript] = useState("");
-  const [errorMsg, setErrorMsg] = useState<string | null>(null);
+  const [errorType, setErrorType] = useState<"PERMISSION" | "NO_SPEECH" | "NETWORK" | "GENERIC" | null>(null);
   const [lang, setLang] = useState<"en-IN" | "hi-IN">("en-IN");
 
   const recognitionRef = useRef<any>(null);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  const isHindi = lang === "hi-IN";
 
   const stopRecognition = useCallback(() => {
     if (timeoutRef.current) {
@@ -37,23 +39,20 @@ export function VoiceSearchBtn({ onResult, className }: VoiceSearchBtnProps) {
   const startRecognition = useCallback(
     async (selectedLang = lang) => {
       stopRecognition();
-      setErrorMsg(null);
+      setErrorType(null);
       setTranscript("");
 
       if (typeof window === "undefined") return;
 
-      // 1. Proactively prompt for native microphone permission
+      // Request browser media permission first to trigger native browser prompt
       if (navigator?.mediaDevices?.getUserMedia) {
         try {
           const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-          // Stop tracks immediately so SpeechRecognition can take over the microphone
           stream.getTracks().forEach((track) => track.stop());
         } catch (err: any) {
           setIsListening(false);
           if (err.name === "NotAllowedError" || err.name === "PermissionDeniedError") {
-            setErrorMsg(
-              "PERMISSION_DENIED"
-            );
+            setErrorType("PERMISSION");
             return;
           }
         }
@@ -63,9 +62,7 @@ export function VoiceSearchBtn({ onResult, className }: VoiceSearchBtnProps) {
         (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
 
       if (!SpeechRecognition) {
-        setErrorMsg(
-          "Voice search is not supported in this browser. Please open in Google Chrome, Microsoft Edge, or Safari."
-        );
+        setErrorType("GENERIC");
         return;
       }
 
@@ -79,7 +76,7 @@ export function VoiceSearchBtn({ onResult, className }: VoiceSearchBtnProps) {
 
         recognition.onstart = () => {
           setIsListening(true);
-          setErrorMsg(null);
+          setErrorType(null);
         };
 
         recognition.onresult = (event: any) => {
@@ -106,7 +103,7 @@ export function VoiceSearchBtn({ onResult, className }: VoiceSearchBtnProps) {
               } else {
                 router.push(`/search?q=${encodeURIComponent(finalQuery)}`);
               }
-            }, 600);
+            }, 500);
           }
         };
 
@@ -114,13 +111,13 @@ export function VoiceSearchBtn({ onResult, className }: VoiceSearchBtnProps) {
           setIsListening(false);
           const err = event.error;
           if (err === "not-allowed" || err === "service-not-allowed") {
-            setErrorMsg("PERMISSION_DENIED");
+            setErrorType("PERMISSION");
           } else if (err === "no-speech") {
-            setErrorMsg("No voice heard. Please speak clearly into your microphone and try again.");
+            setErrorType("NO_SPEECH");
           } else if (err === "network") {
-            setErrorMsg("Speech recognition network error. Please check your internet connection.");
+            setErrorType("NETWORK");
           } else if (err !== "aborted") {
-            setErrorMsg("Could not hear clearly. Please tap the microphone to try again.");
+            setErrorType("GENERIC");
           }
         };
 
@@ -132,11 +129,11 @@ export function VoiceSearchBtn({ onResult, className }: VoiceSearchBtnProps) {
 
         timeoutRef.current = setTimeout(() => {
           stopRecognition();
-          setErrorMsg("Listening timed out. Tap the microphone to try again.");
+          setErrorType("NO_SPEECH");
         }, 12000);
       } catch (e: any) {
         setIsListening(false);
-        setErrorMsg("PERMISSION_DENIED");
+        setErrorType("PERMISSION");
       }
     },
     [lang, onResult, router, stopRecognition]
@@ -152,7 +149,7 @@ export function VoiceSearchBtn({ onResult, className }: VoiceSearchBtnProps) {
   const handleClose = () => {
     stopRecognition();
     setIsOpen(false);
-    setErrorMsg(null);
+    setErrorType(null);
     setTranscript("");
   };
 
@@ -197,46 +194,56 @@ export function VoiceSearchBtn({ onResult, className }: VoiceSearchBtnProps) {
             <button
               onClick={handleClose}
               className="absolute right-4 top-4 rounded-full p-2 text-slate-400 hover:bg-slate-100 hover:text-slate-700 transition"
-              aria-label="Close voice search"
+              aria-label="Close"
             >
               <X className="h-5 w-5" />
             </button>
 
-            {/* Language toggle pills */}
+            {/* Language toggle pills: Pure English or Pure Hindi */}
             <div className="inline-flex items-center gap-1 rounded-full bg-slate-100 p-1 text-xs font-semibold text-slate-600 mb-6">
               <button
                 type="button"
                 onClick={() => switchLanguage("en-IN")}
-                className={`rounded-full px-3 py-1 transition ${
-                  lang === "en-IN"
-                    ? "bg-[#0D9488] text-white shadow-sm"
+                className={`rounded-full px-3.5 py-1 transition ${
+                  !isHindi
+                    ? "bg-[#0D9488] text-white shadow-sm font-bold"
                     : "hover:text-slate-900"
                 }`}
               >
-                English / Hinglish
+                English
               </button>
               <button
                 type="button"
                 onClick={() => switchLanguage("hi-IN")}
-                className={`rounded-full px-3 py-1 transition ${
-                  lang === "hi-IN"
-                    ? "bg-[#0D9488] text-white shadow-sm"
+                className={`rounded-full px-3.5 py-1 transition ${
+                  isHindi
+                    ? "bg-[#0D9488] text-white shadow-sm font-bold"
                     : "hover:text-slate-900"
                 }`}
               >
-                हिन्दी
+                हिन्दी (Hindi)
               </button>
             </div>
 
             {/* Title / Heading */}
             <h3 className="text-xl sm:text-2xl font-black text-slate-900 mb-1">
-              {isListening ? "Listening..." : errorMsg ? "Try Again" : "Voice Search"}
+              {isListening
+                ? isHindi ? "सुन रहे हैं..." : "Listening..."
+                : errorType
+                ? isHindi ? "पुनः प्रयास करें" : "Try Again"
+                : isHindi ? "आवाज़ से खोजें" : "Voice Search"}
             </h3>
             <p className="text-xs sm:text-sm text-slate-500 mb-6 px-4">
               {isListening
-                ? "Say exam name e.g. 'SSC CGL', 'UPSC Form', or 'Railway NTPC'..."
-                : errorMsg
-                ? "Tap the microphone below to retry"
+                ? isHindi
+                  ? "परीक्षा का नाम बोलें, जैसे 'SSC CGL', 'UPSC' या 'रेलवे'..."
+                  : "Say the exam name, e.g., 'SSC CGL', 'UPSC', or 'Railway'..."
+                : errorType
+                ? isHindi
+                  ? "पुनः प्रयास करने के लिए नीचे माइक्रोफ़ोन पर टैप करें"
+                  : "Tap the microphone below to retry"
+                : isHindi
+                ? "अपने माइक्रोफ़ोन में बोलें"
                 : "Speak into your microphone"}
             </p>
 
@@ -254,7 +261,7 @@ export function VoiceSearchBtn({ onResult, className }: VoiceSearchBtnProps) {
                 className={`relative flex h-20 w-20 items-center justify-center rounded-full text-white shadow-xl transition-all active:scale-95 ${
                   isListening
                     ? "bg-gradient-to-tr from-teal-600 to-emerald-500 ring-4 ring-teal-200"
-                    : errorMsg
+                    : errorType
                     ? "bg-slate-700 hover:bg-slate-800"
                     : "bg-teal-600 hover:bg-teal-700"
                 }`}
@@ -272,7 +279,7 @@ export function VoiceSearchBtn({ onResult, className }: VoiceSearchBtnProps) {
             {transcript && (
               <div className="mt-4 rounded-2xl bg-teal-50 p-4 border border-teal-200/60">
                 <p className="text-[11px] font-bold uppercase tracking-wider text-teal-700 mb-1 flex items-center justify-center gap-1">
-                  <Sparkles className="h-3 w-3" /> Searching For
+                  <Sparkles className="h-3 w-3" /> {isHindi ? "खोज रहे हैं" : "Searching For"}
                 </p>
                 <p className="text-lg font-black text-slate-900 break-words">
                   &ldquo;{transcript}&rdquo;
@@ -281,40 +288,82 @@ export function VoiceSearchBtn({ onResult, className }: VoiceSearchBtnProps) {
             )}
 
             {/* Error Message & Permission Guide */}
-            {errorMsg === "PERMISSION_DENIED" ? (
+            {errorType === "PERMISSION" ? (
               <div className="mt-4 rounded-2xl bg-amber-50 p-4 border border-amber-200/80 text-amber-900 text-xs text-left">
                 <div className="flex items-center gap-2 mb-2 font-bold text-amber-800 text-sm">
                   <AlertCircle className="h-4 w-4 text-amber-600 shrink-0" />
-                  <span>Microphone Access Blocked</span>
+                  <span>
+                    {isHindi ? "माइक्रोफ़ोन अनुमति अवरुद्ध है" : "Microphone Access Blocked"}
+                  </span>
                 </div>
                 <p className="text-amber-800/90 mb-2 leading-relaxed">
-                  Aapke browser ne microphone block kar diya hai. Ise allow karne ke liye:
+                  {isHindi
+                    ? "आपके ब्राउज़र ने माइक्रोफ़ोन को ब्लॉक कर रखा है। इसे चालू करने के लिए:"
+                    : "Your browser has blocked microphone access. To enable it:"}
                 </p>
-                <ol className="list-decimal list-inside space-y-1 text-slate-700 bg-white/70 p-2.5 rounded-xl border border-amber-200/50">
-                  <li>Browser address bar me left side <strong>Lock 🔒</strong> ya <strong>Site Settings 🎚️</strong> icon par click karein.</li>
-                  <li><strong>Microphone</strong> ko <strong>&quot;Allow&quot;</strong> ya <strong>ON</strong> karein.</li>
-                  <li>Neeche <strong>&quot;Retry&quot;</strong> button par click karein.</li>
+                <ol className="list-decimal list-inside space-y-1.5 text-slate-700 bg-white/80 p-3 rounded-xl border border-amber-200/50 leading-relaxed">
+                  {isHindi ? (
+                    <>
+                      <li>ब्राउज़र एड्रेस बार में बाईं ओर स्थित <strong>लॉक 🔒</strong> या <strong>साइट सेटिंग्स 🎚️</strong> पर क्लिक करें।</li>
+                      <li><strong>माइक्रोफ़ोन (Microphone)</strong> को <strong>&quot;Allow&quot;</strong> (चालू) करें।</li>
+                      <li>नीचे दिए गए <strong>&quot;पुनः प्रयास करें&quot;</strong> बटन पर क्लिक करें।</li>
+                    </>
+                  ) : (
+                    <>
+                      <li>Click the <strong>Lock 🔒</strong> or <strong>Site Settings 🎚️</strong> icon on the left of your browser address bar.</li>
+                      <li>Set <strong>Microphone</strong> to <strong>&quot;Allow&quot;</strong> or switch it <strong>ON</strong>.</li>
+                      <li>Click the button below to retry.</li>
+                    </>
+                  )}
                 </ol>
                 <button
                   type="button"
                   onClick={() => startRecognition()}
                   className="mt-3 w-full rounded-xl bg-teal-600 py-2.5 text-xs font-bold text-white shadow-sm hover:bg-teal-700 active:scale-95 transition"
                 >
-                  Microphone Allow kiya, Ab Retry karein 🎤
+                  {isHindi ? "अनुमति दी, अब पुनः प्रयास करें 🎤" : "Allow & Retry Voice Search 🎤"}
                 </button>
               </div>
-            ) : errorMsg ? (
+            ) : errorType === "NO_SPEECH" ? (
               <div className="mt-4 rounded-2xl bg-amber-50 p-3.5 border border-amber-200/80 text-amber-800 text-xs flex items-start gap-2.5 text-left">
                 <AlertCircle className="h-4 w-4 shrink-0 text-amber-600 mt-0.5" />
                 <div>
-                  <p className="font-semibold leading-relaxed">{errorMsg}</p>
+                  <p className="font-semibold leading-relaxed">
+                    {isHindi
+                      ? "कोई आवाज़ सुनाई नहीं दी। कृपया स्पष्ट बोलें और पुनः प्रयास करें।"
+                      : "No voice heard. Please speak clearly into your microphone and try again."}
+                  </p>
+                </div>
+              </div>
+            ) : errorType === "NETWORK" ? (
+              <div className="mt-4 rounded-2xl bg-amber-50 p-3.5 border border-amber-200/80 text-amber-800 text-xs flex items-start gap-2.5 text-left">
+                <AlertCircle className="h-4 w-4 shrink-0 text-amber-600 mt-0.5" />
+                <div>
+                  <p className="font-semibold leading-relaxed">
+                    {isHindi
+                      ? "इंटरनेट नेटवर्क त्रुटि। कृपया अपना इंटरनेट कनेक्शन जांचें।"
+                      : "Speech recognition network error. Please check your internet connection."}
+                  </p>
+                </div>
+              </div>
+            ) : errorType === "GENERIC" ? (
+              <div className="mt-4 rounded-2xl bg-amber-50 p-3.5 border border-amber-200/80 text-amber-800 text-xs flex items-start gap-2.5 text-left">
+                <AlertCircle className="h-4 w-4 shrink-0 text-amber-600 mt-0.5" />
+                <div>
+                  <p className="font-semibold leading-relaxed">
+                    {isHindi
+                      ? "यह ब्राउज़र वॉयस सर्च को सपोर्ट नहीं करता। कृपया Chrome, Edge या Safari का उपयोग करें।"
+                      : "Voice search is not supported in this browser. Please use Chrome, Edge, or Safari."}
+                  </p>
                 </div>
               </div>
             ) : null}
 
             {/* Footer helper */}
             <div className="mt-6 border-t border-slate-100 pt-3 text-[11px] text-slate-400">
-              Works best in Google Chrome, Microsoft Edge, Brave & Safari
+              {isHindi
+                ? "Google Chrome, Microsoft Edge, Brave और Safari में सर्वोत्तम कार्य करता है"
+                : "Works best in Google Chrome, Microsoft Edge, Brave & Safari"}
             </div>
           </div>
         </div>
