@@ -4,6 +4,7 @@ import { useState, useEffect, useCallback, useRef } from "react";
 import { useSearchParams } from "next/navigation";
 import { Header } from "@/components/site/header";
 import { Footer } from "@/components/site/footer";
+import { VoiceSearchBtn } from "@/components/site/voice-search";
 
 type SearchResult = {
   title: string;
@@ -70,13 +71,20 @@ export default function SearchPage() {
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder="Search exam, result, job..."
                 aria-label="Search exams, results, jobs"
-                className="w-full rounded-xl border-0 bg-white/20 px-5 py-3.5 text-base text-white placeholder-white/50 backdrop-blur-sm outline-none ring-1 ring-white/30 transition focus:ring-2 focus:ring-[#5EEAD4]"
+                className="w-full rounded-xl border-0 bg-white/20 pl-5 pr-20 py-3.5 text-base text-white placeholder-white/50 backdrop-blur-sm outline-none ring-1 ring-white/30 transition focus:ring-2 focus:ring-[#5EEAD4]"
               />
-              {loading && (
-                <div className="absolute right-4 top-1/2 -translate-y-1/2">
-                  <div className="h-5 w-5 animate-spin rounded-full border-2 border-white/30 border-t-white" />
-                </div>
-              )}
+              <div className="absolute right-3 top-1/2 -translate-y-1/2 flex items-center gap-1">
+                {loading && (
+                  <div className="h-4 w-4 animate-spin rounded-full border-2 border-white/30 border-t-white" />
+                )}
+                <VoiceSearchBtn
+                  onResult={(q) => {
+                    setQuery(q);
+                    doSearch(q);
+                  }}
+                  className="rounded-full p-2 text-white/70 hover:bg-white/15 hover:text-white transition active:scale-90"
+                />
+              </div>
             </div>
           </div>
         </div>

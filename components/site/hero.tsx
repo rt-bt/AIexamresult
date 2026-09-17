@@ -5,6 +5,7 @@ import { useState, useEffect, useRef } from "react";
 import { featuredResults, trendingExams, latestJobs } from "@/lib/data";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { VoiceSearchBtn } from "./voice-search";
 
 const examOptions = [
   ...trendingExams,
@@ -46,8 +47,17 @@ function ResultFinder() {
             onFocus={() => setShowDropdown(true)}
             onBlur={() => setTimeout(() => setShowDropdown(false), 200)}
             placeholder="Exam name (e.g. SSC CGL, UPSC, Railway)"
-            className="w-full rounded-xl border border-white/20 bg-white/10 px-11 py-3.5 text-sm text-white placeholder-white/40 outline-none backdrop-blur-sm transition-all focus:border-white/40 focus:bg-white/15"
+            className="w-full rounded-xl border border-white/20 bg-white/10 pl-11 pr-11 py-3.5 text-sm text-white placeholder-white/40 outline-none backdrop-blur-sm transition-all focus:border-white/40 focus:bg-white/15"
           />
+          <div className="absolute right-2 top-1/2 -translate-y-1/2">
+            <VoiceSearchBtn
+              onResult={(val) => {
+                setExam(val);
+                router.push(`/search?q=${encodeURIComponent(val)}`);
+              }}
+              className="p-1.5 text-white/60 hover:text-white transition active:scale-90"
+            />
+          </div>
           {showDropdown && filtered.length > 0 && (
             <div className="absolute left-0 right-0 top-full z-20 mt-1 max-h-48 overflow-auto rounded-xl border border-white/10 bg-[#0F172A] shadow-xl">
               {filtered.map((e) => (
