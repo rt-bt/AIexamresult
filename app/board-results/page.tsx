@@ -11,7 +11,7 @@ import { GraduationCap, ArrowRight } from "lucide-react";
 export const metadata: Metadata = {
   title: "Board Results 2026 - CBSE, UP, Bihar, RBSE, MP Board",
   description:
-    "Check all Board Results 2026 — CBSE Class 10th & 12th, UP Board, Bihar Board (BSEB), Rajasthan Board (RBSE), MP Board (MPBSE), Maharashtra Board, Tamil Nadu Board and more. Download marksheets from official websites.",
+    "Check Board Results 2026: CBSE Class 10th & 12th, UP Board, Bihar Board BSEB, RBSE, MP Board scorecards. Get direct marksheet links at All India Exam Result.",
   keywords: [
     "board result 2026", "CBSE result 2026", "UP Board result", "Bihar Board result",
     "RBSE result 2026", "MP Board result", "10th result", "12th result", "sarkari board result",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/board-results" },
   openGraph: {
     title: "Board Results 2026 | All India Exam Result",
-    description: "CBSE, UP Board, Bihar Board, RBSE, MP Board & all state board results in one place.",
+    description: "Check Board Results 2026: CBSE Class 10th & 12th, UP Board, Bihar Board BSEB, RBSE, MP Board scorecards. Get direct marksheet links at All India Exam Result.",
     type: "website",
   },
 };

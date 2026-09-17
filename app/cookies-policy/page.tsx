@@ -25,12 +25,12 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.aiexamresult.c
 export const metadata: Metadata = {
   title: "Cookies Policy | All India Exam Result",
   description:
-    "Cookies Policy for All India Exam Result (aiexamresult.com). Learn about the cookies we use, Google AdSense (ca-pub-2439432844260170), analytics, and how to manage your preferences.",
+    "Read the Cookies Policy for All India Exam Result. Understand how cookies, Google AdSense, and analytics are used and how to manage your preferences.",
   alternates: { canonical: "/cookies-policy" },
   openGraph: {
     title: "Cookies Policy | All India Exam Result",
     description:
-      "Cookies Policy for All India Exam Result (aiexamresult.com). Full disclosure on cookies, Google AdSense, DoubleClick DART cookies, and analytics.",
+      "Read the Cookies Policy for All India Exam Result. Understand how cookies, Google AdSense, and analytics are used and how to manage your preferences.",
     url: `${SITE_URL}/cookies-policy`,
     siteName: "All India Exam Result",
     images: [{ url: `${SITE_URL}/og-image.svg`, width: 1200, height: 630 }],
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Cookies Policy | All India Exam Result",
-    description: "Learn how All India Exam Result uses cookies, Google AdSense, and analytics.",
+    description: "Read the Cookies Policy for All India Exam Result. Understand how cookies, Google AdSense, and analytics are used and how to manage your preferences.",
     images: [`${SITE_URL}/og-image.svg`],
   },
   robots: { index: true, follow: true },

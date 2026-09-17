@@ -169,7 +169,8 @@ const tools = [
 
 export const metadata: Metadata = {
   title: "Free Tools | All India Exam Result",
-  description: "Handy utilities for competitive exam preparation — age calculator, exam comparison, result predictor, document checklist & more.",
+  description: "Free exam preparation tools: Age Calculator, Image Compressor, PDF Resizer, Exam Comparison & Result Predictor for SSC, UPSC, and Railway candidates.",
+  alternates: { canonical: "/tools" },
 };
 
 export default function ToolsPage() {

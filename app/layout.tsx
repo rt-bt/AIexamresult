@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     template: "%s | Sarkari Result"
   },
   description:
-    "Sarkari Result 2026: Get fastest Sarkari Exam alerts, Sarkari Naukri, Rojgar Result, Admit Card, Answer Key & Results. Check latest central & state government jobs online form 2026.",
+    "Sarkari Result 2026: Fastest alerts for Sarkari Exam, Sarkari Naukri, Admit Card, Answer Key & Results. Apply online for latest central & state government jobs.",
   applicationName: "All India Exam Result",
   manifest: "/manifest.webmanifest",
   alternates: {
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Sarkari Result 2026, Sarkari Exam, Sarkari Naukri & Admit Card",
-    description: "Get instant Sarkari Result, Admit Card & Govt Job alerts 2026. SSC, UPSC, Railway, Banking — 26k+ updates daily.",
+    description: "Get instant Sarkari Result 2026 alerts, admit cards, and government job notifications for SSC, UPSC, Railway & Banking exams. Check updates daily.",
     images: [`${SITE_URL}/og-image.svg`]
   },
   icons: {

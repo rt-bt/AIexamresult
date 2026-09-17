@@ -15,7 +15,8 @@ const resources = [
 
 export const metadata: Metadata = {
   title: "Study Hub | All India Exam Result",
-  description: "Preparation resources, guides and study material for SSC, UPSC, Railway, Banking, Teaching & state government exams.",
+  description: "Free preparation resources, syllabus, exam patterns, and study material for SSC, UPSC, Railway RRB, Banking, and Teaching exams. Boost your preparation today.",
+  alternates: { canonical: "/study-hub" },
 };
 
 export default function StudyHubPage() {

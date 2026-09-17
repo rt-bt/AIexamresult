@@ -8,9 +8,13 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.aiexamresult.c
 
 export const metadata: Metadata = {
   title: "Terms of Service | All India Exam Result",
-  description: "Terms of Service and conditions of use for All India Exam Result (aiexamresult.com).",
+  description: "Read the Terms of Service and user agreement for All India Exam Result. Understand our content usage rules, disclaimer policies, and visitor guidelines.",
   alternates: { canonical: "/terms" },
-  openGraph: { title: "Terms of Service | All India Exam Result", url: `${SITE_URL}/terms` },
+  openGraph: {
+    title: "Terms of Service | All India Exam Result",
+    description: "Read the Terms of Service and user agreement for All India Exam Result. Understand our content usage rules, disclaimer policies, and visitor guidelines.",
+    url: `${SITE_URL}/terms`
+  },
   robots: { index: true, follow: true },
 };
 

@@ -5,7 +5,8 @@ import { StateGrid } from "@/components/site/state-grid";
 
 export const metadata: Metadata = {
   title: "State-wise Exam Results & Jobs | All India Exam Result",
-  description: "Find government job results, admit cards and exam notifications by state — UP, Bihar, Rajasthan, MP, Maharashtra & more.",
+  description: "Explore state-wise government jobs & exam results 2026. Find notifications, admit cards, and results for UP, Bihar, MP, Rajasthan, Delhi, and other states.",
+  alternates: { canonical: "/state" },
 };
 
 export default function StateIndexPage() {

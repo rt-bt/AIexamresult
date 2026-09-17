@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Current Affairs 2026 | Daily GK for Govt Exams",
-  description: "Latest current affairs June 2026 for competitive exams — government jobs, economy, defence, science, sports, education & more. Daily GK updates with quiz.",
+  description: "Daily Current Affairs & GK 2026 for SSC, UPSC, Banking, and Railway exams. Stay updated with national news, defense, economy, sports, and practice quizzes.",
+  alternates: { canonical: "/current-affairs" },
 };
 
 export { default } from "./page-client";

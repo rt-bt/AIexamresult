@@ -8,9 +8,13 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.aiexamresult.c
 
 export const metadata: Metadata = {
   title: "Privacy Policy | All India Exam Result",
-  description: "Privacy Policy for All India Exam Result (aiexamresult.com). Read about how we collect, use, and protect your data, including Google AdSense and cookie compliance.",
+  description: "Privacy Policy for All India Exam Result. Learn how we collect, use, and safeguard your data, including cookies, analytics, and third-party advertising policies.",
   alternates: { canonical: "/privacy-policy" },
-  openGraph: { title: "Privacy Policy | All India Exam Result", url: `${SITE_URL}/privacy-policy` },
+  openGraph: {
+    title: "Privacy Policy | All India Exam Result",
+    description: "Privacy Policy for All India Exam Result. Learn how we collect, use, and safeguard your data, including cookies, analytics, and third-party advertising policies.",
+    url: `${SITE_URL}/privacy-policy`
+  },
   robots: { index: true, follow: true },
 };
 

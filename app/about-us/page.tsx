@@ -8,11 +8,11 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.aiexamresult.c
 
 export const metadata: Metadata = {
   title: "About Us | All India Exam Result",
-  description: "Learn about All India Exam Result (aiexamresult.com), India's leading independent government recruitment news and exam information portal.",
+  description: "Learn about All India Exam Result (aiexamresult.com) — India's premier independent portal providing verified government job alerts, admit cards, and results.",
   alternates: { canonical: "/about-us" },
   openGraph: {
     title: "About Us | All India Exam Result",
-    description: "India's fastest and most reliable government job notifications, admit cards, answer keys, and exam results portal.",
+    description: "Learn about All India Exam Result (aiexamresult.com) — India's premier independent portal providing verified government job alerts, admit cards, and results.",
     url: `${SITE_URL}/about-us`,
     images: [{ url: `${SITE_URL}/og-image.svg`, width: 1200, height: 630 }]
   },

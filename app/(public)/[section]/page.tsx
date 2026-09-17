@@ -26,18 +26,18 @@ const sections: Record<string, string> = {
 };
 
 const sectionDescriptions: Record<string, string> = {
-  results: "Sarkari Result 2026: Check latest government exam results including SSC, UPSC, Railway, UP Board, Bihar Board and state exams. Verified result updates with direct official download links.",
-  "latest-jobs": "Sarkari Naukri 2026: Latest government job notifications, central and state government vacancies, online application forms, eligibility criteria and important dates for Sarkari exams.",
-  "admit-card": "Download Sarkari Admit Cards 2026 for upcoming government competitive exams. Get hall tickets, exam dates, and city slips for SSC, Railway, UPSC, Police and State exams.",
-  "answer-key": "Download official Sarkari Answer Keys 2026 for government exams. Raise online objections, calculate marks, and check response sheets for SSC, Railway, UPSC, State PSC exams.",
-  admissions: "Sarkari Admissions 2026: University and college admission notifications, entrance exam forms (CUET, NEET, JEE, B.Ed, Polytechnic), counseling schedules and merit lists.",
-  syllabus: "Download official Sarkari Exam Syllabus 2026 and exam pattern in PDF format. Detailed subject-wise syllabus, marks weightage, and selection process for SSC, UPSC, Railway, Police.",
-  contact: "Contact All India Exam Result for support, partnership or feedback. Get in touch via email or phone for government exam related queries.",
-  about: "All India Exam Result is India's fastest government exam information portal. Learn about our mission to provide verified sarkari result updates.",
-  "privacy-policy": "Privacy policy of All India Exam Result. Learn how we collect, use and protect your personal information when you visit our website.",
-  "cookies-policy": "Cookies policy of All India Exam Result. Understand how we use cookies, Google AdSense (ca-pub-2439432844260170), analytics, and how to manage your privacy settings.",
-  cookies: "Cookies policy of All India Exam Result. Understand how we use cookies, Google AdSense (ca-pub-2439432844260170), analytics, and how to manage your privacy settings.",
-  disclaimer: "Disclaimer for All India Exam Result. All exam data is sourced from public government notifications. We are not an official government website.",
+  results: "Sarkari Result 2026: Check latest exam results, scorecards, cut-off marks, and merit lists for SSC, UPSC, Railway, Banking, Police & State Board exams.",
+  "latest-jobs": "Sarkari Naukri 2026: Latest government job notifications, vacancies, eligibility, and online forms for SSC, Railway, UPSC, Banking, and State exams.",
+  "admit-card": "Download Sarkari Admit Card 2026: Hall tickets, exam dates, shift timings, and city slips for SSC, Railway RRB, UPSC, Banking, and State police exams.",
+  "answer-key": "Download official Sarkari Answer Key 2026: Response sheets, answer keys, objection links, and score calculation for SSC, Railway, and State PSC exams.",
+  admissions: "Sarkari Admissions 2026: University entrance exam forms, counselling schedules, eligibility criteria, and merit lists for CUET, NEET, JEE & B.Ed.",
+  syllabus: "Download Sarkari Exam Syllabus 2026 PDF: Subject-wise exam pattern, marking scheme, and preparation guides for SSC, Railway, UPSC, and Police exams.",
+  contact: "Contact All India Exam Result support team for exam inquiries, corrections, feedback or partnerships. Reach us via email or phone for fast assistance.",
+  about: "Learn about All India Exam Result (aiexamresult.com) — India's premier independent portal providing verified government job alerts, admit cards, and results.",
+  "privacy-policy": "Privacy Policy for All India Exam Result. Learn how we collect, use, and safeguard your data, including cookies, analytics, and third-party advertising policies.",
+  "cookies-policy": "Read the Cookies Policy for All India Exam Result. Understand how cookies, Google AdSense, and analytics are used and how to manage your preferences.",
+  cookies: "Read the Cookies Policy for All India Exam Result. Understand how cookies, Google AdSense, and analytics are used and how to manage your preferences.",
+  disclaimer: "Disclaimer for All India Exam Result. Exam details are compiled from official government portals. We are an independent informational recruitment website.",
 };
 
 export async function generateMetadata({ params }: { params: Promise<{ section: string }> }): Promise<Metadata> {

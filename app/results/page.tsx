@@ -11,18 +11,18 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.aiexamresult.c
 
 export const metadata: Metadata = {
   title: "Sarkari Result 2026 | All Govt Exam Results Online",
-  description: "Sarkari Result 2026: Check latest Sarkari exam results, score cards, cut off marks, merit list & direct download links for SSC, UPSC, Railway, Banking, Police, UP & Bihar Board exams.",
+  description: "Sarkari Result 2026: Check latest exam results, scorecards, cut-off marks, and merit lists for SSC, UPSC, Railway, Banking, Police & State Board exams.",
   alternates: { canonical: `${SITE_URL}/results` },
   openGraph: {
     title: "Sarkari Result 2026 : All Govt Exam Results - Sarkari Exam",
-    description: "Check latest Sarkari exam results, score cards, cut off marks & merit list.",
+    description: "Sarkari Result 2026: Check latest exam results, scorecards, cut-off marks, and merit lists for SSC, UPSC, Railway, Banking, Police & State Board exams.",
     url: `${SITE_URL}/results`,
     images: [{ url: `${SITE_URL}/og-image.svg`, width: 1200, height: 630 }]
   },
   twitter: {
     card: "summary_large_image",
     title: "Sarkari Result 2026 : All Govt Exam Results Online",
-    description: "Check latest Sarkari exam results, score cards, cut off marks & merit list.",
+    description: "Sarkari Result 2026: Check latest exam results, scorecards, cut-off marks, and merit lists for SSC, UPSC, Railway, Banking, Police & State Board exams.",
   }
 };
 

@@ -2,7 +2,7 @@ import ContactUsPage from "../contact-us/page";
 
 export const metadata = {
   title: "Contact Us | All India Exam Result",
-  description: "Contact All India Exam Result team for queries, corrections, or student support. Email: contact@aiexamresult.com, help@aiexamresult.com, Phone: +91 8969799697.",
+  description: "Contact All India Exam Result support team for exam inquiries, corrections, feedback or partnerships. Reach us via email or phone for fast assistance.",
   alternates: { canonical: "/contact" },
 };
 
