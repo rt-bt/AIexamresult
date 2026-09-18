@@ -2,6 +2,46 @@
 export const scrapedData = {
   "results": [
     {
+      "title": "UPPSC PCS 2025 Mains Result",
+      "url": "/post/uppsc-2025",
+      "category": "results",
+      "slug": "uppsc-2025",
+      "publishedDate": "2026-09-17T17:16:27+05:30",
+      "publishedAt": "2026-09-17T11:46:27.000Z"
+    },
+    {
+      "title": "Indian Navy Agniveer SSR Medical Assistant Result 2026",
+      "url": "/post/indian-navy-agniveer-ssr-medical-assistant-2026",
+      "category": "results",
+      "slug": "indian-navy-agniveer-ssr-medical-assistant-2026",
+      "publishedDate": "2026-09-17T19:20:09+05:30",
+      "publishedAt": "2026-09-17T13:50:09.000Z"
+    },
+    {
+      "title": "Indian Navy Agniveer MR Musician 02/2026 Batch Result",
+      "url": "/post/indian-navy-agniveer-mr-musician-02-2026",
+      "category": "results",
+      "slug": "indian-navy-agniveer-mr-musician-02-2026",
+      "publishedDate": "2026-09-17T19:33:35+05:30",
+      "publishedAt": "2026-09-17T14:03:35.000Z"
+    },
+    {
+      "title": "HPSC Civil Service Mains Result 2026",
+      "url": "/post/hpsc-haryana-civil-service-hsc-2026",
+      "category": "results",
+      "slug": "hpsc-haryana-civil-service-hsc-2026",
+      "publishedDate": "22 June 2026",
+      "publishedAt": "2026-06-22T11:01:54.000Z"
+    },
+    {
+      "title": "UP DGMHUP ANM Training Selected Candidate List / Merit List 2026",
+      "url": "/post/up-dgmhup-anm-training-2026",
+      "category": "results",
+      "slug": "up-dgmhup-anm-training-2026",
+      "publishedDate": "2026-09-18T16:49:01+05:30",
+      "publishedAt": "2026-09-18T11:19:01.000Z"
+    },
+    {
       "title": "RRB Junior Engineer CEN.No: 05/2025 CBT 2 Result 2026",
       "url": "/post/rrb-junior-engineer-je-2025",
       "category": "results",
@@ -210,12 +250,12 @@ export const scrapedData = {
       "publishedAt": "2026-05-31T18:30:00.000Z"
     },
     {
-      "title": "NTA UGC NET June 2026 Result (Declared)",
-      "url": "https://www.sarkariresult.com/2026/nta-ugc-net-june-2026/",
+      "title": "NTA UGC NET June Re-Exam Result 2026",
+      "url": "/post/nta-ugc-net-june-2026",
       "category": "results",
       "slug": "nta-ugc-net-june-2026",
-      "publishedDate": "4 September 2026",
-      "publishedAt": "2026-09-04T16:51:56.000Z"
+      "publishedDate": "2026-09-10T22:06:46+05:30",
+      "publishedAt": "2026-09-10T16:36:46.000Z"
     },
     {
       "title": "Bihar BTSC Staff Nurse 2025 Final Result",
@@ -2428,6 +2468,38 @@ export const scrapedData = {
   ],
   "admitCards": [
     {
+      "title": "UPSC IFS Mains Exam Date 2026",
+      "url": "/post/upsc-civil-services-ias-ifs-2026",
+      "category": "admitCards",
+      "slug": "upsc-civil-services-ias-ifs-2026",
+      "publishedDate": "17 June 2026",
+      "publishedAt": "2026-06-16T18:30:00.000Z"
+    },
+    {
+      "title": "IOCL Executive Admit Card 2026",
+      "url": "/post/iocl-executive-2026",
+      "category": "admitCards",
+      "slug": "iocl-executive-2026",
+      "publishedDate": "2026-09-17T22:16:48+05:30",
+      "publishedAt": "2026-09-17T16:46:48.000Z"
+    },
+    {
+      "title": "Indian Navy Agniveer SSR/ MR Stage II Admit Card 2026",
+      "url": "/post/indian-navy-agniveer-ssr-mr-2026",
+      "category": "admitCards",
+      "slug": "indian-navy-agniveer-ssr-mr-2026",
+      "publishedDate": "2026-09-18T13:24:37+05:30",
+      "publishedAt": "2026-09-18T07:54:37.000Z"
+    },
+    {
+      "title": "DSSSB September Exam Admit Card 2026",
+      "url": "/post/dsssb-various-post-2025",
+      "category": "admitCards",
+      "slug": "dsssb-various-post-2025",
+      "publishedDate": "15 June 2026",
+      "publishedAt": "2026-06-14T18:30:00.000Z"
+    },
+    {
       "title": "MPESB Forest Guard & Jail Prahari PET Exam Date 2026",
       "url": "/post/mpesb-forest-guard-jail-prahari-2026",
       "category": "admitCards",
@@ -2476,7 +2548,7 @@ export const scrapedData = {
       "publishedAt": "2026-07-21T18:30:00.000Z"
     },
     {
-      "title": "Indian Overseas Bank LBO Exam Date 2026",
+      "title": "Indian Overseas Bank LBO Admit Card 2026",
       "url": "/post/indian-overseas-bank-lbo-2026",
       "category": "admitCards",
       "slug": "indian-overseas-bank-lbo-2026",
@@ -2548,7 +2620,7 @@ export const scrapedData = {
       "publishedAt": "2026-09-09T12:30:24.000Z"
     },
     {
-      "title": "UPSSSC Forest Guard/ Wild Life Guard Mains Exam Fee Payment 2026",
+      "title": "UPSSSC Forest Guard/ Wild Life Guard Mains Exam City Details 2026",
       "url": "/post/upsssc-forest-guard-wild-life-guard-2026",
       "category": "admitCards",
       "slug": "upsssc-forest-guard-wild-life-guard-2026",
@@ -2556,12 +2628,12 @@ export const scrapedData = {
       "publishedAt": "2026-09-09T04:45:00.000Z"
     },
     {
-      "title": "UPSSSC Forensic Science Laboratory Mains Exam Fee Payment 2026",
+      "title": "UPSSSC Forensic Science Laboratory Mains Exam City Details 2026",
       "url": "/post/upsssc-forensic-science-laboratory-2026",
       "category": "admitCards",
       "slug": "upsssc-forensic-science-laboratory-2026",
-      "publishedDate": "9 September 2026",
-      "publishedAt": "2026-09-09T04:47:00.000Z"
+      "publishedDate": "8 September 2026",
+      "publishedAt": "2026-09-07T18:30:00.000Z"
     },
     {
       "title": "SAV Bihar Class 6 Dummy Admit Card 2027-28",
@@ -3948,7 +4020,7 @@ export const scrapedData = {
       "publishedAt": "2026-09-08T18:30:00.000Z"
     },
     {
-      "title": "SBI Junior Associates Clerk PET Admit Card 2026",
+      "title": "SBI Junior Associates Clerk Exam Date 2026",
       "url": "/post/sbi-junior-associates-clerk-2026",
       "category": "admitCards",
       "slug": "sbi-junior-associates-clerk-2026",
@@ -4205,6 +4277,22 @@ export const scrapedData = {
     }
   ],
   "latestJobs": [
+    {
+      "title": "Uttar Pradesh UP Scholarship Online Form 2026-27",
+      "url": "/post/uttar-pradesh-up-scholarship-2026-27",
+      "category": "latestJobs",
+      "slug": "uttar-pradesh-up-scholarship-2026-27",
+      "publishedDate": "27 July 2026",
+      "publishedAt": "2026-07-27T09:29:13.000Z"
+    },
+    {
+      "title": "MPESB Subedar Steno, ASI Online Form 2026",
+      "url": "/post/mpesb-subedar-steno-asi-2026",
+      "category": "latestJobs",
+      "slug": "mpesb-subedar-steno-asi-2026",
+      "publishedDate": "2026-09-17T19:58:56+05:30",
+      "publishedAt": "2026-09-17T14:28:56.000Z"
+    },
     {
       "title": "UPSC Engineering Services Pre Online Form 2027",
       "url": "/post/upsc-engineering-services-pre-2027",
@@ -5622,7 +5710,7 @@ export const scrapedData = {
       "publishedAt": "2026-08-20T12:02:45.000Z"
     },
     {
-      "title": "Bank Of Baroda LBO Online Form 2026 – Last Date",
+      "title": "Bank Of Baroda LBO Online Form 2026",
       "url": "/post/bank-of-baroda-lbo-2026",
       "category": "latestJobs",
       "slug": "bank-of-baroda-lbo-2026",
@@ -8072,6 +8160,14 @@ export const scrapedData = {
   ],
   "answerKeys": [
     {
+      "title": "RSSB Computer Instructor Answer Key 2026",
+      "url": "/post/rssb-computer-instructor-2026",
+      "category": "answerKeys",
+      "slug": "rssb-computer-instructor-2026",
+      "publishedDate": "23 June 2026",
+      "publishedAt": "2026-06-22T18:30:00.000Z"
+    },
+    {
       "title": "UPSC NDA/ NA-II Answer Key 2026",
       "url": "/post/upsc-nda-na-ii-2026",
       "category": "answerKeys",
@@ -8128,7 +8224,7 @@ export const scrapedData = {
       "publishedAt": "2026-09-01T09:52:44.000Z"
     },
     {
-      "title": "NTA AIAPGET Answer Key 2026",
+      "title": "NTA AIAPGET Final Answer Key 2026",
       "url": "/post/nta-aiapget-2026",
       "category": "answerKeys",
       "slug": "nta-aiapget-2026",
@@ -11928,7 +12024,7 @@ export const scrapedData = {
       "publishedAt": "2026-09-01T07:20:37.000Z"
     },
     "upsssc-forensic-science-laboratory-2026": {
-      "lastDate": "24/08/2026",
+      "lastDate": "24 August 2026",
       "publishedDate": "8 September 2026",
       "publishedAt": "2026-09-07T18:30:00.000Z"
     },
@@ -12023,7 +12119,7 @@ export const scrapedData = {
       "publishedAt": "2026-08-29T07:53:33.000Z"
     },
     "mpesb-primary-middle-school-teacher-2026": {
-      "lastDate": "18 September 2026",
+      "lastDate": "05 October 2026",
       "publishedDate": "5 September 2026",
       "publishedAt": "2026-09-05T08:42:42.000Z"
     },
@@ -14286,7 +14382,6 @@ export const scrapedData = {
       "publishedAt": "2026-09-10T12:34:17.000Z"
     },
     "rpsc-sub-inspector-2021": {
-      "lastDate": "23 June 2021",
       "publishedDate": "2026-09-10T23:39:45+05:30",
       "publishedAt": "2026-09-10T18:09:45.000Z"
     },
@@ -15253,12 +15348,71 @@ export const scrapedData = {
       "lastDate": "25 September 2026",
       "publishedDate": "6 September 2026",
       "publishedAt": "2026-09-05T18:30:00.000Z"
+    },
+    "up-dgmhup-anm-training-2026": {
+      "lastDate": "31 July 2026",
+      "publishedDate": "2026-09-18T16:49:01+05:30",
+      "publishedAt": "2026-09-18T11:19:01.000Z"
+    },
+    "hpsc-haryana-civil-service-hsc-2026": {
+      "lastDate": "26 February 2026",
+      "publishedDate": "22 June 2026",
+      "publishedAt": "2026-06-22T11:01:54.000Z"
+    },
+    "indian-navy-agniveer-mr-musician-02-2026": {
+      "lastDate": "30 April 2026",
+      "publishedDate": "2026-09-17T19:33:35+05:30",
+      "publishedAt": "2026-09-17T14:03:35.000Z"
+    },
+    "indian-navy-agniveer-ssr-medical-assistant-2026": {
+      "lastDate": "06 April 2026",
+      "publishedDate": "2026-09-17T19:20:09+05:30",
+      "publishedAt": "2026-09-17T13:50:09.000Z"
+    },
+    "uppsc-2025": {
+      "lastDate": "02 April 2025",
+      "publishedDate": "2026-09-17T17:16:27+05:30",
+      "publishedAt": "2026-09-17T11:46:27.000Z"
+    },
+    "dsssb-various-post-2025": {
+      "publishedDate": "15 June 2026",
+      "publishedAt": "2026-06-14T18:30:00.000Z"
+    },
+    "indian-navy-agniveer-ssr-mr-2026": {
+      "lastDate": "06 April 2026",
+      "publishedDate": "2026-09-18T13:24:37+05:30",
+      "publishedAt": "2026-09-18T07:54:37.000Z"
+    },
+    "iocl-executive-2026": {
+      "lastDate": "03 September 2026",
+      "publishedDate": "2026-09-17T22:16:48+05:30",
+      "publishedAt": "2026-09-17T16:46:48.000Z"
+    },
+    "upsc-civil-services-ias-ifs-2026": {
+      "lastDate": "27 February 2026 (Extended)",
+      "publishedDate": "17 June 2026",
+      "publishedAt": "2026-06-16T18:30:00.000Z"
+    },
+    "mpesb-subedar-steno-asi-2026": {
+      "lastDate": "08 October 2026",
+      "publishedDate": "2026-09-17T19:58:56+05:30",
+      "publishedAt": "2026-09-17T14:28:56.000Z"
+    },
+    "rssb-computer-instructor-2026": {
+      "lastDate": "23 June 2026",
+      "publishedDate": "23 June 2026",
+      "publishedAt": "2026-06-22T18:30:00.000Z"
+    },
+    "uttar-pradesh-up-scholarship-2026-27": {
+      "lastDate": "15 October 2026",
+      "publishedDate": "27 July 2026",
+      "publishedAt": "2026-07-27T09:29:13.000Z"
     }
   },
-  "fetchedAt": "2026-09-17T09:36:03.641Z",
+  "fetchedAt": "2026-09-18T13:18:05.246Z",
   "seo": {
-    "lastOptimized": "2026-09-17T09:36:10.206Z",
-    "totalPosts": 1892,
+    "lastOptimized": "2026-09-18T13:18:12.854Z",
+    "totalPosts": 1899,
     "websiteName": "All India Exam Result",
     "websiteUrl": "https://www.aiexamresult.com",
     "description": "Sarkari Result 2026 - Get fastest government job alerts, sarkari naukri, exam results, admit cards & answer keys. SSC, UPSC, Railway, Banking, UP, Bihar & all India exams."
