@@ -583,6 +583,13 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
     ]
   };
 
+  const COMPETITOR_DOMAINS = [
+    "sarkariexam.com", "freejobalert.com", "naukaritime.com", "naukritime.com",
+    "sarkariresult.com", "resultbharat.com", "sarkarialert.net", "rojgarresult.com",
+    "instagram.com", "facebook.com", "twitter.com", "x.com", "youtube.com",
+    "t.me", "whatsapp.com", "play.google.com"
+  ];
+
   const cleanLinks = (post.importantLinks || []).map((l: { label: string; url: string | undefined }) => {
     let label = (l.label || "").trim();
     const half = Math.floor(label.length / 2);
@@ -594,9 +601,11 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
     if (!l.url || l.url === "#" || l.url.startsWith("javascript")) return false;
     const lowerUrl = l.url.toLowerCase();
     const lowerLabel = (l.label || "").toLowerCase();
-    if (lowerLabel.includes("whatsapp") || lowerLabel.includes("telegram") || lowerLabel.includes("mobile app") || lowerLabel.includes("join channel")) return false;
-    if (lowerUrl.includes("t.me/") || lowerUrl.includes("whatsapp.com") || lowerUrl.includes("play.google.com")) return false;
-    if ((lowerUrl === "https://www.sarkariresult.com/" || lowerUrl === "https://www.sarkariresult.com" || lowerUrl === "https://www.sarkariexam.com/" || lowerUrl === "https://www.sarkariexam.com") && (lowerLabel.includes("home") || lowerLabel.includes("sarkari"))) return false;
+    if (COMPETITOR_DOMAINS.some(d => lowerUrl.includes(d))) return false;
+    if (lowerLabel.includes("whatsapp") || lowerLabel.includes("telegram") || lowerLabel.includes("instagram") ||
+        lowerLabel.includes("mobile app") || lowerLabel.includes("join channel") || lowerLabel.includes("download app") ||
+        lowerLabel.includes("sarkariexam") || lowerLabel.includes("freejobalert") || lowerLabel.includes("naukaritime") ||
+        lowerLabel.includes("sarkari result") || lowerLabel.includes("sarkari exam") || lowerLabel.includes("result bharat")) return false;
     return true;
   });
 
@@ -624,7 +633,12 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
     return html.replace(/<[^>]*>/g, "").replace(/&#?\w+;/g, " ").replace(/\s+/g, " ").trim();
   }
 
-  const introText = post.intro || (post.fullContentHtml ? stripHtml(post.fullContentHtml).substring(0, 300) : "");
+  const rawIntroText = post.intro || (post.fullContentHtml ? stripHtml(post.fullContentHtml).substring(0, 300) : "");
+  const introText = rawIntroText
+    .replace(/Author\s*:\s*Sarkari\s*Exam\s*Team/gi, "")
+    .replace(/Tag\s*:\s*[^\n\r<]+/gi, "")
+    .replace(/sarkariexam(?:\.com)?|freejobalert(?:\.com)?|naukaritime(?:\.com)?|naukritime(?:\.com)?|sarkariresult(?:\.com)?|resultbharat(?:\.com)?|sarkarialert(?:\.net)?|rojgarresult(?:\.com)?/gi, "All India Exam Result")
+    .trim();
 
   const postDateStr = publishedIso ? publishedIso.split("T")[0] : (rawPostDate && /\d{4}/.test(rawPostDate) ? rawPostDate.split("T")[0] : "2026");
   const postOgImageUrl = `${SITE_URL}/api/og?title=${encodeURIComponent(title)}&cat=${encodeURIComponent(post.category || "Sarkari Result")}&date=${encodeURIComponent(postDateStr)}`;

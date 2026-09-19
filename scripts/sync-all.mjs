@@ -235,6 +235,38 @@ async function scrapeSarkariResultDetail(url) {
   }
 }
 
+// ======== Competitor Traces & Spam Cleaning ========
+
+const COMPETITOR_DOMAINS = [
+  "sarkariexam.com", "freejobalert.com", "naukaritime.com", "naukritime.com",
+  "sarkariresult.com", "resultbharat.com", "sarkarialert.net", "rojgarresult.com",
+  "instagram.com", "facebook.com", "twitter.com", "x.com", "youtube.com",
+  "t.me", "whatsapp.com", "play.google.com"
+];
+
+const COMPETITOR_REGEX = /sarkariexam(?:\.com)?|freejobalert(?:\.com)?|naukaritime(?:\.com)?|naukritime(?:\.com)?|sarkariresult(?:\.com)?|resultbharat(?:\.com)?|sarkarialert(?:\.net)?|rojgarresult(?:\.com)?/gi;
+
+function cleanCompetitorText(text) {
+  if (!text) return "";
+  return text
+    .replace(/Author\s*:\s*Sarkari\s*Exam\s*Team/gi, "")
+    .replace(/Tag\s*:\s*[^\n\r<]+/gi, "")
+    .replace(COMPETITOR_REGEX, "All India Exam Result")
+    .trim();
+}
+
+function isCompetitorLink(url, label) {
+  if (!url || url === "#" || url.startsWith("javascript")) return true;
+  const lowerUrl = url.toLowerCase();
+  const lowerLabel = (label || "").toLowerCase();
+  if (COMPETITOR_DOMAINS.some(d => lowerUrl.includes(d))) return true;
+  if (lowerLabel.includes("whatsapp") || lowerLabel.includes("telegram") || lowerLabel.includes("instagram") ||
+      lowerLabel.includes("mobile app") || lowerLabel.includes("join channel") || lowerLabel.includes("download app") ||
+      lowerLabel.includes("sarkariexam") || lowerLabel.includes("freejobalert") || lowerLabel.includes("naukaritime") ||
+      lowerLabel.includes("sarkari result") || lowerLabel.includes("sarkari exam") || lowerLabel.includes("result bharat")) return true;
+  return false;
+}
+
 // ======== Source 2: sarkariexam.com ========
 
 const HEADING_MAP = {
@@ -266,7 +298,7 @@ function categorizeByTitle(title) {
 async function scrapeSarkariExam() {
   const html = await fetchHtml("https://www.sarkariexam.com/");
   const $ = cheerio.load(html);
-  const items = [];
+  const items = { results: [], admitCards: [], latestJobs: [], answerKeys: [], documents: [], admissions: [] };
   const seen = new Set();
 
   $(".below-block").each((_, block) => {
@@ -278,18 +310,21 @@ async function scrapeSarkariExam() {
     if (!heading) return;
 
     const key = HEADING_MAP[heading];
-    if (!key) return;
+    if (!key || !items[key]) return;
 
     $block.find("ul.wp-block-latest-posts__list li a.wp-block-latest-posts__post-title").each((__, link) => {
       const $link = $(link);
       const url = $link.attr("href") || "";
       if (!url || seen.has(url)) return;
       seen.add(url);
-      const title = $link.text().trim();
+      const rawTitle = $link.text().trim();
+      const title = cleanCompetitorText(rawTitle);
       const slug = url.replace(/\/$/, "").split("/").pop() || "";
       const titleCat = categorizeByTitle(title);
       const finalCat = titleCat || key;
-      items.push({ title, url, category: finalCat, slug });
+      if (items[finalCat]) {
+        items[finalCat].push({ title, url, category: finalCat, slug });
+      }
     });
   });
 
@@ -311,19 +346,35 @@ async function scrapeSarkariExamDetail(url) {
       const d = new Date(publishedDate);
       if (!isNaN(d.getTime()) && d > new Date()) publishedDate = "";
     }
-    const intro = $("div.post-desc p").text().trim() || $("div.entry-content p").first().text().trim() || "";
+    let intro = $("div.post-desc p").text().trim() || $("div.entry-content p").first().text().trim() || "";
+    intro = cleanCompetitorText(intro);
 
     const importantDates = [];
     const applicationFee = [];
     const $table1 = $("div.newtable1");
     if ($table1.length) {
       $table1.find("h3").each((_, h) => {
-        const $h = $(h);
-        if ($h.text().toLowerCase().includes("important dates")) {
-          $h.closest("td.pd-0").find("ul li").each((__, li) => importantDates.push($(li).text().trim()));
-        }
-        if ($h.text().toLowerCase().includes("application fee")) {
-          $h.closest("td.pd-0").find("ul li").each((__, li) => applicationFee.push($(li).text().trim()));
+        const text = $(h).text().trim();
+        const lower = text.toLowerCase();
+        if (lower.includes("important date") || lower.includes("exam date") || lower.includes("application fee") || lower.includes("fee detail")) {
+          const $table = $(h).next("table");
+          if ($table.length) {
+            $table.find("tr").each((__, row) => {
+              const cells = $(row).find("td");
+              if (cells.length >= 2) {
+                const col0 = cleanLinkLabel(cells.eq(0).text().trim());
+                const col1 = cleanLinkLabel(cells.eq(1).text().trim());
+                if (col0 && col1) {
+                  const entry = `${col0} : ${col1}`;
+                  if (lower.includes("fee")) {
+                    applicationFee.push(entry);
+                  } else {
+                    importantDates.push(entry);
+                  }
+                }
+              }
+            });
+          }
         }
       });
     }
@@ -364,11 +415,10 @@ async function scrapeSarkariExamDetail(url) {
               label = `${col0Text} (${aText})`;
             }
             label = cleanLinkLabel(label);
-            const lower = label.toLowerCase();
-            if (spamLabels.some((s) => lower.includes(s))) return;
+            if (isCompetitorLink(linkUrl, label)) return;
 
             seenUrls.add(linkUrl);
-            importantLinks.push({ label, url: linkUrl });
+            importantLinks.push({ label: cleanCompetitorText(label), url: linkUrl });
           });
         }
       });
@@ -390,11 +440,10 @@ async function scrapeSarkariExamDetail(url) {
               label = `${col0Text} (${aText})`;
             }
             label = cleanLinkLabel(label);
-            const lower = label.toLowerCase();
-            if (spamLabels.some((s) => lower.includes(s))) return;
+            if (isCompetitorLink(href, label)) return;
 
             seenUrls.add(href);
-            importantLinks.push({ label, url: href });
+            importantLinks.push({ label: cleanCompetitorText(label), url: href });
           });
         }
       });
@@ -420,73 +469,90 @@ async function scrapeSarkariExamDetail(url) {
   }
 }
 
-// ======== Source 3+: resultbharat, sarkarialert, rojgarresult, naukaritime, freejobalert ========
-
-async function scrapeNaukariTime() {
-  const html = await fetchHtml("https://naukaritime.com/");
-  const $ = cheerio.load(html);
-  const items = [];
-  const seen = new Set();
-  const spam = ["whatsapp", "telegram", "facebook", "twitter", "instagram", "youtube",
-    "pm kisan", "aadhaar", "pan card", "driving licence", "sahara", "voter card",
-    "birth certificate", "passport", "ration card", "scholarship", "sarkari yojna",
-    "yojana", "ayushman", "bijli", "jyoti yojana"];
-
-  $("h2 a[href], h3 a[href], li a[href]").each((_, a) => {
-    const $a = $(a);
-    let href = $a.attr("href") || "";
-    const text = $a.text().trim();
-    if (!href || text.length < 20 || seen.has(href)) return;
-    if (href.includes("#") || href.startsWith("javascript")) return;
-    if (!href.startsWith("http")) href = "https://naukaritime.com" + (href.startsWith("/") ? href : "/" + href);
-    // Only scrape naukaritime.com internal links
-    if (!href.includes("naukaritime.com")) return;
-    const lower = text.toLowerCase();
-    if (spam.some(s => lower.includes(s))) return;
-    seen.add(href);
-    items.push({
-      title: text, url: href, category: categorizeByKeywords(text),
-      slug: href.replace(/\/$/, "").split("/").pop().replace(/\.html?$/, "") || "post",
-    });
-  });
-  // Deduplicate slugs
-  const slugSeen = new Set();
-  return items.filter(i => { const s = i.slug; if (slugSeen.has(s)) return false; slugSeen.add(s); return true; });
-}
+// ======== Source 3: FreeJobAlert (Layout & Section Based) ========
 
 async function scrapeFreeJobAlert() {
   const html = await fetchHtml("https://www.freejobalert.com/");
   const $ = cheerio.load(html);
-  const items = [];
+  const items = { results: [], admitCards: [], latestJobs: [], answerKeys: [], documents: [], admissions: [] };
   const seen = new Set();
-  const spam = ["whatsapp", "telegram", "facebook", "twitter", "instagram", "youtube",
-    "mobile app", "search-jobs", "government-jobs", "bank-jobs", "railway-jobs",
-    "teaching-faculty-jobs", "engineering-jobs", "police-defence-jobs",
-    "state-government-jobs", "last-date-reminder", "login", "register",
-    "new-updates", "search-results", "jobs-by-education", "freejobalert.com/#",
-    "colleges.freejobalert", "slate.freejobalert", "user.freejobalert",
-    "sarkariresult.freejobalert", "google.com/preferences", "play.google.com"];
 
-  // Primary: job listings in ul.listcontentnu li a and table.qltpmnu td a
-  $("ul.listcontentnu li a[href], table.qltpmnu td a[href]").each((_, a) => {
-    const $a = $(a);
-    let href = $a.attr("href") || "";
-    const text = $a.text().trim();
-    if (!href || text.length < 15 || seen.has(href)) return;
-    if (href.includes("#") || href.startsWith("javascript")) return;
-    const lower = text.toLowerCase();
-    if (spam.some(s => href.toLowerCase().includes(s) || lower.includes(s))) return;
-    if (!href.startsWith("http")) href = "https://www.freejobalert.com" + (href.startsWith("/") ? href : "/" + href);
-    if (!href.includes("freejobalert.com")) return;
-    seen.add(href);
-    items.push({
-      title: text, url: href, category: categorizeByKeywords(text),
-      slug: href.replace(/\/$/, "").split("/").pop().replace(/\.html?$/, "") || "post",
+  const FJA_MAP = {
+    "job notifications": "latestJobs",
+    "state job notifications": "latestJobs",
+    "admit card": "admitCards",
+    "results": "results",
+    "answer keys": "answerKeys",
+    "syllabus": "documents",
+  };
+
+  $(".hpgjbcont").each((_, container) => {
+    const $c = $(container);
+    const titleText = $c.find(".nutitle").text().trim().toLowerCase();
+    const cat = FJA_MAP[titleText];
+    if (!cat || !items[cat]) return;
+
+    $c.find("ul li a[href]").each((__, a) => {
+      const $a = $(a);
+      let href = $a.attr("href") || "";
+      const rawTitle = $a.text().trim();
+      if (!href || rawTitle.length < 12 || seen.has(href)) return;
+      if (href.includes("#") || href.startsWith("javascript")) return;
+      if (!href.startsWith("http")) href = "https://www.freejobalert.com" + href;
+      seen.add(href);
+      const title = cleanCompetitorText(rawTitle);
+      const slug = href.replace(/\/$/, "").split("/").pop().replace(/\.html?$/, "") || "post";
+      items[cat].push({ title, url: href, category: cat, slug });
     });
   });
-  // Deduplicate slugs
-  const slugSeen = new Set();
-  return items.filter(i => { const s = i.slug; if (slugSeen.has(s)) return false; slugSeen.add(s); return true; });
+
+  return items;
+}
+
+// ======== Source 4: NaukariTime (Layout & Section Based) ========
+
+async function scrapeNaukariTime() {
+  const html = await fetchHtml("https://naukaritime.com/");
+  const $ = cheerio.load(html);
+  const items = { results: [], admitCards: [], latestJobs: [], answerKeys: [], documents: [], admissions: [] };
+  const seen = new Set();
+
+  const NT_MAP = {
+    "latest job": "latestJobs",
+    "admit card": "admitCards",
+    "result": "results",
+    "admission": "admissions",
+    "defence job": "latestJobs",
+  };
+
+  const spam = ["pm kisan", "aadhaar", "pan card", "driving licence", "sahara", "voter card",
+    "birth certificate", "passport", "ration card", "scholarship", "sarkari yojna",
+    "yojana", "ayushman", "bijli", "jyoti yojana", "earn money", "terms and conditions",
+    "voter list", "jeevan praman", "ganna", "nagar nigam", "jeevika"];
+
+  $(".post-card").each((_, card) => {
+    const $c = $(card);
+    const heading = $c.find("h2.card-heading").text().trim().toLowerCase();
+    const cat = NT_MAP[heading];
+    if (!cat || !items[cat]) return;
+
+    $c.find("li a[href]").each((__, a) => {
+      const $a = $(a);
+      let href = $a.attr("href") || "";
+      const rawTitle = $a.text().trim();
+      if (!href || rawTitle.length < 15 || rawTitle.toLowerCase().includes("view more") || seen.has(href)) return;
+      if (href.includes("#") || href.startsWith("javascript")) return;
+      const lower = rawTitle.toLowerCase();
+      if (spam.some(s => lower.includes(s))) return;
+      if (!href.startsWith("http")) href = "https://naukaritime.com" + (href.startsWith("/") ? href : "/" + href);
+      seen.add(href);
+      const title = cleanCompetitorText(rawTitle);
+      const slug = href.replace(/\/$/, "").split("/").pop().replace(/\.html?$/, "") || "post";
+      items[cat].push({ title, url: href, category: cat, slug });
+    });
+  });
+
+  return items;
 }
 
 function categorizeByKeywords(title) {
@@ -502,19 +568,19 @@ function categorizeByKeywords(title) {
 async function scrapeResultBharat() {
   const html = await fetchHtml("https://www.resultbharat.com/");
   const $ = cheerio.load(html);
-  const items = [];
+  const items = { results: [], admitCards: [], latestJobs: [], answerKeys: [], documents: [], admissions: [] };
   const seen = new Set();
   $("h3 a[href]").each((_, a) => {
     const $a = $(a);
     let href = $a.attr("href") || "";
-    const text = $a.text().trim();
-    if (!href || text.length < 15 || seen.has(href)) return;
+    const rawTitle = $a.text().trim();
+    if (!href || rawTitle.length < 15 || seen.has(href)) return;
     seen.add(href);
     if (!href.startsWith("http")) href = "https://www.resultbharat.com" + (href.startsWith("/") ? href : "/" + href);
-    items.push({
-      title: text, url: href, category: categorizeByKeywords(text),
-      slug: href.replace(/\/$/, "").split("/").pop().replace(/\.html?$/, "") || "post",
-    });
+    const title = cleanCompetitorText(rawTitle);
+    const cat = categorizeByKeywords(title);
+    const slug = href.replace(/\/$/, "").split("/").pop().replace(/\.html?$/, "") || "post";
+    if (items[cat]) items[cat].push({ title, url: href, category: cat, slug });
   });
   return items;
 }
@@ -522,48 +588,46 @@ async function scrapeResultBharat() {
 async function scrapeSarkariAlert() {
   const html = await fetchHtml("https://sarkarialert.net/");
   const $ = cheerio.load(html);
-  const items = [];
+  const items = { results: [], admitCards: [], latestJobs: [], answerKeys: [], documents: [], admissions: [] };
   const seen = new Set();
   const spam = ["whatsapp", "telegram", "facebook", "twitter", "instagram", "youtube", "current affairs", "pm kisan"];
   $("a[href]").each((_, a) => {
     const $a = $(a);
     let href = $a.attr("href") || "";
-    const text = $a.text().trim();
-    if (!href || text.length < 20 || seen.has(href)) return;
-    const lower = text.toLowerCase();
+    const rawTitle = $a.text().trim();
+    if (!href || rawTitle.length < 20 || seen.has(href)) return;
+    const lower = rawTitle.toLowerCase();
     if (spam.some(s => lower.includes(s))) return;
     if (href.includes("#") || href.startsWith("javascript")) return;
     seen.add(href);
     if (!href.startsWith("http")) href = "https://sarkarialert.net" + (href.startsWith("/") ? href : "/" + href);
-    items.push({
-      title: text, url: href, category: categorizeByKeywords(text),
-      slug: href.replace(/\/$/, "").split("/").pop() || "post",
-    });
+    const title = cleanCompetitorText(rawTitle);
+    const cat = categorizeByKeywords(title);
+    const slug = href.replace(/\/$/, "").split("/").pop() || "post";
+    if (items[cat]) items[cat].push({ title, url: href, category: cat, slug });
   });
-  // Deduplicate slug conflicts
-  const slugSeen = new Set();
-  return items.filter(i => { const s = i.slug; if (slugSeen.has(s)) return false; slugSeen.add(s); return true; });
+  return items;
 }
 
 async function scrapeRojgarResult() {
   const html = await fetchHtml("https://rojgarresult.com/");
   const $ = cheerio.load(html);
-  const items = [];
+  const items = { results: [], admitCards: [], latestJobs: [], answerKeys: [], documents: [], admissions: [] };
   const seen = new Set();
   const spam = ["whatsapp", "telegram", "facebook", "twitter", "instagram", "youtube", "rojgar result", "privacy", "disclaimer"];
   $("h2 a[href], h3 a[href]").each((_, a) => {
     const $a = $(a);
     let href = $a.attr("href") || "";
-    const text = $a.text().trim();
-    if (!href || text.length < 20 || seen.has(href)) return;
-    const lower = text.toLowerCase();
+    const rawTitle = $a.text().trim();
+    if (!href || rawTitle.length < 20 || seen.has(href)) return;
+    const lower = rawTitle.toLowerCase();
     if (spam.some(s => lower.includes(s))) return;
     seen.add(href);
     if (!href.startsWith("http")) href = "https://rojgarresult.com" + (href.startsWith("/") ? href : "/" + href);
-    items.push({
-      title: text, url: href, category: categorizeByKeywords(text),
-      slug: href.replace(/\/$/, "").split("/").pop() || "post",
-    });
+    const title = cleanCompetitorText(rawTitle);
+    const cat = categorizeByKeywords(title);
+    const slug = href.replace(/\/$/, "").split("/").pop() || "post";
+    if (items[cat]) items[cat].push({ title, url: href, category: cat, slug });
   });
   return items;
 }
@@ -572,7 +636,8 @@ async function scrapeGenericDetail(url) {
   try {
     const html = await fetchHtml(url);
     const $ = cheerio.load(html);
-    const title = $("h1").first().text().trim() || $("title").text().trim();
+    const rawTitle = $("h1").first().text().trim() || $("title").text().trim();
+    const title = cleanCompetitorText(rawTitle);
     let publishedDate = $("meta[property='article:published_time']").attr("content") || $("time").attr("datetime") || "";
     if (publishedDate) {
       const d = new Date(publishedDate);
@@ -599,6 +664,7 @@ async function scrapeGenericDetail(url) {
     let intro = $("meta[name='description']").attr("content") || "";
     if (intro.length < 10) intro = $("article p, .entry-content p, .post-content p").first().text().trim().slice(0, 300);
     if (!intro) intro = $("p").first().text().trim().slice(0, 300);
+    intro = cleanCompetitorText(intro);
 
     const importantDates = [];
     const applicationFee = [];
@@ -617,13 +683,16 @@ async function scrapeGenericDetail(url) {
     });
 
     const importantLinks = [];
+    const seenLinkUrls = new Set();
     $("a[href]").each((_, link) => {
       const $link = $(link);
-      const label = $link.text().trim();
+      const rawLabel = cleanLinkLabel($link.text().trim());
+      const label = cleanCompetitorText(rawLabel);
       const href = $link.attr("href") || "";
-      if (label && href && href !== "#" && !href.startsWith("javascript") && !href.includes("facebook") && !href.includes("twitter") && !href.includes("telegram") && !href.includes("whatsapp")) {
+      if (label && href && !isCompetitorLink(href, label) && !seenLinkUrls.has(href)) {
         const lower = label.toLowerCase();
-        if (lower.includes("official") || lower.includes("apply") || lower.includes("download") || lower.includes("result") || lower.includes("admit") || lower.includes("answer") || lower.includes("website") || lower.includes("notification")) {
+        if (lower.includes("official") || lower.includes("apply") || lower.includes("download") || lower.includes("result") || lower.includes("admit") || lower.includes("answer") || lower.includes("website") || lower.includes("notification") || lower.includes("registration") || lower.includes("score")) {
+          seenLinkUrls.add(href);
           importantLinks.push({ label, url: href });
         }
       }
@@ -637,6 +706,25 @@ async function scrapeGenericDetail(url) {
 }
 
 // ======== Main ========
+
+function mergeSourceData(sourceName, sourceData, existing, existingUrls, newItems) {
+  let count = 0;
+  for (const cat of ["results", "admitCards", "latestJobs", "answerKeys", "documents", "admissions"]) {
+    const freshItems = sourceData[cat] || [];
+    const existingItems = existing[cat] || [];
+    for (const item of freshItems) {
+      const url = item.url.replace(/\/$/, "");
+      if (!existingUrls.has(url)) {
+        existingItems.unshift(item); // Prepend to top so it's fresh in section layout!
+        existingUrls.add(url);
+        newItems.push(item);
+        count++;
+      }
+    }
+  }
+  console.log(`  ${count} new items found`);
+  return count;
+}
 
 async function main() {
   const start = Date.now();
@@ -655,153 +743,64 @@ async function main() {
   const newSlugs = []; // Track slugs of new posts for IndexNow
 
   // ---- Source 1: sarkariresult.com ----
-  console.log("\n[1/6] Fetching sarkariresult.com...");
+  console.log("\n[1/7] Fetching sarkariresult.com...");
   try {
     const srData = await scrapeSarkariResult();
-    let newSr = 0;
-    for (const cat of ["results", "admitCards", "latestJobs", "answerKeys", "documents", "admissions"]) {
-      const freshItems = srData[cat] || [];
-      const existingItems = existing[cat] || [];
-      for (const item of freshItems) {
-        const url = item.url.replace(/\/$/, "");
-        if (!existingUrls.has(url)) {
-          existingItems.push(item);
-          existingUrls.add(url);
-          newItems.push(item);
-          newSr++;
-          totalNew++;
-        }
-      }
-    }
-    console.log(`  ${newSr} new items found`);
+    totalNew += mergeSourceData("sarkariresult.com", srData, existing, existingUrls, newItems);
   } catch (e) {
     console.log("  Error:", e.message);
   }
 
   // ---- Source 2: sarkariexam.com ----
-  console.log("\n[2/6] Fetching sarkariexam.com...");
+  console.log("\n[2/7] Fetching sarkariexam.com (Section-wise)...");
   try {
-    const seItems = await scrapeSarkariExam();
-    let newSe = 0;
-    for (const item of seItems) {
-      const url = item.url.replace(/\/$/, "");
-      if (!existingUrls.has(url)) {
-        const cat = item.category;
-        if (existing[cat]) {
-          existing[cat].push(item);
-        }
-        existingUrls.add(url);
-        newItems.push(item);
-        newSe++;
-        totalNew++;
-      }
-    }
-    console.log(`  ${newSe} new items found`);
+    const seData = await scrapeSarkariExam();
+    totalNew += mergeSourceData("sarkariexam.com", seData, existing, existingUrls, newItems);
   } catch (e) {
     console.log("  Error:", e.message);
   }
 
-  // ---- Source 3: resultbharat.com ----
-  console.log("\n[3/6] Fetching resultbharat.com...");
+  // ---- Source 3: freejobalert.com ----
+  console.log("\n[3/7] Fetching freejobalert.com (Section-wise)...");
   try {
-    const rbItems = await scrapeResultBharat();
-    let newRb = 0;
-    for (const item of rbItems) {
-      const url = item.url.replace(/\/$/, "");
-      if (!existingUrls.has(url)) {
-        const cat = item.category;
-        if (existing[cat]) existing[cat].push(item);
-        existingUrls.add(url);
-        newItems.push(item);
-        newRb++;
-        totalNew++;
-      }
-    }
-    console.log(`  ${newRb} new items found`);
+    const fjaData = await scrapeFreeJobAlert();
+    totalNew += mergeSourceData("freejobalert.com", fjaData, existing, existingUrls, newItems);
   } catch (e) {
     console.log("  Error:", e.message);
   }
 
-  // ---- Source 4: sarkarialert.net ----
-  console.log("\n[4/6] Fetching sarkarialert.net...");
+  // ---- Source 4: naukaritime.com ----
+  console.log("\n[4/7] Fetching naukaritime.com (Section-wise)...");
   try {
-    const saItems = await scrapeSarkariAlert();
-    let newSa = 0;
-    for (const item of saItems) {
-      const url = item.url.replace(/\/$/, "");
-      if (!existingUrls.has(url)) {
-        const cat = item.category;
-        if (existing[cat]) existing[cat].push(item);
-        existingUrls.add(url);
-        newItems.push(item);
-        newSa++;
-        totalNew++;
-      }
-    }
-    console.log(`  ${newSa} new items found`);
+    const ntData = await scrapeNaukariTime();
+    totalNew += mergeSourceData("naukaritime.com", ntData, existing, existingUrls, newItems);
   } catch (e) {
     console.log("  Error:", e.message);
   }
 
-  // ---- Source 5: rojgarresult.com ----
-  console.log("\n[5/9] Fetching rojgarresult.com...");
+  // ---- Source 5: resultbharat.com ----
+  console.log("\n[5/7] Fetching resultbharat.com...");
   try {
-    const rrItems = await scrapeRojgarResult();
-    let newRr = 0;
-    for (const item of rrItems) {
-      const url = item.url.replace(/\/$/, "");
-      if (!existingUrls.has(url)) {
-        const cat = item.category;
-        if (existing[cat]) existing[cat].push(item);
-        existingUrls.add(url);
-        newItems.push(item);
-        newRr++;
-        totalNew++;
-      }
-    }
-    console.log(`  ${newRr} new items found`);
+    const rbData = await scrapeResultBharat();
+    totalNew += mergeSourceData("resultbharat.com", rbData, existing, existingUrls, newItems);
   } catch (e) {
     console.log("  Error:", e.message);
   }
 
-  // ---- Source 6: naukaritime.com ----
-  console.log("\n[6/9] Fetching naukaritime.com...");
+  // ---- Source 6: sarkarialert.net ----
+  console.log("\n[6/7] Fetching sarkarialert.net...");
   try {
-    const ntItems = await scrapeNaukariTime();
-    let newNt = 0;
-    for (const item of ntItems) {
-      const url = item.url.replace(/\/$/, "");
-      if (!existingUrls.has(url)) {
-        const cat = item.category;
-        if (existing[cat]) existing[cat].push(item);
-        existingUrls.add(url);
-        newItems.push(item);
-        newNt++;
-        totalNew++;
-      }
-    }
-    console.log(`  ${newNt} new items found`);
+    const saData = await scrapeSarkariAlert();
+    totalNew += mergeSourceData("sarkarialert.net", saData, existing, existingUrls, newItems);
   } catch (e) {
     console.log("  Error:", e.message);
   }
 
-  // ---- Source 7: freejobalert.com ----
-  console.log("\n[7/9] Fetching freejobalert.com...");
+  // ---- Source 7: rojgarresult.com ----
+  console.log("\n[7/7] Fetching rojgarresult.com...");
   try {
-    const fjaItems = await scrapeFreeJobAlert();
-    let newFja = 0;
-    for (const item of fjaItems) {
-      const url = item.url.replace(/\/$/, "");
-      if (!existingUrls.has(url)) {
-        const cat = item.category;
-        if (existing[cat]) existing[cat].push(item);
-        existingUrls.add(url);
-        newItems.push(item);
-        newFja++;
-        totalNew++;
-      }
-    }
-    console.log(`  ${newFja} new items found`);
+    const rrData = await scrapeRojgarResult();
+    totalNew += mergeSourceData("rojgarresult.com", rrData, existing, existingUrls, newItems);
   } catch (e) {
     console.log("  Error:", e.message);
   }
