@@ -119,9 +119,14 @@ async function scrapeSarkariResult() {
       const url = $a.attr("href") || "";
       if (!url || url.toLowerCase().includes(".pdf") || seen.has(url)) return;
       seen.add(url);
-      const title = $a.text().trim();
-      const slug = url.replace(/\/$/, "").split("/").pop() || title.toLowerCase().replace(/[^a-z0-9]+/g, "-");
-      items[category].push({ title, url, category, slug });
+      const rawTitle = $a.text().trim();
+      const title = cleanCompetitorText(rawTitle);
+      if (isJunkOrSpam(title, url)) return;
+      const properCat = categorizePost(title, category);
+      const slug = generatePostSlug(url, title);
+      if (items[properCat]) {
+        items[properCat].push({ title, url, category: properCat, slug });
+      }
     });
   });
 
@@ -267,6 +272,85 @@ function isCompetitorLink(url, label) {
   return false;
 }
 
+function isJunkOrSpam(title, url) {
+  if (!title || !url) return true;
+  const t = (title || "").toLowerCase();
+  const u = (url || "").toLowerCase();
+
+  if (u === "#" || u.startsWith("javascript") || u.endsWith(".pdf") || u.endsWith(".zip") || u.endsWith(".doc")) return true;
+  if (u.includes("testbook.com/login") || (u.includes("shorturl.at") && !t)) return true;
+  if (t.includes("get started for free") || t.includes("sarkari result shine") || t.includes("check driving licence") || t.includes("rcdlstatus")) return true;
+  if (t.includes("privacy policy") || t.includes("disclaimer") || t.includes("terms and condition") || t.includes("contact us") || t.includes("about us")) return true;
+  return false;
+}
+
+function generatePostSlug(url, title) {
+  const tSlug = (title || "")
+    .toLowerCase()
+    .replace(/[^\w\s-]/g, "")
+    .trim()
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-")
+    .slice(0, 75);
+
+  if (!url) return tSlug || "post";
+  const lowerUrl = url.toLowerCase();
+
+  // Shorteners and non-post external URLs
+  if (lowerUrl.includes("tinyurl.com") || lowerUrl.includes("bit.ly") || lowerUrl.includes("shorturl.at") ||
+      lowerUrl.includes("cutt.ly") || lowerUrl.includes("parivahan.gov.in") || lowerUrl.includes("testbook.com")) {
+    return tSlug || "post";
+  }
+
+  const rawSlug = url.replace(/\/$/, "").split("/").pop().replace(/\.html?$/i, "").replace(/\.pdf$/i, "");
+  if (!rawSlug || rawSlug.length <= 6 || /^[a-z0-9]{4,8}$/i.test(rawSlug)) {
+    return tSlug || "post";
+  }
+
+  return rawSlug.toLowerCase();
+}
+
+function categorizePost(title, fallbackCat = "latestJobs") {
+  const t = (title || "").toLowerCase();
+
+  // 1. Result ALWAYS takes priority if result / score / cutoff / marks / merit list / qualified
+  if (/\b(result|scorecard|marks|merit list|cut\s*off|selection list|shortlist|allotment result|qualified|selected candidates?)\b/i.test(t)) {
+    return "results";
+  }
+
+  // 2. Answer key
+  if (/\b(answer key|response sheet|objection|omr sheet|model answer)\b/i.test(t)) {
+    return "answerKeys";
+  }
+
+  // 3. Admission / Counselling
+  if (/\b(admission|counselling|counseling|seat allotment|entrance test|entrance exam|deled|b\.ed entrance)\b/i.test(t)) {
+    return "admissions";
+  }
+
+  // 4. Strict Admit Card / Hall Ticket / Call Letter (Pravesh Patra)
+  if (/\b(admit card|hall ticket|call letter|pravesh patra)\b/i.test(t)) {
+    return "admitCards";
+  }
+
+  // 5. Interview Schedule -> results (part of exam interview stage)
+  if (/\b(interview schedule|interview letter|interview date|interview list)\b/i.test(t)) {
+    return "results";
+  }
+
+  // 6. Exam Date / Exam Schedule / Syllabus / Document Verification / Notices -> documents
+  if (/\b(exam date|exam schedule|new exam date|revised exam date|time table|schedule|dv schedule|document verification|syllabus|pattern|certificate|application status|rejected list|exam city)\b/i.test(t)) {
+    return "documents";
+  }
+
+  // 7. Latest Vacancy / Recruitment / Apply
+  if (/\b(online form|apply online|recruitment|vacancy|vacancies|apprentice|bharti|posts?|officer|assistant|constable|teacher)\b/i.test(t)) {
+    return "latestJobs";
+  }
+
+  return fallbackCat || "latestJobs";
+}
+
 // ======== Source 2: sarkariexam.com ========
 
 const HEADING_MAP = {
@@ -285,15 +369,6 @@ const HEADING_MAP = {
   "diploma / iti": "latestJobs",
   "b.tech / m.tech": "latestJobs",
 };
-
-function categorizeByTitle(title) {
-  const lower = title.toLowerCase();
-  if (lower.includes("admit card") || lower.includes("hall ticket") || lower.includes("call letter") || lower.includes("exam city") || lower.includes("exam date")) return "admitCards";
-  if (lower.includes("answer key") || lower.includes("response sheet")) return "answerKeys";
-  if (lower.includes("admission") || lower.includes("counselling") || lower.includes("counseling")) return "admissions";
-  if (lower.includes("online form") || lower.includes("apply") || lower.includes("recruitment") || lower.includes("apprentice") || lower.includes("vacancy")) return "latestJobs";
-  return null;
-}
 
 async function scrapeSarkariExam() {
   const html = await fetchHtml("https://www.sarkariexam.com/");
@@ -319,9 +394,9 @@ async function scrapeSarkariExam() {
       seen.add(url);
       const rawTitle = $link.text().trim();
       const title = cleanCompetitorText(rawTitle);
-      const slug = url.replace(/\/$/, "").split("/").pop() || "";
-      const titleCat = categorizeByTitle(title);
-      const finalCat = titleCat || key;
+      if (isJunkOrSpam(title, url)) return;
+      const finalCat = categorizePost(title, key);
+      const slug = generatePostSlug(url, title);
       if (items[finalCat]) {
         items[finalCat].push({ title, url, category: finalCat, slug });
       }
@@ -364,7 +439,7 @@ async function scrapeSarkariExamDetail(url) {
               if (cells.length >= 2) {
                 const col0 = cleanLinkLabel(cells.eq(0).text().trim());
                 const col1 = cleanLinkLabel(cells.eq(1).text().trim());
-                if (col0 && col1) {
+                if (col0 && col1 && col0.length < 60 && col1.length < 60 && !col0.includes("\n") && !col1.includes("\n") && !/qualification|post name|click here|download/i.test(col0 + col1)) {
                   const entry = `${col0} : ${col1}`;
                   if (lower.includes("fee")) {
                     applicationFee.push(entry);
@@ -383,10 +458,13 @@ async function scrapeSarkariExamDetail(url) {
         $(t).find("tr").each((_, row) => {
           const cells = $(row).find("td, th");
           if (cells.length >= 2) {
-            const first = $(cells[0]).text().trim().toLowerCase();
+            const first = $(cells[0]).text().trim();
             const second = $(cells[1]).text().trim();
-            if (first && second && (first.includes("date") || first.includes("last") || first.includes("exam") || first.includes("admit"))) {
-              importantDates.push($(cells[0]).text().trim() + " : " + second);
+            const fLower = first.toLowerCase();
+            if (first && second && first.length < 60 && second.length < 60 && !first.includes("\n") && !second.includes("\n") && !/qualification|post name|click here|download/i.test(first + second)) {
+              if (fLower.includes("date") || fLower.includes("last") || fLower.includes("exam") || fLower.includes("admit")) {
+                importantDates.push(first + " : " + second);
+              }
             }
           }
         });
@@ -501,8 +579,10 @@ async function scrapeFreeJobAlert() {
       if (!href.startsWith("http")) href = "https://www.freejobalert.com" + href;
       seen.add(href);
       const title = cleanCompetitorText(rawTitle);
-      const slug = href.replace(/\/$/, "").split("/").pop().replace(/\.html?$/, "") || "post";
-      items[cat].push({ title, url: href, category: cat, slug });
+      if (isJunkOrSpam(title, href)) return;
+      const finalCat = categorizePost(title, cat);
+      const slug = generatePostSlug(href, title);
+      if (items[finalCat]) items[finalCat].push({ title, url: href, category: finalCat, slug });
     });
   });
 
@@ -525,11 +605,6 @@ async function scrapeNaukariTime() {
     "defence job": "latestJobs",
   };
 
-  const spam = ["pm kisan", "aadhaar", "pan card", "driving licence", "sahara", "voter card",
-    "birth certificate", "passport", "ration card", "scholarship", "sarkari yojna",
-    "yojana", "ayushman", "bijli", "jyoti yojana", "earn money", "terms and conditions",
-    "voter list", "jeevan praman", "ganna", "nagar nigam", "jeevika"];
-
   $(".post-card").each((_, card) => {
     const $c = $(card);
     const heading = $c.find("h2.card-heading").text().trim().toLowerCase();
@@ -542,27 +617,17 @@ async function scrapeNaukariTime() {
       const rawTitle = $a.text().trim();
       if (!href || rawTitle.length < 15 || rawTitle.toLowerCase().includes("view more") || seen.has(href)) return;
       if (href.includes("#") || href.startsWith("javascript")) return;
-      const lower = rawTitle.toLowerCase();
-      if (spam.some(s => lower.includes(s))) return;
       if (!href.startsWith("http")) href = "https://naukaritime.com" + (href.startsWith("/") ? href : "/" + href);
       seen.add(href);
       const title = cleanCompetitorText(rawTitle);
-      const slug = href.replace(/\/$/, "").split("/").pop().replace(/\.html?$/, "") || "post";
-      items[cat].push({ title, url: href, category: cat, slug });
+      if (isJunkOrSpam(title, href)) return;
+      const finalCat = categorizePost(title, cat);
+      const slug = generatePostSlug(href, title);
+      if (items[finalCat]) items[finalCat].push({ title, url: href, category: finalCat, slug });
     });
   });
 
   return items;
-}
-
-function categorizeByKeywords(title) {
-  const lower = title.toLowerCase();
-  if (lower.includes("admit card") || lower.includes("hall ticket") || lower.includes("call letter") || lower.includes("exam city") || lower.includes("exam date")) return "admitCards";
-  if (lower.includes("answer key") || lower.includes("response sheet")) return "answerKeys";
-  if (lower.includes("admission") || lower.includes("counselling") || lower.includes("counseling")) return "admissions";
-  if (lower.includes("result") || lower.includes("cutoff") || lower.includes("merit list")) return "results";
-  if (lower.includes("online form") || lower.includes("apply") || lower.includes("recruitment") || lower.includes("apprentice") || lower.includes("vacancy") || lower.includes("notification")) return "latestJobs";
-  return "latestJobs";
 }
 
 async function scrapeResultBharat() {
@@ -579,8 +644,9 @@ async function scrapeResultBharat() {
     seen.add(href);
     if (!href.startsWith("http")) href = "https://www.resultbharat.com" + (href.startsWith("/") ? href : "/" + href);
     const title = cleanCompetitorText(rawTitle);
-    const cat = categorizeByKeywords(title);
-    const slug = href.replace(/\/$/, "").split("/").pop().replace(/\.html?$/, "") || "post";
+    if (isJunkOrSpam(title, href)) return;
+    const cat = categorizePost(title, "latestJobs");
+    const slug = generatePostSlug(href, title);
     if (items[cat]) items[cat].push({ title, url: href, category: cat, slug });
   });
   return items;
@@ -591,21 +657,19 @@ async function scrapeSarkariAlert() {
   const $ = cheerio.load(html);
   const items = { results: [], admitCards: [], latestJobs: [], answerKeys: [], documents: [], admissions: [] };
   const seen = new Set();
-  const spam = ["whatsapp", "telegram", "facebook", "twitter", "instagram", "youtube", "current affairs", "pm kisan"];
   $("a[href]").each((_, a) => {
     const $a = $(a);
     let href = $a.attr("href") || "";
     const rawTitle = $a.text().trim();
     if (!href || rawTitle.length < 20 || seen.has(href)) return;
     if (href.toLowerCase().includes(".pdf")) return;
-    const lower = rawTitle.toLowerCase();
-    if (spam.some(s => lower.includes(s))) return;
     if (href.includes("#") || href.startsWith("javascript")) return;
     seen.add(href);
     if (!href.startsWith("http")) href = "https://sarkarialert.net" + (href.startsWith("/") ? href : "/" + href);
     const title = cleanCompetitorText(rawTitle);
-    const cat = categorizeByKeywords(title);
-    const slug = href.replace(/\/$/, "").split("/").pop() || "post";
+    if (isJunkOrSpam(title, href)) return;
+    const cat = categorizePost(title, "latestJobs");
+    const slug = generatePostSlug(href, title);
     if (items[cat]) items[cat].push({ title, url: href, category: cat, slug });
   });
   return items;
@@ -616,20 +680,18 @@ async function scrapeRojgarResult() {
   const $ = cheerio.load(html);
   const items = { results: [], admitCards: [], latestJobs: [], answerKeys: [], documents: [], admissions: [] };
   const seen = new Set();
-  const spam = ["whatsapp", "telegram", "facebook", "twitter", "instagram", "youtube", "rojgar result", "privacy", "disclaimer"];
   $("h2 a[href], h3 a[href]").each((_, a) => {
     const $a = $(a);
     let href = $a.attr("href") || "";
     const rawTitle = $a.text().trim();
     if (!href || rawTitle.length < 20 || seen.has(href)) return;
     if (href.toLowerCase().includes(".pdf")) return;
-    const lower = rawTitle.toLowerCase();
-    if (spam.some(s => lower.includes(s))) return;
     seen.add(href);
     if (!href.startsWith("http")) href = "https://rojgarresult.com" + (href.startsWith("/") ? href : "/" + href);
     const title = cleanCompetitorText(rawTitle);
-    const cat = categorizeByKeywords(title);
-    const slug = href.replace(/\/$/, "").split("/").pop() || "post";
+    if (isJunkOrSpam(title, href)) return;
+    const cat = categorizePost(title, "latestJobs");
+    const slug = generatePostSlug(href, title);
     if (items[cat]) items[cat].push({ title, url: href, category: cat, slug });
   });
   return items;
@@ -701,7 +763,7 @@ async function scrapeGenericDetail(url) {
       }
     });
 
-    const slug = url.replace(/\/$/, "").split("/").pop().replace(/\.html?$/, "") || "post";
+    const slug = generatePostSlug(url, title);
     return { title, slug, url, publishedDate, intro, importantDates, applicationFee, importantLinks, fullContentHtml: "" };
   } catch {
     return null;
@@ -712,13 +774,18 @@ async function scrapeGenericDetail(url) {
 
 function mergeSourceData(sourceName, sourceData, existing, existingUrls, newItems) {
   let count = 0;
-  for (const cat of ["results", "admitCards", "latestJobs", "answerKeys", "documents", "admissions"]) {
-    const freshItems = sourceData[cat] || [];
-    const existingItems = existing[cat] || [];
+  for (const rawCat of ["results", "admitCards", "latestJobs", "answerKeys", "documents", "admissions"]) {
+    const freshItems = sourceData[rawCat] || [];
     for (const item of freshItems) {
-      const url = item.url.replace(/\/$/, "");
+      if (isJunkOrSpam(item.title, item.url)) continue;
+      const finalCat = categorizePost(item.title, rawCat);
+      item.category = finalCat;
+      item.slug = generatePostSlug(item.url, item.title);
+
+      const targetList = existing[finalCat] || (existing[finalCat] = []);
+      const url = (item.url || "").replace(/\/$/, "");
       if (!existingUrls.has(url)) {
-        existingItems.unshift(item); // Prepend to top so it's fresh in section layout!
+        targetList.unshift(item); // Prepend to top so it's fresh in section layout!
         existingUrls.add(url);
         newItems.push(item);
         count++;

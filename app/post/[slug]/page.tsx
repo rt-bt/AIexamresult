@@ -4,6 +4,7 @@ import * as fs from "fs";
 import * as path from "path";
 import Link from "next/link";
 import type { Metadata } from "next";
+import { redirect } from "next/navigation";
 import { Header } from "@/components/site/header";
 import { Footer } from "@/components/site/footer";
 import { BookmarkBtn } from "@/components/site/bookmark-btn";
@@ -17,7 +18,8 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.aiexamresult.c
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
-  const post = await getPostDetail(slug);
+  const cleanSlug = slug.replace(/\.pdf$/i, "");
+  const post = await getPostDetail(slug) || await getPostDetail(cleanSlug);
   if (!post) return { title: "Post not found" };
 
   const title = (post.title || "").trim();
@@ -285,7 +287,14 @@ function ExpiryBadge() {
 
 export default async function PostPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
+  if (slug.toLowerCase().endsWith(".pdf")) {
+    redirect(`/post/${slug.replace(/\.pdf$/i, "")}`);
+  }
   const post = await getPostDetail(slug);
+
+  if (post?.canonicalSlug && post.canonicalSlug !== slug) {
+    redirect(`/post/${post.canonicalSlug}`);
+  }
 
   if (post && post.fullContentHtml) {
     if (!post.importantDates || post.importantDates.length === 0) {

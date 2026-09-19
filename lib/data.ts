@@ -282,7 +282,16 @@ export const centralExams = toPostCard(s3?.answerKeys, "Central Exams", defaultC
 export const admissions = toPostCard(s3?.admissions, "Admission", defaultAdmissions);
 export const documents = toPostCard(s3?.documents, "Documents", defaultDocuments);
 
-const admitCards = toPostCard(s3?.admitCards, "Admit Card", []);
+// Strictly ensure only genuine admit cards / hall tickets appear in Admit Card column
+const safeAdmitCards = s3?.admitCards?.filter((item) => {
+  const t = (item.title || "").toLowerCase();
+  if (/\b(interview schedule|exam date|exam schedule|new exam date|revised exam date|time table)\b/i.test(t)) {
+    return false;
+  }
+  return true;
+});
+
+const admitCards = toPostCard(safeAdmitCards, "Admit Card", []);
 
 export const categorySections: { label: string; items: PostCard[] }[] = [
   { label: "Latest Vacancy", items: latestJobs },
