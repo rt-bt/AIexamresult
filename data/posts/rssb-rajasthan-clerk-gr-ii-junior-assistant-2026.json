@@ -39,6 +39,10 @@
       "url": "https://sso.rajasthan.gov.in/signin"
     },
     {
+      "label": "Sarkari Result Mobile App",
+      "url": "https://play.google.com/store/apps/details?id=com.vinod.sarkarinaukri"
+    },
+    {
       "label": "Official Website",
       "url": "https://rssb.rajasthan.gov.in/"
     }
