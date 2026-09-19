@@ -19,7 +19,8 @@ echo.
 REM ---- Step 2: Sync data from all sources ----
 echo [2/6] Syncing data from Sarkari sources...
 echo  Sources: sarkariresult.com, sarkariexam.com,
-echo           resultbharat.com, sarkarialert.net, rojgarresult.com
+echo           resultbharat.com, sarkarialert.net,
+echo           rojgarresult.com, naukaritime.com, freejobalert.com
 echo  (this may take a few minutes...)
 echo.
 node scripts/sync-all.mjs

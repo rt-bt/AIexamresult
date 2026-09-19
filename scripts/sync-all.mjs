@@ -420,7 +420,74 @@ async function scrapeSarkariExamDetail(url) {
   }
 }
 
-// ======== Source 3+: resultbharat, sarkarialert, rojgarresult ========
+// ======== Source 3+: resultbharat, sarkarialert, rojgarresult, naukaritime, freejobalert ========
+
+async function scrapeNaukariTime() {
+  const html = await fetchHtml("https://naukaritime.com/");
+  const $ = cheerio.load(html);
+  const items = [];
+  const seen = new Set();
+  const spam = ["whatsapp", "telegram", "facebook", "twitter", "instagram", "youtube",
+    "pm kisan", "aadhaar", "pan card", "driving licence", "sahara", "voter card",
+    "birth certificate", "passport", "ration card", "scholarship", "sarkari yojna",
+    "yojana", "ayushman", "bijli", "jyoti yojana"];
+
+  $("h2 a[href], h3 a[href], li a[href]").each((_, a) => {
+    const $a = $(a);
+    let href = $a.attr("href") || "";
+    const text = $a.text().trim();
+    if (!href || text.length < 20 || seen.has(href)) return;
+    if (href.includes("#") || href.startsWith("javascript")) return;
+    if (!href.startsWith("http")) href = "https://naukaritime.com" + (href.startsWith("/") ? href : "/" + href);
+    // Only scrape naukaritime.com internal links
+    if (!href.includes("naukaritime.com")) return;
+    const lower = text.toLowerCase();
+    if (spam.some(s => lower.includes(s))) return;
+    seen.add(href);
+    items.push({
+      title: text, url: href, category: categorizeByKeywords(text),
+      slug: href.replace(/\/$/, "").split("/").pop().replace(/\.html?$/, "") || "post",
+    });
+  });
+  // Deduplicate slugs
+  const slugSeen = new Set();
+  return items.filter(i => { const s = i.slug; if (slugSeen.has(s)) return false; slugSeen.add(s); return true; });
+}
+
+async function scrapeFreeJobAlert() {
+  const html = await fetchHtml("https://www.freejobalert.com/");
+  const $ = cheerio.load(html);
+  const items = [];
+  const seen = new Set();
+  const spam = ["whatsapp", "telegram", "facebook", "twitter", "instagram", "youtube",
+    "mobile app", "search-jobs", "government-jobs", "bank-jobs", "railway-jobs",
+    "teaching-faculty-jobs", "engineering-jobs", "police-defence-jobs",
+    "state-government-jobs", "last-date-reminder", "login", "register",
+    "new-updates", "search-results", "jobs-by-education", "freejobalert.com/#",
+    "colleges.freejobalert", "slate.freejobalert", "user.freejobalert",
+    "sarkariresult.freejobalert", "google.com/preferences", "play.google.com"];
+
+  // Primary: job listings in ul.listcontentnu li a and table.qltpmnu td a
+  $("ul.listcontentnu li a[href], table.qltpmnu td a[href]").each((_, a) => {
+    const $a = $(a);
+    let href = $a.attr("href") || "";
+    const text = $a.text().trim();
+    if (!href || text.length < 15 || seen.has(href)) return;
+    if (href.includes("#") || href.startsWith("javascript")) return;
+    const lower = text.toLowerCase();
+    if (spam.some(s => href.toLowerCase().includes(s) || lower.includes(s))) return;
+    if (!href.startsWith("http")) href = "https://www.freejobalert.com" + (href.startsWith("/") ? href : "/" + href);
+    if (!href.includes("freejobalert.com")) return;
+    seen.add(href);
+    items.push({
+      title: text, url: href, category: categorizeByKeywords(text),
+      slug: href.replace(/\/$/, "").split("/").pop().replace(/\.html?$/, "") || "post",
+    });
+  });
+  // Deduplicate slugs
+  const slugSeen = new Set();
+  return items.filter(i => { const s = i.slug; if (slugSeen.has(s)) return false; slugSeen.add(s); return true; });
+}
 
 function categorizeByKeywords(title) {
   const lower = title.toLowerCase();
@@ -677,7 +744,7 @@ async function main() {
   }
 
   // ---- Source 5: rojgarresult.com ----
-  console.log("\n[5/6] Fetching rojgarresult.com...");
+  console.log("\n[5/9] Fetching rojgarresult.com...");
   try {
     const rrItems = await scrapeRojgarResult();
     let newRr = 0;
@@ -697,6 +764,48 @@ async function main() {
     console.log("  Error:", e.message);
   }
 
+  // ---- Source 6: naukaritime.com ----
+  console.log("\n[6/9] Fetching naukaritime.com...");
+  try {
+    const ntItems = await scrapeNaukariTime();
+    let newNt = 0;
+    for (const item of ntItems) {
+      const url = item.url.replace(/\/$/, "");
+      if (!existingUrls.has(url)) {
+        const cat = item.category;
+        if (existing[cat]) existing[cat].push(item);
+        existingUrls.add(url);
+        newItems.push(item);
+        newNt++;
+        totalNew++;
+      }
+    }
+    console.log(`  ${newNt} new items found`);
+  } catch (e) {
+    console.log("  Error:", e.message);
+  }
+
+  // ---- Source 7: freejobalert.com ----
+  console.log("\n[7/9] Fetching freejobalert.com...");
+  try {
+    const fjaItems = await scrapeFreeJobAlert();
+    let newFja = 0;
+    for (const item of fjaItems) {
+      const url = item.url.replace(/\/$/, "");
+      if (!existingUrls.has(url)) {
+        const cat = item.category;
+        if (existing[cat]) existing[cat].push(item);
+        existingUrls.add(url);
+        newItems.push(item);
+        newFja++;
+        totalNew++;
+      }
+    }
+    console.log(`  ${newFja} new items found`);
+  } catch (e) {
+    console.log("  Error:", e.message);
+  }
+
   // ---- Re-scrape existing empty post files ----
   const existingFiles = readdirSync(POSTS_DIR).filter(f => f.endsWith(".json"));
   const reScrapeQueue = [];
@@ -706,7 +815,7 @@ async function main() {
       const empty = (!p.intro || p.intro.length < 5) && (!p.fullContentHtml || p.fullContentHtml.length < 20) && p.url;
       if (empty && p.url && !p.url.includes("tinyurl") && !p.url.includes("pdf")) {
         // Only re-scrape known source URLs
-        if (p.url.includes("sarkariresult.com") || p.url.includes("sarkariexam.com") || p.url.includes("resultbharat.com") || p.url.includes("sarkarialert.net") || p.url.includes("rojgarresult.com")) {
+        if (p.url.includes("sarkariresult.com") || p.url.includes("sarkariexam.com") || p.url.includes("resultbharat.com") || p.url.includes("sarkarialert.net") || p.url.includes("rojgarresult.com") || p.url.includes("naukaritime.com") || p.url.includes("freejobalert.com")) {
           reScrapeQueue.push({ file, url: p.url, slug: p.slug || file.replace(".json", ""), title: p.title || "" });
         }
       }
@@ -725,7 +834,7 @@ async function main() {
             importantDates: d.importantDates || [], applicationFee: d.applicationFee || [],
             importantLinks: d.importantLinks || [], fullContentHtml: "",
           };
-        } else if (item.url.includes("resultbharat.com") || item.url.includes("sarkarialert.net") || item.url.includes("rojgarresult.com")) {
+        } else if (item.url.includes("resultbharat.com") || item.url.includes("sarkarialert.net") || item.url.includes("rojgarresult.com") || item.url.includes("naukaritime.com") || item.url.includes("freejobalert.com")) {
           const d = await scrapeGenericDetail(item.url);
           if (d) detail = { ...d, slug: sanitizeSlug(d.slug) };
         } else {
@@ -932,7 +1041,7 @@ async function main() {
         importantLinks: d.importantLinks || [], fullContentHtml: "",
       };
       item.slug = slug;
-    } else if (item.url.includes("resultbharat.com") || item.url.includes("sarkarialert.net") || item.url.includes("rojgarresult.com")) {
+    } else if (item.url.includes("resultbharat.com") || item.url.includes("sarkarialert.net") || item.url.includes("rojgarresult.com") || item.url.includes("naukaritime.com") || item.url.includes("freejobalert.com")) {
       const d = await scrapeGenericDetail(item.url);
       if (!d) return null;
       slug = sanitizeSlug(d.slug);
