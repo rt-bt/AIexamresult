@@ -2,6 +2,14 @@
 export const scrapedData = {
   "results": [
     {
+      "title": "Bihar Vidhan Parishad Office Attendant Score Card 2026",
+      "url": "/post/bihar-vidhan-parishad-driver-office-attendant-2025",
+      "category": "results",
+      "slug": "bihar-vidhan-parishad-driver-office-attendant-2025",
+      "publishedDate": "4 June 2026",
+      "publishedAt": "2026-06-04T10:22:57.000Z"
+    },
+    {
       "title": "AIIMS NORCET 11th Stage-I Result 2026",
       "url": "/post/aiims-norcet-11th-2026",
       "category": "results",
@@ -82,7 +90,7 @@ export const scrapedData = {
       "publishedAt": "2026-09-15T19:38:15.000Z"
     },
     {
-      "title": "Bihar Vidhan Parishad LDC, DEO Final Result 2026",
+      "title": "Bihar Vidhan Parishad PA Score Card 2026",
       "url": "/post/bihar-vidhan-parishad-pa-deo-ldc-stenographer-2026",
       "category": "results",
       "slug": "bihar-vidhan-parishad-pa-deo-ldc-stenographer-2026",
@@ -2476,6 +2484,22 @@ export const scrapedData = {
   ],
   "admitCards": [
     {
+      "title": "UPPSC PCS 2025 Interview Schedule",
+      "url": "/post/uppsc-2025",
+      "category": "admitCards",
+      "slug": "uppsc-2025",
+      "publishedDate": "2026-09-17T17:16:27+05:30",
+      "publishedAt": "2026-09-17T11:46:27.000Z"
+    },
+    {
+      "title": "ISRO ICRB Scientist / Engineer Exam Date 2026",
+      "url": "/post/isro-icrb-scientist-engineer-2026",
+      "category": "admitCards",
+      "slug": "isro-icrb-scientist-engineer-2026",
+      "publishedDate": "27 August 2026",
+      "publishedAt": "2026-08-26T18:30:00.000Z"
+    },
+    {
       "title": "UPSC IFS Mains Exam Date 2026",
       "url": "/post/upsc-civil-services-ias-ifs-2026",
       "category": "admitCards",
@@ -4140,8 +4164,8 @@ export const scrapedData = {
       "publishedAt": "2026-09-10T18:30:00.000Z"
     },
     {
-      "title": "MPESB Group 2 Sub Group 4 Admit Card 2026 for 2106 Post",
-      "url": "https://rojgarresult.com/mpesb-group-2-sub-group-4-2026/",
+      "title": "MPESB Group 2 Sub Group 4 Patwari & Various Posts Admit Card 2026",
+      "url": "/post/mpesb-group-2-sub-group-4-2026",
       "category": "admitCards",
       "slug": "mpesb-group-2-sub-group-4-2026",
       "publishedDate": "11 September 2026",
@@ -4286,6 +4310,22 @@ export const scrapedData = {
   ],
   "latestJobs": [
     {
+      "title": "Jharkhand JSSC 10+2 Inter Level JILCCE Online Form 2026 – Re-Open",
+      "url": "/post/jharkhand-jssc-102-inter-level-jilcce-2026",
+      "category": "latestJobs",
+      "slug": "jharkhand-jssc-102-inter-level-jilcce-2026",
+      "publishedDate": "31 July 2026",
+      "publishedAt": "2026-07-31T04:14:35.000Z"
+    },
+    {
+      "title": "HPSC Food Safety Officer (FSO) Online Form 2026",
+      "url": "/post/hpsc-food-safety-officer-fso-2026",
+      "category": "latestJobs",
+      "slug": "hpsc-food-safety-officer-fso-2026",
+      "publishedDate": "2026-09-19T13:09:02+05:30",
+      "publishedAt": "2026-09-19T07:39:02.000Z"
+    },
+    {
       "title": "Uttar Pradesh UP Scholarship Online Form 2026-27",
       "url": "/post/uttar-pradesh-up-scholarship-2026-27",
       "category": "latestJobs",
@@ -4342,7 +4382,7 @@ export const scrapedData = {
       "publishedAt": "2026-09-15T18:49:56.000Z"
     },
     {
-      "title": "UPESSC PGT Teacher Online Form 2026",
+      "title": "UPESSC PGT Teacher Online Form 2026 (2607 Posts)",
       "url": "/post/upessc-pgt-teacher-2026",
       "category": "latestJobs",
       "slug": "upessc-pgt-teacher-2026",
@@ -5558,7 +5598,7 @@ export const scrapedData = {
       "publishedAt": "2026-05-21T18:30:00.000Z"
     },
     {
-      "title": "India Post Office GDS Online Form 2026 (23757 Posts)",
+      "title": "India Post Office GDS Online Form 2026 (23757 Posts) – Last Date",
       "url": "/post/india-post-office-gds-2026",
       "category": "latestJobs",
       "slug": "india-post-office-gds-2026",
@@ -15180,7 +15220,7 @@ export const scrapedData = {
       "publishedAt": "2026-09-10T18:30:00.000Z"
     },
     "mpesb-group-2-sub-group-4-2026": {
-      "lastDate": "21/08/2026",
+      "lastDate": "21 August 2026",
       "publishedDate": "11 September 2026",
       "publishedAt": "2026-09-10T18:30:00.000Z"
     },
@@ -15416,12 +15456,32 @@ export const scrapedData = {
       "lastDate": "15 October 2026",
       "publishedDate": "27 July 2026",
       "publishedAt": "2026-07-27T09:29:13.000Z"
+    },
+    "bihar-vidhan-parishad-driver-office-attendant-2025": {
+      "lastDate": "20 October 2025",
+      "publishedDate": "4 June 2026",
+      "publishedAt": "2026-06-04T10:22:57.000Z"
+    },
+    "isro-icrb-scientist-engineer-2026": {
+      "lastDate": "16 September 2026",
+      "publishedDate": "27 August 2026",
+      "publishedAt": "2026-08-26T18:30:00.000Z"
+    },
+    "hpsc-food-safety-officer-fso-2026": {
+      "lastDate": "19 October 2026",
+      "publishedDate": "2026-09-19T13:09:02+05:30",
+      "publishedAt": "2026-09-19T07:39:02.000Z"
+    },
+    "jharkhand-jssc-102-inter-level-jilcce-2026": {
+      "lastDate": "30 September 2026",
+      "publishedDate": "31 July 2026",
+      "publishedAt": "2026-07-31T04:14:35.000Z"
     }
   },
-  "fetchedAt": "2026-09-19T02:52:14.458Z",
+  "fetchedAt": "2026-09-19T15:50:21.251Z",
   "seo": {
-    "lastOptimized": "2026-09-19T02:52:21.217Z",
-    "totalPosts": 1899,
+    "lastOptimized": "2026-09-19T15:50:28.681Z",
+    "totalPosts": 1900,
     "websiteName": "All India Exam Result",
     "websiteUrl": "https://www.aiexamresult.com",
     "description": "Sarkari Result 2026 - Get fastest government job alerts, sarkari naukri, exam results, admit cards & answer keys. SSC, UPSC, Railway, Banking, UP, Bihar & all India exams."
