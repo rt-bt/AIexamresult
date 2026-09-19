@@ -2,6 +2,14 @@
 export const scrapedData = {
   "results": [
     {
+      "title": "AIIMS NORCET 11th Stage-I Result 2026",
+      "url": "/post/aiims-norcet-11th-2026",
+      "category": "results",
+      "slug": "aiims-norcet-11th-2026",
+      "publishedDate": "2026-09-09T10:19:46+05:30",
+      "publishedAt": "2026-09-09T04:49:46.000Z"
+    },
+    {
       "title": "UPPSC PCS 2025 Mains Result",
       "url": "/post/uppsc-2025",
       "category": "results",
@@ -187,11 +195,11 @@ export const scrapedData = {
     },
     {
       "title": "UPPSC LT Grade Assistant Teacher Mains Result 2026",
-      "url": "https://www.sarkariresult.com/2025/uppsc-lt-grade-teacher-2025/",
+      "url": "/post/up-lt-grade-assistant-teacher-2025",
       "category": "results",
-      "slug": "uppsc-lt-grade-teacher-2025",
-      "publishedDate": "8 June 2026",
-      "publishedAt": "2026-06-07T18:30:00.000Z"
+      "slug": "up-lt-grade-assistant-teacher-2025",
+      "publishedDate": "2026-09-01T20:52:08+05:30",
+      "publishedAt": "2026-09-01T15:22:08.000Z"
     },
     {
       "title": "SBI Probationary Officers PO Score Card/Marks 2026",
@@ -8224,7 +8232,7 @@ export const scrapedData = {
       "publishedAt": "2026-09-01T09:52:44.000Z"
     },
     {
-      "title": "NTA AIAPGET Final Answer Key 2026",
+      "title": "NTA AIAPGET Final Answer Key / Result 2026",
       "url": "/post/nta-aiapget-2026",
       "category": "answerKeys",
       "slug": "nta-aiapget-2026",
@@ -12069,9 +12077,9 @@ export const scrapedData = {
       "publishedAt": "2026-09-03T12:10:11.000Z"
     },
     "aiims-norcet-11th-2026": {
-      "lastDate": "13/08/2026",
-      "publishedDate": "9 September 2026",
-      "publishedAt": "2026-09-08T18:30:00.000Z"
+      "lastDate": "13 August 2026",
+      "publishedDate": "2026-09-09T10:19:46+05:30",
+      "publishedAt": "2026-09-09T04:49:46.000Z"
     },
     "delhi-high-court-hjs-2026": {
       "lastDate": "15 July 2026",
@@ -14383,7 +14391,8 @@ export const scrapedData = {
     },
     "rpsc-sub-inspector-2021": {
       "publishedDate": "2026-09-10T23:39:45+05:30",
-      "publishedAt": "2026-09-10T18:09:45.000Z"
+      "publishedAt": "2026-09-10T18:09:45.000Z",
+      "lastDate": "23 June 2021"
     },
     "upsc-epfo-apfc-2026": {
       "lastDate": "14 September 2026",
@@ -15409,9 +15418,9 @@ export const scrapedData = {
       "publishedAt": "2026-07-27T09:29:13.000Z"
     }
   },
-  "fetchedAt": "2026-09-18T13:18:05.246Z",
+  "fetchedAt": "2026-09-19T02:52:14.458Z",
   "seo": {
-    "lastOptimized": "2026-09-18T13:18:12.854Z",
+    "lastOptimized": "2026-09-19T02:52:21.217Z",
     "totalPosts": 1899,
     "websiteName": "All India Exam Result",
     "websiteUrl": "https://www.aiexamresult.com",
