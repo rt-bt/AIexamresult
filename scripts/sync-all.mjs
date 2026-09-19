@@ -117,7 +117,7 @@ async function scrapeSarkariResult() {
     postLinks.each((_, a) => {
       const $a = $(a);
       const url = $a.attr("href") || "";
-      if (!url || seen.has(url)) return;
+      if (!url || url.toLowerCase().includes(".pdf") || seen.has(url)) return;
       seen.add(url);
       const title = $a.text().trim();
       const slug = url.replace(/\/$/, "").split("/").pop() || title.toLowerCase().replace(/[^a-z0-9]+/g, "-");
@@ -575,6 +575,7 @@ async function scrapeResultBharat() {
     let href = $a.attr("href") || "";
     const rawTitle = $a.text().trim();
     if (!href || rawTitle.length < 15 || seen.has(href)) return;
+    if (href.toLowerCase().includes(".pdf") || href.toLowerCase().includes("/notice/")) return;
     seen.add(href);
     if (!href.startsWith("http")) href = "https://www.resultbharat.com" + (href.startsWith("/") ? href : "/" + href);
     const title = cleanCompetitorText(rawTitle);
@@ -596,6 +597,7 @@ async function scrapeSarkariAlert() {
     let href = $a.attr("href") || "";
     const rawTitle = $a.text().trim();
     if (!href || rawTitle.length < 20 || seen.has(href)) return;
+    if (href.toLowerCase().includes(".pdf")) return;
     const lower = rawTitle.toLowerCase();
     if (spam.some(s => lower.includes(s))) return;
     if (href.includes("#") || href.startsWith("javascript")) return;
@@ -620,6 +622,7 @@ async function scrapeRojgarResult() {
     let href = $a.attr("href") || "";
     const rawTitle = $a.text().trim();
     if (!href || rawTitle.length < 20 || seen.has(href)) return;
+    if (href.toLowerCase().includes(".pdf")) return;
     const lower = rawTitle.toLowerCase();
     if (spam.some(s => lower.includes(s))) return;
     seen.add(href);
