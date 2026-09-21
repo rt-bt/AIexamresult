@@ -11,6 +11,7 @@ import { categorySections, featuredResults } from "@/lib/data";
 import Link from "next/link";
 import { ArrowUpRight, TrendingUp } from "lucide-react";
 import { TiltCard } from "@/components/unlumen-ui/tilt-card";
+import DotField from "@/components/DotField";
 
 import { SeoContentSection } from "@/components/site/seo-content-section";
 import { AdUnit } from "@/components/ads/ad-unit";
@@ -27,8 +28,24 @@ export default function HomePage() {
         <Hero />
 
         {/* 6 Main Sections: Latest Jobs, Admit Card, Answer Keys, Result, Admissions, Documents (Latest Updates) */}
-        <div className="bg-gradient-to-b from-white to-[#f0fdfa]">
-          <CategoryColumns sections={categorySections} />
+        <div className="relative overflow-hidden bg-gradient-to-b from-white via-[#f0fdfa]/40 to-[#f0fdfa]">
+          <DotField
+            dotRadius={1.5}
+            dotSpacing={14}
+            bulgeStrength={67}
+            glowRadius={160}
+            sparkle={false}
+            waveAmplitude={0}
+            cursorRadius={500}
+            cursorForce={0.1}
+            bulgeOnly
+            gradientFrom="#0D9488"
+            gradientTo="#14B8A6"
+            glowColor="#0D9488"
+          />
+          <div className="relative z-10">
+            <CategoryColumns sections={categorySections} />
+          </div>
         </div>
 
         {/* Featured & Trending Alerts with 3D TiltCards */}
