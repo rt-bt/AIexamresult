@@ -10,6 +10,7 @@ import { StateGrid } from "@/components/site/state-grid";
 import { categorySections, featuredResults } from "@/lib/data";
 import Link from "next/link";
 import { ArrowUpRight, TrendingUp } from "lucide-react";
+import { TiltCard } from "@/components/unlumen-ui/tilt-card";
 
 import { SeoContentSection } from "@/components/site/seo-content-section";
 import { AdUnit } from "@/components/ads/ad-unit";
@@ -99,18 +100,16 @@ export default function HomePage() {
             </div>
             <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {trending.map((post, i) => (
-                <Link key={i} href={post.slug ? `/post/${post.slug}` : "#"} className="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg hover:shadow-black/5">
-                  <div className={`absolute right-0 top-0 flex h-10 w-10 items-center justify-center rounded-bl-2xl text-[11px] font-black ${i === 0 ? "bg-gradient-to-br from-amber-400 to-orange-500 text-white" : "bg-slate-100 text-slate-400"}`}>
-                    #{i + 1}
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <span className={`mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-lg text-[11px] font-black text-white shadow-sm ${i === 0 ? "bg-gradient-to-br from-amber-400 to-orange-500" : "bg-slate-300"}`}>{i + 1}</span>
-                    <div>
-                      <h3 className="text-sm font-bold leading-snug text-slate-800 transition group-hover:text-[#0D9488] line-clamp-2">{post.title}</h3>
-                      <p className="mt-1.5 text-xs text-slate-400">{post.category} · {post.date}</p>
-                    </div>
-                  </div>
-                </Link>
+                <TiltCard
+                  key={post.slug || i}
+                  title={post.title}
+                  description={`${post.category} · ${post.date || "Active Update"}`}
+                  price={`#${i + 1}`}
+                  badgeLabel={i === 0 ? "Top 1" : "Trending"}
+                  badgeVariant={i === 0 ? "warning" : "success"}
+                  href={post.slug ? `/post/${post.slug}` : "#"}
+                  className="h-44 sm:h-48 rounded-2xl border-slate-200/90 bg-white shadow-xs hover:shadow-xl hover:border-teal-500/50"
+                />
               ))}
             </div>
           </div>

@@ -6,12 +6,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        border: "#e2e8f0",
+        background: "#ffffff",
+        foreground: "#0f172a",
         ink: "#0F172A",
         brand: "#0D9488",
         "brand-dark": "#0F766E",
         "brand-light": "#14B8A6",
-        secondary: "#EA580C",
-        "secondary-dark": "#C2410C",
+        secondary: "#f1f5f9",
+        "secondary-dark": "#e2e8f0",
         accent: "#4F46E5",
         "accent-dark": "#4338CA",
         highlight: "#D97706",
