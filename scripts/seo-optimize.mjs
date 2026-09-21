@@ -179,9 +179,9 @@ function getCategorySlug(cat) {
 function generateKeywordFooterHtml(title, category) {
   return `
 <div style="margin-top:2rem;padding:1.25rem;border-radius:12px;background-color:#f8fafc;border:1px solid #e2e8f0;">
-  <h3 style="font-size:0.95rem;font-weight:800;color:#0f172a;margin-bottom:0.5rem;">Sarkari Result 2026 Quick Links &amp; Related Search</h3>
+  <h3 style="font-size:0.95rem;font-weight:800;color:#0f172a;margin-bottom:0.5rem;">AI Exam Result Quick Links &amp; Updates</h3>
   <p style="font-size:0.8rem;color:#64748b;line-height:1.6;margin:0;">
-    Search terms: <strong>${title}</strong>, Sarkari Result 2026, Sarkari Naukri, Rojgar Result, Sarkari Exam Online Form, ${category || "Govt Jobs"}, SSC CGL, Railway RRB, UPSC CSE, UP Police Bharti, Bihar Teacher, Free Job Alert. Check official website for verified notifications.
+    Search terms: <strong>${title}</strong>, Sarkari Result 2026, Sarkari Naukri, All India Exam Result, ${category || "Govt Jobs"}, SSC CGL, Railway RRB, UPSC CSE, UP Police Bharti, Bihar Teacher. Check official website for verified notifications.
   </p>
 </div>
 `;
@@ -204,8 +204,8 @@ async function main() {
       post.jsonLd = schema;
 
       if (!post.seoMeta) post.seoMeta = {};
-      post.seoMeta.title = `${post.title} - Sarkari Result | Sarkari Exam 2026`;
-      post.seoMeta.description = (post.intro || `${post.title}: Check eligibility criteria, age limit, application fee, last date to apply & official notification PDF at Sarkari Result.`).slice(0, 160);
+      post.seoMeta.title = `${post.title} - Sarkari Result 2026 | All India Exam Result`;
+      post.seoMeta.description = (post.intro || `${post.title}: Check eligibility criteria, age limit, application fee, last date to apply & official notification PDF at All India Exam Result.`).slice(0, 160);
       post.seoMeta.canonical = `https://www.aiexamresult.com/post/${slug}`;
 
       if (!post.fullContentHtml || post.fullContentHtml.length < 100) {
