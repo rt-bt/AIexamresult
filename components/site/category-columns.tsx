@@ -37,9 +37,9 @@ const colItem = {
 
 export function CategoryColumns({ sections }: { sections: { label: string; items: PostCard[] }[] }) {
   return (
-    <section className="py-10">
+    <section className="py-6 sm:py-8">
       <div className="container-page">
-        <div className="mb-8 flex items-center gap-3">
+        <div className="mb-5 flex items-center gap-3">
           <span className="h-9 w-1.5 rounded-full bg-gradient-to-b from-[#0D9488] via-[#EA580C] to-[#4F46E5]" />
           <div>
             <h2 className="text-2xl font-black text-slate-800">Latest Updates</h2>
