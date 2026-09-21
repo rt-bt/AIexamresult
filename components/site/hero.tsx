@@ -1,6 +1,6 @@
 "use client";
 
-import { Search, ArrowRight } from "lucide-react";
+import { Search, ArrowRight, Briefcase, FileText, CheckCircle2, KeyRound, Sparkles } from "lucide-react";
 import { useState } from "react";
 import { trendingExams } from "@/lib/data";
 import Link from "next/link";
@@ -36,38 +36,38 @@ function SearchBox() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="relative mx-auto max-w-xl">
-      <div className="relative flex items-center">
-        <Search className="absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-white/50" />
+    <form onSubmit={handleSubmit} className="relative mx-auto max-w-2xl">
+      <div className="relative flex items-center shadow-lg shadow-black/10 rounded-2xl">
+        <Search className="absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-white/60 pointer-events-none" />
         <input
           type="text"
           value={query}
           onChange={(e) => { setQuery(e.target.value); setShowDropdown(true); }}
           onFocus={() => setShowDropdown(true)}
           onBlur={() => setTimeout(() => setShowDropdown(false), 200)}
-          placeholder="Search Exam, Job or Result (e.g. SSC CGL, Railway, CTET)..."
-          className="w-full rounded-xl border border-white/20 bg-white/10 pl-10 pr-24 py-2.5 sm:py-3 text-xs sm:text-sm text-white placeholder-white/50 outline-none backdrop-blur-md transition-all focus:border-white/50 focus:bg-white/15"
+          placeholder="Search by Exam, Post, Department (e.g. SSC CGL, Railway, Police, CTET)..."
+          className="w-full rounded-2xl border border-white/25 bg-white/15 pl-12 pr-28 py-3.5 text-sm sm:text-base text-white placeholder-white/60 outline-none backdrop-blur-md transition-all focus:border-white/60 focus:bg-white/20"
         />
-        <div className="absolute right-1.5 top-1/2 -translate-y-1/2 flex items-center gap-1">
+        <div className="absolute right-2 top-1/2 -translate-y-1/2 flex items-center gap-1.5">
           <VoiceSearchBtn
             onResult={(val) => {
               setQuery(val);
               router.push(`/search?q=${encodeURIComponent(val)}`);
             }}
-            className="p-1.5 text-white/70 hover:text-white transition active:scale-90"
+            className="p-2 text-white/70 hover:text-white transition active:scale-90"
           />
           <button
             type="submit"
-            className="inline-flex items-center gap-1 rounded-lg bg-white px-3 py-1.5 text-xs font-bold text-[#0D9488] shadow-sm transition hover:bg-white/90 active:scale-95"
+            className="inline-flex items-center gap-1.5 rounded-xl bg-white px-4 py-2 text-xs sm:text-sm font-extrabold text-[#0D9488] shadow-md transition hover:bg-white/90 active:scale-95"
           >
             Search
-            <ArrowRight className="h-3 w-3" />
+            <ArrowRight className="h-4 w-4" />
           </button>
         </div>
       </div>
 
       {showDropdown && filtered.length > 0 && (
-        <div className="absolute left-0 right-0 top-full z-30 mt-1 max-h-48 overflow-auto rounded-xl border border-white/15 bg-[#0F172A]/95 backdrop-blur-md shadow-2xl">
+        <div className="absolute left-0 right-0 top-full z-30 mt-1.5 max-h-56 overflow-auto rounded-2xl border border-white/15 bg-[#0F172A]/95 backdrop-blur-md shadow-2xl">
           {filtered.map((e) => (
             <button
               key={e}
@@ -77,7 +77,7 @@ function SearchBox() {
                 setShowDropdown(false);
                 router.push(`/search?q=${encodeURIComponent(e)}`);
               }}
-              className="w-full px-4 py-2 text-left text-xs sm:text-sm text-white/80 transition hover:bg-white/10 hover:text-white"
+              className="w-full px-4 py-2.5 text-left text-sm text-white/80 transition hover:bg-white/10 hover:text-white"
             >
               {e}
             </button>
@@ -91,63 +91,93 @@ function SearchBox() {
 export function Hero() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-[#0D9488] via-[#0F766E] to-[#0F172A] text-white">
-      <div className="container-page relative py-5 sm:py-7">
+      {/* Subtle Background Glow */}
+      <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-[#5EEAD4]/15 blur-3xl rounded-full pointer-events-none" />
+
+      <div className="container-page relative py-8 sm:py-11">
         <div className="mx-auto max-w-3xl text-center">
 
-          {/* Compact Live Badge */}
-          <div className="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-0.5 text-[11px] font-semibold text-white/90 border border-white/15 mb-2.5 backdrop-blur-sm">
-            <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
+          {/* Live Notification Badge */}
+          <div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1 text-xs font-semibold text-white/90 border border-white/15 mb-3.5 backdrop-blur-sm shadow-xs">
+            <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
             Live Sarkari Result &amp; Job Alerts 2026
           </div>
 
-          {/* Compact Clean Headline */}
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight text-white leading-tight">
-            Sarkari Result 2026 : Latest{" "}
-            <span className="text-[#5EEAD4]">Jobs</span>,{" "}
-            <span className="text-[#FBBF24]">Admit Card</span> &amp;{" "}
-            <span className="text-[#A78BFA]">Results</span>
+          {/* Main Headline */}
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-white leading-[1.15]">
+            Sarkari Result 2026 : All India Exam Result
           </h1>
 
-          <p className="mx-auto mt-1.5 max-w-xl text-xs sm:text-sm text-white/80 font-medium">
-            Fastest real-time updates for Government Jobs, Admit Card, Answer Key &amp; Sarkari Results.
+          <p className="mx-auto mt-2.5 max-w-2xl text-xs sm:text-sm md:text-base text-white/85 font-medium leading-relaxed">
+            India&apos;s fastest portal for verified Government Jobs, Admit Card download, Answer Key &amp; Real-Time Sarkari Results.
           </p>
 
-          {/* Sleek Search Bar */}
-          <div className="mt-3.5">
+          {/* Search Box */}
+          <div className="mt-5 sm:mt-6">
             <SearchBox />
           </div>
 
-          {/* Trending Exam Chips */}
-          <div className="mt-3 flex flex-wrap items-center justify-center gap-1.5 text-xs">
-            <span className="text-white/60 text-[11px] font-medium mr-1 hidden sm:inline">Trending:</span>
+          {/* Trending Searches */}
+          <div className="mt-3.5 flex flex-wrap items-center justify-center gap-1.5 text-xs">
+            <span className="text-white/60 text-xs font-medium mr-1 inline-flex items-center gap-1">
+              <Sparkles className="h-3 w-3 text-amber-300" /> Trending:
+            </span>
             {trendingExams.slice(0, 6).map((exam) => (
               <Link
                 key={exam}
                 href={`/search?q=${encodeURIComponent(exam)}`}
-                className="px-2.5 py-0.5 rounded-full bg-white/10 hover:bg-white/20 border border-white/15 text-[11px] font-medium text-white/85 hover:text-white transition-all"
+                className="px-2.5 py-1 rounded-lg bg-white/10 hover:bg-white/20 border border-white/15 text-xs font-medium text-white/90 hover:text-white transition-all backdrop-blur-xs"
               >
                 {exam}
               </Link>
             ))}
           </div>
 
-          {/* Quick Action Navigation Buttons */}
-          <div className="mt-3.5 flex flex-wrap justify-center gap-2">
-            {[
-              { label: "⚡ Latest Vacancy", href: "/latest-jobs", bg: "bg-indigo-500/25 border-indigo-400/30 hover:bg-indigo-500/40" },
-              { label: "🎟️ Admit Card", href: "/admit-card", bg: "bg-orange-500/25 border-orange-400/30 hover:bg-orange-500/40" },
-              { label: "🎯 Result", href: "/results", bg: "bg-teal-500/25 border-teal-400/30 hover:bg-teal-500/40" },
-              { label: "🔑 Answer Key", href: "/answer-key", bg: "bg-purple-500/25 border-purple-400/30 hover:bg-purple-500/40" },
-              { label: "📄 Documents", href: "/documents", bg: "bg-amber-500/25 border-amber-400/30 hover:bg-amber-500/40" },
-            ].map((btn) => (
-              <Link
-                key={btn.href}
-                href={btn.href}
-                className={`px-3 py-1 rounded-lg border text-xs font-bold text-white transition-all backdrop-blur-sm ${btn.bg}`}
-              >
-                {btn.label}
-              </Link>
-            ))}
+          {/* 4 Feature Quick Action Cards */}
+          <div className="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-2xl mx-auto">
+            <Link
+              href="/latest-jobs"
+              className="group flex flex-col items-center gap-1.5 rounded-xl border border-white/15 bg-white/10 p-3 sm:p-3.5 text-center backdrop-blur-sm transition-all hover:bg-white/20 hover:-translate-y-0.5 hover:shadow-lg hover:border-white/30"
+            >
+              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-indigo-500/30 text-indigo-300 group-hover:scale-110 transition-transform">
+                <Briefcase className="h-4 w-4" />
+              </div>
+              <span className="text-xs sm:text-sm font-bold text-white">Latest Vacancy</span>
+              <span className="text-[10px] text-white/60">Apply Online</span>
+            </Link>
+
+            <Link
+              href="/admit-card"
+              className="group flex flex-col items-center gap-1.5 rounded-xl border border-white/15 bg-white/10 p-3 sm:p-3.5 text-center backdrop-blur-sm transition-all hover:bg-white/20 hover:-translate-y-0.5 hover:shadow-lg hover:border-white/30"
+            >
+              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-orange-500/30 text-orange-300 group-hover:scale-110 transition-transform">
+                <FileText className="h-4 w-4" />
+              </div>
+              <span className="text-xs sm:text-sm font-bold text-white">Admit Card</span>
+              <span className="text-[10px] text-white/60">Hall Ticket</span>
+            </Link>
+
+            <Link
+              href="/results"
+              className="group flex flex-col items-center gap-1.5 rounded-xl border border-white/15 bg-white/10 p-3 sm:p-3.5 text-center backdrop-blur-sm transition-all hover:bg-white/20 hover:-translate-y-0.5 hover:shadow-lg hover:border-white/30"
+            >
+              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-teal-500/30 text-[#5EEAD4] group-hover:scale-110 transition-transform">
+                <CheckCircle2 className="h-4 w-4" />
+              </div>
+              <span className="text-xs sm:text-sm font-bold text-white">Result</span>
+              <span className="text-[10px] text-white/60">Scorecard &amp; Cutoff</span>
+            </Link>
+
+            <Link
+              href="/answer-key"
+              className="group flex flex-col items-center gap-1.5 rounded-xl border border-white/15 bg-white/10 p-3 sm:p-3.5 text-center backdrop-blur-sm transition-all hover:bg-white/20 hover:-translate-y-0.5 hover:shadow-lg hover:border-white/30"
+            >
+              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-purple-500/30 text-purple-300 group-hover:scale-110 transition-transform">
+                <KeyRound className="h-4 w-4" />
+              </div>
+              <span className="text-xs sm:text-sm font-bold text-white">Answer Key</span>
+              <span className="text-[10px] text-white/60">Response Sheet</span>
+            </Link>
           </div>
 
         </div>
