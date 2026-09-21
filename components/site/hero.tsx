@@ -6,7 +6,7 @@ import { featuredResults, trendingExams, latestJobs } from "@/lib/data";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { VoiceSearchBtn } from "./voice-search";
-import { HeroGradient } from "./hero-gradient";
+import LiquidEther from "@/components/LiquidEther";
 
 const examOptions = [
   ...trendingExams,
@@ -140,9 +140,40 @@ function Counter({ to, label }: { to: number; label: string }) {
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden">
-      {/* Animated WebGL Gradient Background */}
-      <HeroGradient />
+    <section className="relative overflow-hidden min-h-[560px]">
+      {/* LiquidEther WebGL Fluid Simulation Background */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
+        {/* Brand rich deep teal base */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background: "radial-gradient(ellipse at 50% 25%, #0E877D 0%, #084c47 60%, #042724 100%)",
+          }}
+        />
+        <LiquidEther
+          colors={['#0E877D', '#3FA8A5', '#5EEAD4']}
+          mouseForce={20}
+          cursorSize={100}
+          isViscous
+          viscous={30}
+          iterationsViscous={32}
+          iterationsPoisson={32}
+          resolution={0.5}
+          isBounce={false}
+          autoDemo
+          autoSpeed={0.5}
+          autoIntensity={2.2}
+          takeoverDuration={0.25}
+          autoResumeDelay={3000}
+          autoRampDuration={0.6}
+          color0="#0E877D"
+          color1="#3FA8A5"
+          color2="#5EEAD4"
+          className="absolute inset-0 h-full w-full"
+        />
+        {/* Subtle vignette / contrast overlay to guarantee WCAG AA text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/25 pointer-events-none" />
+      </div>
 
       <div className="container-page relative pt-2 sm:pt-4 pb-6 sm:pb-10">
         <div className="mx-auto max-w-3xl text-center">
