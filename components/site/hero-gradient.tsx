@@ -204,10 +204,10 @@ export function HeroGradient() {
     gl.useProgram(prog);
 
     // Plane geometry (segmented grid)
-    const segX = 96;
-    const segY = 96;
-    const width = 3.0;
-    const height = 3.0;
+    const segX = 110;
+    const segY = 110;
+    const width = 5.0;
+    const height = 5.0;
     const positions: number[] = [];
     const uvs: number[] = [];
     const indices: number[] = [];
@@ -265,13 +265,9 @@ export function HeroGradient() {
 
     const flatColors = new Float32Array(COLORS.flat());
     gl.uniform3fv(uColorLoc, flatColors);
-    gl.uniform2f(uFreqLoc, 2.3, 6.0); // fx=2.3, fy=6
+    gl.uniform2f(uFreqLoc, 1.9, 6.0); // fx=1.9, fy=6.0 as requested
     gl.uniform1f(uAmountLoc, 0.16);    // amount=0.16
     gl.uniform1f(uSpeedLoc, 0.07);     // speed=0.07
-
-    // Camera at (0, 0.5, 0.4) looking at (0, 0, 0)
-    const viewMatrix = lookAt([0, 0.5, 0.4], [0, 0, 0], [0, 1, 0]);
-    gl.uniformMatrix4fv(uViewLoc, false, viewMatrix);
 
     let isVisible = true;
     const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -285,8 +281,18 @@ export function HeroGradient() {
         canvas.width = w;
         canvas.height = h;
         gl.viewport(0, 0, w, h);
-        const fov = (35 * Math.PI) / 180;
-        const proj = perspective(fov, w / h, 0.1, 100);
+
+        const aspect = w / h;
+        // Adapt camera distance so the hero banner captures the full wave landscape without being zoomed in
+        const zoom = Math.max(1.0, aspect / 1.5);
+        const eyeY = 0.58 * zoom;
+        const eyeZ = 0.48 * zoom;
+
+        const viewMatrix = lookAt([0, eyeY, eyeZ], [0, 0, 0], [0, 1, 0]);
+        gl.uniformMatrix4fv(uViewLoc, false, viewMatrix);
+
+        const fov = (38 * Math.PI) / 180;
+        const proj = perspective(fov, aspect, 0.1, 100);
         gl.uniformMatrix4fv(uProjLoc, false, proj);
       }
     }
@@ -344,7 +350,7 @@ export function HeroGradient() {
         className="absolute inset-0 h-full w-full object-cover"
       />
       {/* Subtle vignette / contrast overlay to guarantee WCAG AA text readability */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/35" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/20" />
     </div>
   );
 }
