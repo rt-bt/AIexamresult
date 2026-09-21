@@ -16,11 +16,9 @@ if errorlevel 1 echo [WARNING] npm install had issues
 echo OK
 echo.
 
-REM ---- Step 2: Sync data from all sources ----
-echo [2/6] Syncing data from Sarkari sources...
-echo  Sources: sarkariresult.com, sarkariexam.com,
-echo           resultbharat.com, sarkarialert.net,
-echo           rojgarresult.com, naukaritime.com, freejobalert.com
+REM ---- Step 2: Sync data from sarkariexam.com ----
+echo [2/6] Syncing data from sarkariexam.com...
+echo  Source: sarkariexam.com (AIExamResult style content, zero source traces)
 echo  (this may take a few minutes...)
 echo.
 node scripts/sync-all.mjs
