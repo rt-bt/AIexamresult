@@ -26,6 +26,11 @@ export default function HomePage() {
       <main>
         <Hero />
 
+        {/* 6 Main Sections: Latest Jobs, Admit Card, Answer Keys, Result, Admissions, Documents (Latest Updates) */}
+        <div className="bg-gradient-to-b from-white to-[#f0fdfa]">
+          <CategoryColumns sections={categorySections} />
+        </div>
+
         {/* Featured & Trending Alerts with 3D TiltCards */}
         <section className="py-8 bg-gradient-to-b from-teal-50/50 via-white to-slate-50/70 border-b border-slate-200/80">
           <div className="container-page">
@@ -104,11 +109,6 @@ export default function HomePage() {
             </div>
           </div>
         </section>
-
-        {/* 6 Main Sections: Latest Jobs, Admit Card, Answer Keys, Result, Admissions, Documents */}
-        <div className="bg-gradient-to-b from-white to-[#f0fdfa]">
-          <CategoryColumns sections={categorySections} />
-        </div>
 
         {/* Homepage Leaderboard Ad */}
         <div className="container-page py-2">
