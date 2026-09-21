@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description: "Sarkari Result 2026: Check latest exam results, scorecards, cut-off marks, and merit lists for SSC, UPSC, Railway, Banking, Police & State Board exams.",
   alternates: { canonical: `${SITE_URL}/results` },
   openGraph: {
-    title: "Sarkari Result 2026 : All Govt Exam Results - Sarkari Exam",
+    title: "Sarkari Result 2026 : All Govt Exam Results | All India Exam Result",
     description: "Sarkari Result 2026: Check latest exam results, scorecards, cut-off marks, and merit lists for SSC, UPSC, Railway, Banking, Police & State Board exams.",
     url: `${SITE_URL}/results`,
     images: [{ url: `${SITE_URL}/og-image.svg`, width: 1200, height: 630 }]
@@ -69,14 +69,14 @@ export default function ResultsPage() {
       <main>
         <div className="bg-gradient-to-br from-[#0D9488] via-[#0F766E] to-[#115E59] py-14 sm:py-16">
           <div className="container-page">
-            <p className="text-sm font-bold uppercase tracking-wide text-[#5EEAD4]">Sarkari Result · Sarkari Exam</p>
+            <p className="text-sm font-bold uppercase tracking-wide text-[#5EEAD4]">All India Exam Result · Sarkari Results</p>
             <h1 className="mt-3 text-3xl sm:text-4xl font-black text-white">Sarkari Result 2026 : All Government Exam Results</h1>
             <p className="mt-3 max-w-2xl text-sm sm:text-base text-white/85 leading-relaxed">
               Find verified real-time results for SSC, Railway RRB, UPSC, State PSCs, Police Recruitment, Banking, and Board examinations. Direct score card and cut-off marks links.
             </p>
           </div>
         </div>
-        <SectionContent title="Sarkari Exam Results 2026" items={allItems} />
+        <SectionContent title="Latest Results 2026" items={allItems} />
       </main>
       <Footer />
     </>

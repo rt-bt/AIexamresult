@@ -1114,14 +1114,6 @@ export const scrapedData = {
       "publishedAt": "2026-09-02T18:30:00.000Z"
     },
     {
-      "title": "Latest Result 2026-27",
-      "url": "/post/latestresult_more",
-      "category": "results",
-      "slug": "latestresult_more",
-      "publishedDate": "3 September 2026",
-      "publishedAt": "2026-09-02T18:30:00.000Z"
-    },
-    {
       "title": "SSC JE Syllabus 2026 - Check Exam Pattern PDF",
       "url": "/post/ssc-je-syllabus-ans-exam-pattern-3065990",
       "category": "results",
@@ -6838,14 +6830,6 @@ export const scrapedData = {
       "publishedAt": "2026-06-18T18:30:00.000Z"
     },
     {
-      "title": "Latest Jobs / Recruitment 2026",
-      "url": "/post/latestjobs_more",
-      "category": "latestJobs",
-      "slug": "latestjobs_more",
-      "publishedDate": "19 June 2026",
-      "publishedAt": "2026-06-18T18:30:00.000Z"
-    },
-    {
       "title": "Madhya Pradesh State Service Commission MPPSC Mains Exam SSE 2025 : Apply Online",
       "url": "/post/mppsc-sse-mains-2025-june26",
       "category": "latestJobs",
@@ -8456,14 +8440,6 @@ export const scrapedData = {
       "publishedAt": "2026-06-19T18:30:00.000Z"
     },
     {
-      "title": "Answer Key 2026",
-      "url": "/post/answerkey_more",
-      "category": "answerKeys",
-      "slug": "answerkey_more",
-      "publishedDate": "19 June 2026",
-      "publishedAt": "2026-06-18T18:30:00.000Z"
-    },
-    {
       "title": "UPPSC GIC Lecturer Answer Key 2026",
       "url": "/post/uppsc-gic-lecturer-2025",
       "category": "answerKeys",
@@ -9982,10 +9958,6 @@ export const scrapedData = {
       "publishedDate": "17 April 2025",
       "publishedAt": "2025-04-16T18:30:00.000Z",
       "lastDate": "02 May 2025"
-    },
-    "answerkey_more": {
-      "publishedDate": "19 June 2026",
-      "publishedAt": "2026-06-18T18:30:00.000Z"
     },
     "ap-police-jail-warder-syllabus-and-exam-pattern-3066935": {
       "publishedDate": "9 September 2026",
@@ -12079,14 +12051,6 @@ export const scrapedData = {
       "publishedDate": "16 June 2026",
       "publishedAt": "2026-06-15T18:30:00.000Z",
       "lastDate": "01/07/2026"
-    },
-    "latestjobs_more": {
-      "publishedDate": "19 June 2026",
-      "publishedAt": "2026-06-18T18:30:00.000Z"
-    },
-    "latestresult_more": {
-      "publishedDate": "3 September 2026",
-      "publishedAt": "2026-09-02T18:30:00.000Z"
     },
     "lic-hfl-ja-2026": {
       "publishedDate": "3 July 2026",

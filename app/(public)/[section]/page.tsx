@@ -50,14 +50,14 @@ export async function generateMetadata({ params }: { params: Promise<{ section: 
     description: desc,
     alternates: { canonical: canonicalUrl },
     openGraph: {
-      title: `${title} | Sarkari Result - Sarkari Exam`,
+      title: `${title} | All India Exam Result`,
       description: desc,
       url: canonicalUrl,
       images: [{ url: `${SITE_URL}/og-image.svg`, width: 1200, height: 630 }]
     },
     twitter: {
       card: "summary_large_image",
-      title: `${title} | Sarkari Result - Sarkari Exam`,
+      title: `${title} | All India Exam Result`,
       description: desc
     },
     robots: { index: true, follow: true }

@@ -46,8 +46,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const hasYear = /202[4-9]|203\d/.test(title);
   const yearStr = hasYear ? "" : " 2026";
   const seoTitle = intentSuffix
-    ? `${title}${yearStr} : ${intentSuffix} - Sarkari Result | Sarkari Exam`
-    : `${title}${yearStr} - Sarkari Result | Sarkari Exam`;
+    ? `${title}${yearStr} : ${intentSuffix}`
+    : `${title}${yearStr}`;
 
   // Build high-CTR meta description (strip any adinserter / shortcodes)
   let rawIntro = (post.intro || "").replace(/\[adinserter[^\]]*\]/gi, "").replace(/<[^>]*>/g, "").trim();
@@ -56,32 +56,32 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (rawIntro.length > 50) {
     // Use up to 200 chars of intro for richer context
     const introSnip = rawIntro.substring(0, 200).replace(/\s+\S*$/, "");
-    desc = introSnip + "… Check full notification & apply at Sarkari Result.";
+    desc = introSnip + "… Check full notification & details at All India Exam Result.";
   } else {
     const dateHint = post.importantDates?.find((d: string) =>
       /last|apply|exam date|admit/i.test(d)
     );
     const dateStr = dateHint ? " " + dateHint.replace(/^.*?:/, "").trim() + "." : ".";
     if (intentSuffix.includes("Online Form") || catLower.includes("job")) {
-      desc = `${title}: Check eligibility criteria, age limit, application fee, last date to apply${dateStr} Download official notification PDF at Sarkari Result | Sarkari Exam.`;
+      desc = `${title}: Check eligibility criteria, age limit, application fee, last date to apply${dateStr} Download official notification PDF at All India Exam Result.`;
     } else if (intentSuffix.includes("Admit Card") || catLower.includes("admit")) {
-      desc = `${title}: Download Sarkari admit card, check exam date, reporting time & exam city slip${dateStr} Direct login link at Sarkari Result | Sarkari Exam.`;
+      desc = `${title}: Download admit card, check exam date, reporting time & exam city slip${dateStr} Direct login link at All India Exam Result.`;
     } else if (intentSuffix.includes("Result") || catLower.includes("result")) {
-      desc = `${title}: Check Sarkari result, download scorecard, cut-off marks & qualifying merit list${dateStr} Direct official link at Sarkari Result | Sarkari Exam.`;
+      desc = `${title}: Check result, download scorecard, cut-off marks & qualifying merit list${dateStr} Direct official link at All India Exam Result.`;
     } else {
-      desc = `${title}: Check important dates, application fee, eligibility & official direct links${dateStr} Complete details at Sarkari Result | Sarkari Exam.`;
+      desc = `${title}: Check important dates, application fee, eligibility & official direct links${dateStr} Complete details at All India Exam Result.`;
     }
   }
 
   // Ensure minimum 120 chars — append extra context if too short
   if (desc.length < 120) {
     const extra = catLower.includes("job") || tLower.includes("recruitment")
-      ? " Apply online for latest govt job 2026 at Sarkari Result | Sarkari Exam."
+      ? " Apply online for latest govt job 2026 at All India Exam Result."
       : catLower.includes("result") || tLower.includes("result")
-      ? " Download result & scorecard 2026 at Sarkari Result | Sarkari Exam."
+      ? " Download result & scorecard 2026 at All India Exam Result."
       : catLower.includes("admit") || tLower.includes("admit card")
-      ? " Download admit card & check exam date 2026 at Sarkari Result | Sarkari Exam."
-      : " Get latest govt exam updates 2026 at Sarkari Result | Sarkari Exam.";
+      ? " Download admit card & check exam date 2026 at All India Exam Result."
+      : " Get latest govt exam updates 2026 at All India Exam Result.";
     desc = desc.replace(/\.\s*$/, "") + extra;
   }
 
@@ -302,6 +302,26 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
     }
     if (!post.applicationFee || post.applicationFee.length === 0) {
       post.applicationFee = extractFeeFromHtml(post.fullContentHtml);
+    }
+  }
+
+  // Safety filter: ensure no raw HTML/corrupt text appears in importantDates or fee
+  if (post) {
+    if (Array.isArray(post.importantDates)) {
+      post.importantDates = post.importantDates.filter((d: string) => {
+        if (!d || typeof d !== "string") return false;
+        if (d.length > 150) return false;
+        if (d.includes("\t\t") || /name of post|resultbharat|sarkariresult|disclaimer|copyright/i.test(d)) return false;
+        return true;
+      });
+    }
+    if (Array.isArray(post.applicationFee)) {
+      post.applicationFee = post.applicationFee.filter((f: string) => {
+        if (!f || typeof f !== "string") return false;
+        if (f.length > 150) return false;
+        if (f.includes("\t\t") || /resultbharat|sarkariresult/i.test(f)) return false;
+        return true;
+      });
     }
   }
 
