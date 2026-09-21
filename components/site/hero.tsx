@@ -6,6 +6,7 @@ import { featuredResults, trendingExams, latestJobs } from "@/lib/data";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { VoiceSearchBtn } from "./voice-search";
+import { HeroGradient } from "./hero-gradient";
 
 const examOptions = [
   ...trendingExams,
@@ -140,7 +141,8 @@ function Counter({ to, label }: { to: number; label: string }) {
 export function Hero() {
   return (
     <section className="relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-[#0D9488] via-[#0F766E] to-[#0F172A]" />
+      {/* Animated WebGL Gradient Background */}
+      <HeroGradient />
 
       <div className="container-page relative pt-2 sm:pt-4 pb-6 sm:pb-10">
         <div className="mx-auto max-w-3xl text-center">
