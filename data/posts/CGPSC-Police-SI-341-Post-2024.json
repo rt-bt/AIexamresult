@@ -188,7 +188,7 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Latest Jobs",
+            "name": "Latest Vacancy",
             "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
@@ -198,6 +198,38 @@
             "item": "https://www.aiexamresult.com/post/CGPSC-Police-SI-341-Post-2024"
           }
         ]
+      },
+      {
+        "@type": "JobPosting",
+        "@id": "https://www.aiexamresult.com/post/CGPSC-Police-SI-341-Post-2024#jobposting",
+        "title": "Chhattisgarh Public Service Commission (CGPSC)",
+        "description": "Chhattisgarh Public Service Commission (CGPSC) has Officially Released Admit Card for The Post of  Sub-Inspector SI Recruitment 2024. All nterested Candidate Can Download Admit Card Now. Total Post: 341, Apply Online, Download Notification, Download Syllabus, Download Admit Card, Official Website, https://psc.cg.gov.in/>\n\t \n\t\n\t\n\t<meta name=",
+        "datePosted": "2024-10-25T00:00:00.000Z",
+        "employmentType": "FULL_TIME",
+        "hiringOrganization": {
+          "@type": "Organization",
+          "name": "Government of India / Public Sector",
+          "sameAs": "https://www.aiexamresult.com"
+        },
+        "jobLocation": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "India",
+            "addressRegion": "All States",
+            "addressCountry": "IN"
+          }
+        },
+        "baseSalary": {
+          "@type": "MonetaryAmount",
+          "currency": "INR",
+          "value": {
+            "@type": "QuantitativeValue",
+            "value": 35000,
+            "unitText": "MONTH"
+          }
+        },
+        "directApply": true
       }
     ]
   },

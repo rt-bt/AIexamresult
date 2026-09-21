@@ -3020,6 +3020,14 @@ export const scrapedData = {
   ],
   "admitCards": [
     {
+      "title": "HPRCA Assistant Staff Nurse Admit Card 2026 Out",
+      "url": "https://www.freejobalert.com/articles/hprca-assistant-staff-nurse-admit-card-2026-3068442",
+      "category": "admitCards",
+      "slug": "hprca-assistant-staff-nurse-admit-card-2026-3068442",
+      "publishedDate": "21 September 2026",
+      "publishedAt": "2026-09-20T18:30:00.000Z"
+    },
+    {
       "title": "UPESSC Principal Admit Card 2026 for 111 Post",
       "url": "https://rojgarresult.com/upessc-principal-2026/",
       "category": "admitCards",
@@ -5205,6 +5213,14 @@ export const scrapedData = {
     }
   ],
   "latestJobs": [
+    {
+      "title": "UPESSC UP Post Graduate Teacher Recruitment 2026",
+      "url": "https://sarkarialert.net/up-pgt-recruitment/",
+      "category": "latestJobs",
+      "slug": "up-pgt-recruitment",
+      "publishedDate": "21 September 2026",
+      "publishedAt": "2026-09-20T18:30:00.000Z"
+    },
     {
       "title": "UKSSSC Scaler Group C Online Form 2026",
       "url": "https://rojgarresult.com/uksssc-scaler-2026/",
@@ -18917,12 +18933,21 @@ export const scrapedData = {
     "upessc-up-primary-teacher-prt-syllabus-2026": {
       "publishedDate": "21 September 2026",
       "publishedAt": "2026-09-20T18:30:00.000Z"
+    },
+    "up-pgt-recruitment": {
+      "publishedDate": "21 September 2026",
+      "publishedAt": "2026-09-20T18:30:00.000Z"
+    },
+    "hprca-assistant-staff-nurse-admit-card-2026-3068442": {
+      "lastDate": "29 August 2026, 11:59 PM",
+      "publishedDate": "21 September 2026",
+      "publishedAt": "2026-09-20T18:30:00.000Z"
     }
   },
-  "fetchedAt": "2026-09-21T03:10:25.952Z",
+  "fetchedAt": "2026-09-21T04:00:17.830Z",
   "seo": {
-    "lastOptimized": "2026-09-21T03:10:52.029Z",
-    "totalPosts": 2117,
+    "lastOptimized": "2026-09-21T04:01:02.185Z",
+    "totalPosts": 2119,
     "websiteName": "All India Exam Result",
     "websiteUrl": "https://www.aiexamresult.com",
     "description": "Sarkari Result 2026 - Get fastest government job alerts, sarkari naukri, exam results, admit cards & answer keys. SSC, UPSC, Railway, Banking, UP, Bihar & all India exams."

@@ -212,7 +212,7 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Latest Jobs",
+            "name": "Latest Vacancy",
             "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
@@ -222,6 +222,38 @@
             "item": "https://www.aiexamresult.com/post/UPPSC-Staff-Nurse-Rect_2023"
           }
         ]
+      },
+      {
+        "@type": "JobPosting",
+        "@id": "https://www.aiexamresult.com/post/UPPSC-Staff-Nurse-Rect_2023#jobposting",
+        "title": "Uttar Pradesh Public Service Commission (UPPSC)",
+        "description": "UPPSC Staff Nurse 2023 Document Verification Letter out now! Download it for 2240 posts (Male/Female) at uppsc.up.nic.in as of April 3, 2025. Check details!",
+        "datePosted": "2026-06-22T00:00:00.000Z",
+        "employmentType": "FULL_TIME",
+        "hiringOrganization": {
+          "@type": "Organization",
+          "name": "Government of India / Public Sector",
+          "sameAs": "https://www.aiexamresult.com"
+        },
+        "jobLocation": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "India",
+            "addressRegion": "All States",
+            "addressCountry": "IN"
+          }
+        },
+        "baseSalary": {
+          "@type": "MonetaryAmount",
+          "currency": "INR",
+          "value": {
+            "@type": "QuantitativeValue",
+            "value": 35000,
+            "unitText": "MONTH"
+          }
+        },
+        "directApply": true
       }
     ]
   },

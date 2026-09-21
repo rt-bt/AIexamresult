@@ -125,7 +125,7 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Latest Jobs",
+            "name": "Latest Vacancy",
             "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
@@ -135,6 +135,38 @@
             "item": "https://www.aiexamresult.com/post/rsos-results-june26"
           }
         ]
+      },
+      {
+        "@type": "JobPosting",
+        "@id": "https://www.aiexamresult.com/post/rsos-results-june26#jobposting",
+        "title": "Rajasthan State Open School RSOS Exam 2026 Results",
+        "description": "Rajasthan State Open School, Jaipur State Government Board for Private/Open Learners RSOS will release the results for the Class 10th and Class 12th Senior Secondary Annual Board Exam 2026. The RSOS will declare the board result 25/06/2026. Candidates will be able to check their results/marks by entering their roll number on the official website. The official result date will be announced now.",
+        "datePosted": "2026-06-24T00:00:00.000Z",
+        "employmentType": "FULL_TIME",
+        "hiringOrganization": {
+          "@type": "Organization",
+          "name": "Government of India / Public Sector",
+          "sameAs": "https://www.aiexamresult.com"
+        },
+        "jobLocation": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "India",
+            "addressRegion": "All States",
+            "addressCountry": "IN"
+          }
+        },
+        "baseSalary": {
+          "@type": "MonetaryAmount",
+          "currency": "INR",
+          "value": {
+            "@type": "QuantitativeValue",
+            "value": 35000,
+            "unitText": "MONTH"
+          }
+        },
+        "directApply": true
       }
     ]
   },

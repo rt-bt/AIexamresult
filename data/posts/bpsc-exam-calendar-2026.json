@@ -87,7 +87,7 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Latest Jobs",
+            "name": "Latest Vacancy",
             "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
@@ -97,6 +97,38 @@
             "item": "https://www.aiexamresult.com/post/bpsc-exam-calendar-2026"
           }
         ]
+      },
+      {
+        "@type": "JobPosting",
+        "@id": "https://www.aiexamresult.com/post/bpsc-exam-calendar-2026#jobposting",
+        "title": "BPSC Exam Calendar 2026",
+        "description": "Post Date: February 3, 2026",
+        "datePosted": "2026-02-03T00:00:00.000Z",
+        "employmentType": "FULL_TIME",
+        "hiringOrganization": {
+          "@type": "Organization",
+          "name": "Government of India / Public Sector",
+          "sameAs": "https://www.aiexamresult.com"
+        },
+        "jobLocation": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "India",
+            "addressRegion": "All States",
+            "addressCountry": "IN"
+          }
+        },
+        "baseSalary": {
+          "@type": "MonetaryAmount",
+          "currency": "INR",
+          "value": {
+            "@type": "QuantitativeValue",
+            "value": 35000,
+            "unitText": "MONTH"
+          }
+        },
+        "directApply": true
       }
     ]
   },

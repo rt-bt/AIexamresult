@@ -264,10 +264,10 @@
           },
           {
             "@type": "Question",
-            "name": "How to check & download UPPSC Combined State/ Upper Subordinate Services 2024 Final Result with Marks 2026 - Out notification?",
+            "name": "How to check & download UPPSC Combined State/ Upper Subordinate Services 2024 Final Result with Marks 2026 - Out result?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Click on the direct official link in the Important Links table above or visit the commission official portal to download the notification."
+              "text": "Click on the direct official link in the Important Links table above or visit the commission official portal to download the result."
             }
           }
         ]
@@ -285,8 +285,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Result",
-            "item": "https://www.aiexamresult.com/result"
+            "name": "Results",
+            "item": "https://www.aiexamresult.com/results"
           },
           {
             "@type": "ListItem",
@@ -295,38 +295,6 @@
             "item": "https://www.aiexamresult.com/post/uppsc-pcs-2024"
           }
         ]
-      },
-      {
-        "@type": "JobPosting",
-        "@id": "https://www.aiexamresult.com/post/uppsc-pcs-2024#jobposting",
-        "title": "UPPSC Combined State/ Upper Subordinate Services 2024 Final Result with Marks 2026 - Out",
-        "description": "Uttar Pradesh Public Service Commission (UPPSC) has Officially Released Final Result with Marks for the Combined Upper Subordinate Service UP PSC Pre 2024 Recruitment. , Interview Held on 16 February to 20 March 2026 & Final Result Released On March 29, 2026. All Registered Candidates Can Download Final Result with Marks Now in the Given Link Below.",
-        "datePosted": "2026-06-09T00:00:00.000Z",
-        "employmentType": "FULL_TIME",
-        "hiringOrganization": {
-          "@type": "Organization",
-          "name": "Government of India / Public Sector",
-          "sameAs": "https://www.aiexamresult.com"
-        },
-        "jobLocation": {
-          "@type": "Place",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "India",
-            "addressRegion": "All States",
-            "addressCountry": "IN"
-          }
-        },
-        "baseSalary": {
-          "@type": "MonetaryAmount",
-          "currency": "INR",
-          "value": {
-            "@type": "QuantitativeValue",
-            "value": 35000,
-            "unitText": "MONTH"
-          }
-        },
-        "directApply": true
       }
     ]
   },

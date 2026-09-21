@@ -157,7 +157,7 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Latest Jobs",
+            "name": "Latest Vacancy",
             "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
@@ -167,6 +167,38 @@
             "item": "https://www.aiexamresult.com/post/upsssc-technical-assistant-group-c-07-2024-result-2025"
           }
         ]
+      },
+      {
+        "@type": "JobPosting",
+        "@id": "https://www.aiexamresult.com/post/upsssc-technical-assistant-group-c-07-2024-result-2025#jobposting",
+        "title": "UPSSSC Technical Assistant Group C 07/2024 Supplementary List",
+        "description": "Post Date: June 9, 2026",
+        "datePosted": "2026-06-09T00:00:00.000Z",
+        "employmentType": "FULL_TIME",
+        "hiringOrganization": {
+          "@type": "Organization",
+          "name": "Government of India / Public Sector",
+          "sameAs": "https://www.aiexamresult.com"
+        },
+        "jobLocation": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "India",
+            "addressRegion": "All States",
+            "addressCountry": "IN"
+          }
+        },
+        "baseSalary": {
+          "@type": "MonetaryAmount",
+          "currency": "INR",
+          "value": {
+            "@type": "QuantitativeValue",
+            "value": 35000,
+            "unitText": "MONTH"
+          }
+        },
+        "directApply": true
       }
     ]
   },

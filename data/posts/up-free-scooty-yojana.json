@@ -172,7 +172,7 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Latest Jobs",
+            "name": "Latest Vacancy",
             "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
@@ -182,6 +182,38 @@
             "item": "https://www.aiexamresult.com/post/up-free-scooty-yojana"
           }
         ]
+      },
+      {
+        "@type": "JobPosting",
+        "@id": "https://www.aiexamresult.com/post/up-free-scooty-yojana#jobposting",
+        "title": "UP Free Scooty Yojana 2026 | Rani Lakshmi Bai Scooty Yojana",
+        "description": "UP Free Scooty Yojana 2026 | Rani Lakshmi Bai Scooty Yojana. The last date to apply is N/A. Check important dates, application fee, eligibility criteria and official links below.",
+        "datePosted": "2026-07-31T00:00:00.000Z",
+        "employmentType": "FULL_TIME",
+        "hiringOrganization": {
+          "@type": "Organization",
+          "name": "Government of India / Public Sector",
+          "sameAs": "https://www.aiexamresult.com"
+        },
+        "jobLocation": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "India",
+            "addressRegion": "All States",
+            "addressCountry": "IN"
+          }
+        },
+        "baseSalary": {
+          "@type": "MonetaryAmount",
+          "currency": "INR",
+          "value": {
+            "@type": "QuantitativeValue",
+            "value": 35000,
+            "unitText": "MONTH"
+          }
+        },
+        "directApply": true
       }
     ]
   },

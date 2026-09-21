@@ -216,7 +216,7 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Latest Jobs",
+            "name": "Latest Vacancy",
             "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
@@ -226,6 +226,38 @@
             "item": "https://www.aiexamresult.com/post/up-dgmhup-anm-jul26"
           }
         ]
+      },
+      {
+        "@type": "JobPosting",
+        "@id": "https://www.aiexamresult.com/post/up-dgmhup-anm-jul26#jobposting",
+        "title": "Uttar Pradesh UP DGMHUP ANM Training Program Admissions 2026",
+        "description": "Uttar Pradesh Department of Medical Health & Family Welfare has released the advertisement of UP ANM Training Admissions 2026. All the candidates who want to apply in this UP ANM Training Programme can Download Shortlisted Candidate List. See advertisement for other admissions related information like syllabus, qualification, age limit, selection procedure.",
+        "datePosted": "2026-07-02T00:00:00.000Z",
+        "employmentType": "FULL_TIME",
+        "hiringOrganization": {
+          "@type": "Organization",
+          "name": "Government of India / Public Sector",
+          "sameAs": "https://www.aiexamresult.com"
+        },
+        "jobLocation": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "India",
+            "addressRegion": "All States",
+            "addressCountry": "IN"
+          }
+        },
+        "baseSalary": {
+          "@type": "MonetaryAmount",
+          "currency": "INR",
+          "value": {
+            "@type": "QuantitativeValue",
+            "value": 35000,
+            "unitText": "MONTH"
+          }
+        },
+        "directApply": true
       }
     ]
   },

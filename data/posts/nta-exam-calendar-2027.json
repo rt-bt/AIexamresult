@@ -68,10 +68,10 @@
           },
           {
             "@type": "Question",
-            "name": "How to check & download NTA Exam Calendar 2027 admit card?",
+            "name": "How to check & download NTA Exam Calendar 2027 notification?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Click on the direct official link in the Important Links table above or visit the commission official portal to download the admit card."
+              "text": "Click on the direct official link in the Important Links table above or visit the commission official portal to download the notification."
             }
           }
         ]
@@ -89,7 +89,7 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Latest Jobs",
+            "name": "Latest Vacancy",
             "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
@@ -99,6 +99,38 @@
             "item": "https://www.aiexamresult.com/post/nta-exam-calendar-2027"
           }
         ]
+      },
+      {
+        "@type": "JobPosting",
+        "@id": "https://www.aiexamresult.com/post/nta-exam-calendar-2027#jobposting",
+        "title": "NTA Exam Calendar 2027",
+        "description": "Short Information : National Testing Agency (NTA) has recently released the Exam Calendar for the session 2027 on its official website. NTA has announce the Yearly Exam Notification Date & Exam Schedules for the all competitive examination conducted by the Commission ,For December 2026 to March 2027  Notification Date & Exam Dates are out candidates can download the Schedule form the important link section Or they can check it here too-:",
+        "datePosted": "2026-09-17T00:00:00.000Z",
+        "employmentType": "FULL_TIME",
+        "hiringOrganization": {
+          "@type": "Organization",
+          "name": "Government of India / Public Sector",
+          "sameAs": "https://www.aiexamresult.com"
+        },
+        "jobLocation": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "India",
+            "addressRegion": "All States",
+            "addressCountry": "IN"
+          }
+        },
+        "baseSalary": {
+          "@type": "MonetaryAmount",
+          "currency": "INR",
+          "value": {
+            "@type": "QuantitativeValue",
+            "value": 35000,
+            "unitText": "MONTH"
+          }
+        },
+        "directApply": true
       }
     ]
   },

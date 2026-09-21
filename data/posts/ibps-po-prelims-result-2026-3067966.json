@@ -86,10 +86,10 @@
           },
           {
             "@type": "Question",
-            "name": "How to check & download IBPS PO Prelims Result 2026 - Check Expected Date, Direct Scorecard Link, Cut Off & Mains Exam Date at ibps.in notification?",
+            "name": "How to check & download IBPS PO Prelims Result 2026 - Check Expected Date, Direct Scorecard Link, Cut Off & Mains Exam Date at ibps.in result?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Click on the direct official link in the Important Links table above or visit the commission official portal to download the notification."
+              "text": "Click on the direct official link in the Important Links table above or visit the commission official portal to download the result."
             }
           }
         ]
@@ -107,8 +107,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Result",
-            "item": "https://www.aiexamresult.com/result"
+            "name": "Results",
+            "item": "https://www.aiexamresult.com/results"
           },
           {
             "@type": "ListItem",

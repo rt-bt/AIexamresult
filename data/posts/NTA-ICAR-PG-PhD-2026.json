@@ -206,8 +206,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Admission",
-            "item": "https://www.aiexamresult.com/admission"
+            "name": "Admissions",
+            "item": "https://www.aiexamresult.com/admissions"
           },
           {
             "@type": "ListItem",
@@ -216,38 +216,6 @@
             "item": "https://www.aiexamresult.com/post/NTA-ICAR-PG-PhD-2026"
           }
         ]
-      },
-      {
-        "@type": "JobPosting",
-        "@id": "https://www.aiexamresult.com/post/NTA-ICAR-PG-PhD-2026#jobposting",
-        "title": "NTA ICAR AIEEA PG Ph.D Admission 2026 Online Correction Form Live: Apply Now #ICARAIEEAPG2026 #ICARAICEJRF2026 #NTAICARAdmission #AgriculturalEntrance2026 #SarkariNaukri",
-        "description": "National Testing Agency (NTA-ICAR) has Released Official Notification for Online Admission form for Indian Council of Agricultural Research (ICAR) AIEEA (PG) and AICE JRF/SRF (Ph.D.) Entrance Examinations 2026. Check All Details, Like Age Limit, Eligibility Details, Post Information, Pay Scale, Selection Process & More Details Related to NTA ICAR. Online Apply Start On May 8, 2026 & Last Date for Application is June 10, 2026. All Eligible & Interested Candidates Can Read Full Notification Before Apply Online Now in the Given Link Below.",
-        "datePosted": "2026-06-11T00:00:00.000Z",
-        "employmentType": "FULL_TIME",
-        "hiringOrganization": {
-          "@type": "Organization",
-          "name": "Government of India / Public Sector",
-          "sameAs": "https://www.aiexamresult.com"
-        },
-        "jobLocation": {
-          "@type": "Place",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "India",
-            "addressRegion": "All States",
-            "addressCountry": "IN"
-          }
-        },
-        "baseSalary": {
-          "@type": "MonetaryAmount",
-          "currency": "INR",
-          "value": {
-            "@type": "QuantitativeValue",
-            "value": 35000,
-            "unitText": "MONTH"
-          }
-        },
-        "directApply": true
       }
     ]
   },

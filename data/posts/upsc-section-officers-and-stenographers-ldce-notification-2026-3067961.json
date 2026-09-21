@@ -126,7 +126,7 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Latest Jobs",
+            "name": "Latest Vacancy",
             "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
@@ -136,6 +136,38 @@
             "item": "https://www.aiexamresult.com/post/upsc-section-officers-and-stenographers-ldce-notification-2026-3067961"
           }
         ]
+      },
+      {
+        "@type": "JobPosting",
+        "@id": "https://www.aiexamresult.com/post/upsc-section-officers-and-stenographers-ldce-notification-2026-3067961#jobposting",
+        "title": "UPSC Section Officers and Stenographers LDCE 2026 Notification Out - Apply Online by 6th October 2026",
+        "description": "The Union Public Service Commission (UPSC) has released the Recruitment 2026 notification for Section Officers and Stenographers LDCE. Eligible candidates can submit their online applications from 16-09-2026, and closes on 06-10-2026. The candidate shall apply online through UPSC website, upsc.gov.in.",
+        "datePosted": "2026-09-16T00:00:00.000Z",
+        "employmentType": "FULL_TIME",
+        "hiringOrganization": {
+          "@type": "Organization",
+          "name": "Government of India / Public Sector",
+          "sameAs": "https://www.aiexamresult.com"
+        },
+        "jobLocation": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "India",
+            "addressRegion": "All States",
+            "addressCountry": "IN"
+          }
+        },
+        "baseSalary": {
+          "@type": "MonetaryAmount",
+          "currency": "INR",
+          "value": {
+            "@type": "QuantitativeValue",
+            "value": 35000,
+            "unitText": "MONTH"
+          }
+        },
+        "directApply": true
       }
     ]
   },

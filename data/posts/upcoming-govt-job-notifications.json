@@ -106,7 +106,7 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Latest Jobs",
+            "name": "Latest Vacancy",
             "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
@@ -116,6 +116,38 @@
             "item": "https://www.aiexamresult.com/post/upcoming-govt-job-notifications"
           }
         ]
+      },
+      {
+        "@type": "JobPosting",
+        "@id": "https://www.aiexamresult.com/post/upcoming-govt-job-notifications#jobposting",
+        "title": "Upcoming Govt Job 2026 – Latest Sarkari Job Alert, Government Job Vacancies",
+        "description": "India is one of the largest democracies in the world, and government jobs (Sarkari Job) play a vital role in running the country’s administration smoothly. Every year, the Central Government and State Governments release lakhs of govt job vacancies, giving opportunities to candidates from 8th pass t",
+        "datePosted": "2026-09-01T00:00:00.000Z",
+        "employmentType": "FULL_TIME",
+        "hiringOrganization": {
+          "@type": "Organization",
+          "name": "Government of India / Public Sector",
+          "sameAs": "https://www.aiexamresult.com"
+        },
+        "jobLocation": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "India",
+            "addressRegion": "All States",
+            "addressCountry": "IN"
+          }
+        },
+        "baseSalary": {
+          "@type": "MonetaryAmount",
+          "currency": "INR",
+          "value": {
+            "@type": "QuantitativeValue",
+            "value": 35000,
+            "unitText": "MONTH"
+          }
+        },
+        "directApply": true
       }
     ]
   },

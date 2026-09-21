@@ -172,7 +172,7 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Latest Jobs",
+            "name": "Latest Vacancy",
             "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
@@ -182,6 +182,38 @@
             "item": "https://www.aiexamresult.com/post/MPPSC-FSO_120-Post-2025"
           }
         ]
+      },
+      {
+        "@type": "JobPosting",
+        "@id": "https://www.aiexamresult.com/post/MPPSC-FSO_120-Post-2025#jobposting",
+        "title": "Madhya Pradesh Public Service Commission (MPPSC)",
+        "description": "Madhya Pradesh Public Service Commission (MPPSC) has released the official notification for Food Safety Officer (FSO) Recruitment 2025 as of March 28, 2025. Eligible candidates can apply online now for 120 posts. Visit https://mppsc.mp.gov.in/ for notifications, syllabus, and more.",
+        "datePosted": "2026-06-21T00:00:00.000Z",
+        "employmentType": "FULL_TIME",
+        "hiringOrganization": {
+          "@type": "Organization",
+          "name": "Government of India / Public Sector",
+          "sameAs": "https://www.aiexamresult.com"
+        },
+        "jobLocation": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "India",
+            "addressRegion": "All States",
+            "addressCountry": "IN"
+          }
+        },
+        "baseSalary": {
+          "@type": "MonetaryAmount",
+          "currency": "INR",
+          "value": {
+            "@type": "QuantitativeValue",
+            "value": 35000,
+            "unitText": "MONTH"
+          }
+        },
+        "directApply": true
       }
     ]
   },

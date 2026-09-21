@@ -254,7 +254,7 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Latest Jobs",
+            "name": "Latest Vacancy",
             "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
@@ -264,6 +264,38 @@
             "item": "https://www.aiexamresult.com/post/SSC-CHT-2026"
           }
         ]
+      },
+      {
+        "@type": "JobPosting",
+        "@id": "https://www.aiexamresult.com/post/SSC-CHT-2026#jobposting",
+        "title": "Staff Selection Commission, SSC",
+        "description": "SSC Combined Hindi Translator (CHT) Recruitment 2026 Notification Out! 303 Posts (JHT, JTO, SHT, STO). Online Form 23 April 2026 to 14 May 2026 at ssc.gov.in. Master's in Hindi/English + Translation Experience required. Age 18-30 Years. Fee Rs.100. Selection: CBT + Skill Test. Trending: SSC CHT form 2026, SSC Hindi Translator vacancy, SSC CHT notification PDF. (Updated 01 September 2026)",
+        "datePosted": "2026-08-30T00:00:00.000Z",
+        "employmentType": "FULL_TIME",
+        "hiringOrganization": {
+          "@type": "Organization",
+          "name": "Government of India / Public Sector",
+          "sameAs": "https://www.aiexamresult.com"
+        },
+        "jobLocation": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "India",
+            "addressRegion": "All States",
+            "addressCountry": "IN"
+          }
+        },
+        "baseSalary": {
+          "@type": "MonetaryAmount",
+          "currency": "INR",
+          "value": {
+            "@type": "QuantitativeValue",
+            "value": 35000,
+            "unitText": "MONTH"
+          }
+        },
+        "directApply": true
       }
     ]
   },

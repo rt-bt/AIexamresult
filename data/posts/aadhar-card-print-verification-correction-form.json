@@ -141,7 +141,7 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Latest Jobs",
+            "name": "Latest Vacancy",
             "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
@@ -151,6 +151,38 @@
             "item": "https://www.aiexamresult.com/post/aadhar-card-print-verification-correction-form"
           }
         ]
+      },
+      {
+        "@type": "JobPosting",
+        "@id": "https://www.aiexamresult.com/post/aadhar-card-print-verification-correction-form#jobposting",
+        "title": "Aadhar Card PVC Download, Correction, Status 2026",
+        "description": "Short Information : Aadhar card by Unique Identification Authority of India UIDAI which citizens also know by the name of my Aadhaar, my identity. This is a unique ID card for all citizens living in India. How to Download Aadhaar Card, how to update it, how to change mobile number in Aadhaar Card, update address in Aadhaar Card, how to make correction in Aadhaar Card, how to download Aadhaar Card from mobile. Those All The Interested People Checking Aadhaar Card Details all the information related to the Aadhaar Card, Registration is given below and the link to apply is given in the Important Link section below.",
+        "datePosted": "2026-01-05T00:00:00.000Z",
+        "employmentType": "FULL_TIME",
+        "hiringOrganization": {
+          "@type": "Organization",
+          "name": "Government of India / Public Sector",
+          "sameAs": "https://www.aiexamresult.com"
+        },
+        "jobLocation": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "India",
+            "addressRegion": "All States",
+            "addressCountry": "IN"
+          }
+        },
+        "baseSalary": {
+          "@type": "MonetaryAmount",
+          "currency": "INR",
+          "value": {
+            "@type": "QuantitativeValue",
+            "value": 35000,
+            "unitText": "MONTH"
+          }
+        },
+        "directApply": true
       }
     ]
   },

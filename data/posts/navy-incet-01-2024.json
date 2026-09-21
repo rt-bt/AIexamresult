@@ -125,10 +125,10 @@
           },
           {
             "@type": "Question",
-            "name": "How to check & download Indian Navy INCET 01/2024 Chargeman, Tradesman, Fireman, MTS & Other Post Recruitment 2024 Result 2026 for 741 Post notification?",
+            "name": "How to check & download Indian Navy INCET 01/2024 Chargeman, Tradesman, Fireman, MTS & Other Post Recruitment 2024 Result 2026 for 741 Post result?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Click on the direct official link in the Important Links table above or visit the commission official portal to download the notification."
+              "text": "Click on the direct official link in the Important Links table above or visit the commission official portal to download the result."
             }
           }
         ]
@@ -146,8 +146,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Result",
-            "item": "https://www.aiexamresult.com/result"
+            "name": "Results",
+            "item": "https://www.aiexamresult.com/results"
           },
           {
             "@type": "ListItem",

@@ -162,10 +162,10 @@
           },
           {
             "@type": "Question",
-            "name": "How to check & download UPSC CPF AC Reserve List 2026 Out | Sarkari Result notification?",
+            "name": "How to check & download UPSC CPF AC Reserve List 2026 Out | Sarkari Result result?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Click on the direct official link in the Important Links table above or visit the commission official portal to download the notification."
+              "text": "Click on the direct official link in the Important Links table above or visit the commission official portal to download the result."
             }
           }
         ]
@@ -183,8 +183,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Result",
-            "item": "https://www.aiexamresult.com/result"
+            "name": "Results",
+            "item": "https://www.aiexamresult.com/results"
           },
           {
             "@type": "ListItem",
@@ -193,38 +193,6 @@
             "item": "https://www.aiexamresult.com/post/upsc-cpf-assistant-commandant-2024"
           }
         ]
-      },
-      {
-        "@type": "JobPosting",
-        "@id": "https://www.aiexamresult.com/post/upsc-cpf-assistant-commandant-2024#jobposting",
-        "title": "UPSC CPF AC Reserve List 2026 Out | Sarkari Result",
-        "description": "Author: Sarkari Exam Team\nTag: Post Graduate Job",
-        "datePosted": "2026-06-12T00:00:00.000Z",
-        "employmentType": "FULL_TIME",
-        "hiringOrganization": {
-          "@type": "Organization",
-          "name": "Government of India / Public Sector",
-          "sameAs": "https://www.aiexamresult.com"
-        },
-        "jobLocation": {
-          "@type": "Place",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "India",
-            "addressRegion": "All States",
-            "addressCountry": "IN"
-          }
-        },
-        "baseSalary": {
-          "@type": "MonetaryAmount",
-          "currency": "INR",
-          "value": {
-            "@type": "QuantitativeValue",
-            "value": 35000,
-            "unitText": "MONTH"
-          }
-        },
-        "directApply": true
       }
     ]
   },

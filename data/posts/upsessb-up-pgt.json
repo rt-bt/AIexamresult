@@ -259,7 +259,7 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Latest Jobs",
+            "name": "Latest Vacancy",
             "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
@@ -269,6 +269,38 @@
             "item": "https://www.aiexamresult.com/post/upsessb-up-pgt"
           }
         ]
+      },
+      {
+        "@type": "JobPosting",
+        "@id": "https://www.aiexamresult.com/post/upsessb-up-pgt#jobposting",
+        "title": "UP PGT 2022 Waiting List | Advt No. 02/2022",
+        "description": "UP PGT 2022 Waiting List | Advt No. 02/2022 | UPSESSB PGT 2026 Download Official Notice, Check Eligibility, Age Limit, Admit Card Date, Form Date and More",
+        "datePosted": "2026-08-25T00:00:00.000Z",
+        "employmentType": "FULL_TIME",
+        "hiringOrganization": {
+          "@type": "Organization",
+          "name": "Government of India / Public Sector",
+          "sameAs": "https://www.aiexamresult.com"
+        },
+        "jobLocation": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "India",
+            "addressRegion": "All States",
+            "addressCountry": "IN"
+          }
+        },
+        "baseSalary": {
+          "@type": "MonetaryAmount",
+          "currency": "INR",
+          "value": {
+            "@type": "QuantitativeValue",
+            "value": 35000,
+            "unitText": "MONTH"
+          }
+        },
+        "directApply": true
       }
     ]
   },

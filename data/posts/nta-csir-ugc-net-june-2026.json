@@ -126,10 +126,10 @@
           },
           {
             "@type": "Question",
-            "name": "How to check & download NTA CSIR UGC NET June Score Card 2026 result?",
+            "name": "How to check & download NTA CSIR UGC NET June Score Card 2026 notification?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Click on the direct official link in the Important Links table above or visit the commission official portal to download the result."
+              "text": "Click on the direct official link in the Important Links table above or visit the commission official portal to download the notification."
             }
           }
         ]
@@ -147,7 +147,7 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Latest Jobs",
+            "name": "Latest Vacancy",
             "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
@@ -157,6 +157,38 @@
             "item": "https://www.aiexamresult.com/post/nta-csir-ugc-net-june-2026"
           }
         ]
+      },
+      {
+        "@type": "JobPosting",
+        "@id": "https://www.aiexamresult.com/post/nta-csir-ugc-net-june-2026#jobposting",
+        "title": "NTA CSIR UGC NET June Score Card 2026",
+        "description": "Short Details : National Testing Agency (NTA-CSIR UGC NET) has released the score card for the CSIR UGC NET June 2026 Examination on the official website of the NTA in this week. The online application process for NTA CSIR UGC NET June online Form 2026 were accepted from 27 May 2026 to 19 June 2026. The Exam was conducted on 17,18 July 2026. Candidates who appeared in this examination can download their NTA CSIR UGC NET June Score Card 2026, which are given below.",
+        "datePosted": "2026-09-10T00:00:00.000Z",
+        "employmentType": "FULL_TIME",
+        "hiringOrganization": {
+          "@type": "Organization",
+          "name": "Government of India / Public Sector",
+          "sameAs": "https://www.aiexamresult.com"
+        },
+        "jobLocation": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "India",
+            "addressRegion": "All States",
+            "addressCountry": "IN"
+          }
+        },
+        "baseSalary": {
+          "@type": "MonetaryAmount",
+          "currency": "INR",
+          "value": {
+            "@type": "QuantitativeValue",
+            "value": 35000,
+            "unitText": "MONTH"
+          }
+        },
+        "directApply": true
       }
     ]
   },

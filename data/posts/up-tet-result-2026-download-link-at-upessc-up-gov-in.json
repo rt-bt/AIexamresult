@@ -72,10 +72,10 @@
           },
           {
             "@type": "Question",
-            "name": "How to check & download यूपी टीईटी रिजल्ट 2026 जारी: रिजल्ट डाउनलोड लिंक, पासिंग मार्क्स, सर्टिफिकेट वैधता और पूरी जानकारी result?",
+            "name": "How to check & download यूपी टीईटी रिजल्ट 2026 जारी: रिजल्ट डाउनलोड लिंक, पासिंग मार्क्स, सर्टिफिकेट वैधता और पूरी जानकारी notification?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Click on the direct official link in the Important Links table above or visit the commission official portal to download the result."
+              "text": "Click on the direct official link in the Important Links table above or visit the commission official portal to download the notification."
             }
           }
         ]
@@ -93,7 +93,7 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Latest Jobs",
+            "name": "Latest Vacancy",
             "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
@@ -103,6 +103,38 @@
             "item": "https://www.aiexamresult.com/post/up-tet-result-2026-download-link-at-upessc-up-gov-in"
           }
         ]
+      },
+      {
+        "@type": "JobPosting",
+        "@id": "https://www.aiexamresult.com/post/up-tet-result-2026-download-link-at-upessc-up-gov-in#jobposting",
+        "title": "यूपी टीईटी रिजल्ट 2026 जारी: रिजल्ट डाउनलोड लिंक, पासिंग मार्क्स, सर्टिफिकेट वैधता और पूरी जानकारी",
+        "description": "यूपी टीईटी परिणाम 2026 जारी: उत्तर प्रदेश शिक्षा सेवा चयन आयोग ने शिक्षक पात्रता परीक्षा का परिणाम 26 अगस्त 2026 को घोषित कर दिया है। परीक्षा 2, 3 और 4 जुलाई 2026 को प्रदेश के 60 जनपदों में कुल 955 परीक्षा केंद्रों पर पांच पालियों में आयोजित की गई थी। प्राथमिक स्तर की परीक्षा में शामिल 7,13,648 अभ्यर्थियों में से 5,71,435 अभ्यर्थी सफल हुए हैं, जबकि उच्च प्राथमिक स्तर पर 10,57,021 अभ्यर्थियों में से 7,59,513 अभ्यर्थी यूपीटीईटी में उत्तीर्ण घोषित किए गए हैं। वहीं प्राथमिक स्तर के 1,22,405 कार्यरत शिक्षकों में से 93,387 तथा उच्च प्राथमिक स्तर के 1,46,394 कार्यरत शिक्षकों में से 1,13,384 शिक्षक सफल हुए हैं। अभ्यर्थी अपना परिणाम आयोग की आधिकारिक वेबसाइट पर देख सकते हैं।",
+        "datePosted": "2026-09-02T00:00:00.000Z",
+        "employmentType": "FULL_TIME",
+        "hiringOrganization": {
+          "@type": "Organization",
+          "name": "Government of India / Public Sector",
+          "sameAs": "https://www.aiexamresult.com"
+        },
+        "jobLocation": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "India",
+            "addressRegion": "All States",
+            "addressCountry": "IN"
+          }
+        },
+        "baseSalary": {
+          "@type": "MonetaryAmount",
+          "currency": "INR",
+          "value": {
+            "@type": "QuantitativeValue",
+            "value": 35000,
+            "unitText": "MONTH"
+          }
+        },
+        "directApply": true
       }
     ]
   },

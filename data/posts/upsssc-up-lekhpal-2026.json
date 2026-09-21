@@ -152,7 +152,7 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Latest Jobs",
+            "name": "Latest Vacancy",
             "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
@@ -162,6 +162,38 @@
             "item": "https://www.aiexamresult.com/post/upsssc-up-lekhpal-2026"
           }
         ]
+      },
+      {
+        "@type": "JobPosting",
+        "@id": "https://www.aiexamresult.com/post/upsssc-up-lekhpal-2026#jobposting",
+        "title": "UPSSSC Lekhpal Mains Document Upload 2026",
+        "description": "Short Information : Uttar Pradesh Subordinate Services Selection Commission (UPSSSC) has released the result for the recruitment of Lekhpal posts on the official website. This recruitment was released for 7994 posts. Applications for the UPSSSC Lekhpal Recruitment 2025 were accepted from 29 December 2025 to 28 January 2026. The online examination was held on 21 May 2026. Candidates who appeared for this examination can download their UPSSSC Lekhpal Result 2026 from the link given below.",
+        "datePosted": "2026-07-01T00:00:00.000Z",
+        "employmentType": "FULL_TIME",
+        "hiringOrganization": {
+          "@type": "Organization",
+          "name": "Government of India / Public Sector",
+          "sameAs": "https://www.aiexamresult.com"
+        },
+        "jobLocation": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "India",
+            "addressRegion": "All States",
+            "addressCountry": "IN"
+          }
+        },
+        "baseSalary": {
+          "@type": "MonetaryAmount",
+          "currency": "INR",
+          "value": {
+            "@type": "QuantitativeValue",
+            "value": 35000,
+            "unitText": "MONTH"
+          }
+        },
+        "directApply": true
       }
     ]
   },

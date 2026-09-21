@@ -98,10 +98,10 @@
           },
           {
             "@type": "Question",
-            "name": "How to check & download Union Bank of India Apprentices Result 2026 notification?",
+            "name": "How to check & download Union Bank of India Apprentices Result 2026 result?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Click on the direct official link in the Important Links table above or visit the commission official portal to download the notification."
+              "text": "Click on the direct official link in the Important Links table above or visit the commission official portal to download the result."
             }
           }
         ]
@@ -119,8 +119,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Result",
-            "item": "https://www.aiexamresult.com/result"
+            "name": "Results",
+            "item": "https://www.aiexamresult.com/results"
           },
           {
             "@type": "ListItem",
@@ -129,38 +129,6 @@
             "item": "https://www.aiexamresult.com/post/union-bank-of-india-apprentices-2026"
           }
         ]
-      },
-      {
-        "@type": "JobPosting",
-        "@id": "https://www.aiexamresult.com/post/union-bank-of-india-apprentices-2026#jobposting",
-        "title": "Union Bank of India Apprentices Result 2026",
-        "description": "Short Information : Union Bank of India (UBI) has released the Result for the post of Apprentice. This recruitment was released for 1865 posts. Applications for the Union Bank of India Apprentices Recruitment 2026 were accepted from 29 April 2026, to19 May 2026. The written examination was conducted on 07 June 2026. Candidates who had appeared in this examination can download their Union Bank of India Apprentices Result 2026 from the link given below.",
-        "datePosted": "2026-07-25T00:00:00.000Z",
-        "employmentType": "FULL_TIME",
-        "hiringOrganization": {
-          "@type": "Organization",
-          "name": "Government of India / Public Sector",
-          "sameAs": "https://www.aiexamresult.com"
-        },
-        "jobLocation": {
-          "@type": "Place",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "India",
-            "addressRegion": "All States",
-            "addressCountry": "IN"
-          }
-        },
-        "baseSalary": {
-          "@type": "MonetaryAmount",
-          "currency": "INR",
-          "value": {
-            "@type": "QuantitativeValue",
-            "value": 35000,
-            "unitText": "MONTH"
-          }
-        },
-        "directApply": true
       }
     ]
   },

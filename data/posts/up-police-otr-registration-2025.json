@@ -87,10 +87,10 @@
           },
           {
             "@type": "Question",
-            "name": "How to check & download UP Police OTR Registration 2025: Apply Online Now | Sarkari Result notification?",
+            "name": "How to check & download UP Police OTR Registration 2025: Apply Online Now | Sarkari Result result?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Click on the direct official link in the Important Links table above or visit the commission official portal to download the notification."
+              "text": "Click on the direct official link in the Important Links table above or visit the commission official portal to download the result."
             }
           }
         ]
@@ -108,8 +108,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Result",
-            "item": "https://www.aiexamresult.com/result"
+            "name": "Results",
+            "item": "https://www.aiexamresult.com/results"
           },
           {
             "@type": "ListItem",
@@ -118,38 +118,6 @@
             "item": "https://www.aiexamresult.com/post/up-police-otr-registration-2025"
           }
         ]
-      },
-      {
-        "@type": "JobPosting",
-        "@id": "https://www.aiexamresult.com/post/up-police-otr-registration-2025#jobposting",
-        "title": "UP Police OTR Registration 2025: Apply Online Now | Sarkari Result",
-        "description": "Author: Sarkari Exam Team\nTag: 10th / 12th / Graduate / Post Graduate Job",
-        "datePosted": "2025-08-10T00:00:00.000Z",
-        "employmentType": "FULL_TIME",
-        "hiringOrganization": {
-          "@type": "Organization",
-          "name": "Government of India / Public Sector",
-          "sameAs": "https://www.aiexamresult.com"
-        },
-        "jobLocation": {
-          "@type": "Place",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "India",
-            "addressRegion": "All States",
-            "addressCountry": "IN"
-          }
-        },
-        "baseSalary": {
-          "@type": "MonetaryAmount",
-          "currency": "INR",
-          "value": {
-            "@type": "QuantitativeValue",
-            "value": 35000,
-            "unitText": "MONTH"
-          }
-        },
-        "directApply": true
       }
     ]
   },

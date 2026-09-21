@@ -112,7 +112,7 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Latest Jobs",
+            "name": "Latest Vacancy",
             "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
@@ -122,6 +122,38 @@
             "item": "https://www.aiexamresult.com/post/uptac-admissions-2026"
           }
         ]
+      },
+      {
+        "@type": "JobPosting",
+        "@id": "https://www.aiexamresult.com/post/uptac-admissions-2026#jobposting",
+        "title": "UPTAC Admissions Online Registration 2026",
+        "description": "Short Information : Uttar Pradesh Technical Admission & Counselling (UPTAC) has released the notification for the B.Tech / M.Tech / B.Arch / MCA / MBA / Other Courses Through CUET UG 2026 , JEEMAIN 2026 , NATA 2026 and CUET PG 2026 under UPTAC. The online application process for UPTAC Admissions Online Registration 2026 has started on 25 May 2026, and candidates can apply till 15 June 2026. Candidates must check the complete details for UPTAC Admissions Online Registration 2026, which are given below.",
+        "datePosted": "2026-06-05T00:00:00.000Z",
+        "employmentType": "FULL_TIME",
+        "hiringOrganization": {
+          "@type": "Organization",
+          "name": "Government of India / Public Sector",
+          "sameAs": "https://www.aiexamresult.com"
+        },
+        "jobLocation": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "India",
+            "addressRegion": "All States",
+            "addressCountry": "IN"
+          }
+        },
+        "baseSalary": {
+          "@type": "MonetaryAmount",
+          "currency": "INR",
+          "value": {
+            "@type": "QuantitativeValue",
+            "value": 35000,
+            "unitText": "MONTH"
+          }
+        },
+        "directApply": true
       }
     ]
   },

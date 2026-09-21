@@ -310,10 +310,10 @@
           },
           {
             "@type": "Question",
-            "name": "How to check & download RRB NTPC 10+2 Level 06/2024 Final Result Out for CEN No. 06/2024 #RRBNTPC2025 notification?",
+            "name": "How to check & download RRB NTPC 10+2 Level 06/2024 Final Result Out for CEN No. 06/2024 #RRBNTPC2025 result?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Click on the direct official link in the Important Links table above or visit the commission official portal to download the notification."
+              "text": "Click on the direct official link in the Important Links table above or visit the commission official portal to download the result."
             }
           }
         ]
@@ -331,8 +331,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Result",
-            "item": "https://www.aiexamresult.com/result"
+            "name": "Results",
+            "item": "https://www.aiexamresult.com/results"
           },
           {
             "@type": "ListItem",

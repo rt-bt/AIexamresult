@@ -301,7 +301,7 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Latest Jobs",
+            "name": "Latest Vacancy",
             "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
@@ -311,6 +311,38 @@
             "item": "https://www.aiexamresult.com/post/IRDAI-AM-2024"
           }
         ]
+      },
+      {
+        "@type": "JobPosting",
+        "@id": "https://www.aiexamresult.com/post/IRDAI-AM-2024#jobposting",
+        "title": "IRDAI Assistant Manager AM Phase-I Score Card 2024",
+        "description": "Insurance Regulatory and Development Authority of India (IRDAI) Are Recently Uploaded Phase-I Score Card for the Post of Assistant Manger (Various Stream) Recruitment 2024 (1376 Post). All Registered Candidates Can Download Phase-I Score Card Now in the Given Link Below.",
+        "datePosted": "2024-12-22T00:00:00.000Z",
+        "employmentType": "FULL_TIME",
+        "hiringOrganization": {
+          "@type": "Organization",
+          "name": "Government of India / Public Sector",
+          "sameAs": "https://www.aiexamresult.com"
+        },
+        "jobLocation": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "India",
+            "addressRegion": "All States",
+            "addressCountry": "IN"
+          }
+        },
+        "baseSalary": {
+          "@type": "MonetaryAmount",
+          "currency": "INR",
+          "value": {
+            "@type": "QuantitativeValue",
+            "value": 35000,
+            "unitText": "MONTH"
+          }
+        },
+        "directApply": true
       }
     ]
   },

@@ -111,10 +111,10 @@
           },
           {
             "@type": "Question",
-            "name": "How to check & download UPSSSC Assistant Statistical Officer ASO Mains Fee Payment 2026 admit card?",
+            "name": "How to check & download UPSSSC Assistant Statistical Officer ASO Mains Fee Payment 2026 notification?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Click on the direct official link in the Important Links table above or visit the commission official portal to download the admit card."
+              "text": "Click on the direct official link in the Important Links table above or visit the commission official portal to download the notification."
             }
           }
         ]
@@ -132,7 +132,7 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Latest Jobs",
+            "name": "Latest Vacancy",
             "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
@@ -142,6 +142,38 @@
             "item": "https://www.aiexamresult.com/post/upsssc-assistant-statistical-officer-aso-2026"
           }
         ]
+      },
+      {
+        "@type": "JobPosting",
+        "@id": "https://www.aiexamresult.com/post/upsssc-assistant-statistical-officer-aso-2026#jobposting",
+        "title": "UPSSSC Assistant Statistical Officer ASO Mains Fee Payment 2026",
+        "description": "Short Information : Uttar Pradesh Subordinate Services Selection Commission (UPSSSC) has released a mains fee payment for the recruitment of Assistant Statistical Officer (ASO) posts on the official website of UPSSSC. This recruitment has been issued for 929 posts. The online application process for UPSSSC Assistant Statistical Officer ASO Recruitment 2026 were accepted from 21 April 2026, to 15 May 2026. Candidates must check the complete details for UPSSSC Assistant Statistical Officer ASO Mains Fee Payment 2026 given below.",
+        "datePosted": "2026-07-03T00:00:00.000Z",
+        "employmentType": "FULL_TIME",
+        "hiringOrganization": {
+          "@type": "Organization",
+          "name": "Government of India / Public Sector",
+          "sameAs": "https://www.aiexamresult.com"
+        },
+        "jobLocation": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "India",
+            "addressRegion": "All States",
+            "addressCountry": "IN"
+          }
+        },
+        "baseSalary": {
+          "@type": "MonetaryAmount",
+          "currency": "INR",
+          "value": {
+            "@type": "QuantitativeValue",
+            "value": 35000,
+            "unitText": "MONTH"
+          }
+        },
+        "directApply": true
       }
     ]
   },

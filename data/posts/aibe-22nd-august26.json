@@ -140,7 +140,7 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Latest Jobs",
+            "name": "Latest Vacancy",
             "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
@@ -150,6 +150,38 @@
             "item": "https://www.aiexamresult.com/post/aibe-22nd-august26"
           }
         ]
+      },
+      {
+        "@type": "JobPosting",
+        "@id": "https://www.aiexamresult.com/post/aibe-22nd-august26#jobposting",
+        "title": "All India Bar Examination AIBE 22nd Examination 2026 Apply Online",
+        "description": "All India Bar Examination AIBE 22nd has released the online application for AIBE XXII 2026 will start from 19 August 2026 and the last date to apply will be 27 October 2026.candidates should read the AIBE XXII 2026 information brochure for all the information related to the AIBE exam like syllabus, eligibility, age limit, fees, information and other types of information and then apply.",
+        "datePosted": "2026-08-21T00:00:00.000Z",
+        "employmentType": "FULL_TIME",
+        "hiringOrganization": {
+          "@type": "Organization",
+          "name": "Government of India / Public Sector",
+          "sameAs": "https://www.aiexamresult.com"
+        },
+        "jobLocation": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "India",
+            "addressRegion": "All States",
+            "addressCountry": "IN"
+          }
+        },
+        "baseSalary": {
+          "@type": "MonetaryAmount",
+          "currency": "INR",
+          "value": {
+            "@type": "QuantitativeValue",
+            "value": 35000,
+            "unitText": "MONTH"
+          }
+        },
+        "directApply": true
       }
     ]
   },

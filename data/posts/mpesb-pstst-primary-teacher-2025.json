@@ -151,8 +151,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Admission",
-            "item": "https://www.aiexamresult.com/admission"
+            "name": "Admissions",
+            "item": "https://www.aiexamresult.com/admissions"
           },
           {
             "@type": "ListItem",
@@ -161,38 +161,6 @@
             "item": "https://www.aiexamresult.com/post/mpesb-pstst-primary-teacher-2025"
           }
         ]
-      },
-      {
-        "@type": "JobPosting",
-        "@id": "https://www.aiexamresult.com/post/mpesb-pstst-primary-teacher-2025#jobposting",
-        "title": "MPESB Primary Teacher PSTST 2025 Upload Special DELED Document",
-        "description": "Short Information : Madhya Pradesh Professional Selection Board (MPESB) has released the Result for the post of Primary School Prathamik Shikshak MP PTST. This recruitment was released for 13089 posts. Applications for the MPESB PSTST Primary Teacher Recruitment 2025 were accepted from July 18, 2025, to August 25, 2025. The written examination is going to be conducted on 09 October 2025. Candidates who appeared for this examination can download their MPESB PSTST Primary Teacher Result 2026 from the link given below.",
-        "datePosted": "2026-06-24T00:00:00.000Z",
-        "employmentType": "FULL_TIME",
-        "hiringOrganization": {
-          "@type": "Organization",
-          "name": "Government of India / Public Sector",
-          "sameAs": "https://www.aiexamresult.com"
-        },
-        "jobLocation": {
-          "@type": "Place",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "India",
-            "addressRegion": "All States",
-            "addressCountry": "IN"
-          }
-        },
-        "baseSalary": {
-          "@type": "MonetaryAmount",
-          "currency": "INR",
-          "value": {
-            "@type": "QuantitativeValue",
-            "value": 35000,
-            "unitText": "MONTH"
-          }
-        },
-        "directApply": true
       }
     ]
   },

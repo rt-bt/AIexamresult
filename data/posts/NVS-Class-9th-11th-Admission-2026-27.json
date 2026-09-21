@@ -239,7 +239,7 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Latest Jobs",
+            "name": "Latest Vacancy",
             "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
@@ -249,6 +249,38 @@
             "item": "https://www.aiexamresult.com/post/NVS-Class-9th-11th-Admission-2026-27"
           }
         ]
+      },
+      {
+        "@type": "JobPosting",
+        "@id": "https://www.aiexamresult.com/post/NVS-Class-9th-11th-Admission-2026-27#jobposting",
+        "title": "Navodaya Vidyalaya Samiti (NVS)",
+        "description": "NVS Class 9th & 11th Lateral Entry Admission 2026-27 Online Form Live Now! Apply from 02 September 2026 to 30 September 2026. Exam on 10 April 2027. No application fee. Class 8/10 studying students eligible. Trending: NVS Class 9 form, JNV Class 11 admission. (Updated 03 September 2026)",
+        "datePosted": "2026-09-01T00:00:00.000Z",
+        "employmentType": "FULL_TIME",
+        "hiringOrganization": {
+          "@type": "Organization",
+          "name": "Government of India / Public Sector",
+          "sameAs": "https://www.aiexamresult.com"
+        },
+        "jobLocation": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "India",
+            "addressRegion": "All States",
+            "addressCountry": "IN"
+          }
+        },
+        "baseSalary": {
+          "@type": "MonetaryAmount",
+          "currency": "INR",
+          "value": {
+            "@type": "QuantitativeValue",
+            "value": 35000,
+            "unitText": "MONTH"
+          }
+        },
+        "directApply": true
       }
     ]
   },

@@ -50,10 +50,10 @@
           },
           {
             "@type": "Question",
-            "name": "How to check & download Rajasthan SI Marks 2026 Out, rpsc.rajasthan.gov.in से राजस्थान एसआई का स्कोरकार्ड डाउनलोड करें notification?",
+            "name": "How to check & download Rajasthan SI Marks 2026 Out, rpsc.rajasthan.gov.in से राजस्थान एसआई का स्कोरकार्ड डाउनलोड करें result?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Click on the direct official link in the Important Links table above or visit the commission official portal to download the notification."
+              "text": "Click on the direct official link in the Important Links table above or visit the commission official portal to download the result."
             }
           }
         ]
@@ -71,8 +71,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Result",
-            "item": "https://www.aiexamresult.com/result"
+            "name": "Results",
+            "item": "https://www.aiexamresult.com/results"
           },
           {
             "@type": "ListItem",
@@ -81,38 +81,6 @@
             "item": "https://www.aiexamresult.com/post/rajasthan-police-si-final-result-2026-out"
           }
         ]
-      },
-      {
-        "@type": "JobPosting",
-        "@id": "https://www.aiexamresult.com/post/rajasthan-police-si-final-result-2026-out#jobposting",
-        "title": "Rajasthan SI Marks 2026 Out, rpsc.rajasthan.gov.in से राजस्थान एसआई का स्कोरकार्ड डाउनलोड करें",
-        "description": "Rajasthan SI Marks 2026 को लेकर उम्मीदवारों के लिए बड़ी खबर है। राजस्थान लोक सेवा आयोग (RPSC) ने Rajasthan SI Marks 2026 जारी कर दिए हैं। अभ्यर्थी अब अपने RPSC SI Marks 2026 आधिकारिक वेबसाइट पर जाकर ऑनलाइन चेक कर सकते हैं। आयोग ने Rajasthan Police SI Result 2026 के बाद उम्मीदवारों के प्राप्तांक उपलब्ध कराए हैं, जिससे अभ्यर्थी अपने प्रदर्शन का विस्तृत आकलन कर सकते हैं। RPSC SI Result 2026 में शामिल उम्मीदवारों को अपने अंक देखने के लिए आयोग की वेबसाइट पर संबंधित लिंक खोलना होगा। इसके बाद आवश्यक लॉगिन विवरण दर्ज करके मार्क्स चेक किए जा सकते हैं। उम्मीदवार अपने Rajasthan SI Marks डाउनलोड करके भविष्य के संदर्भ के लिए सुरक्षित रख सकते हैं।",
-        "datePosted": "2026-08-23T00:00:00.000Z",
-        "employmentType": "FULL_TIME",
-        "hiringOrganization": {
-          "@type": "Organization",
-          "name": "Government of India / Public Sector",
-          "sameAs": "https://www.aiexamresult.com"
-        },
-        "jobLocation": {
-          "@type": "Place",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "India",
-            "addressRegion": "All States",
-            "addressCountry": "IN"
-          }
-        },
-        "baseSalary": {
-          "@type": "MonetaryAmount",
-          "currency": "INR",
-          "value": {
-            "@type": "QuantitativeValue",
-            "value": 35000,
-            "unitText": "MONTH"
-          }
-        },
-        "directApply": true
       }
     ]
   },

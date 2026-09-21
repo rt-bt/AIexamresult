@@ -724,10 +724,10 @@
           },
           {
             "@type": "Question",
-            "name": "How to check & download Railway RRB Paramedical Staff CEN 03/2025 CBT-I Result/ DV Call Letter 2026 - Out for 434 Post admit card?",
+            "name": "How to check & download Railway RRB Paramedical Staff CEN 03/2025 CBT-I Result/ DV Call Letter 2026 - Out for 434 Post result?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Click on the direct official link in the Important Links table above or visit the commission official portal to download the admit card."
+              "text": "Click on the direct official link in the Important Links table above or visit the commission official portal to download the result."
             }
           }
         ]
@@ -745,8 +745,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Result",
-            "item": "https://www.aiexamresult.com/result"
+            "name": "Results",
+            "item": "https://www.aiexamresult.com/results"
           },
           {
             "@type": "ListItem",
