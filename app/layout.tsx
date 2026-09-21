@@ -4,7 +4,6 @@ import Script from "next/script";
 import { Providers } from "@/components/providers";
 import { InstallBanner } from "@/components/site/install-banner";
 import { CookieConsent } from "@/components/site/cookie-consent";
-import SplashCursor from "@/components/SplashCursor";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
@@ -281,18 +280,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         />
       </head>
       <body className={`${inter.variable} font-sans antialiased`}>
-        <SplashCursor
-          DENSITY_DISSIPATION={3.5}
-          VELOCITY_DISSIPATION={2}
-          PRESSURE={0.1}
-          CURL={3}
-          SPLAT_RADIUS={0.2}
-          SPLAT_FORCE={6000}
-          COLOR_UPDATE_SPEED={10}
-          SHADING
-          RAINBOW_MODE={false}
-          COLOR="#A855F7"
-        />
         <Providers>{children}</Providers>
         <InstallBanner />
         <CookieConsent />
