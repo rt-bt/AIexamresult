@@ -42,6 +42,7 @@ export default function HomePage() {
             gradientFrom="#0D9488"
             gradientTo="#14B8A6"
             glowColor="#0D9488"
+            opacity={0.2}
           />
           <div className="relative z-10">
             <CategoryColumns sections={categorySections} />

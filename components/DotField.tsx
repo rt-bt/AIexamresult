@@ -16,6 +16,7 @@ export interface DotFieldProps {
   gradientFrom?: string;
   gradientTo?: string;
   glowColor?: string;
+  opacity?: number;
   style?: React.CSSProperties;
   className?: string;
   children?: React.ReactNode;
@@ -34,6 +35,7 @@ export function DotField({
   gradientFrom = "#0D9488",
   gradientTo = "#14B8A6",
   glowColor = "#0D9488",
+  opacity = 0.2,
   style,
   className = "",
   children,
@@ -393,6 +395,7 @@ export function DotField({
         width: "100%",
         height: "100%",
         pointerEvents: "none",
+        opacity,
         ...style,
       }}
       aria-hidden="true"
