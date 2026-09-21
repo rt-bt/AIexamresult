@@ -125,17 +125,7 @@ function toPostCard(items: ({ title: string; url: string; category: string; slug
   const s2 = getScraped();
   const nowMs = Date.now();
 
-  const sorted = [...items].sort((a, b) => {
-    const dateStrA = a.publishedAt || a.publishedDate || s2?.posts?.[a.slug]?.publishedAt || s2?.posts?.[a.slug]?.publishedDate;
-    const dateStrB = b.publishedAt || b.publishedDate || s2?.posts?.[b.slug]?.publishedAt || s2?.posts?.[b.slug]?.publishedDate;
-    let da = dateStrA ? (parseDate(dateStrA)?.getTime() ?? 0) : 0;
-    let db = dateStrB ? (parseDate(dateStrB)?.getTime() ?? 0) : 0;
-    if (da > nowMs) da = 0;
-    if (db > nowMs) db = 0;
-    return db - da;
-  });
-
-  return sorted.map((item) => {
+  return items.map((item) => {
     const detail = s2?.posts?.[item.slug];
     let permanentDate = item.publishedAt || item.publishedDate || detail?.publishedAt || detail?.publishedDate || "";
     const parsedPerm = parseDate(permanentDate);

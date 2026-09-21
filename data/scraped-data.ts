@@ -2,6 +2,14 @@
 export const scrapedData = {
   "results": [
     {
+      "title": "SSC JHT Option Cum Preference Form 2026",
+      "url": "/post/ssc-jht-2025",
+      "category": "results",
+      "slug": "ssc-jht-2025",
+      "publishedDate": "8 September 2026",
+      "publishedAt": "2026-09-08T15:00:00.000Z"
+    },
+    {
       "title": "UPSSSC Assistant Boring Technician Final Answer Key 2026",
       "url": "/post/upsssc-assistant-boring-technician-2026",
       "category": "results",
@@ -992,14 +1000,6 @@ export const scrapedData = {
       "slug": "uptet-2026",
       "publishedDate": "9 September 2026",
       "publishedAt": "2026-09-08T18:30:00.000Z"
-    },
-    {
-      "title": "SSC JHT Option Cum Preference Form 2026",
-      "url": "/post/ssc-jht-2025",
-      "category": "results",
-      "slug": "ssc-jht-2025",
-      "publishedDate": "8 September 2026",
-      "publishedAt": "2026-09-08T15:00:00.000Z"
     },
     {
       "title": "UPSC CAPF AC Name Wise Result 2026",
@@ -4718,20 +4718,60 @@ export const scrapedData = {
   ],
   "latestJobs": [
     {
-      "title": "RCFL Apprentice Online Form 2026 – Last Date",
-      "url": "/post/rcfl-apprentice-2026",
+      "title": "IBPS RRB XV 15th Scale-I, II, III Online Form 2026 (13706 Posts) – Last Date",
+      "url": "/post/ibps-rrb-15th-2026",
       "category": "latestJobs",
-      "slug": "rcfl-apprentice-2026",
-      "publishedDate": "2026-09-20T13:20:08+05:30",
-      "publishedAt": "2026-09-20T07:50:08.000Z"
+      "slug": "ibps-rrb-15th-2026",
+      "publishedDate": "2026-09-21T10:47:33+05:30",
+      "publishedAt": "2026-09-21T05:17:33.000Z"
     },
     {
-      "title": "RUHS Medical Officer Direct Recruitment 2026 Apply Online for 600 Post",
-      "url": "/post/ruhs-medical-officer-sep26",
+      "title": "India Post Office GDS Online Form 2026 (23757 Posts) – Last Date",
+      "url": "/post/india-post-office-gds-2026",
       "category": "latestJobs",
-      "slug": "ruhs-medical-officer-sep26",
-      "publishedDate": "20 September 2026",
-      "publishedAt": "2026-09-19T18:30:00.000Z"
+      "slug": "india-post-office-gds-2026",
+      "publishedDate": "2026-09-21T10:47:18+05:30",
+      "publishedAt": "2026-09-21T05:17:18.000Z"
+    },
+    {
+      "title": "SBI Bank Trade Finance Officer TFO Online Form 2026 – Extend",
+      "url": "/post/sbi-bank-tfo-2026",
+      "category": "latestJobs",
+      "slug": "sbi-bank-tfo-2026",
+      "publishedDate": "2026-09-20T13:20:15+05:30",
+      "publishedAt": "2026-09-20T07:50:15.000Z"
+    },
+    {
+      "title": "UPESSC PRT Assistant Teacher Online Form 2026 (12405 Posts)",
+      "url": "/post/upessc-prt-assistant-teacher-2026",
+      "category": "latestJobs",
+      "slug": "upessc-prt-assistant-teacher-2026",
+      "publishedDate": "2026-09-19T13:14:30+05:30",
+      "publishedAt": "2026-09-19T07:44:30.000Z"
+    },
+    {
+      "title": "UPESSC PGT Teacher Online Form 2026 (2607 Posts)",
+      "url": "/post/upessc-pgt-teacher-2026",
+      "category": "latestJobs",
+      "slug": "upessc-pgt-teacher-2026",
+      "publishedDate": "2026-09-19T13:14:15+05:30",
+      "publishedAt": "2026-09-19T07:44:15.000Z"
+    },
+    {
+      "title": "SSC CHSL 10+2 Online Form 2026 (2536 Posts)",
+      "url": "/post/ssc-chsl-2026",
+      "category": "latestJobs",
+      "slug": "ssc-chsl-2026",
+      "publishedDate": "2026-09-19T13:14:11+05:30",
+      "publishedAt": "2026-09-19T07:44:11.000Z"
+    },
+    {
+      "title": "SSC CPO SI CAPF Online Form 2026 (1871 Posts)",
+      "url": "/post/ssc-cpo-si-capf-2026",
+      "category": "latestJobs",
+      "slug": "ssc-cpo-si-capf-2026",
+      "publishedDate": "2026-09-19T13:14:07+05:30",
+      "publishedAt": "2026-09-19T07:44:07.000Z"
     },
     {
       "title": "HPSC Food Safety Officer (FSO) Online Form 2026",
@@ -4748,6 +4788,742 @@ export const scrapedData = {
       "slug": "jharkhand-jssc-102-inter-level-jilcce-2026",
       "publishedDate": "2026-09-19T10:43:27+05:30",
       "publishedAt": "2026-09-19T05:13:27.000Z"
+    },
+    {
+      "title": "MPESB Primary & Middle School Teacher Online Form 2026 – Extend",
+      "url": "/post/mpesb-primary-middle-school-teacher-2026",
+      "category": "latestJobs",
+      "slug": "mpesb-primary-middle-school-teacher-2026",
+      "publishedDate": "2026-09-18T17:12:27+05:30",
+      "publishedAt": "2026-09-18T11:42:27.000Z"
+    },
+    {
+      "title": "UPSSSC Junior Engineer JE Agriculture Online Form 2026",
+      "url": "/post/upsssc-junior-engineer-je-agriculture-2026",
+      "category": "latestJobs",
+      "slug": "upsssc-junior-engineer-je-agriculture-2026",
+      "publishedDate": "2026-09-18T13:06:28+05:30",
+      "publishedAt": "2026-09-18T07:36:28.000Z"
+    },
+    {
+      "title": "MPESB Subedar Steno, ASI Online Form 2026",
+      "url": "/post/mpesb-subedar-steno-asi-2026",
+      "category": "latestJobs",
+      "slug": "mpesb-subedar-steno-asi-2026",
+      "publishedDate": "2026-09-17T19:58:56+05:30",
+      "publishedAt": "2026-09-17T14:28:56.000Z"
+    },
+    {
+      "title": "MP Police GD Constable Online Form 2026 (7500 Posts)",
+      "url": "/post/mpesb-mp-police-gd-constable-2026",
+      "category": "latestJobs",
+      "slug": "mpesb-mp-police-gd-constable-2026",
+      "publishedDate": "2026-09-17T10:19:28+05:30",
+      "publishedAt": "2026-09-17T04:49:28.000Z"
+    },
+    {
+      "title": "SSC Junior Engineer JE Online Form 2026 (1748 Posts)",
+      "url": "/post/ssc-junior-engineer-je-2026",
+      "category": "latestJobs",
+      "slug": "ssc-junior-engineer-je-2026",
+      "publishedDate": "2026-09-17T10:19:20+05:30",
+      "publishedAt": "2026-09-17T04:49:20.000Z"
+    },
+    {
+      "title": "Rajasthan Safai Karamchari Online Form 2026 (24752 Posts)",
+      "url": "/post/rajasthan-safai-karamchari-2026",
+      "category": "latestJobs",
+      "slug": "rajasthan-safai-karamchari-2026",
+      "publishedDate": "2026-09-17T10:19:12+05:30",
+      "publishedAt": "2026-09-17T04:49:12.000Z"
+    },
+    {
+      "title": "UP Anganwadi Bharti Online Form 2026 (Update)",
+      "url": "/post/up-anganwadi-bharti-2026",
+      "category": "latestJobs",
+      "slug": "up-anganwadi-bharti-2026",
+      "publishedDate": "2026-09-17T10:19:09+05:30",
+      "publishedAt": "2026-09-17T04:49:09.000Z"
+    },
+    {
+      "title": "BPSC School Teacher TRE 4.0 Online Form 2026 (32,388 Posts)",
+      "url": "/post/bpsc-school-teacher-tre-4-0-2026",
+      "category": "latestJobs",
+      "slug": "bpsc-school-teacher-tre-4-0-2026",
+      "publishedDate": "2026-09-17T10:19:04+05:30",
+      "publishedAt": "2026-09-17T04:49:04.000Z"
+    },
+    {
+      "title": "UPSC Engineering Services Pre Online Form 2027",
+      "url": "/post/upsc-engineering-services-pre-2027",
+      "category": "latestJobs",
+      "slug": "upsc-engineering-services-pre-2027",
+      "publishedDate": "2026-09-16T23:21:45+05:30",
+      "publishedAt": "2026-09-16T17:51:45.000Z"
+    },
+    {
+      "title": "RUHS Medical Officer Online Form 2026",
+      "url": "/post/ruhs-medical-officer-2026",
+      "category": "latestJobs",
+      "slug": "ruhs-medical-officer-2026",
+      "publishedDate": "2026-09-16T17:06:42+05:30",
+      "publishedAt": "2026-09-16T11:36:42.000Z"
+    },
+    {
+      "title": "UKSSSC Group C Scaler Online Form 2026",
+      "url": "/post/uksssc-group-c-scaler-2026",
+      "category": "latestJobs",
+      "slug": "uksssc-group-c-scaler-2026",
+      "publishedDate": "2026-09-16T16:41:47+05:30",
+      "publishedAt": "2026-09-16T11:11:47.000Z"
+    },
+    {
+      "title": "SBI SCO Wealth & Other Post Online Form 2026",
+      "url": "/post/sbi-sco-wealth-other-post-2026",
+      "category": "latestJobs",
+      "slug": "sbi-sco-wealth-other-post-2026",
+      "publishedDate": "2026-09-16T14:21:16+05:30",
+      "publishedAt": "2026-09-16T08:51:16.000Z"
+    },
+    {
+      "title": "MP High Court Assistant Grade III Online Form 2026 – Extend",
+      "url": "/post/mp-high-court-assistant-grade-iii-online-form-2026",
+      "category": "latestJobs",
+      "slug": "mp-high-court-assistant-grade-iii-online-form-2026",
+      "publishedDate": "2026-09-15T14:11:58+05:30",
+      "publishedAt": "2026-09-15T08:41:58.000Z"
+    },
+    {
+      "title": "Delhi High Court SPA & PA Online Form 2026",
+      "url": "/post/delhi-high-court-spa-and-pa-2026",
+      "category": "latestJobs",
+      "slug": "delhi-high-court-spa-and-pa-2026",
+      "publishedDate": "2026-09-15T11:52:08+05:30",
+      "publishedAt": "2026-09-15T06:22:08.000Z"
+    },
+    {
+      "title": "Railway RRB Paramedical CEN 05/2026 Online Form 2026",
+      "url": "/post/railway-rrb-paramedical-2026",
+      "category": "latestJobs",
+      "slug": "railway-rrb-paramedical-2026",
+      "publishedDate": "2026-09-15T11:38:56+05:30",
+      "publishedAt": "2026-09-15T06:08:56.000Z"
+    },
+    {
+      "title": "UPSSSC Veterinary Pharmacist Online Form 2026",
+      "url": "/post/upsssc-veterinary-pharmacist-2026",
+      "category": "latestJobs",
+      "slug": "upsssc-veterinary-pharmacist-2026",
+      "publishedDate": "2026-09-14T22:35:05+05:30",
+      "publishedAt": "2026-09-14T17:05:05.000Z"
+    },
+    {
+      "title": "Indian Army Dental Corps Online Form 2026",
+      "url": "/post/indian-army-dental-corps-2026",
+      "category": "latestJobs",
+      "slug": "indian-army-dental-corps-2026",
+      "publishedDate": "2026-09-14T17:39:28+05:30",
+      "publishedAt": "2026-09-14T12:09:28.000Z"
+    },
+    {
+      "title": "UP Special TET Online Form 2026",
+      "url": "/post/up-special-tet-2026",
+      "category": "latestJobs",
+      "slug": "up-special-tet-2026",
+      "publishedDate": "2026-09-14T10:13:41+05:30",
+      "publishedAt": "2026-09-14T04:43:41.000Z"
+    },
+    {
+      "title": "UPSC EPFO APFC Online Form 2026 – Extend",
+      "url": "/post/upsc-epfo-apfc-2026",
+      "category": "latestJobs",
+      "slug": "upsc-epfo-apfc-2026",
+      "publishedDate": "2026-09-12T00:28:59+05:30",
+      "publishedAt": "2026-09-11T18:58:59.000Z"
+    },
+    {
+      "title": "RCFL Management Trainee MT Online Form 2026",
+      "url": "/post/rcfl-management-trainee-mt-2026",
+      "category": "latestJobs",
+      "slug": "rcfl-management-trainee-mt-2026",
+      "publishedDate": "2026-09-11T17:24:26+05:30",
+      "publishedAt": "2026-09-11T11:54:26.000Z"
+    },
+    {
+      "title": "UPSC Various Post Online Form 2026",
+      "url": "/post/upsc-various-post-2026",
+      "category": "latestJobs",
+      "slug": "upsc-various-post-2026",
+      "publishedDate": "2026-09-11T17:19:22+05:30",
+      "publishedAt": "2026-09-11T11:49:22.000Z"
+    },
+    {
+      "title": "UPSSSC Senior Instructor Online Form 2026",
+      "url": "/post/upsssc-senior-instructor-2026",
+      "category": "latestJobs",
+      "slug": "upsssc-senior-instructor-2026",
+      "publishedDate": "2026-09-11T15:34:40+05:30",
+      "publishedAt": "2026-09-11T10:04:40.000Z"
+    },
+    {
+      "title": "UPSSSC Livestock Extension Officer Online Form 2026",
+      "url": "/post/upsssc-livestock-extension-officer-2026",
+      "category": "latestJobs",
+      "slug": "upsssc-livestock-extension-officer-2026",
+      "publishedDate": "2026-09-10T14:49:01+05:30",
+      "publishedAt": "2026-09-10T09:19:01.000Z"
+    },
+    {
+      "title": "Bank of Baroda SO Online Form 2026 (1100 Posts)",
+      "url": "/post/bank-of-baroda-so-2026",
+      "category": "latestJobs",
+      "slug": "bank-of-baroda-so-2026",
+      "publishedDate": "2026-09-10T14:48:30+05:30",
+      "publishedAt": "2026-09-10T09:18:30.000Z"
+    },
+    {
+      "title": "Railway RRC SR Apprentice Online Form 2026 (4471 Posts)",
+      "url": "/post/railway-rrc-sr-apprentice-2026",
+      "category": "latestJobs",
+      "slug": "railway-rrc-sr-apprentice-2026",
+      "publishedDate": "2026-09-10T14:48:26+05:30",
+      "publishedAt": "2026-09-10T09:18:26.000Z"
+    },
+    {
+      "title": "Bank of India Specialist Officer SO Online Form 2026",
+      "url": "/post/boi-so-2026",
+      "category": "latestJobs",
+      "slug": "boi-so-2026",
+      "publishedDate": "21 September 2026",
+      "publishedAt": "2026-09-21T06:32:22.342Z"
+    },
+    {
+      "title": "UKPSC Upper PCS Online Form 2026",
+      "url": "/post/ukpsc-upper-pcs-2026",
+      "category": "latestJobs",
+      "slug": "ukpsc-upper-pcs-2026",
+      "publishedDate": "21 September 2026",
+      "publishedAt": "2026-09-21T06:32:24.019Z"
+    },
+    {
+      "title": "BPSSC Bihar Police Company Commander Online Form 2026",
+      "url": "/post/bpssc-bihar-police-company-commander-2026",
+      "category": "latestJobs",
+      "slug": "bpssc-bihar-police-company-commander-2026",
+      "publishedDate": "2026-09-10T14:47:04+05:30",
+      "publishedAt": "2026-09-10T09:17:04.000Z"
+    },
+    {
+      "title": "MPESB MP Police SI, Subedar Online Form 2026",
+      "url": "/post/mpesb-mp-police-si-subedar-2026",
+      "category": "latestJobs",
+      "slug": "mpesb-mp-police-si-subedar-2026",
+      "publishedDate": "2026-09-10T14:47:00+05:30",
+      "publishedAt": "2026-09-10T09:17:00.000Z"
+    },
+    {
+      "title": "UPESSC UP Assistant Professor Online Form 2026",
+      "url": "/post/upessc-up-assistant-professor-2026",
+      "category": "latestJobs",
+      "slug": "upessc-up-assistant-professor-2026",
+      "publishedDate": "2026-09-10T14:46:55+05:30",
+      "publishedAt": "2026-09-10T09:16:55.000Z"
+    },
+    {
+      "title": "CSIR NGRI Technician Online Form 2026",
+      "url": "/post/csir-ngri-technician-2026",
+      "category": "latestJobs",
+      "slug": "csir-ngri-technician-2026",
+      "publishedDate": "21 September 2026",
+      "publishedAt": "2026-09-21T06:32:25.719Z"
+    },
+    {
+      "title": "RCFL Apprentice Online Form 2026",
+      "url": "/post/rcfl-apprentice-2026",
+      "category": "latestJobs",
+      "slug": "rcfl-apprentice-2026",
+      "publishedDate": "2026-09-20T13:20:08+05:30",
+      "publishedAt": "2026-09-20T07:50:08.000Z"
+    },
+    {
+      "title": "UIIC Administrative Officers AO Online Form 2026",
+      "url": "/post/uiic-ao-2026",
+      "category": "latestJobs",
+      "slug": "uiic-ao-2026",
+      "publishedDate": "2026-09-10T14:46:36+05:30",
+      "publishedAt": "2026-09-10T09:16:36.000Z"
+    },
+    {
+      "title": "SSC JHT Option Cum Preference Form 2026",
+      "url": "/post/ssc-jht-2025",
+      "category": "latestJobs",
+      "slug": "ssc-jht-2025",
+      "publishedDate": "8 September 2026",
+      "publishedAt": "2026-09-08T15:00:00.000Z"
+    },
+    {
+      "title": "GIMS Noida Staff Nurse Online Form 2026 – Extended",
+      "url": "/post/gims-noida-staff-nurse-2026",
+      "category": "latestJobs",
+      "slug": "gims-noida-staff-nurse-2026",
+      "publishedDate": "7 September 2026",
+      "publishedAt": "2026-09-07T04:42:35.000Z"
+    },
+    {
+      "title": "PFRDA Assistant Manager Online Form 2026",
+      "url": "/post/pfrda-assistant-manager-2026",
+      "category": "latestJobs",
+      "slug": "pfrda-assistant-manager-2026",
+      "publishedDate": "4 September 2026",
+      "publishedAt": "2026-09-04T07:41:38.000Z"
+    },
+    {
+      "title": "UPSSSC Computer Operator Online Form 2026",
+      "url": "/post/upsssc-computer-operator-2026",
+      "category": "latestJobs",
+      "slug": "upsssc-computer-operator-2026",
+      "publishedDate": "3 September 2026",
+      "publishedAt": "2026-09-03T12:02:25.000Z"
+    },
+    {
+      "title": "UPSC Geo-Scientist Online Form 2027",
+      "url": "/post/upsc-geo-scientist-2027",
+      "category": "latestJobs",
+      "slug": "upsc-geo-scientist-2027",
+      "publishedDate": "3 September 2026",
+      "publishedAt": "2026-09-03T10:11:25.000Z"
+    },
+    {
+      "title": "CONCOR MT, Assistant Officer Online Form 2026",
+      "url": "/post/concor-mt-assistant-officer-2026",
+      "category": "latestJobs",
+      "slug": "concor-mt-assistant-officer-2026",
+      "publishedDate": "2026-09-02T13:09:04+05:30",
+      "publishedAt": "2026-09-02T07:39:04.000Z"
+    },
+    {
+      "title": "NIC Scientific / Technical Assistant Online Form 2026",
+      "url": "/post/nic-scientific-technical-assistant-2026",
+      "category": "latestJobs",
+      "slug": "nic-scientific-technical-assistant-2026",
+      "publishedDate": "2026-09-02T12:36:36+05:30",
+      "publishedAt": "2026-09-02T07:06:36.000Z"
+    },
+    {
+      "title": "UKSSSC Group C Various Posts Online Form 2026",
+      "url": "/post/uksssc-group-c-various-posts-2026",
+      "category": "latestJobs",
+      "slug": "uksssc-group-c-various-posts-2026",
+      "publishedDate": "21 September 2026",
+      "publishedAt": "2026-09-21T06:32:27.423Z"
+    },
+    {
+      "title": "UCO Bank Specialist Officer SO Online Form 2026",
+      "url": "/post/uco-so-2026",
+      "category": "latestJobs",
+      "slug": "uco-so-2026",
+      "publishedDate": "2026-08-31T13:42:17+05:30",
+      "publishedAt": "2026-08-31T08:12:17.000Z"
+    },
+    {
+      "title": "HPPSC HPAS Online Form 2026",
+      "url": "/post/hppsc-hpas-online-form-2026",
+      "category": "latestJobs",
+      "slug": "hppsc-hpas-online-form-2026",
+      "publishedDate": "21 September 2026",
+      "publishedAt": "2026-09-21T06:32:29.085Z"
+    },
+    {
+      "title": "BHU Non Teaching Various Post Online Form 2026",
+      "url": "/post/bhu-non-teaching-various-post-2026",
+      "category": "latestJobs",
+      "slug": "bhu-non-teaching-various-post-2026",
+      "publishedDate": "2026-08-27T12:28:25+05:30",
+      "publishedAt": "2026-08-27T06:58:25.000Z"
+    },
+    {
+      "title": "UKPSC Veterinary Officers Online Form 2026",
+      "url": "/post/ukpsc-veterinary-officers-2026",
+      "category": "latestJobs",
+      "slug": "ukpsc-veterinary-officers-2026",
+      "publishedDate": "21 September 2026",
+      "publishedAt": "2026-09-21T06:32:30.764Z"
+    },
+    {
+      "title": "Indian Overseas Bank Security Guard Online Form 2026",
+      "url": "/post/indian-overseas-bank-security-guard-2026",
+      "category": "latestJobs",
+      "slug": "indian-overseas-bank-security-guard-2026",
+      "publishedDate": "21 September 2026",
+      "publishedAt": "2026-09-21T06:32:32.449Z"
+    },
+    {
+      "title": "Bihar BCECEB BSFC Various Post Online Form 2026",
+      "url": "/post/bihar-bceceb-bsfc-various-post-2026",
+      "category": "latestJobs",
+      "slug": "bihar-bceceb-bsfc-various-post-2026",
+      "publishedDate": "21 September 2026",
+      "publishedAt": "2026-09-21T06:32:34.161Z"
+    },
+    {
+      "title": "NTPC NSPCL Various Post Online Form 2026",
+      "url": "/post/ntpc-nspcl-various-post-2026",
+      "category": "latestJobs",
+      "slug": "ntpc-nspcl-various-post-2026",
+      "publishedDate": "21 September 2026",
+      "publishedAt": "2026-09-21T06:32:35.845Z"
+    },
+    {
+      "title": "Rajasthan RSSB Junior Engineer Online Form 2026",
+      "url": "/post/rajasthan-rssb-junior-engineer-2026",
+      "category": "latestJobs",
+      "slug": "rajasthan-rssb-junior-engineer-2026",
+      "publishedDate": "2026-08-18T16:45:37+05:30",
+      "publishedAt": "2026-08-18T11:15:37.000Z"
+    },
+    {
+      "title": "RCF Kapurthala Apprentice Online Form 2026",
+      "url": "/post/rcf-kapurthala-apprentice-2026",
+      "category": "latestJobs",
+      "slug": "rcf-kapurthala-apprentice-2026",
+      "publishedDate": "21 September 2026",
+      "publishedAt": "2026-09-21T06:32:37.517Z"
+    },
+    {
+      "title": "Himachal Pradesh High Court Various Post Online Form 2026",
+      "url": "/post/himachal-pradesh-high-court-various-post-2026",
+      "category": "latestJobs",
+      "slug": "himachal-pradesh-high-court-various-post-2026",
+      "publishedDate": "21 September 2026",
+      "publishedAt": "2026-09-21T06:32:39.203Z"
+    },
+    {
+      "title": "IOCL Marketing Division NR Apprentices Online Form 2026",
+      "url": "/post/iocl-marketing-division-nr-apprentices-2026",
+      "category": "latestJobs",
+      "slug": "iocl-marketing-division-nr-apprentices-2026",
+      "publishedDate": "2026-08-10T13:20:28+05:30",
+      "publishedAt": "2026-08-10T07:50:28.000Z"
+    },
+    {
+      "title": "SKAU Kurukshetra Non Teaching Post Online Form 2026",
+      "url": "/post/skau-kurukshetra-non-teaching-post-2026",
+      "category": "latestJobs",
+      "slug": "skau-kurukshetra-non-teaching-post-2026",
+      "publishedDate": "2026-08-01T12:12:33+05:30",
+      "publishedAt": "2026-08-01T06:42:33.000Z"
+    },
+    {
+      "title": "ISRO URSC Apprentice Online Form 2026",
+      "url": "/post/isro-ursc-apprentice-2026",
+      "category": "latestJobs",
+      "slug": "isro-ursc-apprentice-2026",
+      "publishedDate": "21 September 2026",
+      "publishedAt": "2026-09-21T06:32:40.891Z"
+    },
+    {
+      "title": "JSSC Para Teacher JTAACCE Online Form 2026 (Postponed)",
+      "url": "/post/jssc-para-teacher-jtaacce-2026",
+      "category": "latestJobs",
+      "slug": "jssc-para-teacher-jtaacce-2026",
+      "publishedDate": "21 September 2026",
+      "publishedAt": "2026-09-21T06:32:42.567Z"
+    },
+    {
+      "title": "RPSC Physiotherapist Online Form 2026",
+      "url": "/post/rpsc-physiotherapist-2026",
+      "category": "latestJobs",
+      "slug": "rpsc-physiotherapist-2026",
+      "publishedDate": "2026-07-23T12:51:37+05:30",
+      "publishedAt": "2026-07-23T07:21:37.000Z"
+    },
+    {
+      "title": "UPSSSC OTR One Time Registration Online Form 2026",
+      "url": "/post/upsssc-otr-one-time-registration-2026",
+      "category": "latestJobs",
+      "slug": "upsssc-otr-one-time-registration-2026",
+      "publishedDate": "2026-07-22T13:52:14+05:30",
+      "publishedAt": "2026-07-22T08:22:14.000Z"
+    },
+    {
+      "title": "BPSSC Bihar Home Guard Company Commander Online Form 2026",
+      "url": "/post/bpssc-bihar-home-guard-company-commander-2026",
+      "category": "latestJobs",
+      "slug": "bpssc-bihar-home-guard-company-commander-2026",
+      "publishedDate": "2026-07-22T13:42:49+05:30",
+      "publishedAt": "2026-07-22T08:12:49.000Z"
+    },
+    {
+      "title": "UPSRTC Bus Conductor Online Form 2026",
+      "url": "/post/upsrtc-gorakhpur-bus-conductor-2026",
+      "category": "latestJobs",
+      "slug": "upsrtc-gorakhpur-bus-conductor-2026",
+      "publishedDate": "2026-07-13T15:49:09+05:30",
+      "publishedAt": "2026-07-13T10:19:09.000Z"
+    },
+    {
+      "title": "NTPC Assistant Chemist Trainee Online Form 2026",
+      "url": "/post/ntpc-assistant-chemist-trainee-2026",
+      "category": "latestJobs",
+      "slug": "ntpc-assistant-chemist-trainee-2026",
+      "publishedDate": "2026-06-29T23:10:44+05:30",
+      "publishedAt": "2026-06-29T17:40:44.000Z"
+    },
+    {
+      "title": "Bank of Baroda Manager Online Form 2026",
+      "url": "/post/bank-of-baroda-manager-2026",
+      "category": "latestJobs",
+      "slug": "bank-of-baroda-manager-2026",
+      "publishedDate": "2026-06-26T15:43:29+05:30",
+      "publishedAt": "2026-06-26T10:13:29.000Z"
+    },
+    {
+      "title": "JIPMER Group A Non-Faculty Online Form 2026",
+      "url": "/post/jipmer-group-a-non-faculty-2026",
+      "category": "latestJobs",
+      "slug": "jipmer-group-a-non-faculty-2026",
+      "publishedDate": "2026-06-26T15:37:43+05:30",
+      "publishedAt": "2026-06-26T10:07:43.000Z"
+    },
+    {
+      "title": "RPSC RAS Pre Online Form 2026",
+      "url": "/post/rpsc-ras-2026",
+      "category": "latestJobs",
+      "slug": "rpsc-ras-2026",
+      "publishedDate": "21 September 2026",
+      "publishedAt": "2026-09-21T06:32:44.250Z"
+    },
+    {
+      "title": "यूपी पुलिस में होगी 1 लाख नई भर्तियां, छात्रों को मिलेगा मौका",
+      "url": "/post/up-police-01-lakh-new-bharti-2026",
+      "category": "latestJobs",
+      "slug": "up-police-01-lakh-new-bharti-2026",
+      "publishedDate": "2026-06-26T15:27:20+05:30",
+      "publishedAt": "2026-06-26T09:57:20.000Z"
+    },
+    {
+      "title": "PSPCL Assistant Lineman (NAC) Online Form 2026 – Cancelled",
+      "url": "/post/pspcl-assistant-lineman-nac-2026",
+      "category": "latestJobs",
+      "slug": "pspcl-assistant-lineman-nac-2026",
+      "publishedDate": "2026-06-26T15:21:10+05:30",
+      "publishedAt": "2026-06-26T09:51:10.000Z"
+    },
+    {
+      "title": "Indian Navy Agniveer Apprentices INET Online Form 2026 – Extend",
+      "url": "/post/indian-navy-agniveer-apprentices-inet-2026",
+      "category": "latestJobs",
+      "slug": "indian-navy-agniveer-apprentices-inet-2026",
+      "publishedDate": "2026-06-26T15:18:40+05:30",
+      "publishedAt": "2026-06-26T09:48:40.000Z"
+    },
+    {
+      "title": "UPSRTC Bus Conductor Online Form 2026",
+      "url": "/post/upsrtc-conductor-2026",
+      "category": "latestJobs",
+      "slug": "upsrtc-conductor-2026",
+      "publishedDate": "2026-06-23T10:28:38+05:30",
+      "publishedAt": "2026-06-23T04:58:38.000Z"
+    },
+    {
+      "title": "Hindustan Copper Limited HCL Executive Online Form 2026",
+      "url": "/post/hindustan-copper-limited-hcl-executive-2026",
+      "category": "latestJobs",
+      "slug": "hindustan-copper-limited-hcl-executive-2026",
+      "publishedDate": "7 June 2026",
+      "publishedAt": "2026-06-07T08:30:00.000Z"
+    },
+    {
+      "title": "MPPSC Scientific Officer Biology Online Form 2026",
+      "url": "/post/mppsc-scientific-officer-biology-2026",
+      "category": "latestJobs",
+      "slug": "mppsc-scientific-officer-biology-2026",
+      "publishedDate": "2026-05-09T12:10:17+05:30",
+      "publishedAt": "2026-05-09T06:40:17.000Z"
+    },
+    {
+      "title": "MP Guest Teacher Online Form 2026",
+      "url": "/post/mp-guest-teacher-online-form-2026",
+      "category": "latestJobs",
+      "slug": "mp-guest-teacher-online-form-2026",
+      "publishedDate": "2026-05-08T11:05:49+05:30",
+      "publishedAt": "2026-05-08T05:35:49.000Z"
+    },
+    {
+      "title": "Coal India CIL Management Trainee MT (Through GATE) Online Form 2026",
+      "url": "/post/coal-india-cil-management-trainee-mt-through-gate-2026",
+      "category": "latestJobs",
+      "slug": "coal-india-cil-management-trainee-mt-through-gate-2026",
+      "publishedDate": "2026-05-08T11:05:13+05:30",
+      "publishedAt": "2026-05-08T05:35:13.000Z"
+    },
+    {
+      "title": "Bank of Maharashtra Apprentice Recruitment 2026",
+      "url": "/post/bank-of-maharashtra-apprentice-recruitment-2026",
+      "category": "latestJobs",
+      "slug": "bank-of-maharashtra-apprentice-recruitment-2026",
+      "publishedDate": "2026-01-20T14:53:00+05:30",
+      "publishedAt": "2026-01-20T09:23:00.000Z"
+    },
+    {
+      "title": "SBI Bank SO Online Form 2026",
+      "url": "/post/sbi-bank-so-recruitment-2026",
+      "category": "latestJobs",
+      "slug": "sbi-bank-so-recruitment-2026",
+      "publishedDate": "2026-01-02T17:07:31+05:30",
+      "publishedAt": "2026-01-02T11:37:31.000Z"
+    },
+    {
+      "title": "Bank of India Apprentice Online Form 2026",
+      "url": "/post/bank-of-india-apprentice-recruitment-2026",
+      "category": "latestJobs",
+      "slug": "bank-of-india-apprentice-recruitment-2026",
+      "publishedDate": "2026-01-02T17:03:02+05:30",
+      "publishedAt": "2026-01-02T11:33:02.000Z"
+    },
+    {
+      "title": "Armed Forces AFMS SSC Medical Officer Online Form 2025",
+      "url": "/post/army-afms-recruitment-2025",
+      "category": "latestJobs",
+      "slug": "army-afms-recruitment-2025",
+      "publishedDate": "2025-04-21T17:11:28+05:30",
+      "publishedAt": "2025-04-21T11:41:28.000Z"
+    },
+    {
+      "title": "Allahabad University Teaching Online Form 2025",
+      "url": "/post/allahabad-university-teaching-recruitment-2025",
+      "category": "latestJobs",
+      "slug": "allahabad-university-teaching-recruitment-2025",
+      "publishedDate": "2025-04-17T14:10:10+05:30",
+      "publishedAt": "2025-04-17T08:40:10.000Z"
+    },
+    {
+      "title": "MPPSC Food Safety Officer FSO Online Form 2025",
+      "url": "/post/mppsc-food-safety-officer-fso-recruitment-2025",
+      "category": "latestJobs",
+      "slug": "mppsc-food-safety-officer-fso-recruitment-2025",
+      "publishedDate": "2025-04-03T15:56:32+05:30",
+      "publishedAt": "2025-04-03T10:26:32.000Z"
+    },
+    {
+      "title": "UPPSC Various Post Online Form 2025",
+      "url": "/post/uppsc-various-post-direct-recruitment-2025",
+      "category": "latestJobs",
+      "slug": "uppsc-various-post-direct-recruitment-2025",
+      "publishedDate": "2025-03-27T12:53:34+05:30",
+      "publishedAt": "2025-03-27T07:23:34.000Z"
+    },
+    {
+      "title": "Allahabad High Court Research Associates Online Form 2025",
+      "url": "/post/ahc-research-associates-recruitment-2025-start",
+      "category": "latestJobs",
+      "slug": "ahc-research-associates-recruitment-2025-start",
+      "publishedDate": "2025-03-17T12:55:40+05:30",
+      "publishedAt": "2025-03-17T07:25:40.000Z"
+    },
+    {
+      "title": "UPSC Assistant Professor Online Form 2025",
+      "url": "/post/upsc-assistant-professor-recruitment-2025",
+      "category": "latestJobs",
+      "slug": "upsc-assistant-professor-recruitment-2025",
+      "publishedDate": "2025-03-08T13:02:15+05:30",
+      "publishedAt": "2025-03-08T07:32:15.000Z"
+    },
+    {
+      "title": "Union Bank of India Apprentice Online Form 2025 (2691 Post) – Extend",
+      "url": "/post/union-bank-of-india-apprentice-recruitment-2025-date-extend",
+      "category": "latestJobs",
+      "slug": "union-bank-of-india-apprentice-recruitment-2025-date-extend",
+      "publishedDate": "2025-03-07T15:35:43+05:30",
+      "publishedAt": "2025-03-07T10:05:43.000Z"
+    },
+    {
+      "title": "MPPSC Assistant Professor Online Form 2025",
+      "url": "/post/mppsc-assistant-professor-recruitment-2025",
+      "category": "latestJobs",
+      "slug": "mppsc-assistant-professor-recruitment-2025",
+      "publishedDate": "2025-03-07T14:14:09+05:30",
+      "publishedAt": "2025-03-07T08:44:09.000Z"
+    },
+    {
+      "title": "Indian Army NCC Special Entry Scheme 58th Course Recruitment 2025",
+      "url": "/post/indian-army-ncc-special-entry-scheme-58th-course-recruitment-2025-start",
+      "category": "latestJobs",
+      "slug": "indian-army-ncc-special-entry-scheme-58th-course-recruitment-2025-start",
+      "publishedDate": "2025-02-24T10:37:24+05:30",
+      "publishedAt": "2025-02-24T05:07:24.000Z"
+    },
+    {
+      "title": "NTPC Assistant Executive Online Form 2025",
+      "url": "/post/ntpc-assistant-executive-recruitment-2025",
+      "category": "latestJobs",
+      "slug": "ntpc-assistant-executive-recruitment-2025",
+      "publishedDate": "17 February 2025",
+      "publishedAt": "2025-02-17T08:32:14.000Z"
+    },
+    {
+      "title": "UP Scholarship Application Status 2025",
+      "url": "/post/up-scholarship-application-status-2025",
+      "category": "latestJobs",
+      "slug": "up-scholarship-application-status-2025",
+      "publishedDate": "2025-02-11T17:49:20+05:30",
+      "publishedAt": "2025-02-11T12:19:20.000Z"
+    },
+    {
+      "title": "UP Aganwadi Bharti Online Form 2025 (Updated)",
+      "url": "/post/up-aganwadi-bharti-online-form-2025-updated",
+      "category": "latestJobs",
+      "slug": "up-aganwadi-bharti-online-form-2025-updated",
+      "publishedDate": "2025-02-08T13:30:57+05:30",
+      "publishedAt": "2025-02-08T08:00:57.000Z"
+    },
+    {
+      "title": "Bihar STET Online Form 2026 – Extend",
+      "url": "/post/bihar-stet-2026-2",
+      "category": "latestJobs",
+      "slug": "bihar-stet-2026-2",
+      "publishedDate": "2026-09-15T19:01:36+05:30",
+      "publishedAt": "2026-09-15T13:31:36.000Z"
+    },
+    {
+      "title": "Railway ICF Trade Apprentice Online Form 2026",
+      "url": "/post/railway-icf-trade-apprentice-2026",
+      "category": "latestJobs",
+      "slug": "railway-icf-trade-apprentice-2026",
+      "publishedDate": "2026-08-11T13:24:20+05:30",
+      "publishedAt": "2026-08-11T07:54:20.000Z"
+    },
+    {
+      "title": "Air Force Group C Civilian Offline Form 2026",
+      "url": "/post/air-force-group-c-civilian-offline-form-2026",
+      "category": "latestJobs",
+      "slug": "air-force-group-c-civilian-offline-form-2026",
+      "publishedDate": "2026-05-01T11:07:49+05:30",
+      "publishedAt": "2026-05-01T05:37:49.000Z"
+    },
+    {
+      "title": "Rail Wheel Factory RWF Apprentices Online Form 2025",
+      "url": "/post/rail-wheel-factory-rwf-apprentices-recruitment-2025",
+      "category": "latestJobs",
+      "slug": "rail-wheel-factory-rwf-apprentices-recruitment-2025",
+      "publishedDate": "2025-03-09T01:01:49+05:30",
+      "publishedAt": "2025-03-08T19:31:49.000Z"
+    },
+    {
+      "title": "KGMU Non Teaching Various Post Online Form 2025",
+      "url": "/post/kgmu-non-teaching-recruitment-2025-extended",
+      "category": "latestJobs",
+      "slug": "kgmu-non-teaching-recruitment-2025-extended",
+      "publishedDate": "2025-02-17T14:08:36+05:30",
+      "publishedAt": "2025-02-17T08:38:36.000Z"
+    },
+    {
+      "title": "RUHS Medical Officer Direct Recruitment 2026 Apply Online for 600 Post",
+      "url": "/post/ruhs-medical-officer-sep26",
+      "category": "latestJobs",
+      "slug": "ruhs-medical-officer-sep26",
+      "publishedDate": "20 September 2026",
+      "publishedAt": "2026-09-19T18:30:00.000Z"
     },
     {
       "title": "ESIC Medical College and Hospital Ranchi Recruitment 2026 - Apply Offline for 85 Professor, Associate Professor and More Posts",
@@ -4828,22 +5604,6 @@ export const scrapedData = {
       "slug": "uksssc-group-c-scaler-sep26",
       "publishedDate": "19 September 2026",
       "publishedAt": "2026-09-18T18:30:00.000Z"
-    },
-    {
-      "title": "MPESB Primary & Middle School Teacher Online Form 2026 – Extend",
-      "url": "/post/mpesb-primary-middle-school-teacher-2026",
-      "category": "latestJobs",
-      "slug": "mpesb-primary-middle-school-teacher-2026",
-      "publishedDate": "2026-09-18T17:12:27+05:30",
-      "publishedAt": "2026-09-18T11:42:27.000Z"
-    },
-    {
-      "title": "UPSSSC Junior Engineer JE Agriculture Online Form 2026",
-      "url": "/post/upsssc-junior-engineer-je-agriculture-2026",
-      "category": "latestJobs",
-      "slug": "upsssc-junior-engineer-je-agriculture-2026",
-      "publishedDate": "2026-09-18T13:06:28+05:30",
-      "publishedAt": "2026-09-18T07:36:28.000Z"
     },
     {
       "title": "AIIMS Jammu Senior Resident/Demonstrator Recruitment 2026 Notification Out - Apply Online for 86 Posts",
@@ -4990,14 +5750,6 @@ export const scrapedData = {
       "publishedAt": "2026-09-17T18:30:00.000Z"
     },
     {
-      "title": "MPESB Subedar Steno, ASI Online Form 2026",
-      "url": "/post/mpesb-subedar-steno-asi-2026",
-      "category": "latestJobs",
-      "slug": "mpesb-subedar-steno-asi-2026",
-      "publishedDate": "2026-09-17T19:58:56+05:30",
-      "publishedAt": "2026-09-17T14:28:56.000Z"
-    },
-    {
       "title": "NTA Exam Calendar 2027",
       "url": "/post/nta-exam-calendar-2027",
       "category": "latestJobs",
@@ -5086,30 +5838,6 @@ export const scrapedData = {
       "publishedAt": "2026-09-16T18:30:00.000Z"
     },
     {
-      "title": "UPSC Engineering Services Pre Online Form 2027",
-      "url": "/post/upsc-engineering-services-pre-2027",
-      "category": "latestJobs",
-      "slug": "upsc-engineering-services-pre-2027",
-      "publishedDate": "2026-09-16T23:21:45+05:30",
-      "publishedAt": "2026-09-16T17:51:45.000Z"
-    },
-    {
-      "title": "RUHS Medical Officer Online Form 2026",
-      "url": "/post/ruhs-medical-officer-2026",
-      "category": "latestJobs",
-      "slug": "ruhs-medical-officer-2026",
-      "publishedDate": "2026-09-16T17:06:42+05:30",
-      "publishedAt": "2026-09-16T11:36:42.000Z"
-    },
-    {
-      "title": "UKSSSC Group C Scaler Online Form 2026",
-      "url": "/post/uksssc-group-c-scaler-2026",
-      "category": "latestJobs",
-      "slug": "uksssc-group-c-scaler-2026",
-      "publishedDate": "2026-09-16T16:41:47+05:30",
-      "publishedAt": "2026-09-16T11:11:47.000Z"
-    },
-    {
       "title": "AAI SSCO Consultant Recruitment 2026 Notification Out - Apply Online for 39 Posts",
       "url": "/post/aai-consultant-recruitment-2026-apply-online-for-39-posts-3067900",
       "category": "latestJobs",
@@ -5174,22 +5902,6 @@ export const scrapedData = {
       "publishedAt": "2026-09-15T18:30:00.000Z"
     },
     {
-      "title": "Bihar STET Online Form 2026 – Extend",
-      "url": "/post/bihar-stet-2026-2",
-      "category": "latestJobs",
-      "slug": "bihar-stet-2026-2",
-      "publishedDate": "2026-09-15T19:01:36+05:30",
-      "publishedAt": "2026-09-15T13:31:36.000Z"
-    },
-    {
-      "title": "MP High Court Assistant Grade III Online Form 2026 – Extend",
-      "url": "/post/mp-high-court-assistant-grade-iii-online-form-2026",
-      "category": "latestJobs",
-      "slug": "mp-high-court-assistant-grade-iii-online-form-2026",
-      "publishedDate": "2026-09-15T14:11:58+05:30",
-      "publishedAt": "2026-09-15T08:41:58.000Z"
-    },
-    {
       "title": "CPRI Recruitment 2026 Notification Out - Apply Online for 110 Assistant, MTS and More Posts",
       "url": "/post/cpri-recruitment-2026-apply-online-for-110-assistant-mts-and-more-posts-3067640",
       "category": "latestJobs",
@@ -5204,14 +5916,6 @@ export const scrapedData = {
       "slug": "mphc-assistant-grade-3rd-august26",
       "publishedDate": "15 September 2026",
       "publishedAt": "2026-09-14T18:30:00.000Z"
-    },
-    {
-      "title": "Indian Army Dental Corps Online Form 2026",
-      "url": "/post/indian-army-dental-corps-2026",
-      "category": "latestJobs",
-      "slug": "indian-army-dental-corps-2026",
-      "publishedDate": "2026-09-14T17:39:28+05:30",
-      "publishedAt": "2026-09-14T12:09:28.000Z"
     },
     {
       "title": "UPSC Specialist, Assistant Public Prosecutor & Law Officer Recruitment 2026 Apply Online Advt. No. 11/2026",
@@ -5230,132 +5934,12 @@ export const scrapedData = {
       "publishedAt": "2026-09-13T18:30:00.000Z"
     },
     {
-      "title": "SSC CPO SI CAPF Online Form 2026 (1871 Posts)",
-      "url": "/post/ssc-cpo-si-capf-2026",
-      "category": "latestJobs",
-      "slug": "ssc-cpo-si-capf-2026",
-      "publishedDate": "13 September 2026",
-      "publishedAt": "2026-09-12T18:30:00.000Z"
-    },
-    {
-      "title": "UPSC EPFO APFC Online Form 2026 – Extend",
-      "url": "/post/upsc-epfo-apfc-2026",
-      "category": "latestJobs",
-      "slug": "upsc-epfo-apfc-2026",
-      "publishedDate": "2026-09-12T00:28:59+05:30",
-      "publishedAt": "2026-09-11T18:58:59.000Z"
-    },
-    {
       "title": "UPSSSC State Rural Development Institute Senior Instructor Cadre Main Examination 2026 Apply Online for 132 Post",
       "url": "/post/upsssc-s-instructor-21-exam-2026",
       "category": "latestJobs",
       "slug": "upsssc-s-instructor-21-exam-2026",
       "publishedDate": "12 September 2026",
       "publishedAt": "2026-09-11T18:30:00.000Z"
-    },
-    {
-      "title": "India Post Office GDS Online Form 2026 (23757 Posts)",
-      "url": "/post/india-post-office-gds-2026",
-      "category": "latestJobs",
-      "slug": "india-post-office-gds-2026",
-      "publishedDate": "2026-09-11T17:25:41+05:30",
-      "publishedAt": "2026-09-11T11:55:41.000Z"
-    },
-    {
-      "title": "MP Police GD Constable Online Form 2026 (7500 Posts)",
-      "url": "/post/mpesb-mp-police-gd-constable-2026",
-      "category": "latestJobs",
-      "slug": "mpesb-mp-police-gd-constable-2026",
-      "publishedDate": "2026-09-11T17:25:33+05:30",
-      "publishedAt": "2026-09-11T11:55:33.000Z"
-    },
-    {
-      "title": "SSC Junior Engineer JE Online Form 2026 (1748 Posts)",
-      "url": "/post/ssc-junior-engineer-je-2026",
-      "category": "latestJobs",
-      "slug": "ssc-junior-engineer-je-2026",
-      "publishedDate": "2026-09-11T17:25:27+05:30",
-      "publishedAt": "2026-09-11T11:55:27.000Z"
-    },
-    {
-      "title": "IBPS RRB XV 15th Scale-I, II, III Online Form 2026 (13706 Posts)",
-      "url": "/post/ibps-rrb-15th-2026",
-      "category": "latestJobs",
-      "slug": "ibps-rrb-15th-2026",
-      "publishedDate": "2026-09-11T17:25:23+05:30",
-      "publishedAt": "2026-09-11T11:55:23.000Z"
-    },
-    {
-      "title": "RCFL Management Trainee MT Online Form 2026",
-      "url": "/post/rcfl-management-trainee-mt-2026",
-      "category": "latestJobs",
-      "slug": "rcfl-management-trainee-mt-2026",
-      "publishedDate": "2026-09-11T17:24:26+05:30",
-      "publishedAt": "2026-09-11T11:54:26.000Z"
-    },
-    {
-      "title": "UPSC Various Post Online Form 2026",
-      "url": "/post/upsc-various-post-2026",
-      "category": "latestJobs",
-      "slug": "upsc-various-post-2026",
-      "publishedDate": "2026-09-11T17:19:22+05:30",
-      "publishedAt": "2026-09-11T11:49:22.000Z"
-    },
-    {
-      "title": "UPSSSC Senior Instructor Online Form 2026",
-      "url": "/post/upsssc-senior-instructor-2026",
-      "category": "latestJobs",
-      "slug": "upsssc-senior-instructor-2026",
-      "publishedDate": "2026-09-11T15:34:40+05:30",
-      "publishedAt": "2026-09-11T10:04:40.000Z"
-    },
-    {
-      "title": "UPSSSC Livestock Extension Officer Online Form 2026",
-      "url": "/post/upsssc-livestock-extension-officer-2026",
-      "category": "latestJobs",
-      "slug": "upsssc-livestock-extension-officer-2026",
-      "publishedDate": "2026-09-10T14:49:01+05:30",
-      "publishedAt": "2026-09-10T09:19:01.000Z"
-    },
-    {
-      "title": "Rajasthan Safai Karamchari Online Form 2026 (24752 Posts)",
-      "url": "/post/rajasthan-safai-karamchari-2026",
-      "category": "latestJobs",
-      "slug": "rajasthan-safai-karamchari-2026",
-      "publishedDate": "2026-09-10T14:48:44+05:30",
-      "publishedAt": "2026-09-10T09:18:44.000Z"
-    },
-    {
-      "title": "UP Anganwadi Bharti Online Form 2026 (Update)",
-      "url": "/post/up-anganwadi-bharti-2026",
-      "category": "latestJobs",
-      "slug": "up-anganwadi-bharti-2026",
-      "publishedDate": "2026-09-10T14:48:40+05:30",
-      "publishedAt": "2026-09-10T09:18:40.000Z"
-    },
-    {
-      "title": "BPSC School Teacher TRE 4.0 Online Form 2026 (32,388 Posts)",
-      "url": "/post/bpsc-school-teacher-tre-4-0-2026",
-      "category": "latestJobs",
-      "slug": "bpsc-school-teacher-tre-4-0-2026",
-      "publishedDate": "2026-09-10T14:48:33+05:30",
-      "publishedAt": "2026-09-10T09:18:33.000Z"
-    },
-    {
-      "title": "Bank of Baroda SO Online Form 2026 (1100 Posts)",
-      "url": "/post/bank-of-baroda-so-2026",
-      "category": "latestJobs",
-      "slug": "bank-of-baroda-so-2026",
-      "publishedDate": "2026-09-10T14:48:30+05:30",
-      "publishedAt": "2026-09-10T09:18:30.000Z"
-    },
-    {
-      "title": "Railway RRC SR Apprentice Online Form 2026 (4471 Posts)",
-      "url": "/post/railway-rrc-sr-apprentice-2026",
-      "category": "latestJobs",
-      "slug": "railway-rrc-sr-apprentice-2026",
-      "publishedDate": "2026-09-10T14:48:26+05:30",
-      "publishedAt": "2026-09-10T09:18:26.000Z"
     },
     {
       "title": "Railway RRC ECoR Apprentice Online Form 2026 – Last Date",
@@ -5390,14 +5974,6 @@ export const scrapedData = {
       "publishedAt": "2026-09-09T18:30:00.000Z"
     },
     {
-      "title": "SSC CHSL 10+2 Online Form 2026 (2536 Posts)",
-      "url": "/post/ssc-chsl-2026",
-      "category": "latestJobs",
-      "slug": "ssc-chsl-2026",
-      "publishedDate": "10 September 2026",
-      "publishedAt": "2026-09-09T18:30:00.000Z"
-    },
-    {
       "title": "UKPSC Uttarakhand Combined State Civil Upper Subordinate Service Exam 2026 : Apply Online for 67 Post",
       "url": "/post/ukpsc-pre-2026",
       "category": "latestJobs",
@@ -5428,22 +6004,6 @@ export const scrapedData = {
       "slug": "upsssc-pet-all-form-2026",
       "publishedDate": "10 September 2026",
       "publishedAt": "2026-09-09T18:30:00.000Z"
-    },
-    {
-      "title": "MPESB MP Police SI, Subedar Online Form 2026",
-      "url": "/post/mpesb-mp-police-si-subedar-2026",
-      "category": "latestJobs",
-      "slug": "mpesb-mp-police-si-subedar-2026",
-      "publishedDate": "9 September 2026",
-      "publishedAt": "2026-09-09T11:39:39.000Z"
-    },
-    {
-      "title": "UPESSC UP Assistant Professor Online Form 2026",
-      "url": "/post/upessc-up-assistant-professor-2026",
-      "category": "latestJobs",
-      "slug": "upessc-up-assistant-professor-2026",
-      "publishedDate": "9 September 2026",
-      "publishedAt": "2026-09-09T11:28:15.000Z"
     },
     {
       "title": "Government Institute of Medical Sciences (GIMS) Staff Nurse Recruitment 2026 Apply Online for 100 Post",
@@ -5486,22 +6046,6 @@ export const scrapedData = {
       "publishedAt": "2026-09-08T18:30:00.000Z"
     },
     {
-      "title": "BPSSC Bihar Police Company Commander Online Form 2026",
-      "url": "/post/bpssc-bihar-police-company-commander-2026",
-      "category": "latestJobs",
-      "slug": "bpssc-bihar-police-company-commander-2026",
-      "publishedDate": "8 September 2026",
-      "publishedAt": "2026-09-08T08:04:51.000Z"
-    },
-    {
-      "title": "Railway RRB Paramedical CEN 05/2026 Online Form 2026",
-      "url": "/post/railway-rrb-paramedical-2026",
-      "category": "latestJobs",
-      "slug": "railway-rrb-paramedical-2026",
-      "publishedDate": "8 September 2026",
-      "publishedAt": "2026-09-08T07:39:01.000Z"
-    },
-    {
       "title": "ITBP CAPF Medical Officer Online Form 2026 – Last Date",
       "url": "/post/itbp-capf-medical-officer-2026",
       "category": "latestJobs",
@@ -5542,28 +6086,12 @@ export const scrapedData = {
       "publishedAt": "2026-09-07T18:30:00.000Z"
     },
     {
-      "title": "UIIC Administrative Officers AO Online Form 2026",
-      "url": "/post/uiic-ao-2026",
-      "category": "latestJobs",
-      "slug": "uiic-ao-2026",
-      "publishedDate": "7 September 2026",
-      "publishedAt": "2026-09-07T10:05:04.000Z"
-    },
-    {
       "title": "NTPC NGEL Engineer and Executive Online Form 2026 – Last Date",
       "url": "/post/ntpc-ngel-engineer-and-executive-2026",
       "category": "latestJobs",
       "slug": "ntpc-ngel-engineer-and-executive-2026",
       "publishedDate": "7 September 2026",
       "publishedAt": "2026-09-07T04:43:13.000Z"
-    },
-    {
-      "title": "GIMS Noida Staff Nurse Online Form 2026 – Extended",
-      "url": "/post/gims-noida-staff-nurse-2026",
-      "category": "latestJobs",
-      "slug": "gims-noida-staff-nurse-2026",
-      "publishedDate": "7 September 2026",
-      "publishedAt": "2026-09-07T04:42:35.000Z"
     },
     {
       "title": "BPSSC Company Commander Recruitment 2026 Advt. No.-11/2026 : Apply Online for 65 Post",
@@ -5620,22 +6148,6 @@ export const scrapedData = {
       "slug": "sbi-sco-sep26",
       "publishedDate": "6 September 2026",
       "publishedAt": "2026-09-05T18:30:00.000Z"
-    },
-    {
-      "title": "SBI SCO Wealth & Other Post Online Form 2026",
-      "url": "/post/sbi-sco-wealth-other-post-2026",
-      "category": "latestJobs",
-      "slug": "sbi-sco-wealth-other-post-2026",
-      "publishedDate": "6 September 2026",
-      "publishedAt": "2026-09-05T18:30:00.000Z"
-    },
-    {
-      "title": "Delhi High Court SPA & PA Online Form 2026",
-      "url": "/post/delhi-high-court-spa-and-pa-2026",
-      "category": "latestJobs",
-      "slug": "delhi-high-court-spa-and-pa-2026",
-      "publishedDate": "5 September 2026",
-      "publishedAt": "2026-09-05T08:42:49.000Z"
     },
     {
       "title": "PFRDA Officer Grade A Assistant Manager Recruitment 2026 Apply Online",
@@ -5702,14 +6214,6 @@ export const scrapedData = {
       "publishedAt": "2026-09-04T07:42:25.000Z"
     },
     {
-      "title": "PFRDA Assistant Manager Online Form 2026",
-      "url": "/post/pfrda-assistant-manager-2026",
-      "category": "latestJobs",
-      "slug": "pfrda-assistant-manager-2026",
-      "publishedDate": "4 September 2026",
-      "publishedAt": "2026-09-04T07:41:38.000Z"
-    },
-    {
       "title": "Bihar Library Eligibility Test BLET 2026 Apply Online",
       "url": "/post/blet-september26",
       "category": "latestJobs",
@@ -5740,22 +6244,6 @@ export const scrapedData = {
       "slug": "up-banda-ecce-educator-online-form-2026",
       "publishedDate": "4 September 2026",
       "publishedAt": "2026-09-03T18:30:00.000Z"
-    },
-    {
-      "title": "UPSSSC Computer Operator Online Form 2026",
-      "url": "/post/upsssc-computer-operator-2026",
-      "category": "latestJobs",
-      "slug": "upsssc-computer-operator-2026",
-      "publishedDate": "3 September 2026",
-      "publishedAt": "2026-09-03T12:02:25.000Z"
-    },
-    {
-      "title": "UPSC Geo-Scientist Online Form 2027",
-      "url": "/post/upsc-geo-scientist-2027",
-      "category": "latestJobs",
-      "slug": "upsc-geo-scientist-2027",
-      "publishedDate": "3 September 2026",
-      "publishedAt": "2026-09-03T10:11:25.000Z"
     },
     {
       "title": "Allahabad University Ph.D Online Form 2026",
@@ -5798,26 +6286,10 @@ export const scrapedData = {
       "publishedAt": "2026-09-01T18:30:00.000Z"
     },
     {
-      "title": "CONCOR MT, Assistant Officer Recruitment 2026",
-      "url": "/post/concor-mt-assistant-officer-2026",
-      "category": "latestJobs",
-      "slug": "concor-mt-assistant-officer-2026",
-      "publishedDate": "2 September 2026",
-      "publishedAt": "2026-09-01T18:30:00.000Z"
-    },
-    {
       "title": "NIC Scientific & Technical Assistant Recruitment 2026 Apply Online",
       "url": "/post/nic-s-t-a-sep26",
       "category": "latestJobs",
       "slug": "nic-s-t-a-sep26",
-      "publishedDate": "2 September 2026",
-      "publishedAt": "2026-09-01T18:30:00.000Z"
-    },
-    {
-      "title": "NIC Scientific / Technical Assistant Recruitment 2026",
-      "url": "/post/nic-scientific-technical-assistant-2026",
-      "category": "latestJobs",
-      "slug": "nic-scientific-technical-assistant-2026",
       "publishedDate": "2 September 2026",
       "publishedAt": "2026-09-01T18:30:00.000Z"
     },
@@ -5894,22 +6366,6 @@ export const scrapedData = {
       "publishedAt": "2026-08-30T18:30:00.000Z"
     },
     {
-      "title": "SBI Bank Trade Finance Officer TFO Online Form 2026 – Extend",
-      "url": "/post/sbi-bank-tfo-2026",
-      "category": "latestJobs",
-      "slug": "sbi-bank-tfo-2026",
-      "publishedDate": "31 August 2026",
-      "publishedAt": "2026-08-30T18:30:00.000Z"
-    },
-    {
-      "title": "UCO Bank Specialist Officer SO Recruitment 2026",
-      "url": "/post/uco-so-2026",
-      "category": "latestJobs",
-      "slug": "uco-so-2026",
-      "publishedDate": "31 August 2026",
-      "publishedAt": "2026-08-30T18:30:00.000Z"
-    },
-    {
       "title": "UKSSSC Group C Various Post Recruitment 2026 Apply Online for 553 Post",
       "url": "/post/uksssc-group-c-various-post-aug26",
       "category": "latestJobs",
@@ -5964,14 +6420,6 @@ export const scrapedData = {
       "slug": "iit-gate-2027",
       "publishedDate": "2026-08-27T14:24:37+05:30",
       "publishedAt": "2026-08-27T08:54:37.000Z"
-    },
-    {
-      "title": "BHU Non Teaching Various Post Recruitment 2026",
-      "url": "/post/bhu-non-teaching-various-post-2026",
-      "category": "latestJobs",
-      "slug": "bhu-non-teaching-various-post-2026",
-      "publishedDate": "27 August 2026",
-      "publishedAt": "2026-08-26T18:30:00.000Z"
     },
     {
       "title": "ISRO Scientist / Engineer Recruitment 2026",
@@ -6078,14 +6526,6 @@ export const scrapedData = {
       "publishedAt": "2026-08-18T18:30:00.000Z"
     },
     {
-      "title": "RSSB Junior Engineer Recruitment 2026",
-      "url": "/post/rajasthan-rssb-junior-engineer-2026",
-      "category": "latestJobs",
-      "slug": "rajasthan-rssb-junior-engineer-2026",
-      "publishedDate": "18 August 2026",
-      "publishedAt": "2026-08-17T18:30:00.000Z"
-    },
-    {
       "title": "UPSSSC JE Recruitment 2026 Notification Out - Apply Online for 134 Junior Engineer / Avar Abhiyanta Posts",
       "url": "/post/upsssc-je-recruitment-2026-apply-online-for-134-junior-engineer-avar-abhiyanta-posts-3063119",
       "category": "latestJobs",
@@ -6094,44 +6534,12 @@ export const scrapedData = {
       "publishedAt": "2026-08-13T18:30:00.000Z"
     },
     {
-      "title": "UPSSSC Veterinary Pharmacist Online Form 2026",
-      "url": "/post/upsssc-veterinary-pharmacist-2026",
-      "category": "latestJobs",
-      "slug": "upsssc-veterinary-pharmacist-2026",
-      "publishedDate": "14 August 2026",
-      "publishedAt": "2026-08-13T18:30:00.000Z"
-    },
-    {
-      "title": "Railway ICF Trade Apprentice Online Form 2026",
-      "url": "/post/railway-icf-trade-apprentice-2026",
-      "category": "latestJobs",
-      "slug": "railway-icf-trade-apprentice-2026",
-      "publishedDate": "2026-08-11T13:24:20+05:30",
-      "publishedAt": "2026-08-11T07:54:20.000Z"
-    },
-    {
-      "title": "IOCL Marketing Division NR Apprentices Recruitment 2026",
-      "url": "/post/iocl-marketing-division-nr-apprentices-2026",
-      "category": "latestJobs",
-      "slug": "iocl-marketing-division-nr-apprentices-2026",
-      "publishedDate": "10 August 2026",
-      "publishedAt": "2026-08-09T18:30:00.000Z"
-    },
-    {
       "title": "Delhi Laxmi Yojana Form 2026",
       "url": "/post/delhi-laxmi-yojana-2026",
       "category": "latestJobs",
       "slug": "delhi-laxmi-yojana-2026",
       "publishedDate": "8 August 2026",
       "publishedAt": "2026-08-08T06:54:51.000Z"
-    },
-    {
-      "title": "SKAU Kurukshetra Non Teaching Post Recruitment 2026",
-      "url": "/post/skau-kurukshetra-non-teaching-post-2026",
-      "category": "latestJobs",
-      "slug": "skau-kurukshetra-non-teaching-post-2026",
-      "publishedDate": "1 August 2026",
-      "publishedAt": "2026-07-31T18:30:00.000Z"
     },
     {
       "title": "RRVUNL JE / Other Posts Online Form 2026 (2005 Posts)",
@@ -6294,28 +6702,12 @@ export const scrapedData = {
       "publishedAt": "2026-07-23T18:30:00.000Z"
     },
     {
-      "title": "RPSC Physiotherapist Recruitment 2026",
-      "url": "/post/rpsc-physiotherapist-2026",
-      "category": "latestJobs",
-      "slug": "rpsc-physiotherapist-2026",
-      "publishedDate": "23 July 2026",
-      "publishedAt": "2026-07-22T18:30:00.000Z"
-    },
-    {
       "title": "SAIL Rourkela Steel Plant Apprentice 2026 Apply Online for 1110 Post",
       "url": "/post/sail-rourkela-apprentice-july26",
       "category": "latestJobs",
       "slug": "sail-rourkela-apprentice-july26",
       "publishedDate": "23 July 2026",
       "publishedAt": "2026-07-22T18:30:00.000Z"
-    },
-    {
-      "title": "BPSSC Bihar Home Guard Company Commander Recruitment 2026",
-      "url": "/post/bpssc-bihar-home-guard-company-commander-2026",
-      "category": "latestJobs",
-      "slug": "bpssc-bihar-home-guard-company-commander-2026",
-      "publishedDate": "22 July 2026",
-      "publishedAt": "2026-07-21T18:30:00.000Z"
     },
     {
       "title": "Rajasthan High Court Stenographer Recruitment 2026 Apply Online for 163 Post",
@@ -6330,14 +6722,6 @@ export const scrapedData = {
       "url": "/post/upsrtc-bus-conductor-bharti-july26",
       "category": "latestJobs",
       "slug": "upsrtc-bus-conductor-bharti-july26",
-      "publishedDate": "22 July 2026",
-      "publishedAt": "2026-07-21T18:30:00.000Z"
-    },
-    {
-      "title": "UPSSSC OTR One Time Registration Online Form 2026",
-      "url": "/post/upsssc-otr-one-time-registration-2026",
-      "category": "latestJobs",
-      "slug": "upsssc-otr-one-time-registration-2026",
       "publishedDate": "22 July 2026",
       "publishedAt": "2026-07-21T18:30:00.000Z"
     },
@@ -6410,14 +6794,6 @@ export const scrapedData = {
       "url": "/post/upiti-admission-july2026",
       "category": "latestJobs",
       "slug": "upiti-admission-july2026",
-      "publishedDate": "13 July 2026",
-      "publishedAt": "2026-07-12T18:30:00.000Z"
-    },
-    {
-      "title": "UPSRTC Bus Conductor Recruitment 2026",
-      "url": "/post/upsrtc-gorakhpur-bus-conductor-2026",
-      "category": "latestJobs",
-      "slug": "upsrtc-gorakhpur-bus-conductor-2026",
       "publishedDate": "13 July 2026",
       "publishedAt": "2026-07-12T18:30:00.000Z"
     },
@@ -6638,14 +7014,6 @@ export const scrapedData = {
       "publishedAt": "2026-06-28T18:30:00.000Z"
     },
     {
-      "title": "NTPC Assistant Chemist Trainee Recruitment 2026",
-      "url": "/post/ntpc-assistant-chemist-trainee-2026",
-      "category": "latestJobs",
-      "slug": "ntpc-assistant-chemist-trainee-2026",
-      "publishedDate": "29 June 2026",
-      "publishedAt": "2026-06-28T18:30:00.000Z"
-    },
-    {
       "title": "ISRO ISTRAC Technical Assistant, Scientific Assistant, Technician and Other Post Recruitment 2026 Apply Online for 26 Post",
       "url": "/post/isro-istrac-various-post-june26",
       "category": "latestJobs",
@@ -6798,14 +7166,6 @@ export const scrapedData = {
       "publishedAt": "2026-06-22T18:30:00.000Z"
     },
     {
-      "title": "UPSRTC Bus Conductor Online Form 2026",
-      "url": "/post/upsrtc-conductor-2026",
-      "category": "latestJobs",
-      "slug": "upsrtc-conductor-2026",
-      "publishedDate": "22 June 2026",
-      "publishedAt": "2026-06-22T08:36:10.000Z"
-    },
-    {
       "title": "UP Uttar Pradesh Anganwadi Worker Bharti Recruitment 2026 Apply Online District Wise Vacancy Details",
       "url": "/post/up-anganwadi-worker",
       "category": "latestJobs",
@@ -6850,14 +7210,6 @@ export const scrapedData = {
       "url": "/post/allahabad-high-court-ro-aro-ca-2026",
       "category": "latestJobs",
       "slug": "allahabad-high-court-ro-aro-ca-2026",
-      "publishedDate": "18 June 2026",
-      "publishedAt": "2026-06-17T18:30:00.000Z"
-    },
-    {
-      "title": "Bank of Baroda Manager Recruitment 2026",
-      "url": "/post/bank-of-baroda-manager-2026",
-      "category": "latestJobs",
-      "slug": "bank-of-baroda-manager-2026",
       "publishedDate": "18 June 2026",
       "publishedAt": "2026-06-17T18:30:00.000Z"
     },
@@ -6998,26 +7350,10 @@ export const scrapedData = {
       "publishedAt": "2026-06-15T18:30:00.000Z"
     },
     {
-      "title": "JIPMER Group A Non-Faculty Online Form 2026",
-      "url": "/post/jipmer-group-a-non-faculty-2026",
-      "category": "latestJobs",
-      "slug": "jipmer-group-a-non-faculty-2026",
-      "publishedDate": "15 June 2026",
-      "publishedAt": "2026-06-15T07:49:30.000Z"
-    },
-    {
       "title": "IBPS Clerk 15th Reserve List 2026 for 10277 Post",
       "url": "/post/ibps-clerk-15th-online-form-2025",
       "category": "latestJobs",
       "slug": "ibps-clerk-15th-online-form-2025",
-      "publishedDate": "15 June 2026",
-      "publishedAt": "2026-06-14T18:30:00.000Z"
-    },
-    {
-      "title": "PSPCL Assistant Lineman (NAC) Recruitment 2026",
-      "url": "/post/pspcl-assistant-lineman-nac-2026",
-      "category": "latestJobs",
-      "slug": "pspcl-assistant-lineman-nac-2026",
       "publishedDate": "15 June 2026",
       "publishedAt": "2026-06-14T18:30:00.000Z"
     },
@@ -7222,14 +7558,6 @@ export const scrapedData = {
       "publishedAt": "2026-06-08T10:12:19.000Z"
     },
     {
-      "title": "Hindustan Copper Limited HCL Executive Online Form 2026",
-      "url": "/post/hindustan-copper-limited-hcl-executive-2026",
-      "category": "latestJobs",
-      "slug": "hindustan-copper-limited-hcl-executive-2026",
-      "publishedDate": "7 June 2026",
-      "publishedAt": "2026-06-07T08:30:00.000Z"
-    },
-    {
       "title": "Hindustan Copper Limited HCL Executive Recruitment 2026 Online Form Live: 70 Posts Apply Now #HCLExecutive2026 #HCLRecruitment2026 #HCLDeputyManager #HCLManager #HCLSeniorManager #SarkariNaukri",
       "url": "/post/HCL-Executive-2026",
       "category": "latestJobs",
@@ -7258,14 +7586,6 @@ export const scrapedData = {
       "url": "/post/Indian-Navy-Agniveer-Apprentice-01-2027-02-2027-Batch",
       "category": "latestJobs",
       "slug": "Indian-Navy-Agniveer-Apprentice-01-2027-02-2027-Batch",
-      "publishedDate": "5 June 2026",
-      "publishedAt": "2026-06-04T18:30:00.000Z"
-    },
-    {
-      "title": "Indian Navy Agniveer Apprentices INET Recruitment 2026 Out",
-      "url": "/post/indian-navy-agniveer-apprentices-inet-2026",
-      "category": "latestJobs",
-      "slug": "indian-navy-agniveer-apprentices-inet-2026",
       "publishedDate": "5 June 2026",
       "publishedAt": "2026-06-04T18:30:00.000Z"
     },
@@ -7502,38 +7822,6 @@ export const scrapedData = {
       "publishedAt": "2026-05-10T18:30:00.000Z"
     },
     {
-      "title": "MPPSC Scientific Officer Biology Recruitment 2026 Apply Online",
-      "url": "/post/mppsc-scientific-officer-biology-2026",
-      "category": "latestJobs",
-      "slug": "mppsc-scientific-officer-biology-2026",
-      "publishedDate": "9 May 2026",
-      "publishedAt": "2026-05-08T18:30:00.000Z"
-    },
-    {
-      "title": "Coal India CIL Management Trainee MT (Through GATE) Recruitment 2026",
-      "url": "/post/coal-india-cil-management-trainee-mt-through-gate-2026",
-      "category": "latestJobs",
-      "slug": "coal-india-cil-management-trainee-mt-through-gate-2026",
-      "publishedDate": "8 May 2026",
-      "publishedAt": "2026-05-07T18:30:00.000Z"
-    },
-    {
-      "title": "MP Guest Teacher Online Form 2026 Apply Online Direct Link",
-      "url": "/post/mp-guest-teacher-online-form-2026",
-      "category": "latestJobs",
-      "slug": "mp-guest-teacher-online-form-2026",
-      "publishedDate": "8 May 2026",
-      "publishedAt": "2026-05-07T18:30:00.000Z"
-    },
-    {
-      "title": "Air Force Group C Civilian Offline Form 2026",
-      "url": "/post/air-force-group-c-civilian-offline-form-2026",
-      "category": "latestJobs",
-      "slug": "air-force-group-c-civilian-offline-form-2026",
-      "publishedDate": "2026-05-01T11:07:49+05:30",
-      "publishedAt": "2026-05-01T05:37:49.000Z"
-    },
-    {
       "title": "BCECEB Senior Resident / Tutor Provisional List 2026: Out Now #BCECEBSeniorResident2026 #BCECEBTutorRecruitment #BCECEBPhaseIII2026 #BiharMedicalJobs #SarkariNaukri",
       "url": "/post/BCECE-Senior-Resident-Tutor-2026",
       "category": "latestJobs",
@@ -7548,14 +7836,6 @@ export const scrapedData = {
       "slug": "upessc-assistant-professor-bed-2026",
       "publishedDate": "29 April 2026",
       "publishedAt": "2026-04-28T18:30:00.000Z"
-    },
-    {
-      "title": "सीएम योगी का बड़ा ऐलान: यूपी पुलिस में होगी 1 लाख नई भर्तियां, छात्रों को मिलेगा मौका",
-      "url": "/post/up-police-01-lakh-new-bharti-2026",
-      "category": "latestJobs",
-      "slug": "up-police-01-lakh-new-bharti-2026",
-      "publishedDate": "28 April 2026",
-      "publishedAt": "2026-04-27T18:30:00.000Z"
     },
     {
       "title": "UPSSSC Forest Guard & Wildlife Guard Recruitment 2026 Online Form Live: 708 Posts Apply Now #UPSSSCForestGuard2026 #UPSSSCWildlifeGuard #UPSSSC708Posts #UPSSSCAdvt122026 #SarkariNaukri",
@@ -7630,14 +7910,6 @@ export const scrapedData = {
       "publishedAt": "2026-01-20T18:30:00.000Z"
     },
     {
-      "title": "Bank of Maharashtra Apprentice Recruitment 2026",
-      "url": "/post/bank-of-maharashtra-apprentice-recruitment-2026",
-      "category": "latestJobs",
-      "slug": "bank-of-maharashtra-apprentice-recruitment-2026",
-      "publishedDate": "20 January 2026",
-      "publishedAt": "2026-01-19T18:30:00.000Z"
-    },
-    {
       "title": "SSC Exam Calendar 2026-27",
       "url": "/post/ssc-exam-calendar-2026-27",
       "category": "latestJobs",
@@ -7692,22 +7964,6 @@ export const scrapedData = {
       "slug": "bihar-jamin-dakhil-kharij-online-apply-2026",
       "publishedDate": "5 January 2026",
       "publishedAt": "2026-01-05T07:28:14.000Z"
-    },
-    {
-      "title": "Bank of India Apprentice Recruitment 2026 Apply Online",
-      "url": "/post/bank-of-india-apprentice-recruitment-2026",
-      "category": "latestJobs",
-      "slug": "bank-of-india-apprentice-recruitment-2026",
-      "publishedDate": "2 January 2026",
-      "publishedAt": "2026-01-01T18:30:00.000Z"
-    },
-    {
-      "title": "SBI Bank SO Recruitment 2026 Notification Out 996 Posts",
-      "url": "/post/sbi-bank-so-recruitment-2026",
-      "category": "latestJobs",
-      "slug": "sbi-bank-so-recruitment-2026",
-      "publishedDate": "2 January 2026",
-      "publishedAt": "2026-01-01T18:30:00.000Z"
     },
     {
       "title": "UP Anganwadi Helper Online Form 2025 | All District",
@@ -7956,110 +8212,6 @@ export const scrapedData = {
       "slug": "uiic-apprentice-recruitment-2025",
       "publishedDate": "24 April 2025",
       "publishedAt": "2025-04-23T18:30:00.000Z"
-    },
-    {
-      "title": "Armed Forces AFMS SSC Medical Officer Recruitment 2025",
-      "url": "/post/army-afms-recruitment-2025",
-      "category": "latestJobs",
-      "slug": "army-afms-recruitment-2025",
-      "publishedDate": "21 April 2025",
-      "publishedAt": "2025-04-20T18:30:00.000Z"
-    },
-    {
-      "title": "Allahabad University Teaching Recruitment 2025 Apply For 317 Post",
-      "url": "/post/allahabad-university-teaching-recruitment-2025",
-      "category": "latestJobs",
-      "slug": "allahabad-university-teaching-recruitment-2025",
-      "publishedDate": "17 April 2025",
-      "publishedAt": "2025-04-16T18:30:00.000Z"
-    },
-    {
-      "title": "MPPSC Food Safety Officer FSO Recruitment 2025 Apply For 120 Post",
-      "url": "/post/mppsc-food-safety-officer-fso-recruitment-2025",
-      "category": "latestJobs",
-      "slug": "mppsc-food-safety-officer-fso-recruitment-2025",
-      "publishedDate": "3 April 2025",
-      "publishedAt": "2025-04-02T18:30:00.000Z"
-    },
-    {
-      "title": "UPPSC Various Post Direct Recruitment 2025 Notification Out",
-      "url": "/post/uppsc-various-post-direct-recruitment-2025",
-      "category": "latestJobs",
-      "slug": "uppsc-various-post-direct-recruitment-2025",
-      "publishedDate": "27 March 2025",
-      "publishedAt": "2025-03-26T18:30:00.000Z"
-    },
-    {
-      "title": "Allahabad High Court Research Associates Recruitment 2025 Out",
-      "url": "/post/ahc-research-associates-recruitment-2025-start",
-      "category": "latestJobs",
-      "slug": "ahc-research-associates-recruitment-2025-start",
-      "publishedDate": "17 March 2025",
-      "publishedAt": "2025-03-16T18:30:00.000Z"
-    },
-    {
-      "title": "Rail Wheel Factory RWF Apprentices Online Form 2025",
-      "url": "/post/rail-wheel-factory-rwf-apprentices-recruitment-2025",
-      "category": "latestJobs",
-      "slug": "rail-wheel-factory-rwf-apprentices-recruitment-2025",
-      "publishedDate": "2025-03-09T01:01:49+05:30",
-      "publishedAt": "2025-03-08T19:31:49.000Z"
-    },
-    {
-      "title": "UPSC ORA Assistant Professor Recruitment 2025 for Apply 34 Post",
-      "url": "/post/upsc-assistant-professor-recruitment-2025",
-      "category": "latestJobs",
-      "slug": "upsc-assistant-professor-recruitment-2025",
-      "publishedDate": "8 March 2025",
-      "publishedAt": "2025-03-07T18:30:00.000Z"
-    },
-    {
-      "title": "MPPSC Assistant Professor Recruitment 2025 Out Apply For 1930 Post",
-      "url": "/post/mppsc-assistant-professor-recruitment-2025",
-      "category": "latestJobs",
-      "slug": "mppsc-assistant-professor-recruitment-2025",
-      "publishedDate": "7 March 2025",
-      "publishedAt": "2025-03-06T18:30:00.000Z"
-    },
-    {
-      "title": "Union Bank of India Apprentice Recruitment 2025 Notification Out For 2691 Post",
-      "url": "/post/union-bank-of-india-apprentice-recruitment-2025-date-extend",
-      "category": "latestJobs",
-      "slug": "union-bank-of-india-apprentice-recruitment-2025-date-extend",
-      "publishedDate": "7 March 2025",
-      "publishedAt": "2025-03-06T18:30:00.000Z"
-    },
-    {
-      "title": "Indian Army NCC Special Entry Scheme 58th Course Recruitment 2025",
-      "url": "/post/indian-army-ncc-special-entry-scheme-58th-course-recruitment-2025-start",
-      "category": "latestJobs",
-      "slug": "indian-army-ncc-special-entry-scheme-58th-course-recruitment-2025-start",
-      "publishedDate": "24 February 2025",
-      "publishedAt": "2025-02-23T18:30:00.000Z"
-    },
-    {
-      "title": "KGMU Non Teaching Various Post Online Form 2025",
-      "url": "/post/kgmu-non-teaching-recruitment-2025-extended",
-      "category": "latestJobs",
-      "slug": "kgmu-non-teaching-recruitment-2025-extended",
-      "publishedDate": "2025-02-17T14:08:36+05:30",
-      "publishedAt": "2025-02-17T08:38:36.000Z"
-    },
-    {
-      "title": "NTPC Assistant Executive Online Form 2025",
-      "url": "/post/ntpc-assistant-executive-recruitment-2025",
-      "category": "latestJobs",
-      "slug": "ntpc-assistant-executive-recruitment-2025",
-      "publishedDate": "17 February 2025",
-      "publishedAt": "2025-02-17T08:32:14.000Z"
-    },
-    {
-      "title": "UP Anganwadi Recruitment 2025 Notification Out For 8,796 Post",
-      "url": "/post/up-aganwadi-bharti-online-form-2025-updated",
-      "category": "latestJobs",
-      "slug": "up-aganwadi-bharti-online-form-2025-updated",
-      "publishedDate": "8 February 2025",
-      "publishedAt": "2025-02-07T18:30:00.000Z"
     },
     {
       "title": "MPESB Group 4 Stenographer Online Form 2025",
@@ -9052,22 +9204,6 @@ export const scrapedData = {
       "publishedAt": "2026-09-14T12:22:58.000Z"
     },
     {
-      "title": "UPESSC PRT Assistant Teacher Online Form 2026 (12405 Posts)",
-      "url": "/post/upessc-prt-assistant-teacher-2026",
-      "category": "documents",
-      "slug": "upessc-prt-assistant-teacher-2026",
-      "publishedDate": "2026-09-19T13:14:30+05:30",
-      "publishedAt": "2026-09-19T07:44:30.000Z"
-    },
-    {
-      "title": "UPESSC PGT Teacher Online Form 2026 (2607 Posts)",
-      "url": "/post/upessc-pgt-teacher-2026",
-      "category": "documents",
-      "slug": "upessc-pgt-teacher-2026",
-      "publishedDate": "2026-09-19T13:14:15+05:30",
-      "publishedAt": "2026-09-19T07:44:15.000Z"
-    },
-    {
       "title": "ISRO ICRB Scientist / Engineer Exam Date 2026",
       "url": "/post/isro-icrb-scientist-engineer-2026",
       "category": "documents",
@@ -9218,14 +9354,6 @@ export const scrapedData = {
       "slug": "upcisb-various-post-may26",
       "publishedDate": "6 September 2026",
       "publishedAt": "2026-09-05T18:30:00.000Z"
-    },
-    {
-      "title": "UP Special TET Online Form 2026",
-      "url": "/post/up-special-tet-2026",
-      "category": "documents",
-      "slug": "up-special-tet-2026",
-      "publishedDate": "5 September 2026",
-      "publishedAt": "2026-09-05T08:43:04.000Z"
     },
     {
       "title": "Haryana HTET Form November 2026, Exam Date 21 & 22 November",
@@ -9740,14 +9868,6 @@ export const scrapedData = {
       "publishedAt": "2025-07-29T18:30:00.000Z"
     },
     {
-      "title": "UP Scholarship Application Status 2025: Pre Matric & Postmatric Scholarship",
-      "url": "/post/up-scholarship-application-status-2025",
-      "category": "documents",
-      "slug": "up-scholarship-application-status-2025",
-      "publishedDate": "11 February 2025",
-      "publishedAt": "2025-02-10T18:30:00.000Z"
-    },
-    {
       "title": "Railway RRB Technician Application Status Link 2024 – Out",
       "url": "/post/railway-rrb-technician-exam-date-admit-card-2024",
       "category": "documents",
@@ -9810,8 +9930,8 @@ export const scrapedData = {
       "lastDate": "20/06/2026"
     },
     "ahc-research-associates-recruitment-2025-start": {
-      "publishedDate": "17 March 2025",
-      "publishedAt": "2025-03-16T18:30:00.000Z",
+      "publishedDate": "2025-03-17T12:55:40+05:30",
+      "publishedAt": "2025-03-17T07:25:40.000Z",
       "lastDate": "01 April 2025"
     },
     "ahc-ro-aro-ca-june2026": {
@@ -9955,8 +10075,8 @@ export const scrapedData = {
       "lastDate": "25 September 2026"
     },
     "allahabad-university-teaching-recruitment-2025": {
-      "publishedDate": "17 April 2025",
-      "publishedAt": "2025-04-16T18:30:00.000Z",
+      "publishedDate": "2025-04-17T14:10:10+05:30",
+      "publishedAt": "2025-04-17T08:40:10.000Z",
       "lastDate": "02 May 2025"
     },
     "ap-police-jail-warder-syllabus-and-exam-pattern-3066935": {
@@ -9985,8 +10105,8 @@ export const scrapedData = {
       "lastDate": "12 June 2025"
     },
     "army-afms-recruitment-2025": {
-      "publishedDate": "21 April 2025",
-      "publishedAt": "2025-04-20T18:30:00.000Z",
+      "publishedDate": "2025-04-21T17:11:28+05:30",
+      "publishedAt": "2025-04-21T11:41:28.000Z",
       "lastDate": "12 May 2025"
     },
     "Army-Agniveer-CEE-2026-27": {
@@ -10028,8 +10148,8 @@ export const scrapedData = {
       "lastDate": "17 September 2026 Extended"
     },
     "bank-of-baroda-manager-2026": {
-      "publishedDate": "18 June 2026",
-      "publishedAt": "2026-06-17T18:30:00.000Z",
+      "publishedDate": "2026-06-26T15:43:29+05:30",
+      "publishedAt": "2026-06-26T10:13:29.000Z",
       "lastDate": "06 July 2026"
     },
     "bank-of-baroda-office-assistant-2025": {
@@ -10048,8 +10168,8 @@ export const scrapedData = {
       "lastDate": "24 September 2026"
     },
     "bank-of-india-apprentice-recruitment-2026": {
-      "publishedDate": "2 January 2026",
-      "publishedAt": "2026-01-01T18:30:00.000Z",
+      "publishedDate": "2026-01-02T17:03:02+05:30",
+      "publishedAt": "2026-01-02T11:33:02.000Z",
       "lastDate": "10 January 2026"
     },
     "bank-of-india-so-sep26": {
@@ -10058,8 +10178,8 @@ export const scrapedData = {
       "lastDate": "10/09/2026\nLast Date for Apply Online : 25/09/2026\nComplete Form Last Date : 25/09/2026\nBOI Exam Date : As per Schedule\nAdmit Card Available : Before Exam : Application Fee\n\nGeneral / OBC / EWS : 1180/- \nSC / ST / PH  : 175/- \nPay the Exam Fees Through Debit Card / Credit Card / Net Banking Only."
     },
     "bank-of-maharashtra-apprentice-recruitment-2026": {
-      "publishedDate": "20 January 2026",
-      "publishedAt": "2026-01-19T18:30:00.000Z",
+      "publishedDate": "2026-01-20T14:53:00+05:30",
+      "publishedAt": "2026-01-20T09:23:00.000Z",
       "lastDate": "25 January 2026"
     },
     "bcece-admission-2026": {
@@ -10108,8 +10228,8 @@ export const scrapedData = {
       "lastDate": "30 April 2025"
     },
     "bhu-non-teaching-various-post-2026": {
-      "publishedDate": "27 August 2026",
-      "publishedAt": "2026-08-26T18:30:00.000Z",
+      "publishedDate": "2026-08-27T12:28:25+05:30",
+      "publishedAt": "2026-08-27T06:58:25.000Z",
       "lastDate": "24 September 2026"
     },
     "bihar-2yr-bed-2": {
@@ -10467,8 +10587,8 @@ export const scrapedData = {
       "lastDate": "27/02/2026\nLast Date for Apply Online :20/03/2026\nPay Exam Fee Last Date :20/03/2026\nExam Date : 15/07/2026\nAdmit Card Available :06/07/2026 : Application Fee\n\nGeneral / OBC/ Other State : 100/-\nSC / ST / PH : 100/-\nFemale Candidate (Bihar Dom.) : 100/-\nPay the Exam Fee Through Online / Offline Fee Mode Only"
     },
     "bpsc-school-teacher-tre-4-0-2026": {
-      "publishedDate": "2026-09-10T14:48:33+05:30",
-      "publishedAt": "2026-09-10T09:18:33.000Z",
+      "publishedDate": "2026-09-17T10:19:04+05:30",
+      "publishedAt": "2026-09-17T04:49:04.000Z",
       "lastDate": "Notify Soon"
     },
     "BPSC-Simultala-School-Teacher-2024": {
@@ -10507,8 +10627,8 @@ export const scrapedData = {
       "lastDate": "21/06/2026"
     },
     "bpssc-bihar-home-guard-company-commander-2026": {
-      "publishedDate": "22 July 2026",
-      "publishedAt": "2026-07-21T18:30:00.000Z",
+      "publishedDate": "2026-07-22T13:42:49+05:30",
+      "publishedAt": "2026-07-22T08:12:49.000Z",
       "lastDate": "30 July 2026"
     },
     "bpssc-bihar-police-asi-technical-2026": {
@@ -10517,8 +10637,8 @@ export const scrapedData = {
       "lastDate": "21 June 2026"
     },
     "bpssc-bihar-police-company-commander-2026": {
-      "publishedDate": "8 September 2026",
-      "publishedAt": "2026-09-08T08:04:51.000Z",
+      "publishedDate": "2026-09-10T14:47:04+05:30",
+      "publishedAt": "2026-09-10T09:17:04.000Z",
       "lastDate": "10 October 2026"
     },
     "bpssc-bihar-police-si-2025": {
@@ -10808,8 +10928,8 @@ export const scrapedData = {
       "lastDate": "21 June 2026 (Extend)"
     },
     "coal-india-cil-management-trainee-mt-through-gate-2026": {
-      "publishedDate": "8 May 2026",
-      "publishedAt": "2026-05-07T18:30:00.000Z",
+      "publishedDate": "2026-05-08T11:05:13+05:30",
+      "publishedAt": "2026-05-08T05:35:13.000Z",
       "lastDate": "07 June 2026"
     },
     "coal-india-cil-mt-2026": {
@@ -10842,8 +10962,8 @@ export const scrapedData = {
       "lastDate": "31/08/2026\nLast Date for Apply Online :30/09/2026\nPay Exam Fee Last Date :30/09/2026\nConcor Exam Date : As per Schedule\nAdmit Card Available : Before Exam : Application Fee\n\nFor Management Trainee : \nGeneral / OBC / EWS : 750/-\nSC / ST / PH : 0/-\nFor Assistant Officer : \nGeneral / OBC / EWS : 500/–\nSC / ST / PH : 0/-\nPay the Exam Fee Through Online / Offline Fee Mode Only"
     },
     "concor-mt-assistant-officer-2026": {
-      "publishedDate": "2 September 2026",
-      "publishedAt": "2026-09-01T18:30:00.000Z",
+      "publishedDate": "2026-09-02T13:09:04+05:30",
+      "publishedAt": "2026-09-02T07:39:04.000Z",
       "lastDate": "30 September 2026"
     },
     "cpri-recruitment-2026-apply-online-for-110-assistant-mts-and-more-posts-3067640": {
@@ -11002,8 +11122,8 @@ export const scrapedData = {
       "publishedAt": "2026-09-04T18:30:00.000Z"
     },
     "delhi-high-court-spa-and-pa-2026": {
-      "publishedDate": "5 September 2026",
-      "publishedAt": "2026-09-05T08:42:49.000Z",
+      "publishedDate": "2026-09-15T11:52:08+05:30",
+      "publishedAt": "2026-09-15T06:22:08.000Z",
       "lastDate": "05 October 2026"
     },
     "delhi-laxmi-yojana-2026": {
@@ -11276,7 +11396,8 @@ export const scrapedData = {
     },
     "hpsc-food-safety-officer-fso-2026": {
       "publishedDate": "2026-09-19T13:09:02+05:30",
-      "publishedAt": "2026-09-19T07:39:02.000Z"
+      "publishedAt": "2026-09-19T07:39:02.000Z",
+      "lastDate": "19 October 2026"
     },
     "hpsc-fso-recruitment-2026-apply-online-for-45-food-safety-officer-posts-3068315": {
       "publishedDate": "18 September 2026",
@@ -11445,8 +11566,8 @@ export const scrapedData = {
       "lastDate": "01/07/2026\nLast Date for Apply Online : 21/07/2026\nPay Exam Fee Last Date : 21/07/2026\nCorrection Date : As per Schedule\nIBPS PO Pre Exam Date : August 2026\nPre Admit Card Available : Before Exam\nPre Result Available : September 2026\nIBPS PO Mains Exam Date : October 2026\nIBPS PO Mains Result Available : November 2026 : Application Fee\n\nGeneral / EWS / OBC : 850/-\nSC / ST / PH : 175/-\nPay the Exam Fee Through Online / Offline Fee Mode Only"
     },
     "ibps-rrb-15th-2026": {
-      "publishedDate": "2026-09-11T17:25:23+05:30",
-      "publishedAt": "2026-09-11T11:55:23.000Z",
+      "publishedDate": "2026-09-21T10:47:33+05:30",
+      "publishedAt": "2026-09-21T05:17:33.000Z",
       "lastDate": "21 September 2026"
     },
     "ibps-rrb-15th-august26": {
@@ -11548,8 +11669,8 @@ export const scrapedData = {
       "lastDate": "31/08/2026\nLast Date for Apply Registration :19/09/2026 upto 5 PM\nApplication Form Begin : 02/09/2026\nLast Date for Apply Form : 21/09/2026 upto 05 PM Only \nPay Exam Fee Last Date :21/09/2026\nComplete Form Last Date : 21/09/2026\nCorrection Date : 23-24 September 2026\nFirst Merit List / Result : As per Schedule \nSecond Merit List / Result : As per Schedule\nThird Merit List / Result : As per Schedule\nFourth Merit List : As per Schedule : Application Fee\n\nGeneral / EWS / OBC : 100/-\nSC / ST / PH : 0/- (Nil)\nAll Category Female : 0/- (Exempted)\nPay the Exam Fee Through Debit Card / Credit Card / Net Banking / UPI Fee Mode Only."
     },
     "india-post-office-gds-2026": {
-      "publishedDate": "2026-09-11T17:25:41+05:30",
-      "publishedAt": "2026-09-11T11:55:41.000Z",
+      "publishedDate": "2026-09-21T10:47:18+05:30",
+      "publishedAt": "2026-09-21T05:17:18.000Z",
       "lastDate": "19 September 2026"
     },
     "indian-air-force-agniveervayu-recruitment-2025": {
@@ -11618,8 +11739,8 @@ export const scrapedData = {
       "lastDate": "03 September 2025"
     },
     "indian-army-ncc-special-entry-scheme-58th-course-recruitment-2025-start": {
-      "publishedDate": "24 February 2025",
-      "publishedAt": "2025-02-23T18:30:00.000Z",
+      "publishedDate": "2025-02-24T10:37:24+05:30",
+      "publishedAt": "2025-02-24T05:07:24.000Z",
       "lastDate": "15 March 2025"
     },
     "indian-army-ssc-technical-68th-men-april-2027": {
@@ -11673,9 +11794,9 @@ export const scrapedData = {
       "lastDate": "29 June 2026 (05:00 PM)"
     },
     "indian-navy-agniveer-apprentices-inet-2026": {
-      "publishedDate": "5 June 2026",
-      "publishedAt": "2026-06-04T18:30:00.000Z",
-      "lastDate": "29 June 2026"
+      "publishedDate": "2026-06-26T15:18:40+05:30",
+      "publishedAt": "2026-06-26T09:48:40.000Z",
+      "lastDate": "05 July 2026"
     },
     "indian-navy-agniveer-mr-musician-02-2026": {
       "publishedDate": "2026-09-17T19:33:35+05:30",
@@ -11769,8 +11890,8 @@ export const scrapedData = {
       "lastDate": "24 January 2025"
     },
     "iocl-marketing-division-nr-apprentices-2026": {
-      "publishedDate": "10 August 2026",
-      "publishedAt": "2026-08-09T18:30:00.000Z",
+      "publishedDate": "2026-08-10T13:20:28+05:30",
+      "publishedAt": "2026-08-10T07:50:28.000Z",
       "lastDate": "06 September 2026"
     },
     "iocl-pipelines-apprentice-online-form-2025": {
@@ -11882,7 +12003,8 @@ export const scrapedData = {
     },
     "jharkhand-jssc-102-inter-level-jilcce-2026": {
       "publishedDate": "2026-09-19T10:43:27+05:30",
-      "publishedAt": "2026-09-19T05:13:27.000Z"
+      "publishedAt": "2026-09-19T05:13:27.000Z",
+      "lastDate": "30 September 2026"
     },
     "jharkhand-jssc-jilcce-recruitment-2026-apply-online-for-326-health-supervisor-mpw-and-more-posts-3055454": {
       "publishedDate": "25 June 2026",
@@ -11900,8 +12022,8 @@ export const scrapedData = {
       "lastDate": "30 September 2024"
     },
     "jipmer-group-a-non-faculty-2026": {
-      "publishedDate": "15 June 2026",
-      "publishedAt": "2026-06-15T07:49:30.000Z",
+      "publishedDate": "2026-06-26T15:37:43+05:30",
+      "publishedAt": "2026-06-26T10:07:43.000Z",
       "lastDate": "01 July 2026"
     },
     "jipmer-non-faculty-june-2026": {
@@ -12138,8 +12260,8 @@ export const scrapedData = {
       "publishedAt": "2026-06-15T18:30:00.000Z"
     },
     "mp-guest-teacher-online-form-2026": {
-      "publishedDate": "8 May 2026",
-      "publishedAt": "2026-05-07T18:30:00.000Z",
+      "publishedDate": "2026-05-08T11:05:49+05:30",
+      "publishedAt": "2026-05-08T05:35:49.000Z",
       "lastDate": "11 May 2026"
     },
     "mp-high-court-assistant-grade-iii-online-form-2026": {
@@ -12313,13 +12435,13 @@ export const scrapedData = {
       "lastDate": "22/09/2026\nLast Date for Apply Online : 06/10/2026\nLast Date Pay Exam Fee : 06/10/2026\nCorrection Last Date : 11/10/2026\nMP Police Constable Exam Date Start : 19/11/2026\nAdmit Card Available : Before Exam\nAnswer Key Available : After Exam\nResult Available :Notified Soon : Application Fee\n\nGeneral / Other State : 560/-\nEWS / OBC / SC / ST : 310/-\nPortal Charges: Rs. 60/- (Include) \nPay the Examination Fee Through Cast at MPOnline Kiosk or Debit Card, Credit Card, Net Banking, UPI Fee Mode Only."
     },
     "mpesb-mp-police-gd-constable-2026": {
-      "publishedDate": "2026-09-11T17:25:33+05:30",
-      "publishedAt": "2026-09-11T11:55:33.000Z",
+      "publishedDate": "2026-09-17T10:19:28+05:30",
+      "publishedAt": "2026-09-17T04:49:28.000Z",
       "lastDate": "06 October 2026"
     },
     "mpesb-mp-police-si-subedar-2026": {
-      "publishedDate": "9 September 2026",
-      "publishedAt": "2026-09-09T11:39:39.000Z",
+      "publishedDate": "2026-09-10T14:47:00+05:30",
+      "publishedAt": "2026-09-10T09:17:00.000Z",
       "lastDate": "23 September 2026"
     },
     "mpesb-nursing-officer-sister-tutor-2026": {
@@ -12339,7 +12461,8 @@ export const scrapedData = {
     },
     "mpesb-primary-middle-school-teacher-2026": {
       "publishedDate": "2026-09-18T17:12:27+05:30",
-      "publishedAt": "2026-09-18T11:42:27.000Z"
+      "publishedAt": "2026-09-18T11:42:27.000Z",
+      "lastDate": "05 October 2026"
     },
     "mpesb-pstst-primary-school-july25": {
       "publishedDate": "23 June 2026",
@@ -12358,7 +12481,8 @@ export const scrapedData = {
     },
     "mpesb-subedar-steno-asi-2026": {
       "publishedDate": "2026-09-17T19:58:56+05:30",
-      "publishedAt": "2026-09-17T14:28:56.000Z"
+      "publishedAt": "2026-09-17T14:28:56.000Z",
+      "lastDate": "08 October 2026"
     },
     "mpesb-subedar-steno-asi-oct25": {
       "publishedDate": "17 July 2026",
@@ -12390,8 +12514,8 @@ export const scrapedData = {
       "lastDate": "25/05/2026\nLast Date for Apply : 26/06/2026\nFee Payment Last Date : 26/06/2026\nCorrection Date  : 30 May / 28 June 2026\nExam Date : 02/08/2026\nAdmit Card Available : 29/07/2026\nResult Declared : 11/09/2026 (Subject Wise) : Application Fees\n\nGeneral / Other State : 500/-\nSC / ST / OBC / EWS / PH : 250/-\nPortal Charges : 60/-\nCorrection Charges : 50/-\nPay the Exam Fee Through Debit Card, Credit Card, Net Banking, Other Online Fee Mode Only."
     },
     "mppsc-assistant-professor-recruitment-2025": {
-      "publishedDate": "7 March 2025",
-      "publishedAt": "2025-03-06T18:30:00.000Z",
+      "publishedDate": "2025-03-07T14:14:09+05:30",
+      "publishedAt": "2025-03-07T08:44:09.000Z",
       "lastDate": "26 March 2025"
     },
     "mppsc-assistant-professor": {
@@ -12410,8 +12534,8 @@ export const scrapedData = {
       "lastDate": "01/07/2026\nLast Date for Apply Online : 31/07/2026\nLast Date Pay Exam Fee :31/07/2026\nCorrection Last Date : 05 July to 02 August 2026\nLast Date with Late Fee : 26/08/2026\nExam Date : 20/09/2026 \nAdmit Card Available : Before Exam\nAnswer Key Available : After Exam\nResult Status : After Exam : Application Fee\n\nGeneral / Other State : 540/-\nOBC / SC / ST : 210/-\nPortal Charges: Rs. 40/-\nLate Fee :  3000-25000/-\nPay the Examination Fee Through Cast at E Challan or Debit Card, Credit Card, Net Banking"
     },
     "mppsc-food-safety-officer-fso-recruitment-2025": {
-      "publishedDate": "3 April 2025",
-      "publishedAt": "2025-04-02T18:30:00.000Z",
+      "publishedDate": "2025-04-03T15:56:32+05:30",
+      "publishedAt": "2025-04-03T10:26:32.000Z",
       "lastDate": "27 April 2025"
     },
     "mppsc-food-safety-officer-fso-result-2026": {
@@ -12430,8 +12554,8 @@ export const scrapedData = {
       "lastDate": "Madhya Pradesh MPPSC Food Safety Officer FSO 2024 Final Result with Marks 2026 - Out\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPost Date:\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t22 June 2026 | 08:11 PM\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tShort Information :\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMadhya Pradesh Public Service Commission (MPPSC) has Officially Released Final Result for the Post of Food Safety Officer (FSO) Recruitment 2025 for 120 Post. All Interested Candidates Can Download Final Result Now in the Given Link Below.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t   \n\n\t\t\t\t\t\t\t\t\t\t\t\t  \n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMadhya Pradesh Public Service Commission (MPPSC)\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tFood Safety Officer FSO Recruitment 2025\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAdvt. No: 57/2024\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tWWW.RESULTBHARAT.COM\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tApplication Fee\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tGeneral, Other State : Rs. 540/-\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMP Reserve Category : Rs. 290/-\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPortal Charges: Rs.40/- (Included)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCorrection Charges: Rs.50/- (Extra)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPayment Mode: Pay the Exam Fee Through Credit Card, Debit Card, Net Banking Fee Mode.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tImportant Dates\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOnline Apply Start On : 28 March 2025\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tRegistration Last Date : 27 April 2025\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tFee Payment Last Date : 27 April 2025\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCorrection Date : 29 April 2025\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tExam Date : Schedule Wise\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tResult Declared : 21 January 2026\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tFinal Result Declared : 21 June 2026\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tEligibility Criteria\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tA degree from a recognized university in Food Technology, Dairy Technology, Biotechnology, Oil Technology, Agricultural Science, Veterinary Science, Microbiology, Chemistry, or Medicine (Graduate/Postgraduate/Doctorate) or an equivalent qualification recognized by the Food Authority with prior approval from the Central Government.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tFor More Details, Read Official Notification.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAge Limit as on 01-01-2025\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMinimum Age : 21 Years \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMaximum Age : 40 Years\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tRead the Notification for Age Relaxation.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAge Calculator:  Click Here \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tVacancy Details\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTotal Vacancy : 120 Post\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tExam Name\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tGeneral\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSC\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tST\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOBC\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tEWS\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTotal Post\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tFood Safety Officer\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t28\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t28\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t38\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t10\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t120\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tHow to Apply MPPSC SSE 2025\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMadhya Pradesh MPPSC Food Safety Officer (FSO) Recruitment 2025\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAll Interested Candidates can Apply Online from 28 March 2025 to 27 April 2025\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tVisit Official Website > https://mppsc.mp.gov.in > Then Click On Apply Online\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tRead the Notification for More Details about MPPSC Food Safety Officer FSO Recruitment 2025.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tKindly Fill Your Basic Details and Upload Your Photo, Sign, ID Proof and Other Documents.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCheck Your full Details Preview Before Submit Application Form.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPay Required Application Fee to Complete Form. If Fees are Asked.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTake a Print Out of Submit Final Form for Further Process.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPay Scale & Mode of Selection\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPay Scale:  Rs.36200-l14800/-\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSelection Process:  Selection on the Basis of Written Exam, DV, Interview (If Applicable), Medical Exam & Final Selection. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n    \n        \n        📋 How to Download MPPSC Food Safety Officer FSO 2024 Final Result with Marks 2026\n\n        \n            Visit the official website mppsc.mp.gov.in.\n            Click on the “Result” or “Final Result / Score Card” section.\n            Find and click on the link – MPPSC Food Safety Officer (FSO) 2024 Final Result with Marks.\n            Enter your Roll Number / Application Number and Date of Birth to log in.\n            Download the Final Result with Marks PDF and save it.\n        \n\n        Note: Check all details carefully. Contact MPPSC helpline in case of any discrepancy.\n        \n    \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here to Join ResultBharat Facebook Group \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAll Interested Candidates Can Download Final Result Now\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDisclaimer :  The Examination Results / Marks published in this Website is simplest for the instant Information to the Examinees an does now not to be a represent to be a Legal Document. While all efforts had been made to make the Information to be had on this Website as Authentic as feasible. We are not accountable for any Inadvertent Error which can have crept in the Examination Results / Marks being published in this Website nad for any loss to absolutely everyone or anything caused by any Shortcoming, Defect or Inaccuracy of the Information in this Website.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t         \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tIMPORTANT LINKS\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Download Final Result/ Marks \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tFinal Result  ||  Marks\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tApply Online\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tRegistration  ||  Login\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tApplication Home Page >>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDownload Notification\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOfficial Website\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tJoin Our Whatsapp Channel\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tJoin Our Telegram Group\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTop Online Form 2026 (All Current Job List)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMPPSC Food Safety Officer (FSO) Recruitment 2025 – FAQ\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1. What is the total number of vacancies for MPPSC FSO 2025?\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMPPSC has announced 120 vacancies for the Food Safety Officer (FSO) post in 2025.\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t2. What is the application start and end date?\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOnline application starts: March 28, 2025\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tLast date to apply: April 27, 2025\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t3. How can I apply for MPPSC FSO 2025?\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCandidates can apply online through the official MPPSC website before the deadline.\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t4. What is the application fee?\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tGeneral & Other State Candidates: ₹540/-\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMP Reserved Category Candidates: ₹290/-\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPortal Charges: ₹40/- (Included)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCorrection Fee: ₹50/- (Extra)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t5. What is the age limit for MPPSC FSO 2025?\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMinimum Age: 21 years\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMaximum Age: 40 years\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Age relaxation as per MPPSC norms)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t6. What are the eligibility criteria for MPPSC FSO 2025?\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCandidates must have a Graduate/Postgraduate/Doctorate degree in:\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tFood Technology\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDairy Technology\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tBiotechnology\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOil Technology\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAgricultural Science\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tVeterinary Science\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMicrobiology\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tChemistry\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMedicine\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t7. What is the selection process for MPPSC FSO 2025?\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tThe selection process includes:\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tWritten Exam (Objective-type questions)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDocument Verification\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Medical Examination\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t8. When will the exam be conducted?\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tThe exam date will be announced later by MPPSC. Keep checking the official website for updates.\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t9. When will the admit card be released?\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tThe admit card release date will be notified later on the MPPSC website.\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t10. Can I edit my application after submission?\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tYes, application corrections can be made on April 29, 2025, with a ₹50/- correction fee.\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t11. How can I pay the application fee?\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tThe fee can be paid online via Debit Card, Credit Card, or Net Banking.\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t12. Where can I check updates and notifications?\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tVisit the official MPPSC website regularly for updates on admit cards, exam dates, and results.\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tStill have questions? Drop them in the comments or visit the MPPSC official website! 🚀\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tMPPSC Food Safety Officer Recruitment 2025 – Apply for 120 Posts\n\n\t\t\t\t\t\t\t\t\t\t\t\tMadhya Pradesh Public Service Commission (MPPSC) has officially released the Food Safety Officer (FSO) Recruitment 2025 notification for 120 vacancies. This is a golden opportunity for candidates seeking a government job in the food safety sector. Eligible applicants can apply online from March 28, 2025, to April 27, 2025, through the official MPPSC website.\n\n\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\tMPPSC FSO 2025: Important Dates\n\n\t\t\t\t\t\t\t\t\t\t\t\tApplication Start Date: March 28, 2025\n\n\t\t\t\t\t\t\t\t\t\t\t\tLast Date to Apply: April 27, 2025\n\n\t\t\t\t\t\t\t\t\t\t\t\tFee Payment Deadline: April 27, 2025\n\n\t\t\t\t\t\t\t\t\t\t\t\tCorrection Window: April 29, 2025\n\n\t\t\t\t\t\t\t\t\t\t\t\tAdmit Card & Exam Date: To be announced\n\n\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\tApplication Fee\n\n\t\t\t\t\t\t\t\t\t\t\t\tGeneral & Other State Candidates: ₹540/-\n\n\t\t\t\t\t\t\t\t\t\t\t\tMP Reserved Category: ₹290/-\n\n\t\t\t\t\t\t\t\t\t\t\t\tPortal Charges: ₹40/- (Included)\n\n\t\t\t\t\t\t\t\t\t\t\t\tCorrection Fee: ₹50/- (Extra)\n\n\t\t\t\t\t\t\t\t\t\t\t\tPayment Mode: Debit Card, Credit Card, Net Banking\n\n\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\tEligibility Criteria\n\n\t\t\t\t\t\t\t\t\t\t\t\tCandidates must hold a Graduate/Postgraduate/Doctorate degree in Food Technology, Dairy Technology, Biotechnology, Oil Technology, Agricultural Science, Veterinary Science, Microbiology, Chemistry, or Medicine from a recognized university. The qualification should be approved by the Food Authority of India as per the Food Safety and Standards Act, 2006.\n\n\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\tAge Limit (as of 01-01-2025)\n\n\t\t\t\t\t\t\t\t\t\t\t\tMinimum Age: 21 years\n\n\t\t\t\t\t\t\t\t\t\t\t\tMaximum Age: 40 years\n\n\t\t\t\t\t\t\t\t\t\t\t\tAge relaxation as per MPPSC norms.\n\n\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\tWhy Apply for MPPSC FSO 2025?\n\n\t\t\t\t\t\t\t\t\t\t\t\tThis recruitment offers job security, an attractive salary package, and career growth opportunities in the government sector. If you meet the eligibility criteria, don’t miss out—apply online before the deadline!\n\n\t\t\t\t\t\t\t\t\t\t\t\tFor detailed information, read the official notification on the MPPSC website.\n\n\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\n\t\t\t\t\t\n\n\n \n\n\n\n \n\n \n \n \n\n\n\n\n\n\n\n\n\n\n\n/* Footer Styling */\n    .pageFooter {\n        background-color: #00004d; /* Dark blue background */\n        padding: 20px 0;\n        text-align: center;\n        border-top: 2px solid #ddd;\n        color: white; /* White text for better contrast */\n    }\n\n    .pageFooter p {\n        margin: 10px 0;\n        font-family: 'Times New Roman', Times, serif;\n        font-size: 16px;\n        color: white; /* White text */\n    }\n\n    .pageFooter a {\n        text-decoration: none;\n        color: #66ccff; /* Light blue link color */\n        font-weight: bold;\n    }\n\n    .pageFooter a:hover {\n        color: #ff6347; /* Hover effect - tomato color */\n    }\n\n    .pageFooter .footer-links {\n        font-size: 18px;\n        margin-top: 20px;\n    }\n\n    .pageFooter .footer-links a {\n        margin: 0 8px;\n        color: #66ccff; /* Light blue link color */\n        font-weight: bold;\n    }\n\n    .pageFooter .footer-links a:hover {\n        color: #ff6347; /* Hover effect for links */\n    }\n\n    .pageFooter img {\n        margin: 10px 0; /* Space above and below the image */\n    }\n\n    .pageFooter .copyright {\n        margin-top: 10px;\n        font-size: 16px;\n    }\n\n\n\n\n\n\n\n\n\n\nContact Email:   official.resultbharat@gmail.com \n\n\nHome | About Us | Contact Us | Privacy Policy | Disclaimer | Terms of Use\n\n\n\n\n\n© Copyright 2017-2025 at www.resultbharat.com\n\n\n\n\n\n\n\n\n'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpsh-oh'},{'server':'sg2plzcpnl506243'},{'dcenter':'sg2'},{'cp_id':'3459397'},{'cp_cl':'8'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support. : Name of Post:\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMadhya Pradesh MPPSC Food Safety Officer FSO 2024 Final Result with Marks 2026 - Out\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPost Date:\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t22 June 2026 | 08:11 PM\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tShort Information :\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMadhya Pradesh Public Service Commission (MPPSC) has Officially Released Final Result for the Post of Food Safety Officer (FSO) Recruitment 2025 for 120 Post. All Interested Candidates Can Download Final Result Now in the Given Link Below.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t   \n\n\t\t\t\t\t\t\t\t\t\t\t\t  \n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMadhya Pradesh Public Service Commission (MPPSC)\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tFood Safety Officer FSO Recruitment 2025\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAdvt. No: 57/2024\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tWWW.RESULTBHARAT.COM\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tApplication Fee\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tGeneral, Other State : Rs. 540/-\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMP Reserve Category : Rs. 290/-\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPortal Charges: Rs.40/- (Included)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCorrection Charges: Rs.50/- (Extra)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPayment Mode: Pay the Exam Fee Through Credit Card, Debit Card, Net Banking Fee Mode.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tImportant Dates\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOnline Apply Start On : 28 March 2025\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tRegistration Last Date : 27 April 2025\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tFee Payment Last Date : 27 April 2025\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCorrection Date : 29 April 2025\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tExam Date : Schedule Wise\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tResult Declared : 21 January 2026\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tFinal Result Declared : 21 June 2026\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tEligibility Criteria\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tA degree from a recognized university in Food Technology, Dairy Technology, Biotechnology, Oil Technology, Agricultural Science, Veterinary Science, Microbiology, Chemistry, or Medicine (Graduate/Postgraduate/Doctorate) or an equivalent qualification recognized by the Food Authority with prior approval from the Central Government.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tFor More Details, Read Official Notification.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAge Limit as on 01-01-2025\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMinimum Age : 21 Years \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMaximum Age : 40 Years\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tRead the Notification for Age Relaxation.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAge Calculator:  Click Here \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tVacancy Details\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTotal Vacancy : 120 Post\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tExam Name\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tGeneral\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSC\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tST\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOBC\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tEWS\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTotal Post\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tFood Safety Officer\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t28\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t28\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t38\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t10\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t120\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tHow to Apply MPPSC SSE 2025\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMadhya Pradesh MPPSC Food Safety Officer (FSO) Recruitment 2025\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAll Interested Candidates can Apply Online from 28 March 2025 to 27 April 2025\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tVisit Official Website > https://mppsc.mp.gov.in > Then Click On Apply Online\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tRead the Notification for More Details about MPPSC Food Safety Officer FSO Recruitment 2025.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tKindly Fill Your Basic Details and Upload Your Photo, Sign, ID Proof and Other Documents.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCheck Your full Details Preview Before Submit Application Form.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPay Required Application Fee to Complete Form. If Fees are Asked.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTake a Print Out of Submit Final Form for Further Process.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPay Scale & Mode of Selection\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPay Scale:  Rs.36200-l14800/-\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSelection Process:  Selection on the Basis of Written Exam, DV, Interview (If Applicable), Medical Exam & Final Selection. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n    \n        \n        📋 How to Download MPPSC Food Safety Officer FSO 2024 Final Result with Marks 2026\n\n        \n            Visit the official website mppsc.mp.gov.in.\n            Click on the “Result” or “Final Result / Score Card” section.\n            Find and click on the link – MPPSC Food Safety Officer (FSO) 2024 Final Result with Marks.\n            Enter your Roll Number / Application Number and Date of Birth to log in.\n            Download the Final Result with Marks PDF and save it.\n        \n\n        Note: Check all details carefully. Contact MPPSC helpline in case of any discrepancy.\n        \n    \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here to Join ResultBharat Facebook Group \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAll Interested Candidates Can Download Final Result Now\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDisclaimer :  The Examination Results / Marks published in this Website is simplest for the instant Information to the Examinees an does now not to be a represent to be a Legal Document. While all efforts had been made to make the Information to be had on this Website as Authentic as feasible. We are not accountable for any Inadvertent Error which can have crept in the Examination Results / Marks being published in this Website nad for any loss to absolutely everyone or anything caused by any Shortcoming, Defect or Inaccuracy of the Information in this Website.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t         \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tIMPORTANT LINKS\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Download Final Result/ Marks \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tFinal Result  ||  Marks\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tApply Online\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tRegistration  ||  Login\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tApplication Home Page >>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDownload Notification\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOfficial Website\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tJoin Our Whatsapp Channel\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tJoin Our Telegram Group\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTop Online Form 2026 (All Current Job List)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMPPSC Food Safety Officer (FSO) Recruitment 2025 – FAQ\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1. What is the total number of vacancies for MPPSC FSO 2025?\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMPPSC has announced 120 vacancies for the Food Safety Officer (FSO) post in 2025.\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t2. What is the application start and end date?\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOnline application starts: March 28, 2025\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tLast date to apply: April 27, 2025\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t3. How can I apply for MPPSC FSO 2025?\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCandidates can apply online through the official MPPSC website before the deadline.\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t4. What is the application fee?\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tGeneral & Other State Candidates: ₹540/-\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMP Reserved Category Candidates: ₹290/-\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPortal Charges: ₹40/- (Included)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCorrection Fee: ₹50/- (Extra)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t5. What is the age limit for MPPSC FSO 2025?\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMinimum Age: 21 years\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMaximum Age: 40 years\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t(Age relaxation as per MPPSC norms)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t6. What are the eligibility criteria for MPPSC FSO 2025?\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCandidates must have a Graduate/Postgraduate/Doctorate degree in:\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tFood Technology\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDairy Technology\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tBiotechnology\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOil Technology\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAgricultural Science\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tVeterinary Science\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMicrobiology\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tChemistry\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMedicine\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t7. What is the selection process for MPPSC FSO 2025?\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tThe selection process includes:\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tWritten Exam (Objective-type questions)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDocument Verification\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t Medical Examination\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t8. When will the exam be conducted?\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tThe exam date will be announced later by MPPSC. Keep checking the official website for updates.\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t9. When will the admit card be released?\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tThe admit card release date will be notified later on the MPPSC website.\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t10. Can I edit my application after submission?\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tYes, application corrections can be made on April 29, 2025, with a ₹50/- correction fee.\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t11. How can I pay the application fee?\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tThe fee can be paid online via Debit Card, Credit Card, or Net Banking.\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t12. Where can I check updates and notifications?\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tVisit the official MPPSC website regularly for updates on admit cards, exam dates, and results.\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tStill have questions? Drop them in the comments or visit the MPPSC official website! 🚀\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tMPPSC Food Safety Officer Recruitment 2025 – Apply for 120 Posts\n\n\t\t\t\t\t\t\t\t\t\t\t\tMadhya Pradesh Public Service Commission (MPPSC) has officially released the Food Safety Officer (FSO) Recruitment 2025 notification for 120 vacancies. This is a golden opportunity for candidates seeking a government job in the food safety sector. Eligible applicants can apply online from March 28, 2025, to April 27, 2025, through the official MPPSC website.\n\n\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\tMPPSC FSO 2025: Important Dates\n\n\t\t\t\t\t\t\t\t\t\t\t\tApplication Start Date: March 28, 2025\n\n\t\t\t\t\t\t\t\t\t\t\t\tLast Date to Apply: April 27, 2025\n\n\t\t\t\t\t\t\t\t\t\t\t\tFee Payment Deadline: April 27, 2025\n\n\t\t\t\t\t\t\t\t\t\t\t\tCorrection Window: April 29, 2025\n\n\t\t\t\t\t\t\t\t\t\t\t\tAdmit Card & Exam Date: To be announced\n\n\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\tApplication Fee\n\n\t\t\t\t\t\t\t\t\t\t\t\tGeneral & Other State Candidates: ₹540/-\n\n\t\t\t\t\t\t\t\t\t\t\t\tMP Reserved Category: ₹290/-\n\n\t\t\t\t\t\t\t\t\t\t\t\tPortal Charges: ₹40/- (Included)\n\n\t\t\t\t\t\t\t\t\t\t\t\tCorrection Fee: ₹50/- (Extra)\n\n\t\t\t\t\t\t\t\t\t\t\t\tPayment Mode: Debit Card, Credit Card, Net Banking\n\n\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\tEligibility Criteria\n\n\t\t\t\t\t\t\t\t\t\t\t\tCandidates must hold a Graduate/Postgraduate/Doctorate degree in Food Technology, Dairy Technology, Biotechnology, Oil Technology, Agricultural Science, Veterinary Science, Microbiology, Chemistry, or Medicine from a recognized university. The qualification should be approved by the Food Authority of India as per the Food Safety and Standards Act, 2006.\n\n\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\tAge Limit (as of 01-01-2025)\n\n\t\t\t\t\t\t\t\t\t\t\t\tMinimum Age: 21 years\n\n\t\t\t\t\t\t\t\t\t\t\t\tMaximum Age: 40 years\n\n\t\t\t\t\t\t\t\t\t\t\t\tAge relaxation as per MPPSC norms.\n\n\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\tWhy Apply for MPPSC FSO 2025?\n\n\t\t\t\t\t\t\t\t\t\t\t\tThis recruitment offers job security, an attractive salary package, and career growth opportunities in the government sector. If you meet the eligibility criteria, don’t miss out—apply online before the deadline!\n\n\t\t\t\t\t\t\t\t\t\t\t\tFor detailed information, read the official notification on the MPPSC website.\n\n\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\n\t\t\t\t\t\n\n\n \n\n\n\n \n\n \n \n \n\n\n\n\n\n\n\n\n\n\n\n/* Footer Styling */\n    .pageFooter {\n        background-color: #00004d; /* Dark blue background */\n        padding: 20px 0;\n        text-align: center;\n        border-top: 2px solid #ddd;\n        color: white; /* White text for better contrast */\n    }\n\n    .pageFooter p {\n        margin: 10px 0;\n        font-family: 'Times New Roman', Times, serif;\n        font-size: 16px;\n        color: white; /* White text */\n    }\n\n    .pageFooter a {\n        text-decoration: none;\n        color: #66ccff; /* Light blue link color */\n        font-weight: bold;\n    }\n\n    .pageFooter a:hover {\n        color: #ff6347; /* Hover effect - tomato color */\n    }\n\n    .pageFooter .footer-links {\n        font-size: 18px;\n        margin-top: 20px;\n    }\n\n    .pageFooter .footer-links a {\n        margin: 0 8px;\n        color: #66ccff; /* Light blue link color */\n        font-weight: bold;\n    }\n\n    .pageFooter .footer-links a:hover {\n        color: #ff6347; /* Hover effect for links */\n    }\n\n    .pageFooter img {\n        margin: 10px 0; /* Space above and below the image */\n    }\n\n    .pageFooter .copyright {\n        margin-top: 10px;\n        font-size: 16px;\n    }\n\n\n\n\n\n\n\n\n\n\nContact Email:   official.resultbharat@gmail.com \n\n\nHome | About Us | Contact Us | Privacy Policy | Disclaimer | Terms of Use\n\n\n\n\n\n© Copyright 2017-2025 at www.resultbharat.com\n\n\n\n\n\n\n\n\n'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpsh-oh'},{'server':'sg2plzcpnl506243'},{'dcenter':'sg2'},{'cp_id':'3459397'},{'cp_cl':'8'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support."
     },
     "mppsc-scientific-officer-biology-2026": {
-      "publishedDate": "9 May 2026",
-      "publishedAt": "2026-05-08T18:30:00.000Z",
+      "publishedDate": "2026-05-09T12:10:17+05:30",
+      "publishedAt": "2026-05-09T06:40:17.000Z",
       "lastDate": "20 May 2026"
     },
     "mppsc-ses-2025": {
@@ -12607,8 +12731,8 @@ export const scrapedData = {
       "lastDate": "01/09/2026\nLast Date for Apply Online : 30/09/2026 upto 05:30 PM\nPay Fee Last Date : 30/09/2026\nExam Date : As per Schedule\nAdmit Card Available : Before Exam : Application Fee\n\nGeneral / OBC / EWS : 800/-\nSC / ST / PH / Female : 0/-\nPay the Exam Fee Through Debit Card / Credit Card / Net Banking / UPI Fee Mode Only."
     },
     "nic-scientific-technical-assistant-2026": {
-      "publishedDate": "2 September 2026",
-      "publishedAt": "2026-09-01T18:30:00.000Z",
+      "publishedDate": "2026-09-02T12:36:36+05:30",
+      "publishedAt": "2026-09-02T07:06:36.000Z",
       "lastDate": "30 September 2026"
     },
     "nicl-assistant-july26": {
@@ -12735,8 +12859,8 @@ export const scrapedData = {
       "lastDate": "26/06/2026\nLast Date for Apply Online :10/07/2026\nPay Exam Fee Last Date : 10/07/2026\nExam Date : As per Schedule\nAdmit Card Available : Before Exam : Application Fee\n\nGeneral / EWS/ OBC : 500/-\nSC / ST / PH : 0/-\nFemale Candidate : 0/-\nPay the Exam Fee Through Online / Offline Fee Mode Only"
     },
     "ntpc-assistant-chemist-trainee-2026": {
-      "publishedDate": "29 June 2026",
-      "publishedAt": "2026-06-28T18:30:00.000Z",
+      "publishedDate": "2026-06-29T23:10:44+05:30",
+      "publishedAt": "2026-06-29T17:40:44.000Z",
       "lastDate": "10 July 2026"
     },
     "ntpc-assistant-executive-recruitment-2025": {
@@ -12911,8 +13035,8 @@ export const scrapedData = {
       "lastDate": "(Cancelled)"
     },
     "pspcl-assistant-lineman-nac-2026": {
-      "publishedDate": "15 June 2026",
-      "publishedAt": "2026-06-14T18:30:00.000Z",
+      "publishedDate": "2026-06-26T15:21:10+05:30",
+      "publishedAt": "2026-06-26T09:51:10.000Z",
       "lastDate": "06 July 2026"
     },
     "punjab-and-sind-bank-lbo-admit-card": {
@@ -12997,8 +13121,8 @@ export const scrapedData = {
       "lastDate": "27/11/2025"
     },
     "railway-rrb-paramedical-2026": {
-      "publishedDate": "8 September 2026",
-      "publishedAt": "2026-09-08T07:39:01.000Z",
+      "publishedDate": "2026-09-15T11:38:56+05:30",
+      "publishedAt": "2026-09-15T06:08:56.000Z",
       "lastDate": "14 October 2026"
     },
     "railway-rrb-paramedical-cen-05-2026": {
@@ -13124,13 +13248,13 @@ export const scrapedData = {
       "lastDate": "19/08/2025\nLast Date for Apply : 17/09/2025\nFee Payment Last Date : 17/09/2025\nExam Date : 12-18 July 2026\nAdmit Card Available : Before Exam : Application Fees\n\nGeneral / Other State : 600/-\nOBC / BC / SC / ST / PH : 400/-\nPay the Examination Fee Through Debit Card / Credit Card / Net Banking / Online Only."
     },
     "rajasthan-rssb-junior-engineer-2026": {
-      "publishedDate": "18 August 2026",
-      "publishedAt": "2026-08-17T18:30:00.000Z",
+      "publishedDate": "2026-08-18T16:45:37+05:30",
+      "publishedAt": "2026-08-18T11:15:37.000Z",
       "lastDate": "14 September 2026"
     },
     "rajasthan-safai-karamchari-2026": {
-      "publishedDate": "2026-09-10T14:48:44+05:30",
-      "publishedAt": "2026-09-10T09:18:44.000Z",
+      "publishedDate": "2026-09-17T10:19:12+05:30",
+      "publishedAt": "2026-09-17T04:49:12.000Z",
       "lastDate": "28 September 2026"
     },
     "rajasthan-sanitation-worker-jul26": {
@@ -13190,7 +13314,8 @@ export const scrapedData = {
     },
     "rcfl-apprentice-2026": {
       "publishedDate": "2026-09-20T13:20:08+05:30",
-      "publishedAt": "2026-09-20T07:50:08.000Z"
+      "publishedAt": "2026-09-20T07:50:08.000Z",
+      "lastDate": "20 September 2026"
     },
     "rcfl-apprentice-sep26": {
       "publishedDate": "6 September 2026",
@@ -13268,8 +13393,8 @@ export const scrapedData = {
       "lastDate": "27/08/2025\n\nLast Date for Apply Online : 25/09/2025\nLast Date Pay Exam Fee : 25/09/2025\n\nExam Date : 26 – 27 July 2026\n\nAdmit Card Available : 23/07/2026 : Application Fees\n\nGeneral / Other State : 600/-\nOBC / BC : 400/-\nSC / ST : 400/-\nCorrection Charge : 500/-\nPay the Examination Fee Through Debit Card / Credit Card / Net Banking / Online Only."
     },
     "rpsc-physiotherapist-2026": {
-      "publishedDate": "23 July 2026",
-      "publishedAt": "2026-07-22T18:30:00.000Z",
+      "publishedDate": "2026-07-23T12:51:37+05:30",
+      "publishedAt": "2026-07-23T07:21:37.000Z",
       "lastDate": "21 August 2026"
     },
     "rpsc-rajasthan-police-si-telecom-2024": {
@@ -13763,7 +13888,8 @@ export const scrapedData = {
     },
     "ruhs-medical-officer-2026": {
       "publishedDate": "2026-09-16T17:06:42+05:30",
-      "publishedAt": "2026-09-16T11:36:42.000Z"
+      "publishedAt": "2026-09-16T11:36:42.000Z",
+      "lastDate": "13 October 2026"
     },
     "ruhs-medical-officer-sep26": {
       "publishedDate": "20 September 2026",
@@ -13805,13 +13931,14 @@ export const scrapedData = {
       "lastDate": "26 August 2025"
     },
     "sbi-bank-so-recruitment-2026": {
-      "publishedDate": "2 January 2026",
-      "publishedAt": "2026-01-01T18:30:00.000Z",
+      "publishedDate": "2026-01-02T17:07:31+05:30",
+      "publishedAt": "2026-01-02T11:37:31.000Z",
       "lastDate": "10 January 2026"
     },
     "sbi-bank-tfo-2026": {
-      "publishedDate": "31 August 2026",
-      "publishedAt": "2026-08-30T18:30:00.000Z"
+      "publishedDate": "2026-09-20T13:20:15+05:30",
+      "publishedAt": "2026-09-20T07:50:15.000Z",
+      "lastDate": "28 September 2026"
     },
     "sbi-cbo-jan26": {
       "publishedDate": "4 July 2026",
@@ -13878,8 +14005,8 @@ export const scrapedData = {
       "lastDate": "04/09/2026\nLast Date for Apply Online :25/09/2026\nPay Exam Fee Last Date :25/09/2026\nSBI SCO Exam Date : As per Schedule\nAdmit Card Available : Before Exam : Application Fee\n\nGeneral / OBC / EWS : 750/-\nSC / ST / PH : 0/-\nPay the Exam Fee Through Debit Card / Credit Card / Net Banking / UPI Fee Mode Only."
     },
     "sbi-sco-wealth-other-post-2026": {
-      "publishedDate": "6 September 2026",
-      "publishedAt": "2026-09-05T18:30:00.000Z",
+      "publishedDate": "2026-09-16T14:21:16+05:30",
+      "publishedAt": "2026-09-16T08:51:16.000Z",
       "lastDate": "25 September 2026"
     },
     "sbi-specialist-co-august26": {
@@ -13931,8 +14058,8 @@ export const scrapedData = {
       "lastDate": "08.10.2026, midnight (12:00 AM)"
     },
     "skau-kurukshetra-non-teaching-post-2026": {
-      "publishedDate": "1 August 2026",
-      "publishedAt": "2026-07-31T18:30:00.000Z",
+      "publishedDate": "2026-08-01T12:12:33+05:30",
+      "publishedAt": "2026-08-01T06:42:33.000Z",
       "lastDate": "21 August 2026"
     },
     "smc-provisional-answer-key-2026-3067553": {
@@ -14025,8 +14152,8 @@ export const scrapedData = {
       "lastDate": "07/09/2026\nLast Date for Apply Online :07/10/2026 upto 11 PM Only \nPay Exam Fee Last Date :08/10/2026\nCorrection Date : 14-16 October 2026\nSSC CHSL 2026 Tier I Exam Date :As per Schedule\nSSC CHSL 2026 Tier II Exam Date :As per Schedule\nAdmit Card Available : Before Exam : Application Fee\n\nGeneral / OBC / EWS : 100/-\nSC / ST : 0/-\nPH (Divyang) / Female : 0/-\nCorrection First Time : 200/–\nCorrection Second Time : 500/-\nPay the Examination Fee Through Cast at E Challan or Debit Card, Credit Card, Net Banking"
     },
     "ssc-chsl-2026": {
-      "publishedDate": "10 September 2026",
-      "publishedAt": "2026-09-09T18:30:00.000Z",
+      "publishedDate": "2026-09-19T13:14:11+05:30",
+      "publishedAt": "2026-09-19T07:44:11.000Z",
       "lastDate": "07 October 2026"
     },
     "ssc-chte-2025": {
@@ -14045,8 +14172,8 @@ export const scrapedData = {
       "lastDate": "Form Start"
     },
     "ssc-cpo-si-capf-2026": {
-      "publishedDate": "13 September 2026",
-      "publishedAt": "2026-09-12T18:30:00.000Z",
+      "publishedDate": "2026-09-19T13:14:07+05:30",
+      "publishedAt": "2026-09-19T07:44:07.000Z",
       "lastDate": "30 September 2026"
     },
     "ssc-cpo-si-result": {
@@ -14154,8 +14281,8 @@ export const scrapedData = {
       "lastDate": "30/06/2025\n\nLast Date for Apply Online : 21/07/2025 Upto 11:00 PM Only\nLast Date for Pay Exam Fee (Online) :22/07/2025\nCorrection Date : 01-12 August 2025\n\nSelf Slot Booking : 10-25 November 2025\nExam Date Tier I :  03 to 06 December 2025\n\nExam City Available : 26/11/2025\nAnswer Key Available : 19/12/2025\nPaper I Result Available : 06/03/2026\nPaper I Marks Available : 23/03/2026\nExam Date Tier II : 07/04/2026\nExam City Available : 27/03/2026 : Application Fee\n\nGeneral / OBC / EWS : 100/-\nSC / ST / PH : 0/-\nAll Category Female : 0/-\nPay the Examination Fee Through Debit Card, Credit Card, Net Banking or Pay Offline Through E Challan Mode"
     },
     "ssc-junior-engineer-je-2026": {
-      "publishedDate": "2026-09-11T17:25:27+05:30",
-      "publishedAt": "2026-09-11T11:55:27.000Z",
+      "publishedDate": "2026-09-17T10:19:20+05:30",
+      "publishedAt": "2026-09-17T04:49:20.000Z",
       "lastDate": "22 September 2026"
     },
     "ssc-mts-havaldar-2026": {
@@ -14281,8 +14408,8 @@ export const scrapedData = {
       "lastDate": "29/08/2026\nLast Date for Apply Online :18/09/2026\nPay Exam Fee Last Date : 18/09/2026\nUCO Bank Exam Date : As per Schedule\nAdmit Card Available : Before Exam : Application Fee\n\nGeneral / OBC / EWS : 850/-\nSC / ST / PH : 175/-\nPay the Exam Fee Through Debit Card / Credit Card / Net Banking / UPI Online Fee Mode Only"
     },
     "uco-so-2026": {
-      "publishedDate": "31 August 2026",
-      "publishedAt": "2026-08-30T18:30:00.000Z",
+      "publishedDate": "2026-08-31T13:42:17+05:30",
+      "publishedAt": "2026-08-31T08:12:17.000Z",
       "lastDate": "18 September 2026"
     },
     "ugc-net-june-2026": {
@@ -14291,8 +14418,8 @@ export const scrapedData = {
       "lastDate": "24/05/2026 (11:50 PM)"
     },
     "uiic-ao-2026": {
-      "publishedDate": "7 September 2026",
-      "publishedAt": "2026-09-07T10:05:04.000Z",
+      "publishedDate": "2026-09-10T14:46:36+05:30",
+      "publishedAt": "2026-09-10T09:16:36.000Z",
       "lastDate": "28 September 2026"
     },
     "uiic-ao-sep26": {
@@ -14365,8 +14492,8 @@ export const scrapedData = {
       "lastDate": "29/04/2026\nLast Date for Apply Online :19/05/2026\nComplete Form Last Date :19/05/2026\nExam Date : May / June 2026\nAdmit Card Available : Before Exam\nResult Available : 25/07/2026 : Application Fee\n\nGeneral / OBC / EWS : 944/-\nGeneral / OBC (Female) : 708/-\nPH (Divyang) : 236/-\nPay the Exam Fees Through Debit Card / Credit Card / Net Banking Only."
     },
     "union-bank-of-india-apprentice-recruitment-2025-date-extend": {
-      "publishedDate": "7 March 2025",
-      "publishedAt": "2025-03-06T18:30:00.000Z",
+      "publishedDate": "2025-03-07T15:35:43+05:30",
+      "publishedAt": "2025-03-07T10:05:43.000Z",
       "lastDate": "12 March 2025"
     },
     "union-bank-of-india-apprentices-2026": {
@@ -14390,13 +14517,13 @@ export const scrapedData = {
       "lastDate": "02/09/2026\nLast Date for Apply Online : 25/09/2026\nPay Exam Fee Last Date : 25/09/2026 : Application Fee\n\nGeneral / OBC / EWS : 600/-\nSC / ST : 300/-\nExempted Applicant : 1200/-\nPay the Exam Fee Through Debit Card / Credit Card / Net Banking Only."
     },
     "up-aganwadi-bharti-online-form-2025-updated": {
-      "publishedDate": "8 February 2025",
-      "publishedAt": "2025-02-07T18:30:00.000Z",
+      "publishedDate": "2025-02-08T13:30:57+05:30",
+      "publishedAt": "2025-02-08T08:00:57.000Z",
       "lastDate": "District Wise"
     },
     "up-anganwadi-bharti-2026": {
-      "publishedDate": "2026-09-10T14:48:40+05:30",
-      "publishedAt": "2026-09-10T09:18:40.000Z",
+      "publishedDate": "2026-09-17T10:19:09+05:30",
+      "publishedAt": "2026-09-17T04:49:09.000Z",
       "lastDate": "District Wise"
     },
     "up-anganwadi-bharti-nov-2025": {
@@ -14575,8 +14702,8 @@ export const scrapedData = {
       "lastDate": "10 July 2022"
     },
     "up-police-01-lakh-new-bharti-2026": {
-      "publishedDate": "28 April 2026",
-      "publishedAt": "2026-04-27T18:30:00.000Z",
+      "publishedDate": "2026-06-26T15:27:20+05:30",
+      "publishedAt": "2026-06-26T09:57:20.000Z",
       "lastDate": "Will Be Updated Here Soon"
     },
     "up-police-constable-2026": {
@@ -14639,8 +14766,8 @@ export const scrapedData = {
       "lastDate": "Post & Vacancy Wise"
     },
     "up-scholarship-application-status-2025": {
-      "publishedDate": "11 February 2025",
-      "publishedAt": "2025-02-10T18:30:00.000Z",
+      "publishedDate": "2025-02-11T17:49:20+05:30",
+      "publishedAt": "2025-02-11T12:19:20.000Z",
       "lastDate": "31 January 2025"
     },
     "up-scholarship-online-form-2025-26": {
@@ -14664,8 +14791,8 @@ export const scrapedData = {
       "lastDate": "30 June 2026"
     },
     "up-special-tet-2026": {
-      "publishedDate": "5 September 2026",
-      "publishedAt": "2026-09-05T08:43:04.000Z",
+      "publishedDate": "2026-09-14T10:13:41+05:30",
+      "publishedAt": "2026-09-14T04:43:41.000Z",
       "lastDate": "04 October 2026"
     },
     "up-special-tet-exam": {
@@ -14759,7 +14886,8 @@ export const scrapedData = {
     },
     "upessc-pgt-teacher-2026": {
       "publishedDate": "2026-09-19T13:14:15+05:30",
-      "publishedAt": "2026-09-19T07:44:15.000Z"
+      "publishedAt": "2026-09-19T07:44:15.000Z",
+      "lastDate": "17 October 2026"
     },
     "upessc-principal-02-2026": {
       "publishedDate": "15 September 2026",
@@ -14768,11 +14896,12 @@ export const scrapedData = {
     },
     "upessc-prt-assistant-teacher-2026": {
       "publishedDate": "2026-09-19T13:14:30+05:30",
-      "publishedAt": "2026-09-19T07:44:30.000Z"
+      "publishedAt": "2026-09-19T07:44:30.000Z",
+      "lastDate": "15 October 2026"
     },
     "upessc-up-assistant-professor-2026": {
-      "publishedDate": "9 September 2026",
-      "publishedAt": "2026-09-09T11:28:15.000Z",
+      "publishedDate": "2026-09-10T14:46:55+05:30",
+      "publishedAt": "2026-09-10T09:16:55.000Z",
       "lastDate": "07 October 2026"
     },
     "upessc-up-pgt-teacher-sept26": {
@@ -14986,8 +15115,8 @@ export const scrapedData = {
       "lastDate": "09 June 2025"
     },
     "uppsc-various-post-direct-recruitment-2025": {
-      "publishedDate": "27 March 2025",
-      "publishedAt": "2025-03-26T18:30:00.000Z",
+      "publishedDate": "2025-03-27T12:53:34+05:30",
+      "publishedAt": "2025-03-27T07:23:34.000Z",
       "lastDate": "24 April 2025"
     },
     "uppsc-veterinary-officer-2025": {
@@ -15016,8 +15145,8 @@ export const scrapedData = {
       "lastDate": "12/09/2026\nLast Date for Apply Online : 02/10/2026 upto 06 PM\nPay Exam Fee Last Date : 02/10/2026\nExam Date : As per Schedule\nAdmit Card Available : Before Exam : Application Fee\n\nGeneral / OBC / EWS : 25/-\nSC / ST / PH : 0/-\nAll Category Female : 0/-\nPay the Exam Fee Through Online / Offline Fee Mode Only"
     },
     "upsc-assistant-professor-recruitment-2025": {
-      "publishedDate": "8 March 2025",
-      "publishedAt": "2025-03-07T18:30:00.000Z",
+      "publishedDate": "2025-03-08T13:02:15+05:30",
+      "publishedAt": "2025-03-08T07:32:15.000Z",
       "lastDate": "27 March 2025"
     },
     "upsc-capf-ac-2026": {
@@ -15091,7 +15220,8 @@ export const scrapedData = {
     },
     "upsc-engineering-services-pre-2027": {
       "publishedDate": "2026-09-16T23:21:45+05:30",
-      "publishedAt": "2026-09-16T17:51:45.000Z"
+      "publishedAt": "2026-09-16T17:51:45.000Z",
+      "lastDate": "06 October 2026"
     },
     "upsc-epfo-apfc-2026": {
       "publishedDate": "2026-09-12T00:28:59+05:30",
@@ -15183,8 +15313,8 @@ export const scrapedData = {
       "lastDate": "02 July 2026"
     },
     "upsrtc-conductor-2026": {
-      "publishedDate": "22 June 2026",
-      "publishedAt": "2026-06-22T08:36:10.000Z",
+      "publishedDate": "2026-06-23T10:28:38+05:30",
+      "publishedAt": "2026-06-23T04:58:38.000Z",
       "lastDate": "24 June 2026"
     },
     "upsrtc-conductor-june26": {
@@ -15193,8 +15323,8 @@ export const scrapedData = {
       "lastDate": "16/06/2026\nLast Date for Apply : 24/06/2026\nInterview Date : As per Schedule : Application Fees\n\nGeneral / OBC / EWS : 0/-\nSC / ST : 0/-\nNo Application Fee for the All Candidates."
     },
     "upsrtc-gorakhpur-bus-conductor-2026": {
-      "publishedDate": "13 July 2026",
-      "publishedAt": "2026-07-12T18:30:00.000Z",
+      "publishedDate": "2026-07-13T15:49:09+05:30",
+      "publishedAt": "2026-07-13T10:19:09.000Z",
       "lastDate": "16 July 2026"
     },
     "upsssc-02-exam-2026": {
@@ -15405,7 +15535,8 @@ export const scrapedData = {
     },
     "upsssc-junior-engineer-je-agriculture-2026": {
       "publishedDate": "2026-09-18T13:06:28+05:30",
-      "publishedAt": "2026-09-18T07:36:28.000Z"
+      "publishedAt": "2026-09-18T07:36:28.000Z",
+      "lastDate": "07 October 2026"
     },
     "upsssc-lekhpal-02-exam-2025": {
       "publishedDate": "11 September 2026",
@@ -15443,8 +15574,8 @@ export const scrapedData = {
       "lastDate": "25 June 2026"
     },
     "upsssc-otr-one-time-registration-2026": {
-      "publishedDate": "22 July 2026",
-      "publishedAt": "2026-07-21T18:30:00.000Z",
+      "publishedDate": "2026-07-22T13:52:14+05:30",
+      "publishedAt": "2026-07-22T08:22:14.000Z",
       "lastDate": "NA"
     },
     "upsssc-otr-online-form-2026": {
@@ -15600,8 +15731,8 @@ export const scrapedData = {
       "lastDate": "14/09/2026\nLast Date for Apply Online : 05/10/2026\nPay Exam Fee Last Date :05/10/2026\nForm Correction Last Date : 12/10/2026\nUPSSSC Veterinary Pharmacist Main Exam Date : As per Schedule\nExam City Available : Before Exam\nAdmit Card Available : Before Exam : Application Fee\n\nGeneral (UR) / OBC / EWS : 25/-\nSC / ST : 25/-\nPH (Divyang) : 25/-\nPay the Examination Fee Through UPI, Debit Card, Credit Card and Net Banking Mode Only."
     },
     "upsssc-veterinary-pharmacist-2026": {
-      "publishedDate": "14 August 2026",
-      "publishedAt": "2026-08-13T18:30:00.000Z",
+      "publishedDate": "2026-09-14T22:35:05+05:30",
+      "publishedAt": "2026-09-14T17:05:05.000Z",
       "lastDate": "05 October 2026"
     },
     "upsssc-vidhan-09-exam-2026": {
@@ -15680,7 +15811,77 @@ export const scrapedData = {
     "ctet-september-2026": {
       "publishedDate": "2026-09-14T17:52:58+05:30",
       "publishedAt": "2026-09-14T12:22:58.000Z"
+    },
+    "boi-so-2026": {
+      "publishedDate": "21 September 2026",
+      "publishedAt": "2026-09-21T06:32:22.342Z",
+      "lastDate": "25 September 2026"
+    },
+    "ukpsc-upper-pcs-2026": {
+      "publishedDate": "21 September 2026",
+      "publishedAt": "2026-09-21T06:32:24.019Z",
+      "lastDate": "29 September 2026"
+    },
+    "csir-ngri-technician-2026": {
+      "publishedDate": "21 September 2026",
+      "publishedAt": "2026-09-21T06:32:25.719Z",
+      "lastDate": "04 October 2026"
+    },
+    "uksssc-group-c-various-posts-2026": {
+      "publishedDate": "21 September 2026",
+      "publishedAt": "2026-09-21T06:32:27.423Z",
+      "lastDate": "07 October 2026"
+    },
+    "hppsc-hpas-online-form-2026": {
+      "publishedDate": "21 September 2026",
+      "publishedAt": "2026-09-21T06:32:29.085Z",
+      "lastDate": "22 September 2026"
+    },
+    "ukpsc-veterinary-officers-2026": {
+      "publishedDate": "21 September 2026",
+      "publishedAt": "2026-09-21T06:32:30.764Z",
+      "lastDate": "14 September 2026"
+    },
+    "indian-overseas-bank-security-guard-2026": {
+      "publishedDate": "21 September 2026",
+      "publishedAt": "2026-09-21T06:32:32.449Z",
+      "lastDate": "14 September 2026"
+    },
+    "bihar-bceceb-bsfc-various-post-2026": {
+      "publishedDate": "21 September 2026",
+      "publishedAt": "2026-09-21T06:32:34.161Z",
+      "lastDate": "24 September 2026"
+    },
+    "ntpc-nspcl-various-post-2026": {
+      "publishedDate": "21 September 2026",
+      "publishedAt": "2026-09-21T06:32:35.845Z",
+      "lastDate": "22 September 2026"
+    },
+    "rcf-kapurthala-apprentice-2026": {
+      "publishedDate": "21 September 2026",
+      "publishedAt": "2026-09-21T06:32:37.517Z",
+      "lastDate": "05 September 2026"
+    },
+    "himachal-pradesh-high-court-various-post-2026": {
+      "publishedDate": "21 September 2026",
+      "publishedAt": "2026-09-21T06:32:39.203Z",
+      "lastDate": "10 September 2026"
+    },
+    "isro-ursc-apprentice-2026": {
+      "publishedDate": "21 September 2026",
+      "publishedAt": "2026-09-21T06:32:40.891Z",
+      "lastDate": "28 August 2026"
+    },
+    "jssc-para-teacher-jtaacce-2026": {
+      "publishedDate": "21 September 2026",
+      "publishedAt": "2026-09-21T06:32:42.567Z",
+      "lastDate": "30 August 2026"
+    },
+    "rpsc-ras-2026": {
+      "publishedDate": "21 September 2026",
+      "publishedAt": "2026-09-21T06:32:44.250Z",
+      "lastDate": "03 July 2026"
     }
   },
-  "fetchedAt": "2026-09-21T04:37:13.831Z"
+  "fetchedAt": "2026-09-21T06:43:33.402Z"
 };

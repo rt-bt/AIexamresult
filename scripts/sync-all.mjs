@@ -187,10 +187,9 @@ function determineAccurateCategory(title, links, fallbackCat = "latestJobs") {
     return "admitCards";
   }
 
-  // 4. Exam Dates, City Slips, Syllabus, Schedules -> documents (NEVER in admitCards)
-  if (/\b(exam date|exam city|city intimation|syllabus|exam pattern|time table|schedule|dv schedule|document verification)\b/i.test(t) ||
-      /\b(exam date|city details|syllabus)\b/i.test(linkLabels)) {
-    return "documents";
+  // 4. Latest Jobs: If it has an apply link, or is in top online form / recruitment / vacancy / bharti
+  if (hasApplyLink || fallbackCat === "latestJobs" || /\b(online form|apply online|recruitment|vacancy|vacancies|apprentice|bharti|posts?)\b/i.test(t)) {
+    return "latestJobs";
   }
 
   // 5. Admissions
@@ -198,14 +197,10 @@ function determineAccurateCategory(title, links, fallbackCat = "latestJobs") {
     return "admissions";
   }
 
-  // 6. Documents & Certificates
-  if (/\b(certificate|pan card|aadhar|voter|ration|scholarship)\b/i.test(t)) {
+  // 6. Exam Dates, City Slips, Syllabus, Schedules, Documents -> documents (pure documents/notices)
+  if (/\b(exam date|exam city|city intimation|syllabus|exam pattern|time table|schedule|dv schedule|document verification|certificate|pan card|aadhar|voter|ration|scholarship)\b/i.test(t) ||
+      /\b(exam date|city details|download syllabus)\b/i.test(linkLabels)) {
     return "documents";
-  }
-
-  // 7. Latest Jobs
-  if (hasApplyLink || /\b(online form|apply online|recruitment|vacancy|vacancies|apprentice|bharti|posts?)\b/i.test(t)) {
-    return "latestJobs";
   }
 
   return fallbackCat || "latestJobs";
@@ -252,22 +247,51 @@ async function fetchHtml(url) {
 
 // ── Scrape Listings ──────────────────────────────────────────────────────────
 async function scrapeListings() {
-  const html  = await fetchHtml(SOURCE_HOME);
-  const $     = cheerio.load(html);
   const items = [];
   const seen  = new Set();
 
-  $(".below-block").each((_, block) => {
-    const $block  = $(block);
-    let heading   = $block.find("h4.wp-block-heading, h4").first().text().trim().toLowerCase().replace(/<\/?strong>/g, "");
-    if (!heading) return;
-    const fallback = HEADING_MAP[heading];
-    if (!fallback) return;
+  // 1. Scrape Homepage listings
+  try {
+    const html  = await fetchHtml(SOURCE_HOME);
+    const $     = cheerio.load(html);
 
-    $block.find("ul.wp-block-latest-posts__list li a.wp-block-latest-posts__post-title, a[href]").each((__, link) => {
-      const href     = $(link).attr("href") || "";
-      const rawTitle = $(link).text().trim();
-      if (!href || !rawTitle || rawTitle.length < 12 || seen.has(href)) return;
+    $(".below-block").each((_, block) => {
+      const $block  = $(block);
+      let heading   = $block.find("h4.wp-block-heading, h4").first().text().trim().toLowerCase().replace(/<\/?strong>/g, "");
+      if (!heading) return;
+      const fallback = HEADING_MAP[heading];
+      if (!fallback) return;
+
+      const isTopForm = heading.includes("top online form");
+
+      $block.find("ul.wp-block-latest-posts__list li a.wp-block-latest-posts__post-title, a[href]").each((__, link) => {
+        const href     = $(link).attr("href") || "";
+        const rawTitle = $(link).text().trim();
+        if (!href || !rawTitle || rawTitle.length < 10 || seen.has(href)) return;
+        try {
+          if (new URL(href).hostname !== SOURCE_HOST) return;
+        } catch { return; }
+
+        seen.add(href);
+        const title = cleanText(rawTitle);
+        if (isJunk(title, href)) return;
+        const slug = generateSlug(href, title);
+        items.push({ title, sourceUrl: href, slug, fallbackCat: isTopForm ? "latestJobs" : fallback, isTopForm });
+      });
+    });
+  } catch (err) {
+    console.warn("  ⚠️ Warning fetching homepage:", err.message);
+  }
+
+  // 2. Also scrape Category archive for Top Online Form to ensure all active jobs are captured
+  try {
+    const catHtml = await fetchHtml("https://www.sarkariexam.com/category/top-online-form/");
+    const $cat    = cheerio.load(catHtml);
+
+    $cat("h2.entry-title a, article a, .post-title a, ul.wp-block-latest-posts__list li a").each((_, a) => {
+      const href     = $cat(a).attr("href") || "";
+      const rawTitle = $cat(a).text().trim();
+      if (!href || !rawTitle || rawTitle.length < 10 || href.includes("/category/") || href.includes("/tag/") || seen.has(href)) return;
       try {
         if (new URL(href).hostname !== SOURCE_HOST) return;
       } catch { return; }
@@ -276,9 +300,11 @@ async function scrapeListings() {
       const title = cleanText(rawTitle);
       if (isJunk(title, href)) return;
       const slug = generateSlug(href, title);
-      items.push({ title, sourceUrl: href, slug, fallbackCat: fallback });
+      items.push({ title, sourceUrl: href, slug, fallbackCat: "latestJobs", isTopForm: true });
     });
-  });
+  } catch (err) {
+    console.warn("  ⚠️ Warning fetching top-online-form category:", err.message);
+  }
 
   return items;
 }
@@ -306,21 +332,34 @@ async function scrapeDetail(sourceUrl) {
     const importantDates = [];
     const applicationFee = [];
 
+    // Extract from div.newtable1 h3 sections (both list items and table rows)
     $("div.newtable1 h3, table h3").each((_, h) => {
       const sectionLabel = $(h).text().trim().toLowerCase();
-      const $tbl = $(h).next("table");
-      if (!$tbl.length) return;
-      $tbl.find("tr").each((__, row) => {
-        const cells = $(row).find("td");
-        if (cells.length < 2) return;
-        const col0 = dedup(cells.eq(0).text().trim());
-        const col1 = dedup(cells.eq(1).text().trim());
-        if (!col0 || !col1 || col0.length > 70 || col1.length > 70) return;
-        if (/qualification|post name|click here|download/i.test(col0 + col1)) return;
-        const entry = `${col0} : ${col1}`;
-        if (sectionLabel.includes("fee")) applicationFee.push(entry);
-        else importantDates.push(entry);
+      const $parent = $(h).closest("td.pd-0, td, div");
+
+      // 1. Check list items inside the section parent
+      $parent.find("ul li").each((__, li) => {
+        const text = dedup($(li).text().trim().replace(/\s+/g, " "));
+        if (!text || text.length > 100 || /click here|download/i.test(text)) return;
+        if (sectionLabel.includes("fee")) applicationFee.push(text);
+        else if (sectionLabel.includes("date")) importantDates.push(text);
       });
+
+      // 2. Check next table if present
+      const $tbl = $(h).next("table");
+      if ($tbl.length) {
+        $tbl.find("tr").each((__, row) => {
+          const cells = $(row).find("td");
+          if (cells.length < 2) return;
+          const col0 = dedup(cells.eq(0).text().trim());
+          const col1 = dedup(cells.eq(1).text().trim());
+          if (!col0 || !col1 || col0.length > 70 || col1.length > 70) return;
+          if (/qualification|post name|click here|download/i.test(col0 + col1)) return;
+          const entry = `${col0} : ${col1}`;
+          if (sectionLabel.includes("fee")) applicationFee.push(entry);
+          else if (sectionLabel.includes("date")) importantDates.push(entry);
+        });
+      }
     });
 
     if (importantDates.length === 0) {
@@ -330,8 +369,9 @@ async function scrapeDetail(sourceUrl) {
         const col0 = dedup($(cells[0]).text().trim());
         const col1 = dedup($(cells[1]).text().trim());
         if (!col0 || !col1 || col0.length > 70 || col1.length > 70) return;
+        if (/click here|download/i.test(col1)) return;
         const lo = col0.toLowerCase();
-        if (lo.includes("date") || lo.includes("last") || lo.includes("exam") || lo.includes("admit")) {
+        if (lo.includes("date") || lo.includes("last") || lo.includes("exam") || lo.includes("admit") || lo.includes("start")) {
           importantDates.push(`${col0} : ${col1}`);
         }
       });
@@ -542,23 +582,40 @@ function isValidPastDate(val) {
 function preserveDates(slug, newPublishedDate) {
   const now    = new Date().toISOString();
   const oldPath = `${POSTS_DIR}/${slug}.json`;
+  let oldAt = null;
+  let oldDate = null;
+  let createdAt = now;
+
   if (existsSync(oldPath)) {
     try {
       const old = JSON.parse(readFileSync(oldPath, "utf8"));
-      const oldAt   = isValidPastDate(old.publishedAt)   ? old.publishedAt   : (isValidPastDate(old.createdAt) ? old.createdAt : null);
-      const oldDate = isValidPastDate(old.publishedDate) ? old.publishedDate : null;
-      if (oldAt || oldDate) {
-        return {
-          publishedAt:   oldAt || (oldDate ? new Date(oldDate).toISOString() : now),
-          createdAt:     isValidPastDate(old.createdAt) ? old.createdAt : (oldAt || now),
-          publishedDate: oldDate || (oldAt ? new Date(oldAt).toLocaleDateString("en-IN", { day:"numeric", month:"long", year:"numeric" }) : now),
-          updatedAt:     now,
-        };
-      }
+      oldAt = isValidPastDate(old.publishedAt) ? old.publishedAt : (isValidPastDate(old.createdAt) ? old.createdAt : null);
+      oldDate = isValidPastDate(old.publishedDate) ? old.publishedDate : null;
+      createdAt = isValidPastDate(old.createdAt) ? old.createdAt : (oldAt || now);
     } catch {}
   }
-  const pAt = (newPublishedDate && isValidPastDate(newPublishedDate)) ? new Date(newPublishedDate).toISOString() : now;
-  return { publishedAt: pAt, createdAt: pAt, publishedDate: newPublishedDate || now, updatedAt: pAt };
+
+  // If a valid fresh publication/update date from source exists and is newer than oldAt, adopt it
+  let publishedAt = oldAt;
+  let publishedDate = oldDate;
+
+  if (newPublishedDate && isValidPastDate(newPublishedDate)) {
+    const freshIso = new Date(newPublishedDate).toISOString();
+    if (!oldAt || new Date(freshIso).getTime() > new Date(oldAt).getTime()) {
+      publishedAt = freshIso;
+      publishedDate = newPublishedDate;
+    }
+  }
+
+  if (!publishedAt) publishedAt = now;
+  if (!publishedDate) publishedDate = new Date(publishedAt).toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric" });
+
+  return {
+    publishedAt,
+    createdAt,
+    publishedDate,
+    updatedAt: now,
+  };
 }
 
 // ── Main Execution ───────────────────────────────────────────────────────────
@@ -586,9 +643,12 @@ async function main() {
     process.exit(1);
   }
 
-  // Filter out items that already exist
-  const toProcess = candidates.filter(item => !existingSlugs.has(item.slug));
-  console.log(`  ✓ Found ${candidates.length} listing items (${toProcess.length} new to inspect)`);
+  // Filter items: always process Top Online Form items to keep active jobs at the top, and new items for others
+  const toProcess = candidates.filter(item => {
+    if (item.isTopForm) return true;
+    return !existingSlugs.has(item.slug);
+  });
+  console.log(`  ✓ Found ${candidates.length} listing items (${toProcess.length} to process)`);
 
   // Step 2: Fetch and validate details
   mkdirSync(POSTS_DIR, { recursive: true });
@@ -640,16 +700,28 @@ async function main() {
     // Save post file
     writeFileSync(`${POSTS_DIR}/${item.slug}.json`, JSON.stringify(post, null, 2), "utf8");
 
-    // Add to existing listing in the CORRECT category
+    // Remove from any other category if it was previously miscategorized
+    for (const cat of CATEGORIES) {
+      if (cat !== finalCategory && existing[cat]) {
+        existing[cat] = existing[cat].filter(x => x.slug !== item.slug);
+      }
+    }
+
+    // Add or update in the CORRECT category at the top
     const bucket = existing[finalCategory] || (existing[finalCategory] = []);
-    bucket.unshift({
+    const existingIdx = bucket.findIndex(x => x.slug === item.slug);
+    const listingEntry = {
       title: item.title,
       url: `/post/${item.slug}`,
       category: finalCategory,
       slug: item.slug,
       publishedDate: dates.publishedDate,
       publishedAt: dates.publishedAt,
-    });
+    };
+    if (existingIdx !== -1) {
+      bucket.splice(existingIdx, 1);
+    }
+    bucket.unshift(listingEntry);
 
     const lastDate = detail.importantDates.find(d => /last/i.test(d));
     existing.posts[item.slug] = {
@@ -666,8 +738,34 @@ async function main() {
 
   for (let i = 0; i < toProcess.length; i += CONCURRENCY) {
     const batch = toProcess.slice(i, i + CONCURRENCY);
-    await Promise.allSettled(batch.map(processOne));
+    const results = await Promise.allSettled(batch.map(processOne));
+    for (const r of results) {
+      if (r.status === "rejected") {
+        console.error("  ❌ Process error:", r.reason);
+      }
+    }
   }
+
+  // Ensure latestJobs lists Top Online Forms in their exact order of prominence from sarkariexam
+  const topJobSlugs = new Set(candidates.filter(c => c.isTopForm).map(c => c.slug));
+  const topJobs = [];
+  for (const c of candidates) {
+    if (c.isTopForm && existingSlugs.has(c.slug)) {
+      const p = existing.posts[c.slug];
+      if (!topJobs.some(tj => tj.slug === c.slug)) {
+        topJobs.push({
+          title: c.title,
+          url: `/post/${c.slug}`,
+          category: "latestJobs",
+          slug: c.slug,
+          publishedDate: p?.publishedDate || "",
+          publishedAt: p?.publishedAt || "",
+        });
+      }
+    }
+  }
+  const otherJobs = (existing.latestJobs || []).filter(j => !topJobSlugs.has(j.slug));
+  existing.latestJobs = [...topJobs, ...otherJobs].slice(0, 500);
 
   // Cap each category at 500
   for (const cat of CATEGORIES) {
