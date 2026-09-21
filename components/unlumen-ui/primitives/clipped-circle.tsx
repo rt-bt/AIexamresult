@@ -9,12 +9,14 @@ interface ClippedCircleProps {
   className?: string;
   circleClassName?: string;
   circleSize?: number;
+  mixBlendMode?: React.CSSProperties["mixBlendMode"];
 }
 
 function ClippedCircle({
   className,
-  circleClassName = "bg-white/20",
-  circleSize = 400,
+  circleClassName = "bg-[radial-gradient(circle,rgba(13,148,136,0.22)_0%,rgba(94,234,212,0.10)_45%,transparent_70%)]",
+  circleSize = 500,
+  mixBlendMode = "normal",
 }: ClippedCircleProps) {
   const containerRef = React.useRef<HTMLDivElement>(null);
   const [isHovered, setIsHovered] = React.useState(false);
@@ -66,7 +68,7 @@ function ClippedCircle({
     >
       <motion.div
         className={cn(
-          "pointer-events-none absolute rounded-full",
+          "pointer-events-none absolute rounded-full blur-xl",
           circleClassName,
         )}
         style={{
@@ -74,7 +76,7 @@ function ClippedCircle({
           top: position.y,
           width: circleSize,
           height: circleSize,
-          mixBlendMode: "difference",
+          mixBlendMode,
         }}
         initial={{ scale: 0, x: "-50%", y: "-50%" }}
         animate={{
@@ -83,7 +85,7 @@ function ClippedCircle({
           y: "-50%",
         }}
         transition={{
-          duration: 0.5,
+          duration: 0.35,
           ease: [0.19, 1, 0.22, 1],
         }}
       />

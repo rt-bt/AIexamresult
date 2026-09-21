@@ -27,45 +27,77 @@ export default function HomePage() {
         <Hero />
 
         {/* Featured & Trending Alerts with 3D TiltCards */}
-        <section className="py-8 bg-slate-50/70 border-b border-slate-200/80">
+        <section className="py-8 bg-gradient-to-b from-teal-50/50 via-white to-slate-50/70 border-b border-slate-200/80">
           <div className="container-page">
-            <div className="flex items-center justify-between mb-5">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6">
               <div className="flex items-center gap-3">
-                <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-[#EA580C] to-[#F97316] shadow-md shadow-orange-200">
-                  <TrendingUp className="h-5 w-5 text-white" />
+                <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-[#EA580C] to-[#F97316] text-white shadow-md shadow-orange-200">
+                  <TrendingUp className="h-5 w-5" />
                 </span>
                 <div>
-                  <h2 className="text-xl font-black text-slate-900">Trending Now</h2>
-                  <p className="text-xs sm:text-sm text-slate-500">Most viewed sarkari results &amp; recruitment alerts today</p>
+                  <div className="flex items-center gap-2">
+                    <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">Trending Now</h2>
+                    <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-teal-100 text-teal-800 animate-pulse">
+                      LIVE ALERTS
+                    </span>
+                  </div>
+                  <p className="text-xs sm:text-sm text-slate-500">Most viewed sarkari results &amp; recruitment updates today</p>
                 </div>
               </div>
-              <Link href="/results" className="hidden items-center gap-1 text-sm font-bold text-[#0D9488] transition hover:gap-1.5 sm:inline-flex">
-                View All <ArrowUpRight className="h-3.5 w-3.5" />
+              <Link href="/results" className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-teal-700 hover:text-teal-800 transition">
+                <span>View All Updates</span>
+                <ArrowUpRight className="h-4 w-4" />
               </Link>
             </div>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {trending.map((post, i) => {
-                const cardImages = [
-                  "/cards/card-result.svg",
-                  "/cards/card-job.svg",
-                  "/cards/card-admit.svg",
-                  "/cards/card-key.svg",
+                const cardConfigs = [
+                  {
+                    image: "/cards/card-result.svg",
+                    badge: "🔥 HOT",
+                    variant: "warning" as const,
+                    action: "Check Scorecard",
+                    accent: "#0D9488",
+                  },
+                  {
+                    image: "/cards/card-job.svg",
+                    badge: "⚡ LIVE",
+                    variant: "success" as const,
+                    action: "Apply Online",
+                    accent: "#EA580C",
+                  },
+                  {
+                    image: "/cards/card-admit.svg",
+                    badge: "✨ NEW",
+                    variant: "success" as const,
+                    action: "Download Hall Ticket",
+                    accent: "#4F46E5",
+                  },
+                  {
+                    image: "/cards/card-key.svg",
+                    badge: "📈 TRENDING",
+                    variant: "warning" as const,
+                    action: "View Answer Key",
+                    accent: "#7C3AED",
+                  },
                 ];
-                const badgeLabels = ["🔥 HOT", "LIVE", "NEW", "TRENDING"];
-                const badgeVariants: Array<"warning" | "success"> = ["warning", "success", "success", "warning"];
+
+                const cfg = cardConfigs[i % cardConfigs.length];
 
                 return (
                   <TiltCard
                     key={post.slug || i}
                     title={post.title}
                     description={`${post.category} · ${post.date || "Active Update"}`}
+                    category={post.category || "Govt Exam"}
                     price={`#${i + 1}`}
-                    badgeLabel={badgeLabels[i % badgeLabels.length]}
-                    badgeVariant={badgeVariants[i % badgeVariants.length]}
-                    imageSrc={cardImages[i % cardImages.length]}
+                    badgeLabel={cfg.badge}
+                    badgeVariant={cfg.variant}
+                    actionText={cfg.action}
+                    accentColor={cfg.accent}
+                    imageSrc={cfg.image}
                     imageAlt={post.title}
                     href={post.slug ? `/post/${post.slug}` : "#"}
-                    className="h-52 sm:h-56 rounded-2xl border-slate-200/90 bg-white shadow-sm hover:shadow-xl hover:border-teal-500/50"
                   />
                 );
               })}

@@ -10,6 +10,9 @@ import { Tilt, type TiltProps } from "@/components/unlumen-ui/primitives/tilt";
 export interface TiltCardProps extends React.HTMLAttributes<HTMLDivElement> {
   title: string;
   description?: string;
+  category?: string;
+  actionText?: string;
+  accentColor?: string;
   /** left half of the split badge pill; shown as a simple pill if `badgeLabel` is omitted */
   price?: string;
   /** right half of the split pill, coloured by `badgeVariant` */
@@ -27,13 +30,16 @@ const BADGE_LABEL_CLASSES: Record<
   NonNullable<TiltCardProps["badgeVariant"]>,
   string
 > = {
-  success: "bg-emerald-500/15 text-emerald-700 dark:text-emerald-300",
-  warning: "bg-amber-500/20 text-amber-700 dark:text-amber-300",
+  success: "bg-emerald-500/15 text-emerald-700 dark:text-emerald-300 border border-emerald-500/20",
+  warning: "bg-amber-500/20 text-amber-700 dark:text-amber-300 border border-amber-500/20",
 };
 
 export function TiltCard({
   title,
   description,
+  category,
+  actionText,
+  accentColor = "#0D9488",
   price,
   badgeLabel,
   badgeVariant = "success",
@@ -47,49 +53,100 @@ export function TiltCard({
 }: TiltCardProps) {
   const inner = (
     <Tilt
-      rotationFactor={11}
+      rotationFactor={9}
       {...tiltProps}
       className={cn(
         "relative group overflow-hidden",
-        "bg-background border border-border rounded-lg",
-        "flex flex-col gap-4",
-        "h-48 sm:h-52 md:h-56 w-full",
-        "hover:shadow-lg hover:scale-105 transition-all duration-300 ease-out",
+        "bg-white border border-slate-200/90 rounded-2xl",
+        "flex flex-col justify-between",
+        "h-56 sm:h-60 w-full",
+        "shadow-xs hover:shadow-xl hover:shadow-teal-900/10 hover:border-teal-500/50 hover:-translate-y-1",
+        "transition-all duration-300 ease-out",
         className,
       )}
     >
-      <div className="relative z-20 flex flex-row transition-all duration-200 justify-between px-4 sm:px-6 py-4 sm:py-5">
-        <div className="flex flex-col gap-1 flex-1 mr-2 min-w-0">
-          <h2 className="text-base sm:text-lg tracking-tight leading-snug font-bold text-slate-900 group-hover:text-teal-700 transition-colors line-clamp-2">
-            {title}
-          </h2>
-          {description && (
-            <p className="text-slate-500 text-xs sm:text-sm line-clamp-1">{description}</p>
-          )}
-          {children && <div className="mt-2">{children}</div>}
-        </div>
+      {/* Top accent line */}
+      <div
+        className="absolute top-0 inset-x-0 h-1 z-30 transition-all duration-300 group-hover:h-1.5"
+        style={{
+          background: `linear-gradient(90deg, ${accentColor}, #14B8A6)`,
+        }}
+      />
 
-        {price && badgeLabel ? (
-          <div className="inline-flex h-fit items-center text-xs sm:text-sm whitespace-nowrap shrink-0 shadow-xs">
-            <span className="rounded-l-full bg-slate-100 text-slate-800 h-fit py-1 px-2.5 font-bold">
+      {/* Top Content: Badges & Headings */}
+      <div className="relative z-20 flex flex-col p-5 sm:p-6 pb-2">
+        <div className="flex items-center justify-between gap-2 mb-2.5">
+          {category ? (
+            <span
+              className="inline-flex items-center text-[10px] sm:text-[11px] font-extrabold uppercase tracking-wider px-2.5 py-0.5 rounded-full"
+              style={{
+                backgroundColor: `${accentColor}15`,
+                color: accentColor,
+              }}
+            >
+              {category}
+            </span>
+          ) : (
+            <span />
+          )}
+
+          {price && badgeLabel ? (
+            <div className="inline-flex h-fit items-center text-xs whitespace-nowrap shrink-0 shadow-xs">
+              <span className="rounded-l-full bg-slate-900 text-white h-fit py-0.5 px-2.5 font-black text-[11px] tracking-wide">
+                {price}
+              </span>
+              <span
+                className={cn(
+                  "rounded-r-full text-[11px] h-fit py-0.5 px-2.5 font-bold",
+                  BADGE_LABEL_CLASSES[badgeVariant],
+                )}
+              >
+                {badgeLabel}
+              </span>
+            </div>
+          ) : price ? (
+            <span className="h-fit rounded-full bg-slate-900 text-white px-2.5 py-0.5 text-[11px] font-black tracking-wide shadow-xs">
               {price}
             </span>
-            <span
-              className={cn(
-                "rounded-r-full h-fit py-1 px-2.5 font-bold",
-                BADGE_LABEL_CLASSES[badgeVariant],
-              )}
-            >
-              {badgeLabel}
-            </span>
-          </div>
-        ) : price ? (
-          <span className="h-fit rounded-full bg-slate-100 text-slate-800 px-3 py-1 text-xs sm:text-sm font-bold whitespace-nowrap shrink-0">
-            {price}
-          </span>
-        ) : null}
+          ) : null}
+        </div>
+
+        <h2 className="text-base sm:text-[17px] font-bold text-slate-900 leading-snug tracking-tight group-hover:text-teal-700 transition-colors line-clamp-2">
+          {title}
+        </h2>
+
+        {description && (
+          <p className="mt-1.5 text-xs text-slate-500 font-medium line-clamp-1">
+            {description}
+          </p>
+        )}
+
+        {children && <div className="mt-2">{children}</div>}
       </div>
 
+      {/* Bottom Row: CTA Action link on left */}
+      <div className="relative z-20 px-5 sm:px-6 pb-4 sm:pb-5 pt-0 flex items-center justify-between">
+        <span className="inline-flex items-center gap-1.5 text-xs font-bold text-teal-700 group-hover:text-teal-800 transition-colors">
+          <span>{actionText || "View Details"}</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="transition-transform duration-300 group-hover:translate-x-1"
+          >
+            <path d="M5 12h14" />
+            <path d="m12 5 7 7-7 7" />
+          </svg>
+        </span>
+      </div>
+
+      {/* Floating 3D Artwork Illustration */}
       {imageSrc && (
         <img
           src={imageSrc}
@@ -99,15 +156,19 @@ export function TiltCard({
           loading="lazy"
           decoding="async"
           className={cn(
-            "absolute z-10 top-28 w-72 -right-10",
-            "rotate-[-5deg] border-border border rounded-md",
-            "transition-transform duration-300 ease-out",
-            "group-hover:-rotate-3 group-hover:-translate-y-1 group-hover:-translate-x-0.5",
+            "absolute z-10 bottom-0 -right-6 w-48 sm:w-56 max-w-[50%]",
+            "rotate-[-6deg] border border-slate-200/80 rounded-tl-xl shadow-md pointer-events-none",
+            "transition-all duration-300 ease-out",
+            "group-hover:-rotate-2 group-hover:-translate-y-2 group-hover:scale-105 group-hover:shadow-xl",
           )}
         />
       )}
 
-      <ClippedCircle circleClassName="bg-white" circleSize={800} />
+      {/* Radiant Brand Spotlight Shine (Zero black inversion) */}
+      <ClippedCircle
+        circleClassName="bg-[radial-gradient(circle,rgba(13,148,136,0.22)_0%,rgba(94,234,212,0.10)_45%,transparent_70%)]"
+        circleSize={500}
+      />
     </Tilt>
   );
 
