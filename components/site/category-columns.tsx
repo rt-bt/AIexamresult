@@ -58,29 +58,29 @@ export function CategoryColumns({ sections }: { sections: { label: string; items
                     <span className="rounded-full bg-white/20 px-2.5 py-0.5 text-xs font-bold backdrop-blur-sm">{section.items.length} Posts</span>
                   </div>
                 </div>
-                <ul className="divide-y divide-slate-100">
-                  {section.items.slice(0, 10).map((item, i) => (
+                <ul className="divide-y divide-slate-100/80">
+                  {section.items.slice(0, 8).map((item, i) => (
                     <li key={item.title}>
                       <Link
                         href={item.slug ? `/post/${item.slug}` : "#"}
-                        className="group/item flex items-start gap-3 px-4 sm:px-5 py-3 text-sm transition active:bg-slate-100 hover:bg-slate-50"
+                        className="group/item flex items-start gap-3 px-4 sm:px-5 py-3.5 text-sm transition-colors hover:bg-slate-50/90 active:bg-slate-100"
                       >
-                        <span className={`mt-1.5 h-2 w-2 shrink-0 rounded-full ${i === 0 ? "bg-amber-400" : "bg-slate-300"}`} />
+                        <span className={`mt-1.5 h-2 w-2 shrink-0 rounded-full ${i === 0 ? "bg-teal-500" : "bg-slate-300"}`} aria-hidden="true" />
                         <div className="min-w-0 flex-1">
-                          <span className={`leading-snug ${i === 0 ? "font-bold text-slate-800" : "font-medium text-slate-600"} line-clamp-2 transition group-hover/item:text-[${cfg?.from || "#0D9488"}]`}>
+                          <span className={`block leading-normal ${i === 0 ? "font-bold text-slate-900" : "font-medium text-slate-700"} line-clamp-2 transition-colors group-hover/item:text-teal-700`}>
                             {item.title}
                           </span>
                           <div className="mt-1 flex flex-wrap items-center gap-2 text-xs text-slate-400">
                             <span className="inline-flex items-center gap-1">
-                              <CalendarDays className="h-3 w-3" />
+                              <CalendarDays className="h-3 w-3" aria-hidden="true" />
                               {item.date}
                             </span>
                             {isWithinDays(item.date, 3) ? (
-                              <span className="inline-flex items-center gap-0.5 rounded bg-orange-50 px-1.5 py-0.5 text-[10px] font-bold text-[#EA580C] ring-1 ring-orange-200">
-                                <Sparkles className="h-2.5 w-2.5" /> NEW
+                              <span className="inline-flex items-center gap-0.5 rounded bg-orange-50 px-1.5 py-0.5 text-xs font-bold text-[#EA580C] ring-1 ring-orange-200">
+                                <Sparkles className="h-2.5 w-2.5" aria-hidden="true" /> NEW
                               </span>
                             ) : section.label === "Latest Vacancy" && item.isExpired ? (
-                              <span className="inline-flex items-center gap-0.5 rounded bg-red-50 px-1.5 py-0.5 text-[10px] font-bold text-red-600 ring-1 ring-red-200">
+                              <span className="inline-flex items-center gap-0.5 rounded bg-red-50 px-1.5 py-0.5 text-xs font-bold text-red-600 ring-1 ring-red-200">
                                 EXPIRED
                               </span>
                             ) : null}

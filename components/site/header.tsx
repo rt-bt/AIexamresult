@@ -38,39 +38,22 @@ const nav: [string, string, [string, string][]?][] = [
 ];
 
 function getTickerItems() {
-  const categoryLists = [
-    sectionItems["latest-jobs"] || [],
-    sectionItems["results"] || [],
-    sectionItems["admit-card"] || [],
-    sectionItems["answer-key"] || [],
-    sectionItems["admissions"] || [],
-    sectionItems["documents"] || [],
-    boardResults || [],
-  ];
+  const topJobs = (sectionItems["latest-jobs"] || []).slice(0, 3);
+  const topResults = (sectionItems["results"] || []).slice(0, 3);
+  const topAdmit = (sectionItems["admit-card"] || []).slice(0, 2);
 
-  const mixed: (typeof categoryLists[0][0])[] = [];
+  const mixed: (typeof topJobs[0])[] = [];
   const seen = new Set<string>();
 
-  let maxLen = 0;
-  for (const list of categoryLists) {
-    if (list.length > maxLen) maxLen = list.length;
-  }
-
-  for (let i = 0; i < maxLen && mixed.length < 40; i++) {
-    for (const list of categoryLists) {
-      if (i < list.length) {
-        const item = list[i];
-        const key = item.slug || item.title;
-        if (key && !seen.has(key)) {
-          seen.add(key);
-          mixed.push(item);
-          if (mixed.length >= 40) break;
-        }
-      }
+  for (const item of [...topJobs, ...topResults, ...topAdmit]) {
+    const key = item.slug || item.title;
+    if (key && !seen.has(key)) {
+      seen.add(key);
+      mixed.push(item);
     }
   }
 
-  return mixed;
+  return mixed.slice(0, 8);
 }
 
 export function Header() {
@@ -169,24 +152,24 @@ export function Header() {
         </div>
         </div>
 
-        <div className="overflow-hidden border-t border-white/10 bg-[#0F766E]">
+        <div role="region" aria-label="Breaking Exam Updates" className="overflow-hidden border-t border-white/10 bg-[#0F766E]">
           <div className="flex items-center gap-2.5 px-3 py-1.5 text-xs">
-            <span className="flex shrink-0 items-center gap-1 rounded-md bg-[#EA580C] px-2 py-0.5 text-[11px] font-extrabold text-white shadow-sm">
-              <Sparkles className="h-3 w-3 animate-pulse" /> Latest Updates
+            <span className="flex shrink-0 items-center gap-1 rounded-md bg-[#EA580C] px-2 py-0.5 text-xs font-bold text-white shadow-sm">
+              <Sparkles className="h-3 w-3 animate-pulse" aria-hidden="true" /> Latest Updates
             </span>
             <div className="overflow-hidden relative flex-1">
-              <div className="animate-marquee whitespace-nowrap inline-block hover:[animation-play-state:paused]">
+              <div className="animate-marquee whitespace-nowrap inline-block hover:[animation-play-state:paused] focus-within:[animation-play-state:paused] motion-reduce:animate-none">
                 {tickerList.map((item, i) => (
                   <Link
                     key={i}
                     href={item.slug ? `/post/${item.slug}` : "#"}
-                    className="mx-3.5 inline-flex items-center gap-1.5 text-white/90 transition hover:text-white hover:underline"
+                    className="mx-3.5 inline-flex items-center gap-1.5 text-white/90 transition hover:text-white hover:underline focus-visible:underline"
                   >
-                    <span className="rounded bg-white/15 px-1.5 py-0.5 text-[10px] font-bold text-amber-300 border border-white/10">
+                    <span className="rounded bg-white/15 px-1.5 py-0.5 text-xs font-bold text-amber-300 border border-white/10">
                       {item.category || "Update"}
                     </span>
-                    <span className="text-[12px] font-medium">{item.title}</span>
-                    <span className="ml-2 text-white/30">•</span>
+                    <span className="text-xs font-medium">{item.title}</span>
+                    <span className="ml-2 text-white/40" aria-hidden="true">•</span>
                   </Link>
                 ))}
               </div>

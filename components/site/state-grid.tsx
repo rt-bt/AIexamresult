@@ -28,7 +28,7 @@ export function StateGrid() {
         <div className="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {stateGroups.map(([region, states]) => (
             <div key={region}>
-              <h3 className="mb-4 flex items-center gap-3 text-xs font-bold tracking-widest text-slate-400 uppercase">
+              <h3 className="mb-4 flex items-center gap-3 text-xs font-bold text-slate-500">
                 <span className="h-px flex-1 bg-slate-200" />
                 <span>{region}</span>
                 <span className="h-px flex-1 bg-slate-200" />

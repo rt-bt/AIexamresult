@@ -9,12 +9,20 @@ export function InstallBanner() {
   const [dismissed, setDismissed] = useState(false);
 
   useEffect(() => {
+    try {
+      if (localStorage.getItem("pwa_dismissed") === "true") {
+        setDismissed(true);
+      }
+    } catch {}
+
     const handler = (e: Event) => {
       e.preventDefault();
       setDeferredPrompt(e);
-      if (!dismissed && !document.cookie.includes("pwa_dismissed=true")) {
-        setTimeout(() => setShow(true), 4000);
-      }
+      try {
+        if (!dismissed && localStorage.getItem("pwa_dismissed") !== "true") {
+          setTimeout(() => setShow(true), 4000);
+        }
+      } catch {}
     };
     window.addEventListener("beforeinstallprompt", handler);
     return () => window.removeEventListener("beforeinstallprompt", handler);
@@ -26,27 +34,32 @@ export function InstallBanner() {
     (deferredPrompt as any).userChoice.then(() => {
       setDeferredPrompt(null);
       setShow(false);
+      try { localStorage.setItem("pwa_dismissed", "true"); } catch {}
     });
   };
 
   const close = () => {
     setShow(false);
     setDismissed(true);
-    document.cookie = "pwa_dismissed=true;max-age=86400;path=/";
+    try { localStorage.setItem("pwa_dismissed", "true"); } catch {}
   };
 
-  if (!show) return null;
+  if (!show || dismissed) return null;
 
   return (
-    <div className="fixed inset-x-0 bottom-16 z-50 animate-slide-up lg:bottom-4 lg:left-auto lg:right-4 lg:w-auto">
-      <div className="mx-3 flex items-center justify-between gap-3 rounded-xl border border-brand/20 bg-white px-4 py-2.5 shadow-lg shadow-brand/5">
+    <div 
+      role="status" 
+      aria-live="polite" 
+      className="fixed inset-x-0 bottom-16 z-50 animate-slide-up lg:bottom-4 lg:left-auto lg:right-4 lg:w-auto"
+    >
+      <div className="mx-3 flex items-center justify-between gap-3 rounded-xl border border-teal-200/60 bg-white px-4 py-2.5 shadow-lg shadow-slate-900/10">
         <div className="flex items-center gap-2.5 min-w-0">
-          <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-brand/10 text-[10px] font-black text-brand">AI</span>
-          <p className="truncate text-xs font-semibold text-slate-700">Install App</p>
+          <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-teal-50 text-xs font-bold text-teal-700">AI</span>
+          <p className="truncate text-xs font-semibold text-slate-800">Install App</p>
         </div>
         <div className="flex items-center gap-1.5 shrink-0">
-          <button onClick={install} className="rounded-lg bg-brand px-3 py-1.5 text-[11px] font-bold text-white transition hover:bg-brand-dark active:scale-95">Install</button>
-          <button onClick={close} className="rounded-lg p-1.5 text-slate-400 transition hover:bg-slate-100"><X className="h-3.5 w-3.5" /></button>
+          <button onClick={install} className="rounded-lg bg-teal-700 px-3 py-1.5 text-xs font-bold text-white transition hover:bg-teal-800 active:scale-95">Install</button>
+          <button onClick={close} aria-label="Dismiss install prompt" className="rounded-lg p-1.5 text-slate-400 transition hover:bg-slate-100 hover:text-slate-600"><X className="h-3.5 w-3.5" /></button>
         </div>
       </div>
     </div>

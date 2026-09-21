@@ -39,8 +39,8 @@ export function AdUnit({
   const minHeight = format === "rectangle" ? "260px" : format === "horizontal" ? "90px" : "120px";
 
   return (
-    <div className={`my-4 flex flex-col items-center justify-center overflow-hidden rounded-xl border border-slate-100 bg-slate-50/60 p-2 text-center ${className}`}>
-      <span className="mb-1 text-[10px] font-bold uppercase tracking-wider text-slate-400">
+    <aside role="region" aria-label="Advertisement" className={`my-4 flex flex-col items-center justify-center overflow-hidden rounded-xl border border-slate-100 bg-slate-50/60 p-2 text-center [contain:paint_layout] ${className}`}>
+      <span className="mb-1 text-xs font-semibold uppercase tracking-wider text-slate-400">
         Advertisement
       </span>
       <div className="w-full overflow-hidden flex justify-center" style={{ minHeight }}>
@@ -54,6 +54,6 @@ export function AdUnit({
           data-full-width-responsive={responsive ? "true" : "false"}
         />
       </div>
-    </div>
+    </aside>
   );
 }

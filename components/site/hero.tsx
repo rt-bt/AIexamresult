@@ -39,15 +39,18 @@ function ResultFinder() {
     <form onSubmit={handleSubmit} className="relative mx-auto max-w-2xl">
       <div className="flex flex-col gap-2 sm:flex-row">
         <div className="relative flex-1">
-          <Search className="absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-white/40" />
+          <label htmlFor="hero-search-exam" className="sr-only">Search exam or job</label>
+          <Search className="absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-white/60" aria-hidden="true" />
           <input
+            id="hero-search-exam"
+            aria-label="Search exam name or job title"
             type="text"
             value={exam}
             onChange={(e) => { setExam(e.target.value); setShowDropdown(true); }}
             onFocus={() => setShowDropdown(true)}
             onBlur={() => setTimeout(() => setShowDropdown(false), 200)}
-            placeholder="Exam name (e.g. SSC CGL, UPSC, Railway)"
-            className="w-full rounded-xl border border-white/20 bg-white/10 pl-11 pr-11 py-3.5 text-sm text-white placeholder-white/40 outline-none backdrop-blur-sm transition-all focus:border-white/40 focus:bg-white/15"
+            placeholder="Search exam (e.g. SSC CGL, UPSC, Railway)"
+            className="w-full rounded-xl border border-white/30 bg-white/15 pl-11 pr-11 py-3.5 text-sm text-white placeholder-white/70 outline-none backdrop-blur-sm transition-all focus:border-white focus:bg-white/20"
           />
           <div className="absolute right-2 top-1/2 -translate-y-1/2">
             <VoiceSearchBtn
@@ -55,7 +58,7 @@ function ResultFinder() {
                 setExam(val);
                 router.push(`/search?q=${encodeURIComponent(val)}`);
               }}
-              className="p-1.5 text-white/60 hover:text-white transition active:scale-90"
+              className="p-1.5 text-white/70 hover:text-white transition active:scale-90"
             />
           </div>
           {showDropdown && filtered.length > 0 && (
@@ -65,7 +68,7 @@ function ResultFinder() {
                   key={e}
                   type="button"
                   onMouseDown={() => { setExam(e); setShowDropdown(false); }}
-                  className="w-full px-4 py-2.5 text-left text-sm text-white/70 transition hover:bg-white/10 hover:text-white"
+                  className="w-full px-4 py-2.5 text-left text-sm text-white/80 transition hover:bg-white/10 hover:text-white"
                 >
                   {e}
                 </button>
@@ -73,16 +76,21 @@ function ResultFinder() {
             </div>
           )}
         </div>
-        <input
-          type="text"
-          value={rollNo}
-          onChange={(e) => setRollNo(e.target.value)}
-          placeholder="Roll number (optional)"
-          className="rounded-xl border border-white/20 bg-white/10 px-4 py-3.5 text-sm text-white placeholder-white/40 outline-none backdrop-blur-sm transition-all focus:border-white/40 focus:bg-white/15 sm:w-44"
-        />
+        <div className="relative sm:w-52">
+          <label htmlFor="hero-search-roll" className="sr-only">Roll number (optional, for scorecard)</label>
+          <input
+            id="hero-search-roll"
+            aria-label="Roll number (optional, for scorecard lookup)"
+            type="text"
+            value={rollNo}
+            onChange={(e) => setRollNo(e.target.value)}
+            placeholder="Roll No. (Scorecard lookup)"
+            className="w-full rounded-xl border border-white/30 bg-white/15 px-4 py-3.5 text-sm text-white placeholder-white/70 outline-none backdrop-blur-sm transition-all focus:border-white focus:bg-white/20"
+          />
+        </div>
         <button
           type="submit"
-          className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-5 py-3.5 text-sm font-bold text-[#0D9488] shadow-lg shadow-black/10 transition hover:bg-white/90 active:scale-[0.98]"
+          className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-5 py-3.5 text-sm font-bold text-teal-800 shadow-md transition hover:bg-white/95 active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-white"
         >
           Find Result
           <ArrowRight className="h-4 w-4" />

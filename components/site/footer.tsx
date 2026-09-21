@@ -55,7 +55,7 @@ export function Footer() {
           ))}
         </div>
       </div>
-      <div className="border-t border-slate-100 px-4 py-3 text-center text-[10px] leading-5 text-slate-400">
+      <div className="border-t border-slate-100 px-4 py-4 text-center text-xs leading-relaxed text-slate-500">
         <div className="container-page">
           <p>Disclaimer: This is an independent information portal. All data is sourced from publicly available government notifications. Users are advised to verify all information from the respective official websites before applying.</p>
         </div>
