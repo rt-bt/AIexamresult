@@ -58,25 +58,25 @@ export function TiltCard({
         className,
       )}
     >
-      <div className="flex flex-row transition-all duration-200 justify-between px-4 sm:px-6 py-4 sm:py-5">
+      <div className="relative z-20 flex flex-row transition-all duration-200 justify-between px-4 sm:px-6 py-4 sm:py-5">
         <div className="flex flex-col gap-1 flex-1 mr-2 min-w-0">
-          <h2 className="text-lg tracking-tight leading-tight font-medium line-clamp-2">
+          <h2 className="text-base sm:text-lg tracking-tight leading-snug font-bold text-slate-900 group-hover:text-teal-700 transition-colors line-clamp-2">
             {title}
           </h2>
           {description && (
-            <p className="text-foreground/50 text-sm line-clamp-2">{description}</p>
+            <p className="text-slate-500 text-xs sm:text-sm line-clamp-1">{description}</p>
           )}
           {children && <div className="mt-2">{children}</div>}
         </div>
 
         {price && badgeLabel ? (
-          <div className="inline-flex h-fit items-center text-sm whitespace-nowrap shrink-0">
-            <span className="rounded-l-full bg-secondary h-fit py-1 px-2 font-medium">
+          <div className="inline-flex h-fit items-center text-xs sm:text-sm whitespace-nowrap shrink-0 shadow-xs">
+            <span className="rounded-l-full bg-slate-100 text-slate-800 h-fit py-1 px-2.5 font-bold">
               {price}
             </span>
             <span
               className={cn(
-                "rounded-r-full text-sm h-fit py-1 px-2 font-medium",
+                "rounded-r-full h-fit py-1 px-2.5 font-bold",
                 BADGE_LABEL_CLASSES[badgeVariant],
               )}
             >
@@ -84,7 +84,7 @@ export function TiltCard({
             </span>
           </div>
         ) : price ? (
-          <span className="h-fit rounded-full bg-secondary px-3 py-1 text-sm font-medium whitespace-nowrap shrink-0">
+          <span className="h-fit rounded-full bg-slate-100 text-slate-800 px-3 py-1 text-xs sm:text-sm font-bold whitespace-nowrap shrink-0">
             {price}
           </span>
         ) : null}

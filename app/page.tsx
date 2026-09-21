@@ -26,6 +26,53 @@ export default function HomePage() {
       <main>
         <Hero />
 
+        {/* Featured & Trending Alerts with 3D TiltCards */}
+        <section className="py-8 bg-slate-50/70 border-b border-slate-200/80">
+          <div className="container-page">
+            <div className="flex items-center justify-between mb-5">
+              <div className="flex items-center gap-3">
+                <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-[#EA580C] to-[#F97316] shadow-md shadow-orange-200">
+                  <TrendingUp className="h-5 w-5 text-white" />
+                </span>
+                <div>
+                  <h2 className="text-xl font-black text-slate-900">Trending Now</h2>
+                  <p className="text-xs sm:text-sm text-slate-500">Most viewed sarkari results &amp; recruitment alerts today</p>
+                </div>
+              </div>
+              <Link href="/results" className="hidden items-center gap-1 text-sm font-bold text-[#0D9488] transition hover:gap-1.5 sm:inline-flex">
+                View All <ArrowUpRight className="h-3.5 w-3.5" />
+              </Link>
+            </div>
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              {trending.map((post, i) => {
+                const cardImages = [
+                  "/cards/card-result.svg",
+                  "/cards/card-job.svg",
+                  "/cards/card-admit.svg",
+                  "/cards/card-key.svg",
+                ];
+                const badgeLabels = ["🔥 HOT", "LIVE", "NEW", "TRENDING"];
+                const badgeVariants: Array<"warning" | "success"> = ["warning", "success", "success", "warning"];
+
+                return (
+                  <TiltCard
+                    key={post.slug || i}
+                    title={post.title}
+                    description={`${post.category} · ${post.date || "Active Update"}`}
+                    price={`#${i + 1}`}
+                    badgeLabel={badgeLabels[i % badgeLabels.length]}
+                    badgeVariant={badgeVariants[i % badgeVariants.length]}
+                    imageSrc={cardImages[i % cardImages.length]}
+                    imageAlt={post.title}
+                    href={post.slug ? `/post/${post.slug}` : "#"}
+                    className="h-52 sm:h-56 rounded-2xl border-slate-200/90 bg-white shadow-sm hover:shadow-xl hover:border-teal-500/50"
+                  />
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
         {/* 6 Main Sections: Latest Jobs, Admit Card, Answer Keys, Result, Admissions, Documents */}
         <div className="bg-gradient-to-b from-white to-[#f0fdfa]">
           <CategoryColumns sections={categorySections} />
@@ -77,39 +124,6 @@ export default function HomePage() {
                   </span>
                   <span className="text-[10px] text-slate-400 mt-0.5">Jobs 2026</span>
                 </Link>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="py-10">
-          <div className="container-page">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-3">
-                <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-[#EA580C] to-[#F97316] shadow-md shadow-orange-200">
-                  <TrendingUp className="h-5 w-5 text-white" />
-                </span>
-                <div>
-                  <h2 className="text-xl font-black text-ink">Trending Now</h2>
-                  <p className="text-sm text-slate-500">Most viewed posts today</p>
-                </div>
-              </div>
-              <Link href="/results" className="hidden items-center gap-1 text-sm font-bold text-[#0D9488] transition hover:gap-1.5 sm:inline-flex">
-                View All <ArrowUpRight className="h-3.5 w-3.5" />
-              </Link>
-            </div>
-            <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              {trending.map((post, i) => (
-                <TiltCard
-                  key={post.slug || i}
-                  title={post.title}
-                  description={`${post.category} · ${post.date || "Active Update"}`}
-                  price={`#${i + 1}`}
-                  badgeLabel={i === 0 ? "Top 1" : "Trending"}
-                  badgeVariant={i === 0 ? "warning" : "success"}
-                  href={post.slug ? `/post/${post.slug}` : "#"}
-                  className="h-44 sm:h-48 rounded-2xl border-slate-200/90 bg-white shadow-xs hover:shadow-xl hover:border-teal-500/50"
-                />
               ))}
             </div>
           </div>
