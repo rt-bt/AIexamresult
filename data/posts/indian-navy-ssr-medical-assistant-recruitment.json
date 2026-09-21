@@ -94,8 +94,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -145,5 +145,6 @@
     "canonical": "https://www.aiexamresult.com/post/indian-navy-ssr-medical-assistant-recruitment"
   },
   "publishedAt": "2026-03-13T18:30:00.000Z",
-  "createdAt": "2026-03-13T18:30:00.000Z"
+  "createdAt": "2026-03-13T18:30:00.000Z",
+  "category": "latestJobs"
 }

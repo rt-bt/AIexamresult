@@ -101,8 +101,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Admission",
+            "item": "https://www.aiexamresult.com/admission"
           },
           {
             "@type": "ListItem",
@@ -150,5 +150,6 @@
     "title": "UPRTOU PHD Admission 2026 Apply Online Form - Sarkari Result | Sarkari Exam 2026",
     "description": "Apply Online: UPRTOU PHD Admission 2026 Online Form for Check Eligibility, Download Notification, Age Limit, How to Apply and More Details Visit Rojgar Result :",
     "canonical": "https://www.aiexamresult.com/post/uprtou-phd-admission-2026"
-  }
+  },
+  "category": "admissions"
 }

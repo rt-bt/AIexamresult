@@ -120,8 +120,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -169,5 +169,6 @@
     "title": "Shahjahanpur Anganwadi Recruitment 2026 - Apply Online for 460 Anganwadi Helper Posts - Sarkari Result | Sarkari Exam 2026",
     "description": "The Shahjahanpur Anganwadi Recruitment 2026 for posts of 460 Anganwadi Helper. Candidates with 12TH Can Apply Online. The online application opens on 17-09-2026",
     "canonical": "https://www.aiexamresult.com/post/shahjahanpur-anganwadi-recruitment-2026-apply-online-for-460-anganwadi-helper-posts-3068396"
-  }
+  },
+  "category": "latestJobs"
 }

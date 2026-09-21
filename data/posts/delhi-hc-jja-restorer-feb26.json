@@ -179,8 +179,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Result",
+            "item": "https://www.aiexamresult.com/result"
           },
           {
             "@type": "ListItem",
@@ -228,5 +228,6 @@
     "title": "Delhi High Court Junior Judicial Assistant JJA / Restorer Recruitment 2026 Mains Exam Date / Revised Result - Sarkari Result | Sarkari Exam 2026",
     "description": "High Court of Delhi, New Delhi has released Delhi High Court Junior Judicial Assistant JJA / Restorer 2026 Notification. Those candidates who are Enrolled in th",
     "canonical": "https://www.aiexamresult.com/post/delhi-hc-jja-restorer-feb26"
-  }
+  },
+  "category": "results"
 }

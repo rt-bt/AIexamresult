@@ -95,8 +95,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Admit Card",
+            "item": "https://www.aiexamresult.com/admit-card"
           },
           {
             "@type": "ListItem",
@@ -112,5 +112,6 @@
     "title": "MPPSC State Forest Service Exam Mains Admit Card 2026 Out  - Download Hall Ticket at mppsc.mp.gov.in - Sarkari Result | Sarkari Exam 2026",
     "description": "Download MPPSC State Forest Service Main Exam Admit Card 2026 has released on 17 September for the Main Exam scheduled on 27 September 2026. Check hall ticket d",
     "canonical": "https://www.aiexamresult.com/post/mppsc-state-forest-service-exam-mains-admit-card-2026-3068134"
-  }
+  },
+  "category": "admitCards"
 }

@@ -121,8 +121,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -170,5 +170,6 @@
     "title": "SBI SCO Recruitment 2026 - Apply Online for Marketing Executive, Faculty and More Posts - Sarkari Result | Sarkari Exam 2026",
     "description": "SBI has announced the Recruitment 2026 notification for 07 Specialist Cadre Officers posts. The online application process will be conducted from 16 September 2",
     "canonical": "https://www.aiexamresult.com/post/sbi-sco-recruitment-2026-apply-online-for-07-marketing-executive-faculty-and-more-posts-3067922"
-  }
+  },
+  "category": "latestJobs"
 }

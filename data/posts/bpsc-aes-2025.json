@@ -240,8 +240,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Answer Key",
+            "item": "https://www.aiexamresult.com/answer-key"
           },
           {
             "@type": "ListItem",
@@ -257,5 +257,6 @@
     "title": "BPSC AES Assistant Environmental Scientist Answer Key 2026 Adv No 88/2025 - Sarkari Result | Sarkari Exam 2026",
     "description": "BPSC AES Assistant Environmental Scientist Answer Key 2026 Adv No 88/2025 Apply Online Form | Notification | Official Website Direct Link now Available on Rojga",
     "canonical": "https://www.aiexamresult.com/post/bpsc-aes-2025"
-  }
+  },
+  "category": "answerKeys"
 }

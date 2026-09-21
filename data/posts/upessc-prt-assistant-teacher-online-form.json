@@ -81,8 +81,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -130,5 +130,6 @@
     "title": "UPESSC PRT Assistant Teacher Online form 2026 - Sarkari Result | Sarkari Exam 2026",
     "description": "UPESSC PRT Assistant Teacher Online form 2026. Eligible candidates can apply online through the official website before the last date. Check important dates, ap",
     "canonical": "https://www.aiexamresult.com/post/upessc-prt-assistant-teacher-online-form"
-  }
+  },
+  "category": "latestJobs"
 }

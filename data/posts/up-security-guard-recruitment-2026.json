@@ -207,8 +207,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -256,5 +256,6 @@
     "title": "UP Security Guard Recruitment 2026 : Apply Online Form - Sarkari Result | Sarkari Exam 2026",
     "description": "Security Guard Recruitment 2026 Apply Online Form | Uttar Pradesh Jobs 2026 | Job Opportunities, Salary: ₹ 24,500 INR : Visit Rojgar Result : RojgarResult.Com",
     "canonical": "https://www.aiexamresult.com/post/up-security-guard-recruitment-2026"
-  }
+  },
+  "category": "latestJobs"
 }

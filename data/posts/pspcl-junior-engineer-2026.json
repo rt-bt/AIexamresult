@@ -219,8 +219,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Admit Card",
+            "item": "https://www.aiexamresult.com/admit-card"
           },
           {
             "@type": "ListItem",
@@ -270,5 +270,6 @@
     "canonical": "https://www.aiexamresult.com/post/pspcl-junior-engineer-2026"
   },
   "publishedAt": "2026-07-27T18:30:00.000Z",
-  "createdAt": "2026-07-27T18:30:00.000Z"
+  "createdAt": "2026-07-27T18:30:00.000Z",
+  "category": "admitCards"
 }

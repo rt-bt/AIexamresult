@@ -2,7 +2,7 @@
   "title": "MPESB Group 5 Paramedical Result 2026",
   "slug": "mpesb-group-5-paramedical-2026",
   "url": "https://sarkariresult.com.cm/mpesb-group-5-paramedical-2026/",
-  "category": "",
+  "category": "results",
   "publishedDate": "10 June 2026",
   "intro": "Post Date: June 10, 2026",
   "importantDates": [
@@ -135,8 +135,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Result",
+            "item": "https://www.aiexamresult.com/result"
           },
           {
             "@type": "ListItem",

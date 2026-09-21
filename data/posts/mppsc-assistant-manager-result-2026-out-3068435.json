@@ -104,8 +104,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Result",
+            "item": "https://www.aiexamresult.com/result"
           },
           {
             "@type": "ListItem",
@@ -121,5 +121,6 @@
     "title": "MPPSC Assistant Manager Result 2026 - Check Selected Candidate List at mppsc.mp.gov.in - Sarkari Result | Sarkari Exam 2026",
     "description": "MPPSC Assistant Manager Result 2026 declared for Sahayak Prabandhak Exam 2024 - check the full selection list, main list and supplementary list, category-wise v",
     "canonical": "https://www.aiexamresult.com/post/mppsc-assistant-manager-result-2026-out-3068435"
-  }
+  },
+  "category": "results"
 }

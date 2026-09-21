@@ -135,8 +135,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -184,5 +184,6 @@
     "title": "Hindustan Copper HCL Executive Recruitment 2026 Notification Out - Apply Online for 43 Posts - Sarkari Result | Sarkari Exam 2026",
     "description": "Hindustan Copper (HCL) has released the Recruitment 2026 notification for 43 Executive posts. Eligible candidates can submit their online applications from 21 S",
     "canonical": "https://www.aiexamresult.com/post/hcl-executive-recruitment-2026-apply-online-for-43-posts-3067952"
-  }
+  },
+  "category": "latestJobs"
 }

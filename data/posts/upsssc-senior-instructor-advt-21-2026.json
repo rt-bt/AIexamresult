@@ -243,8 +243,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -292,5 +292,6 @@
     "title": "UPSSSC Senior Instructor Recruitment 2026 Online Form for 132 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "UPSSSC Senior Instructor Recruitment 2026 Online Form Live Now! Advt 21-Exam/2026. 132 Posts State Rural Development Institute. Apply 14 September 2026 to 05 Oc",
     "canonical": "https://www.aiexamresult.com/post/upsssc-senior-instructor-advt-21-2026"
-  }
+  },
+  "category": "latestJobs"
 }

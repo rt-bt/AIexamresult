@@ -322,8 +322,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Result",
+            "item": "https://www.aiexamresult.com/result"
           },
           {
             "@type": "ListItem",
@@ -373,5 +373,6 @@
     "canonical": "https://www.aiexamresult.com/post/KVS-NVS-Teaching_Non-Teaching-Rectt-2025"
   },
   "publishedAt": "2026-08-30T18:30:00.000Z",
-  "createdAt": "2026-08-30T18:30:00.000Z"
+  "createdAt": "2026-08-30T18:30:00.000Z",
+  "category": "results"
 }

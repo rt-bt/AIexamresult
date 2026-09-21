@@ -244,8 +244,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Admit Card",
+            "item": "https://www.aiexamresult.com/admit-card"
           },
           {
             "@type": "ListItem",
@@ -293,5 +293,6 @@
     "title": "MPESB Agriculture Extension Officer Admit Card 2026 for 2784 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "MPESB Agriculture Extension Officer Admit Card 2026 for 2784 Post. Candidates can now download their admit card / hall ticket from the official website before t",
     "canonical": "https://www.aiexamresult.com/post/mpesb-agriculture-extension-officer-2026"
-  }
+  },
+  "category": "admitCards"
 }

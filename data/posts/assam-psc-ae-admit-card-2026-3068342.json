@@ -91,8 +91,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Admit Card",
+            "item": "https://www.aiexamresult.com/admit-card"
           },
           {
             "@type": "ListItem",
@@ -108,5 +108,6 @@
     "title": "Assam PSC AE Admit Card 2026 Out - Download Hall Ticket at apsc.nic.in - Sarkari Result | Sarkari Exam 2026",
     "description": "Download Assam PSC AE Admit Card 2026 released on 18 August for the Assistant Engineer Screening Test scheduled on 27 September 2026. Check hall ticket download",
     "canonical": "https://www.aiexamresult.com/post/assam-psc-ae-admit-card-2026-3068342"
-  }
+  },
+  "category": "admitCards"
 }

@@ -898,7 +898,7 @@ async function main() {
         if (item.url.includes("sarkariexam.com")) {
           const d = await scrapeSarkariExamDetail(item.url);
           detail = {
-            title: item.title || "", slug: item.slug, url: item.url, category: "",
+            title: item.title || "", slug: item.slug, url: item.url, category: categorizePost(item.title || "", "latestJobs"),
             publishedDate: d.publishedDate || "", intro: d.intro || "",
             importantDates: d.importantDates || [], applicationFee: d.applicationFee || [],
             importantLinks: d.importantLinks || [], fullContentHtml: "",
@@ -929,10 +929,15 @@ async function main() {
   function generateSEOContent(detail) {
     const title = detail.title || "";
     const lower = title.toLowerCase();
-    const isResult = lower.includes("result");
-    const isAdmit = lower.includes("admit card") || lower.includes("hall ticket") || lower.includes("exam city");
+    // Derive correct category from title — title always wins over source-site category
+    const derivedCat = categorizePost(title, detail.category || "latestJobs");
+    detail.category = derivedCat;
+
+    // Detect content type flags (result takes priority over admit card)
+    const isResult = /\b(result|scorecard|marks|merit list|cut\s*off|selection list|shortlist|qualified|selected candidates?)\b/i.test(lower);
+    const isAdmit = !isResult && (lower.includes("admit card") || lower.includes("hall ticket") || lower.includes("call letter"));
     const isAnswerKey = lower.includes("answer key") || lower.includes("response sheet");
-    const isJob = lower.includes("online form") || lower.includes("apply") || lower.includes("recruitment") || lower.includes("vacancy");
+    const isJob = !isResult && !isAdmit && (lower.includes("online form") || lower.includes("apply") || lower.includes("recruitment") || lower.includes("vacancy"));
 
     const dates = detail.importantDates || [];
     const fees = detail.applicationFee || [];

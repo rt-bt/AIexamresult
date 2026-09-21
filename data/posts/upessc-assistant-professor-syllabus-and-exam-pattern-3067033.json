@@ -106,8 +106,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Document",
+            "item": "https://www.aiexamresult.com/documents"
           },
           {
             "@type": "ListItem",
@@ -123,5 +123,6 @@
     "title": "UPESSC Assistant Professor Syllabus 2026 - Check Exam Pattern & Subject-Wise at upessc.up.gov.in - Sarkari Result | Sarkari Exam 2026",
     "description": "UPESSC Assistant Professor Syllabus 2026 for the 1936-post Advt No. 04/2026 recruitment is released. Check the revised 120-question exam pattern, negative marki",
     "canonical": "https://www.aiexamresult.com/post/upessc-assistant-professor-syllabus-and-exam-pattern-3067033"
-  }
+  },
+  "category": "documents"
 }

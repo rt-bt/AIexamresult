@@ -167,8 +167,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Admission",
+            "item": "https://www.aiexamresult.com/admission"
           },
           {
             "@type": "ListItem",
@@ -186,5 +186,6 @@
     "canonical": "https://www.aiexamresult.com/post/au-ug-2026"
   },
   "publishedAt": "2026-07-05T18:30:00.000Z",
-  "createdAt": "2026-07-05T18:30:00.000Z"
+  "createdAt": "2026-07-05T18:30:00.000Z",
+  "category": "admissions"
 }

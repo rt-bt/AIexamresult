@@ -124,8 +124,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -141,5 +141,6 @@
     "title": "UPSC ESE Notification 2027 Out -  Apply Online for 480 Engineering Services Examination Vacancies - Sarkari Result | Sarkari Exam 2026",
     "description": "UPSC has released the Recruitment 2026-27 notification for 480 Engineering Services Examination Vacancies. The online application process will be conducted from",
     "canonical": "https://www.aiexamresult.com/post/upsc-ese-notification-2027-3067925"
-  }
+  },
+  "category": "latestJobs"
 }

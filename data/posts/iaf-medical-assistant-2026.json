@@ -202,8 +202,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Document",
+            "item": "https://www.aiexamresult.com/documents"
           },
           {
             "@type": "ListItem",
@@ -219,5 +219,6 @@
     "title": "Indian Air Force Airmen Group Y Medical Assistant Exam City Details 2026 | Intake 02/2027 - Sarkari Result | Sarkari Exam 2026",
     "description": "Indian Air Force Airmen Group Y Medical Assistant Exam City Details 2026 | Intake 02/2027for Check Eligibility, Download Notification, Age Limit, How to Apply a",
     "canonical": "https://www.aiexamresult.com/post/iaf-medical-assistant-2026"
-  }
+  },
+  "category": "documents"
 }

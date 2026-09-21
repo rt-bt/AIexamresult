@@ -119,8 +119,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -168,5 +168,6 @@
     "title": "UPSSSC Veterinary Pharmacist Main Examination 2026 Apply Online for 1308 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "Uttar Pradesh Subordinate Service Selection Commission (UPSSSC) has Released UPSSSC Veterinary Pharmacist Mains Examination Main Recruitment Notification. Those",
     "canonical": "https://www.aiexamresult.com/post/upsssc-veterinary-18-exam-2026"
-  }
+  },
+  "category": "latestJobs"
 }

@@ -315,8 +315,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -364,5 +364,6 @@
     "title": "🚨 MPESB MP Police Constable Recruitment 2026 Online Form Live: 7500 Posts Apply Now #MPPolice - Sarkari Result | Sarkari Exam 2026",
     "description": "MPESB MP Police Constable (GD) Recruitment 2026 Notification Out! 7500 Posts (SAF 700 + Non-SAF 6800). Apply 22 September 2026 to 06 October 2026. 10th/8th pass",
     "canonical": "https://www.aiexamresult.com/post/MPESB-MP-Police-Constable-2026"
-  }
+  },
+  "category": "latestJobs"
 }

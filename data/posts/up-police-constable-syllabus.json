@@ -96,8 +96,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Document",
+            "item": "https://www.aiexamresult.com/documents"
           },
           {
             "@type": "ListItem",
@@ -115,5 +115,6 @@
     "canonical": "https://www.aiexamresult.com/post/up-police-constable-syllabus"
   },
   "publishedAt": "2025-12-31T18:30:00.000Z",
-  "createdAt": "2025-12-31T18:30:00.000Z"
+  "createdAt": "2025-12-31T18:30:00.000Z",
+  "category": "documents"
 }

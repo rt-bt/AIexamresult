@@ -238,8 +238,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -287,5 +287,6 @@
     "title": "UPSSSC Computer Operator Recruitment 2026 Online Form for 12 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "UPSSSC Computer Operator Grade-A & Assistant Computer Operator Recruitment 2026 Online Form Live Now! Advt 20-Exam/2026. 12 Posts. Apply 07 September 2026 to 28",
     "canonical": "https://www.aiexamresult.com/post/UPSSSC-Computer-Operator-Advt-20-2026"
-  }
+  },
+  "category": "latestJobs"
 }

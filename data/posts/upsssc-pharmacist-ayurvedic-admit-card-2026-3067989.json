@@ -96,8 +96,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Admit Card",
+            "item": "https://www.aiexamresult.com/admit-card"
           },
           {
             "@type": "ListItem",
@@ -113,5 +113,6 @@
     "title": "UPSSSC Pharmacist Ayurvedic Admit Card 2026 Out - Download Hal Ticket at upsssc.gov.in - Sarkari Result | Sarkari Exam 2026",
     "description": "Download UPSSSC Pharmacist Ayurvedic Admit Card 2026 has released on 16 September for the Main Examination scheduled on 20 September 2026 from 3 PM to 5 PM. Che",
     "canonical": "https://www.aiexamresult.com/post/upsssc-pharmacist-ayurvedic-admit-card-2026-3067989"
-  }
+  },
+  "category": "admitCards"
 }

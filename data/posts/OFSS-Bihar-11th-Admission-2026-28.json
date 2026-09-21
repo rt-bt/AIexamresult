@@ -262,8 +262,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Admission",
+            "item": "https://www.aiexamresult.com/admission"
           },
           {
             "@type": "ListItem",
@@ -279,5 +279,6 @@
     "title": "OFSS Bihar Intermediate 11th Re-Open Spot Admission 2026  @ OFSS Portal, Govt. of Bihar - Sarkari Result | Sarkari Exam 2026",
     "description": "OFSS Bihar 11th Admission 2026-28 Online Form Live! Bihar School Examination Board (BSEB) Intermediate (Class 11) Admission for Science, Arts, Commerce, Agricul",
     "canonical": "https://www.aiexamresult.com/post/OFSS-Bihar-11th-Admission-2026-28"
-  }
+  },
+  "category": "admissions"
 }

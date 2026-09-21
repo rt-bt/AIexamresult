@@ -184,8 +184,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -233,5 +233,6 @@
     "title": "UP Rojgar Mela Registration 2026 Online Form - Sarkari Result | Sarkari Exam 2026",
     "description": "UP Rojgar Mela Registration 2026 Online Form. Eligible candidates can apply online through the official website before the last date. Check important dates, app",
     "canonical": "https://www.aiexamresult.com/post/up-rojgar-mela"
-  }
+  },
+  "category": "latestJobs"
 }

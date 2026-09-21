@@ -243,8 +243,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -260,5 +260,6 @@
     "title": "Uttar Pardesh Secondary Education Services Selection Board (UPSESSB) - Sarkari Result | Sarkari Exam 2026",
     "description": "Uttar Pardesh Secondary Education Services Selection Borad (UPSESSB) Are Recently Uploaded Result For Post of TGT (Trained Graduate Teacher) & PGT (Post Graduat",
     "canonical": "https://www.aiexamresult.com/post/UPSESSB-TGT_PGT-4163-Post-2022"
-  }
+  },
+  "category": "latestJobs"
 }

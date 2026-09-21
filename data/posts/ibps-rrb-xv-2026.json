@@ -224,8 +224,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -273,5 +273,6 @@
     "title": "IBPS RRB XV Gramin Bank Online Form 2026 for 13706 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "Apply Online: IBPS RRB XV Gramin Bank Online Form 2026 for Total 13706 Post Check Eligibility, Download Notification, Age Limit, How to Apply and More : Rojgar ",
     "canonical": "https://www.aiexamresult.com/post/ibps-rrb-xv-2026"
-  }
+  },
+  "category": "latestJobs"
 }

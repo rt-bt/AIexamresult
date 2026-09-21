@@ -211,8 +211,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -260,5 +260,6 @@
     "title": "Bihar STET Online Form 2026 | Teacher Eligibility Test - Sarkari Result | Sarkari Exam 2026",
     "description": "Bihar STET Online Form 2026 Link Activate Apply Now | Teacher Eligibility Test | Check Eligibility, Download Notification, Age Limit, How to Apply and More",
     "canonical": "https://www.aiexamresult.com/post/Bihar-STET-2026"
-  }
+  },
+  "category": "latestJobs"
 }

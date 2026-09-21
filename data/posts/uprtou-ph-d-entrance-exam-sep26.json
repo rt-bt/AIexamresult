@@ -147,8 +147,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Admission",
+            "item": "https://www.aiexamresult.com/admission"
           },
           {
             "@type": "ListItem",
@@ -196,5 +196,6 @@
     "title": "UPRTOU Ph.D Entrance Exam Admissions 2026-27 : Apply Online Form - Sarkari Result | Sarkari Exam 2026",
     "description": "UPRTOU Ph.D Admissions Entrance Exam 2026 Notification. Those candidates who are interested in this Admission 2026-27 can apply online from 15 September 2026 to",
     "canonical": "https://www.aiexamresult.com/post/uprtou-ph-d-entrance-exam-sep26"
-  }
+  },
+  "category": "admissions"
 }

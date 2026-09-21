@@ -236,8 +236,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Answer Key",
+            "item": "https://www.aiexamresult.com/answer-key"
           },
           {
             "@type": "ListItem",
@@ -253,5 +253,6 @@
     "title": "SSB Head Constable Answer Key 2026 – Reopen - Sarkari Result | Sarkari Exam 2026",
     "description": "SSB Head Constable Answer Key 2026 – Reopen. Candidates can download the official answer key and raise objections if needed. Check important dates, application ",
     "canonical": "https://www.aiexamresult.com/post/ssb-head-constable-admit-card"
-  }
+  },
+  "category": "answerKeys"
 }

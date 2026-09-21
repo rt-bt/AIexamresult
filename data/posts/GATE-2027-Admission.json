@@ -238,8 +238,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -257,5 +257,6 @@
     "canonical": "https://www.aiexamresult.com/post/GATE-2027-Admission"
   },
   "publishedAt": "2026-08-26T18:30:00.000Z",
-  "createdAt": "2026-08-26T18:30:00.000Z"
+  "createdAt": "2026-08-26T18:30:00.000Z",
+  "category": "latestJobs"
 }

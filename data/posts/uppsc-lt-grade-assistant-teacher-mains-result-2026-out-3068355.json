@@ -110,8 +110,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Result",
+            "item": "https://www.aiexamresult.com/result"
           },
           {
             "@type": "ListItem",
@@ -127,5 +127,6 @@
     "title": "UPPSC LT Grade Assistant Teacher Mains Result 2026 Out - Download PDF at uppsc.up.nic.in - Sarkari Result | Sarkari Exam 2026",
     "description": "UPPSC has released the LT Grade Assistant Teacher (TGT) Mains Result 2026 on 18/09/2026 for 7466 posts under Advt No. A-5/E-1/2025. Find how to check the result",
     "canonical": "https://www.aiexamresult.com/post/uppsc-lt-grade-assistant-teacher-mains-result-2026-out-3068355"
-  }
+  },
+  "category": "results"
 }

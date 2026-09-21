@@ -253,8 +253,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Result",
+            "item": "https://www.aiexamresult.com/result"
           },
           {
             "@type": "ListItem",
@@ -270,5 +270,6 @@
     "title": "MPESB Group 2 Sub Group 3 Result 2026 - Sarkari Result | Sarkari Exam 2026",
     "description": "MPESB Group 2 Sub Group 3 Result 2026 | Check Eligibility, Download Notification and Syllabus, How to Apply and More : Visit for More Updates Rojgar Result",
     "canonical": "https://www.aiexamresult.com/post/mpesb-group2-subgroup3-oct25"
-  }
+  },
+  "category": "results"
 }

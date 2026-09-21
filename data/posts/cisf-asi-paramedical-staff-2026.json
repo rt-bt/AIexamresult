@@ -252,8 +252,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Admit Card",
+            "item": "https://www.aiexamresult.com/admit-card"
           },
           {
             "@type": "ListItem",
@@ -301,5 +301,6 @@
     "title": "CISF ASI Paramedical Staff PST Admit Card 2026 Out for 24 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "CISF ASI Paramedical Staff Recruitment 2026 Notification Out! 24 Posts (Pharmacist, X-Ray Technician, Lab Technician). Online Form 08 June 2026 to 07 July 2026.",
     "canonical": "https://www.aiexamresult.com/post/cisf-asi-paramedical-staff-2026"
-  }
+  },
+  "category": "admitCards"
 }

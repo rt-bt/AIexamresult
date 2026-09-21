@@ -114,8 +114,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -163,5 +163,6 @@
     "title": "MAHATRANSCO Electrician Apprentice Recruitment 2026 - Apply Online for 25 Posts - Sarkari Result | Sarkari Exam 2026",
     "description": "The Maharashtra State Electricity Transmission Company (MSETCL) Recruitment 2026 for posts of 25 Electrician Apprentice. Candidates with ITI Can Apply Online. T",
     "canonical": "https://www.aiexamresult.com/post/mahatransco-electrician-apprentice-recruitment-2026-apply-online-for-25-posts-3068192"
-  }
+  },
+  "category": "latestJobs"
 }

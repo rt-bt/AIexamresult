@@ -176,8 +176,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -225,5 +225,6 @@
     "title": "UPSSSC Draftsman Nakshanavish and Manchitrak Recruitment 2023 DV Start - Sarkari Result | Sarkari Exam 2026",
     "description": "Uttar Pradesh Subordinate Service Selection Commission (UPSSSC) has released the Nakshanveesh / Manchitrak recruitment advertisement for 283 posts. Those candid",
     "canonical": "https://www.aiexamresult.com/post/upsssc-advt-11-2023"
-  }
+  },
+  "category": "latestJobs"
 }

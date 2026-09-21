@@ -151,8 +151,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -200,5 +200,6 @@
     "title": "United India Insurance UIIC Administrative Officer Scale I Recruitment 2026 Apply Online for 225 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "United India Insurance Company Limited (UIIC) has released the Administrative Officer recruitment advertisement 2026 for 225 posts. Those candidates Are Interes",
     "canonical": "https://www.aiexamresult.com/post/uiic-ao-sep26"
-  }
+  },
+  "category": "latestJobs"
 }

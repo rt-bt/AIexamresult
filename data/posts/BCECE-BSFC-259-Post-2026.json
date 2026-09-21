@@ -230,8 +230,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -282,5 +282,6 @@
   },
   "publishedAt": "2026-08-25T03:03:00.000Z",
   "createdAt": "2026-08-25T03:03:00.000Z",
-  "updatedAt": "2026-08-25T03:03:00.000Z"
+  "updatedAt": "2026-08-25T03:03:00.000Z",
+  "category": "latestJobs"
 }

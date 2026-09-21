@@ -113,8 +113,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Answer Key",
+            "item": "https://www.aiexamresult.com/answer-key"
           },
           {
             "@type": "ListItem",
@@ -130,5 +130,6 @@
     "title": "SMC Provisional Answer Key 2026 Out - Check OMR Sheet Download & Objection Process - Sarkari Result | Sarkari Exam 2026",
     "description": "SMC Provisional Answer Key 2026 released on 10 September 2026 for the 6 September exam. Check OMR download, answer key objections, deadlines, and link.",
     "canonical": "https://www.aiexamresult.com/post/smc-provisional-answer-key-2026-3067553"
-  }
+  },
+  "category": "answerKeys"
 }

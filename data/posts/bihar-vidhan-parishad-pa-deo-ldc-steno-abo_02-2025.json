@@ -235,8 +235,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Result",
+            "item": "https://www.aiexamresult.com/result"
           },
           {
             "@type": "ListItem",
@@ -252,5 +252,6 @@
     "title": "Bihar Vidhan Parishad LDC, DEO Final Result, PA Score Card 2026 Out - Sarkari Result | Sarkari Exam 2026",
     "description": "Bihar Vidhan Parishad PA DEO LDC Stenographer Recruitment 2025 Notification Out! Apply online for 64 posts (PA 7, DEO 35, LDC 10, Steno 12) starting November 28",
     "canonical": "https://www.aiexamresult.com/post/bihar-vidhan-parishad-pa-deo-ldc-steno-abo_02-2025"
-  }
+  },
+  "category": "results"
 }

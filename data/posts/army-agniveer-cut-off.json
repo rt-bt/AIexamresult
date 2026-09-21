@@ -76,8 +76,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Result",
+            "item": "https://www.aiexamresult.com/result"
           },
           {
             "@type": "ListItem",
@@ -93,5 +93,6 @@
     "title": "Army Agniveer Cut Off 2024: इंडियन आर्मी अग्निवीर का रिजल्ट इस दिन होगा जारी, जाने पिछले साल का कट ऑफ? - Sarkari Result | Sarkari Exam 2026",
     "description": "Army Agniveer Cut Off 2024:क्या आपने भी भारतीय सेना अग्निवीर की भर्ती परीक्षा दी है या दे रहे हैं और संभावित कट ऑफ के बारे में जानना चाहते हैं, तो हमारा यह",
     "canonical": "https://www.aiexamresult.com/post/army-agniveer-cut-off"
-  }
+  },
+  "category": "results"
 }

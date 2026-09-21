@@ -190,8 +190,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Document",
+            "item": "https://www.aiexamresult.com/documents"
           },
           {
             "@type": "ListItem",
@@ -209,5 +209,6 @@
     "canonical": "https://www.aiexamresult.com/post/rajasthan-high-court-stenographer-syllabus-2026"
   },
   "publishedAt": "2026-07-21T18:30:00.000Z",
-  "createdAt": "2026-07-21T18:30:00.000Z"
+  "createdAt": "2026-07-21T18:30:00.000Z",
+  "category": "documents"
 }

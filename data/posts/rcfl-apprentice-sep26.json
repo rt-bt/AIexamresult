@@ -175,8 +175,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -224,5 +224,6 @@
     "title": "RCFL Technician and Trade Apprentice 2026 Apply Online for 326 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "Rashtriya Chemicals and Fertilizers Limited (RCFL ) has released the notification for the recruitment of RCF Graduate Apprentice 2026. Those Candidates Are Inte",
     "canonical": "https://www.aiexamresult.com/post/rcfl-apprentice-sep26"
-  }
+  },
+  "category": "latestJobs"
 }

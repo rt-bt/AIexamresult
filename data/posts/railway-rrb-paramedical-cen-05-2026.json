@@ -184,8 +184,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -233,5 +233,6 @@
     "title": "Railway RRB Paramedical Categories CEN 05/2026 Recruitment 2026 Apply Online - Sarkari Result | Sarkari Exam 2026",
     "description": "Indian Railway Railway Recruitment Board RRB Paramedical Categories and Other Post Recruitment CEN 05/2026. Those candidates who are interested in this Railway ",
     "canonical": "https://www.aiexamresult.com/post/railway-rrb-paramedical-cen-05-2026"
-  }
+  },
+  "category": "latestJobs"
 }

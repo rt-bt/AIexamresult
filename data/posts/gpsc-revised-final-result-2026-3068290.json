@@ -102,8 +102,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Result",
+            "item": "https://www.aiexamresult.com/result"
           },
           {
             "@type": "ListItem",
@@ -119,5 +119,6 @@
     "title": "GPSC Revised Final Result 2026 - Check Deputy Section Officer & Deputy Mamlatdar Result at gpsc.gujarat.gov.in - Sarkari Result | Sarkari Exam 2026",
     "description": "GPSC Re-Revised Final Result 2026 has been released on 17 September for Advertisement No. 127/2024-25. Check the Deputy Section Officer and Deputy Mamlatdar res",
     "canonical": "https://www.aiexamresult.com/post/gpsc-revised-final-result-2026-3068290"
-  }
+  },
+  "category": "results"
 }

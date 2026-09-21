@@ -220,8 +220,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -269,5 +269,6 @@
     "title": "India Post GDS Online Form 2026 for 23757 Post | Schedule II July Exam - Sarkari Result | Sarkari Exam 2026",
     "description": "India Post GDS Gramin Dak Sevak Recruitment 2026 Apply Online Form | Bhartiya Dak Vibhag | Notification | Exam Pattern | Official Website Visit Rojgar Result",
     "canonical": "https://www.aiexamresult.com/post/India-Post-GDS-July-2026"
-  }
+  },
+  "category": "latestJobs"
 }

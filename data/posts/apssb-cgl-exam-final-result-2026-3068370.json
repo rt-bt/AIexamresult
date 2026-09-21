@@ -92,8 +92,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Result",
+            "item": "https://www.aiexamresult.com/result"
           },
           {
             "@type": "ListItem",
@@ -109,5 +109,6 @@
     "title": "APSSB CGL Exam Final Result 2026 Out - Check Selected Candidates at apssb.nic.in - Sarkari Result | Sarkari Exam 2026",
     "description": "APSSB has released the CGL Exam 2026 Final Result Notice dated 18 September 2026 for Personal Assistant (Stenographer Gr-III), Librarian and Upper Division Cler",
     "canonical": "https://www.aiexamresult.com/post/apssb-cgl-exam-final-result-2026-3068370"
-  }
+  },
+  "category": "results"
 }

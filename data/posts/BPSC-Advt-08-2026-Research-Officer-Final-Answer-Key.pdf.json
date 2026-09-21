@@ -71,8 +71,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -88,5 +88,6 @@
     "title": " - Sarkari Result | Sarkari Exam 2026",
     "description": ". Check important dates, application fee, eligibility criteria and official links below.",
     "canonical": "https://www.aiexamresult.com/post/BPSC-Advt-08-2026-Research-Officer-Final-Answer-Key.pdf"
-  }
+  },
+  "category": "latestJobs"
 }

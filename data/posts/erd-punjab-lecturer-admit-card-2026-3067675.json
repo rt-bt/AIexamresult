@@ -107,8 +107,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Admit Card",
+            "item": "https://www.aiexamresult.com/admit-card"
           },
           {
             "@type": "ListItem",
@@ -124,5 +124,6 @@
     "title": "Punjab Lecturer Admit Card 2026 Out - Download Hall Ticket at erd.punjab.gov.in - Sarkari Result | Sarkari Exam 2026",
     "description": "Download ERD Punjab Lecturer Admit Card 2026 has released on 15 September for the written exam scheduled from 19 to 27 September 2026. Check hall ticket downloa",
     "canonical": "https://www.aiexamresult.com/post/erd-punjab-lecturer-admit-card-2026-3067675"
-  }
+  },
+  "category": "admitCards"
 }

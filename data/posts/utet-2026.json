@@ -217,8 +217,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -266,5 +266,6 @@
     "title": "UTET Online Form 2026 | Uttarakhand Teacher Eligibility Test Date Extended - Sarkari Result | Sarkari Exam 2026",
     "description": "UTET 2026 | Uttarakhand Teacher Eligibility Test | Primary & Junior | Notification | Syllabus also Available | Official Website Direct Link now Available on Roj",
     "canonical": "https://www.aiexamresult.com/post/utet-2026"
-  }
+  },
+  "category": "latestJobs"
 }

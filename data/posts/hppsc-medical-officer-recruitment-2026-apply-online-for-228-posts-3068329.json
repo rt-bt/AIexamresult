@@ -140,8 +140,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -189,5 +189,6 @@
     "title": "HPPSC Medical Officer Recruitment 2026 Notification Out - Apply Online for 228 Posts - Sarkari Result | Sarkari Exam 2026",
     "description": "Himachal Pradesh Public Service Commission (HPPSC) has released the Recruitment 2026 notification for 228 Medical Officer posts. The online application process ",
     "canonical": "https://www.aiexamresult.com/post/hppsc-medical-officer-recruitment-2026-apply-online-for-228-posts-3068329"
-  }
+  },
+  "category": "latestJobs"
 }

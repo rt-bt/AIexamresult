@@ -192,8 +192,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Document",
+            "item": "https://www.aiexamresult.com/documents"
           },
           {
             "@type": "ListItem",
@@ -209,5 +209,6 @@
     "title": "UPSSSC Junior Engineer Agriculture Syllabus 2026 (Hindi & English) - Sarkari Result | Sarkari Exam 2026",
     "description": "UPSSSC Junior Engineer Agriculture Syllabus 2026 (Hindi & English). Check important dates, application fee, eligibility criteria and official links below.",
     "canonical": "https://www.aiexamresult.com/post/upsssc-junior-engineer-agriculture-syllabus-2026"
-  }
+  },
+  "category": "documents"
 }

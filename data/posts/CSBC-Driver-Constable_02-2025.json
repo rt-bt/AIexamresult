@@ -254,8 +254,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Admit Card",
+            "item": "https://www.aiexamresult.com/admit-card"
           },
           {
             "@type": "ListItem",
@@ -303,5 +303,6 @@
     "title": "Bihar Police CSBC Driver Constable 2025 DET Admit Card, Revised Date 2026 for 4361 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "Bihar Police CSBC Driver Constable PET Result 2026 Latest Update: Expected End March 2026 after PET from March 12! Download Merit List PDF, Cut Off, Final Resul",
     "canonical": "https://www.aiexamresult.com/post/CSBC-Driver-Constable_02-2025"
-  }
+  },
+  "category": "admitCards"
 }

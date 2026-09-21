@@ -149,8 +149,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Admit Card",
+            "item": "https://www.aiexamresult.com/admit-card"
           },
           {
             "@type": "ListItem",
@@ -198,5 +198,6 @@
     "title": "MPESB MP Group 2 Sub Group 1 Krashi Vistar Adhikari (Agriculture Extension Officer) Recruitment Test – 2026 Admit Card - Sarkari Result | Sarkari Exam 2026",
     "description": "Madhya Pradesh Employee Selection Board (MPESB) has released Van Group 2 Sub Group 1 Krishi Vistar Adhikari Recruitment Notification 2026. Those candidates who ",
     "canonical": "https://www.aiexamresult.com/post/mpesb-group2-sub1-krashi-vistar"
-  }
+  },
+  "category": "admitCards"
 }

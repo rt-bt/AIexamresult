@@ -110,8 +110,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Answer Key",
+            "item": "https://www.aiexamresult.com/answer-key"
           },
           {
             "@type": "ListItem",
@@ -127,5 +127,6 @@
     "title": "UPSSSC Answer Key 2026 - Download Assistant Boring Technician and Teacher Cadre Response Sheet at upsssc.gov.in - Sarkari Result | Sarkari Exam 2026",
     "description": "UPSSSC Master Answer Key 2026 released on 12 September 2026 for Assistant Boring Technician and Teacher Cadre Main Exams. Check final answer key PDFs.",
     "canonical": "https://www.aiexamresult.com/post/upsssc-answer-key-2026-3067586"
-  }
+  },
+  "category": "answerKeys"
 }

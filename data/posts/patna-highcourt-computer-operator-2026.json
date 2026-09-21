@@ -230,8 +230,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Answer Key",
+            "item": "https://www.aiexamresult.com/answer-key"
           },
           {
             "@type": "ListItem",
@@ -247,5 +247,6 @@
     "title": "Patna High Court Computer Operator cum Typist Answer Key 2026 - Sarkari Result | Sarkari Exam 2026",
     "description": "Patna High Court Computer Operator Cum Typist Answer Key 2026 for 48 posts. | PDF Notification Check eligibility, age limit, salary ₹25,500–₹81,100, syllabus, e",
     "canonical": "https://www.aiexamresult.com/post/patna-highcourt-computer-operator-2026"
-  }
+  },
+  "category": "answerKeys"
 }

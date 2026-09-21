@@ -151,8 +151,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -200,5 +200,6 @@
     "title": "GBPUAT Recruitment 2026 - Apply Offline for 45 Associate Professor and Assistant Professor Posts - Sarkari Result | Sarkari Exam 2026",
     "description": "The Govind Ballabh Pant University of Agriculture and Technology (GBPUAT) Recruitment 2026 for posts of 45 Associate Professor and Assistant Professor. The Offl",
     "canonical": "https://www.aiexamresult.com/post/gbpuat-recruitment-2026-apply-offline-for-45-associate-professor-and-assistant-professor-posts-3068155"
-  }
+  },
+  "category": "latestJobs"
 }

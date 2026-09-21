@@ -76,8 +76,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -125,5 +125,6 @@
     "title": "Army Agniveer New Recruitment 2025: 10वीं पास युवाओं के लिए नई अग्निवीर भर्ती, ऐसे करे फटाफट आवेदन- Full Information - Sarkari Result | Sarkari Exam 2026",
     "description": "Army Agniveer New Recruitment 2025:- अगर आप भी 10वीं पास हैं और अग्निवीर के रूप में करियर बनाना चाहते हैं तो हम आपके लिए करियर बनाने का एक धमाकेदार मौका लेकर",
     "canonical": "https://www.aiexamresult.com/post/army-agniveer-new-recruitment"
-  }
+  },
+  "category": "latestJobs"
 }

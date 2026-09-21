@@ -114,8 +114,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Document",
+            "item": "https://www.aiexamresult.com/documents"
           },
           {
             "@type": "ListItem",
@@ -131,5 +131,6 @@
     "title": "RRB Paramedical Syllabus 2026 - Check Exam Pattern, Selection Process & Subject-Wise Topics - Sarkari Result | Sarkari Exam 2026",
     "description": "Check the RRB Paramedical Syllabus 2026 with full CBT exam pattern, marking scheme, selection process, and subject-wise topics for Staff Nurse, Pharmacist, Radi",
     "canonical": "https://www.aiexamresult.com/post/rrb-paramedical-syllabus-and-exam-pattern-3066950"
-  }
+  },
+  "category": "documents"
 }

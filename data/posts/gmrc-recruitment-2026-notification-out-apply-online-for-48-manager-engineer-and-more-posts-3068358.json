@@ -137,8 +137,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -186,5 +186,6 @@
     "title": "GMRC Recruitment 2026 Notification Out - Apply Online for 48 Draftsman, Engineer and More Posts - Sarkari Result | Sarkari Exam 2026",
     "description": "The Gujarat Metro Rail Corporation (GMRC) Recruitment 2026 for posts of 48 Manager, Draftsman, Engineer and More Posts. Candidates with B.Tech/B.E, Diploma Can ",
     "canonical": "https://www.aiexamresult.com/post/gmrc-recruitment-2026-notification-out-apply-online-for-48-manager-engineer-and-more-posts-3068358"
-  }
+  },
+  "category": "latestJobs"
 }

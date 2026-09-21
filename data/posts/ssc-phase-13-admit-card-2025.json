@@ -92,8 +92,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Admit Card",
+            "item": "https://www.aiexamresult.com/admit-card"
           },
           {
             "@type": "ListItem",
@@ -109,5 +109,6 @@
     "title": "SSC Phase 13 Admit Card 2025 : एग्जाम डेट जारी, एडमिट कार्ड डाउनलोड की पूरी प्रक्रिया यहां देखें - Sarkari Result | Sarkari Exam 2026",
     "description": "SSC Phase 13 Admit Card 2025 : कर्मचारी चयन आयोग (SSC) ने SSC Phase 13 परीक्षा 2025 के लिए एग्जाम डेट जारी कर दी है। इस लेख में हम आपको बताएंगे कि SSC Phase",
     "canonical": "https://www.aiexamresult.com/post/ssc-phase-13-admit-card-2025"
-  }
+  },
+  "category": "admitCards"
 }

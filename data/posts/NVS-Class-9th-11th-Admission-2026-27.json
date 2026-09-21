@@ -239,8 +239,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -258,5 +258,6 @@
     "canonical": "https://www.aiexamresult.com/post/NVS-Class-9th-11th-Admission-2026-27"
   },
   "publishedAt": "2026-09-01T18:30:00.000Z",
-  "createdAt": "2026-09-01T18:30:00.000Z"
+  "createdAt": "2026-09-01T18:30:00.000Z",
+  "category": "latestJobs"
 }

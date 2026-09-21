@@ -251,8 +251,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -300,5 +300,6 @@
     "title": "RRB Railway Section Controller Exam Notice 2026 for 119 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "RRB Railway Section Controller Admit Card 2026 for 119 Post | Notification | Official Website Direct Link now Available on Rojgar Result : RojgarResult.Com",
     "canonical": "https://www.aiexamresult.com/post/rrb-railway-section-controller-2026"
-  }
+  },
+  "category": "latestJobs"
 }

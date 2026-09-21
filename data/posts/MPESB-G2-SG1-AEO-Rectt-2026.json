@@ -278,8 +278,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Admit Card",
+            "item": "https://www.aiexamresult.com/admit-card"
           },
           {
             "@type": "ListItem",
@@ -327,5 +327,6 @@
     "title": "Madhya Pradesh MPESB Group 2 Sub Group 1 AEO Admit Card 2026 Out for 2784 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "MPESB Group 2 Sub Group 1 AEO Recruitment 2026 Online Form Live Now! Apply for 2784 Agriculture Extension Officer Posts from 03 July 2026 to 17 July 2026 at esb",
     "canonical": "https://www.aiexamresult.com/post/MPESB-G2-SG1-AEO-Rectt-2026"
-  }
+  },
+  "category": "admitCards"
 }

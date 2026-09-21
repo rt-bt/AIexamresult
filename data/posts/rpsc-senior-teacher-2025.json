@@ -236,8 +236,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Document",
+            "item": "https://www.aiexamresult.com/documents"
           },
           {
             "@type": "ListItem",
@@ -287,5 +287,6 @@
     "canonical": "https://www.aiexamresult.com/post/rpsc-senior-teacher-2025"
   },
   "publishedAt": "2026-06-30T18:30:00.000Z",
-  "createdAt": "2026-06-30T18:30:00.000Z"
+  "createdAt": "2026-06-30T18:30:00.000Z",
+  "category": "documents"
 }

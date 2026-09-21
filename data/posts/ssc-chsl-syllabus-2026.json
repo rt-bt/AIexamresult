@@ -188,8 +188,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Document",
+            "item": "https://www.aiexamresult.com/documents"
           },
           {
             "@type": "ListItem",
@@ -205,5 +205,6 @@
     "title": "SSC CHSL 10+2 Syllabus 2026 | Tier-1 & Tier-2 - Sarkari Result | Sarkari Exam 2026",
     "description": "SSC CHSL 10+2 Syllabus 2026 in Hindi : PDF Download | Tier 1 and Tier 2 Syllabus, Exam Pattern, Selection Procedure : Visit Rojgar Result : RojgarResult.Com",
     "canonical": "https://www.aiexamresult.com/post/ssc-chsl-syllabus-2026"
-  }
+  },
+  "category": "documents"
 }

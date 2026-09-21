@@ -98,8 +98,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Result",
+            "item": "https://www.aiexamresult.com/result"
           },
           {
             "@type": "ListItem",
@@ -117,5 +117,6 @@
     "canonical": "https://www.aiexamresult.com/post/mpesb-group-1-sub-group-2-result"
   },
   "publishedAt": "2026-08-02T18:30:00.000Z",
-  "createdAt": "2026-08-02T18:30:00.000Z"
+  "createdAt": "2026-08-02T18:30:00.000Z",
+  "category": "results"
 }

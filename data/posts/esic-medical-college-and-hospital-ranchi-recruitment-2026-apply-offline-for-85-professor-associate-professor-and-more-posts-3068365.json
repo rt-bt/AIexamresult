@@ -125,8 +125,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -174,5 +174,6 @@
     "title": "ESIC Medical College and Hospital Ranchi Recruitment 2026 - Apply Offline for 85 Professor, Associate Professor and More Posts - Sarkari Result | Sarkari Exam 2026",
     "description": "ESIC Medical College and Hospital Ranchi has released the new notification for the recruitment of Professor, Associate Professor, Assistant Professor and Senior",
     "canonical": "https://www.aiexamresult.com/post/esic-medical-college-and-hospital-ranchi-recruitment-2026-apply-offline-for-85-professor-associate-professor-and-more-posts-3068365"
-  }
+  },
+  "category": "latestJobs"
 }

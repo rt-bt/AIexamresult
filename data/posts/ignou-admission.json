@@ -86,8 +86,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Admission",
+            "item": "https://www.aiexamresult.com/admission"
           },
           {
             "@type": "ListItem",
@@ -103,5 +103,6 @@
     "title": "IGNOU Admission 2024: इग्नू ने लांच किया 14 नये पीजी / मास्टर्स कोर्स, जाने क्या कोर्सेज लिस्ट और आवेदन की नई अन्तिम तिथि के साथ आवेदन प्रक्रिया?- Full Information - Sarkari Result | Sarkari Exam 2026",
     "description": "IGNOU Admission 2024:  वे सभी छात्र जो इग्नू से मनचाहे कोर्स में पीजी/मास्टर्स की पढ़ाई करना चाहते हैं, हम उन्हें बताना चाहते हैं कि इंदिरा गांधी राष्ट्रीय",
     "canonical": "https://www.aiexamresult.com/post/ignou-admission"
-  }
+  },
+  "category": "admissions"
 }

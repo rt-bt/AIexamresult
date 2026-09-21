@@ -103,8 +103,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Result",
+            "item": "https://www.aiexamresult.com/result"
           },
           {
             "@type": "ListItem",
@@ -120,5 +120,6 @@
     "title": "EMRS Tier 2 Result 2026 (Phase 7) Out - Download Scorecard at nests.tribal.gov.in - Sarkari Result | Sarkari Exam 2026",
     "description": "EMRS Tier 2 Result 2026 for Phase 7 is out for PGT English, Hindi & Maths. Check NESTS result date, category-wise cutoff, vacancy details, required documents & ",
     "canonical": "https://www.aiexamresult.com/post/emrs-teaching-and-non-teaching-tier-ii-result-2026-3066170"
-  }
+  },
+  "category": "results"
 }

@@ -221,8 +221,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Answer Key",
+            "item": "https://www.aiexamresult.com/answer-key"
           },
           {
             "@type": "ListItem",
@@ -270,5 +270,6 @@
     "title": "BSNL Senior Executive Trainee SET Answer Key 2026 for 120 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "BSNL Senior Executive Trainee SET Answer Key 2026 for 120 Post notification out for 120 Posts (95 telecome+25 Finance). Check eligibility, age limit, fees, sala",
     "canonical": "https://www.aiexamresult.com/post/bsnl-senior-executive-trainee-set-2026"
-  }
+  },
+  "category": "answerKeys"
 }

@@ -139,8 +139,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -188,5 +188,6 @@
     "title": "Karnataka Prisons Department Recruitment 2026 Notification Out - Apply Online for 869 Jailor, Warder Posts - Sarkari Result | Sarkari Exam 2026",
     "description": "Karnataka Prisons Department has announced the Recruitment 2026 notification for 869 vacancies, including Jailor, Warder posts.  The online application process ",
     "canonical": "https://www.aiexamresult.com/post/karnataka-prisons-department-recruitment-2026-apply-online-for-869-jailor-warder-posts-3068344"
-  }
+  },
+  "category": "latestJobs"
 }

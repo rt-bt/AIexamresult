@@ -105,8 +105,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Admit Card",
+            "item": "https://www.aiexamresult.com/admit-card"
           },
           {
             "@type": "ListItem",
@@ -122,5 +122,6 @@
     "title": "OSSTET Admit Card 2026 - Download Hall Ticket at bseodisha.nic.in - Sarkari Result | Sarkari Exam 2026",
     "description": "OSSTET Admit Card 2026 is scheduled to be released on 20 September for the Odisha Secondary School Teacher Eligibility Test scheduled on 30 September 2026. Chec",
     "canonical": "https://www.aiexamresult.com/post/osstet-admit-card-2026-3068211"
-  }
+  },
+  "category": "admitCards"
 }

@@ -98,8 +98,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Document",
+            "item": "https://www.aiexamresult.com/documents"
           },
           {
             "@type": "ListItem",
@@ -117,5 +117,6 @@
     "canonical": "https://www.aiexamresult.com/post/how-to-check-ccc-certificate-validate-the-signature"
   },
   "publishedAt": "2023-10-16T18:30:00.000Z",
-  "createdAt": "2023-10-16T18:30:00.000Z"
+  "createdAt": "2023-10-16T18:30:00.000Z",
+  "category": "documents"
 }

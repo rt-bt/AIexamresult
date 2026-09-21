@@ -98,8 +98,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Document",
+            "item": "https://www.aiexamresult.com/documents"
           },
           {
             "@type": "ListItem",
@@ -115,5 +115,6 @@
     "title": "MP Police Constable Syllabus 2026 - Check Exam Pattern PDF - Sarkari Result | Sarkari Exam 2026",
     "description": "MPESB Constable Syllabus 2025: The Madhya Pradesh Employees Selection Board (MPESB) has released the detailed syllabus for the post of Constable. The official s",
     "canonical": "https://www.aiexamresult.com/post/mp-police-constable-syllabus-and-exam-pattern-3067101"
-  }
+  },
+  "category": "documents"
 }

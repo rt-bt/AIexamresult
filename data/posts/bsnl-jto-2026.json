@@ -269,8 +269,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Answer Key",
+            "item": "https://www.aiexamresult.com/answer-key"
           },
           {
             "@type": "ListItem",
@@ -318,5 +318,6 @@
     "title": "BSNL JTO Junior Telecom Officer Answer Key 2026 for 100 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "BSNL JTO Junior Telecom Officer Result 2026 for 100 Post | Notification | Official Website Direct Link now Available on Rojgar Result : RoijgarResult.Com",
     "canonical": "https://www.aiexamresult.com/post/bsnl-jto-2026"
-  }
+  },
+  "category": "answerKeys"
 }

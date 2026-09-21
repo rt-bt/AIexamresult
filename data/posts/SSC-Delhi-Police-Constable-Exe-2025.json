@@ -272,8 +272,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Admit Card",
+            "item": "https://www.aiexamresult.com/admit-card"
           },
           {
             "@type": "ListItem",
@@ -321,5 +321,6 @@
     "title": "SSC Delhi Police Constable (Executive) 2025 PE&MT / DV Admit Card 2026 Out for 7201 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "SSC Delhi Police Constable Recruitment 2025 Live Now! Apply today for 7201 posts starting Sep 22, 2025. Get updates on exam dates, admit card, fees. Trending: S",
     "canonical": "https://www.aiexamresult.com/post/SSC-Delhi-Police-Constable-Exe-2025"
-  }
+  },
+  "category": "admitCards"
 }

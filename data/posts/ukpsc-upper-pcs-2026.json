@@ -221,8 +221,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -270,5 +270,6 @@
     "title": "UKPSC Upper PCS Pre Online Form 2026 - Sarkari Result | Sarkari Exam 2026",
     "description": "UKPSC Upper PCS Pre Recruitment 2026 Apply Online Form | Notification | Official Website Direct Link now Available on Rojgar Result : RojgarResult.Com",
     "canonical": "https://www.aiexamresult.com/post/ukpsc-upper-pcs-2026"
-  }
+  },
+  "category": "latestJobs"
 }

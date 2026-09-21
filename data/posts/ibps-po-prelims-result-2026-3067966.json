@@ -107,8 +107,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Result",
+            "item": "https://www.aiexamresult.com/result"
           },
           {
             "@type": "ListItem",
@@ -124,5 +124,6 @@
     "title": "IBPS PO Prelims Result 2026 - Check Expected Date, Direct Scorecard Link, Cut Off & Mains Exam Date at ibps.in - Sarkari Result | Sarkari Exam 2026",
     "description": "IBPS PO Prelims Result 2026 for CRP PO/MT-XVI is expected in the third or fourth week of September at ibps.in. Check expected cut off, scorecard details, normal",
     "canonical": "https://www.aiexamresult.com/post/ibps-po-prelims-result-2026-3067966"
-  }
+  },
+  "category": "results"
 }

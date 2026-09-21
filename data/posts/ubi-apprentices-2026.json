@@ -183,8 +183,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -234,5 +234,6 @@
     "canonical": "https://www.aiexamresult.com/post/ubi-apprentices-2026"
   },
   "publishedAt": "2026-05-03T18:30:00.000Z",
-  "createdAt": "2026-05-03T18:30:00.000Z"
+  "createdAt": "2026-05-03T18:30:00.000Z",
+  "category": "latestJobs"
 }

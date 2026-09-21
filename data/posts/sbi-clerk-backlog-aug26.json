@@ -211,8 +211,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Admit Card",
+            "item": "https://www.aiexamresult.com/admit-card"
           },
           {
             "@type": "ListItem",
@@ -260,5 +260,6 @@
     "title": "State Bank of India SBI Junior Associates Clerk Recruitment 2026 : Admit Card for 1538 Backlog Post - Sarkari Result | Sarkari Exam 2026",
     "description": "State Bank of India SBI has released Junior Associates Clerk Recruitment 2026 Notification. Those candidates Are Enrolled to the Following SBI Clerk Backlog (Sp",
     "canonical": "https://www.aiexamresult.com/post/sbi-clerk-backlog-aug26"
-  }
+  },
+  "category": "admitCards"
 }

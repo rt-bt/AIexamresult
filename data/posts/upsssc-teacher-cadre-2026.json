@@ -221,8 +221,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Answer Key",
+            "item": "https://www.aiexamresult.com/answer-key"
           },
           {
             "@type": "ListItem",
@@ -238,5 +238,6 @@
     "title": "UPSSSC Teacher Cadre Answer Key 2026 - Sarkari Result | Sarkari Exam 2026",
     "description": "UPSSSC Teacher Cadre Answer Key 2026 Check eligibility, vacancy (58 posts), age limit, salary, important dates & direct apply link. Last date 27 April 2026.",
     "canonical": "https://www.aiexamresult.com/post/upsssc-teacher-cadre-2026"
-  }
+  },
+  "category": "answerKeys"
 }

@@ -97,8 +97,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Result",
+            "item": "https://www.aiexamresult.com/result"
           },
           {
             "@type": "ListItem",
@@ -114,5 +114,6 @@
     "title": "SSC GD Constable Result 2025: एसएससी जीडी कांस्टेबल का रिजल्ट, यहाँ से चेक करें - Sarkari Result | Sarkari Exam 2026",
     "description": "SSC GD Constable Result 2025: कर्मचारी चयन आयोग ने अभी कुछ दिन पहले ही कांस्टेबल जीडी परीक्षा आयोजित की थी, जिसके बाद उम्मीदवारों को एसएससी जीडी रिजल्ट आने का",
     "canonical": "https://www.aiexamresult.com/post/ssc-gd-constable-result-2"
-  }
+  },
+  "category": "results"
 }

@@ -217,8 +217,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -266,5 +266,6 @@
     "title": "SSC CPO SI Online Form 2026 for 1871 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "SSC CPO SI Sub Inspector Recruitment 2026 Apply Online Form | Notification | Syllabus | Official Website Direct Link now Available on Rojgar Result : RojgarResu",
     "canonical": "https://www.aiexamresult.com/post/SSC-CPO-SI-2026"
-  }
+  },
+  "category": "latestJobs"
 }

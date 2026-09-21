@@ -93,8 +93,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Answer Key",
+            "item": "https://www.aiexamresult.com/answer-key"
           },
           {
             "@type": "ListItem",
@@ -110,5 +110,6 @@
     "title": "TPSC Bio Medical Engineer Answer Key 2026 Out - Download Final Answer Key PDF at tpsc.tripura.gov.in - Sarkari Result | Sarkari Exam 2026",
     "description": "TPSC has released the Final Answer Key 2026 for the Bio-Medical Engineer (Group-A Gazetted) written exam held on 22 June 2026. Check the complete Booklet Series",
     "canonical": "https://www.aiexamresult.com/post/tpsc-bio-medical-engineer-answer-key-2026-3067862"
-  }
+  },
+  "category": "answerKeys"
 }

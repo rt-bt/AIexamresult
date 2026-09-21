@@ -311,8 +311,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -360,5 +360,6 @@
     "title": "MPESB MP Police ASI & Subedar (Steno) Recruitment 2026 Online Form for 655 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "MPESB MP Police ASI & Subedar Stenographer Recruitment 2026 Notification Out! 655 Posts Police HQ Home. Apply 24 September 2026 to 08 October 2026. 12th + CPCT ",
     "canonical": "https://www.aiexamresult.com/post/mpesb-asi-subedar-steno-2026"
-  }
+  },
+  "category": "latestJobs"
 }

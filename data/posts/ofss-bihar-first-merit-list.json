@@ -112,8 +112,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Result",
+            "item": "https://www.aiexamresult.com/result"
           },
           {
             "@type": "ListItem",
@@ -129,5 +129,6 @@
     "title": "OFSS Bihar First Merit List 2024 | Intermediate first merit list 2024 - Sarkari Result | Sarkari Exam 2026",
     "description": "OFSS Bihar First Merit List 2022:-  Bihar Board Intermediate 1st Merit List 2022 OFSS Bihar 1st Merit List 2022 को  August 2022 में बहुत जल्द बिहार बोर्ड की आधि",
     "canonical": "https://www.aiexamresult.com/post/ofss-bihar-first-merit-list"
-  }
+  },
+  "category": "results"
 }

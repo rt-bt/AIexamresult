@@ -137,8 +137,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -186,5 +186,6 @@
     "title": "KVIC Recruitment 2026 - Apply Online for 50 Young Professional, Advisor and Senior Consultant Posts - Sarkari Result | Sarkari Exam 2026",
     "description": "The Khadi and Village Industries Commission (KVIC) Recruitment 2026 for posts of 50 Young Professional, Advisor and Senior Consultant. The online application op",
     "canonical": "https://www.aiexamresult.com/post/kvic-recruitment-2026-apply-online-for-50-young-professional-advisor-and-senior-consultant-posts-3068220"
-  }
+  },
+  "category": "latestJobs"
 }

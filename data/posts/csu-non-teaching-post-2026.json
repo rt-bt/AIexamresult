@@ -250,8 +250,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Document",
+            "item": "https://www.aiexamresult.com/documents"
           },
           {
             "@type": "ListItem",
@@ -301,5 +301,6 @@
     "canonical": "https://www.aiexamresult.com/post/csu-non-teaching-post-2026"
   },
   "publishedAt": "2026-06-15T18:30:00.000Z",
-  "createdAt": "2026-06-15T18:30:00.000Z"
+  "createdAt": "2026-06-15T18:30:00.000Z",
+  "category": "documents"
 }

@@ -113,8 +113,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Document",
+            "item": "https://www.aiexamresult.com/documents"
           },
           {
             "@type": "ListItem",
@@ -130,5 +130,6 @@
     "title": "GSSSB Syllabus 2026 - Check Research Assistant & Statistical Assistant Exam Pattern at gsssb.gujarat.gov.in - Sarkari Result | Sarkari Exam 2026",
     "description": "Check the official GSSSB Research Assistant and Statistical Assistant (Class-3) Syllabus 2026 for Advt No. 457/2026-27. Get the full MCQ-CBRT exam pattern, Part",
     "canonical": "https://www.aiexamresult.com/post/gsssb-research-assistant-and-statistical-assistant-syllabus-and-exam-pattern-3066987"
-  }
+  },
+  "category": "documents"
 }

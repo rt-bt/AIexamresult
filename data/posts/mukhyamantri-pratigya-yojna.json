@@ -168,8 +168,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -217,5 +217,6 @@
     "title": "Mukhyamantri Pratigya Yojna Registration 2026 Online Form - Sarkari Result | Sarkari Exam 2026",
     "description": "Bihar Mukhyamantri Pratigya Yojna Registration 2026 Apply Online Form | मुख्यमंत्री प्रतिज्ञा योजना (CM PRATIGYA Yojana) बिहार सरकार की एक नई योजना है | RojgarR",
     "canonical": "https://www.aiexamresult.com/post/mukhyamantri-pratigya-yojna"
-  }
+  },
+  "category": "latestJobs"
 }

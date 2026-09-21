@@ -133,8 +133,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Admit Card",
+            "item": "https://www.aiexamresult.com/admit-card"
           },
           {
             "@type": "ListItem",
@@ -150,5 +150,6 @@
     "title": "MPPSC Assistant Town Planner ATP  Admit Card 2026 - Sarkari Result | Sarkari Exam 2026",
     "description": "Madhya Pradesh Public Service Commission (MPPSC) has released Assistant Town Planner ATP Recruitment Notification 2026. Those candidates who are Interested in t",
     "canonical": "https://www.aiexamresult.com/post/mppsc-atp-july26"
-  }
+  },
+  "category": "admitCards"
 }

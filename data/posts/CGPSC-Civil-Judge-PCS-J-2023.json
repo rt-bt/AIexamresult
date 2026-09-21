@@ -184,8 +184,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Admit Card",
+            "item": "https://www.aiexamresult.com/admit-card"
           },
           {
             "@type": "ListItem",
@@ -233,5 +233,6 @@
     "title": "CGPCS Civil Judge PCS J Pre Admit Card 2023 (49 Post) | Available @ psc.cg.gov.in - Sarkari Result | Sarkari Exam 2026",
     "description": "Chhattisgarh Public Service Commission (CGPSC) Are Recently Uploaded Admit Card for The Post of  Civil Judge PCS J Entry Level Recruitment 2023. All Registered ",
     "canonical": "https://www.aiexamresult.com/post/CGPSC-Civil-Judge-PCS-J-2023"
-  }
+  },
+  "category": "admitCards"
 }

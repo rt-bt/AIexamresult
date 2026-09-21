@@ -201,8 +201,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -250,5 +250,6 @@
     "title": "UP ECCE Educator Online Form 2026 | Siddharth Nagar, Etah, Azamgarh - Sarkari Result | Sarkari Exam 2026",
     "description": "UP ECCE Educator Recruitment 2026 Apply Online Form | Notification | Uttar Pradesh Basic Shiksha Vibhag Outsource Job Contractual Basis through UP Sewayojan Por",
     "canonical": "https://www.aiexamresult.com/post/up-ecce-educator-2026"
-  }
+  },
+  "category": "latestJobs"
 }

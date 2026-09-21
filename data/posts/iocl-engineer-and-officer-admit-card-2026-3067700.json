@@ -104,8 +104,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Admit Card",
+            "item": "https://www.aiexamresult.com/admit-card"
           },
           {
             "@type": "ListItem",
@@ -121,5 +121,6 @@
     "title": "IOCL Executive Admit Card 2026 Out - Download Engineer & Officer Hall Ticket at iocl.com - Sarkari Result | Sarkari Exam 2026",
     "description": "Download IOCL Admit Card 2026 has released on 17 September for the CBT scheduled on 24 September 2026. Check call letter download link, exam date, reporting tim",
     "canonical": "https://www.aiexamresult.com/post/iocl-engineer-and-officer-admit-card-2026-3067700"
-  }
+  },
+  "category": "admitCards"
 }

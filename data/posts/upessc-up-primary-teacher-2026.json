@@ -112,8 +112,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -161,5 +161,6 @@
     "title": "UPESSC UP Primary Teacher PRT Online Form 2026 for 12405 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "UPESSC UP Primary Teacher Recruitment 2026 Apply Online Form for 12405 Post | Notification | PDF Syllabus | Vacancy Details | Visit Rojgar Result : All India Ex",
     "canonical": "https://www.aiexamresult.com/post/upessc-up-primary-teacher-2026"
-  }
+  },
+  "category": "latestJobs"
 }

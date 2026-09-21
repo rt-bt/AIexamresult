@@ -86,8 +86,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -135,5 +135,6 @@
     "title": "Bihar Forest Guard New Vacancy 2024 – बिहार वन विभाग भर्ती 2024 के लिए यहाँ से करे आवेदन - Sarkari Result | Sarkari Exam 2026",
     "description": "Bihar Forest Guard New Vacancy 2024:- नमस्कार दोस्तों कैसे है आप सभी लोग आज की इस आर्टिकल में हम बात करने वाले हैं, Bihar Forest Guard Bharti 2024 के बारे में",
     "canonical": "https://www.aiexamresult.com/post/bihar-forest-guard-new-vacancy"
-  }
+  },
+  "category": "latestJobs"
 }

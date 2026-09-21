@@ -126,8 +126,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -143,5 +143,6 @@
     "title": "UPSC Section Officers and Stenographers LDCE 2026 Notification Out - Apply Online by 6th October 2026 - Sarkari Result | Sarkari Exam 2026",
     "description": "The Union Public Service Commission (UPSC) has released the Recruitment 2026 notification for Section Officers and Stenographers LDCE. Eligible candidates can s",
     "canonical": "https://www.aiexamresult.com/post/upsc-section-officers-and-stenographers-ldce-notification-2026-3067961"
-  }
+  },
+  "category": "latestJobs"
 }

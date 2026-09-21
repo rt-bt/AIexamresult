@@ -192,8 +192,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -241,5 +241,6 @@
     "title": "UP Kaushal Vikas Mission Block Program Manager Online Form 2026 - Sarkari Result | Sarkari Exam 2026",
     "description": "Apply Online: UP Kaushal Vikas Mission Block Program Manager Online Form 2026 for 275 Post Check Eligibility, Download Notification, Age Limit, How to Apply and",
     "canonical": "https://www.aiexamresult.com/post/up-kvm-block-program-manager-2026"
-  }
+  },
+  "category": "latestJobs"
 }

@@ -187,8 +187,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Admission",
+            "item": "https://www.aiexamresult.com/admission"
           },
           {
             "@type": "ListItem",
@@ -238,5 +238,6 @@
     "canonical": "https://www.aiexamresult.com/post/MPESB-Primary-School-Teacher-PSTST-2025"
   },
   "publishedAt": "2026-06-22T18:30:00.000Z",
-  "createdAt": "2026-06-22T18:30:00.000Z"
+  "createdAt": "2026-06-22T18:30:00.000Z",
+  "category": "admissions"
 }

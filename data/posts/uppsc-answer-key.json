@@ -89,8 +89,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Answer Key",
+            "item": "https://www.aiexamresult.com/answer-key"
           },
           {
             "@type": "ListItem",
@@ -106,5 +106,6 @@
     "title": "UPPSC Answer Key 2026 for Assistant Teacher / Trained Graduate Grade Pre Exam - Sarkari Result | Sarkari Exam 2026",
     "description": "UPPSC Answer Key 2026 for Assistant Teacher / Trained Graduate Grade Pre Exam. Candidates can download the official answer key and raise objections if needed. C",
     "canonical": "https://www.aiexamresult.com/post/uppsc-answer-key"
-  }
+  },
+  "category": "answerKeys"
 }

@@ -167,8 +167,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -216,5 +216,6 @@
     "title": "UP Anganwadi Helper Online Form 2026 | District Wise - Sarkari Result | Sarkari Exam 2026",
     "description": "UP Anganwadi Helper Online Form 2026 | District Wise. Eligible candidates can apply online through the official website before the last date. The last date to a",
     "canonical": "https://www.aiexamresult.com/post/up-anganwadi-helper-2026"
-  }
+  },
+  "category": "latestJobs"
 }

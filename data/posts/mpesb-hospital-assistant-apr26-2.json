@@ -155,8 +155,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Answer Key",
+            "item": "https://www.aiexamresult.com/answer-key"
           },
           {
             "@type": "ListItem",
@@ -206,5 +206,6 @@
     "canonical": "https://www.aiexamresult.com/post/mpesb-hospital-assistant-apr26-2"
   },
   "publishedAt": "2026-07-09T18:30:00.000Z",
-  "createdAt": "2026-07-09T18:30:00.000Z"
+  "createdAt": "2026-07-09T18:30:00.000Z",
+  "category": "answerKeys"
 }

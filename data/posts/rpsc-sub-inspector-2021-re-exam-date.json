@@ -94,8 +94,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Admit Card",
+            "item": "https://www.aiexamresult.com/admit-card"
           },
           {
             "@type": "ListItem",
@@ -111,5 +111,6 @@
     "title": "RPSC Sub Inspector 2021 Re Exam Admit Card - Sarkari Result | Sarkari Exam 2026",
     "description": "RPSC Sub Inspector 2021 Re Exam Admit Card. Candidates can now download their admit card / hall ticket from the official website before the exam date. The last ",
     "canonical": "https://www.aiexamresult.com/post/rpsc-sub-inspector-2021-re-exam-date"
-  }
+  },
+  "category": "admitCards"
 }

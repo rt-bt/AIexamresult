@@ -393,8 +393,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Result",
+            "item": "https://www.aiexamresult.com/result"
           },
           {
             "@type": "ListItem",
@@ -442,5 +442,6 @@
     "title": "Railway RRB Junior Engineer JE Recruitment 2025 CBT-2 Result/ Cutoff 2026 Out for 2569 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "RRB JE Recruitment 2025 Notification Out! Apply online for 2569 Junior Engineer, DMS, CMA posts (CEN 05/2025) starting October 31, 2025. Last date November 30, ",
     "canonical": "https://www.aiexamresult.com/post/RRB-JE-CEN-No_05-2025"
-  }
+  },
+  "category": "results"
 }

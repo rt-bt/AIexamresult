@@ -243,8 +243,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Answer Key",
+            "item": "https://www.aiexamresult.com/answer-key"
           },
           {
             "@type": "ListItem",
@@ -260,5 +260,6 @@
     "title": "RRB Railway Group D Answer Key 2026 for 22195 - Sarkari Result | Sarkari Exam 2026",
     "description": "RRB Railway Group D Answer Key 2026 for 22195. Candidates can download the official answer key and raise objections if needed. The last date to apply is 09/03/2",
     "canonical": "https://www.aiexamresult.com/post/rrb-group-d-2026"
-  }
+  },
+  "category": "answerKeys"
 }

@@ -256,8 +256,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Result",
+            "item": "https://www.aiexamresult.com/result"
           },
           {
             "@type": "ListItem",
@@ -273,5 +273,6 @@
     "title": "CGPSC State Service Exam SSE Mains Result 2026 - Sarkari Result | Sarkari Exam 2026",
     "description": "CGPSC State Service Exam SSE Mains Result 2026 | Direct Link now Available on Rojgar Result : RojgarResult.Com Visit for More Details on Official Website",
     "canonical": "https://www.aiexamresult.com/post/cgpsc-admit-card"
-  }
+  },
+  "category": "results"
 }

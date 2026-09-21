@@ -98,8 +98,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Answer Key",
+            "item": "https://www.aiexamresult.com/answer-key"
           },
           {
             "@type": "ListItem",
@@ -115,5 +115,6 @@
     "title": "AVNL Answer Key 2026 - Download Junior Technician & Executive/Manager CBT Provisional Answer Key - Sarkari Result | Sarkari Exam 2026",
     "description": "AVNL Answer Key 2026 released on 12 September 2026 for the 10 September CBT. Check the provisional answer key, objection window, deadline, and 1,213 vacancies.",
     "canonical": "https://www.aiexamresult.com/post/avnl-answer-key-2026-3067604"
-  }
+  },
+  "category": "answerKeys"
 }

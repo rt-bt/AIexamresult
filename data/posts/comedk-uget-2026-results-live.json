@@ -225,8 +225,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Result",
+            "item": "https://www.aiexamresult.com/result"
           },
           {
             "@type": "ListItem",
@@ -244,5 +244,6 @@
     "canonical": "https://www.aiexamresult.com/post/comedk-uget-2026-results-live"
   },
   "publishedAt": "2026-05-28T18:30:00.000Z",
-  "createdAt": "2026-05-28T18:30:00.000Z"
+  "createdAt": "2026-05-28T18:30:00.000Z",
+  "category": "results"
 }

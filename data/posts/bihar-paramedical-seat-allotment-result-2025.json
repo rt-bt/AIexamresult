@@ -88,8 +88,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Result",
+            "item": "https://www.aiexamresult.com/result"
           },
           {
             "@type": "ListItem",
@@ -105,5 +105,6 @@
     "title": "Bihar Paramedical Seat Allotment Result 2025 PDF Download (Out): Check Bihar DCECE PM/PMM 1st Round Allotment Result? - Sarkari Result | Sarkari Exam 2026",
     "description": "Bihar Paramedical Seat Allotment Result 2025 :  बिहार संयुक्त प्रवेश प्रतियोगी परीक्षा पर्षद (BCECEB) ने डिप्लोमा सर्टिफिकेट प्रवेश प्रतियोगी परीक्षा (DCECE)",
     "canonical": "https://www.aiexamresult.com/post/bihar-paramedical-seat-allotment-result-2025"
-  }
+  },
+  "category": "results"
 }

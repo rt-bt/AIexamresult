@@ -154,8 +154,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -203,5 +203,6 @@
     "title": "JSSC Jharkhand JILCCE Inter Level Recruitment 2026 Apply Online for 326 Post Re Open - Sarkari Result | Sarkari Exam 2026",
     "description": "Jharkhand Staff Selection Commission (JSSC) JILCCE has released the Notification for the recruitment of JSSC JILCCE Inter Level Recruitment 2026. Those Candidat",
     "canonical": "https://www.aiexamresult.com/post/jssc-jilcce-inter-level-july26"
-  }
+  },
+  "category": "latestJobs"
 }

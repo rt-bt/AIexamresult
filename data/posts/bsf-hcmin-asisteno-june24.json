@@ -166,8 +166,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Answer Key",
+            "item": "https://www.aiexamresult.com/answer-key"
           },
           {
             "@type": "ListItem",
@@ -215,5 +215,6 @@
     "title": "BSF Assistant Sub Inspector ASI Stenographer and Head Constable HC Ministerial Recruitment 2024 Download Answer Key for 1526 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "Border Security Force (BSF) has released the advertisement of Assistant Sub Inspector ASI Stenographer and Head Constable HC Ministerial 10+2 Recruitment 2024. ",
     "canonical": "https://www.aiexamresult.com/post/bsf-hcmin-asisteno-june24"
-  }
+  },
+  "category": "answerKeys"
 }

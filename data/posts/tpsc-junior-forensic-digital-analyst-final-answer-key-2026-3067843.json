@@ -104,8 +104,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Answer Key",
+            "item": "https://www.aiexamresult.com/answer-key"
           },
           {
             "@type": "ListItem",
@@ -121,5 +121,6 @@
     "title": "TPSC Junior Forensic Digital Analyst Final Answer Key 2026 - Download Response Sheet at tpsc.tripura.gov.in - Sarkari Result | Sarkari Exam 2026",
     "description": "TPSC Junior Forensic Digital Analyst Final Answer Key 2026 - Download Response Sheet at tpsc.tripura.gov.in. Candidates can download the official answer key and",
     "canonical": "https://www.aiexamresult.com/post/tpsc-junior-forensic-digital-analyst-final-answer-key-2026-3067843"
-  }
+  },
+  "category": "answerKeys"
 }

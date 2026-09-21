@@ -104,8 +104,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Admit Card",
+            "item": "https://www.aiexamresult.com/admit-card"
           },
           {
             "@type": "ListItem",
@@ -121,5 +121,6 @@
     "title": "Bihar DELED Dummy Admit Card 2025  Download Link (Out) – Bihar DELED का 2nd Dummy Admit Card चेक करने का लिंक और डेट हुआ एक्टिव ,यहाँ देखे - Sarkari Result | Sarkari Exam 2026",
     "description": "Bihar DELED Dummy Admit Card : यदि आपने Bihar DLED Entrance Exam 2025 के लिए नामांकन के लिए आवेदन किया है और यदि आपने आवेदन करते समय फॉर्म में कोई गलती की है,",
     "canonical": "https://www.aiexamresult.com/post/bihar-deled-dummy-admit-card"
-  }
+  },
+  "category": "admitCards"
 }

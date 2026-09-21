@@ -205,8 +205,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Admission",
+            "item": "https://www.aiexamresult.com/admission"
           },
           {
             "@type": "ListItem",
@@ -256,5 +256,6 @@
     "canonical": "https://www.aiexamresult.com/post/IIM-CAT-2026-Admission"
   },
   "publishedAt": "2026-08-02T18:30:00.000Z",
-  "createdAt": "2026-08-02T18:30:00.000Z"
+  "createdAt": "2026-08-02T18:30:00.000Z",
+  "category": "admissions"
 }

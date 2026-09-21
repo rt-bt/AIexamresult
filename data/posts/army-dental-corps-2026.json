@@ -198,8 +198,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -247,5 +247,6 @@
     "title": "Indian Army Dental Corps Recruitment 2026 Online Form for 37 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "Indian Army Dental Corps Recruitment 2026 Notification Out! 37 Posts Short Service Commissioned Officer. Apply 22 September 2026 to 22 October 2026. BDS/MDS 55%",
     "canonical": "https://www.aiexamresult.com/post/army-dental-corps-2026"
-  }
+  },
+  "category": "latestJobs"
 }

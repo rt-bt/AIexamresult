@@ -302,8 +302,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Result",
+            "item": "https://www.aiexamresult.com/result"
           },
           {
             "@type": "ListItem",
@@ -353,5 +353,6 @@
     "canonical": "https://www.aiexamresult.com/post/Bihar-BTSC-Advt-No-02-to-05-2025_Rectt"
   },
   "publishedAt": "2026-07-19T18:30:00.000Z",
-  "createdAt": "2026-07-19T18:30:00.000Z"
+  "createdAt": "2026-07-19T18:30:00.000Z",
+  "category": "results"
 }

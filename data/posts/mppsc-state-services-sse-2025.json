@@ -198,8 +198,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -217,5 +217,6 @@
     "canonical": "https://www.aiexamresult.com/post/mppsc-state-services-sse-2025"
   },
   "publishedAt": "2025-03-04T18:30:00.000Z",
-  "createdAt": "2025-03-04T18:30:00.000Z"
+  "createdAt": "2025-03-04T18:30:00.000Z",
+  "category": "latestJobs"
 }

@@ -112,8 +112,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Answer Key",
+            "item": "https://www.aiexamresult.com/answer-key"
           },
           {
             "@type": "ListItem",
@@ -129,5 +129,6 @@
     "title": "UPSSSC Assistant Boring Technician Revised Answer Key 2026 - Sarkari Result | Sarkari Exam 2026",
     "description": "UPSSSC Assistant Boring Technician Answer Key 2026 for 402 Post details including 402 vacancies, eligibility, age limit, selection process, and how to apply onl",
     "canonical": "https://www.aiexamresult.com/post/upsssc-assistant-boring-technician-2026"
-  }
+  },
+  "category": "answerKeys"
 }

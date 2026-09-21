@@ -158,8 +158,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Admit Card",
+            "item": "https://www.aiexamresult.com/admit-card"
           },
           {
             "@type": "ListItem",
@@ -175,5 +175,6 @@
     "title": "Rajasthan State Eligibility Test SET Admit Card 2026 - Sarkari Result | Sarkari Exam 2026",
     "description": "University of Kota Rajasthan has released Rajasthan State Eligibility Test SET Online Form 2026. Those candidates who are Enrolled in this Rajasthan State Eligi",
     "canonical": "https://www.aiexamresult.com/post/rajasthan-set-jun"
-  }
+  },
+  "category": "admitCards"
 }

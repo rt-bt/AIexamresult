@@ -234,8 +234,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -283,5 +283,6 @@
     "title": "GIMS Staff Nurse Recruitment 2026 Online Form for 100 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "GIMS Noida Staff Nurse Recruitment 2026 Online Form Live Now! Apply for 100 Posts from 10 August 2026 to 07 October 2026. B.Sc Nursing / GNM eligible. Age 21-40",
     "canonical": "https://www.aiexamresult.com/post/GIMS-Staff-Nurse-2026"
-  }
+  },
+  "category": "latestJobs"
 }

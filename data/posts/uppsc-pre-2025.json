@@ -254,8 +254,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -303,5 +303,6 @@
     "title": "Vacancy Details - Sarkari Result | Sarkari Exam 2026",
     "description": "Uttar Pradesh Public Service Commission (UPPSC) has Officially Released Notification for Mains Online Application forom for the Combined Upper Subordinate Servi",
     "canonical": "https://www.aiexamresult.com/post/uppsc-pre-2025"
-  }
+  },
+  "category": "latestJobs"
 }

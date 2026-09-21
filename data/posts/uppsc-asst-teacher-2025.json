@@ -239,8 +239,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Result",
+            "item": "https://www.aiexamresult.com/result"
           },
           {
             "@type": "ListItem",
@@ -288,5 +288,6 @@
     "title": "UPPSC LT Grade Assistant Teacher 2025 Mains Result 2026 Out For 7466 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "UPPSC Assistant Teacher 2025 form for 7466 posts starts July 28! Apply at uppsc.up.nic.in. Trending: Teacher jobs. #UPPSCLTGrade2025 #UPPSCAssistantTeacher2025 ",
     "canonical": "https://www.aiexamresult.com/post/uppsc-asst-teacher-2025"
-  }
+  },
+  "category": "results"
 }

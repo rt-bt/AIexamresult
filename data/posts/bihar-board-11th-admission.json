@@ -108,8 +108,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Admission",
+            "item": "https://www.aiexamresult.com/admission"
           },
           {
             "@type": "ListItem",
@@ -125,5 +125,6 @@
     "title": "Bihar Board 11th Admission 2025 Online Apply (Re-Open) – Application Process Start Date, Documents, Eligibility & Last Date - Sarkari Result | Sarkari Exam 2026",
     "description": "Bihar Board 11th Admission 2025:-उन सभी छात्रों के लिए जो 10 वीं पास करने के बाद कक्षा 11 वीं में दाखिला लेना चाहते हैं और अधिसूचना जारी होने की प्रतीक्षा कर",
     "canonical": "https://www.aiexamresult.com/post/bihar-board-11th-admission"
-  }
+  },
+  "category": "admissions"
 }

@@ -2,7 +2,7 @@
   "title": "DECE-LE Admission Result / Rank Card 2026",
   "slug": "dece-le-admission-2026",
   "url": "https://sarkariresult.com.cm/dece-le-admission-2026/",
-  "category": "",
+  "category": "results",
   "publishedDate": "4 June 2026",
   "intro": "Post Date: June 4, 2026",
   "importantDates": [
@@ -131,8 +131,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Result",
+            "item": "https://www.aiexamresult.com/result"
           },
           {
             "@type": "ListItem",

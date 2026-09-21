@@ -233,8 +233,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Answer Key",
+            "item": "https://www.aiexamresult.com/answer-key"
           },
           {
             "@type": "ListItem",
@@ -282,5 +282,6 @@
     "title": "DSSSB Answer Key 2026 for Various Post July Exam - Sarkari Result | Sarkari Exam 2026",
     "description": "DSSSB Answer Key 2026 for Various Post July Exam. Candidates can download the official answer key and raise objections if needed. Check important dates, applica",
     "canonical": "https://www.aiexamresult.com/post/dsssb-answer-key"
-  }
+  },
+  "category": "answerKeys"
 }

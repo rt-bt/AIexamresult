@@ -98,8 +98,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Admit Card",
+            "item": "https://www.aiexamresult.com/admit-card"
           },
           {
             "@type": "ListItem",
@@ -115,5 +115,6 @@
     "title": "Bihar Board 10th 12th Exam Dummy Admit Card 2026 Download: यहाँ से 1 क्लिक में डाउनलोड करें - Sarkari Result | Sarkari Exam 2026",
     "description": "Bihar Board 10th 12th Exam Dummy Admit Card 2026:- सभी छात्रों को बता दें कि बिहार विद्यालय परीक्षा समिति की ओर से एक अच्छी खबर सामने आ रही है, इस साल 2026",
     "canonical": "https://www.aiexamresult.com/post/bihar-board-10th-12th-exam-dummy-admit-card-download"
-  }
+  },
+  "category": "admitCards"
 }

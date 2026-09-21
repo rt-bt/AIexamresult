@@ -206,8 +206,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -255,5 +255,6 @@
     "title": "UPSC Engineering Services Pre Online Form 2027 For 480 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "UPSC Engineering Services Examination ESE/IES 2027 Notification Out! 480 Posts. Apply 16 September 2026 to 06 October 2026. Pre Exam 31 January 2027. Mains 18 J",
     "canonical": "https://www.aiexamresult.com/post/upsc-engineering-services-2027"
-  }
+  },
+  "category": "latestJobs"
 }

@@ -97,8 +97,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Admit Card",
+            "item": "https://www.aiexamresult.com/admit-card"
           },
           {
             "@type": "ListItem",
@@ -114,5 +114,6 @@
     "title": "DSSSB ASO Admit Card 2026 Out - Download Hall Ticket at dsssb.delhi.gov.in - Sarkari Result | Sarkari Exam 2026",
     "description": "Download DSSSB ASO Admit Card 2026 has released on 17 September for the Assistant Section Officer (Grade-II), Post Code 804/2026, CBT starting from 21 September",
     "canonical": "https://www.aiexamresult.com/post/dsssb-aso-admit-card-2026-3067999"
-  }
+  },
+  "category": "admitCards"
 }

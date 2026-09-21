@@ -214,8 +214,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Document",
+            "item": "https://www.aiexamresult.com/documents"
           },
           {
             "@type": "ListItem",
@@ -263,5 +263,6 @@
     "title": "SSC Selection Post 14th Exam City Details 2026 for 3003 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "SSC Selection Post 14th Exam City Details 2026 for 3003 Post | Syllabus | Notification | Official Website Direct Link now Available on RojgarResult.Com",
     "canonical": "https://www.aiexamresult.com/post/ssc-selection-post-2026"
-  }
+  },
+  "category": "documents"
 }

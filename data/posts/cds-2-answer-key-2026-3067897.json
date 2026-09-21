@@ -103,8 +103,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Answer Key",
+            "item": "https://www.aiexamresult.com/answer-key"
           },
           {
             "@type": "ListItem",
@@ -120,5 +120,6 @@
     "title": "CDS 2 Answer Key 2026 - Download UPSC Provisional Response Sheet & Raise Objections - Sarkari Result | Sarkari Exam 2026",
     "description": "UPSC CDS 2 Answer Key 2026 released on 16 September 2026. Download the provisional answer key for English, GK and Maths and submit objections by 20 September 20",
     "canonical": "https://www.aiexamresult.com/post/cds-2-answer-key-2026-3067897"
-  }
+  },
+  "category": "answerKeys"
 }

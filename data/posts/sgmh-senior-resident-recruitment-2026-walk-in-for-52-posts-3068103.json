@@ -104,8 +104,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -153,5 +153,6 @@
     "title": "SGMH Senior Resident Recruitment 2026 – Walk in for 52 Posts - Sarkari Result | Sarkari Exam 2026",
     "description": "Sanjay Gandhi Memorial Hospital (SGMH) Recruitment 2026 for 52 posts of Senior Resident. Candidates with MS/MD, DNB, PG Diploma Can attend the walkin. The Walk-",
     "canonical": "https://www.aiexamresult.com/post/sgmh-senior-resident-recruitment-2026-walk-in-for-52-posts-3068103"
-  }
+  },
+  "category": "latestJobs"
 }

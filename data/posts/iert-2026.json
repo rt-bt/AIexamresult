@@ -221,8 +221,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Admit Card",
+            "item": "https://www.aiexamresult.com/admit-card"
           },
           {
             "@type": "ListItem",
@@ -240,5 +240,6 @@
     "canonical": "https://www.aiexamresult.com/post/iert-2026"
   },
   "publishedAt": "2026-06-19T18:30:00.000Z",
-  "createdAt": "2026-06-19T18:30:00.000Z"
+  "createdAt": "2026-06-19T18:30:00.000Z",
+  "category": "admitCards"
 }

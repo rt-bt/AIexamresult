@@ -104,8 +104,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Document",
+            "item": "https://www.aiexamresult.com/documents"
           },
           {
             "@type": "ListItem",
@@ -153,5 +153,6 @@
     "title": "MPESB Van Rakshak, Jail Prahari Physical Exam Date 2026 for 1679 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "MPESB Van Rakshak, Jail Prahari Physical Exam Date 2026 Check total posts, eligibility, salary, exam date & apply online link. जल्दी करें! | All India Exam Resu",
     "canonical": "https://www.aiexamresult.com/post/mpesb-van-rakshak-jail-prahari-2026"
-  }
+  },
+  "category": "documents"
 }

@@ -214,8 +214,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -263,5 +263,6 @@
     "title": "MPESB MP Police Constable Online Form 2026 for 7500 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "Apply Online: MPESB MP Police Constable Online Form 2026 for 7500 Post Check Eligibility, Download Notification, Age Limit, How to Apply and More Details Visit ",
     "canonical": "https://www.aiexamresult.com/post/mpesb-constable-2026"
-  }
+  },
+  "category": "latestJobs"
 }

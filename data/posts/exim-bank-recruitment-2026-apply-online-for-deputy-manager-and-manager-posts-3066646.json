@@ -141,8 +141,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -190,5 +190,6 @@
     "title": "Exim Bank Recruitment 2026 - Apply Online for Deputy Manager & Manager Posts - Sarkari Result | Sarkari Exam 2026",
     "description": "Exim Bank has announced the Recruitment 2026 notification for 08 vacancies, including Deputy Manager & Manager posts.  The online application process will be co",
     "canonical": "https://www.aiexamresult.com/post/exim-bank-recruitment-2026-apply-online-for-deputy-manager-and-manager-posts-3066646"
-  }
+  },
+  "category": "latestJobs"
 }

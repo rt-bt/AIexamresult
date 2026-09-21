@@ -119,8 +119,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -168,5 +168,6 @@
     "title": "HPSC Food Safety Officer FSO Recruitment 2026 Notification Out - Apply Online for 45 Posts - Sarkari Result | Sarkari Exam 2026",
     "description": "Haryana Public Service Commission (HPSC) has announced the Recruitment 2026 notification for 45 Food Safety Officer posts. Eligible candidates can submit their ",
     "canonical": "https://www.aiexamresult.com/post/hpsc-fso-recruitment-2026-apply-online-for-45-food-safety-officer-posts-3068315"
-  }
+  },
+  "category": "latestJobs"
 }

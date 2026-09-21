@@ -225,8 +225,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -274,5 +274,6 @@
     "title": "MPESB MP Nayab Tahsildar Recruitment 2026 Online Form for 73 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "MPESB Nayab Tahsildar Limited Competitive Exam 2026 Form Live! 73 Posts (Clerical 46 + Patwari/RI 27). Apply 17 September 2026 to 01 October 2026. Graduation + ",
     "canonical": "https://www.aiexamresult.com/post/mpesb-nayab-tahsildar-2026"
-  }
+  },
+  "category": "latestJobs"
 }

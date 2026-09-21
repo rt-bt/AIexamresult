@@ -86,8 +86,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -135,5 +135,6 @@
     "title": "Railway Group D Recruitment 2026 – Notification (Out) - Sarkari Result | Sarkari Exam 2026",
     "description": "Railway Group D Recruitment 2026 – Notification (Out). Eligible candidates can apply online through the official website before the last date. Check important d",
     "canonical": "https://www.aiexamresult.com/post/railway-group-d-recruitment-2026"
-  }
+  },
+  "category": "latestJobs"
 }

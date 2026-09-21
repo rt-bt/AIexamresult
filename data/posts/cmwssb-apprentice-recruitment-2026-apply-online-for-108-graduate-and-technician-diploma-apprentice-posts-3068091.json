@@ -111,8 +111,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -160,5 +160,6 @@
     "title": "CMWSSB Apprentice Recruitment 2026 - Apply Online for 108 Graduate and Technician Diploma Apprentice Posts - Sarkari Result | Sarkari Exam 2026",
     "description": "CMWSSB Apprentice Recruitment 2026: Chennai Metropolitan Water Supply and Sewerage Board (CMWSSB) has announced a total of 108 vacancies for Graduate and Techni",
     "canonical": "https://www.aiexamresult.com/post/cmwssb-apprentice-recruitment-2026-apply-online-for-108-graduate-and-technician-diploma-apprentice-posts-3068091"
-  }
+  },
+  "category": "latestJobs"
 }

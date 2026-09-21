@@ -230,8 +230,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -279,5 +279,6 @@
     "title": "BPSSC Bihar Police Company Commander (General) Bihar Home Guard Recruitment 2026 Online Form for 65 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "BPSSC Bihar Police Company Commander (General) Bihar Home Guard Recruitment 2026 Online Form Live! Advt.No: 11/2026, Apply for 65 Posts from 10 September 2026 t",
     "canonical": "https://www.aiexamresult.com/post/BPSSC-Company-Commander-Gen-BHG-Advt-11-2026"
-  }
+  },
+  "category": "latestJobs"
 }

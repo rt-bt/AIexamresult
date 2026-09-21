@@ -242,8 +242,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Result",
+            "item": "https://www.aiexamresult.com/result"
           },
           {
             "@type": "ListItem",
@@ -293,5 +293,6 @@
     "canonical": "https://www.aiexamresult.com/post/MPESB-Group-2_Sub-Group-3-2025"
   },
   "publishedAt": "2026-01-27T18:30:00.000Z",
-  "createdAt": "2026-01-27T18:30:00.000Z"
+  "createdAt": "2026-01-27T18:30:00.000Z",
+  "category": "results"
 }

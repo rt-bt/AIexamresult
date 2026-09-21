@@ -105,8 +105,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Admit Card",
+            "item": "https://www.aiexamresult.com/admit-card"
           },
           {
             "@type": "ListItem",
@@ -122,5 +122,6 @@
     "title": "TNPSC Group 1 Hall Ticket 2026 Out - Download CCSE Prelims Admit Card at tnpsc.gov.in - Sarkari Result | Sarkari Exam 2026",
     "description": "Download TNPSC Group 1 Hall Ticket 2026 has released on 17 September for the Combined Civil Services Examination-I Preliminary Exam scheduled on 27 September 20",
     "canonical": "https://www.aiexamresult.com/post/tnpsc-group-1-hall-ticket-2026-3067985"
-  }
+  },
+  "category": "admitCards"
 }

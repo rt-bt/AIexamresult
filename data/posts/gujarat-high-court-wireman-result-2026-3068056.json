@@ -105,8 +105,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Result",
+            "item": "https://www.aiexamresult.com/result"
           },
           {
             "@type": "ListItem",
@@ -122,5 +122,6 @@
     "title": "Gujarat High Court Wireman Result 2026 - Check Provisional Eligible Candidates List at gujarathighcourt.nic.in - Sarkari Result | Sarkari Exam 2026",
     "description": "Gujarat High Court has released the provisional eligible candidates list (Notification No. RC/B/1304/2026 (WM)) for the Wireman Direct Recruitment Elimination T",
     "canonical": "https://www.aiexamresult.com/post/gujarat-high-court-wireman-result-2026-3068056"
-  }
+  },
+  "category": "results"
 }

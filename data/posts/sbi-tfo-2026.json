@@ -98,8 +98,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -147,5 +147,6 @@
     "title": "SBI Trade Finance Officer TFO Online Form 2026 Date Extended - Sarkari Result | Sarkari Exam 2026",
     "description": "SBI Trade Finance Officer TFO Online Form 2026 Date Extended. Eligible candidates can apply online through the official website before the last date. The last d",
     "canonical": "https://www.aiexamresult.com/post/sbi-tfo-2026"
-  }
+  },
+  "category": "latestJobs"
 }

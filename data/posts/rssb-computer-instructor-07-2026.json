@@ -145,8 +145,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Answer Key",
+            "item": "https://www.aiexamresult.com/answer-key"
           },
           {
             "@type": "ListItem",
@@ -194,5 +194,6 @@
     "title": "Rajasthan Staff Selection Board RSSB Basic and Senior Computer Instructor Recruitment 2026 Answer Key - Sarkari Result | Sarkari Exam 2026",
     "description": "Rajasthan Staff Selection Board RSSB RSMSSB has released the Basic and Senior Computer Instructor Advt. No. 07/2026 Notification 2026. Those candidates who are ",
     "canonical": "https://www.aiexamresult.com/post/rssb-computer-instructor-07-2026"
-  }
+  },
+  "category": "answerKeys"
 }

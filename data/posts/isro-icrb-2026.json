@@ -248,8 +248,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Admit Card",
+            "item": "https://www.aiexamresult.com/admit-card"
           },
           {
             "@type": "ListItem",
@@ -297,5 +297,6 @@
     "title": "ISRO ICRB Admit Card 2026 for 244 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "ISRO ICRB Admit Card 2026 for 244 Post. Candidates can now download their admit card / hall ticket from the official website before the exam date. The last date",
     "canonical": "https://www.aiexamresult.com/post/isro-icrb-2026"
-  }
+  },
+  "category": "admitCards"
 }

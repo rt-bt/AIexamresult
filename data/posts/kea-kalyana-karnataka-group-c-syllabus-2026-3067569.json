@@ -113,8 +113,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Document",
+            "item": "https://www.aiexamresult.com/documents"
           },
           {
             "@type": "ListItem",
@@ -162,5 +162,6 @@
     "title": "KEA Kalyana Karnataka Group C Syllabus 2026 - Check 210 Electrician, Water Supply Operator and More Posts - Sarkari Result | Sarkari Exam 2026",
     "description": "KEA Kalyana Karnataka Group C Syllabus 2026 released for 210 posts. Check Paper 1 and Paper 2 syllabus, exam pattern, negative marking, dates, and PDF link.",
     "canonical": "https://www.aiexamresult.com/post/kea-kalyana-karnataka-group-c-syllabus-2026-3067569"
-  }
+  },
+  "category": "documents"
 }

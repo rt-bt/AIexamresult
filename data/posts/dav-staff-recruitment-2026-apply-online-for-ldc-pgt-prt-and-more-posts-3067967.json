@@ -109,8 +109,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -158,5 +158,6 @@
     "title": "DAV Staff Recruitment 2026 Notification Out - Apply Online for LDC, PGT, PRT and More Posts - Sarkari Result | Sarkari Exam 2026",
     "description": "The DAV College Managing Committee (DAVCMC) released the Recruitment 2026 notification for Teaching anf Non Teaching Posts. The online application opens on 16-0",
     "canonical": "https://www.aiexamresult.com/post/dav-staff-recruitment-2026-apply-online-for-ldc-pgt-prt-and-more-posts-3067967"
-  }
+  },
+  "category": "latestJobs"
 }

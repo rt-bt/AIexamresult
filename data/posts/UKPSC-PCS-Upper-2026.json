@@ -260,8 +260,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -309,5 +309,6 @@
     "title": "UKPSC PCS Upper Subordinate Services Recruitment 2026 Online Form for 67 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "UKPSC PCS Combined State Civil / Upper Subordinate Services Recruitment 2026 Online Form Live Now! Advt A-1/E-1/2026-27. 67 Posts. Apply 09 September 2026 to 29",
     "canonical": "https://www.aiexamresult.com/post/UKPSC-PCS-Upper-2026"
-  }
+  },
+  "category": "latestJobs"
 }

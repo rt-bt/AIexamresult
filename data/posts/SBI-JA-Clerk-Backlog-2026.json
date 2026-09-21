@@ -244,8 +244,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Admit Card",
+            "item": "https://www.aiexamresult.com/admit-card"
           },
           {
             "@type": "ListItem",
@@ -293,5 +293,6 @@
     "title": "State Bank of India SBI Junior Associate Clerk Pre Admit Card 2026 Out for 1538 Backlog Post - Sarkari Result | Sarkari Exam 2026",
     "description": "SBI Junior Associate Clerk Backlog Recruitment 2026 Online Form Live Now! Apply for 1538 Posts (SC/ST/OBC Backlog) from 07 August 2026 to 27 August 2026. Gradua",
     "canonical": "https://www.aiexamresult.com/post/SBI-JA-Clerk-Backlog-2026"
-  }
+  },
+  "category": "admitCards"
 }

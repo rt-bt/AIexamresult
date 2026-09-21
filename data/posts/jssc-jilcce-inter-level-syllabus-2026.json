@@ -192,8 +192,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Document",
+            "item": "https://www.aiexamresult.com/documents"
           },
           {
             "@type": "ListItem",
@@ -209,5 +209,6 @@
     "title": "JSSC JILCCE Inter Level Syllabus 2026 - Sarkari Result | Sarkari Exam 2026",
     "description": "JSSC JILCCE Inter Level Syllabus 2026 - PDF Download | Syllabus taken from Official Notification | Exam Pattern | Exam Structure : Rojgar Result : RojgarResult.",
     "canonical": "https://www.aiexamresult.com/post/jssc-jilcce-inter-level-syllabus-2026"
-  }
+  },
+  "category": "documents"
 }

@@ -152,8 +152,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -201,5 +201,6 @@
     "title": "SSC Combined Higher Secondary (10+2) Examination 2026 : Apply Online for 2536 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "Staff Selection Commission SSC has released the notification for Combined Higher Secondary Level CHSL Examination 2026. Those Candidate Are Interested with SSC ",
     "canonical": "https://www.aiexamresult.com/post/ssc-chsl-2026-sep"
-  }
+  },
+  "category": "latestJobs"
 }

@@ -129,8 +129,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -178,5 +178,6 @@
     "title": "MECL Non-Executive Recruitment 2026 Apply Online for 122 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "Mineral Exploration & Consultancy Limited (MECL) has released Non Executive Recruitment Notification 2026 Those candidates who are interested in this MECL Non-E",
     "canonical": "https://www.aiexamresult.com/post/mecl-non-executive-sep26"
-  }
+  },
+  "category": "latestJobs"
 }

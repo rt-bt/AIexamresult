@@ -119,8 +119,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -168,5 +168,6 @@
     "title": "Indian Coast Guard Foreman of Stores Recruitment 2026 Notification Out - Apply Offline - Sarkari Result | Sarkari Exam 2026",
     "description": "The Indian Coast Guard Recruitment 2026 for posts of 04 Foreman of Stores. The Offline application opens on 19-09-2026, and closes on 03-10-2026. The candidate ",
     "canonical": "https://www.aiexamresult.com/post/indian-coast-guard-foreman-of-stores-recruitment-2026-apply-offline-for-04-posts-3068347"
-  }
+  },
+  "category": "latestJobs"
 }

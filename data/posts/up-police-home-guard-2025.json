@@ -236,8 +236,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Document",
+            "item": "https://www.aiexamresult.com/documents"
           },
           {
             "@type": "ListItem",
@@ -253,5 +253,6 @@
     "title": "UP Police Home Guard PET New Exam Date 2026 - Sarkari Result | Sarkari Exam 2026",
     "description": "UP Police Home Guard PET New Exam Date 2026. The last date to apply is 17/12/2025. Check important dates, application fee, eligibility criteria and official lin",
     "canonical": "https://www.aiexamresult.com/post/up-police-home-guard-2025"
-  }
+  },
+  "category": "documents"
 }

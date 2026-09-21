@@ -141,8 +141,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -190,5 +190,6 @@
     "title": "MPESB MP Police Constable General Duty Recruitment 2026 Apply Online for 7500 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "Madhya Pradesh Employee Selection Board (MPESB) has released MP Police Constable GD General Duty Recruitment Notification 2026. Those candidates who are Interes",
     "canonical": "https://www.aiexamresult.com/post/mpesb-mp-police-constable-gd-sep26"
-  }
+  },
+  "category": "latestJobs"
 }

@@ -159,8 +159,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -208,5 +208,6 @@
     "title": "Jharkhand JSSC JILCCE Recruitment 2026 Notification Out - Apply Online for 326 Health Supervisor, MPW and More Posts - Sarkari Result | Sarkari Exam 2026",
     "description": "Jharkhand Staff Selection Commission has published the JILCCE Recruitment 2026 notification to fillup 326 Health Supervisor, MPW and More Posts. The online appl",
     "canonical": "https://www.aiexamresult.com/post/jharkhand-jssc-jilcce-recruitment-2026-apply-online-for-326-health-supervisor-mpw-and-more-posts-3055454"
-  }
+  },
+  "category": "latestJobs"
 }

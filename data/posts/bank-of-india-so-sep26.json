@@ -147,8 +147,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -196,5 +196,6 @@
     "title": "Bank of India BOI Specialist Officers SO Recruitment 2026 Apply Online for 205 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "Bank of India BOI Specialist Officers SO Recruitment 2026. Those candidates who are interested in this Bank of India BOI  Specialist Officers SO Recruitment can",
     "canonical": "https://www.aiexamresult.com/post/bank-of-india-so-sep26"
-  }
+  },
+  "category": "latestJobs"
 }

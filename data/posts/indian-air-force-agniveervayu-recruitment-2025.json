@@ -108,8 +108,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -157,5 +157,6 @@
     "title": "Indian Air Force Agniveervayu Recruitment 2025 (Intake 02/2026): Apply Online Start, Eligibility, Exam Dates & Selection Process - Sarkari Result | Sarkari Exam 2026",
     "description": "Indian Air Force Agniveervayu Recruitment 2025:- भारतीय वायु सेना (Indian Air Force) में शामिल होकर देश की सेवा करने का सपना देखने वाले युवाओं के लिए एक",
     "canonical": "https://www.aiexamresult.com/post/indian-air-force-agniveervayu-recruitment-2025"
-  }
+  },
+  "category": "latestJobs"
 }

@@ -259,8 +259,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -276,5 +276,6 @@
     "title": "UP PGT 2022 Waiting List | Advt No. 02/2022 - Sarkari Result | Sarkari Exam 2026",
     "description": "UP PGT 2022 Waiting List | Advt No. 02/2022 | UPSESSB PGT 2026 Download Official Notice, Check Eligibility, Age Limit, Admit Card Date, Form Date and More",
     "canonical": "https://www.aiexamresult.com/post/upsessb-up-pgt"
-  }
+  },
+  "category": "latestJobs"
 }

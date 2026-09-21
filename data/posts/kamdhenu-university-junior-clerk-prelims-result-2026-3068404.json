@@ -95,8 +95,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Result",
+            "item": "https://www.aiexamresult.com/result"
           },
           {
             "@type": "ListItem",
@@ -112,5 +112,6 @@
     "title": "Kamdhenu University Junior Clerk Prelims Result 2026 Declared - Check Now - Sarkari Result | Sarkari Exam 2026",
     "description": "Kamdhenu University has declared the Junior Clerk (Class-3) Preliminary Exam result for the August 23, 2026 test. Check the result date, download link, and Main",
     "canonical": "https://www.aiexamresult.com/post/kamdhenu-university-junior-clerk-prelims-result-2026-3068404"
-  }
+  },
+  "category": "results"
 }

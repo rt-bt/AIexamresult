@@ -2,7 +2,7 @@
   "title": "PAN Card Registration, Correction & Other Service 2026",
   "slug": "pan-card-registration-correction-other-service-2026",
   "url": "/post/pan-card-registration-correction-other-service-2026",
-  "category": "documents",
+  "category": "latestJobs",
   "publishedDate": "2026-01-05T17:18:40+05:30",
   "intro": "Short Information : The PAN (Permanent Account Number) is a vital document for citizens of India. Anyone who has applied for a PAN card can check the status of their application online via the official UTI or NSDL websites. These authorized PAN portals also provide services such as applying for a new PAN card, tracking application progress, making corrections, and updating PAN-related details. Access these services using the link provided below.",
   "importantDates": [
@@ -145,8 +145,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Documents",
-            "item": "https://www.aiexamresult.com/documents"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",

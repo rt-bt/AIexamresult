@@ -208,8 +208,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -257,5 +257,6 @@
     "title": "DHC SPA PA Personal Assistant Online Form 2026 for 150 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "Apply Online: DHC SPA PA Personal Assistant Online Form 2026 for 150 Post Check Eligibility, Download Notification, Age Limit, How to Apply and Rojgar Result",
     "canonical": "https://www.aiexamresult.com/post/dhc-personal-assistant-2026"
-  }
+  },
+  "category": "latestJobs"
 }

@@ -107,8 +107,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Admit Card",
+            "item": "https://www.aiexamresult.com/admit-card"
           },
           {
             "@type": "ListItem",
@@ -124,5 +124,6 @@
     "title": "UPSSSC Excise Constable Admit Card 2026 Out - Download Hall Ticket at upsssc.gov.in - Sarkari Result | Sarkari Exam 2026",
     "description": "Download UPSSSC Excise Constable Admit Card 2026 released on 16 September for the Main Examination scheduled on 20 September 2026 from 10 AM to 12 PM. Check hal",
     "canonical": "https://www.aiexamresult.com/post/upsssc-excise-constable-admit-card-2026-3067926"
-  }
+  },
+  "category": "admitCards"
 }

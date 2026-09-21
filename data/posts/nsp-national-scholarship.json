@@ -211,8 +211,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -260,5 +260,6 @@
     "title": "NSP National Scholarship Online Form 2026 - Sarkari Result | Sarkari Exam 2026",
     "description": "NSP National Scholarship Portal Registration 2026 Apply Online Form for Central Scholarship 2026 Online Form - Direct Link Available on Rojgar Result : RojgarRe",
     "canonical": "https://www.aiexamresult.com/post/nsp-national-scholarship"
-  }
+  },
+  "category": "latestJobs"
 }

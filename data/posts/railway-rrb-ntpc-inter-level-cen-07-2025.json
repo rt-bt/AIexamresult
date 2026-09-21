@@ -321,8 +321,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Document",
+            "item": "https://www.aiexamresult.com/documents"
           },
           {
             "@type": "ListItem",
@@ -338,5 +338,6 @@
     "title": "Railway RRB NTPC 10+2 Level UG CBT II Exam City 2026 - Sarkari Result | Sarkari Exam 2026",
     "description": "Railway RRB NTPC 10+2 Level Result 2026 | CEN 07/2025 Check Eligibility, Download Notification, RRB Wise Vacancy, Syllabus and More at RRB Apply Gov In",
     "canonical": "https://www.aiexamresult.com/post/railway-rrb-ntpc-inter-level-cen-07-2025"
-  }
+  },
+  "category": "documents"
 }

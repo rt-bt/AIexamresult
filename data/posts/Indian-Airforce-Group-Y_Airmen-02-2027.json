@@ -218,8 +218,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Document",
+            "item": "https://www.aiexamresult.com/documents"
           },
           {
             "@type": "ListItem",
@@ -235,5 +235,6 @@
     "title": "Indian Airforce Group Y/ Medical Assistant Airmen Intake 02/2027 Exam City Details - Out - Sarkari Result | Sarkari Exam 2026",
     "description": "Indian Airforce Group Y Medical Assistant Airmen Intake 02/2027 Online Form Live! Apply from 06 July 2026 to 26 July 2026. 10+2 PCB / Diploma in Pharmacy eligib",
     "canonical": "https://www.aiexamresult.com/post/Indian-Airforce-Group-Y_Airmen-02-2027"
-  }
+  },
+  "category": "documents"
 }

@@ -82,8 +82,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -131,5 +131,6 @@
     "title": "Supreme Court Law Clerk Recruitment 2026 Apply Online (Link Active) - Sarkari Result | Sarkari Exam 2026",
     "description": "Supreme Court Law Clerk 2026 Apply Online Link is now active at sci.gov.in. Check Vacancy details, Eligibility Criteria, Selection Process & Salary Structure he",
     "canonical": "https://www.aiexamresult.com/post/supreme-court-law-clerk-recruitment-2026"
-  }
+  },
+  "category": "latestJobs"
 }

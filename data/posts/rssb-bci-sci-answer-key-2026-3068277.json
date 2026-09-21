@@ -124,8 +124,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Answer Key",
+            "item": "https://www.aiexamresult.com/answer-key"
           },
           {
             "@type": "ListItem",
@@ -141,5 +141,6 @@
     "title": "RSSB BCI SCI Answer Key 2026 Out - Download Provisional Key, Response Sheet & Raise Objection - Sarkari Result | Sarkari Exam 2026",
     "description": "RSSB has released the provisional answer key, master question paper and response sheet for the Basic Computer Instructor (BCI) and Senior Computer Instructor (S",
     "canonical": "https://www.aiexamresult.com/post/rssb-bci-sci-answer-key-2026-3068277"
-  }
+  },
+  "category": "answerKeys"
 }

@@ -97,8 +97,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Result",
+            "item": "https://www.aiexamresult.com/result"
           },
           {
             "@type": "ListItem",
@@ -114,5 +114,6 @@
     "title": "Bihar ITI Seat Allotment Result 2025 (Soon) : How to Check & Download Bihar ITICAT 1st Round Allotment Result? - Sarkari Result | Sarkari Exam 2026",
     "description": "Bihar ITI Seat Allotment Result 2025: वे सभी छात्र जिन्होंने बिहार संयुक्त प्रवेश प्रतियोगी परीक्षा पर्षद (BCECEB) द्वारा आयोजित ITICAT-2025 की परीक्षा दी थी",
     "canonical": "https://www.aiexamresult.com/post/bihar-iti-seat-allotment-result-2025"
-  }
+  },
+  "category": "results"
 }

@@ -100,8 +100,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -149,5 +149,6 @@
     "title": "SBI Junior Associates Clerk JCA Pre Exam Training Letter 2026 for 9124 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "SBI Junior Associates Clerk JCA Pre Exam Training Letter 2026 for 9124 Post : Regular Bharti | Syllabus & Selection Procedure Available Now | Visit All India Ex",
     "canonical": "https://www.aiexamresult.com/post/sbi-junior-associates-clerk-jca-2026"
-  }
+  },
+  "category": "latestJobs"
 }

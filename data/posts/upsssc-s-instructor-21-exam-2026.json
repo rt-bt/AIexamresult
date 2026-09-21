@@ -133,8 +133,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -182,5 +182,6 @@
     "title": "UPSSSC State Rural Development Institute Senior Instructor Cadre Main Examination 2026 Apply Online for 132 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "Uttar Pradesh Subordinate Service Selection Commission (UPSSSC) has Released UPSSSC State Rural Development Institute Senior Instructor Cadre Mains Examination ",
     "canonical": "https://www.aiexamresult.com/post/upsssc-s-instructor-21-exam-2026"
-  }
+  },
+  "category": "latestJobs"
 }

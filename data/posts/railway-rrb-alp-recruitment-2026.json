@@ -71,8 +71,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -120,5 +120,6 @@
     "title": "Railway RRB ALP Recruitment 2026: योग्यता, उम्र सीमा, सैलरी और पूरी जानकारी - Sarkari Result | Sarkari Exam 2026",
     "description": "Railway RRB ALP Recruitment 2026 की पूरी जानकारी आसान भाषा में। यहाँ जानें असिस्टेंट लोको पायलट पद के लिए योग्यता (eligibility), उम्र सीमा और सैलरी के नियम।",
     "canonical": "https://www.aiexamresult.com/post/railway-rrb-alp-recruitment-2026"
-  }
+  },
+  "category": "latestJobs"
 }

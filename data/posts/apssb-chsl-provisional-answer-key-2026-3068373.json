@@ -91,8 +91,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Answer Key",
+            "item": "https://www.aiexamresult.com/answer-key"
           },
           {
             "@type": "ListItem",
@@ -108,5 +108,6 @@
     "title": "APSSB CHSL Provisional Answer Key 2026 - Download PDF at apssb.nic.in - Sarkari Result | Sarkari Exam 2026",
     "description": "APSSB has released the provisional answer key for the Combined Higher Secondary Level (CHSL) Examination 2026. Check the official download window, objection pro",
     "canonical": "https://www.aiexamresult.com/post/apssb-chsl-provisional-answer-key-2026-3068373"
-  }
+  },
+  "category": "answerKeys"
 }

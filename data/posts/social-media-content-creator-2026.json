@@ -92,8 +92,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -141,5 +141,6 @@
     "title": "Social Media Content Creator – Reels & Graphic Design Recruitment 2026 - Sarkari Result | Sarkari Exam 2026",
     "description": "Social Media Content Creator - Reels & Graphic Design Recruitment 2026 Apply Online Form | Notification | Salary | Last date and More : Visit Rojgar Result",
     "canonical": "https://www.aiexamresult.com/post/social-media-content-creator-2026"
-  }
+  },
+  "category": "latestJobs"
 }

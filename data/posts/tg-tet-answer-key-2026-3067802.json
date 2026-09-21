@@ -105,8 +105,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Answer Key",
+            "item": "https://www.aiexamresult.com/answer-key"
           },
           {
             "@type": "ListItem",
@@ -122,5 +122,6 @@
     "title": "TG TET Answer Key 2026 Out - Download Response Sheet & Objection Link at tgtet.aptonline.in - Sarkari Result | Sarkari Exam 2026",
     "description": "TG TET Answer Key 2026 released on 15 September 2026 for In-Service Teachers. Download the provisional answer key and response sheet, check the objection proces",
     "canonical": "https://www.aiexamresult.com/post/tg-tet-answer-key-2026-3067802"
-  }
+  },
+  "category": "answerKeys"
 }

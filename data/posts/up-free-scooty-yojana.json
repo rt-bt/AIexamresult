@@ -172,8 +172,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -189,5 +189,6 @@
     "title": "UP Free Scooty Yojana 2026 | Rani Lakshmi Bai Scooty Yojana - Sarkari Result | Sarkari Exam 2026",
     "description": "UP Free Scooty Yojana 2026 | Rani Lakshmi Bai Scooty Yojana. The last date to apply is N/A. Check important dates, application fee, eligibility criteria and off",
     "canonical": "https://www.aiexamresult.com/post/up-free-scooty-yojana"
-  }
+  },
+  "category": "latestJobs"
 }

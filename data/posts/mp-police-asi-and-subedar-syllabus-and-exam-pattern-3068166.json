@@ -93,8 +93,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Document",
+            "item": "https://www.aiexamresult.com/documents"
           },
           {
             "@type": "ListItem",
@@ -110,5 +110,6 @@
     "title": "MP Police ASI and Subedar Syllabus 2026 - Check Exam Pattern PDF - Sarkari Result | Sarkari Exam 2026",
     "description": "MP Police ASI and Subedar Syllabus 2026 covers the complete Paper 1 & 2 syllabus, exam pattern, practical test, selection process, and preparation tips for ASI ",
     "canonical": "https://www.aiexamresult.com/post/mp-police-asi-and-subedar-syllabus-and-exam-pattern-3068166"
-  }
+  },
+  "category": "documents"
 }

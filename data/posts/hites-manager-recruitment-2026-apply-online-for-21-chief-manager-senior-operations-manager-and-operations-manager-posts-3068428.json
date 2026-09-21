@@ -124,8 +124,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -173,5 +173,6 @@
     "title": "HITES Manager Recruitment 2026 - Apply Online for 21 Chief Manager, Senior Operations Manager, and Operations Manager Posts - Sarkari Result | Sarkari Exam 2026",
     "description": "The HLL Infra Tech Services (HITES) Recruitment 2026 for posts of 21 Chief Manager, Senior Operations Manager, and Operations Manager. Candidates with B.Tech/B.",
     "canonical": "https://www.aiexamresult.com/post/hites-manager-recruitment-2026-apply-online-for-21-chief-manager-senior-operations-manager-and-operations-manager-posts-3068428"
-  }
+  },
+  "category": "latestJobs"
 }

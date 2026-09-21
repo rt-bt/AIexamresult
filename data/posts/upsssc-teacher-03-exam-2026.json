@@ -176,8 +176,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Answer Key",
+            "item": "https://www.aiexamresult.com/answer-key"
           },
           {
             "@type": "ListItem",
@@ -225,5 +225,6 @@
     "title": "UPSSSC UP Teacher Cadre (Assistant J.T.C. Teacher) Recruitment 2026 Mains Revised Answer Key - Sarkari Result | Sarkari Exam 2026",
     "description": "Uttar Pradesh Subordinate Service Selection Commission (UPSSSC) has released UP Directorate of Empowerment of Persons with Disabilities, Uttar Pradesh Teacher C",
     "canonical": "https://www.aiexamresult.com/post/upsssc-teacher-03-exam-2026"
-  }
+  },
+  "category": "answerKeys"
 }

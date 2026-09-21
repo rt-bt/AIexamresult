@@ -169,8 +169,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -218,5 +218,6 @@
     "title": "ONGC Scholarship Registration 2026 Apply Online Form - Sarkari Result | Sarkari Exam 2026",
     "description": "ONGC Scholarship 2026 Registration Online Form | Notification | Eligibility Criteria | Last Date and More Other Updates now Available on RojgarResult.Com",
     "canonical": "https://www.aiexamresult.com/post/ongc-scholarship-2026"
-  }
+  },
+  "category": "latestJobs"
 }

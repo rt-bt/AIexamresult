@@ -101,8 +101,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Result",
+            "item": "https://www.aiexamresult.com/result"
           },
           {
             "@type": "ListItem",
@@ -118,5 +118,6 @@
     "title": "HPRCA CBT Result 2026 - Check Laboratory Assistant & Senior Lab Technician at hprca.hp.gov.in - Sarkari Result | Sarkari Exam 2026",
     "description": "HPRCA released press notes on 17 September 2026 for the CBT result of Laboratory Assistant (25012) and Senior Laboratory Technician/MLT Gr-II (26012). Check off",
     "canonical": "https://www.aiexamresult.com/post/hprca-various-post-result-2026-3068114"
-  }
+  },
+  "category": "results"
 }

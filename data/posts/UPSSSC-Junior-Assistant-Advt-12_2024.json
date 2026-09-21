@@ -189,8 +189,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Result",
+            "item": "https://www.aiexamresult.com/result"
           },
           {
             "@type": "ListItem",
@@ -238,5 +238,6 @@
     "title": "UPSSSC 10+2 Junior Assistant 12/2024 Result (3284 Post) | Available @ upsssc.gov.in - Sarkari Result | Sarkari Exam 2026",
     "description": "Uttar Pradesh Subordinate Service Selection Commission (UPSSSC) has Officially Released Result for the Post of 10+2 Level Junior Assistant Recruitment 2024 for ",
     "canonical": "https://www.aiexamresult.com/post/UPSSSC-Junior-Assistant-Advt-12_2024"
-  }
+  },
+  "category": "results"
 }

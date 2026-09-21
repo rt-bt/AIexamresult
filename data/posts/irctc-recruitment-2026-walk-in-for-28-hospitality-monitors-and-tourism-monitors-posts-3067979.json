@@ -109,8 +109,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -158,5 +158,6 @@
     "title": "IRCTC Recruitment 2026 Notification Out – Walk in for 28 Hospitality Monitors and Tourism Monitors Posts - Sarkari Result | Sarkari Exam 2026",
     "description": "Indian Railway Catering & Tourism Corporation Ltd (IRCTC) has announced the Recruitment 2026 notification for 28 vacancies, including Hospitality Monitors and T",
     "canonical": "https://www.aiexamresult.com/post/irctc-recruitment-2026-walk-in-for-28-hospitality-monitors-and-tourism-monitors-posts-3067979"
-  }
+  },
+  "category": "latestJobs"
 }

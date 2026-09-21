@@ -93,8 +93,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -142,5 +142,6 @@
     "title": "Indian Navy Technician Apprentice Vacancy 2025 Online Apply For 50 Posts Full Details Here- - Sarkari Result | Sarkari Exam 2026",
     "description": "Indian Navy Technician Apprentice Vacancy 2025 :-  भारतीय नौसेना ने आईटीआई-उत्तीर्ण उम्मीदवारों के लिए तकनीशियन (अपरेंटिस) के 50 पदों पर भर्ती की घोषणा की है।",
     "canonical": "https://www.aiexamresult.com/post/indian-navy-technician-apprentice-vacancy"
-  }
+  },
+  "category": "latestJobs"
 }

@@ -190,8 +190,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -239,5 +239,6 @@
     "title": "UP Rojgar Mela Recruitment 2026 : Apply Now - Sarkari Result | Sarkari Exam 2026",
     "description": "UP Rojgar Mela Recruitment 2026 : Apply Now. Eligible candidates can apply online through the official website before the last date. Check important dates, appl",
     "canonical": "https://www.aiexamresult.com/post/up-rojgar-mela-recruitment-2026"
-  }
+  },
+  "category": "latestJobs"
 }

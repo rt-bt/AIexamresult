@@ -108,8 +108,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Result",
+            "item": "https://www.aiexamresult.com/result"
           },
           {
             "@type": "ListItem",
@@ -125,5 +125,6 @@
     "title": "Sainik School Sambalpur PGT Result 2026 - Check Interview Scheduled Dates & Time at sainikschoolsambalpur.edu.in - Sarkari Result | Sarkari Exam 2026",
     "description": "Sainik School Sambalpur PGT Result 2026 notice has been released on 17 September for PGT Physics. Check the shortlisted candidates, recruitment test dates, repo",
     "canonical": "https://www.aiexamresult.com/post/sainik-school-sambalpur-pgt-result-2026-3068281"
-  }
+  },
+  "category": "results"
 }

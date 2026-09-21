@@ -82,8 +82,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Admit Card",
+            "item": "https://www.aiexamresult.com/admit-card"
           },
           {
             "@type": "ListItem",
@@ -99,5 +99,6 @@
     "title": "Bihar DELED Admit Card 2025 Download Link (Soon) – How To Check @deledbihar.com - Sarkari Result | Sarkari Exam 2026",
     "description": "Bihar Deled Admit Card 2025 :- बिहार स्कूल एजुकेशन बोर्ड (BSEB) मार्च 2025 में डेलीड परीक्षा का संचालन करेगा। डेलीड परीक्षा उन उम्मीदवारों को अवसर प्रदान करती",
     "canonical": "https://www.aiexamresult.com/post/bihar-deled-admit-card"
-  }
+  },
+  "category": "admitCards"
 }

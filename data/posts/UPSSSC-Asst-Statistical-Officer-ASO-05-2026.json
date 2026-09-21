@@ -274,8 +274,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -325,5 +325,6 @@
     "canonical": "https://www.aiexamresult.com/post/UPSSSC-Asst-Statistical-Officer-ASO-05-2026"
   },
   "publishedAt": "2026-07-01T18:30:00.000Z",
-  "createdAt": "2026-07-01T18:30:00.000Z"
+  "createdAt": "2026-07-01T18:30:00.000Z",
+  "category": "latestJobs"
 }

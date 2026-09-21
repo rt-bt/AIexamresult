@@ -106,8 +106,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Document",
+            "item": "https://www.aiexamresult.com/documents"
           },
           {
             "@type": "ListItem",
@@ -123,5 +123,6 @@
     "title": "Delhi High Court Personal Assistant Syllabus 2026 - Check Exam Pattern PDF - Sarkari Result | Sarkari Exam 2026",
     "description": "Check the Delhi High Court Personal Assistant Syllabus 2026 with detailed Exam Pattern for the Typing Test, Shorthand Test, Main Descriptive Exam and Interview.",
     "canonical": "https://www.aiexamresult.com/post/delhi-high-court-personal-assistant-syllabus-and-exam-pattern-3066435"
-  }
+  },
+  "category": "documents"
 }

@@ -141,8 +141,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -190,5 +190,6 @@
     "title": "MPESB MP ASI, Subedar Steno Recruitment 2026 Apply Online for 655 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "Madhya Pradesh Employee Selection Board (MPESB) has released MP ASI, Subedar Steno Recruitment Notification 2026. Those candidates who are Interested in this MP",
     "canonical": "https://www.aiexamresult.com/post/mpesb-mp-police-asi-subedar-sept2026"
-  }
+  },
+  "category": "latestJobs"
 }

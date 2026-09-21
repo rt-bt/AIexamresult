@@ -99,8 +99,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -148,5 +148,6 @@
     "title": "JSSC JILCCE Inter Level Online Form 2026 for 326 Post Re Open - Sarkari Result | Sarkari Exam 2026",
     "description": "JSSC JILCCE Inter Level Online Form 2026 for 326 Post Re Open. Eligible candidates can apply online through the official website before the last date. The last ",
     "canonical": "https://www.aiexamresult.com/post/jssc-jilcce-inter-level-2026"
-  }
+  },
+  "category": "latestJobs"
 }

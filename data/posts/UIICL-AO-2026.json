@@ -262,8 +262,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -311,5 +311,6 @@
     "title": "🚨 UIICL AO Scale-I Recruitment 2026 Online Form Live: 225 Posts Apply Now #UIICLAO - Sarkari Result | Sarkari Exam 2026",
     "description": "UIICL AO Scale-I Recruitment 2026 Online Form Live Soon! Apply for 225 Posts (Generalist 200 + Hindi Officer 25) from 08 September 2026 to 28 September 2026. Gr",
     "canonical": "https://www.aiexamresult.com/post/UIICL-AO-2026"
-  }
+  },
+  "category": "latestJobs"
 }

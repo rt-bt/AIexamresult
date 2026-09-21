@@ -87,8 +87,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Result",
+            "item": "https://www.aiexamresult.com/result"
           },
           {
             "@type": "ListItem",
@@ -104,5 +104,6 @@
     "title": "BSEB Bihar Board 10th Result Marksheet Download – Complete Guide (2026) - Sarkari Result | Sarkari Exam 2026",
     "description": "Hello students! Agar aapne bhi is saal Bihar Board se Matric (Class 10th) ki pariksha di hai, toh aapko apne BSEB Bihar Board 10th Result 2026 ka besabri se",
     "canonical": "https://www.aiexamresult.com/post/bseb-bihar-board-10th-result-marksheet-download"
-  }
+  },
+  "category": "results"
 }

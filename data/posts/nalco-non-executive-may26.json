@@ -180,8 +180,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Admit Card",
+            "item": "https://www.aiexamresult.com/admit-card"
           },
           {
             "@type": "ListItem",
@@ -231,5 +231,6 @@
     "canonical": "https://www.aiexamresult.com/post/nalco-non-executive-may26"
   },
   "publishedAt": "2026-07-14T18:30:00.000Z",
-  "createdAt": "2026-07-14T18:30:00.000Z"
+  "createdAt": "2026-07-14T18:30:00.000Z",
+  "category": "admitCards"
 }

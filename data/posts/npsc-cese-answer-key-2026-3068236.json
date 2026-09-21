@@ -98,8 +98,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Answer Key",
+            "item": "https://www.aiexamresult.com/answer-key"
           },
           {
             "@type": "ListItem",
@@ -115,5 +115,6 @@
     "title": "NPSC CESE Answer Key 2026 Out - Download PDF at npsc.nagaland.gov.in - Sarkari Result | Sarkari Exam 2026",
     "description": "NPSC has released a corrected Answer Key for the Common Educational Services Examination (CESE) 2026 through Notification No. NPSC/CESE-12/AK/2021 dated 16th Se",
     "canonical": "https://www.aiexamresult.com/post/npsc-cese-answer-key-2026-3068236"
-  }
+  },
+  "category": "answerKeys"
 }

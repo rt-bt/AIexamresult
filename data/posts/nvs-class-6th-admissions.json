@@ -196,8 +196,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -245,5 +245,6 @@
     "title": "NVS Class 6th Admissions Online Form 2026 Date Extended - Sarkari Result | Sarkari Exam 2026",
     "description": "NVS Class 6th Admissions Online Form 2026 Date Extended. Eligible candidates can apply online through the official website before the last date. The last date t",
     "canonical": "https://www.aiexamresult.com/post/nvs-class-6th-admissions"
-  }
+  },
+  "category": "latestJobs"
 }

@@ -330,8 +330,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -381,5 +381,6 @@
     "canonical": "https://www.aiexamresult.com/post/RRB-Section-Officer-CEN-04-2025"
   },
   "publishedAt": "2026-06-28T18:30:00.000Z",
-  "createdAt": "2026-06-28T18:30:00.000Z"
+  "createdAt": "2026-06-28T18:30:00.000Z",
+  "category": "latestJobs"
 }

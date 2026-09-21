@@ -216,8 +216,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Document",
+            "item": "https://www.aiexamresult.com/documents"
           },
           {
             "@type": "ListItem",
@@ -233,5 +233,6 @@
     "title": "CBSE Central Teacher Eligibility Test CTET September 2026 Exam Date - Out - Sarkari Result | Sarkari Exam 2026",
     "description": "CTET September 2026 Notification Out! Re-Open Online Form 25 August 2026 to 01 September 2026. Apply for Paper 1 (Class 1-5) & Paper 2 (Class 6-8). Exam on 06 S",
     "canonical": "https://www.aiexamresult.com/post/ctet-september-2026"
-  }
+  },
+  "category": "documents"
 }

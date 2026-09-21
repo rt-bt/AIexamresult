@@ -75,8 +75,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -124,5 +124,6 @@
     "title": "Nagar Nigam Bharti 2025: 20 हजार से अधिक पदों पर बिना परीक्षा की सीधी भर्ती, यहाँ देखें सम्पूर्ण जानकारी- Full Info - Sarkari Result | Sarkari Exam 2026",
     "description": "Nagar Nigam Bharti 2022:- रोजगार की तलाश कर रहे सभी होनहार अभ्यर्थियों के लिए नगर विकास परिषद द्वारा सुनहरा अवसर प्रदान किया जा रहा है क्योंकि इस वर्ष नगर निगम ",
     "canonical": "https://www.aiexamresult.com/post/nagar-nigam-bharti-2"
-  }
+  },
+  "category": "latestJobs"
 }

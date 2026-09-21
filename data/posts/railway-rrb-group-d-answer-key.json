@@ -110,8 +110,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Answer Key",
+            "item": "https://www.aiexamresult.com/answer-key"
           },
           {
             "@type": "ListItem",
@@ -129,5 +129,6 @@
     "canonical": "https://www.aiexamresult.com/post/railway-rrb-group-d-answer-key"
   },
   "publishedAt": "2026-02-16T18:30:00.000Z",
-  "createdAt": "2026-02-16T18:30:00.000Z"
+  "createdAt": "2026-02-16T18:30:00.000Z",
+  "category": "answerKeys"
 }

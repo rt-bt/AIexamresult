@@ -101,8 +101,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Result",
+            "item": "https://www.aiexamresult.com/result"
           },
           {
             "@type": "ListItem",
@@ -118,5 +118,6 @@
     "title": "HLL Management Trainee Result 2026 Out - Check CBT Scorecard at hllmt.cbtexam.in - Sarkari Result | Sarkari Exam 2026",
     "description": "HLL Lifecare Limited has declared the HLL Management Trainee Result 2026 for the CBT held on 23 August 2026. Check how to check your scorecard at hllmt.cbtexam.",
     "canonical": "https://www.aiexamresult.com/post/hll-management-trainee-result-2026-3068038"
-  }
+  },
+  "category": "results"
 }

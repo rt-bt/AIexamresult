@@ -88,8 +88,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Result",
+            "item": "https://www.aiexamresult.com/result"
           },
           {
             "@type": "ListItem",
@@ -105,5 +105,6 @@
     "title": "KTET Result 2026 Out - Check Kerala TET February Session Scorecard at ktet.kerala.gov.in - Sarkari Result | Sarkari Exam 2026",
     "description": "KTET Result 2026 for the February session has been declared by Kerala Pareeksha Bhavan on September 19, 2026. Candidates who wrote the Kerala Teacher Eligibilit",
     "canonical": "https://www.aiexamresult.com/post/ktet-result-2026-3068395"
-  }
+  },
+  "category": "results"
 }

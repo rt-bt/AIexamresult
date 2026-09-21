@@ -280,8 +280,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Result",
+            "item": "https://www.aiexamresult.com/result"
           },
           {
             "@type": "ListItem",
@@ -331,5 +331,6 @@
     "canonical": "https://www.aiexamresult.com/post/UPSSSC-Excise-Constable-08-2026"
   },
   "publishedAt": "2026-08-24T18:30:00.000Z",
-  "createdAt": "2026-08-24T18:30:00.000Z"
+  "createdAt": "2026-08-24T18:30:00.000Z",
+  "category": "results"
 }

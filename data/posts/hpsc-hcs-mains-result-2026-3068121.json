@@ -107,8 +107,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Result",
+            "item": "https://www.aiexamresult.com/result"
           },
           {
             "@type": "ListItem",
@@ -124,5 +124,6 @@
     "title": "HPSC HCS Mains Result 2026 Out - Download Haryana Civil Services Result PDF at hpsc.gov.in - Sarkari Result | Sarkari Exam 2026",
     "description": "Haryana Public Service Commission has declared the HPSC HCS Mains Result 2026 for HCS (Executive Branch) & Other Allied Services on 17 September 2026. Check the",
     "canonical": "https://www.aiexamresult.com/post/hpsc-hcs-mains-result-2026-3068121"
-  }
+  },
+  "category": "results"
 }

@@ -214,8 +214,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Admit Card",
+            "item": "https://www.aiexamresult.com/admit-card"
           },
           {
             "@type": "ListItem",
@@ -263,5 +263,6 @@
     "title": "Indian Overseas Bank IOB Local Bank Officer LBO Admit Card 2026 Out for 250 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "IOB Local Bank Officer LBO Recruitment 2026 Online Form Live Now! Apply for 250 Posts from 08 August 2026 to 24 August 2026. Graduation eligible. Age 20-30 year",
     "canonical": "https://www.aiexamresult.com/post/iob-lbo-2026"
-  }
+  },
+  "category": "admitCards"
 }

@@ -276,8 +276,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -325,5 +325,6 @@
     "title": "Uttar Pradesh UPESSC UP Post Graduate Teacher PGT Recruitment 2026 Online Form for 2607 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "UPESSC UP PGT / Madhyamik Shikshak Recruitment 2026 Online Form! Advt 06/2026. 2607 Posts (Balak 2329 + Balika 278). Apply 18 September 2026 to 17 October 2026.",
     "canonical": "https://www.aiexamresult.com/post/upessc-pgt-2026"
-  }
+  },
+  "category": "latestJobs"
 }

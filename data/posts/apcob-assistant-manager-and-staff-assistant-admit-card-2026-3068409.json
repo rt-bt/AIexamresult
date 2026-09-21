@@ -90,8 +90,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Admit Card",
+            "item": "https://www.aiexamresult.com/admit-card"
           },
           {
             "@type": "ListItem",
@@ -107,5 +107,6 @@
     "title": "APCOB Admit Card 2026 Out - Download Assistant Manager and Staff Assistant Call Letter at apcob.bank.in - Sarkari Result | Sarkari Exam 2026",
     "description": "Download APCOB Call Letter 2026 released on 18 September for the Staff Assistant (Clerk) and Assistant Manager (Scale-I) online exam. Check district-wise call l",
     "canonical": "https://www.aiexamresult.com/post/apcob-assistant-manager-and-staff-assistant-admit-card-2026-3068409"
-  }
+  },
+  "category": "admitCards"
 }

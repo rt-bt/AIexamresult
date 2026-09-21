@@ -112,8 +112,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -161,5 +161,6 @@
     "title": "GRID India Executive Trainee Recruitment 2026 Notification Out - Apply Online for 52 Posts - Sarkari Result | Sarkari Exam 2026",
     "description": "The Grid Controller of India Limited (GRID India) Recruitment 2026 for posts of 52 Executive Trainee. Candidates with B.Sc, B.Tech/B.E Can Apply Online. The can",
     "canonical": "https://www.aiexamresult.com/post/grid-india-executive-trainee-recruitment-2026-apply-online-for-52-posts-3067891"
-  }
+  },
+  "category": "latestJobs"
 }

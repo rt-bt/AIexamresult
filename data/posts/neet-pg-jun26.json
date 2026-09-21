@@ -130,8 +130,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -181,5 +181,6 @@
     "canonical": "https://www.aiexamresult.com/post/neet-pg-jun26"
   },
   "publishedAt": "2026-06-30T18:30:00.000Z",
-  "createdAt": "2026-06-30T18:30:00.000Z"
+  "createdAt": "2026-06-30T18:30:00.000Z",
+  "category": "latestJobs"
 }

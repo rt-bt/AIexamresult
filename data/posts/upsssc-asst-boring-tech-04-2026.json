@@ -168,8 +168,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Answer Key",
+            "item": "https://www.aiexamresult.com/answer-key"
           },
           {
             "@type": "ListItem",
@@ -217,5 +217,6 @@
     "title": "UPSSSC UP Assistant Boring Technician Recruitment 2026 Revised Answer Key - Sarkari Result | Sarkari Exam 2026",
     "description": "Uttar Pradesh Subordinate Service Selection Commission (UPSSSC) has released UP Assistant Boring Technician Advt. No. 04-Exam/2026 Exam City 2026. Those candida",
     "canonical": "https://www.aiexamresult.com/post/upsssc-asst-boring-tech-04-2026"
-  }
+  },
+  "category": "answerKeys"
 }

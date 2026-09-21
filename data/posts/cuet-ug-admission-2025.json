@@ -89,8 +89,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Admission",
+            "item": "https://www.aiexamresult.com/admission"
           },
           {
             "@type": "ListItem",
@@ -138,5 +138,6 @@
     "title": "CUET UG Admission 2025 Online Form: CUET क्या है जाने क्या है पूरी जानकारी किस कॉलेज में मिल सकती है एडमिशन जाने पूरी जानकारी! - Sarkari Result | Sarkari Exam 2026",
     "description": "CUET UG Admission 2025 :  हैलो फ्रेंड्स, कॉमन यूनिवर्सिटी एंट्रेंस टेस्ट (CUET) अंडरग्रेजुएट (UG) परीक्षा भारत सरकार द्वारा राष्ट्रीय स्तर पर आयोजित एक प्रवेश",
     "canonical": "https://www.aiexamresult.com/post/cuet-ug-admission-2025"
-  }
+  },
+  "category": "admissions"
 }

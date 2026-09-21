@@ -292,8 +292,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Admit Card",
+            "item": "https://www.aiexamresult.com/admit-card"
           },
           {
             "@type": "ListItem",
@@ -309,5 +309,6 @@
     "title": "Rajasthan Police Sub Inspector SI 2021 Exam City / Admit Card 2026 - Sarkari Result | Sarkari Exam 2026",
     "description": "Rajasthan Public Service Commission RPSC Are Recently Re Exam Date for the Sub Inspector SI and Platoon Commandar Recruitment 2021. Those Candidates Are Enrolle",
     "canonical": "https://www.aiexamresult.com/post/rpsc-sub-inspector-si-feb21"
-  }
+  },
+  "category": "admitCards"
 }

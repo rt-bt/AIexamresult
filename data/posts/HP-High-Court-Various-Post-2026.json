@@ -214,8 +214,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -263,5 +263,6 @@
     "title": "HP High Court Various Post Online Form 2026 for 388 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "HP High Court Various Post Online Form 2026 for 388 Post. Eligible candidates can apply online through the official website before the last date. The last date ",
     "canonical": "https://www.aiexamresult.com/post/HP-High-Court-Various-Post-2026"
-  }
+  },
+  "category": "latestJobs"
 }

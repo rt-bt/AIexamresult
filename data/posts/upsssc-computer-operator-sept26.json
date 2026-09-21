@@ -154,8 +154,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -203,5 +203,6 @@
     "title": "UPSSSC Computer Cadre Main Examination 2026 Apply Online for 12 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "Uttar Pradesh Subordinate Service Selection Commission (UPSSSC) has Released UPSSSC Computer Operator Mains Examination Main Recruitment Notification. Those can",
     "canonical": "https://www.aiexamresult.com/post/upsssc-computer-operator-sept26"
-  }
+  },
+  "category": "latestJobs"
 }

@@ -212,8 +212,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Result",
+            "item": "https://www.aiexamresult.com/result"
           },
           {
             "@type": "ListItem",
@@ -263,5 +263,6 @@
     "canonical": "https://www.aiexamresult.com/post/SSC-Delhi-Police-Head-Constable_AWO-TPO-2025"
   },
   "publishedAt": "2025-10-14T18:30:00.000Z",
-  "createdAt": "2025-10-14T18:30:00.000Z"
+  "createdAt": "2025-10-14T18:30:00.000Z",
+  "category": "results"
 }

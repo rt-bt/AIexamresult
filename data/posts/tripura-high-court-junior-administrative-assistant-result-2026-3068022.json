@@ -97,8 +97,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Result",
+            "item": "https://www.aiexamresult.com/result"
           },
           {
             "@type": "ListItem",
@@ -114,5 +114,6 @@
     "title": "Tripura High Court Junior Administrative Assistant Result 2026 Out - Check Eligible List, Call Letter Date at thc.nic.in - Sarkari Result | Sarkari Exam 2026",
     "description": "Tripura High Court has released the Written Screening test notification for Junior Administrative Assistant recruitment (Advt. No. HC-02/2026). Check the eligib",
     "canonical": "https://www.aiexamresult.com/post/tripura-high-court-junior-administrative-assistant-result-2026-3068022"
-  }
+  },
+  "category": "results"
 }

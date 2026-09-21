@@ -289,8 +289,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Admit Card",
+            "item": "https://www.aiexamresult.com/admit-card"
           },
           {
             "@type": "ListItem",
@@ -306,5 +306,6 @@
     "title": "UPPSC Assistant Professor Mains Admit Card 2026 - Sarkari Result | Sarkari Exam 2026",
     "description": "UPPSC Assistant Professor Mains Admit Card 2026. Candidates can now download their admit card / hall ticket from the official website before the exam date. The ",
     "canonical": "https://www.aiexamresult.com/post/uppsc-assistant-professor-1253-post"
-  }
+  },
+  "category": "admitCards"
 }

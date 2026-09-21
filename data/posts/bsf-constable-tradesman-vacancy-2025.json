@@ -104,8 +104,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Document",
+            "item": "https://www.aiexamresult.com/documents"
           },
           {
             "@type": "ListItem",
@@ -153,5 +153,6 @@
     "title": "BSF Constable Tradesman Vacancy 2025 Online Apply For 3588 Posts,Eligibility, Exam Pattern and Selection Process - Sarkari Result | Sarkari Exam 2026",
     "description": "BSF Constable Tradesman Vacancy 2025 :-  सीमा सुरक्षा बल (BSF) में शामिल होकर देश की सेवा करने का सपना देखने वाले युवाओं के लिए एक सुनहरा अवसर आने वाला है।",
     "canonical": "https://www.aiexamresult.com/post/bsf-constable-tradesman-vacancy-2025"
-  }
+  },
+  "category": "documents"
 }

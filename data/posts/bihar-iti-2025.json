@@ -92,8 +92,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Admission",
+            "item": "https://www.aiexamresult.com/admission"
           },
           {
             "@type": "ListItem",
@@ -109,5 +109,6 @@
     "title": "Bihar ITI 2025: Bihar ITI Admission 2025 ITICAT 2025 Apply Online, बिहार आईटीआई 2025 ऑनलाइन आवेदन Last Date Extended - Sarkari Result | Sarkari Exam 2026",
     "description": "Bihar ITI 2025:- बिहार के युवाओं के लिए तकनीकी शिक्षा और कौशल विकास का एक महत्वपूर्ण मार्ग है औद्योगिक प्रशिक्षण संस्थान, जिसे हम आम तौर पर आईटीआई (ITI) के",
     "canonical": "https://www.aiexamresult.com/post/bihar-iti-2025"
-  }
+  },
+  "category": "admissions"
 }

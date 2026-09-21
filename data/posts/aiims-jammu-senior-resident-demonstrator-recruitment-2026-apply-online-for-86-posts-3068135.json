@@ -119,8 +119,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -168,5 +168,6 @@
     "title": "AIIMS Jammu Senior Resident/Demonstrator Recruitment 2026 Notification Out - Apply Online for 86 Posts - Sarkari Result | Sarkari Exam 2026",
     "description": "The All India Institute of Medical Sciences Jammu (AIIMS Jammu) Recruitment 2026 for posts of 86 Senior Resident/Demonstrator. Candidates with DNB, M.Phil/Ph.D,",
     "canonical": "https://www.aiexamresult.com/post/aiims-jammu-senior-resident-demonstrator-recruitment-2026-apply-online-for-86-posts-3068135"
-  }
+  },
+  "category": "latestJobs"
 }

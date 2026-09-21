@@ -76,8 +76,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -125,5 +125,6 @@
     "title": "UP Home Guard Recruitment 2025: 41424 पदों पर भर्ती, Apply Online (Latest Updates) - Sarkari Result | Sarkari Exam 2026",
     "description": "उत्तर प्रदेश के लाखों युवा जो सरकारी नौकरी (Sarkari Naukri) की तलाश में हैं, उनके लिए एक बहुत बड़ी और खुशी की खबर आने वाली है। उत्तर प्रदेश सरकार जल्द ही UP",
     "canonical": "https://www.aiexamresult.com/post/up-home-guard-recruitment-online-apply-2025"
-  }
+  },
+  "category": "latestJobs"
 }

@@ -232,8 +232,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Result",
+            "item": "https://www.aiexamresult.com/result"
           },
           {
             "@type": "ListItem",
@@ -281,5 +281,6 @@
     "title": "SBI Apprentice Result 2026 for 7150 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "SBI Apprentice Admit Card 2026 for 7150 Post | Notification, Eligibility, Syllabus, Exam Pattern, Selection Procedure : Rojgar Result RojgarResult.Com",
     "canonical": "https://www.aiexamresult.com/post/sbi-apprentice-2026"
-  }
+  },
+  "category": "results"
 }

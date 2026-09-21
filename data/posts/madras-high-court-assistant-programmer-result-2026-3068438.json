@@ -106,8 +106,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Result",
+            "item": "https://www.aiexamresult.com/result"
           },
           {
             "@type": "ListItem",
@@ -123,5 +123,6 @@
     "title": "Madras High Court Assistant Programmer Result 2026 - Check Candidate Scores at mhc.tn.gov.in - Sarkari Result | Sarkari Exam 2026",
     "description": "The Madras High Court has released the Assistant Programmer Result 2026. Candidates who appeared for the Assistant Programmer examination can check and download",
     "canonical": "https://www.aiexamresult.com/post/madras-high-court-assistant-programmer-result-2026-3068438"
-  }
+  },
+  "category": "results"
 }

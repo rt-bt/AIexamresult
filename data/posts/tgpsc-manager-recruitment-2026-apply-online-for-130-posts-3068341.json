@@ -133,8 +133,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -182,5 +182,6 @@
     "title": "TGPSC Manager Recruitment 2026 Notification Out - Apply Online for 130 Posts - Sarkari Result | Sarkari Exam 2026",
     "description": "The Telangana Public Service Commission (TGPSC) Recruitment 2026 for posts of 130 Manager. Candidates with B.Tech/B.E Can Apply Online. The online application o",
     "canonical": "https://www.aiexamresult.com/post/tgpsc-manager-recruitment-2026-apply-online-for-130-posts-3068341"
-  }
+  },
+  "category": "latestJobs"
 }

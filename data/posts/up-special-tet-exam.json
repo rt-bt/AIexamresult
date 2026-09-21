@@ -137,8 +137,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -154,5 +154,6 @@
     "title": "Uttar Pradesh Teacher Eligibility Test UPESSC UP Special TET 2026 Apply Online - Sarkari Result | Sarkari Exam 2026",
     "description": "Uttar Pradesh Education Service Selection Commission (UPESSC) has released the Uttar Pradesh Special Teacher Eligibility Test UP Special TET 2026 Can Read the N",
     "canonical": "https://www.aiexamresult.com/post/up-special-tet-exam"
-  }
+  },
+  "category": "latestJobs"
 }

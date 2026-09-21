@@ -186,8 +186,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -235,5 +235,6 @@
     "title": "CSC Aadhar Supervisor Operator Online Form 2026 - Sarkari Result | Sarkari Exam 2026",
     "description": "CSC Aadhar Supervisor Operator Online Form 2026 | District Wise Vacancy Check Eligibility, Download Notification, Age Limit, How to Apply : RojgarResult.Com",
     "canonical": "https://www.aiexamresult.com/post/csc-aadhar-supervisor-operator-2026"
-  }
+  },
+  "category": "latestJobs"
 }

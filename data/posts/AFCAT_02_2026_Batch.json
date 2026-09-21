@@ -243,8 +243,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Result",
+            "item": "https://www.aiexamresult.com/result"
           },
           {
             "@type": "ListItem",
@@ -260,5 +260,6 @@
     "title": "Air Force AFCAT 02/2026 Batch Result - Out - Sarkari Result | Sarkari Exam 2026",
     "description": "Indian Air Force AFCAT 02/2026 Notification Out! 379 Posts (Flying, Ground Duty Technical & Non-Technical). Online Form 20 May 2026 to 21 June 2026. Apply Now a",
     "canonical": "https://www.aiexamresult.com/post/AFCAT_02_2026_Batch"
-  }
+  },
+  "category": "results"
 }

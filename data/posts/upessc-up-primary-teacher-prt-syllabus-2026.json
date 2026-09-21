@@ -75,8 +75,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Document",
+            "item": "https://www.aiexamresult.com/documents"
           },
           {
             "@type": "ListItem",
@@ -92,5 +92,6 @@
     "title": "UPESSC UP Primary Teacher PRT Syllabus 2026 | PDF Hindi - Sarkari Result | Sarkari Exam 2026",
     "description": "UPESSC UP Primary Teacher PRT Syllabus 2026 in Hindi PDF | Download Now | Syllabus taken from Official notification | Selection Procedure : All India Exam Resul",
     "canonical": "https://www.aiexamresult.com/post/upessc-up-primary-teacher-prt-syllabus-2026"
-  }
+  },
+  "category": "documents"
 }

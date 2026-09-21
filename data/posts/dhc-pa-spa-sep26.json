@@ -141,8 +141,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -190,5 +190,6 @@
     "title": "Delhi High Court Senior Personal Assistant and Personal Assistant Recruitment 2026 Apply Online - Sarkari Result | Sarkari Exam 2026",
     "description": "High Court of Delhi (DHC) has released the Personal Assistant PA & Senior Personal Assistant recruitment advertisement for 150 posts. Those Candidate Are Enroll",
     "canonical": "https://www.aiexamresult.com/post/dhc-pa-spa-sep26"
-  }
+  },
+  "category": "latestJobs"
 }

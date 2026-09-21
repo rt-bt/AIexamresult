@@ -94,8 +94,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Document",
+            "item": "https://www.aiexamresult.com/documents"
           },
           {
             "@type": "ListItem",
@@ -113,5 +113,6 @@
     "canonical": "https://www.aiexamresult.com/post/upsssc-vdo-exam-pattern"
   },
   "publishedAt": "2026-01-13T18:30:00.000Z",
-  "createdAt": "2026-01-13T18:30:00.000Z"
+  "createdAt": "2026-01-13T18:30:00.000Z",
+  "category": "documents"
 }

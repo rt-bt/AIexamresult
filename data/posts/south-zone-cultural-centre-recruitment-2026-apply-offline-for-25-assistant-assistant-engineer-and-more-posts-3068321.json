@@ -137,8 +137,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -186,5 +186,6 @@
     "title": "South Zone Cultural Centre Recruitment 2026 - Apply Offline for 25 Steno, Assistant Engineer and More Posts - Sarkari Result | Sarkari Exam 2026",
     "description": "South Zone Cultural Centre has announced the Recruitment 2026 notification for 25 vacancies across various posts. Eligible candidates can submit their offline a",
     "canonical": "https://www.aiexamresult.com/post/south-zone-cultural-centre-recruitment-2026-apply-offline-for-25-assistant-assistant-engineer-and-more-posts-3068321"
-  }
+  },
+  "category": "latestJobs"
 }

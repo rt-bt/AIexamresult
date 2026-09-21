@@ -135,8 +135,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -184,5 +184,6 @@
     "title": "CPRI Recruitment 2026 Notification Out - Apply Online for 110 Assistant, MTS and More Posts - Sarkari Result | Sarkari Exam 2026",
     "description": "Central Power Research Institute (CPRI) has released the Recruitment 2026 notification for 110 vacancies across various posts. The online application process wi",
     "canonical": "https://www.aiexamresult.com/post/cpri-recruitment-2026-apply-online-for-110-assistant-mts-and-more-posts-3067640"
-  }
+  },
+  "category": "latestJobs"
 }

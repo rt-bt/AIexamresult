@@ -203,8 +203,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -252,5 +252,6 @@
     "title": "Bihar Vidhan Parishad Office Attendant 01/2025 Score Card 2026 Out for 09 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "Bihar Vidhan Parishad (BVP) Office Attendant & Driver Recruitment 2025 Live Now! Apply online for 24 posts (15 Office Attendant, 9 Driver) starting September 29",
     "canonical": "https://www.aiexamresult.com/post/Bihar-Vidhan-Parishad-Driver_OA-01-2025"
-  }
+  },
+  "category": "latestJobs"
 }

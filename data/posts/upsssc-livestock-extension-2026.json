@@ -223,8 +223,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -272,5 +272,6 @@
     "title": "UPSSSC Livestock Extension Officer Online Form 2026 for 1251 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "UPSSSC Livestock Extension Officer Recruitment 2026 Apply Online Form | Total 1251 Post | Syllabus | Notification | Official Website Direct Link now Available o",
     "canonical": "https://www.aiexamresult.com/post/upsssc-livestock-extension-2026"
-  }
+  },
+  "category": "latestJobs"
 }

@@ -73,8 +73,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -90,5 +90,6 @@
     "title": "Sainik School Fees 2025 : जाने कितनी होती हैं सैनिक स्कूल की फीस और क्या है एडमिशन चार्ज ? - Sarkari Result | Sarkari Exam 2026",
     "description": "Sainik School Fees : दोस्तों, जैसा कि आप सभी जानते हैं कि Saikik स्कूल देश के शीर्ष स्कूल की सूची में शामिल हैं, खासकर जब यह देश के शीर्ष सरकारी स्कूल में आता",
     "canonical": "https://www.aiexamresult.com/post/sainik-school-fees"
-  }
+  },
+  "category": "latestJobs"
 }

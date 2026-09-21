@@ -190,8 +190,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Document",
+            "item": "https://www.aiexamresult.com/documents"
           },
           {
             "@type": "ListItem",
@@ -239,5 +239,6 @@
     "title": "State Bank of India SBI Junior Associates Clerk Recruitment 2026 : New Exam Date for 9124 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "State Bank of India SBI has released Junior Associates Clerk Recruitment 2026 Notification. Those candidates Are Interested to the Following SBI Clerk Recruitme",
     "canonical": "https://www.aiexamresult.com/post/sbi-j-a-clerk-august26"
-  }
+  },
+  "category": "documents"
 }

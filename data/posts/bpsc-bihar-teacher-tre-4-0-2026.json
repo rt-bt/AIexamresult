@@ -163,8 +163,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -214,5 +214,6 @@
     "canonical": "https://www.aiexamresult.com/post/bpsc-bihar-teacher-tre-4-0-2026"
   },
   "publishedAt": "2026-05-12T18:30:00.000Z",
-  "createdAt": "2026-05-12T18:30:00.000Z"
+  "createdAt": "2026-05-12T18:30:00.000Z",
+  "category": "latestJobs"
 }

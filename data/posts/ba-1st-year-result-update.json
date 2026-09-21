@@ -98,8 +98,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Result",
+            "item": "https://www.aiexamresult.com/result"
           },
           {
             "@type": "ListItem",
@@ -115,5 +115,6 @@
     "title": "BA 1st Year Result 2025 | University wise B.A Part I Result 2025- यहां से चेक करें रिजल्ट - Sarkari Result | Sarkari Exam 2026",
     "description": "BA 1st Year Result 2025:- परीक्षा खत्म होने के बाद BA 1st Year का रिजल्ट सभी विश्वविद्यालय अपनी आधिकारिक वेबसाइट पर अपलोड कर देंगे। BA 1st Year की परीक्षा में",
     "canonical": "https://www.aiexamresult.com/post/ba-1st-year-result-update"
-  }
+  },
+  "category": "results"
 }

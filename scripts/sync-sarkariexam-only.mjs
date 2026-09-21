@@ -116,11 +116,17 @@ function isPublicLink(href) {
 
 function categorizeByTitle(title, fallback) {
   const lower = title.toLowerCase();
-  if (lower.includes("admit card") || lower.includes("hall ticket") || lower.includes("call letter") || lower.includes("exam city") || lower.includes("exam date")) return "admitCards";
+  // 1. RESULT always wins first — even if title also says "admit card" (e.g. a post updated from AC to Result)
+  if (lower.includes("result") || lower.includes("merit list") || lower.includes("cut off") || lower.includes("cutoff") || lower.includes("selection list") || lower.includes("shortlist") || lower.includes("qualified")) return "results";
+  // 2. Answer Key
   if (lower.includes("answer key") || lower.includes("response sheet")) return "answerKeys";
+  // 3. Admit Card / Hall Ticket / Call Letter (NOT exam date — that goes to documents)
+  if (lower.includes("admit card") || lower.includes("hall ticket") || lower.includes("call letter")) return "admitCards";
+  // 4. Admission / Counselling
   if (lower.includes("admission") || lower.includes("counselling") || lower.includes("counseling")) return "admissions";
-  if (lower.includes("result") || lower.includes("merit list") || lower.includes("cut off") || lower.includes("cutoff")) return "results";
-  if (lower.includes("document") || lower.includes("certificate") || lower.includes("pan ") || lower.includes("aadhar") || lower.includes("aadhaar")) return "documents";
+  // 5. Documents: exam date, schedule, syllabus, DV, certificate
+  if (lower.includes("exam date") || lower.includes("exam city") || lower.includes("syllabus") || lower.includes("document") || lower.includes("certificate") || lower.includes("pan ") || lower.includes("aadhar") || lower.includes("aadhaar") || lower.includes("dv schedule")) return "documents";
+  // 6. Latest Jobs
   if (lower.includes("online form") || lower.includes("apply") || lower.includes("recruitment") || lower.includes("apprentice") || lower.includes("vacancy") || lower.includes("job")) return "latestJobs";
   return fallback || "latestJobs";
 }

@@ -192,8 +192,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Document",
+            "item": "https://www.aiexamresult.com/documents"
           },
           {
             "@type": "ListItem",
@@ -209,5 +209,6 @@
     "title": "SSC JE Junior Engineer Syllabus 2026 | PDF Download | Paper I and II - Sarkari Result | Sarkari Exam 2026",
     "description": "SSC JE Junior Engineer Syllabus 2026 | PDF Download | Exam Pattern | Selection Procedure | Syllabus taken from Official Notification : Rojgar Result : RojgarRes",
     "canonical": "https://www.aiexamresult.com/post/ssc-je-junior-engineer-syllabus-2026"
-  }
+  },
+  "category": "documents"
 }

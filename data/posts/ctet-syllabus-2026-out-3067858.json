@@ -103,8 +103,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Document",
+            "item": "https://www.aiexamresult.com/documents"
           },
           {
             "@type": "ListItem",
@@ -120,5 +120,6 @@
     "title": "CTET Syllabus 2026 Out - Check Paper 1 & 2 Exam Pattern and Topics at ctet.nic.in - Sarkari Result | Sarkari Exam 2026",
     "description": "CTET Syllabus 2026 covers Paper 1 and Paper 2 subjects, exam pattern, marking scheme and qualifying marks. Check the complete subject-wise syllabus and topics.",
     "canonical": "https://www.aiexamresult.com/post/ctet-syllabus-2026-out-3067858"
-  }
+  },
+  "category": "documents"
 }

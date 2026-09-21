@@ -148,8 +148,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Admit Card",
+            "item": "https://www.aiexamresult.com/admit-card"
           },
           {
             "@type": "ListItem",
@@ -197,5 +197,6 @@
     "title": "Join Indian Air Force Agniveer Vayu Intake 02/2027 Recruitment 2026 Exam City / Admit Card - Sarkari Result | Sarkari Exam 2026",
     "description": "Join Indian Airforce has released Agnipath Vayu Agniveer Intake 02/2027 Batch Recruitment 2026. Those candidates who are interested in this IAF Agniveer Vayu In",
     "canonical": "https://www.aiexamresult.com/post/indian-airforce-agniveervayu-02-2027"
-  }
+  },
+  "category": "admitCards"
 }

@@ -136,8 +136,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -185,5 +185,6 @@
     "title": "UKSSSC Group C Scaler Uttarakhand Forest Development Corporation Recruitment 2026 Apply Online for 200 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "Uttarakhand Subordinate Service Selection Commission UKSSSC Group C Scaler Uttarakhand Forest Development Corporation Recruitment Advt. No : 82/उ0अ0से0च0आ0/2026",
     "canonical": "https://www.aiexamresult.com/post/uksssc-group-c-scaler-sep26"
-  }
+  },
+  "category": "latestJobs"
 }

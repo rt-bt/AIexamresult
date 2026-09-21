@@ -97,8 +97,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Answer Key",
+            "item": "https://www.aiexamresult.com/answer-key"
           },
           {
             "@type": "ListItem",
@@ -114,5 +114,6 @@
     "title": "OPSC Assistant Professor Answer Key 2026 Out - Check Automobile & Metallurgical Engineering Objection Link at opsc.gov.in - Sarkari Result | Sarkari Exam 2026",
     "description": "Check OPSC Assistant Professor provisional answer key 2026 for Automobile Engineering and Metallurgical & Material Engineering (Advt. 35 of 2023-24). Exam held ",
     "canonical": "https://www.aiexamresult.com/post/opsc-assistant-professor-answer-key-2026-out-check-automobile-and-metallurgical-engineering-objection-link-3067593"
-  }
+  },
+  "category": "answerKeys"
 }

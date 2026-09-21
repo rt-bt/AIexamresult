@@ -171,8 +171,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Latest Jobs",
+            "item": "https://www.aiexamresult.com/latest-jobs"
           },
           {
             "@type": "ListItem",
@@ -220,5 +220,6 @@
     "title": "UP Anganwadi Worker Online Form 2026 | Amethi , Gautam Buddh Nagar, Amroha, Balrampur, Hamirpur, Azamgarh - Sarkari Result | Sarkari Exam 2026",
     "description": "UP Anganwadi Worker Online Form 2026 | Amethi , Gautam Buddh Nagar, Amroha, Balrampur, Hamirpur, Azamgarh. Eligible candidates can apply online through the offi",
     "canonical": "https://www.aiexamresult.com/post/up-anganwadi-worker-2026"
-  }
+  },
+  "category": "latestJobs"
 }

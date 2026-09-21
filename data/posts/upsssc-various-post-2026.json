@@ -251,8 +251,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Answer Key",
+            "item": "https://www.aiexamresult.com/answer-key"
           },
           {
             "@type": "ListItem",
@@ -300,5 +300,6 @@
     "title": "UPSSSC Various Post UP Pollution Final Answer Key 2026 for 115 Post - Sarkari Result | Sarkari Exam 2026",
     "description": "UPSSSC Various Post UP Pollution Final Answer Key 2026 for 115 Post. Candidates can download the official answer key and raise objections if needed. The last da",
     "canonical": "https://www.aiexamresult.com/post/upsssc-various-post-2026"
-  }
+  },
+  "category": "answerKeys"
 }

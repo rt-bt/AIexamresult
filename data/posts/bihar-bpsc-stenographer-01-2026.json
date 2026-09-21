@@ -208,8 +208,8 @@
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Updates",
-            "item": "https://www.aiexamresult.com/results"
+            "name": "Answer Key",
+            "item": "https://www.aiexamresult.com/answer-key"
           },
           {
             "@type": "ListItem",
@@ -225,5 +225,6 @@
     "title": "Bihar BPSC Stenographer Final Answer Key 2026 - Sarkari Result | Sarkari Exam 2026",
     "description": "Bihar BPSC Stenographer Final Answer Key 2026. Candidates can download the official answer key and raise objections if needed. The last date to apply is 02/02/2",
     "canonical": "https://www.aiexamresult.com/post/bihar-bpsc-stenographer-01-2026"
-  }
+  },
+  "category": "answerKeys"
 }
