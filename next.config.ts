@@ -44,6 +44,21 @@ const nextConfig: NextConfig = {
           { key: "Cache-Control", value: "no-cache, no-store, must-revalidate" }
         ]
       },
+      // Static assets — long cache (images, icons, fonts, manifests)
+      {
+        source: "/:path*.(jpg|jpeg|png|gif|ico|svg|webp|avif|woff|woff2|ttf|eot|webmanifest)",
+        headers: [
+          { key: "Cache-Control", value: "public, max-age=2592000, immutable" },
+        ]
+      },
+      // CSS and JS bundles — cache with revalidation
+      {
+        source: "/_next/static/:path*",
+        headers: [
+          { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
+        ]
+      },
+      // All pages — security headers only (no cache kill)
       {
         source: "/(.*)",
         headers: [
