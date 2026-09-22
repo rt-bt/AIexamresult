@@ -1,12 +1,10 @@
 "use client";
 
-import { Search, ArrowRight, Clock, BarChart3, Award, Sparkles } from "lucide-react";
+import { Search, ArrowRight } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
-import { featuredResults, trendingExams, latestJobs } from "@/lib/data";
-import Link from "next/link";
+import { trendingExams } from "@/lib/data";
 import { useRouter } from "next/navigation";
 import { VoiceSearchBtn } from "./voice-search";
-import LiquidEther from "@/components/LiquidEther";
 
 const examOptions = [
   ...trendingExams,
@@ -140,98 +138,51 @@ function Counter({ to, label }: { to: number; label: string }) {
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden min-h-[560px]">
-      {/* LiquidEther WebGL Fluid Simulation Background */}
+    <section className="relative overflow-hidden">
+      {/* CSS-only gradient background — no Three.js WebGL */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
-        {/* Brand rich deep teal base */}
         <div
           className="absolute inset-0"
           style={{
             background: "radial-gradient(ellipse at 50% 25%, #0E877D 0%, #084c47 60%, #042724 100%)",
           }}
         />
-        <LiquidEther
-          colors={['#0E877D', '#3FA8A5', '#5EEAD4']}
-          mouseForce={20}
-          cursorSize={100}
-          isViscous
-          viscous={30}
-          iterationsViscous={32}
-          iterationsPoisson={32}
-          resolution={0.5}
-          isBounce={false}
-          autoDemo
-          autoSpeed={0.5}
-          autoIntensity={2.2}
-          takeoverDuration={0.25}
-          autoResumeDelay={3000}
-          autoRampDuration={0.6}
-          color0="#0E877D"
-          color1="#3FA8A5"
-          color2="#5EEAD4"
-          className="absolute inset-0 h-full w-full"
+        {/* Subtle animated glow */}
+        <div
+          className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] rounded-full opacity-30 blur-3xl"
+          style={{
+            background: "radial-gradient(circle, #5EEAD4 0%, transparent 70%)",
+            animation: "pulse 4s ease-in-out infinite",
+          }}
         />
-        {/* Subtle vignette / contrast overlay to guarantee WCAG AA text readability */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/25 pointer-events-none" />
       </div>
 
-      <div className="container-page relative pt-2 sm:pt-4 pb-6 sm:pb-10">
+      <div className="container-page relative pt-8 sm:pt-12 pb-8 sm:pb-14">
         <div className="mx-auto max-w-3xl text-center">
 
           {/* Badge */}
-          <div className="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3.5 py-1 text-xs font-semibold text-white/90 border border-white/10 mb-4 backdrop-blur-sm">
+          <div className="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3.5 py-1 text-xs font-semibold text-white/90 border border-white/10 mb-5 backdrop-blur-sm">
             <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
             Live Sarkari Result &amp; Job Alerts 2026
           </div>
 
-          {/* Headline */}
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.15] tracking-tight text-white">
-            Sarkari Result 2026 : Latest{' '}
-            <span className="text-[#5EEAD4]">Sarkari Exam</span>,{' '}
-            <span className="text-[#FBBF24]">Govt Jobs</span> &amp;{' '}
+          {/* Headline — short & punchy */}
+          <h1 className="text-3xl sm:text-5xl lg:text-[3.5rem] font-extrabold leading-[1.12] tracking-tight text-white">
+            Sarkari Result 2026{' '}
+            <span className="text-[#5EEAD4]">Exam</span>,{' '}
+            <span className="text-[#FBBF24]">Jobs</span> &amp;{' '}
             <span className="text-[#A78BFA]">Admit Card</span>
           </h1>
 
-          <p className="mx-auto mt-3 max-w-2xl text-sm sm:text-base text-white/80 leading-relaxed font-medium">
-            India&apos;s leading portal for verified Sarkari Result, Sarkari Naukri (Online Form), Admit Card download, Answer Key &amp; Rojgar Result alerts.
-          </p>
-
-          {/* Result Finder */}
-          <div className="mt-5">
+          {/* Search bar */}
+          <div className="mt-6">
             <ResultFinder />
-          </div>
-
-          {/* Trending */}
-          <div className="mt-4 flex flex-wrap justify-center gap-2">
-            {trendingExams.slice(0, 6).map((exam) => (
-              <Link
-                key={exam}
-                href={`/search?q=${encodeURIComponent(exam)}`}
-                className="px-3 py-1.5 rounded-full border border-white/15 text-xs font-medium text-white/60 hover:text-white hover:border-white/30 hover:bg-white/10 transition-all"
-              >
-                {exam}
-              </Link>
-            ))}
-          </div>
-
-          {/* Quick Action Cards */}
-          <div className="mt-5 grid grid-cols-2 sm:grid-cols-4 gap-2.5 max-w-sm mx-auto">
-            {[
-              { href: "/results", icon: BarChart3, label: "Results", color: "#5EEAD4" },
-              { href: "/latest-jobs", icon: Award, label: "Jobs", color: "#FBBF24" },
-              { href: "/admit-card", icon: Clock, label: "Admit Card", color: "#F97316" },
-              { href: "/answer-key", icon: Sparkles, label: "Answer Key", color: "#A78BFA" },
-            ].map((item) => (
-              <Link key={item.href} href={item.href} className="flex flex-col items-center gap-1.5 rounded-xl bg-white/10 border border-white/10 px-3 py-3.5 hover:bg-white/15 hover:-translate-y-0.5 transition-all">
-                <div style={{ color: item.color }}><item.icon className="h-5 w-5" /></div>
-                <span className="text-xs font-semibold text-white/80">{item.label}</span>
-              </Link>
-            ))}
           </div>
         </div>
 
         {/* Stats bar */}
-        <div className="mx-auto mt-5 max-w-lg">
+        <div className="mx-auto mt-8 max-w-lg">
           <div className="rounded-xl bg-white/5 border border-white/10 px-4 py-3">
             <div className="flex divide-x divide-white/10">
               <div className="flex-1 min-w-0 px-3 text-center">
@@ -250,3 +201,4 @@ export function Hero() {
     </section>
   );
 }
+
