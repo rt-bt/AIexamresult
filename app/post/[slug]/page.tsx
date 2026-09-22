@@ -1,4 +1,5 @@
-export const dynamic = "force-dynamic";
+// ISR: cache post page for 10 minutes, then regenerate in background
+export const revalidate = 600;
 
 import * as fs from "fs";
 import * as path from "path";

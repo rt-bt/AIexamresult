@@ -11,11 +11,15 @@ export async function middleware(request: NextRequest) {
   response.headers.set("Referrer-Policy", "strict-origin-when-cross-origin");
   response.headers.set("Permissions-Policy", "camera=(), microphone=(), geolocation=()");
   response.headers.set("Strict-Transport-Security", "max-age=63072000; includeSubDomains; preload");
-  response.headers.set("Cache-Control", "no-cache, no-store, must-revalidate");
 
   // Only check admin auth for admin routes
   const isAdminPage = pathname.startsWith("/admin/dashboard") || pathname.startsWith("/admin/ai-generator");
   const isAdminApi = pathname.startsWith("/api/admin");
+
+  // Cache-busting ONLY for admin routes — public pages should be cacheable
+  if (isAdminPage || isAdminApi) {
+    response.headers.set("Cache-Control", "no-cache, no-store, must-revalidate");
+  }
 
   if (!isAdminPage && !isAdminApi) {
     return response;

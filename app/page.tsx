@@ -1,4 +1,5 @@
-export const dynamic = "force-dynamic";
+// ISR: cache page for 5 minutes, then regenerate in background
+export const revalidate = 300;
 
 import { Header } from "@/components/site/header";
 import { Footer } from "@/components/site/footer";
