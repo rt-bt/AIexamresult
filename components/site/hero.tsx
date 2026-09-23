@@ -5,6 +5,7 @@ import { useState, useEffect, useRef } from "react";
 import { trendingExams } from "@/lib/data";
 import { useRouter } from "next/navigation";
 import { VoiceSearchBtn } from "./voice-search";
+import { HeroGradient } from "./hero-gradient";
 
 const examOptions = [
   ...trendingExams,
@@ -139,24 +140,8 @@ function Counter({ to, label }: { to: number; label: string }) {
 export function Hero() {
   return (
     <section className="relative overflow-hidden">
-      {/* CSS-only gradient background — no Three.js WebGL */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
-        <div
-          className="absolute inset-0"
-          style={{
-            background: "radial-gradient(ellipse at 50% 25%, #0E877D 0%, #084c47 60%, #042724 100%)",
-          }}
-        />
-        {/* Subtle animated glow */}
-        <div
-          className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] rounded-full opacity-30 blur-3xl"
-          style={{
-            background: "radial-gradient(circle, #5EEAD4 0%, transparent 70%)",
-            animation: "pulse 4s ease-in-out infinite",
-          }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/25 pointer-events-none" />
-      </div>
+      {/* Animated WebGL Gradient Background */}
+      <HeroGradient />
 
       <div className="container-page relative pt-8 sm:pt-12 pb-8 sm:pb-14">
         <div className="mx-auto max-w-3xl text-center">
