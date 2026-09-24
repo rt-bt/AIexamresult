@@ -5230,6 +5230,14 @@ export const scrapedData = {
       "publishedAt": "2026-08-18T11:15:37.000Z"
     },
     {
+      "title": "Railway ICF Trade Apprentice Online Form 2026",
+      "url": "/post/railway-icf-trade-apprentice-2026",
+      "category": "latestJobs",
+      "slug": "railway-icf-trade-apprentice-2026",
+      "publishedDate": "2026-08-11T13:24:20+05:30",
+      "publishedAt": "2026-08-11T07:54:20.000Z"
+    },
+    {
       "title": "RCF Kapurthala Apprentice Online Form 2026",
       "url": "/post/rcf-kapurthala-apprentice-2026",
       "category": "latestJobs",
@@ -5406,6 +5414,14 @@ export const scrapedData = {
       "publishedAt": "2026-05-08T05:35:13.000Z"
     },
     {
+      "title": "Air Force Group C Civilian Offline Form 2026",
+      "url": "/post/air-force-group-c-civilian-offline-form-2026",
+      "category": "latestJobs",
+      "slug": "air-force-group-c-civilian-offline-form-2026",
+      "publishedDate": "2026-05-01T11:07:49+05:30",
+      "publishedAt": "2026-05-01T05:37:49.000Z"
+    },
+    {
       "title": "Bank of Maharashtra Apprentice Recruitment 2026",
       "url": "/post/bank-of-maharashtra-apprentice-recruitment-2026",
       "category": "latestJobs",
@@ -5470,6 +5486,14 @@ export const scrapedData = {
       "publishedAt": "2025-03-17T07:25:40.000Z"
     },
     {
+      "title": "Rail Wheel Factory RWF Apprentices Online Form 2025",
+      "url": "/post/rail-wheel-factory-rwf-apprentices-recruitment-2025",
+      "category": "latestJobs",
+      "slug": "rail-wheel-factory-rwf-apprentices-recruitment-2025",
+      "publishedDate": "2025-03-09T01:01:49+05:30",
+      "publishedAt": "2025-03-08T19:31:49.000Z"
+    },
+    {
       "title": "UPSC Assistant Professor Online Form 2025",
       "url": "/post/upsc-assistant-professor-recruitment-2025",
       "category": "latestJobs",
@@ -5500,6 +5524,14 @@ export const scrapedData = {
       "slug": "indian-army-ncc-special-entry-scheme-58th-course-recruitment-2025-start",
       "publishedDate": "2025-02-24T10:37:24+05:30",
       "publishedAt": "2025-02-24T05:07:24.000Z"
+    },
+    {
+      "title": "KGMU Non Teaching Various Post Online Form 2025",
+      "url": "/post/kgmu-non-teaching-recruitment-2025-extended",
+      "category": "latestJobs",
+      "slug": "kgmu-non-teaching-recruitment-2025-extended",
+      "publishedDate": "2025-02-17T14:08:36+05:30",
+      "publishedAt": "2025-02-17T08:38:36.000Z"
     },
     {
       "title": "NTPC Assistant Executive Online Form 2025",
@@ -5580,38 +5612,6 @@ export const scrapedData = {
       "slug": "bihar-stet-2026-2",
       "publishedDate": "2026-09-15T19:01:36+05:30",
       "publishedAt": "2026-09-15T13:31:36.000Z"
-    },
-    {
-      "title": "Railway ICF Trade Apprentice Online Form 2026",
-      "url": "/post/railway-icf-trade-apprentice-2026",
-      "category": "latestJobs",
-      "slug": "railway-icf-trade-apprentice-2026",
-      "publishedDate": "2026-08-11T13:24:20+05:30",
-      "publishedAt": "2026-08-11T07:54:20.000Z"
-    },
-    {
-      "title": "Air Force Group C Civilian Offline Form 2026",
-      "url": "/post/air-force-group-c-civilian-offline-form-2026",
-      "category": "latestJobs",
-      "slug": "air-force-group-c-civilian-offline-form-2026",
-      "publishedDate": "2026-05-01T11:07:49+05:30",
-      "publishedAt": "2026-05-01T05:37:49.000Z"
-    },
-    {
-      "title": "Rail Wheel Factory RWF Apprentices Online Form 2025",
-      "url": "/post/rail-wheel-factory-rwf-apprentices-recruitment-2025",
-      "category": "latestJobs",
-      "slug": "rail-wheel-factory-rwf-apprentices-recruitment-2025",
-      "publishedDate": "2025-03-09T01:01:49+05:30",
-      "publishedAt": "2025-03-08T19:31:49.000Z"
-    },
-    {
-      "title": "KGMU Non Teaching Various Post Online Form 2025",
-      "url": "/post/kgmu-non-teaching-recruitment-2025-extended",
-      "category": "latestJobs",
-      "slug": "kgmu-non-teaching-recruitment-2025-extended",
-      "publishedDate": "2025-02-17T14:08:36+05:30",
-      "publishedAt": "2025-02-17T08:38:36.000Z"
     },
     {
       "title": "RUHS Medical Officer Direct Recruitment 2026 Apply Online for 600 Post",
@@ -16052,9 +16052,9 @@ export const scrapedData = {
       "lastDate": "20 January 2026"
     }
   },
-  "fetchedAt": "2026-09-24T16:08:20.013Z",
+  "fetchedAt": "2026-09-24T16:19:07.054Z",
   "seo": {
-    "lastOptimized": "2026-09-24T16:08:22.118Z",
+    "lastOptimized": "2026-09-24T16:19:09.549Z",
     "totalPosts": 1246,
     "websiteName": "All India Exam Result",
     "websiteUrl": "https://www.aiexamresult.com",

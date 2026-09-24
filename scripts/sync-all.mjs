@@ -262,7 +262,11 @@ async function scrapeListings() {
       const fallback = HEADING_MAP[heading];
       if (!fallback) return;
 
-      const isTopForm = heading.includes("top online form");
+      const isAdmitCard  = fallback === "admitCards";
+      const isResult     = fallback === "results";
+      const isAnswerKey  = fallback === "answerKeys";
+      // isFreshListing: Admit Card, Result, Answer Key items are always re-processed (like Jobs)
+      const isFreshListing = isTopForm || isAdmitCard || isResult || isAnswerKey;
 
       $block.find("ul.wp-block-latest-posts__list li a.wp-block-latest-posts__post-title, a[href]").each((__, link) => {
         const href     = $(link).attr("href") || "";
@@ -276,7 +280,7 @@ async function scrapeListings() {
         const title = cleanText(rawTitle);
         if (isJunk(title, href)) return;
         const slug = generateSlug(href, title);
-        items.push({ title, sourceUrl: href, slug, fallbackCat: isTopForm ? "latestJobs" : fallback, isTopForm });
+        items.push({ title, sourceUrl: href, slug, fallbackCat: isTopForm ? "latestJobs" : fallback, isTopForm, isFreshListing });
       });
     });
   } catch (err) {
@@ -643,9 +647,14 @@ async function main() {
     process.exit(1);
   }
 
-  // Filter items: always process Top Online Form items to keep active jobs at the top, and new items for others
+  // Filter items:
+  // - Top Online Form (isTopForm) items: ALWAYS process to keep active jobs at the top
+  // - isFreshListing items (Admit Card, Result, Answer Key from homepage): ALWAYS process
+  //   so that every sync picks up the latest homepage listings for these categories
+  // - Other items: only if new slug not seen before
   const toProcess = candidates.filter(item => {
     if (item.isTopForm) return true;
+    if (item.isFreshListing) return true;   // ← Admit Card, Result, Answer Key always sync
     return !existingSlugs.has(item.slug);
   });
   console.log(`  ✓ Found ${candidates.length} listing items (${toProcess.length} to process)`);
