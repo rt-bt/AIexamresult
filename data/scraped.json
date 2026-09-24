@@ -9,6 +9,22 @@
       "publishedAt": "2026-09-08T15:00:00.000Z"
     },
     {
+      "title": "NEET PG Result 2026",
+      "url": "/post/neet-pg-2026",
+      "category": "results",
+      "slug": "neet-pg-2026",
+      "publishedDate": "2026-09-24T16:10:43+05:30",
+      "publishedAt": "2026-09-24T10:40:43.000Z"
+    },
+    {
+      "title": "RBI Assistant Mains Result 2026 – Out",
+      "url": "/post/rbi-assistant-2026",
+      "category": "results",
+      "slug": "rbi-assistant-2026",
+      "publishedDate": "2026-09-24T19:39:30+05:30",
+      "publishedAt": "2026-09-24T14:09:30.000Z"
+    },
+    {
       "title": "RPSC Assistant Professor Result 2026",
       "url": "/post/rpsc-assistant-professor-2026",
       "category": "results",
@@ -3827,6 +3843,14 @@
   ],
   "admitCards": [
     {
+      "title": "UKPSC Lecturer Admit Card 2026",
+      "url": "/post/ukpsc-lecturer-2026",
+      "category": "admitCards",
+      "slug": "ukpsc-lecturer-2026",
+      "publishedDate": "2026-09-24T17:33:53+05:30",
+      "publishedAt": "2026-09-24T12:03:53.000Z"
+    },
+    {
       "title": "MPESB Group 2 Sub Group 4 Patwari & Various Posts Admit Card 2026",
       "url": "/post/mpesb-group-2-sub-group-4-2026",
       "category": "admitCards",
@@ -4725,6 +4749,22 @@
   ],
   "latestJobs": [
     {
+      "title": "UP Anganwadi Bharti Online Form 2026 (Update)",
+      "url": "/post/up-anganwadi-bharti-2026",
+      "category": "latestJobs",
+      "slug": "up-anganwadi-bharti-2026",
+      "publishedDate": "2026-09-24T17:50:46+05:30",
+      "publishedAt": "2026-09-24T12:20:46.000Z"
+    },
+    {
+      "title": "MPESB MP Police SI, Subedar Correction Form 2026",
+      "url": "/post/mpesb-mp-police-si-subedar-2026",
+      "category": "latestJobs",
+      "slug": "mpesb-mp-police-si-subedar-2026",
+      "publishedDate": "2026-09-24T17:39:05+05:30",
+      "publishedAt": "2026-09-24T12:09:05.000Z"
+    },
+    {
       "title": "India Post Office GDS Correction Form 2026 – Last Date",
       "url": "/post/india-post-office-gds-2026",
       "category": "latestJobs",
@@ -4885,14 +4925,6 @@
       "publishedAt": "2026-09-21T04:45:40.000Z"
     },
     {
-      "title": "MPESB MP Police SI, Subedar Online Form 2026 – Last Date",
-      "url": "/post/mpesb-mp-police-si-subedar-2026",
-      "category": "latestJobs",
-      "slug": "mpesb-mp-police-si-subedar-2026",
-      "publishedDate": "2026-09-23T17:41:19+05:30",
-      "publishedAt": "2026-09-23T12:11:19.000Z"
-    },
-    {
       "title": "SBI Bank Trade Finance Officer TFO Online Form 2026 – Extend",
       "url": "/post/sbi-bank-tfo-2026",
       "category": "latestJobs",
@@ -4947,14 +4979,6 @@
       "slug": "rajasthan-safai-karamchari-2026",
       "publishedDate": "2026-09-17T10:19:12+05:30",
       "publishedAt": "2026-09-17T04:49:12.000Z"
-    },
-    {
-      "title": "UP Anganwadi Bharti Online Form 2026 (Update)",
-      "url": "/post/up-anganwadi-bharti-2026",
-      "category": "latestJobs",
-      "slug": "up-anganwadi-bharti-2026",
-      "publishedDate": "2026-09-17T10:19:09+05:30",
-      "publishedAt": "2026-09-17T04:49:09.000Z"
     },
     {
       "title": "UPSC Engineering Services Pre Online Form 2027",
@@ -12519,8 +12543,8 @@
       "lastDate": "06 October 2026"
     },
     "mpesb-mp-police-si-subedar-2026": {
-      "publishedDate": "2026-09-23T17:41:19+05:30",
-      "publishedAt": "2026-09-23T12:11:19.000Z",
+      "publishedDate": "2026-09-24T17:39:05+05:30",
+      "publishedAt": "2026-09-24T12:09:05.000Z",
       "lastDate": "23 September 2026"
     },
     "mpesb-nursing-officer-sister-tutor-2026": {
@@ -14601,8 +14625,8 @@
       "lastDate": "District Wise"
     },
     "up-anganwadi-bharti-2026": {
-      "publishedDate": "2026-09-17T10:19:09+05:30",
-      "publishedAt": "2026-09-17T04:49:09.000Z",
+      "publishedDate": "2026-09-24T17:50:46+05:30",
+      "publishedAt": "2026-09-24T12:20:46.000Z",
       "lastDate": "District Wise"
     },
     "up-anganwadi-bharti-nov-2025": {
@@ -16010,12 +16034,27 @@
       "publishedDate": "2026-09-23T17:19:54+05:30",
       "publishedAt": "2026-09-23T11:49:54.000Z",
       "lastDate": "06 October 2026"
+    },
+    "rbi-assistant-2026": {
+      "publishedDate": "2026-09-24T19:39:30+05:30",
+      "publishedAt": "2026-09-24T14:09:30.000Z",
+      "lastDate": "10 March 2026 (Extended)"
+    },
+    "neet-pg-2026": {
+      "publishedDate": "2026-09-24T16:10:43+05:30",
+      "publishedAt": "2026-09-24T10:40:43.000Z",
+      "lastDate": "21 July 2026"
+    },
+    "ukpsc-lecturer-2026": {
+      "publishedDate": "2026-09-24T17:33:53+05:30",
+      "publishedAt": "2026-09-24T12:03:53.000Z",
+      "lastDate": "20 January 2026"
     }
   },
-  "fetchedAt": "2026-09-24T08:34:33.081Z",
+  "fetchedAt": "2026-09-24T16:07:51.913Z",
   "seo": {
-    "lastOptimized": "2026-09-24T08:34:37.013Z",
-    "totalPosts": 1243,
+    "lastOptimized": "2026-09-24T16:07:54.358Z",
+    "totalPosts": 1246,
     "websiteName": "All India Exam Result",
     "websiteUrl": "https://www.aiexamresult.com",
     "description": "Sarkari Result 2026 - Get fastest government job alerts, sarkari naukri, exam results, admit cards & answer keys. SSC, UPSC, Railway, Banking, UP, Bihar & all India exams."
