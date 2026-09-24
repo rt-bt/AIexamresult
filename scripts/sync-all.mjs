@@ -143,6 +143,10 @@ function isBlockedLink(url, label) {
   const lu = url.toLowerCase();
   const ll = (label || "").toLowerCase();
 
+  // Allow sarkariexam.com/wp-content/ — these are hosted PDFs (admit cards, notifications, syllabus)
+  // that are legitimate official documents, not competitor navigation links
+  if (lu.includes("sarkariexam.com/wp-content/")) return false;
+
   if (/sarkariresult|sarkariexam|rojgarresult|resultbharat|sarkarialert|naukaritime|freejobalert|instagram|whatsapp|telegram|t\.me|play\.google|youtube|facebook|twitter|x\.com/i.test(lu)) {
     return true;
   }

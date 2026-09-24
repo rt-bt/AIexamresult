@@ -1,4 +1,4 @@
-// Auto-generated - DO NOT EDIT
+// Auto-generated clean sync - DO NOT EDIT
 export const scrapedData = {
   "results": [
     {
