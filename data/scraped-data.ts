@@ -1,4 +1,4 @@
-// Auto-generated clean sync - DO NOT EDIT
+// Auto-generated - DO NOT EDIT
 export const scrapedData = {
   "results": [
     {
@@ -4778,8 +4778,8 @@ export const scrapedData = {
       "url": "/post/bank-of-baroda-so-2026",
       "category": "latestJobs",
       "slug": "bank-of-baroda-so-2026",
-      "publishedDate": "2026-09-24T13:47:05+05:30",
-      "publishedAt": "2026-09-24T08:17:05.000Z"
+      "publishedDate": "2026-09-25T10:21:50+05:30",
+      "publishedAt": "2026-09-25T04:51:50.000Z"
     },
     {
       "title": "PFRDA Assistant Manager Online Form 2026 – Last Date",
@@ -4802,8 +4802,8 @@ export const scrapedData = {
       "url": "/post/bhu-non-teaching-various-post-2026",
       "category": "latestJobs",
       "slug": "bhu-non-teaching-various-post-2026",
-      "publishedDate": "2026-09-24T13:42:34+05:30",
-      "publishedAt": "2026-09-24T08:12:34.000Z"
+      "publishedDate": "2026-09-25T10:19:02+05:30",
+      "publishedAt": "2026-09-25T04:49:02.000Z"
     },
     {
       "title": "MP Police GD Constable Online Form 2026 (7500 Posts)",
@@ -4818,8 +4818,8 @@ export const scrapedData = {
       "url": "/post/bpsc-school-teacher-tre-4-0-2026",
       "category": "latestJobs",
       "slug": "bpsc-school-teacher-tre-4-0-2026",
-      "publishedDate": "2026-09-23T17:41:02+05:30",
-      "publishedAt": "2026-09-23T12:11:02.000Z"
+      "publishedDate": "2026-09-25T10:33:27+05:30",
+      "publishedAt": "2026-09-25T05:03:27.000Z"
     },
     {
       "title": "RRB NTPC 10+2 UG Level 07/2026 Online Form 2026",
@@ -4970,16 +4970,16 @@ export const scrapedData = {
       "url": "/post/mpesb-subedar-steno-asi-2026",
       "category": "latestJobs",
       "slug": "mpesb-subedar-steno-asi-2026",
-      "publishedDate": "2026-09-17T19:58:56+05:30",
-      "publishedAt": "2026-09-17T14:28:56.000Z"
+      "publishedDate": "2026-09-25T10:23:25+05:30",
+      "publishedAt": "2026-09-25T04:53:25.000Z"
     },
     {
       "title": "Rajasthan Safai Karamchari Online Form 2026 (24752 Posts)",
       "url": "/post/rajasthan-safai-karamchari-2026",
       "category": "latestJobs",
       "slug": "rajasthan-safai-karamchari-2026",
-      "publishedDate": "2026-09-17T10:19:12+05:30",
-      "publishedAt": "2026-09-17T04:49:12.000Z"
+      "publishedDate": "2026-09-25T10:49:39+05:30",
+      "publishedAt": "2026-09-25T05:19:39.000Z"
     },
     {
       "title": "UPSC Engineering Services Pre Online Form 2027",
@@ -5010,8 +5010,8 @@ export const scrapedData = {
       "url": "/post/sbi-sco-wealth-other-post-2026",
       "category": "latestJobs",
       "slug": "sbi-sco-wealth-other-post-2026",
-      "publishedDate": "2026-09-16T14:21:16+05:30",
-      "publishedAt": "2026-09-16T08:51:16.000Z"
+      "publishedDate": "2026-09-25T10:32:50+05:30",
+      "publishedAt": "2026-09-25T05:02:50.000Z"
     },
     {
       "title": "MP High Court Assistant Grade III Online Form 2026 – Extend",
@@ -5106,8 +5106,8 @@ export const scrapedData = {
       "url": "/post/boi-so-2026",
       "category": "latestJobs",
       "slug": "boi-so-2026",
-      "publishedDate": "21 September 2026",
-      "publishedAt": "2026-09-21T06:32:22.342Z"
+      "publishedDate": "2026-09-25T10:32:36+05:30",
+      "publishedAt": "2026-09-25T05:02:36.000Z"
     },
     {
       "title": "UKPSC Upper PCS Online Form 2026",
@@ -10267,9 +10267,9 @@ export const scrapedData = {
       "lastDate": "26 August 2025"
     },
     "bank-of-baroda-so-2026": {
-      "publishedDate": "2026-09-24T13:47:05+05:30",
-      "publishedAt": "2026-09-24T08:17:05.000Z",
-      "lastDate": "24 September 2026"
+      "publishedDate": "2026-09-25T10:21:50+05:30",
+      "publishedAt": "2026-09-25T04:51:50.000Z",
+      "lastDate": "01 October 2026"
     },
     "bank-of-india-apprentice-recruitment-2026": {
       "publishedDate": "2026-01-02T17:03:02+05:30",
@@ -10332,9 +10332,9 @@ export const scrapedData = {
       "lastDate": "30 April 2025"
     },
     "bhu-non-teaching-various-post-2026": {
-      "publishedDate": "2026-09-24T13:42:34+05:30",
-      "publishedAt": "2026-09-24T08:12:34.000Z",
-      "lastDate": "24 September 2026"
+      "publishedDate": "2026-09-25T10:19:02+05:30",
+      "publishedAt": "2026-09-25T04:49:02.000Z",
+      "lastDate": "01 October 2026"
     },
     "bihar-2yr-bed-2": {
       "publishedDate": "19 June 2026",
@@ -10691,8 +10691,8 @@ export const scrapedData = {
       "lastDate": "27/02/2026\nLast Date for Apply Online :20/03/2026\nPay Exam Fee Last Date :20/03/2026\nExam Date : 15/07/2026\nAdmit Card Available :06/07/2026 : Application Fee\n\nGeneral / OBC/ Other State : 100/-\nSC / ST / PH : 100/-\nFemale Candidate (Bihar Dom.) : 100/-\nPay the Exam Fee Through Online / Offline Fee Mode Only"
     },
     "bpsc-school-teacher-tre-4-0-2026": {
-      "publishedDate": "2026-09-23T17:41:02+05:30",
-      "publishedAt": "2026-09-23T12:11:02.000Z",
+      "publishedDate": "2026-09-25T10:33:27+05:30",
+      "publishedAt": "2026-09-25T05:03:27.000Z",
       "lastDate": "26 October 2026"
     },
     "BPSC-Simultala-School-Teacher-2024": {
@@ -12584,8 +12584,8 @@ export const scrapedData = {
       "lastDate": "09/09/2026\nLast Date for Apply Online : 23/09/2026\nPay Exam Fee Last Date : 23/09/2026\nCorrection Last Date : 28/09/2026\nMPESB SI / Subedar Exam Date Start : 28/10/2026\nAdmit Card Available : Before Exam : Application Fee\n\nGeneral / Other State : 560/-\nOBC / SC / ST : 310/-\nPortal Charges: Rs. 60/- (Include) \nPay the Examination Fee Through Cast at E Challan or Debit Card, Credit Card, Net Banking"
     },
     "mpesb-subedar-steno-asi-2026": {
-      "publishedDate": "2026-09-17T19:58:56+05:30",
-      "publishedAt": "2026-09-17T14:28:56.000Z",
+      "publishedDate": "2026-09-25T10:23:25+05:30",
+      "publishedAt": "2026-09-25T04:53:25.000Z",
       "lastDate": "08 October 2026"
     },
     "mpesb-subedar-steno-asi-oct25": {
@@ -13357,9 +13357,9 @@ export const scrapedData = {
       "lastDate": "14 September 2026"
     },
     "rajasthan-safai-karamchari-2026": {
-      "publishedDate": "2026-09-17T10:19:12+05:30",
-      "publishedAt": "2026-09-17T04:49:12.000Z",
-      "lastDate": "28 September 2026"
+      "publishedDate": "2026-09-25T10:49:39+05:30",
+      "publishedAt": "2026-09-25T05:19:39.000Z",
+      "lastDate": "13 October 2026"
     },
     "rajasthan-sanitation-worker-jul26": {
       "publishedDate": "28 July 2026",
@@ -14109,8 +14109,8 @@ export const scrapedData = {
       "lastDate": "04/09/2026\nLast Date for Apply Online :25/09/2026\nPay Exam Fee Last Date :25/09/2026\nSBI SCO Exam Date : As per Schedule\nAdmit Card Available : Before Exam : Application Fee\n\nGeneral / OBC / EWS : 750/-\nSC / ST / PH : 0/-\nPay the Exam Fee Through Debit Card / Credit Card / Net Banking / UPI Fee Mode Only."
     },
     "sbi-sco-wealth-other-post-2026": {
-      "publishedDate": "2026-09-16T14:21:16+05:30",
-      "publishedAt": "2026-09-16T08:51:16.000Z",
+      "publishedDate": "2026-09-25T10:32:50+05:30",
+      "publishedAt": "2026-09-25T05:02:50.000Z",
       "lastDate": "25 September 2026"
     },
     "sbi-specialist-co-august26": {
@@ -15917,8 +15917,8 @@ export const scrapedData = {
       "publishedAt": "2026-09-14T12:22:58.000Z"
     },
     "boi-so-2026": {
-      "publishedDate": "21 September 2026",
-      "publishedAt": "2026-09-21T06:32:22.342Z",
+      "publishedDate": "2026-09-25T10:32:36+05:30",
+      "publishedAt": "2026-09-25T05:02:36.000Z",
       "lastDate": "25 September 2026"
     },
     "ukpsc-upper-pcs-2026": {
@@ -16052,9 +16052,9 @@ export const scrapedData = {
       "lastDate": "20 January 2026"
     }
   },
-  "fetchedAt": "2026-09-24T16:19:07.054Z",
+  "fetchedAt": "2026-09-25T05:35:36.613Z",
   "seo": {
-    "lastOptimized": "2026-09-24T16:19:09.549Z",
+    "lastOptimized": "2026-09-25T05:35:40.255Z",
     "totalPosts": 1246,
     "websiteName": "All India Exam Result",
     "websiteUrl": "https://www.aiexamresult.com",
