@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 448" width="576" height="448" fill="none">
+  <defs>
+    <linearGradient id="headerGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D9488" />
+      <stop offset="100%" stop-color="#14B8A6" />
+    </linearGradient>
+    <linearGradient id="bgGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F8FAFC" />
+    </linearGradient>
+    <filter id="shadow1" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+  </defs>
+
+  <!-- Document Card Background -->
+  <rect x="12" y="12" width="552" height="424" rx="16" fill="url(#bgGrad1)" stroke="#E2E8F0" stroke-width="2" filter="url(#shadow1)" />
+
+  <!-- Header Banner -->
+  <path d="M14 28 C14 20.268 20.268 14 28 14 L548 14 C555.732 14 562 20.268 562 28 L562 90 L14 90 Z" fill="url(#headerGrad1)" />
+
+  <!-- Header Content -->
+  <circle cx="50" cy="52" r="20" fill="#FFFFFF" fill-opacity="0.2" />
+  <circle cx="50" cy="52" r="12" fill="#FFFFFF" />
+  <path d="M44 52 L48 56 L56 48" stroke="#0D9488" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <text x="82" y="46" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="800" letter-spacing="0.5">OFFICIAL SCORECARD 2026</text>
+  <text x="82" y="66" fill="#CCFBF1" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500">Government Exam Result &amp; Merit List</text>
+
+  <!-- Status Pill -->
+  <rect x="420" y="38" width="120" height="28" rx="14" fill="#FFFFFF" />
+  <text x="480" y="56" fill="#0D9488" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="800" text-anchor="middle">QUALIFIED</text>
+
+  <!-- Document Body Grid -->
+  <rect x="36" y="112" width="504" height="60" rx="10" fill="#F1F5F9" />
+  <text x="56" y="136" fill="#64748B" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600">CANDIDATE ROLL NUMBER</text>
+  <text x="56" y="156" fill="#0F172A" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="800" font-family="monospace">2408910482</text>
+
+  <text x="320" y="136" fill="#64748B" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600">PERCENTILE SCORE</text>
+  <text x="320" y="157" fill="#0D9488" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="900">99.42 %</text>
+
+  <!-- Subject Breakdown -->
+  <rect x="36" y="190" width="504" height="150" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" />
+  
+  <!-- Row 1 -->
+  <text x="56" y="222" fill="#1E293B" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700">General Intelligence &amp; Reasoning</text>
+  <rect x="360" y="212" width="130" height="10" rx="5" fill="#E2E8F0" />
+  <rect x="360" y="212" width="118" height="10" rx="5" fill="#0D9488" />
+  <text x="502" y="222" fill="#0F172A" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700">48/50</text>
+
+  <line x1="36" y1="240" x2="540" y2="240" stroke="#F1F5F9" stroke-width="1.5" />
+
+  <!-- Row 2 -->
+  <text x="56" y="272" fill="#1E293B" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700">Quantitative Aptitude</text>
+  <rect x="360" y="262" width="130" height="10" rx="5" fill="#E2E8F0" />
+  <rect x="360" y="262" width="122" height="10" rx="5" fill="#0D9488" />
+  <text x="502" y="272" fill="#0F172A" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700">49/50</text>
+
+  <line x1="36" y1="290" x2="540" y2="290" stroke="#F1F5F9" stroke-width="1.5" />
+
+  <!-- Row 3 -->
+  <text x="56" y="322" fill="#1E293B" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700">English Language &amp; Comprehension</text>
+  <rect x="360" y="312" width="130" height="10" rx="5" fill="#E2E8F0" />
+  <rect x="360" y="312" width="112" height="10" rx="5" fill="#0D9488" />
+  <text x="502" y="322" fill="#0F172A" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700">46/50</text>
+
+  <!-- Footer Seal Badge -->
+  <rect x="36" y="360" width="504" height="52" rx="10" fill="#CCFBF1" fill-opacity="0.5" stroke="#99F6E4" stroke-width="1" />
+  <circle cx="62" cy="386" r="14" fill="#0D9488" />
+  <text x="62" y="391" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="900" text-anchor="middle">✓</text>
+  <text x="88" y="382" fill="#0F766E" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="800">ALL INDIA MERIT RANK #142</text>
+  <text x="88" y="398" fill="#115E59" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="500">Document Verification Call Letter Issued</text>
+</svg>

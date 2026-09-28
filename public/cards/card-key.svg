@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 448" width="576" height="448" fill="none">
+  <defs>
+    <linearGradient id="headerGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C3AED" />
+      <stop offset="100%" stop-color="#A78BFA" />
+    </linearGradient>
+    <linearGradient id="bgGrad4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#FAF5FF" />
+    </linearGradient>
+    <filter id="shadow4" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+  </defs>
+
+  <rect x="12" y="12" width="552" height="424" rx="16" fill="url(#bgGrad4)" stroke="#DDD6FE" stroke-width="2" filter="url(#shadow4)" />
+
+  <!-- Header Banner -->
+  <path d="M14 28 C14 20.268 20.268 14 28 14 L548 14 C555.732 14 562 20.268 562 28 L562 90 L14 90 Z" fill="url(#headerGrad4)" />
+
+  <circle cx="50" cy="52" r="20" fill="#FFFFFF" fill-opacity="0.2" />
+  <circle cx="50" cy="52" r="12" fill="#FFFFFF" />
+  <text x="50" y="57" fill="#7C3AED" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="900" text-anchor="middle">🔑</text>
+  
+  <text x="82" y="46" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="800" letter-spacing="0.5">OFFICIAL ANSWER KEY &amp; OBJECTION</text>
+  <text x="82" y="66" fill="#EDE9FE" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500">Candidate Response Sheet &amp; Master Solutions</text>
+
+  <rect x="420" y="38" width="120" height="28" rx="14" fill="#FFFFFF" />
+  <text x="480" y="56" fill="#7C3AED" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="800" text-anchor="middle">CHECK KEY</text>
+
+  <!-- Key Info -->
+  <rect x="36" y="112" width="504" height="64" rx="12" fill="#FFFFFF" stroke="#DDD6FE" stroke-width="1.5" />
+  <text x="56" y="136" fill="#5B21B6" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700">OBJECTION WINDOW</text>
+  <text x="56" y="160" fill="#7C3AED" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="900">ACTIVE: 18 - 25 SEPT 2026</text>
+
+  <text x="320" y="136" fill="#5B21B6" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700">QUESTION CHALLENGE FEE</text>
+  <text x="320" y="160" fill="#0F172A" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="900">₹100 / Question</text>
+
+  <!-- Question Sample Preview -->
+  <rect x="36" y="194" width="504" height="146" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" />
+  
+  <text x="56" y="226" fill="#1E293B" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700">Q.14 (General Studies) - Answer Option 2</text>
+  <text x="440" y="226" fill="#0D9488" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="800">CORRECT ✓</text>
+
+  <line x1="36" y1="242" x2="540" y2="242" stroke="#F1F5F9" stroke-width="1.5" />
+
+  <text x="56" y="274" fill="#1E293B" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700">Q.38 (Mathematics) - Answer Option 4</text>
+  <text x="440" y="274" fill="#0D9488" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="800">CORRECT ✓</text>
+
+  <line x1="36" y1="290" x2="540" y2="290" stroke="#F1F5F9" stroke-width="1.5" />
+
+  <text x="56" y="322" fill="#1E293B" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700">Q.71 (General Hindi) - Answer Option 1</text>
+  <text x="440" y="322" fill="#EA580C" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="800">CHALLENGE ?</text>
+
+  <!-- Footer Banner -->
+  <rect x="36" y="360" width="504" height="52" rx="10" fill="#EDE9FE" stroke="#DDD6FE" stroke-width="1" />
+  <circle cx="62" cy="386" r="14" fill="#7C3AED" />
+  <text x="62" y="391" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="900" text-anchor="middle">✓</text>
+  <text x="88" y="382" fill="#5B21B6" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="800">LOGIN WITH ROLL NUMBER &amp; DOB</text>
+  <text x="88" y="398" fill="#6D28D9" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="500">Official Server Link 1 &amp; Link 2 Available</text>
+</svg>

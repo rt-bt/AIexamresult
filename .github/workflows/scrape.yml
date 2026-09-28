@@ -1,0 +1,42 @@
+name: Auto-Scrape
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+  push:
+    branches: [master]
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci || npm install
+      - run: npm run scrape || echo "Scrape completed with some errors"
+      - run: node scripts/seo-optimize.mjs || echo "SEO optimization skipped"
+
+      - name: Upload data to S3 backup
+        if: success()
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: ap-south-1
+        run: |
+          aws s3 cp data/scraped.json s3://aiexamresult-data/scraped.json --quiet
+          aws s3 sync data/posts/ s3://aiexamresult-data/posts/ --exclude "*" --include "*.json" --quiet
+
+      - name: Push data to EC2 and reload
+        uses: appleboy/ssh-action@v1.2.2
+        with:
+          host: 65.0.146.40
+          username: ubuntu
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            cd /home/ubuntu/a-iexamresult
+            curl -s -o data/scraped.json https://aiexamresult-data.s3.ap-south-1.amazonaws.com/scraped.json
+            pm2 restart aiexamresult
