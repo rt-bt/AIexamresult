@@ -187,14 +187,23 @@ export function generateArticleContent(facts) {
     </thead>
     <tbody class="divide-y divide-gray-200 bg-white">
       ${vacancyDetails
-        .map(
-          (v) => `
+        .map((v) => {
+          if (v && typeof v === "object") {
+            return `
       <tr>
-        <td class="px-4 py-3 font-semibold text-gray-900">${v.postName}</td>
-        <td class="px-4 py-3 text-gray-700">${v.totalPost}</td>
-        <td class="px-4 py-3 text-gray-600">${v.eligibility}</td>
-      </tr>`
-        )
+        <td class="px-4 py-3 font-semibold text-gray-900">${v.postName || ""}</td>
+        <td class="px-4 py-3 text-gray-700">${v.totalPost || ""}</td>
+        <td class="px-4 py-3 text-gray-600">${v.eligibility || ""}</td>
+      </tr>`;
+          }
+          const parts = String(v || "").split(":");
+          return `
+      <tr>
+        <td class="px-4 py-3 font-semibold text-gray-900">${parts[0]?.trim() || String(v)}</td>
+        <td class="px-4 py-3 text-gray-700">${parts.slice(1).join(":").trim() || "-"}</td>
+        <td class="px-4 py-3 text-gray-600">-</td>
+      </tr>`;
+        })
         .join("")}
     </tbody>
   </table>

@@ -846,22 +846,36 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                 </TableCard>
               )}
 
-              {/* Eligibility / Age Limit / Qualification - extracted from importantDates */}
-              {post.importantDates?.filter((d: string) =>
-                d.toLowerCase().includes("age") || d.toLowerCase().includes("qualification") || d.toLowerCase().includes("eligible")
-              ).length > 0 && (
+              {/* Eligibility / Age Limit / Qualification - from post.ageLimit or extracted from importantDates */}
+              {((post.ageLimit && post.ageLimit.length > 0) || (post.importantDates && post.importantDates.some((d: any) =>
+                typeof d === "string" && (d.toLowerCase().includes("age") || d.toLowerCase().includes("qualification") || d.toLowerCase().includes("eligible"))
+              ))) && (
                 <TableCard icon={<GraduationCap className="h-4 w-4" />} title="Eligibility & Age Limit" gradient="border-b border-sky-100 bg-sky-50/50">
                   <div className="divide-y divide-gray-50">
-                    {post.importantDates.filter((d: string) =>
-                      d.toLowerCase().includes("age") || d.toLowerCase().includes("qualification") || d.toLowerCase().includes("eligible")
-                    ).map((d: string, i: number) => (
-                      <div key={i} className="flex items-start gap-3 py-3 first:pt-0 last:pb-0">
-                        <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-sky-100 text-xs font-black text-sky-600">
-                          <CheckCircle className="h-3.5 w-3.5" />
-                        </span>
-                        <p className="text-sm leading-6 text-gray-700" dangerouslySetInnerHTML={{ __html: d }} />
-                      </div>
-                    ))}
+                    {post.ageLimit && post.ageLimit.length > 0 ? (
+                      post.ageLimit.map((d: any, i: number) => {
+                        const text = typeof d === "string" ? d : JSON.stringify(d);
+                        return (
+                          <div key={i} className="flex items-start gap-3 py-3 first:pt-0 last:pb-0">
+                            <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-sky-100 text-xs font-black text-sky-600">
+                              <CheckCircle className="h-3.5 w-3.5" />
+                            </span>
+                            <p className="text-sm leading-6 text-gray-700">{text}</p>
+                          </div>
+                        );
+                      })
+                    ) : (
+                      post.importantDates.filter((d: any) =>
+                        typeof d === "string" && (d.toLowerCase().includes("age") || d.toLowerCase().includes("qualification") || d.toLowerCase().includes("eligible"))
+                      ).map((d: string, i: number) => (
+                        <div key={i} className="flex items-start gap-3 py-3 first:pt-0 last:pb-0">
+                          <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-sky-100 text-xs font-black text-sky-600">
+                            <CheckCircle className="h-3.5 w-3.5" />
+                          </span>
+                          <p className="text-sm leading-6 text-gray-700" dangerouslySetInnerHTML={{ __html: d }} />
+                        </div>
+                      ))
+                    )}
                   </div>
                 </TableCard>
               )}
@@ -873,17 +887,31 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
               {post.vacancyDetails && post.vacancyDetails.length > 0 ? (
                 <TableCard icon={<Users className="h-4 w-4" />} title="Vacancy Details" gradient="border-b border-violet-100 bg-violet-50/50">
                   <div className="divide-y divide-violet-100">
-                    {post.vacancyDetails.map((v: string, i: number) => {
-                      const lower = v.toLowerCase();
+                    {post.vacancyDetails.map((v: any, i: number) => {
+                      if (v && typeof v === "object") {
+                        return (
+                          <div key={i} className="py-3 first:pt-0 last:pb-0">
+                            <div className="flex items-center justify-between">
+                              <span className="text-sm font-semibold text-gray-800">{v.postName || "Post Name"}</span>
+                              <span className="text-sm font-bold text-violet-800">{v.totalPost || "Check Notification"}</span>
+                            </div>
+                            {v.eligibility && (
+                              <p className="mt-1 text-xs text-gray-600">{v.eligibility}</p>
+                            )}
+                          </div>
+                        );
+                      }
+                      const vStr = typeof v === "string" ? v : String(v || "");
+                      const lower = vStr.toLowerCase();
                       if (lower.includes("total post") || lower.includes("total posts")) {
                         return (
                           <div key={i} className="flex items-center justify-between py-3 first:pt-0">
                             <span className="text-sm font-semibold text-violet-700">Total Posts</span>
-                            <span className="text-lg font-black text-violet-800">{v.split(":")[1]?.trim() || v}</span>
+                            <span className="text-lg font-black text-violet-800">{vStr.split(":")[1]?.trim() || vStr}</span>
                           </div>
                         );
                       }
-                      const parts = v.split(":");
+                      const parts = vStr.split(":");
                       const name = parts[0]?.trim() || "";
                       const count = parts.slice(1).join(":").trim();
                       return (
