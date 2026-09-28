@@ -10,6 +10,7 @@ import { Header } from "@/components/site/header";
 import { Footer } from "@/components/site/footer";
 import { BookmarkBtn } from "@/components/site/bookmark-btn";
 import { ShareButtons } from "@/components/site/share-buttons";
+import { ExamTimeline } from "@/components/site/exam-timeline";
 import { getPostBySlug, parseDate, sectionItems } from "@/lib/data";
 import { CalendarDays, ExternalLink, AlertTriangle, CheckCircle, ChevronRight, BadgeInfo, Banknote, ArrowUpRight, Gauge, Users, Clock, GraduationCap, IndianRupee, FileText, Mail, Download, Bell } from "lucide-react";
 import { AdUnit } from "@/components/ads/ad-unit";
@@ -987,97 +988,8 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                 </TableCard>
               )}
 
-              {/* Result Timeline Tracker */}
-              {post.importantDates && post.importantDates.length > 0 && (() => {
-                function isFuture(val: string): boolean {
-                  const v = val.toLowerCase().trim();
-                  if (/notify later|before exam|available soon|tentative|to be announced|will be notified|soon|update soon/i.test(v)) return true;
-                  const now = new Date();
-                  const months = ["january","february","march","april","may","june","july","august","september","october","november","december"];
-                  const monthIdx: Record<string, number> = {};
-                  months.forEach((m, i) => { monthIdx[m] = i; });
-                  const ddmmyy = v.match(/(\d{1,2})[\/-](\d{1,2})[\/-](\d{4})/);
-                  if (ddmmyy) {
-                    const d = new Date(parseInt(ddmmyy[3]), parseInt(ddmmyy[2]) - 1, parseInt(ddmmyy[1]));
-                    if (!isNaN(d.getTime())) return d > now;
-                  }
-                  const ddmonyy = v.match(/(\d{1,2})\s+(january|february|march|april|may|june|july|august|september|october|november|december),?\s+(\d{4})/i);
-                  if (ddmonyy) {
-                    const d = new Date(parseInt(ddmonyy[3]), monthIdx[ddmonyy[2].toLowerCase()], parseInt(ddmonyy[1]));
-                    if (!isNaN(d.getTime())) return d > now;
-                  }
-                  const monyy = v.match(/(january|february|march|april|may|june|july|august|september|october|november|december)\s+(\d{4})/i);
-                  if (monyy) {
-                    const m = monthIdx[monyy[1].toLowerCase()];
-                    const y = parseInt(monyy[2]);
-                    if (y > now.getFullYear()) return true;
-                    if (y === now.getFullYear() && m > now.getMonth()) return true;
-                  }
-                  for (let m = now.getMonth() + 1; m < 12; m++) {
-                    if (v.includes(months[m])) return true;
-                  }
-                  for (let y = now.getFullYear() + 1; y <= 2030; y++) {
-                    if (v.includes(y.toString())) return true;
-                  }
-                  return false;
-                }
-                function isDone(keyword: string): boolean {
-                  return (post.importantDates || []).some((d: string) => {
-                    const lower = d.toLowerCase();
-                    if (!lower.includes(keyword.toLowerCase())) return false;
-                    const parts = d.split(/[:–-]/).map((s: string) => s.trim());
-                    if (parts.length < 2) return true;
-                    const val = parts.slice(1).join(" ");
-                    return !isFuture(val);
-                  });
-                }
-                const phases = [
-                  { label: "Notification", key: "notif", done: true },
-                  { label: "Apply Start", key: "apply", done: isDone("Apply Start") || isDone("Application Start") || (post.importantDates || []).some((d: string) => (d.toLowerCase().includes("apply") || d.toLowerCase().includes("application")) && !isFuture(d.split(/[:–-]/).slice(1).join(" "))) },
-                  { label: "Admit Card", key: "admit", done: isDone("Admit Card") },
-                  { label: "Exam Date", key: "exam", done: isDone("Exam Date") || isDone("Exam") },
-                  { label: "Answer Key", key: "anskey", done: isDone("Answer Key") },
-                  { label: "Result", key: "result", done: isDone("Result") },
-                  { label: "Merit", key: "merit", done: isDone("Merit") || isDone("Merit List") },
-                ];
-                const doneCount = phases.filter(p => p.done).length;
-                return (
-                  <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
-                    <div className="border-b border-gray-100 bg-gray-50/80 px-5 py-4">
-                      <h2 className="flex items-center gap-2.5 text-base font-bold text-gray-900">
-                        <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand/10 text-brand">
-                          <Clock className="h-4 w-4" />
-                        </span>
-                        Result Timeline
-                      </h2>
-                    </div>
-                    <div className="px-5 py-5">
-                      <div className="flex items-center justify-between gap-1 mb-4">
-                        {phases.map((p, i) => (
-                          <div key={p.key} className="flex flex-col items-center flex-1">
-                            <div className="flex items-center w-full">
-                              <div className={`h-2 w-full rounded-full ${p.done ? "bg-brand" : "bg-gray-100"}`} />
-                              <div className={`shrink-0 flex h-6 w-6 items-center justify-center rounded-full text-xs font-bold ${
-                                p.done ? "bg-brand text-white" : "bg-gray-100 text-gray-400"
-                              }`}>
-                                {p.done ? <CheckCircle className="h-3.5 w-3.5" /> : <span className="text-[10px]">{i + 1}</span>}
-                              </div>
-                              <div className={`h-2 w-full rounded-full ${i < phases.length - 1 ? (phases[i + 1].done ? "bg-brand" : "bg-gray-100") : "hidden"}`} />
-                            </div>
-                            <span className={`mt-1.5 text-[10px] font-semibold text-center whitespace-nowrap ${p.done ? "text-brand" : "text-gray-400"}`}>
-                              {p.label}
-                            </span>
-                          </div>
-                        ))}
-                      </div>
-                      <div className="flex items-center justify-between rounded-xl bg-brand/5 px-4 py-2.5">
-                        <span className="text-xs font-medium text-gray-600">Progress</span>
-                        <span className="text-sm font-bold text-brand">{doneCount}/{phases.length} completed</span>
-                      </div>
-                    </div>
-                  </div>
-                );
-              })()}
+              {/* Date-Driven Exam & Recruitment Timeline Tracker */}
+              <ExamTimeline post={post} />
 
               {/* Cutoff & Merit */}
               {(post.cutoff || hasCutoffContent) && (
