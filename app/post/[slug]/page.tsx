@@ -51,7 +51,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     : `${title}${yearStr}`;
 
   // Build high-CTR meta description (strip any adinserter / shortcodes)
-  let rawIntro = (post.intro || "").replace(/\[adinserter[^\]]*\]/gi, "").replace(/<[^>]*>/g, "").trim();
+  const rawIntro = (post.intro || "").replace(/\[adinserter[^\]]*\]/gi, "").replace(/<[^>]*>/g, "").trim();
   let desc = "";
 
   if (rawIntro.length > 50) {

@@ -1,4 +1,4 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import { Award, BookOpen, CheckCircle2, FileText, Globe, GraduationCap, ShieldCheck, Sparkles } from "lucide-react";
 
 export function SeoContentSection() {
@@ -8,7 +8,7 @@ export function SeoContentSection() {
         {/* Main Section Header */}
         <div className="max-w-4xl">
           <div className="inline-flex items-center gap-2 rounded-full bg-teal-50 px-3 py-1 text-xs font-bold text-[#0D9488] ring-1 ring-[#0D9488]/20">
-            <Sparkles className="h-3.5 w-3.5" /> India's No. 1 Sarkari Result &amp; Job Alert Portal
+            <Sparkles className="h-3.5 w-3.5" /> India&apos;s No. 1 Sarkari Result &amp; Job Alert Portal
           </div>
           <h2 className="mt-3 text-2xl sm:text-3xl font-black tracking-tight text-slate-900">
             Sarkari Result 2026 : Sarkari Exam, Sarkari Naukri &amp; Rojgar Result

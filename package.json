@@ -14,6 +14,16 @@
     "auto-sync": "tsx lib/auto-sync.ts",
     "sync-sarkariresult": "node scripts/sync-sarkariresult.mjs",
     "sync-all": "node scripts/sync-all.mjs",
+    "content:discover": "node scripts/content-pipeline/sync.mjs --discover",
+    "content:research": "node scripts/content-pipeline/sync.mjs --research",
+    "content:generate": "node scripts/content-pipeline/sync.mjs --generate",
+    "content:validate": "node scripts/content-pipeline/sync.mjs --validate",
+    "content:sync": "node scripts/content-pipeline/sync.mjs",
+    "content:sync:dry": "node scripts/content-pipeline/sync.mjs --dry-run",
+    "content:sync:publish": "node scripts/content-pipeline/sync.mjs --publish",
+    "content:update": "node scripts/content-pipeline/sync.mjs --update",
+    "content:report": "node scripts/content-pipeline/sync.mjs --report",
+    "seo:check": "node scripts/content-pipeline/seoCheck.mjs",
     "postinstall": "node -e \"require('fs').copyFileSync('node_modules/pdfjs-dist/build/pdf.worker.min.mjs', 'public/pdf.worker.min.js')\""
   },
   "dependencies": {

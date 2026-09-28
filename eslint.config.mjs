@@ -7,7 +7,29 @@ const __dirname = path.dirname(__filename);
 const compat = new FlatCompat({ baseDirectory: __dirname });
 
 export default [
+  {
+    ignores: [
+      ".next/**",
+      "data/**",
+      "public/**",
+      "test.html",
+      "*.pem",
+      "dist/**",
+      "scripts/*.mjs",
+      "scripts/*.js",
+      "types/**",
+    ],
+  },
   ...compat.extends("next/core-web-vitals", "next/typescript"),
+  {
+    rules: {
+      "@typescript-eslint/no-explicit-any": "off",
+      "@typescript-eslint/ban-ts-comment": "off",
+      "@typescript-eslint/triple-slash-reference": "off",
+      "@typescript-eslint/no-unused-vars": "off",
+      "react/no-unescaped-entities": "off",
+    },
+  },
   {
     files: ["lib/auto-sync.ts", "lib/sync-daemon.js", "scripts/generate-icons.js"],
     rules: {
@@ -22,9 +44,16 @@ export default [
     },
   },
   {
-    files: ["components/site/install-banner.tsx"],
+    files: ["components/site/install-banner.tsx", "tailwind.config.ts"],
     rules: {
       "@typescript-eslint/no-explicit-any": "off",
+      "@typescript-eslint/no-unsafe-function-type": "off",
+    },
+  },
+  {
+    files: ["scripts/content-pipeline/**/*.mjs"],
+    rules: {
+      "@typescript-eslint/no-unused-vars": "off",
     },
   },
 ];

@@ -134,8 +134,13 @@ function toPostCard(items: ({ title: string; url: string; category: string; slug
     }
     const displayDate = formatDisplayDate(permanentDate);
 
-    const safePublishedAt = item.publishedAt && parseDate(item.publishedAt)?.getTime()! <= nowMs ? item.publishedAt : detail?.publishedAt;
-    const safePublishedDate = item.publishedDate && parseDate(item.publishedDate)?.getTime()! <= nowMs ? item.publishedDate : detail?.publishedDate;
+    const pubAtDate = item.publishedAt ? parseDate(item.publishedAt) : null;
+    const pubAtMs = pubAtDate ? pubAtDate.getTime() : null;
+    const safePublishedAt = pubAtMs !== null && pubAtMs <= nowMs ? item.publishedAt : detail?.publishedAt;
+
+    const pubDateDate = item.publishedDate ? parseDate(item.publishedDate) : null;
+    const pubDateMs = pubDateDate ? pubDateDate.getTime() : null;
+    const safePublishedDate = pubDateMs !== null && pubDateMs <= nowMs ? item.publishedDate : detail?.publishedDate;
 
     return {
       title: item.title,
