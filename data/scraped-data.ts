@@ -4810,8 +4810,8 @@ export const scrapedData = {
       "url": "/post/ssc-cpo-si-capf-2026",
       "category": "latestJobs",
       "slug": "ssc-cpo-si-capf-2026",
-      "publishedDate": "2026-09-29T17:09:19+05:30",
-      "publishedAt": "2026-09-29T11:39:19.000Z"
+      "publishedDate": "2026-09-30T10:06:38+05:30",
+      "publishedAt": "2026-09-30T04:36:38.000Z"
     },
     {
       "title": "MP Police GD Constable Online Form 2026 (7500 Posts)",
@@ -4954,8 +4954,8 @@ export const scrapedData = {
       "url": "/post/indian-army-tgc-145-2026",
       "category": "latestJobs",
       "slug": "indian-army-tgc-145-2026",
-      "publishedDate": "2026-09-22T17:21:22+05:30",
-      "publishedAt": "2026-09-22T11:51:22.000Z"
+      "publishedDate": "2026-09-30T17:39:09+05:30",
+      "publishedAt": "2026-09-30T12:09:09.000Z"
     },
     {
       "title": "Indian Army Dental Corps Online Form 2026",
@@ -5034,8 +5034,8 @@ export const scrapedData = {
       "url": "/post/mp-high-court-assistant-grade-iii-online-form-2026",
       "category": "latestJobs",
       "slug": "mp-high-court-assistant-grade-iii-online-form-2026",
-      "publishedDate": "2026-09-15T14:11:58+05:30",
-      "publishedAt": "2026-09-15T08:41:58.000Z"
+      "publishedDate": "2026-09-30T10:06:27+05:30",
+      "publishedAt": "2026-09-30T04:36:27.000Z"
     },
     {
       "title": "Delhi High Court SPA & PA Online Form 2026",
@@ -5250,8 +5250,8 @@ export const scrapedData = {
       "url": "/post/jssc-para-teacher-jtaacce-2026",
       "category": "latestJobs",
       "slug": "jssc-para-teacher-jtaacce-2026",
-      "publishedDate": "21 September 2026",
-      "publishedAt": "2026-09-21T06:32:42.567Z"
+      "publishedDate": "2026-09-29T22:22:01+05:30",
+      "publishedAt": "2026-09-29T16:52:01.000Z"
     },
     {
       "title": "RPSC Physiotherapist Online Form 2026",
@@ -12465,8 +12465,8 @@ export const scrapedData = {
       "lastDate": "11 May 2026"
     },
     "mp-high-court-assistant-grade-iii-online-form-2026": {
-      "publishedDate": "2026-09-15T14:11:58+05:30",
-      "publishedAt": "2026-09-15T08:41:58.000Z",
+      "publishedDate": "2026-09-30T10:06:27+05:30",
+      "publishedAt": "2026-09-30T04:36:27.000Z",
       "lastDate": "30 September 2026"
     },
     "mp-high-court-class-iv-recruitment-2025-apply": {
@@ -14372,8 +14372,8 @@ export const scrapedData = {
       "lastDate": "Form Start"
     },
     "ssc-cpo-si-capf-2026": {
-      "publishedDate": "2026-09-29T17:09:19+05:30",
-      "publishedAt": "2026-09-29T11:39:19.000Z",
+      "publishedDate": "2026-09-30T10:06:38+05:30",
+      "publishedAt": "2026-09-30T04:36:38.000Z",
       "lastDate": "30 September 2026"
     },
     "ssc-cpo-si-result": {
@@ -16073,9 +16073,9 @@ export const scrapedData = {
       "lastDate": "28 August 2026"
     },
     "jssc-para-teacher-jtaacce-2026": {
-      "publishedDate": "21 September 2026",
-      "publishedAt": "2026-09-21T06:32:42.567Z",
-      "lastDate": "30 August 2026"
+      "publishedDate": "2026-09-29T22:22:01+05:30",
+      "publishedAt": "2026-09-29T16:52:01.000Z",
+      "lastDate": "18 October 2026"
     },
     "rpsc-ras-2026": {
       "publishedDate": "21 September 2026",
@@ -16103,8 +16103,8 @@ export const scrapedData = {
       "lastDate": "27 October 2026"
     },
     "indian-army-tgc-145-2026": {
-      "publishedDate": "2026-09-22T17:21:22+05:30",
-      "publishedAt": "2026-09-22T11:51:22.000Z",
+      "publishedDate": "2026-09-30T17:39:09+05:30",
+      "publishedAt": "2026-09-30T12:09:09.000Z",
       "lastDate": "29 October 2026"
     },
     "ntpc-assistant-officer-2026": {
@@ -16214,9 +16214,9 @@ export const scrapedData = {
       "lastDate": "23 October 2026"
     }
   },
-  "fetchedAt": "2026-09-29T12:18:36.126Z",
+  "fetchedAt": "2026-09-30T13:00:54.749Z",
   "seo": {
-    "lastOptimized": "2026-09-29T12:18:38.217Z",
+    "lastOptimized": "2026-09-30T13:00:56.758Z",
     "totalPosts": 1258,
     "websiteName": "All India Exam Result",
     "websiteUrl": "https://www.aiexamresult.com",
