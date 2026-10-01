@@ -16214,9 +16214,9 @@ export const scrapedData = {
       "lastDate": "23 October 2026"
     }
   },
-  "fetchedAt": "2026-09-30T13:00:54.749Z",
+  "fetchedAt": "2026-10-01T03:23:28.969Z",
   "seo": {
-    "lastOptimized": "2026-09-30T13:00:56.758Z",
+    "lastOptimized": "2026-10-01T03:23:31.045Z",
     "totalPosts": 1258,
     "websiteName": "All India Exam Result",
     "websiteUrl": "https://www.aiexamresult.com",
