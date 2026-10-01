@@ -4842,8 +4842,8 @@ export const scrapedData = {
       "url": "/post/uiic-ao-2026",
       "category": "latestJobs",
       "slug": "uiic-ao-2026",
-      "publishedDate": "2026-09-29T10:05:17+05:30",
-      "publishedAt": "2026-09-29T04:35:17.000Z"
+      "publishedDate": "2026-10-01T10:29:07+05:30",
+      "publishedAt": "2026-10-01T04:59:07.000Z"
     },
     {
       "title": "Assam Rifles Technical/ Tradesman Online Form 2026",
@@ -4858,8 +4858,8 @@ export const scrapedData = {
       "url": "/post/canara-bank-apprentices-2026",
       "category": "latestJobs",
       "slug": "canara-bank-apprentices-2026",
-      "publishedDate": "2026-09-28T17:36:17+05:30",
-      "publishedAt": "2026-09-28T12:06:17.000Z"
+      "publishedDate": "2026-10-01T11:05:11+05:30",
+      "publishedAt": "2026-10-01T05:35:11.000Z"
     },
     {
       "title": "ITBP Head Constable (Education & Stress Counsellor) Online Form 2026",
@@ -4922,16 +4922,16 @@ export const scrapedData = {
       "url": "/post/bank-of-baroda-so-2026",
       "category": "latestJobs",
       "slug": "bank-of-baroda-so-2026",
-      "publishedDate": "2026-09-25T10:21:50+05:30",
-      "publishedAt": "2026-09-25T04:51:50.000Z"
+      "publishedDate": "2026-10-01T10:29:47+05:30",
+      "publishedAt": "2026-10-01T04:59:47.000Z"
     },
     {
       "title": "BHU Non Teaching Various Post Online Form 2026 – Extend",
       "url": "/post/bhu-non-teaching-various-post-2026",
       "category": "latestJobs",
       "slug": "bhu-non-teaching-various-post-2026",
-      "publishedDate": "2026-09-25T10:19:02+05:30",
-      "publishedAt": "2026-09-25T04:49:02.000Z"
+      "publishedDate": "2026-10-01T10:29:19+05:30",
+      "publishedAt": "2026-10-01T04:59:19.000Z"
     },
     {
       "title": "UP Anganwadi Bharti Online Form 2026 (Update)",
@@ -10363,8 +10363,8 @@ export const scrapedData = {
       "lastDate": "26 August 2025"
     },
     "bank-of-baroda-so-2026": {
-      "publishedDate": "2026-09-25T10:21:50+05:30",
-      "publishedAt": "2026-09-25T04:51:50.000Z",
+      "publishedDate": "2026-10-01T10:29:47+05:30",
+      "publishedAt": "2026-10-01T04:59:47.000Z",
       "lastDate": "01 October 2026"
     },
     "bank-of-india-apprentice-recruitment-2026": {
@@ -10428,8 +10428,8 @@ export const scrapedData = {
       "lastDate": "30 April 2025"
     },
     "bhu-non-teaching-various-post-2026": {
-      "publishedDate": "2026-09-25T10:19:02+05:30",
-      "publishedAt": "2026-09-25T04:49:02.000Z",
+      "publishedDate": "2026-10-01T10:29:19+05:30",
+      "publishedAt": "2026-10-01T04:59:19.000Z",
       "lastDate": "01 October 2026"
     },
     "bihar-2yr-bed-2": {
@@ -14618,8 +14618,8 @@ export const scrapedData = {
       "lastDate": "24/05/2026 (11:50 PM)"
     },
     "uiic-ao-2026": {
-      "publishedDate": "2026-09-29T10:05:17+05:30",
-      "publishedAt": "2026-09-29T04:35:17.000Z",
+      "publishedDate": "2026-10-01T10:29:07+05:30",
+      "publishedAt": "2026-10-01T04:59:07.000Z",
       "lastDate": "01 October 2026"
     },
     "uiic-ao-sep26": {
@@ -16199,8 +16199,8 @@ export const scrapedData = {
       "lastDate": "27 October 2026"
     },
     "canara-bank-apprentices-2026": {
-      "publishedDate": "2026-09-28T17:36:17+05:30",
-      "publishedAt": "2026-09-28T12:06:17.000Z",
+      "publishedDate": "2026-10-01T11:05:11+05:30",
+      "publishedAt": "2026-10-01T05:35:11.000Z",
       "lastDate": "17 October 2026"
     },
     "bihar-btsc-touring-veterinary-officer-2026": {
@@ -16214,9 +16214,9 @@ export const scrapedData = {
       "lastDate": "23 October 2026"
     }
   },
-  "fetchedAt": "2026-10-01T03:23:28.969Z",
+  "fetchedAt": "2026-10-01T13:03:49.322Z",
   "seo": {
-    "lastOptimized": "2026-10-01T03:23:31.045Z",
+    "lastOptimized": "2026-10-01T13:03:51.335Z",
     "totalPosts": 1258,
     "websiteName": "All India Exam Result",
     "websiteUrl": "https://www.aiexamresult.com",
