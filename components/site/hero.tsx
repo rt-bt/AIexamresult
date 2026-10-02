@@ -166,7 +166,7 @@ export function Hero() {
           autoResumeDelay={2500}
           autoRampDuration={0.5}
           gyroEnabled={true}
-          gyroSensitivity={1.6}
+          gyroSensitivity={0.7}
           color0="#032B30"
           color1="#0E9B8A"
           color2="#7FF0E8"

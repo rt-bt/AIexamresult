@@ -295,11 +295,11 @@ export function LiquidEther({
 
         this.gyroTarget.set(targetX, targetY);
 
-        // Instantaneous rotation kick
+        // Instantaneous rotation kick — slow multiplier for gentle response
         const angSpeed = Math.hypot(dGamma, dBeta);
         if (angSpeed > 0.1) {
-          this.gyroVelocity.x += (dGamma / 10) * 0.14 * this.gyroSensitivity;
-          this.gyroVelocity.y += (-dBeta / 10) * 0.14 * this.gyroSensitivity;
+          this.gyroVelocity.x += (dGamma / 10) * 0.055 * this.gyroSensitivity;
+          this.gyroVelocity.y += (-dBeta / 10) * 0.055 * this.gyroSensitivity;
           this.hasGyroMotion = true;
           this.lastMotionTime = performance.now();
         }
@@ -316,8 +316,8 @@ export function LiquidEther({
           const ay = acc.y || 0;
           const mag = Math.hypot(ax, ay);
           if (mag > 0.35) {
-            this.gyroVelocity.x += (ax * 0.04) * this.gyroSensitivity;
-            this.gyroVelocity.y += (-ay * 0.04) * this.gyroSensitivity;
+            this.gyroVelocity.x += (ax * 0.015) * this.gyroSensitivity;
+            this.gyroVelocity.y += (-ay * 0.015) * this.gyroSensitivity;
             this.hasGyroMotion = true;
             this.lastMotionTime = performance.now();
           }
@@ -329,8 +329,8 @@ export function LiquidEther({
           const rg = rot.gamma || 0;
           const rb = rot.beta || 0;
           if (Math.hypot(rg, rb) > 4.0) {
-            this.gyroVelocity.x += (rg / 180) * 0.08 * this.gyroSensitivity;
-            this.gyroVelocity.y += (-rb / 180) * 0.08 * this.gyroSensitivity;
+            this.gyroVelocity.x += (rg / 180) * 0.03 * this.gyroSensitivity;
+            this.gyroVelocity.y += (-rb / 180) * 0.03 * this.gyroSensitivity;
             this.hasGyroMotion = true;
             this.lastMotionTime = performance.now();
           }
