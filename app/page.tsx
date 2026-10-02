@@ -29,7 +29,7 @@ export default function HomePage() {
         <Hero />
 
         {/* 6 Main Sections: Latest Jobs, Admit Card, Answer Keys, Result, Admissions, Documents (Latest Updates) */}
-        <div className="relative overflow-hidden bg-gradient-to-b from-white via-zinc-50/50 to-white dark:from-zinc-950 dark:via-zinc-900/40 dark:to-zinc-950">
+        <div className="relative overflow-hidden bg-gradient-to-b from-white via-indigo-50/30 to-white dark:from-slate-950 dark:via-indigo-950/20 dark:to-slate-950">
           <DotField
             dotRadius={1.5}
             dotSpacing={14}
@@ -40,10 +40,10 @@ export default function HomePage() {
             cursorRadius={500}
             cursorForce={0.1}
             bulgeOnly
-            gradientFrom="#18181b"
-            gradientTo="#27272a"
-            glowColor="#27272a"
-            opacity={0.15}
+            gradientFrom="#4f46e5"
+            gradientTo="#6366f1"
+            glowColor="#4f46e5"
+            opacity={0.18}
           />
           <div className="relative z-10">
             <CategoryColumns sections={categorySections} />
@@ -51,24 +51,24 @@ export default function HomePage() {
         </div>
 
         {/* Featured & Trending Alerts with 3D TiltCards */}
-        <section className="py-8 bg-gradient-to-b from-zinc-50/80 via-white to-zinc-50/80 dark:from-zinc-900/50 dark:via-zinc-950 dark:to-zinc-900/50 border-b border-zinc-200/80 dark:border-zinc-800/80">
+        <section className="py-8 bg-gradient-to-b from-indigo-50/50 via-white to-slate-50/70 dark:from-slate-900/50 dark:via-slate-950 dark:to-slate-900/50 border-b border-slate-200/80 dark:border-slate-800/80">
           <div className="container-page">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6">
               <div className="flex items-center gap-3">
-                <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-zinc-900 text-white shadow-md dark:bg-zinc-100 dark:text-zinc-950">
+                <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-amber-500 to-amber-600 text-white shadow-md shadow-amber-200 dark:shadow-none">
                   <TrendingUp className="h-5 w-5" />
                 </span>
                 <div>
                   <div className="flex items-center gap-2">
-                    <h2 className="text-xl sm:text-2xl font-black text-zinc-900 dark:text-white tracking-tight">Trending Now</h2>
-                    <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-950">
+                    <h2 className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white tracking-tight">Trending Now</h2>
+                    <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-amber-100 text-amber-900 dark:bg-amber-950/80 dark:text-amber-300">
                       LIVE ALERTS
                     </span>
                   </div>
-                  <p className="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400">Most viewed sarkari results &amp; recruitment updates today</p>
+                  <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400">Most viewed sarkari results &amp; recruitment updates today</p>
                 </div>
               </div>
-              <Link href="/results" className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-zinc-900 dark:text-zinc-100 hover:text-zinc-700 dark:hover:text-zinc-300 transition">
+              <Link href="/results" className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 transition">
                 <span>View All Updates</span>
                 <ArrowUpRight className="h-4 w-4" />
               </Link>

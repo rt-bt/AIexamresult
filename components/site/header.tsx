@@ -117,22 +117,22 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full transition-all">
-      {/* 1. Obsidian & Zinc Minimalist Top Alert Bar */}
+      {/* 1. Academic Live Status & Exam Ticker */}
       <div
         role="region"
         aria-label="Breaking Exam Alerts"
-        className="border-b border-zinc-200/80 bg-zinc-50/90 text-zinc-700 backdrop-blur-xl dark:border-zinc-800/80 dark:bg-zinc-950/90 dark:text-zinc-300"
+        className="border-b border-indigo-100/70 bg-indigo-50/60 text-slate-700 backdrop-blur-xl dark:border-indigo-950/60 dark:bg-slate-950/80 dark:text-slate-300"
       >
         <div className="container-page flex h-7 items-center justify-between gap-3 text-[11px]">
           <div className="flex items-center gap-2 overflow-hidden">
             {/* Double-Bezel Micro Pulse Badge */}
-            <div className="rounded-full p-0.5 bg-zinc-900/10 dark:bg-zinc-100/10 ring-1 ring-zinc-900/20 dark:ring-zinc-100/20">
-              <span className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-zinc-900 px-2 py-0.5 text-[9px] font-bold uppercase tracking-[0.14em] text-white dark:bg-zinc-100 dark:text-zinc-950">
+            <div className="rounded-full p-0.5 bg-amber-500/10 dark:bg-amber-400/10 ring-1 ring-amber-500/25">
+              <span className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-amber-500/15 px-2 py-0.5 text-[9px] font-bold uppercase tracking-[0.14em] text-amber-800 dark:text-amber-300">
                 <span className="relative flex h-1.5 w-1.5">
-                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-zinc-400 opacity-75" />
-                  <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-white dark:bg-zinc-900" />
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-amber-400 opacity-75" />
+                  <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-amber-500" />
                 </span>
-                LIVE PULSE
+                LIVE ALERTS
               </span>
             </div>
 
@@ -142,54 +142,54 @@ export function Header() {
                   <Link
                     key={`${item.slug}-${i}`}
                     href={item.slug ? `/post/${item.slug}` : "#"}
-                    className="mx-3 inline-flex items-center gap-1.5 transition-colors duration-300 hover:text-zinc-950 dark:hover:text-white"
+                    className="mx-3 inline-flex items-center gap-1.5 transition-colors duration-300 hover:text-indigo-600 dark:hover:text-indigo-400"
                   >
-                    <span className="rounded-full border border-zinc-200/90 bg-white px-1.5 py-0.2 font-mono text-[9px] font-semibold uppercase text-zinc-700 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-300">
+                    <span className="rounded-full border border-indigo-200/80 bg-white px-1.5 py-0.2 font-mono text-[9px] font-semibold uppercase text-indigo-700 dark:border-indigo-900/60 dark:bg-indigo-950/50 dark:text-indigo-300">
                       {item.category || "Update"}
                     </span>
-                    <span className="font-medium text-zinc-700 dark:text-zinc-300 truncate max-w-[280px] sm:max-w-none">
+                    <span className="font-medium text-slate-700 dark:text-slate-300 truncate max-w-[280px] sm:max-w-none">
                       {item.title}
                     </span>
-                    <span className="text-zinc-300 dark:text-zinc-700" aria-hidden="true">•</span>
+                    <span className="text-slate-300 dark:text-slate-700" aria-hidden="true">•</span>
                   </Link>
                 ))}
               </div>
             </div>
           </div>
 
-          <div className="hidden items-center gap-2 text-zinc-500 dark:text-zinc-400 sm:flex shrink-0 font-mono text-[10px]">
-            <CheckCircle2 className="h-3 w-3 text-zinc-900 dark:text-zinc-100" />
+          <div className="hidden items-center gap-2 text-slate-500 dark:text-slate-400 sm:flex shrink-0 font-mono text-[10px]">
+            <CheckCircle2 className="h-3 w-3 text-indigo-600 dark:text-indigo-400" />
             <span className="tracking-wide">Govt Gazettes Verified</span>
           </div>
         </div>
       </div>
 
-      {/* 2. Fluid Floating Island Navbar (Obsidian & Zinc Double-Bezel) */}
+      {/* 2. Fluid Floating Island Navbar (Modern EdTech Double-Bezel) */}
       <div className="container-page py-2">
-        <div className="rounded-2xl sm:rounded-full p-1 bg-white/80 dark:bg-zinc-950/85 border border-zinc-200/90 dark:border-zinc-800/80 shadow-[0_4px_24px_rgba(0,0,0,0.04)] dark:shadow-[0_12px_40px_rgba(0,0,0,0.55)] backdrop-blur-2xl transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)]">
+        <div className="rounded-2xl sm:rounded-full p-1 bg-white/85 dark:bg-slate-950/85 border border-slate-200/90 dark:border-indigo-950/70 shadow-[0_4px_24px_rgba(79,70,229,0.06)] dark:shadow-[0_12px_40px_rgba(0,0,0,0.5)] backdrop-blur-2xl transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)]">
           <div className="flex h-12 items-center justify-between gap-3 px-3 sm:px-4">
             
             {/* Brand Logo & Precision Mark */}
             <Link href="/" className="group flex items-center gap-2.5 shrink-0 focus-visible:outline-none">
-              <div className="relative flex h-8 w-8 items-center justify-center rounded-xl sm:rounded-full border border-zinc-200 bg-white p-1 shadow-2xs transition-all duration-300 group-hover:scale-105 group-hover:border-zinc-400 dark:border-zinc-800 dark:bg-zinc-900">
+              <div className="relative flex h-8 w-8 items-center justify-center rounded-xl sm:rounded-full border border-indigo-100 bg-white p-1 shadow-2xs transition-all duration-300 group-hover:scale-105 group-hover:border-indigo-300 dark:border-indigo-900/60 dark:bg-slate-900">
                 <Logo className="h-6 w-6 object-contain" />
               </div>
               <div className="flex flex-col leading-none">
                 <div className="flex items-center gap-1.5">
-                  <span className="text-sm font-black tracking-tight text-zinc-900 dark:text-white transition-colors">
+                  <span className="text-sm font-black tracking-tight text-slate-900 dark:text-white transition-colors">
                     All India
                   </span>
-                  <span className="rounded-full bg-zinc-100 dark:bg-zinc-800 px-1.5 py-0.5 font-mono text-[9px] font-bold uppercase tracking-wider text-zinc-800 dark:text-zinc-200 border border-zinc-200/80 dark:border-zinc-700/80">
+                  <span className="rounded-full bg-indigo-50 dark:bg-indigo-950/80 px-1.5 py-0.5 font-mono text-[9px] font-bold uppercase tracking-wider text-indigo-700 dark:text-indigo-300 border border-indigo-200/80 dark:border-indigo-800/80">
                     Govt
                   </span>
                 </div>
-                <span className="mt-0.5 font-mono text-[9px] font-bold tracking-[0.14em] text-zinc-500 dark:text-zinc-400">
+                <span className="mt-0.5 font-mono text-[9px] font-bold tracking-[0.14em] text-indigo-600 dark:text-indigo-400">
                   EXAM RESULT
                 </span>
               </div>
             </Link>
 
-            {/* Center Navigation Links (Obsidian Monochrome Pill Bar) */}
+            {/* Center Navigation Links (EdTech Pill Bar) */}
             <nav className="hidden items-center gap-1 lg:flex">
               {navItems.map((item) => {
                 const isActive =
@@ -203,8 +203,8 @@ export function Header() {
                       className={cn(
                         "flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-semibold tracking-tight transition-all duration-300 ease-[cubic-bezier(0.32,0.72,0,1)]",
                         isActive
-                          ? "bg-zinc-900 text-white shadow-xs dark:bg-white dark:text-zinc-950 font-bold"
-                          : "text-zinc-600 hover:bg-zinc-100 hover:text-zinc-950 dark:text-zinc-300 dark:hover:bg-zinc-850 dark:hover:text-white"
+                          ? "bg-indigo-600 text-white shadow-sm shadow-indigo-500/25 dark:bg-indigo-500 dark:text-white font-bold"
+                          : "text-slate-600 hover:bg-indigo-50 hover:text-indigo-700 dark:text-slate-300 dark:hover:bg-indigo-950/50 dark:hover:text-white"
                       )}
                     >
                       <span>{t(`nav.${item.label.toLowerCase().replace(/\s+/g, "-")}`) || item.label}</span>
@@ -214,7 +214,7 @@ export function Header() {
                     </button>
 
                     {/* Concentric Double-Bezel Dropdown Panel */}
-                    <div className="invisible absolute left-0 top-full z-50 mt-2 w-72 origin-top-left rounded-2xl p-1.5 bg-white/95 dark:bg-zinc-950/95 border border-zinc-200/90 dark:border-zinc-800/90 shadow-[0_16px_50px_rgba(0,0,0,0.12)] dark:shadow-[0_24px_60px_rgba(0,0,0,0.7)] backdrop-blur-2xl opacity-0 transition-all duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 translate-y-1">
+                    <div className="invisible absolute left-0 top-full z-50 mt-2 w-72 origin-top-left rounded-2xl p-1.5 bg-white/95 dark:bg-slate-950/95 border border-slate-200/90 dark:border-indigo-950/80 shadow-[0_16px_50px_rgba(79,70,229,0.12)] dark:shadow-[0_24px_60px_rgba(0,0,0,0.7)] backdrop-blur-2xl opacity-0 transition-all duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 translate-y-1">
                       <div className="space-y-0.5">
                         {item.dropdown.map((sub) => {
                           const isSubActive = pathname === sub.href;
@@ -226,19 +226,19 @@ export function Header() {
                               className={cn(
                                 "group/sub flex items-start gap-2.5 rounded-xl px-3 py-2 text-xs transition-all duration-200 ease-[cubic-bezier(0.32,0.72,0,1)]",
                                 isSubActive
-                                  ? "bg-zinc-100 text-zinc-950 dark:bg-zinc-900 dark:text-white font-semibold border border-zinc-200/80 dark:border-zinc-800"
-                                  : "text-zinc-700 hover:bg-zinc-100/90 dark:text-zinc-300 dark:hover:bg-zinc-900 dark:hover:text-white"
+                                  ? "bg-indigo-50 text-indigo-700 dark:bg-indigo-950/70 dark:text-indigo-300 font-semibold border border-indigo-200/80 dark:border-indigo-800/80"
+                                  : "text-slate-700 hover:bg-slate-50 dark:text-slate-300 dark:hover:bg-slate-900 dark:hover:text-white"
                               )}
                             >
                               {Icon && (
-                                <div className="mt-0.5 flex h-5 w-5 items-center justify-center rounded-lg bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 group-hover/sub:scale-110 group-hover/sub:text-zinc-950 dark:group-hover/sub:text-white transition-transform">
+                                <div className="mt-0.5 flex h-5 w-5 items-center justify-center rounded-lg bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 group-hover/sub:scale-110 transition-transform">
                                   <Icon className="h-3 w-3" />
                                 </div>
                               )}
                               <div className="flex flex-col">
                                 <span className="font-semibold leading-tight">{sub.label}</span>
                                 {sub.desc && (
-                                  <span className="text-[10px] text-zinc-400 dark:text-zinc-500 font-normal mt-0.5 leading-snug">
+                                  <span className="text-[10px] text-slate-400 dark:text-slate-500 font-normal mt-0.5 leading-snug">
                                     {sub.desc}
                                   </span>
                                 )}
@@ -256,8 +256,8 @@ export function Header() {
                     className={cn(
                       "rounded-full px-3 py-1.5 text-xs font-semibold tracking-tight transition-all duration-300 ease-[cubic-bezier(0.32,0.72,0,1)]",
                       isActive
-                        ? "bg-zinc-900 text-white shadow-xs dark:bg-white dark:text-zinc-950 font-bold"
-                        : "text-zinc-600 hover:bg-zinc-100 hover:text-zinc-950 dark:text-zinc-300 dark:hover:bg-zinc-850 dark:hover:text-white"
+                        ? "bg-indigo-600 text-white shadow-sm shadow-indigo-500/25 dark:bg-indigo-500 dark:text-white font-bold"
+                        : "text-slate-600 hover:bg-indigo-50 hover:text-indigo-700 dark:text-slate-300 dark:hover:bg-indigo-950/50 dark:hover:text-white"
                     )}
                   >
                     {t(`nav.${item.label.toLowerCase().replace(/\s+/g, "-")}`) || item.label}
@@ -271,13 +271,13 @@ export function Header() {
               {/* Nested Button-in-Button Search Pill (Desktop) */}
               <Link
                 href="/search"
-                className="group hidden lg:flex items-center gap-2 rounded-full border border-zinc-200/90 bg-zinc-100/60 pl-3 pr-1.5 py-1 text-xs text-zinc-500 transition-all duration-300 hover:border-zinc-300 hover:bg-white hover:text-zinc-900 dark:border-zinc-800 dark:bg-zinc-900/60 dark:text-zinc-400 dark:hover:border-zinc-700 dark:hover:bg-zinc-900 dark:hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-900 dark:focus-visible:ring-zinc-100"
+                className="group hidden lg:flex items-center gap-2 rounded-full border border-slate-200/90 bg-slate-100/60 pl-3 pr-1.5 py-1 text-xs text-slate-500 transition-all duration-300 hover:border-indigo-300 hover:bg-white hover:text-slate-800 dark:border-indigo-950 dark:bg-slate-900/60 dark:text-slate-400 dark:hover:border-indigo-800 dark:hover:bg-slate-900 dark:hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600"
               >
-                <Search className="h-3 w-3 text-zinc-400 group-hover:text-zinc-900 dark:group-hover:text-white transition-colors" />
+                <Search className="h-3 w-3 text-slate-400 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors" />
                 <span className="w-28 text-left truncate text-[11px]">Search exams...</span>
                 
                 {/* Micro Island Keycaps */}
-                <div className="flex h-5 items-center rounded-full border border-zinc-200 bg-white px-1.5 font-mono text-[9px] font-semibold text-zinc-500 dark:border-zinc-800 dark:bg-zinc-800 dark:text-zinc-300 shadow-2xs">
+                <div className="flex h-5 items-center rounded-full border border-slate-200 bg-white px-1.5 font-mono text-[9px] font-semibold text-slate-500 dark:border-slate-800 dark:bg-slate-800 dark:text-slate-300 shadow-2xs">
                   ⌘K
                 </div>
               </Link>
@@ -285,7 +285,7 @@ export function Header() {
               {/* Mobile Search Button */}
               <Link
                 href="/search"
-                className="flex lg:hidden h-8 w-8 items-center justify-center rounded-full border border-zinc-200/80 bg-white text-zinc-700 hover:bg-zinc-100 active:scale-95 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800 transition-transform"
+                className="flex lg:hidden h-8 w-8 items-center justify-center rounded-full border border-slate-200/80 bg-white text-slate-700 hover:bg-slate-100 active:scale-95 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-300 dark:hover:bg-slate-800 transition-transform"
                 title="Search"
                 aria-label="Search"
               >
@@ -294,7 +294,7 @@ export function Header() {
 
               {/* Voice Search with Circular Bezel */}
               <VoiceSearchBtn
-                className="flex h-8 w-8 items-center justify-center rounded-full border border-zinc-200/80 bg-white text-zinc-700 hover:bg-zinc-100 active:scale-95 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800 transition-all"
+                className="flex h-8 w-8 items-center justify-center rounded-full border border-slate-200/80 bg-white text-slate-700 hover:bg-slate-100 active:scale-95 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-300 dark:hover:bg-slate-800 transition-all"
               />
 
               {/* Bookmarks */}
@@ -309,7 +309,7 @@ export function Header() {
               {/* Morphing Hamburger Toggle for Mobile */}
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="relative flex lg:hidden h-8 w-8 items-center justify-center rounded-full border border-zinc-200/80 bg-white text-zinc-700 hover:bg-zinc-100 active:scale-95 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800 transition-all"
+                className="relative flex lg:hidden h-8 w-8 items-center justify-center rounded-full border border-slate-200/80 bg-white text-slate-700 hover:bg-slate-100 active:scale-95 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-300 dark:hover:bg-slate-800 transition-all"
                 aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
               >
                 <div className="relative h-3 w-3.5">
@@ -338,17 +338,17 @@ export function Header() {
         </div>
       </div>
 
-      {/* 3. Fluid Expanded Mobile Drawer (Obsidian & Zinc) */}
+      {/* 3. Fluid Expanded Mobile Drawer (EdTech Indigo & Amber) */}
       {mobileMenuOpen && (
         <div className="container-page pb-3 lg:hidden animate-fade-up">
-          <div className="rounded-2xl p-1 bg-white/95 dark:bg-zinc-950/95 border border-zinc-200/90 dark:border-zinc-800 shadow-2xl backdrop-blur-2xl">
+          <div className="rounded-2xl p-1 bg-white/95 dark:bg-slate-950/95 border border-slate-200/90 dark:border-indigo-950/80 shadow-2xl backdrop-blur-2xl">
             <div className="p-3 space-y-1">
               {navItems.map((item) => (
-                <div key={item.label} className="border-b border-zinc-100 dark:border-zinc-850 py-1 last:border-none">
+                <div key={item.label} className="border-b border-slate-100 dark:border-slate-900 py-1 last:border-none">
                   <Link
                     href={item.href}
                     onClick={() => setMobileMenuOpen(false)}
-                    className="flex items-center justify-between rounded-xl px-3 py-2 text-xs font-semibold text-zinc-800 dark:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-900 transition"
+                    className="flex items-center justify-between rounded-xl px-3 py-2 text-xs font-semibold text-slate-800 dark:text-slate-200 hover:bg-indigo-50 dark:hover:bg-indigo-950/50 transition"
                   >
                     <span>{t(`nav.${item.label.toLowerCase().replace(/\s+/g, "-")}`) || item.label}</span>
                   </Link>
@@ -359,7 +359,7 @@ export function Header() {
                           key={sub.href}
                           href={sub.href}
                           onClick={() => setMobileMenuOpen(false)}
-                          className="rounded-lg px-2.5 py-1.5 text-[11px] text-zinc-600 hover:bg-zinc-100 dark:text-zinc-400 dark:hover:bg-zinc-900 transition"
+                          className="rounded-lg px-2.5 py-1.5 text-[11px] text-slate-600 hover:bg-slate-100 dark:text-slate-400 dark:hover:bg-slate-900 transition"
                         >
                           {sub.label}
                         </Link>
@@ -371,8 +371,8 @@ export function Header() {
             </div>
 
             {/* Quick Tools Tray */}
-            <div className="border-t border-zinc-100 dark:border-zinc-850 p-3 bg-zinc-50/70 dark:bg-zinc-900/60 rounded-b-xl">
-              <p className="mb-2 px-1 text-[10px] font-bold uppercase tracking-[0.14em] text-zinc-500 dark:text-zinc-400">
+            <div className="border-t border-slate-100 dark:border-slate-900 p-3 bg-indigo-50/40 dark:bg-indigo-950/30 rounded-b-xl">
+              <p className="mb-2 px-1 text-[10px] font-bold uppercase tracking-[0.14em] text-indigo-700 dark:text-indigo-400">
                 Interactive Aspirant Tools
               </p>
               <div className="grid grid-cols-2 gap-1.5">
@@ -381,9 +381,9 @@ export function Header() {
                     key={tool.href}
                     href={tool.href}
                     onClick={() => setMobileMenuOpen(false)}
-                    className="flex items-center gap-1.5 rounded-xl border border-zinc-200/80 bg-white px-2.5 py-2 text-[11px] font-medium text-zinc-700 hover:border-zinc-400 dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-300 transition"
+                    className="flex items-center gap-1.5 rounded-xl border border-indigo-100 bg-white px-2.5 py-2 text-[11px] font-medium text-slate-700 hover:border-indigo-400 dark:border-indigo-900/60 dark:bg-slate-900 dark:text-slate-300 transition"
                   >
-                    <tool.icon className="h-3 w-3 text-zinc-700 dark:text-zinc-300 shrink-0" />
+                    <tool.icon className="h-3 w-3 text-indigo-600 dark:text-indigo-400 shrink-0" />
                     <span className="truncate">{tool.label}</span>
                   </Link>
                 ))}

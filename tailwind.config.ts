@@ -6,37 +6,38 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        border: "var(--border, #e4e4e7)",
-        background: "var(--background, #fafafa)",
-        foreground: "var(--foreground, #09090b)",
-        ink: "#09090B",
-        brand: "#18181B",
-        "brand-dark": "#09090B",
-        "brand-light": "#27272A",
-        obsidian: {
-          DEFAULT: "#09090B",
-          deep: "#050507",
-          card: "#121215",
-          border: "#27272A",
-          muted: "#18181B",
+        border: "var(--border, #e2e8f0)",
+        background: "var(--background, #f8fafc)",
+        foreground: "var(--foreground, #0f172a)",
+        ink: "#0F172A",
+        brand: "#4F46E5", // EdTech Indigo
+        "brand-dark": "#4338CA",
+        "brand-light": "#6366F1",
+        accent: "#D97706", // Academic Amber / Gold
+        "accent-dark": "#B45309",
+        highlight: "#F59E0B",
+        edtech: {
+          indigo: "#4F46E5",
+          "indigo-dark": "#4338CA",
+          "indigo-light": "#6366F1",
+          amber: "#D97706",
+          gold: "#F59E0B",
+          navy: "#0F172A",
         },
-        secondary: "#f4f4f5",
-        "secondary-dark": "#27272a",
-        accent: "#18181B",
-        "accent-dark": "#09090B",
-        highlight: "#71717A",
+        secondary: "#f1f5f9",
+        "secondary-dark": "#e2e8f0",
         saffron: "#F59E0B",
         success: "#10B981",
         danger: "#EF4444",
-        mist: "#F4F4F5",
+        mist: "#EEF2FF",
         rose: "#E11D48",
         purple: "#7C3AED"
       },
       boxShadow: {
-        glow: "0 24px 80px rgba(0, 0, 0, 0.35)",
-        panel: "0 20px 70px rgba(0, 0, 0, 0.40)",
-        card: "0 4px 20px rgba(0, 0, 0, 0.08)",
-        "card-hover": "0 12px 40px rgba(0, 0, 0, 0.25)"
+        glow: "0 24px 80px rgba(79, 70, 229, 0.20)",
+        panel: "0 20px 70px rgba(15, 23, 42, 0.12)",
+        card: "0 4px 20px rgba(79, 70, 229, 0.08)",
+        "card-hover": "0 12px 40px rgba(79, 70, 229, 0.18)"
       },
       fontFamily: {
         sans: ["var(--font-inter)", "Inter", "system-ui", "sans-serif"]

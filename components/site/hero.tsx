@@ -90,7 +90,7 @@ function ResultFinder() {
         </div>
         <button
           type="submit"
-          className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-5 py-3.5 text-sm font-bold text-zinc-950 shadow-md transition hover:bg-zinc-100 active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-white"
+          className="inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 px-5 py-3.5 text-sm font-bold text-slate-950 shadow-md shadow-amber-500/25 transition hover:from-amber-400 hover:to-amber-500 active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-amber-400"
         >
           Find Result
           <ArrowRight className="h-4 w-4" />
@@ -131,7 +131,7 @@ function Counter({ to, label }: { to: number; label: string }) {
 
   return (
     <div ref={ref} className="text-center">
-      <p className="text-lg sm:text-xl font-bold text-white tracking-tight">{count.toLocaleString()}<span className="text-[#5EEAD4]">+</span></p>
+      <p className="text-lg sm:text-xl font-bold text-white tracking-tight">{count.toLocaleString()}<span className="text-amber-400">+</span></p>
       <p className="text-[10px] text-white/70 mt-0.5 font-medium">{label}</p>
     </div>
   );
@@ -142,15 +142,15 @@ export function Hero() {
     <section className="relative overflow-hidden min-h-[560px]">
       {/* LiquidEther WebGL Fluid Simulation Background */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
-        {/* Obsidian & Zinc Monochrome deep gradient base */}
+        {/* Modern EdTech Midnight Indigo gradient base */}
         <div
           className="absolute inset-0"
           style={{
-            background: "radial-gradient(ellipse at 50% 25%, #18181b 0%, #09090b 60%, #050507 100%)",
+            background: "radial-gradient(ellipse at 50% 25%, #1e1b4b 0%, #0f172a 60%, #090c16 100%)",
           }}
         />
         <LiquidEther
-          colors={['#18181b', '#27272a', '#52525b']}
+          colors={['#4338ca', '#6366f1', '#f59e0b']}
           mouseForce={20}
           cursorSize={100}
           isViscous
@@ -165,9 +165,9 @@ export function Hero() {
           takeoverDuration={0.25}
           autoResumeDelay={3000}
           autoRampDuration={0.6}
-          color0="#18181b"
-          color1="#27272a"
-          color2="#52525b"
+          color0="#4338ca"
+          color1="#6366f1"
+          color2="#f59e0b"
           className="absolute inset-0 h-full w-full"
         />
         {/* Subtle vignette / contrast overlay to guarantee WCAG AA text readability */}
@@ -179,16 +179,16 @@ export function Hero() {
 
           {/* Badge */}
           <div className="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3.5 py-1 text-xs font-semibold text-white/90 border border-white/10 mb-5 backdrop-blur-sm">
-            <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
+            <span className="h-1.5 w-1.5 rounded-full bg-amber-400 animate-pulse" />
             Live Sarkari Result &amp; Job Alerts 2026
           </div>
 
           {/* Headline — short & punchy */}
           <h1 className="text-3xl sm:text-5xl lg:text-[3.5rem] font-extrabold leading-[1.12] tracking-tight text-white">
             Sarkari Result 2026{' '}
-            <span className="text-[#5EEAD4]">Exam</span>,{' '}
-            <span className="text-[#FBBF24]">Jobs</span> &amp;{' '}
-            <span className="text-[#A78BFA]">Admit Card</span>
+            <span className="text-amber-400">Exam</span>,{' '}
+            <span className="text-indigo-300">Jobs</span> &amp;{' '}
+            <span className="text-amber-300">Admit Card</span>
           </h1>
 
           {/* Search bar */}

@@ -107,21 +107,21 @@ export function MobileBottomNav() {
         />
       )}
 
-      {/* Double-Bezel Tools Sheet (Obsidian & Zinc) */}
+      {/* Double-Bezel Tools Sheet (EdTech Indigo & Amber) */}
       {sheet === "tools" && (
-        <div className="fixed inset-x-0 bottom-0 z-50 max-h-[78vh] rounded-t-[2rem] border-t border-zinc-200/90 bg-white/95 pb-safe shadow-2xl backdrop-blur-2xl lg:hidden animate-slide-up dark:border-zinc-800 dark:bg-zinc-950/95">
-          <div className="flex items-center justify-between border-b border-zinc-100 dark:border-zinc-800 px-6 py-4">
+        <div className="fixed inset-x-0 bottom-0 z-50 max-h-[78vh] rounded-t-[2rem] border-t border-indigo-100 bg-white/95 pb-safe shadow-2xl backdrop-blur-2xl lg:hidden animate-slide-up dark:border-indigo-950 dark:bg-slate-950/95">
+          <div className="flex items-center justify-between border-b border-indigo-50 dark:border-indigo-950 px-6 py-4">
             <div>
-              <h2 className="text-xs font-bold uppercase tracking-[0.14em] text-zinc-900 dark:text-white">
+              <h2 className="text-xs font-bold uppercase tracking-[0.14em] text-slate-900 dark:text-white">
                 All Interactive Tools
               </h2>
-              <p className="text-[10px] text-zinc-400 dark:text-zinc-500 font-mono">
+              <p className="text-[10px] text-slate-400 dark:text-slate-500 font-mono">
                 Calculators, eligibility matchers &amp; trackers
               </p>
             </div>
             <button
               onClick={() => setSheet(null)}
-              className="flex h-7 w-7 items-center justify-center rounded-full border border-zinc-200/80 bg-zinc-100 text-zinc-600 hover:bg-zinc-200 active:scale-95 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-400 dark:hover:bg-zinc-800 transition-all"
+              className="flex h-7 w-7 items-center justify-center rounded-full border border-indigo-100 bg-indigo-50 text-indigo-700 hover:bg-indigo-100 active:scale-95 dark:border-indigo-900 dark:bg-indigo-950/60 dark:text-indigo-300 transition-all"
             >
               <X className="h-3.5 w-3.5" />
             </button>
@@ -138,16 +138,16 @@ export function MobileBottomNav() {
                   className={cn(
                     "flex flex-col items-center gap-1.5 rounded-2xl p-2 text-[10px] font-medium transition-all duration-200 active:scale-95",
                     active
-                      ? "bg-zinc-100 text-zinc-950 dark:bg-zinc-850 dark:text-white font-semibold ring-1 ring-zinc-300 dark:ring-zinc-700"
-                      : "text-zinc-600 hover:bg-zinc-100 dark:text-zinc-400 dark:hover:bg-zinc-900 dark:hover:text-zinc-200"
+                      ? "bg-indigo-50 text-indigo-700 dark:bg-indigo-950/70 dark:text-indigo-300 font-semibold ring-1 ring-indigo-500/30"
+                      : "text-slate-600 hover:bg-slate-50 dark:text-slate-400 dark:hover:bg-slate-900 dark:hover:text-slate-200"
                   )}
                 >
                   <div
                     className={cn(
                       "flex h-8 w-8 items-center justify-center rounded-xl transition-transform duration-200",
                       active
-                        ? "bg-zinc-900 text-white dark:bg-white dark:text-zinc-950 shadow-xs"
-                        : "bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400"
+                        ? "bg-indigo-600 text-white shadow-xs"
+                        : "bg-indigo-50/70 dark:bg-indigo-950/50 text-indigo-600 dark:text-indigo-400"
                     )}
                   >
                     <Icon className="h-4 w-4" />
@@ -158,11 +158,11 @@ export function MobileBottomNav() {
             })}
           </div>
 
-          <div className="border-t border-zinc-100 dark:border-zinc-800 px-5 py-3.5">
+          <div className="border-t border-indigo-50 dark:border-indigo-950 px-5 py-3.5">
             <Link
               href="/tools"
               onClick={() => setSheet(null)}
-              className="flex items-center justify-center gap-1.5 rounded-full bg-zinc-900 dark:bg-zinc-100 py-2.5 text-xs font-semibold text-white dark:text-zinc-950 shadow-md transition-all active:scale-[0.98]"
+              className="flex items-center justify-center gap-1.5 rounded-full bg-indigo-600 hover:bg-indigo-500 dark:bg-indigo-500 dark:hover:bg-indigo-400 py-2.5 text-xs font-semibold text-white shadow-md shadow-indigo-500/25 transition-all active:scale-[0.98]"
             >
               <span>Explore All Tools Directory</span>
               <ChevronRight className="h-3.5 w-3.5" />
@@ -171,21 +171,21 @@ export function MobileBottomNav() {
         </div>
       )}
 
-      {/* Double-Bezel More Sheet (Obsidian & Zinc) */}
+      {/* Double-Bezel More Sheet (EdTech Indigo & Amber) */}
       {sheet === "more" && (
-        <div className="fixed inset-x-0 bottom-0 z-50 max-h-[70vh] rounded-t-[2rem] border-t border-zinc-200/90 bg-white/95 pb-safe shadow-2xl backdrop-blur-2xl lg:hidden animate-slide-up dark:border-zinc-800 dark:bg-zinc-950/95">
-          <div className="flex items-center justify-between border-b border-zinc-100 dark:border-zinc-800 px-6 py-4">
+        <div className="fixed inset-x-0 bottom-0 z-50 max-h-[70vh] rounded-t-[2rem] border-t border-indigo-100 bg-white/95 pb-safe shadow-2xl backdrop-blur-2xl lg:hidden animate-slide-up dark:border-indigo-950 dark:bg-slate-950/95">
+          <div className="flex items-center justify-between border-b border-indigo-50 dark:border-indigo-950 px-6 py-4">
             <div>
-              <h2 className="text-xs font-bold uppercase tracking-[0.14em] text-zinc-900 dark:text-white">
+              <h2 className="text-xs font-bold uppercase tracking-[0.14em] text-slate-900 dark:text-white">
                 Navigation &amp; Portals
               </h2>
-              <p className="text-[10px] text-zinc-400 dark:text-zinc-500 font-mono">
+              <p className="text-[10px] text-slate-400 dark:text-slate-500 font-mono">
                 Direct indices for results, admit cards, and states
               </p>
             </div>
             <button
               onClick={() => setSheet(null)}
-              className="flex h-7 w-7 items-center justify-center rounded-full border border-zinc-200/80 bg-zinc-100 text-zinc-600 hover:bg-zinc-200 active:scale-95 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-400 dark:hover:bg-zinc-800 transition-all"
+              className="flex h-7 w-7 items-center justify-center rounded-full border border-indigo-100 bg-indigo-50 text-indigo-700 hover:bg-indigo-100 active:scale-95 dark:border-indigo-900 dark:bg-indigo-950/60 dark:text-indigo-300 transition-all"
             >
               <X className="h-3.5 w-3.5" />
             </button>
@@ -202,16 +202,16 @@ export function MobileBottomNav() {
                   className={cn(
                     "flex flex-col items-center gap-1.5 rounded-2xl p-3 text-[10px] font-medium transition-all active:scale-95",
                     active
-                      ? "bg-zinc-100 text-zinc-950 dark:bg-zinc-850 dark:text-white font-semibold ring-1 ring-zinc-300 dark:ring-zinc-700"
-                      : "text-zinc-600 hover:bg-zinc-100 dark:text-zinc-400 dark:hover:bg-zinc-900 dark:hover:text-zinc-200"
+                      ? "bg-indigo-50 text-indigo-700 dark:bg-indigo-950/70 dark:text-indigo-300 font-semibold ring-1 ring-indigo-500/30"
+                      : "text-slate-600 hover:bg-slate-50 dark:text-slate-400 dark:hover:bg-slate-900 dark:hover:text-slate-200"
                   )}
                 >
                   <div
                     className={cn(
                       "flex h-8 w-8 items-center justify-center rounded-xl transition-transform",
                       active
-                        ? "bg-zinc-900 text-white dark:bg-white dark:text-zinc-950 shadow-xs"
-                        : "bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400"
+                        ? "bg-indigo-600 text-white shadow-xs"
+                        : "bg-indigo-50/70 dark:bg-indigo-950/50 text-indigo-600 dark:text-indigo-400"
                     )}
                   >
                     <Icon className="h-4 w-4" />
@@ -226,7 +226,7 @@ export function MobileBottomNav() {
 
       {/* Floating Island Dock (Detached from screen edges) */}
       <nav className="fixed bottom-3 inset-x-3 sm:inset-x-6 max-w-md mx-auto z-40 lg:hidden">
-        <div className="rounded-full border border-zinc-200/90 dark:border-zinc-800/90 bg-white/85 dark:bg-zinc-950/85 p-1 shadow-[0_8px_32px_rgba(0,0,0,0.12)] dark:shadow-[0_12px_40px_rgba(0,0,0,0.6)] backdrop-blur-2xl transition-all duration-300">
+        <div className="rounded-full border border-slate-200/90 dark:border-indigo-950/80 bg-white/85 dark:bg-slate-950/85 p-1 shadow-[0_8px_32px_rgba(79,70,229,0.12)] dark:shadow-[0_12px_40px_rgba(0,0,0,0.6)] backdrop-blur-2xl transition-all duration-300">
           <div className="flex items-center justify-around">
             {tabs.map(({ label, href, icon: Icon, sheet: tabSheet }) => {
               const active = tabSheet
@@ -241,14 +241,14 @@ export function MobileBottomNav() {
                     className={cn(
                       "flex flex-col items-center gap-0.5 rounded-full px-3 py-1.5 text-[9px] font-semibold tracking-tight transition-all duration-300 active:scale-90",
                       active
-                        ? "text-zinc-950 dark:text-white font-bold"
-                        : "text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white"
+                        ? "text-indigo-600 dark:text-indigo-400 font-bold"
+                        : "text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white"
                     )}
                   >
                     <div
                       className={cn(
                         "flex h-7 w-7 items-center justify-center rounded-full transition-all duration-300 ease-[cubic-bezier(0.32,0.72,0,1)]",
-                        active && "bg-zinc-900/10 dark:bg-white/15 scale-110"
+                        active && "bg-indigo-50 dark:bg-indigo-950/70 scale-110"
                       )}
                     >
                       <Icon className="h-4 w-4" />
@@ -265,14 +265,14 @@ export function MobileBottomNav() {
                   className={cn(
                     "flex flex-col items-center gap-0.5 rounded-full px-3 py-1.5 text-[9px] font-semibold tracking-tight transition-all duration-300 active:scale-90",
                     active
-                      ? "text-zinc-950 dark:text-white font-bold"
-                      : "text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white"
+                      ? "text-indigo-600 dark:text-indigo-400 font-bold"
+                      : "text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white"
                   )}
                 >
                   <div
                     className={cn(
                       "flex h-7 w-7 items-center justify-center rounded-full transition-all duration-300 ease-[cubic-bezier(0.32,0.72,0,1)]",
-                      active && "bg-zinc-900/10 dark:bg-white/15 scale-110"
+                      active && "bg-indigo-50 dark:bg-indigo-950/70 scale-110"
                     )}
                   >
                     <Icon className="h-4 w-4" />
