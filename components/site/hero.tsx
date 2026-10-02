@@ -142,38 +142,38 @@ export function Hero() {
     <section className="relative overflow-hidden min-h-[560px]">
       {/* LiquidEther WebGL Fluid Simulation Background */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
-        {/* Brand rich deep oceanic water base */}
+        {/* Deep ocean base — very dark navy so water depth gradient pops */}
         <div
           className="absolute inset-0"
           style={{
-            background: "radial-gradient(ellipse at 50% 20%, #0E877D 0%, #064E48 55%, #022320 100%)",
+            background: "radial-gradient(ellipse at 50% 30%, #032B36 0%, #011820 50%, #020D12 100%)",
           }}
         />
         <LiquidEther
-          colors={['#0A4D48', '#0E877D', '#06B6D4', '#67E8F9', '#FFFFFF']}
-          mouseForce={32}
-          cursorSize={85}
+          colors={['#011820', '#032B36', '#065966', '#0E9B8A', '#67E8F9']}
+          mouseForce={38}
+          cursorSize={90}
           isViscous
-          viscous={10}
-          iterationsViscous={24}
-          iterationsPoisson={28}
-          resolution={0.65}
+          viscous={8}
+          iterationsViscous={28}
+          iterationsPoisson={32}
+          resolution={0.7}
           isBounce={true}
           autoDemo
-          autoSpeed={0.55}
-          autoIntensity={2.4}
+          autoSpeed={0.48}
+          autoIntensity={2.8}
           takeoverDuration={0.2}
           autoResumeDelay={2500}
           autoRampDuration={0.5}
           gyroEnabled={true}
           gyroSensitivity={1.6}
-          color0="#0A4D48"
-          color1="#0E877D"
+          color0="#011820"
+          color1="#065966"
           color2="#67E8F9"
           className="absolute inset-0 h-full w-full"
         />
         {/* Subtle vignette / contrast overlay to guarantee WCAG AA text readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/25 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/15 via-transparent to-black/30 pointer-events-none" />
       </div>
 
       <div className="container-page relative pt-8 sm:pt-12 pb-8 sm:pb-14">

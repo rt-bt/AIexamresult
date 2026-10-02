@@ -665,40 +665,68 @@ export function LiquidEther({
       uniform vec4 bgColor;
       uniform vec2 px;
       varying vec2 uv;
+
+      const vec3 DEEP_WATER = vec3(0.01, 0.06, 0.12);
+      const vec3 MID_WATER  = vec3(0.02, 0.22, 0.28);
+      const vec3 SHALLOW    = vec3(0.04, 0.55, 0.62);
+      const vec3 FOAM       = vec3(0.85, 0.97, 1.00);
+      const vec3 SUN        = vec3(1.00, 0.98, 0.90);
+
       void main(){
         vec2 vel = texture2D(velocity, uv).xy;
-        float lenv = length(vel);
-        float speed = clamp(lenv * 1.5, 0.0, 1.0);
 
-        // Water surface normal calculation via finite differences
-        vec2 stepSize = px * 2.5;
-        float vR = length(texture2D(velocity, uv + vec2(stepSize.x, 0.0)).xy);
-        float vL = length(texture2D(velocity, uv - vec2(stepSize.x, 0.0)).xy);
-        float vU = length(texture2D(velocity, uv + vec2(0.0, stepSize.y)).xy);
-        float vD = length(texture2D(velocity, uv - vec2(0.0, stepSize.y)).xy);
+        // Surface normals from velocity gradients
+        vec2 s = px * 3.0;
+        float vR = length(texture2D(velocity, uv + vec2(s.x, 0.0)).xy);
+        float vL = length(texture2D(velocity, uv - vec2(s.x, 0.0)).xy);
+        float vU = length(texture2D(velocity, uv + vec2(0.0, s.y)).xy);
+        float vD = length(texture2D(velocity, uv - vec2(0.0, s.y)).xy);
+        vec3 normal = normalize(vec3((vL - vR) * 8.0, (vD - vU) * 8.0, 1.0));
 
-        // Calculate 3D water surface slope
-        vec3 normal = normalize(vec3((vR - vL) * 3.5, (vU - vD) * 3.5, 0.42));
-        vec3 lightDir = normalize(vec3(-0.35, 0.65, 0.75));
-        vec3 viewDir = vec3(0.0, 0.0, 1.0);
+        vec3 lightDir = normalize(vec3(0.4, 0.7, 0.8));
+        vec3 viewDir  = vec3(0.0, 0.0, 1.0);
 
-        // Water ripple specular glint
+        // UV refraction - velocity bends the view like real water
+        float refractStrength = 0.055;
+        vec2 refractUV = clamp(uv + vel * refractStrength, 0.001, 0.999);
+
+        float speed    = clamp(length(vel) * 3.5, 0.0, 1.0);
+        float speedRef = clamp(length(texture2D(velocity, refractUV).xy) * 3.5, 0.0, 1.0);
+
+        // Water depth gradient - still areas = dark deep, active = shallow teal
+        float depth = 1.0 - clamp(speedRef * 1.2, 0.0, 1.0);
+        vec3 waterBody = mix(SHALLOW, MID_WATER, depth);
+        waterBody = mix(waterBody, DEEP_WATER, depth * depth);
+
+        // Specular sun glint on ripple crests
         vec3 halfVec = normalize(lightDir + viewDir);
-        float spec = pow(max(dot(normal, halfVec), 0.0), 22.0) * smoothstep(0.015, 0.35, speed);
+        float NdotH  = max(dot(normal, halfVec), 0.0);
+        float spec   = pow(NdotH, 55.0) * smoothstep(0.01, 0.25, speed) * 2.2;
 
-        // Water surface Fresnel translucency
-        float fresnel = pow(1.0 - max(dot(normal, viewDir), 0.0), 3.0) * 0.45;
+        // Diffuse shading
+        float diffuse = 0.35 + max(dot(normal, lightDir), 0.0) * 0.65;
 
-        // Base water gradient from palette
-        vec3 waterColor = texture2D(palette, vec2(clamp(speed * 0.9 + 0.05, 0.0, 1.0), 0.5)).rgb;
+        // Fresnel edge brightening
+        float fresnel = pow(1.0 - abs(dot(normal, viewDir)), 4.0);
 
-        // Foam / glint crest on ripples
-        float crest = smoothstep(0.35, 0.85, speed) * 0.35;
-        vec3 finalColor = waterColor + vec3(1.0, 1.0, 1.0) * (spec * 0.95 + crest + fresnel * 0.3);
+        // Caustic shimmer - layered sin/cos on displaced UV
+        vec2 cuv = refractUV * 8.0;
+        float caustic = sin(cuv.x * 2.3 + vel.y * 18.0) * cos(cuv.y * 2.1 + vel.x * 16.0);
+        caustic += sin(cuv.x * 3.7 - vel.x * 22.0) * cos(cuv.y * 3.1 + vel.y * 20.0);
+        caustic = pow(clamp(caustic * 0.5 + 0.5, 0.0, 1.0), 3.0);
+        caustic *= smoothstep(0.02, 0.4, speed) * 0.55;
 
-        float alpha = clamp(speed * 1.35 + spec * 0.6 + fresnel * 0.3, 0.0, 0.95);
-        vec3 outRGB = mix(bgColor.rgb, finalColor, alpha);
+        // Foam / white crest on fast ripples
+        float foam = smoothstep(0.55, 0.88, speed) * 0.75;
 
+        // Compose
+        vec3 color = waterBody * diffuse;
+        color = mix(color, SHALLOW, caustic);
+        color += SUN  * spec;
+        color += FOAM * (fresnel * 0.18 + foam);
+
+        float alpha = clamp(0.78 + speed * 0.18 + spec * 0.15 + foam * 0.08, 0.0, 1.0);
+        vec3 outRGB = mix(bgColor.rgb, color, alpha);
         gl_FragColor = vec4(outRGB, alpha);
       }
     `;
