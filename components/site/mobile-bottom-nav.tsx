@@ -224,64 +224,48 @@ export function MobileBottomNav() {
         </div>
       )}
 
-      {/* Floating Island Dock (Detached from screen edges) */}
-      <nav className="fixed bottom-3 inset-x-3 sm:inset-x-6 max-w-md mx-auto z-40 lg:hidden">
-        <div className="rounded-full border border-slate-200/90 dark:border-indigo-950/80 bg-white/85 dark:bg-slate-950/85 p-1 shadow-[0_8px_32px_rgba(79,70,229,0.12)] dark:shadow-[0_12px_40px_rgba(0,0,0,0.6)] backdrop-blur-2xl transition-all duration-300">
-          <div className="flex items-center justify-around">
-            {tabs.map(({ label, href, icon: Icon, sheet: tabSheet }) => {
-              const active = tabSheet
-                ? sheet === tabSheet
-                : pathname === href || (href !== "/" && pathname.startsWith(href));
+      {/* Native Docked Mobile Bottom Bar */}
+      <nav className="fixed bottom-0 inset-x-0 z-40 border-t border-slate-200/90 bg-white/95 pb-safe shadow-lg backdrop-blur-md dark:border-slate-800 dark:bg-slate-900/95 lg:hidden transition-colors">
+        <div className="flex h-14 items-center justify-around px-2 max-w-lg mx-auto">
+          {tabs.map(({ label, href, icon: Icon, sheet: tabSheet }) => {
+            const active = tabSheet
+              ? sheet === tabSheet
+              : pathname === href || (href !== "/" && pathname.startsWith(href));
 
-              if (tabSheet) {
-                return (
-                  <button
-                    key={label}
-                    onClick={() => setSheet(sheet === tabSheet ? null : tabSheet)}
-                    className={cn(
-                      "flex flex-col items-center gap-0.5 rounded-full px-3 py-1.5 text-[9px] font-semibold tracking-tight transition-all duration-300 active:scale-90",
-                      active
-                        ? "text-indigo-600 dark:text-indigo-400 font-bold"
-                        : "text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white"
-                    )}
-                  >
-                    <div
-                      className={cn(
-                        "flex h-7 w-7 items-center justify-center rounded-full transition-all duration-300 ease-[cubic-bezier(0.32,0.72,0,1)]",
-                        active && "bg-indigo-50 dark:bg-indigo-950/70 scale-110"
-                      )}
-                    >
-                      <Icon className="h-4 w-4" />
-                    </div>
-                    <span>{label}</span>
-                  </button>
-                );
-              }
-
+            if (tabSheet) {
               return (
-                <Link
+                <button
                   key={label}
-                  href={href}
+                  onClick={() => setSheet(sheet === tabSheet ? null : tabSheet)}
                   className={cn(
-                    "flex flex-col items-center gap-0.5 rounded-full px-3 py-1.5 text-[9px] font-semibold tracking-tight transition-all duration-300 active:scale-90",
+                    "flex flex-1 flex-col items-center justify-center py-1 text-[10px] font-semibold transition-colors active:scale-95",
                     active
                       ? "text-indigo-600 dark:text-indigo-400 font-bold"
                       : "text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white"
                   )}
                 >
-                  <div
-                    className={cn(
-                      "flex h-7 w-7 items-center justify-center rounded-full transition-all duration-300 ease-[cubic-bezier(0.32,0.72,0,1)]",
-                      active && "bg-indigo-50 dark:bg-indigo-950/70 scale-110"
-                    )}
-                  >
-                    <Icon className="h-4 w-4" />
-                  </div>
+                  <Icon className="h-5 w-5 mb-0.5" />
                   <span>{label}</span>
-                </Link>
+                </button>
               );
-            })}
-          </div>
+            }
+
+            return (
+              <Link
+                key={label}
+                href={href}
+                className={cn(
+                  "flex flex-1 flex-col items-center justify-center py-1 text-[10px] font-semibold transition-colors active:scale-95",
+                  active
+                    ? "text-indigo-600 dark:text-indigo-400 font-bold"
+                    : "text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white"
+                )}
+              >
+                <Icon className="h-5 w-5 mb-0.5" />
+                <span>{label}</span>
+              </Link>
+            );
+          })}
         </div>
       </nav>
     </>

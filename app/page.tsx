@@ -11,8 +11,6 @@ import { StateGrid } from "@/components/site/state-grid";
 import { categorySections, featuredResults } from "@/lib/data";
 import Link from "next/link";
 import { ArrowUpRight, TrendingUp } from "lucide-react";
-import { TiltCard } from "@/components/unlumen-ui/tilt-card";
-import DotField from "@/components/DotField";
 
 import { SeoContentSection } from "@/components/site/seo-content-section";
 import { AdUnit } from "@/components/ads/ad-unit";
@@ -29,100 +27,92 @@ export default function HomePage() {
         <Hero />
 
         {/* 6 Main Sections: Latest Jobs, Admit Card, Answer Keys, Result, Admissions, Documents (Latest Updates) */}
-        <div className="relative overflow-hidden bg-gradient-to-b from-white via-indigo-50/30 to-white dark:from-slate-950 dark:via-indigo-950/20 dark:to-slate-950">
-          <DotField
-            dotRadius={1.5}
-            dotSpacing={14}
-            bulgeStrength={67}
-            glowRadius={160}
-            sparkle={false}
-            waveAmplitude={0}
-            cursorRadius={500}
-            cursorForce={0.1}
-            bulgeOnly
-            gradientFrom="#4f46e5"
-            gradientTo="#6366f1"
-            glowColor="#4f46e5"
-            opacity={0.18}
-          />
-          <div className="relative z-10">
+        <div className="bg-slate-50/50 py-6 dark:bg-slate-950/40">
+          <div className="container-page">
             <CategoryColumns sections={categorySections} />
           </div>
         </div>
 
-        {/* Featured & Trending Alerts with 3D TiltCards */}
-        <section className="py-8 bg-gradient-to-b from-indigo-50/50 via-white to-slate-50/70 dark:from-slate-900/50 dark:via-slate-950 dark:to-slate-900/50 border-b border-slate-200/80 dark:border-slate-800/80">
+        {/* Featured & Trending Alerts */}
+        <section className="py-8 bg-white dark:bg-slate-900/50 border-y border-slate-200/80 dark:border-slate-800/80">
           <div className="container-page">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6">
               <div className="flex items-center gap-3">
-                <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-amber-500 to-amber-600 text-white shadow-md shadow-amber-200 dark:shadow-none">
+                <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-amber-500 to-amber-600 text-white shadow-sm">
                   <TrendingUp className="h-5 w-5" />
                 </span>
                 <div>
                   <div className="flex items-center gap-2">
-                    <h2 className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white tracking-tight">Trending Now</h2>
-                    <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-amber-100 text-amber-900 dark:bg-amber-950/80 dark:text-amber-300">
-                      LIVE ALERTS
+                    <h2 className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white tracking-tight">Trending Notifications</h2>
+                    <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-extrabold bg-amber-100 text-amber-900 dark:bg-amber-950/80 dark:text-amber-300">
+                      LIVE TODAY
                     </span>
                   </div>
-                  <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400">Most viewed sarkari results &amp; recruitment updates today</p>
+                  <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400">Most accessed sarkari exam scorecards, hall tickets and recruitments</p>
                 </div>
               </div>
               <Link href="/results" className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 transition">
-                <span>View All Updates</span>
+                <span>View All 2026 Updates</span>
                 <ArrowUpRight className="h-4 w-4" />
               </Link>
             </div>
+
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {trending.map((post, i) => {
                 const cardConfigs = [
                   {
-                    image: "/cards/card-result.svg",
-                    badge: "🔥 HOT",
-                    variant: "warning" as const,
+                    badge: "RESULT DECLARED",
+                    badgeClass: "bg-emerald-100 text-emerald-800 dark:bg-emerald-950/80 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800",
                     action: "Check Scorecard",
-                    accent: "#0D9488",
                   },
                   {
-                    image: "/cards/card-job.svg",
-                    badge: "⚡ LIVE",
-                    variant: "success" as const,
+                    badge: "ONLINE APPLICATION",
+                    badgeClass: "bg-amber-100 text-amber-900 dark:bg-amber-950/80 dark:text-amber-300 border border-amber-200 dark:border-amber-800",
                     action: "Apply Online",
-                    accent: "#EA580C",
                   },
                   {
-                    image: "/cards/card-admit.svg",
-                    badge: "✨ NEW",
-                    variant: "success" as const,
-                    action: "Download Hall Ticket",
-                    accent: "#4F46E5",
+                    badge: "HALL TICKET OUT",
+                    badgeClass: "bg-blue-100 text-blue-800 dark:bg-blue-950/80 dark:text-blue-300 border border-blue-200 dark:border-blue-800",
+                    action: "Download Admit Card",
                   },
                   {
-                    image: "/cards/card-key.svg",
-                    badge: "📈 TRENDING",
-                    variant: "warning" as const,
+                    badge: "OFFICIAL ANSWER KEY",
+                    badgeClass: "bg-purple-100 text-purple-800 dark:bg-purple-950/80 dark:text-purple-300 border border-purple-200 dark:border-purple-800",
                     action: "View Answer Key",
-                    accent: "#7C3AED",
                   },
                 ];
 
                 const cfg = cardConfigs[i % cardConfigs.length];
 
                 return (
-                  <TiltCard
+                  <Link
                     key={post.slug || i}
-                    title={post.title}
-                    description={`${post.category} · ${post.date || "Active Update"}`}
-                    category={post.category || "Govt Exam"}
-                    price={`#${i + 1}`}
-                    badgeLabel={cfg.badge}
-                    badgeVariant={cfg.variant}
-                    actionText={cfg.action}
-                    accentColor={cfg.accent}
-                    imageSrc={cfg.image}
-                    imageAlt={post.title}
                     href={post.slug ? `/post/${post.slug}` : "#"}
-                  />
+                    className="group relative flex flex-col justify-between rounded-xl border border-slate-200 bg-white p-4 shadow-xs transition-all duration-200 hover:-translate-y-1 hover:border-indigo-400 hover:shadow-md dark:border-slate-800 dark:bg-slate-900 dark:hover:border-indigo-600"
+                  >
+                    <div>
+                      <div className="flex items-center justify-between gap-2 mb-3">
+                        <span className={`inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold ${cfg.badgeClass}`}>
+                          {cfg.badge}
+                        </span>
+                        <span className="text-[10px] font-mono font-medium text-slate-400 dark:text-slate-500">
+                          {post.date || "Active 2026"}
+                        </span>
+                      </div>
+                      <h3 className="text-sm font-bold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors line-clamp-2 leading-snug">
+                        {post.title}
+                      </h3>
+                      <p className="mt-1.5 text-xs text-slate-500 dark:text-slate-400 line-clamp-1">
+                        {post.category || "Govt Recruitment"} · Official Notice
+                      </p>
+                    </div>
+                    <div className="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between">
+                      <span className="text-xs font-bold text-indigo-600 dark:text-indigo-400 group-hover:underline">
+                        {cfg.action}
+                      </span>
+                      <ArrowUpRight className="h-4 w-4 text-slate-400 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                    </div>
+                  </Link>
                 );
               })}
             </div>

@@ -1,11 +1,11 @@
 "use client";
 
-import { Search, ArrowRight } from "lucide-react";
-import { useState, useEffect, useRef } from "react";
+import { Search, ArrowRight, FileCheck, Award, Briefcase, KeyRound, Sparkles } from "lucide-react";
+import { useState } from "react";
 import { trendingExams } from "@/lib/data";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 import { VoiceSearchBtn } from "./voice-search";
-import LiquidEther from "@/components/LiquidEther";
 
 const examOptions = [
   ...trendingExams,
@@ -17,6 +17,55 @@ const examOptions = [
   "UP Board 10th", "UP Board 12th", "CBSE 10th", "CBSE 12th",
   "NEET UG", "JEE Main", "JEE Advanced", "CUET UG",
   "Indian Army", "Indian Navy", "Indian Air Force", "Agniveer",
+];
+
+const trendingTags = [
+  { label: "SSC CGL 2026", query: "SSC CGL" },
+  { label: "RRB NTPC", query: "RRB NTPC" },
+  { label: "UPSC Civil Services", query: "UPSC" },
+  { label: "UP Police Constable", query: "UP Police" },
+  { label: "CTET 2026", query: "CTET" },
+  { label: "NEET UG", query: "NEET" },
+  { label: "Bihar Board 10th/12th", query: "Bihar Board" },
+];
+
+const quickCards = [
+  {
+    title: "Sarkari Results",
+    desc: "Scorecards, merit lists & cut-offs",
+    href: "/results",
+    icon: Award,
+    color: "from-emerald-600 to-teal-700",
+    badge: "Declared",
+    badgeBg: "bg-emerald-100 text-emerald-800 dark:bg-emerald-950/80 dark:text-emerald-300",
+  },
+  {
+    title: "Admit Cards",
+    desc: "Hall tickets & exam city slips",
+    href: "/admit-card",
+    icon: FileCheck,
+    color: "from-blue-600 to-indigo-700",
+    badge: "Available",
+    badgeBg: "bg-blue-100 text-blue-800 dark:bg-blue-950/80 dark:text-blue-300",
+  },
+  {
+    title: "Latest Jobs",
+    desc: "Central & state govt vacancies",
+    href: "/latest-jobs",
+    icon: Briefcase,
+    color: "from-amber-600 to-orange-700",
+    badge: "Apply Online",
+    badgeBg: "bg-amber-100 text-amber-900 dark:bg-amber-950/80 dark:text-amber-300",
+  },
+  {
+    title: "Answer Keys",
+    desc: "Official keys & objection forms",
+    href: "/answer-key",
+    icon: KeyRound,
+    color: "from-purple-600 to-violet-700",
+    badge: "Released",
+    badgeBg: "bg-purple-100 text-purple-800 dark:bg-purple-950/80 dark:text-purple-300",
+  },
 ];
 
 function ResultFinder() {
@@ -32,189 +81,186 @@ function ResultFinder() {
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     const q = [exam, rollNo].filter(Boolean).join(" ");
-    if (q.length >= 3) router.push(`/search?q=${encodeURIComponent(q)}`);
+    if (q.length >= 2) {
+      router.push(`/search?q=${encodeURIComponent(q)}`);
+    } else {
+      router.push("/results");
+    }
+  }
+
+  function handleTagClick(query: string) {
+    setExam(query);
+    router.push(`/search?q=${encodeURIComponent(query)}`);
   }
 
   return (
-    <form onSubmit={handleSubmit} className="relative mx-auto max-w-2xl">
-      <div className="flex flex-col gap-2 sm:flex-row">
-        <div className="relative flex-1">
-          <label htmlFor="hero-search-exam" className="sr-only">Search exam or job</label>
-          <Search className="absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-white/60" aria-hidden="true" />
-          <input
-            id="hero-search-exam"
-            aria-label="Search exam name or job title"
-            type="text"
-            value={exam}
-            onChange={(e) => { setExam(e.target.value); setShowDropdown(true); }}
-            onFocus={() => setShowDropdown(true)}
-            onBlur={() => setTimeout(() => setShowDropdown(false), 200)}
-            placeholder="Search exam (e.g. SSC CGL, UPSC, Railway)"
-            className="w-full rounded-xl border border-white/30 bg-white/15 pl-11 pr-11 py-3.5 text-sm text-white placeholder-white/70 outline-none backdrop-blur-sm transition-all focus:border-white focus:bg-white/20"
-          />
-          <div className="absolute right-2 top-1/2 -translate-y-1/2">
-            <VoiceSearchBtn
-              onResult={(val) => {
-                setExam(val);
-                router.push(`/search?q=${encodeURIComponent(val)}`);
-              }}
-              className="p-1.5 text-white/70 hover:text-white transition active:scale-90"
+    <div className="mx-auto max-w-3xl">
+      <form onSubmit={handleSubmit} className="relative">
+        <div className="flex flex-col gap-2 rounded-2xl bg-white p-2 shadow-2xl ring-1 ring-slate-900/10 dark:bg-slate-900 dark:ring-white/15 sm:flex-row sm:items-center">
+          {/* Exam Name Input */}
+          <div className="relative flex-1">
+            <label htmlFor="hero-search-exam" className="sr-only">Search exam or job</label>
+            <Search className="absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" aria-hidden="true" />
+            <input
+              id="hero-search-exam"
+              aria-label="Search exam name or job title"
+              type="text"
+              value={exam}
+              onChange={(e) => { setExam(e.target.value); setShowDropdown(true); }}
+              onFocus={() => setShowDropdown(true)}
+              onBlur={() => setTimeout(() => setShowDropdown(false), 200)}
+              placeholder="Search exam (e.g. SSC CGL, RRB NTPC, UPSC, CTET)..."
+              className="w-full rounded-xl bg-transparent py-3 pl-10 pr-10 text-sm font-medium text-slate-900 placeholder-slate-400 outline-none dark:text-white dark:placeholder-slate-500"
+            />
+            <div className="absolute right-2 top-1/2 -translate-y-1/2">
+              <VoiceSearchBtn
+                onResult={(val) => {
+                  setExam(val);
+                  router.push(`/search?q=${encodeURIComponent(val)}`);
+                }}
+                className="p-1 text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition"
+              />
+            </div>
+            {showDropdown && filtered.length > 0 && (
+              <div className="absolute left-0 right-0 top-full z-30 mt-2 max-h-56 overflow-auto rounded-xl border border-slate-200 bg-white py-1 shadow-xl dark:border-slate-800 dark:bg-slate-900">
+                {filtered.map((e) => (
+                  <button
+                    key={e}
+                    type="button"
+                    onMouseDown={() => { setExam(e); setShowDropdown(false); router.push(`/search?q=${encodeURIComponent(e)}`); }}
+                    className="flex w-full items-center justify-between px-4 py-2.5 text-left text-sm font-medium text-slate-700 transition hover:bg-indigo-50 hover:text-indigo-700 dark:text-slate-200 dark:hover:bg-slate-800 dark:hover:text-white"
+                  >
+                    <span>{e}</span>
+                    <span className="text-xs text-slate-400">Exam</span>
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* Roll Number (Optional) */}
+          <div className="relative sm:w-48 sm:border-l sm:border-slate-200 sm:dark:border-slate-800">
+            <label htmlFor="hero-search-roll" className="sr-only">Roll number (optional)</label>
+            <input
+              id="hero-search-roll"
+              aria-label="Roll number (optional)"
+              type="text"
+              value={rollNo}
+              onChange={(e) => setRollNo(e.target.value)}
+              placeholder="Roll No. (Scorecard)"
+              className="w-full rounded-xl bg-transparent px-3 py-3 text-sm font-medium text-slate-900 placeholder-slate-400 outline-none dark:text-white dark:placeholder-slate-500"
             />
           </div>
-          {showDropdown && filtered.length > 0 && (
-            <div className="absolute left-0 right-0 top-full z-20 mt-1 max-h-48 overflow-auto rounded-xl border border-white/10 bg-[#0F172A] shadow-xl">
-              {filtered.map((e) => (
-                <button
-                  key={e}
-                  type="button"
-                  onMouseDown={() => { setExam(e); setShowDropdown(false); }}
-                  className="w-full px-4 py-2.5 text-left text-sm text-white/80 transition hover:bg-white/10 hover:text-white"
-                >
-                  {e}
-                </button>
-              ))}
-            </div>
-          )}
+
+          {/* Submit Button */}
+          <button
+            type="submit"
+            className="inline-flex shrink-0 items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 px-6 py-3.5 text-sm font-bold text-slate-950 shadow-md transition hover:from-amber-400 hover:to-amber-500 active:scale-[0.98] sm:py-3"
+          >
+            <span>Find Result</span>
+            <ArrowRight className="h-4 w-4" />
+          </button>
         </div>
-        <div className="relative sm:w-52">
-          <label htmlFor="hero-search-roll" className="sr-only">Roll number (optional, for scorecard)</label>
-          <input
-            id="hero-search-roll"
-            aria-label="Roll number (optional, for scorecard lookup)"
-            type="text"
-            value={rollNo}
-            onChange={(e) => setRollNo(e.target.value)}
-            placeholder="Roll No. (Scorecard lookup)"
-            className="w-full rounded-xl border border-white/30 bg-white/15 px-4 py-3.5 text-sm text-white placeholder-white/70 outline-none backdrop-blur-sm transition-all focus:border-white focus:bg-white/20"
-          />
-        </div>
-        <button
-          type="submit"
-          className="inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 px-5 py-3.5 text-sm font-bold text-slate-950 shadow-md shadow-amber-500/25 transition hover:from-amber-400 hover:to-amber-500 active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-amber-400"
-        >
-          Find Result
-          <ArrowRight className="h-4 w-4" />
-        </button>
+      </form>
+
+      {/* Trending Quick Search Tags */}
+      <div className="mt-4 flex flex-wrap items-center justify-center gap-2 text-xs">
+        <span className="font-semibold text-slate-300 dark:text-slate-400 flex items-center gap-1">
+          <Sparkles className="h-3.5 w-3.5 text-amber-400" />
+          Trending:
+        </span>
+        {trendingTags.map((tag) => (
+          <button
+            key={tag.label}
+            type="button"
+            onClick={() => handleTagClick(tag.query)}
+            className="rounded-lg border border-white/15 bg-white/10 px-2.5 py-1 font-medium text-white transition hover:bg-white/20 hover:border-white/30 active:scale-95"
+          >
+            {tag.label}
+          </button>
+        ))}
       </div>
-      <p className="mt-2 text-center text-xs text-white/40">
-        Popular: SSC CGL · UPSC · RRB NTPC · CTET · NEET · Bihar Board · UP Board
-      </p>
-    </form>
-  );
-}
-
-function Counter({ to, label }: { to: number; label: string }) {
-  const [count, setCount] = useState(to);
-  const ref = useRef<HTMLDivElement>(null);
-  const done = useRef(false);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    setCount(0);
-    const obs = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting && !done.current) {
-        done.current = true;
-        let start = 0;
-        const dur = 1500;
-        const step = Math.ceil(to / (dur / 16));
-        const iv = setInterval(() => {
-          start += step;
-          if (start >= to) { setCount(to); clearInterval(iv); }
-          else setCount(start);
-        }, 16);
-      }
-    }, { threshold: 0.5 });
-    obs.observe(el);
-    return () => obs.disconnect();
-  }, [to]);
-
-  return (
-    <div ref={ref} className="text-center">
-      <p className="text-lg sm:text-xl font-bold text-white tracking-tight">{count.toLocaleString()}<span className="text-amber-400">+</span></p>
-      <p className="text-[10px] text-white/70 mt-0.5 font-medium">{label}</p>
     </div>
   );
 }
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden min-h-[560px]">
-      {/* LiquidEther WebGL Fluid Simulation Background */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
-        {/* Modern EdTech Midnight Indigo gradient base */}
-        <div
-          className="absolute inset-0"
-          style={{
-            background: "radial-gradient(ellipse at 50% 25%, #1e1b4b 0%, #0f172a 60%, #090c16 100%)",
-          }}
-        />
-        <LiquidEther
-          colors={['#4338ca', '#6366f1', '#f59e0b']}
-          mouseForce={20}
-          cursorSize={100}
-          isViscous
-          viscous={30}
-          iterationsViscous={32}
-          iterationsPoisson={32}
-          resolution={0.5}
-          isBounce={false}
-          autoDemo
-          autoSpeed={0.5}
-          autoIntensity={2.2}
-          takeoverDuration={0.25}
-          autoResumeDelay={3000}
-          autoRampDuration={0.6}
-          color0="#4338ca"
-          color1="#6366f1"
-          color2="#f59e0b"
-          className="absolute inset-0 h-full w-full"
-        />
-        {/* Subtle vignette / contrast overlay to guarantee WCAG AA text readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/25 pointer-events-none" />
-      </div>
+    <section className="relative overflow-hidden bg-gradient-to-b from-[#0F172A] via-[#1E1B4B] to-[#0F172A] text-white">
+      {/* Subtle institutional grid texture */}
+      <div
+        className="absolute inset-0 opacity-[0.07] pointer-events-none"
+        style={{
+          backgroundImage: `radial-gradient(rgba(255, 255, 255, 0.4) 1px, transparent 1px)`,
+          backgroundSize: "24px 24px",
+        }}
+        aria-hidden="true"
+      />
 
-      <div className="container-page relative pt-8 sm:pt-12 pb-8 sm:pb-14">
+      <div className="container-page relative pt-10 sm:pt-14 pb-12 sm:pb-16">
         <div className="mx-auto max-w-3xl text-center">
 
-          {/* Badge */}
-          <div className="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3.5 py-1 text-xs font-semibold text-white/90 border border-white/10 mb-5 backdrop-blur-sm">
-            <span className="h-1.5 w-1.5 rounded-full bg-amber-400 animate-pulse" />
-            Live Sarkari Result &amp; Job Alerts 2026
+          {/* National Trust Badge */}
+          <div className="inline-flex items-center gap-2 rounded-full border border-indigo-400/30 bg-indigo-950/60 px-4 py-1.5 text-xs font-semibold text-indigo-200 shadow-inner backdrop-blur-sm mb-6">
+            <span className="flex h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
+            <span className="text-amber-300 font-bold">LIVE 2026:</span>
+            <span>All India Sarkari Results, Admit Cards &amp; Govt Job Alerts</span>
           </div>
 
-          {/* Headline — short & punchy */}
-          <h1 className="text-3xl sm:text-5xl lg:text-[3.5rem] font-extrabold leading-[1.12] tracking-tight text-white">
-            Sarkari Result 2026{' '}
-            <span className="text-amber-400">Exam</span>,{' '}
-            <span className="text-indigo-300">Jobs</span> &amp;{' '}
-            <span className="text-amber-300">Admit Card</span>
+          {/* Authority Headline */}
+          <h1 className="text-3xl sm:text-5xl lg:text-5xl font-black tracking-tight leading-[1.15] text-white">
+            Fastest Sarkari Results,{' '}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-200">
+              Admit Cards
+            </span>{' '}
+            &amp; Exam Updates
           </h1>
 
-          {/* Search bar */}
-          <div className="mt-6">
+          <p className="mt-3.5 text-sm sm:text-base text-slate-300 leading-relaxed max-w-2xl mx-auto">
+            Direct verified links to official notifications, answer keys, scorecards and merit lists for UPSC, SSC, Railways, State PSCs, Teaching &amp; Board examinations.
+          </p>
+
+          {/* Search Box */}
+          <div className="mt-8">
             <ResultFinder />
           </div>
         </div>
 
-        {/* Stats bar */}
-        <div className="mx-auto mt-8 max-w-lg">
-          <div className="rounded-xl bg-white/5 border border-white/10 px-4 py-3">
-            <div className="flex divide-x divide-white/10">
-              <div className="flex-1 min-w-0 px-3 text-center">
-                <Counter to={18240} label="Results Tracked" />
-              </div>
-              <div className="flex-1 min-w-0 px-3 text-center">
-                <Counter to={3712} label="Active Jobs" />
-              </div>
-              <div className="flex-1 min-w-0 px-3 text-center">
-                <Counter to={928} label="Alerts Sent" />
-              </div>
-            </div>
-          </div>
+        {/* 4 Fast-Track Action Pillars (Core of Indian Exam Portals) */}
+        <div className="mt-12 grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4 max-w-4xl mx-auto">
+          {quickCards.map((card) => {
+            const Icon = card.icon;
+            return (
+              <Link
+                key={card.title}
+                href={card.href}
+                className="group relative flex flex-col justify-between rounded-xl border border-white/15 bg-white/10 p-4 transition-all duration-200 hover:-translate-y-1 hover:border-white/30 hover:bg-white/15 hover:shadow-lg"
+              >
+                <div>
+                  <div className="flex items-center justify-between gap-2">
+                    <div className={`flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br ${card.color} text-white shadow-sm`}>
+                      <Icon className="h-5 w-5" />
+                    </div>
+                    <span className={`rounded-md px-1.5 py-0.5 text-[10px] font-bold ${card.badgeBg}`}>
+                      {card.badge}
+                    </span>
+                  </div>
+                  <h2 className="mt-3 text-sm font-bold text-white group-hover:text-amber-300 transition-colors">
+                    {card.title}
+                  </h2>
+                  <p className="mt-0.5 text-xs text-slate-300 line-clamp-1">
+                    {card.desc}
+                  </p>
+                </div>
+                <div className="mt-3 flex items-center text-xs font-semibold text-amber-400 group-hover:text-amber-300">
+                  <span>Explore</span>
+                  <ArrowRight className="ml-1 h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
+                </div>
+              </Link>
+            );
+          })}
         </div>
       </div>
     </section>
   );
 }
-

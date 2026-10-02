@@ -83,25 +83,23 @@ export function Footer() {
             </Link>
 
             <p className="mt-4 text-xs leading-relaxed text-slate-500 dark:text-slate-400 max-w-sm">
-              An independent, high-precision intelligence portal delivering verified government recruitment updates, scorecards, hall tickets, and syllabus structures across India.
+              All India Exam Result is an independent educational portal providing latest verified updates on Sarkari Results, Admit Cards, Govt Jobs, Answer Keys, and Exam Notifications for aspirants across India.
             </p>
 
-            {/* Double-Bezel Telemetry Island */}
-            <div className="mt-6 rounded-2xl p-1 bg-indigo-50/60 dark:bg-indigo-950/40 ring-1 ring-indigo-100 dark:ring-indigo-900/40 max-w-sm">
-              <div className="rounded-[calc(1rem-4px)] bg-white/90 dark:bg-slate-900/90 p-3 shadow-2xs space-y-2">
-                <div className="flex items-center gap-2">
-                  <span className="relative flex h-2 w-2">
-                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-amber-400 opacity-75" />
-                    <span className="relative inline-flex h-2 w-2 rounded-full bg-amber-500" />
-                  </span>
-                  <span className="text-[11px] font-semibold text-slate-800 dark:text-slate-200 tracking-tight">
-                    Continuous 30-Minute Sync Cycle
-                  </span>
-                </div>
-                <div className="flex items-center gap-1.5 text-[10px] text-slate-500 dark:text-slate-400 font-mono">
-                  <CheckCircle2 className="h-3 w-3 text-indigo-600 dark:text-indigo-400 shrink-0" />
-                  <span>Sourced directly from official commission gazettes</span>
-                </div>
+            {/* Official Gazette Verification Status */}
+            <div className="mt-6 rounded-xl border border-indigo-100 bg-indigo-50/50 p-3.5 dark:border-indigo-900/50 dark:bg-indigo-950/30 max-w-sm">
+              <div className="flex items-center gap-2">
+                <span className="relative flex h-2 w-2">
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
+                  <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
+                </span>
+                <span className="text-xs font-bold text-slate-800 dark:text-slate-200">
+                  Live Notifications Updated Regularly
+                </span>
+              </div>
+              <div className="mt-1.5 flex items-center gap-1.5 text-[11px] text-slate-600 dark:text-slate-400">
+                <CheckCircle2 className="h-3.5 w-3.5 text-emerald-600 dark:text-emerald-400 shrink-0" />
+                <span>Cross-checked directly with official commission websites</span>
               </div>
             </div>
 
