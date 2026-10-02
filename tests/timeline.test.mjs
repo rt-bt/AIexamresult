@@ -269,11 +269,65 @@ test("Released Admit Card is Active until Exam Date (e.g. IBPS Clerk)", () => {
   assert.equal(admitStage?.date, "2026-10-01");
   assert.equal(admitStage?.dateDisplay, "1 Oct 2026");
 
-  // Current stage is Admit Card Out
+  // Current stage is Pre Admit Card Out
   assert.equal(timeline.currentStage.stage, "admitCard");
   assert.equal(timeline.currentStage.status, "active");
-  assert.equal(timeline.currentStage.label, "Admit Card Out");
+  assert.equal(timeline.currentStage.label, "Pre Admit Card Out");
 
   // Exam is upcoming
   assert.equal(stageMap.exam, "upcoming");
 });
+
+test("Active Admit Card Range: Bihar STET 2nd Dummy Admit Card (01-07 October 2026)", () => {
+  const post = {
+    title: "Bihar STET 2nd Dummy Admit Card 2026",
+    category: "admitCards",
+    importantDates: [
+      "Application Start Date : 17 August 2026",
+      "Last Date : 22 September 2026",
+      "Fee Payment Last Date : 22 September 2026",
+      "1st Dummy Admit Card : 25-30 September 2026",
+      "2nd Dummy Admit Card : 01-07 October 2026",
+      "Exam Start : Notify Soon",
+      "Admit Card Available : Before Exam",
+      "Result : will be updated here soon",
+    ],
+    importantLinks: [
+      { label: "Download 2nd Dummy Admit Card", url: "https://stetregistration.cbrt.co.in/login" },
+      { label: "Apply Online", url: "https://stetregistration.cbrt.co.in/" },
+    ],
+  };
+
+  const timeline = buildPostTimeline(post, "2026-10-02");
+  const stageMap = Object.fromEntries(timeline.stages.map((s) => [s.id, s.status]));
+
+  // Notification is completed
+  assert.equal(stageMap.notification, "completed");
+
+  // Application is completed (closed on 22 Sep)
+  const appStage = timeline.stages.find((s) => s.id === "application");
+  assert.equal(appStage?.status, "completed");
+  assert.equal(appStage?.dateDisplay, "17 Aug 2026 – 22 Sep 2026");
+
+  // Admit Card picks 2nd Dummy Admit Card (01-07 Oct 2026) and is ACTIVE on 02 Oct 2026
+  const admitStage = timeline.stages.find((s) => s.id === "admitCard");
+  assert.equal(admitStage?.status, "active");
+  assert.equal(admitStage?.label, "2nd Dummy Admit Card");
+  assert.equal(admitStage?.dateDisplay, "1 Oct 2026 – 7 Oct 2026");
+  assert.equal(admitStage?.startDate, "2026-10-01");
+  assert.equal(admitStage?.endDate, "2026-10-07");
+
+  // Current stage is active 2nd Dummy Admit Card
+  assert.equal(timeline.currentStage.stage, "admitCard");
+  assert.equal(timeline.currentStage.status, "active");
+  assert.equal(timeline.currentStage.label, "2nd Dummy Admit Card");
+  assert.equal(
+    timeline.currentStage.message,
+    "2nd Dummy Admit Card is available to download (1 Oct 2026 – 7 Oct 2026)"
+  );
+
+  // Exam displays "Notify Soon" instead of generic fallback
+  const examStage = timeline.stages.find((s) => s.id === "exam");
+  assert.equal(examStage?.dateDisplay, "Notify Soon");
+});
+

@@ -50,7 +50,15 @@ export interface TimelineData {
 export interface ExtractedEventDates {
   notification: { date: string | null; text: string | null; isExplicit: boolean };
   application: { start: string | null; end: string | null; text: string | null; isClosed: boolean };
-  admitCard: { date: string | null; text: string | null; isReleased: boolean; isUnreleased: boolean };
+  admitCard: {
+    date: string | null;
+    startDate?: string | null;
+    endDate?: string | null;
+    label?: string | null;
+    text: string | null;
+    isReleased: boolean;
+    isUnreleased: boolean;
+  };
   exam: { start: string | null; end: string | null; text: string | null; isCompleted: boolean };
   answerKey: { date: string | null; text: string | null; isReleased: boolean; isUnreleased: boolean };
   result: { date: string | null; text: string | null; isReleased: boolean; isUnreleased: boolean };
@@ -311,11 +319,12 @@ export function parseDateRange(text?: string | null): { start: string | null; en
 /**
  * Scans post dates, links, and text to extract verified timeline milestones.
  */
-export function extractPostEventDates(post: any): ExtractedEventDates {
+export function extractPostEventDates(post: any, referenceDate?: string | Date | null): ExtractedEventDates {
+  const { dateStr: today } = getNowIST(referenceDate);
   const result: ExtractedEventDates = {
     notification: { date: null, text: null, isExplicit: false },
     application: { start: null, end: null, text: null, isClosed: false },
-    admitCard: { date: null, text: null, isReleased: false, isUnreleased: true },
+    admitCard: { date: null, startDate: null, endDate: null, label: null, text: null, isReleased: false, isUnreleased: true },
     exam: { start: null, end: null, text: null, isCompleted: false },
     answerKey: { date: null, text: null, isReleased: false, isUnreleased: true },
     result: { date: null, text: null, isReleased: false, isUnreleased: true },
@@ -402,30 +411,82 @@ export function extractPostEventDates(post: any): ExtractedEventDates {
   result.application.start = appStart;
   result.application.end = appEnd;
 
-  // 3. Admit Card (Prioritize Prelims / Tier 1 / Main Admit Card over PET)
+  // 3. Admit Card (Prioritize Prelims / Tier 1 / Main / Active Dummy Admit Card over PET)
   let bestAdmitVal: string | null = null;
-  let isPetOnly = false;
+  let bestAdmitLabel: string | null = null;
+  let bestAdmitStart: string | null = null;
+  let bestAdmitEnd: string | null = null;
+  let bestAdmitScore = -999;
+
   for (const d of dates) {
     if (typeof d !== "string") continue;
     const lower = d.toLowerCase();
-    if (lower.includes("admit card") || lower.includes("hall ticket") || lower.includes("city intimation")) {
-      const val = d.includes(":") ? d.split(":").slice(1).join(":").trim() : d;
-      const isPet = lower.includes("pet admit") || lower.includes("training admit");
-      if (!bestAdmitVal) {
+    if (
+      lower.includes("admit card") ||
+      lower.includes("hall ticket") ||
+      lower.includes("city intimation") ||
+      lower.includes("dummy admit")
+    ) {
+      const parts = d.split(":");
+      const rawLabel = parts[0].trim();
+      const val = parts.slice(1).join(":").trim() || d.trim();
+      const isPet = lower.includes("pet admit") || lower.includes("training admit") || lower.includes("pst admit");
+
+      const range = parseDateRange(val);
+      const singleDate = parseIndianDate(val);
+      const isRange = Boolean(range.start && range.end && range.start !== range.end);
+      const start = isRange ? range.start : singleDate;
+      const end = isRange ? range.end : null;
+
+      let score = 10;
+      if (isPet) score -= 30;
+
+      // Alignment with post title
+      if (title.includes("2nd dummy") && lower.includes("2nd dummy")) score += 60;
+      else if (title.includes("1st dummy") && lower.includes("1st dummy")) score += 60;
+      else if (title.includes("dummy") && lower.includes("dummy")) score += 30;
+      if (lower.includes("2nd dummy")) score += 25;
+      if (lower.includes("pre admit") || lower.includes("tier 1 admit") || lower.includes("exam admit") || lower.includes("main admit")) score += 20;
+
+      // Actual date vs unreleased placeholder
+      if (start || end) {
+        score += 20;
+      } else {
+        score -= 15;
+      }
+
+      // Timeliness relative to today (Asia/Kolkata)
+      if (start && end && today >= start && today <= end) {
+        // Currently active date range!
+        score += 40;
+      } else if (start && today >= start && (!end || today <= end)) {
+        // Released / ongoing
+        score += 30;
+      } else if (start && today < start) {
+        // Upcoming
+        score += 15;
+      } else if (end && today > end) {
+        // Window expired in the past
+        score -= 10;
+      }
+
+      if (score > bestAdmitScore) {
+        bestAdmitScore = score;
         bestAdmitVal = val;
-        isPetOnly = isPet;
-      } else if (isPetOnly && !isPet) {
-        bestAdmitVal = val;
-        isPetOnly = false;
-      } else if (!isPet && (lower.includes("pre admit") || lower.includes("tier 1 admit") || lower.includes("exam admit") || lower.includes("main admit"))) {
-        bestAdmitVal = val;
+        bestAdmitLabel = rawLabel;
+        bestAdmitStart = start;
+        bestAdmitEnd = end;
       }
     }
   }
+
   if (bestAdmitVal) {
     result.admitCard.text = bestAdmitVal;
-    result.admitCard.date = parseIndianDate(bestAdmitVal);
-    result.admitCard.isReleased = isExplicitlyReleased(bestAdmitVal);
+    result.admitCard.date = bestAdmitStart || bestAdmitEnd || parseIndianDate(bestAdmitVal);
+    result.admitCard.startDate = bestAdmitStart;
+    result.admitCard.endDate = bestAdmitEnd;
+    result.admitCard.label = bestAdmitLabel;
+    result.admitCard.isReleased = isExplicitlyReleased(bestAdmitVal) || (bestAdmitStart ? today >= bestAdmitStart : false);
     result.admitCard.isUnreleased = isExplicitlyUnreleased(bestAdmitVal);
   }
 
@@ -442,8 +503,17 @@ export function extractPostEventDates(post: any): ExtractedEventDates {
     if (typeof d !== "string") continue;
     const lower = d.toLowerCase();
     if (
-      (lower.includes("exam date") || lower.includes("examination date") || lower.includes("tier 1") || lower.includes("cbt date") || lower.includes("written exam")) &&
-      !lower.includes("admit") && !lower.includes("result")
+      (lower.includes("exam date") ||
+        lower.includes("examination date") ||
+        lower.includes("tier 1") ||
+        lower.includes("cbt date") ||
+        lower.includes("written exam") ||
+        lower.includes("exam start") ||
+        lower.includes("exam begin") ||
+        lower.includes("pre exam") ||
+        lower.includes("main exam")) &&
+      !lower.includes("admit") &&
+      !lower.includes("result")
     ) {
       const val = d.includes(":") ? d.split(":").slice(1).join(":").trim() : d;
       result.exam.text = val;
@@ -506,7 +576,7 @@ export function extractPostEventDates(post: any): ExtractedEventDates {
  */
 export function buildPostTimeline(post: any, referenceDate?: string | Date | null): TimelineData {
   const { dateStr: today } = getNowIST(referenceDate);
-  const ev = extractPostEventDates(post);
+  const ev = extractPostEventDates(post, referenceDate);
   const stages: TimelineStage[] = [];
 
   const cat = (post.category || "").toLowerCase();
@@ -599,39 +669,75 @@ export function buildPostTimeline(post: any, referenceDate?: string | Date | nul
 
   if (isAdmitRelevant) {
     const aDate = ev.admitCard.date;
+    const aStart = ev.admitCard.startDate || aDate;
+    const aEnd = ev.admitCard.endDate || null;
     const eStart = ev.exam.start;
     let aStatus: TimelineStageStatus = "unavailable";
     let aDisplay = ev.admitCard.text || "Before Exam";
 
-    const isReleased = ev.admitCard.isReleased || (aDate && today >= aDate);
+    const isReleased = ev.admitCard.isReleased || (aStart && today >= aStart);
 
     if (isReleased) {
-      // If the exam has already happened or is ongoing, Admit Card download is completed
-      if (eStart && today > eStart) {
+      // If the admit card window has expired, or exam has passed
+      if (aEnd && today > aEnd) {
+        aStatus = "completed";
+      } else if (eStart && today > eStart) {
         aStatus = "completed";
       } else {
-        // Exam has not arrived yet — Admit Card is LIVE and actively available for download!
+        // LIVE right now!
         aStatus = "active";
       }
-      aDisplay = aDate ? formatDisplayDateIST(aDate) : "Released";
-    } else if (aDate) {
-      aDisplay = formatDisplayDateIST(aDate);
-      if (today < aDate) {
+    } else if (aStart) {
+      if (today < aStart) {
         aStatus = "upcoming";
-      } else {
+      } else if (!aEnd || today <= aEnd) {
         aStatus = "active";
+      } else {
+        aStatus = "completed";
       }
     } else {
       aStatus = "unavailable";
     }
 
+    if (aStart && aEnd && aStart !== aEnd) {
+      aDisplay = `${formatDisplayDateIST(aStart)} – ${formatDisplayDateIST(aEnd)}`;
+    } else if (aStart) {
+      aDisplay = formatDisplayDateIST(aStart);
+    } else if (aDate) {
+      aDisplay = formatDisplayDateIST(aDate);
+    } else if (isReleased) {
+      aDisplay = "Released";
+    }
+
+    // Dynamic label based on admit card type
+    let stageLabel = "Admit Card";
+    let stageShortLabel = "Admit Card";
+    const customLabel = ev.admitCard.label || "";
+    const customLower = customLabel.toLowerCase();
+
+    if (customLower.includes("dummy")) {
+      stageLabel = customLabel; // e.g. "2nd Dummy Admit Card"
+      stageShortLabel = "Dummy Admit";
+    } else if (customLower.includes("city intimation")) {
+      stageLabel = customLabel;
+      stageShortLabel = "City Intimation";
+    } else if (customLower.includes("pre admit")) {
+      stageLabel = aStatus === "active" ? "Pre Admit Card Out" : "Pre Admit Card";
+      stageShortLabel = "Pre Admit";
+    } else {
+      stageLabel = aStatus === "active" ? "Admit Card Out" : "Admit Card";
+      stageShortLabel = "Admit Card";
+    }
+
     stages.push({
       id: "admitCard",
-      label: aStatus === "active" ? "Admit Card Out" : "Admit Card",
-      shortLabel: "Admit Card",
+      label: stageLabel,
+      shortLabel: stageShortLabel,
       status: aStatus,
       dateDisplay: aDisplay,
       date: aDate,
+      startDate: aStart,
+      endDate: aEnd,
       isCurrent: false,
     });
   }
@@ -798,9 +904,10 @@ export function getCurrentTimelineStage(
   if (activeIdx !== -1) {
     const s = stages[activeIdx];
     const pct = stages.length > 1 ? (activeIdx / (stages.length - 1)) * 100 : 50;
+    const cleanLabel = s.label.replace(/\s+out$/i, "");
     const msg =
       s.id === "admitCard"
-        ? `Admit Card is available to download (${s.dateDisplay || "Active"})`
+        ? `${cleanLabel} is available to download (${s.dateDisplay || "Active"})`
         : s.id === "application"
         ? `Application is currently ongoing (${s.dateDisplay || "Active"})`
         : `${s.label} is currently ongoing (${s.dateDisplay || "Active"})`;
