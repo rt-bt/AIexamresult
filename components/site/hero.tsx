@@ -165,6 +165,8 @@ export function Hero() {
           takeoverDuration={0.25}
           autoResumeDelay={3000}
           autoRampDuration={0.6}
+          gyroEnabled={true}
+          gyroSensitivity={1.3}
           color0="#0E877D"
           color1="#3FA8A5"
           color2="#5EEAD4"

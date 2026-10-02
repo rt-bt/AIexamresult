@@ -25,6 +25,8 @@ export interface LiquidEtherProps {
   autoRampDuration?: number;
   dt?: number;
   BFECC?: boolean;
+  gyroEnabled?: boolean;
+  gyroSensitivity?: number;
   style?: React.CSSProperties;
   className?: string;
   children?: React.ReactNode;
@@ -51,6 +53,8 @@ export function LiquidEther({
   autoRampDuration = 0.6,
   dt = 0.014,
   BFECC = true,
+  gyroEnabled = true,
+  gyroSensitivity = 1.0,
   style,
   className = "",
   children,
@@ -148,7 +152,7 @@ export function LiquidEther({
 
     const Common = new CommonClass();
 
-    // Mouse tracking class
+    // Mouse & Sensor (Gyroscope + Accelerometer) tracking class
     class MouseClass {
       mouseMoved = false;
       coords = new THREE.Vector2();
@@ -169,14 +173,33 @@ export function LiquidEther({
       takeoverTo = new THREE.Vector2();
       onInteract: (() => void) | null = null;
 
+      // Mobile Sensor (Accelerometer & Gyroscope) support
+      gyroEnabled = true;
+      gyroSensitivity = 1.0;
+      gyroActive = false;
+      hasGyroMotion = false;
+      lastMotionTime = 0;
+      baselineBeta: number | null = null;
+      lastGamma = 0;
+      lastBeta = 45;
+      gyroTarget = new THREE.Vector2(0, 0);
+      gyroCoords = new THREE.Vector2(0, 0);
+      gyroVelocity = new THREE.Vector2(0, 0);
+      _orientationBound = false;
+
       _onMouseMove = this.onDocumentMouseMove.bind(this);
       _onTouchStart = this.onDocumentTouchStart.bind(this);
       _onTouchMove = this.onDocumentTouchMove.bind(this);
       _onTouchEnd = this.onTouchEnd.bind(this);
       _onDocumentLeave = this.onDocumentLeave.bind(this);
+      _onDeviceOrientation = this.onDeviceOrientation.bind(this);
+      _onDeviceMotion = this.onDeviceMotion.bind(this);
+      _onUserGestureForPermission = this.onUserGestureForPermission.bind(this);
 
-      init(cont: HTMLDivElement) {
+      init(cont: HTMLDivElement, opts?: { gyroEnabled?: boolean; gyroSensitivity?: number }) {
         this.container = cont;
+        this.gyroEnabled = opts?.gyroEnabled ?? true;
+        this.gyroSensitivity = opts?.gyroSensitivity ?? 1.0;
         this.docTarget = cont.ownerDocument || null;
         const defaultView =
           (this.docTarget && this.docTarget.defaultView) ||
@@ -190,6 +213,128 @@ export function LiquidEther({
         if (this.docTarget) {
           this.docTarget.addEventListener("mouseleave", this._onDocumentLeave);
         }
+
+        // Initialize Gyroscope & Accelerometer
+        if (this.gyroEnabled && typeof window !== "undefined") {
+          // iOS 13+ requires user gesture permission
+          if (
+            typeof (window as any).DeviceOrientationEvent !== "undefined" &&
+            typeof (DeviceOrientationEvent as any).requestPermission === "function"
+          ) {
+            window.addEventListener("touchstart", this._onUserGestureForPermission, { once: true, passive: true });
+            window.addEventListener("click", this._onUserGestureForPermission, { once: true, passive: true });
+          } else {
+            // Android and standard desktop/mobile browsers
+            this.bindOrientationListeners();
+          }
+        }
+      }
+
+      onUserGestureForPermission() {
+        if (
+          typeof (window as any).DeviceOrientationEvent !== "undefined" &&
+          typeof (DeviceOrientationEvent as any).requestPermission === "function"
+        ) {
+          (DeviceOrientationEvent as any)
+            .requestPermission()
+            .then((res: string) => {
+              if (res === "granted") {
+                this.bindOrientationListeners();
+              }
+            })
+            .catch(() => {});
+        }
+      }
+
+      bindOrientationListeners() {
+        if (this._orientationBound || typeof window === "undefined") return;
+        this._orientationBound = true;
+        try {
+          window.addEventListener("deviceorientation", this._onDeviceOrientation, { passive: true });
+        } catch (e) {}
+        try {
+          if ("DeviceMotionEvent" in window) {
+            window.addEventListener("devicemotion", this._onDeviceMotion, { passive: true });
+          }
+        } catch (e) {}
+      }
+
+      unbindOrientationListeners() {
+        if (!this._orientationBound || typeof window === "undefined") return;
+        this._orientationBound = false;
+        try {
+          window.removeEventListener("deviceorientation", this._onDeviceOrientation);
+        } catch (e) {}
+        try {
+          window.removeEventListener("devicemotion", this._onDeviceMotion);
+        } catch (e) {}
+      }
+
+      onDeviceOrientation(event: DeviceOrientationEvent) {
+        if (!this.gyroEnabled) return;
+        const gamma = event.gamma; // [-90, 90]
+        const beta = event.beta;   // [-180, 180]
+        if (gamma == null || beta == null) return;
+
+        // Establish continuous adaptive baseline so liquid centers at user's natural holding angle
+        if (this.baselineBeta === null) {
+          this.baselineBeta = beta;
+        } else {
+          this.baselineBeta += (beta - this.baselineBeta) * 0.003;
+        }
+
+        const dGamma = gamma - this.lastGamma;
+        const dBeta = beta - this.lastBeta;
+        this.lastGamma = gamma;
+        this.lastBeta = beta;
+
+        // Map tilt degrees to normalized [-0.92, 0.92]
+        const tiltRange = 26 / Math.max(0.2, this.gyroSensitivity);
+        const targetX = Math.min(Math.max(gamma / tiltRange, -0.92), 0.92);
+        const targetY = Math.min(Math.max(-(beta - this.baselineBeta) / tiltRange, -0.92), 0.92);
+
+        this.gyroTarget.set(targetX, targetY);
+
+        // Instantaneous rotation kick
+        const angSpeed = Math.hypot(dGamma, dBeta);
+        if (angSpeed > 0.1) {
+          this.gyroVelocity.x += (dGamma / 10) * 0.14 * this.gyroSensitivity;
+          this.gyroVelocity.y += (-dBeta / 10) * 0.14 * this.gyroSensitivity;
+          this.hasGyroMotion = true;
+          this.lastMotionTime = performance.now();
+        }
+
+        this.gyroActive = true;
+      }
+
+      onDeviceMotion(event: DeviceMotionEvent) {
+        if (!this.gyroEnabled) return;
+        // Accelerometer shake detection
+        const acc = event.acceleration;
+        if (acc && (acc.x != null || acc.y != null)) {
+          const ax = acc.x || 0;
+          const ay = acc.y || 0;
+          const mag = Math.hypot(ax, ay);
+          if (mag > 0.35) {
+            this.gyroVelocity.x += (ax * 0.04) * this.gyroSensitivity;
+            this.gyroVelocity.y += (-ay * 0.04) * this.gyroSensitivity;
+            this.hasGyroMotion = true;
+            this.lastMotionTime = performance.now();
+          }
+        }
+
+        // Angular rotation velocity
+        const rot = event.rotationRate;
+        if (rot && (rot.gamma != null || rot.beta != null)) {
+          const rg = rot.gamma || 0;
+          const rb = rot.beta || 0;
+          if (Math.hypot(rg, rb) > 4.0) {
+            this.gyroVelocity.x += (rg / 180) * 0.08 * this.gyroSensitivity;
+            this.gyroVelocity.y += (-rb / 180) * 0.08 * this.gyroSensitivity;
+            this.hasGyroMotion = true;
+            this.lastMotionTime = performance.now();
+          }
+        }
       }
 
       dispose() {
@@ -201,6 +346,11 @@ export function LiquidEther({
         }
         if (this.docTarget) {
           this.docTarget.removeEventListener("mouseleave", this._onDocumentLeave);
+        }
+        this.unbindOrientationListeners();
+        if (typeof window !== "undefined") {
+          window.removeEventListener("touchstart", this._onUserGestureForPermission);
+          window.removeEventListener("click", this._onUserGestureForPermission);
         }
         this.listenerTarget = null;
         this.docTarget = null;
@@ -303,11 +453,43 @@ export function LiquidEther({
             this.coords.copy(this.takeoverFrom).lerp(this.takeoverTo, k);
           }
         }
-        this.diff.subVectors(this.coords, this.coords_old);
-        this.coords_old.copy(this.coords);
-        if (this.coords_old.x === 0 && this.coords_old.y === 0) this.diff.set(0, 0);
-        if (this.isAutoActive && !this.takeoverActive)
-          this.diff.multiplyScalar(this.autoIntensity);
+
+        const now = performance.now();
+
+        // 1. User direct touch or mouse interaction takes top priority
+        if (this.hasUserControl && this.isHoverInside) {
+          this.diff.subVectors(this.coords, this.coords_old);
+          this.coords_old.copy(this.coords);
+        }
+        // 2. Mobile Gyroscope and Accelerometer physically driving fluid
+        else if (this.gyroActive && (now - this.lastMotionTime < 3000 || this.hasGyroMotion)) {
+          const pull = 0.09 * this.gyroSensitivity;
+          this.gyroCoords.x += (this.gyroTarget.x - this.gyroCoords.x) * pull + this.gyroVelocity.x;
+          this.gyroCoords.y += (this.gyroTarget.y - this.gyroCoords.y) * pull + this.gyroVelocity.y;
+
+          // Velocity damping friction
+          this.gyroVelocity.multiplyScalar(0.88);
+
+          // Boundary clamp
+          this.gyroCoords.x = Math.min(Math.max(this.gyroCoords.x, -0.92), 0.92);
+          this.gyroCoords.y = Math.min(Math.max(this.gyroCoords.y, -0.92), 0.92);
+
+          this.coords.copy(this.gyroCoords);
+          this.diff.subVectors(this.coords, this.coords_old);
+          this.coords_old.copy(this.coords);
+
+          // Amplification for fluid slosh dynamics
+          this.diff.multiplyScalar(this.autoIntensity * 1.5);
+          this.mouseMoved = true;
+        }
+        // 3. Fallback AutoDriver
+        else {
+          this.diff.subVectors(this.coords, this.coords_old);
+          this.coords_old.copy(this.coords);
+          if (this.coords_old.x === 0 && this.coords_old.y === 0) this.diff.set(0, 0);
+          if (this.isAutoActive && !this.takeoverActive)
+            this.diff.multiplyScalar(this.autoIntensity);
+        }
       }
     }
 
@@ -361,6 +543,11 @@ export function LiquidEther({
           return;
         }
         if (this.mouse.isHoverInside) {
+          if (this.active) this.forceStop();
+          return;
+        }
+        // Pause auto demo if device orientation / accelerometer is actively tilting phone
+        if (this.mouse.gyroActive && this.mouse.hasGyroMotion && (now - this.mouse.lastMotionTime < 2500)) {
           if (this.active) this.forceStop();
           return;
         }
@@ -1069,7 +1256,10 @@ export function LiquidEther({
       constructor(props: any) {
         this.props = props;
         Common.init(props.$wrapper);
-        Mouse.init(props.$wrapper);
+        Mouse.init(props.$wrapper, {
+          gyroEnabled: props.gyroEnabled,
+          gyroSensitivity: props.gyroSensitivity,
+        });
         Mouse.autoIntensity = props.autoIntensity;
         Mouse.takeoverDuration = props.takeoverDuration;
 
@@ -1156,6 +1346,8 @@ export function LiquidEther({
         takeoverDuration,
         autoResumeDelay,
         autoRampDuration,
+        gyroEnabled,
+        gyroSensitivity,
       });
 
       webglManager.start();
@@ -1210,6 +1402,8 @@ export function LiquidEther({
     autoRampDuration,
     dt,
     BFECC,
+    gyroEnabled,
+    gyroSensitivity,
   ]);
 
   return (
