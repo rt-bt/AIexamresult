@@ -663,14 +663,43 @@ export function LiquidEther({
       uniform sampler2D velocity;
       uniform sampler2D palette;
       uniform vec4 bgColor;
+      uniform vec2 px;
       varying vec2 uv;
       void main(){
         vec2 vel = texture2D(velocity, uv).xy;
-        float lenv = clamp(length(vel), 0.0, 1.0);
-        vec3 c = texture2D(palette, vec2(lenv, 0.5)).rgb;
-        vec3 outRGB = mix(bgColor.rgb, c, lenv);
-        float outA = mix(bgColor.a, 1.0, lenv);
-        gl_FragColor = vec4(outRGB, outA);
+        float lenv = length(vel);
+        float speed = clamp(lenv * 1.5, 0.0, 1.0);
+
+        // Water surface normal calculation via finite differences
+        vec2 stepSize = px * 2.5;
+        float vR = length(texture2D(velocity, uv + vec2(stepSize.x, 0.0)).xy);
+        float vL = length(texture2D(velocity, uv - vec2(stepSize.x, 0.0)).xy);
+        float vU = length(texture2D(velocity, uv + vec2(0.0, stepSize.y)).xy);
+        float vD = length(texture2D(velocity, uv - vec2(0.0, stepSize.y)).xy);
+
+        // Calculate 3D water surface slope
+        vec3 normal = normalize(vec3((vR - vL) * 3.5, (vU - vD) * 3.5, 0.42));
+        vec3 lightDir = normalize(vec3(-0.35, 0.65, 0.75));
+        vec3 viewDir = vec3(0.0, 0.0, 1.0);
+
+        // Water ripple specular glint
+        vec3 halfVec = normalize(lightDir + viewDir);
+        float spec = pow(max(dot(normal, halfVec), 0.0), 22.0) * smoothstep(0.015, 0.35, speed);
+
+        // Water surface Fresnel translucency
+        float fresnel = pow(1.0 - max(dot(normal, viewDir), 0.0), 3.0) * 0.45;
+
+        // Base water gradient from palette
+        vec3 waterColor = texture2D(palette, vec2(clamp(speed * 0.9 + 0.05, 0.0, 1.0), 0.5)).rgb;
+
+        // Foam / glint crest on ripples
+        float crest = smoothstep(0.35, 0.85, speed) * 0.35;
+        vec3 finalColor = waterColor + vec3(1.0, 1.0, 1.0) * (spec * 0.95 + crest + fresnel * 0.3);
+
+        float alpha = clamp(speed * 1.35 + spec * 0.6 + fresnel * 0.3, 0.0, 0.95);
+        vec3 outRGB = mix(bgColor.rgb, finalColor, alpha);
+
+        gl_FragColor = vec4(outRGB, alpha);
       }
     `;
 
@@ -1214,6 +1243,7 @@ export function LiquidEther({
               boundarySpace: { value: new THREE.Vector2() },
               palette: { value: paletteTex },
               bgColor: { value: bgVec4 },
+              px: { value: this.simulation.cellScale },
             },
           })
         );
@@ -1222,6 +1252,9 @@ export function LiquidEther({
 
       resize() {
         this.simulation.resize();
+        if (this.outputMesh) {
+          this.outputMesh.material.uniforms.px.value = this.simulation.cellScale;
+        }
       }
 
       render() {

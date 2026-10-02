@@ -142,34 +142,34 @@ export function Hero() {
     <section className="relative overflow-hidden min-h-[560px]">
       {/* LiquidEther WebGL Fluid Simulation Background */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
-        {/* Brand rich deep teal base */}
+        {/* Brand rich deep oceanic water base */}
         <div
           className="absolute inset-0"
           style={{
-            background: "radial-gradient(ellipse at 50% 25%, #0E877D 0%, #084c47 60%, #042724 100%)",
+            background: "radial-gradient(ellipse at 50% 20%, #0E877D 0%, #064E48 55%, #022320 100%)",
           }}
         />
         <LiquidEther
-          colors={['#0E877D', '#3FA8A5', '#5EEAD4']}
-          mouseForce={20}
-          cursorSize={100}
+          colors={['#0A4D48', '#0E877D', '#06B6D4', '#67E8F9', '#FFFFFF']}
+          mouseForce={32}
+          cursorSize={85}
           isViscous
-          viscous={30}
-          iterationsViscous={32}
-          iterationsPoisson={32}
-          resolution={0.5}
-          isBounce={false}
+          viscous={10}
+          iterationsViscous={24}
+          iterationsPoisson={28}
+          resolution={0.65}
+          isBounce={true}
           autoDemo
-          autoSpeed={0.5}
-          autoIntensity={2.2}
-          takeoverDuration={0.25}
-          autoResumeDelay={3000}
-          autoRampDuration={0.6}
+          autoSpeed={0.55}
+          autoIntensity={2.4}
+          takeoverDuration={0.2}
+          autoResumeDelay={2500}
+          autoRampDuration={0.5}
           gyroEnabled={true}
-          gyroSensitivity={1.3}
-          color0="#0E877D"
-          color1="#3FA8A5"
-          color2="#5EEAD4"
+          gyroSensitivity={1.6}
+          color0="#0A4D48"
+          color1="#0E877D"
+          color2="#67E8F9"
           className="absolute inset-0 h-full w-full"
         />
         {/* Subtle vignette / contrast overlay to guarantee WCAG AA text readability */}
