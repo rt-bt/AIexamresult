@@ -6,9 +6,6 @@ import { usePathname, useRouter } from "next/navigation";
 import {
   Search,
   ChevronDown,
-  Sparkles,
-  Menu,
-  X,
   Briefcase,
   FileCheck2,
   Award,
@@ -18,11 +15,9 @@ import {
   Compass,
   Layers,
   MapPin,
-  HelpCircle,
-  Brain,
   ShieldCheck,
   CheckCircle2,
-  Command,
+  Sparkles,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Logo } from "@/components/site/logo";
@@ -52,7 +47,7 @@ const examSubNav: DropdownItem[] = [
 const studyHubSubNav: DropdownItem[] = [
   { label: "Current Affairs", href: "/current-affairs", desc: "Daily quiz & national digests", icon: Compass },
   { label: "Mock Test", href: "/mock-tests", desc: "Timed practice tests", icon: Layers },
-  { label: "IQ Test", href: "/iq-test", desc: "Reasoning & aptitude evaluation", icon: Brain },
+  { label: "IQ Test", href: "/iq-test", desc: "Reasoning & aptitude evaluation", icon: Sparkles },
   { label: "Calendar", href: "/exam-calendar", desc: "Official upcoming exam schedules", icon: Calendar },
 ];
 
@@ -99,7 +94,7 @@ function getTickerItems() {
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const { lang, t } = useLang();
+  const { t } = useLang();
   const pathname = usePathname();
   const router = useRouter();
 
@@ -121,22 +116,25 @@ export function Header() {
   }, [router]);
 
   return (
-    <header className="sticky top-0 z-50 w-full">
-      {/* 1. Subtle Minimalist Top Alert Bar */}
+    <header className="sticky top-0 z-50 w-full transition-all">
+      {/* 1. Ultra-Slim Kinetic Status & Live Ticker */}
       <div
         role="region"
         aria-label="Breaking Exam Alerts"
-        className="border-b border-slate-200/70 bg-slate-50/90 text-slate-700 backdrop-blur-md dark:border-slate-800/80 dark:bg-slate-950/80 dark:text-slate-300"
+        className="border-b border-slate-200/60 bg-white/70 text-slate-700 backdrop-blur-xl dark:border-white/[0.08] dark:bg-slate-950/70 dark:text-slate-300"
       >
-        <div className="container-page flex h-8 items-center justify-between gap-3 text-[11px]">
+        <div className="container-page flex h-7 items-center justify-between gap-3 text-[11px]">
           <div className="flex items-center gap-2 overflow-hidden">
-            <span className="inline-flex shrink-0 items-center gap-1.5 rounded-full border border-teal-500/30 bg-teal-500/10 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-teal-700 dark:border-teal-500/40 dark:bg-teal-500/15 dark:text-teal-300">
-              <span className="relative flex h-1.5 w-1.5">
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-teal-400 opacity-75" />
-                <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-teal-500" />
+            {/* Double-Bezel Micro Pulse Badge */}
+            <div className="rounded-full p-0.5 bg-teal-500/10 dark:bg-teal-400/10 ring-1 ring-teal-500/20">
+              <span className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-teal-500/15 px-2 py-0.5 text-[9px] font-bold uppercase tracking-[0.14em] text-teal-800 dark:text-teal-300">
+                <span className="relative flex h-1.5 w-1.5">
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-teal-400 opacity-75" />
+                  <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-teal-500" />
+                </span>
+                LIVE PULSE
               </span>
-              Live Alerts
-            </span>
+            </div>
 
             <div className="relative overflow-hidden">
               <div className="animate-marquee whitespace-nowrap inline-block hover:[animation-play-state:paused] focus-within:[animation-play-state:paused] motion-reduce:animate-none">
@@ -144,12 +142,12 @@ export function Header() {
                   <Link
                     key={`${item.slug}-${i}`}
                     href={item.slug ? `/post/${item.slug}` : "#"}
-                    className="mx-3 inline-flex items-center gap-1.5 transition hover:text-teal-600 dark:hover:text-teal-400"
+                    className="mx-3 inline-flex items-center gap-1.5 transition-colors duration-300 hover:text-teal-600 dark:hover:text-teal-400"
                   >
-                    <span className="rounded border border-slate-200/90 bg-white/80 px-1.5 py-0.2 font-mono text-[9px] font-semibold uppercase text-slate-600 dark:border-slate-800 dark:bg-slate-900/90 dark:text-slate-400">
+                    <span className="rounded-full border border-slate-200/90 bg-white/90 px-1.5 py-0.2 font-mono text-[9px] font-semibold uppercase text-slate-600 dark:border-white/10 dark:bg-white/[0.06] dark:text-slate-300">
                       {item.category || "Update"}
                     </span>
-                    <span className="font-medium text-slate-700 dark:text-slate-300 truncate max-w-[260px] sm:max-w-none">
+                    <span className="font-medium text-slate-700 dark:text-slate-300 truncate max-w-[280px] sm:max-w-none">
                       {item.title}
                     </span>
                     <span className="text-slate-300 dark:text-slate-700" aria-hidden="true">•</span>
@@ -161,202 +159,235 @@ export function Header() {
 
           <div className="hidden items-center gap-2 text-slate-400 dark:text-slate-500 sm:flex shrink-0 font-mono text-[10px]">
             <CheckCircle2 className="h-3 w-3 text-teal-600 dark:text-teal-400" />
-            <span>Govt Verified Sync</span>
+            <span className="tracking-wide">Govt Gazettes Verified</span>
           </div>
         </div>
       </div>
 
-      {/* 2. Main Navigation Bar (Linear / SaaS Minimalist) */}
-      <div className="border-b border-slate-200/80 bg-white/90 backdrop-blur-xl dark:border-slate-800/80 dark:bg-slate-950/90 transition-colors">
-        <div className="container-page flex h-14 lg:h-16 items-center justify-between gap-3 lg:gap-6">
-          {/* Logo / Brand */}
-          <Link href="/" className="group flex items-center gap-2.5 shrink-0 focus-visible:outline-none">
-            <div className="relative flex h-9 w-9 items-center justify-center rounded-xl border border-slate-200/80 bg-white p-1 shadow-2xs transition group-hover:border-teal-500/40 dark:border-slate-800 dark:bg-slate-900">
-              <Logo className="h-7 w-7 object-contain" />
-            </div>
-            <div className="flex flex-col leading-none">
-              <div className="flex items-center gap-1.5">
-                <span className="text-sm font-black tracking-tight text-slate-900 dark:text-white">
-                  All India
-                </span>
-                <span className="rounded bg-teal-500/10 px-1 py-0.5 font-mono text-[9px] font-bold uppercase tracking-wider text-teal-700 dark:bg-teal-500/20 dark:text-teal-300">
-                  Govt
+      {/* 2. Fluid Floating Island Navbar (Double-Bezel Architecture) */}
+      <div className="container-page py-2">
+        <div className="rounded-2xl sm:rounded-full p-1 bg-white/70 dark:bg-slate-950/70 border border-slate-200/80 dark:border-white/10 shadow-[0_4px_24px_rgba(0,0,0,0.04)] dark:shadow-[0_12px_40px_rgba(0,0,0,0.45)] backdrop-blur-2xl transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)]">
+          <div className="flex h-12 items-center justify-between gap-3 px-3 sm:px-4">
+            
+            {/* Brand Logo & Precision Mark */}
+            <Link href="/" className="group flex items-center gap-2.5 shrink-0 focus-visible:outline-none">
+              <div className="relative flex h-8 w-8 items-center justify-center rounded-xl sm:rounded-full border border-slate-200/90 bg-white p-1 shadow-2xs transition-all duration-300 group-hover:scale-105 group-hover:border-teal-500/50 dark:border-white/10 dark:bg-slate-900">
+                <Logo className="h-6 w-6 object-contain" />
+              </div>
+              <div className="flex flex-col leading-none">
+                <div className="flex items-center gap-1.5">
+                  <span className="text-sm font-black tracking-tight text-slate-900 dark:text-white transition-colors">
+                    All India
+                  </span>
+                  <span className="rounded-full bg-teal-500/10 px-1.5 py-0.5 font-mono text-[9px] font-bold uppercase tracking-wider text-teal-700 dark:bg-teal-500/20 dark:text-teal-300">
+                    Govt
+                  </span>
+                </div>
+                <span className="mt-0.5 font-mono text-[9px] font-bold tracking-[0.14em] text-teal-600 dark:text-teal-400">
+                  EXAM RESULT
                 </span>
               </div>
-              <span className="mt-0.5 font-mono text-[10px] font-bold tracking-wider text-teal-600 dark:text-teal-400">
-                EXAM RESULT
-              </span>
-            </div>
-          </Link>
+            </Link>
 
-          {/* Desktop Navigation Links */}
-          <nav className="hidden items-center gap-1 lg:flex">
-            {navItems.map((item) => {
-              const isActive =
-                item.href === "/"
-                  ? pathname === "/"
-                  : pathname === item.href || pathname.startsWith(item.href + "/");
+            {/* Center Navigation Links (Awwwards-Tier Pill Bar) */}
+            <nav className="hidden items-center gap-1 lg:flex">
+              {navItems.map((item) => {
+                const isActive =
+                  item.href === "/"
+                    ? pathname === "/"
+                    : pathname === item.href || pathname.startsWith(item.href + "/");
 
-              return item.dropdown ? (
-                <div key={item.label} className="group relative">
-                  <button
+                return item.dropdown ? (
+                  <div key={item.label} className="group relative">
+                    <button
+                      className={cn(
+                        "flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-semibold tracking-tight transition-all duration-300 ease-[cubic-bezier(0.32,0.72,0,1)]",
+                        isActive
+                          ? "bg-slate-900 text-white shadow-xs dark:bg-white dark:text-slate-950 font-bold"
+                          : "text-slate-600 hover:bg-slate-100/90 hover:text-slate-950 dark:text-slate-300 dark:hover:bg-white/10 dark:hover:text-white"
+                      )}
+                    >
+                      <span>{t(`nav.${item.label.toLowerCase().replace(/\s+/g, "-")}`) || item.label}</span>
+                      <div className="flex h-3.5 w-3.5 items-center justify-center rounded-full bg-black/5 dark:bg-white/10 transition-transform duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:rotate-180">
+                        <ChevronDown className="h-2.5 w-2.5 text-current" />
+                      </div>
+                    </button>
+
+                    {/* Concentric Double-Bezel Dropdown Panel */}
+                    <div className="invisible absolute left-0 top-full z-50 mt-2 w-72 origin-top-left rounded-2xl p-1.5 bg-white/95 dark:bg-slate-950/95 border border-slate-200/90 dark:border-white/10 shadow-[0_16px_50px_rgba(0,0,0,0.12)] dark:shadow-[0_24px_60px_rgba(0,0,0,0.6)] backdrop-blur-2xl opacity-0 transition-all duration-300 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 translate-y-1">
+                      <div className="space-y-0.5">
+                        {item.dropdown.map((sub) => {
+                          const isSubActive = pathname === sub.href;
+                          const Icon = sub.icon;
+                          return (
+                            <Link
+                              key={sub.href}
+                              href={sub.href}
+                              className={cn(
+                                "group/sub flex items-start gap-2.5 rounded-xl px-3 py-2 text-xs transition-all duration-200 ease-[cubic-bezier(0.32,0.72,0,1)]",
+                                isSubActive
+                                  ? "bg-teal-50 text-teal-800 dark:bg-teal-950/60 dark:text-teal-300 font-semibold"
+                                  : "text-slate-700 hover:bg-slate-100/90 dark:text-slate-300 dark:hover:bg-white/[0.07] dark:hover:text-white"
+                              )}
+                            >
+                              {Icon && (
+                                <div className="mt-0.5 flex h-5 w-5 items-center justify-center rounded-lg bg-slate-100 dark:bg-white/[0.06] text-slate-500 dark:text-slate-400 group-hover/sub:scale-110 group-hover/sub:text-teal-600 dark:group-hover/sub:text-teal-400 transition-transform">
+                                  <Icon className="h-3 w-3" />
+                                </div>
+                              )}
+                              <div className="flex flex-col">
+                                <span className="font-semibold leading-tight">{sub.label}</span>
+                                {sub.desc && (
+                                  <span className="text-[10px] text-slate-400 dark:text-slate-500 font-normal mt-0.5 leading-snug">
+                                    {sub.desc}
+                                  </span>
+                                )}
+                              </div>
+                            </Link>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  </div>
+                ) : (
+                  <Link
+                    key={item.href}
+                    href={item.href}
                     className={cn(
-                      "flex items-center gap-1 rounded-lg px-2.5 py-1.5 text-xs font-semibold tracking-tight transition-all",
+                      "rounded-full px-3 py-1.5 text-xs font-semibold tracking-tight transition-all duration-300 ease-[cubic-bezier(0.32,0.72,0,1)]",
                       isActive
-                        ? "bg-slate-100 text-slate-950 dark:bg-slate-800/90 dark:text-white font-bold"
-                        : "text-slate-600 hover:bg-slate-100/70 hover:text-slate-900 dark:text-slate-300 dark:hover:bg-slate-800/60 dark:hover:text-white"
+                        ? "bg-slate-900 text-white shadow-xs dark:bg-white dark:text-slate-950 font-bold"
+                        : "text-slate-600 hover:bg-slate-100/90 hover:text-slate-950 dark:text-slate-300 dark:hover:bg-white/10 dark:hover:text-white"
                     )}
                   >
-                    <span>{t(`nav.${item.label.toLowerCase().replace(/\s+/g, "-")}`) || item.label}</span>
-                    <ChevronDown className="h-3.5 w-3.5 text-slate-400 transition-transform duration-200 group-hover:rotate-180 dark:text-slate-500" />
-                  </button>
+                    {t(`nav.${item.label.toLowerCase().replace(/\s+/g, "-")}`) || item.label}
+                  </Link>
+                );
+              })}
+            </nav>
 
-                  {/* Sleek Floating Dropdown Menu */}
-                  <div className="invisible absolute left-0 top-full z-50 mt-1 w-64 origin-top-left rounded-xl border border-slate-200 bg-white/95 p-1.5 shadow-xl backdrop-blur-xl opacity-0 transition-all duration-150 group-hover:visible group-hover:opacity-100 dark:border-slate-800 dark:bg-slate-950/95 dark:shadow-slate-950/60">
-                    {item.dropdown.map((sub) => {
-                      const isSubActive = pathname === sub.href;
-                      const Icon = sub.icon;
-                      return (
+            {/* Quick Search & Controls Suite */}
+            <div className="flex items-center gap-1.5 sm:gap-2">
+              {/* Nested Button-in-Button Search Pill (Desktop) */}
+              <Link
+                href="/search"
+                className="group hidden lg:flex items-center gap-2 rounded-full border border-slate-200/90 bg-slate-100/50 pl-3 pr-1.5 py-1 text-xs text-slate-500 transition-all duration-300 hover:border-slate-300 hover:bg-white hover:text-slate-800 dark:border-white/10 dark:bg-white/[0.04] dark:text-slate-400 dark:hover:border-white/20 dark:hover:bg-white/[0.08] dark:hover:text-slate-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500"
+              >
+                <Search className="h-3 w-3 text-slate-400 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors" />
+                <span className="w-28 text-left truncate text-[11px]">Search exams...</span>
+                
+                {/* Micro Island Keycaps */}
+                <div className="flex h-5 items-center rounded-full border border-slate-200/80 bg-white px-1.5 font-mono text-[9px] font-semibold text-slate-400 dark:border-white/10 dark:bg-slate-800 dark:text-slate-300 shadow-2xs">
+                  ⌘K
+                </div>
+              </Link>
+
+              {/* Mobile Search Button */}
+              <Link
+                href="/search"
+                className="flex lg:hidden h-8 w-8 items-center justify-center rounded-full border border-slate-200/80 bg-white/80 text-slate-700 hover:bg-slate-100 active:scale-95 dark:border-white/10 dark:bg-white/[0.04] dark:text-slate-300 dark:hover:bg-white/10 transition-transform"
+                title="Search"
+                aria-label="Search"
+              >
+                <Search className="h-3.5 w-3.5" />
+              </Link>
+
+              {/* Voice Search with Circular Bezel */}
+              <VoiceSearchBtn
+                className="flex h-8 w-8 items-center justify-center rounded-full border border-slate-200/80 bg-white/80 text-slate-700 hover:bg-slate-100 active:scale-95 dark:border-white/10 dark:bg-white/[0.04] dark:text-slate-300 dark:hover:bg-white/10 transition-all"
+              />
+
+              {/* Bookmarks */}
+              <BookmarkListBtn className="rounded-full" />
+
+              {/* Language Selector */}
+              <LanguageSelector className="rounded-full" />
+
+              {/* Theme Toggle (Sun/Moon Island) */}
+              <ThemeToggle className="rounded-full" />
+
+              {/* Morphing Hamburger Toggle for Mobile */}
+              <button
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                className="relative flex lg:hidden h-8 w-8 items-center justify-center rounded-full border border-slate-200/80 bg-white/80 text-slate-700 hover:bg-slate-100 active:scale-95 dark:border-white/10 dark:bg-white/[0.04] dark:text-slate-300 dark:hover:bg-white/10 transition-all"
+                aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+              >
+                <div className="relative h-3 w-3.5">
+                  <span
+                    className={cn(
+                      "absolute left-0 top-0 h-0.5 w-3.5 rounded-full bg-current transition-all duration-300 ease-[cubic-bezier(0.32,0.72,0,1)]",
+                      mobileMenuOpen && "top-1.5 rotate-45"
+                    )}
+                  />
+                  <span
+                    className={cn(
+                      "absolute left-0 top-1.5 h-0.5 w-3.5 rounded-full bg-current transition-all duration-300 ease-[cubic-bezier(0.32,0.72,0,1)]",
+                      mobileMenuOpen && "opacity-0 scale-0"
+                    )}
+                  />
+                  <span
+                    className={cn(
+                      "absolute left-0 top-3 h-0.5 w-3.5 rounded-full bg-current transition-all duration-300 ease-[cubic-bezier(0.32,0.72,0,1)]",
+                      mobileMenuOpen && "top-1.5 -rotate-45"
+                    )}
+                  />
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* 3. Fluid Expanded Mobile Drawer (Double-Bezel & Staggered Reveal) */}
+      {mobileMenuOpen && (
+        <div className="container-page pb-3 lg:hidden animate-fade-up">
+          <div className="rounded-2xl p-1 bg-white/95 dark:bg-slate-950/95 border border-slate-200/90 dark:border-white/10 shadow-2xl backdrop-blur-2xl">
+            <div className="p-3 space-y-1">
+              {navItems.map((item) => (
+                <div key={item.label} className="border-b border-slate-100 dark:border-white/[0.06] py-1 last:border-none">
+                  <Link
+                    href={item.href}
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="flex items-center justify-between rounded-xl px-3 py-2 text-xs font-semibold text-slate-800 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-white/[0.06] transition"
+                  >
+                    <span>{t(`nav.${item.label.toLowerCase().replace(/\s+/g, "-")}`) || item.label}</span>
+                  </Link>
+                  {item.dropdown && (
+                    <div className="ml-3 grid grid-cols-2 gap-1 py-1">
+                      {item.dropdown.map((sub) => (
                         <Link
                           key={sub.href}
                           href={sub.href}
-                          className={cn(
-                            "flex items-start gap-2.5 rounded-lg px-2.5 py-2 text-xs transition",
-                            isSubActive
-                              ? "bg-teal-50 text-teal-800 dark:bg-teal-950/50 dark:text-teal-300 font-semibold"
-                              : "text-slate-700 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-900 dark:hover:text-white"
-                          )}
+                          onClick={() => setMobileMenuOpen(false)}
+                          className="rounded-lg px-2.5 py-1.5 text-[11px] text-slate-600 hover:bg-slate-100 dark:text-slate-400 dark:hover:bg-white/[0.06] transition"
                         >
-                          {Icon && (
-                            <Icon className="mt-0.5 h-3.5 w-3.5 text-slate-400 dark:text-slate-500 shrink-0" />
-                          )}
-                          <div className="flex flex-col">
-                            <span className="font-semibold leading-tight">{sub.label}</span>
-                            {sub.desc && (
-                              <span className="text-[10px] text-slate-400 dark:text-slate-500 font-normal mt-0.5 leading-snug">
-                                {sub.desc}
-                              </span>
-                            )}
-                          </div>
+                          {sub.label}
                         </Link>
-                      );
-                    })}
-                  </div>
-                </div>
-              ) : (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className={cn(
-                    "rounded-lg px-2.5 py-1.5 text-xs font-semibold tracking-tight transition-all",
-                    isActive
-                      ? "bg-slate-100 text-slate-950 dark:bg-slate-800/90 dark:text-white font-bold"
-                      : "text-slate-600 hover:bg-slate-100/70 hover:text-slate-900 dark:text-slate-300 dark:hover:bg-slate-800/60 dark:hover:text-white"
+                      ))}
+                    </div>
                   )}
-                >
-                  {t(`nav.${item.label.toLowerCase().replace(/\s+/g, "-")}`) || item.label}
-                </Link>
-              );
-            })}
-          </nav>
-
-          {/* Quick Search & Actions Suite */}
-          <div className="flex items-center gap-1.5 sm:gap-2">
-            {/* Linear-style Search Pill (Desktop) */}
-            <Link
-              href="/search"
-              className="hidden lg:flex items-center gap-2.5 rounded-lg border border-slate-200/90 bg-slate-100/60 px-3 py-1.5 text-xs text-slate-500 transition hover:border-slate-300 hover:bg-white hover:text-slate-800 dark:border-slate-800 dark:bg-slate-900/60 dark:text-slate-400 dark:hover:border-slate-700 dark:hover:bg-slate-900 dark:hover:text-slate-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500"
-            >
-              <Search className="h-3.5 w-3.5 text-slate-400 dark:text-slate-500" />
-              <span className="w-36 text-left truncate">Search sarkari exams...</span>
-              <kbd className="inline-flex h-4 items-center gap-0.5 rounded border border-slate-200 bg-white px-1 font-mono text-[9px] font-medium text-slate-400 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-400">
-                ⌘K
-              </kbd>
-            </Link>
-
-            {/* Mobile Search Button */}
-            <Link
-              href="/search"
-              className="flex lg:hidden h-8 w-8 items-center justify-center rounded-lg border border-slate-200 bg-white/80 text-slate-700 hover:bg-slate-100 hover:text-slate-900 dark:border-slate-800 dark:bg-slate-900/80 dark:text-slate-300 dark:hover:bg-slate-800 dark:hover:text-white"
-              title="Search"
-              aria-label="Search"
-            >
-              <Search className="h-3.5 w-3.5" />
-            </Link>
-
-            {/* Voice Search */}
-            <VoiceSearchBtn
-              className="flex h-8 w-8 items-center justify-center rounded-lg border border-slate-200 bg-white/80 text-slate-700 hover:bg-slate-100 hover:text-slate-900 dark:border-slate-800 dark:bg-slate-900/80 dark:text-slate-300 dark:hover:bg-slate-800 dark:hover:text-white transition"
-            />
-
-            {/* Bookmarks */}
-            <BookmarkListBtn />
-
-            {/* Language Selector */}
-            <LanguageSelector />
-
-            {/* Theme Toggle (Linear-style Light/Dark/System) */}
-            <ThemeToggle />
-
-            {/* Mobile Menu Hamburger */}
-            <button
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="flex lg:hidden h-8 w-8 items-center justify-center rounded-lg border border-slate-200 bg-white/80 text-slate-700 hover:bg-slate-100 hover:text-slate-900 dark:border-slate-800 dark:bg-slate-900/80 dark:text-slate-300 dark:hover:bg-slate-800 dark:hover:text-white transition"
-              aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
-            >
-              {mobileMenuOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
-            </button>
-          </div>
-        </div>
-      </div>
-
-      {/* 3. Mobile Navigation Sheet */}
-      {mobileMenuOpen && (
-        <div className="border-b border-slate-200 bg-white/95 p-4 shadow-xl backdrop-blur-xl lg:hidden dark:border-slate-800 dark:bg-slate-950/95 animate-fade-up">
-          <div className="space-y-1">
-            {navItems.map((item) => (
-              <div key={item.label} className="border-b border-slate-100 dark:border-slate-900 py-1 last:border-none">
-                <Link
-                  href={item.href}
-                  onClick={() => setMobileMenuOpen(false)}
-                  className="flex items-center justify-between rounded-lg px-2.5 py-2 text-xs font-semibold text-slate-800 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-900 transition"
-                >
-                  <span>{t(`nav.${item.label.toLowerCase().replace(/\s+/g, "-")}`) || item.label}</span>
-                </Link>
-                {item.dropdown && (
-                  <div className="ml-3 grid grid-cols-2 gap-1 py-1">
-                    {item.dropdown.map((sub) => (
-                      <Link
-                        key={sub.href}
-                        href={sub.href}
-                        onClick={() => setMobileMenuOpen(false)}
-                        className="rounded-lg px-2 py-1.5 text-[11px] text-slate-600 hover:bg-slate-100 dark:text-slate-400 dark:hover:bg-slate-900 transition"
-                      >
-                        {sub.label}
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-4 border-t border-slate-100 pt-3 dark:border-slate-800">
-            <p className="mb-2 px-1 text-[10px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500">
-              Interactive Tools
-            </p>
-            <div className="grid grid-cols-2 gap-1.5">
-              {toolsSubNav.map((tool) => (
-                <Link
-                  key={tool.href}
-                  href={tool.href}
-                  onClick={() => setMobileMenuOpen(false)}
-                  className="flex items-center gap-1.5 rounded-lg border border-slate-200/80 bg-slate-50/80 px-2 py-1.5 text-[11px] font-medium text-slate-700 hover:bg-slate-100 dark:border-slate-800 dark:bg-slate-900/60 dark:text-slate-300 dark:hover:bg-slate-800 transition"
-                >
-                  <tool.icon className="h-3 w-3 text-teal-600 dark:text-teal-400 shrink-0" />
-                  <span className="truncate">{tool.label}</span>
-                </Link>
+                </div>
               ))}
+            </div>
+
+            {/* Quick Tools Tray */}
+            <div className="border-t border-slate-100 dark:border-white/[0.06] p-3 bg-slate-50/60 dark:bg-white/[0.02] rounded-b-xl">
+              <p className="mb-2 px-1 text-[10px] font-bold uppercase tracking-[0.14em] text-slate-400 dark:text-slate-500">
+                Interactive Aspirant Tools
+              </p>
+              <div className="grid grid-cols-2 gap-1.5">
+                {toolsSubNav.map((tool) => (
+                  <Link
+                    key={tool.href}
+                    href={tool.href}
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="flex items-center gap-1.5 rounded-xl border border-slate-200/80 bg-white px-2.5 py-2 text-[11px] font-medium text-slate-700 hover:border-teal-500/40 dark:border-white/10 dark:bg-slate-900 dark:text-slate-300 transition"
+                  >
+                    <tool.icon className="h-3 w-3 text-teal-600 dark:text-teal-400 shrink-0" />
+                    <span className="truncate">{tool.label}</span>
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
         </div>
