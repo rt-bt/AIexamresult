@@ -11,6 +11,8 @@ import { StateGrid } from "@/components/site/state-grid";
 import { categorySections, featuredResults } from "@/lib/data";
 import Link from "next/link";
 import { ArrowUpRight, TrendingUp } from "lucide-react";
+import { TiltCard } from "@/components/unlumen-ui/tilt-card";
+import DotField from "@/components/DotField";
 
 import { SeoContentSection } from "@/components/site/seo-content-section";
 import { AdUnit } from "@/components/ads/ad-unit";
@@ -27,92 +29,100 @@ export default function HomePage() {
         <Hero />
 
         {/* 6 Main Sections: Latest Jobs, Admit Card, Answer Keys, Result, Admissions, Documents (Latest Updates) */}
-        <div className="bg-slate-50/50 py-6 dark:bg-slate-950/40">
-          <div className="container-page">
+        <div className="relative overflow-hidden bg-gradient-to-b from-white via-[#f0fdfa]/40 to-[#f0fdfa]">
+          <DotField
+            dotRadius={1.5}
+            dotSpacing={14}
+            bulgeStrength={67}
+            glowRadius={160}
+            sparkle={false}
+            waveAmplitude={0}
+            cursorRadius={500}
+            cursorForce={0.1}
+            bulgeOnly
+            gradientFrom="#0D9488"
+            gradientTo="#14B8A6"
+            glowColor="#0D9488"
+            opacity={0.2}
+          />
+          <div className="relative z-10">
             <CategoryColumns sections={categorySections} />
           </div>
         </div>
 
-        {/* Featured & Trending Alerts */}
-        <section className="py-8 bg-white dark:bg-slate-900/50 border-y border-slate-200/80 dark:border-slate-800/80">
+        {/* Featured & Trending Alerts with 3D TiltCards */}
+        <section className="py-8 bg-gradient-to-b from-teal-50/50 via-white to-slate-50/70 border-b border-slate-200/80">
           <div className="container-page">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6">
               <div className="flex items-center gap-3">
-                <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-amber-500 to-amber-600 text-white shadow-sm">
+                <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-[#EA580C] to-[#F97316] text-white shadow-md shadow-orange-200">
                   <TrendingUp className="h-5 w-5" />
                 </span>
                 <div>
                   <div className="flex items-center gap-2">
-                    <h2 className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white tracking-tight">Trending Notifications</h2>
-                    <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-extrabold bg-amber-100 text-amber-900 dark:bg-amber-950/80 dark:text-amber-300">
-                      LIVE TODAY
+                    <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">Trending Now</h2>
+                    <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-teal-100 text-teal-800 animate-pulse">
+                      LIVE ALERTS
                     </span>
                   </div>
-                  <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400">Most accessed sarkari exam scorecards, hall tickets and recruitments</p>
+                  <p className="text-xs sm:text-sm text-slate-500">Most viewed sarkari results &amp; recruitment updates today</p>
                 </div>
               </div>
-              <Link href="/results" className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 transition">
-                <span>View All 2026 Updates</span>
+              <Link href="/results" className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-teal-700 hover:text-teal-800 transition">
+                <span>View All Updates</span>
                 <ArrowUpRight className="h-4 w-4" />
               </Link>
             </div>
-
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {trending.map((post, i) => {
                 const cardConfigs = [
                   {
-                    badge: "RESULT DECLARED",
-                    badgeClass: "bg-emerald-100 text-emerald-800 dark:bg-emerald-950/80 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800",
+                    image: "/cards/card-result.svg",
+                    badge: "🔥 HOT",
+                    variant: "warning" as const,
                     action: "Check Scorecard",
+                    accent: "#0D9488",
                   },
                   {
-                    badge: "ONLINE APPLICATION",
-                    badgeClass: "bg-amber-100 text-amber-900 dark:bg-amber-950/80 dark:text-amber-300 border border-amber-200 dark:border-amber-800",
+                    image: "/cards/card-job.svg",
+                    badge: "⚡ LIVE",
+                    variant: "success" as const,
                     action: "Apply Online",
+                    accent: "#EA580C",
                   },
                   {
-                    badge: "HALL TICKET OUT",
-                    badgeClass: "bg-blue-100 text-blue-800 dark:bg-blue-950/80 dark:text-blue-300 border border-blue-200 dark:border-blue-800",
-                    action: "Download Admit Card",
+                    image: "/cards/card-admit.svg",
+                    badge: "✨ NEW",
+                    variant: "success" as const,
+                    action: "Download Hall Ticket",
+                    accent: "#4F46E5",
                   },
                   {
-                    badge: "OFFICIAL ANSWER KEY",
-                    badgeClass: "bg-purple-100 text-purple-800 dark:bg-purple-950/80 dark:text-purple-300 border border-purple-200 dark:border-purple-800",
+                    image: "/cards/card-key.svg",
+                    badge: "📈 TRENDING",
+                    variant: "warning" as const,
                     action: "View Answer Key",
+                    accent: "#7C3AED",
                   },
                 ];
 
                 const cfg = cardConfigs[i % cardConfigs.length];
 
                 return (
-                  <Link
+                  <TiltCard
                     key={post.slug || i}
+                    title={post.title}
+                    description={`${post.category} · ${post.date || "Active Update"}`}
+                    category={post.category || "Govt Exam"}
+                    price={`#${i + 1}`}
+                    badgeLabel={cfg.badge}
+                    badgeVariant={cfg.variant}
+                    actionText={cfg.action}
+                    accentColor={cfg.accent}
+                    imageSrc={cfg.image}
+                    imageAlt={post.title}
                     href={post.slug ? `/post/${post.slug}` : "#"}
-                    className="group relative flex flex-col justify-between rounded-xl border border-slate-200 bg-white p-4 shadow-xs transition-all duration-200 hover:-translate-y-1 hover:border-indigo-400 hover:shadow-md dark:border-slate-800 dark:bg-slate-900 dark:hover:border-indigo-600"
-                  >
-                    <div>
-                      <div className="flex items-center justify-between gap-2 mb-3">
-                        <span className={`inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold ${cfg.badgeClass}`}>
-                          {cfg.badge}
-                        </span>
-                        <span className="text-[10px] font-mono font-medium text-slate-400 dark:text-slate-500">
-                          {post.date || "Active 2026"}
-                        </span>
-                      </div>
-                      <h3 className="text-sm font-bold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors line-clamp-2 leading-snug">
-                        {post.title}
-                      </h3>
-                      <p className="mt-1.5 text-xs text-slate-500 dark:text-slate-400 line-clamp-1">
-                        {post.category || "Govt Recruitment"} · Official Notice
-                      </p>
-                    </div>
-                    <div className="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between">
-                      <span className="text-xs font-bold text-indigo-600 dark:text-indigo-400 group-hover:underline">
-                        {cfg.action}
-                      </span>
-                      <ArrowUpRight className="h-4 w-4 text-slate-400 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                    </div>
-                  </Link>
+                  />
                 );
               })}
             </div>
@@ -127,7 +137,7 @@ export default function HomePage() {
         <QuickAccess />
 
         {/* Jobs By Qualification Quick Filter */}
-        <section className="py-6 border-y border-slate-200/80 dark:border-slate-800/80 bg-slate-50/50 dark:bg-slate-900/50">
+        <section className="py-6 border-y border-slate-100 bg-slate-50/50">
           <div className="container-page">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
               <div className="flex items-center gap-2">
@@ -135,35 +145,35 @@ export default function HomePage() {
                   🎓
                 </span>
                 <div>
-                  <h2 className="text-base font-extrabold text-slate-900 dark:text-white">Govt Jobs by Qualification</h2>
-                  <p className="text-xs text-slate-500 dark:text-slate-400">Find Sarkari Naukri matching your education</p>
+                  <h2 className="text-base font-extrabold text-slate-900">Govt Jobs by Qualification</h2>
+                  <p className="text-xs text-slate-500">Find Sarkari Naukri matching your education</p>
                 </div>
               </div>
-              <Link href="/latest-jobs" className="text-xs font-bold text-teal-700 dark:text-teal-400 hover:text-teal-800 dark:hover:text-teal-300 inline-flex items-center gap-1">
+              <Link href="/latest-jobs" className="text-xs font-bold text-teal-700 hover:text-teal-800 inline-flex items-center gap-1">
                 All Vacancies <ArrowUpRight className="h-3 w-3" />
               </Link>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-9 gap-2.5">
               {[
-                { name: "10th Pass", href: "/jobs/10th-pass", color: "hover:border-teal-400 hover:bg-teal-50 dark:hover:bg-teal-950/40" },
-                { name: "12th Pass", href: "/jobs/12th-pass", color: "hover:border-blue-400 hover:bg-blue-50 dark:hover:bg-blue-950/40" },
-                { name: "Graduate", href: "/jobs/graduate", color: "hover:border-purple-400 hover:bg-purple-50 dark:hover:bg-purple-950/40" },
-                { name: "ITI / Diploma", href: "/jobs/iti-diploma", color: "hover:border-amber-400 hover:bg-amber-50 dark:hover:bg-amber-950/40" },
-                { name: "Police Bharti", href: "/jobs/police-jobs", color: "hover:border-red-400 hover:bg-red-50 dark:hover:bg-red-950/40" },
-                { name: "Railway Jobs", href: "/jobs/railway-jobs", color: "hover:border-emerald-400 hover:bg-emerald-50 dark:hover:bg-emerald-950/40" },
-                { name: "Defence Jobs", href: "/jobs/defence-jobs", color: "hover:border-indigo-400 hover:bg-indigo-50 dark:hover:bg-indigo-950/40" },
-                { name: "Teaching Jobs", href: "/jobs/teaching-jobs", color: "hover:border-pink-400 hover:bg-pink-50 dark:hover:bg-pink-950/40" },
-                { name: "Bank Jobs", href: "/jobs/banking-jobs", color: "hover:border-cyan-400 hover:bg-cyan-50 dark:hover:bg-cyan-950/40" },
+                { name: "10th Pass", href: "/jobs/10th-pass", color: "hover:border-teal-400 hover:bg-teal-50" },
+                { name: "12th Pass", href: "/jobs/12th-pass", color: "hover:border-blue-400 hover:bg-blue-50" },
+                { name: "Graduate", href: "/jobs/graduate", color: "hover:border-purple-400 hover:bg-purple-50" },
+                { name: "ITI / Diploma", href: "/jobs/iti-diploma", color: "hover:border-amber-400 hover:bg-amber-50" },
+                { name: "Police Bharti", href: "/jobs/police-jobs", color: "hover:border-red-400 hover:bg-red-50" },
+                { name: "Railway Jobs", href: "/jobs/railway-jobs", color: "hover:border-emerald-400 hover:bg-emerald-50" },
+                { name: "Defence Jobs", href: "/jobs/defence-jobs", color: "hover:border-indigo-400 hover:bg-indigo-50" },
+                { name: "Teaching Jobs", href: "/jobs/teaching-jobs", color: "hover:border-pink-400 hover:bg-pink-50" },
+                { name: "Bank Jobs", href: "/jobs/banking-jobs", color: "hover:border-cyan-400 hover:bg-cyan-50" },
               ].map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`flex flex-col items-center justify-center p-3 rounded-xl border border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-900/80 text-center shadow-xs transition ${item.color} group`}
+                  className={`flex flex-col items-center justify-center p-3 rounded-xl border border-slate-200 bg-white text-center shadow-xs transition ${item.color} group`}
                 >
-                  <span className="text-xs font-bold text-slate-800 dark:text-slate-200 group-hover:text-slate-900 dark:group-hover:text-white transition">
+                  <span className="text-xs font-bold text-slate-800 group-hover:text-slate-900 transition">
                     {item.name}
                   </span>
-                  <span className="text-[10px] text-slate-400 dark:text-slate-500 mt-0.5">Jobs 2026</span>
+                  <span className="text-[10px] text-slate-400 mt-0.5">Jobs 2026</span>
                 </Link>
               ))}
             </div>

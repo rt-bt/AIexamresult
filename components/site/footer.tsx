@@ -1,190 +1,73 @@
 import Link from "next/link";
-import { ArrowUpRight, CheckCircle2 } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { Logo } from "@/components/site/logo";
 
-interface FooterLink {
-  label: string;
-  href: string;
-}
-
-interface FooterColumn {
-  title: string;
-  links: FooterLink[];
-}
-
-const footerColumns: FooterColumn[] = [
-  {
-    title: "Exam Updates",
-    links: [
-      { label: "Sarkari Results", href: "/results" },
-      { label: "Latest Jobs & Vacancies", href: "/latest-jobs" },
-      { label: "Admit Cards & Hall Tickets", href: "/admit-card" },
-      { label: "Answer Keys & Objections", href: "/answer-key" },
-      { label: "Exam Syllabus & Pattern", href: "/syllabus" },
-      { label: "Exam Calendar 2026", href: "/exam-calendar" },
-    ],
-  },
-  {
-    title: "Aspirant Tools",
-    links: [
-      { label: "Eligibility Checker", href: "/eligibility-checker" },
-      { label: "7th CPC Salary Calculator", href: "/salary-calculator" },
-      { label: "Vacancy Trend Analyzer", href: "/vacancy-analyzer" },
-      { label: "Application Fee Calculator", href: "/fee-calculator" },
-      { label: "Difficulty Meter & Cut-Off", href: "/difficulty-meter" },
-      { label: "Online Form Filling Guide", href: "/form-guide" },
-    ],
-  },
-  {
-    title: "Major Commissions",
-    links: [
-      { label: "SSC (CGL, CHSL, GD, MTS)", href: "/exam/ssc-cgl" },
-      { label: "UPSC (IAS, NDA, CDS)", href: "/exam/upsc-cse" },
-      { label: "Railway Recruitment (RRB)", href: "/exam/rrb-ntpc" },
-      { label: "Banking (IBPS, SBI, RBI)", href: "/exam/ibps-po" },
-      { label: "Defence & Police Forces", href: "/exam/ssc-gd" },
-      { label: "State PSC Portals", href: "/state-map" },
-    ],
-  },
-  {
-    title: "Trust & Legal",
-    links: [
-      { label: "About Our Mission", href: "/about" },
-      { label: "Editorial & Data Sources", href: "/disclaimer" },
-      { label: "Privacy Policy", href: "/privacy-policy" },
-      { label: "Terms of Service", href: "/terms" },
-      { label: "Cookie Policy", href: "/cookies-policy" },
-      { label: "Contact & Grievance", href: "/contact" },
-    ],
-  },
+const footerGroups: Array<[string, string[]]> = [
+  ["Quick Links", ["Results", "Latest Vacancy", "Admit Card", "Answer Key"]],
+  ["Resources", ["Admissions", "Syllabus", "Scholarships", "Board Results"]],
+  ["Support", ["About Us", "Contact Us", "Privacy Policy", "Cookies Policy", "Disclaimer"]]
 ];
 
 export function Footer() {
   return (
-    <footer className="border-t border-indigo-100/80 bg-white text-slate-700 dark:border-indigo-950/60 dark:bg-slate-950 dark:text-slate-300 transition-colors">
-      {/* 1. Main Macro-Whitespace Grid */}
-      <div className="container-page py-16 lg:py-24">
-        <div className="grid gap-12 lg:grid-cols-[1.5fr_1fr_1fr_1fr_1fr]">
-          
-          {/* Brand & Telemetry Column */}
-          <div className="flex flex-col">
-            <Link href="/" className="flex items-center gap-2.5 group w-max">
-              <div className="flex h-9 w-9 items-center justify-center rounded-xl sm:rounded-full border border-indigo-100 bg-white p-1 shadow-2xs group-hover:scale-105 group-hover:border-indigo-300 dark:border-indigo-900/60 dark:bg-slate-900 transition-all duration-300 ease-[cubic-bezier(0.32,0.72,0,1)]">
-                <Logo className="h-6 w-6 object-contain" />
-              </div>
-              <div className="flex flex-col leading-none">
-                <span className="text-sm font-black tracking-tight text-slate-900 dark:text-white">
-                  All India
-                </span>
-                <span className="mt-0.5 font-mono text-[9px] font-bold tracking-[0.14em] text-indigo-600 dark:text-indigo-400">
-                  EXAM RESULT
-                </span>
-              </div>
-            </Link>
-
-            <p className="mt-4 text-xs leading-relaxed text-slate-500 dark:text-slate-400 max-w-sm">
-              All India Exam Result is an independent educational portal providing latest verified updates on Sarkari Results, Admit Cards, Govt Jobs, Answer Keys, and Exam Notifications for aspirants across India.
-            </p>
-
-            {/* Official Gazette Verification Status */}
-            <div className="mt-6 rounded-xl border border-indigo-100 bg-indigo-50/50 p-3.5 dark:border-indigo-900/50 dark:bg-indigo-950/30 max-w-sm">
-              <div className="flex items-center gap-2">
-                <span className="relative flex h-2 w-2">
-                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
-                  <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
-                </span>
-                <span className="text-xs font-bold text-slate-800 dark:text-slate-200">
-                  Live Notifications Updated Regularly
-                </span>
-              </div>
-              <div className="mt-1.5 flex items-center gap-1.5 text-[11px] text-slate-600 dark:text-slate-400">
-                <CheckCircle2 className="h-3.5 w-3.5 text-emerald-600 dark:text-emerald-400 shrink-0" />
-                <span>Cross-checked directly with official commission websites</span>
+    <footer className="border-t border-slate-100 bg-white">
+      <div className="h-1.5 bg-gradient-to-r from-brand via-[#EA580C] to-accent" />
+      <div className="container-page py-14">
+        <div className="grid gap-10 md:grid-cols-[1.5fr_1fr_1fr_1fr]">
+          <div>
+            <div className="flex items-center gap-3">
+              <Logo className="h-28 w-28" />
+              <div className="flex flex-col leading-tight">
+                <span className="text-lg font-black tracking-tight text-gray-900">All India</span>
+                <span className="text-[13px] font-bold tracking-widest text-brand">EXAM RESULT</span>
               </div>
             </div>
-
-            {/* Social Capsules */}
-            <div className="mt-6 flex items-center gap-2">
-              {[
-                { name: "Twitter / X", href: "https://twitter.com", path: "M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" },
-                { name: "Facebook", href: "https://facebook.com", path: "M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" },
-                { name: "YouTube", href: "https://youtube.com", path: "M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" },
-              ].map((s) => (
-                <a
-                  key={s.name}
-                  href={s.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={s.name}
-                  className="flex h-8 w-8 items-center justify-center rounded-full border border-slate-200 bg-slate-50 text-slate-600 hover:border-indigo-300 hover:bg-white hover:text-indigo-600 active:scale-95 dark:border-slate-800 dark:bg-slate-900/60 dark:text-slate-400 dark:hover:border-indigo-700 dark:hover:text-indigo-400 transition-all duration-300 ease-[cubic-bezier(0.32,0.72,0,1)]"
-                >
-                  <svg className="h-3.5 w-3.5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d={s.path} />
-                  </svg>
-                </a>
-              ))}
+            <p className="mt-4 max-w-sm text-sm leading-7 text-slate-500">
+              A fast, structured multilingual exam information portal for Indian government jobs, results, admit cards and public notices.
+            </p>
+            <div className="mt-6 flex gap-3">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="grid h-9 w-9 place-items-center rounded-full text-white transition hover:scale-110" style={{ backgroundColor: "#0D9488" }}>
+                <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" /></svg>
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="grid h-9 w-9 place-items-center rounded-full text-white transition hover:scale-110" style={{ backgroundColor: "#EA580C" }}>
+                <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" /></svg>
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="grid h-9 w-9 place-items-center rounded-full text-white transition hover:scale-110" style={{ backgroundColor: "#4F46E5" }}>
+                <svg className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" /><circle cx="12" cy="12" r="5" /><circle cx="17.5" cy="6.5" r="1.5" /></svg>
+              </a>
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="grid h-9 w-9 place-items-center rounded-full text-white transition hover:scale-110" style={{ backgroundColor: "#7C3AED" }}>
+                <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" /></svg>
+              </a>
             </div>
           </div>
-
-          {/* Categorized Link Columns */}
-          {footerColumns.map((col) => (
-            <div key={col.title}>
-              <h3 className="text-[11px] font-bold uppercase tracking-[0.14em] text-slate-900 dark:text-white">
-                {col.title}
-              </h3>
-              <ul className="mt-4 space-y-2.5">
-                {col.links.map((link) => (
-                  <li key={link.href}>
-                    <Link
-                      href={link.href}
-                      className="group flex items-center justify-between text-xs text-slate-500 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400 transition-colors duration-200"
-                    >
-                      <span className="truncate">{link.label}</span>
-                      {/* Button-in-Button Trailing Icon Capsule */}
-                      <span className="flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 ease-[cubic-bezier(0.32,0.72,0,1)]">
-                        <ArrowUpRight className="h-2.5 w-2.5 text-current" />
-                      </span>
-                    </Link>
-                  </li>
+          {footerGroups.map(([title, links]) => (
+            <div key={title}>
+              <h3 className="font-black text-ink">{title}</h3>
+              <div className="mt-4 grid gap-3">
+                {links.map((link) => (
+                  <Link key={link} href={`/${link.toLowerCase().replace(/\s+/g, "-").replace(/[^a-z0-9-]/g, "")}`} className="group flex items-center gap-2 text-sm text-slate-500 transition hover:text-brand">
+                    <ArrowUpRight className="h-3 w-3 transition group-hover:translate-x-0.5" />
+                    {link}
+                  </Link>
                 ))}
-              </ul>
+              </div>
             </div>
           ))}
         </div>
       </div>
-
-      {/* 2. Transparency & Independent Portal Notice Strip */}
-      <div className="border-t border-slate-200/70 bg-slate-50/70 py-4 text-[11px] leading-relaxed text-slate-500 dark:border-slate-800/80 dark:bg-slate-900/40 dark:text-slate-400">
+      <div className="border-t border-slate-100 px-4 py-4 text-center text-xs leading-relaxed text-slate-500">
         <div className="container-page">
-          <p>
-            <strong className="font-semibold text-slate-800 dark:text-slate-200">Statutory Notice:</strong> All India Exam Result is an independent information aggregation platform and has no legal affiliation with the Union Public Service Commission (UPSC), Staff Selection Commission (SSC), Railway Recruitment Boards (RRB), National Testing Agency (NTA), or any Central or State Ministry. All recruitment notices, dates, scorecards, and keys are referenced from official public bulletins. Candidates must authenticate all data with respective official portals.
-          </p>
+          <p>Disclaimer: This is an independent information portal. All data is sourced from publicly available government notifications. Users are advised to verify all information from the respective official websites before applying.</p>
         </div>
       </div>
-
-      {/* 3. Bottom Legal & Precision Copyright Strip */}
-      <div className="border-t border-slate-200/70 py-6 text-xs text-slate-400 dark:border-slate-800/80 dark:text-slate-500">
-        <div className="container-page flex flex-col items-center justify-between gap-3 sm:flex-row">
-          <p className="font-mono text-[11px]">
-            &copy; {new Date().getFullYear()} All India Exam Result. Engineered for speed &amp; clarity.
-          </p>
-
-          <div className="flex flex-wrap items-center gap-4 text-xs">
-            <Link href="/privacy-policy" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
-              Privacy
-            </Link>
-            <span aria-hidden="true" className="text-slate-300 dark:text-slate-700">•</span>
-            <Link href="/cookies-policy" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
-              Cookies
-            </Link>
-            <span aria-hidden="true" className="text-slate-300 dark:text-slate-700">•</span>
-            <Link href="/terms" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
-              Terms
-            </Link>
-            <span aria-hidden="true" className="text-slate-300 dark:text-slate-700">•</span>
-            <Link href="/disclaimer" className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
-              Disclaimer
-            </Link>
+      <div className="border-t border-slate-100 py-6">
+        <div className="container-page flex flex-col items-center justify-between gap-4 text-xs text-slate-400 sm:flex-row">
+          <p>&copy; {new Date().getFullYear()} All India Exam Result. All rights reserved.</p>
+          <div className="flex gap-4">
+            <Link href="/privacy-policy">Privacy Policy</Link>
+            <Link href="/cookies-policy">Cookies Policy</Link>
+            <Link href="/terms">Terms of Service</Link>
+            <Link href="/disclaimer">Disclaimer</Link>
           </div>
         </div>
       </div>
