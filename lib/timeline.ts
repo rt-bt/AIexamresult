@@ -366,10 +366,16 @@ export function extractPostEventDates(post: any): ExtractedEventDates {
     const val = d.includes(":") ? d.split(":").slice(1).join(":").trim() : d;
 
     // Start
-    if (
-      (lower.includes("apply") || lower.includes("application") || lower.includes("form") || lower.includes("registration")) &&
-      (lower.includes("start") || lower.includes("begin") || lower.includes("opening"))
-    ) {
+    const isStartKeyword =
+      lower.includes("start") || lower.includes("begin") || lower.includes("opening") || lower.includes("commence");
+    const isNotExamOrAdmit =
+      !lower.includes("exam") &&
+      !lower.includes("admit") &&
+      !lower.includes("card") &&
+      !lower.includes("result") &&
+      !lower.includes("answer") &&
+      !lower.includes("correction");
+    if (isStartKeyword && isNotExamOrAdmit) {
       if (!appStart) {
         appStart = parseIndianDate(val);
         result.application.text = val;
@@ -396,18 +402,31 @@ export function extractPostEventDates(post: any): ExtractedEventDates {
   result.application.start = appStart;
   result.application.end = appEnd;
 
-  // 3. Admit Card
+  // 3. Admit Card (Prioritize Prelims / Tier 1 / Main Admit Card over PET)
+  let bestAdmitVal: string | null = null;
+  let isPetOnly = false;
   for (const d of dates) {
     if (typeof d !== "string") continue;
     const lower = d.toLowerCase();
     if (lower.includes("admit card") || lower.includes("hall ticket") || lower.includes("city intimation")) {
       const val = d.includes(":") ? d.split(":").slice(1).join(":").trim() : d;
-      result.admitCard.text = val;
-      result.admitCard.date = parseIndianDate(val);
-      result.admitCard.isReleased = isExplicitlyReleased(val);
-      result.admitCard.isUnreleased = isExplicitlyUnreleased(val);
-      break;
+      const isPet = lower.includes("pet admit") || lower.includes("training admit");
+      if (!bestAdmitVal) {
+        bestAdmitVal = val;
+        isPetOnly = isPet;
+      } else if (isPetOnly && !isPet) {
+        bestAdmitVal = val;
+        isPetOnly = false;
+      } else if (!isPet && (lower.includes("pre admit") || lower.includes("tier 1 admit") || lower.includes("exam admit") || lower.includes("main admit"))) {
+        bestAdmitVal = val;
+      }
     }
+  }
+  if (bestAdmitVal) {
+    result.admitCard.text = bestAdmitVal;
+    result.admitCard.date = parseIndianDate(bestAdmitVal);
+    result.admitCard.isReleased = isExplicitlyReleased(bestAdmitVal);
+    result.admitCard.isUnreleased = isExplicitlyUnreleased(bestAdmitVal);
   }
 
   // Official Category/Title/Link override for Admit Card
@@ -580,20 +599,27 @@ export function buildPostTimeline(post: any, referenceDate?: string | Date | nul
 
   if (isAdmitRelevant) {
     const aDate = ev.admitCard.date;
+    const eStart = ev.exam.start;
     let aStatus: TimelineStageStatus = "unavailable";
     let aDisplay = ev.admitCard.text || "Before Exam";
 
-    if (ev.admitCard.isReleased) {
-      aStatus = "completed";
+    const isReleased = ev.admitCard.isReleased || (aDate && today >= aDate);
+
+    if (isReleased) {
+      // If the exam has already happened or is ongoing, Admit Card download is completed
+      if (eStart && today > eStart) {
+        aStatus = "completed";
+      } else {
+        // Exam has not arrived yet — Admit Card is LIVE and actively available for download!
+        aStatus = "active";
+      }
       aDisplay = aDate ? formatDisplayDateIST(aDate) : "Released";
     } else if (aDate) {
       aDisplay = formatDisplayDateIST(aDate);
-      if (today > aDate) {
-        aStatus = "completed";
-      } else if (today === aDate) {
-        aStatus = "active";
-      } else {
+      if (today < aDate) {
         aStatus = "upcoming";
+      } else {
+        aStatus = "active";
       }
     } else {
       aStatus = "unavailable";
@@ -601,7 +627,7 @@ export function buildPostTimeline(post: any, referenceDate?: string | Date | nul
 
     stages.push({
       id: "admitCard",
-      label: "Admit Card",
+      label: aStatus === "active" ? "Admit Card Out" : "Admit Card",
       shortLabel: "Admit Card",
       status: aStatus,
       dateDisplay: aDisplay,
@@ -761,18 +787,30 @@ export function getCurrentTimelineStage(
     };
   }
 
-  // 1. Look for an ACTIVE stage (e.g. Application window currently open)
-  const activeIdx = stages.findIndex((s) => s.status === "active");
+  // 1. Look for an ACTIVE stage (search backwards to pick latest ongoing milestone)
+  let activeIdx = -1;
+  for (let i = stages.length - 1; i >= 0; i--) {
+    if (stages[i].status === "active") {
+      activeIdx = i;
+      break;
+    }
+  }
   if (activeIdx !== -1) {
     const s = stages[activeIdx];
     const pct = stages.length > 1 ? (activeIdx / (stages.length - 1)) * 100 : 50;
+    const msg =
+      s.id === "admitCard"
+        ? `Admit Card is available to download (${s.dateDisplay || "Active"})`
+        : s.id === "application"
+        ? `Application is currently ongoing (${s.dateDisplay || "Active"})`
+        : `${s.label} is currently ongoing (${s.dateDisplay || "Active"})`;
     return {
       stage: s.id,
       label: s.label,
       status: "active",
       progressIndex: activeIdx,
       progressPercent: Math.round(pct),
-      message: `${s.label} is currently ongoing (${s.dateDisplay || "Active"})`,
+      message: msg,
     };
   }
 

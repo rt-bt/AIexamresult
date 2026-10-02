@@ -235,3 +235,45 @@ test("Multiple Posts in same category calculate timelines INDEPENDENTLY", () => 
   const examBStage = timelineB.stages.find((s) => s.id === "exam");
   assert.equal(examBStage?.status, "completed");
 });
+
+test("Released Admit Card is Active until Exam Date (e.g. IBPS Clerk)", () => {
+  const post = {
+    title: "IBPS Clerk CSA 16th Pre Admit Card 2026 – Out",
+    category: "admitCards",
+    importantDates: [
+      "Starting Date : 01 August 2026",
+      "Last Date for Registration : 28 August 2026 (Extend)",
+      "Fee Payment Last Date : 28 August 2026",
+      "Correction Form : 04-05 September 2026",
+      "PET Admit Card : 29 September 2026",
+      "Pre Exam Date : 11 October 2026",
+      "Pre Admit Card : 01 October 2026",
+      "Result : Notify Soon",
+    ],
+    importantLinks: [
+      { label: "Download Pre Admit Card", url: "https://ibpsreg.ibps.in" },
+    ],
+  };
+
+  const timeline = buildPostTimeline(post, "2026-10-02");
+  const stageMap = Object.fromEntries(timeline.stages.map((s) => [s.id, s.status]));
+
+  // Application shows start and end dates
+  const appStage = timeline.stages.find((s) => s.id === "application");
+  assert.equal(appStage?.status, "completed");
+  assert.equal(appStage?.dateDisplay, "1 Aug 2026 – 28 Aug 2026");
+
+  // Main Pre Admit Card date 01 Oct is extracted and ACTIVE (not completed)
+  const admitStage = timeline.stages.find((s) => s.id === "admitCard");
+  assert.equal(admitStage?.status, "active");
+  assert.equal(admitStage?.date, "2026-10-01");
+  assert.equal(admitStage?.dateDisplay, "1 Oct 2026");
+
+  // Current stage is Admit Card Out
+  assert.equal(timeline.currentStage.stage, "admitCard");
+  assert.equal(timeline.currentStage.status, "active");
+  assert.equal(timeline.currentStage.label, "Admit Card Out");
+
+  // Exam is upcoming
+  assert.equal(stageMap.exam, "upcoming");
+});
