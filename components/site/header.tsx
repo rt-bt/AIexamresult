@@ -42,18 +42,18 @@ interface DropdownItem {
 }
 
 const examSubNav: DropdownItem[] = [
-  { label: "Latest Jobs", href: "/latest-jobs", desc: "Recruitment notices & openings", icon: Briefcase },
+  { label: "Latest Job", href: "/latest-jobs", desc: "Recruitment notices & openings", icon: Briefcase },
   { label: "Admit Card", href: "/admit-card", desc: "Hall tickets & exam city slips", icon: FileCheck2 },
-  { label: "Results", href: "/results", desc: "Scorecards, merit lists & cut-offs", icon: Award },
+  { label: "Result", href: "/results", desc: "Scorecards, merit lists & cut-offs", icon: Award },
   { label: "Answer Key", href: "/answer-key", desc: "Official keys & objections", icon: KeyRound },
   { label: "Syllabus", href: "/syllabus", desc: "Exam schemes & topic patterns", icon: BookOpen },
 ];
 
 const studyHubSubNav: DropdownItem[] = [
   { label: "Current Affairs", href: "/current-affairs", desc: "Daily quiz & national digests", icon: Compass },
-  { label: "Mock Tests", href: "/mock-tests", desc: "Timed full-length practice tests", icon: Layers },
+  { label: "Mock Test", href: "/mock-tests", desc: "Timed practice tests", icon: Layers },
   { label: "IQ Test", href: "/iq-test", desc: "Reasoning & aptitude evaluation", icon: Brain },
-  { label: "Exam Calendar", href: "/exam-calendar", desc: "Official upcoming exam schedules", icon: Calendar },
+  { label: "Calendar", href: "/exam-calendar", desc: "Official upcoming exam schedules", icon: Calendar },
 ];
 
 const toolsSubNav: DropdownItem[] = [
@@ -71,11 +71,11 @@ interface NavItem {
 
 const navItems: NavItem[] = [
   { label: "Home", href: "/" },
-  { label: "Exams", href: "/exam", dropdown: examSubNav },
+  { label: "Exam", href: "/exam", dropdown: examSubNav },
   { label: "Study Hub", href: "/study-hub", dropdown: studyHubSubNav },
-  { label: "Tools", href: "/tools", dropdown: toolsSubNav },
-  { label: "State Exams", href: "/state-map" },
-  { label: "Contact", href: "/contact" },
+  { label: "Tools", href: "/tools" },
+  { label: "Contact Us", href: "/contact" },
+  { label: "About Us", href: "/about" },
 ];
 
 function getTickerItems() {
