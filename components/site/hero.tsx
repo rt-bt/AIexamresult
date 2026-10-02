@@ -90,7 +90,7 @@ function ResultFinder() {
         </div>
         <button
           type="submit"
-          className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-5 py-3.5 text-sm font-bold text-teal-800 shadow-md transition hover:bg-white/95 active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-white"
+          className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-5 py-3.5 text-sm font-bold text-zinc-950 shadow-md transition hover:bg-zinc-100 active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-white"
         >
           Find Result
           <ArrowRight className="h-4 w-4" />
@@ -142,15 +142,15 @@ export function Hero() {
     <section className="relative overflow-hidden min-h-[560px]">
       {/* LiquidEther WebGL Fluid Simulation Background */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
-        {/* Brand rich deep teal base */}
+        {/* Obsidian & Zinc Monochrome deep gradient base */}
         <div
           className="absolute inset-0"
           style={{
-            background: "radial-gradient(ellipse at 50% 25%, #0E877D 0%, #084c47 60%, #042724 100%)",
+            background: "radial-gradient(ellipse at 50% 25%, #18181b 0%, #09090b 60%, #050507 100%)",
           }}
         />
         <LiquidEther
-          colors={['#0E877D', '#3FA8A5', '#5EEAD4']}
+          colors={['#18181b', '#27272a', '#52525b']}
           mouseForce={20}
           cursorSize={100}
           isViscous
@@ -165,9 +165,9 @@ export function Hero() {
           takeoverDuration={0.25}
           autoResumeDelay={3000}
           autoRampDuration={0.6}
-          color0="#0E877D"
-          color1="#3FA8A5"
-          color2="#5EEAD4"
+          color0="#18181b"
+          color1="#27272a"
+          color2="#52525b"
           className="absolute inset-0 h-full w-full"
         />
         {/* Subtle vignette / contrast overlay to guarantee WCAG AA text readability */}
