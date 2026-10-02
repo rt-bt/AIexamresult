@@ -266,11 +266,12 @@ async function scrapeListings() {
       const fallback = HEADING_MAP[heading];
       if (!fallback) return;
 
+      const isTopForm    = heading.includes("top online form");
       const isAdmitCard  = fallback === "admitCards";
       const isResult     = fallback === "results";
       const isAnswerKey  = fallback === "answerKeys";
-      // isFreshListing: Admit Card, Result, Answer Key items are always re-processed (like Jobs)
-      const isFreshListing = isTopForm || isAdmitCard || isResult || isAnswerKey;
+      // isFreshListing: Homepage items are always re-processed to keep the site updated with latest links and notices
+      const isFreshListing = true;
 
       $block.find("ul.wp-block-latest-posts__list li a.wp-block-latest-posts__post-title, a[href]").each((__, link) => {
         const href     = $(link).attr("href") || "";
@@ -759,30 +760,37 @@ async function main() {
     }
   }
 
-  // Ensure latestJobs lists Top Online Forms in their exact order of prominence from sarkariexam
-  const topJobSlugs = new Set(candidates.filter(c => c.isTopForm).map(c => c.slug));
-  const topJobs = [];
-  for (const c of candidates) {
-    if (c.isTopForm && existingSlugs.has(c.slug)) {
-      const p = existing.posts[c.slug];
-      if (!topJobs.some(tj => tj.slug === c.slug)) {
-        topJobs.push({
+  // Ensure all categories list fresh items in their exact order of prominence from source
+  for (const cat of CATEGORIES) {
+    const bucket = existing[cat] || [];
+    const catCandidates = candidates.filter(c => {
+      const postPath = resolve(POSTS_DIR, `${c.slug}.json`);
+      if (existsSync(postPath)) {
+        try {
+          const postData = JSON.parse(readFileSync(postPath, "utf8"));
+          return postData.category === cat;
+        } catch {}
+      }
+      return c.fallbackCat === cat;
+    });
+
+    const candidateSlugs = new Set(catCandidates.map(c => c.slug));
+    const topItems = [];
+    for (const c of catCandidates) {
+      if (existingSlugs.has(c.slug) && !topItems.some(ti => ti.slug === c.slug)) {
+        const p = existing.posts[c.slug];
+        topItems.push({
           title: c.title,
           url: `/post/${c.slug}`,
-          category: "latestJobs",
+          category: cat,
           slug: c.slug,
           publishedDate: p?.publishedDate || "",
           publishedAt: p?.publishedAt || "",
         });
       }
     }
-  }
-  const otherJobs = (existing.latestJobs || []).filter(j => !topJobSlugs.has(j.slug));
-  existing.latestJobs = [...topJobs, ...otherJobs].slice(0, 500);
-
-  // Cap each category at 500
-  for (const cat of CATEGORIES) {
-    existing[cat] = (existing[cat] || []).slice(0, 500);
+    const otherItems = bucket.filter(b => !candidateSlugs.has(b.slug));
+    existing[cat] = [...topItems, ...otherItems].slice(0, 500);
   }
 
   // Step 3: Save clean data
