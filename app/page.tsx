@@ -29,7 +29,7 @@ export default function HomePage() {
         <Hero />
 
         {/* 6 Main Sections: Latest Jobs, Admit Card, Answer Keys, Result, Admissions, Documents (Latest Updates) */}
-        <div className="relative overflow-hidden bg-gradient-to-b from-white via-[#f0fdfa]/40 to-[#f0fdfa]">
+        <div className="relative overflow-hidden bg-gradient-to-b from-white via-[#f0fdfa]/40 to-[#f0fdfa] dark:from-slate-950 dark:via-slate-900/40 dark:to-slate-950">
           <DotField
             dotRadius={1.5}
             dotSpacing={14}
@@ -51,24 +51,24 @@ export default function HomePage() {
         </div>
 
         {/* Featured & Trending Alerts with 3D TiltCards */}
-        <section className="py-8 bg-gradient-to-b from-teal-50/50 via-white to-slate-50/70 border-b border-slate-200/80">
+        <section className="py-8 bg-gradient-to-b from-teal-50/50 via-white to-slate-50/70 dark:from-slate-900/50 dark:via-slate-950 dark:to-slate-900/50 border-b border-slate-200/80 dark:border-slate-800/80">
           <div className="container-page">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6">
               <div className="flex items-center gap-3">
-                <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-[#EA580C] to-[#F97316] text-white shadow-md shadow-orange-200">
+                <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-[#EA580C] to-[#F97316] text-white shadow-md shadow-orange-200 dark:shadow-none">
                   <TrendingUp className="h-5 w-5" />
                 </span>
                 <div>
                   <div className="flex items-center gap-2">
-                    <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">Trending Now</h2>
-                    <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-teal-100 text-teal-800 animate-pulse">
+                    <h2 className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white tracking-tight">Trending Now</h2>
+                    <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-teal-100 dark:bg-teal-950 dark:text-teal-300 text-teal-800 animate-pulse">
                       LIVE ALERTS
                     </span>
                   </div>
-                  <p className="text-xs sm:text-sm text-slate-500">Most viewed sarkari results &amp; recruitment updates today</p>
+                  <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400">Most viewed sarkari results &amp; recruitment updates today</p>
                 </div>
               </div>
-              <Link href="/results" className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-teal-700 hover:text-teal-800 transition">
+              <Link href="/results" className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-teal-700 dark:text-teal-400 hover:text-teal-800 dark:hover:text-teal-300 transition">
                 <span>View All Updates</span>
                 <ArrowUpRight className="h-4 w-4" />
               </Link>
@@ -137,7 +137,7 @@ export default function HomePage() {
         <QuickAccess />
 
         {/* Jobs By Qualification Quick Filter */}
-        <section className="py-6 border-y border-slate-100 bg-slate-50/50">
+        <section className="py-6 border-y border-slate-200/80 dark:border-slate-800/80 bg-slate-50/50 dark:bg-slate-900/50">
           <div className="container-page">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
               <div className="flex items-center gap-2">
@@ -145,35 +145,35 @@ export default function HomePage() {
                   🎓
                 </span>
                 <div>
-                  <h2 className="text-base font-extrabold text-slate-900">Govt Jobs by Qualification</h2>
-                  <p className="text-xs text-slate-500">Find Sarkari Naukri matching your education</p>
+                  <h2 className="text-base font-extrabold text-slate-900 dark:text-white">Govt Jobs by Qualification</h2>
+                  <p className="text-xs text-slate-500 dark:text-slate-400">Find Sarkari Naukri matching your education</p>
                 </div>
               </div>
-              <Link href="/latest-jobs" className="text-xs font-bold text-teal-700 hover:text-teal-800 inline-flex items-center gap-1">
+              <Link href="/latest-jobs" className="text-xs font-bold text-teal-700 dark:text-teal-400 hover:text-teal-800 dark:hover:text-teal-300 inline-flex items-center gap-1">
                 All Vacancies <ArrowUpRight className="h-3 w-3" />
               </Link>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-9 gap-2.5">
               {[
-                { name: "10th Pass", href: "/jobs/10th-pass", color: "hover:border-teal-400 hover:bg-teal-50" },
-                { name: "12th Pass", href: "/jobs/12th-pass", color: "hover:border-blue-400 hover:bg-blue-50" },
-                { name: "Graduate", href: "/jobs/graduate", color: "hover:border-purple-400 hover:bg-purple-50" },
-                { name: "ITI / Diploma", href: "/jobs/iti-diploma", color: "hover:border-amber-400 hover:bg-amber-50" },
-                { name: "Police Bharti", href: "/jobs/police-jobs", color: "hover:border-red-400 hover:bg-red-50" },
-                { name: "Railway Jobs", href: "/jobs/railway-jobs", color: "hover:border-emerald-400 hover:bg-emerald-50" },
-                { name: "Defence Jobs", href: "/jobs/defence-jobs", color: "hover:border-indigo-400 hover:bg-indigo-50" },
-                { name: "Teaching Jobs", href: "/jobs/teaching-jobs", color: "hover:border-pink-400 hover:bg-pink-50" },
-                { name: "Bank Jobs", href: "/jobs/banking-jobs", color: "hover:border-cyan-400 hover:bg-cyan-50" },
+                { name: "10th Pass", href: "/jobs/10th-pass", color: "hover:border-teal-400 hover:bg-teal-50 dark:hover:bg-teal-950/40" },
+                { name: "12th Pass", href: "/jobs/12th-pass", color: "hover:border-blue-400 hover:bg-blue-50 dark:hover:bg-blue-950/40" },
+                { name: "Graduate", href: "/jobs/graduate", color: "hover:border-purple-400 hover:bg-purple-50 dark:hover:bg-purple-950/40" },
+                { name: "ITI / Diploma", href: "/jobs/iti-diploma", color: "hover:border-amber-400 hover:bg-amber-50 dark:hover:bg-amber-950/40" },
+                { name: "Police Bharti", href: "/jobs/police-jobs", color: "hover:border-red-400 hover:bg-red-50 dark:hover:bg-red-950/40" },
+                { name: "Railway Jobs", href: "/jobs/railway-jobs", color: "hover:border-emerald-400 hover:bg-emerald-50 dark:hover:bg-emerald-950/40" },
+                { name: "Defence Jobs", href: "/jobs/defence-jobs", color: "hover:border-indigo-400 hover:bg-indigo-50 dark:hover:bg-indigo-950/40" },
+                { name: "Teaching Jobs", href: "/jobs/teaching-jobs", color: "hover:border-pink-400 hover:bg-pink-50 dark:hover:bg-pink-950/40" },
+                { name: "Bank Jobs", href: "/jobs/banking-jobs", color: "hover:border-cyan-400 hover:bg-cyan-50 dark:hover:bg-cyan-950/40" },
               ].map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`flex flex-col items-center justify-center p-3 rounded-xl border border-slate-200 bg-white text-center shadow-xs transition ${item.color} group`}
+                  className={`flex flex-col items-center justify-center p-3 rounded-xl border border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-900/80 text-center shadow-xs transition ${item.color} group`}
                 >
-                  <span className="text-xs font-bold text-slate-800 group-hover:text-slate-900 transition">
+                  <span className="text-xs font-bold text-slate-800 dark:text-slate-200 group-hover:text-slate-900 dark:group-hover:text-white transition">
                     {item.name}
                   </span>
-                  <span className="text-[10px] text-slate-400 mt-0.5">Jobs 2026</span>
+                  <span className="text-[10px] text-slate-400 dark:text-slate-500 mt-0.5">Jobs 2026</span>
                 </Link>
               ))}
             </div>
