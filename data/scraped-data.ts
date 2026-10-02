@@ -4794,8 +4794,8 @@ export const scrapedData = {
       "url": "/post/ssc-chsl-2026",
       "category": "latestJobs",
       "slug": "ssc-chsl-2026",
-      "publishedDate": "2026-09-29T17:09:30+05:30",
-      "publishedAt": "2026-09-29T11:39:30.000Z"
+      "publishedDate": "2026-10-01T22:24:56+05:30",
+      "publishedAt": "2026-10-01T16:54:56.000Z"
     },
     {
       "title": "Rajasthan Safai Karamchari Online Form 2026 (24752 Posts)",
@@ -4810,8 +4810,8 @@ export const scrapedData = {
       "url": "/post/ssc-cpo-si-capf-2026",
       "category": "latestJobs",
       "slug": "ssc-cpo-si-capf-2026",
-      "publishedDate": "2026-09-30T10:06:38+05:30",
-      "publishedAt": "2026-09-30T04:36:38.000Z"
+      "publishedDate": "2026-10-01T19:58:59+05:30",
+      "publishedAt": "2026-10-01T14:28:59.000Z"
     },
     {
       "title": "MP Police GD Constable Online Form 2026 (7500 Posts)",
@@ -14352,8 +14352,8 @@ export const scrapedData = {
       "lastDate": "07/09/2026\nLast Date for Apply Online :07/10/2026 upto 11 PM Only \nPay Exam Fee Last Date :08/10/2026\nCorrection Date : 14-16 October 2026\nSSC CHSL 2026 Tier I Exam Date :As per Schedule\nSSC CHSL 2026 Tier II Exam Date :As per Schedule\nAdmit Card Available : Before Exam : Application Fee\n\nGeneral / OBC / EWS : 100/-\nSC / ST : 0/-\nPH (Divyang) / Female : 0/-\nCorrection First Time : 200/–\nCorrection Second Time : 500/-\nPay the Examination Fee Through Cast at E Challan or Debit Card, Credit Card, Net Banking"
     },
     "ssc-chsl-2026": {
-      "publishedDate": "2026-09-29T17:09:30+05:30",
-      "publishedAt": "2026-09-29T11:39:30.000Z",
+      "publishedDate": "2026-10-01T22:24:56+05:30",
+      "publishedAt": "2026-10-01T16:54:56.000Z",
       "lastDate": "07 October 2026"
     },
     "ssc-chte-2025": {
@@ -14372,8 +14372,8 @@ export const scrapedData = {
       "lastDate": "Form Start"
     },
     "ssc-cpo-si-capf-2026": {
-      "publishedDate": "2026-09-30T10:06:38+05:30",
-      "publishedAt": "2026-09-30T04:36:38.000Z",
+      "publishedDate": "2026-10-01T19:58:59+05:30",
+      "publishedAt": "2026-10-01T14:28:59.000Z",
       "lastDate": "30 September 2026"
     },
     "ssc-cpo-si-result": {
@@ -16214,9 +16214,9 @@ export const scrapedData = {
       "lastDate": "23 October 2026"
     }
   },
-  "fetchedAt": "2026-10-01T13:03:49.322Z",
+  "fetchedAt": "2026-10-02T02:37:56.429Z",
   "seo": {
-    "lastOptimized": "2026-10-01T13:03:51.335Z",
+    "lastOptimized": "2026-10-02T02:37:59.292Z",
     "totalPosts": 1258,
     "websiteName": "All India Exam Result",
     "websiteUrl": "https://www.aiexamresult.com",
