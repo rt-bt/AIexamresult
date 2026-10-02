@@ -142,15 +142,15 @@ export function Hero() {
     <section className="relative overflow-hidden min-h-[560px]">
       {/* LiquidEther WebGL Fluid Simulation Background */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
-        {/* Deep ocean base — very dark navy so water depth gradient pops */}
+        {/* Medium teal ocean base — visible water, not pitch black */}
         <div
           className="absolute inset-0"
           style={{
-            background: "radial-gradient(ellipse at 50% 30%, #032B36 0%, #011820 50%, #020D12 100%)",
+            background: "radial-gradient(ellipse at 50% 30%, #0D6B72 0%, #064E55 50%, #032B30 100%)",
           }}
         />
         <LiquidEther
-          colors={['#011820', '#032B36', '#065966', '#0E9B8A', '#67E8F9']}
+          colors={['#032B30', '#075C63', '#0E9B8A', '#22D3C4', '#7FF0E8']}
           mouseForce={38}
           cursorSize={90}
           isViscous
@@ -167,13 +167,13 @@ export function Hero() {
           autoRampDuration={0.5}
           gyroEnabled={true}
           gyroSensitivity={1.6}
-          color0="#011820"
-          color1="#065966"
-          color2="#67E8F9"
+          color0="#032B30"
+          color1="#0E9B8A"
+          color2="#7FF0E8"
           className="absolute inset-0 h-full w-full"
         />
-        {/* Subtle vignette / contrast overlay to guarantee WCAG AA text readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/15 via-transparent to-black/30 pointer-events-none" />
+        {/* Stronger dark overlay to keep white text readable over lighter water */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/15 to-black/40 pointer-events-none" />
       </div>
 
       <div className="container-page relative pt-8 sm:pt-12 pb-8 sm:pb-14">

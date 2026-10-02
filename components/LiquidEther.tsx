@@ -666,11 +666,11 @@ export function LiquidEther({
       uniform vec2 px;
       varying vec2 uv;
 
-      const vec3 DEEP_WATER = vec3(0.01, 0.06, 0.12);
-      const vec3 MID_WATER  = vec3(0.02, 0.22, 0.28);
-      const vec3 SHALLOW    = vec3(0.04, 0.55, 0.62);
-      const vec3 FOAM       = vec3(0.85, 0.97, 1.00);
-      const vec3 SUN        = vec3(1.00, 0.98, 0.90);
+      const vec3 DEEP_WATER = vec3(0.03, 0.22, 0.28);
+      const vec3 MID_WATER  = vec3(0.05, 0.42, 0.48);
+      const vec3 SHALLOW    = vec3(0.08, 0.68, 0.72);
+      const vec3 FOAM       = vec3(0.70, 0.95, 0.98);
+      const vec3 SUN        = vec3(0.90, 0.98, 1.00);
 
       void main(){
         vec2 vel = texture2D(velocity, uv).xy;
