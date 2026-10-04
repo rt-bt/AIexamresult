@@ -5,7 +5,7 @@ import { useEffect, useRef } from "react";
 const VIDEO_URL =
   "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260826_041744_63efcd78-bf7d-4039-99e2-2461e8a61903.mp4";
 
-const SENSITIVITY = 0.25;
+const SENSITIVITY = 1.6;
 
 /**
  * Full-cover video that scrubs forward/backward on horizontal mouse movement.
@@ -74,13 +74,13 @@ export function VideoScrubBg() {
       // Resume subtle ambient playback 1.5s after mouse stops
       idleTimeout = setTimeout(() => {
         isUserScrubbing = false;
-      }, 1500);
+      }, 600);
     };
 
     const handleSeeked = () => {
       const video = videoRef.current;
       if (!video) return;
-      if (Math.abs(video.currentTime - targetTimeRef.current) > 0.02) {
+      if (Math.abs(video.currentTime - targetTimeRef.current) > 0.005) {
         video.currentTime = targetTimeRef.current;
       } else {
         seekingRef.current = false;
