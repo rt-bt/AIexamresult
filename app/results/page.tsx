@@ -66,12 +66,12 @@ export default function ResultsPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <main>
-        <div className="bg-gradient-to-br from-[#0D9488] via-[#0F766E] to-[#115E59] py-14 sm:py-16">
-          <div className="container-page">
-            <p className="text-sm font-bold uppercase tracking-wide text-[#5EEAD4]">All India Exam Result · Sarkari Results</p>
-            <h1 className="mt-3 text-3xl sm:text-4xl font-black text-white">Sarkari Result 2026 : All Government Exam Results</h1>
-            <p className="mt-3 max-w-2xl text-sm sm:text-base text-white/85 leading-relaxed">
+      <main className="bg-white min-h-screen font-sans">
+        <div className="border-b border-[#222222] bg-[#111111] py-12 sm:py-16 relative overflow-hidden">
+          <div className="container-page relative z-10">
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#FFD84D] font-heading">All India Exam Result · 2026</p>
+            <h1 className="mt-2 text-3xl sm:text-4xl font-bold text-white font-heading">Sarkari Result 2026 : All Government Exam Results</h1>
+            <p className="mt-3 max-w-2xl text-sm sm:text-base text-neutral-300 leading-relaxed font-sans">
               Find verified real-time results for SSC, Railway RRB, UPSC, State PSCs, Police Recruitment, Banking, and Board examinations. Direct score card and cut-off marks links.
             </p>
           </div>

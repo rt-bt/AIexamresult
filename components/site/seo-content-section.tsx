@@ -3,17 +3,17 @@ import { Award, BookOpen, CheckCircle2, FileText, Globe, GraduationCap, ShieldCh
 
 export function SeoContentSection() {
   return (
-    <section className="border-t border-slate-200/80 bg-slate-50/60 py-14 text-slate-700">
+    <section className="border-t border-[#DEDEDE] bg-[#FAFAFA] py-16 text-[#111111] font-sans">
       <div className="container-page">
         {/* Main Section Header */}
         <div className="max-w-4xl">
-          <div className="inline-flex items-center gap-2 rounded-full bg-teal-50 px-3 py-1 text-xs font-bold text-[#0D9488] ring-1 ring-[#0D9488]/20">
-            <Sparkles className="h-3.5 w-3.5" /> India&apos;s No. 1 Sarkari Result &amp; Job Alert Portal
+          <div className="inline-flex items-center gap-2 rounded-full bg-white border border-[#DEDEDE] px-3.5 py-1 text-xs font-bold text-[#111111] font-heading shadow-xs">
+            <Sparkles className="h-3.5 w-3.5 text-[#FF5B3E]" /> India&apos;s No. 1 Sarkari Result &amp; Job Alert Portal
           </div>
-          <h2 className="mt-3 text-2xl sm:text-3xl font-black tracking-tight text-slate-900">
+          <h2 className="mt-3 text-2xl sm:text-3xl font-bold tracking-tight text-[#111111] font-heading">
             Sarkari Result 2026 : Sarkari Exam, Sarkari Naukri &amp; Rojgar Result
           </h2>
-          <p className="mt-3 text-sm sm:text-base leading-relaxed text-slate-600">
+          <p className="mt-3 text-sm sm:text-base leading-relaxed text-neutral-600 font-sans">
             Welcome to <strong>All India Exam Result (AIExamResult.com)</strong>, your fastest and most reliable portal for 
             <strong> Sarkari Result 2026</strong>, <strong>Sarkari Exam</strong> notifications, <strong>Sarkari Naukri (Government Jobs)</strong> online forms, 
             <strong> Admit Cards</strong>, <strong>Answer Keys</strong>, and <strong>Board Exam Results</strong>. We aggregate and verify notifications directly from official 
@@ -22,25 +22,27 @@ export function SeoContentSection() {
         </div>
 
         {/* 4 Feature Badges */}
-        <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-3">
+        <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-3.5">
           {[
             { icon: ShieldCheck, title: "100% Verified", desc: "Direct official website links & PDFs" },
             { icon: Sparkles, title: "Real-time Sync", desc: "Updated every 30 minutes" },
             { icon: Globe, title: "All India Coverage", desc: "Central & all 28 State Govt jobs" },
             { icon: Award, title: "Free Alerts", desc: "Instant push & email notifications" },
           ].map((item, i) => (
-            <div key={i} className="rounded-xl border border-slate-200 bg-white p-3.5 shadow-sm">
+            <div key={i} className="rounded-xl border border-[#DEDEDE] bg-white p-4 shadow-xs transition hover:border-[#111111] hover:shadow-md">
               <div className="flex items-center gap-2.5">
-                <item.icon className="h-5 w-5 text-[#0D9488]" />
-                <h3 className="text-xs sm:text-sm font-bold text-slate-900">{item.title}</h3>
+                <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#5B0111] text-[#FFD84D]">
+                  <item.icon className="h-4 w-4" />
+                </span>
+                <h3 className="text-xs sm:text-sm font-bold text-[#111111] font-heading">{item.title}</h3>
               </div>
-              <p className="mt-1 text-[11px] sm:text-xs text-slate-500">{item.desc}</p>
+              <p className="mt-1.5 text-[11px] sm:text-xs text-neutral-500 font-sans">{item.desc}</p>
             </div>
           ))}
         </div>
 
         {/* Category Breakdown Grid */}
-        <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {/* Latest Jobs */}
           <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
             <div className="flex items-center gap-2.5 text-[#4F46E5]">

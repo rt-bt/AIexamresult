@@ -19,31 +19,31 @@ export function QuickAccess() {
     <section className="pb-14">
       <div className="container-page">
         <div className="mb-6 flex items-center gap-3">
-          <span className="h-8 w-1.5 rounded-full bg-gradient-to-b from-[#0D9488] via-[#EA580C] to-[#4F46E5]" />
+          <span className="h-8 w-1.5 rounded-full bg-gradient-to-b from-[#FFD84D] via-[#FF5B3E] to-[#111111]" />
           <div>
-            <h2 className="text-lg font-black text-slate-800 dark:text-white">Browse Categories</h2>
-            <p className="text-xs text-slate-500 dark:text-slate-300">Quick access to all exam updates</p>
+            <h2 className="text-lg font-bold text-[#111111] font-heading">Browse Categories</h2>
+            <p className="text-xs text-neutral-500 font-sans">Quick access to all exam updates</p>
           </div>
         </div>
-        <div className="grid gap-3.5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-3.5">
           {links.map(([title, desc, Icon]) => (
             <Link
               key={title}
               href={`/${title.toLowerCase().replace(/\s+/g, "-")}`}
-              className="group flex items-center justify-between rounded-xl border border-slate-200/90 bg-white p-4 shadow-xs transition-all hover:-translate-y-0.5 hover:border-teal-500 hover:shadow-md active:scale-[0.99]"
+              className="group flex flex-col sm:flex-row sm:items-center justify-between rounded-xl border border-[#DEDEDE] bg-white p-3 sm:p-4 shadow-xs transition-all hover:-translate-y-0.5 hover:border-[#111111]/40 hover:shadow-md active:scale-[0.98]"
             >
-              <div className="flex items-center gap-3 min-w-0">
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-teal-50 text-teal-700 transition group-hover:bg-teal-700 group-hover:text-white">
-                  <Icon className="h-5 w-5" aria-hidden="true" />
+              <div className="flex items-center gap-2.5 sm:gap-3 min-w-0">
+                <span className="flex h-8 w-8 sm:h-10 sm:w-10 shrink-0 items-center justify-center rounded-lg bg-neutral-100 text-[#111111] transition group-hover:bg-[#FFD84D] group-hover:text-[#111111]">
+                  <Icon className="h-4 w-4 sm:h-5 sm:w-5" aria-hidden="true" />
                 </span>
                 <div className="min-w-0">
-                  <h3 className="text-sm font-bold text-slate-900 transition group-hover:text-teal-700 truncate">
+                  <h3 className="text-xs sm:text-sm font-bold text-[#111111] transition group-hover:text-[#FF5B3E] truncate font-heading">
                     {title}
                   </h3>
-                  <p className="text-xs text-slate-500 truncate">{desc}</p>
+                  <p className="text-[10px] sm:text-xs text-neutral-500 truncate font-sans hidden xs:block">{desc}</p>
                 </div>
               </div>
-              <ArrowUpRight className="h-4 w-4 shrink-0 text-slate-300 transition group-hover:translate-x-0.5 group-hover:text-teal-600" aria-hidden="true" />
+              <ArrowUpRight className="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0 text-neutral-300 transition group-hover:translate-x-0.5 group-hover:text-[#FF5B3E] hidden sm:block" aria-hidden="true" />
             </Link>
           ))}
         </div>

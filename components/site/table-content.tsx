@@ -34,25 +34,25 @@ export function TableContent({ title, items }: { title: string; items: PostCard[
                 <tr key={item.title + item.date} className="transition hover:bg-slate-50/50">
                   <td className="px-4 py-4 sm:px-6">
                     <div className="flex items-center gap-2">
-                      <Link href={item.slug ? `/post/${item.slug}` : "#"} className="font-semibold text-slate-800 transition hover:text-brand line-clamp-2">
+                      <Link href={item.slug ? `/post/${item.slug}` : "#"} className="font-semibold text-[#111111] transition hover:text-[#FF5B3E] line-clamp-2 font-heading">
                         {item.title}
                       </Link>
                       {isWithinDays(item.date, 3) && (
-                        <span className="inline-flex shrink-0 items-center gap-0.5 rounded bg-orange-50 px-1.5 py-0.5 text-[10px] font-bold text-[#EA580C] ring-1 ring-orange-200">
+                        <span className="inline-flex shrink-0 items-center gap-0.5 rounded bg-[#FF5B3E]/10 px-1.5 py-0.5 text-[10px] font-bold text-[#FF5B3E] ring-1 ring-[#FF5B3E]/30">
                           <Sparkles className="h-2.5 w-2.5" /> NEW
                         </span>
                       )}
                     </div>
                   </td>
                   <td className="px-4 py-4 sm:px-6">
-                    <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-500">
+                    <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-neutral-500 font-sans">
                       <CalendarDays className="h-3.5 w-3.5 shrink-0" /> {item.date}
                     </span>
                   </td>
                   <td className="px-4 py-4 sm:px-6">
                     <Link
                       href={item.slug ? `/post/${item.slug}` : "#"}
-                      className="inline-flex items-center gap-1.5 rounded-lg bg-brand/10 px-4 py-2 text-xs font-bold text-brand transition hover:bg-brand hover:text-white"
+                      className="inline-flex items-center gap-1.5 rounded-lg bg-[#FFD84D] px-4 py-2 text-xs font-bold text-[#111111] transition hover:bg-[#FF5B3E] hover:text-white font-heading"
                     >
                       Apply <ExternalLink className="h-3 w-3" />
                     </Link>

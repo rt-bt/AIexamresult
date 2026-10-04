@@ -39,7 +39,7 @@ export function TiltCard({
   description,
   category,
   actionText,
-  accentColor = "#0D9488",
+  accentColor = "#FF5B3E",
   price,
   badgeLabel,
   badgeVariant = "success",
@@ -56,20 +56,20 @@ export function TiltCard({
       rotationFactor={9}
       {...tiltProps}
       className={cn(
-        "relative group overflow-hidden",
-        "bg-white border border-slate-200/90 rounded-2xl",
+        "relative group overflow-hidden font-sans",
+        "bg-white border border-[#DEDEDE] rounded-3xl",
         "flex flex-col justify-between",
         "h-56 sm:h-60 w-full",
-        "shadow-xs hover:shadow-xl hover:shadow-teal-900/10 hover:border-teal-500/50 hover:-translate-y-1",
-        "transition-all duration-300 ease-out",
+        "shadow-xs hover:shadow-2xl hover:shadow-black/8 hover:border-[#111111] hover:-translate-y-1.5",
+        "transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)]",
         className,
       )}
     >
       {/* Top accent line */}
       <div
-        className="absolute top-0 inset-x-0 h-1 z-30 transition-all duration-300 group-hover:h-1.5"
+        className="absolute top-0 inset-x-0 h-1.5 z-30 transition-all duration-300 group-hover:h-2"
         style={{
-          background: `linear-gradient(90deg, ${accentColor}, #14B8A6)`,
+          background: `linear-gradient(90deg, ${accentColor}, #FFD84D)`,
         }}
       />
 
@@ -78,7 +78,7 @@ export function TiltCard({
         <div className="flex items-center justify-between gap-2 mb-2.5">
           {category ? (
             <span
-              className="inline-flex items-center text-[10px] sm:text-[11px] font-extrabold uppercase tracking-wider px-2.5 py-0.5 rounded-full"
+              className="inline-flex items-center text-xs sm:text-[12px] font-bold uppercase tracking-wider px-3 py-0.5 rounded-full"
               style={{
                 backgroundColor: `${accentColor}15`,
                 color: accentColor,
@@ -91,13 +91,13 @@ export function TiltCard({
           )}
 
           {price && badgeLabel ? (
-            <div className="inline-flex h-fit items-center text-xs whitespace-nowrap shrink-0 shadow-xs">
-              <span className="rounded-l-full bg-slate-900 text-white h-fit py-0.5 px-2.5 font-black text-[11px] tracking-wide">
+            <div className="inline-flex h-fit items-center whitespace-nowrap shrink-0 shadow-xs">
+              <span className="rounded-l-full bg-slate-900 text-white h-fit py-0.5 px-3 font-bold text-xs tracking-wide">
                 {price}
               </span>
               <span
                 className={cn(
-                  "rounded-r-full text-[11px] h-fit py-0.5 px-2.5 font-bold",
+                  "rounded-r-full text-xs h-fit py-0.5 px-3 font-bold",
                   BADGE_LABEL_CLASSES[badgeVariant],
                 )}
               >
@@ -105,18 +105,18 @@ export function TiltCard({
               </span>
             </div>
           ) : price ? (
-            <span className="h-fit rounded-full bg-slate-900 text-white px-2.5 py-0.5 text-[11px] font-black tracking-wide shadow-xs">
+            <span className="h-fit rounded-full bg-slate-900 text-white px-3 py-0.5 text-xs font-bold tracking-wide shadow-xs">
               {price}
             </span>
           ) : null}
         </div>
 
-        <h2 className="text-base sm:text-[17px] font-bold text-slate-900 leading-snug tracking-tight group-hover:text-teal-700 transition-colors line-clamp-2">
+        <h2 className="text-[17px] sm:text-lg font-bold text-[#111111] leading-snug tracking-tight font-heading group-hover:text-[#FF5B3E] transition-colors line-clamp-2">
           {title}
         </h2>
 
         {description && (
-          <p className="mt-1.5 text-xs text-slate-500 font-medium line-clamp-1">
+          <p className="mt-1.5 text-[13px] text-neutral-500 font-medium line-clamp-1 font-sans">
             {description}
           </p>
         )}
@@ -126,42 +126,40 @@ export function TiltCard({
 
       {/* Bottom Row: CTA Action link on left */}
       <div className="relative z-20 px-5 sm:px-6 pb-4 sm:pb-5 pt-0 flex items-center justify-between">
-        <span className="inline-flex items-center gap-1.5 text-xs font-bold text-teal-700 group-hover:text-teal-800 transition-colors">
+        <span className="inline-flex items-center gap-2 rounded-full border border-[#DEDEDE] bg-neutral-50/80 px-3.5 py-1.5 text-[13px] font-bold text-[#111111] transition-all duration-300 group-hover:border-[#111111] group-hover:bg-[#111111] group-hover:text-[#FFD84D] font-heading shadow-xs">
           <span>{actionText || "View Details"}</span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="14"
-            height="14"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="transition-transform duration-300 group-hover:translate-x-1"
-          >
-            <path d="M5 12h14" />
-            <path d="m12 5 7 7-7 7" />
-          </svg>
+          <span className="flex h-5 w-5 items-center justify-center rounded-full bg-black/5 group-hover:bg-white/20 transition-all duration-300 group-hover:translate-x-0.5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg>
+          </span>
         </span>
       </div>
 
-      {/* Floating 3D Artwork Illustration */}
+      {/* Floating Artwork Illustration */}
       {imageSrc && (
-        <img
-          src={imageSrc}
-          alt={imageAlt}
-          width={288}
-          height={224}
-          loading="lazy"
-          decoding="async"
-          className={cn(
-            "absolute z-10 bottom-0 -right-6 w-48 sm:w-56 max-w-[50%]",
-            "rotate-[-6deg] border border-slate-200/80 rounded-tl-xl shadow-md pointer-events-none",
-            "transition-all duration-300 ease-out",
-            "group-hover:-rotate-2 group-hover:-translate-y-2 group-hover:scale-105 group-hover:shadow-xl",
-          )}
-        />
+        <div className="absolute z-10 bottom-1 right-1 w-32 sm:w-36 pointer-events-none transition-all duration-300 ease-out group-hover:scale-105 group-hover:-translate-y-1">
+          <img
+            src={imageSrc}
+            alt={imageAlt}
+            width={288}
+            height={224}
+            loading="lazy"
+            decoding="async"
+            className="w-full h-auto object-contain drop-shadow-md rounded-lg"
+          />
+        </div>
       )}
 
       {/* Radiant Brand Spotlight Shine (Zero black inversion) */}

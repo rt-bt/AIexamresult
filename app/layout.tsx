@@ -1,12 +1,13 @@
 import type { Metadata, Viewport } from "next";
-import { Inter } from "next/font/google";
+import { Space_Grotesk, DM_Sans } from "next/font/google";
 import Script from "next/script";
 import { Providers } from "@/components/providers";
 import { InstallBanner } from "@/components/site/install-banner";
 import { CookieConsent } from "@/components/site/cookie-consent";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
+const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], variable: "--font-space-grotesk", display: "swap", weight: ["400", "500", "600", "700"] });
+const dmSans = DM_Sans({ subsets: ["latin"], variable: "--font-dm-sans", display: "swap", weight: ["400", "500", "600", "700"] });
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.aiexamresult.com";
 
@@ -278,7 +279,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           crossOrigin="anonymous"
         />
       </head>
-      <body className={`${inter.variable} font-sans antialiased`}>
+      <body className={`${spaceGrotesk.variable} ${dmSans.variable} font-sans antialiased`}>
         <Providers>{children}</Providers>
         <InstallBanner />
         <CookieConsent />

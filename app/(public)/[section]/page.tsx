@@ -107,19 +107,19 @@ export default async function SectionPage({ params }: { params: Promise<{ sectio
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       <Header />
-      <main>
-        <div className="bg-gradient-to-br from-[#0D9488] via-[#0F766E] to-[#115E59] py-16">
-          <div className="container-page">
+      <main className="bg-white min-h-screen font-sans">
+        <div className="border-b border-[#222222] bg-[#111111] py-12 sm:py-16 relative overflow-hidden">
+          <div className="container-page relative z-10">
             <nav aria-label="Breadcrumb" className="mb-4 flex">
-              <ol className="flex flex-wrap items-center gap-2 text-sm text-white/70">
+              <ol className="flex flex-wrap items-center gap-2 text-sm text-neutral-400">
                 <li><Link href="/" className="font-medium transition hover:text-white">Home</Link></li>
-                <ChevronRight className="h-3.5 w-3.5" />
-                <li className="font-semibold text-white">{title}</li>
+                <ChevronRight className="h-3.5 w-3.5 text-neutral-500" />
+                <li className="font-semibold text-[#FFD84D]">{title}</li>
               </ol>
             </nav>
-            <p className="text-sm font-bold uppercase tracking-wide text-[#5EEAD4]">All India Exam Result</p>
-            <h1 className="mt-3 text-4xl font-black text-white">{h1Prefix}{title}</h1>
-            <p className="mt-3 max-w-2xl text-white/80">
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#FFD84D] font-heading">All India Exam Result · 2026</p>
+            <h1 className="mt-2 text-3xl sm:text-5xl font-bold text-white font-heading">{h1Prefix}{title}</h1>
+            <p className="mt-3 max-w-2xl text-neutral-300 text-sm sm:text-base leading-relaxed">
               {informational
                 ? "Transparent information, editorial standards and contact details for the portal."
                 : "Verified updates with instant search, official links, SEO-rich summaries and mobile-first reading."}

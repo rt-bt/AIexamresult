@@ -67,14 +67,14 @@ export function Header() {
   }, []);
 
   return (
-    <header className="sticky top-0 z-50 bg-[#0D9488]">
-      <div className="h-1 bg-gradient-to-r from-[#F97316] via-[#EA580C] to-[#4F46E5]" />
-      <div className="container-page flex h-20 lg:h-28 items-center gap-4 py-2 lg:py-3">
+    <header className="sticky top-0 z-50 bg-[#5B0111] border-b border-[#40000b] shadow-md font-sans">
+      <div className="h-0.5 bg-gradient-to-r from-[#FFD84D] via-[#FF5B3E] to-[#FFD84D]" />
+      <div className="container-page flex h-18 lg:h-22 items-center gap-4 py-2 lg:py-3">
         <Link href="/" className="flex items-center gap-2.5">
-          <Logo className="h-20 w-20 lg:h-24 lg:w-24" dark />
+          <Logo className="h-16 w-16 lg:h-20 lg:w-20" dark />
           <span className="hidden sm:flex flex-col leading-tight">
-            <span className="text-[15px] font-black tracking-tight text-white">All India</span>
-            <span className="text-[11px] font-bold tracking-wide text-white/70">EXAM RESULT</span>
+            <span className="text-[15px] font-black tracking-tight text-white font-heading">All India</span>
+            <span className="text-[11px] font-bold tracking-widest text-[#FFD84D]">EXAM RESULT</span>
           </span>
         </Link>
 
@@ -86,16 +86,14 @@ export function Header() {
                 <Link
                   href={href}
                   className={cn(
-                    "flex items-center gap-1.5 rounded-lg px-3.5 py-2 text-[15px] font-semibold transition",
-                    isActive ? "bg-white/15 text-white" : "text-white/80 hover:bg-white/15 hover:text-white"
+                    "flex items-center gap-1.5 rounded-lg px-4 py-2 text-[15.5px] font-semibold transition font-heading tracking-wide",
+                    isActive ? "bg-white/10 text-[#FFD84D]" : "text-white/90 hover:bg-white/10 hover:text-white"
                   )}
                 >
                   {t(`nav.${label.toLowerCase().replace(/\s+/g, "-")}`)}
-                  <ChevronDown className="h-3.5 w-3.5 transition duration-200 group-hover:rotate-180" />
+                  <ChevronDown className="h-4 w-4 transition duration-200 group-hover:rotate-180" />
                 </Link>
-                <div className="invisible absolute left-1/2 top-full z-50 mt-1.5 w-52 -translate-x-1/2 translate-y-1 scale-95 rounded-xl bg-white py-1.5 shadow-[0_8px_30px_rgba(0,0,0,0.12)] opacity-0 transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:scale-100 group-hover:opacity-100">
-                  <div className="pointer-events-none absolute -top-1 left-1/2 h-3 w-3 -translate-x-1/2 rotate-45 rounded-sm bg-white" />
-                  <div className="absolute left-4 right-4 top-0 h-px bg-gradient-to-r from-transparent via-teal-200 to-transparent" />
+                <div className="invisible absolute left-1/2 top-full z-50 mt-1.5 w-56 -translate-x-1/2 translate-y-1 scale-95 rounded-xl border border-[#DEDEDE] bg-white py-1.5 shadow-2xl opacity-0 transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:scale-100 group-hover:opacity-100">
                   <div className="space-y-0.5 p-1.5">
                     {dropdown.map(([subLabel, subHref]) => {
                       const isSubActive = pathname === subHref;
@@ -104,17 +102,13 @@ export function Header() {
                           key={subHref}
                           href={subHref}
                           className={cn(
-                            "group/sub relative block rounded-lg px-3.5 py-2.5 text-sm font-medium transition-all",
+                            "group/sub relative block rounded-lg px-3.5 py-2.5 text-sm font-semibold transition-all",
                             isSubActive
-                              ? "bg-teal-50 text-teal-700"
-                              : "text-gray-600 hover:bg-gray-50 hover:text-gray-900"
+                              ? "bg-amber-50 text-[#111111]"
+                              : "text-[#111111] hover:bg-amber-50/80 hover:text-[#FF5B3E]"
                           )}
                         >
-                          <span className={cn(
-                            "absolute left-0 top-1/2 h-0 w-0.5 -translate-y-1/2 rounded-full bg-teal-500 transition-all",
-                            "group-hover/sub:h-5"
-                          )} />
-                          {t(`nav.${subLabel.toLowerCase().replace(/\s+/g, "-")}`)}
+                          {subLabel}
                         </Link>
                       );
                     })}
@@ -126,8 +120,8 @@ export function Header() {
                 key={href}
                 href={href}
                 className={cn(
-                  "rounded-lg px-3.5 py-2 text-[15px] font-semibold transition",
-                  isActive ? "bg-white/15 text-white" : "text-white/80 hover:bg-white/15 hover:text-white"
+                  "rounded-lg px-4 py-2 text-[15.5px] font-semibold transition font-heading tracking-wide",
+                  isActive ? "bg-white/10 text-[#FFD84D]" : "text-white/90 hover:bg-white/10 hover:text-white"
                 )}
               >
                 {t(`nav.${label.toLowerCase().replace(/\s+/g, "-")}`)}
@@ -140,8 +134,8 @@ export function Header() {
           <LanguageSelector />
           <BookmarkListBtn />
           <VoiceSearchBtn />
-          <Link href="/search" className="hidden items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-bold text-[#0D9488] transition hover:bg-white/90 lg:inline-flex">
-            <Search className="h-4 w-4" /> {t("nav.search")}
+          <Link href="/search" className="hidden items-center gap-2 rounded-full bg-[#FFD84D] px-5 py-2.5 text-[15px] font-bold text-[#111111] transition hover:bg-[#ffe270] lg:inline-flex shadow-md shadow-black/20 font-heading">
+            <Search className="h-4.5 w-4.5" /> {t("nav.search")}
           </Link>
           <Link href="/search" className="rounded-full border border-white/20 p-2.5 text-white transition hover:bg-white/15 active:scale-90 flex lg:hidden">
             <Search className="h-4 w-4" />
@@ -152,10 +146,10 @@ export function Header() {
         </div>
         </div>
 
-        <div role="region" aria-label="Breaking Exam Updates" className="overflow-hidden border-t border-white/10 bg-[#0F766E]">
-          <div className="flex items-center gap-2.5 px-3 py-1.5 text-xs">
-            <span className="flex shrink-0 items-center gap-1 rounded-md bg-[#EA580C] px-2 py-0.5 text-xs font-bold text-white shadow-sm">
-              <Sparkles className="h-3 w-3 animate-pulse" aria-hidden="true" /> Latest Updates
+        <div role="region" aria-label="Breaking Exam Updates" className="overflow-hidden border-t border-black/20 bg-[#48000d]">
+          <div className="flex items-center gap-3 px-4 py-2 text-sm">
+            <span className="flex shrink-0 items-center gap-1.5 rounded-md bg-[#FF5B3E] px-3 py-1 text-xs sm:text-[13px] font-bold text-white shadow-sm font-heading">
+              <Sparkles className="h-3.5 w-3.5 animate-pulse text-[#FFD84D]" aria-hidden="true" /> Latest Updates
             </span>
             <div className="overflow-hidden relative flex-1">
               <div className="animate-marquee whitespace-nowrap inline-block hover:[animation-play-state:paused] focus-within:[animation-play-state:paused] motion-reduce:animate-none">
@@ -163,12 +157,12 @@ export function Header() {
                   <Link
                     key={i}
                     href={item.slug ? `/post/${item.slug}` : "#"}
-                    className="mx-3.5 inline-flex items-center gap-1.5 text-white/90 transition hover:text-white hover:underline focus-visible:underline"
+                    className="mx-4 inline-flex items-center gap-2 text-white/95 transition hover:text-[#FFD84D] hover:underline focus-visible:underline"
                   >
-                    <span className="rounded bg-white/15 px-1.5 py-0.5 text-xs font-bold text-amber-300 border border-white/10">
+                    <span className="rounded bg-black/40 px-2 py-0.5 text-xs font-bold text-[#FFD84D] border border-white/10 font-heading">
                       {item.category || "Update"}
                     </span>
-                    <span className="text-xs font-medium">{item.title}</span>
+                    <span className="text-[13.5px] font-medium text-white/90">{item.title}</span>
                     <span className="ml-2 text-white/40" aria-hidden="true">•</span>
                   </Link>
                 ))}

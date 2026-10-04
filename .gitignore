@@ -25,3 +25,4 @@ aiexamresult.pem
 *.zip
 tsconfig.tsbuildinfo
 test.html
+mainframe/

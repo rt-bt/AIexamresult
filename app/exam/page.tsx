@@ -61,50 +61,57 @@ export default function ExamIndexPage() {
   return (
     <>
       <Header />
-      <main>
-        <div className="bg-gradient-to-br from-[#0D9488] via-[#0F766E] to-[#115E59] py-16">
-          <div className="container-page">
-            <p className="text-sm font-bold uppercase tracking-wide text-[#5EEAD4]">All India Exam Result</p>
-            <h1 className="mt-3 text-4xl font-black text-white">All Exams 2026</h1>
-            <p className="mt-3 max-w-2xl text-white/80">
-              Complete list of government exam categories. Find notifications, admit cards, answer keys and results for SSC, UPSC, Railway, Banking, Defence, Teaching and state-level exams.
+      <main className="bg-white min-h-screen font-sans">
+        {/* Brand Kit Dark Hero Banner */}
+        <div className="relative overflow-hidden bg-[#111111] border-b border-[#222222] py-14 sm:py-18">
+          <div className="container-page relative z-10">
+            <div className="inline-flex items-center gap-2 rounded-full border border-[#FFD84D]/40 bg-white/10 px-3.5 py-1 text-xs font-semibold text-[#FFD84D] backdrop-blur-md mb-4 font-heading">
+              <span className="h-1.5 w-1.5 rounded-full bg-[#FF5B3E] animate-pulse" />
+              <span>All India Exam Result · 2026 Directory</span>
+            </div>
+            <h1 className="text-3xl sm:text-5xl font-bold tracking-tight text-white font-heading">
+              All Government Exams <span className="text-[#FFD84D]">2026</span>
+            </h1>
+            <p className="mt-3 max-w-2xl text-neutral-300 text-sm sm:text-base leading-relaxed font-sans">
+              Complete directory of official government exams. Direct links for notifications, syllabus, admit cards, answer keys, and scorecards across central and state commissions.
             </p>
           </div>
         </div>
 
-        <section className="container-page -mt-7 pb-16">
+        {/* Clean Light Surface Cards */}
+        <section className="container-page py-12">
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {categories.map((cat) => {
               const exams = examGroups.filter(cat.filter);
               const Icon = cat.icon;
               return (
-                <div key={cat.label} className="group rounded-2xl border border-gray-100 bg-white shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden">
-                  {/* Category Header */}
-                  <div className={`bg-gradient-to-r ${cat.gradient} px-5 py-4`}>
+                <div key={cat.label} className="group rounded-2xl border border-[#DEDEDE] bg-white shadow-sm hover:shadow-xl hover:border-[#111111]/40 transition-all duration-300 overflow-hidden">
+                  {/* Category Card Header (#111111 with Warm Yellow #FFD84D accent) */}
+                  <div className="bg-gradient-to-r from-[#111111] to-[#222222] px-5 py-4 text-white">
                     <div className="flex items-center gap-3">
-                      <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-white/20 backdrop-blur-sm">
-                        <Icon className="h-5 w-5 text-white" />
+                      <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-white/10 backdrop-blur-sm text-[#FFD84D] border border-white/10">
+                        <Icon className="h-5 w-5" />
                       </span>
                       <div>
-                        <h2 className="text-base font-bold text-white">{cat.label}</h2>
-                        <p className="text-[10px] font-medium text-white/70">{cat.badge}</p>
+                        <h2 className="text-base font-bold text-white font-heading tracking-wide">{cat.label}</h2>
+                        <p className="text-[11px] font-medium text-[#FFD84D]">{cat.badge}</p>
                       </div>
                     </div>
                   </div>
 
-                  {/* Exam List */}
-                  <div className="p-4">
+                  {/* Exam List on Clean White */}
+                  <div className="p-4 bg-white">
                     <div className="space-y-1">
                       {exams.map((exam) => (
                         <Link
                           key={exam.slug}
                           href={`/exam/${exam.slug}`}
-                          className="flex items-center justify-between rounded-xl px-3 py-2.5 text-sm text-gray-600 transition hover:bg-gray-50 hover:text-[#0D9488] group/link"
+                          className="flex items-center justify-between rounded-xl px-3 py-2 text-sm text-neutral-700 transition hover:bg-neutral-50 hover:text-[#FF5B3E] group/link"
                         >
                           <span className="font-medium">{exam.title}</span>
                           <div className="flex items-center gap-2">
-                            <span className="hidden lg:block text-[11px] text-gray-400">{exam.description}</span>
-                            <ArrowRight className="h-3.5 w-3.5 shrink-0 text-gray-300 transition group-hover/link:translate-x-0.5 group-hover/link:text-[#0D9488]" />
+                            <span className="hidden lg:block text-[11px] text-neutral-400">{exam.description}</span>
+                            <ArrowRight className="h-3.5 w-3.5 shrink-0 text-neutral-300 transition group-hover/link:translate-x-0.5 group-hover/link:text-[#FF5B3E]" />
                           </div>
                         </Link>
                       ))}
@@ -112,7 +119,7 @@ export default function ExamIndexPage() {
 
                     <Link
                       href={`/${exams[0]?.slug?.split("-")[0] || ""}`}
-                      className="mt-3 flex items-center justify-center gap-1.5 rounded-xl border border-dashed border-gray-200 py-2.5 text-xs font-semibold text-gray-400 transition hover:border-[#0D9488]/30 hover:text-[#0D9488]"
+                      className="mt-3 flex items-center justify-center gap-1.5 rounded-xl border border-dashed border-[#111111]/30 py-2.5 text-xs font-semibold text-[#111111] transition hover:bg-neutral-50 hover:border-[#FF5B3E] hover:text-[#FF5B3E] font-heading"
                     >
                       View all {cat.label.toLowerCase()} posts
                       <ArrowRight className="h-3 w-3" />

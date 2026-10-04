@@ -6,33 +6,38 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        border: "#e2e8f0",
-        background: "#ffffff",
-        foreground: "#0f172a",
-        ink: "#0F172A",
-        brand: "#0D9488",
-        "brand-dark": "#0F766E",
-        "brand-light": "#14B8A6",
-        secondary: "#f1f5f9",
-        "secondary-dark": "#e2e8f0",
-        accent: "#4F46E5",
-        "accent-dark": "#4338CA",
-        highlight: "#D97706",
-        saffron: "#F59E0B",
+        border: "#DEDEDE",
+        background: "#FFFFFF",
+        foreground: "#111111",
+        ink: "#111111",
+        // Space Grotesk & DM Sans Brand Kit Palette
+        brand: "#111111",
+        "brand-dark": "#000000",
+        "brand-light": "#222222",
+        accent: "#FF5B3E",
+        "accent-dark": "#e0482d",
+        surface: "#FFD84D",
+        "surface-dark": "#e5be38",
+        highlight: "#FF5B3E",
+        saffron: "#FFD84D",
+        secondary: "#FFD84D",
+        "secondary-dark": "#e5be38",
         success: "#10B981",
-        danger: "#EF4444",
-        mist: "#F0FDFA",
-        rose: "#E11D48",
-        purple: "#7C3AED"
+        danger: "#FF5B3E",
+        mist: "#FAFAFA",
+        rose: "#FF5B3E",
+        purple: "#111111"
       },
       boxShadow: {
-        glow: "0 24px 80px rgba(13, 148, 136, 0.18)",
-        panel: "0 20px 70px rgba(15, 23, 42, 0.10)",
-        card: "0 4px 20px rgba(0, 0, 0, 0.06)",
-        "card-hover": "0 12px 40px rgba(13, 148, 136, 0.12)"
+        glow: "0 24px 80px rgba(255, 91, 62, 0.18)",
+        panel: "0 20px 70px rgba(17, 17, 17, 0.08)",
+        card: "0 4px 20px rgba(0, 0, 0, 0.04)",
+        "card-hover": "0 12px 40px rgba(0, 0, 0, 0.08)"
       },
       fontFamily: {
-        sans: ["var(--font-inter)", "Inter", "system-ui", "sans-serif"]
+        display: ["var(--font-space-grotesk)", "system-ui", "sans-serif"],
+        sans: ["var(--font-dm-sans)", "system-ui", "sans-serif"],
+        heading: ["var(--font-space-grotesk)", "system-ui", "sans-serif"],
       },
       animation: {
         "fade-up": "fadeUp 0.6s ease-out forwards",

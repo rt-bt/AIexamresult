@@ -27,7 +27,14 @@ const nextConfig: NextConfig = {
   // post/[slug]/page.tsx uses fs.readFileSync, causing 382MB > 250MB limit.
   outputFileTracingExcludes: { "/**": ["./data/posts/**", "./data/scraped-data.ts"] },
 
-  webpack(config) {
+  webpack(config, { isServer }) {
+    if (!isServer) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        fs: false,
+        path: false,
+      };
+    }
     config.resolve.alias = {
       ...config.resolve.alias,
       "framer-motion$": require

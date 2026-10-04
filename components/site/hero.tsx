@@ -5,7 +5,7 @@ import { useState, useEffect, useRef } from "react";
 import { trendingExams } from "@/lib/data";
 import { useRouter } from "next/navigation";
 import { VoiceSearchBtn } from "./voice-search";
-import LiquidEther from "@/components/LiquidEther";
+import { VideoScrubBg } from "./video-scrub-bg";
 
 const examOptions = [
   ...trendingExams,
@@ -35,71 +35,95 @@ function ResultFinder() {
     if (q.length >= 3) router.push(`/search?q=${encodeURIComponent(q)}`);
   }
 
+  const quickBadges = ["SSC CGL", "RRB NTPC", "UPSC IAS", "NEET UG", "CTET"];
+
   return (
-    <form onSubmit={handleSubmit} className="relative mx-auto max-w-2xl">
-      <div className="flex flex-col gap-2 sm:flex-row">
-        <div className="relative flex-1">
-          <label htmlFor="hero-search-exam" className="sr-only">Search exam or job</label>
-          <Search className="absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-white/60" aria-hidden="true" />
-          <input
-            id="hero-search-exam"
-            aria-label="Search exam name or job title"
-            type="text"
-            value={exam}
-            onChange={(e) => { setExam(e.target.value); setShowDropdown(true); }}
-            onFocus={() => setShowDropdown(true)}
-            onBlur={() => setTimeout(() => setShowDropdown(false), 200)}
-            placeholder="Search exam (e.g. SSC CGL, UPSC, Railway)"
-            className="w-full rounded-xl border border-white/30 bg-white/15 pl-11 pr-11 py-3.5 text-sm text-white placeholder-white/70 outline-none backdrop-blur-sm transition-all focus:border-white focus:bg-white/20"
-          />
-          <div className="absolute right-2 top-1/2 -translate-y-1/2">
-            <VoiceSearchBtn
-              onResult={(val) => {
-                setExam(val);
-                router.push(`/search?q=${encodeURIComponent(val)}`);
-              }}
-              className="p-1.5 text-white/70 hover:text-white transition active:scale-90"
+    <div className="relative w-full">
+      <form
+        onSubmit={handleSubmit}
+        className="rounded-2xl border border-white/15 bg-black/40 p-2 sm:p-2.5 shadow-2xl backdrop-blur-2xl transition hover:border-white/25"
+      >
+        <div className="flex flex-col gap-2 sm:flex-row sm:items-center">
+          {/* Exam Name Search Input */}
+          <div className="relative flex-1">
+            <label htmlFor="hero-search-exam" className="sr-only">Search exam or job</label>
+            <Search className="absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-white/40" aria-hidden="true" />
+            <input
+              id="hero-search-exam"
+              aria-label="Search exam name or job title"
+              type="text"
+              value={exam}
+              onChange={(e) => { setExam(e.target.value); setShowDropdown(true); }}
+              onFocus={() => setShowDropdown(true)}
+              onBlur={() => setTimeout(() => setShowDropdown(false), 200)}
+              placeholder="Search exam (e.g. SSC CGL, Railway, UPSC)..."
+              className="w-full rounded-xl border border-white/10 bg-white/5 pl-11 pr-11 py-3 text-[15px] font-medium text-white placeholder-white/40 outline-none transition focus:border-white/40 focus:bg-white/10 font-sans"
+            />
+            <div className="absolute right-2 top-1/2 -translate-y-1/2">
+              <VoiceSearchBtn
+                onResult={(val) => {
+                  setExam(val);
+                  router.push(`/search?q=${encodeURIComponent(val)}`);
+                }}
+                className="p-1.5 text-white/50 hover:text-white transition active:scale-95"
+              />
+            </div>
+            {showDropdown && filtered.length > 0 && (
+              <div className="absolute left-0 right-0 top-full z-30 mt-2 max-h-56 overflow-auto rounded-xl border border-white/15 bg-black/90 py-1.5 shadow-2xl backdrop-blur-2xl">
+                {filtered.map((e) => (
+                  <button
+                    key={e}
+                    type="button"
+                    onMouseDown={() => { setExam(e); setShowDropdown(false); }}
+                    className="w-full px-4 py-2.5 text-left text-[14.5px] font-medium text-white/80 transition hover:bg-white/15 hover:text-white font-sans"
+                  >
+                    {e}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* Roll No input */}
+          <div className="relative sm:w-48">
+            <label htmlFor="hero-search-roll" className="sr-only">Roll number</label>
+            <input
+              id="hero-search-roll"
+              aria-label="Roll number (optional)"
+              type="text"
+              value={rollNo}
+              onChange={(e) => setRollNo(e.target.value)}
+              placeholder="Roll No. (Optional)"
+              className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-[15px] font-medium text-white placeholder-white/40 outline-none transition focus:border-white/40 focus:bg-white/10 font-sans"
             />
           </div>
-          {showDropdown && filtered.length > 0 && (
-            <div className="absolute left-0 right-0 top-full z-20 mt-1 max-h-48 overflow-auto rounded-xl border border-white/10 bg-[#0F172A] shadow-xl">
-              {filtered.map((e) => (
-                <button
-                  key={e}
-                  type="button"
-                  onMouseDown={() => { setExam(e); setShowDropdown(false); }}
-                  className="w-full px-4 py-2.5 text-left text-sm text-white/80 transition hover:bg-white/10 hover:text-white"
-                >
-                  {e}
-                </button>
-              ))}
-            </div>
-          )}
+
+          {/* Submit CTA button (Brand Accent #FF5B3E) */}
+          <button
+            type="submit"
+            className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#FF5B3E] px-6 py-3 text-[15px] font-bold text-white shadow-md shadow-black/25 transition-all duration-200 hover:bg-[#e0482d] active:scale-[0.98] font-heading"
+          >
+            <span>Search</span>
+            <ArrowRight className="h-4.5 w-4.5" />
+          </button>
         </div>
-        <div className="relative sm:w-52">
-          <label htmlFor="hero-search-roll" className="sr-only">Roll number (optional, for scorecard)</label>
-          <input
-            id="hero-search-roll"
-            aria-label="Roll number (optional, for scorecard lookup)"
-            type="text"
-            value={rollNo}
-            onChange={(e) => setRollNo(e.target.value)}
-            placeholder="Roll No. (Scorecard lookup)"
-            className="w-full rounded-xl border border-white/30 bg-white/15 px-4 py-3.5 text-sm text-white placeholder-white/70 outline-none backdrop-blur-sm transition-all focus:border-white focus:bg-white/20"
-          />
-        </div>
-        <button
-          type="submit"
-          className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-5 py-3.5 text-sm font-bold text-teal-800 shadow-md transition hover:bg-white/95 active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-white"
-        >
-          Find Result
-          <ArrowRight className="h-4 w-4" />
-        </button>
+      </form>
+
+      {/* Quick clickable tags */}
+      <div className="mt-3 flex flex-wrap items-center justify-start gap-1.5 text-xs">
+        <span className="text-white/40 font-medium mr-1 text-[11px]">Trending:</span>
+        {quickBadges.map((badge) => (
+          <button
+            key={badge}
+            type="button"
+            onClick={() => router.push(`/search?q=${encodeURIComponent(badge)}`)}
+            className="rounded-full border border-white/15 bg-white/5 px-2.5 py-0.5 text-[11px] font-medium text-white/80 backdrop-blur-md transition-colors duration-200 hover:border-[#FFD84D]/60 hover:bg-[#FFD84D]/15 hover:text-[#FFD84D]"
+          >
+            {badge}
+          </button>
+        ))}
       </div>
-      <p className="mt-2 text-center text-xs text-white/40">
-        Popular: SSC CGL · UPSC · RRB NTPC · CTET · NEET · Bihar Board · UP Board
-      </p>
-    </form>
+    </div>
   );
 }
 
@@ -131,88 +155,70 @@ function Counter({ to, label }: { to: number; label: string }) {
 
   return (
     <div ref={ref} className="text-center">
-      <p className="text-lg sm:text-xl font-bold text-white tracking-tight">{count.toLocaleString()}<span className="text-[#5EEAD4]">+</span></p>
-      <p className="text-[10px] text-white/70 mt-0.5 font-medium">{label}</p>
+      <p className="text-xl sm:text-2xl font-black text-white tracking-tight">
+        {count.toLocaleString()}<span className="text-white/40">+</span>
+      </p>
+      <p className="text-[11px] uppercase tracking-wider text-white/60 mt-0.5 font-semibold">{label}</p>
     </div>
   );
 }
 
 export function Hero() {
+  const router = useRouter();
+
   return (
-    <section className="relative overflow-hidden min-h-[560px]">
-      {/* LiquidEther WebGL Fluid Simulation Background */}
+    <section className="relative overflow-hidden min-h-[75vh] md:min-h-[85vh] flex flex-col justify-center">
+      {/* Background: Video scrub + cinematic color blend */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
-        {/* Medium teal ocean base — visible water, not pitch black */}
-        <div
-          className="absolute inset-0"
-          style={{
-            background: "radial-gradient(ellipse at 50% 30%, #0D6B72 0%, #064E55 50%, #032B30 100%)",
-          }}
-        />
-        <LiquidEther
-          colors={['#032B30', '#075C63', '#0E9B8A', '#22D3C4', '#7FF0E8']}
-          mouseForce={38}
-          cursorSize={90}
-          isViscous
-          viscous={8}
-          iterationsViscous={28}
-          iterationsPoisson={32}
-          resolution={0.7}
-          isBounce={true}
-          autoDemo
-          autoSpeed={0.48}
-          autoIntensity={2.8}
-          takeoverDuration={0.2}
-          autoResumeDelay={2500}
-          autoRampDuration={0.5}
-          gyroEnabled={true}
-          gyroSensitivity={0.7}
-          color0="#032B30"
-          color1="#0E9B8A"
-          color2="#7FF0E8"
-          className="absolute inset-0 h-full w-full"
-        />
-        {/* Stronger dark overlay to keep white text readable over lighter water */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/15 to-black/40 pointer-events-none" />
+        <VideoScrubBg />
+        {/* Soft left vignette so text is perfectly readable without hiding the video */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/20 pointer-events-none" />
       </div>
 
-      <div className="container-page relative pt-8 sm:pt-12 pb-8 sm:pb-14">
-        <div className="mx-auto max-w-3xl text-center">
-
-          {/* Badge */}
-          <div className="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3.5 py-1 text-xs font-semibold text-white/90 border border-white/10 mb-5 backdrop-blur-sm">
-            <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
-            Live Sarkari Result &amp; Job Alerts 2026
+      <div className="container-page relative z-10 py-12 sm:py-20">
+        <div className="max-w-2xl text-left">
+          {/* Live Badge (Brand Kit: #FFD84D Surface on Dark Glass) */}
+          <div className="inline-flex items-center gap-2 rounded-full border border-[#FFD84D]/40 bg-[#111111]/80 px-4 py-1.5 text-[13px] font-semibold text-[#FFD84D] backdrop-blur-md mb-4 shadow-sm font-heading">
+            <span className="h-2 w-2 rounded-full bg-[#FF5B3E] animate-pulse" />
+            <span className="tracking-wide">Live Sarkari Alerts · 2026</span>
           </div>
 
-          {/* Headline — short & punchy */}
-          <h1 className="text-3xl sm:text-5xl lg:text-[3.5rem] font-extrabold leading-[1.12] tracking-tight text-white">
-            Sarkari Result 2026{' '}
-            <span className="text-[#5EEAD4]">Exam</span>,{' '}
-            <span className="text-[#FBBF24]">Jobs</span> &amp;{' '}
-            <span className="text-[#A78BFA]">Admit Card</span>
+          {/* Clean 2-Line Headline in Space Grotesk */}
+          <h1 className="font-heading text-4xl sm:text-5xl lg:text-[64px] font-bold leading-[1.08] tracking-tight text-white mb-3.5">
+            Exam Results, <br className="hidden sm:block" />
+            Admit Cards &amp; Jobs.
           </h1>
 
-          {/* Search bar */}
-          <div className="mt-6">
-            <ResultFinder />
-          </div>
-        </div>
+          {/* Ultra-Short 1-Line Subtitle in DM Sans */}
+          <p className="font-sans text-base sm:text-lg text-white/85 max-w-xl mb-7 leading-relaxed">
+            Instant verified links for SSC, UPSC, Railway, Banking &amp; State exams.
+          </p>
 
-        {/* Stats bar */}
-        <div className="mx-auto mt-8 max-w-lg">
-          <div className="rounded-xl bg-white/5 border border-white/10 px-4 py-3">
-            <div className="flex divide-x divide-white/10">
-              <div className="flex-1 min-w-0 px-3 text-center">
-                <Counter to={18240} label="Results Tracked" />
-              </div>
-              <div className="flex-1 min-w-0 px-3 text-center">
-                <Counter to={3712} label="Active Jobs" />
-              </div>
-              <div className="flex-1 min-w-0 px-3 text-center">
-                <Counter to={928} label="Alerts Sent" />
-              </div>
-            </div>
+          {/* Action Buttons (#FFD84D Surface Yellow + Clean Frosted Secondary) */}
+          <div className="flex flex-wrap items-center gap-3.5 mb-7">
+            <button
+              onClick={() => {
+                const searchEl = document.getElementById("hero-search-exam");
+                searchEl?.focus();
+              }}
+              className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#FFD84D] px-7 py-3 text-[15px] font-bold text-[#111111] shadow-lg shadow-black/25 transition hover:bg-[#ffe270] hover:scale-[1.01] active:scale-[0.98] font-heading"
+            >
+              <span>Find Results</span>
+              <ArrowRight className="h-4.5 w-4.5" />
+            </button>
+
+            <button
+              onClick={() => router.push("/latest-jobs")}
+              className="inline-flex items-center justify-center rounded-xl border border-white/20 bg-white/10 px-7 py-3 text-[15px] font-semibold text-white backdrop-blur-md transition hover:bg-white/20 active:scale-[0.98] font-heading"
+            >
+              <span>Latest Jobs</span>
+            </button>
+          </div>
+
+          {/* Clean Search Bar */}
+          <div className="max-w-xl">
+            <ResultFinder />
           </div>
         </div>
       </div>
