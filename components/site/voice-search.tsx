@@ -183,31 +183,34 @@ export function VoiceSearchBtn({ onResult, className }: VoiceSearchBtnProps) {
       {/* Voice Search Modal Dialog */}
       {isOpen && (
         <div
-          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 p-4 backdrop-blur-sm animate-in fade-in duration-200"
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/70 p-4 backdrop-blur-md animate-in fade-in duration-200"
           onClick={handleClose}
         >
           <div
-            className="relative w-full max-w-md overflow-hidden rounded-3xl bg-white p-6 sm:p-8 shadow-2xl text-center"
+            className="relative w-full max-w-sm overflow-hidden rounded-3xl border border-white/20 bg-[#111111]/95 p-6 shadow-2xl text-center backdrop-blur-2xl text-white font-sans"
             onClick={(e) => e.stopPropagation()}
           >
+            {/* Top gradient highlight */}
+            <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-[#FFD84D] via-[#FF5B3E] to-[#FFD84D]" />
+
             {/* Close button */}
             <button
               onClick={handleClose}
-              className="absolute right-4 top-4 rounded-full p-2 text-slate-400 hover:bg-slate-100 hover:text-slate-700 transition"
+              className="absolute right-4 top-4 rounded-full p-2 text-white/50 hover:bg-white/10 hover:text-white transition active:scale-95"
               aria-label="Close"
             >
-              <X className="h-5 w-5" />
+              <X className="h-4.5 w-4.5" />
             </button>
 
-            {/* Language toggle pills: Pure English or Pure Hindi */}
-            <div className="inline-flex items-center gap-1 rounded-full bg-slate-100 p-1 text-xs font-semibold text-slate-600 mb-6">
+            {/* Language toggle pills */}
+            <div className="inline-flex items-center gap-1 rounded-full bg-white/10 p-1 text-xs font-semibold text-white/70 mb-5">
               <button
                 type="button"
                 onClick={() => switchLanguage("en-IN")}
-                className={`rounded-full px-3.5 py-1 transition ${
+                className={`rounded-full px-3 py-1 transition ${
                   !isHindi
-                    ? "bg-[#0D9488] text-white shadow-sm font-bold"
-                    : "hover:text-slate-900"
+                    ? "bg-[#FFD84D] text-[#111111] font-bold shadow-xs"
+                    : "hover:text-white"
                 }`}
               >
                 English
@@ -215,156 +218,98 @@ export function VoiceSearchBtn({ onResult, className }: VoiceSearchBtnProps) {
               <button
                 type="button"
                 onClick={() => switchLanguage("hi-IN")}
-                className={`rounded-full px-3.5 py-1 transition ${
+                className={`rounded-full px-3 py-1 transition ${
                   isHindi
-                    ? "bg-[#0D9488] text-white shadow-sm font-bold"
-                    : "hover:text-slate-900"
+                    ? "bg-[#FFD84D] text-[#111111] font-bold shadow-xs"
+                    : "hover:text-white"
                 }`}
               >
-                हिन्दी (Hindi)
+                हिन्दी
               </button>
             </div>
 
-            {/* Title / Heading */}
-            <h3 className="text-xl sm:text-2xl font-black text-slate-900 mb-1">
+            {/* Status Heading */}
+            <h3 className="text-xl font-bold font-heading tracking-tight mb-1 text-white">
               {isListening
                 ? isHindi ? "सुन रहे हैं..." : "Listening..."
                 : errorType
                 ? isHindi ? "पुनः प्रयास करें" : "Try Again"
-                : isHindi ? "आवाज़ से खोजें" : "Voice Search"}
+                : isHindi ? "बोलिए..." : "Speak now..."}
             </h3>
-            <p className="text-xs sm:text-sm text-slate-500 mb-6 px-4">
+
+            <p className="text-xs text-white/60 mb-6">
               {isListening
                 ? isHindi
-                  ? "परीक्षा का नाम बोलें, जैसे 'SSC CGL', 'UPSC' या 'रेलवे'..."
-                  : "Say the exam name, e.g., 'SSC CGL', 'UPSC', or 'Railway'..."
-                : errorType
+                  ? "परीक्षा का नाम बोलें (जैसे 'SSC CGL', 'UPSC')..."
+                  : "Say exam name (e.g. 'SSC CGL', 'Railway')..."
+                : errorType === "PERMISSION"
                 ? isHindi
-                  ? "पुनः प्रयास करने के लिए नीचे माइक्रोफ़ोन पर टैप करें"
-                  : "Tap the microphone below to retry"
+                  ? "माइक्रोफ़ोन की अनुमति दें"
+                  : "Allow microphone access to search"
                 : isHindi
-                ? "अपने माइक्रोफ़ोन में बोलें"
-                : "Speak into your microphone"}
+                ? "माइक पर टैप करके बोलें"
+                : "Tap the mic and speak"}
             </p>
 
-            {/* Animated Mic Button in Modal */}
-            <div className="relative mx-auto my-6 flex items-center justify-center">
+            {/* Mic Animation */}
+            <div className="relative mx-auto my-5 flex items-center justify-center">
               {isListening && (
                 <>
-                  <div className="absolute h-28 w-28 animate-ping rounded-full bg-teal-400/30 duration-1000" />
-                  <div className="absolute h-36 w-36 animate-pulse rounded-full bg-teal-500/15" />
+                  <div className="absolute h-24 w-24 animate-ping rounded-full bg-[#FF5B3E]/30 duration-1000" />
+                  <div className="absolute h-32 w-32 animate-pulse rounded-full bg-[#FFD84D]/15" />
                 </>
               )}
               <button
                 onClick={() => (isListening ? stopRecognition() : startRecognition())}
                 type="button"
-                className={`relative flex h-20 w-20 items-center justify-center rounded-full text-white shadow-xl transition-all active:scale-95 ${
+                className={`relative flex h-18 w-18 items-center justify-center rounded-full text-white shadow-xl transition-all active:scale-95 ${
                   isListening
-                    ? "bg-gradient-to-tr from-teal-600 to-emerald-500 ring-4 ring-teal-200"
+                    ? "bg-gradient-to-tr from-[#FF5B3E] to-[#FFD84D] text-[#111111] ring-4 ring-[#FF5B3E]/30"
                     : errorType
-                    ? "bg-slate-700 hover:bg-slate-800"
-                    : "bg-teal-600 hover:bg-teal-700"
+                    ? "bg-white/10 hover:bg-white/20 text-white"
+                    : "bg-[#FF5B3E] hover:bg-[#e0482d] text-white"
                 }`}
                 aria-label={isListening ? "Stop listening" : "Start listening"}
               >
                 {isListening ? (
-                  <Mic className="h-9 w-9 animate-pulse" />
+                  <Mic className="h-8 w-8 animate-pulse text-[#111111]" />
                 ) : (
-                  <RotateCcw className="h-8 w-8" />
+                  <RotateCcw className="h-7 w-7 text-white" />
                 )}
               </button>
             </div>
 
             {/* Live Recognized Speech Text Display */}
             {transcript && (
-              <div className="mt-4 rounded-2xl bg-teal-50 p-4 border border-teal-200/60">
-                <p className="text-[11px] font-bold uppercase tracking-wider text-teal-700 mb-1 flex items-center justify-center gap-1">
-                  <Sparkles className="h-3 w-3" /> {isHindi ? "खोज रहे हैं" : "Searching For"}
+              <div className="mt-4 rounded-xl bg-white/10 p-3.5 border border-white/15">
+                <p className="text-[11px] font-bold uppercase tracking-wider text-[#FFD84D] mb-1 flex items-center justify-center gap-1">
+                  <Sparkles className="h-3 w-3" /> {isHindi ? "पहचाना गया शब्द" : "Recognized"}
                 </p>
-                <p className="text-lg font-black text-slate-900 break-words">
+                <p className="text-base font-bold text-white break-words">
                   &ldquo;{transcript}&rdquo;
                 </p>
               </div>
             )}
 
-            {/* Error Message & Permission Guide */}
-            {errorType === "PERMISSION" ? (
-              <div className="mt-4 rounded-2xl bg-amber-50 p-4 border border-amber-200/80 text-amber-900 text-xs text-left">
-                <div className="flex items-center gap-2 mb-2 font-bold text-amber-800 text-sm">
-                  <AlertCircle className="h-4 w-4 text-amber-600 shrink-0" />
-                  <span>
-                    {isHindi ? "माइक्रोफ़ोन अनुमति अवरुद्ध है" : "Microphone Access Blocked"}
-                  </span>
-                </div>
-                <p className="text-amber-800/90 mb-2 leading-relaxed">
-                  {isHindi
-                    ? "आपके ब्राउज़र ने माइक्रोफ़ोन को ब्लॉक कर रखा है। इसे चालू करने के लिए:"
-                    : "Your browser has blocked microphone access. To enable it:"}
+            {/* Clean Error Message */}
+            {errorType && (
+              <div className="mt-4 rounded-xl bg-white/10 p-3 border border-white/15 text-xs text-white/80 flex items-center gap-2 text-left">
+                <AlertCircle className="h-4 w-4 shrink-0 text-[#FF5B3E]" />
+                <p className="leading-snug">
+                  {errorType === "PERMISSION"
+                    ? isHindi
+                      ? "कृपया ब्राउज़र में माइक्रोफ़ोन की अनुमति (Allow) चालू करें।"
+                      : "Please allow microphone permission in your browser."
+                    : errorType === "NO_SPEECH"
+                    ? isHindi
+                      ? "कोई आवाज़ नहीं मिली। कृपया दोबारा बोलें।"
+                      : "No speech detected. Please speak clearly."
+                    : isHindi
+                    ? "कृपया पुनः प्रयास करें।"
+                    : "Unable to hear voice. Please try again."}
                 </p>
-                <ol className="list-decimal list-inside space-y-1.5 text-slate-700 bg-white/80 p-3 rounded-xl border border-amber-200/50 leading-relaxed">
-                  {isHindi ? (
-                    <>
-                      <li>ब्राउज़र एड्रेस बार में बाईं ओर स्थित <strong>लॉक 🔒</strong> या <strong>साइट सेटिंग्स 🎚️</strong> पर क्लिक करें।</li>
-                      <li><strong>माइक्रोफ़ोन (Microphone)</strong> को <strong>&quot;Allow&quot;</strong> (चालू) करें।</li>
-                      <li>नीचे दिए गए <strong>&quot;पुनः प्रयास करें&quot;</strong> बटन पर क्लिक करें।</li>
-                    </>
-                  ) : (
-                    <>
-                      <li>Click the <strong>Lock 🔒</strong> or <strong>Site Settings 🎚️</strong> icon on the left of your browser address bar.</li>
-                      <li>Set <strong>Microphone</strong> to <strong>&quot;Allow&quot;</strong> or switch it <strong>ON</strong>.</li>
-                      <li>Click the button below to retry.</li>
-                    </>
-                  )}
-                </ol>
-                <button
-                  type="button"
-                  onClick={() => startRecognition()}
-                  className="mt-3 w-full rounded-xl bg-teal-600 py-2.5 text-xs font-bold text-white shadow-sm hover:bg-teal-700 active:scale-95 transition"
-                >
-                  {isHindi ? "अनुमति दी, अब पुनः प्रयास करें 🎤" : "Allow & Retry Voice Search 🎤"}
-                </button>
               </div>
-            ) : errorType === "NO_SPEECH" ? (
-              <div className="mt-4 rounded-2xl bg-amber-50 p-3.5 border border-amber-200/80 text-amber-800 text-xs flex items-start gap-2.5 text-left">
-                <AlertCircle className="h-4 w-4 shrink-0 text-amber-600 mt-0.5" />
-                <div>
-                  <p className="font-semibold leading-relaxed">
-                    {isHindi
-                      ? "कोई आवाज़ सुनाई नहीं दी। कृपया स्पष्ट बोलें और पुनः प्रयास करें।"
-                      : "No voice heard. Please speak clearly into your microphone and try again."}
-                  </p>
-                </div>
-              </div>
-            ) : errorType === "NETWORK" ? (
-              <div className="mt-4 rounded-2xl bg-amber-50 p-3.5 border border-amber-200/80 text-amber-800 text-xs flex items-start gap-2.5 text-left">
-                <AlertCircle className="h-4 w-4 shrink-0 text-amber-600 mt-0.5" />
-                <div>
-                  <p className="font-semibold leading-relaxed">
-                    {isHindi
-                      ? "इंटरनेट नेटवर्क त्रुटि। कृपया अपना इंटरनेट कनेक्शन जांचें।"
-                      : "Speech recognition network error. Please check your internet connection."}
-                  </p>
-                </div>
-              </div>
-            ) : errorType === "GENERIC" ? (
-              <div className="mt-4 rounded-2xl bg-amber-50 p-3.5 border border-amber-200/80 text-amber-800 text-xs flex items-start gap-2.5 text-left">
-                <AlertCircle className="h-4 w-4 shrink-0 text-amber-600 mt-0.5" />
-                <div>
-                  <p className="font-semibold leading-relaxed">
-                    {isHindi
-                      ? "यह ब्राउज़र वॉयस सर्च को सपोर्ट नहीं करता। कृपया Chrome, Edge या Safari का उपयोग करें।"
-                      : "Voice search is not supported in this browser. Please use Chrome, Edge, or Safari."}
-                  </p>
-                </div>
-              </div>
-            ) : null}
-
-            {/* Footer helper */}
-            <div className="mt-6 border-t border-slate-100 pt-3 text-[11px] text-slate-400">
-              {isHindi
-                ? "Google Chrome, Microsoft Edge, Brave और Safari में सर्वोत्तम कार्य करता है"
-                : "Works best in Google Chrome, Microsoft Edge, Brave & Safari"}
-            </div>
+            )}
           </div>
         </div>
       )}
