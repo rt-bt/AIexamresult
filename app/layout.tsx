@@ -4,6 +4,7 @@ import Script from "next/script";
 import { Providers } from "@/components/providers";
 import { InstallBanner } from "@/components/site/install-banner";
 import { CookieConsent } from "@/components/site/cookie-consent";
+import { CustomCursor } from "@/components/site/custom-cursor";
 import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], variable: "--font-space-grotesk", display: "swap", weight: ["400", "500", "600", "700"] });
@@ -280,6 +281,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         />
       </head>
       <body className={`${spaceGrotesk.variable} ${dmSans.variable} font-sans antialiased`}>
+        <CustomCursor />
         <Providers>{children}</Providers>
         <InstallBanner />
         <CookieConsent />
