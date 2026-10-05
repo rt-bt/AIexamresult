@@ -147,7 +147,7 @@ function toPostCard(items: ({ title: string; url: string; category: string; slug
       excerpt: `Latest ${item.category} update from official sources. Check details, important dates and apply online.`,
       category: formatCategory(item.category),
       date: displayDate,
-      state: guessState(item.title),
+      state: guessState(item.title, item.slug),
       slug: item.slug,
       lastDate: cleanLastDate(detail?.lastDate),
       isExpired: detail?.isExpired,
@@ -169,16 +169,35 @@ function formatCategory(cat: string): string {
   return map[cat.replace(/\s+/g, "").toLowerCase()] ?? cat;
 }
 
-function guessState(title: string): string {
-  const states = [
-    "Uttar Pradesh", "Bihar", "Rajasthan", "Madhya Pradesh", "Maharashtra",
-    "Delhi", "Haryana", "Punjab", "Uttarakhand", "Jharkhand",
-    "Odisha", "West Bengal", "Gujarat", "Karnataka", "Tamil Nadu",
-    "Andhra Pradesh", "Telangana", "Kerala", "Assam", "Chhattisgarh",
-    "Himachal Pradesh", "Jammu and Kashmir", "India",
-  ];
-  for (const s of states) {
-    if (title.toLowerCase().includes(s.toLowerCase())) return s;
+const STATE_RULES: { name: string; pattern: RegExp }[] = [
+  { name: "Uttar Pradesh", pattern: /\b(uttar pradesh|up|uppsc|upsssc|upprpb|upmsp|uppbpb|updeled|uptet|up police|lucknow|kanpur|varanasi|prayagraj|allahabad)\b/i },
+  { name: "Bihar", pattern: /\b(bihar|bpsc|bssc|bseb|btsc|csbc|bpssc|patna|muzaffarpur|bihar police|bihar teacher)\b/i },
+  { name: "Rajasthan", pattern: /\b(rajasthan|rpsc|rsmssb|rbse|raj |jaipur|jodhpur|rajasthan police|rajasthan cet)\b/i },
+  { name: "Madhya Pradesh", pattern: /\b(madhya pradesh|mp|mppsc|mpeb|mpbse|peb|esb|bhopal|indore|vyapam)\b/i },
+  { name: "Maharashtra", pattern: /\b(maharashtra|mpsc|msbshse|maha |mumbai|pune|nagpur)\b/i },
+  { name: "Delhi", pattern: /\b(delhi|dsssb|delhi police|du |dtu|dssb)\b/i },
+  { name: "Haryana", pattern: /\b(haryana|hssc|hpsc|hbse|chandigarh|gurugram|faridabad)\b/i },
+  { name: "Punjab", pattern: /\b(punjab|psssb|ppsc|pseb|amritsar|ludhiana)\b/i },
+  { name: "Uttarakhand", pattern: /\b(uttarakhand|ukpsc|uksssc|ubse|dehradun)\b/i },
+  { name: "Jharkhand", pattern: /\b(jharkhand|jpsc|jssc|jac|ranchi|dhanbad)\b/i },
+  { name: "Odisha", pattern: /\b(odisha|orissa|opsc|osssc|ossc|bhubaneswar|cuttack)\b/i },
+  { name: "West Bengal", pattern: /\b(west bengal|wbpsc|wbssc|wbbse|wbprb|kolkata)\b/i },
+  { name: "Gujarat", pattern: /\b(gujarat|gpsc|gsssb|gseb|ahmedabad|gandhinagar)\b/i },
+  { name: "Karnataka", pattern: /\b(karnataka|kpsc|kea|ksea|bengaluru|bangalore)\b/i },
+  { name: "Tamil Nadu", pattern: /\b(tamil nadu|tnpsc|trb|tndte|chennai|madurai)\b/i },
+  { name: "Andhra Pradesh", pattern: /\b(andhra pradesh|appsc|ap dsc|ap police|vijayawada|visakhapatnam)\b/i },
+  { name: "Telangana", pattern: /\b(telangana|tspsc|ts police|hyderabad|warangal)\b/i },
+  { name: "Kerala", pattern: /\b(kerala|kpsc|ktet|thiruvananthapuram|kochi)\b/i },
+  { name: "Assam", pattern: /\b(assam|apsc|slprb|guwahati|dispur)\b/i },
+  { name: "Chhattisgarh", pattern: /\b(chhattisgarh|cgpsc|cgvyapam|raipur|bilaspur)\b/i },
+  { name: "Himachal Pradesh", pattern: /\b(himachal pradesh|hppsc|hpscb|hpssc|shimla)\b/i },
+  { name: "Jammu & Kashmir", pattern: /\b(jammu|kashmir|jkpsc|jkssb|srinagar)\b/i },
+];
+
+function guessState(title: string, slug?: string): string {
+  const text = (title + " " + (slug || "")).toLowerCase();
+  for (const rule of STATE_RULES) {
+    if (rule.pattern.test(text)) return rule.name;
   }
   return "India";
 }
