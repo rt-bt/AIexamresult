@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect, useCallback } from "react";
+import { createPortal } from "react-dom";
 import { useRouter } from "next/navigation";
 import { Mic, X, RotateCcw, AlertCircle, Sparkles } from "lucide-react";
 
@@ -11,11 +12,16 @@ interface VoiceSearchBtnProps {
 
 export function VoiceSearchBtn({ onResult, className }: VoiceSearchBtnProps) {
   const router = useRouter();
+  const [mounted, setMounted] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [isListening, setIsListening] = useState(false);
   const [transcript, setTranscript] = useState("");
   const [errorType, setErrorType] = useState<"PERMISSION" | "NO_SPEECH" | "NETWORK" | "GENERIC" | null>(null);
   const [lang, setLang] = useState<"en-IN" | "hi-IN">("en-IN");
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const recognitionRef = useRef<any>(null);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
@@ -180,10 +186,10 @@ export function VoiceSearchBtn({ onResult, className }: VoiceSearchBtnProps) {
         <Mic className="h-4 w-4" />
       </button>
 
-      {/* Voice Search Modal Dialog */}
-      {isOpen && (
+      {/* Voice Search Modal Dialog rendered via Portal to break out of parent transforms */}
+      {isOpen && mounted && createPortal(
         <div
-          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/70 p-4 backdrop-blur-md animate-in fade-in duration-200"
+          className="fixed inset-0 z-[99999] flex items-center justify-center bg-black/75 p-4 backdrop-blur-md animate-in fade-in duration-200"
           onClick={handleClose}
         >
           <div
@@ -311,7 +317,8 @@ export function VoiceSearchBtn({ onResult, className }: VoiceSearchBtnProps) {
               </div>
             )}
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </>
   );
