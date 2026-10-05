@@ -191,39 +191,30 @@ export function Header() {
                 </div>
               ))}
               <div className="mt-3 border-t border-white/10 pt-3">
-                <p className="mb-2 px-3 text-[10px] font-bold uppercase tracking-wider text-white/40">All Tools</p>
-                <div className="grid grid-cols-3 gap-1.5">
-                  {["/job-finder","/eligibility-checker","/salary-calculator","/vacancy-analyzer","/fee-calculator","/form-guide","/syllabus-tracker","/mock-tests","/current-affairs","/objection-tracker","/counselling-guide","/difficulty-meter","/exam-comparison","/document-checklist","/question-papers","/state-map","/dashboard","/result-predictor","/exam-calendar","/iq-test"].map((href) => {
-                    const label = href.replace("/","").split("-").map(w => w.charAt(0).toUpperCase()+w.slice(1)).join(" ");
-                    return (
-                      <Link key={href} href={href} onClick={() => setOpen(false)}
-                        className="rounded-lg px-2 py-1.5 text-[10px] font-medium text-white/60 transition active:bg-white/10 active:text-white text-center leading-tight">
-                        {label}
-                      </Link>
-                    );
-                  })}
+                <p className="mb-2 px-3 text-[11px] font-bold uppercase tracking-wider text-[#FFD84D]">Popular Tools</p>
+                <div className="grid grid-cols-2 gap-2 px-1">
+                  {[
+                    ["Job Finder", "/job-finder"],
+                    ["Eligibility Checker", "/eligibility-checker"],
+                    ["Salary Calculator", "/salary-calculator"],
+                    ["Exam Calendar", "/exam-calendar"],
+                    ["Mock Tests", "/mock-tests"],
+                    ["All Tools →", "/tools"],
+                  ].map(([label, href]) => (
+                    <Link
+                      key={href}
+                      href={href}
+                      onClick={() => setOpen(false)}
+                      className="rounded-lg bg-white/5 px-3 py-2 text-xs font-semibold text-white/90 transition hover:bg-white/10 hover:text-[#FFD84D] active:scale-95"
+                    >
+                      {label}
+                    </Link>
+                  ))}
                 </div>
-              </div>
-              <div className="mt-3 border-t border-white/10 pt-3">
-                <p className="mb-2 px-3 text-[10px] font-bold uppercase tracking-wider text-white/40">More</p>
-                <div className="grid grid-cols-2 gap-1.5">
-                  {["/dashboard","/state-map","/results","/exam-calendar","/latest-jobs","/admit-card","/answer-key","/contact","/about"].map((href) => {
-                    const label = href.replace("/","").split("-").map(w => w.charAt(0).toUpperCase()+w.slice(1)).join(" ");
-                    return (
-                      <Link key={href} href={href} onClick={() => setOpen(false)}
-                        className="rounded-lg px-2 py-1.5 text-[10px] font-medium text-white/60 transition active:bg-white/10 active:text-white text-center leading-tight">
-                        {label}
-                      </Link>
-                    );
-                  })}
-                </div>
-              </div>
-              <div className="mt-2">
-                <LanguageSelector />
               </div>
             </div>
           </div>
-      </div>
+        </div>
       <MobileBottomNav />
     </header>
   );

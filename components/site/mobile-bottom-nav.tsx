@@ -147,8 +147,8 @@ export function MobileBottomNav() {
       )}
 
       {/* Bottom Nav Bar */}
-      <nav className="fixed inset-x-0 bottom-0 z-30 border-t border-slate-200 bg-white/80 pb-safe backdrop-blur-xl lg:hidden">
-        <div className="flex items-center justify-around py-1">
+      <nav className="fixed inset-x-0 bottom-0 z-30 border-t border-gray-200/80 bg-white/95 pb-safe backdrop-blur-xl lg:hidden shadow-[0_-4px_16px_rgba(0,0,0,0.06)]">
+        <div className="flex items-center justify-around py-1.5 px-2">
           {tabs.map(({ label, href, icon: Icon, sheet: tabSheet }) => {
             const active = tabSheet
               ? sheet === tabSheet
@@ -160,23 +160,23 @@ export function MobileBottomNav() {
                     setSheet(sheet === tabSheet ? null : tabSheet);
                   }
                 }}
-                className="flex flex-col items-center gap-0.5 rounded-xl px-3 py-1.5 text-[10px] font-semibold transition active:scale-90 touch-manipulation"
+                className="flex flex-col items-center gap-0.5 rounded-xl px-2.5 py-1 text-[11px] font-semibold transition active:scale-95 touch-manipulation font-sans"
               >
                 {tabSheet ? (
                   <>
-                    <div className={`rounded-lg p-1.5 transition-all ${active ? "bg-brand/10 scale-110" : ""}`}>
-                      <Icon className={`h-5 w-5 ${active ? "text-brand" : "text-slate-400"}`} />
+                    <div className={`rounded-xl p-1.5 transition-all ${active ? "bg-[#5B0111]/10 text-[#5B0111] scale-105" : "text-gray-500"}`}>
+                      <Icon className="h-5 w-5" />
                     </div>
-                    <span className={active ? "text-brand" : "text-slate-400"}>{label}</span>
+                    <span className={active ? "text-[#5B0111] font-bold" : "text-gray-500"}>{label}</span>
                   </>
                 ) : (
                   <Link href={href}
                     className="flex flex-col items-center gap-0.5"
                   >
-                    <div className={`rounded-lg p-1.5 transition-all ${active ? "bg-brand/10 scale-110" : ""}`}>
-                      <Icon className={`h-5 w-5 ${active ? "text-brand" : "text-slate-400"}`} />
+                    <div className={`rounded-xl p-1.5 transition-all ${active ? "bg-[#5B0111]/10 text-[#5B0111] scale-105" : "text-gray-500"}`}>
+                      <Icon className="h-5 w-5" />
                     </div>
-                    <span className={active ? "text-brand" : "text-slate-400"}>{label}</span>
+                    <span className={active ? "text-[#5B0111] font-bold" : "text-gray-500"}>{label}</span>
                   </Link>
                 )}
               </button>

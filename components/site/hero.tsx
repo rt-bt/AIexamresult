@@ -167,62 +167,131 @@ export function Hero() {
   const router = useRouter();
 
   return (
-    <section className="relative overflow-hidden min-h-[75vh] md:min-h-[85vh] flex flex-col justify-center">
-      {/* Background: Video scrub + cinematic color blend */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
-        <VideoScrubBg />
-        {/* Soft left vignette so text is perfectly readable without hiding the video */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent pointer-events-none" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/20 pointer-events-none" />
-      </div>
+    <>
+      {/* ========================================================
+          1. DESKTOP / WEB VIEW (sm:block, hidden on mobile)
+          100% UNTOUCHED, EXACT ORIGINAL DESIGN & BACKGROUND
+          ======================================================== */}
+      <section className="hidden sm:flex relative overflow-hidden min-h-[75vh] md:min-h-[85vh] flex-col justify-center">
+        {/* Background: Video scrub + cinematic color blend */}
+        <div className="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
+          <VideoScrubBg />
+          {/* Soft left vignette so text is perfectly readable without hiding the video */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent pointer-events-none" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/20 pointer-events-none" />
+        </div>
 
-      <div className="container-page relative z-10 py-12 sm:py-20">
-        <div className="max-w-2xl text-left">
-          {/* Live Badge (Brand Kit: #FFD84D Surface on Dark Glass) */}
-          <div className="inline-flex items-center gap-2 rounded-full border border-[#FFD84D]/40 bg-[#111111]/80 px-4 py-1.5 text-[13px] font-semibold text-[#FFD84D] backdrop-blur-md mb-4 shadow-sm font-heading">
-            <span className="h-2 w-2 rounded-full bg-[#FF5B3E] animate-pulse" />
-            <span className="tracking-wide">Live Sarkari Alerts · 2026</span>
-          </div>
+        <div className="container-page relative z-10 py-12 sm:py-20">
+          <div className="max-w-2xl text-left">
+            {/* Live Badge (Brand Kit: #FFD84D Surface on Dark Glass) */}
+            <div className="inline-flex items-center gap-2 rounded-full border border-[#FFD84D]/40 bg-[#111111]/80 px-4 py-1.5 text-[13px] font-semibold text-[#FFD84D] backdrop-blur-md mb-4 shadow-sm font-heading">
+              <span className="h-2 w-2 rounded-full bg-[#FF5B3E] animate-pulse" />
+              <span className="tracking-wide">Live Sarkari Alerts · 2026</span>
+            </div>
 
-          {/* Clean 2-Line Headline in Space Grotesk */}
-          <h1 className="font-heading text-4xl sm:text-5xl lg:text-[64px] font-bold leading-[1.08] tracking-tight text-white mb-3.5">
-            Exam Results, <br className="hidden sm:block" />
-            Admit Cards &amp; Jobs.
-          </h1>
+            {/* Clean 2-Line Headline in Space Grotesk */}
+            <h1 className="font-heading text-4xl sm:text-5xl lg:text-[64px] font-bold leading-[1.08] tracking-tight text-white mb-3.5">
+              Exam Results, <br className="hidden sm:block" />
+              Admit Cards &amp; Jobs.
+            </h1>
 
-          {/* Ultra-Short 1-Line Subtitle in DM Sans */}
-          <p className="font-sans text-base sm:text-lg text-white/85 max-w-xl mb-7 leading-relaxed">
-            Instant verified links for SSC, UPSC, Railway, Banking &amp; State exams.
-          </p>
+            {/* Ultra-Short 1-Line Subtitle in DM Sans */}
+            <p className="font-sans text-base sm:text-lg text-white/85 max-w-xl mb-7 leading-relaxed">
+              Instant verified links for SSC, UPSC, Railway, Banking &amp; State exams.
+            </p>
 
-          {/* Action Buttons (#FFD84D Surface Yellow + Clean Frosted Secondary) */}
-          <div className="flex flex-wrap items-center gap-3.5 mb-7">
-            <button
-              onClick={() => {
-                const searchEl = document.getElementById("hero-search-exam");
-                searchEl?.focus();
-              }}
-              className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#FFD84D] px-7 py-3 text-[15px] font-bold text-[#111111] shadow-lg shadow-black/25 transition hover:bg-[#ffe270] hover:scale-[1.01] active:scale-[0.98] font-heading"
-            >
-              <span>Find Results</span>
-              <ArrowRight className="h-4.5 w-4.5" />
-            </button>
+            {/* Action Buttons (#FFD84D Surface Yellow + Clean Frosted Secondary) */}
+            <div className="flex flex-wrap items-center gap-3.5 mb-7">
+              <button
+                onClick={() => {
+                  const searchEl = document.getElementById("hero-search-exam");
+                  searchEl?.focus();
+                }}
+                className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#FFD84D] px-7 py-3 text-[15px] font-bold text-[#111111] shadow-lg shadow-black/25 transition hover:bg-[#ffe270] hover:scale-[1.01] active:scale-[0.98] font-heading"
+              >
+                <span>Find Results</span>
+                <ArrowRight className="h-4.5 w-4.5" />
+              </button>
 
-            <button
-              onClick={() => router.push("/latest-jobs")}
-              className="inline-flex items-center justify-center rounded-xl border border-white/20 bg-white/10 px-7 py-3 text-[15px] font-semibold text-white backdrop-blur-md transition hover:bg-white/20 active:scale-[0.98] font-heading"
-            >
-              <span>Latest Jobs</span>
-            </button>
-          </div>
+              <button
+                onClick={() => router.push("/latest-jobs")}
+                className="inline-flex items-center justify-center rounded-xl border border-white/20 bg-white/10 px-7 py-3 text-[15px] font-semibold text-white backdrop-blur-md transition hover:bg-white/20 active:scale-[0.98] font-heading"
+              >
+                <span>Latest Jobs</span>
+              </button>
+            </div>
 
-          {/* Clean Search Bar */}
-          <div className="max-w-xl">
-            <ResultFinder />
+            {/* Clean Search Bar */}
+            <div className="max-w-xl">
+              <ResultFinder />
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      {/* ========================================================
+          2. MOBILE VIEW ONLY (sm:hidden, only on phones)
+          CLEAN, SPACIOUS, UNCLUTTERED, NO VIDEO ARTIFACTS
+          ======================================================== */}
+      <section className="sm:hidden relative overflow-hidden bg-[#5B0111] px-4 py-8">
+        {/* Subtle crimson radial gradient background */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_#7a0217_0%,_#45000c_100%)] pointer-events-none" />
+
+        <div className="relative z-10 max-w-md mx-auto">
+          {/* Compact Live Alert Pill */}
+          <div className="inline-flex items-center gap-1.5 rounded-full border border-[#FFD84D]/40 bg-black/30 px-3 py-1 text-[11px] font-bold text-[#FFD84D] mb-3">
+            <span className="h-2 w-2 rounded-full bg-[#FF5B3E] animate-pulse" />
+            <span>Sarkari Result 2026</span>
+          </div>
+
+          {/* Minimal, Uncluttered Title */}
+          <h1 className="font-heading text-[25px] font-extrabold text-white leading-tight tracking-tight mb-4">
+            Exam Results &amp; Job Alerts
+          </h1>
+
+          {/* Clean Mobile Search Form */}
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+              const input = (e.currentTarget.elements.namedItem("m-exam") as HTMLInputElement)?.value;
+              if (input && input.length >= 2) router.push(`/search?q=${encodeURIComponent(input)}`);
+            }}
+            className="rounded-2xl border border-white/20 bg-black/40 p-2 shadow-xl backdrop-blur-xl"
+          >
+            <div className="relative flex items-center">
+              <Search className="absolute left-3.5 h-4 w-4 text-white/50" />
+              <input
+                name="m-exam"
+                type="text"
+                placeholder="Search exam (SSC, Railway, Police)..."
+                className="w-full rounded-xl border border-white/10 bg-white/10 pl-10 pr-24 py-2.5 text-[14px] font-medium text-white placeholder-white/50 outline-none focus:border-[#FFD84D]/60 focus:bg-white/15 font-sans"
+              />
+              <button
+                type="submit"
+                className="absolute right-1 inline-flex items-center justify-center rounded-lg bg-[#FFD84D] px-3.5 py-1.5 text-xs font-bold text-[#111111] hover:bg-[#ffe270] active:scale-95 transition font-heading"
+              >
+                Search
+              </button>
+            </div>
+          </form>
+
+          {/* Quick Trending Badges */}
+          <div className="mt-3 flex flex-wrap items-center gap-1.5">
+            <span className="text-[11px] font-semibold text-[#FFD84D]/80">Trending:</span>
+            {["SSC CGL", "RRB NTPC", "UPSC", "NEET", "CTET"].map((tag) => (
+              <button
+                key={tag}
+                type="button"
+                onClick={() => router.push(`/search?q=${encodeURIComponent(tag)}`)}
+                className="rounded-full border border-white/15 bg-white/10 px-2.5 py-0.5 text-[11px] font-medium text-white/90 active:scale-95 transition hover:bg-white/20"
+              >
+                {tag}
+              </button>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
 
