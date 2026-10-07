@@ -39,9 +39,19 @@ body {
 }
 
 /* Responsive media, tables, and typography safeguards to eliminate horizontal overflow */
+article, main, section, aside, header, footer {
+  max-width: 100%;
+}
+
 img, video, canvas, audio, iframe, embed, object {
   max-width: 100%;
   height: auto;
+}
+
+/* Ensure AdSense containers and inserted iframes never exceed mobile viewport */
+ins.adsbygoogle, .adsbygoogle iframe {
+  max-width: 100% !important;
+  box-sizing: border-box !important;
 }
 
 table {
@@ -50,15 +60,24 @@ table {
 
 .prose table {
   display: block;
+  width: 100%;
   max-width: 100%;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
 
 .prose {
+  width: 100%;
+  max-width: 100%;
   overflow-wrap: break-word;
   word-break: break-word;
+}
+
+.prose pre, .prose code {
   max-width: 100%;
+  overflow-x: auto;
+  word-break: break-word;
+  white-space: pre-wrap;
 }
 
 @media (max-width: 1023px) {

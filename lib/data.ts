@@ -1,3 +1,5 @@
+import { detectCategory, CATEGORY_DEFINITIONS } from "./categories";
+
 export type PostCard = {
   title: string;
   excerpt: string;
@@ -125,12 +127,59 @@ function cleanLastDate(raw?: string): string | undefined {
   return undefined;
 }
 
-function toPostCard(items: ({ title: string; url: string; category: string; slug: string; publishedDate?: string; publishedAt?: string })[] | undefined, _category: string, fallbacks: PostCard[]): PostCard[] {
+function generateExcerpt(item: { title: string; category?: string; slug?: string }, canonicalCat: string): string {
+  const t = item.title.toLowerCase();
+  switch (canonicalCat) {
+    case "results":
+      if (t.includes("score card") || t.includes("scorecard")) {
+        return "Check Sarkari exam scorecard, subject-wise marks and official score download link.";
+      }
+      if (t.includes("merit list") || t.includes("selection list")) {
+        return "View official merit list, selected candidates roll numbers and cut-off marks.";
+      }
+      if (t.includes("cut off") || t.includes("cutoff")) {
+        return "Check official category-wise cut-off marks, qualifying scores and result summary.";
+      }
+      if (t.includes("marks")) {
+        return "Check subject-wise marks, qualifying status and official marks download link.";
+      }
+      return "Check latest Sarkari exam result, marks, scorecard, cut-off marks and official merit list.";
+    case "admit-card":
+      if (t.includes("city slip") || t.includes("exam city") || t.includes("city details")) {
+        return "Check exam city intimation slip, center location and shift timing instructions.";
+      }
+      return "Download hall ticket, exam city slip and check exam shift schedule and reporting time.";
+    case "answer-key":
+      return "Download official question paper and provisional/final answer key with objection link.";
+    case "syllabus":
+      return "Download detailed exam syllabus, topic-wise marks distribution and exam pattern PDF.";
+    case "scholarships":
+      return "Check eligibility requirements, scholarship amount, documents needed and application procedure.";
+    case "admissions":
+      return "Check admission schedule, eligibility criteria, counselling dates and application link.";
+    case "documents":
+      return "Download official application forms, certificates and check issuance instructions.";
+    case "latest-jobs":
+    default:
+      return "Check eligibility criteria, total vacancies, age limit, selection process and online application details.";
+  }
+}
+
+function toPostCard(
+  items: ({ title: string; url: string; category: string; slug: string; publishedDate?: string; publishedAt?: string })[] | undefined,
+  defaultCategory: string,
+  fallbacks: PostCard[]
+): PostCard[] {
   if (!items || items.length === 0) return fallbacks;
   const s2 = getScraped();
   const nowMs = Date.now();
+  const seenSlugs = new Set<string>();
+  const results: PostCard[] = [];
 
-  return items.map((item) => {
+  for (const item of items) {
+    if (!item.slug || seenSlugs.has(item.slug)) continue;
+    seenSlugs.add(item.slug);
+
     const detail = s2?.posts?.[item.slug];
     let permanentDate = item.publishedAt || item.publishedDate || detail?.publishedAt || detail?.publishedDate || "";
     const parsedPerm = parseDate(permanentDate);
@@ -147,10 +196,15 @@ function toPostCard(items: ({ title: string; url: string; category: string; slug
     const pubDateMs = pubDateDate ? pubDateDate.getTime() : null;
     const safePublishedDate = pubDateMs !== null && pubDateMs <= nowMs ? item.publishedDate : detail?.publishedDate;
 
-    return {
+    const canonicalCat = detectCategory(item.category, item.title, item.slug);
+    const categoryInfo = CATEGORY_DEFINITIONS[canonicalCat];
+    const categoryLabel = categoryInfo ? categoryInfo.label : (defaultCategory || formatCategory(item.category));
+    const excerpt = generateExcerpt(item, canonicalCat);
+
+    results.push({
       title: item.title,
-      excerpt: `Latest ${item.category} update from official sources. Check details, important dates and apply online.`,
-      category: formatCategory(item.category),
+      excerpt,
+      category: categoryLabel,
       date: displayDate,
       state: guessState(item.title, item.slug),
       slug: item.slug,
@@ -158,8 +212,10 @@ function toPostCard(items: ({ title: string; url: string; category: string; slug
       isExpired: detail?.isExpired,
       publishedAt: safePublishedAt,
       publishedDate: safePublishedDate,
-    };
-  });
+    });
+  }
+
+  return results;
 }
 
 function formatCategory(cat: string): string {
@@ -286,35 +342,8 @@ const defaultDocuments: PostCard[] = [
 // ─── Exports ──────────────────────────────────────────────────────────────────
 
 const s3 = getScraped();
-const scrapedNotif = s3 ? [...(s3.admitCards || []), ...(s3.answerKeys || [])] : undefined;
 
-// Filter scraped results for board exam items
-const scrapedBoardResults = s3?.results?.filter(r => isBoardResult(r.title));
-
-export const featuredResults = toPostCard(s3?.results, "Result", defaultResults);
-export const boardResults = toPostCard(
-  scrapedBoardResults && scrapedBoardResults.length > 0 ? scrapedBoardResults : undefined,
-  "Board Result",
-  defaultBoardResults,
-);
-export const latestJobs = toPostCard(s3?.latestJobs, "Jobs", defaultJobs);
-export const notifications = toPostCard(scrapedNotif, "Notification", defaultNotifications);
-export const centralExams = toPostCard(s3?.answerKeys, "Central Exams", defaultCentral);
-export const admissions = toPostCard(s3?.admissions, "Admission", defaultAdmissions);
-export const documents = toPostCard(s3?.documents, "Documents", defaultDocuments);
-
-// Strictly ensure only genuine admit cards / hall tickets appear in Admit Card column
-const safeAdmitCards = s3?.admitCards?.filter((item) => {
-  const t = (item.title || "").toLowerCase();
-  if (/\b(interview schedule|exam date|exam schedule|new exam date|revised exam date|time table)\b/i.test(t)) {
-    return false;
-  }
-  return true;
-});
-
-const admitCards = toPostCard(safeAdmitCards, "Admit Card", []);
-
-// Extract authentic syllabus and scholarship articles
+// Pool all scraped items across categories
 const allScrapedItems = s3
   ? [
       ...(s3.results || []),
@@ -326,24 +355,68 @@ const allScrapedItems = s3
     ]
   : [];
 
-const scrapedSyllabus = allScrapedItems.filter(
-  (item) => /syllabus|exam pattern|pattern pdf/i.test(item.title) || /syllabus|exam-pattern/i.test(item.slug)
-);
+// Filter all items by canonical detected category
+const scrapedResults = allScrapedItems.filter(item => detectCategory(item.category, item.title, item.slug) === "results");
+const scrapedJobs = allScrapedItems.filter(item => detectCategory(item.category, item.title, item.slug) === "latest-jobs");
+const scrapedAdmitCards = allScrapedItems.filter(item => detectCategory(item.category, item.title, item.slug) === "admit-card");
+const scrapedAnswerKeys = allScrapedItems.filter(item => detectCategory(item.category, item.title, item.slug) === "answer-key");
+const scrapedSyllabus = allScrapedItems.filter(item => detectCategory(item.category, item.title, item.slug) === "syllabus");
+const scrapedScholarships = allScrapedItems.filter(item => detectCategory(item.category, item.title, item.slug) === "scholarships");
+const scrapedAdmissions = allScrapedItems.filter(item => detectCategory(item.category, item.title, item.slug) === "admissions");
+const scrapedDocuments = allScrapedItems.filter(item => detectCategory(item.category, item.title, item.slug) === "documents");
 
-const scrapedScholarships = allScrapedItems.filter(
-  (item) => /scholarship|yojana/i.test(item.title) || /scholarship/i.test(item.slug)
-);
+// Filter scraped results for board exam items
+const scrapedBoardResults = scrapedResults.filter(r => isBoardResult(r.title));
 
+export const featuredResults = toPostCard(
+  scrapedResults.length > 0 ? scrapedResults : undefined,
+  "Result",
+  defaultResults
+);
+export const boardResults = toPostCard(
+  scrapedBoardResults && scrapedBoardResults.length > 0 ? scrapedBoardResults : undefined,
+  "Board Result",
+  defaultBoardResults,
+);
+export const latestJobs = toPostCard(
+  scrapedJobs.length > 0 ? scrapedJobs : undefined,
+  "Latest Vacancy",
+  defaultJobs
+);
+export const centralExams = toPostCard(
+  scrapedAnswerKeys.length > 0 ? scrapedAnswerKeys : undefined,
+  "Answer Key",
+  defaultCentral
+);
+export const admitCards = toPostCard(
+  scrapedAdmitCards.length > 0 ? scrapedAdmitCards : undefined,
+  "Admit Card",
+  []
+);
+export const notifications = toPostCard(
+  [...scrapedAdmitCards, ...scrapedAnswerKeys],
+  "Notification",
+  defaultNotifications
+);
 export const syllabusItems = toPostCard(
   scrapedSyllabus.length > 0 ? scrapedSyllabus : undefined,
   "Syllabus",
   []
 );
-
 export const scholarshipItems = toPostCard(
   scrapedScholarships.length > 0 ? scrapedScholarships : undefined,
   "Scholarship",
   []
+);
+export const admissions = toPostCard(
+  scrapedAdmissions.length > 0 ? scrapedAdmissions : undefined,
+  "Admission",
+  defaultAdmissions
+);
+export const documents = toPostCard(
+  scrapedDocuments.length > 0 ? scrapedDocuments : undefined,
+  "Documents",
+  defaultDocuments
 );
 
 export const categorySections: { label: string; items: PostCard[] }[] = [

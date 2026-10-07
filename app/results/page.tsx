@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 };
 
 export default function ResultsPage() {
-  const allItems: PostCard[] = Object.values(sectionItems).flat();
+  const allItems: PostCard[] = sectionItems.results;
 
   const jsonLd = {
     "@context": "https://schema.org",

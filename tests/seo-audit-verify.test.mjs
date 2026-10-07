@@ -2,7 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -279,5 +279,128 @@ test("Priority 9: Accessibility and Heading Hierarchy", () => {
   assert.ok(
     !railContent.includes("<a>") && !railContent.includes("<a >"),
     "Content rail must not contain empty anchor tags without href"
+  );
+});
+
+// 11. Test Results Archive Purity (0% Off-Category Rate)
+test("Priority 10: /results must be a true results-only archive", async () => {
+  const dataPath = path.join(rootDir, "lib", "data.ts");
+  const dataContent = fs.readFileSync(dataPath, "utf-8");
+
+  // Ensure app/results/page.tsx only renders sectionItems.results
+  const resultsPagePath = path.join(rootDir, "app", "results", "page.tsx");
+  const resultsPageContent = fs.readFileSync(resultsPagePath, "utf-8");
+  assert.ok(
+    resultsPageContent.includes("const allItems: PostCard[] = sectionItems.results;"),
+    "/results page must use sectionItems.results and not flatten all sections"
+  );
+
+  // Import detectCategory and verify first 50 results items are 100% results
+  const { detectCategory } = await import(pathToFileURL(path.join(rootDir, "lib", "categories.ts")).href);
+  const scrapedData = JSON.parse(fs.readFileSync(path.join(rootDir, "data", "scraped.json"), "utf-8"));
+  const allScraped = [
+    ...(scrapedData.results || []),
+    ...(scrapedData.latestJobs || []),
+    ...(scrapedData.admitCards || []),
+    ...(scrapedData.answerKeys || []),
+    ...(scrapedData.admissions || []),
+    ...(scrapedData.documents || []),
+  ];
+
+  const resultsOnly = allScraped.filter(
+    (item) => detectCategory(item.category, item.title, item.slug) === "results"
+  );
+
+  assert.ok(resultsOnly.length > 50, "Must have at least 50 results items");
+
+  let offCategoryCount = 0;
+  for (let i = 0; i < 50; i++) {
+    const item = resultsOnly[i];
+    const cat = detectCategory(item.category, item.title, item.slug);
+    if (cat !== "results") {
+      offCategoryCount++;
+    }
+  }
+
+  assert.strictEqual(
+    offCategoryCount,
+    0,
+    `Off-category rate for first 50 results must be strictly 0% (found ${offCategoryCount})`
+  );
+});
+
+// 12. Test Taxonomy Normalization and Excerpt Quality
+test("Priority 11: Taxonomy normalization and non-generic excerpts", async () => {
+  const { detectCategory, getCategoryCta } = await import(pathToFileURL(path.join(rootDir, "lib", "categories.ts")).href);
+
+  // Check specific test cases from audit
+  const petCat = detectCategory("results", "UPSSSC PET Syllabus 2026 - Check Exam Pattern PDF at upsssc.gov.in", "upsssc-pet-syllabus-2026");
+  assert.strictEqual(petCat, "syllabus", "UPSSSC PET syllabus must be categorized as syllabus");
+
+  const upScholarshipCat = detectCategory("latestJobs", "Uttar Pradesh UP Scholarship Online Form 2026-27", "uttar-pradesh-up-scholarship-online-form-2026-27");
+  assert.strictEqual(upScholarshipCat, "scholarships", "UP scholarship must be categorized as scholarships");
+
+  const rssbCat = detectCategory("results", "RSSB LDC Clerk Gr-II/ Junior Score Card 2026", "rssb-rajasthan-clerk-gr-ii-junior-assistant-2026");
+  assert.strictEqual(rssbCat, "results", "RSSB score card must be categorized as results");
+
+  // Check result CTAs never use Apply Online
+  const resCta = getCategoryCta("results", "RSSB LDC Clerk Gr-II/ Junior Score Card 2026");
+  assert.notStrictEqual(resCta.actionText, "Apply Online", "Result card must never have 'Apply Online' CTA");
+  assert.strictEqual(resCta.actionText, "Download Scorecard", "Scorecard title must have 'Download Scorecard' CTA");
+
+  // Check data.ts does not generate 'apply online' excerpt for results, syllabus, or scholarships
+  const dataPath = path.join(rootDir, "lib", "data.ts");
+  const dataContent = fs.readFileSync(dataPath, "utf-8");
+  assert.ok(
+    dataContent.includes("generateExcerpt"),
+    "lib/data.ts must implement generateExcerpt function"
+  );
+});
+
+// 13. Test Source Provenance and Mirror Annotations
+test("Priority 12: Source provenance and mirror link labels", () => {
+  const postPagePath = path.join(rootDir, "app", "post", "[slug]", "page.tsx");
+  const postPageContent = fs.readFileSync(postPagePath, "utf-8");
+
+  // Check Important Links has Mirror / Alternate Download
+  assert.ok(
+    postPageContent.includes("Mirror / Alternate Download"),
+    "Important links must label third-party downloads as 'Mirror / Alternate Download'"
+  );
+
+  // Check Full Article prose annotates links with provenance badges
+  assert.ok(
+    postPageContent.includes("annotatedHtml"),
+    "Full Article must annotate articleHtml links with provenance badges"
+  );
+});
+
+// 14. Test Mobile Container Width Constraints
+test("Priority 13: Mobile container responsive width constraints", () => {
+  const postPagePath = path.join(rootDir, "app", "post", "[slug]", "page.tsx");
+  const postPageContent = fs.readFileSync(postPagePath, "utf-8");
+
+  // Check responsive grid columns
+  assert.ok(
+    postPageContent.includes("grid w-full max-w-full min-w-0 grid-cols-1 gap-6 lg:grid-cols-[minmax(0,1fr)_320px]"),
+    "Post page grid must enforce w-full max-w-full min-w-0 and minmax(0,1fr)"
+  );
+
+  // Check main content column
+  assert.ok(
+    postPageContent.includes("w-full max-w-full min-w-0 space-y-6 overflow-hidden"),
+    "Main content column must enforce w-full max-w-full min-w-0 overflow-hidden"
+  );
+
+  // Check hero banner container
+  assert.ok(
+    postPageContent.includes("w-full max-w-full overflow-hidden rounded-2xl border border-slate-200 bg-slate-950 shadow-md"),
+    "Hero image banner must be constrained with w-full max-w-full overflow-hidden"
+  );
+
+  // Check TableCard
+  assert.ok(
+    postPageContent.includes("w-full max-w-full min-w-0 overflow-hidden rounded-2xl border border-gray-200 bg-white"),
+    "TableCard must enforce w-full max-w-full min-w-0 overflow-hidden"
   );
 });

@@ -114,71 +114,93 @@ export const CANONICAL_CATEGORIES = Object.keys(CATEGORY_DEFINITIONS) as Canonic
  * Detects the canonical category from raw category name, slug, or title.
  */
 export function detectCategory(rawCat?: string, title?: string, slug?: string): CanonicalCategory {
-  const combined = `${rawCat || ""} ${title || ""} ${slug || ""}`.toLowerCase();
+  const content = `${title || ""} ${slug || ""}`.toLowerCase();
 
-  if (combined.includes("syllabus") || combined.includes("exam pattern") || combined.includes("pattern pdf")) {
+  // 1. Content-based checks first (title + slug take precedence)
+  if (content.includes("syllabus") || content.includes("exam pattern") || content.includes("pattern pdf")) {
     return "syllabus";
   }
-  if (combined.includes("scholarship") || combined.includes("yojana")) {
+  if (content.includes("scholarship") || content.includes("yojana")) {
     return "scholarships";
   }
   if (
-    combined.includes("answer key") ||
-    combined.includes("answerkey") ||
-    combined.includes("response sheet") ||
-    combined.includes("omr sheet")
+    content.includes("answer key") ||
+    content.includes("answerkey") ||
+    content.includes("response sheet") ||
+    content.includes("omr sheet")
   ) {
     return "answer-key";
   }
   if (
-    combined.includes("admit card") ||
-    combined.includes("admitcard") ||
-    combined.includes("hall ticket") ||
-    combined.includes("city slip") ||
-    combined.includes("call letter")
+    content.includes("admit card") ||
+    content.includes("admitcard") ||
+    content.includes("hall ticket") ||
+    content.includes("city slip") ||
+    content.includes("city details") ||
+    content.includes("exam city") ||
+    content.includes("call letter") ||
+    content.includes("exam date") ||
+    content.includes("exam schedule") ||
+    content.includes("typing test date") ||
+    content.includes("interview schedule") ||
+    content.includes("time table")
   ) {
-    return "admit-card";
+    // If it mentions admit card, hall ticket, or city slip, classify as admit-card
+    if (content.includes("admit card") || content.includes("hall ticket") || content.includes("city slip") || content.includes("city details")) {
+      return "admit-card";
+    }
+    // If it has exam date but not result, it's admit-card/schedule
+    if (!content.includes("result") && !content.includes("score card") && !content.includes("merit list")) {
+      return "admit-card";
+    }
   }
   if (
-    combined.includes("score card") ||
-    combined.includes("scorecard") ||
-    combined.includes("merit list") ||
-    combined.includes("cut off") ||
-    combined.includes("cutoff") ||
-    combined.includes("selection list") ||
-    combined.includes("result")
-  ) {
-    return "results";
-  }
-  if (
-    combined.includes("admission") ||
-    combined.includes("entrance") ||
-    combined.includes("counselling") ||
-    combined.includes("deled") ||
-    combined.includes("bed")
+    content.includes("admission") ||
+    content.includes("entrance") ||
+    content.includes("counselling") ||
+    content.includes("deled") ||
+    content.includes("bed") ||
+    content.includes("compartment online form")
   ) {
     return "admissions";
   }
   if (
-    combined.includes("certificate") ||
-    combined.includes("document") ||
-    combined.includes("domicile") ||
-    combined.includes("caste")
+    content.includes("certificate") ||
+    content.includes("document") ||
+    content.includes("domicile") ||
+    content.includes("caste") ||
+    content.includes("income certificate")
   ) {
     return "documents";
   }
   if (
-    combined.includes("job") ||
-    combined.includes("recruitment") ||
-    combined.includes("vacancy") ||
-    combined.includes("bharti") ||
-    combined.includes("online form") ||
-    combined.includes("apply")
+    content.includes("score card") ||
+    content.includes("scorecard") ||
+    content.includes("merit list") ||
+    content.includes("cut off") ||
+    content.includes("cutoff") ||
+    content.includes("selection list") ||
+    content.includes("final marks") ||
+    content.includes("marks list") ||
+    content.includes("written marks") ||
+    content.includes("rank card") ||
+    content.includes("result")
+  ) {
+    return "results";
+  }
+  if (
+    content.includes("recruitment") ||
+    content.includes("vacancy") ||
+    content.includes("bharti") ||
+    content.includes("online form") ||
+    content.includes("apply online") ||
+    content.includes("apply") ||
+    content.includes("job")
   ) {
     return "latest-jobs";
   }
 
-  // Fallback to rawCat normalized mapping
+  // 2. Fallback to rawCat normalized mapping
   const normalized = (rawCat || "").replace(/[\s-_]+/g, "").toLowerCase();
   if (normalized === "results" || normalized === "result") return "results";
   if (normalized === "admitcards" || normalized === "admitcard") return "admit-card";
@@ -186,6 +208,8 @@ export function detectCategory(rawCat?: string, title?: string, slug?: string): 
   if (normalized === "answerkeys" || normalized === "answerkey") return "answer-key";
   if (normalized === "admissions" || normalized === "admission") return "admissions";
   if (normalized === "documents" || normalized === "document") return "documents";
+  if (normalized === "syllabus") return "syllabus";
+  if (normalized === "scholarships" || normalized === "scholarship") return "scholarships";
 
   return "results";
 }
@@ -215,6 +239,10 @@ export function getCategoryCta(categoryOrTitle?: string, postTitle?: string, isE
       actionText = "View Merit List";
     } else if (tLower.includes("cut off") || tLower.includes("cutoff")) {
       actionText = "Check Cut-Off";
+    } else if (tLower.includes("pdf") || tLower.includes("download result")) {
+      actionText = "Download Result PDF";
+    } else if (tLower.includes("marks")) {
+      actionText = "Check Marks";
     } else {
       actionText = "Check Result";
     }

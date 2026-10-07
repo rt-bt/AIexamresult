@@ -283,9 +283,9 @@ function extractFeeFromHtml(html: string): string[] {
 
 function InfoRow({ label, value, highlight }: { label: string; value: string; highlight?: "green" | "red" | "brand" }) {
   return (
-    <div className="flex items-center justify-between border-b border-gray-100 py-2.5 last:border-0">
-      <span className="text-sm font-medium text-gray-500">{label}</span>
-      <span className={`text-sm font-bold text-right ${
+    <div className="flex items-center justify-between gap-2 border-b border-gray-100 py-2.5 last:border-0 min-w-0">
+      <span className="text-sm font-medium text-gray-500 shrink-0">{label}</span>
+      <span className={`text-sm font-bold text-right break-words min-w-0 ${
         highlight === "green" ? "text-emerald-700" :
         highlight === "red" ? "text-red-600" :
         highlight === "brand" ? "text-brand" : "text-gray-800"
@@ -296,14 +296,14 @@ function InfoRow({ label, value, highlight }: { label: string; value: string; hi
 
 function TableCard({ icon, title, gradient, children }: { icon: React.ReactNode; title: string; gradient?: string; children: React.ReactNode }) {
   return (
-    <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
+    <div className="w-full max-w-full min-w-0 overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition hover:shadow-md">
       <div className={`px-5 py-4 ${gradient || "border-b border-gray-100 bg-gray-50/80"}`}>
         <h2 className="flex items-center gap-2.5 text-base font-bold text-gray-900">
           <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand/10 text-brand">{icon}</span>
           {title}
         </h2>
       </div>
-      <div className="px-5 py-4">
+      <div className="w-full max-w-full min-w-0 overflow-hidden px-5 py-4">
         {children}
       </div>
     </div>
@@ -643,9 +643,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
 
   const COMPETITOR_DOMAINS = [
     "sarkariexam.com", "freejobalert.com", "naukaritime.com", "naukritime.com",
-    "sarkariresult.com", "resultbharat.com", "sarkarialert.net", "rojgarresult.com",
-    "instagram.com", "facebook.com", "twitter.com", "x.com", "youtube.com",
-    "t.me", "whatsapp.com", "play.google.com"
+    "sarkariresult.com", "resultbharat.com", "sarkarialert.net", "rojgarresult.com"
   ];
 
   const cleanLinks = (post.importantLinks || []).map((l: { label: string; url: string | undefined }) => {
@@ -659,11 +657,28 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
     if (!l.url || l.url === "#" || l.url.startsWith("javascript")) return false;
     const lowerUrl = l.url.toLowerCase();
     const lowerLabel = (l.label || "").toLowerCase();
-    if (COMPETITOR_DOMAINS.some(d => lowerUrl.includes(d))) return false;
+
+    // Disallow pure spam / social / promotional competitor app links
     if (lowerLabel.includes("whatsapp") || lowerLabel.includes("telegram") || lowerLabel.includes("instagram") ||
-        lowerLabel.includes("mobile app") || lowerLabel.includes("join channel") || lowerLabel.includes("download app") ||
-        lowerLabel.includes("sarkariexam") || lowerLabel.includes("freejobalert") || lowerLabel.includes("naukaritime") ||
-        lowerLabel.includes("sarkari result") || lowerLabel.includes("sarkari exam") || lowerLabel.includes("result bharat")) return false;
+        lowerLabel.includes("youtube") || lowerLabel.includes("mobile app") || lowerLabel.includes("join channel") ||
+        lowerLabel.includes("download app") || lowerUrl.includes("play.google.com") || lowerUrl.includes("t.me") ||
+        lowerUrl.includes("whatsapp.com") || lowerUrl.includes("instagram.com") || lowerUrl.includes("youtube.com")) {
+      return false;
+    }
+
+    // If it's a competitor domain, keep only if it points to an actual document/resource (e.g. .pdf or direct file upload)
+    const isCompetitor = COMPETITOR_DOMAINS.some(d => lowerUrl.includes(d));
+    if (isCompetitor) {
+      const isDocument = lowerUrl.endsWith(".pdf") || lowerUrl.includes("/uploads/") || lowerUrl.includes(".doc");
+      if (!isDocument) return false;
+    }
+
+    // Filter out competitor promotional branding
+    if (lowerLabel === "sarkariexam" || lowerLabel === "freejobalert" || lowerLabel === "naukaritime" ||
+        lowerLabel === "sarkari result" || lowerLabel === "sarkari exam" || lowerLabel === "result bharat") {
+      return false;
+    }
+
     return true;
   });
 
@@ -718,19 +733,19 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
             </ol>
           </nav>
 
-          <div className="grid gap-6 lg:grid-cols-[1fr_320px]">
+          <div className="grid w-full max-w-full min-w-0 grid-cols-1 gap-6 lg:grid-cols-[minmax(0,1fr)_320px]">
 
             {/* Main Content */}
-            <div className="space-y-6">
+            <div className="w-full max-w-full min-w-0 space-y-6 overflow-hidden">
 
               {/* Google Discover 1200x630 Feature Image Banner */}
-              <div className="overflow-hidden rounded-2xl border border-slate-200 bg-slate-950 shadow-md">
+              <div className="w-full max-w-full overflow-hidden rounded-2xl border border-slate-200 bg-slate-950 shadow-md">
                 <img
                   src={postOgImageUrl}
                   alt={title}
                   width={1200}
                   height={630}
-                  className="h-auto w-full object-cover"
+                  className="h-auto w-full max-w-full object-cover"
                   loading="eager"
                 />
               </div>
@@ -739,7 +754,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
               <AdUnit format="horizontal" />
 
               {/* Hero Header */}
-              <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-lg shadow-gray-200/40">
+              <div className="w-full max-w-full min-w-0 overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-lg shadow-gray-200/40">
                 <div className="bg-gradient-to-br from-brand/5 via-brand/[0.02] to-transparent p-6 sm:p-8">
                   <div className="flex flex-wrap items-center justify-between gap-3">
                     <div className="flex flex-wrap items-center gap-3">
@@ -764,8 +779,8 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                   )}
 
                   {/* Quick Summary Table */}
-                  <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div className="rounded-xl border border-gray-200 bg-white/90 p-4">
+                  <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-full min-w-0">
+                    <div className="rounded-xl border border-gray-200 bg-white/90 p-4 w-full max-w-full min-w-0 overflow-hidden">
                       <h3 className="text-xs font-bold uppercase tracking-wider text-gray-400 mb-3">Key Dates</h3>
                       <div className="space-y-0 divide-y divide-gray-50">
                         {summaryDates.length > 0 ? summaryDates.map((d: string, i: number) => {
@@ -780,7 +795,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                         )}
                       </div>
                     </div>
-                    <div className="rounded-xl border border-gray-200 bg-white/90 p-4">
+                    <div className="rounded-xl border border-gray-200 bg-white/90 p-4 w-full max-w-full min-w-0 overflow-hidden">
                       <h3 className="text-xs font-bold uppercase tracking-wider text-gray-400 mb-3">Quick Info</h3>
                       <div className="space-y-0 divide-y divide-gray-50">
                         <InfoRow label="Category" value={post.category || "Update"} />
@@ -1098,7 +1113,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                               </span>
                             ) : (
                               <span className="shrink-0 rounded-md bg-slate-50 px-2 py-0.5 text-[10.5px] font-bold text-slate-600 ring-1 ring-slate-200">
-                                Direct Link / Mirror
+                                Mirror / Alternate Download
                               </span>
                             )}
                             <ArrowUpRight className="h-4 w-4 shrink-0 text-gray-400 transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-brand" />
@@ -1172,7 +1187,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                 }
 
                 return (
-                  <div className="overflow-hidden rounded-2xl bg-gradient-to-br from-brand to-emerald-700 p-6 shadow-lg sm:p-8">
+                  <div className="w-full max-w-full min-w-0 overflow-hidden rounded-2xl bg-gradient-to-br from-brand to-emerald-700 p-6 shadow-lg sm:p-8">
                     <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                       <div className="flex items-start gap-4">
                         <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-white/15 backdrop-blur-sm">
@@ -1220,8 +1235,19 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                   .trim();
                 const hasContent = articleHtml.length > 200 && /<h[1-4]|<p|<ul|<ol/.test(articleHtml);
                 if (!hasContent) return null;
+
+                const annotatedHtml = articleHtml.replace(/<a\s+([^>]*href=["']([^"']+)["'][^>]*)>(.*?)<\/a>/gi, (match: string, attrs: string, href: string, text: string) => {
+                  if (text.includes("Official Source") || text.includes("Mirror") || text.includes("Alternate Download")) return match;
+                  const isGov = isOfficialGovDomain(href);
+                  const badge = isGov
+                    ? '<span class="inline-flex items-center text-[10.5px] font-bold text-emerald-700 bg-emerald-50 px-1.5 py-0.5 rounded border border-emerald-200 ml-1.5">Official Source</span>'
+                    : '<span class="inline-flex items-center text-[10.5px] font-bold text-slate-600 bg-slate-100 px-1.5 py-0.5 rounded border border-slate-200 ml-1.5">Mirror / Alternate Download</span>';
+                  const cleanAttrs = attrs.replace(/\s*(?:target|rel)=["'][^"']*["']/gi, "");
+                  return `<a ${cleanAttrs} target="_blank" rel="noopener noreferrer">${text} ${badge}</a>`;
+                });
+
                 return (
-                  <div className="rounded-2xl border border-gray-200 bg-white shadow-sm overflow-hidden">
+                  <div className="w-full max-w-full min-w-0 rounded-2xl border border-gray-200 bg-white shadow-sm overflow-hidden">
                     <div className="border-b border-gray-100 bg-gray-50/80 px-5 py-4">
                       <h2 className="flex items-center gap-2.5 text-base font-bold text-gray-900">
                         <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand/10 text-brand">
@@ -1230,13 +1256,13 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                         Full Article
                       </h2>
                     </div>
-                    <div className="prose prose-sm max-w-none p-5 text-gray-700 [&_h2]:mt-6 [&_h2]:mb-3 [&_h2]:text-lg [&_h2]:font-bold [&_h2]:text-gray-900 [&_h3]:mt-5 [&_h3]:mb-2 [&_h3]:text-base [&_h3]:font-semibold [&_h3]:text-gray-800 [&_p]:mb-3 [&_p]:leading-7 [&_ul]:mb-3 [&_ul]:list-disc [&_ul]:pl-5 [&_ol]:mb-3 [&_ol]:list-decimal [&_ol]:pl-5 [&_li]:mb-1 [&_li]:leading-7 [&_a]:text-brand [&_a]:underline [&_a]:font-medium" dangerouslySetInnerHTML={{ __html: articleHtml }} />
+                    <div className="prose prose-sm max-w-none p-5 text-gray-700 [&_h2]:mt-6 [&_h2]:mb-3 [&_h2]:text-lg [&_h2]:font-bold [&_h2]:text-gray-900 [&_h3]:mt-5 [&_h3]:mb-2 [&_h3]:text-base [&_h3]:font-semibold [&_h3]:text-gray-800 [&_p]:mb-3 [&_p]:leading-7 [&_ul]:mb-3 [&_ul]:list-disc [&_ul]:pl-5 [&_ol]:mb-3 [&_ol]:list-decimal [&_ol]:pl-5 [&_li]:mb-1 [&_li]:leading-7 [&_a]:text-brand [&_a]:underline [&_a]:font-medium" dangerouslySetInnerHTML={{ __html: annotatedHtml }} />
                   </div>
                 );
               })()}
 
               {/* HowTo Step-by-Step Interactive Guide */}
-              <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
+              <div className="w-full max-w-full min-w-0 overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
                 <div className="border-b border-gray-100 bg-gradient-to-r from-teal-50 to-emerald-50/50 px-5 py-4">
                   <div className="flex items-center gap-2.5">
                     <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-teal-600 text-white font-bold text-sm shadow-xs">
@@ -1327,7 +1353,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
             </div>
 
             {/* Sidebar */}
-            <aside className="space-y-5">
+            <aside className="w-full max-w-full min-w-0 space-y-5">
               <div className="sticky top-24 space-y-5">
                 {/* Notification Subscribe */}
                 <div className="rounded-2xl bg-white border border-gray-200 p-5 shadow-sm">
