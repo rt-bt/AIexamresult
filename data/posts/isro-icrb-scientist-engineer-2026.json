@@ -5,7 +5,7 @@
   "publishedDate": "2026-10-05T18:31:33+05:30",
   "publishedAt": "2026-10-05T13:01:33.000Z",
   "createdAt": "2026-09-19T06:57:51.000Z",
-  "updatedAt": "2026-10-06T13:37:37.658Z",
+  "updatedAt": "2026-10-07T07:45:59.665Z",
   "intro": "Indian Space Research Organisation (ISRO) has released the exam date for the post of Scientist / Engineer. This recruitment was released for 175 posts. Online applying process for ISRO ICRB Scientist / Engineer Recruitment 2026 were accepted from 27 August 2026 to 16 September 2026. The CBT examination is going to conducted on 29 October 2026. Candidates who had applied this form can download their ISRO ICRB Scientist / Engineer Exam Date 2026 from the link given below",
   "importantDates": [
     "Application Start Date : 27 August 2026",
@@ -47,8 +47,8 @@
     "@graph": [
       {
         "@type": "WebPage",
-        "@id": "https://www.aiexamresult.com/post/ISRO-ICRB-Scientist-Engineer-2026",
-        "url": "https://www.aiexamresult.com/post/ISRO-ICRB-Scientist-Engineer-2026",
+        "@id": "https://www.aiexamresult.com/post/isro-icrb-scientist-engineer-2026",
+        "url": "https://www.aiexamresult.com/post/isro-icrb-scientist-engineer-2026",
         "name": "ISRO ICRB Scientist / Engineer New Exam Date 2026 - Sarkari Result 2026 | All India Exam Result",
         "description": "Indian Space Research Organisation (ISRO) has released the exam date for the post of Scientist / Engineer. This recruitment was released for 175 posts. Online a",
         "inLanguage": "en-IN",
@@ -60,7 +60,7 @@
           "url": "https://www.aiexamresult.com/api/og?title=ISRO%20ICRB%20Scientist%20%2F%20Engineer%20New%20Exam%20Date%202026"
         },
         "datePublished": "2026-10-05",
-        "dateModified": "2026-10-06",
+        "dateModified": "2026-10-07",
         "author": {
           "@type": "Organization",
           "name": "All India Exam Result",
@@ -69,8 +69,8 @@
       },
       {
         "@type": "FAQPage",
-        "@id": "https://www.aiexamresult.com/post/ISRO-ICRB-Scientist-Engineer-2026#faq",
-        "url": "https://www.aiexamresult.com/post/ISRO-ICRB-Scientist-Engineer-2026#faq",
+        "@id": "https://www.aiexamresult.com/post/isro-icrb-scientist-engineer-2026#faq",
+        "url": "https://www.aiexamresult.com/post/isro-icrb-scientist-engineer-2026#faq",
         "mainEntity": [
           {
             "@type": "Question",
@@ -108,7 +108,7 @@
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://www.aiexamresult.com/post/ISRO-ICRB-Scientist-Engineer-2026#breadcrumb",
+        "@id": "https://www.aiexamresult.com/post/isro-icrb-scientist-engineer-2026#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
@@ -126,13 +126,13 @@
             "@type": "ListItem",
             "position": 3,
             "name": "ISRO ICRB Scientist / Engineer New Exam Date 2026",
-            "item": "https://www.aiexamresult.com/post/ISRO-ICRB-Scientist-Engineer-2026"
+            "item": "https://www.aiexamresult.com/post/isro-icrb-scientist-engineer-2026"
           }
         ]
       },
       {
         "@type": "JobPosting",
-        "@id": "https://www.aiexamresult.com/post/ISRO-ICRB-Scientist-Engineer-2026#jobposting",
+        "@id": "https://www.aiexamresult.com/post/isro-icrb-scientist-engineer-2026#jobposting",
         "title": "ISRO ICRB Scientist / Engineer New Exam Date 2026",
         "description": "Indian Space Research Organisation (ISRO) has released the exam date for the post of Scientist / Engineer. This recruitment was released for 175 posts. Online applying process for ISRO ICRB Scientist / Engineer Recruitment 2026 were accepted from 27 August 2026 to 16 September 2026. The CBT examination is going to conducted on 29 October 2026. Candidates who had applied this form can download their ISRO ICRB Scientist / Engineer Exam Date 2026 from the link given below",
         "datePosted": "2026-10-05T00:00:00.000Z",
@@ -167,6 +167,6 @@
   "seoMeta": {
     "title": "ISRO ICRB Scientist / Engineer New Exam Date 2026 - Sarkari Result 2026 | All India Exam Result",
     "description": "Indian Space Research Organisation (ISRO) has released the exam date for the post of Scientist / Engineer. This recruitment was released for 175 posts. Online a",
-    "canonical": "https://www.aiexamresult.com/post/ISRO-ICRB-Scientist-Engineer-2026"
+    "canonical": "https://www.aiexamresult.com/post/isro-icrb-scientist-engineer-2026"
   }
 }

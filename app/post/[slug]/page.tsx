@@ -141,31 +141,61 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 const GITHUB_RAW = "https://raw.githubusercontent.com/rt-bt/AIexamresult/master/data/posts";
 
-async function getPostDetail(slug: string) {
-  // Try local filesystem first (works in local dev)
+let _slugMap: Record<string, string> | null = null;
+function getSlugMap(): Record<string, string> {
+  if (_slugMap !== null) return _slugMap;
   try {
-    const filePath = path.join(process.cwd(), "data", "posts", `${slug}.json`);
-    if (fs.existsSync(filePath)) {
-      let raw = fs.readFileSync(filePath, "utf-8");
-      if (raw.charCodeAt(0) === 0xFEFF) raw = raw.substring(1);
-      return JSON.parse(raw);
+    const mapPath = path.join(process.cwd(), "data", "post-slug-map.json");
+    if (fs.existsSync(mapPath)) {
+      _slugMap = JSON.parse(fs.readFileSync(mapPath, "utf-8"));
+      return _slugMap!;
     }
   } catch {}
-  // Fallback: fetch from GitHub raw content (works on Vercel where files are excluded)
-  try {
-    const res = await fetch(`${GITHUB_RAW}/${encodeURIComponent(slug)}.json`, {
-      next: { revalidate: 3600 }, // cache for 1 hour
-    });
-    if (res.ok) {
-      const text = await res.text();
-      return JSON.parse(text.charCodeAt(0) === 0xFEFF ? text.substring(1) : text);
-    }
-  } catch {}
+  return {};
+}
 
-  // Fallback: check listing data so users never see a dead page
+async function getPostDetail(slug: string) {
+  const cleanSlug = slug.replace(/\.pdf$/i, "");
+  const slugLower = cleanSlug.toLowerCase();
+  const slugMap = getSlugMap();
+
+  const mapped = slugMap[cleanSlug] || slugMap[slugLower] || slugMap[slug];
+  const candidates: string[] = [];
+  if (mapped) candidates.push(mapped.replace(/\.json$/i, ""));
+  candidates.push(cleanSlug);
+  if (slugLower !== cleanSlug) candidates.push(slugLower);
+  if (slug !== cleanSlug) candidates.push(slug);
+  const uniqueCandidates = Array.from(new Set(candidates));
+
+  // 1. Try local filesystem first (works in local dev)
+  for (const name of uniqueCandidates) {
+    try {
+      const filePath = path.join(process.cwd(), "data", "posts", `${name}.json`);
+      if (fs.existsSync(filePath)) {
+        let raw = fs.readFileSync(filePath, "utf-8");
+        if (raw.charCodeAt(0) === 0xFEFF) raw = raw.substring(1);
+        return JSON.parse(raw);
+      }
+    } catch {}
+  }
+
+  // 2. Fallback: fetch from GitHub raw content (works on Vercel where files are excluded)
+  for (const name of uniqueCandidates) {
+    try {
+      const res = await fetch(`${GITHUB_RAW}/${encodeURIComponent(name)}.json`, {
+        next: { revalidate: 3600 }, // cache for 1 hour
+      });
+      if (res.ok) {
+        const text = await res.text();
+        return JSON.parse(text.charCodeAt(0) === 0xFEFF ? text.substring(1) : text);
+      }
+    } catch {}
+  }
+
+  // 3. Fallback: check listing data so users never see a dead page
   try {
     const allItems = Object.values(sectionItems).flat();
-    const found = allItems.find((item) => item.slug === slug);
+    const found = allItems.find((item) => item.slug === slug || item.slug.toLowerCase() === slugLower);
     if (found) {
       const foundDate = found.publishedAt || found.publishedDate || found.date || "";
       return {

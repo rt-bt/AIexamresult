@@ -48,8 +48,8 @@ function getScraped(): ScrapedData | null {
 
 export function getPostBySlug(slug: string) {
   const s = getScraped();
-  if (s?.posts?.[slug]) return s.posts[slug];
-  return null;
+  if (!s?.posts) return null;
+  return s.posts[slug] || s.posts[slug.toLowerCase()] || null;
 }
 
 export function parseDate(str?: string | null): Date | null {

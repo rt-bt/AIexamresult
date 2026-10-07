@@ -2,6 +2,14 @@
 export const scrapedData = {
   "results": [
     {
+      "title": "RSSB LDC Clerk Gr-II/ Junior Score Card 2026",
+      "url": "/post/rssb-rajasthan-clerk-gr-ii-junior-assistant-2026",
+      "category": "results",
+      "slug": "rssb-rajasthan-clerk-gr-ii-junior-assistant-2026",
+      "publishedDate": "2026-10-07T13:08:14+05:30",
+      "publishedAt": "2026-10-07T07:38:14.000Z"
+    },
+    {
       "title": "IB MTS Final Result 2026",
       "url": "/post/intelligence-bureau-ib-mts-2026",
       "category": "results",
@@ -138,20 +146,20 @@ export const scrapedData = {
       "publishedAt": "2026-09-29T12:01:28.000Z"
     },
     {
-      "title": "RSSB LDC Clerk Gr-II/ Junior Assistant Result 2026",
-      "url": "/post/rssb-rajasthan-clerk-gr-ii-junior-assistant-2026",
-      "category": "results",
-      "slug": "rssb-rajasthan-clerk-gr-ii-junior-assistant-2026",
-      "publishedDate": "2026-09-29T10:53:26+05:30",
-      "publishedAt": "2026-09-29T05:23:26.000Z"
-    },
-    {
       "title": "NTA CSIR UGC NET June E Certificate 2026",
       "url": "/post/nta-csir-ugc-net-june-2026",
       "category": "results",
       "slug": "nta-csir-ugc-net-june-2026",
       "publishedDate": "2026-09-26T13:11:55+05:30",
       "publishedAt": "2026-09-26T07:41:55.000Z"
+    },
+    {
+      "title": "MPESB Forest Guard & Jail Prahari PET Admit Card 2026",
+      "url": "/post/mpesb-forest-guard-jail-prahari-2026",
+      "category": "results",
+      "slug": "mpesb-forest-guard-jail-prahari-2026",
+      "publishedDate": "2026-10-06T19:17:52+05:30",
+      "publishedAt": "2026-10-06T13:47:52.000Z"
     },
     {
       "title": "Delhi High Court Higher Judicial Service HJS Mains Admit Card 2026",
@@ -856,14 +864,6 @@ export const scrapedData = {
       "slug": "upsssc-pharmacist-ayurvedic-admit-card-2026-3067989",
       "publishedDate": "17 September 2026",
       "publishedAt": "2026-09-16T18:30:00.000Z"
-    },
-    {
-      "title": "MPESB Forest Guard & Jail Prahari PET Exam Date 2026",
-      "url": "/post/mpesb-forest-guard-jail-prahari-2026",
-      "category": "results",
-      "slug": "mpesb-forest-guard-jail-prahari-2026",
-      "publishedDate": "2026-09-16T22:46:11+05:30",
-      "publishedAt": "2026-09-16T17:16:11.000Z"
     },
     {
       "title": "Indian Overseas Bank IOB Apprentice Result 2026",
@@ -4052,14 +4052,6 @@ export const scrapedData = {
       "publishedAt": "2026-09-24T12:03:53.000Z"
     },
     {
-      "title": "MPESB Group 2 Sub Group 4 Patwari & Various Posts Admit Card 2026",
-      "url": "/post/mpesb-group-2-sub-group-4-2026",
-      "category": "admitCards",
-      "slug": "mpesb-group-2-sub-group-4-2026",
-      "publishedDate": "2026-09-19T11:58:56+05:30",
-      "publishedAt": "2026-09-19T06:28:56.000Z"
-    },
-    {
       "title": "MPESB MP Group 2 Sub Group 4 Patwari and Other Post Combined Recruitment Test – 2026 Admit Card 2106 Post",
       "url": "/post/mpesb-group2-subgroup-4-aug26",
       "category": "admitCards",
@@ -4894,6 +4886,46 @@ export const scrapedData = {
       "publishedAt": "2026-09-28T13:10:57.000Z"
     },
     {
+      "title": "Supreme Court SCI Junior Court Assistant Online Form 2026",
+      "url": "/post/supreme-court-sci-junior-court-assistant-2026",
+      "category": "latestJobs",
+      "slug": "supreme-court-sci-junior-court-assistant-2026",
+      "publishedDate": "2026-10-07T12:47:54+05:30",
+      "publishedAt": "2026-10-07T07:17:54.000Z"
+    },
+    {
+      "title": "SSC CHSL 10+2 Online Form 2026 – Last Date",
+      "url": "/post/ssc-chsl-2026",
+      "category": "latestJobs",
+      "slug": "ssc-chsl-2026",
+      "publishedDate": "2026-10-07T10:18:11+05:30",
+      "publishedAt": "2026-10-07T04:48:11.000Z"
+    },
+    {
+      "title": "UPESSC UP Assistant Professor Online Form 2026 – Last Date",
+      "url": "/post/upessc-up-assistant-professor-2026",
+      "category": "latestJobs",
+      "slug": "upessc-up-assistant-professor-2026",
+      "publishedDate": "2026-10-07T10:17:26+05:30",
+      "publishedAt": "2026-10-07T04:47:26.000Z"
+    },
+    {
+      "title": "UPSSSC Junior Engineer JE Agriculture Online Form 2026 – Last Date",
+      "url": "/post/upsssc-junior-engineer-je-agriculture-2026",
+      "category": "latestJobs",
+      "slug": "upsssc-junior-engineer-je-agriculture-2026",
+      "publishedDate": "2026-10-07T10:16:34+05:30",
+      "publishedAt": "2026-10-07T04:46:34.000Z"
+    },
+    {
+      "title": "GIMS Noida Staff Nurse Online Form 2026 – Last Date",
+      "url": "/post/gims-noida-staff-nurse-2026",
+      "category": "latestJobs",
+      "slug": "gims-noida-staff-nurse-2026",
+      "publishedDate": "2026-10-07T10:13:28+05:30",
+      "publishedAt": "2026-10-07T04:43:28.000Z"
+    },
+    {
       "title": "Indian Army 10+2 TES 57th Entry Online Form 2026",
       "url": "/post/indian-army-102-tes-57th-entry-2026",
       "category": "latestJobs",
@@ -4932,30 +4964,6 @@ export const scrapedData = {
       "slug": "ibps-rrb-15th-2026",
       "publishedDate": "2026-10-06T17:40:49+05:30",
       "publishedAt": "2026-10-06T12:10:49.000Z"
-    },
-    {
-      "title": "MP Police GD Constable Online Form 2026 (7500 Posts) – Last Date",
-      "url": "/post/mpesb-mp-police-gd-constable-2026",
-      "category": "latestJobs",
-      "slug": "mpesb-mp-police-gd-constable-2026",
-      "publishedDate": "2026-10-06T10:16:11+05:30",
-      "publishedAt": "2026-10-06T04:46:11.000Z"
-    },
-    {
-      "title": "UPSC Engineering Services Pre Online Form 2027 – Last Date",
-      "url": "/post/upsc-engineering-services-pre-2027",
-      "category": "latestJobs",
-      "slug": "upsc-engineering-services-pre-2027",
-      "publishedDate": "2026-10-06T10:16:09+05:30",
-      "publishedAt": "2026-10-06T04:46:09.000Z"
-    },
-    {
-      "title": "SSC CHSL 10+2 Online Form 2026 – Reminder",
-      "url": "/post/ssc-chsl-2026",
-      "category": "latestJobs",
-      "slug": "ssc-chsl-2026",
-      "publishedDate": "2026-10-05T17:22:33+05:30",
-      "publishedAt": "2026-10-05T11:52:33.000Z"
     },
     {
       "title": "BPSC School Teacher TRE 4.0 Online Form 2026 (33,320 Posts)",
@@ -4998,14 +5006,6 @@ export const scrapedData = {
       "publishedAt": "2026-10-01T12:08:11.000Z"
     },
     {
-      "title": "Supreme Court SCI Junior Court Assistant Online Form 2026",
-      "url": "/post/supreme-court-sci-junior-court-assistant-2026",
-      "category": "latestJobs",
-      "slug": "supreme-court-sci-junior-court-assistant-2026",
-      "publishedDate": "2026-10-01T16:38:33+05:30",
-      "publishedAt": "2026-10-01T11:08:33.000Z"
-    },
-    {
       "title": "UPSSSC Regional Youth Welfare Officer Online Form 2026",
       "url": "/post/upsssc-regional-youth-welfare-officer-2026",
       "category": "latestJobs",
@@ -5046,12 +5046,12 @@ export const scrapedData = {
       "publishedAt": "2026-09-30T12:09:09.000Z"
     },
     {
-      "title": "JSSC Para Teacher JTAACCE Online Form 2026",
-      "url": "/post/jssc-para-teacher-jtaacce-2026",
+      "title": "MP Police GD Constable Online Form 2026 (7500 Posts)",
+      "url": "/post/mpesb-mp-police-gd-constable-2026",
       "category": "latestJobs",
-      "slug": "jssc-para-teacher-jtaacce-2026",
-      "publishedDate": "2026-09-29T22:22:01+05:30",
-      "publishedAt": "2026-09-29T16:52:01.000Z"
+      "slug": "mpesb-mp-police-gd-constable-2026",
+      "publishedDate": "2026-10-06T10:16:11+05:30",
+      "publishedAt": "2026-10-06T04:46:11.000Z"
     },
     {
       "title": "NVS Class 11 Admissions Online Form 2027 – Extend",
@@ -5262,6 +5262,14 @@ export const scrapedData = {
       "publishedAt": "2026-10-05T11:50:14.000Z"
     },
     {
+      "title": "JSSC Para Teacher JTAACCE Online Form 2026",
+      "url": "/post/jssc-para-teacher-jtaacce-2026",
+      "category": "latestJobs",
+      "slug": "jssc-para-teacher-jtaacce-2026",
+      "publishedDate": "2026-09-29T22:22:01+05:30",
+      "publishedAt": "2026-09-29T16:52:01.000Z"
+    },
+    {
       "title": "RRB NTPC 10+2 UG Level 07/2026 Online Form 2026",
       "url": "/post/rrb-ntpc-102-ug-level-07-2026",
       "category": "latestJobs",
@@ -5398,12 +5406,12 @@ export const scrapedData = {
       "publishedAt": "2026-09-19T05:13:27.000Z"
     },
     {
-      "title": "UPSSSC Junior Engineer JE Agriculture Online Form 2026",
-      "url": "/post/upsssc-junior-engineer-je-agriculture-2026",
+      "title": "UPSC Engineering Services Pre Online Form 2027",
+      "url": "/post/upsc-engineering-services-pre-2027",
       "category": "latestJobs",
-      "slug": "upsssc-junior-engineer-je-agriculture-2026",
-      "publishedDate": "2026-09-18T13:06:28+05:30",
-      "publishedAt": "2026-09-18T07:36:28.000Z"
+      "slug": "upsc-engineering-services-pre-2027",
+      "publishedDate": "2026-10-06T10:16:09+05:30",
+      "publishedAt": "2026-10-06T04:46:09.000Z"
     },
     {
       "title": "RUHS Medical Officer Online Form 2026",
@@ -5470,28 +5478,12 @@ export const scrapedData = {
       "publishedAt": "2026-09-10T09:17:04.000Z"
     },
     {
-      "title": "UPESSC UP Assistant Professor Online Form 2026",
-      "url": "/post/upessc-up-assistant-professor-2026",
-      "category": "latestJobs",
-      "slug": "upessc-up-assistant-professor-2026",
-      "publishedDate": "2026-09-10T14:46:55+05:30",
-      "publishedAt": "2026-09-10T09:16:55.000Z"
-    },
-    {
       "title": "CSIR NGRI Technician Online Form 2026",
       "url": "/post/csir-ngri-technician-2026",
       "category": "latestJobs",
       "slug": "csir-ngri-technician-2026",
       "publishedDate": "21 September 2026",
       "publishedAt": "2026-09-21T06:32:25.719Z"
-    },
-    {
-      "title": "GIMS Noida Staff Nurse Online Form 2026 – Extended",
-      "url": "/post/gims-noida-staff-nurse-2026",
-      "category": "latestJobs",
-      "slug": "gims-noida-staff-nurse-2026",
-      "publishedDate": "7 September 2026",
-      "publishedAt": "2026-09-07T04:42:35.000Z"
     },
     {
       "title": "CONCOR MT, Assistant Officer Online Form 2026",
@@ -8720,6 +8712,14 @@ export const scrapedData = {
       "publishedAt": "2026-09-29T09:13:47.000Z"
     },
     {
+      "title": "MPESB Group 2 Sub Group 4 Patwari & Various Posts Answer Key 2026",
+      "url": "/post/mpesb-group-2-sub-group-4-2026",
+      "category": "answerKeys",
+      "slug": "mpesb-group-2-sub-group-4-2026",
+      "publishedDate": "2026-10-06T19:12:40+05:30",
+      "publishedAt": "2026-10-06T13:42:40.000Z"
+    },
+    {
       "title": "Uttarakhand TET UTET Answer Key 2026",
       "url": "/post/uttarakhand-tet-utet-2026",
       "category": "answerKeys",
@@ -9628,14 +9628,6 @@ export const scrapedData = {
       "publishedAt": "2026-10-05T13:01:52.000Z"
     },
     {
-      "title": "RRB ALP CEN 01/2026 Exam Date 2026",
-      "url": "/post/rrb-alp-cen-01-2026",
-      "category": "documents",
-      "slug": "rrb-alp-cen-01-2026",
-      "publishedDate": "2026-09-28T18:40:54+05:30",
-      "publishedAt": "2026-09-28T13:10:54.000Z"
-    },
-    {
       "title": "Aadhar Card PVC Download, Correction, Status 2026",
       "url": "/post/aadhar-card-print-verification-correction-form",
       "category": "documents",
@@ -9674,6 +9666,14 @@ export const scrapedData = {
       "slug": "bihar-jamin-dakhil-kharij-online-apply-2026",
       "publishedDate": "5 January 2026",
       "publishedAt": "2026-01-05T07:28:14.000Z"
+    },
+    {
+      "title": "RRB ALP CEN 01/2026 Exam Date 2026",
+      "url": "/post/rrb-alp-cen-01-2026",
+      "category": "documents",
+      "slug": "rrb-alp-cen-01-2026",
+      "publishedDate": "2026-09-28T18:40:54+05:30",
+      "publishedAt": "2026-09-28T13:10:54.000Z"
     },
     {
       "title": "CTET September Exam Date 2026",
@@ -11641,9 +11641,9 @@ export const scrapedData = {
       "lastDate": "21 October 2026 up to 5:00 PM"
     },
     "gims-noida-staff-nurse-2026": {
-      "publishedDate": "7 September 2026",
-      "publishedAt": "2026-09-07T04:42:35.000Z",
-      "lastDate": "30 October 2026"
+      "publishedDate": "2026-10-07T10:13:28+05:30",
+      "publishedAt": "2026-10-07T04:43:28.000Z",
+      "lastDate": "07 October 2026"
     },
     "gims-staff-nurse-august26": {
       "publishedDate": "9 September 2026",
@@ -12684,8 +12684,9 @@ export const scrapedData = {
       "lastDate": "05/02/2026\nLast Date for Apply Online :19/02/2026\nLast Date Pay Exam Fee :19/02/2026\nForm Correction Last Date :24/02/2026\nExam Start :24 March 2026\nAdmit Card Available : 18/03/2026\n\nAnswer Key Available : 26/03/2026\n\nResult Available : 08/05/2026\n\nPPT Result Available : 23/07/2026\nPractical Admit card : 09/09/2026 : Application Fee\n\nGeneral / Other State : 560/-\nOBC / SC / ST : 310/-\nPortal Charges : 60/- (Include in this Fees)\nPay the Examination Fee Through Cast at E Challan or Debit Card, Credit Card, Net Banking , MP Kiosk"
     },
     "mpesb-forest-guard-jail-prahari-2026": {
-      "publishedDate": "2026-09-16T22:46:11+05:30",
-      "publishedAt": "2026-09-16T17:16:11.000Z"
+      "publishedDate": "2026-10-06T19:17:52+05:30",
+      "publishedAt": "2026-10-06T13:47:52.000Z",
+      "lastDate": "30 April 2026"
     },
     "mpesb-group-2-sub-group-3-2026": {
       "publishedDate": "31 August 2026",
@@ -12693,8 +12694,9 @@ export const scrapedData = {
       "lastDate": "12 November 2025"
     },
     "mpesb-group-2-sub-group-4-2026": {
-      "publishedDate": "2026-09-19T11:58:56+05:30",
-      "publishedAt": "2026-09-19T06:28:56.000Z"
+      "publishedDate": "2026-10-06T19:12:40+05:30",
+      "publishedAt": "2026-10-06T13:42:40.000Z",
+      "lastDate": "21 August 2026"
     },
     "mpesb-group-2-sub-group-4-patwari-and-other-post-admit-card-2026-3068351": {
       "publishedDate": "19 September 2026",
@@ -14204,8 +14206,8 @@ export const scrapedData = {
       "lastDate": "23/07/2025\nLast Date for Apply Online : 21/08/2025\nComplete Form Last Date : 21/08/2025\nCorrection Date : As per Schedule \nRajasthan Platoon Commander Exam Date : 22/11/2025 (Offline) \n Admit Card Available : Before Exam\nRSSB Platoon Commander Result: 17-01-2026\nFinal Result Date : 17/07/2026\n\n\n\n\nGeneral / OBC : 600/-\nOBC NCL : 400/-\nSC / ST : 400/-\nCorrection Charge : 300/-\nThis fee is for one time registration, now after paying the OTR fee once, the candidate will not have to pay the application fee again and again.\n\n\n\n\n\n\n\n\n\n     (adsbygoogle = window.adsbygoogle || []).push({}); : Important Dates"
     },
     "rssb-rajasthan-clerk-gr-ii-junior-assistant-2026": {
-      "publishedDate": "2026-09-29T10:53:26+05:30",
-      "publishedAt": "2026-09-29T05:23:26.000Z",
+      "publishedDate": "2026-10-07T13:08:14+05:30",
+      "publishedAt": "2026-10-07T07:38:14.000Z",
       "lastDate": "13 February 2026"
     },
     "rssb-reet-mains-primary-teacher-2025": {
@@ -14514,8 +14516,8 @@ export const scrapedData = {
       "lastDate": "07/09/2026\nLast Date for Apply Online :07/10/2026 upto 11 PM Only \nPay Exam Fee Last Date :08/10/2026\nCorrection Date : 14-16 October 2026\nSSC CHSL 2026 Tier I Exam Date :As per Schedule\nSSC CHSL 2026 Tier II Exam Date :As per Schedule\nAdmit Card Available : Before Exam : Application Fee\n\nGeneral / OBC / EWS : 100/-\nSC / ST : 0/-\nPH (Divyang) / Female : 0/-\nCorrection First Time : 200/–\nCorrection Second Time : 500/-\nPay the Examination Fee Through Cast at E Challan or Debit Card, Credit Card, Net Banking"
     },
     "ssc-chsl-2026": {
-      "publishedDate": "2026-10-05T17:22:33+05:30",
-      "publishedAt": "2026-10-05T11:52:33.000Z",
+      "publishedDate": "2026-10-07T10:18:11+05:30",
+      "publishedAt": "2026-10-07T04:48:11.000Z",
       "lastDate": "07 October 2026"
     },
     "ssc-chte-2025": {
@@ -15262,8 +15264,8 @@ export const scrapedData = {
       "lastDate": "15 October 2026"
     },
     "upessc-up-assistant-professor-2026": {
-      "publishedDate": "2026-09-10T14:46:55+05:30",
-      "publishedAt": "2026-09-10T09:16:55.000Z",
+      "publishedDate": "2026-10-07T10:17:26+05:30",
+      "publishedAt": "2026-10-07T04:47:26.000Z",
       "lastDate": "07 October 2026"
     },
     "upessc-up-pgt-teacher-sept26": {
@@ -15898,8 +15900,8 @@ export const scrapedData = {
       "lastDate": "13 July 2024"
     },
     "upsssc-junior-engineer-je-agriculture-2026": {
-      "publishedDate": "2026-09-18T13:06:28+05:30",
-      "publishedAt": "2026-09-18T07:36:28.000Z",
+      "publishedDate": "2026-10-07T10:16:34+05:30",
+      "publishedAt": "2026-10-07T04:46:34.000Z",
       "lastDate": "07 October 2026"
     },
     "upsssc-lekhpal-02-exam-2025": {
@@ -16418,8 +16420,8 @@ export const scrapedData = {
       "lastDate": "06 November 2026"
     },
     "supreme-court-sci-junior-court-assistant-2026": {
-      "publishedDate": "2026-10-01T16:38:33+05:30",
-      "publishedAt": "2026-10-01T11:08:33.000Z",
+      "publishedDate": "2026-10-07T12:47:54+05:30",
+      "publishedAt": "2026-10-07T07:17:54.000Z",
       "lastDate": "28 October 2026"
     },
     "upsssc-regional-youth-welfare-officer-2026": {
@@ -16478,9 +16480,9 @@ export const scrapedData = {
       "lastDate": "04 November 2026"
     }
   },
-  "fetchedAt": "2026-10-06T13:37:46.665Z",
+  "fetchedAt": "2026-10-07T07:46:09.166Z",
   "seo": {
-    "lastOptimized": "2026-10-06T13:37:48.844Z",
+    "lastOptimized": "2026-10-07T07:46:11.484Z",
     "totalPosts": 1278,
     "websiteName": "All India Exam Result",
     "websiteUrl": "https://www.aiexamresult.com",
