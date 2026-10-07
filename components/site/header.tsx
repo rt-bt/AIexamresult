@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { useState, useMemo } from "react";
 import { cn } from "@/lib/utils";
 import { Logo } from "@/components/site/logo";
-import { sectionItems, boardResults, parseDate } from "@/lib/data";
+import { defaultTickerItems, type TickerItem } from "@/lib/ticker";
 import { useLang } from "@/lib/hooks/use-lang";
 import { MobileBottomNav } from "@/components/site/mobile-bottom-nav";
 import { LanguageSelector } from "@/components/site/language-selector";
@@ -33,27 +33,12 @@ const nav: [string, string, [string, string][]?][] = [
   ["Exam", "/exam", examSubNav],
   ["Study Hub", "/study-hub", studyHubSubNav],
   ["Tools", "/tools"],
-  ["Contact Us", "/contact"],
-  ["About Us", "/about"]
+  ["Contact Us", "/contact-us"],
+  ["About Us", "/about-us"]
 ];
 
-function getTickerItems() {
-  const topJobs = (sectionItems["latest-jobs"] || []).slice(0, 3);
-  const topResults = (sectionItems["results"] || []).slice(0, 3);
-  const topAdmit = (sectionItems["admit-card"] || []).slice(0, 2);
-
-  const mixed: (typeof topJobs[0])[] = [];
-  const seen = new Set<string>();
-
-  for (const item of [...topJobs, ...topResults, ...topAdmit]) {
-    const key = item.slug || item.title;
-    if (key && !seen.has(key)) {
-      seen.add(key);
-      mixed.push(item);
-    }
-  }
-
-  return mixed.slice(0, 8);
+function getTickerItems(): TickerItem[] {
+  return defaultTickerItems;
 }
 
 export function Header() {
@@ -137,10 +122,10 @@ export function Header() {
           <Link href="/search" className="hidden items-center gap-2 rounded-full bg-[#FFD84D] px-5 py-2.5 text-[15px] font-bold text-[#111111] transition hover:bg-[#ffe270] lg:inline-flex shadow-md shadow-black/20 font-heading">
             <Search className="h-4.5 w-4.5" /> {t("nav.search")}
           </Link>
-          <Link href="/search" className="rounded-full border border-white/20 p-2.5 text-white transition hover:bg-white/15 active:scale-90 flex lg:hidden">
+          <Link href="/search" aria-label="Search exams" className="rounded-full border border-white/20 p-2.5 text-white transition hover:bg-white/15 active:scale-90 flex lg:hidden">
             <Search className="h-4 w-4" />
           </Link>
-          <button onClick={() => setOpen((value) => !value)} className="rounded-full border border-white/20 p-2.5 text-white transition hover:bg-white/15 active:scale-90 flex lg:hidden">
+          <button onClick={() => setOpen((value) => !value)} aria-label="Toggle navigation menu" className="rounded-full border border-white/20 p-2.5 text-white transition hover:bg-white/15 active:scale-90 flex lg:hidden">
             {open ? "✕" : "☰"}
           </button>
         </div>

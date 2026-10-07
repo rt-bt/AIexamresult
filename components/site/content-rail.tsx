@@ -54,14 +54,10 @@ export function ContentRail({
             <motion.span initial={{ opacity: 0, x: -10 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="inline-flex items-center gap-2 rounded-full bg-brand/10 px-4 py-1.5 text-sm font-bold text-brand">{badge}</motion.span>
             <motion.h2 initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }} className="mt-3 text-3xl font-black tracking-tight text-ink dark:text-white">{title}</motion.h2>
           </div>
-          {viewAllHref ? (
+          {viewAllHref && (
             <Link href={viewAllHref} className="hidden items-center gap-1 rounded-full border border-slate-200 px-5 py-2.5 text-sm font-bold text-ink transition hover:border-brand hover:text-brand sm:inline-flex dark:border-white/10 dark:text-white">
               View all <ArrowUpRight className="h-4 w-4" />
             </Link>
-          ) : (
-            <a className="hidden items-center gap-1 rounded-full border border-slate-200 px-5 py-2.5 text-sm font-bold text-ink transition hover:border-brand hover:text-brand sm:inline-flex dark:border-white/10 dark:text-white">
-              View all <ArrowUpRight className="h-4 w-4" />
-            </a>
           )}
         </div>
         <motion.div variants={container} initial="hidden" whileInView="show" viewport={{ once: true, margin: "-30px" }} className={gridClass}>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 
 type Bookmark = { slug: string; title: string; category: string; date: string };
 
@@ -11,12 +11,16 @@ function save(items: Bookmark[]) {
 }
 
 export function useBookmarks() {
-  const [items, setItems] = useState<Bookmark[]>(() => {
-    if (typeof window !== "undefined") {
-      try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]"); } catch {}
-    }
-    return [];
-  });
+  const [items, setItems] = useState<Bookmark[]>([]);
+
+  useEffect(() => {
+    try {
+      const stored = localStorage.getItem(STORAGE_KEY);
+      if (stored) {
+        setItems(JSON.parse(stored));
+      }
+    } catch {}
+  }, []);
 
   const add = useCallback((b: Bookmark) => {
     setItems((prev) => {

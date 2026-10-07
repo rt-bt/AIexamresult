@@ -37,8 +37,8 @@ const moreLinks: [string, string, typeof Home][] = [
   ["Latest Vacancy", "/latest-jobs", FileText],
   ["Admit Card", "/admit-card", FileText],
   ["Answer Key", "/answer-key", FileText],
-  ["Contact Us", "/contact", Phone],
-  ["About Us", "/about", User],
+  ["Contact Us", "/contact-us", Phone],
+  ["About Us", "/about-us", User],
 ];
 
 type Sheet = "tools" | "more" | null;
@@ -153,33 +153,32 @@ export function MobileBottomNav() {
             const active = tabSheet
               ? sheet === tabSheet
               : pathname === href || (href !== "/" && pathname.startsWith(href));
-            return (
-              <button key={label}
-                onClick={() => {
-                  if (tabSheet) {
-                    setSheet(sheet === tabSheet ? null : tabSheet);
-                  }
-                }}
-                className="flex flex-col items-center gap-0.5 rounded-xl px-2.5 py-1 text-[11px] font-semibold transition active:scale-95 touch-manipulation font-sans"
+            const itemClass = "flex flex-col items-center gap-0.5 rounded-xl px-2.5 py-1 text-[11px] font-semibold transition active:scale-95 touch-manipulation font-sans";
+            return tabSheet ? (
+              <button
+                key={label}
+                onClick={() => setSheet(sheet === tabSheet ? null : tabSheet)}
+                className={itemClass}
+                aria-expanded={sheet === tabSheet}
+                aria-label={label}
               >
-                {tabSheet ? (
-                  <>
-                    <div className={`rounded-xl p-1.5 transition-all ${active ? "bg-[#5B0111]/10 text-[#5B0111] scale-105" : "text-gray-500"}`}>
-                      <Icon className="h-5 w-5" />
-                    </div>
-                    <span className={active ? "text-[#5B0111] font-bold" : "text-gray-500"}>{label}</span>
-                  </>
-                ) : (
-                  <Link href={href}
-                    className="flex flex-col items-center gap-0.5"
-                  >
-                    <div className={`rounded-xl p-1.5 transition-all ${active ? "bg-[#5B0111]/10 text-[#5B0111] scale-105" : "text-gray-500"}`}>
-                      <Icon className="h-5 w-5" />
-                    </div>
-                    <span className={active ? "text-[#5B0111] font-bold" : "text-gray-500"}>{label}</span>
-                  </Link>
-                )}
+                <div className={`rounded-xl p-1.5 transition-all ${active ? "bg-[#5B0111]/10 text-[#5B0111] scale-105" : "text-gray-500"}`}>
+                  <Icon className="h-5 w-5" />
+                </div>
+                <span className={active ? "text-[#5B0111] font-bold" : "text-gray-500"}>{label}</span>
               </button>
+            ) : (
+              <Link
+                key={label}
+                href={href}
+                className={itemClass}
+                aria-label={label}
+              >
+                <div className={`rounded-xl p-1.5 transition-all ${active ? "bg-[#5B0111]/10 text-[#5B0111] scale-105" : "text-gray-500"}`}>
+                  <Icon className="h-5 w-5" />
+                </div>
+                <span className={active ? "text-[#5B0111] font-bold" : "text-gray-500"}>{label}</span>
+              </Link>
             );
           })}
         </div>

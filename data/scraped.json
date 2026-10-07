@@ -4036,9 +4036,9 @@
     },
     {
       "title": "Chhattisgarh State Eligibility Test SET Admit Card 2026",
-      "url": "/post/rajasthan-state-eligibility-test-set-026",
+      "url": "/post/chhattisgarh-state-eligibility-test-set-026",
       "category": "admitCards",
-      "slug": "rajasthan-state-eligibility-test-set-026",
+      "slug": "chhattisgarh-state-eligibility-test-set-026",
       "publishedDate": "2026-09-28T13:59:44+05:30",
       "publishedAt": "2026-09-28T08:29:44.000Z"
     },
@@ -16477,6 +16477,11 @@
       "publishedDate": "2026-10-05T16:20:35+05:30",
       "publishedAt": "2026-10-05T10:50:35.000Z",
       "lastDate": "04 November 2026"
+    },
+    "chhattisgarh-state-eligibility-test-set-026": {
+      "publishedDate": "2026-09-28T13:59:44+05:30",
+      "publishedAt": "2026-09-28T08:29:44.000Z",
+      "lastDate": "17 August 2026"
     }
   },
   "fetchedAt": "2026-10-07T07:46:09.166Z",

@@ -10,19 +10,19 @@ import type { PostCard } from "@/lib/data";
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.aiexamresult.com";
 
 export const metadata: Metadata = {
-  title: "Sarkari Result 2026 | All Govt Exam Results Online",
-  description: "Sarkari Result 2026: Check latest exam results, scorecards, cut-off marks, and merit lists for SSC, UPSC, Railway, Banking, Police & State Board exams.",
+  title: { absolute: "Sarkari Result 2026 : Check Govt Exam Results Online" },
+  description: "Check latest Sarkari Result 2026, scorecards, merit lists and cut-off marks for SSC, UPSC, Railway, Banking and State exams with direct official links.",
   alternates: { canonical: `${SITE_URL}/results` },
   openGraph: {
-    title: "Sarkari Result 2026 : All Govt Exam Results | All India Exam Result",
-    description: "Sarkari Result 2026: Check latest exam results, scorecards, cut-off marks, and merit lists for SSC, UPSC, Railway, Banking, Police & State Board exams.",
+    title: "Sarkari Result 2026 : Check Govt Exam Results Online",
+    description: "Check latest Sarkari Result 2026, scorecards, merit lists and cut-off marks for SSC, UPSC, Railway, Banking and State exams with direct official links.",
     url: `${SITE_URL}/results`,
     images: [{ url: `${SITE_URL}/og-image.svg`, width: 1200, height: 630 }]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sarkari Result 2026 : All Govt Exam Results Online",
-    description: "Sarkari Result 2026: Check latest exam results, scorecards, cut-off marks, and merit lists for SSC, UPSC, Railway, Banking, Police & State Board exams.",
+    title: "Sarkari Result 2026 : Check Govt Exam Results Online",
+    description: "Check latest Sarkari Result 2026, scorecards, merit lists and cut-off marks for SSC, UPSC, Railway, Banking and State exams with direct official links.",
   }
 };
 

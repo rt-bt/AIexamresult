@@ -813,7 +813,7 @@
   "rajasthan-sanitation-worker-jul26": "rajasthan-sanitation-worker-jul26.json",
   "rajasthan-scholarship-scooty-yojana-2025-26-start": "rajasthan-scholarship-scooty-yojana-2025-26-start.json",
   "rajasthan-set-jun": "rajasthan-set-jun.json",
-  "rajasthan-state-eligibility-test-set-026": "rajasthan-state-eligibility-test-set-026.json",
+  "rajasthan-state-eligibility-test-set-026": "chhattisgarh-state-eligibility-test-set-026.json",
   "rajasthan-state-eligibility-test-set-2026": "rajasthan-state-eligibility-test-set-2026.json",
   "rajju-bhaiya-state-university-prsu-cet": "rajju-bhaiya-state-university-prsu-cet.json",
   "rajju-bhaiya-university-prsu-2026": "rajju-bhaiya-university-prsu-2026.json",
@@ -1401,5 +1401,6 @@
   "VKSU-Ara-UG-Admission-2026-30": "VKSU-Ara-UG-Admission-2026-30.json",
   "vksu-ara-ug-admission-2026-30": "VKSU-Ara-UG-Admission-2026-30.json",
   "voter-id-registration-other-voter-service-2026": "voter-id-registration-other-voter-service-2026.json",
-  "wcl-various-post-july26": "wcl-various-post-july26.json"
+  "wcl-various-post-july26": "wcl-various-post-july26.json",
+  "chhattisgarh-state-eligibility-test-set-026": "chhattisgarh-state-eligibility-test-set-026.json"
 }

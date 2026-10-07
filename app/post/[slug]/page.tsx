@@ -12,9 +12,10 @@ import { BookmarkBtn } from "@/components/site/bookmark-btn";
 import { ShareButtons } from "@/components/site/share-buttons";
 import { ExamTimeline } from "@/components/site/exam-timeline";
 import { getPostBySlug, parseDate, sectionItems } from "@/lib/data";
-import { CalendarDays, ExternalLink, AlertTriangle, CheckCircle, ChevronRight, BadgeInfo, Banknote, ArrowUpRight, Gauge, Users, Clock, GraduationCap, IndianRupee, FileText, Mail, Download, Bell } from "lucide-react";
+import { CalendarDays, ExternalLink, AlertTriangle, CheckCircle, ChevronRight, BadgeInfo, Banknote, ArrowUpRight, Gauge, Users, Clock, GraduationCap, IndianRupee, FileText, Mail, Download, Bell, ShieldCheck } from "lucide-react";
 import { AdUnit } from "@/components/ads/ad-unit";
 import { isActualJobPost, resolveJobLocation, resolveJobSalary } from "@/lib/job-schema";
+import { getCategoryCta, isOfficialGovDomain } from "@/lib/categories";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.aiexamresult.com";
 
@@ -47,47 +48,45 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
   const hasYear = /202[4-9]|203\d/.test(title);
   const yearStr = hasYear ? "" : " 2026";
-  const seoTitle = intentSuffix
-    ? `${title}${yearStr} : ${intentSuffix}`
-    : `${title}${yearStr}`;
+  let seoTitle = `${title}${yearStr}`;
+  if (seoTitle.length < 42 && intentSuffix) {
+    const shortSuffix = intentSuffix.split(",")[0].trim();
+    seoTitle = `${seoTitle} : ${shortSuffix}`;
+  }
+  if (seoTitle.length > 58) {
+    seoTitle = seoTitle.substring(0, 56).trim() + "…";
+  }
 
   // Build high-CTR meta description (strip any adinserter / shortcodes)
   const rawIntro = (post.intro || "").replace(/\[adinserter[^\]]*\]/gi, "").replace(/<[^>]*>/g, "").trim();
   let desc = "";
 
   if (rawIntro.length > 50) {
-    // Use up to 200 chars of intro for richer context
-    const introSnip = rawIntro.substring(0, 200).replace(/\s+\S*$/, "");
-    desc = introSnip + "… Check full notification & details at All India Exam Result.";
+    const introSnip = rawIntro.substring(0, 130).replace(/\s+\S*$/, "");
+    desc = `${introSnip}. Check full details and official link at AI Exam Result.`;
   } else {
     const dateHint = post.importantDates?.find((d: string) =>
       /last|apply|exam date|admit/i.test(d)
     );
     const dateStr = dateHint ? " " + dateHint.replace(/^.*?:/, "").trim() + "." : ".";
     if (intentSuffix.includes("Online Form") || catLower.includes("job")) {
-      desc = `${title}: Check eligibility criteria, age limit, application fee, last date to apply${dateStr} Download official notification PDF at All India Exam Result.`;
+      desc = `${title}: Check eligibility criteria, age limit, application fee${dateStr} Apply online at AI Exam Result.`;
     } else if (intentSuffix.includes("Admit Card") || catLower.includes("admit")) {
-      desc = `${title}: Download admit card, check exam date, reporting time & exam city slip${dateStr} Direct login link at All India Exam Result.`;
+      desc = `${title}: Download admit card, check exam date & shift timings${dateStr} Direct login link at AI Exam Result.`;
     } else if (intentSuffix.includes("Result") || catLower.includes("result")) {
-      desc = `${title}: Check result, download scorecard, cut-off marks & qualifying merit list${dateStr} Direct official link at All India Exam Result.`;
+      desc = `${title}: Check result, download scorecard & cut-off marks${dateStr} Direct link at AI Exam Result.`;
     } else {
-      desc = `${title}: Check important dates, application fee, eligibility & official direct links${dateStr} Complete details at All India Exam Result.`;
+      desc = `${title}: Check important dates, eligibility & official direct links${dateStr} All India Exam Result.`;
     }
   }
 
-  // Ensure minimum 120 chars — append extra context if too short
-  if (desc.length < 120) {
-    const extra = catLower.includes("job") || tLower.includes("recruitment")
-      ? " Apply online for latest govt job 2026 at All India Exam Result."
-      : catLower.includes("result") || tLower.includes("result")
-      ? " Download result & scorecard 2026 at All India Exam Result."
-      : catLower.includes("admit") || tLower.includes("admit card")
-      ? " Download admit card & check exam date 2026 at All India Exam Result."
-      : " Get latest govt exam updates 2026 at All India Exam Result.";
-    desc = desc.replace(/\.\s*$/, "") + extra;
+  // Strictly enforce 125-155 characters (prevents 161 chars)
+  if (desc.length < 125) {
+    desc = desc.replace(/\.\s*$/, "") + ". Get updates at All India Exam Result.";
   }
-
-  if (desc.length > 165) desc = desc.substring(0, 160) + "…";
+  if (desc.length > 155) {
+    desc = desc.substring(0, 150).replace(/\s+\S*$/, "") + "…";
+  }
 
   // Absolute canonical URL
   const canonicalUrl = `${SITE_URL}/post/${slug}`;
@@ -105,7 +104,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const modifiedIso = post.updatedAt ? new Date(post.updatedAt).toISOString() : (publishedIso || undefined);
 
   return {
-    title: seoTitle,
+    title: { absolute: `${seoTitle} | AI Exam Result` },
     description: desc,
     alternates: { canonical: canonicalUrl },
     openGraph: {
@@ -563,9 +562,14 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         description: cleanIntro,
         ...(publishedIso && { datePublished: publishedIso }),
         ...(modifiedIso ? { dateModified: modifiedIso } : {}),
-        author: { "@id": `${SITE_URL}/#organization` },
+        author: {
+          "@type": "Organization",
+          name: "AI Exam Result Editorial Desk",
+          url: `${SITE_URL}/about-us`,
+        },
         publisher: { "@id": `${SITE_URL}/#organization` },
         mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}/post/${slug}` },
+        ...(officialUrl ? { isBasedOn: officialUrl } : {}),
         image: `${SITE_URL}/api/og?title=${encodeURIComponent(title)}&cat=${encodeURIComponent(post.category || "Sarkari Result")}&date=${encodeURIComponent(publishedIso ? publishedIso.split("T")[0] : (rawPostDate && /\d{4}/.test(rawPostDate) ? rawPostDate.split("T")[0] : "2026"))}`,
         articleSection: post.category || "Government Exam",
         inLanguage: "en-IN",
@@ -607,19 +611,6 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         },
         directApply: true
       }] : []),
-      {
-        "@type": "HowTo",
-        "@id": `${SITE_URL}/post/${slug}#howto`,
-        name: howToTitle,
-        description: howToDescription,
-        step: howToSteps.map((s, i) => ({
-          "@type": "HowToStep",
-          position: i + 1,
-          name: s.name,
-          text: s.text,
-          url: `${SITE_URL}/post/${slug}#step-${i + 1}`
-        }))
-      },
       {
         "@type": "FAQPage",
         "@id": `${SITE_URL}/post/${slug}#faq`,
@@ -903,7 +894,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                           <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-sky-100 text-xs font-black text-sky-600">
                             <CheckCircle className="h-3.5 w-3.5" />
                           </span>
-                          <p className="text-sm leading-6 text-gray-700" dangerouslySetInnerHTML={{ __html: d }} />
+                          <div className="text-sm leading-6 text-gray-700" dangerouslySetInnerHTML={{ __html: d }} />
                         </div>
                       ))
                     )}
@@ -991,7 +982,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                         <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-violet-100 text-xs font-black text-violet-600">
                           <Users className="h-3.5 w-3.5" />
                         </span>
-                        <p className="text-sm leading-6 text-gray-700" dangerouslySetInnerHTML={{ __html: d }} />
+                        <div className="text-sm leading-6 text-gray-700" dangerouslySetInnerHTML={{ __html: d }} />
                       </div>
                     ))}
                   </div>
@@ -1011,7 +1002,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                         <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-xs font-black text-emerald-600">
                           <ArrowUpRight className="h-3.5 w-3.5" />
                         </span>
-                        <p className="text-sm leading-6 text-gray-700" dangerouslySetInnerHTML={{ __html: d }} />
+                        <div className="text-sm leading-6 text-gray-700" dangerouslySetInnerHTML={{ __html: d }} />
                       </div>
                     ))}
                   </div>
@@ -1078,6 +1069,8 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                       else if (ll.includes("official")) linkColor = "from-sky-500 to-cyan-600";
                       else if (ll.includes("download")) linkColor = "from-teal-500 to-emerald-600";
 
+                      const isOfficial = isOfficialGovDomain(link.url);
+
                       return (
                         <a
                           key={i}
@@ -1092,7 +1085,18 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                             </span>
                             <span className="text-sm font-bold text-gray-700 transition group-hover:text-brand truncate">{link.label}</span>
                           </span>
-                          <ArrowUpRight className="h-4 w-4 shrink-0 text-gray-400 transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-brand" />
+                          <span className="flex items-center gap-2">
+                            {isOfficial ? (
+                              <span className="shrink-0 rounded-md bg-emerald-50 px-2 py-0.5 text-[10.5px] font-bold text-emerald-700 ring-1 ring-emerald-200">
+                                Official Source
+                              </span>
+                            ) : (
+                              <span className="shrink-0 rounded-md bg-slate-50 px-2 py-0.5 text-[10.5px] font-bold text-slate-600 ring-1 ring-slate-200">
+                                Direct Link / Mirror
+                              </span>
+                            )}
+                            <ArrowUpRight className="h-4 w-4 shrink-0 text-gray-400 transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-brand" />
+                          </span>
                         </a>
                       );
                     })}
@@ -1101,31 +1105,91 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
               </div>
             )}
 
-              {/* Official Website CTA */}
-              {officialUrl && (
-                <div className="overflow-hidden rounded-2xl bg-gradient-to-br from-brand to-emerald-700 p-6 shadow-lg sm:p-8">
-                  <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-                    <div className="flex items-start gap-4">
-                      <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-white/15 backdrop-blur-sm">
-                        <ExternalLink className="h-6 w-6 text-white" />
-                      </div>
-                      <div>
-                        <h2 className="text-xl font-black text-white">Apply Online</h2>
-                        <p className="mt-1 text-sm text-white/80">Visit the official portal to submit your application.</p>
-                      </div>
-                    </div>
-                    <a
-                      href={officialUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex shrink-0 items-center gap-2 rounded-xl bg-white px-6 py-3.5 text-sm font-black text-brand shadow-lg transition hover:bg-white/90 hover:shadow-xl"
-                    >
-                      Visit Official Website
-                      <ExternalLink className="h-4 w-4" />
-                    </a>
+              {/* Source Provenance & Editorial Standards Box */}
+              <div className="rounded-2xl border border-slate-200 bg-white p-5 text-xs text-slate-600 shadow-sm">
+                <div className="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-slate-100">
+                  <div className="flex items-center gap-2 font-bold text-slate-800">
+                    <ShieldCheck className="h-4.5 w-4.5 text-emerald-600" />
+                    <span>Source Provenance &amp; Verification</span>
                   </div>
+                  <span className="text-slate-500">
+                    Authority: <strong className="text-slate-800">{jobLocation.hiringOrgName || hiringOrg || post.organization || "Official Conducting Authority"}</strong>
+                  </span>
                 </div>
-              )}
+                <p className="mt-2.5 leading-relaxed">
+                  All dates, exam notifications, and results are verified from official government gazettes and board portals (.gov.in / .nic.in). Third-party hosted documents are labeled as mirrors. For inquiries or updates, view our <Link href="/about-us" className="text-brand underline font-medium">Editorial Policy</Link> or contact corrections@aiexamresult.com.
+                </p>
+                <div className="mt-3 flex flex-wrap gap-4 text-slate-500">
+                  <span>Editorial Desk: <strong className="text-slate-700">AI Exam Result Editorial Team</strong></span>
+                  <span>Published: <strong className="text-slate-700">{publishedDate || "Verified"}</strong></span>
+                  {post.updatedAt && <span>Last Updated: <strong className="text-slate-700">{new Date(post.updatedAt).toLocaleDateString("en-IN", { day: "2-digit", month: "short", year: "numeric" })}</strong></span>}
+                </div>
+              </div>
+
+              {/* Official Website CTA */}
+              {officialUrl && (() => {
+                const ctaDetail = getCategoryCta(post.category, post.title, post.isExpired);
+                let ctaHeading = "Official Website Portal";
+                let ctaSub = "Access notices and updates directly on the official board website.";
+                let ctaBtn = "Visit Official Website";
+
+                if (ctaDetail.canonicalSlug === "results") {
+                  ctaHeading = "Check Result Online";
+                  ctaSub = "Visit the official commission portal to download your result and scorecard.";
+                  ctaBtn = "Check Result on Official Portal";
+                } else if (ctaDetail.canonicalSlug === "admit-card") {
+                  ctaHeading = "Download Admit Card";
+                  ctaSub = "Visit the official portal to download your admit card and hall ticket.";
+                  ctaBtn = "Download Hall Ticket";
+                } else if (ctaDetail.canonicalSlug === "answer-key") {
+                  ctaHeading = "View Official Answer Key";
+                  ctaSub = "Visit the official portal to check question papers and submit objections.";
+                  ctaBtn = "View Answer Key";
+                } else if (ctaDetail.canonicalSlug === "syllabus") {
+                  ctaHeading = "Download Official Syllabus";
+                  ctaSub = "Visit the official portal to download syllabus PDF and exam pattern.";
+                  ctaBtn = "Download Syllabus PDF";
+                } else if (ctaDetail.canonicalSlug === "scholarships") {
+                  ctaHeading = "Official Scholarship Portal";
+                  ctaSub = "Visit the official portal to check eligibility and submit application.";
+                  ctaBtn = "Apply for Scholarship";
+                } else if (ctaDetail.canonicalSlug === "latest-jobs") {
+                  if (post.isExpired) {
+                    ctaHeading = "Official Recruitment Portal";
+                    ctaSub = "View past notification archives on the official website.";
+                    ctaBtn = "View Official Portal";
+                  } else {
+                    ctaHeading = "Apply Online";
+                    ctaSub = "Visit the official government portal to submit your online application.";
+                    ctaBtn = "Apply on Official Portal";
+                  }
+                }
+
+                return (
+                  <div className="overflow-hidden rounded-2xl bg-gradient-to-br from-brand to-emerald-700 p-6 shadow-lg sm:p-8">
+                    <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                      <div className="flex items-start gap-4">
+                        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-white/15 backdrop-blur-sm">
+                          <ExternalLink className="h-6 w-6 text-white" />
+                        </div>
+                        <div>
+                          <h2 className="text-xl font-black text-white">{ctaHeading}</h2>
+                          <p className="mt-1 text-sm text-white/80">{ctaSub}</p>
+                        </div>
+                      </div>
+                      <a
+                        href={officialUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex shrink-0 items-center gap-2 rounded-xl bg-white px-6 py-3.5 text-sm font-black text-brand shadow-lg transition hover:bg-white/90 hover:shadow-xl"
+                      >
+                        {ctaBtn}
+                        <ExternalLink className="h-4 w-4" />
+                      </a>
+                    </div>
+                  </div>
+                );
+              })()}
 
               {/* Full Article Content */}
               {post.fullContentHtml && (() => {

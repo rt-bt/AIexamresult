@@ -245,9 +245,9 @@ export function Hero() {
           </div>
 
           {/* Minimal, Uncluttered Title */}
-          <h1 className="font-heading text-[25px] font-extrabold text-white leading-tight tracking-tight mb-4">
+          <h2 className="font-heading text-[25px] font-extrabold text-white leading-tight tracking-tight mb-4">
             Exam Results &amp; Job Alerts
-          </h1>
+          </h2>
 
           {/* Clean Mobile Search Form */}
           <form
@@ -263,6 +263,7 @@ export function Hero() {
               <input
                 name="m-exam"
                 type="text"
+                aria-label="Search exam name or job title"
                 placeholder="Search exam (SSC, Railway, Police)..."
                 className="w-full rounded-xl border border-white/10 bg-white/10 pl-10 pr-24 py-2.5 text-[14px] font-medium text-white placeholder-white/50 outline-none focus:border-[#FFD84D]/60 focus:bg-white/15 font-sans"
               />

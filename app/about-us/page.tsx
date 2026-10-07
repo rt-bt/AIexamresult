@@ -97,6 +97,53 @@ export default function AboutUsPage() {
             </div>
           </div>
 
+          {/* Editorial Policy & Fact-Checking Standards */}
+          <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6">
+            <div className="flex items-center gap-3">
+              <div className="p-3 rounded-2xl bg-teal-50 text-teal-600">
+                <ShieldCheck className="w-6 h-6" />
+              </div>
+              <div>
+                <h2 className="text-xl font-bold text-slate-900">Editorial Policy & Verification Standards</h2>
+                <p className="text-xs text-slate-500">How we source, fact-check, and maintain data integrity</p>
+              </div>
+            </div>
+            
+            <div className="space-y-4 text-sm text-slate-600 leading-relaxed">
+              <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 space-y-2">
+                <h3 className="text-sm font-bold text-slate-900">1. Primary Source Mandate</h3>
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  Our editorial desk relies strictly on primary official sources. Information regarding exam dates, scorecard links, vacancy counts, answer keys, and syllabus schemes is extracted directly from gazette notices, recruitment advertisements, and official press communiques published on verified government domains (such as <code className="text-teal-700 bg-teal-50 px-1.5 py-0.5 rounded">.gov.in</code>, <code className="text-teal-700 bg-teal-50 px-1.5 py-0.5 rounded">.nic.in</code>, and recognized state university portals). We do not publish speculative reports or social media rumors.
+                </p>
+              </div>
+
+              <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 space-y-2">
+                <h3 className="text-sm font-bold text-slate-900">2. Official Link & Mirror Transparency</h3>
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  Transparency in link destinations is paramount. Every article published on AIExamResult explicitly distinguishes between:
+                </p>
+                <ul className="text-xs text-slate-600 list-disc list-inside space-y-1 pl-2">
+                  <li><strong className="text-slate-800">Official Source Links:</strong> Direct links pointing to genuine commission/board portals, indicated by our green Official Source badge.</li>
+                  <li><strong className="text-slate-800">Alternate / Mirror Links:</strong> Backup server mirrors or PDF document viewers hosted externally to assist candidates during heavy server downtime. These are clearly marked as &ldquo;Direct Link / Mirror&rdquo; and never misrepresented as government servers.</li>
+                </ul>
+              </div>
+
+              <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 space-y-2">
+                <h3 className="text-sm font-bold text-slate-900">3. Continuous Review & Timely Updates</h3>
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  Government exam timelines change frequently due to administrative revisions, court rulings, or answer key objections. When an exam board issues an addendum, corrigendum, revised answer key, or date extension, our team updates the respective page with the revised details and displays the latest timestamp.
+                </p>
+              </div>
+
+              <div className="p-4 rounded-2xl bg-amber-50/70 border border-amber-200/60 space-y-2">
+                <h3 className="text-sm font-bold text-amber-900">4. Corrections Policy</h3>
+                <p className="text-xs text-amber-800 leading-relaxed">
+                  Despite rigorous verification, mistakes or discrepancies in recruitment notices can occur. We welcome reader feedback and take corrections seriously. If you spot an inaccurate date, a broken official link, or an outdated syllabus topic, please email our dedicated editorial desk at <a href="mailto:corrections@aiexamresult.com" className="font-semibold text-amber-950 underline hover:text-amber-700">corrections@aiexamresult.com</a> with the URL and reference document. Our team reviews all reports within 24 business hours.
+                </p>
+              </div>
+            </div>
+          </div>
+
           {/* Official Contact Info Card */}
           <div className="bg-gradient-to-tr from-slate-900 to-slate-800 rounded-3xl p-6 sm:p-8 text-white space-y-6 shadow-xl">
             <div>
@@ -105,11 +152,16 @@ export default function AboutUsPage() {
               <p className="text-xs text-slate-400 mt-1">Have a query, correction, or press inquiry? Reach out to our team directly.</p>
             </div>
 
-            <div className="grid sm:grid-cols-3 gap-4 text-xs font-mono">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs font-mono">
               <div className="p-4 rounded-2xl bg-slate-800/80 border border-slate-700 flex flex-col items-start gap-2">
                 <Mail className="w-5 h-5 text-teal-400" />
                 <span className="text-slate-400 font-sans font-bold">General Enquiries:</span>
                 <a href="mailto:contact@aiexamresult.com" className="text-teal-300 font-bold hover:underline">contact@aiexamresult.com</a>
+              </div>
+              <div className="p-4 rounded-2xl bg-slate-800/80 border border-slate-700 flex flex-col items-start gap-2">
+                <Mail className="w-5 h-5 text-teal-400" />
+                <span className="text-slate-400 font-sans font-bold">Corrections Desk:</span>
+                <a href="mailto:corrections@aiexamresult.com" className="text-teal-300 font-bold hover:underline">corrections@aiexamresult.com</a>
               </div>
               <div className="p-4 rounded-2xl bg-slate-800/80 border border-slate-700 flex flex-col items-start gap-2">
                 <Mail className="w-5 h-5 text-teal-400" />

@@ -88,6 +88,8 @@ export function parseDate(str?: string | null): Date | null {
   return isNaN(d.getTime()) ? null : d;
 }
 
+const SHORT_MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
 export function formatDisplayDate(raw?: string | null): string {
   if (!raw) return "";
   const d = parseDate(raw);
@@ -96,7 +98,10 @@ export function formatDisplayDate(raw?: string | null): string {
     if (d.getTime() > Date.now()) {
       return "";
     }
-    return d.toLocaleDateString("en-IN", { day: "2-digit", month: "short", year: "numeric" });
+    const day = String(d.getDate()).padStart(2, "0");
+    const mon = SHORT_MONTHS[d.getMonth()];
+    const yr = d.getFullYear();
+    return `${day} ${mon} ${yr}`;
   }
   // If parsing failed but string has a 4-digit year, check that it's not a future year
   if (/\d{4}/.test(raw)) {
@@ -165,6 +170,8 @@ function formatCategory(cat: string): string {
     answerkeys: "Answer Key",
     documents: "Documents",
     admissions: "Admission",
+    syllabus: "Syllabus",
+    scholarships: "Scholarship",
   };
   return map[cat.replace(/\s+/g, "").toLowerCase()] ?? cat;
 }
@@ -307,6 +314,38 @@ const safeAdmitCards = s3?.admitCards?.filter((item) => {
 
 const admitCards = toPostCard(safeAdmitCards, "Admit Card", []);
 
+// Extract authentic syllabus and scholarship articles
+const allScrapedItems = s3
+  ? [
+      ...(s3.results || []),
+      ...(s3.latestJobs || []),
+      ...(s3.admitCards || []),
+      ...(s3.answerKeys || []),
+      ...(s3.admissions || []),
+      ...(s3.documents || []),
+    ]
+  : [];
+
+const scrapedSyllabus = allScrapedItems.filter(
+  (item) => /syllabus|exam pattern|pattern pdf/i.test(item.title) || /syllabus|exam-pattern/i.test(item.slug)
+);
+
+const scrapedScholarships = allScrapedItems.filter(
+  (item) => /scholarship|yojana/i.test(item.title) || /scholarship/i.test(item.slug)
+);
+
+export const syllabusItems = toPostCard(
+  scrapedSyllabus.length > 0 ? scrapedSyllabus : undefined,
+  "Syllabus",
+  []
+);
+
+export const scholarshipItems = toPostCard(
+  scrapedScholarships.length > 0 ? scrapedScholarships : undefined,
+  "Scholarship",
+  []
+);
+
 export const categorySections: { label: string; items: PostCard[] }[] = [
   { label: "Latest Vacancy", items: latestJobs },
   { label: "Admit Card", items: admitCards },
@@ -323,4 +362,6 @@ export const sectionItems: Record<string, PostCard[]> = {
   "answer-key": centralExams,
   admissions: admissions,
   documents,
+  syllabus: syllabusItems,
+  scholarships: scholarshipItems,
 };

@@ -15,6 +15,7 @@ export default [
       "test.html",
       "*.pem",
       "dist/**",
+      "scratch/**",
       "scripts/*.mjs",
       "scripts/*.js",
       "types/**",

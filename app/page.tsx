@@ -9,6 +9,7 @@ import { NotificationSubscribe } from "@/components/site/nnotification-subscribe
 import { PushNotificationPrompt } from "@/components/push-notification-prompt";
 import { StateGrid } from "@/components/site/state-grid";
 import { categorySections, featuredResults } from "@/lib/data";
+import { getCategoryCta } from "@/lib/categories";
 import Link from "next/link";
 import { ArrowUpRight, TrendingUp } from "lucide-react";
 import { TiltCard } from "@/components/unlumen-ui/tilt-card";
@@ -75,51 +76,20 @@ export default function HomePage() {
 
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {trending.map((post, i) => {
-                const cardConfigs = [
-                  {
-                    image: "/cards/card-result.svg",
-                    badge: "HOT",
-                    variant: "warning" as const,
-                    action: "Check Scorecard",
-                    accent: "#FF5B3E",
-                  },
-                  {
-                    image: "/cards/card-job.svg",
-                    badge: "LIVE",
-                    variant: "success" as const,
-                    action: "Apply Online",
-                    accent: "#5B0111",
-                  },
-                  {
-                    image: "/cards/card-admit.svg",
-                    badge: "NEW",
-                    variant: "success" as const,
-                    action: "Download Hall Ticket",
-                    accent: "#FFD84D",
-                  },
-                  {
-                    image: "/cards/card-key.svg",
-                    badge: "TRENDING",
-                    variant: "warning" as const,
-                    action: "View Answer Key",
-                    accent: "#111111",
-                  },
-                ];
-
-                const cfg = cardConfigs[i % cardConfigs.length];
+                const cta = getCategoryCta(post.category, post.title, post.isExpired);
 
                 return (
                   <TiltCard
                     key={post.slug || i}
                     title={post.title}
-                    description={`${post.category} · ${post.date || "Active Update"}`}
-                    category={post.category || "Govt Exam"}
+                    description={`${cta.categoryLabel} · ${post.date || "Active Update"}`}
+                    category={cta.categoryLabel}
                     price={`#${i + 1}`}
-                    badgeLabel={cfg.badge}
-                    badgeVariant={cfg.variant}
-                    actionText={cfg.action}
-                    accentColor={cfg.accent}
-                    imageSrc={cfg.image}
+                    badgeLabel={cta.badgeLabel}
+                    badgeVariant={cta.badgeVariant}
+                    actionText={cta.actionText}
+                    accentColor={cta.accentColor}
+                    imageSrc={cta.cardImage}
                     imageAlt={post.title}
                     href={post.slug ? `/post/${post.slug}` : "#"}
                   />

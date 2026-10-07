@@ -2,10 +2,35 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { Logo } from "@/components/site/logo";
 
-const footerGroups: Array<[string, string[]]> = [
-  ["Quick Links", ["Results", "Latest Vacancy", "Admit Card", "Answer Key"]],
-  ["Resources", ["Admissions", "Syllabus", "Scholarships", "Board Results"]],
-  ["Support", ["About Us", "Contact Us", "Privacy Policy", "Cookies Policy", "Disclaimer"]]
+const footerGroups = [
+  {
+    title: "Quick Links",
+    links: [
+      { label: "Results", href: "/results" },
+      { label: "Latest Vacancy", href: "/latest-jobs" },
+      { label: "Admit Card", href: "/admit-card" },
+      { label: "Answer Key", href: "/answer-key" },
+    ],
+  },
+  {
+    title: "Resources",
+    links: [
+      { label: "Admissions", href: "/admissions" },
+      { label: "Syllabus", href: "/syllabus" },
+      { label: "Scholarships", href: "/scholarships" },
+      { label: "Board Results", href: "/board-results" },
+    ],
+  },
+  {
+    title: "Support",
+    links: [
+      { label: "About Us", href: "/about-us" },
+      { label: "Contact Us", href: "/contact-us" },
+      { label: "Privacy Policy", href: "/privacy-policy" },
+      { label: "Cookies Policy", href: "/cookies-policy" },
+      { label: "Disclaimer", href: "/disclaimer" },
+    ],
+  },
 ];
 
 export function Footer() {
@@ -26,14 +51,14 @@ export function Footer() {
               A fast, structured multilingual exam information portal for Indian government jobs, results, admit cards and public notices.
             </p>
           </div>
-          {footerGroups.map(([title, links]) => (
-            <div key={title}>
-              <h3 className="font-bold text-white text-sm uppercase tracking-wider font-heading">{title}</h3>
+          {footerGroups.map((group) => (
+            <div key={group.title}>
+              <h3 className="font-bold text-white text-sm uppercase tracking-wider font-heading">{group.title}</h3>
               <div className="mt-4 grid gap-3">
-                {links.map((link) => (
-                  <Link key={link} href={`/${link.toLowerCase().replace(/\s+/g, "-").replace(/[^a-z0-9-]/g, "")}`} className="group flex items-center gap-2 text-sm text-white/75 transition hover:text-[#FFD84D]">
+                {group.links.map((item) => (
+                  <Link key={item.label} href={item.href} className="group flex items-center gap-2 text-sm text-white/75 transition hover:text-[#FFD84D]">
                     <ArrowUpRight className="h-3.5 w-3.5 transition group-hover:translate-x-0.5 group-hover:text-[#FFD84D]" />
-                    {link}
+                    {item.label}
                   </Link>
                 ))}
               </div>

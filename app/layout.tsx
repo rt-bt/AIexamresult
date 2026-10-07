@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     template: "%s | All India Exam Result"
   },
   description:
-    "Sarkari Result 2026: Fastest alerts for Sarkari Exam, Sarkari Naukri, Admit Card, Answer Key & Results. Apply online for latest central & state government jobs.",
+    "Sarkari Result 2026: Fastest alerts for Sarkari Naukri, exam results, admit cards & answer keys. Apply online for latest central and state government jobs.",
   applicationName: "All India Exam Result",
   manifest: "/manifest.webmanifest",
   alternates: {
@@ -222,37 +222,7 @@ const jsonLd = {
         { "@type": "ListItem", position: 14, name: "JEE Main 2026", url: `${SITE_URL}/exam/jee-main` },
         { "@type": "ListItem", position: 15, name: "BPSC 2026", url: `${SITE_URL}/exam/bpsc` }
       ]
-    },
-    {
-      "@type": "FAQPage",
-      "@id": `${SITE_URL}/#faq`,
-      mainEntity: [
-        {
-          "@type": "Question", name: "What is Sarkari Result and how does All India Exam Result help?",
-          acceptedAnswer: { "@type": "Answer", text: "Sarkari Result refers to Indian government exam results. All India Exam Result is India's fastest government exam portal providing verified sarkari result updates, job notifications (sarkari naukri), admit cards, answer keys and admissions across SSC, UPSC, Railway, Banking, State exams and board results." }
-        },
-        {
-          "@type": "Question", name: "How to get latest Sarkari job alert and rojgar result updates?",
-          acceptedAnswer: { "@type": "Answer", text: "Our data is synced every 30 minutes directly from official government sources. You get real-time sarkari job alerts, rojgar result updates, exam notifications, admit cards and answer keys on our website and through our notification subscription service." }
-        },
-        {
-          "@type": "Question", name: "Which government exams are covered for Sarkari naukri?",
-          acceptedAnswer: { "@type": "Answer", text: "We cover all major Indian government exams for sarkari naukri including SSC (CGL, CHSL, MTS, GD, JE, CPO), UPSC (IAS, NDA, CDS, EPFO), Railway (RRB NTPC, ALP, Group D, JE), Banking (IBPS, SBI, RBI), Teaching (CTET, UPTET, REET), Defence (Army, Navy, Air Force), State govt jobs (BPSC, UPPSC, MPPSC) and board exam results." }
-        },
-        {
-          "@type": "Question", name: "Is this an official Sarkari result website?",
-          acceptedAnswer: { "@type": "Answer", text: "No, this is an independent information portal. All sarkari result data is sourced from publicly available government notifications. We always link to official websites for final verification and recommend users to check respective government portals for authoritative information." }
-        },
-        {
-          "@type": "Question", name: "How to search Sarkari exam results and admit cards?",
-          acceptedAnswer: { "@type": "Answer", text: "Use our search bar to find any sarkari exam result, job notification, admit card, or answer key instantly. You can also browse by category (results, latest jobs, admit cards, answer keys) using the navigation menu or visit exam-specific pages." }
-        },
-        {
-          "@type": "Question", name: "How to download Sarkari admit cards and answer keys?",
-          acceptedAnswer: { "@type": "Answer", text: "Yes, each post includes direct official links to download sarkari admit cards, answer keys and exam results. We link to respective government commission websites such as ssc.nic.in, upsc.gov.in, indianrailways.gov.in and other official portals for verification." }
-        }
-      ]
-    },
+    }
   ]
 };
 
@@ -265,7 +235,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <meta name="color-scheme" content="light" />
         <meta name="google-adsense-account" content="ca-pub-2439432844260170" />
-        <script>{`document.documentElement.classList.remove("dark");localStorage.removeItem("aier_theme");`}</script>
+        <script dangerouslySetInnerHTML={{ __html: 'document.documentElement.classList.remove("dark");localStorage.removeItem("aier_theme");' }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <script dangerouslySetInnerHTML={{ __html: `"serviceWorker"in navigator&&window.addEventListener("load",function(){navigator.serviceWorker.register("/sw.js")})` }} />
         <script dangerouslySetInnerHTML={{ __html: `addEventListener("load",function(){fetch("/api/analytics/track?path="+encodeURIComponent(location.pathname)+"&ref="+encodeURIComponent(document.referrer),{signal:AbortSignal.timeout(2000)}).catch(function(){})})` }} />

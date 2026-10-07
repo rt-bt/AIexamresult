@@ -4037,9 +4037,9 @@ export const scrapedData = {
     },
     {
       "title": "Chhattisgarh State Eligibility Test SET Admit Card 2026",
-      "url": "/post/rajasthan-state-eligibility-test-set-026",
+      "url": "/post/chhattisgarh-state-eligibility-test-set-026",
       "category": "admitCards",
-      "slug": "rajasthan-state-eligibility-test-set-026",
+      "slug": "chhattisgarh-state-eligibility-test-set-026",
       "publishedDate": "2026-09-28T13:59:44+05:30",
       "publishedAt": "2026-09-28T08:29:44.000Z"
     },
@@ -13636,7 +13636,7 @@ export const scrapedData = {
       "publishedAt": "2026-09-06T18:30:00.000Z",
       "lastDate": "14/06/2026\nLast Date for Apply : 10/08/2026 (Date Extended)\nFee Payment Last Date : 10/08/2026\nForm Correction Date : 11/08/2026\nExam Date : 13/09/2026\nAdmit Card Available : 07/09/2026 : Application Fees\n\nGeneral / Other State : 1500/-\nEWS / SBC / OBC : 1200/-\nSC / ST / PH : 750/-\nPay the Exam Fee Through Debit Card / Credit Card / Net Banking Fee Mode Only."
     },
-    "rajasthan-state-eligibility-test-set-026": {
+    "chhattisgarh-state-eligibility-test-set-026": {
       "publishedDate": "2026-09-28T13:59:44+05:30",
       "publishedAt": "2026-09-28T08:29:44.000Z",
       "lastDate": "17 August 2026"

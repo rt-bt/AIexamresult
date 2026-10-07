@@ -2,22 +2,13 @@ import type { MetadataRoute } from "next";
 import * as fs from "fs";
 import * as path from "path";
 
-const catToSitemapId: Record<string, string> = {
-  results: "results",
-  latestJobs: "latest-jobs",
-  admitCards: "admit-cards",
-  answerKeys: "answer-keys",
-  admissions: "admissions",
-  documents: "documents",
-};
-
 const sitemapCatKeys: Record<string, string> = {
-  "results": "results",
+  results: "results",
   "latest-jobs": "latestJobs",
   "admit-cards": "admitCards",
   "answer-keys": "answerKeys",
-  "admissions": "admissions",
-  "documents": "documents",
+  admissions: "admissions",
+  documents: "documents",
 };
 
 export async function generateSitemaps() {
@@ -28,6 +19,8 @@ export async function generateSitemaps() {
     { id: "answer-keys" },
     { id: "admissions" },
     { id: "documents" },
+    { id: "syllabus" },
+    { id: "scholarships" },
     { id: "exams" },
     { id: "states" },
     { id: "pages" },
@@ -71,24 +64,75 @@ function loadListing() {
 
 export default async function sitemap({ id }: { id: string }): Promise<MetadataRoute.Sitemap> {
   const base = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.aiexamresult.com";
-  const now = new Date();
+  const data = loadListing();
+  const stableDefaultDate = data?.fetchedAt ? new Date(data.fetchedAt) : new Date("2026-10-07T07:44:00.000Z");
   const entries: MetadataRoute.Sitemap = [];
 
-  // ── Category post sitemaps (from listing data, not individual files) ──
+  // ── Category post sitemaps (from listing data) ──
   const catKey = sitemapCatKeys[id];
-  if (catKey) {
-    const data = loadListing();
-    if (data && data[catKey]) {
-      const items = data[catKey];
-      for (let idx = 0; idx < items.length; idx++) {
-        const item = items[idx];
+  if (catKey && data && data[catKey]) {
+    const items = data[catKey];
+    for (let idx = 0; idx < items.length; idx++) {
+      const item = items[idx];
+      const d = item.publishedDate ? parseDate(item.publishedDate) : null;
+      entries.push({
+        url: `${base}/post/${item.slug}`,
+        lastModified: d || stableDefaultDate,
+        changeFrequency: idx < 30 ? ("hourly" as const) : ("daily" as const),
+        priority: idx < 30 ? 0.9 : 0.8,
+      });
+    }
+    return entries;
+  }
+
+  // ── Syllabus posts sitemap ──
+  if (id === "syllabus" && data) {
+    const all = [
+      ...(data.results || []),
+      ...(data.latestJobs || []),
+      ...(data.admitCards || []),
+      ...(data.answerKeys || []),
+      ...(data.admissions || []),
+      ...(data.documents || []),
+    ];
+    const syll = all.filter((p: any) => /syllabus|exam pattern|pattern pdf/i.test(p.title) || /syllabus/i.test(p.slug));
+    const seen = new Set<string>();
+    for (const item of syll) {
+      if (!seen.has(item.slug)) {
+        seen.add(item.slug);
         const d = item.publishedDate ? parseDate(item.publishedDate) : null;
-        const isFresh = idx < 30 || (d && (now.getTime() - d.getTime() < 7 * 86400 * 1000));
         entries.push({
           url: `${base}/post/${item.slug}`,
-          lastModified: d || now,
-          changeFrequency: isFresh ? ("hourly" as const) : ("daily" as const),
-          priority: isFresh ? 0.9 : 0.8,
+          lastModified: d || stableDefaultDate,
+          changeFrequency: "weekly" as const,
+          priority: 0.8,
+        });
+      }
+    }
+    return entries;
+  }
+
+  // ── Scholarships posts sitemap ──
+  if (id === "scholarships" && data) {
+    const all = [
+      ...(data.results || []),
+      ...(data.latestJobs || []),
+      ...(data.admitCards || []),
+      ...(data.answerKeys || []),
+      ...(data.admissions || []),
+      ...(data.documents || []),
+    ];
+    const schol = all.filter((p: any) => /scholarship|yojana/i.test(p.title) || /scholarship/i.test(p.slug));
+    const seen = new Set<string>();
+    for (const item of schol) {
+      if (!seen.has(item.slug)) {
+        seen.add(item.slug);
+        const d = item.publishedDate ? parseDate(item.publishedDate) : null;
+        entries.push({
+          url: `${base}/post/${item.slug}`,
+          lastModified: d || stableDefaultDate,
+          changeFrequency: "weekly" as const,
+          priority: 0.8,
         });
       }
     }
@@ -98,7 +142,12 @@ export default async function sitemap({ id }: { id: string }): Promise<MetadataR
   // ── Exam pages sitemap ──
   if (id === "exams") {
     for (const slug of examSlugs) {
-      entries.push({ url: `${base}/exam/${slug}`, lastModified: now, changeFrequency: "daily", priority: 0.8 });
+      entries.push({
+        url: `${base}/exam/${slug}`,
+        lastModified: stableDefaultDate,
+        changeFrequency: "daily",
+        priority: 0.8,
+      });
     }
     return entries;
   }
@@ -106,71 +155,80 @@ export default async function sitemap({ id }: { id: string }): Promise<MetadataR
   // ── State pages sitemap ──
   if (id === "states") {
     for (const state of states) {
-      entries.push({ url: `${base}/state/${state}`, lastModified: now, changeFrequency: "daily", priority: 0.7 });
+      entries.push({
+        url: `${base}/state/${state}`,
+        lastModified: stableDefaultDate,
+        changeFrequency: "daily",
+        priority: 0.7,
+      });
     }
     return entries;
   }
 
-  // ── Static pages sitemap ──
-  const staticRoutes: { path: string; freq: "hourly" | "daily" | "weekly" | "monthly"; prio: number }[] = [
-    { path: "", freq: "hourly", prio: 1.0 },
-    { path: "/results", freq: "hourly", prio: 0.9 },
-    { path: "/latest-jobs", freq: "hourly", prio: 0.9 },
-    { path: "/admit-card", freq: "hourly", prio: 0.8 },
-    { path: "/answer-key", freq: "hourly", prio: 0.8 },
-    { path: "/admissions", freq: "daily", prio: 0.7 },
-    { path: "/syllabus", freq: "daily", prio: 0.6 },
-    { path: "/jobs/10th-pass", freq: "daily", prio: 0.9 },
-    { path: "/jobs/12th-pass", freq: "daily", prio: 0.9 },
-    { path: "/jobs/graduate", freq: "daily", prio: 0.9 },
-    { path: "/jobs/iti-diploma", freq: "daily", prio: 0.8 },
-    { path: "/jobs/police-jobs", freq: "daily", prio: 0.8 },
-    { path: "/jobs/railway-jobs", freq: "daily", prio: 0.9 },
-    { path: "/jobs/defence-jobs", freq: "daily", prio: 0.8 },
-    { path: "/jobs/teaching-jobs", freq: "daily", prio: 0.8 },
-    { path: "/jobs/banking-jobs", freq: "daily", prio: 0.8 },
-    { path: "/exam", freq: "daily", prio: 0.9 },
-    { path: "/state", freq: "daily", prio: 0.7 },
-    { path: "/state-map", freq: "weekly", prio: 0.6 },
-    { path: "/search", freq: "daily", prio: 0.5 },
-    { path: "/bookmarks", freq: "weekly", prio: 0.3 },
-    { path: "/study-hub", freq: "daily", prio: 0.6 },
-    { path: "/current-affairs", freq: "daily", prio: 0.7 },
-    { path: "/exam-calendar", freq: "daily", prio: 0.7 },
-    { path: "/exam-comparison", freq: "weekly", prio: 0.5 },
-    { path: "/job-finder", freq: "daily", prio: 0.7 },
-    { path: "/eligibility-checker", freq: "weekly", prio: 0.5 },
-    { path: "/salary-calculator", freq: "weekly", prio: 0.5 },
-    { path: "/vacancy-analyzer", freq: "daily", prio: 0.6 },
-    { path: "/fee-calculator", freq: "weekly", prio: 0.5 },
-    { path: "/form-guide", freq: "weekly", prio: 0.5 },
-    { path: "/syllabus-tracker", freq: "weekly", prio: 0.5 },
-    { path: "/mock-tests", freq: "weekly", prio: 0.5 },
-    { path: "/question-papers", freq: "daily", prio: 0.7 },
-    { path: "/objection-tracker", freq: "daily", prio: 0.6 },
-    { path: "/counselling-guide", freq: "daily", prio: 0.6 },
-    { path: "/document-checklist", freq: "weekly", prio: 0.5 },
-    { path: "/difficulty-meter", freq: "weekly", prio: 0.5 },
-    { path: "/result-predictor", freq: "weekly", prio: 0.5 },
-    { path: "/iq-test", freq: "weekly", prio: 0.5 },
-    { path: "/tools", freq: "daily", prio: 0.6 },
-    { path: "/tools/age-calculator", freq: "weekly", prio: 0.4 },
-    { path: "/tools/image-compressor", freq: "weekly", prio: 0.4 },
-    { path: "/tools/pdf-compressor", freq: "weekly", prio: 0.4 },
-    { path: "/about", freq: "monthly", prio: 0.4 },
-    { path: "/about-us", freq: "monthly", prio: 0.4 },
-    { path: "/contact", freq: "monthly", prio: 0.4 },
-    { path: "/contact-us", freq: "monthly", prio: 0.4 },
-    { path: "/privacy-policy", freq: "monthly", prio: 0.4 },
-    { path: "/privacy", freq: "monthly", prio: 0.4 },
-    { path: "/cookies-policy", freq: "monthly", prio: 0.4 },
-    { path: "/cookies", freq: "monthly", prio: 0.4 },
-    { path: "/terms", freq: "monthly", prio: 0.4 },
-    { path: "/terms-of-service", freq: "monthly", prio: 0.4 },
-    { path: "/disclaimer", freq: "monthly", prio: 0.4 },
-  ];
-  for (const r of staticRoutes) {
-    entries.push({ url: `${base}${r.path}`, lastModified: now, changeFrequency: r.freq, priority: r.prio });
+  // ── Static pages sitemap (only unique canonical URLs) ──
+  if (id === "pages") {
+    const staticRoutes: { path: string; freq: "hourly" | "daily" | "weekly" | "monthly"; prio: number }[] = [
+      { path: "", freq: "hourly", prio: 1.0 },
+      { path: "/results", freq: "hourly", prio: 0.9 },
+      { path: "/latest-jobs", freq: "hourly", prio: 0.9 },
+      { path: "/admit-card", freq: "hourly", prio: 0.8 },
+      { path: "/answer-key", freq: "hourly", prio: 0.8 },
+      { path: "/admissions", freq: "daily", prio: 0.7 },
+      { path: "/syllabus", freq: "daily", prio: 0.8 },
+      { path: "/scholarships", freq: "daily", prio: 0.8 },
+      { path: "/board-results", freq: "daily", prio: 0.8 },
+      { path: "/jobs/10th-pass", freq: "daily", prio: 0.9 },
+      { path: "/jobs/12th-pass", freq: "daily", prio: 0.9 },
+      { path: "/jobs/graduate", freq: "daily", prio: 0.9 },
+      { path: "/jobs/iti-diploma", freq: "daily", prio: 0.8 },
+      { path: "/jobs/police-jobs", freq: "daily", prio: 0.8 },
+      { path: "/jobs/railway-jobs", freq: "daily", prio: 0.9 },
+      { path: "/jobs/defence-jobs", freq: "daily", prio: 0.8 },
+      { path: "/jobs/teaching-jobs", freq: "daily", prio: 0.8 },
+      { path: "/jobs/banking-jobs", freq: "daily", prio: 0.8 },
+      { path: "/exam", freq: "daily", prio: 0.9 },
+      { path: "/state", freq: "daily", prio: 0.7 },
+      { path: "/state-map", freq: "weekly", prio: 0.6 },
+      { path: "/study-hub", freq: "daily", prio: 0.6 },
+      { path: "/current-affairs", freq: "daily", prio: 0.7 },
+      { path: "/exam-calendar", freq: "daily", prio: 0.7 },
+      { path: "/exam-comparison", freq: "weekly", prio: 0.5 },
+      { path: "/job-finder", freq: "daily", prio: 0.7 },
+      { path: "/eligibility-checker", freq: "weekly", prio: 0.5 },
+      { path: "/salary-calculator", freq: "weekly", prio: 0.5 },
+      { path: "/vacancy-analyzer", freq: "daily", prio: 0.6 },
+      { path: "/fee-calculator", freq: "weekly", prio: 0.5 },
+      { path: "/form-guide", freq: "weekly", prio: 0.5 },
+      { path: "/syllabus-tracker", freq: "weekly", prio: 0.5 },
+      { path: "/mock-tests", freq: "weekly", prio: 0.5 },
+      { path: "/question-papers", freq: "daily", prio: 0.7 },
+      { path: "/objection-tracker", freq: "daily", prio: 0.6 },
+      { path: "/counselling-guide", freq: "daily", prio: 0.6 },
+      { path: "/document-checklist", freq: "weekly", prio: 0.5 },
+      { path: "/difficulty-meter", freq: "weekly", prio: 0.5 },
+      { path: "/result-predictor", freq: "weekly", prio: 0.5 },
+      { path: "/iq-test", freq: "weekly", prio: 0.5 },
+      { path: "/tools", freq: "daily", prio: 0.6 },
+      { path: "/tools/age-calculator", freq: "weekly", prio: 0.4 },
+      { path: "/tools/image-compressor", freq: "weekly", prio: 0.4 },
+      { path: "/tools/pdf-compressor", freq: "weekly", prio: 0.4 },
+      { path: "/about-us", freq: "monthly", prio: 0.4 },
+      { path: "/contact-us", freq: "monthly", prio: 0.4 },
+      { path: "/privacy-policy", freq: "monthly", prio: 0.4 },
+      { path: "/cookies-policy", freq: "monthly", prio: 0.4 },
+      { path: "/terms", freq: "monthly", prio: 0.4 },
+      { path: "/disclaimer", freq: "monthly", prio: 0.4 },
+    ];
+    for (const r of staticRoutes) {
+      entries.push({
+        url: `${base}${r.path}`,
+        lastModified: stableDefaultDate,
+        changeFrequency: r.freq,
+        priority: r.prio,
+      });
+    }
+    return entries;
   }
+
   return entries;
 }

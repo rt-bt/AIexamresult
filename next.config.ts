@@ -76,6 +76,50 @@ const nextConfig: NextConfig = {
         ]
       }
     ];
+  },
+  async redirects() {
+    return [
+      {
+        source: "/post/rajasthan-state-eligibility-test-set-026",
+        destination: "/post/chhattisgarh-state-eligibility-test-set-026",
+        permanent: true,
+      },
+      {
+        source: "/latest-vacancy",
+        destination: "/latest-jobs",
+        permanent: true,
+      },
+      {
+        source: "/scholarship",
+        destination: "/scholarships",
+        permanent: true,
+      },
+      {
+        source: "/about",
+        destination: "/about-us",
+        permanent: true,
+      },
+      {
+        source: "/contact",
+        destination: "/contact-us",
+        permanent: true,
+      },
+      {
+        source: "/privacy",
+        destination: "/privacy-policy",
+        permanent: true,
+      },
+      {
+        source: "/cookies",
+        destination: "/cookies-policy",
+        permanent: true,
+      },
+      {
+        source: "/terms-of-service",
+        destination: "/terms",
+        permanent: true,
+      },
+    ];
   }
 };
 
