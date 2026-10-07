@@ -15,7 +15,7 @@ import { getPostBySlug, parseDate, sectionItems } from "@/lib/data";
 import { CalendarDays, ExternalLink, AlertTriangle, CheckCircle, ChevronRight, BadgeInfo, Banknote, ArrowUpRight, Gauge, Users, Clock, GraduationCap, IndianRupee, FileText, Mail, Download, Bell, ShieldCheck } from "lucide-react";
 import { AdUnit } from "@/components/ads/ad-unit";
 import { isActualJobPost, resolveJobLocation, resolveJobSalary } from "@/lib/job-schema";
-import { getCategoryCta, isOfficialGovDomain } from "@/lib/categories";
+import { getCategoryCta, isOfficialGovDomain, detectCategory, CATEGORY_DEFINITIONS } from "@/lib/categories";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.aiexamresult.com";
 
@@ -29,9 +29,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!post) return { title: "Post not found" };
 
   const title = (post.title || "").trim();
-  const cat = post.category || "Government Exam";
+  const canonicalCat = detectCategory(post.category, title, cleanSlug);
+  const categoryInfo = CATEGORY_DEFINITIONS[canonicalCat] || CATEGORY_DEFINITIONS["latest-jobs"];
+  const cat = categoryInfo.label;
   const tLower = title.toLowerCase();
-  const catLower = cat.toLowerCase();
+  const catLower = canonicalCat;
 
   // Intent-targeted suffix for top search engine match
   let intentSuffix = "";
@@ -389,7 +391,10 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
   const officialUrl = post.importantLinks?.find((l: { label: string; url: string }) =>
     l.label?.toLowerCase().includes("official website") || l.label?.toLowerCase().includes("official site")
   )?.url;
-  const catSlug = post.category?.toLowerCase().replace(/\s+/g, "-") || "updates";
+  const canonicalCat = detectCategory(post.category, title, slug);
+  const categoryInfo = CATEGORY_DEFINITIONS[canonicalCat] || CATEGORY_DEFINITIONS["latest-jobs"];
+  const catSlug = categoryInfo.slug;
+  const categoryLabel = categoryInfo.label;
   const shortTitle = title.replace(/2026|2025|online\s*form|recruitment|notification|batch|result|admit\s*card|answer\s*key/gi, "").trim().substring(0, 60);
 
   const faqQ = [
@@ -557,7 +562,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         "@id": `${SITE_URL}/post/${slug}#breadcrumb`,
         itemListElement: [
           { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
-          { "@type": "ListItem", position: 2, name: post.category || "Updates", item: `${SITE_URL}/${catSlug}` },
+          { "@type": "ListItem", position: 2, name: categoryLabel, item: `${SITE_URL}/${catSlug}` },
           { "@type": "ListItem", position: 3, name: title }
         ]
       },
@@ -576,8 +581,8 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         publisher: { "@id": `${SITE_URL}/#organization` },
         mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}/post/${slug}` },
         ...(officialUrl ? { isBasedOn: officialUrl } : {}),
-        image: `${SITE_URL}/api/og?title=${encodeURIComponent(title)}&cat=${encodeURIComponent(post.category || "Sarkari Result")}&date=${encodeURIComponent(publishedIso ? publishedIso.split("T")[0] : (rawPostDate && /\d{4}/.test(rawPostDate) ? rawPostDate.split("T")[0] : "2026"))}`,
-        articleSection: post.category || "Government Exam",
+        image: `${SITE_URL}/api/og?title=${encodeURIComponent(title)}&cat=${encodeURIComponent(categoryLabel)}&date=${encodeURIComponent(publishedIso ? publishedIso.split("T")[0] : (rawPostDate && /\d{4}/.test(rawPostDate) ? rawPostDate.split("T")[0] : "2026"))}`,
+        articleSection: categoryLabel,
         inLanguage: "en-IN",
         speakable: { "@type": "SpeakableSpecification", cssSelector: ["h1", "h2", "h3"] }
       },
@@ -714,7 +719,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
     .trim();
 
   const postDateStr = publishedIso ? publishedIso.split("T")[0] : (rawPostDate && /\d{4}/.test(rawPostDate) ? rawPostDate.split("T")[0] : "2026");
-  const postOgImageUrl = `${SITE_URL}/api/og?title=${encodeURIComponent(title)}&cat=${encodeURIComponent(post.category || "Sarkari Result")}&date=${encodeURIComponent(postDateStr)}`;
+  const postOgImageUrl = `${SITE_URL}/api/og?title=${encodeURIComponent(title)}&cat=${encodeURIComponent(categoryLabel)}&date=${encodeURIComponent(postDateStr)}`;
 
   return (
     <>
@@ -727,7 +732,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
             <ol className="flex flex-wrap items-center gap-2 text-sm text-gray-500">
               <li><Link href="/" className="font-medium transition hover:text-brand">Home</Link></li>
               <ChevronRight className="h-3.5 w-3.5 text-gray-300" />
-              <li><Link href={`/${catSlug}`} className="font-medium transition hover:text-brand">{post.category || "Updates"}</Link></li>
+              <li><Link href={`/${catSlug}`} className="font-medium transition hover:text-brand">{categoryLabel}</Link></li>
               <ChevronRight className="h-3.5 w-3.5 text-gray-300" />
               <li className="max-w-[260px] truncate font-semibold text-gray-800">{title}</li>
             </ol>
@@ -760,7 +765,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                     <div className="flex flex-wrap items-center gap-3">
                       <span className="inline-flex items-center gap-1.5 rounded-full bg-brand/10 px-3.5 py-1 text-xs font-bold uppercase tracking-wider text-brand ring-1 ring-brand/20">
                         <BadgeInfo className="h-3 w-3" />
-                        {post.category || "Verified Update"}
+                        {categoryLabel}
                       </span>
                       <span className="inline-flex items-center gap-1.5 rounded-full bg-gray-100 px-3.5 py-1 text-xs font-bold text-gray-600">
                         <CalendarDays className="h-3 w-3" />
@@ -1391,7 +1396,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                   <div className="mt-4 space-y-0">
                     <div className="flex items-center justify-between py-2.5 border-b border-gray-50">
                       <span className="text-sm text-gray-500">Category</span>
-                      <span className="text-sm font-bold text-gray-800">{post.category || "Update"}</span>
+                      <span className="text-sm font-bold text-gray-800">{categoryLabel}</span>
                     </div>
                     <div className="flex items-center justify-between py-2.5 border-b border-gray-50">
                       <span className="text-sm text-gray-500">Published</span>
@@ -1414,7 +1419,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                 {/* Save & Share */}
                 <div className="rounded-2xl border border-gray-200 bg-white p-4 shadow-sm">
                   <h3 className="text-xs font-bold uppercase tracking-wider text-gray-400 mb-3">Save & Share</h3>
-                  <BookmarkBtn slug={slug} title={title} category={post.category || "Update"} date={publishedDate} />
+                  <BookmarkBtn slug={slug} title={title} category={categoryLabel} date={publishedDate} />
                   <div className="mt-3">
                     <ShareButtons title={title} url={`${SITE_URL}/post/${slug}`} />
                   </div>
@@ -1422,9 +1427,9 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
 
                 {/* Related Posts */}
                 {(() => {
-                  const cat = post.category || "";
-                  const related = Object.values(sectionItems).flat()
-                    .filter(p => p.slug !== slug && (p.category === cat || p.title.toLowerCase().includes(title.split(" ").slice(0,2).join(" ").toLowerCase())))
+                  const pool = sectionItems[catSlug] || Object.values(sectionItems).flat();
+                  const related = pool
+                    .filter(p => p.slug !== slug)
                     .slice(0, 5);
                   if (related.length === 0) return null;
                   return (

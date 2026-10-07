@@ -149,6 +149,16 @@ export function detectCategory(rawCat?: string, title?: string, slug?: string): 
     if (content.includes("admit card") || content.includes("hall ticket") || content.includes("city slip") || content.includes("city details")) {
       return "admit-card";
     }
+    // If it mentions online form, apply online, recruitment, vacancy, or bharti, it is a vacancy / recruitment!
+    if (
+      content.includes("online form") ||
+      content.includes("apply online") ||
+      content.includes("recruitment") ||
+      content.includes("vacancy") ||
+      content.includes("bharti")
+    ) {
+      return "latest-jobs";
+    }
     // If it has exam date but not result, it's admit-card/schedule
     if (!content.includes("result") && !content.includes("score card") && !content.includes("merit list")) {
       return "admit-card";
@@ -249,6 +259,8 @@ export function getCategoryCta(categoryOrTitle?: string, postTitle?: string, isE
   } else if (catKey === "admit-card") {
     if (tLower.includes("city slip") || tLower.includes("exam city")) {
       actionText = "Check Exam City";
+    } else if (tLower.includes("exam date") || tLower.includes("schedule")) {
+      actionText = "Check Exam Date";
     } else {
       actionText = "Download Admit Card";
     }

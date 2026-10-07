@@ -331,3 +331,85 @@ test("Active Admit Card Range: Bihar STET 2nd Dummy Admit Card (01-07 October 20
   assert.equal(examStage?.dateDisplay, "Notify Soon");
 });
 
+test("Timeline: Cross-month date range parsing (e.g. 30 November to 31 December 2026)", () => {
+  const range = parseDateRange("30 November to 31 December 2026");
+  assert.equal(range.start, "2026-11-30");
+  assert.equal(range.end, "2026-12-31");
+
+  const range2 = parseDateRange("19 October to 05 November 2026");
+  assert.equal(range2.start, "2026-10-19");
+  assert.equal(range2.end, "2026-11-05");
+});
+
+test("Timeline: Score Card date takes precedence over earlier Result list", () => {
+  const rssbPost = {
+    title: "RSSB LDC Clerk Gr-II/ Junior Score Card 2026",
+    category: "results",
+    importantDates: [
+      "Exam Date : 05 July 2026",
+      "Result : 28 September 2026",
+      "Score Card : 07 October 2026"
+    ],
+    importantLinks: [
+      { label: "Download Score Card", url: "https://recruitment.rajasthan.gov.in/postdetailgetresultservlet" }
+    ]
+  };
+
+  const timeline = buildPostTimeline(rssbPost, "2026-10-07");
+  const resultStage = timeline.stages.find((s) => s.id === "result");
+
+  assert.equal(resultStage?.label, "Score Card");
+  assert.equal(resultStage?.date, "2026-10-07");
+  assert.equal(resultStage?.dateDisplay, "7 Oct 2026");
+  assert.equal(resultStage?.status, "completed");
+  assert.equal(timeline.currentStage.stage, "result");
+  assert.equal(timeline.currentStage.label, "Score Card");
+});
+
+test("Timeline: Application Closes Today milestone on the last date", () => {
+  const chslPost = {
+    title: "SSC CHSL 10+2 Online Form 2026 – Last Date",
+    category: "latestJobs",
+    importantDates: [
+      "Application Start Date : 07 September 2026",
+      "Last Date : 07 October 2026",
+      "Fee Payment Last Date : 08 October 2026",
+      "Tier-I Exam Date : 30 November to 31 December 2026"
+    ]
+  };
+
+  const timeline = buildPostTimeline(chslPost, "2026-10-07");
+  const appStage = timeline.stages.find((s) => s.id === "application");
+  const examStage = timeline.stages.find((s) => s.id === "exam");
+
+  assert.equal(appStage?.label, "Application Closes Today");
+  assert.equal(appStage?.status, "active");
+  assert.equal(timeline.currentStage.stage, "application");
+  assert.match(timeline.currentStage.message, /closes today/i);
+
+  // Exam range correctly preserves November start
+  assert.equal(examStage?.startDate, "2026-11-30");
+  assert.equal(examStage?.endDate, "2026-12-31");
+  assert.equal(examStage?.dateDisplay, "30 Nov 2026 – 31 Dec 2026");
+});
+
+test("Timeline: Application Started Today milestone on opening day", () => {
+  const sciPost = {
+    title: "Supreme Court SCI Junior Court Assistant Online Form 2026",
+    category: "latestJobs",
+    importantDates: [
+      "Application Start Date : 07 October 2026",
+      "Last Date : 28 October 2026"
+    ]
+  };
+
+  const timeline = buildPostTimeline(sciPost, "2026-10-07");
+  const appStage = timeline.stages.find((s) => s.id === "application");
+
+  assert.equal(appStage?.label, "Application Started Today");
+  assert.equal(appStage?.status, "active");
+  assert.equal(timeline.currentStage.stage, "application");
+  assert.match(timeline.currentStage.message, /commenced today|started today/i);
+});
+
+

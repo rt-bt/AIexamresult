@@ -299,12 +299,24 @@ export function parseDateRange(text?: string | null): { start: string | null; en
     let startDate = parseIndianDate(left);
     const endDate = parseIndianDate(right);
 
-    // Case: "15 to 20 November 2026" (left has only day "15", right has "20 November 2026")
+    // Case: Left has day and month without year, or only day (e.g. "30 November to 31 December 2026" or "15 to 20 November 2026")
     if (!startDate && endDate) {
-      const leftDayMatch = left.match(/\b(0?[1-9]|[12]\d|3[01])\b/);
-      if (leftDayMatch) {
-        const [y, m] = endDate.split("-");
-        startDate = `${y}-${m}-${leftDayMatch[1].padStart(2, "0")}`;
+      const [endYear, endMonth] = endDate.split("-");
+      const leftDayMonthMatch = left.match(
+        /\b(0?[1-9]|[12]\d|3[01])\s*(?:st|nd|rd|th)?[\s\-\/]+(january|february|march|april|may|june|july|august|september|sept|october|november|december|jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)\b/i
+      );
+      if (leftDayMonthMatch) {
+        const day = parseInt(leftDayMonthMatch[1], 10);
+        const mName = leftDayMonthMatch[2].toLowerCase();
+        const month = MONTH_MAP[mName];
+        if (month && day >= 1 && day <= 31) {
+          startDate = `${endYear}-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
+        }
+      } else {
+        const leftDayMatch = left.match(/\b(0?[1-9]|[12]\d|3[01])\b/);
+        if (leftDayMatch) {
+          startDate = `${endYear}-${endMonth}-${leftDayMatch[1].padStart(2, "0")}`;
+        }
       }
     }
 
@@ -546,23 +558,60 @@ export function extractPostEventDates(post: any, referenceDate?: string | Date |
     }
   }
 
-  // 6. Result
+  // 6. Result & Score Card
+  let resText: string | null = null;
+  let resDate: string | null = null;
+  let scoreCardText: string | null = null;
+  let scoreCardDate: string | null = null;
+
   for (const d of dates) {
     if (typeof d !== "string") continue;
     const lower = d.toLowerCase();
-    if (lower.includes("result") && !lower.includes("admit") && !lower.includes("answer")) {
-      const val = d.includes(":") ? d.split(":").slice(1).join(":").trim() : d;
-      result.result.text = val;
-      result.result.date = parseIndianDate(val);
-      result.result.isReleased = isExplicitlyReleased(val);
-      result.result.isUnreleased = isExplicitlyUnreleased(val);
-      break;
+    const val = d.includes(":") ? d.split(":").slice(1).join(":").trim() : d;
+    const parsed = parseIndianDate(val);
+
+    if (
+      (lower.includes("score card") || lower.includes("scorecard") || lower.includes("marks")) &&
+      !lower.includes("admit") &&
+      !lower.includes("answer")
+    ) {
+      if (!scoreCardText) {
+        scoreCardText = val;
+        scoreCardDate = parsed;
+      }
+    } else if (
+      lower.includes("result") &&
+      !lower.includes("admit") &&
+      !lower.includes("answer")
+    ) {
+      if (!resText) {
+        resText = val;
+        resDate = parsed;
+      }
     }
   }
 
+  const titleIsScoreCard = title.includes("score card") || title.includes("scorecard") || title.includes("marks");
+  if (scoreCardDate && (titleIsScoreCard || !resDate || scoreCardDate >= resDate)) {
+    result.result.text = scoreCardText;
+    result.result.date = scoreCardDate;
+    result.result.isReleased = isExplicitlyReleased(scoreCardText) || (scoreCardDate ? today >= scoreCardDate : false);
+    result.result.isUnreleased = isExplicitlyUnreleased(scoreCardText);
+  } else if (resText || resDate) {
+    result.result.text = resText;
+    result.result.date = resDate;
+    result.result.isReleased = isExplicitlyReleased(resText) || (resDate ? today >= resDate : false);
+    result.result.isUnreleased = isExplicitlyUnreleased(resText);
+  }
+
   // Official Category/Title/Link override for Result
-  if (cat.includes("result") || (title.includes("result") && (title.includes("declared") || title.includes("out") || title.includes("scorecard") || title.includes("merit")))) {
-    if (hasActiveLink(/result|scorecard|merit/i)) {
+  if (
+    cat.includes("result") ||
+    title.includes("score card") ||
+    title.includes("scorecard") ||
+    (title.includes("result") && (title.includes("declared") || title.includes("out") || title.includes("scorecard") || title.includes("merit")))
+  ) {
+    if (hasActiveLink(/result|scorecard|score\s*card|merit/i)) {
       result.result.isReleased = true;
       result.result.isUnreleased = false;
     }
@@ -614,39 +663,68 @@ export function buildPostTimeline(post: any, referenceDate?: string | Date | nul
     const end = ev.application.end;
     let appStatus: TimelineStageStatus = "unavailable";
     let appDisplay = "As per Schedule";
+    let appLabel = "Application";
 
     if (start && end) {
-      appDisplay = `${formatDisplayDateIST(start)} – ${formatDisplayDateIST(end)}`;
       if (today < start) {
         appStatus = "upcoming";
-      } else if (today >= start && today <= end) {
-        appStatus = "active";
-      } else {
+        appDisplay = `${formatDisplayDateIST(start)} – ${formatDisplayDateIST(end)}`;
+        appLabel = "Application Upcoming";
+      } else if (today > end) {
         appStatus = "completed";
+        appDisplay = `${formatDisplayDateIST(start)} – ${formatDisplayDateIST(end)}`;
+        appLabel = "Application Closed";
+      } else if (today === end) {
+        appStatus = "active";
+        appDisplay = `Closes Today (${formatDisplayDateIST(end)})`;
+        appLabel = "Application Closes Today";
+      } else if (today === start) {
+        appStatus = "active";
+        appDisplay = `${formatDisplayDateIST(start)} – ${formatDisplayDateIST(end)}`;
+        appLabel = "Application Started Today";
+      } else {
+        appStatus = "active";
+        appDisplay = `${formatDisplayDateIST(start)} – ${formatDisplayDateIST(end)}`;
+        appLabel = "Application Open";
       }
     } else if (end) {
-      appDisplay = `Closes ${formatDisplayDateIST(end)}`;
-      if (today <= end) {
-        appStatus = "active";
-      } else {
+      if (today > end) {
         appStatus = "completed";
+        appDisplay = `Closed ${formatDisplayDateIST(end)}`;
+        appLabel = "Application Closed";
+      } else if (today === end) {
+        appStatus = "active";
+        appDisplay = `Closes Today (${formatDisplayDateIST(end)})`;
+        appLabel = "Application Closes Today";
+      } else {
+        appStatus = "active";
+        appDisplay = `Closes ${formatDisplayDateIST(end)}`;
+        appLabel = "Application Open";
       }
     } else if (start) {
-      appDisplay = `Starts ${formatDisplayDateIST(start)}`;
       if (today < start) {
         appStatus = "upcoming";
+        appDisplay = `Starts ${formatDisplayDateIST(start)}`;
+        appLabel = "Application Upcoming";
+      } else if (today === start) {
+        appStatus = "active";
+        appDisplay = `Started Today (${formatDisplayDateIST(start)})`;
+        appLabel = "Application Started Today";
       } else {
         appStatus = "active";
+        appDisplay = `Starts ${formatDisplayDateIST(start)}`;
+        appLabel = "Application Open";
       }
     } else {
       // No dates specified but post is an active recruitment
       appStatus = "active";
       appDisplay = "Apply Online";
+      appLabel = "Application Open";
     }
 
     stages.push({
       id: "application",
-      label: appStatus === "active" ? "Application Open" : "Application",
+      label: appLabel,
       shortLabel: "Apply",
       status: appStatus,
       dateDisplay: appDisplay,
@@ -822,20 +900,24 @@ export function buildPostTimeline(post: any, referenceDate?: string | Date | nul
     });
   }
 
-  // --- STAGE 6: RESULT ---
+  // --- STAGE 6: RESULT / SCORE CARD ---
   const rDate = ev.result.date;
   let rStatus: TimelineStageStatus = "unavailable";
   let rDisplay = ev.result.text || "Not Released";
+  const isScoreCard =
+    title.includes("score card") ||
+    title.includes("scorecard") ||
+    (ev.result.text || "").toLowerCase().includes("score card") ||
+    (ev.result.text || "").toLowerCase().includes("scorecard") ||
+    (ev.result.text || "").toLowerCase().includes("marks");
 
   if (ev.result.isReleased) {
     rStatus = "completed";
-    rDisplay = rDate ? formatDisplayDateIST(rDate) : "Declared";
+    rDisplay = rDate ? formatDisplayDateIST(rDate) : (isScoreCard ? "Score Card Released" : "Declared");
   } else if (rDate) {
     rDisplay = formatDisplayDateIST(rDate);
-    if (today > rDate) {
+    if (today >= rDate) {
       rStatus = "completed";
-    } else if (today === rDate) {
-      rStatus = "active";
     } else {
       rStatus = "upcoming";
     }
@@ -843,10 +925,13 @@ export function buildPostTimeline(post: any, referenceDate?: string | Date | nul
     rStatus = "unavailable";
   }
 
+  const resultStageLabel = isScoreCard ? "Score Card" : "Result";
+  const resultShortLabel = isScoreCard ? "Score Card" : "Result";
+
   stages.push({
     id: "result",
-    label: "Result",
-    shortLabel: "Result",
+    label: resultStageLabel,
+    shortLabel: resultShortLabel,
     status: rStatus,
     dateDisplay: rDisplay,
     date: rDate,
@@ -905,12 +990,24 @@ export function getCurrentTimelineStage(
     const s = stages[activeIdx];
     const pct = stages.length > 1 ? (activeIdx / (stages.length - 1)) * 100 : 50;
     const cleanLabel = s.label.replace(/\s+out$/i, "");
-    const msg =
-      s.id === "admitCard"
-        ? `${cleanLabel} is available to download (${s.dateDisplay || "Active"})`
-        : s.id === "application"
-        ? `Application is currently ongoing (${s.dateDisplay || "Active"})`
-        : `${s.label} is currently ongoing (${s.dateDisplay || "Active"})`;
+    let msg = `${s.label} is currently ongoing (${s.dateDisplay || "Active"})`;
+    if (s.id === "admitCard") {
+      msg = `${cleanLabel} is available to download (${s.dateDisplay || "Active"})`;
+    } else if (s.id === "application") {
+      if (s.label.includes("Closes Today")) {
+        msg = `Application closes today (${s.dateDisplay || "Today"}) — submit before the deadline!`;
+      } else if (s.label.includes("Started Today")) {
+        msg = `Application commenced today (${s.dateDisplay || "Today"}) — apply online now!`;
+      } else {
+        msg = `Application is currently ongoing (${s.dateDisplay || "Active"})`;
+      }
+    } else if (s.id === "result") {
+      if (s.label.includes("Score Card")) {
+        msg = `Score Card officially declared today (${s.dateDisplay || "Active"}) — download scorecard now!`;
+      } else {
+        msg = `Result officially declared (${s.dateDisplay || "Active"}) — check roll number & merit list now!`;
+      }
+    }
     return {
       stage: s.id,
       label: s.label,
@@ -948,15 +1045,23 @@ export function getCurrentTimelineStage(
     const nextStage = stages[nextIdx];
     const pct = stages.length > 1 ? (lastCompletedIdx / (stages.length - 1)) * 100 : 25;
 
+    // Check if nextStage is unavailable, but there is a confirmed upcoming stage (e.g. Exam Date is confirmed)
+    const upcomingConfirmed = stages.slice(nextIdx).find((s) => s.status === "upcoming" && (s.startDate || s.date));
+
+    let msg = nextStage
+      ? `Next stage: ${nextStage.label} (${nextStage.dateDisplay || "Pending"})`
+      : `Completed: ${stages[lastCompletedIdx].label}`;
+    if (nextStage && nextStage.status === "unavailable" && upcomingConfirmed) {
+      msg = `Confirmed ${upcomingConfirmed.label}: ${upcomingConfirmed.dateDisplay} (${nextStage.label} to be released before)`;
+    }
+
     return {
       stage: nextStage ? nextStage.id : stages[lastCompletedIdx].id,
       label: nextStage ? nextStage.label : stages[lastCompletedIdx].label,
       status: nextStage ? nextStage.status : "completed",
       progressIndex: nextStage ? nextIdx : lastCompletedIdx,
       progressPercent: Math.round(pct),
-      message: nextStage
-        ? `Next stage: ${nextStage.label} (${nextStage.dateDisplay || "Pending"})`
-        : `Completed: ${stages[lastCompletedIdx].label}`,
+      message: msg,
     };
   }
 
