@@ -149,13 +149,10 @@ export function detectCategory(rawCat?: string, title?: string, slug?: string): 
     if (content.includes("admit card") || content.includes("hall ticket") || content.includes("city slip") || content.includes("city details")) {
       return "admit-card";
     }
-    // If it mentions online form, apply online, recruitment, vacancy, or bharti, it is a vacancy / recruitment!
+    // If it mentions online form or apply online, it is a vacancy / recruitment!
     if (
       content.includes("online form") ||
-      content.includes("apply online") ||
-      content.includes("recruitment") ||
-      content.includes("vacancy") ||
-      content.includes("bharti")
+      content.includes("apply online")
     ) {
       return "latest-jobs";
     }

@@ -215,6 +215,17 @@ function toPostCard(
     });
   }
 
+  // Sort descending by publication date so newest items appear first
+  results.sort((a, b) => {
+    const rawA = a.publishedAt || a.publishedDate || a.date;
+    const rawB = b.publishedAt || b.publishedDate || b.date;
+    const dateA = parseDate(rawA);
+    const dateB = parseDate(rawB);
+    const timeA = dateA && dateA.getTime() <= nowMs ? dateA.getTime() : 0;
+    const timeB = dateB && dateB.getTime() <= nowMs ? dateB.getTime() : 0;
+    return timeB - timeA;
+  });
+
   return results;
 }
 
@@ -346,8 +357,8 @@ const s3 = getScraped();
 // Pool all scraped items across categories
 const allScrapedItems = s3
   ? [
-      ...(s3.results || []),
       ...(s3.latestJobs || []),
+      ...(s3.results || []),
       ...(s3.admitCards || []),
       ...(s3.answerKeys || []),
       ...(s3.admissions || []),
