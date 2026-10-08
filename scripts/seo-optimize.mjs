@@ -76,7 +76,7 @@ function isJobPost(title, category) {
   return c.includes("job") || c.includes("vacancy") || t.includes("recruitment") || t.includes("online form") || t.includes("vacancy") || t.includes("bharti") || t.includes("post");
 }
 
-function addJsonLd(post, slug) {
+function addJsonLd(post, slug, metaDesc) {
   const type = post.category || "";
   const url = `https://www.aiexamresult.com/post/${slug}`;
   const faqs = generateFAQs(post.title, post.importantDates, post.importantLinks, type);
@@ -84,6 +84,7 @@ function addJsonLd(post, slug) {
   const dateModified = formatIsoDate(post.updatedAt) || datePublished;
 
   const isJob = isJobPost(post.title, type);
+  const pageDesc = metaDesc || (post.intro || `${post.title}: Check latest notification, important dates, eligibility & online form at All India Exam Result.`).slice(0, 160);
 
   const graph = [
     {
@@ -91,7 +92,7 @@ function addJsonLd(post, slug) {
       "@id": url,
       url: url,
       name: `${post.title} - Sarkari Result 2026 | All India Exam Result`,
-      description: (post.intro || `${post.title}: Check latest notification, important dates, eligibility & online form at Sarkari Result.`).slice(0, 160),
+      description: pageDesc,
       inLanguage: "en-IN",
       isPartOf: {
         "@id": "https://www.aiexamresult.com/#website"
@@ -130,7 +131,7 @@ function addJsonLd(post, slug) {
       "@type": "JobPosting",
       "@id": `${url}#jobposting`,
       title: post.title,
-      description: post.intro || `${post.title} online form 2026 notification details.`,
+      description: pageDesc,
       datePosted: datePublished ? `${datePublished}T00:00:00.000Z` : new Date().toISOString(),
       employmentType: "FULL_TIME",
       hiringOrganization: {
@@ -176,6 +177,47 @@ function getCategorySlug(cat) {
   return map[cat] || "results";
 }
 
+function generateMetaDescription(post) {
+  const title = (post.title || "").trim();
+  const cat = post.category || "latestJobs";
+  const catLabel = cat === "results" ? "Result, scorecard and merit list" :
+                   cat === "admitCards" ? "Admit Card, hall ticket and exam date" :
+                   cat === "answerKeys" ? "Answer Key and objection link" :
+                   cat === "admissions" ? "Admission notice, counselling schedule and allotment" :
+                   cat === "documents" ? "Official syllabus, exam schedule and notification" :
+                   "Online application form, eligibility criteria and vacancies";
+
+  let desc = (post.intro || "")
+    .replace(/\[adinserter[^\]]*\]/gi, "")
+    .replace(/<[^>]*>/g, "")
+    .replace(/^Post Date:.*?(am|pm)?/i, "")
+    .replace(/^Short Details\s*[:–-]?\s*/i, "")
+    .replace(/^Brief Information\s*[:–-]?\s*/i, "")
+    .replace(/\s+/g, " ")
+    .trim();
+
+  if (!desc || desc.length < 80) {
+    const dates = post.importantDates || [];
+    const lastDate = dates.find(d => /last|apply/i.test(d));
+    const dateHint = lastDate ? ` Last date: ${lastDate.replace(/^.*?:\s*/, "")}.` : "";
+    desc = `${title}: Check official ${catLabel}.${dateHint} Get eligibility, application fee, exam dates & direct links at All India Exam Result.`;
+  }
+
+  if (desc.length > 160) {
+    desc = desc.slice(0, 157).replace(/\s+\S*$/, "") + "...";
+  }
+  return desc;
+}
+
+function stripKeywordFooters(html) {
+  if (!html) return "";
+  return html
+    .replace(/<div style="margin-top:2rem;padding:1\.25rem;border-radius:12px;background-color:#f8fafc;border:1px solid #e2e8f0;">[\s\S]*?<\/div>/gi, "")
+    .replace(/<div style="margin-top:2rem;padding:1\.25rem;[\s\S]*?Quick Links[\s\S]*?<\/div>/gi, "")
+    .replace(/<div style="margin-top:2rem;padding:1\.25rem;[\s\S]*?Related Search[\s\S]*?<\/div>/gi, "")
+    .trim();
+}
+
 function generateKeywordFooterHtml(title, category) {
   return `
 <div style="margin-top:2rem;padding:1.25rem;border-radius:12px;background-color:#f8fafc;border:1px solid #e2e8f0;">
@@ -200,15 +242,28 @@ async function main() {
       const slug = file.replace(".json", "");
       const post = JSON.parse(readFileSync(resolve(POSTS_DIR, file), "utf8"));
 
-      const schema = addJsonLd(post, slug);
+      const metaDesc = generateMetaDescription(post);
+      if (!post.intro || post.intro.trim().length < 80 || /^Post Date:/i.test(post.intro)) {
+        post.intro = metaDesc;
+      }
+
+      const schema = addJsonLd(post, slug, metaDesc);
       post.jsonLd = schema;
 
+      const seoTitle = `${post.title} - Sarkari Result 2026 | All India Exam Result`;
       if (!post.seoMeta) post.seoMeta = {};
-      post.seoMeta.title = `${post.title} - Sarkari Result 2026 | All India Exam Result`;
-      post.seoMeta.description = (post.intro || `${post.title}: Check eligibility criteria, age limit, application fee, last date to apply & official notification PDF at All India Exam Result.`).slice(0, 160);
+      post.seoMeta.title = seoTitle;
+      post.seoMeta.description = metaDesc;
       post.seoMeta.canonical = `https://www.aiexamresult.com/post/${slug}`;
 
-      if (!post.fullContentHtml || post.fullContentHtml.length < 100) {
+      post.seo = {
+        seoTitle,
+        metaDescription: metaDesc,
+        canonicalUrl: post.seoMeta.canonical,
+      };
+
+      let cleanHtml = stripKeywordFooters(post.fullContentHtml || "");
+      if (!cleanHtml || cleanHtml.length < 100) {
         const title = post.title || "";
         const intro = post.intro || "";
         const dates = post.importantDates || [];
@@ -237,12 +292,11 @@ async function main() {
         htmlParts.push("<h3>Frequently Asked Questions</h3>");
         htmlParts.push(`<p><strong>What is ${title}?</strong></p>`);
         htmlParts.push(`<p>${title} is a government exam notification. All details including dates, fee, eligibility and links are provided above.</p>`);
-        htmlParts.push(generateKeywordFooterHtml(title, post.category));
 
-        post.fullContentHtml = htmlParts.join("\n");
-      } else if (!post.fullContentHtml.includes("Sarkari Result 2026 Quick Links")) {
-        post.fullContentHtml += generateKeywordFooterHtml(post.title || "", post.category || "");
+        cleanHtml = htmlParts.join("\n");
       }
+
+      post.fullContentHtml = cleanHtml + "\n" + generateKeywordFooterHtml(post.title || "", post.category || "");
 
       writeFileSync(resolve(POSTS_DIR, file), JSON.stringify(post, null, 2), "utf8");
       optimized++;
