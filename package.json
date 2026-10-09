@@ -26,6 +26,7 @@
     "content:update": "node scripts/content-pipeline/sync.mjs --update",
     "content:report": "node scripts/content-pipeline/sync.mjs --report",
     "seo:check": "node scripts/content-pipeline/seoCheck.mjs",
+    "finetune:dataset": "node scripts/generate-finetune-dataset.mjs",
     "postinstall": "node -e \"require('fs').copyFileSync('node_modules/pdfjs-dist/build/pdf.worker.min.mjs', 'public/pdf.worker.min.js')\""
   },
   "dependencies": {
