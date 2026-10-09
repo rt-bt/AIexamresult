@@ -56,6 +56,7 @@ const HEADING_MAP = {
   "latest news":            "results",
   "diploma / iti":          "latestJobs",
   "b.tech / m.tech":        "latestJobs",
+  "outsourcing job":        "latestJobs",
 };
 
 // ── Data Load / Save ─────────────────────────────────────────────────────────
@@ -328,7 +329,10 @@ async function scrapeDetail(sourceUrl) {
       return null;
     }
 
-    let publishedDate = $("time.entry-date.published").attr("datetime") || "";
+    let publishedDate = $("time.entry-date.published").attr("datetime") ||
+                        $("time.entry-date").attr("datetime") ||
+                        $('meta[property="article:published_time"]').attr("content") ||
+                        "";
     if (publishedDate) {
       const d = new Date(publishedDate);
       if (isNaN(d.getTime()) || d > new Date()) publishedDate = "";

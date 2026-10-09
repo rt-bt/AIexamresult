@@ -55,18 +55,6 @@
   "applicationFee": [],
   "importantLinks": [
     {
-      "label": "Sarkari Result® Official : WWW.SARKARIRESULT.COM",
-      "url": "https://www.sarkariresult.com/"
-    },
-    {
-      "label": "Sarkari Result Android App",
-      "url": "https://play.google.com/store/apps/details?id=com.app.app14f269771c01"
-    },
-    {
-      "label": "Sarkari Result Apple IOS App",
-      "url": "https://itunes.apple.com/us/app/sarkari-result/id1051363935?ls=1&mt=8"
-    },
-    {
       "label": "Click Here",
       "url": "https://rrpdocuments.aiimsexams.ac.in/1789735741022-879588216.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVRUVRLXWMSLVSAP7%2F20260918%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20260918T130639Z&X-Amz-Expires=604800&X-Amz-Signature=cb06b1e70ebbe9aba547ee58f205b0e1f0768c5137934223e8989a0b46ce7b30&X-Amz-SignedHeaders=host&response-content-type=application%2Fpdf"
     },
@@ -81,18 +69,6 @@
     {
       "label": "Watch Video",
       "url": "https://youtu.be/u-ye-Ng58zk"
-    },
-    {
-      "label": "Click Here",
-      "url": "https://doc.sarkariresults.org.in/AIIMS_NORCET_11th_Full_Notification.pdf"
-    },
-    {
-      "label": "Sarkari Result Tools",
-      "url": "https://sarkariresultportal.com/"
-    },
-    {
-      "label": "Telegram",
-      "url": "https://t.me/SarkariResult2012"
     },
     {
       "label": "WhatsApp",
@@ -158,7 +134,7 @@
             "name": "Where is the official website for AIIMS Nursing Officer Recruitment 2026 Phase 11th Result?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "The official website link is https://www.sarkariresult.com/. You can also access direct application links in the Important Links table on this page."
+              "text": "The official website link is https://www.aiimsexams.ac.in/. You can also access direct application links in the Important Links table on this page."
             }
           },
           {

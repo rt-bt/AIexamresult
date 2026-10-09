@@ -242,6 +242,20 @@ async function main() {
       const slug = file.replace(".json", "");
       const post = JSON.parse(readFileSync(resolve(POSTS_DIR, file), "utf8"));
 
+      if (post.importantLinks && Array.isArray(post.importantLinks)) {
+        post.importantLinks = post.importantLinks.filter(l => {
+          if (!l || !l.url) return false;
+          const lu = l.url.toLowerCase();
+          const ll = (l.label || "").toLowerCase();
+          if (lu.includes("sarkariexam.com/wp-content/")) return true;
+          if (/sarkariresult|sarkariexam|rojgarresult|resultbharat/i.test(lu) ||
+              /sarkari\s*result|sarkari\s*exam/i.test(ll)) {
+            return false;
+          }
+          return true;
+        });
+      }
+
       const metaDesc = generateMetaDescription(post);
       if (!post.intro || post.intro.trim().length < 80 || /^Post Date:/i.test(post.intro)) {
         post.intro = metaDesc;

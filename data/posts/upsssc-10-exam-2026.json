@@ -28,18 +28,6 @@
   "applicationFee": [],
   "importantLinks": [
     {
-      "label": "Sarkari Result® Official : WWW.SARKARIRESULT.COM",
-      "url": "https://www.sarkariresult.com/"
-    },
-    {
-      "label": "Sarkari Result Android App",
-      "url": "https://play.google.com/store/apps/details?id=com.app.app14f269771c01"
-    },
-    {
-      "label": "Sarkari Result Apple IOS App",
-      "url": "https://itunes.apple.com/us/app/sarkari-result/id1051363935?ls=1&mt=8"
-    },
-    {
       "label": "Click Here",
       "url": "https://upsssc.gov.in/Online_App/Results.aspx?ID=166&Result_Type=P&Exam_Code=7&Advt_Code=732&Dept_Code=608&Post_Code=1&OnlyIntview=No"
     },
@@ -58,18 +46,6 @@
     {
       "label": "Click Here",
       "url": "https://www.youtube.com/watch?v=QnwWBi7vLyA"
-    },
-    {
-      "label": "Click Here",
-      "url": "https://doc.sarkariresults.org.in/sarkariresult.com_UPSSSC_10_Exam_2026_Notification%20(1).pdf"
-    },
-    {
-      "label": "Sarkari Result Tools",
-      "url": "https://sarkariresult.tools/"
-    },
-    {
-      "label": "Telegram",
-      "url": "https://t.me/SarkariResult2012"
     },
     {
       "label": "WhatsApp",
@@ -135,7 +111,7 @@
             "name": "Where is the official website for UPSSSC Platoon Commander / Block Organizer Recruitment 2026: Result?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "The official website link is https://www.sarkariresult.com/. You can also access direct application links in the Important Links table on this page."
+              "text": "The official website link is https://upessc.up.gov.in/. You can also access direct application links in the Important Links table on this page."
             }
           },
           {

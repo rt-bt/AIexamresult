@@ -5254,6 +5254,86 @@ export const scrapedData = {
       "publishedAt": "2024-11-28T10:39:04.000Z"
     },
     {
+      "title": "UP Shahjahanpur ECCE Educator Online Form 2026",
+      "url": "/post/up-shahjahanpur-ecce-educator-2026",
+      "category": "latestJobs",
+      "slug": "up-shahjahanpur-ecce-educator-2026",
+      "publishedDate": "2026-10-07T16:04:16+05:30",
+      "publishedAt": "2026-10-07T10:34:16.000Z"
+    },
+    {
+      "title": "UP Ayodhya ECCE Educator Online Form 2026",
+      "url": "/post/up-ayodhya-ecce-educator-2026",
+      "category": "latestJobs",
+      "slug": "up-ayodhya-ecce-educator-2026",
+      "publishedDate": "2026-10-07T15:59:56+05:30",
+      "publishedAt": "2026-10-07T10:29:56.000Z"
+    },
+    {
+      "title": "UP Mathura ECCE Educator Online Form 2026",
+      "url": "/post/up-ayodhya-ecce-educator-2026-2",
+      "category": "latestJobs",
+      "slug": "up-ayodhya-ecce-educator-2026-2",
+      "publishedDate": "2026-10-07T15:58:47+05:30",
+      "publishedAt": "2026-10-07T10:28:47.000Z"
+    },
+    {
+      "title": "UP Rampur ECCE Educator Online Form 2026",
+      "url": "/post/up-rampur-ecce-educator-2026",
+      "category": "latestJobs",
+      "slug": "up-rampur-ecce-educator-2026",
+      "publishedDate": "2026-10-05T17:26:40+05:30",
+      "publishedAt": "2026-10-05T11:56:40.000Z"
+    },
+    {
+      "title": "CSJMU Kanpur Teaching Post Online Form 2026",
+      "url": "/post/csjmu-kanpur-teaching-post-2026",
+      "category": "latestJobs",
+      "slug": "csjmu-kanpur-teaching-post-2026",
+      "publishedDate": "2026-10-05T17:08:00+05:30",
+      "publishedAt": "2026-10-05T11:38:00.000Z"
+    },
+    {
+      "title": "UP Basic Shiksha Vibhag Assistant Accountant Online Form 2026",
+      "url": "/post/up-basic-shiksha-vibhag-assistant-accountant-2026",
+      "category": "latestJobs",
+      "slug": "up-basic-shiksha-vibhag-assistant-accountant-2026",
+      "publishedDate": "2026-10-02T16:26:42+05:30",
+      "publishedAt": "2026-10-02T10:56:42.000Z"
+    },
+    {
+      "title": "UP Basic Shiksha Vibhag Computer Operator Online Form 2026",
+      "url": "/post/up-basic-shiksha-vibhag-computer-operator-2026",
+      "category": "latestJobs",
+      "slug": "up-basic-shiksha-vibhag-computer-operator-2026",
+      "publishedDate": "2026-10-02T16:05:48+05:30",
+      "publishedAt": "2026-10-02T10:35:48.000Z"
+    },
+    {
+      "title": "UP Ghaziabad ECCE Educator Online Form 2026",
+      "url": "/post/up-ghaziabad-ecce-educator-2026",
+      "category": "latestJobs",
+      "slug": "up-ghaziabad-ecce-educator-2026",
+      "publishedDate": "2026-10-02T15:49:04+05:30",
+      "publishedAt": "2026-10-02T10:19:04.000Z"
+    },
+    {
+      "title": "UP Bareilly ECCE Educator Online Form 2026",
+      "url": "/post/up-bareilly-ecce-educator-online-form-2026",
+      "category": "latestJobs",
+      "slug": "up-bareilly-ecce-educator-online-form-2026",
+      "publishedDate": "2026-09-25T17:06:04+05:30",
+      "publishedAt": "2026-09-25T11:36:04.000Z"
+    },
+    {
+      "title": "UP Kaushal Vikas Mission Block Program Manager Online Form 2026",
+      "url": "/post/up-kaushal-vikas-mission-block-program-manager-2026",
+      "category": "latestJobs",
+      "slug": "up-kaushal-vikas-mission-block-program-manager-2026",
+      "publishedDate": "2026-09-21T11:02:20+05:30",
+      "publishedAt": "2026-09-21T05:32:20.000Z"
+    },
+    {
       "title": "UPESSC UP Assistant Professor Online Form 2026 – Last Date",
       "url": "/post/upessc-up-assistant-professor-2026",
       "category": "latestJobs",
@@ -16548,12 +16628,62 @@ export const scrapedData = {
       "publishedDate": "2026-10-08T16:29:52+05:30",
       "publishedAt": "2026-10-08T10:59:52.000Z",
       "lastDate": "05 November 2026"
+    },
+    "up-ayodhya-ecce-educator-2026": {
+      "publishedDate": "2026-10-07T15:59:56+05:30",
+      "publishedAt": "2026-10-07T10:29:56.000Z",
+      "lastDate": "13 October 2026"
+    },
+    "up-shahjahanpur-ecce-educator-2026": {
+      "publishedDate": "2026-10-07T16:04:16+05:30",
+      "publishedAt": "2026-10-07T10:34:16.000Z",
+      "lastDate": "21 October 2026"
+    },
+    "csjmu-kanpur-teaching-post-2026": {
+      "publishedDate": "2026-10-05T17:08:00+05:30",
+      "publishedAt": "2026-10-05T11:38:00.000Z",
+      "lastDate": "31 October 2026"
+    },
+    "up-rampur-ecce-educator-2026": {
+      "publishedDate": "2026-10-05T17:26:40+05:30",
+      "publishedAt": "2026-10-05T11:56:40.000Z",
+      "lastDate": "08 October 2026"
+    },
+    "up-basic-shiksha-vibhag-assistant-accountant-2026": {
+      "publishedDate": "2026-10-02T16:26:42+05:30",
+      "publishedAt": "2026-10-02T10:56:42.000Z",
+      "lastDate": "03 October 2026"
+    },
+    "up-ayodhya-ecce-educator-2026-2": {
+      "publishedDate": "2026-10-07T15:58:47+05:30",
+      "publishedAt": "2026-10-07T10:28:47.000Z",
+      "lastDate": "08 October 2026"
+    },
+    "up-ghaziabad-ecce-educator-2026": {
+      "publishedDate": "2026-10-02T15:49:04+05:30",
+      "publishedAt": "2026-10-02T10:19:04.000Z",
+      "lastDate": "03 October 2026"
+    },
+    "up-bareilly-ecce-educator-online-form-2026": {
+      "publishedDate": "2026-09-25T17:06:04+05:30",
+      "publishedAt": "2026-09-25T11:36:04.000Z",
+      "lastDate": "01 October 2026"
+    },
+    "up-kaushal-vikas-mission-block-program-manager-2026": {
+      "publishedDate": "2026-09-21T11:02:20+05:30",
+      "publishedAt": "2026-09-21T05:32:20.000Z",
+      "lastDate": "26 September 2026"
+    },
+    "up-basic-shiksha-vibhag-computer-operator-2026": {
+      "publishedDate": "2026-10-02T16:05:48+05:30",
+      "publishedAt": "2026-10-02T10:35:48.000Z",
+      "lastDate": "03 October 2026"
     }
   },
-  "fetchedAt": "2026-10-08T15:43:07.299Z",
+  "fetchedAt": "2026-10-09T08:04:24.170Z",
   "seo": {
-    "lastOptimized": "2026-10-08T15:52:45.609Z",
-    "totalPosts": 1284,
+    "lastOptimized": "2026-10-09T08:05:28.828Z",
+    "totalPosts": 1294,
     "websiteName": "All India Exam Result",
     "websiteUrl": "https://www.aiexamresult.com",
     "description": "Sarkari Result 2026 - Get fastest government job alerts, sarkari naukri, exam results, admit cards & answer keys. SSC, UPSC, Railway, Banking, UP, Bihar & all India exams."

@@ -27,18 +27,6 @@
   "applicationFee": [],
   "importantLinks": [
     {
-      "label": "Sarkari Result® Official : WWW.SARKARIRESULT.COM",
-      "url": "https://www.sarkariresult.com/"
-    },
-    {
-      "label": "Sarkari Result Android App",
-      "url": "https://play.google.com/store/apps/details?id=com.app.app14f269771c01"
-    },
-    {
-      "label": "Sarkari Result Apple IOS App",
-      "url": "https://itunes.apple.com/us/app/sarkari-result/id1051363935?ls=1&mt=8"
-    },
-    {
       "label": "Click Here",
       "url": "https://nationalinsurance.nic.co.in/sites/default/files/2026-10/List%20of%20Roll%20Numbers%20of%20Provisionally%20Shortlisted%20Candidates.pdf"
     },
@@ -61,18 +49,6 @@
     {
       "label": "Version 2",
       "url": "https://youtu.be/spiT-E5uhlA"
-    },
-    {
-      "label": "Click Here",
-      "url": "https://www.sarkariresult.com/wp-content/uploads/2026/07/NICL_ASSISTANT_SarkariResult.Com_Recuritment_Advertisment-2026-27.pdf"
-    },
-    {
-      "label": "Sarkari Result Tools",
-      "url": "https://sarkariresultportal.com/"
-    },
-    {
-      "label": "Telegram",
-      "url": "https://t.me/SarkariResult2012"
     },
     {
       "label": "WhatsApp",
@@ -138,7 +114,7 @@
             "name": "Where is the official website for National Insurance NICL Assistant Recruitment 2026 Pre Result?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "The official website link is https://www.sarkariresult.com/. You can also access direct application links in the Important Links table on this page."
+              "text": "The official website link is https://nationalinsurance.nic.co.in/. You can also access direct application links in the Important Links table on this page."
             }
           },
           {
