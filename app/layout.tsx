@@ -5,6 +5,7 @@ import { Providers } from "@/components/providers";
 import { InstallBanner } from "@/components/site/install-banner";
 import { CookieConsent } from "@/components/site/cookie-consent";
 import { CustomCursor } from "@/components/site/custom-cursor";
+import { ChatWidget } from "@/components/site/chat-widget";
 import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], variable: "--font-space-grotesk", display: "swap", weight: ["400", "500", "600", "700"] });
@@ -255,6 +256,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <Providers>{children}</Providers>
         <InstallBanner />
         <CookieConsent />
+        <ChatWidget />
       </body>
     </html>
   );
