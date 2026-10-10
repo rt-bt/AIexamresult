@@ -82,18 +82,6 @@ async function generateIcons() {
   fs.writeFileSync(path.join(APP_DIR, "favicon.ico"), icoBuf);
   console.log("Generated public/favicon.ico and app/favicon.ico (multi-resolution 16/32/48)");
 
-  // 4. Generate high-res base64 embedded SVG for logo.svg and icon.svg
-  // Ensures any vector/SVG consumer renders the exact crisp logo
-  const base64Png = masterBuf.toString("base64");
-  const svgContent = `<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000">
-  <rect width="1000" height="1000" fill="#ffffff"/>
-  <image width="1000" height="1000" href="data:image/png;base64,${base64Png}"/>
-</svg>`;
-
-  fs.writeFileSync(path.join(PUBLIC_DIR, "logo.svg"), svgContent, "utf-8");
-  fs.writeFileSync(path.join(PUBLIC_DIR, "icon.svg"), svgContent, "utf-8");
-  console.log("Updated public/logo.svg and public/icon.svg with 1000x1000 vector container");
-
   console.log("All app icons successfully generated!");
 }
 
