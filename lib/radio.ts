@@ -12,6 +12,7 @@ export interface RadioStation {
   frequency: string;
   language: string;
   streamUrl: string;
+  fallbackStreamUrl?: string;
 }
 
 export const radioStations: RadioStation[] = (rawStations as RadioStation[]).filter(

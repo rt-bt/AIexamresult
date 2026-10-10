@@ -63,6 +63,17 @@ export function RadioClient() {
 
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const hlsRef = useRef<any>(null);
+  const isUsingFallbackRef = useRef<boolean>(false);
+
+  // Preload HLS.js on client mount for instant live playback
+  useEffect(() => {
+    if (typeof window !== "undefined" && !(window as any).Hls) {
+      const script = document.createElement("script");
+      script.src = "https://cdn.jsdelivr.net/npm/hls.js@1.5.8/dist/hls.min.js";
+      script.async = true;
+      document.head.appendChild(script);
+    }
+  }, []);
 
   // Load saved favorites & volume from localStorage
   useEffect(() => {
@@ -106,94 +117,137 @@ export function RadioClient() {
   useEffect(() => {
     if (audioRef.current) {
       audioRef.current.volume = isMuted ? 0 : volume;
+      try {
+        (audioRef.current as any).referrerPolicy = "no-referrer";
+      } catch {}
     }
   }, [volume, isMuted]);
 
-  // Audio stream loader
-  const playStation = useCallback((station: RadioStation) => {
-    if (!audioRef.current) return;
-    const audio = audioRef.current;
+  // Audio stream loader helper supporting secondary fallback stream URLs
+  const loadAndPlayStream = useCallback(
+    (station: RadioStation, targetUrl: string, isFallback: boolean = false) => {
+      if (!audioRef.current) return;
+      const audio = audioRef.current;
 
-    // If same station is already playing, toggle pause
-    if (currentStation?.slug === station.slug) {
-      if (isPlaying) {
-        audio.pause();
-        setIsPlaying(false);
-      } else {
-        setIsLoading(true);
-        setHasError(false);
-        audio
-          .play()
-          .then(() => {
-            setIsPlaying(true);
-            setIsLoading(false);
-          })
-          .catch(() => {
-            setIsLoading(false);
-            setHasError(true);
-          });
+      setIsLoading(true);
+      setHasError(false);
+
+      // Teardown existing HLS instance
+      if (hlsRef.current) {
+        hlsRef.current.destroy();
+        hlsRef.current = null;
       }
-      return;
-    }
 
-    // Switch to new station
-    setCurrentStation(station);
-    setIsLoading(true);
-    setHasError(false);
-    setIsPlaying(false);
+      const isHls = targetUrl.includes(".m3u8");
 
-    // Destroy existing HLS if any
-    if (hlsRef.current) {
-      hlsRef.current.destroy();
-      hlsRef.current = null;
-    }
+      const handleStreamError = () => {
+        if (!isFallback && station.fallbackStreamUrl) {
+          isUsingFallbackRef.current = true;
+          loadAndPlayStream(station, station.fallbackStreamUrl, true);
+        } else {
+          setIsLoading(false);
+          setIsPlaying(false);
+          setHasError(true);
+        }
+      };
 
-    const streamUrl = station.streamUrl;
-    const isHls = streamUrl.includes(".m3u8");
-
-    // Safari native HLS support check
-    if (isHls && !audio.canPlayType("application/vnd.apple.mpegurl")) {
-      const initHls = (HlsClass: any) => {
-        if (HlsClass.isSupported()) {
-          const hls = new HlsClass({
-            enableWorker: true,
-            lowLatencyMode: true,
-          });
-          hls.loadSource(streamUrl);
-          hls.attachMedia(audio);
-          hls.on(HlsClass.Events.MANIFEST_PARSED, () => {
+      // Safari native HLS support check
+      if (isHls && !audio.canPlayType("application/vnd.apple.mpegurl")) {
+        const initHls = (HlsClass: any) => {
+          if (HlsClass.isSupported()) {
+            const hls = new HlsClass({
+              enableWorker: true,
+              lowLatencyMode: true,
+              backBufferLength: 60,
+            });
+            hls.loadSource(targetUrl);
+            hls.attachMedia(audio);
+            hls.on(HlsClass.Events.MANIFEST_PARSED, () => {
+              audio
+                .play()
+                .then(() => {
+                  setIsPlaying(true);
+                  setIsLoading(false);
+                  setHasError(false);
+                })
+                .catch(handleStreamError);
+            });
+            hls.on(HlsClass.Events.ERROR, (_: any, data: any) => {
+              if (data.fatal) {
+                switch (data.type) {
+                  case HlsClass.ErrorTypes.NETWORK_ERROR:
+                    hls.startLoad();
+                    break;
+                  case HlsClass.ErrorTypes.MEDIA_ERROR:
+                    hls.recoverMediaError();
+                    break;
+                  default:
+                    hls.destroy();
+                    handleStreamError();
+                    break;
+                }
+              }
+            });
+            hlsRef.current = hls;
+          } else {
+            audio.src = targetUrl;
             audio
               .play()
               .then(() => {
                 setIsPlaying(true);
                 setIsLoading(false);
+                setHasError(false);
               })
-              .catch(() => {
-                setIsLoading(false);
-                setHasError(true);
-              });
-          });
-          hls.on(HlsClass.Events.ERROR, (_: any, data: any) => {
-            if (data.fatal) {
-              switch (data.type) {
-                case HlsClass.ErrorTypes.NETWORK_ERROR:
-                  hls.startLoad();
-                  break;
-                case HlsClass.ErrorTypes.MEDIA_ERROR:
-                  hls.recoverMediaError();
-                  break;
-                default:
-                  hls.destroy();
-                  setHasError(true);
-                  setIsLoading(false);
-                  setIsPlaying(false);
-                  break;
-              }
-            }
-          });
-          hlsRef.current = hls;
+              .catch(handleStreamError);
+          }
+        };
+
+        if ((window as any).Hls) {
+          initHls((window as any).Hls);
         } else {
-          audio.src = streamUrl;
+          const script = document.createElement("script");
+          script.src = "https://cdn.jsdelivr.net/npm/hls.js@1.5.8/dist/hls.min.js";
+          script.async = true;
+          script.onload = () => {
+            if ((window as any).Hls) {
+              initHls((window as any).Hls);
+            } else {
+              handleStreamError();
+            }
+          };
+          script.onerror = handleStreamError;
+          document.head.appendChild(script);
+        }
+      } else {
+        audio.src = targetUrl;
+        audio.load();
+        audio
+          .play()
+          .then(() => {
+            setIsPlaying(true);
+            setIsLoading(false);
+            setHasError(false);
+          })
+          .catch(handleStreamError);
+      }
+    },
+    []
+  );
+
+  // Audio stream loader
+  const playStation = useCallback(
+    (station: RadioStation) => {
+      if (!audioRef.current) return;
+      const audio = audioRef.current;
+
+      // If same station is already playing, toggle pause
+      if (currentStation?.slug === station.slug) {
+        if (isPlaying) {
+          audio.pause();
+          setIsPlaying(false);
+        } else {
+          setIsLoading(true);
+          setHasError(false);
           audio
             .play()
             .then(() => {
@@ -201,44 +255,27 @@ export function RadioClient() {
               setIsLoading(false);
             })
             .catch(() => {
-              setIsLoading(false);
-              setHasError(true);
+              // Try fallback or show error
+              if (station.fallbackStreamUrl && !isUsingFallbackRef.current) {
+                isUsingFallbackRef.current = true;
+                loadAndPlayStream(station, station.fallbackStreamUrl, true);
+              } else {
+                setIsLoading(false);
+                setHasError(true);
+              }
             });
         }
-      };
-
-      if ((window as any).Hls) {
-        initHls((window as any).Hls);
-      } else {
-        const script = document.createElement("script");
-        script.src = "https://cdn.jsdelivr.net/npm/hls.js@latest";
-        script.async = true;
-        script.onload = () => {
-          if ((window as any).Hls) {
-            initHls((window as any).Hls);
-          }
-        };
-        script.onerror = () => {
-          setHasError(true);
-          setIsLoading(false);
-        };
-        document.head.appendChild(script);
+        return;
       }
-    } else {
-      audio.src = streamUrl;
-      audio.load();
-      audio
-        .play()
-        .then(() => {
-          setIsPlaying(true);
-          setIsLoading(false);
-        })
-        .catch(() => {
-          setIsLoading(false);
-          setHasError(true);
-        });
-    }
-  }, [currentStation, isPlaying]);
+
+      // Switch to new station
+      setCurrentStation(station);
+      setIsPlaying(false);
+      isUsingFallbackRef.current = false;
+      loadAndPlayStream(station, station.streamUrl, false);
+    },
+    [currentStation, isPlaying, loadAndPlayStream]
+  );
 
   const handleStop = useCallback(() => {
     if (audioRef.current) {
@@ -306,6 +343,7 @@ export function RadioClient() {
       {/* Hidden Audio Engine */}
       <audio
         ref={audioRef}
+        playsInline
         onWaiting={() => setIsLoading(true)}
         onPlaying={() => {
           setIsLoading(false);
@@ -314,9 +352,14 @@ export function RadioClient() {
         }}
         onPause={() => setIsPlaying(false)}
         onError={() => {
-          setIsLoading(false);
-          setIsPlaying(false);
-          setHasError(true);
+          if (currentStation?.fallbackStreamUrl && !isUsingFallbackRef.current) {
+            isUsingFallbackRef.current = true;
+            loadAndPlayStream(currentStation, currentStation.fallbackStreamUrl, true);
+          } else {
+            setIsLoading(false);
+            setIsPlaying(false);
+            setHasError(true);
+          }
         }}
         preload="none"
       />

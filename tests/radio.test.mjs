@@ -53,3 +53,21 @@ test("Radio Page: app/radio/page.tsx has SEO metadata and JSON-LD schema", () =>
   assert.match(pageContent, /RadioClient/, "Must render RadioClient component");
   assert.match(pageContent, /BroadcastService/, "Must have BroadcastService JSON-LD");
 });
+
+test("Radio Security: All 93 stations use HTTPS to prevent browser Mixed Content blocking", () => {
+  const filePath = path.join(ROOT, "data", "radio-stations.json");
+  const stations = JSON.parse(fs.readFileSync(filePath, "utf8"));
+  for (const s of stations) {
+    assert.ok(
+      s.streamUrl.startsWith("https://"),
+      `Station "${s.name}" (${s.slug}) streamUrl must start with https:// to avoid Mixed Content, got: ${s.streamUrl}`
+    );
+    if (s.fallbackStreamUrl) {
+      assert.ok(
+        s.fallbackStreamUrl.startsWith("https://"),
+        `Station "${s.name}" fallbackStreamUrl must start with https://, got: ${s.fallbackStreamUrl}`
+      );
+    }
+  }
+});
+

@@ -49,7 +49,8 @@
     "genre": "Classic, News",
     "frequency": "100.1 FM",
     "language": "Hindi, English, Sanskrit",
-    "streamUrl": "https://new.radiosolo.ru/in/fmgolddelhi/icecast.audio"
+    "streamUrl": "https://airhlspush.pc.cdn.bitgravity.com/httppush/hlspbaudio005/hlspbaudio00564kbps.m3u8",
+    "fallbackStreamUrl": "https://airhlspush.pc.cdn.bitgravity.com/httppush/hlspbaudio005/hlspbaudio005_Auto.m3u8"
   },
   {
     "id": "fm-rainbow",
@@ -62,7 +63,8 @@
     "genre": "Pop, Classic, Folk",
     "frequency": "107.1 FM",
     "language": "Hindi, English, Tamil",
-    "streamUrl": "https://radioindia.net/in/fmrainbowdelhi/icecast.audio"
+    "streamUrl": "https://airhlspush.pc.cdn.bitgravity.com/httppush/hlspbaudio004/hlspbaudio00464kbps.m3u8",
+    "fallbackStreamUrl": "https://airhlspush.pc.cdn.bitgravity.com/httppush/hlspbaudio007/hlspbaudio00764kbps.m3u8"
   },
   {
     "id": "city-91.1-fm",
@@ -75,7 +77,8 @@
     "genre": "Pop, Talk, News",
     "frequency": "91.1 FM",
     "language": "Hindi",
-    "streamUrl": "https://radios.crabdance.com:8002/5"
+    "streamUrl": "https://cast1.asurahosting.com/proxy/richar16/stream",
+    "fallbackStreamUrl": "https://drive.uber.radio/uber/bollywoodnow/icecast.audio"
   },
   {
     "id": "all-india-air-akashvani",
@@ -88,7 +91,8 @@
     "genre": "Talk, News",
     "frequency": "Web Radio",
     "language": "Punjabi, Hindi, Kannada",
-    "streamUrl": "https://radioindia.net/in/news24/icecast.audio"
+    "streamUrl": "https://airhlspush.pc.cdn.bitgravity.com/httppush/hlspbaudio002/hlspbaudio00264kbps.m3u8",
+    "fallbackStreamUrl": "https://airhlspush.pc.cdn.bitgravity.com/httppush/hlspbaudio002/hlspbaudio002_Auto.m3u8"
   },
   {
     "id": "red",
@@ -153,7 +157,7 @@
     "genre": "Pop, Classic, Folk",
     "frequency": "93.5 FM",
     "language": "English, Tamil",
-    "streamUrl": "https://radios.crabdance.com:8002/2"
+    "streamUrl": "https://d1cvqgmbcpg5yn.cloudfront.net/d533f2af4f49bd6f/d533f2af4f49bd6f.m3u8"
   },
   {
     "id": "ishq",
@@ -179,7 +183,8 @@
     "genre": "Bollywood",
     "frequency": "Web Radio",
     "language": "Hindi",
-    "streamUrl": "https://stream.zeno.fm/pxc55r5uyc9uv"
+    "streamUrl": "https://eu8.fastcast4u.com/proxy/clyedupq/stream",
+    "fallbackStreamUrl": "https://drive.uber.radio/uber/bollywoodlove/icecast.audio"
   },
   {
     "id": "hungama-evergreen-bollywood",
@@ -231,7 +236,8 @@
     "genre": "Classic, Talk, News",
     "frequency": "1035 AM",
     "language": "Bengali, Assamese",
-    "streamUrl": "https://air.pc.cdn.bitgravity.com/air/live/pbaudio133/playlist.m3u8"
+    "streamUrl": "https://airhlspush.pc.cdn.bitgravity.com/httppush/hlspbaudio137/hlspbaudio13764kbps.m3u8",
+    "fallbackStreamUrl": "https://d1cvqgmbcpg5yn.cloudfront.net/0ce240322bab1873/0ce240322bab1873.m3u8"
   },
   {
     "id": "all-india-air-tamil",
@@ -283,7 +289,8 @@
     "genre": "Bollywood",
     "frequency": "Web Radio",
     "language": "Hindi",
-    "streamUrl": "https://vobook.ru/http://s5.voscast.com:8216/stream"
+    "streamUrl": "https://drive.uber.radio/uber/bollywoodnow/icecast.audio",
+    "fallbackStreamUrl": "https://eu8.fastcast4u.com/proxy/clyedupq/stream"
   },
   {
     "id": "air-shimla",
@@ -374,7 +381,8 @@
     "genre": "Bollywood, Old songs, Desi",
     "frequency": "Web Radio",
     "language": "Hindi",
-    "streamUrl": "https://vobook.ru/http://cast2.asurahosting.com:8569/stream"
+    "streamUrl": "https://stream.zeno.fm/6n6ewddtad0uv",
+    "fallbackStreamUrl": "https://stream.zeno.fm/n2fd0edh9k8uv"
   },
   {
     "id": "all-india-air-odia",
@@ -413,7 +421,8 @@
     "genre": "Pop, Rap hip hop, Bollywood",
     "frequency": "Web Radio",
     "language": "Punjabi",
-    "streamUrl": "https://s8.voscast.com:7021/stream"
+    "streamUrl": "https://bolpunjabi-ekamsoftware.radioca.st/stream",
+    "fallbackStreamUrl": "https://s4.radio.co/sfefce156f/listen"
   },
   {
     "id": "all-india-ragaam",
@@ -569,7 +578,8 @@
     "genre": "Talk, News",
     "frequency": "Web Radio",
     "language": "Telugu",
-    "streamUrl": "https://stream.teluguoneradio.com:8164/;stream/1"
+    "streamUrl": "https://stream.zeno.fm/dbstwo3dvhhtv",
+    "fallbackStreamUrl": "https://d3hrxqn1tritdh.cloudfront.net/e47c5f0cec4af335/e47c5f0cec4af335.m3u8"
   },
   {
     "id": "air-panaji",
@@ -595,7 +605,7 @@
     "genre": "News, Community, Indian music",
     "frequency": "90.4 FM",
     "language": "Hindi",
-    "streamUrl": "https://radioindia.net/radio/sharda/icecast.audio"
+    "streamUrl": "https://airhlspush.pc.cdn.bitgravity.com/httppush/hlspbaudio006/hlspbaudio00632kbps.m3u8"
   },
   {
     "id": "girmit",
@@ -608,7 +618,8 @@
     "genre": "Classic, Indian music",
     "frequency": "Web Radio",
     "language": "Kannada",
-    "streamUrl": "https://stream.radiojar.com/g6dgm6m6p3hvv"
+    "streamUrl": "https://airhlspush.pc.cdn.bitgravity.com/httppush/hlspbaudio026/hlspbaudio02664kbps.m3u8",
+    "fallbackStreamUrl": "https://d1tmej9eu7kw5c.cloudfront.net/9d18e57ddfb1d4b4/9d18e57ddfb1d4b4.m3u8"
   },
   {
     "id": "radio-tarana",
@@ -634,7 +645,7 @@
     "genre": "Talk, News, Indian music",
     "frequency": "Web Radio",
     "language": "Hindi, English, Urdu",
-    "streamUrl": "https://radio.wavespb.com/live/01e2be674a0543a6/01e2be674a0543a6.m3u8"
+    "streamUrl": "https://airhlspush.pc.cdn.bitgravity.com/httppush/hlspbaudio006/hlspbaudio00632kbps.m3u8"
   },
   {
     "id": "all-india-akashvani-maitree",
@@ -673,7 +684,8 @@
     "genre": "Bollywood",
     "frequency": "Web Radio",
     "language": "Telugu",
-    "streamUrl": "https://radioindia.net/radio/humgama-telugu/icecast.audio"
+    "streamUrl": "https://d1cvqgmbcpg5yn.cloudfront.net/8362d532bd498fd0/8362d532bd498fd0.m3u8",
+    "fallbackStreamUrl": "https://d3hrxqn1tritdh.cloudfront.net/e47c5f0cec4af335/e47c5f0cec4af335.m3u8"
   },
   {
     "id": "air-rohtak",
@@ -738,7 +750,8 @@
     "genre": "Talk, News, Indian music",
     "frequency": "100.2 FM",
     "language": "Hindi, English, Telugu",
-    "streamUrl": "https://radio.wavespb.com/live/e47c5f0cec4af335/e47c5f0cec4af335.m3u8"
+    "streamUrl": "https://air.pc.cdn.bitgravity.com/air/live/pbaudio032/playlist.m3u8",
+    "fallbackStreamUrl": "https://d1cvqgmbcpg5yn.cloudfront.net/8362d532bd498fd0/8362d532bd498fd0.m3u8"
   },
   {
     "id": "sindhi-classic-sangat",
@@ -855,7 +868,8 @@
     "genre": "Pop",
     "frequency": "Web Radio",
     "language": "Malayalam",
-    "streamUrl": "http://stream.zeno.fm/fu94u25kqd0uv/;stream.mp3"
+    "streamUrl": "https://d3hrxqn1tritdh.cloudfront.net/6ff13de7ea9b53d7/6ff13de7ea9b53d7.m3u8",
+    "fallbackStreamUrl": "https://rs7.stream24.net/clubfm.aac"
   },
   {
     "id": "telugu-nri",
@@ -907,7 +921,7 @@
     "genre": "Talk",
     "frequency": "104.7 FM",
     "language": "Tamil",
-    "streamUrl": "https://vobook.ru/http://220.247.227.20:8000/Threndralstream"
+    "streamUrl": "https://d1cvqgmbcpg5yn.cloudfront.net/d533f2af4f49bd6f/d533f2af4f49bd6f.m3u8"
   },
   {
     "id": "chellam-fm",
@@ -972,7 +986,8 @@
     "genre": "Bollywood, Old songs, Desi",
     "frequency": "Web Radio",
     "language": "Hindi",
-    "streamUrl": "https://radioindia.net/radio/desi3/icecast.audio"
+    "streamUrl": "https://stream.zeno.fm/3k1fb86tfm8uv",
+    "fallbackStreamUrl": "https://stream.zeno.fm/t39watus1p8uv"
   },
   {
     "id": "hungama-dance-masti-international",
@@ -1050,7 +1065,8 @@
     "genre": "Bollywood, Indian music",
     "frequency": "Web Radio",
     "language": "Hindi",
-    "streamUrl": "http://stream.zenolive.com/rqqps6cbe3quv.html"
+    "streamUrl": "https://drive.uber.radio/uber/bollywoodnow/icecast.audio",
+    "fallbackStreamUrl": "https://stream.zeno.fm/6n6ewddtad0uv"
   },
   {
     "id": "myind-media",
@@ -1063,7 +1079,7 @@
     "genre": "News",
     "frequency": "Web Radio",
     "language": "Hindi, Telugu",
-    "streamUrl": "https://radioindia.net/radio/myndmedia/icecast.audio"
+    "streamUrl": "https://eu8.fastcast4u.com/proxy/clyedupq/stream"
   },
   {
     "id": "megazone-hit",
@@ -1115,7 +1131,8 @@
     "genre": "Club",
     "frequency": "99.6 FM",
     "language": "Tamil",
-    "streamUrl": "https://eu10.fastcast4u.com/clubfmuae"
+    "streamUrl": "https://rs7.stream24.net/clubfm.aac",
+    "fallbackStreamUrl": "https://cp1.sednastream.com/proxy/clubfm?mp=/stream"
   },
   {
     "id": "raaja-fm",
@@ -1167,7 +1184,7 @@
     "genre": "Pop, Classic, Talk",
     "frequency": "Web Radio",
     "language": "Tamil",
-    "streamUrl": "https://radioindia.net/radio/atbs/icecast.audio"
+    "streamUrl": "https://d1cvqgmbcpg5yn.cloudfront.net/d533f2af4f49bd6f/d533f2af4f49bd6f.m3u8"
   },
   {
     "id": "cassette",
