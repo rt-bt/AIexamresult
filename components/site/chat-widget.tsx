@@ -15,7 +15,9 @@ import {
   RefreshCw,
   AlertCircle,
   HelpCircle,
+  GripVertical,
 } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 interface SearchResultItem {
   title: string;
@@ -71,6 +73,113 @@ export function ChatWidget() {
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+
+  // Movable draggable position state
+  const [position, setPosition] = useState<{ x: number; y: number } | null>(null);
+  const [isDragging, setIsDragging] = useState(false);
+  const isDraggingRef = useRef(false);
+  const hasDraggedRef = useRef(false);
+  const dragStartRef = useRef<{ startX: number; startY: number; posX: number; posY: number } | null>(null);
+
+  // Initialize position on client mount (from localStorage or default bottom-right)
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem("aier_chat_position");
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (typeof parsed.x === "number" && typeof parsed.y === "number") {
+          const maxX = window.innerWidth - 72;
+          const maxY = window.innerHeight - 72;
+          setPosition({
+            x: Math.max(12, Math.min(parsed.x, maxX)),
+            y: Math.max(12, Math.min(parsed.y, maxY)),
+          });
+          return;
+        }
+      }
+    } catch {}
+
+    const isMobile = window.innerWidth < 768;
+    setPosition({
+      x: window.innerWidth - (isMobile ? 74 : 84),
+      y: window.innerHeight - (isMobile ? 128 : 88),
+    });
+  }, []);
+
+  // Keep inside viewport on window resize
+  useEffect(() => {
+    const handleResize = () => {
+      setPosition((prev) => {
+        if (!prev) return prev;
+        const maxX = window.innerWidth - 72;
+        const maxY = window.innerHeight - 72;
+        return {
+          x: Math.max(12, Math.min(prev.x, maxX)),
+          y: Math.max(12, Math.min(prev.y, maxY)),
+        };
+      });
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const handlePointerDown = (e: React.PointerEvent<HTMLElement>) => {
+    if (e.button !== 0 && e.pointerType === "mouse") return;
+    isDraggingRef.current = true;
+    hasDraggedRef.current = false;
+    dragStartRef.current = {
+      startX: e.clientX,
+      startY: e.clientY,
+      posX: position?.x ?? (window.innerWidth - 84),
+      posY: position?.y ?? (window.innerHeight - 88),
+    };
+    try {
+      (e.currentTarget as HTMLElement).setPointerCapture(e.pointerId);
+    } catch {}
+  };
+
+  const handlePointerMove = (e: React.PointerEvent<HTMLElement>) => {
+    if (!isDraggingRef.current || !dragStartRef.current) return;
+    const dx = e.clientX - dragStartRef.current.startX;
+    const dy = e.clientY - dragStartRef.current.startY;
+
+    if (Math.hypot(dx, dy) > 5) {
+      if (!hasDraggedRef.current) {
+        hasDraggedRef.current = true;
+        setIsDragging(true);
+      }
+      const maxX = window.innerWidth - 64;
+      const maxY = window.innerHeight - 64;
+      const nextX = Math.max(10, Math.min(maxX, dragStartRef.current.posX + dx));
+      const nextY = Math.max(10, Math.min(maxY, dragStartRef.current.posY + dy));
+      setPosition({ x: nextX, y: nextY });
+    }
+  };
+
+  const handlePointerUp = (e: React.PointerEvent<HTMLElement>) => {
+    if (isDraggingRef.current) {
+      isDraggingRef.current = false;
+      setIsDragging(false);
+      try {
+        (e.currentTarget as HTMLElement).releasePointerCapture(e.pointerId);
+      } catch {}
+      if (hasDraggedRef.current && position) {
+        try {
+          localStorage.setItem("aier_chat_position", JSON.stringify(position));
+        } catch {}
+      }
+    }
+  };
+
+  const handleLauncherClick = (e: React.MouseEvent) => {
+    if (hasDraggedRef.current) {
+      e.preventDefault();
+      e.stopPropagation();
+      return;
+    }
+    setIsOpen(true);
+    setIsMinimized(false);
+  };
 
   // Auto-scroll on new message
   useEffect(() => {
@@ -185,54 +294,89 @@ export function ChatWidget() {
 
   return (
     <>
-      {/* Floating Launcher Button */}
+      {/* Floating Draggable Launcher Button */}
       {!isOpen && (
-        <div className="fixed bottom-20 right-4 lg:bottom-6 lg:right-6 z-40 flex items-center gap-2">
-          {/* Subtle desktop helper pill */}
-          <button
-            onClick={() => {
-              setIsOpen(true);
-              setIsMinimized(false);
-            }}
-            className="hidden md:flex items-center gap-1.5 rounded-full bg-white px-3 py-1.5 text-xs font-semibold text-blue-700 shadow-lg border border-blue-100 hover:bg-blue-50 transition active:scale-95"
-            aria-label="Ask AIExamResult Assistant"
+        <div
+          onPointerDown={handlePointerDown}
+          onPointerMove={handlePointerMove}
+          onPointerUp={handlePointerUp}
+          onPointerCancel={handlePointerUp}
+          onClick={handleLauncherClick}
+          style={
+            position
+              ? {
+                  left: `${position.x}px`,
+                  top: `${position.y}px`,
+                  right: "auto",
+                  bottom: "auto",
+                }
+              : undefined
+          }
+          className={cn(
+            "fixed z-40 flex items-center gap-2 touch-none select-none",
+            !position && "bottom-20 right-4 lg:bottom-6 lg:right-6",
+            isDragging ? "cursor-grabbing opacity-90 scale-105" : "cursor-grab"
+          )}
+          title="Drag to move anywhere • Click to open AI Assistant"
+        >
+          {/* Subtle desktop helper pill with drag indicator */}
+          <div
+            className="hidden md:flex items-center gap-1.5 rounded-full bg-white px-3 py-1.5 text-xs font-semibold text-blue-700 shadow-lg border border-blue-100 hover:bg-blue-50 transition pointer-events-none select-none"
+            aria-hidden="true"
           >
+            <GripVertical className="h-3.5 w-3.5 text-slate-400" />
             <Sparkles className="h-3.5 w-3.5 text-blue-600 animate-pulse" />
             <span>Ask AI Assistant</span>
-          </button>
+          </div>
 
           {/* Launcher Circle */}
-          <button
-            onClick={() => {
-              setIsOpen(true);
-              setIsMinimized(false);
-            }}
-            className="group relative flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-tr from-blue-700 to-blue-600 text-white shadow-xl hover:shadow-2xl hover:scale-105 active:scale-95 transition-all duration-200 border-2 border-white focus:outline-none focus:ring-4 focus:ring-blue-300"
+          <div
+            className="group relative flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-tr from-blue-700 to-blue-600 text-white shadow-xl hover:shadow-2xl hover:scale-105 active:scale-95 transition-all duration-200 border-2 border-white focus:outline-none focus:ring-4 focus:ring-blue-300 pointer-events-auto"
             aria-label="Open AIExamResult AI Assistant"
-            title="Open AIExamResult AI Assistant"
+            role="button"
+            tabIndex={0}
           >
-            <span className="absolute -top-1 -right-1 flex h-4 w-4">
+            <span className="absolute -top-1 -right-1 flex h-4 w-4 pointer-events-none">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-4 w-4 bg-emerald-500 border-2 border-white"></span>
             </span>
-            <Bot className="h-7 w-7 transition-transform group-hover:rotate-6" />
-          </button>
+            <Bot className="h-7 w-7 transition-transform group-hover:rotate-6 pointer-events-none" />
+          </div>
         </div>
       )}
 
       {/* Chat Window */}
       {isOpen && (
         <div
+          style={
+            isMinimized && position
+              ? {
+                  left: `${Math.min(position.x, typeof window !== "undefined" ? window.innerWidth - 300 : position.x)}px`,
+                  top: `${position.y}px`,
+                  right: "auto",
+                  bottom: "auto",
+                }
+              : undefined
+          }
           className={`fixed z-50 transition-all duration-200 ease-out font-sans ${
             isMinimized
-              ? "bottom-20 right-4 lg:bottom-6 lg:right-6 w-72 h-14"
+              ? "w-72 h-14 touch-none select-none"
               : "bottom-20 right-3 sm:right-4 lg:bottom-6 lg:right-6 w-[calc(100vw-1.5rem)] sm:w-[410px] max-h-[82vh] h-[580px] sm:h-[620px]"
           } flex flex-col rounded-2xl bg-white shadow-2xl border border-blue-200/90 overflow-hidden`}
           role="dialog"
           aria-labelledby="ai-chat-title"
         >
           {/* Header */}
-          <div className="flex items-center justify-between bg-gradient-to-r from-blue-700 via-blue-600 to-indigo-700 px-4 py-3 text-white shadow-sm select-none">
+          <div
+            onPointerDown={isMinimized ? handlePointerDown : undefined}
+            onPointerMove={isMinimized ? handlePointerMove : undefined}
+            onPointerUp={isMinimized ? handlePointerUp : undefined}
+            onPointerCancel={isMinimized ? handlePointerUp : undefined}
+            className={cn(
+              "flex items-center justify-between bg-gradient-to-r from-blue-700 via-blue-600 to-indigo-700 px-4 py-3 text-white shadow-sm select-none",
+              isMinimized && (isDragging ? "cursor-grabbing" : "cursor-grab")
+            )}
+          >
             <div className="flex items-center gap-2.5">
               <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-white/15 backdrop-blur-sm border border-white/20">
                 <Bot className="h-5 w-5 text-white" />

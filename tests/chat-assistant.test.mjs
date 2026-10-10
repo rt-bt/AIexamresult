@@ -147,3 +147,15 @@ test("Chatbot Non-Existent Exam Safe Fallback: Refuses to hallucinate dates or l
   const matches = allItems.filter(item => item.title.toLowerCase().includes("mars alien"));
   assert.equal(matches.length, 0, "No matches for non-existent exams");
 });
+
+test("Chatbot Draggable Launcher: Component supports pointer drag-and-drop and viewport bounds", () => {
+  const widgetPath = path.join(process.cwd(), "components", "site", "chat-widget.tsx");
+  const widgetContent = fs.readFileSync(widgetPath, "utf-8");
+
+  assert.match(widgetContent, /handlePointerDown/, "Must have pointer down drag handler");
+  assert.match(widgetContent, /handlePointerMove/, "Must have pointer move drag handler");
+  assert.match(widgetContent, /handlePointerUp/, "Must have pointer up drag handler");
+  assert.match(widgetContent, /aier_chat_position/, "Must persist drag position in localStorage");
+  assert.match(widgetContent, /cursor-grab/, "Must have grab cursor for movable launcher");
+});
+
