@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-09-28T03:12:49.779Z",
-  "mode": "SAFE-PUBLISH",
+  "timestamp": "2026-10-10T06:57:35.799Z",
+  "mode": "PREVIEW",
   "topicsDiscovered": [],
   "articlesGenerated": [],
   "articlesUpdated": [],
   "articlesSkipped": [],
   "validationFailures": [],
-  "deploymentStatus": "SAVED_LOCAL",
+  "deploymentStatus": "SKIPPED",
   "errors": []
 }

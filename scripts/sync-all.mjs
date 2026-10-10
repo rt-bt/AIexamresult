@@ -293,27 +293,38 @@ async function scrapeListings() {
     console.warn("  ⚠️ Warning fetching homepage:", err.message);
   }
 
-  // 2. Also scrape Category archive for Top Online Form to ensure all active jobs are captured
-  try {
-    const catHtml = await fetchHtml("https://www.sarkariexam.com/category/top-online-form/");
-    const $cat    = cheerio.load(catHtml);
+  // 2. Also scrape Category archives to ensure all active jobs, results, admit cards, answer keys are captured
+  const archiveCats = [
+    { url: "https://www.sarkariexam.com/category/top-online-form/", cat: "latestJobs", isTop: true },
+    { url: "https://www.sarkariexam.com/category/exam-result/", cat: "results", isTop: false },
+    { url: "https://www.sarkariexam.com/category/admit-card/", cat: "admitCards", isTop: false },
+    { url: "https://www.sarkariexam.com/category/answer-keys/", cat: "answerKeys", isTop: false },
+    { url: "https://www.sarkariexam.com/category/admission-form/", cat: "admissions", isTop: false },
+    { url: "https://www.sarkariexam.com/category/syllabus/", cat: "documents", isTop: false },
+  ];
 
-    $cat("h2.entry-title a, article a, .post-title a, ul.wp-block-latest-posts__list li a").each((_, a) => {
-      const href     = $cat(a).attr("href") || "";
-      const rawTitle = $cat(a).text().trim();
-      if (!href || !rawTitle || rawTitle.length < 10 || href.includes("/category/") || href.includes("/tag/") || seen.has(href)) return;
-      try {
-        if (new URL(href).hostname !== SOURCE_HOST) return;
-      } catch { return; }
+  for (const { url: catUrl, cat: catFallback, isTop } of archiveCats) {
+    try {
+      const catHtml = await fetchHtml(catUrl);
+      const $cat    = cheerio.load(catHtml);
 
-      seen.add(href);
-      const title = cleanText(rawTitle);
-      if (isJunk(title, href)) return;
-      const slug = generateSlug(href, title);
-      items.push({ title, sourceUrl: href, slug, fallbackCat: "latestJobs", isTopForm: true });
-    });
-  } catch (err) {
-    console.warn("  ⚠️ Warning fetching top-online-form category:", err.message);
+      $cat("h2.entry-title a, article a, .post-title a, ul.wp-block-latest-posts__list li a").each((_, a) => {
+        const href     = $cat(a).attr("href") || "";
+        const rawTitle = $cat(a).text().trim();
+        if (!href || !rawTitle || rawTitle.length < 10 || href.includes("/category/") || href.includes("/tag/") || seen.has(href)) return;
+        try {
+          if (new URL(href).hostname !== SOURCE_HOST) return;
+        } catch { return; }
+
+        seen.add(href);
+        const title = cleanText(rawTitle);
+        if (isJunk(title, href)) return;
+        const slug = generateSlug(href, title);
+        items.push({ title, sourceUrl: href, slug, fallbackCat: catFallback, isTopForm: isTop });
+      });
+    } catch (err) {
+      console.warn(`  ⚠️ Warning fetching ${catUrl}:`, err.message);
+    }
   }
 
   return items;

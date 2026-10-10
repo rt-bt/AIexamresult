@@ -2,6 +2,22 @@
 export const scrapedData = {
   "results": [
     {
+      "title": "UPSC NDA/ NA-II Result 2026 – Out",
+      "url": "/post/upsc-nda-na-ii-2026",
+      "category": "results",
+      "slug": "upsc-nda-na-ii-2026",
+      "publishedDate": "2026-10-09T20:09:27+05:30",
+      "publishedAt": "2026-10-09T14:39:27.000Z"
+    },
+    {
+      "title": "Bihar Police CSBC Constable GD Final Result 2026 – Out",
+      "url": "/post/bihar-police-csbc-constable-gd-2026",
+      "category": "results",
+      "slug": "bihar-police-csbc-constable-gd-2026",
+      "publishedDate": "2026-10-09T19:08:25+05:30",
+      "publishedAt": "2026-10-09T13:38:25.000Z"
+    },
+    {
       "title": "ONGC Geologists and Engineers E1 Result 2026",
       "url": "/post/ongc-geologists-and-engineers-e1-2026",
       "category": "results",
@@ -130,30 +146,6 @@ export const scrapedData = {
       "publishedAt": "2026-10-01T16:50:14.000Z"
     },
     {
-      "title": "EMRS Teaching & Non-Teaching Tier-II Result 2026 – Updated",
-      "url": "/post/emrs-teaching-non-teaching-2025",
-      "category": "results",
-      "slug": "emrs-teaching-non-teaching-2025",
-      "publishedDate": "2026-10-01T22:20:03+05:30",
-      "publishedAt": "2026-10-01T16:50:03.000Z"
-    },
-    {
-      "title": "UPSSSC Enforcement Constable 2023 Final Result",
-      "url": "/post/upsssc-enforcement-constable-2023",
-      "category": "results",
-      "slug": "upsssc-enforcement-constable-2023",
-      "publishedDate": "2026-10-01T12:15:31+05:30",
-      "publishedAt": "2026-10-01T06:45:31.000Z"
-    },
-    {
-      "title": "UPSSSC Platoon Commander / Block Organizer Eligibility Result 2026",
-      "url": "/post/upsssc-platoon-commander-block-organizer-2026",
-      "category": "results",
-      "slug": "upsssc-platoon-commander-block-organizer-2026",
-      "publishedDate": "2026-10-01T12:04:09+05:30",
-      "publishedAt": "2026-10-01T06:34:09.000Z"
-    },
-    {
       "title": "MPESB Forest Guard & Jail Prahari PET Admit Card 2026",
       "url": "/post/mpesb-forest-guard-jail-prahari-2026",
       "category": "results",
@@ -210,14 +202,6 @@ export const scrapedData = {
       "publishedAt": "2026-09-29T10:20:55.000Z"
     },
     {
-      "title": "RRB NTPC 10+2 UG CBT-II Answer Key 2026",
-      "url": "/post/rrb-ntpc-102-inter-level-2025",
-      "category": "results",
-      "slug": "rrb-ntpc-102-inter-level-2025",
-      "publishedDate": "2026-09-24T22:21:10+05:30",
-      "publishedAt": "2026-09-24T16:51:10.000Z"
-    },
-    {
       "title": "NIELIT CCC Online Form, Admit Card, Result 2026",
       "url": "/post/nielit-ccc-2026",
       "category": "results",
@@ -232,6 +216,38 @@ export const scrapedData = {
       "slug": "rajasthan-police-constable-recruitment",
       "publishedDate": "2024-10-05T20:49:38+05:30",
       "publishedAt": "2024-10-05T15:19:38.000Z"
+    },
+    {
+      "title": "EMRS Teaching & Non-Teaching Tier-II Result 2026 – Updated",
+      "url": "/post/emrs-teaching-non-teaching-2025",
+      "category": "results",
+      "slug": "emrs-teaching-non-teaching-2025",
+      "publishedDate": "2026-10-01T22:20:03+05:30",
+      "publishedAt": "2026-10-01T16:50:03.000Z"
+    },
+    {
+      "title": "UPSSSC Enforcement Constable 2023 Final Result",
+      "url": "/post/upsssc-enforcement-constable-2023",
+      "category": "results",
+      "slug": "upsssc-enforcement-constable-2023",
+      "publishedDate": "2026-10-01T12:15:31+05:30",
+      "publishedAt": "2026-10-01T06:45:31.000Z"
+    },
+    {
+      "title": "UPSSSC Platoon Commander / Block Organizer Eligibility Result 2026",
+      "url": "/post/upsssc-platoon-commander-block-organizer-2026",
+      "category": "results",
+      "slug": "upsssc-platoon-commander-block-organizer-2026",
+      "publishedDate": "2026-10-01T12:04:09+05:30",
+      "publishedAt": "2026-10-01T06:34:09.000Z"
+    },
+    {
+      "title": "RRB NTPC 10+2 UG CBT-II Answer Key 2026",
+      "url": "/post/rrb-ntpc-102-inter-level-2025",
+      "category": "results",
+      "slug": "rrb-ntpc-102-inter-level-2025",
+      "publishedDate": "2026-09-24T22:21:10+05:30",
+      "publishedAt": "2026-09-24T16:51:10.000Z"
     },
     {
       "title": "UPSSSC Havildar Instructor Eligibility Result 2026",
@@ -1344,14 +1360,6 @@ export const scrapedData = {
       "slug": "bcece-admission-2026",
       "publishedDate": "2026-09-07T17:07:27+05:30",
       "publishedAt": "2026-09-07T11:37:27.000Z"
-    },
-    {
-      "title": "Bihar Police CSBC Constable GD PST/DV Admit Card 2026",
-      "url": "/post/bihar-police-csbc-constable-gd-2026",
-      "category": "results",
-      "slug": "bihar-police-csbc-constable-gd-2026",
-      "publishedDate": "5 September 2026",
-      "publishedAt": "2026-09-05T07:02:38.000Z"
     },
     {
       "title": "Delhi High Court Personal Assistant Syllabus 2026 - Check Exam Pattern PDF",
@@ -3988,36 +3996,36 @@ export const scrapedData = {
   ],
   "admitCards": [
     {
-      "title": "Railway RRB Section Controller Admit Card 2026",
-      "url": "/post/railway-rrb-section-controller-2026",
-      "category": "admitCards",
-      "slug": "railway-rrb-section-controller-2026",
-      "publishedDate": "2026-10-08T20:17:58+05:30",
-      "publishedAt": "2026-10-08T14:47:58.000Z"
-    },
-    {
       "title": "SSC CGL Admit Card 2026",
       "url": "/post/ssc-cgl-2026",
       "category": "admitCards",
       "slug": "ssc-cgl-2026",
-      "publishedDate": "2026-10-08T16:04:12+05:30",
-      "publishedAt": "2026-10-08T10:34:12.000Z"
+      "publishedDate": "2026-10-09T17:05:10+05:30",
+      "publishedAt": "2026-10-09T11:35:10.000Z"
+    },
+    {
+      "title": "Railway RRB Section Controller Admit Card 2026",
+      "url": "/post/railway-rrb-section-controller-2026",
+      "category": "admitCards",
+      "slug": "railway-rrb-section-controller-2026",
+      "publishedDate": "2026-10-09T17:05:06+05:30",
+      "publishedAt": "2026-10-09T11:35:06.000Z"
     },
     {
       "title": "Railway RRB Technician CEN 02/2026 Admit Card 2026",
       "url": "/post/rrb-technician-grade-i-iii-2026",
       "category": "admitCards",
       "slug": "rrb-technician-grade-i-iii-2026",
-      "publishedDate": "2026-10-08T16:04:07+05:30",
-      "publishedAt": "2026-10-08T10:34:07.000Z"
+      "publishedDate": "2026-10-09T17:05:03+05:30",
+      "publishedAt": "2026-10-09T11:35:03.000Z"
     },
     {
       "title": "IBPS Clerk CSA 16th Pre Admit Card 2026",
       "url": "/post/ibps-clerk-csa-16th-2026",
       "category": "admitCards",
       "slug": "ibps-clerk-csa-16th-2026",
-      "publishedDate": "2026-10-08T16:04:00+05:30",
-      "publishedAt": "2026-10-08T10:34:00.000Z"
+      "publishedDate": "2026-10-09T17:04:59+05:30",
+      "publishedAt": "2026-10-09T11:34:59.000Z"
     },
     {
       "title": "SKAU Kurukshetra Non Teaching Post Admit Card 2026",
@@ -4060,20 +4068,20 @@ export const scrapedData = {
       "publishedAt": "2026-09-29T17:03:27.000Z"
     },
     {
-      "title": "RSSB Exam Calendar 2026",
-      "url": "/post/rssb-exam-calendar-2026",
-      "category": "admitCards",
-      "slug": "rssb-exam-calendar-2026",
-      "publishedDate": "2026-09-29T14:05:27+05:30",
-      "publishedAt": "2026-09-29T08:35:27.000Z"
-    },
-    {
       "title": "CIPET Admit Card 2025",
       "url": "/post/cipet-admit-card-2025",
       "category": "admitCards",
       "slug": "cipet-admit-card-2025",
       "publishedDate": "2025-06-10T16:29:09+05:30",
       "publishedAt": "2025-06-10T10:59:09.000Z"
+    },
+    {
+      "title": "RSSB Exam Calendar 2026",
+      "url": "/post/rssb-exam-calendar-2026",
+      "category": "admitCards",
+      "slug": "rssb-exam-calendar-2026",
+      "publishedDate": "2026-09-29T14:05:27+05:30",
+      "publishedAt": "2026-09-29T08:35:27.000Z"
     },
     {
       "title": "Chhattisgarh State Eligibility Test SET Admit Card 2026",
@@ -4266,14 +4274,6 @@ export const scrapedData = {
       "slug": "sbi-clerk-backlog-aug26",
       "publishedDate": "9 September 2026",
       "publishedAt": "2026-09-08T18:30:00.000Z"
-    },
-    {
-      "title": "SSC Selection Post 14th Admit Card 2026",
-      "url": "/post/ssc-phase-xiv-2026",
-      "category": "admitCards",
-      "slug": "ssc-phase-xiv-2026",
-      "publishedDate": "8 September 2026",
-      "publishedAt": "2026-09-08T13:42:49.000Z"
     },
     {
       "title": "Rajasthan State Eligibility Test SET Admit Card 2026",
@@ -4886,6 +4886,14 @@ export const scrapedData = {
   ],
   "latestJobs": [
     {
+      "title": "MP High Court Assistant Grade III Exam Date 2026",
+      "url": "/post/mp-high-court-assistant-grade-iii-2026",
+      "category": "latestJobs",
+      "slug": "mp-high-court-assistant-grade-iii-2026",
+      "publishedDate": "2026-10-09T14:15:27+05:30",
+      "publishedAt": "2026-10-09T08:45:27.000Z"
+    },
+    {
       "title": "Railway RRB JE 04/2026 Application Status 2026",
       "url": "/post/rrb-junior-engineer-je-2026",
       "category": "latestJobs",
@@ -5078,6 +5086,22 @@ export const scrapedData = {
       "publishedAt": "2026-10-05T10:50:35.000Z"
     },
     {
+      "title": "NTA SWAYAM July Online Form 2026",
+      "url": "/post/nta-swayam-2026-2",
+      "category": "latestJobs",
+      "slug": "nta-swayam-2026-2",
+      "publishedDate": "2026-10-09T17:03:53+05:30",
+      "publishedAt": "2026-10-09T11:33:53.000Z"
+    },
+    {
+      "title": "NTA UGC NET JRF December Online Form 2026",
+      "url": "/post/nta-ugc-net-jrf-december-2026",
+      "category": "latestJobs",
+      "slug": "nta-ugc-net-jrf-december-2026",
+      "publishedDate": "2026-10-09T15:55:00+05:30",
+      "publishedAt": "2026-10-09T10:25:00.000Z"
+    },
+    {
       "title": "NTA CSIR UGC NET December Online Form 2026",
       "url": "/post/nta-csir-ugc-net-december-2026",
       "category": "latestJobs",
@@ -5100,22 +5124,6 @@ export const scrapedData = {
       "slug": "nvs-class-11-admissions-2027",
       "publishedDate": "2026-10-01T10:23:47+05:30",
       "publishedAt": "2026-10-01T04:53:47.000Z"
-    },
-    {
-      "title": "NVS Class 9th Online Form 2027 – Extend",
-      "url": "/post/nvs-class-9th-2026",
-      "category": "latestJobs",
-      "slug": "nvs-class-9th-2026",
-      "publishedDate": "2026-10-01T10:17:12+05:30",
-      "publishedAt": "2026-10-01T04:47:12.000Z"
-    },
-    {
-      "title": "IIT JAM Online Form 2027",
-      "url": "/post/iit-jam-2027",
-      "category": "latestJobs",
-      "slug": "iit-jam-2027",
-      "publishedDate": "2026-09-25T09:59:08+05:30",
-      "publishedAt": "2026-09-25T04:29:08.000Z"
     },
     {
       "title": "UP Special TET Online Form 2026",
@@ -5908,6 +5916,22 @@ export const scrapedData = {
       "slug": "iocl-apprentice-recruitment-2025",
       "publishedDate": "2025-02-01T13:05:24+05:30",
       "publishedAt": "2025-02-01T07:35:24.000Z"
+    },
+    {
+      "title": "NVS Class 9th Online Form 2027 – Extend",
+      "url": "/post/nvs-class-9th-2026",
+      "category": "latestJobs",
+      "slug": "nvs-class-9th-2026",
+      "publishedDate": "2026-10-01T10:17:12+05:30",
+      "publishedAt": "2026-10-01T04:47:12.000Z"
+    },
+    {
+      "title": "IIT JAM Online Form 2027",
+      "url": "/post/iit-jam-2027",
+      "category": "latestJobs",
+      "slug": "iit-jam-2027",
+      "publishedDate": "2026-09-25T09:59:08+05:30",
+      "publishedAt": "2026-09-25T04:29:08.000Z"
     },
     {
       "title": "UPSSSC PET Revised Exam Date 2026",
@@ -8824,6 +8848,14 @@ export const scrapedData = {
   ],
   "answerKeys": [
     {
+      "title": "SSC Selection Post Phase-XIV Answer Key 2026",
+      "url": "/post/ssc-phase-xiv-2026",
+      "category": "answerKeys",
+      "slug": "ssc-phase-xiv-2026",
+      "publishedDate": "2026-10-09T16:34:31+05:30",
+      "publishedAt": "2026-10-09T11:04:31.000Z"
+    },
+    {
       "title": "Rajasthan State Eligibility Test SET Answer Key 2026",
       "url": "/post/rajasthan-state-eligibility-test-set-2026",
       "category": "answerKeys",
@@ -8958,14 +8990,6 @@ export const scrapedData = {
       "slug": "rssb-computer-instructor-07-2026",
       "publishedDate": "18 September 2026",
       "publishedAt": "2026-09-17T18:30:00.000Z"
-    },
-    {
-      "title": "UPSC NDA/ NA-II Answer Key 2026",
-      "url": "/post/upsc-nda-na-ii-2026",
-      "category": "answerKeys",
-      "slug": "upsc-nda-na-ii-2026",
-      "publishedDate": "2026-09-12T11:42:31+05:30",
-      "publishedAt": "2026-09-12T06:12:31.000Z"
     },
     {
       "title": "NTA UGC NET June 2026 Re-Exam Answer Key",
@@ -10871,8 +10895,8 @@ export const scrapedData = {
       "lastDate": "05 March 2026"
     },
     "bihar-police-csbc-constable-gd-2026": {
-      "publishedDate": "5 September 2026",
-      "publishedAt": "2026-09-05T07:02:38.000Z",
+      "publishedDate": "2026-10-09T19:08:25+05:30",
+      "publishedAt": "2026-10-09T13:38:25.000Z",
       "lastDate": "05 March 2026"
     },
     "bihar-police-csbc-constable-operator-2026": {
@@ -12022,8 +12046,8 @@ export const scrapedData = {
       "publishedAt": "2026-09-15T10:21:44.000Z"
     },
     "ibps-clerk-csa-16th-2026": {
-      "publishedDate": "2026-10-08T16:04:00+05:30",
-      "publishedAt": "2026-10-08T10:34:00.000Z",
+      "publishedDate": "2026-10-09T17:04:59+05:30",
+      "publishedAt": "2026-10-09T11:34:59.000Z",
       "lastDate": "28 August 2026 (Extend)"
     },
     "ibps-crp-po-mt-16th-2026": {
@@ -13615,8 +13639,8 @@ export const scrapedData = {
       "lastDate": "15/09/2026\nLast Date for Apply Online : 14/10/2026\nLast Date Pay Exam Fee : 14/10/2026\nExam Date : As per schedule\nAdmit Card Available : Before Exam : Application Fee\n\nGeneral / OBC / EWS : 500/-\nSC / ST / PH : 250/-\nAll Category Female : 250/-\nAfter Appear the Stage I Exam \nGeneral/OBC/EWS Fee Refund: Rs. 400/-\nSC / ST / PH / Female Refund : Rs. 250/-\nPay the Examination Fee Through Cast at E Challan or Debit Card, Credit Card, Net Banking"
     },
     "railway-rrb-section-controller-2026": {
-      "publishedDate": "2026-10-08T20:17:58+05:30",
-      "publishedAt": "2026-10-08T14:47:58.000Z",
+      "publishedDate": "2026-10-09T17:05:06+05:30",
+      "publishedAt": "2026-10-09T11:35:06.000Z",
       "lastDate": "14 August 2026"
     },
     "railway-rrb-technician-2025": {
@@ -14148,8 +14172,8 @@ export const scrapedData = {
       "lastDate": "Railway RRB Technician CEN 02/2026 Application Status/ CBT Exam Date Out for 6557 Post\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPost Date:\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t10 September 2026 | 06:09 PM\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tShort Information :\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tRRB Railway has Officially Released Exam Date/ Admit Card for the for the Post of Technician Gr-I & Grade-III (CEN.No.02/2026) Recruitment 2026 for 6557 Post. Check All Details, Like Age Limit, Eligibility Details, Post Information, Pay Scale, Selection Process & More Details Related to RRB Technician Jobs. CBT Exam Date October 6-9, 2026 & Last Date for Application is July 29, 2026. All Interested Candidates Can Download Exam Date Notice Now in the Given Link Below. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t \n\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tRailway Recruitment Board (Ministry of Railway)\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tRailway RRB Technician Recruitment 2026\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAdvt No. : (CEN). No. 02/2026\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tWWW.RESULTBHARAT.COM\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tImportant Dates\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOnline Apply Start On: 30 June 2026\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tRegistration Last Date : 29 July 2026\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tFee Payment Last Date : 31 July 2026\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tEdit/ Modify Form:  01-10 August 2026\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tExam City : 10 Days Before Exam Date\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tExam Admit Card: 04 Days Before Exam Date\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCBT Exam Date : 06 to 09 September 2026\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tApplication Fee\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tGeneral/ OBC/ EWS : Rs. 500/-\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSC & ST Candidates : Rs. 250/-\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPH Candidates : Rs. 250/-\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAll Category Female : Rs. 250/-\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tApplication Edit/ Modify Charge : Rs. 250/-\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPayment Mode: Pay the Examination Fee Through Debit Card / Credit Card / Net Banking Fee Mode.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAge Limit as on 01-07-2026\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMinimum Age : 18 Years.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMaximum Age : 30 Years. (Technician Gr-III)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMaximum Age : 33 Years. (Technician Gr-I Signal)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAge Relaxation Extra as Per Rules.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tUse Age Calculator:  Click Here  \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tEducation Qualification\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTechnician Gr-I (Signal):- BE / B.Tech / Engineering Diploma / B.SC Engineering Degree.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTechnician Gr-III Open Line & Technician Gr-III Workshop & Pus :- Class 10th with ITI Certficate in Related Trade Or Pass Class 10th with PCM Subject.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tFor Complete Trade Wise Qualification (CEN-02/2026):  Click Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tVacancy Details\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTotal Vacancy : 6557 Post\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPost Name\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tGeneral\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSC\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tST\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOBC\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tEWS\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTotal Post\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTechnician Gr-I (Signal)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t120\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t50\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t37\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t84\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t32\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t323\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTechnician Gr-III\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t2608\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t959\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t560\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1481\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t626\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t6234\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tGrand Total\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t2728\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1009\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t597\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1565\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t658\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t6557\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n    \n        RRB Technician Categories CEN 02/2026 - Vacancy Details\n        \n        \n            \n                \n                    Cat No.\n                    Name of the Post\n                    Level in 7th CPC\n                    Medical Standard\n                    Total Vacancies(All RRBs)\n                \n            \n            \n                1TECHNICIAN GRADE I SIGNAL5B1323\n                2TECHNICIAN GRADE III TRACK MACHINE2A3172\n                3TECHNICIAN GRADE III BLACKSMITH2B1306\n                4TECHNICIAN GRADE III BRIDGE2B134\n                5TECHNICIAN GRADE III CARRIAGE and WAGON2B1501\n                6TECHNICIAN GRADE III DIESEL ELECTRICAL2B1206\n                7TECHNICIAN GRADE III DIESEL MECHANICAL2B1346\n                8TECHNICIAN GRADE III ELECTRICAL / TRS2B1268\n                9TECHNICIAN GRADE III ELECTRICAL (GS)2B1329\n                10TECHNICIAN GRADE III ELECTRICAL (TRD)2B1152\n                11TECHNICIAN GRADE III EMU2B1147\n                12TECHNICIAN GRADE III FITTER (OL)2B1469\n                13TECHNICIAN GRADE III REFRIGERATION and AIR CONDITIONING2B1162\n                14TECHNICIAN GRADE III (S & T)2B1320\n                15TECHNICIAN GRADE III WELDER (OL)2B1150\n                16TECHNICIAN GRADE III CRANE DRIVER2B213\n                17TECHNICIAN GRADE III CARPENTER (WORKSHOP)2C1229\n                18TECHNICIAN GRADE III ELECTRICAL (PU & WS)2C1128\n                19TECHNICIAN GRADE III FITTER (PU & WS)2C11109\n                20TECHNICIAN GRADE III MACHINIST (WORKSHOP)2C1123\n                21TECHNICIAN GRADE III MECHANICAL (WORKSHOP)2C1193\n                22TECHNICIAN GRADE III MILLWRIGHT2C1170\n                23TECHNICIAN GRADE III PAINTER (WORKSHOP)2C177\n                24TECHNICIAN GRADE III TRIMMER (WORKSHOP)2C146\n                25TECHNICIAN GRADE III WELDER (PU & WS)2C1584\n            \n            \n                \n                    Total Vacancies\n                    6557\n                \n            \n        \n    \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCEN 02/2026: RRB / Zone Wise Vacancy Details of Technician\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tRRB Name\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tZone\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tUR\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSC\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tST\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOBC\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tEWS\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTotal\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAhmedabad\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tWR\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t---\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAjmer\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tNWR\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tBangalore\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSWR\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tBhopal\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tWCR/ WR\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tBhubaneswar\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tECoR\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tBilaspur\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCR/ SER\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tChandigarh\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tNR\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tChennai\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSR\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tGorakhpur\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tNER\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tGuwahati\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tNFR\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tJammu-Srinagar\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tNR\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tKolkata\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tER/ SER / Metro\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMalda\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tER/ SER\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMumbai\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSER/ WR/CR\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMuzaffarpur\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tECR\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPatna\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tECR\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPrayagraj\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tNCR/ NR\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tRanchi\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSER\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSecunderabad\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tECoR/ SER\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSiliguri\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tNFR\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tThiruvananthpuram\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSR\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t---\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tProcess for Fee Refund in Technician CEN No. 02/2026\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tImportant Instruction for the All Candidates Expect the Fee Concession Categories.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCandidates Must be Enter the Your Account Number, Account Holder Name, IFSC Code Under Login Section.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tRailway Will be Refunded General/ OBC/ EWS Candidates Rs. 400 & SC / ST Candidates Rs. 250/-\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAfter the Appear the First Stage CBT Examination Your Exceed Amount Will be Refunded at Your Bank.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tNote : If you have Not Appeared in CBT Exam Amount Not be Refunded.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMode of Selection & Pay Scale\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPay Scale – Technician Gr-III:-Rs.19,900-63,200 (Level-2) ||  Technician Gr-I (Signal):  Rs.29,200-92,300 (Level-5)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMode of  Selection on the based CBT Exam, DV & Medical Exam.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\n\t📋 How to Download Railway RRB Technician CEN 02/2026 Exam City / Admit Card 2026 (6557 Posts)\n\n\t\n\t\tVisit the official website rrbapply.gov.in or your regional RRB website.\n\t\tClick on the “CEN 02/2026 Technician Exam City Intimation / E-Call Letter” link.\n\t\tLog in with your Registration Number and Date of Birth.\n\t\tDownload the Exam City Slip (about 10 days before exam) and Admit Card (about 4 days before exam).\n\t\tPrint the Admit Card and carry it to the exam center with a valid photo ID.\n\t\n\n\tNote: Check all details carefully and contact the RRB helpline for any issues.\n\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here to Join ResultBharat Facebook Group \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAll Interested Candidates Can Download CBT Exam Date Now.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDisclaimer : The Examination Results / Marks published in this Website is simplest for the instant Information to the Examinees an does now not to be a represent to be a Legal Document. While all efforts had been made to make the Information to be had on this Website as Authentic as feasible. We are not accountable for any Inadvertent Error which can have crept in the Examination Results / Marks being published in this Website nad for any loss to absolutely everyone or anything caused by any Shortcoming, Defect or Inaccuracy of the Information in this Website.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t          \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tIMPORTANT LINKS \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tApplication Status \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDownload CBT Exam Date Notice\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tApply Online \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDownload FAQ\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDownload Official Notification\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDownload RRB Wise Vacancy Details\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDownload Old Exam Pattern/ Syllabus \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tEnglish  ||  Hindi\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOfficial Website\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tJoin Our Whatsapp Channel\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tJoin Our Telegram Group\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTop Online Form 2026 (All Current Job List)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\n\n\t\t\t\t\t\t\n\n\nЁЯЪи Railway RRB Technician CEN 02/2026 CBT Exam Date: Out for 6557 Posts #RRBTechnician2026 #RRBCEN022026\nRailway Recruitment Boards (RRB) ne **Technician Gr-I & Gr-III CEN 02/2026** ke liye official notification release kar diya haiред Online application **30 June 2026** se **29 July 2026** tak chalegiред Trending: RRB Technician 2026, Railway Technician 6557 posts, RRB CEN 02/2026!\n\nЁЯФе Hot Trends: RRB Technician CEN 02/2026 Buzz\n10 September 2026: RRB Technician Recruitment 2026 Google aur AI Mode mein bahut trending! Searches exploding for \"RRB Technician form 2026\", \"Railway Technician 6557 posts apply online\", \"RRB CEN 02/2026 notification PDF\". Massive opportunity for ITI/Diploma candidates! #RRBTechnician2026 #SarkariNaukri\n\nЁЯУ░ Latest Updates for RRB Technician CEN 02/2026\n\n  15 May 2026: Notification Active\n  30 June 2026: Online Application Starts\n  29 July 2026: Last date for registration\n  06 to 09 October 2026: CBT Exam Date\n\n\nЁЯУЕ Important Dates (CEN 02/2026)\n\n  \n    EventDate\n    Online Apply Start30 June 2026\n    Registration Last Date29 July 2026\n    Fee Payment Last Date29 July 2026\n    Correction WindowNotify Later\n    CBT Exam Date06 to 09 October 2026\n  \n\nOfficial Website: Regional RRB Websites\n\nЁЯТ╕ Application Fee\n\n  \n    CategoryFee\n    General / OBC / EWSRs. 500/-\n    SC / ST / PH / FemaleRs. 250/-\n  \n\nPayment Mode: Debit Card, Credit Card, Net Banking, UPI.\n\nЁЯХТ Age Limit (as on 01-07-2026)\n\n  Minimum Age: 18 Years\n  Maximum Age: 30/33 Years (Post Wise)\n  Age Relaxation: As per Railway Rules.\n\n\nЁЯОУ Eligibility Criteria\n\n  10th Pass + ITI in relevant trade OR 10th + Diploma in Engineering\n\n\nЁЯУЛ Vacancy Details\n\n  Total Vacancy: 6557 Posts (Technician Gr-I & Gr-III)\n\n\nЁЯТ░ Pay Scale & Mode of Selection\n\n  Pay Scale: Level-2 (Rs.19,900 тАУ 63,200) / Level-5 (Rs.29,200 тАУ 92,300)\n  Selection Process: CBT-1 + CBT-2 + Document Verification + Medical Test\n\n\nЁЯУЛ How to Apply for RRB Technician CEN 02/2026\n\n  Visit official RRB website of your region\n  Click on CEN 02/2026 Technician Recruitment\n  Register and fill the form\n  Upload documents & pay fee\n  Submit before 29 July 2026\n\n\nЁЯМЯ Why Apply for RRB Technician 2026?\n\n  Central Government Railway Job with Good Salary\n  6565 Vacancies тАУ Huge Opportunity\n  Excellent Career Growth in Indian Railways\n  Trending on Google & AI Mode! #RRBTechnician2026\n\n\nExplore more Railway RRB Technician & ALP Updates on Result Bharat!\n\nтЭУ RRB Technician CEN 02/2026 тАУ Frequently Asked Questions\nЁЯУЕ Q1. Form kab start hai?30 June 2026.\nЁЯУЕ Q2. Last date kya hai?29 July 2026.\nЁЯТ╕ Q3. Application fee kitna hai?Rs.500 (Gen/OBC/EWS), Rs.250 (Reserved).\nЁЯХТ Q4. Age limit?18-30/33 Years.\nЁЯУЛ Q5. Total posts?6557.\nЁЯОУ Q6. Eligibility?10th + ITI / Diploma.\nЁЯФН Q7. Selection process?CBT-1 + CBT-2 + DV + Medical.\nЁЯТ░ Q8. Salary?Level-2 / Level-5.\nЁЯУЕ Q9. RRB Technician рдлреЙрд░реНрдо рдХрдм рд╢реБрд░реВ?30 рдЬреВрди 2026 рд╕реЗред\nЁЯУЕ Q10. рдЕрдВрддрд┐рдо рддрд┐рдерд┐?29 рдЬреБрд▓рд╛рдИ 2026ред\n\n\n\n\n \n\t\t\t\t\t\t\n\n\n \n\n\n\n \n\n \n \n \n\n\n\n\n\n\n\n\n\n\n\n/* Footer Styling */\n    .pageFooter {\n        background-color: #00004d; /* Dark blue background */\n        padding: 20px 0;\n        text-align: center;\n        border-top: 2px solid #ddd;\n        color: white; /* White text for better contrast */\n    }\n\n    .pageFooter p {\n        margin: 10px 0;\n        font-family: 'Times New Roman', Times, serif;\n        font-size: 16px;\n        color: white; /* White text */\n    }\n\n    .pageFooter a {\n        text-decoration: none;\n        color: #66ccff; /* Light blue link color */\n        font-weight: bold;\n    }\n\n    .pageFooter a:hover {\n        color: #ff6347; /* Hover effect - tomato color */\n    }\n\n    .pageFooter .footer-links {\n        font-size: 18px;\n        margin-top: 20px;\n    }\n\n    .pageFooter .footer-links a {\n        margin: 0 8px;\n        color: #66ccff; /* Light blue link color */\n        font-weight: bold;\n    }\n\n    .pageFooter .footer-links a:hover {\n        color: #ff6347; /* Hover effect for links */\n    }\n\n    .pageFooter img {\n        margin: 10px 0; /* Space above and below the image */\n    }\n\n    .pageFooter .copyright {\n        margin-top: 10px;\n        font-size: 16px;\n    }\n\n\n\n\n\nContact Email:   official.resultbharat@gmail.com \n\n\nHome | About Us | Contact Us | Privacy Policy | Disclaimer | Terms of Use\n\n\n\n\n\n© Copyright 2017-2026 at www.resultbharat.com\n  \n\n\n\n\n\n\n\n'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpsh-oh'},{'server':'sg2plzcpnl506243'},{'dcenter':'sg2'},{'cp_id':'3459397'},{'cp_cl':'8'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support. : Name of Post:\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tRailway RRB Technician CEN 02/2026 Application Status/ CBT Exam Date Out for 6557 Post\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPost Date:\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t10 September 2026 | 06:09 PM\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tShort Information :\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tRRB Railway has Officially Released Exam Date/ Admit Card for the for the Post of Technician Gr-I & Grade-III (CEN.No.02/2026) Recruitment 2026 for 6557 Post. Check All Details, Like Age Limit, Eligibility Details, Post Information, Pay Scale, Selection Process & More Details Related to RRB Technician Jobs. CBT Exam Date October 6-9, 2026 & Last Date for Application is July 29, 2026. All Interested Candidates Can Download Exam Date Notice Now in the Given Link Below. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t \n\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tRailway Recruitment Board (Ministry of Railway)\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tRailway RRB Technician Recruitment 2026\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAdvt No. : (CEN). No. 02/2026\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tWWW.RESULTBHARAT.COM\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tImportant Dates\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOnline Apply Start On: 30 June 2026\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tRegistration Last Date : 29 July 2026\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tFee Payment Last Date : 31 July 2026\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tEdit/ Modify Form:  01-10 August 2026\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tExam City : 10 Days Before Exam Date\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tExam Admit Card: 04 Days Before Exam Date\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCBT Exam Date : 06 to 09 September 2026\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tApplication Fee\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tGeneral/ OBC/ EWS : Rs. 500/-\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSC & ST Candidates : Rs. 250/-\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPH Candidates : Rs. 250/-\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAll Category Female : Rs. 250/-\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tApplication Edit/ Modify Charge : Rs. 250/-\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPayment Mode: Pay the Examination Fee Through Debit Card / Credit Card / Net Banking Fee Mode.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAge Limit as on 01-07-2026\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMinimum Age : 18 Years.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMaximum Age : 30 Years. (Technician Gr-III)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMaximum Age : 33 Years. (Technician Gr-I Signal)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAge Relaxation Extra as Per Rules.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tUse Age Calculator:  Click Here  \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tEducation Qualification\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTechnician Gr-I (Signal):- BE / B.Tech / Engineering Diploma / B.SC Engineering Degree.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTechnician Gr-III Open Line & Technician Gr-III Workshop & Pus :- Class 10th with ITI Certficate in Related Trade Or Pass Class 10th with PCM Subject.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tFor Complete Trade Wise Qualification (CEN-02/2026):  Click Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tVacancy Details\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTotal Vacancy : 6557 Post\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPost Name\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tGeneral\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSC\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tST\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOBC\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tEWS\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTotal Post\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTechnician Gr-I (Signal)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t120\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t50\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t37\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t84\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t32\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t323\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTechnician Gr-III\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t2608\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t959\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t560\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1481\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t626\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t6234\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tGrand Total\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t2728\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1009\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t597\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1565\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t658\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t6557\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n    \n        RRB Technician Categories CEN 02/2026 - Vacancy Details\n        \n        \n            \n                \n                    Cat No.\n                    Name of the Post\n                    Level in 7th CPC\n                    Medical Standard\n                    Total Vacancies(All RRBs)\n                \n            \n            \n                1TECHNICIAN GRADE I SIGNAL5B1323\n                2TECHNICIAN GRADE III TRACK MACHINE2A3172\n                3TECHNICIAN GRADE III BLACKSMITH2B1306\n                4TECHNICIAN GRADE III BRIDGE2B134\n                5TECHNICIAN GRADE III CARRIAGE and WAGON2B1501\n                6TECHNICIAN GRADE III DIESEL ELECTRICAL2B1206\n                7TECHNICIAN GRADE III DIESEL MECHANICAL2B1346\n                8TECHNICIAN GRADE III ELECTRICAL / TRS2B1268\n                9TECHNICIAN GRADE III ELECTRICAL (GS)2B1329\n                10TECHNICIAN GRADE III ELECTRICAL (TRD)2B1152\n                11TECHNICIAN GRADE III EMU2B1147\n                12TECHNICIAN GRADE III FITTER (OL)2B1469\n                13TECHNICIAN GRADE III REFRIGERATION and AIR CONDITIONING2B1162\n                14TECHNICIAN GRADE III (S & T)2B1320\n                15TECHNICIAN GRADE III WELDER (OL)2B1150\n                16TECHNICIAN GRADE III CRANE DRIVER2B213\n                17TECHNICIAN GRADE III CARPENTER (WORKSHOP)2C1229\n                18TECHNICIAN GRADE III ELECTRICAL (PU & WS)2C1128\n                19TECHNICIAN GRADE III FITTER (PU & WS)2C11109\n                20TECHNICIAN GRADE III MACHINIST (WORKSHOP)2C1123\n                21TECHNICIAN GRADE III MECHANICAL (WORKSHOP)2C1193\n                22TECHNICIAN GRADE III MILLWRIGHT2C1170\n                23TECHNICIAN GRADE III PAINTER (WORKSHOP)2C177\n                24TECHNICIAN GRADE III TRIMMER (WORKSHOP)2C146\n                25TECHNICIAN GRADE III WELDER (PU & WS)2C1584\n            \n            \n                \n                    Total Vacancies\n                    6557\n                \n            \n        \n    \n\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCEN 02/2026: RRB / Zone Wise Vacancy Details of Technician\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tRRB Name\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tZone\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tUR\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSC\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tST\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOBC\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tEWS\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTotal\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAhmedabad\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tWR\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t---\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAjmer\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tNWR\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tBangalore\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSWR\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tBhopal\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tWCR/ WR\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tBhubaneswar\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tECoR\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tBilaspur\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCR/ SER\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tChandigarh\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tNR\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tChennai\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSR\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tGorakhpur\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tNER\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tGuwahati\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tNFR\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tJammu-Srinagar\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tNR\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tKolkata\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tER/ SER / Metro\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMalda\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tER/ SER\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMumbai\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSER/ WR/CR\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMuzaffarpur\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tECR\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPatna\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tECR\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPrayagraj\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tNCR/ NR\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tRanchi\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSER\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSecunderabad\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tECoR/ SER\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSiliguri\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tNFR\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tThiruvananthpuram\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSR\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t---\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tProcess for Fee Refund in Technician CEN No. 02/2026\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tImportant Instruction for the All Candidates Expect the Fee Concession Categories.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCandidates Must be Enter the Your Account Number, Account Holder Name, IFSC Code Under Login Section.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tRailway Will be Refunded General/ OBC/ EWS Candidates Rs. 400 & SC / ST Candidates Rs. 250/-\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAfter the Appear the First Stage CBT Examination Your Exceed Amount Will be Refunded at Your Bank.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tNote : If you have Not Appeared in CBT Exam Amount Not be Refunded.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMode of Selection & Pay Scale\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPay Scale – Technician Gr-III:-Rs.19,900-63,200 (Level-2) ||  Technician Gr-I (Signal):  Rs.29,200-92,300 (Level-5)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMode of  Selection on the based CBT Exam, DV & Medical Exam.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\n\t📋 How to Download Railway RRB Technician CEN 02/2026 Exam City / Admit Card 2026 (6557 Posts)\n\n\t\n\t\tVisit the official website rrbapply.gov.in or your regional RRB website.\n\t\tClick on the “CEN 02/2026 Technician Exam City Intimation / E-Call Letter” link.\n\t\tLog in with your Registration Number and Date of Birth.\n\t\tDownload the Exam City Slip (about 10 days before exam) and Admit Card (about 4 days before exam).\n\t\tPrint the Admit Card and carry it to the exam center with a valid photo ID.\n\t\n\n\tNote: Check all details carefully and contact the RRB helpline for any issues.\n\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here to Join ResultBharat Facebook Group \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAll Interested Candidates Can Download CBT Exam Date Now.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDisclaimer : The Examination Results / Marks published in this Website is simplest for the instant Information to the Examinees an does now not to be a represent to be a Legal Document. While all efforts had been made to make the Information to be had on this Website as Authentic as feasible. We are not accountable for any Inadvertent Error which can have crept in the Examination Results / Marks being published in this Website nad for any loss to absolutely everyone or anything caused by any Shortcoming, Defect or Inaccuracy of the Information in this Website.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t          \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tIMPORTANT LINKS \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tApplication Status \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDownload CBT Exam Date Notice\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tApply Online \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDownload FAQ\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDownload Official Notification\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDownload RRB Wise Vacancy Details\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDownload Old Exam Pattern/ Syllabus \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tEnglish  ||  Hindi\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOfficial Website\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tJoin Our Whatsapp Channel\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tJoin Our Telegram Group\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTop Online Form 2026 (All Current Job List)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\n\n\t\t\t\t\t\t\n\n\nЁЯЪи Railway RRB Technician CEN 02/2026 CBT Exam Date: Out for 6557 Posts #RRBTechnician2026 #RRBCEN022026\nRailway Recruitment Boards (RRB) ne **Technician Gr-I & Gr-III CEN 02/2026** ke liye official notification release kar diya haiред Online application **30 June 2026** se **29 July 2026** tak chalegiред Trending: RRB Technician 2026, Railway Technician 6557 posts, RRB CEN 02/2026!\n\nЁЯФе Hot Trends: RRB Technician CEN 02/2026 Buzz\n10 September 2026: RRB Technician Recruitment 2026 Google aur AI Mode mein bahut trending! Searches exploding for \"RRB Technician form 2026\", \"Railway Technician 6557 posts apply online\", \"RRB CEN 02/2026 notification PDF\". Massive opportunity for ITI/Diploma candidates! #RRBTechnician2026 #SarkariNaukri\n\nЁЯУ░ Latest Updates for RRB Technician CEN 02/2026\n\n  15 May 2026: Notification Active\n  30 June 2026: Online Application Starts\n  29 July 2026: Last date for registration\n  06 to 09 October 2026: CBT Exam Date\n\n\nЁЯУЕ Important Dates (CEN 02/2026)\n\n  \n    EventDate\n    Online Apply Start30 June 2026\n    Registration Last Date29 July 2026\n    Fee Payment Last Date29 July 2026\n    Correction WindowNotify Later\n    CBT Exam Date06 to 09 October 2026\n  \n\nOfficial Website: Regional RRB Websites\n\nЁЯТ╕ Application Fee\n\n  \n    CategoryFee\n    General / OBC / EWSRs. 500/-\n    SC / ST / PH / FemaleRs. 250/-\n  \n\nPayment Mode: Debit Card, Credit Card, Net Banking, UPI.\n\nЁЯХТ Age Limit (as on 01-07-2026)\n\n  Minimum Age: 18 Years\n  Maximum Age: 30/33 Years (Post Wise)\n  Age Relaxation: As per Railway Rules.\n\n\nЁЯОУ Eligibility Criteria\n\n  10th Pass + ITI in relevant trade OR 10th + Diploma in Engineering\n\n\nЁЯУЛ Vacancy Details\n\n  Total Vacancy: 6557 Posts (Technician Gr-I & Gr-III)\n\n\nЁЯТ░ Pay Scale & Mode of Selection\n\n  Pay Scale: Level-2 (Rs.19,900 тАУ 63,200) / Level-5 (Rs.29,200 тАУ 92,300)\n  Selection Process: CBT-1 + CBT-2 + Document Verification + Medical Test\n\n\nЁЯУЛ How to Apply for RRB Technician CEN 02/2026\n\n  Visit official RRB website of your region\n  Click on CEN 02/2026 Technician Recruitment\n  Register and fill the form\n  Upload documents & pay fee\n  Submit before 29 July 2026\n\n\nЁЯМЯ Why Apply for RRB Technician 2026?\n\n  Central Government Railway Job with Good Salary\n  6565 Vacancies тАУ Huge Opportunity\n  Excellent Career Growth in Indian Railways\n  Trending on Google & AI Mode! #RRBTechnician2026\n\n\nExplore more Railway RRB Technician & ALP Updates on Result Bharat!\n\nтЭУ RRB Technician CEN 02/2026 тАУ Frequently Asked Questions\nЁЯУЕ Q1. Form kab start hai?30 June 2026.\nЁЯУЕ Q2. Last date kya hai?29 July 2026.\nЁЯТ╕ Q3. Application fee kitna hai?Rs.500 (Gen/OBC/EWS), Rs.250 (Reserved).\nЁЯХТ Q4. Age limit?18-30/33 Years.\nЁЯУЛ Q5. Total posts?6557.\nЁЯОУ Q6. Eligibility?10th + ITI / Diploma.\nЁЯФН Q7. Selection process?CBT-1 + CBT-2 + DV + Medical.\nЁЯТ░ Q8. Salary?Level-2 / Level-5.\nЁЯУЕ Q9. RRB Technician рдлреЙрд░реНрдо рдХрдм рд╢реБрд░реВ?30 рдЬреВрди 2026 рд╕реЗред\nЁЯУЕ Q10. рдЕрдВрддрд┐рдо рддрд┐рдерд┐?29 рдЬреБрд▓рд╛рдИ 2026ред\n\n\n\n\n \n\t\t\t\t\t\t\n\n\n \n\n\n\n \n\n \n \n \n\n\n\n\n\n\n\n\n\n\n\n/* Footer Styling */\n    .pageFooter {\n        background-color: #00004d; /* Dark blue background */\n        padding: 20px 0;\n        text-align: center;\n        border-top: 2px solid #ddd;\n        color: white; /* White text for better contrast */\n    }\n\n    .pageFooter p {\n        margin: 10px 0;\n        font-family: 'Times New Roman', Times, serif;\n        font-size: 16px;\n        color: white; /* White text */\n    }\n\n    .pageFooter a {\n        text-decoration: none;\n        color: #66ccff; /* Light blue link color */\n        font-weight: bold;\n    }\n\n    .pageFooter a:hover {\n        color: #ff6347; /* Hover effect - tomato color */\n    }\n\n    .pageFooter .footer-links {\n        font-size: 18px;\n        margin-top: 20px;\n    }\n\n    .pageFooter .footer-links a {\n        margin: 0 8px;\n        color: #66ccff; /* Light blue link color */\n        font-weight: bold;\n    }\n\n    .pageFooter .footer-links a:hover {\n        color: #ff6347; /* Hover effect for links */\n    }\n\n    .pageFooter img {\n        margin: 10px 0; /* Space above and below the image */\n    }\n\n    .pageFooter .copyright {\n        margin-top: 10px;\n        font-size: 16px;\n    }\n\n\n\n\n\nContact Email:   official.resultbharat@gmail.com \n\n\nHome | About Us | Contact Us | Privacy Policy | Disclaimer | Terms of Use\n\n\n\n\n\n© Copyright 2017-2026 at www.resultbharat.com\n  \n\n\n\n\n\n\n\n'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpsh-oh'},{'server':'sg2plzcpnl506243'},{'dcenter':'sg2'},{'cp_id':'3459397'},{'cp_cl':'8'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support."
     },
     "rrb-technician-grade-i-iii-2026": {
-      "publishedDate": "2026-10-08T16:04:07+05:30",
-      "publishedAt": "2026-10-08T10:34:07.000Z",
+      "publishedDate": "2026-10-09T17:05:03+05:30",
+      "publishedAt": "2026-10-09T11:35:03.000Z",
       "lastDate": "29 July 2026"
     },
     "rrc-sr-apprentices-august26": {
@@ -14789,8 +14813,8 @@ export const scrapedData = {
       "publishedAt": "2025-07-22T18:30:00.000Z"
     },
     "ssc-phase-xiv-2026": {
-      "publishedDate": "8 September 2026",
-      "publishedAt": "2026-09-08T13:42:49.000Z",
+      "publishedDate": "2026-10-09T16:34:31+05:30",
+      "publishedAt": "2026-10-09T11:04:31.000Z",
       "lastDate": "04 May 2026"
     },
     "ssc-selection-post-14th-2026": {
@@ -15767,8 +15791,8 @@ export const scrapedData = {
       "lastDate": "11 June 2026 (06:00 PM)"
     },
     "upsc-nda-na-ii-2026": {
-      "publishedDate": "2026-09-12T11:42:31+05:30",
-      "publishedAt": "2026-09-12T06:12:31.000Z",
+      "publishedDate": "2026-10-09T20:09:27+05:30",
+      "publishedAt": "2026-10-09T14:39:27.000Z",
       "lastDate": "11 June 2026 (Extended)"
     },
     "upsc-section-officers-and-stenographers-ldce-notification-2026-3067961": {
@@ -16370,8 +16394,8 @@ export const scrapedData = {
       "lastDate": "03 July 2026"
     },
     "ssc-cgl-2026": {
-      "publishedDate": "2026-10-08T16:04:12+05:30",
-      "publishedAt": "2026-10-08T10:34:12.000Z",
+      "publishedDate": "2026-10-09T17:05:10+05:30",
+      "publishedAt": "2026-10-09T11:35:10.000Z",
       "lastDate": "25 June 2026"
     },
     "rrb-ntpc-102-ug-level-07-2026": {
@@ -16678,12 +16702,27 @@ export const scrapedData = {
       "publishedDate": "2026-10-02T16:05:48+05:30",
       "publishedAt": "2026-10-02T10:35:48.000Z",
       "lastDate": "03 October 2026"
+    },
+    "mp-high-court-assistant-grade-iii-2026": {
+      "publishedDate": "2026-10-09T14:15:27+05:30",
+      "publishedAt": "2026-10-09T08:45:27.000Z",
+      "lastDate": "30 September 2026"
+    },
+    "nta-ugc-net-jrf-december-2026": {
+      "publishedDate": "2026-10-09T15:55:00+05:30",
+      "publishedAt": "2026-10-09T10:25:00.000Z",
+      "lastDate": "28 November 2026"
+    },
+    "nta-swayam-2026-2": {
+      "publishedDate": "2026-10-09T17:03:53+05:30",
+      "publishedAt": "2026-10-09T11:33:53.000Z",
+      "lastDate": "31 October 2026"
     }
   },
-  "fetchedAt": "2026-10-09T08:04:24.170Z",
+  "fetchedAt": "2026-10-10T07:00:34.039Z",
   "seo": {
-    "lastOptimized": "2026-10-09T08:05:28.828Z",
-    "totalPosts": 1294,
+    "lastOptimized": "2026-10-10T07:01:53.374Z",
+    "totalPosts": 1297,
     "websiteName": "All India Exam Result",
     "websiteUrl": "https://www.aiexamresult.com",
     "description": "Sarkari Result 2026 - Get fastest government job alerts, sarkari naukri, exam results, admit cards & answer keys. SSC, UPSC, Railway, Banking, UP, Bihar & all India exams."
