@@ -208,6 +208,7 @@ export default async function sitemap({ id }: { id: string }): Promise<MetadataR
       { path: "/difficulty-meter", freq: "weekly", prio: 0.5 },
       { path: "/result-predictor", freq: "weekly", prio: 0.5 },
       { path: "/iq-test", freq: "weekly", prio: 0.5 },
+      { path: "/radio", freq: "daily", prio: 0.8 },
       { path: "/tools", freq: "daily", prio: 0.6 },
       { path: "/tools/age-calculator", freq: "weekly", prio: 0.4 },
       { path: "/tools/image-compressor", freq: "weekly", prio: 0.4 },

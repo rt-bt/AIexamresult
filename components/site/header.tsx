@@ -32,6 +32,7 @@ const nav: [string, string, [string, string][]?][] = [
   ["Home", "/"],
   ["Exam", "/exam", examSubNav],
   ["Study Hub", "/study-hub", studyHubSubNav],
+  ["Radio", "/radio"],
   ["Tools", "/tools"],
   ["Contact Us", "/contact-us"],
   ["About Us", "/about-us"]

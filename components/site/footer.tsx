@@ -19,6 +19,7 @@ const footerGroups = [
       { label: "Syllabus", href: "/syllabus" },
       { label: "Scholarships", href: "/scholarships" },
       { label: "Board Results", href: "/board-results" },
+      { label: "Live Radio", href: "/radio" },
     ],
   },
   {

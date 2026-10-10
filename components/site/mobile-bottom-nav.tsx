@@ -1,6 +1,6 @@
 "use client";
 
-import { Home, Search, Bookmark, Grid3X3, X, ChevronRight, LayoutDashboard, MapPin, Calendar, Phone, User, FileText, Calculator, BarChart3, Scale, ListChecks, GraduationCap, BookOpen, HelpCircle, AlertTriangle, ClipboardList, Activity, DollarSign, ShieldCheck, BrainCircuit } from "lucide-react";
+import { Home, Search, Bookmark, Grid3X3, X, ChevronRight, LayoutDashboard, MapPin, Calendar, Phone, User, FileText, Calculator, BarChart3, Scale, ListChecks, GraduationCap, BookOpen, HelpCircle, AlertTriangle, ClipboardList, Activity, DollarSign, ShieldCheck, BrainCircuit, Radio } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
@@ -30,6 +30,7 @@ const tools: [string, string, typeof Home][] = [
 ];
 
 const moreLinks: [string, string, typeof Home][] = [
+  ["Live Radio", "/radio", Radio],
   ["Dashboard", "/dashboard", LayoutDashboard],
   ["States", "/state-map", MapPin],
   ["Results", "/results", Grid3X3],
