@@ -71,3 +71,28 @@ test("Radio Security: All 93 stations use HTTPS to prevent browser Mixed Content
   }
 });
 
+test("ThreeUI KageLandingPage: Component and exact configured usage", () => {
+  const scenePath = path.join(ROOT, "components", "site", "kage-scene.tsx");
+  assert.ok(fs.existsSync(scenePath), "components/site/kage-scene.tsx must exist");
+
+  const sceneContent = fs.readFileSync(scenePath, "utf8");
+  assert.match(sceneContent, /from\s+["']@designcodeio\/threeui["']/, "Must import from @designcodeio/threeui");
+  assert.match(sceneContent, /KageLandingPage/, "Must render KageLandingPage");
+  assert.match(sceneContent, /primaryColor=["']#e0231c["']/, "Must use primaryColor #e0231c");
+  assert.match(sceneContent, /headingFont=["']onest["']/, "Must use onest font");
+
+  const radioClientContent = fs.readFileSync(path.join(ROOT, "components", "site", "radio-client.tsx"), "utf8");
+  assert.match(radioClientContent, /KageScene/, "radio-client.tsx must render KageScene");
+});
+
+test("ThreeUI Kage Assets: Canonical HTML, scripts, and WebP textures exist", () => {
+  const kageHtml = path.join(ROOT, "public", "landing-pages", "kage.html");
+  assert.ok(fs.existsSync(kageHtml), "public/landing-pages/kage.html must exist");
+
+  const threeJs = path.join(ROOT, "public", "landing-pages", "secret-pathways-assets", "three.min.js");
+  assert.ok(fs.existsSync(threeJs), "three.min.js must exist");
+
+  const previewWebp = path.join(ROOT, "public", "landing-pages", "secret-pathways-assets", "generated", "kage-sanmon-preview.webp");
+  assert.ok(fs.existsSync(previewWebp), "kage-sanmon-preview.webp must exist");
+});
+

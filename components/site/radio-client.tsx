@@ -28,6 +28,7 @@ import {
   matchGenrePreset,
 } from "@/lib/radio";
 import { cn } from "@/lib/utils";
+import { Scene as KageScene } from "@/components/site/kage-scene";
 
 const ALL_LANGUAGES = [
   "All",
@@ -364,14 +365,20 @@ export function RadioClient() {
         preload="none"
       />
 
-      {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-[#5B0111] via-[#48000D] to-[#300008] text-white py-12 md:py-16 shadow-lg border-b border-[#FFD84D]/20">
-        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#FFD84D_1px,transparent_1px)] [background-size:16px_16px]" />
-        
-        <div className="container-page relative z-10 mx-auto px-4 sm:px-6">
+      {/* Hero Section with KageLandingPage ThreeUI background */}
+      <section className="relative overflow-hidden bg-[#05070a] text-white py-12 md:py-20 shadow-xl border-b border-[#FFD84D]/20 min-h-[440px] flex items-center">
+        {/* Kage Three.js Interactive Background */}
+        <div className="absolute inset-0 z-0 overflow-hidden pointer-events-auto">
+          <KageScene />
+        </div>
+
+        {/* Ambient Dark Gradient Scrim to ensure crisp contrast for text and badges */}
+        <div className="absolute inset-0 z-[1] bg-gradient-to-r from-[#05070a]/90 via-[#05070a]/70 to-[#05070a]/30 pointer-events-none" />
+
+        <div className="container-page relative z-10 mx-auto px-4 sm:px-6 pointer-events-auto">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 rounded-full bg-[#FFD84D]/15 border border-[#FFD84D]/40 px-3.5 py-1 text-xs sm:text-sm font-semibold text-[#FFD84D] mb-4 shadow-sm backdrop-blur-md">
-              <RadioTower className="h-4 w-4 animate-pulse" />
+            <div className="inline-flex items-center gap-2 rounded-full bg-[#e0231c]/25 border border-[#e0231c]/50 px-3.5 py-1 text-xs sm:text-sm font-semibold text-[#FFD84D] mb-4 shadow-sm backdrop-blur-md">
+              <RadioTower className="h-4 w-4 animate-pulse text-[#e0231c]" />
               <span>Free Live Streaming • 90+ Indian Radio Channels</span>
             </div>
 
@@ -387,15 +394,15 @@ export function RadioClient() {
 
             {/* Quick Stats Banner */}
             <div className="flex flex-wrap items-center gap-4 text-xs sm:text-sm text-white/90">
-              <div className="flex items-center gap-1.5 bg-black/30 rounded-lg px-3 py-1.5 border border-white/10">
+              <div className="flex items-center gap-1.5 bg-black/60 rounded-lg px-3 py-1.5 border border-white/10 backdrop-blur-sm">
                 <Radio className="h-4 w-4 text-[#FFD84D]" />
                 <span className="font-bold text-white">93 Active Channels</span>
               </div>
-              <div className="flex items-center gap-1.5 bg-black/30 rounded-lg px-3 py-1.5 border border-white/10">
-                <Headphones className="h-4 w-4 text-[#FF5B3E]" />
+              <div className="flex items-center gap-1.5 bg-black/60 rounded-lg px-3 py-1.5 border border-white/10 backdrop-blur-sm">
+                <Headphones className="h-4 w-4 text-[#e0231c]" />
                 <span>Crystal-Clear Audio</span>
               </div>
-              <div className="flex items-center gap-1.5 bg-black/30 rounded-lg px-3 py-1.5 border border-white/10">
+              <div className="flex items-center gap-1.5 bg-black/60 rounded-lg px-3 py-1.5 border border-white/10 backdrop-blur-sm">
                 <Sparkles className="h-4 w-4 text-[#FFD84D]" />
                 <span>100% Free & Unlimited</span>
               </div>

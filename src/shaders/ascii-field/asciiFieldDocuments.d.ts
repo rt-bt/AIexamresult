@@ -1,0 +1,2 @@
+
+export declare function buildAsciiFieldDocument(variant: any): string;
