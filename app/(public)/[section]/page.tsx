@@ -69,7 +69,7 @@ export default async function SectionPage({ params }: { params: Promise<{ sectio
   const title = sections[section] ?? "Updates";
   const informational = ["contact", "about", "privacy-policy", "disclaimer"].includes(section);
   const items = sectionItems[section];
-  const h1Prefix = ["results", "admit-card", "answer-key", "latest-jobs"].includes(section) ? "Sarkari " : "";
+  const h1Prefix = title.startsWith("Sarkari") ? "" : ["results", "admit-card", "answer-key", "latest-jobs"].includes(section) ? "Sarkari " : "";
 
   const breadcrumbLd = {
     "@context": "https://schema.org",
