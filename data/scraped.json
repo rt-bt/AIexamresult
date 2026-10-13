@@ -1,6 +1,22 @@
 {
   "results": [
     {
+      "title": "SSC GD Constable Result 2026 – Out",
+      "url": "/post/ssc-gd-constable-2025",
+      "category": "results",
+      "slug": "ssc-gd-constable-2025",
+      "publishedDate": "2026-10-13T17:09:29+05:30",
+      "publishedAt": "2026-10-13T11:39:29.000Z"
+    },
+    {
+      "title": "India Post Office GDS 1st Merit List 2026 – Out",
+      "url": "/post/india-post-office-gds-2026",
+      "category": "results",
+      "slug": "india-post-office-gds-2026",
+      "publishedDate": "2026-10-13T17:09:26+05:30",
+      "publishedAt": "2026-10-13T11:39:26.000Z"
+    },
+    {
       "title": "DSSSB Assistant Teacher (Primary) Result 2026",
       "url": "/post/dsssb-assistant-teacher-primary-2025",
       "category": "results",
@@ -15,22 +31,6 @@
       "slug": "upessc-up-principal-2026",
       "publishedDate": "2026-10-13T16:53:29+05:30",
       "publishedAt": "2026-10-13T11:23:29.000Z"
-    },
-    {
-      "title": "SSC GD Constable Result 2026 – Out",
-      "url": "/post/ssc-gd-constable-2025",
-      "category": "results",
-      "slug": "ssc-gd-constable-2025",
-      "publishedDate": "2026-10-12T20:18:41+05:30",
-      "publishedAt": "2026-10-12T14:48:41.000Z"
-    },
-    {
-      "title": "India Post Office GDS 1st Merit List 2026 – Out",
-      "url": "/post/india-post-office-gds-2026",
-      "category": "results",
-      "slug": "india-post-office-gds-2026",
-      "publishedDate": "2026-10-12T20:01:39+05:30",
-      "publishedAt": "2026-10-12T14:31:39.000Z"
     },
     {
       "title": "UPSSSC Cane Supervisor Eligibility Result 2026",
@@ -4003,6 +4003,14 @@
   ],
   "admitCards": [
     {
+      "title": "WCL Mining Sirdar, Assistant Foreman Admit Card 2026",
+      "url": "/post/wcl-mining-sirdar-assistant-foreman-2026",
+      "category": "admitCards",
+      "slug": "wcl-mining-sirdar-assistant-foreman-2026",
+      "publishedDate": "2026-10-13T17:18:44+05:30",
+      "publishedAt": "2026-10-13T11:48:44.000Z"
+    },
+    {
       "title": "SSC CGL Admit Card 2026",
       "url": "/post/ssc-cgl-2026",
       "category": "admitCards",
@@ -4075,20 +4083,20 @@
       "publishedAt": "2026-10-01T06:51:04.000Z"
     },
     {
-      "title": "Jharkhand Teacher Eligibility Test JHTET Admit Card Date 2026",
-      "url": "/post/jharkhand-jhtet-2026",
-      "category": "admitCards",
-      "slug": "jharkhand-jhtet-2026",
-      "publishedDate": "2026-09-29T22:33:27+05:30",
-      "publishedAt": "2026-09-29T17:03:27.000Z"
-    },
-    {
       "title": "CIPET Admit Card 2025",
       "url": "/post/cipet-admit-card-2025",
       "category": "admitCards",
       "slug": "cipet-admit-card-2025",
       "publishedDate": "2025-06-10T16:29:09+05:30",
       "publishedAt": "2025-06-10T10:59:09.000Z"
+    },
+    {
+      "title": "Jharkhand Teacher Eligibility Test JHTET Admit Card Date 2026",
+      "url": "/post/jharkhand-jhtet-2026",
+      "category": "admitCards",
+      "slug": "jharkhand-jhtet-2026",
+      "publishedDate": "2026-09-29T22:33:27+05:30",
+      "publishedAt": "2026-09-29T17:03:27.000Z"
     },
     {
       "title": "Railway RRB Technician CEN 02/2026 Admit Card 2026",
@@ -12205,8 +12213,8 @@
       "lastDate": "31/08/2026\nLast Date for Apply Registration :19/09/2026 upto 5 PM\nApplication Form Begin : 02/09/2026\nLast Date for Apply Form : 21/09/2026 upto 05 PM Only \nPay Exam Fee Last Date :21/09/2026\nComplete Form Last Date : 21/09/2026\nCorrection Date : 23-24 September 2026\nFirst Merit List / Result : As per Schedule \nSecond Merit List / Result : As per Schedule\nThird Merit List / Result : As per Schedule\nFourth Merit List : As per Schedule : Application Fee\n\nGeneral / EWS / OBC : 100/-\nSC / ST / PH : 0/- (Nil)\nAll Category Female : 0/- (Exempted)\nPay the Exam Fee Through Debit Card / Credit Card / Net Banking / UPI Fee Mode Only."
     },
     "india-post-office-gds-2026": {
-      "publishedDate": "2026-10-12T20:01:39+05:30",
-      "publishedAt": "2026-10-12T14:31:39.000Z",
+      "publishedDate": "2026-10-13T17:09:26+05:30",
+      "publishedAt": "2026-10-13T11:39:26.000Z",
       "lastDate": "19 September 2026"
     },
     "indian-air-force-agniveervayu-recruitment-2025": {
@@ -14778,8 +14786,8 @@
       "lastDate": "31/12/2025"
     },
     "ssc-gd-constable-2025": {
-      "publishedDate": "2026-10-12T20:18:41+05:30",
-      "publishedAt": "2026-10-12T14:48:41.000Z",
+      "publishedDate": "2026-10-13T17:09:29+05:30",
+      "publishedAt": "2026-10-13T11:39:29.000Z",
       "lastDate": "31 December 2025"
     },
     "ssc-gd-constable-result-2": {
@@ -16792,12 +16800,17 @@
       "publishedDate": "2026-10-12T17:43:04+05:30",
       "publishedAt": "2026-10-12T12:13:04.000Z",
       "lastDate": "25 November 2026"
+    },
+    "wcl-mining-sirdar-assistant-foreman-2026": {
+      "publishedDate": "2026-10-13T17:18:44+05:30",
+      "publishedAt": "2026-10-13T11:48:44.000Z",
+      "lastDate": "10 August 2026"
     }
   },
-  "fetchedAt": "2026-10-13T11:38:02.515Z",
+  "fetchedAt": "2026-10-13T11:49:15.430Z",
   "seo": {
-    "lastOptimized": "2026-10-13T11:38:06.063Z",
-    "totalPosts": 1306,
+    "lastOptimized": "2026-10-13T11:49:45.788Z",
+    "totalPosts": 1307,
     "websiteName": "All India Exam Result",
     "websiteUrl": "https://www.aiexamresult.com",
     "description": "Sarkari Result 2026 - Get fastest government job alerts, sarkari naukri, exam results, admit cards & answer keys. SSC, UPSC, Railway, Banking, UP, Bihar & all India exams."
