@@ -67,16 +67,31 @@ export default function SearchPage() {
     <>
       <Header />
       <main className="bg-white min-h-screen font-sans">
-        <div className="border-b border-[#222222] bg-[#07131a] min-h-[460px] sm:min-h-[520px] md:min-h-[580px] flex items-center justify-center py-10 sm:py-16 md:py-24 px-4 sm:px-6 relative overflow-hidden">
-          {/* Fullscreen looping background video shifted upward */}
+        <div className="border-b border-black/20 bg-[#85032e] bg-gradient-to-b from-[#9e053a] via-[#85032e] to-[#59001e] min-h-[460px] sm:min-h-[520px] md:min-h-[580px] flex items-center justify-center py-10 sm:py-16 md:py-24 px-4 sm:px-6 relative overflow-hidden">
+          {/* Ambient glowing video background layer to seamlessly fill edges */}
           <video
             autoPlay
             loop
             muted
             playsInline
             src="https://pub-86dc5b5484314368ac5436a674b0d919.r2.dev/cloudinarry%20to%20cloudflare/202606021731-e_hqa6sn.mp4"
-            className="absolute inset-0 w-full h-full object-cover z-0 pointer-events-none"
-            style={{ objectPosition: "center 80%" }}
+            className="absolute inset-0 w-full h-full object-cover z-0 pointer-events-none blur-3xl opacity-60 scale-110"
+            style={{ objectPosition: "55% center" }}
+          />
+
+          {/* Zoomed-out crisp foreground animation */}
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            src="https://pub-86dc5b5484314368ac5436a674b0d919.r2.dev/cloudinarry%20to%20cloudflare/202606021731-e_hqa6sn.mp4"
+            className="absolute inset-0 w-full h-full object-cover z-0 pointer-events-none scale-[0.82] sm:scale-[0.80] md:scale-[0.78] transition-transform duration-300"
+            style={{
+              objectPosition: "55% 45%",
+              WebkitMaskImage: "radial-gradient(ellipse 95% 90% at 50% 50%, black 72%, transparent 100%)",
+              maskImage: "radial-gradient(ellipse 95% 90% at 50% 50%, black 72%, transparent 100%)",
+            }}
           />
 
           <div className="w-full max-w-4xl relative z-10 flex flex-col items-center text-center -mt-1 sm:-mt-3">
