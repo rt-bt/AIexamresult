@@ -7,74 +7,36 @@ import Link from "next/link";
 import { VoiceSearchBtn } from "./voice-search";
 
 /**
- * Mux HLS Video Background with HLS.js streaming and Safari m3u8 native fallback
- * URL: https://stream.mux.com/T6oQJQ02cQ6N01TR6iHwZkKFkbepS34dkkIc9iukgy400g.m3u8
- * Poster fallback: https://images.unsplash.com/photo-1647356191320-d7a1f80ca777
+ * Fullscreen Foldcraft Looping Video Background
+ * URL: https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260622_204221_5339e40b-e73d-4ab0-9c65-79c18c66fd50.mp4
+ * Styling: absolute positioned, full width/height, object-cover, object-position at 70% horizontal center
+ * Attributes: autoPlay, muted, loop, playsInline
  */
-function HeroMuxVideoBackground() {
+function HeroFoldcraftVideoBackground() {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
-
-    let hlsInstance: any = null;
-    const videoSrc = "https://stream.mux.com/T6oQJQ02cQ6N01TR6iHwZkKFkbepS34dkkIc9iukgy400g.m3u8";
-
-    // Dynamically load HLS.js for client-side streaming
-    import("hls.js").then(({ default: Hls }) => {
-      if (Hls.isSupported()) {
-        hlsInstance = new Hls({
-          enableWorker: true,
-          lowLatencyMode: true,
-        });
-        hlsInstance.loadSource(videoSrc);
-        hlsInstance.attachMedia(video);
-        hlsInstance.on(Hls.Events.MANIFEST_PARSED, () => {
-          video.play().catch(() => {});
-        });
-      } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
-        video.src = videoSrc;
-        video.addEventListener("loadedmetadata", () => {
-          video.play().catch(() => {});
-        });
-      }
-    });
-
-    return () => {
-      if (hlsInstance) {
-        hlsInstance.destroy();
-      }
-    };
+    video.play().catch(() => {});
   }, []);
 
   return (
     <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
-      {/* Video element streaming MUX m3u8 */}
       <video
         ref={videoRef}
-        poster="https://images.unsplash.com/photo-1647356191320-d7a1f80ca777?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGRhcmslMjB0ZWNobm9sb2d5JTIwbmV1cmFsJTIwbmV0d29ya3xlbnwxfHx8fDE3Njg5NzIyNTV8MA&ixlib=rb-4.1.0&q=80&w=1080"
+        src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260622_204221_5339e40b-e73d-4ab0-9c65-79c18c66fd50.mp4"
         playsInline
         muted
         autoPlay
         loop
         preload="auto"
-        className="absolute inset-0 h-full w-full object-cover opacity-75"
+        className="absolute inset-0 h-full w-full object-cover"
+        style={{ objectPosition: "70% center" }}
       />
-
-      {/* Video Overlay with minimal blur to preserve clarity */}
+      {/* Subtle bottom fade to blend with the stats divider */}
       <div
-        className="absolute inset-0 bg-black/45 backdrop-blur-[1px] pointer-events-none"
-        aria-hidden="true"
-      />
-
-      {/* Decorative Gradients: top-left & bottom-right */}
-      <div
-        className="absolute -top-[20%] left-[20%] h-[600px] w-[600px] rounded-full bg-blue-900/25 blur-[120px] mix-blend-screen pointer-events-none"
-        aria-hidden="true"
-      />
-      <div
-        className="absolute -bottom-[10%] right-[20%] h-[500px] w-[500px] rounded-full bg-indigo-900/25 blur-[120px] mix-blend-screen pointer-events-none"
+        className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-black via-black/40 to-transparent pointer-events-none"
         aria-hidden="true"
       />
     </div>
@@ -95,9 +57,9 @@ export function Hero() {
   }
 
   return (
-    <section className="relative min-h-[620px] lg:min-h-[700px] w-full overflow-hidden bg-[#000000] text-white font-sans border-b border-white/15">
-      {/* 1. MUX HLS Video Background with Decorative Gradients */}
-      <HeroMuxVideoBackground />
+    <section className="relative min-h-[620px] lg:min-h-[700px] w-full overflow-hidden bg-black text-white font-sans border-b border-white/15">
+      {/* 1. Foldcraft Video Background Layer */}
+      <HeroFoldcraftVideoBackground />
 
       {/* 2. Main Hero Content Layer at z-10 */}
       <div className="relative z-10 container-page flex flex-col justify-between pt-12 pb-14 sm:pt-16 sm:pb-16 lg:pt-20 lg:pb-20">
@@ -105,58 +67,63 @@ export function Hero() {
         {/* Top & Middle Content Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-end">
           
-          {/* Left Column: Pre-headline, Heading, Description, Pill CTA, Capsule Search */}
+          {/* Left Column: Badge, Heading, Description, CTAs, Capsule Search */}
           <div className="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left">
             
-            {/* Pre-headline: Instrument Serif pill */}
-            <div className="inline-flex items-center gap-2 mb-4 px-3.5 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/20">
-              <span className="h-1.5 w-1.5 rounded-full bg-[#3054ff]" aria-hidden="true" />
-              <span className="text-xs sm:text-[13px] font-medium tracking-wide text-white" style={{ fontFamily: "'Instrument Serif', serif" }}>
-                Design at the speed of thought · Latest Exam Updates
+            {/* Top Badge with fadeSlideUp 0.2s */}
+            <div
+              className="inline-flex items-center gap-2 mb-5 px-3.5 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/20"
+              style={{ animation: "fadeSlideUp 0.8s ease 0.2s both" }}
+            >
+              <span className="h-1.5 w-1.5 rounded-full bg-[#F28A2E]" aria-hidden="true" />
+              <span className="text-xs sm:text-[13px] font-medium tracking-wide text-white/95">
+                Official Government Exam Updates
               </span>
             </div>
 
-            {/* Main Headline with gradient text */}
-            <h1 className="text-4xl sm:text-6xl lg:text-[64px] font-semibold tracking-tighter leading-[1.05] mb-5 font-heading animate-fade-rise">
-              <span className="bg-gradient-to-b from-white via-white to-[#b4c0ff] bg-clip-text text-transparent">
-                Exam results,
-              </span>
-              <br />
-              <span className="text-[#F28A2E] drop-shadow-[0_2px_14px_rgba(242,138,46,0.4)]">
-                finally made simple.
-              </span>
+            {/* Main Heading with fadeSlideUp 0.4s */}
+            <h1
+              className="text-3xl sm:text-5xl lg:text-[56px] font-medium tracking-tight leading-[1.1] mb-5 font-heading drop-shadow-[0_2px_14px_rgba(0,0,0,0.85)]"
+              style={{ animation: "fadeSlideUp 0.8s ease 0.4s both" }}
+            >
+              Exam results,<br />
+              <span className="text-[#F28A2E]">finally made simple.</span>
             </h1>
 
-            {/* Subheadline / Description */}
-            <p className="text-base sm:text-lg text-white/80 max-w-xl mb-8 leading-[1.65] font-normal animate-fade-rise-delay drop-shadow-md">
+            {/* Description with fadeSlideUp 0.7s */}
+            <p
+              className="text-base sm:text-lg text-white/80 max-w-xl mb-8 leading-relaxed font-normal drop-shadow-md"
+              style={{ animation: "fadeSlideUp 0.8s ease 0.7s both" }}
+            >
               Get the latest government exam results, admit cards, answer keys and job notifications in one place.
             </p>
 
-            {/* CTAs: Primary White Pill with Blue Arrow Circle + Secondary Link */}
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-8 w-full sm:w-auto animate-fade-rise-delay-2">
+            {/* CTAs with fadeSlideUp 0.9s */}
+            <div
+              className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-8 w-full sm:w-auto"
+              style={{ animation: "fadeSlideUp 0.8s ease 0.9s both" }}
+            >
               <Link
                 href="/results"
-                className="group inline-flex items-center justify-between gap-4 pl-6 pr-2 py-2 rounded-full bg-white hover:scale-105 transition-all duration-200 shadow-[0_0_25px_rgba(255,255,255,0.25)] text-[#0a0400]"
+                className="inline-flex items-center justify-center gap-2 rounded-lg bg-white px-6 py-3 text-sm font-medium text-black hover:scale-105 transition-transform shadow-xl shadow-black/40"
               >
-                <span className="text-sm sm:text-base font-semibold">Check Latest Results</span>
-                <span className="flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full bg-[#3054ff] group-hover:bg-[#2040e0] text-white transition-colors">
-                  <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
-                </span>
+                <span>Check Latest Results</span>
+                <ArrowRight className="h-4 w-4" />
               </Link>
               
               <Link
                 href="/latest-jobs"
-                className="group inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2 text-sm sm:text-base font-medium text-white/80 hover:text-white backdrop-blur-sm hover:bg-white/10 transition-all"
+                className="inline-flex items-center justify-center gap-2 rounded-lg border border-white/30 bg-white/10 backdrop-blur-md hover:bg-white/20 text-white px-6 py-3 text-sm font-medium transition-colors"
               >
                 <span>Browse Latest Jobs</span>
-                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
             </div>
 
             {/* Capsule Search Field */}
             <form
               onSubmit={handleSearch}
-              className="w-full sm:max-w-md animate-fade-rise-delay-2"
+              className="w-full sm:max-w-md"
+              style={{ animation: "fadeSlideUp 0.8s ease 0.9s both" }}
             >
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center rounded-2xl sm:rounded-full bg-white/95 p-1.5 shadow-2xl backdrop-blur-md border border-white/40 gap-2 sm:gap-0">
                 <div className="relative flex-1 flex items-center pl-3">
@@ -179,7 +146,7 @@ export function Hero() {
                 </div>
                 <button
                   type="submit"
-                  className="rounded-full px-6 py-2.5 text-xs font-semibold text-white transition-all bg-[#3054ff] hover:bg-[#2040e0] shadow-md shrink-0"
+                  className="rounded-full px-6 py-2.5 text-xs font-semibold text-white transition-all bg-[#F28A2E] hover:bg-[#FF9E42] shadow-md shrink-0"
                 >
                   Search
                 </button>
@@ -212,7 +179,7 @@ export function Hero() {
               <div className="rounded-2xl bg-white/10 backdrop-blur-lg border border-white/20 p-5 shadow-2xl">
                 {/* Header Row */}
                 <div className="flex items-center gap-2.5 mb-3">
-                  <div className="h-6 w-6 rounded-md bg-[#3054ff] flex items-center justify-center text-white text-xs font-bold shadow-sm">
+                  <div className="h-6 w-6 rounded-md bg-[#F28A2E] flex items-center justify-center text-white text-xs font-bold shadow-sm">
                     S
                   </div>
                   <span className="text-sm font-semibold text-white">
@@ -228,10 +195,10 @@ export function Hero() {
                 {/* Footer Link */}
                 <Link
                   href="/results"
-                  className="flex items-center justify-between pt-3 border-t border-white/15 text-xs font-semibold text-white hover:text-[#b4c0ff] transition-colors"
+                  className="flex items-center justify-between pt-3 border-t border-white/15 text-xs font-semibold text-white hover:text-[#F28A2E] transition-colors"
                 >
                   <span>Download Merit List PDF</span>
-                  <Download className="h-3.5 w-3.5 text-[#3054ff]" />
+                  <Download className="h-3.5 w-3.5 text-[#F28A2E]" />
                 </Link>
               </div>
 
@@ -243,7 +210,7 @@ export function Hero() {
       </div>
 
       {/* 3. Small Stats Section at the Bottom of the Hero (Glass Strip) */}
-      <div className="relative z-10 border-t border-white/15 bg-black/50 backdrop-blur-md">
+      <div className="relative z-10 border-t border-white/15 bg-black/60 backdrop-blur-md">
         <div className="container-page py-5 sm:py-6">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 text-center">
             
