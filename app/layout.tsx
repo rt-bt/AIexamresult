@@ -1,15 +1,18 @@
 import type { Metadata, Viewport } from "next";
-import { Space_Grotesk, DM_Sans } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import Script from "next/script";
 import { Providers } from "@/components/providers";
 import { InstallBanner } from "@/components/site/install-banner";
 import { CookieConsent } from "@/components/site/cookie-consent";
-import { CustomCursor } from "@/components/site/custom-cursor";
 import { ChatWidget } from "@/components/site/chat-widget";
 import "./globals.css";
 
-const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], variable: "--font-space-grotesk", display: "swap", weight: ["400", "500", "600", "700"] });
-const dmSans = DM_Sans({ subsets: ["latin"], variable: "--font-dm-sans", display: "swap", weight: ["400", "500", "600", "700"] });
+const plusJakartaSans = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  display: "swap",
+  weight: ["400", "500", "600", "700", "800"],
+});
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.aiexamresult.com";
 
@@ -253,8 +256,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           crossOrigin="anonymous"
         />
       </head>
-      <body className={`${spaceGrotesk.variable} ${dmSans.variable} font-sans antialiased`}>
-        <CustomCursor />
+      <body className={`${plusJakartaSans.variable} font-sans antialiased text-[#172033] bg-[#464B55]`}>
         <Providers>{children}</Providers>
         <InstallBanner />
         <CookieConsent />

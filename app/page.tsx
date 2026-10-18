@@ -11,12 +11,13 @@ import { StateGrid } from "@/components/site/state-grid";
 import { categorySections, featuredResults } from "@/lib/data";
 import { getCategoryCta } from "@/lib/categories";
 import Link from "next/link";
-import { ArrowUpRight, TrendingUp } from "lucide-react";
-import { TiltCard } from "@/components/unlumen-ui/tilt-card";
-import DotField from "@/components/DotField";
+import { ArrowUpRight, TrendingUp, CheckCircle2 } from "lucide-react";
 import { AdUnit } from "@/components/ads/ad-unit";
 
-const CategoryColumns = dynamicImport(() => import("@/components/site/category-columns").then(m => m.CategoryColumns), { ssr: true });
+const CategoryColumns = dynamicImport(
+  () => import("@/components/site/category-columns").then((m) => m.CategoryColumns),
+  { ssr: true }
+);
 
 export default function HomePage() {
   const trending = featuredResults.slice(0, 4);
@@ -24,83 +25,86 @@ export default function HomePage() {
   return (
     <>
       <Header />
-      <main>
-        {/* 1. Hero Section (Clean 2-line headline, mouse scrub video, quick search) */}
+      <main className="bg-white">
+        {/* 1. Hero Section (Minimal Dark Slate visual language, large clean typography, orange accent, stats) */}
         <Hero />
 
-        {/* 2. Latest Updates: 6 Columns Grid (Results, Jobs, Admit Card, Answer Key, Admissions, Documents) */}
-        <div className="relative overflow-hidden bg-[#FAFAFA] border-b border-[#DEDEDE]">
-          <DotField
-            dotRadius={1.2}
-            dotSpacing={16}
-            bulgeStrength={50}
-            glowRadius={140}
-            sparkle={false}
-            waveAmplitude={0}
-            cursorRadius={400}
-            cursorForce={0.08}
-            bulgeOnly
-            gradientFrom="#71717a"
-            gradientTo="#a1a1aa"
-            glowColor="#52525b"
-            opacity={0.12}
-          />
-          <div className="relative z-10 py-4">
-            <CategoryColumns sections={categorySections} />
-          </div>
-        </div>
-
-        {/* 3. Top Breaking / Trending Alerts (3D Tilt Cards) */}
-        <section className="py-10 bg-white border-b border-[#DEDEDE] font-sans">
+        {/* 2. Trending Alerts: Clean minimal verified cards (No 3D illustration, No excessive cards) */}
+        <section className="py-12 sm:py-16 bg-white border-b border-[#E2E8F0] font-sans">
           <div className="container-page">
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6">
-              <div className="flex items-center gap-3">
-                <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#123B6D] text-[#F59E0B] shadow-sm">
+            <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
+              <div className="flex items-start gap-3">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#343A46] text-[#F28A2E] shadow-xs">
                   <TrendingUp className="h-5 w-5" />
                 </span>
                 <div>
                   <div className="flex items-center gap-2">
-                    <h2 className="text-xl sm:text-2xl font-bold text-[#172033] font-heading tracking-tight">Trending Alerts</h2>
-                    <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-[#16A34A]/10 text-[#16A34A] border border-[#16A34A]/20 animate-pulse font-heading">
+                    <span className="text-xs font-bold uppercase tracking-[0.16em] text-[#8B8F96]">
+                      PRIORITY ALERTS
+                    </span>
+                    <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-50 text-emerald-700 border border-emerald-200 uppercase tracking-wider font-heading">
+                      <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
                       LIVE
                     </span>
                   </div>
-                  <p className="text-xs text-neutral-500 font-sans">Top results &amp; recruitment updates today</p>
+                  <h2 className="text-xl sm:text-2xl font-bold text-[#172033] font-heading tracking-tight mt-0.5">
+                    Trending Notifications
+                  </h2>
                 </div>
               </div>
-              <Link href="/results" className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-[#123B6D] hover:text-[#1D5FA7] transition font-heading">
+              <Link
+                href="/results"
+                className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-[#343A46] hover:text-[#F28A2E] transition-colors font-heading"
+              >
                 <span>View All Updates</span>
                 <ArrowUpRight className="h-4 w-4" />
               </Link>
             </div>
 
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
               {trending.map((post, i) => {
                 const cta = getCategoryCta(post.category, post.title, post.isExpired);
 
                 return (
-                  <TiltCard
+                  <Link
                     key={post.slug || i}
-                    title={post.title}
-                    description={`${cta.categoryLabel} · ${post.date || "Active Update"}`}
-                    category={cta.categoryLabel}
-                    price={`#${i + 1}`}
-                    badgeLabel={cta.badgeLabel}
-                    badgeVariant={cta.badgeVariant}
-                    actionText={cta.actionText}
-                    accentColor={cta.accentColor}
-                    imageSrc={cta.cardImage}
-                    imageAlt={post.title}
                     href={post.slug ? `/post/${post.slug}` : "#"}
-                  />
+                    className="group rounded-xl border border-[#E2E8F0] bg-white p-5 shadow-xs hover:border-[#8B8F96] hover:shadow-md transition-all duration-200 flex flex-col justify-between"
+                  >
+                    <div>
+                      <div className="flex items-center justify-between gap-2 mb-3">
+                        <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-[#F28A2E]/10 text-[10.5px] font-bold text-[#F28A2E] uppercase tracking-wider">
+                          <CheckCircle2 className="h-3 w-3" />
+                          {cta.badgeLabel || "Verified"}
+                        </span>
+                        <span className="text-[11px] font-bold text-[#8B8F96]">
+                          #{i + 1}
+                        </span>
+                      </div>
+                      <h3 className="text-sm font-bold text-[#172033] group-hover:text-[#F28A2E] transition-colors leading-snug line-clamp-2 mb-2 font-heading">
+                        {post.title}
+                      </h3>
+                      <p className="text-xs text-[#8B8F96]">
+                        {cta.categoryLabel} · {post.date || "Active Update"}
+                      </p>
+                    </div>
+
+                    <div className="mt-5 pt-3 border-t border-[#F1F5F9] flex items-center justify-between text-xs font-bold text-[#343A46] group-hover:text-[#F28A2E] transition-colors font-heading">
+                      <span>{cta.actionText || "View Details"}</span>
+                      <ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
+                    </div>
+                  </Link>
                 );
               })}
             </div>
           </div>
         </section>
 
+        {/* 3. Latest Updates: 6 Columns Grid (Results, Jobs, Admit Card, Answer Key, Admissions, Documents) */}
+        <CategoryColumns sections={categorySections} />
+
         {/* 4. Single Clean Ad Placement */}
-        <div className="container-page py-6">
+        <div className="container-page py-8">
           <AdUnit format="horizontal" />
         </div>
 

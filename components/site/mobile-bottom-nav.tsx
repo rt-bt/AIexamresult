@@ -163,10 +163,10 @@ export function MobileBottomNav() {
                 aria-expanded={sheet === tabSheet}
                 aria-label={label}
               >
-                <div className={`rounded-xl p-1.5 transition-all ${active ? "bg-[#5B0111]/10 text-[#5B0111] scale-105" : "text-gray-500"}`}>
+                <div className={`rounded-xl p-1.5 transition-all ${active ? "bg-[#F28A2E]/10 text-[#F28A2E] scale-105" : "text-gray-500"}`}>
                   <Icon className="h-5 w-5" />
                 </div>
-                <span className={active ? "text-[#5B0111] font-bold" : "text-gray-500"}>{label}</span>
+                <span className={active ? "text-[#F28A2E] font-bold" : "text-gray-500"}>{label}</span>
               </button>
             ) : (
               <Link
@@ -175,10 +175,10 @@ export function MobileBottomNav() {
                 className={itemClass}
                 aria-label={label}
               >
-                <div className={`rounded-xl p-1.5 transition-all ${active ? "bg-[#5B0111]/10 text-[#5B0111] scale-105" : "text-gray-500"}`}>
+                <div className={`rounded-xl p-1.5 transition-all ${active ? "bg-[#F28A2E]/10 text-[#F28A2E] scale-105" : "text-gray-500"}`}>
                   <Icon className="h-5 w-5" />
                 </div>
-                <span className={active ? "text-[#5B0111] font-bold" : "text-gray-500"}>{label}</span>
+                <span className={active ? "text-[#F28A2E] font-bold" : "text-gray-500"}>{label}</span>
               </Link>
             );
           })}

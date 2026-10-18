@@ -1,6 +1,6 @@
 "use client";
 
-import { Search, Sparkles, Languages, ChevronDown } from "lucide-react";
+import { Search, Sparkles, ChevronDown, Menu, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useMemo } from "react";
@@ -35,7 +35,7 @@ const nav: [string, string, [string, string][]?][] = [
   ["Radio", "/radio"],
   ["Tools", "/tools"],
   ["Contact Us", "/contact-us"],
-  ["About Us", "/about-us"]
+  ["About Us", "/about-us"],
 ];
 
 function getTickerItems(): TickerItem[] {
@@ -44,7 +44,7 @@ function getTickerItems(): TickerItem[] {
 
 export function Header() {
   const [open, setOpen] = useState(false);
-  const { lang, setLang, t } = useLang();
+  const { t } = useLang();
   const pathname = usePathname();
 
   const tickerList = useMemo(() => {
@@ -53,18 +53,24 @@ export function Header() {
   }, []);
 
   return (
-    <header className="sticky top-0 z-50 bg-[#123B6D] border-b border-[#0d284b] shadow-md font-sans">
-      <div className="h-0.5 bg-gradient-to-r from-[#F59E0B] via-[#1D5FA7] to-[#F59E0B]" />
-      <div className="container-page flex h-18 lg:h-22 items-center gap-4 py-2 lg:py-3">
-        <Link href="/" className="flex items-center gap-2.5">
-          <Logo className="h-16 w-16 lg:h-20 lg:w-20" dark />
-          <span className="hidden sm:flex flex-col leading-tight">
-            <span className="text-[15px] font-black tracking-tight text-white font-heading">All India</span>
-            <span className="text-[11px] font-bold tracking-widest text-[#F59E0B]">EXAM RESULT</span>
-          </span>
+    <header className="sticky top-0 z-50 bg-[#343A46] border-b border-white/[0.22] font-sans">
+      {/* Compact Main Navigation Bar */}
+      <div className="container-page flex h-14 sm:h-16 items-center justify-between gap-4">
+        {/* Left: Logo + Brand Title */}
+        <Link href="/" className="flex items-center gap-3 shrink-0 group">
+          <Logo className="h-9 w-9 sm:h-10 sm:w-10 transition-transform group-hover:scale-105" dark />
+          <div className="flex flex-col leading-none">
+            <span className="text-[14px] sm:text-[15px] font-bold tracking-tight text-white font-heading">
+              All India
+            </span>
+            <span className="text-[10px] font-extrabold uppercase tracking-widest text-[#F28A2E] mt-0.5">
+              EXAM RESULT
+            </span>
+          </div>
         </Link>
 
-        <nav className="ml-5 hidden items-center lg:flex">
+        {/* Desktop Navigation Links */}
+        <nav className="hidden lg:flex items-center gap-1 xl:gap-2">
           {nav.map(([label, href, dropdown]) => {
             const isActive = pathname === href || (href !== "/" && pathname.startsWith(href));
             return dropdown ? (
@@ -72,15 +78,17 @@ export function Header() {
                 <Link
                   href={href}
                   className={cn(
-                    "flex items-center gap-1.5 rounded-lg px-4 py-2 text-[15.5px] font-semibold transition font-heading tracking-wide",
-                    isActive ? "bg-white/10 text-[#FFD84D]" : "text-white/90 hover:bg-white/10 hover:text-white"
+                    "flex items-center gap-1 rounded-md px-3 py-1.5 text-[13.5px] font-medium transition-colors tracking-wide",
+                    isActive
+                      ? "text-[#F28A2E] font-semibold"
+                      : "text-[#D7D9DC] hover:text-white hover:bg-white/[0.06]"
                   )}
                 >
                   {t(`nav.${label.toLowerCase().replace(/\s+/g, "-")}`)}
-                  <ChevronDown className="h-4 w-4 transition duration-200 group-hover:rotate-180" />
+                  <ChevronDown className="h-3.5 w-3.5 transition-transform duration-200 group-hover:rotate-180 opacity-70" />
                 </Link>
-                <div className="invisible absolute left-1/2 top-full z-50 mt-1.5 w-56 -translate-x-1/2 translate-y-1 scale-95 rounded-xl border border-[#DEDEDE] bg-white py-1.5 shadow-2xl opacity-0 transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:scale-100 group-hover:opacity-100">
-                  <div className="space-y-0.5 p-1.5">
+                <div className="invisible absolute left-0 top-full z-50 pt-2 w-52 opacity-0 -translate-y-1 scale-95 transition-all duration-150 group-hover:visible group-hover:translate-y-0 group-hover:scale-100 group-hover:opacity-100">
+                  <div className="rounded-xl border border-white/[0.22] bg-[#343A46] p-1.5 shadow-2xl backdrop-blur-xl">
                     {dropdown.map(([subLabel, subHref]) => {
                       const isSubActive = pathname === subHref;
                       return (
@@ -88,10 +96,10 @@ export function Header() {
                           key={subHref}
                           href={subHref}
                           className={cn(
-                            "group/sub relative block rounded-lg px-3.5 py-2.5 text-sm font-semibold transition-all",
+                            "block rounded-lg px-3 py-2 text-xs font-medium transition-colors",
                             isSubActive
-                              ? "bg-amber-50 text-[#111111]"
-                              : "text-[#111111] hover:bg-amber-50/80 hover:text-[#FF5B3E]"
+                              ? "bg-white/10 text-[#F28A2E] font-semibold"
+                              : "text-[#D7D9DC] hover:bg-white/[0.08] hover:text-white"
                           )}
                         >
                           {subLabel}
@@ -106,8 +114,10 @@ export function Header() {
                 key={href}
                 href={href}
                 className={cn(
-                  "rounded-lg px-4 py-2 text-[15.5px] font-semibold transition font-heading tracking-wide",
-                  isActive ? "bg-white/10 text-[#FFD84D]" : "text-white/90 hover:bg-white/10 hover:text-white"
+                  "rounded-md px-3 py-1.5 text-[13.5px] font-medium transition-colors tracking-wide",
+                  isActive
+                    ? "text-[#F28A2E] font-semibold"
+                    : "text-[#D7D9DC] hover:text-white hover:bg-white/[0.06]"
                 )}
               >
                 {t(`nav.${label.toLowerCase().replace(/\s+/g, "-")}`)}
@@ -116,69 +126,138 @@ export function Header() {
           })}
         </nav>
 
-        <div className="ml-auto flex items-center gap-2 lg:gap-3">
+        {/* Right: Actions & Hamburger Menu Button */}
+        <div className="flex items-center gap-1.5 sm:gap-2">
           <LanguageSelector />
           <BookmarkListBtn />
           <VoiceSearchBtn />
-          <Link href="/search" className="hidden items-center gap-2 rounded-full bg-[#F59E0B] px-5 py-2.5 text-[15px] font-bold text-[#0f243d] transition hover:bg-[#e08d03] lg:inline-flex shadow-md shadow-black/20 font-heading">
-            <Search className="h-4.5 w-4.5" /> {t("nav.search")}
+
+          {/* Search Action */}
+          <Link
+            href="/search"
+            aria-label="Search exams"
+            className="flex items-center gap-1.5 rounded-lg border border-white/[0.22] bg-white/[0.06] hover:bg-white/[0.12] hover:text-white px-2.5 py-1.5 text-xs font-semibold text-[#D7D9DC] transition"
+          >
+            <Search className="h-3.5 w-3.5" />
+            <span className="hidden md:inline">{t("nav.search")}</span>
           </Link>
-          <Link href="/search" aria-label="Search exams" className="rounded-full border border-white/20 p-2.5 text-white transition hover:bg-white/15 active:scale-90 flex lg:hidden">
-            <Search className="h-4 w-4" />
-          </Link>
-          <button onClick={() => setOpen((value) => !value)} aria-label="Toggle navigation menu" className="rounded-full border border-white/20 p-2.5 text-white transition hover:bg-white/15 active:scale-90 flex lg:hidden">
-            {open ? "✕" : "☰"}
+
+          {/* Hamburger / Menu Icon Button (Visible on mobile and desktop drawer) */}
+          <button
+            onClick={() => setOpen((value) => !value)}
+            aria-label="Toggle navigation menu"
+            className="rounded-lg border border-white/[0.22] bg-white/[0.06] hover:bg-white/[0.14] p-1.5 text-white transition active:scale-95"
+          >
+            {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </button>
         </div>
-        </div>
+      </div>
 
-        <div role="region" aria-label="Breaking Exam Updates" className="overflow-hidden border-t border-black/20 bg-[#0d284b]">
-          <div className="flex items-center gap-3 px-4 py-2 text-sm">
-            <span className="flex shrink-0 items-center gap-1.5 rounded-md bg-[#1D5FA7] px-3 py-1 text-xs sm:text-[13px] font-bold text-white shadow-sm font-heading">
-              <Sparkles className="h-3.5 w-3.5 text-[#F59E0B]" aria-hidden="true" /> Latest Updates
-            </span>
-            <div className="overflow-hidden relative flex-1">
-              <div className="animate-marquee whitespace-nowrap inline-block hover:[animation-play-state:paused] focus-within:[animation-play-state:paused] motion-reduce:animate-none">
-                {tickerList.map((item, i) => (
-                  <Link
-                    key={i}
-                    href={item.slug ? `/post/${item.slug}` : "#"}
-                    className="mx-4 inline-flex items-center gap-2 text-white/95 transition hover:text-[#F59E0B] hover:underline focus-visible:underline"
-                  >
-                    <span className="rounded bg-black/30 px-2 py-0.5 text-xs font-bold text-[#F59E0B] border border-white/10 font-heading">
-                      {item.category || "Update"}
-                    </span>
-                    <span className="text-[13.5px] font-medium text-white/90">{item.title}</span>
-                    <span className="ml-2 text-white/40" aria-hidden="true">•</span>
-                  </Link>
-                ))}
-              </div>
+      {/* Breaking Updates Ticker: Sleek Thin Strip with Horizontal Divider */}
+      <div
+        role="region"
+        aria-label="Breaking Exam Updates"
+        className="overflow-hidden border-t border-white/[0.22] bg-[#2E333D]"
+      >
+        <div className="container-page flex items-center gap-3 py-1.5 text-xs">
+          <span className="flex shrink-0 items-center gap-1.5 rounded bg-[#F28A2E]/15 border border-[#F28A2E]/30 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-widest text-[#F28A2E]">
+            <Sparkles className="h-3 w-3" aria-hidden="true" /> Latest
+          </span>
+          <div className="overflow-hidden relative flex-1">
+            <div className="animate-marquee whitespace-nowrap inline-block hover:[animation-play-state:paused] focus-within:[animation-play-state:paused] motion-reduce:animate-none">
+              {tickerList.map((item, i) => (
+                <Link
+                  key={i}
+                  href={item.slug ? `/post/${item.slug}` : "#"}
+                  className="mx-3 inline-flex items-center gap-2 text-white/90 transition hover:text-[#F28A2E] hover:underline focus-visible:underline"
+                >
+                  <span className="rounded bg-white/10 px-1.5 py-0.5 text-[10.5px] font-semibold text-[#D7D9DC]">
+                    {item.category || "Update"}
+                  </span>
+                  <span className="text-[12.5px] font-medium text-white">{item.title}</span>
+                  <span className="ml-2 text-white/30" aria-hidden="true">
+                    /
+                  </span>
+                </Link>
+              ))}
             </div>
           </div>
         </div>
+      </div>
 
-        <div className={cn("container-page grid transition-all lg:hidden", open ? "grid-rows-[1fr] pb-4" : "grid-rows-[0fr]")}>
-          <div className="overflow-hidden">
-            <div className="rounded-2xl bg-white/10 p-3 backdrop-blur-xl">
-              {nav.map(([label, href, dropdown]) => (
-                <div key={href}>
-                  <Link href={href} onClick={() => setOpen(false)} className="block rounded-xl px-3 py-3 text-sm font-semibold text-white/80 transition active:bg-white/10 active:text-white">
-                    {t(`nav.${label.toLowerCase().replace(/\s+/g, "-")}`)}
-                  </Link>
-                  {dropdown && (
-                    <div className="ml-3 border-l border-white/10 pl-3">
-                      {dropdown.map(([subLabel, subHref]) => (
-                        <Link key={subHref} href={subHref} onClick={() => setOpen(false)} className="block rounded-lg px-3 py-2 text-xs font-medium text-white/60 transition active:bg-white/10 active:text-white">
-                          {t(`nav.${subLabel.toLowerCase().replace(/\s+/g, "-")}`)}
-                        </Link>
-                      ))}
-                    </div>
-                  )}
+      {/* Hamburger Dropdown Drawer Panel */}
+      <div
+        className={cn(
+          "container-page grid transition-all duration-300",
+          open ? "grid-rows-[1fr] py-4 border-t border-white/[0.22]" : "grid-rows-[0fr]"
+        )}
+      >
+        <div className="overflow-hidden">
+          <div className="rounded-xl bg-[#2E333D] border border-white/[0.22] p-4 text-white">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+              {/* Primary Routes */}
+              <div>
+                <p className="mb-2 text-[10px] font-bold uppercase tracking-widest text-[#F28A2E]">
+                  Navigation
+                </p>
+                <div className="space-y-1">
+                  {nav.map(([label, href]) => (
+                    <Link
+                      key={href}
+                      href={href}
+                      onClick={() => setOpen(false)}
+                      className="block rounded-md px-2.5 py-1.5 text-xs font-medium text-[#D7D9DC] hover:bg-white/10 hover:text-white transition"
+                    >
+                      {t(`nav.${label.toLowerCase().replace(/\s+/g, "-")}`)}
+                    </Link>
+                  ))}
                 </div>
-              ))}
-              <div className="mt-3 border-t border-white/10 pt-3">
-                <p className="mb-2 px-3 text-[11px] font-bold uppercase tracking-wider text-[#FFD84D]">Popular Tools</p>
-                <div className="grid grid-cols-2 gap-2 px-1">
+              </div>
+
+              {/* Exam Sub-Sections */}
+              <div>
+                <p className="mb-2 text-[10px] font-bold uppercase tracking-widest text-[#F28A2E]">
+                  Exam Categories
+                </p>
+                <div className="space-y-1">
+                  {examSubNav.map(([label, href]) => (
+                    <Link
+                      key={href}
+                      href={href}
+                      onClick={() => setOpen(false)}
+                      className="block rounded-md px-2.5 py-1.5 text-xs font-medium text-[#D7D9DC] hover:bg-white/10 hover:text-white transition"
+                    >
+                      {label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+
+              {/* Study Hub */}
+              <div>
+                <p className="mb-2 text-[10px] font-bold uppercase tracking-widest text-[#F28A2E]">
+                  Study Hub
+                </p>
+                <div className="space-y-1">
+                  {studyHubSubNav.map(([label, href]) => (
+                    <Link
+                      key={href}
+                      href={href}
+                      onClick={() => setOpen(false)}
+                      className="block rounded-md px-2.5 py-1.5 text-xs font-medium text-[#D7D9DC] hover:bg-white/10 hover:text-white transition"
+                    >
+                      {label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+
+              {/* Quick Tools */}
+              <div>
+                <p className="mb-2 text-[10px] font-bold uppercase tracking-widest text-[#F28A2E]">
+                  Candidate Tools
+                </p>
+                <div className="grid grid-cols-1 gap-1">
                   {[
                     ["Job Finder", "/job-finder"],
                     ["Eligibility Checker", "/eligibility-checker"],
@@ -191,7 +270,7 @@ export function Header() {
                       key={href}
                       href={href}
                       onClick={() => setOpen(false)}
-                      className="rounded-lg bg-white/5 px-3 py-2 text-xs font-semibold text-white/90 transition hover:bg-white/10 hover:text-[#FFD84D] active:scale-95"
+                      className="rounded-md bg-white/[0.04] px-2.5 py-1.5 text-xs font-medium text-[#D7D9DC] hover:bg-white/[0.1] hover:text-[#F28A2E] transition"
                     >
                       {label}
                     </Link>
@@ -201,6 +280,8 @@ export function Header() {
             </div>
           </div>
         </div>
+      </div>
+
       <MobileBottomNav />
     </header>
   );
