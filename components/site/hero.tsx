@@ -1,10 +1,113 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Search, ArrowRight, ShieldCheck, FileText, CheckCircle2, Download } from "lucide-react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { VoiceSearchBtn } from "./voice-search";
+
+/**
+ * Looping Video Background with custom fade-in/fade-out transitions
+ * via requestAnimationFrame and manual loop on ended event.
+ */
+function HeroVideoBackground() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const animFrameRef = useRef<number | null>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    let timeoutId: NodeJS.Timeout | null = null;
+    let isResetting = false;
+
+    const updateFade = () => {
+      if (!isResetting && video && video.duration && !isNaN(video.duration)) {
+        const cur = video.currentTime;
+        const dur = video.duration;
+        let op = 1;
+
+        // Fade in over 0.5s at the start (opacity 0 to 1)
+        if (cur < 0.5) {
+          op = cur / 0.5;
+        }
+        // Fade out over 0.5s before the end (opacity 1 to 0)
+        else if (dur > 0.5 && cur > dur - 0.5) {
+          op = Math.max(0, (dur - cur) / 0.5);
+        } else {
+          op = 1;
+        }
+
+        video.style.opacity = String(Math.max(0, Math.min(1, op)));
+      }
+
+      animFrameRef.current = requestAnimationFrame(updateFade);
+    };
+
+    const handleEnded = () => {
+      isResetting = true;
+      if (video) {
+        video.style.opacity = "0";
+      }
+      // On ended event: set opacity to 0, wait 100ms, reset currentTime = 0, then play() again
+      timeoutId = setTimeout(() => {
+        if (video) {
+          video.currentTime = 0;
+          video.play().catch(() => {});
+          isResetting = false;
+        }
+      }, 100);
+    };
+
+    video.addEventListener("ended", handleEnded);
+
+    // Initial play
+    video.play().catch(() => {});
+    animFrameRef.current = requestAnimationFrame(updateFade);
+
+    return () => {
+      video.removeEventListener("ended", handleEnded);
+      if (animFrameRef.current) {
+        cancelAnimationFrame(animFrameRef.current);
+      }
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+      }
+    };
+  }, []);
+
+  return (
+    <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
+      {/* Video Background Layer with requested positioning */}
+      <div
+        className="absolute w-full h-full"
+        style={{ top: "300px", inset: "auto 0 0 0" }}
+      >
+        <video
+          ref={videoRef}
+          src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260328_083109_283f3553-e28f-428b-a723-d639c617eb2b.mp4"
+          playsInline
+          muted
+          autoPlay
+          preload="auto"
+          className="w-full h-full min-h-[380px] object-cover transition-opacity duration-75"
+          style={{ opacity: 0 }}
+        />
+      </div>
+
+      {/* Gradient overlays: absolute inset-0 bg-gradient-to-b from-background via-transparent to-background */}
+      <div
+        className="absolute inset-0 bg-gradient-to-b from-[#464B55] via-transparent to-[#464B55] opacity-90 z-10 pointer-events-none"
+        aria-hidden="true"
+      />
+      {/* Dark Slate Tint for high readability and contrast */}
+      <div
+        className="absolute inset-0 bg-[#343A46]/60 z-10 pointer-events-none"
+        aria-hidden="true"
+      />
+    </div>
+  );
+}
 
 export function Hero() {
   const router = useRouter();
@@ -20,15 +123,12 @@ export function Hero() {
   }
 
   return (
-    <section className="relative overflow-hidden bg-[#464B55] text-white font-sans border-b border-white/[0.22]">
-      {/* Subtle Dark Hero Overlay */}
-      <div 
-        className="absolute inset-0 bg-[#343A46]/70 pointer-events-none" 
-        aria-hidden="true" 
-      />
+    <section className="relative min-h-[580px] overflow-hidden bg-[#464B55] text-white font-sans border-b border-white/[0.22]">
+      {/* Cinematic Looping Video Background Layer */}
+      <HeroVideoBackground />
 
       {/* Main Hero Container with plenty of empty space */}
-      <div className="relative container-page pt-14 pb-16 sm:pt-20 sm:pb-20 lg:pt-24 lg:pb-24">
+      <div className="relative z-10 container-page pt-14 pb-16 sm:pt-20 sm:pb-20 lg:pt-24 lg:pb-24">
         {/* Clean 2-column layout on desktop; stacked & centered on mobile */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
@@ -43,19 +143,19 @@ export function Hero() {
               </span>
             </div>
 
-            {/* Main heading: “Exam results, finally made simple.” */}
-            <h1 className="text-3xl sm:text-5xl lg:text-[54px] font-bold text-white tracking-tight leading-[1.12] mb-6 font-heading">
+            {/* Main heading: “Exam results, finally made simple.” with animate-fade-rise */}
+            <h1 className="text-3xl sm:text-5xl lg:text-[54px] font-bold text-white tracking-tight leading-[1.12] mb-6 font-heading animate-fade-rise">
               Exam results,<br />
               <span className="text-[#F28A2E]">finally made simple.</span>
             </h1>
 
-            {/* Description */}
-            <p className="text-base sm:text-lg text-[#D7D9DC] max-w-xl mb-9 leading-relaxed font-normal">
+            {/* Description with animate-fade-rise-delay */}
+            <p className="text-base sm:text-lg text-[#D7D9DC] max-w-xl mb-9 leading-relaxed font-normal animate-fade-rise-delay">
               Get the latest government exam results, admit cards, answer keys and job notifications in one place.
             </p>
 
-            {/* CTAs: Primary & Secondary */}
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 mb-8 w-full sm:w-auto">
+            {/* CTAs: Primary & Secondary with animate-fade-rise-delay-2 */}
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 mb-8 w-full sm:w-auto animate-fade-rise-delay-2">
               <Link
                 href="/results"
                 className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#F28A2E] hover:bg-[#FF9E42] text-white px-7 py-3.5 text-sm sm:text-[15px] font-bold transition-colors duration-200 shadow-md shadow-black/20 active:scale-[0.99] font-heading"
@@ -71,10 +171,10 @@ export function Hero() {
               </Link>
             </div>
 
-            {/* Simple Search Field Below Buttons: “Search exam or job” */}
+            {/* Simple Search Field Below Buttons: “Search exam or job” with animate-fade-rise-delay-2 */}
             <form
               onSubmit={handleSearch}
-              className="w-full sm:max-w-md relative flex items-center"
+              className="w-full sm:max-w-md relative flex items-center animate-fade-rise-delay-2"
             >
               <Search className="absolute left-4 h-4 w-4 text-[#D7D9DC]/70 pointer-events-none" />
               <input
@@ -106,7 +206,7 @@ export function Hero() {
 
           {/* Right Column: Subtle Abstract Document Texture / Preview (Desktop only, minimal space) */}
           <div className="hidden lg:flex lg:col-span-5 justify-end">
-            <div className="w-full max-w-md rounded-xl bg-[#343A46]/80 border border-white/[0.22] p-6 shadow-2xl backdrop-blur-xs relative overflow-hidden">
+            <div className="w-full max-w-md rounded-xl bg-[#343A46]/85 border border-white/[0.22] p-6 shadow-2xl backdrop-blur-sm relative overflow-hidden">
               {/* Subtle Document Watermark / Abstract Lines Texture */}
               <div 
                 className="absolute -right-12 -top-12 h-44 w-44 rounded-full bg-white/[0.02] border border-white/[0.08] pointer-events-none" 
@@ -183,7 +283,7 @@ export function Hero() {
       </div>
 
       {/* Small Stats Section at the Bottom of the Hero (Thin Horizontal Divider) */}
-      <div className="border-t border-white/[0.22] bg-[#343A46]/50">
+      <div className="relative z-10 border-t border-white/[0.22] bg-[#343A46]/60 backdrop-blur-xs">
         <div className="container-page py-6 sm:py-8">
           {/* Desktop: 4 items in a row with thin vertical dividers; Mobile: 2x2 grid */}
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 text-center">
