@@ -95,60 +95,61 @@ export function Hero() {
             Get the latest government exam results, admit cards, answer keys and job notifications in one place.
           </p>
 
-          {/* CTAs with fadeSlideUp 0.9s */}
+          {/* Unified Hero Interactive Command Deck (Search & CTAs) */}
           <div
-            className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-8 w-full sm:w-auto"
+            className="w-full max-w-xl flex flex-col items-stretch lg:items-start gap-4 mb-2"
             style={{ animation: "fadeSlideUp 0.8s ease 0.9s both" }}
           >
-            <Link
-              href="/results"
-              className="inline-flex items-center justify-center gap-2 rounded-lg bg-white px-6 py-3 text-sm font-medium text-black hover:scale-105 transition-transform shadow-xl shadow-black/40"
-            >
-              <span>Check Latest Results</span>
-              <ArrowRight className="h-4 w-4" />
-            </Link>
-            
-            <Link
-              href="/latest-jobs"
-              className="inline-flex items-center justify-center gap-2 rounded-lg border border-white/30 bg-white/10 backdrop-blur-md hover:bg-white/20 text-white px-6 py-3 text-sm font-medium transition-colors"
-            >
-              <span>Browse Latest Jobs</span>
-            </Link>
-          </div>
-
-          {/* Capsule Search Field */}
-          <form
-            onSubmit={handleSearch}
-            className="w-full sm:max-w-md"
-            style={{ animation: "fadeSlideUp 0.8s ease 0.9s both" }}
-          >
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center rounded-2xl sm:rounded-full bg-white/95 p-1.5 shadow-2xl backdrop-blur-md border border-white/40 gap-2 sm:gap-0">
-              <div className="relative flex-1 flex items-center pl-3">
-                <Search className="h-4 w-4 text-gray-400 shrink-0 pointer-events-none" />
-                <input
-                  type="text"
-                  value={query}
-                  onChange={(e) => setQuery(e.target.value)}
-                  placeholder="Search exam or job"
-                  aria-label="Search exam name or job title"
-                  className="w-full bg-transparent pl-2.5 pr-2 py-2 text-sm font-medium text-gray-900 placeholder-gray-400 outline-none"
-                />
-                <VoiceSearchBtn
-                  onResult={(val) => {
-                    setQuery(val);
-                    router.push(`/search?q=${encodeURIComponent(val)}`);
-                  }}
-                  className="p-1 text-gray-400 hover:text-gray-700 transition mr-1"
-                />
+            {/* Primary Command Search Bar */}
+            <form onSubmit={handleSearch} className="w-full">
+              <div className="group relative flex items-center w-full rounded-full bg-white/95 backdrop-blur-xl p-1.5 sm:p-2 border border-white/40 shadow-[0_8px_30px_rgba(0,0,0,0.35)] ring-1 ring-black/5 transition-all duration-300 focus-within:ring-2 focus-within:ring-[#F28A2E] focus-within:border-[#F28A2E] focus-within:shadow-[0_8px_32px_rgba(242,138,46,0.25)]">
+                <div className="relative flex-1 flex items-center pl-2.5 sm:pl-3 min-w-0">
+                  <Search className="h-4 w-4 sm:h-5 sm:w-5 text-gray-400 shrink-0 pointer-events-none group-focus-within:text-[#F28A2E] transition-colors" />
+                  <input
+                    type="text"
+                    value={query}
+                    onChange={(e) => setQuery(e.target.value)}
+                    placeholder="Search exam or job (e.g. SSC, UPSC, Railway)"
+                    aria-label="Search exam name or job title"
+                    className="w-full bg-transparent pl-2.5 sm:pl-3 pr-2 py-1.5 sm:py-2 text-xs sm:text-sm font-medium text-gray-900 placeholder:text-gray-400 outline-none"
+                  />
+                  <VoiceSearchBtn
+                    onResult={(val) => {
+                      setQuery(val);
+                      router.push(`/search?q=${encodeURIComponent(val)}`);
+                    }}
+                    className="p-1 sm:p-1.5 text-gray-400 hover:text-gray-700 transition mr-1 shrink-0"
+                  />
+                </div>
+                <button
+                  type="submit"
+                  className="rounded-full px-5 sm:px-6 py-2 sm:py-2.5 text-xs sm:text-sm font-semibold text-white transition-all duration-200 bg-[#F28A2E] hover:bg-[#FF9E42] shadow-md hover:shadow-lg active:scale-95 shrink-0 flex items-center justify-center gap-1.5"
+                >
+                  <span>Search</span>
+                </button>
               </div>
-              <button
-                type="submit"
-                className="rounded-full px-6 py-2.5 text-xs font-semibold text-white transition-all bg-[#F28A2E] hover:bg-[#FF9E42] shadow-md shrink-0"
+            </form>
+
+            {/* Quick Action Navigation Row */}
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto">
+              <Link
+                href="/results"
+                className="group inline-flex items-center justify-center gap-2 rounded-full bg-white px-5 sm:px-6 py-2.5 sm:py-3 text-xs sm:text-sm font-semibold text-gray-950 shadow-lg shadow-black/30 hover:bg-white/95 hover:shadow-[0_4px_20px_rgba(255,255,255,0.25)] active:scale-[0.98] transition-all duration-300"
               >
-                Search
-              </button>
+                <span>Check Latest Results</span>
+                <span className="flex h-5 w-5 items-center justify-center rounded-full bg-black/5 group-hover:translate-x-0.5 transition-transform">
+                  <ArrowRight className="h-3 w-3 text-gray-950" />
+                </span>
+              </Link>
+              
+              <Link
+                href="/latest-jobs"
+                className="inline-flex items-center justify-center gap-2 rounded-full border border-white/25 bg-white/10 backdrop-blur-md hover:bg-white/20 hover:border-white/40 text-white px-5 sm:px-6 py-2.5 sm:py-3 text-xs sm:text-sm font-semibold shadow-sm active:scale-[0.98] transition-all duration-300"
+              >
+                <span>Browse Latest Jobs</span>
+              </Link>
             </div>
-          </form>
+          </div>
 
         </div>
 
