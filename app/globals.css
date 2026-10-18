@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Silkscreen:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,8 +8,8 @@
   color-scheme: light;
   --background: #ffffff;
   --foreground: #172033;
-  --font-display: var(--font-sans), system-ui, sans-serif;
-  --font-body: var(--font-sans), system-ui, sans-serif;
+  --font-display: 'Geist', var(--font-sans), system-ui, sans-serif;
+  --font-body: 'Geist', var(--font-sans), system-ui, sans-serif;
 }
 
 * {
@@ -138,6 +140,10 @@ table {
   }
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
+  }
+
+  .font-silkscreen {
+    font-family: 'Silkscreen', cursive, monospace;
   }
 }
 
