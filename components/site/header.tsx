@@ -53,14 +53,14 @@ export function Header() {
   }, []);
 
   return (
-    <header className="sticky top-0 z-50 bg-[#5B0111] border-b border-[#40000b] shadow-md font-sans">
-      <div className="h-0.5 bg-gradient-to-r from-[#FFD84D] via-[#FF5B3E] to-[#FFD84D]" />
+    <header className="sticky top-0 z-50 bg-[#123B6D] border-b border-[#0d284b] shadow-md font-sans">
+      <div className="h-0.5 bg-gradient-to-r from-[#F59E0B] via-[#1D5FA7] to-[#F59E0B]" />
       <div className="container-page flex h-18 lg:h-22 items-center gap-4 py-2 lg:py-3">
         <Link href="/" className="flex items-center gap-2.5">
           <Logo className="h-16 w-16 lg:h-20 lg:w-20" dark />
           <span className="hidden sm:flex flex-col leading-tight">
             <span className="text-[15px] font-black tracking-tight text-white font-heading">All India</span>
-            <span className="text-[11px] font-bold tracking-widest text-[#FFD84D]">EXAM RESULT</span>
+            <span className="text-[11px] font-bold tracking-widest text-[#F59E0B]">EXAM RESULT</span>
           </span>
         </Link>
 
@@ -120,7 +120,7 @@ export function Header() {
           <LanguageSelector />
           <BookmarkListBtn />
           <VoiceSearchBtn />
-          <Link href="/search" className="hidden items-center gap-2 rounded-full bg-[#FFD84D] px-5 py-2.5 text-[15px] font-bold text-[#111111] transition hover:bg-[#ffe270] lg:inline-flex shadow-md shadow-black/20 font-heading">
+          <Link href="/search" className="hidden items-center gap-2 rounded-full bg-[#F59E0B] px-5 py-2.5 text-[15px] font-bold text-[#0f243d] transition hover:bg-[#e08d03] lg:inline-flex shadow-md shadow-black/20 font-heading">
             <Search className="h-4.5 w-4.5" /> {t("nav.search")}
           </Link>
           <Link href="/search" aria-label="Search exams" className="rounded-full border border-white/20 p-2.5 text-white transition hover:bg-white/15 active:scale-90 flex lg:hidden">
@@ -132,10 +132,10 @@ export function Header() {
         </div>
         </div>
 
-        <div role="region" aria-label="Breaking Exam Updates" className="overflow-hidden border-t border-black/20 bg-[#48000d]">
+        <div role="region" aria-label="Breaking Exam Updates" className="overflow-hidden border-t border-black/20 bg-[#0d284b]">
           <div className="flex items-center gap-3 px-4 py-2 text-sm">
-            <span className="flex shrink-0 items-center gap-1.5 rounded-md bg-[#FF5B3E] px-3 py-1 text-xs sm:text-[13px] font-bold text-white shadow-sm font-heading">
-              <Sparkles className="h-3.5 w-3.5 animate-pulse text-[#FFD84D]" aria-hidden="true" /> Latest Updates
+            <span className="flex shrink-0 items-center gap-1.5 rounded-md bg-[#1D5FA7] px-3 py-1 text-xs sm:text-[13px] font-bold text-white shadow-sm font-heading">
+              <Sparkles className="h-3.5 w-3.5 text-[#F59E0B]" aria-hidden="true" /> Latest Updates
             </span>
             <div className="overflow-hidden relative flex-1">
               <div className="animate-marquee whitespace-nowrap inline-block hover:[animation-play-state:paused] focus-within:[animation-play-state:paused] motion-reduce:animate-none">
@@ -143,9 +143,9 @@ export function Header() {
                   <Link
                     key={i}
                     href={item.slug ? `/post/${item.slug}` : "#"}
-                    className="mx-4 inline-flex items-center gap-2 text-white/95 transition hover:text-[#FFD84D] hover:underline focus-visible:underline"
+                    className="mx-4 inline-flex items-center gap-2 text-white/95 transition hover:text-[#F59E0B] hover:underline focus-visible:underline"
                   >
-                    <span className="rounded bg-black/40 px-2 py-0.5 text-xs font-bold text-[#FFD84D] border border-white/10 font-heading">
+                    <span className="rounded bg-black/30 px-2 py-0.5 text-xs font-bold text-[#F59E0B] border border-white/10 font-heading">
                       {item.category || "Update"}
                     </span>
                     <span className="text-[13.5px] font-medium text-white/90">{item.title}</span>

@@ -50,11 +50,11 @@ export function NotificationSubscribe() {
       <div className="container-page">
         <div className="mx-auto max-w-2xl rounded-2xl border border-[#DEDEDE] bg-[#FAFAFA] p-6 shadow-sm sm:p-8">
           <div className="flex items-center gap-3">
-            <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#5B0111] text-[#FFD84D] shadow-sm">
+            <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#123B6D] text-[#F59E0B] shadow-sm">
               <Bell className="h-5 w-5" />
             </span>
             <div>
-              <h2 className="text-lg font-bold text-[#111111] font-heading">Get Instant Updates</h2>
+              <h2 className="text-lg font-bold text-[#172033] font-heading">Get Instant Updates</h2>
               <p className="text-xs sm:text-sm text-neutral-500 font-sans">Subscribe for instant exam results, admit cards and job alerts</p>
             </div>
           </div>
@@ -89,8 +89,8 @@ export function NotificationSubscribe() {
                       onClick={() => toggleCat(cat.id)}
                       className={`rounded-lg px-3 py-1.5 text-xs font-semibold transition ${
                         cats.includes(cat.id)
-                          ? "bg-[#111111] text-[#FFD84D]"
-                          : "bg-white border border-[#DEDEDE] text-[#111111] hover:border-[#111111]"
+                          ? "bg-[#123B6D] text-[#F59E0B] shadow-sm"
+                          : "bg-white border border-[#DEDEDE] text-[#172033] hover:border-[#123B6D]"
                       }`}
                     >
                       {cat.label}
@@ -102,12 +102,12 @@ export function NotificationSubscribe() {
               <button
                 type="submit"
                 disabled={status === "loading"}
-                className="flex w-full items-center justify-center gap-2 rounded-xl bg-[#5B0111] hover:bg-[#45000c] px-6 py-3 text-sm font-bold text-[#FFD84D] shadow-md shadow-black/10 transition active:scale-[0.98] disabled:opacity-60 font-heading"
+                className="flex w-full items-center justify-center gap-2 rounded-xl bg-[#123B6D] hover:bg-[#1D5FA7] px-6 py-3 text-sm font-bold text-white shadow-md shadow-[#123B6D]/20 transition active:scale-[0.98] disabled:opacity-60 font-heading"
               >
                 {status === "loading" ? (
                   <><Loader2 className="h-4 w-4 animate-spin" /> Subscribing...</>
                 ) : (
-                  <><Bell className="h-4 w-4" /> Subscribe for Free</>
+                  <><Bell className="h-4 w-4 text-[#F59E0B]" /> Subscribe for Free Updates</>
                 )}
               </button>
 

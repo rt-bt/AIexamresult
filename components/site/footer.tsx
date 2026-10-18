@@ -36,8 +36,8 @@ const footerGroups = [
 
 export function Footer() {
   return (
-    <footer className="relative bg-[#5B0111] text-white/80 border-t border-[#40000b] font-sans">
-      <div className="h-0.5 bg-gradient-to-r from-[#FFD84D] via-[#FF5B3E] to-[#FFD84D]" />
+    <footer className="relative bg-[#0b2342] text-white/80 border-t border-[#081930] font-sans">
+      <div className="h-0.5 bg-gradient-to-r from-[#F59E0B] via-[#1D5FA7] to-[#F59E0B]" />
       <div className="container-page py-14">
         <div className="grid gap-10 md:grid-cols-[1.5fr_1fr_1fr_1fr]">
           <div>
@@ -45,7 +45,7 @@ export function Footer() {
               <Logo className="h-20 w-20" dark />
               <div className="flex flex-col leading-tight">
                 <span className="text-lg font-bold tracking-tight text-white font-heading">All India</span>
-                <span className="text-[12px] font-bold tracking-widest text-[#FFD84D]">EXAM RESULT</span>
+                <span className="text-[12px] font-bold tracking-widest text-[#F59E0B]">EXAM RESULT</span>
               </div>
             </div>
             <p className="mt-4 max-w-sm text-sm leading-7 text-white/70 font-sans">
@@ -57,8 +57,8 @@ export function Footer() {
               <h3 className="font-bold text-white text-sm uppercase tracking-wider font-heading">{group.title}</h3>
               <div className="mt-4 grid gap-3">
                 {group.links.map((item) => (
-                  <Link key={item.label} href={item.href} className="group flex items-center gap-2 text-sm text-white/75 transition hover:text-[#FFD84D]">
-                    <ArrowUpRight className="h-3.5 w-3.5 transition group-hover:translate-x-0.5 group-hover:text-[#FFD84D]" />
+                  <Link key={item.label} href={item.href} className="group flex items-center gap-2 text-sm text-white/75 transition hover:text-[#F59E0B]">
+                    <ArrowUpRight className="h-3.5 w-3.5 transition group-hover:translate-x-0.5 group-hover:text-[#F59E0B]" />
                     {item.label}
                   </Link>
                 ))}

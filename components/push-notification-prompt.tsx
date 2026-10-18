@@ -84,14 +84,30 @@ export function PushNotificationPrompt() {
   if (status === "loading") return null;
 
   return (
-    <div className="fixed bottom-4 right-4 z-50 max-w-xs rounded-xl border border-indigo-200 bg-white p-4 shadow-lg">
-      <button onClick={() => setDismissed(true)} className="absolute right-2 top-2 text-slate-400 hover:text-slate-600"><X className="h-4 w-4" /></button>
-      <div className="flex items-center gap-2">
-        <Bell className="h-5 w-5 text-indigo-600" />
-        <p className="text-sm font-bold text-ink">Get Exam Alerts</p>
+    <div className="fixed bottom-20 sm:bottom-4 right-4 z-40 max-w-xs rounded-2xl border border-[#1D5FA7]/20 bg-white p-4 shadow-xl shadow-[#123B6D]/15 backdrop-blur-md">
+      <button 
+        onClick={() => setDismissed(true)} 
+        aria-label="Close notification prompt"
+        className="absolute right-3 top-3 text-slate-400 hover:text-slate-700 transition"
+      >
+        <X className="h-4 w-4" />
+      </button>
+      <div className="flex items-center gap-2.5">
+        <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#123B6D] text-[#F59E0B] shadow-sm">
+          <Bell className="h-4 w-4" />
+        </div>
+        <div>
+          <p className="text-sm font-bold text-[#172033] font-heading">Get Exam Alerts</p>
+          <span className="text-[10px] font-semibold text-[#16A34A]">Official Push Updates</span>
+        </div>
       </div>
-      <p className="mt-1 text-xs text-slate-500">Instant notifications for results, admit cards & jobs.</p>
-      <button onClick={subscribe} className="mt-3 w-full rounded-lg bg-indigo-600 py-2 text-xs font-bold text-white hover:bg-indigo-700 active:scale-[0.98]">
+      <p className="mt-2 text-xs text-slate-500 leading-relaxed font-sans">
+        Instant notification updates for results, admit cards &amp; govt jobs.
+      </p>
+      <button 
+        onClick={subscribe} 
+        className="mt-3 w-full rounded-xl bg-[#123B6D] hover:bg-[#1D5FA7] py-2.5 text-xs font-bold text-white shadow-md shadow-[#123B6D]/20 transition-all active:scale-[0.98] font-heading"
+      >
         Enable Notifications
       </button>
     </div>

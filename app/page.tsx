@@ -55,20 +55,20 @@ export default function HomePage() {
           <div className="container-page">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6">
               <div className="flex items-center gap-3">
-                <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#5B0111] text-[#FFD84D] shadow-sm">
+                <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#123B6D] text-[#F59E0B] shadow-sm">
                   <TrendingUp className="h-5 w-5" />
                 </span>
                 <div>
                   <div className="flex items-center gap-2">
-                    <h2 className="text-xl sm:text-2xl font-bold text-[#111111] font-heading tracking-tight">Trending Alerts</h2>
-                    <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-[#FF5B3E]/10 text-[#FF5B3E] border border-[#FF5B3E]/20 animate-pulse font-heading">
+                    <h2 className="text-xl sm:text-2xl font-bold text-[#172033] font-heading tracking-tight">Trending Alerts</h2>
+                    <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-[#16A34A]/10 text-[#16A34A] border border-[#16A34A]/20 animate-pulse font-heading">
                       LIVE
                     </span>
                   </div>
                   <p className="text-xs text-neutral-500 font-sans">Top results &amp; recruitment updates today</p>
                 </div>
               </div>
-              <Link href="/results" className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-[#111111] hover:text-[#FF5B3E] transition font-heading">
+              <Link href="/results" className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-[#123B6D] hover:text-[#1D5FA7] transition font-heading">
                 <span>View All Updates</span>
                 <ArrowUpRight className="h-4 w-4" />
               </Link>
