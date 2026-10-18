@@ -130,7 +130,7 @@ export function Hero() {
                   value={query}
                   onChange={(e) => setQuery(e.target.value)}
                   placeholder="Search exam or job"
-                  aria-label="Search exam or job"
+                  aria-label="Search exam name or job title"
                   className="w-full bg-transparent pl-2.5 pr-2 py-2 text-sm font-medium text-gray-900 placeholder-gray-400 outline-none"
                 />
                 <VoiceSearchBtn
