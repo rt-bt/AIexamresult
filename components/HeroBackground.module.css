@@ -1,5 +1,5 @@
 /* HeroBackground.module.css */
-/* Lightweight, modern, GPU-friendly animated hero background layer */
+/* Lightweight, modern, GPU-friendly animated hero background */
 
 .container {
   position: absolute;
@@ -10,37 +10,41 @@
   z-index: 0;
 }
 
-/* 1. Base: Soft animated gradient from deep navy (#0B1F3A) to brand teal (#0D9488) */
+/* 1. Base: Soft mesh gradient (Deep Navy #0B1F3A to Teal #0D9488 with a hint of Cyan #06B6D4) */
 .baseGradient {
   position: absolute;
   inset: 0;
-  background: linear-gradient(-45deg, #071322, #0B1F3A, #083344, #0D9488, #0B1F3A);
+  background: 
+    radial-gradient(circle at 15% 20%, rgba(13, 148, 136, 0.45) 0%, transparent 55%),
+    radial-gradient(circle at 85% 25%, rgba(6, 182, 212, 0.35) 0%, transparent 50%),
+    radial-gradient(circle at 50% 85%, rgba(13, 148, 136, 0.3) 0%, transparent 60%),
+    linear-gradient(135deg, #071322 0%, #0B1F3A 40%, #083344 75%, #0B1F3A 100%);
   background-size: 200% 200%;
-  animation: gradientShift 18s ease infinite;
+  animation: meshShift 20s ease-in-out infinite alternate;
 }
 
-@keyframes gradientShift {
+@keyframes meshShift {
   0% {
-    background-position: 0% 50%;
+    background-position: 0% 0%;
   }
   50% {
-    background-position: 100% 50%;
+    background-position: 100% 100%;
   }
   100% {
     background-position: 0% 50%;
   }
 }
 
-/* 2. Overlay: Subtle technical dot-grid pattern (6-8% opacity) */
+/* 2. Overlay: Subtle technical dot-grid pattern (~6% opacity) */
 .dotGrid {
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(rgba(255, 255, 255, 0.7) 1px, transparent 1px);
-  background-size: 26px 26px;
-  opacity: 0.07;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.55) 1px, transparent 1px);
+  background-size: 28px 28px;
+  opacity: 0.06;
 }
 
-/* 3. Glow Orbs: 3 blurred circles (teal, blue, cyan) drifting slowly */
+/* 3. Glow Orbs: 3 blurred circles (teal, cyan, blue) drifting slowly */
 .orb {
   position: absolute;
   border-radius: 9999px;
@@ -49,36 +53,36 @@
 }
 
 .orbTeal {
-  top: -40px;
-  left: 10%;
-  width: 440px;
-  height: 440px;
+  top: -60px;
+  left: 8%;
+  width: 480px;
+  height: 480px;
   background: radial-gradient(circle, rgba(13, 148, 136, 0.45) 0%, rgba(13, 148, 136, 0) 70%);
   opacity: 0.32;
   filter: blur(100px);
   animation: driftTeal 22s ease-in-out infinite alternate;
 }
 
-.orbBlue {
-  top: 25%;
-  right: 6%;
-  width: 480px;
-  height: 480px;
-  background: radial-gradient(circle, rgba(37, 99, 235, 0.4) 0%, rgba(37, 99, 235, 0) 70%);
+.orbCyan {
+  top: 20%;
+  right: 5%;
+  width: 440px;
+  height: 440px;
+  background: radial-gradient(circle, rgba(6, 182, 212, 0.38) 0%, rgba(6, 182, 212, 0) 70%);
   opacity: 0.28;
-  filter: blur(110px);
-  animation: driftBlue 26s ease-in-out infinite alternate;
+  filter: blur(105px);
+  animation: driftCyan 26s ease-in-out infinite alternate;
 }
 
-.orbCyan {
-  bottom: 12%;
-  left: 32%;
-  width: 400px;
-  height: 400px;
-  background: radial-gradient(circle, rgba(6, 182, 212, 0.42) 0%, rgba(6, 182, 212, 0) 70%);
-  opacity: 0.30;
+.orbNavy {
+  bottom: 8%;
+  left: 30%;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.32) 0%, rgba(37, 99, 235, 0) 70%);
+  opacity: 0.25;
   filter: blur(95px);
-  animation: driftCyan 28s ease-in-out infinite alternate;
+  animation: driftNavy 28s ease-in-out infinite alternate;
 }
 
 @keyframes driftTeal {
@@ -86,22 +90,10 @@
     transform: translate3d(0, 0, 0) scale(1);
   }
   50% {
-    transform: translate3d(85px, 40px, 0) scale(1.12);
+    transform: translate3d(80px, 45px, 0) scale(1.12);
   }
   100% {
-    transform: translate3d(-35px, 75px, 0) scale(0.95);
-  }
-}
-
-@keyframes driftBlue {
-  0% {
-    transform: translate3d(0, 0, 0) scale(1);
-  }
-  50% {
-    transform: translate3d(-75px, -55px, 0) scale(1.08);
-  }
-  100% {
-    transform: translate3d(45px, -70px, 0) scale(0.92);
+    transform: translate3d(-40px, 75px, 0) scale(0.95);
   }
 }
 
@@ -110,18 +102,30 @@
     transform: translate3d(0, 0, 0) scale(1);
   }
   50% {
-    transform: translate3d(-65px, 50px, 0) scale(1.15);
+    transform: translate3d(-70px, -50px, 0) scale(1.08);
   }
   100% {
-    transform: translate3d(65px, -35px, 0) scale(0.9);
+    transform: translate3d(45px, -65px, 0) scale(0.92);
   }
 }
 
-/* 4. Dark Overlay / Vignette for WCAG AA readability */
+@keyframes driftNavy {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(-60px, 50px, 0) scale(1.15);
+  }
+  100% {
+    transform: translate3d(60px, -35px, 0) scale(0.9);
+  }
+}
+
+/* 4. Dark Overlay / Vignette to guarantee WCAG AA text contrast */
 .vignette {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at 45% 42%, rgba(11, 31, 58, 0.22) 0%, rgba(3, 7, 18, 0.55) 100%);
+  background: radial-gradient(ellipse at 45% 42%, rgba(11, 31, 58, 0.15) 0%, rgba(3, 7, 18, 0.58) 100%);
   pointer-events: none;
 }
 
@@ -129,131 +133,34 @@
   position: absolute;
   inset-x: 0;
   bottom: 0;
-  height: 7rem;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.4) 50%, transparent 100%);
+  height: 8rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.35) 50%, transparent 100%);
   pointer-events: none;
-}
-
-/* 5. Floating Icons: Exam & career symbols around perimeter */
-.floatingIcon {
-  position: absolute;
-  will-change: transform;
-  pointer-events: none;
-  color: #99F6E4;
-  opacity: 0.14;
-}
-
-/* Float Keyframes using GPU-only transforms */
-@keyframes floatGentle1 {
-  0%, 100% {
-    transform: translate3d(0, 0, 0) rotate(0deg);
-  }
-  50% {
-    transform: translate3d(0, -12px, 0) rotate(5deg);
-  }
-}
-
-@keyframes floatGentle2 {
-  0%, 100% {
-    transform: translate3d(0, 0, 0) rotate(0deg);
-  }
-  50% {
-    transform: translate3d(0, 10px, 0) rotate(-6deg);
-  }
-}
-
-@keyframes floatGentle3 {
-  0%, 100% {
-    transform: translate3d(0, 0, 0) rotate(0deg);
-  }
-  50% {
-    transform: translate3d(0, -14px, 0) rotate(4deg);
-  }
-}
-
-@keyframes floatGentle4 {
-  0%, 100% {
-    transform: translate3d(0, 0, 0) rotate(0deg);
-  }
-  50% {
-    transform: translate3d(0, 12px, 0) rotate(-4deg);
-  }
-}
-
-.icon1 {
-  top: 9%;
-  right: 9%;
-  animation: floatGentle1 6.5s ease-in-out infinite;
-}
-
-.icon2 {
-  top: 6%;
-  left: 4%;
-  animation: floatGentle2 7.8s ease-in-out infinite 0.6s;
-}
-
-.icon3 {
-  top: 42%;
-  right: 5%;
-  animation: floatGentle3 8.4s ease-in-out infinite 1.2s;
-}
-
-.icon4 {
-  bottom: 125px;
-  right: 7%;
-  animation: floatGentle4 6.9s ease-in-out infinite 0.3s;
-}
-
-.icon5 {
-  top: 15%;
-  right: 28%;
-  animation: floatGentle2 9.1s ease-in-out infinite 1.5s;
-}
-
-.icon6 {
-  top: 62%;
-  right: 20%;
-  animation: floatGentle1 7.2s ease-in-out infinite 0.8s;
-}
-
-.icon7 {
-  bottom: 130px;
-  left: 5%;
-  animation: floatGentle3 8s ease-in-out infinite 2s;
 }
 
 /* Mobile optimizations: < 768px */
 @media (max-width: 767px) {
   .orbTeal {
-    width: 250px;
-    height: 250px;
-    filter: blur(50px);
-  }
-
-  .orbBlue {
-    width: 270px;
-    height: 270px;
+    width: 260px;
+    height: 260px;
     filter: blur(50px);
   }
 
   .orbCyan {
-    display: none;
+    width: 260px;
+    height: 260px;
+    filter: blur(50px);
   }
 
-  .desktopOnlyIcon {
+  .orbNavy {
     display: none;
-  }
-
-  .floatingIcon {
-    opacity: 0.12;
   }
 }
 
-/* Reduced Motion: Disable all animations and keep clean static background */
+/* Respect Prefers-Reduced-Motion: Static crisp background */
 @media (prefers-reduced-motion: reduce) {
   .baseGradient,
-  .orb,
-  .floatingIcon {
+  .orb {
     animation: none !important;
     transform: none !important;
   }
