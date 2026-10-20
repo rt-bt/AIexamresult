@@ -11,7 +11,7 @@ import { StateGrid } from "@/components/site/state-grid";
 import { categorySections, featuredResults } from "@/lib/data";
 import { getCategoryCta } from "@/lib/categories";
 import Link from "next/link";
-import { ArrowUpRight, TrendingUp, CheckCircle2 } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { AdUnit } from "@/components/ads/ad-unit";
 
 const CategoryColumns = dynamicImport(
@@ -29,74 +29,84 @@ export default function HomePage() {
         {/* 1. Hero Section (Minimal Dark Slate visual language, large clean typography, orange accent, stats) */}
         <Hero />
 
-        {/* 2. Trending Alerts: Clean minimal verified cards (No 3D illustration, No excessive cards) */}
-        <section className="py-12 sm:py-16 bg-white border-b border-[#E2E8F0] font-sans">
+        {/* 2. Trending Notifications */}
+        <section className="pt-20 sm:pt-24 pb-12 sm:pb-16 bg-white border-b border-gray-100 font-sans">
           <div className="container-page">
-            <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
-              <div className="flex items-start gap-3">
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#343A46] text-[#F28A2E] shadow-xs">
-                  <TrendingUp className="h-5 w-5" />
-                </span>
-                <div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-xs font-bold uppercase tracking-[0.16em] text-[#8B8F96]">
-                      PRIORITY ALERTS
-                    </span>
-                    <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-50 text-emerald-700 border border-emerald-200 uppercase tracking-wider font-heading">
-                      <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                      LIVE
-                    </span>
-                  </div>
-                  <h2 className="text-xl sm:text-2xl font-bold text-[#172033] font-heading tracking-tight mt-0.5">
-                    Trending Notifications
-                  </h2>
-                </div>
+
+            {/* Section header */}
+            <div className="flex items-center justify-between mb-7">
+              <div>
+                <p className="text-[11px] font-semibold uppercase tracking-[0.15em] text-gray-400 mb-1">
+                  Priority Alerts
+                </p>
+                <h2 className="text-xl sm:text-2xl font-bold text-gray-900 tracking-tight">
+                  Trending Notifications
+                </h2>
               </div>
               <Link
                 href="/results"
-                className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-[#343A46] hover:text-[#F28A2E] transition-colors font-heading"
+                className="flex items-center gap-1 text-sm font-medium text-[#0D9488] hover:text-teal-700 transition-colors"
               >
-                <span>View All Updates</span>
-                <ArrowUpRight className="h-4 w-4" />
+                View all
+                <ArrowUpRight className="h-3.5 w-3.5" />
               </Link>
             </div>
 
-            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {/* 4-column cards */}
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {trending.map((post, i) => {
                 const cta = getCategoryCta(post.category, post.title, post.isExpired);
+
+                /* Pick a left-border color per category */
+                const borderColor =
+                  cta.badgeLabel === "RESULT"     ? "border-l-emerald-400" :
+                  cta.badgeLabel === "ADMIT CARD" ? "border-l-sky-400"     :
+                  cta.badgeLabel === "VACANCY"    ? "border-l-amber-400"   :
+                  cta.badgeLabel === "ANSWER KEY" ? "border-l-violet-400"  :
+                                                    "border-l-teal-400";
+
+                const labelColor =
+                  cta.badgeLabel === "RESULT"     ? "text-emerald-600" :
+                  cta.badgeLabel === "ADMIT CARD" ? "text-sky-600"     :
+                  cta.badgeLabel === "VACANCY"    ? "text-amber-600"   :
+                  cta.badgeLabel === "ANSWER KEY" ? "text-violet-600"  :
+                                                    "text-teal-600";
 
                 return (
                   <Link
                     key={post.slug || i}
                     href={post.slug ? `/post/${post.slug}` : "#"}
-                    className="group rounded-xl border border-[#E2E8F0] bg-white p-5 shadow-xs hover:border-[#8B8F96] hover:shadow-md transition-all duration-200 flex flex-col justify-between"
+                    className={`group flex flex-col justify-between rounded-xl border border-gray-100 border-l-4 ${borderColor} bg-white p-4 shadow-sm hover:shadow-md hover:-translate-y-0.5 active:scale-[0.98] transition-all duration-200`}
                   >
                     <div>
-                      <div className="flex items-center justify-between gap-2 mb-3">
-                        <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-[#F28A2E]/10 text-[10.5px] font-bold text-[#F28A2E] uppercase tracking-wider">
-                          <CheckCircle2 className="h-3 w-3" />
-                          {cta.badgeLabel || "Verified"}
+                      {/* Category label + date */}
+                      <div className="flex items-center justify-between mb-2.5">
+                        <span className={`text-[10px] font-bold uppercase tracking-wider ${labelColor}`}>
+                          {cta.categoryLabel}
                         </span>
-                        <span className="text-[11px] font-bold text-[#8B8F96]">
-                          #{i + 1}
+                        <span className="text-[10px] text-gray-400">
+                          {post.date || "Active"}
                         </span>
                       </div>
-                      <h3 className="text-sm font-bold text-[#172033] group-hover:text-[#F28A2E] transition-colors leading-snug line-clamp-2 mb-2 font-heading">
+
+                      {/* Title */}
+                      <h3 className="text-[13px] sm:text-sm font-semibold text-gray-800 group-hover:text-[#0D9488] transition-colors leading-snug line-clamp-3">
                         {post.title}
                       </h3>
-                      <p className="text-xs text-[#8B8F96]">
-                        {cta.categoryLabel} · {post.date || "Active Update"}
-                      </p>
                     </div>
 
-                    <div className="mt-5 pt-3 border-t border-[#F1F5F9] flex items-center justify-between text-xs font-bold text-[#343A46] group-hover:text-[#F28A2E] transition-colors font-heading">
-                      <span>{cta.actionText || "View Details"}</span>
-                      <ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
+                    {/* CTA footer */}
+                    <div className="mt-4 flex items-center justify-between">
+                      <span className="text-xs font-semibold text-[#0D9488]">
+                        {cta.actionText || "View Details"}
+                      </span>
+                      <ArrowUpRight className="h-3.5 w-3.5 text-gray-300 group-hover:text-[#0D9488] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
                     </div>
                   </Link>
                 );
               })}
             </div>
+
           </div>
         </section>
 
