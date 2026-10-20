@@ -1,47 +1,11 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 import { Search, ArrowRight } from "lucide-react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { VoiceSearchBtn } from "./voice-search";
-
-/**
- * Fullscreen Foldcraft Looping Video Background
- * URL: https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260622_204221_5339e40b-e73d-4ab0-9c65-79c18c66fd50.mp4
- * Styling: absolute positioned, full width/height, object-cover, object-position at 70% horizontal center
- * Attributes: autoPlay, muted, loop, playsInline
- */
-function HeroFoldcraftVideoBackground() {
-  const videoRef = useRef<HTMLVideoElement>(null);
-
-  useEffect(() => {
-    const video = videoRef.current;
-    if (!video) return;
-    video.play().catch(() => {});
-  }, []);
-
-  return (
-    <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
-      <video
-        ref={videoRef}
-        src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260622_204221_5339e40b-e73d-4ab0-9c65-79c18c66fd50.mp4"
-        playsInline
-        muted
-        autoPlay
-        loop
-        preload="auto"
-        className="absolute inset-0 h-full w-full object-cover"
-        style={{ objectPosition: "70% center" }}
-      />
-      {/* Subtle bottom fade to blend with the stats divider */}
-      <div
-        className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-black via-black/40 to-transparent pointer-events-none"
-        aria-hidden="true"
-      />
-    </div>
-  );
-}
+import { HeroBackground } from "@/components/HeroBackground";
 
 export function Hero() {
   const router = useRouter();
@@ -58,8 +22,8 @@ export function Hero() {
 
   return (
     <section className="relative min-h-[620px] lg:min-h-[700px] w-full overflow-hidden bg-black text-white font-sans border-b border-white/15">
-      {/* 1. Foldcraft Video Background Layer */}
-      <HeroFoldcraftVideoBackground />
+      {/* 1. Lightweight Animated Hero Background Layer */}
+      <HeroBackground />
 
       {/* 2. Main Hero Content Layer at z-10 */}
       <div className="relative z-10 container-page flex flex-col justify-center pt-16 pb-16 sm:pt-20 sm:pb-20 lg:pt-24 lg:pb-24">
