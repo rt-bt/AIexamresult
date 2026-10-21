@@ -24,6 +24,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (slug === "rajasthan-state-eligibility-test-set-026") {
     permanentRedirect("/post/chhattisgarh-state-eligibility-test-set-026");
   }
+  if (
+    slug === "indian-airforce-agniveer-vayu-intake-2027-result-out" ||
+    slug === "indian-airforce-agniveer-vayu-intake-01-2027-result-out"
+  ) {
+    permanentRedirect("/post/indian-airforce-agniveer-vayu-intake-01-2027");
+  }
   const cleanSlug = slug.replace(/\.pdf$/i, "");
   const post = await getPostDetail(slug) || await getPostDetail(cleanSlug);
   if (!post) return { title: "Post not found" };
@@ -325,6 +331,12 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   if (slug === "rajasthan-state-eligibility-test-set-026") {
     permanentRedirect("/post/chhattisgarh-state-eligibility-test-set-026");
+  }
+  if (
+    slug === "indian-airforce-agniveer-vayu-intake-2027-result-out" ||
+    slug === "indian-airforce-agniveer-vayu-intake-01-2027-result-out"
+  ) {
+    permanentRedirect("/post/indian-airforce-agniveer-vayu-intake-01-2027");
   }
   if (slug.toLowerCase().endsWith(".pdf")) {
     redirect(`/post/${slug.replace(/\.pdf$/i, "")}`);

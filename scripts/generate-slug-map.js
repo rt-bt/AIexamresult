@@ -23,6 +23,16 @@ for (const file of files) {
       slugMap[data.slug] = file;
       slugMap[data.slug.toLowerCase()] = file;
     }
+
+    // Map aliases if defined
+    if (Array.isArray(data.aliases)) {
+      for (const alias of data.aliases) {
+        if (alias) {
+          slugMap[alias] = file;
+          slugMap[alias.toLowerCase()] = file;
+        }
+      }
+    }
   } catch (e) {
     console.error(`Error reading ${file}:`, e.message);
   }

@@ -2,12 +2,12 @@
 export const scrapedData = {
   "results": [
     {
-      "title": "SBI Clerk JA Backlog Pre Result 2026 – Out",
-      "url": "/post/sbi-junior-associates-clerk-backlog-2026",
+      "title": "UPSC CDS-II Result 2026 – Out",
+      "url": "/post/upsc-cds-ii-2026",
       "category": "results",
-      "slug": "sbi-junior-associates-clerk-backlog-2026",
-      "publishedDate": "2026-10-17T20:12:53+05:30",
-      "publishedAt": "2026-10-17T14:42:53.000Z"
+      "slug": "upsc-cds-ii-2026",
+      "publishedDate": "2026-10-19T20:09:47+05:30",
+      "publishedAt": "2026-10-19T14:39:47.000Z"
     },
     {
       "title": "HPSC HCS and Allied Services Final Result 2026",
@@ -144,6 +144,30 @@ export const scrapedData = {
       "slug": "bihar-police-csbc-constable-gd-2026",
       "publishedDate": "2026-10-09T19:08:25+05:30",
       "publishedAt": "2026-10-09T13:38:25.000Z"
+    },
+    {
+      "title": "Railway RRB ALP CEN 01/2025 CBAT Exam City Details 2026",
+      "url": "/post/railway-rrb-alp-advt-01-2025",
+      "category": "results",
+      "slug": "railway-rrb-alp-advt-01-2025",
+      "publishedDate": "2026-10-20T17:52:39+05:30",
+      "publishedAt": "2026-10-20T12:22:39.000Z"
+    },
+    {
+      "title": "BSF Head Constable RO / RM Admit Card Date 2026",
+      "url": "/post/bsf-head-constable-ro-rm-2025",
+      "category": "results",
+      "slug": "bsf-head-constable-ro-rm-2025",
+      "publishedDate": "2026-10-20T13:51:05+05:30",
+      "publishedAt": "2026-10-20T08:21:05.000Z"
+    },
+    {
+      "title": "SBI Clerk JA Backlog Mains Admit Card 2026",
+      "url": "/post/sbi-junior-associates-clerk-backlog-2026",
+      "category": "results",
+      "slug": "sbi-junior-associates-clerk-backlog-2026",
+      "publishedDate": "2026-10-20T13:51:01+05:30",
+      "publishedAt": "2026-10-20T08:21:01.000Z"
     },
     {
       "title": "UPSC IES/ ISS Interview Date 2026",
@@ -344,14 +368,6 @@ export const scrapedData = {
       "slug": "ibps-crp-po-mt-16th-2026",
       "publishedDate": "2026-09-29T16:25:57+05:30",
       "publishedAt": "2026-09-29T10:55:57.000Z"
-    },
-    {
-      "title": "Railway RRB ALP CEN 01/2025 CBT-II Result 2026",
-      "url": "/post/railway-rrb-alp-advt-01-2025",
-      "category": "results",
-      "slug": "railway-rrb-alp-advt-01-2025",
-      "publishedDate": "2026-10-01T22:20:14+05:30",
-      "publishedAt": "2026-10-01T16:50:14.000Z"
     },
     {
       "title": "EMRS Teaching & Non-Teaching Tier-II Result 2026 – Updated",
@@ -3984,48 +4000,48 @@ export const scrapedData = {
       "slug": "Railway-RRC-Group-D_Level-1_08-2024",
       "publishedDate": "1 March 2025",
       "publishedAt": "2025-02-28T18:30:00.000Z"
-    },
-    {
-      "title": "NTA JEE Mains 2025 Session-I January 2025 Paper-2 Result- Declared",
-      "url": "/post/NTA-JEE-Mains-S1-2025",
-      "category": "results",
-      "slug": "NTA-JEE-Mains-S1-2025",
-      "publishedDate": "23 February 2025",
-      "publishedAt": "2025-02-22T18:30:00.000Z"
-    },
-    {
-      "title": "Bihar BPSC Senior & Higher Secondary Teacher in Simultala Residential School SAV 2024 Syllabus, Mains Online Form 2025",
-      "url": "/post/BPSC-Simultala-School-Teacher-2024",
-      "category": "results",
-      "slug": "BPSC-Simultala-School-Teacher-2024",
-      "publishedDate": "21 February 2025",
-      "publishedAt": "2025-02-20T18:30:00.000Z"
     }
   ],
   "admitCards": [
+    {
+      "title": "TNPSC Group 2 & 2A Preliminary Hall Ticket 2026",
+      "url": "/post/tnpsc-group-2-hall-ticket-2026",
+      "category": "admitCards",
+      "slug": "tnpsc-group-2-hall-ticket-2026",
+      "publishedDate": "2026-10-21T11:30:00+05:30",
+      "publishedAt": "2026-10-21T06:00:00.000Z"
+    },
     {
       "title": "UPSSSC PET Admit Card 2026 – Out",
       "url": "/post/upsssc-pet-2026",
       "category": "admitCards",
       "slug": "upsssc-pet-2026",
-      "publishedDate": "2026-10-18T10:09:12+05:30",
-      "publishedAt": "2026-10-18T04:39:12.000Z"
+      "publishedDate": "2026-10-20T17:52:50+05:30",
+      "publishedAt": "2026-10-20T12:22:50.000Z"
     },
     {
       "title": "SSC CGL Admit Card 2026",
       "url": "/post/ssc-cgl-2026",
       "category": "admitCards",
       "slug": "ssc-cgl-2026",
-      "publishedDate": "2026-10-18T10:09:08+05:30",
-      "publishedAt": "2026-10-18T04:39:08.000Z"
+      "publishedDate": "2026-10-20T17:52:44+05:30",
+      "publishedAt": "2026-10-20T12:22:44.000Z"
     },
     {
-      "title": "Bihar STET Admit Card Date 2026",
+      "title": "Bihar STET Admit Card 2026",
       "url": "/post/bihar-stet-2026",
       "category": "admitCards",
       "slug": "bihar-stet-2026",
-      "publishedDate": "2026-10-16T19:47:36+05:30",
-      "publishedAt": "2026-10-16T14:17:36.000Z"
+      "publishedDate": "2026-10-20T13:51:10+05:30",
+      "publishedAt": "2026-10-20T08:21:10.000Z"
+    },
+    {
+      "title": "UPCISB Cooperative Bank Various Posts Admit Card 2026",
+      "url": "/post/upcisb-cooperative-bank-various-post-2026",
+      "category": "admitCards",
+      "slug": "upcisb-cooperative-bank-various-post-2026",
+      "publishedDate": "2026-10-20T13:49:37+05:30",
+      "publishedAt": "2026-10-20T08:19:37.000Z"
     },
     {
       "title": "UIICL Administrative Officers AO Phase-I Admit Card 2026",
@@ -4076,28 +4092,20 @@ export const scrapedData = {
       "publishedAt": "2026-10-12T14:47:43.000Z"
     },
     {
-      "title": "Indian Overseas Bank Security Guard Admit Card 2026",
-      "url": "/post/indian-overseas-bank-security-guard-2026",
-      "category": "admitCards",
-      "slug": "indian-overseas-bank-security-guard-2026",
-      "publishedDate": "2026-10-12T18:03:38+05:30",
-      "publishedAt": "2026-10-12T12:33:38.000Z"
-    },
-    {
-      "title": "UPCISB Cooperative Bank Various Posts Admit Card 2026",
-      "url": "/post/upcisb-cooperative-bank-various-post-2026",
-      "category": "admitCards",
-      "slug": "upcisb-cooperative-bank-various-post-2026",
-      "publishedDate": "2026-10-12T16:15:53+05:30",
-      "publishedAt": "2026-10-12T10:45:53.000Z"
-    },
-    {
       "title": "CIPET Admit Card 2025",
       "url": "/post/cipet-admit-card-2025",
       "category": "admitCards",
       "slug": "cipet-admit-card-2025",
       "publishedDate": "2025-06-10T16:29:09+05:30",
       "publishedAt": "2025-06-10T10:59:09.000Z"
+    },
+    {
+      "title": "Indian Overseas Bank Security Guard Admit Card 2026",
+      "url": "/post/indian-overseas-bank-security-guard-2026",
+      "category": "admitCards",
+      "slug": "indian-overseas-bank-security-guard-2026",
+      "publishedDate": "2026-10-12T18:03:38+05:30",
+      "publishedAt": "2026-10-12T12:33:38.000Z"
     },
     {
       "title": "SKAU Kurukshetra Non Teaching Post Admit Card 2026",
@@ -4918,6 +4926,14 @@ export const scrapedData = {
   ],
   "latestJobs": [
     {
+      "title": "BHEL Artisan Grade-IV Recruitment 2026 Online Form",
+      "url": "/post/bhel-artisan-recruitment-2026",
+      "category": "latestJobs",
+      "slug": "bhel-artisan-recruitment-2026",
+      "publishedDate": "2026-10-21T10:00:00+05:30",
+      "publishedAt": "2026-10-21T04:30:00.000Z"
+    },
+    {
       "title": "Railway RRB Paramedical CEN 05/2026 Exam Date 2026",
       "url": "/post/railway-rrb-paramedical-2026",
       "category": "latestJobs",
@@ -4942,100 +4958,108 @@ export const scrapedData = {
       "publishedAt": "2026-10-16T10:39:56.000Z"
     },
     {
-      "title": "BPSC 72nd CCE 2026 Exam Postpoend",
-      "url": "/post/bpsc-72nd-2026",
+      "title": "ISRO SDSC SHAR Various Post Online Form 2026",
+      "url": "/post/isro-sdsc-shar-various-post-2026",
       "category": "latestJobs",
-      "slug": "bpsc-72nd-2026",
-      "publishedDate": "2026-10-12T16:32:59+05:30",
-      "publishedAt": "2026-10-12T11:02:59.000Z"
+      "slug": "isro-sdsc-shar-various-post-2026",
+      "publishedDate": "2026-10-21T14:35:00+05:30",
+      "publishedAt": "2026-10-21T09:05:00.000Z"
     },
     {
-      "title": "MP High Court Assistant Grade III Exam Date 2026",
-      "url": "/post/mp-high-court-assistant-grade-iii-2026",
+      "title": "Supreme Court SCI Court Master Online Form 2026",
+      "url": "/post/sci-court-master-2026",
       "category": "latestJobs",
-      "slug": "mp-high-court-assistant-grade-iii-2026",
-      "publishedDate": "2026-10-09T14:15:27+05:30",
-      "publishedAt": "2026-10-09T08:45:27.000Z"
-    },
-    {
-      "title": "JSSC Para Teacher JTAACCE Online Form 2026 – Last Date",
-      "url": "/post/jssc-para-teacher-jtaacce-2026",
-      "category": "latestJobs",
-      "slug": "jssc-para-teacher-jtaacce-2026",
-      "publishedDate": "2026-10-18T10:09:48+05:30",
-      "publishedAt": "2026-10-18T04:39:48.000Z"
+      "slug": "sci-court-master-2026",
+      "publishedDate": "2026-10-21T10:43:55+05:30",
+      "publishedAt": "2026-10-21T05:13:55.000Z"
     },
     {
       "title": "RRB NTPC 10+2 UG Level 07/2026 Online Form 2026",
       "url": "/post/rrb-ntpc-102-ug-level-07-2026",
       "category": "latestJobs",
       "slug": "rrb-ntpc-102-ug-level-07-2026",
-      "publishedDate": "2026-10-17T12:57:09+05:30",
-      "publishedAt": "2026-10-17T07:27:09.000Z"
+      "publishedDate": "2026-10-20T13:56:15+05:30",
+      "publishedAt": "2026-10-20T08:26:15.000Z"
     },
     {
       "title": "RRB NTPC Graduate Level 06/2026 Online Form 2026 (3548 Posts)",
       "url": "/post/rrb-ntpc-graduate-level-06-2026",
       "category": "latestJobs",
       "slug": "rrb-ntpc-graduate-level-06-2026",
-      "publishedDate": "2026-10-17T12:57:05+05:30",
-      "publishedAt": "2026-10-17T07:27:05.000Z"
+      "publishedDate": "2026-10-20T13:56:09+05:30",
+      "publishedAt": "2026-10-20T08:26:09.000Z"
     },
     {
       "title": "UPESSC PRT Assistant Teacher Online Form 2026 (12405 Posts) – Extend",
       "url": "/post/upessc-prt-assistant-teacher-2026",
       "category": "latestJobs",
       "slug": "upessc-prt-assistant-teacher-2026",
-      "publishedDate": "2026-10-17T12:57:01+05:30",
-      "publishedAt": "2026-10-17T07:27:01.000Z"
+      "publishedDate": "2026-10-20T13:56:05+05:30",
+      "publishedAt": "2026-10-20T08:26:05.000Z"
     },
     {
       "title": "BPSC School Teacher TRE 4.0 Online Form 2026 (33,320 Posts)",
       "url": "/post/bpsc-school-teacher-tre-4-0-2026",
       "category": "latestJobs",
       "slug": "bpsc-school-teacher-tre-4-0-2026",
-      "publishedDate": "2026-10-17T12:56:57+05:30",
-      "publishedAt": "2026-10-17T07:26:57.000Z"
+      "publishedDate": "2026-10-20T13:56:01+05:30",
+      "publishedAt": "2026-10-20T08:26:01.000Z"
+    },
+    {
+      "title": "UPESSC PGT Teacher Correction / Edit Form 2026",
+      "url": "/post/upessc-pgt-teacher-2026",
+      "category": "latestJobs",
+      "slug": "upessc-pgt-teacher-2026",
+      "publishedDate": "2026-10-20T13:55:31+05:30",
+      "publishedAt": "2026-10-20T08:25:31.000Z"
+    },
+    {
+      "title": "Supreme Court SPA Online Form 2026",
+      "url": "/post/supreme-court-spa-2026",
+      "category": "latestJobs",
+      "slug": "supreme-court-spa-2026",
+      "publishedDate": "2026-10-20T13:49:18+05:30",
+      "publishedAt": "2026-10-20T08:19:18.000Z"
     },
     {
       "title": "Rajasthan Safai Karamchari Online Form 2026 (24752 Posts)",
       "url": "/post/rajasthan-safai-karamchari-2026",
       "category": "latestJobs",
       "slug": "rajasthan-safai-karamchari-2026",
-      "publishedDate": "2026-10-17T12:56:53+05:30",
-      "publishedAt": "2026-10-17T07:26:53.000Z"
+      "publishedDate": "2026-10-19T11:20:40+05:30",
+      "publishedAt": "2026-10-19T05:50:40.000Z"
     },
     {
       "title": "UP Anganwadi Bharti Online Form 2026 (Update)",
       "url": "/post/up-anganwadi-bharti-2026",
       "category": "latestJobs",
       "slug": "up-anganwadi-bharti-2026",
-      "publishedDate": "2026-10-17T12:56:49+05:30",
-      "publishedAt": "2026-10-17T07:26:49.000Z"
+      "publishedDate": "2026-10-19T11:20:36+05:30",
+      "publishedAt": "2026-10-19T05:50:36.000Z"
     },
     {
       "title": "UPSSSC Inter Level Online Form 2026 (1784 Posts)",
       "url": "/post/upsssc-inter-level-2026",
       "category": "latestJobs",
       "slug": "upsssc-inter-level-2026",
-      "publishedDate": "2026-10-17T12:56:43+05:30",
-      "publishedAt": "2026-10-17T07:26:43.000Z"
+      "publishedDate": "2026-10-19T11:20:31+05:30",
+      "publishedAt": "2026-10-19T05:50:31.000Z"
     },
     {
       "title": "MP Police Constable Driver Online Form 2026",
       "url": "/post/mpesb-mp-police-constable-driver-2026",
       "category": "latestJobs",
       "slug": "mpesb-mp-police-constable-driver-2026",
-      "publishedDate": "2026-10-17T12:56:39+05:30",
-      "publishedAt": "2026-10-17T07:26:39.000Z"
+      "publishedDate": "2026-10-19T11:20:27+05:30",
+      "publishedAt": "2026-10-19T05:50:27.000Z"
     },
     {
       "title": "Assam Rifles Technical/ Tradesman Online Form 2026",
       "url": "/post/assam-rifles-technical-tradesman-2026",
       "category": "latestJobs",
       "slug": "assam-rifles-technical-tradesman-2026",
-      "publishedDate": "2026-10-17T12:56:35+05:30",
-      "publishedAt": "2026-10-17T07:26:35.000Z"
+      "publishedDate": "2026-10-19T11:20:22+05:30",
+      "publishedAt": "2026-10-19T05:50:22.000Z"
     },
     {
       "title": "CWC Assistant Manager & Junior Executive Online Form 2026",
@@ -5086,38 +5110,6 @@ export const scrapedData = {
       "publishedAt": "2026-10-14T08:35:26.000Z"
     },
     {
-      "title": "UCO Bank Apprentice Online Form 2026",
-      "url": "/post/uco-bank-apprentice-2026",
-      "category": "latestJobs",
-      "slug": "uco-bank-apprentice-2026",
-      "publishedDate": "2026-10-14T13:32:11+05:30",
-      "publishedAt": "2026-10-14T08:02:11.000Z"
-    },
-    {
-      "title": "Supreme Court SCI Court Assistant Online Form 2026",
-      "url": "/post/supreme-court-sci-court-assistant-2026",
-      "category": "latestJobs",
-      "slug": "supreme-court-sci-court-assistant-2026",
-      "publishedDate": "2026-10-13T19:29:04+05:30",
-      "publishedAt": "2026-10-13T13:59:04.000Z"
-    },
-    {
-      "title": "MPESB Group 3 Sub Engineer & Other Post Online Form 2026 – Re-Open",
-      "url": "/post/mpesb-group-3-sub-engineer-other-post-2026",
-      "category": "latestJobs",
-      "slug": "mpesb-group-3-sub-engineer-other-post-2026",
-      "publishedDate": "2026-10-13T19:11:48+05:30",
-      "publishedAt": "2026-10-13T13:41:48.000Z"
-    },
-    {
-      "title": "UPESSC PGT Teacher Online Form 2026 (2607 Posts)",
-      "url": "/post/upessc-pgt-teacher-2026",
-      "category": "latestJobs",
-      "slug": "upessc-pgt-teacher-2026",
-      "publishedDate": "2026-10-17T12:57:17+05:30",
-      "publishedAt": "2026-10-17T07:27:17.000Z"
-    },
-    {
       "title": "NTA NIFT Online Form 2027",
       "url": "/post/nta-nift-2027",
       "category": "latestJobs",
@@ -5156,6 +5148,14 @@ export const scrapedData = {
       "slug": "nta-csir-ugc-net-december-2026",
       "publishedDate": "2026-10-08T16:29:52+05:30",
       "publishedAt": "2026-10-08T10:59:52.000Z"
+    },
+    {
+      "title": "HPSC Food Safety Officer (FSO) Online Form 2026",
+      "url": "/post/hpsc-food-safety-officer-fso-2026",
+      "category": "latestJobs",
+      "slug": "hpsc-food-safety-officer-fso-2026",
+      "publishedDate": "2026-10-19T11:21:02+05:30",
+      "publishedAt": "2026-10-19T05:51:02.000Z"
     },
     {
       "title": "Uttar Pradesh UP Scholarship Online Form 2026-27",
@@ -5366,12 +5366,28 @@ export const scrapedData = {
       "publishedAt": "2026-10-02T10:19:04.000Z"
     },
     {
-      "title": "Supreme Court SPA Online Form 2026",
-      "url": "/post/supreme-court-spa-2026",
+      "title": "UCO Bank Apprentice Online Form 2026",
+      "url": "/post/uco-bank-apprentice-2026",
       "category": "latestJobs",
-      "slug": "supreme-court-spa-2026",
-      "publishedDate": "2026-10-13T15:46:54+05:30",
-      "publishedAt": "2026-10-13T10:16:54.000Z"
+      "slug": "uco-bank-apprentice-2026",
+      "publishedDate": "2026-10-14T13:32:11+05:30",
+      "publishedAt": "2026-10-14T08:02:11.000Z"
+    },
+    {
+      "title": "Supreme Court SCI Court Assistant Online Form 2026",
+      "url": "/post/supreme-court-sci-court-assistant-2026",
+      "category": "latestJobs",
+      "slug": "supreme-court-sci-court-assistant-2026",
+      "publishedDate": "2026-10-13T19:29:04+05:30",
+      "publishedAt": "2026-10-13T13:59:04.000Z"
+    },
+    {
+      "title": "MPESB Group 3 Sub Engineer & Other Post Online Form 2026 – Re-Open",
+      "url": "/post/mpesb-group-3-sub-engineer-other-post-2026",
+      "category": "latestJobs",
+      "slug": "mpesb-group-3-sub-engineer-other-post-2026",
+      "publishedDate": "2026-10-13T19:11:48+05:30",
+      "publishedAt": "2026-10-13T13:41:48.000Z"
     },
     {
       "title": "DSSSB Sweeper & Chowkidar Online Form 2026",
@@ -5476,14 +5492,6 @@ export const scrapedData = {
       "slug": "indian-army-tgc-145-2026",
       "publishedDate": "2026-09-30T17:39:09+05:30",
       "publishedAt": "2026-09-30T12:09:09.000Z"
-    },
-    {
-      "title": "HPSC Food Safety Officer (FSO) Online Form 2026",
-      "url": "/post/hpsc-food-safety-officer-fso-2026",
-      "category": "latestJobs",
-      "slug": "hpsc-food-safety-officer-fso-2026",
-      "publishedDate": "2026-09-29T16:56:13+05:30",
-      "publishedAt": "2026-09-29T11:26:13.000Z"
     },
     {
       "title": "ITBP Head Constable (Education & Stress Counsellor) Online Form 2026",
@@ -5964,6 +5972,30 @@ export const scrapedData = {
       "slug": "iocl-apprentice-recruitment-2025",
       "publishedDate": "2025-02-01T13:05:24+05:30",
       "publishedAt": "2025-02-01T07:35:24.000Z"
+    },
+    {
+      "title": "BPSC 72nd CCE 2026 Exam Postpoend",
+      "url": "/post/bpsc-72nd-2026",
+      "category": "latestJobs",
+      "slug": "bpsc-72nd-2026",
+      "publishedDate": "2026-10-12T16:32:59+05:30",
+      "publishedAt": "2026-10-12T11:02:59.000Z"
+    },
+    {
+      "title": "MP High Court Assistant Grade III Exam Date 2026",
+      "url": "/post/mp-high-court-assistant-grade-iii-2026",
+      "category": "latestJobs",
+      "slug": "mp-high-court-assistant-grade-iii-2026",
+      "publishedDate": "2026-10-09T14:15:27+05:30",
+      "publishedAt": "2026-10-09T08:45:27.000Z"
+    },
+    {
+      "title": "JSSC Para Teacher JTAACCE Online Form 2026 – Last Date",
+      "url": "/post/jssc-para-teacher-jtaacce-2026",
+      "category": "latestJobs",
+      "slug": "jssc-para-teacher-jtaacce-2026",
+      "publishedDate": "2026-10-18T10:09:48+05:30",
+      "publishedAt": "2026-10-18T04:39:48.000Z"
     },
     {
       "title": "Canara Bank Apprentices Online Form 2026 (3500 Posts)",
@@ -8900,22 +8932,6 @@ export const scrapedData = {
       "slug": "iocl-executive-recruitment-2025",
       "publishedDate": "11 January 2025",
       "publishedAt": "2025-01-11T09:38:11.000Z"
-    },
-    {
-      "title": "National Bank NCBL Clerk Recruitment 2024 Apply For 15 Post",
-      "url": "/post/national-bank-ncbl-clerk-recruitment-2024",
-      "category": "latestJobs",
-      "slug": "national-bank-ncbl-clerk-recruitment-2024",
-      "publishedDate": "5 December 2024",
-      "publishedAt": "2024-12-04T18:30:00.000Z"
-    },
-    {
-      "title": "Central Bank of India Specialist Officer (SO) Recruitment 2024",
-      "url": "/post/central-bank-of-india-so-recruitment-2024",
-      "category": "latestJobs",
-      "slug": "central-bank-of-india-so-recruitment-2024",
-      "publishedDate": "28 November 2024",
-      "publishedAt": "2024-11-27T18:30:00.000Z"
     }
   ],
   "answerKeys": [
@@ -9038,14 +9054,6 @@ export const scrapedData = {
       "slug": "ssc-jht-2026",
       "publishedDate": "2026-09-22T13:50:27+05:30",
       "publishedAt": "2026-09-22T08:20:27.000Z"
-    },
-    {
-      "title": "UPSC CDS-II Answer Key 2026",
-      "url": "/post/upsc-cds-ii-2026",
-      "category": "answerKeys",
-      "slug": "upsc-cds-ii-2026",
-      "publishedDate": "2026-09-16T17:48:55+05:30",
-      "publishedAt": "2026-09-16T12:18:55.000Z"
     },
     {
       "title": "RSSB Computer Instructor Answer Key 2026",
@@ -11164,8 +11172,8 @@ export const scrapedData = {
       "lastDate": "27/02/2026\nLast Date for Apply Online :20/03/2026\nPay Exam Fee Last Date :20/03/2026\nExam Date : 15/07/2026\nAdmit Card Available :06/07/2026 : Application Fee\n\nGeneral / OBC/ Other State : 100/-\nSC / ST / PH : 100/-\nFemale Candidate (Bihar Dom.) : 100/-\nPay the Exam Fee Through Online / Offline Fee Mode Only"
     },
     "bpsc-school-teacher-tre-4-0-2026": {
-      "publishedDate": "2026-10-17T12:56:57+05:30",
-      "publishedAt": "2026-10-17T07:26:57.000Z",
+      "publishedDate": "2026-10-20T13:56:01+05:30",
+      "publishedAt": "2026-10-20T08:26:01.000Z",
       "lastDate": "26 October 2026"
     },
     "BPSC-Simultala-School-Teacher-2024": {
@@ -11972,8 +11980,8 @@ export const scrapedData = {
       "lastDate": "15 March 2022 (11:55 PM)"
     },
     "hpsc-food-safety-officer-fso-2026": {
-      "publishedDate": "2026-09-29T16:56:13+05:30",
-      "publishedAt": "2026-09-29T11:26:13.000Z",
+      "publishedDate": "2026-10-19T11:21:02+05:30",
+      "publishedAt": "2026-10-19T05:51:02.000Z",
       "lastDate": "19 October 2026"
     },
     "hpsc-fso-recruitment-2026-apply-online-for-45-food-safety-officer-posts-3068315": {
@@ -13677,8 +13685,8 @@ export const scrapedData = {
       "lastDate": "20/07/2026\nLast Date for Apply Online :19/08/2026\nLast Date Pay Exam Fee :19/08/2026\nMerit List : As per Schedule : Application Fee\n\nGeneral / OBC / EWS: 100/-\nSC / ST : 0/-\nAll Category Female : 0/-\nPay the Examination Fees  Through Debit Card / Credit Card / Net Banking Fees Mode Only."
     },
     "railway-rrb-alp-advt-01-2025": {
-      "publishedDate": "2026-10-01T22:20:14+05:30",
-      "publishedAt": "2026-10-01T16:50:14.000Z",
+      "publishedDate": "2026-10-20T17:52:39+05:30",
+      "publishedAt": "2026-10-20T12:22:39.000Z",
       "lastDate": "19 May 2025"
     },
     "railway-rrb-group-d-2025": {
@@ -13834,8 +13842,8 @@ export const scrapedData = {
       "lastDate": "14 September 2026"
     },
     "rajasthan-safai-karamchari-2026": {
-      "publishedDate": "2026-10-17T12:56:53+05:30",
-      "publishedAt": "2026-10-17T07:26:53.000Z",
+      "publishedDate": "2026-10-19T11:20:40+05:30",
+      "publishedAt": "2026-10-19T05:50:40.000Z",
       "lastDate": "28 October 2026 (Extend)"
     },
     "rajasthan-sanitation-worker-jul26": {
@@ -14556,8 +14564,8 @@ export const scrapedData = {
       "publishedAt": "2026-09-17T10:03:28.000Z"
     },
     "sbi-junior-associates-clerk-backlog-2026": {
-      "publishedDate": "2026-10-17T20:12:53+05:30",
-      "publishedAt": "2026-10-17T14:42:53.000Z",
+      "publishedDate": "2026-10-20T13:51:01+05:30",
+      "publishedAt": "2026-10-20T08:21:01.000Z",
       "lastDate": "27 August 2026"
     },
     "SBI-PO-2026-27": {
@@ -15103,8 +15111,8 @@ export const scrapedData = {
       "lastDate": "District Wise"
     },
     "up-anganwadi-bharti-2026": {
-      "publishedDate": "2026-10-17T12:56:49+05:30",
-      "publishedAt": "2026-10-17T07:26:49.000Z",
+      "publishedDate": "2026-10-19T11:20:36+05:30",
+      "publishedAt": "2026-10-19T05:50:36.000Z",
       "lastDate": "District Wise"
     },
     "up-anganwadi-bharti-nov-2025": {
@@ -15417,8 +15425,8 @@ export const scrapedData = {
       "lastDate": "15/05/2026"
     },
     "upcisb-cooperative-bank-various-post-2026": {
-      "publishedDate": "2026-10-12T16:15:53+05:30",
-      "publishedAt": "2026-10-12T10:45:53.000Z",
+      "publishedDate": "2026-10-20T13:49:37+05:30",
+      "publishedAt": "2026-10-20T08:19:37.000Z",
       "lastDate": "15 May 2026"
     },
     "upcisb-various-2085-post-2026": {
@@ -15466,8 +15474,8 @@ export const scrapedData = {
       "lastDate": "Uttar Pradesh UPESSC UP Post Graduate Teacher PGT Recruitment 2026 Online Form for 2607 Post\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPost Date:\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18 September 2026  | 03:55 AM\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tShort Information :\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tUttar Pradesh Education Service Selection Commission (UPESSC) has Released Official Notificaton for Online Application form for the Post of Post Graduate Teacher PGT Madhyamik Shikshak (Advt.No. 06/2026) Recruitment 2026 for 2607 Post. Check All Details, Like Age Limit, Eligibility Details, Post Information, Pay Scale, Selection Process & More Details Related to UPSESSC UP PGT Teacher Jobs. Online Application Start on September 18, 2026 & Last Date is October 17, 2026. All Eligible & Interested Candidates Can Read Notification Before Apply Online Now in the Given Link Below.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tUttar Pradesh Education Service Selection Commission (UPESSC)\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tUP PGT Teacher (Madhyamik Shikshak) Recruitment 2026\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAdvt No. : 06/2026\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\twww.aiexamresult.com\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tApplication Fee\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tGen/ OBC/ EWS/ Other Candidates: Rs.1500/- \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSC/ ST Candidates: Rs.750 \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPH Candidates:  Rs.500/- \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tImportant Date\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOnline Apply Start On : 18 September 2026\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tRegistration Last Date : 17 October 2026\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPay Exam Fee Last Date: 17 October 2026\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCorrection Date:  21 October 2026\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tExam City Details : Notify Later\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAdmit Card Released: Notify Later\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tExam Date : 15 & 16 December 2026\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAnswer Key Available: Notify Later\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tResult Declared: Notify Later\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPayment Mode: Pay the Exam Fee Through Credit Card, Debit Card, Net Banking Fee Mode. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAge Limit as on 01-07-2026\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMinimum Age:  21 Years\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMaximum Age: 62 Years\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tFor Age Relaxation Read the Official  Notification.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tUse Age Calculator:  Click Here \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tUPESSC UP PGT 2026: Subject Wise Qualification.\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCommon Mandatory Requirement for All Posts: Bachelor of Education (B.Ed.) degree from an NCTE-recognized institution.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1. Hindi:Master's Degree in Related Subject (Hindi) with Sanskrit as a subject in Graduation, AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t2. English: Master's Degree in Related Subject (English), AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t3. Economics:Master's Degree in Related Subject (Economics), AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t4. Sociology: Master's Degree in Related Subject (Sociology), AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t5. Physics: Master's Degree in Related Subject (Physics), AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t6. Chemistry: Master's Degree in Related Subject (Chemistry), AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t7. Mathematics: Master's Degree in Related Subject (Mathematics), AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t8. Commerce: Master's Degree in Related Subject (Commerce), AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t9. History: Master's Degree in Related Subject (Ancient / Medieval / Modern History), AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t10. Drawing / Painting: Master's Degree in Related Subject (Drawing & Painting / Fine Arts), AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t11. Psychology: Master's Degree in Related Subject (Psychology), AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t12. Pedagogy / Education:  Master's Degree in Related Subject (Psychology or Education / M.Ed.), AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t13. Vocal Music: Master's Degree in Related Subject (Music / Vocal) OR Graduation with Vocal Music along with specialization, AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t14. Sanskrit: Master's Degree in Related Subject (Sanskrit), AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t15. Urdu: Master's Degree in Related Subject (Urdu), AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16. Home Science: Master's Degree or B.Sc. in Related Subject (Home Science / Home Economics / Nutrition), AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t17. Geography: Master's Degree in Related Subject (Geography), AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18. Physical Education: Graduation Degree in Related Field AND Master of Physical Education (M.P.Ed.).\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19. Military Science: Master's Degree in Related Subject (Military Science / Defence Studies), AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t20. Commercial Art: Diploma in Fine Arts / Commercial Art with Lettering from a Govt. recognized institute, AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t21. Biology: Master's Degree in Related Subject (Botany / Zoology), AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t22. Civics / Political Science: Master's Degree in Related Subject (Political Science / Civics), AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t23. Logic / Philosophy: Master's Degree in Related Subject (Philosophy / Logic), AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t24. Instrumental Music: Master's Degree in Related Subject (Music / Instrumental) OR Graduation with Instrumental Music, AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t25. Agriculture:Master's Degree in Related Subject (Agriculture / Agricultural Science), AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t26. Agronomy: Master's Degree in Related Subject (Agronomy / Agriculture), AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tVacancy Details\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTotal Vacancy : 12405 Post\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPost Name\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tUR\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOBC\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tEWS\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSC\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tST\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTotal Post\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPost Graduate Teacher PGT (Balak)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1027\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t585\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t201\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t516\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t2329\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPost Graduate Teacher PGT (Balika)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t132\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t65\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t14\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t67\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t278\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tGrand Total\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1156\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t650\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t215\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t583\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t2607\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tUP PGT 2026: Subject / Category Wise Vacancy\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tSubject Name\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tVarg\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tGeneral\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tOBC\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tEWS\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tSC\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tTotal Post\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tHindi\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t170\n\t\t\t\t\t\t\t\t\t\t\t\t71\n\t\t\t\t\t\t\t\t\t\t\t\t25\n\t\t\t\t\t\t\t\t\t\t\t\t70\n\t\t\t\t\t\t\t\t\t\t\t\t336\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t20\n\t\t\t\t\t\t\t\t\t\t\t\t08\n\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t08\n\t\t\t\t\t\t\t\t\t\t\t\t38\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tEnglish\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t116\n\t\t\t\t\t\t\t\t\t\t\t\t55\n\t\t\t\t\t\t\t\t\t\t\t\t16\n\t\t\t\t\t\t\t\t\t\t\t\t69\n\t\t\t\t\t\t\t\t\t\t\t\t256\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t19\n\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t08\n\t\t\t\t\t\t\t\t\t\t\t\t29\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tEconomics\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t63\n\t\t\t\t\t\t\t\t\t\t\t\t41\n\t\t\t\t\t\t\t\t\t\t\t\t12\n\t\t\t\t\t\t\t\t\t\t\t\t62\n\t\t\t\t\t\t\t\t\t\t\t\t178\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t07\n\t\t\t\t\t\t\t\t\t\t\t\t06\n\t\t\t\t\t\t\t\t\t\t\t\t0\n\t\t\t\t\t\t\t\t\t\t\t\t11\n\t\t\t\t\t\t\t\t\t\t\t\t24\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tSociology\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t29\n\t\t\t\t\t\t\t\t\t\t\t\t17\n\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t26\n\t\t\t\t\t\t\t\t\t\t\t\t75\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t0\n\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t09\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tPhysics\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t63\n\t\t\t\t\t\t\t\t\t\t\t\t29\n\t\t\t\t\t\t\t\t\t\t\t\t11\n\t\t\t\t\t\t\t\t\t\t\t\t19\n\t\t\t\t\t\t\t\t\t\t\t\t122\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t05\n\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t10\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tChemistry\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t90\n\t\t\t\t\t\t\t\t\t\t\t\t39\n\t\t\t\t\t\t\t\t\t\t\t\t20\n\t\t\t\t\t\t\t\t\t\t\t\t24\n\t\t\t\t\t\t\t\t\t\t\t\t173\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t06\n\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t0\n\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t12\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tMathematics\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t53\n\t\t\t\t\t\t\t\t\t\t\t\t23\n\t\t\t\t\t\t\t\t\t\t\t\t11\n\t\t\t\t\t\t\t\t\t\t\t\t18\n\t\t\t\t\t\t\t\t\t\t\t\t105\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t0\n\t\t\t\t\t\t\t\t\t\t\t\t0\n\t\t\t\t\t\t\t\t\t\t\t\t7\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tCommerce\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t19\n\t\t\t\t\t\t\t\t\t\t\t\t23\n\t\t\t\t\t\t\t\t\t\t\t\t12\n\t\t\t\t\t\t\t\t\t\t\t\t08\n\t\t\t\t\t\t\t\t\t\t\t\t62\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t0\n\t\t\t\t\t\t\t\t\t\t\t\t0\n\t\t\t\t\t\t\t\t\t\t\t\t0\n\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tHistory\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t42\n\t\t\t\t\t\t\t\t\t\t\t\t22\n\t\t\t\t\t\t\t\t\t\t\t\t06\n\t\t\t\t\t\t\t\t\t\t\t\t24\n\t\t\t\t\t\t\t\t\t\t\t\t94\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t07\n\t\t\t\t\t\t\t\t\t\t\t\t06\n\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t18\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tCraft\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t22\n\t\t\t\t\t\t\t\t\t\t\t\t17\n\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t14\n\t\t\t\t\t\t\t\t\t\t\t\t57\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t08\n\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t12\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tPsychology\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t15\n\t\t\t\t\t\t\t\t\t\t\t\t14\n\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t07\n\t\t\t\t\t\t\t\t\t\t\t\t40\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t06\n\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t10\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tEducation\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t10\n\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t11\n\t\t\t\t\t\t\t\t\t\t\t\t28\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t08\n\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t12\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tMusic\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t05\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tSanskrit\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t103\n\t\t\t\t\t\t\t\t\t\t\t\t67\n\t\t\t\t\t\t\t\t\t\t\t\t21\n\t\t\t\t\t\t\t\t\t\t\t\t50\n\t\t\t\t\t\t\t\t\t\t\t\t241\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t07\n\t\t\t\t\t\t\t\t\t\t\t\t08\n\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t06\n\t\t\t\t\t\t\t\t\t\t\t\t23\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tUrdu\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t0\n\t\t\t\t\t\t\t\t\t\t\t\t09\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tHome Science\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t0\n\t\t\t\t\t\t\t\t\t\t\t\t0\n\t\t\t\t\t\t\t\t\t\t\t\t0\n\t\t\t\t\t\t\t\t\t\t\t\t0\n\t\t\t\t\t\t\t\t\t\t\t\t0\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t12\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tGeography\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t104\n\t\t\t\t\t\t\t\t\t\t\t\t73\n\t\t\t\t\t\t\t\t\t\t\t\t14\n\t\t\t\t\t\t\t\t\t\t\t\t48\n\t\t\t\t\t\t\t\t\t\t\t\t239\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t0\n\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t09\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tPhysical Education\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t08\n\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t05\n\t\t\t\t\t\t\t\t\t\t\t\t19\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tMilitary Science\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t05\n\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t12\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tDecorative Arts\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBiology\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t54\n\t\t\t\t\t\t\t\t\t\t\t\t32\n\t\t\t\t\t\t\t\t\t\t\t\t18\n\t\t\t\t\t\t\t\t\t\t\t\t13\n\t\t\t\t\t\t\t\t\t\t\t\t117\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t06\n\t\t\t\t\t\t\t\t\t\t\t\t05\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t13\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tCivics\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t43\n\t\t\t\t\t\t\t\t\t\t\t\t31\n\t\t\t\t\t\t\t\t\t\t\t\t05\n\t\t\t\t\t\t\t\t\t\t\t\t36\n\t\t\t\t\t\t\t\t\t\t\t\t115\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t06\n\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t08\n\t\t\t\t\t\t\t\t\t\t\t\t17\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tLogic/Reasoning Science\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t06\n\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t12\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tInstrumental Music\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t09\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tAgriculture\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t07\n\t\t\t\t\t\t\t\t\t\t\t\t09\n\t\t\t\t\t\t\t\t\t\t\t\t08\n\t\t\t\t\t\t\t\t\t\t\t\t08\n\t\t\t\t\t\t\t\t\t\t\t\t32\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tAgronomy\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tGrand Total\n\t\t\t\t\t\t\t\t\t\t\t\t1156\n\t\t\t\t\t\t\t\t\t\t\t\t650\n\t\t\t\t\t\t\t\t\t\t\t\t215\n\t\t\t\t\t\t\t\t\t\t\t\t583\n\t\t\t\t\t\t\t\t\t\t\t\t2607\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tUPESSC PGT 2026 Selection Process & Written Exam Pattern\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTotal Marks & Selection Scheme:\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSelection for Post Graduate Teacher (PGT / Lecturer) in Aided Non-Government Schools (Boys / Girls) will be based on a merit list out of 400 Total Marks (360 Marks for Written Exam + 40 Marks for Interview).\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tWritten Exam Overview:\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tQuestion Paper Distribution: Out of 120 total questions, 30 questions will be based on General Knowledge (GK) and 90 questions will be based on the Related Subject.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTotal Marks: 360 Marks.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDuration: 2 Hours (120 Minutes).\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tQuestion Type: Objective Multiple Choice Questions (MCQs) with 4 options each.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMarking Scheme: +3 Marks for every correct answer.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tNegative Marking: 1 Mark deducted for every wrong or multiple-choice answer.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOMR Instructions: Answers must be marked on the OMR sheet using a black ballpoint pen.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tInterview Round:\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTotal Interview Marks: 40 Marks.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTie-Breaking Criteria (In Case of Equal Overall Marks):\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tHigher marks obtained in the Written Examination.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tHigher marks obtained in the Interview.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tHigher percentage in Post Graduation (Master's Degree).\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tHigher percentage in Teacher Training Qualification (B.Ed.).\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOlder candidate in age.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tResult Declaration:\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tFinal cut-off marks and candidate scores will be updated on the official website after the completion of the recruitment process.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPay Scale & Mode of Selection\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPay Scale: -Rs. 47,600 – 1,51,100 Pay Level 8\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSelection Process: Selection on the Basis of Written Exam, Interview & Merit List.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\n\t📋 How to Apply UPESSC UP Post Graduate Teacher PGT Recruitment 2026 for 2607 Post\n\n\t\n\t\tVisit the official website upessc.up.gov.in.\n\t\tComplete the mandatory One Time Registration (OTR) on the UPESSC portal.\n\t\tLog in and click on Advertisement No. 06/2026 (PGT / Lecturer Cadre) Apply Online link.\n\t\tFill personal, educational and subject details, then upload photo, signature and required documents.\n\t\tPay the application fee online, submit the form and take a print of the confirmation page.\n\t\n\n\tNote: Apply Start- 18/09/2026 | Last Date- 17/10/2026. Correction window is available till 21/10/2026. Check details carefully before final submit.\n\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here to Join aiexamresult Facebook Group\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAll Eligible & Interested Candidates Can Read Notification Before Apply Online Now\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDisclaimer : The Examination Results / Marks published in this Website is only for the immediate Information to the Examinees an does not to be a constitute to be a Legal Document. While all efforts have been made to make the Information available on this Website as Authentic as possible. We are not responsible for any Inadvertent Error that may have crept in the Examination Results / Marks being published in this Website nad for any loss to anybody or anything caused by any Shortcoming, Defect or Inaccuracy of the Information on this Website.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t           \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tIMPORTANT LINKS\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tApply Online \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tRegistration  ||  Login\n\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDownload District Wise Vacancy\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDownload Official Notification\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDownload Official Syllabus\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOfficial Website\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tJoin Our Whatsapp Channel\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tJoin Our Telegram Group\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTop Online Form 2026 (All Current Job List)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\n\t\t\t\t\t\t \n\t\t\t\t\t\t\n\n\n🚨 UPESSC UP PGT Teacher Recruitment 2026 Online Form Live: 2607 Posts Apply Now #UPESSC\nUttar Pradesh Education Service Selection Commission (UPESSC) ne **Post Graduate Teacher / Madhyamik Shikshak Recruitment 2026 (Advt No. 06/2026)** ka official notification release kar diya hai। Online application **18 September 2026** se **17 October 2026** tak chalegi। Total **2607 Posts** (PGT Balak 2329 + PGT Balika 278)। Exam **15 & 16 December 2026**। Trending on Google & AI Mode!\n\n🔥 Hot Trends: UPESSC PGT 2026 Buzz\n16 September 2026: UP PGT notification out! Form **18 September** se start. Searches — \"UPESSC PGT form kab start hai\", \"UP Lecturer 2607 posts\", \"Advt 06/2026 Master's B.Ed\"। Subject-wise PGT ke liye UP ka mauka! #UPESSC #UPPGT\n\n📅 Important Dates\n\n  \n    EventDate\n    Online Application Start18 September 2026\n    Registration Last Date17 October 2026\n    Fee Payment Last Date17 October 2026\n    Correction Date21 October 2026\n    Exam Date15 & 16 December 2026\n    Admit Card / Answer Key / ResultNotify Later\n  \n\n\n💸 Application Fee\n\n  \n    CategoryFee\n    Gen / OBC / EWS / OtherRs. 1500/-\n    SC / STRs. 750/-\n    PHRs. 500/-\n  \n\nPayment Mode: Credit Card / Debit Card / Net Banking.\n\n🎓 Eligibility (Common + Subject-wise)\n\n  Common: B.Ed. from NCTE-recognized institution + Master's in related subject\n  Hindi, English, Economics, Sociology, Physics, Chemistry, Mathematics, Commerce, History, Drawing/Painting, Psychology, Pedagogy, Vocal Music, Sanskrit, Urdu, Home Science, Geography, Physical Education (M.P.Ed.), Military Science, Commercial Art, Biology, Civics/Political Science, Logic/Philosophy, Instrumental Music, Agriculture, Agronomy — related Master's + B.Ed. (as per notification)\n  Age Limit (as on 01-07-2026): **21 – 62 Years**\n\n\n📋 Vacancy Details\n\n  Total Posts: 2607\n  PGT Balak (Boys): **2329 Posts**\n  PGT Balika (Girls): **278 Posts**\n\n\n📝 Exam Pattern & Selection\n\n  Written: 120 MCQ (30 GK + 90 Subject) | 360 Marks | 2 Hours\n  +3 correct | −1 wrong | OMR black ballpoint\n  Interview: **40 Marks**\n  Total Merit: **400 Marks**\n  Tie-break: Written marks → Interview → PG % → B.Ed. % → Older age\n\n\n💰 Pay Scale\n\n  Pay Scale: Rs. 47,600 – 1,51,100 (**Level-8**)\n  Selection: Written Exam + Interview + Merit List\n\n\n📋 How to Apply for UPESSC PGT 2026\n\n  Visit official website upessc.up.gov.in\n  Complete One Time Registration (OTR)\n  Login and click Advt No. 06/2026 (PGT / Lecturer Cadre)\n  Fill personal, educational and subject details; upload documents\n  Pay the fee online and submit\n  Print the confirmation page\n\nNote: Apply 18 September 2026 to 17 October 2026. Correction till 21 October 2026.\n\n🌟 Why Apply for UPESSC PGT 2026?\n\n  2607 PGT / Lecturer Posts in Uttar Pradesh\n  Level-8 Pay Scale\n  Trending UP Teacher Bharti 2026! #UPESSC\n\n\nExplore more UPESSC & UP Teacher Job Updates on All India Exam Result!\n\n❓ UPESSC UP PGT 2026 – Frequently Asked Questions\n📅 Q1. Form kab start hai?18 September 2026.\n📅 Q2. Last date kya hai?17 October 2026.\n💸 Q3. Application fee kitna hai?Gen/OBC/EWS: Rs.1500/-, SC/ST: Rs.750/-, PH: Rs.500/-.\n🕒 Q4. Age limit?21–62 Years (as on 01-07-2026).\n📋 Q5. Total posts?2607 Posts (Balak 2329 + Balika 278).\n🎓 Q6. Eligibility?Master's in related subject + B.Ed. (NCTE).\n🔍 Q7. Selection process?Written (360) + Interview (40) = 400 marks merit.\n📅 Q8. Exam date?15 & 16 December 2026.\n📅 Q9. पीजीटी फॉर्म कब शुरू?18 सितंबर 2026 से।\n📅 Q10. अंतिम तिथि?17 अक्टूबर 2026।\n📋 Q11. कितने पद?2607 पद।\n\n\n\n\n\t\t\t\t\n\n\n \n\n \n \n \n\n\n\n\n\n\n\n\n\n\n\n/* Footer Styling */\n    .pageFooter {\n        background-color: #00004d; /* Dark blue background */\n        padding: 20px 0;\n        text-align: center;\n        border-top: 2px solid #ddd;\n        color: white; /* White text for better contrast */\n    }\n\n    .pageFooter p {\n        margin: 10px 0;\n        font-family: 'Times New Roman', Times, serif;\n        font-size: 16px;\n        color: white; /* White text */\n    }\n\n    .pageFooter a {\n        text-decoration: none;\n        color: #66ccff; /* Light blue link color */\n        font-weight: bold;\n    }\n\n    .pageFooter a:hover {\n        color: #ff6347; /* Hover effect - tomato color */\n    }\n\n    .pageFooter .footer-links {\n        font-size: 18px;\n        margin-top: 20px;\n    }\n\n    .pageFooter .footer-links a {\n        margin: 0 8px;\n        color: #66ccff; /* Light blue link color */\n        font-weight: bold;\n    }\n\n    .pageFooter .footer-links a:hover {\n        color: #ff6347; /* Hover effect for links */\n    }\n\n    .pageFooter img {\n        margin: 10px 0; /* Space above and below the image */\n    }\n\n    .pageFooter .copyright {\n        margin-top: 10px;\n        font-size: 16px;\n    }\n\n\n\n\n\nContact Email:   contact@aiexamresult.com \n\n\nHome | About Us | Contact Us | Privacy Policy | Disclaimer | Terms of Use\n\n\n\n\n\n© Copyright 2017-2026 at www.aiexamresult.com\n\n\n\n\n\n\n\n\n'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpsh-oh'},{'server':'sg2plzcpnl506243'},{'dcenter':'sg2'},{'cp_id':'3459397'},{'cp_cl':'8'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support. : Name of Post:\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tUttar Pradesh UPESSC UP Post Graduate Teacher PGT Recruitment 2026 Online Form for 2607 Post\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPost Date:\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18 September 2026  | 03:55 AM\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tShort Information :\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tUttar Pradesh Education Service Selection Commission (UPESSC) has Released Official Notificaton for Online Application form for the Post of Post Graduate Teacher PGT Madhyamik Shikshak (Advt.No. 06/2026) Recruitment 2026 for 2607 Post. Check All Details, Like Age Limit, Eligibility Details, Post Information, Pay Scale, Selection Process & More Details Related to UPSESSC UP PGT Teacher Jobs. Online Application Start on September 18, 2026 & Last Date is October 17, 2026. All Eligible & Interested Candidates Can Read Notification Before Apply Online Now in the Given Link Below.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tUttar Pradesh Education Service Selection Commission (UPESSC)\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tUP PGT Teacher (Madhyamik Shikshak) Recruitment 2026\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAdvt No. : 06/2026\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\twww.aiexamresult.com\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tApplication Fee\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tGen/ OBC/ EWS/ Other Candidates: Rs.1500/- \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSC/ ST Candidates: Rs.750 \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPH Candidates:  Rs.500/- \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tImportant Date\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOnline Apply Start On : 18 September 2026\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tRegistration Last Date : 17 October 2026\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPay Exam Fee Last Date: 17 October 2026\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCorrection Date:  21 October 2026\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tExam City Details : Notify Later\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAdmit Card Released: Notify Later\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tExam Date : 15 & 16 December 2026\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAnswer Key Available: Notify Later\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tResult Declared: Notify Later\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPayment Mode: Pay the Exam Fee Through Credit Card, Debit Card, Net Banking Fee Mode. \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAge Limit as on 01-07-2026\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMinimum Age:  21 Years\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMaximum Age: 62 Years\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tFor Age Relaxation Read the Official  Notification.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tUse Age Calculator:  Click Here \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tUPESSC UP PGT 2026: Subject Wise Qualification.\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tCommon Mandatory Requirement for All Posts: Bachelor of Education (B.Ed.) degree from an NCTE-recognized institution.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1. Hindi:Master's Degree in Related Subject (Hindi) with Sanskrit as a subject in Graduation, AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t2. English: Master's Degree in Related Subject (English), AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t3. Economics:Master's Degree in Related Subject (Economics), AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t4. Sociology: Master's Degree in Related Subject (Sociology), AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t5. Physics: Master's Degree in Related Subject (Physics), AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t6. Chemistry: Master's Degree in Related Subject (Chemistry), AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t7. Mathematics: Master's Degree in Related Subject (Mathematics), AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t8. Commerce: Master's Degree in Related Subject (Commerce), AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t9. History: Master's Degree in Related Subject (Ancient / Medieval / Modern History), AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t10. Drawing / Painting: Master's Degree in Related Subject (Drawing & Painting / Fine Arts), AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t11. Psychology: Master's Degree in Related Subject (Psychology), AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t12. Pedagogy / Education:  Master's Degree in Related Subject (Psychology or Education / M.Ed.), AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t13. Vocal Music: Master's Degree in Related Subject (Music / Vocal) OR Graduation with Vocal Music along with specialization, AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t14. Sanskrit: Master's Degree in Related Subject (Sanskrit), AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t15. Urdu: Master's Degree in Related Subject (Urdu), AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t16. Home Science: Master's Degree or B.Sc. in Related Subject (Home Science / Home Economics / Nutrition), AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t17. Geography: Master's Degree in Related Subject (Geography), AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t18. Physical Education: Graduation Degree in Related Field AND Master of Physical Education (M.P.Ed.).\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t19. Military Science: Master's Degree in Related Subject (Military Science / Defence Studies), AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t20. Commercial Art: Diploma in Fine Arts / Commercial Art with Lettering from a Govt. recognized institute, AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t21. Biology: Master's Degree in Related Subject (Botany / Zoology), AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t22. Civics / Political Science: Master's Degree in Related Subject (Political Science / Civics), AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t23. Logic / Philosophy: Master's Degree in Related Subject (Philosophy / Logic), AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t24. Instrumental Music: Master's Degree in Related Subject (Music / Instrumental) OR Graduation with Instrumental Music, AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t25. Agriculture:Master's Degree in Related Subject (Agriculture / Agricultural Science), AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t26. Agronomy: Master's Degree in Related Subject (Agronomy / Agriculture), AND B.Ed.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tVacancy Details\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTotal Vacancy : 12405 Post\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPost Name\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tUR\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOBC\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tEWS\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSC\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tST\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTotal Post\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPost Graduate Teacher PGT (Balak)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1027\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t585\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t201\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t516\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t2329\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPost Graduate Teacher PGT (Balika)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t132\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t65\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t14\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t67\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t278\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tGrand Total\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t1156\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t650\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t215\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t583\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t2607\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tUP PGT 2026: Subject / Category Wise Vacancy\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tSubject Name\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tVarg\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tGeneral\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tOBC\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tEWS\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tSC\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tTotal Post\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tHindi\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t170\n\t\t\t\t\t\t\t\t\t\t\t\t71\n\t\t\t\t\t\t\t\t\t\t\t\t25\n\t\t\t\t\t\t\t\t\t\t\t\t70\n\t\t\t\t\t\t\t\t\t\t\t\t336\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t20\n\t\t\t\t\t\t\t\t\t\t\t\t08\n\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t08\n\t\t\t\t\t\t\t\t\t\t\t\t38\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tEnglish\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t116\n\t\t\t\t\t\t\t\t\t\t\t\t55\n\t\t\t\t\t\t\t\t\t\t\t\t16\n\t\t\t\t\t\t\t\t\t\t\t\t69\n\t\t\t\t\t\t\t\t\t\t\t\t256\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t19\n\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t08\n\t\t\t\t\t\t\t\t\t\t\t\t29\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tEconomics\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t63\n\t\t\t\t\t\t\t\t\t\t\t\t41\n\t\t\t\t\t\t\t\t\t\t\t\t12\n\t\t\t\t\t\t\t\t\t\t\t\t62\n\t\t\t\t\t\t\t\t\t\t\t\t178\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t07\n\t\t\t\t\t\t\t\t\t\t\t\t06\n\t\t\t\t\t\t\t\t\t\t\t\t0\n\t\t\t\t\t\t\t\t\t\t\t\t11\n\t\t\t\t\t\t\t\t\t\t\t\t24\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tSociology\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t29\n\t\t\t\t\t\t\t\t\t\t\t\t17\n\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t26\n\t\t\t\t\t\t\t\t\t\t\t\t75\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t0\n\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t09\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tPhysics\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t63\n\t\t\t\t\t\t\t\t\t\t\t\t29\n\t\t\t\t\t\t\t\t\t\t\t\t11\n\t\t\t\t\t\t\t\t\t\t\t\t19\n\t\t\t\t\t\t\t\t\t\t\t\t122\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t05\n\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t10\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tChemistry\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t90\n\t\t\t\t\t\t\t\t\t\t\t\t39\n\t\t\t\t\t\t\t\t\t\t\t\t20\n\t\t\t\t\t\t\t\t\t\t\t\t24\n\t\t\t\t\t\t\t\t\t\t\t\t173\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t06\n\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t0\n\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t12\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tMathematics\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t53\n\t\t\t\t\t\t\t\t\t\t\t\t23\n\t\t\t\t\t\t\t\t\t\t\t\t11\n\t\t\t\t\t\t\t\t\t\t\t\t18\n\t\t\t\t\t\t\t\t\t\t\t\t105\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t0\n\t\t\t\t\t\t\t\t\t\t\t\t0\n\t\t\t\t\t\t\t\t\t\t\t\t7\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tCommerce\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t19\n\t\t\t\t\t\t\t\t\t\t\t\t23\n\t\t\t\t\t\t\t\t\t\t\t\t12\n\t\t\t\t\t\t\t\t\t\t\t\t08\n\t\t\t\t\t\t\t\t\t\t\t\t62\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t0\n\t\t\t\t\t\t\t\t\t\t\t\t0\n\t\t\t\t\t\t\t\t\t\t\t\t0\n\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tHistory\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t42\n\t\t\t\t\t\t\t\t\t\t\t\t22\n\t\t\t\t\t\t\t\t\t\t\t\t06\n\t\t\t\t\t\t\t\t\t\t\t\t24\n\t\t\t\t\t\t\t\t\t\t\t\t94\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t07\n\t\t\t\t\t\t\t\t\t\t\t\t06\n\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t18\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tCraft\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t22\n\t\t\t\t\t\t\t\t\t\t\t\t17\n\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t14\n\t\t\t\t\t\t\t\t\t\t\t\t57\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t08\n\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t12\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tPsychology\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t15\n\t\t\t\t\t\t\t\t\t\t\t\t14\n\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t07\n\t\t\t\t\t\t\t\t\t\t\t\t40\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t06\n\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t10\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tEducation\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t10\n\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t11\n\t\t\t\t\t\t\t\t\t\t\t\t28\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t08\n\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t12\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tMusic\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t05\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tSanskrit\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t103\n\t\t\t\t\t\t\t\t\t\t\t\t67\n\t\t\t\t\t\t\t\t\t\t\t\t21\n\t\t\t\t\t\t\t\t\t\t\t\t50\n\t\t\t\t\t\t\t\t\t\t\t\t241\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t07\n\t\t\t\t\t\t\t\t\t\t\t\t08\n\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t06\n\t\t\t\t\t\t\t\t\t\t\t\t23\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tUrdu\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t0\n\t\t\t\t\t\t\t\t\t\t\t\t09\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tHome Science\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t0\n\t\t\t\t\t\t\t\t\t\t\t\t0\n\t\t\t\t\t\t\t\t\t\t\t\t0\n\t\t\t\t\t\t\t\t\t\t\t\t0\n\t\t\t\t\t\t\t\t\t\t\t\t0\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t12\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tGeography\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t104\n\t\t\t\t\t\t\t\t\t\t\t\t73\n\t\t\t\t\t\t\t\t\t\t\t\t14\n\t\t\t\t\t\t\t\t\t\t\t\t48\n\t\t\t\t\t\t\t\t\t\t\t\t239\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t0\n\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t09\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tPhysical Education\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t08\n\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t05\n\t\t\t\t\t\t\t\t\t\t\t\t19\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tMilitary Science\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t05\n\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t12\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tDecorative Arts\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBiology\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t54\n\t\t\t\t\t\t\t\t\t\t\t\t32\n\t\t\t\t\t\t\t\t\t\t\t\t18\n\t\t\t\t\t\t\t\t\t\t\t\t13\n\t\t\t\t\t\t\t\t\t\t\t\t117\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t06\n\t\t\t\t\t\t\t\t\t\t\t\t05\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t13\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tCivics\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t43\n\t\t\t\t\t\t\t\t\t\t\t\t31\n\t\t\t\t\t\t\t\t\t\t\t\t05\n\t\t\t\t\t\t\t\t\t\t\t\t36\n\t\t\t\t\t\t\t\t\t\t\t\t115\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t06\n\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t08\n\t\t\t\t\t\t\t\t\t\t\t\t17\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tLogic/Reasoning Science\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t06\n\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t12\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tInstrumental Music\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t02\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t09\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tAgriculture\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t07\n\t\t\t\t\t\t\t\t\t\t\t\t09\n\t\t\t\t\t\t\t\t\t\t\t\t08\n\t\t\t\t\t\t\t\t\t\t\t\t08\n\t\t\t\t\t\t\t\t\t\t\t\t32\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tAgronomy\n\t\t\t\t\t\t\t\t\t\t\t\tBalak\n\t\t\t\t\t\t\t\t\t\t\t\t03\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t01\n\t\t\t\t\t\t\t\t\t\t\t\t04\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tBalika\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\t00\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tGrand Total\n\t\t\t\t\t\t\t\t\t\t\t\t1156\n\t\t\t\t\t\t\t\t\t\t\t\t650\n\t\t\t\t\t\t\t\t\t\t\t\t215\n\t\t\t\t\t\t\t\t\t\t\t\t583\n\t\t\t\t\t\t\t\t\t\t\t\t2607\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tUPESSC PGT 2026 Selection Process & Written Exam Pattern\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTotal Marks & Selection Scheme:\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSelection for Post Graduate Teacher (PGT / Lecturer) in Aided Non-Government Schools (Boys / Girls) will be based on a merit list out of 400 Total Marks (360 Marks for Written Exam + 40 Marks for Interview).\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tWritten Exam Overview:\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tQuestion Paper Distribution: Out of 120 total questions, 30 questions will be based on General Knowledge (GK) and 90 questions will be based on the Related Subject.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTotal Marks: 360 Marks.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDuration: 2 Hours (120 Minutes).\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tQuestion Type: Objective Multiple Choice Questions (MCQs) with 4 options each.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tMarking Scheme: +3 Marks for every correct answer.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tNegative Marking: 1 Mark deducted for every wrong or multiple-choice answer.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOMR Instructions: Answers must be marked on the OMR sheet using a black ballpoint pen.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tInterview Round:\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTotal Interview Marks: 40 Marks.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTie-Breaking Criteria (In Case of Equal Overall Marks):\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tHigher marks obtained in the Written Examination.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tHigher marks obtained in the Interview.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tHigher percentage in Post Graduation (Master's Degree).\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tHigher percentage in Teacher Training Qualification (B.Ed.).\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOlder candidate in age.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tResult Declaration:\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tFinal cut-off marks and candidate scores will be updated on the official website after the completion of the recruitment process.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPay Scale & Mode of Selection\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tPay Scale: -Rs. 47,600 – 1,51,100 Pay Level 8\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tSelection Process: Selection on the Basis of Written Exam, Interview & Merit List.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\n\t📋 How to Apply UPESSC UP Post Graduate Teacher PGT Recruitment 2026 for 2607 Post\n\n\t\n\t\tVisit the official website upessc.up.gov.in.\n\t\tComplete the mandatory One Time Registration (OTR) on the UPESSC portal.\n\t\tLog in and click on Advertisement No. 06/2026 (PGT / Lecturer Cadre) Apply Online link.\n\t\tFill personal, educational and subject details, then upload photo, signature and required documents.\n\t\tPay the application fee online, submit the form and take a print of the confirmation page.\n\t\n\n\tNote: Apply Start- 18/09/2026 | Last Date- 17/10/2026. Correction window is available till 21/10/2026. Check details carefully before final submit.\n\t\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here to Join aiexamresult Facebook Group\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tAll Eligible & Interested Candidates Can Read Notification Before Apply Online Now\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDisclaimer : The Examination Results / Marks published in this Website is only for the immediate Information to the Examinees an does not to be a constitute to be a Legal Document. While all efforts have been made to make the Information available on this Website as Authentic as possible. We are not responsible for any Inadvertent Error that may have crept in the Examination Results / Marks being published in this Website nad for any loss to anybody or anything caused by any Shortcoming, Defect or Inaccuracy of the Information on this Website.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t           \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tIMPORTANT LINKS\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tApply Online \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tRegistration  ||  Login\n\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDownload District Wise Vacancy\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDownload Official Notification\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tDownload Official Syllabus\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tOfficial Website\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tJoin Our Whatsapp Channel\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tJoin Our Telegram Group\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTop Online Form 2026 (All Current Job List)\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tClick Here\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\n\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\n\t\t\t\t\t\t \n\t\t\t\t\t\t\n\n\n🚨 UPESSC UP PGT Teacher Recruitment 2026 Online Form Live: 2607 Posts Apply Now #UPESSC\nUttar Pradesh Education Service Selection Commission (UPESSC) ne **Post Graduate Teacher / Madhyamik Shikshak Recruitment 2026 (Advt No. 06/2026)** ka official notification release kar diya hai। Online application **18 September 2026** se **17 October 2026** tak chalegi। Total **2607 Posts** (PGT Balak 2329 + PGT Balika 278)। Exam **15 & 16 December 2026**। Trending on Google & AI Mode!\n\n🔥 Hot Trends: UPESSC PGT 2026 Buzz\n16 September 2026: UP PGT notification out! Form **18 September** se start. Searches — \"UPESSC PGT form kab start hai\", \"UP Lecturer 2607 posts\", \"Advt 06/2026 Master's B.Ed\"। Subject-wise PGT ke liye UP ka mauka! #UPESSC #UPPGT\n\n📅 Important Dates\n\n  \n    EventDate\n    Online Application Start18 September 2026\n    Registration Last Date17 October 2026\n    Fee Payment Last Date17 October 2026\n    Correction Date21 October 2026\n    Exam Date15 & 16 December 2026\n    Admit Card / Answer Key / ResultNotify Later\n  \n\n\n💸 Application Fee\n\n  \n    CategoryFee\n    Gen / OBC / EWS / OtherRs. 1500/-\n    SC / STRs. 750/-\n    PHRs. 500/-\n  \n\nPayment Mode: Credit Card / Debit Card / Net Banking.\n\n🎓 Eligibility (Common + Subject-wise)\n\n  Common: B.Ed. from NCTE-recognized institution + Master's in related subject\n  Hindi, English, Economics, Sociology, Physics, Chemistry, Mathematics, Commerce, History, Drawing/Painting, Psychology, Pedagogy, Vocal Music, Sanskrit, Urdu, Home Science, Geography, Physical Education (M.P.Ed.), Military Science, Commercial Art, Biology, Civics/Political Science, Logic/Philosophy, Instrumental Music, Agriculture, Agronomy — related Master's + B.Ed. (as per notification)\n  Age Limit (as on 01-07-2026): **21 – 62 Years**\n\n\n📋 Vacancy Details\n\n  Total Posts: 2607\n  PGT Balak (Boys): **2329 Posts**\n  PGT Balika (Girls): **278 Posts**\n\n\n📝 Exam Pattern & Selection\n\n  Written: 120 MCQ (30 GK + 90 Subject) | 360 Marks | 2 Hours\n  +3 correct | −1 wrong | OMR black ballpoint\n  Interview: **40 Marks**\n  Total Merit: **400 Marks**\n  Tie-break: Written marks → Interview → PG % → B.Ed. % → Older age\n\n\n💰 Pay Scale\n\n  Pay Scale: Rs. 47,600 – 1,51,100 (**Level-8**)\n  Selection: Written Exam + Interview + Merit List\n\n\n📋 How to Apply for UPESSC PGT 2026\n\n  Visit official website upessc.up.gov.in\n  Complete One Time Registration (OTR)\n  Login and click Advt No. 06/2026 (PGT / Lecturer Cadre)\n  Fill personal, educational and subject details; upload documents\n  Pay the fee online and submit\n  Print the confirmation page\n\nNote: Apply 18 September 2026 to 17 October 2026. Correction till 21 October 2026.\n\n🌟 Why Apply for UPESSC PGT 2026?\n\n  2607 PGT / Lecturer Posts in Uttar Pradesh\n  Level-8 Pay Scale\n  Trending UP Teacher Bharti 2026! #UPESSC\n\n\nExplore more UPESSC & UP Teacher Job Updates on All India Exam Result!\n\n❓ UPESSC UP PGT 2026 – Frequently Asked Questions\n📅 Q1. Form kab start hai?18 September 2026.\n📅 Q2. Last date kya hai?17 October 2026.\n💸 Q3. Application fee kitna hai?Gen/OBC/EWS: Rs.1500/-, SC/ST: Rs.750/-, PH: Rs.500/-.\n🕒 Q4. Age limit?21–62 Years (as on 01-07-2026).\n📋 Q5. Total posts?2607 Posts (Balak 2329 + Balika 278).\n🎓 Q6. Eligibility?Master's in related subject + B.Ed. (NCTE).\n🔍 Q7. Selection process?Written (360) + Interview (40) = 400 marks merit.\n📅 Q8. Exam date?15 & 16 December 2026.\n📅 Q9. पीजीटी फॉर्म कब शुरू?18 सितंबर 2026 से।\n📅 Q10. अंतिम तिथि?17 अक्टूबर 2026।\n📋 Q11. कितने पद?2607 पद।\n\n\n\n\n\t\t\t\t\n\n\n \n\n \n \n \n\n\n\n\n\n\n\n\n\n\n\n/* Footer Styling */\n    .pageFooter {\n        background-color: #00004d; /* Dark blue background */\n        padding: 20px 0;\n        text-align: center;\n        border-top: 2px solid #ddd;\n        color: white; /* White text for better contrast */\n    }\n\n    .pageFooter p {\n        margin: 10px 0;\n        font-family: 'Times New Roman', Times, serif;\n        font-size: 16px;\n        color: white; /* White text */\n    }\n\n    .pageFooter a {\n        text-decoration: none;\n        color: #66ccff; /* Light blue link color */\n        font-weight: bold;\n    }\n\n    .pageFooter a:hover {\n        color: #ff6347; /* Hover effect - tomato color */\n    }\n\n    .pageFooter .footer-links {\n        font-size: 18px;\n        margin-top: 20px;\n    }\n\n    .pageFooter .footer-links a {\n        margin: 0 8px;\n        color: #66ccff; /* Light blue link color */\n        font-weight: bold;\n    }\n\n    .pageFooter .footer-links a:hover {\n        color: #ff6347; /* Hover effect for links */\n    }\n\n    .pageFooter img {\n        margin: 10px 0; /* Space above and below the image */\n    }\n\n    .pageFooter .copyright {\n        margin-top: 10px;\n        font-size: 16px;\n    }\n\n\n\n\n\nContact Email:   contact@aiexamresult.com \n\n\nHome | About Us | Contact Us | Privacy Policy | Disclaimer | Terms of Use\n\n\n\n\n\n© Copyright 2017-2026 at www.aiexamresult.com\n\n\n\n\n\n\n\n\n'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpsh-oh'},{'server':'sg2plzcpnl506243'},{'dcenter':'sg2'},{'cp_id':'3459397'},{'cp_cl':'8'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support."
     },
     "upessc-pgt-teacher-2026": {
-      "publishedDate": "2026-10-17T12:57:17+05:30",
-      "publishedAt": "2026-10-17T07:27:17.000Z",
+      "publishedDate": "2026-10-20T13:55:31+05:30",
+      "publishedAt": "2026-10-20T08:25:31.000Z",
       "lastDate": "17 October 2026"
     },
     "upessc-principal-02-2026": {
@@ -15476,8 +15484,8 @@ export const scrapedData = {
       "lastDate": "21/07/2026\nLast Date for Apply Online :20/08/2026\nPay Exam Fee Last Date :20/08/2026\nCorrection Last Date : 23/08/2026\nUPESSC Principal Exam Date : 24/09/2026\nExam City Available : 14/09/2026\nAdmit Card Available : 21/09/2026 : Application Fee\n\nGeneral / OBC / EWS : 3000/-\nSC / ST / PH : 3000/-\nPay the Exam Fee Through Online / Offline Fee Mode Only"
     },
     "upessc-prt-assistant-teacher-2026": {
-      "publishedDate": "2026-10-17T12:57:01+05:30",
-      "publishedAt": "2026-10-17T07:27:01.000Z",
+      "publishedDate": "2026-10-20T13:56:05+05:30",
+      "publishedAt": "2026-10-20T08:26:05.000Z",
       "lastDate": "28 October 2026"
     },
     "upessc-up-assistant-professor-2026": {
@@ -16172,8 +16180,8 @@ export const scrapedData = {
       "lastDate": "27/07/2026\nLast Date for Apply Online :17/08/2026\nPay Exam Fee Last Date :17/08/2026\nForm Correction Last Date : 24/08/2026\nExam Date : As per Schedule\nExam City Available : Before Exam\nAdmit Card Available : Before Exam : Application Fee\n\nGeneral (UR) / OBC / EWS : 25/-\nSC / ST : 25/-\nPH (Divyang) : 25/-\nPay the Examination Fee Through UPI, Debit Card, Credit Card and Net Banking Mode Only."
     },
     "upsssc-pet-2026": {
-      "publishedDate": "2026-10-18T10:09:12+05:30",
-      "publishedAt": "2026-10-18T04:39:12.000Z",
+      "publishedDate": "2026-10-20T17:52:50+05:30",
+      "publishedAt": "2026-10-20T12:22:50.000Z",
       "lastDate": "07 September 2026"
     },
     "upsssc-pet-all-form-2026": {
@@ -16385,8 +16393,9 @@ export const scrapedData = {
       "publishedAt": "2026-09-20T17:14:40.000Z"
     },
     "upsc-cds-ii-2026": {
-      "publishedDate": "2026-09-16T17:48:55+05:30",
-      "publishedAt": "2026-09-16T12:18:55.000Z"
+      "publishedDate": "2026-10-19T20:09:47+05:30",
+      "publishedAt": "2026-10-19T14:39:47.000Z",
+      "lastDate": "11 June 2026 (Extended)"
     },
     "upsssc-assistant-boring-technician-2026": {
       "publishedDate": "2026-09-12T14:53:59+05:30",
@@ -16467,18 +16476,18 @@ export const scrapedData = {
       "lastDate": "03 July 2026"
     },
     "ssc-cgl-2026": {
-      "publishedDate": "2026-10-18T10:09:08+05:30",
-      "publishedAt": "2026-10-18T04:39:08.000Z",
+      "publishedDate": "2026-10-20T17:52:44+05:30",
+      "publishedAt": "2026-10-20T12:22:44.000Z",
       "lastDate": "25 June 2026"
     },
     "rrb-ntpc-102-ug-level-07-2026": {
-      "publishedDate": "2026-10-17T12:57:09+05:30",
-      "publishedAt": "2026-10-17T07:27:09.000Z",
+      "publishedDate": "2026-10-20T13:56:15+05:30",
+      "publishedAt": "2026-10-20T08:26:15.000Z",
       "lastDate": "13 November 2026"
     },
     "rrb-ntpc-graduate-level-06-2026": {
-      "publishedDate": "2026-10-17T12:57:05+05:30",
-      "publishedAt": "2026-10-17T07:27:05.000Z",
+      "publishedDate": "2026-10-20T13:56:09+05:30",
+      "publishedAt": "2026-10-20T08:26:09.000Z",
       "lastDate": "06 November 2026"
     },
     "itbp-head-constable-motor-mechanic-2026": {
@@ -16573,8 +16582,8 @@ export const scrapedData = {
       "publishedDate": "28 September 2026"
     },
     "assam-rifles-technical-tradesman-2026": {
-      "publishedDate": "2026-10-17T12:56:35+05:30",
-      "publishedAt": "2026-10-17T07:26:35.000Z",
+      "publishedDate": "2026-10-19T11:20:22+05:30",
+      "publishedAt": "2026-10-19T05:50:22.000Z",
       "lastDate": "28 October 2026"
     },
     "itbp-head-constable-education-stress-counsellor-2026": {
@@ -16707,8 +16716,8 @@ export const scrapedData = {
       "lastDate": "28 August 2026"
     },
     "mpesb-mp-police-constable-driver-2026": {
-      "publishedDate": "2026-10-17T12:56:39+05:30",
-      "publishedAt": "2026-10-17T07:26:39.000Z",
+      "publishedDate": "2026-10-19T11:20:27+05:30",
+      "publishedAt": "2026-10-19T05:50:27.000Z",
       "lastDate": "29 October 2026"
     },
     "national-insurance-nicl-assistant-2026": {
@@ -16821,8 +16830,8 @@ export const scrapedData = {
       "lastDate": "10 August 2026"
     },
     "supreme-court-spa-2026": {
-      "publishedDate": "2026-10-13T15:46:54+05:30",
-      "publishedAt": "2026-10-13T10:16:54.000Z",
+      "publishedDate": "2026-10-20T13:49:18+05:30",
+      "publishedAt": "2026-10-20T08:19:18.000Z",
       "lastDate": "10 November 2026"
     },
     "upsssc-junior-engineer-je-electrical-2026": {
@@ -16861,8 +16870,8 @@ export const scrapedData = {
       "lastDate": "03 March 2026"
     },
     "upsssc-inter-level-2026": {
-      "publishedDate": "2026-10-17T12:56:43+05:30",
-      "publishedAt": "2026-10-17T07:26:43.000Z",
+      "publishedDate": "2026-10-19T11:20:31+05:30",
+      "publishedAt": "2026-10-19T05:50:31.000Z",
       "lastDate": "01 December 2026"
     },
     "supreme-court-junior-court-attendant-2026": {
@@ -16891,8 +16900,8 @@ export const scrapedData = {
       "lastDate": "22 October 2026"
     },
     "bihar-stet-2026": {
-      "publishedDate": "2026-10-16T19:47:36+05:30",
-      "publishedAt": "2026-10-16T14:17:36.000Z",
+      "publishedDate": "2026-10-20T13:51:10+05:30",
+      "publishedAt": "2026-10-20T08:21:10.000Z",
       "lastDate": "22 September 2026"
     },
     "south-indian-bank-sib-junior-officer-2026": {
@@ -16914,12 +16923,37 @@ export const scrapedData = {
       "publishedDate": "2026-10-17T10:43:05+05:30",
       "publishedAt": "2026-10-17T05:13:05.000Z",
       "lastDate": "16 November 2026"
+    },
+    "bsf-head-constable-ro-rm-2025": {
+      "publishedDate": "2026-10-20T13:51:05+05:30",
+      "publishedAt": "2026-10-20T08:21:05.000Z",
+      "lastDate": "23 September 2025"
+    },
+    "isro-sdsc-shar-various-post-2026": {
+      "publishedDate": "2026-10-21T14:35:00+05:30",
+      "publishedAt": "2026-10-21T09:05:00.000Z",
+      "lastDate": "09 November 2026"
+    },
+    "sci-court-master-2026": {
+      "publishedDate": "2026-10-21T10:43:55+05:30",
+      "publishedAt": "2026-10-21T05:13:55.000Z",
+      "lastDate": "15 November 2026"
+    },
+    "bhel-artisan-recruitment-2026": {
+      "publishedDate": "2026-10-21T10:00:00+05:30",
+      "publishedAt": "2026-10-21T04:30:00.000Z",
+      "lastDate": "18 November 2026"
+    },
+    "tnpsc-group-2-hall-ticket-2026": {
+      "publishedDate": "2026-10-21T11:30:00+05:30",
+      "publishedAt": "2026-10-21T06:00:00.000Z",
+      "lastDate": "01 November 2026"
     }
   },
-  "fetchedAt": "2026-10-18T14:53:40.768Z",
+  "fetchedAt": "2026-10-21T09:18:22.283Z",
   "seo": {
-    "lastOptimized": "2026-10-18T14:54:02.809Z",
-    "totalPosts": 1322,
+    "lastOptimized": "2026-10-21T09:18:56.383Z",
+    "totalPosts": 1327,
     "websiteName": "All India Exam Result",
     "websiteUrl": "https://www.aiexamresult.com",
     "description": "Sarkari Result 2026 - Get fastest government job alerts, sarkari naukri, exam results, admit cards & answer keys. SSC, UPSC, Railway, Banking, UP, Bihar & all India exams."

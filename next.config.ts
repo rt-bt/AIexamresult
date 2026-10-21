@@ -80,6 +80,16 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: "/post/indian-airforce-agniveer-vayu-intake-2027-result-out",
+        destination: "/post/indian-airforce-agniveer-vayu-intake-01-2027",
+        permanent: true,
+      },
+      {
+        source: "/post/indian-airforce-agniveer-vayu-intake-01-2027-result-out",
+        destination: "/post/indian-airforce-agniveer-vayu-intake-01-2027",
+        permanent: true,
+      },
+      {
         source: "/post/rajasthan-state-eligibility-test-set-026",
         destination: "/post/chhattisgarh-state-eligibility-test-set-026",
         permanent: true,
