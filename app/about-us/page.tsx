@@ -2,17 +2,31 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Header } from "@/components/site/header";
 import { Footer } from "@/components/site/footer";
-import { Building2, Mail, Phone, ShieldCheck, Zap, Award, CheckCircle2, Globe, HeartHandshake } from "lucide-react";
+import {
+  Building2,
+  Mail,
+  Phone,
+  ShieldCheck,
+  Zap,
+  Award,
+  CheckCircle2,
+  Globe,
+  HeartHandshake,
+  User,
+  GraduationCap,
+  Code2,
+  Sparkles,
+} from "lucide-react";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.aiexamresult.com";
 
 export const metadata: Metadata = {
   title: "About Us | All India Exam Result",
-  description: "Learn about All India Exam Result (aiexamresult.com) — India's premier independent portal providing verified government job alerts, admit cards, and results.",
+  description: "Learn about All India Exam Result (aiexamresult.com) — founded by Aditya Raj (B.Tech Computer Science). India's premier portal for verified government job alerts, admit cards, and results.",
   alternates: { canonical: "/about-us" },
   openGraph: {
     title: "About Us | All India Exam Result",
-    description: "Learn about All India Exam Result (aiexamresult.com) — India's premier independent portal providing verified government job alerts, admit cards, and results.",
+    description: "Learn about All India Exam Result (aiexamresult.com) — founded by Aditya Raj (B.Tech Computer Science). India's premier portal for verified government job alerts, admit cards, and results.",
     url: `${SITE_URL}/about-us`,
     images: [{ url: `${SITE_URL}/og-image.svg`, width: 1200, height: 630 }]
   },
@@ -20,9 +34,55 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
 };
 
+const aboutJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "AboutPage",
+      "@id": `${SITE_URL}/about-us#webpage`,
+      "url": `${SITE_URL}/about-us`,
+      "name": "About Us | All India Exam Result",
+      "description": "Learn about All India Exam Result (aiexamresult.com) — founded by Aditya Raj (B.Tech Computer Science). India's premier independent portal providing verified government job alerts, admit cards, and results.",
+      "isPartOf": {
+        "@id": `${SITE_URL}/#website`
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": `${SITE_URL}/#organization`,
+      "name": "All India Exam Result",
+      "url": SITE_URL,
+      "logo": `${SITE_URL}/og-image.svg`,
+      "founder": {
+        "@type": "Person",
+        "@id": `${SITE_URL}/about-us#founder`,
+        "name": "Aditya Raj",
+        "alternateName": "Adity Raj",
+        "jobTitle": "Founder & Lead Developer",
+        "knowsAbout": [
+          "Computer Science",
+          "Full Stack Web Development",
+          "Information Retrieval",
+          "Government Recruitment Systems",
+          "Software Engineering"
+        ],
+        "hasCredential": {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "degree",
+          "name": "Bachelor of Technology (B.Tech) in Computer Science"
+        }
+      }
+    }
+  ]
+};
+
 export default function AboutUsPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutJsonLd) }}
+      />
       <Header />
       <main className="min-h-screen bg-slate-50 pb-16">
         {/* Hero Section */}
@@ -55,6 +115,97 @@ export default function AboutUsPage() {
                 <p className="text-xs font-bold text-slate-500 mt-1">{stat.label}</p>
               </div>
             ))}
+          </div>
+
+          {/* Founder & Engineering Leadership Profile */}
+          <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-100 pb-5">
+              <div className="flex items-center gap-3">
+                <div className="p-3 rounded-2xl bg-teal-50 text-teal-600">
+                  <User className="w-6 h-6" />
+                </div>
+                <div>
+                  <div className="flex items-center gap-2">
+                    <h2 className="text-xl font-bold text-slate-900">Founder &amp; Engineering Leadership</h2>
+                    <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-teal-50 text-teal-700 border border-teal-200/60 text-[10px] font-bold uppercase tracking-wider">
+                      <Sparkles className="w-3 h-3 text-teal-600" /> E-E-A-T Verified
+                    </span>
+                  </div>
+                  <p className="text-xs text-slate-500">The software architect and editorial director behind All India Exam Result</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Profile Overview Card */}
+            <div className="flex flex-col md:flex-row items-start gap-6 p-6 rounded-2xl bg-gradient-to-br from-slate-50 via-white to-teal-50/30 border border-slate-200/80">
+              {/* Avatar / Monogram Badge */}
+              <div className="shrink-0 flex flex-col items-center text-center">
+                <div className="w-20 h-20 rounded-2xl bg-gradient-to-tr from-slate-900 via-teal-900 to-teal-600 text-white flex items-center justify-center text-2xl font-black shadow-md border-2 border-white">
+                  AR
+                </div>
+                <div className="mt-2 inline-flex items-center gap-1 text-[11px] font-bold text-teal-700 bg-teal-100/70 px-2.5 py-0.5 rounded-full">
+                  <ShieldCheck className="w-3 h-3 text-teal-600" /> Verified Author
+                </div>
+              </div>
+
+              {/* Bio & Credentials */}
+              <div className="flex-1 space-y-3">
+                <div>
+                  <h3 className="text-lg sm:text-xl font-black text-slate-900">
+                    Aditya Raj <span className="text-xs font-semibold text-slate-400 font-sans">(Adity Raj)</span>
+                  </h3>
+                  <p className="text-xs font-bold text-teal-600 flex items-center gap-1.5 mt-0.5">
+                    <Code2 className="w-3.5 h-3.5" /> Founder &amp; Chief Technology Architect
+                  </p>
+                </div>
+
+                {/* Qualification Badge */}
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-white border border-slate-200 shadow-2xs text-xs font-semibold text-slate-800">
+                  <GraduationCap className="w-4 h-4 text-teal-600 shrink-0" />
+                  <span>
+                    Educational Qualification: <strong className="text-slate-950 font-bold">B.Tech in Computer Science</strong>
+                  </span>
+                </div>
+
+                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed pt-1">
+                  All India Exam Result (<strong className="text-slate-800">aiexamresult.com</strong>) was conceived, engineered, and built by <strong>Aditya Raj</strong> (<strong>Adity Raj</strong>), a graduate with a <strong>B.Tech degree in Computer Science</strong>. Combining high-performance web architecture, automated data retrieval systems, and strict editorial verification standards, Aditya launched this platform to solve a major issue faced by millions of Indian youth: scattered, delayed, and misleading recruitment notices.
+                </p>
+
+                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                  With a technical foundation in full-stack software development, information retrieval, and search optimization, Aditya oversees both the technical roadmap and editorial accuracy of the portal—ensuring every update links directly to authentic <code className="text-teal-700 bg-teal-50 px-1 py-0.5 rounded text-[11px]">.gov.in</code> or <code className="text-teal-700 bg-teal-50 px-1 py-0.5 rounded text-[11px]">.nic.in</code> gazettes and official commission servers without clickbait or unverified dates.
+                </p>
+              </div>
+            </div>
+
+            {/* Technical & Editorial Pillars */}
+            <div className="grid sm:grid-cols-3 gap-3 pt-2">
+              <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 flex flex-col gap-1.5">
+                <span className="text-xs font-bold text-slate-900 flex items-center gap-1.5">
+                  <GraduationCap className="w-4 h-4 text-teal-600" /> Computer Science Pedigree
+                </span>
+                <p className="text-[11px] text-slate-600 leading-relaxed">
+                  Applying algorithmic data structures to parse government notifications, eliminate redundant entries, and deliver sub-second search speeds across 1,300+ exams.
+                </p>
+              </div>
+
+              <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 flex flex-col gap-1.5">
+                <span className="text-xs font-bold text-slate-900 flex items-center gap-1.5">
+                  <ShieldCheck className="w-4 h-4 text-teal-600" /> Anti-Hallucination Standards
+                </span>
+                <p className="text-[11px] text-slate-600 leading-relaxed">
+                  Aditya established strict quality gates requiring primary source cross-referencing so aspirants never encounter fake dates, unconfirmed admit cards, or dead links.
+                </p>
+              </div>
+
+              <div className="p-4 rounded-2xl bg-slate-50 border border-slate-100 flex flex-col gap-1.5">
+                <span className="text-xs font-bold text-slate-900 flex items-center gap-1.5">
+                  <Mail className="w-4 h-4 text-teal-600" /> Direct Accountability
+                </span>
+                <p className="text-[11px] text-slate-600 leading-relaxed">
+                  Reach out directly to Aditya and the technical team for corrections, technical feedback, or recruitment news submissions via our dedicated editorial channels.
+                </p>
+              </div>
+            </div>
           </div>
 
           {/* Mission & Vision */}
