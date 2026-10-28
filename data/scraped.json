@@ -1,6 +1,30 @@
 {
   "results": [
     {
+      "title": "UPSSSC Stenographer 13/2024 Skill Test Result 2026",
+      "url": "/post/upsssc-stenographer-2024",
+      "category": "results",
+      "slug": "upsssc-stenographer-2024",
+      "publishedDate": "2026-10-27T20:53:31+05:30",
+      "publishedAt": "2026-10-27T15:23:31.000Z"
+    },
+    {
+      "title": "BPSC ASO Mains Result 2026",
+      "url": "/post/bpsc-aso-mains-2025",
+      "category": "results",
+      "slug": "bpsc-aso-mains-2025",
+      "publishedDate": "2026-10-27T20:45:56+05:30",
+      "publishedAt": "2026-10-27T15:15:56.000Z"
+    },
+    {
+      "title": "UPSC CDS-II Name Wise Result 2026",
+      "url": "/post/upsc-cds-ii-2026",
+      "category": "results",
+      "slug": "upsc-cds-ii-2026",
+      "publishedDate": "2026-10-27T16:24:00+05:30",
+      "publishedAt": "2026-10-27T10:54:00.000Z"
+    },
+    {
       "title": "ISRO ICRB Assistant, UDC, JPA, Stenographer Result 2026",
       "url": "/post/isro-assistant-udc-jpa-stenographer-2026",
       "category": "results",
@@ -31,14 +55,6 @@
       "slug": "ssc-gd-constable-2025",
       "publishedDate": "2026-10-23T13:43:48+05:30",
       "publishedAt": "2026-10-23T08:13:48.000Z"
-    },
-    {
-      "title": "UPSC CDS-II Result 2026 – Out",
-      "url": "/post/upsc-cds-ii-2026",
-      "category": "results",
-      "slug": "upsc-cds-ii-2026",
-      "publishedDate": "2026-10-19T20:09:47+05:30",
-      "publishedAt": "2026-10-19T14:39:47.000Z"
     },
     {
       "title": "HPSC HCS and Allied Services Final Result 2026",
@@ -129,20 +145,20 @@
       "publishedAt": "2026-10-13T11:23:29.000Z"
     },
     {
-      "title": "UPSSSC Cane Supervisor Eligibility Result 2026",
-      "url": "/post/upsssc-cane-supervisor-2026",
+      "title": "CISF Constable Tradesmen Exam Date 2026",
+      "url": "/post/cisf-constable-tradesmen-2025",
       "category": "results",
-      "slug": "upsssc-cane-supervisor-2026",
-      "publishedDate": "2026-10-12T20:01:17+05:30",
-      "publishedAt": "2026-10-12T14:31:17.000Z"
+      "slug": "cisf-constable-tradesmen-2025",
+      "publishedDate": "2026-10-27T16:19:20+05:30",
+      "publishedAt": "2026-10-27T10:49:20.000Z"
     },
     {
-      "title": "UPSSSC Moharir 2022 Eligibility Result 2026",
-      "url": "/post/upsssc-moharir-recruitment",
+      "title": "CISF Constable Driver Exam Date 2026",
+      "url": "/post/cisf-constable-driver-trade-test-dv-admit-card-2025",
       "category": "results",
-      "slug": "upsssc-moharir-recruitment",
-      "publishedDate": "2026-10-12T20:01:07+05:30",
-      "publishedAt": "2026-10-12T14:31:07.000Z"
+      "slug": "cisf-constable-driver-trade-test-dv-admit-card-2025",
+      "publishedDate": "2026-10-27T16:02:24+05:30",
+      "publishedAt": "2026-10-27T10:32:24.000Z"
     },
     {
       "title": "BSF Head Constable RO / RM Admit Card 2026",
@@ -177,12 +193,12 @@
       "publishedAt": "2026-10-22T06:22:26.000Z"
     },
     {
-      "title": "SBI Clerk JA Backlog Mains Admit Card 2026",
-      "url": "/post/sbi-junior-associates-clerk-backlog-2026",
+      "title": "BPSC Auditor Mains Online Form 2026",
+      "url": "/post/bihar-bpsc-auditor-2026",
       "category": "results",
-      "slug": "sbi-junior-associates-clerk-backlog-2026",
-      "publishedDate": "2026-10-20T13:51:01+05:30",
-      "publishedAt": "2026-10-20T08:21:01.000Z"
+      "slug": "bihar-bpsc-auditor-2026",
+      "publishedDate": "2026-10-27T15:15:20+05:30",
+      "publishedAt": "2026-10-27T09:45:20.000Z"
     },
     {
       "title": "BSSC Field Assistant Mains Online Form 2026",
@@ -223,6 +239,30 @@
       "slug": "rajasthan-police-constable-recruitment",
       "publishedDate": "2024-10-05T20:49:38+05:30",
       "publishedAt": "2024-10-05T15:19:38.000Z"
+    },
+    {
+      "title": "UPSSSC Cane Supervisor Eligibility Result 2026",
+      "url": "/post/upsssc-cane-supervisor-2026",
+      "category": "results",
+      "slug": "upsssc-cane-supervisor-2026",
+      "publishedDate": "2026-10-12T20:01:17+05:30",
+      "publishedAt": "2026-10-12T14:31:17.000Z"
+    },
+    {
+      "title": "UPSSSC Moharir 2022 Eligibility Result 2026",
+      "url": "/post/upsssc-moharir-recruitment",
+      "category": "results",
+      "slug": "upsssc-moharir-recruitment",
+      "publishedDate": "2026-10-12T20:01:07+05:30",
+      "publishedAt": "2026-10-12T14:31:07.000Z"
+    },
+    {
+      "title": "SBI Clerk JA Backlog Mains Admit Card 2026",
+      "url": "/post/sbi-junior-associates-clerk-backlog-2026",
+      "category": "results",
+      "slug": "sbi-junior-associates-clerk-backlog-2026",
+      "publishedDate": "2026-10-20T13:51:01+05:30",
+      "publishedAt": "2026-10-20T08:21:01.000Z"
     },
     {
       "title": "AIIMS NORCET 11th Stage-II Result 2026",
@@ -3777,14 +3817,6 @@
       "publishedAt": "2026-04-13T18:30:00.000Z"
     },
     {
-      "title": "BPSC ASO Final Answer Key 2026 Out | All India Exam Result",
-      "url": "/post/bpsc-aso-mains-2025",
-      "category": "results",
-      "slug": "bpsc-aso-mains-2025",
-      "publishedDate": "7 April 2026",
-      "publishedAt": "2026-04-06T18:30:00.000Z"
-    },
-    {
       "title": "NTA UGC NET December 2025 Final Answer Key 2026",
       "url": "/post/nta-ugc-net-december-2025",
       "category": "results",
@@ -3797,14 +3829,6 @@
       "url": "/post/upsssc-stenographer-2023",
       "category": "results",
       "slug": "upsssc-stenographer-2023",
-      "publishedDate": "2 April 2026",
-      "publishedAt": "2026-04-01T18:30:00.000Z"
-    },
-    {
-      "title": "UPSSSC Stenographer 13/2024 Revised Answer Key 2026 Out | All India Exam Result",
-      "url": "/post/upsssc-stenographer-2024",
-      "category": "results",
-      "slug": "upsssc-stenographer-2024",
       "publishedDate": "2 April 2026",
       "publishedAt": "2026-04-01T18:30:00.000Z"
     },
@@ -3975,33 +3999,41 @@
       "slug": "ssc-gd-constable-result",
       "publishedDate": "18 June 2025",
       "publishedAt": "2025-06-17T18:30:00.000Z"
-    },
-    {
-      "title": "Air Force AFCAT 2/2024 Merit List, Cutoff at afcat.cdac.in",
-      "url": "/post/air-force-afcat-2-2024-merit-list",
-      "category": "results",
-      "slug": "air-force-afcat-2-2024-merit-list",
-      "publishedDate": "30 May 2025",
-      "publishedAt": "2025-05-29T18:30:00.000Z"
-    },
-    {
-      "title": "UP Board Scrutiny Form 2025 : स्कूटनी फॉर्म जारी, करें आवेदन",
-      "url": "/post/up-board-scrutiny-form-2025",
-      "category": "results",
-      "slug": "up-board-scrutiny-form-2025",
-      "publishedDate": "30 April 2025",
-      "publishedAt": "2025-04-29T18:30:00.000Z"
-    },
-    {
-      "title": "BHU Junior Clerk Recruitment 2025 for 199 Post | All India Exam Result",
-      "url": "/post/bhu-junior-clerk-online-form-2025-extend",
-      "category": "results",
-      "slug": "bhu-junior-clerk-online-form-2025-extend",
-      "publishedDate": "24 April 2025",
-      "publishedAt": "2025-04-23T18:30:00.000Z"
     }
   ],
   "admitCards": [
+    {
+      "title": "UPSSSC PET Admit Card 2026",
+      "url": "/post/upsssc-pet-2026",
+      "category": "admitCards",
+      "slug": "upsssc-pet-2026",
+      "publishedDate": "2026-10-27T16:53:04+05:30",
+      "publishedAt": "2026-10-27T11:23:04.000Z"
+    },
+    {
+      "title": "SSC CGL Admit Card 2026",
+      "url": "/post/ssc-cgl-2026",
+      "category": "admitCards",
+      "slug": "ssc-cgl-2026",
+      "publishedDate": "2026-10-27T16:52:56+05:30",
+      "publishedAt": "2026-10-27T11:22:56.000Z"
+    },
+    {
+      "title": "CISF Constable Fire Exam Date 2026",
+      "url": "/post/cisf-constable-fire-2024",
+      "category": "admitCards",
+      "slug": "cisf-constable-fire-2024",
+      "publishedDate": "2026-10-27T15:52:43+05:30",
+      "publishedAt": "2026-10-27T10:22:43.000Z"
+    },
+    {
+      "title": "MPESB MP Police SI, Subedar Admit Card 2026",
+      "url": "/post/mpesb-mp-police-si-subedar-2026",
+      "category": "admitCards",
+      "slug": "mpesb-mp-police-si-subedar-2026",
+      "publishedDate": "2026-10-25T20:46:34+05:30",
+      "publishedAt": "2026-10-25T15:16:34.000Z"
+    },
     {
       "title": "Bank of Baroda Specialist Officer SO Admit Card 2026",
       "url": "/post/bank-of-baroda-specialist-officer-so-2026",
@@ -4009,22 +4041,6 @@
       "slug": "bank-of-baroda-specialist-officer-so-2026",
       "publishedDate": "2026-10-24T13:49:30+05:30",
       "publishedAt": "2026-10-24T08:19:30.000Z"
-    },
-    {
-      "title": "UPSSSC PET Admit Card 2026",
-      "url": "/post/upsssc-pet-2026",
-      "category": "admitCards",
-      "slug": "upsssc-pet-2026",
-      "publishedDate": "2026-10-24T11:58:33+05:30",
-      "publishedAt": "2026-10-24T06:28:33.000Z"
-    },
-    {
-      "title": "SSC CGL Admit Card 2026",
-      "url": "/post/ssc-cgl-2026",
-      "category": "admitCards",
-      "slug": "ssc-cgl-2026",
-      "publishedDate": "2026-10-24T11:58:29+05:30",
-      "publishedAt": "2026-10-24T06:28:29.000Z"
     },
     {
       "title": "UPESSC UP Special TET Exam City Details 2026",
@@ -4067,6 +4083,14 @@
       "publishedAt": "2026-10-22T06:22:17.000Z"
     },
     {
+      "title": "CIPET Admit Card 2025",
+      "url": "/post/cipet-admit-card-2025",
+      "category": "admitCards",
+      "slug": "cipet-admit-card-2025",
+      "publishedDate": "2025-06-10T16:29:09+05:30",
+      "publishedAt": "2025-06-10T10:59:09.000Z"
+    },
+    {
       "title": "MPPSC ADPO Admit Card 2026",
       "url": "/post/mppsc-adpo-2026",
       "category": "admitCards",
@@ -4089,14 +4113,6 @@
       "slug": "uiic-ao-2026",
       "publishedDate": "2026-10-15T23:08:07+05:30",
       "publishedAt": "2026-10-15T17:38:07.000Z"
-    },
-    {
-      "title": "CIPET Admit Card 2025",
-      "url": "/post/cipet-admit-card-2025",
-      "category": "admitCards",
-      "slug": "cipet-admit-card-2025",
-      "publishedDate": "2025-06-10T16:29:09+05:30",
-      "publishedAt": "2025-06-10T10:59:09.000Z"
     },
     {
       "title": "UPPSC Homeopathic Medical Officer HMO Admit Card 2026",
@@ -4981,36 +4997,92 @@
   ],
   "latestJobs": [
     {
+      "title": "UPSC Geo-Scientist Exam Date 2027",
+      "url": "/post/upsc-geo-scientist-2027",
+      "category": "latestJobs",
+      "slug": "upsc-geo-scientist-2027",
+      "publishedDate": "2026-10-27T15:16:09+05:30",
+      "publishedAt": "2026-10-27T09:46:09.000Z"
+    },
+    {
       "title": "SSC Junior Engineer JE Exam City Details 2026",
       "url": "/post/ssc-junior-engineer-je-2026",
       "category": "latestJobs",
       "slug": "ssc-junior-engineer-je-2026",
-      "publishedDate": "2026-10-23T23:40:21+05:30",
-      "publishedAt": "2026-10-23T18:10:21.000Z"
+      "publishedDate": "2026-10-27T11:09:58+05:30",
+      "publishedAt": "2026-10-27T05:39:58.000Z"
     },
     {
-      "title": "Railway RRB Paramedical CEN 05/2026 Exam Date 2026",
-      "url": "/post/railway-rrb-paramedical-2026",
+      "title": "SSC CPO SI CAPF Revised Exam Date 2026",
+      "url": "/post/ssc-cpo-si-capf-2026",
       "category": "latestJobs",
-      "slug": "railway-rrb-paramedical-2026",
-      "publishedDate": "2026-10-18T10:08:33+05:30",
-      "publishedAt": "2026-10-18T04:38:33.000Z"
+      "slug": "ssc-cpo-si-capf-2026",
+      "publishedDate": "2026-10-27T11:06:13+05:30",
+      "publishedAt": "2026-10-27T05:36:13.000Z"
     },
     {
-      "title": "UPSC Principal, Vice Principal Exam Date 2026",
-      "url": "/post/upsc-principal-vice-principal-2026",
+      "title": "BPSC School Teacher TRE 4.0 Online Form 2026 (33,320 Posts) – Extend",
+      "url": "/post/bpsc-school-teacher-tre-4-0-2026",
       "category": "latestJobs",
-      "slug": "upsc-principal-vice-principal-2026",
-      "publishedDate": "2026-10-16T16:09:56+05:30",
-      "publishedAt": "2026-10-16T10:39:56.000Z"
+      "slug": "bpsc-school-teacher-tre-4-0-2026",
+      "publishedDate": "2026-10-27T16:52:25+05:30",
+      "publishedAt": "2026-10-27T11:22:25.000Z"
     },
     {
-      "title": "UPPSC RO / ARO Online Form 2026",
+      "title": "UPPSC RO / ARO Online Form 2026 – Start",
       "url": "/post/uppsc-ro-aro-online-form-2026",
       "category": "latestJobs",
       "slug": "uppsc-ro-aro-online-form-2026",
-      "publishedDate": "2026-10-25T12:40:03+05:30",
-      "publishedAt": "2026-10-25T07:10:03.000Z"
+      "publishedDate": "2026-10-27T16:52:21+05:30",
+      "publishedAt": "2026-10-27T11:22:21.000Z"
+    },
+    {
+      "title": "Railway RRB Station Master Online Form 2026 (1265 Posts)",
+      "url": "/post/railway-rrb-station-master-2026",
+      "category": "latestJobs",
+      "slug": "railway-rrb-station-master-2026",
+      "publishedDate": "2026-10-27T16:52:16+05:30",
+      "publishedAt": "2026-10-27T11:22:16.000Z"
+    },
+    {
+      "title": "UPESSC UP TGT Online Form 2026 (17,735 Posts)",
+      "url": "/post/upessc-up-tgt-online-form-2026",
+      "category": "latestJobs",
+      "slug": "upessc-up-tgt-online-form-2026",
+      "publishedDate": "2026-10-27T16:52:11+05:30",
+      "publishedAt": "2026-10-27T11:22:11.000Z"
+    },
+    {
+      "title": "RRB NTPC 10+2 UG Level 07/2026 Online Form 2026",
+      "url": "/post/rrb-ntpc-102-ug-level-07-2026",
+      "category": "latestJobs",
+      "slug": "rrb-ntpc-102-ug-level-07-2026",
+      "publishedDate": "2026-10-27T16:52:06+05:30",
+      "publishedAt": "2026-10-27T11:22:06.000Z"
+    },
+    {
+      "title": "RRB NTPC Graduate Level 06/2026 Online Form 2026 (3548 Posts)",
+      "url": "/post/rrb-ntpc-graduate-level-06-2026",
+      "category": "latestJobs",
+      "slug": "rrb-ntpc-graduate-level-06-2026",
+      "publishedDate": "2026-10-27T16:52:00+05:30",
+      "publishedAt": "2026-10-27T11:22:00.000Z"
+    },
+    {
+      "title": "UPESSC PRT Assistant Teacher Online Form 2026 (12405 Posts) – Extend",
+      "url": "/post/upessc-prt-assistant-teacher-2026",
+      "category": "latestJobs",
+      "slug": "upessc-prt-assistant-teacher-2026",
+      "publishedDate": "2026-10-27T16:51:55+05:30",
+      "publishedAt": "2026-10-27T11:21:55.000Z"
+    },
+    {
+      "title": "ISRO URSC Various Post Online Form 2026",
+      "url": "/post/isro-ursc-various-post-2026",
+      "category": "latestJobs",
+      "slug": "isro-ursc-various-post-2026",
+      "publishedDate": "2026-10-26T16:40:36+05:30",
+      "publishedAt": "2026-10-26T11:10:36.000Z"
     },
     {
       "title": "Supreme Court SCI Court Master Online Form 2026 – Start",
@@ -5019,54 +5091,6 @@
       "slug": "sci-court-master-2026",
       "publishedDate": "2026-10-25T10:42:16+05:30",
       "publishedAt": "2026-10-25T05:12:16.000Z"
-    },
-    {
-      "title": "BPSC School Teacher TRE 4.0 Online Form 2026 (33,320 Posts) – Fee payment Last Date",
-      "url": "/post/bpsc-school-teacher-tre-4-0-2026",
-      "category": "latestJobs",
-      "slug": "bpsc-school-teacher-tre-4-0-2026",
-      "publishedDate": "2026-10-25T07:43:59+05:30",
-      "publishedAt": "2026-10-25T02:13:59.000Z"
-    },
-    {
-      "title": "NTA JEE Mains Session I Online Form 2027",
-      "url": "/post/nta-jee-mains-session-i-2027",
-      "category": "latestJobs",
-      "slug": "nta-jee-mains-session-i-2027",
-      "publishedDate": "2026-10-24T23:09:23+05:30",
-      "publishedAt": "2026-10-24T17:39:23.000Z"
-    },
-    {
-      "title": "UPESSC UP TGT Online Form 2026 (17,735 Posts)",
-      "url": "/post/upessc-up-tgt-online-form-2026",
-      "category": "latestJobs",
-      "slug": "upessc-up-tgt-online-form-2026",
-      "publishedDate": "2026-10-24T12:36:52+05:30",
-      "publishedAt": "2026-10-24T07:06:52.000Z"
-    },
-    {
-      "title": "RRB NTPC 10+2 UG Level 07/2026 Online Form 2026",
-      "url": "/post/rrb-ntpc-102-ug-level-07-2026",
-      "category": "latestJobs",
-      "slug": "rrb-ntpc-102-ug-level-07-2026",
-      "publishedDate": "2026-10-24T12:36:47+05:30",
-      "publishedAt": "2026-10-24T07:06:47.000Z"
-    },
-    {
-      "title": "RRB NTPC Graduate Level 06/2026 Online Form 2026 (3548 Posts)",
-      "url": "/post/rrb-ntpc-graduate-level-06-2026",
-      "category": "latestJobs",
-      "slug": "rrb-ntpc-graduate-level-06-2026",
-      "publishedDate": "2026-10-24T12:36:43+05:30",
-      "publishedAt": "2026-10-24T07:06:43.000Z"
-    },
-    {
-      "title": "UPESSC PRT Assistant Teacher Online Form 2026 (12405 Posts) – Extend",
-      "url": "/post/upessc-prt-assistant-teacher-2026",
-      "category": "latestJobs",
-      "slug": "upessc-prt-assistant-teacher-2026",
-      "publishedDate": "2026-10-24T12:36:35+05:30",
-      "publishedAt": "2026-10-24T07:06:35.000Z"
     },
     {
       "title": "LIC HFL Apprentice Online Form 2026",
@@ -5099,14 +5123,6 @@
       "slug": "rajasthan-safai-karamchari-2026",
       "publishedDate": "2026-10-23T10:19:12+05:30",
       "publishedAt": "2026-10-23T04:49:12.000Z"
-    },
-    {
-      "title": "Railway RRB Station Master Online Form 2026 (1250 Posts)",
-      "url": "/post/railway-rrb-station-master-2026",
-      "category": "latestJobs",
-      "slug": "railway-rrb-station-master-2026",
-      "publishedDate": "2026-10-23T10:19:08+05:30",
-      "publishedAt": "2026-10-23T04:49:08.000Z"
     },
     {
       "title": "Assam Rifles Technical/ Tradesman Online Form 2026",
@@ -5147,6 +5163,14 @@
       "slug": "hpsc-food-safety-officer-fso-2026",
       "publishedDate": "2026-10-22T11:32:41+05:30",
       "publishedAt": "2026-10-22T06:02:41.000Z"
+    },
+    {
+      "title": "NTA JEE Mains Session I Online Form 2027",
+      "url": "/post/nta-jee-mains-session-i-2027",
+      "category": "latestJobs",
+      "slug": "nta-jee-mains-session-i-2027",
+      "publishedDate": "2026-10-24T23:09:23+05:30",
+      "publishedAt": "2026-10-24T17:39:23.000Z"
     },
     {
       "title": "Bihar Library Eligibility Test BLET Online Form 2026 – Extend",
@@ -5997,6 +6021,22 @@
       "publishedAt": "2025-02-24T05:07:24.000Z"
     },
     {
+      "title": "Railway RRB Paramedical CEN 05/2026 Exam Date 2026",
+      "url": "/post/railway-rrb-paramedical-2026",
+      "category": "latestJobs",
+      "slug": "railway-rrb-paramedical-2026",
+      "publishedDate": "2026-10-18T10:08:33+05:30",
+      "publishedAt": "2026-10-18T04:38:33.000Z"
+    },
+    {
+      "title": "UPSC Principal, Vice Principal Exam Date 2026",
+      "url": "/post/upsc-principal-vice-principal-2026",
+      "category": "latestJobs",
+      "slug": "upsc-principal-vice-principal-2026",
+      "publishedDate": "2026-10-16T16:09:56+05:30",
+      "publishedAt": "2026-10-16T10:39:56.000Z"
+    },
+    {
       "title": "NTPC Assistant Executive Online Form 2025",
       "url": "/post/ntpc-assistant-executive-recruitment-2025",
       "category": "latestJobs",
@@ -6173,14 +6213,6 @@
       "publishedAt": "2026-10-05T13:01:33.000Z"
     },
     {
-      "title": "SSC CPO SI CAPF Exam Date 2026",
-      "url": "/post/ssc-cpo-si-capf-2026",
-      "category": "latestJobs",
-      "slug": "ssc-cpo-si-capf-2026",
-      "publishedDate": "2026-10-01T19:58:59+05:30",
-      "publishedAt": "2026-10-01T14:28:59.000Z"
-    },
-    {
       "title": "NVS Class 11 Admissions Online Form 2027 – Extend",
       "url": "/post/nvs-class-11-admissions-2027",
       "category": "latestJobs",
@@ -6349,14 +6381,6 @@
       "publishedAt": "2026-09-30T04:36:27.000Z"
     },
     {
-      "title": "MPESB MP Police SI, Subedar Correction Form 2026 – Last Date",
-      "url": "/post/mpesb-mp-police-si-subedar-2026",
-      "category": "latestJobs",
-      "slug": "mpesb-mp-police-si-subedar-2026",
-      "publishedDate": "2026-09-28T13:09:58+05:30",
-      "publishedAt": "2026-09-28T07:39:58.000Z"
-    },
-    {
       "title": "SBI Bank Trade Finance Officer TFO Online Form 2026 – Last Date",
       "url": "/post/sbi-bank-tfo-2026",
       "category": "latestJobs",
@@ -6459,14 +6483,6 @@
       "slug": "ssc-jht-2025",
       "publishedDate": "8 September 2026",
       "publishedAt": "2026-09-08T15:00:00.000Z"
-    },
-    {
-      "title": "UPSC Geo-Scientist Online Form 2027 – Last Date",
-      "url": "/post/upsc-geo-scientist-2027",
-      "category": "latestJobs",
-      "slug": "upsc-geo-scientist-2027",
-      "publishedDate": "2026-09-22T17:47:53+05:30",
-      "publishedAt": "2026-09-22T12:17:53.000Z"
     },
     {
       "title": "NTPC NSPCL Various Post Online Form 2026 – Last Date",
@@ -8987,8 +9003,8 @@
       "url": "/post/railway-rrb-section-controller-2026",
       "category": "answerKeys",
       "slug": "railway-rrb-section-controller-2026",
-      "publishedDate": "2026-10-16T15:56:56+05:30",
-      "publishedAt": "2026-10-16T10:26:56.000Z"
+      "publishedDate": "2026-10-26T17:00:21+05:30",
+      "publishedAt": "2026-10-26T11:30:21.000Z"
     },
     {
       "title": "Railway RRB Technician CEN 02/2026 Answer Key 2026",
@@ -9895,8 +9911,8 @@
       "url": "/post/rrb-alp-cen-01-2026",
       "category": "documents",
       "slug": "rrb-alp-cen-01-2026",
-      "publishedDate": "2026-10-24T11:58:36+05:30",
-      "publishedAt": "2026-10-24T06:28:36.000Z"
+      "publishedDate": "2026-10-27T16:53:00+05:30",
+      "publishedAt": "2026-10-27T11:23:00.000Z"
     },
     {
       "title": "Aadhar Card PVC Download, Correction, Status 2026",
@@ -11164,8 +11180,8 @@
       "lastDate": "20 March 2026"
     },
     "bpsc-aso-mains-2025": {
-      "publishedDate": "7 April 2026",
-      "publishedAt": "2026-04-06T18:30:00.000Z",
+      "publishedDate": "2026-10-27T20:45:56+05:30",
+      "publishedAt": "2026-10-27T15:15:56.000Z",
       "lastDate": "23 June 2025"
     },
     "bpsc-auditor-09-2026": {
@@ -11203,9 +11219,9 @@
       "lastDate": "27/02/2026\nLast Date for Apply Online :20/03/2026\nPay Exam Fee Last Date :20/03/2026\nExam Date : 15/07/2026\nAdmit Card Available :06/07/2026 : Application Fee\n\nGeneral / OBC/ Other State : 100/-\nSC / ST / PH : 100/-\nFemale Candidate (Bihar Dom.) : 100/-\nPay the Exam Fee Through Online / Offline Fee Mode Only"
     },
     "bpsc-school-teacher-tre-4-0-2026": {
-      "publishedDate": "2026-10-25T07:43:59+05:30",
-      "publishedAt": "2026-10-25T02:13:59.000Z",
-      "lastDate": "26 October 2026"
+      "publishedDate": "2026-10-27T16:52:25+05:30",
+      "publishedAt": "2026-10-27T11:22:25.000Z",
+      "lastDate": "02 November 2026"
     },
     "BPSC-Simultala-School-Teacher-2024": {
       "publishedDate": "21 February 2025",
@@ -13061,8 +13077,8 @@
       "lastDate": "06 October 2026"
     },
     "mpesb-mp-police-si-subedar-2026": {
-      "publishedDate": "2026-09-28T13:09:58+05:30",
-      "publishedAt": "2026-09-28T07:39:58.000Z",
+      "publishedDate": "2026-10-25T20:46:34+05:30",
+      "publishedAt": "2026-10-25T15:16:34.000Z",
       "lastDate": "23 September 2026"
     },
     "mpesb-nursing-officer-sister-tutor-2026": {
@@ -13752,8 +13768,8 @@
       "lastDate": "15/09/2026\nLast Date for Apply Online : 14/10/2026\nLast Date Pay Exam Fee : 14/10/2026\nExam Date : As per schedule\nAdmit Card Available : Before Exam : Application Fee\n\nGeneral / OBC / EWS : 500/-\nSC / ST / PH : 250/-\nAll Category Female : 250/-\nAfter Appear the Stage I Exam \nGeneral/OBC/EWS Fee Refund: Rs. 400/-\nSC / ST / PH / Female Refund : Rs. 250/-\nPay the Examination Fee Through Cast at E Challan or Debit Card, Credit Card, Net Banking"
     },
     "railway-rrb-section-controller-2026": {
-      "publishedDate": "2026-10-16T15:56:56+05:30",
-      "publishedAt": "2026-10-16T10:26:56.000Z",
+      "publishedDate": "2026-10-26T17:00:21+05:30",
+      "publishedAt": "2026-10-26T11:30:21.000Z",
       "lastDate": "14 August 2026"
     },
     "railway-rrb-technician-2025": {
@@ -14083,8 +14099,8 @@
       "lastDate": "19/05/2025"
     },
     "rrb-alp-cen-01-2026": {
-      "publishedDate": "2026-10-24T11:58:36+05:30",
-      "publishedAt": "2026-10-24T06:28:36.000Z",
+      "publishedDate": "2026-10-27T16:53:00+05:30",
+      "publishedAt": "2026-10-27T11:23:00.000Z",
       "lastDate": "14 June 2026"
     },
     "RRB-ALP-CEN-No-01-2026": {
@@ -14793,8 +14809,8 @@
       "lastDate": "Form Start"
     },
     "ssc-cpo-si-capf-2026": {
-      "publishedDate": "2026-10-01T19:58:59+05:30",
-      "publishedAt": "2026-10-01T14:28:59.000Z",
+      "publishedDate": "2026-10-27T11:06:13+05:30",
+      "publishedAt": "2026-10-27T05:36:13.000Z",
       "lastDate": "30 September 2026"
     },
     "ssc-cpo-si-result": {
@@ -14902,8 +14918,8 @@
       "lastDate": "30/06/2025\n\nLast Date for Apply Online : 21/07/2025 Upto 11:00 PM Only\nLast Date for Pay Exam Fee (Online) :22/07/2025\nCorrection Date : 01-12 August 2025\n\nSelf Slot Booking : 10-25 November 2025\nExam Date Tier I :  03 to 06 December 2025\n\nExam City Available : 26/11/2025\nAnswer Key Available : 19/12/2025\nPaper I Result Available : 06/03/2026\nPaper I Marks Available : 23/03/2026\nExam Date Tier II : 07/04/2026\nExam City Available : 27/03/2026 : Application Fee\n\nGeneral / OBC / EWS : 100/-\nSC / ST / PH : 0/-\nAll Category Female : 0/-\nPay the Examination Fee Through Debit Card, Credit Card, Net Banking or Pay Offline Through E Challan Mode"
     },
     "ssc-junior-engineer-je-2026": {
-      "publishedDate": "2026-10-23T23:40:21+05:30",
-      "publishedAt": "2026-10-23T18:10:21.000Z",
+      "publishedDate": "2026-10-27T11:09:58+05:30",
+      "publishedAt": "2026-10-27T05:39:58.000Z",
       "lastDate": "22 September 2026"
     },
     "ssc-mts-havaldar-2026": {
@@ -15516,8 +15532,8 @@
       "lastDate": "21/07/2026\nLast Date for Apply Online :20/08/2026\nPay Exam Fee Last Date :20/08/2026\nCorrection Last Date : 23/08/2026\nUPESSC Principal Exam Date : 24/09/2026\nExam City Available : 14/09/2026\nAdmit Card Available : 21/09/2026 : Application Fee\n\nGeneral / OBC / EWS : 3000/-\nSC / ST / PH : 3000/-\nPay the Exam Fee Through Online / Offline Fee Mode Only"
     },
     "upessc-prt-assistant-teacher-2026": {
-      "publishedDate": "2026-10-24T12:36:35+05:30",
-      "publishedAt": "2026-10-24T07:06:35.000Z",
+      "publishedDate": "2026-10-27T16:51:55+05:30",
+      "publishedAt": "2026-10-27T11:21:55.000Z",
       "lastDate": "28 October 2026"
     },
     "upessc-up-assistant-professor-2026": {
@@ -15874,8 +15890,8 @@
       "lastDate": "23 September 2025"
     },
     "upsc-geo-scientist-2027": {
-      "publishedDate": "2026-09-22T17:47:53+05:30",
-      "publishedAt": "2026-09-22T12:17:53.000Z",
+      "publishedDate": "2026-10-27T15:16:09+05:30",
+      "publishedAt": "2026-10-27T09:46:09.000Z",
       "lastDate": "22 September 2026"
     },
     "upsc-geoscientist-2027": {
@@ -16212,8 +16228,8 @@
       "lastDate": "27/07/2026\nLast Date for Apply Online :17/08/2026\nPay Exam Fee Last Date :17/08/2026\nForm Correction Last Date : 24/08/2026\nExam Date : As per Schedule\nExam City Available : Before Exam\nAdmit Card Available : Before Exam : Application Fee\n\nGeneral (UR) / OBC / EWS : 25/-\nSC / ST : 25/-\nPH (Divyang) : 25/-\nPay the Examination Fee Through UPI, Debit Card, Credit Card and Net Banking Mode Only."
     },
     "upsssc-pet-2026": {
-      "publishedDate": "2026-10-24T11:58:33+05:30",
-      "publishedAt": "2026-10-24T06:28:33.000Z",
+      "publishedDate": "2026-10-27T16:53:04+05:30",
+      "publishedAt": "2026-10-27T11:23:04.000Z",
       "lastDate": "07 September 2026"
     },
     "upsssc-pet-all-form-2026": {
@@ -16295,8 +16311,8 @@
       "lastDate": "06 November 2023"
     },
     "upsssc-stenographer-2024": {
-      "publishedDate": "2 April 2026",
-      "publishedAt": "2026-04-01T18:30:00.000Z",
+      "publishedDate": "2026-10-27T20:53:31+05:30",
+      "publishedAt": "2026-10-27T15:23:31.000Z",
       "lastDate": "25 January 2025"
     },
     "upsssc-stenographer": {
@@ -16425,8 +16441,8 @@
       "publishedAt": "2026-09-20T17:14:40.000Z"
     },
     "upsc-cds-ii-2026": {
-      "publishedDate": "2026-10-19T20:09:47+05:30",
-      "publishedAt": "2026-10-19T14:39:47.000Z",
+      "publishedDate": "2026-10-27T16:24:00+05:30",
+      "publishedAt": "2026-10-27T10:54:00.000Z",
       "lastDate": "11 June 2026 (Extended)"
     },
     "upsssc-assistant-boring-technician-2026": {
@@ -16508,18 +16524,18 @@
       "lastDate": "03 July 2026"
     },
     "ssc-cgl-2026": {
-      "publishedDate": "2026-10-24T11:58:29+05:30",
-      "publishedAt": "2026-10-24T06:28:29.000Z",
+      "publishedDate": "2026-10-27T16:52:56+05:30",
+      "publishedAt": "2026-10-27T11:22:56.000Z",
       "lastDate": "25 June 2026"
     },
     "rrb-ntpc-102-ug-level-07-2026": {
-      "publishedDate": "2026-10-24T12:36:47+05:30",
-      "publishedAt": "2026-10-24T07:06:47.000Z",
+      "publishedDate": "2026-10-27T16:52:06+05:30",
+      "publishedAt": "2026-10-27T11:22:06.000Z",
       "lastDate": "13 November 2026"
     },
     "rrb-ntpc-graduate-level-06-2026": {
-      "publishedDate": "2026-10-24T12:36:43+05:30",
-      "publishedAt": "2026-10-24T07:06:43.000Z",
+      "publishedDate": "2026-10-27T16:52:00+05:30",
+      "publishedAt": "2026-10-27T11:22:00.000Z",
       "lastDate": "06 November 2026"
     },
     "itbp-head-constable-motor-mechanic-2026": {
@@ -16987,8 +17003,8 @@
       "lastDate": "08 May 2026"
     },
     "railway-rrb-station-master-2026": {
-      "publishedDate": "2026-10-23T10:19:08+05:30",
-      "publishedAt": "2026-10-23T04:49:08.000Z",
+      "publishedDate": "2026-10-27T16:52:16+05:30",
+      "publishedAt": "2026-10-27T11:22:16.000Z",
       "lastDate": "25 November 2026"
     },
     "railway-rrb-isolated-categories-2026": {
@@ -17017,8 +17033,8 @@
       "lastDate": "14 July 2023"
     },
     "uppsc-ro-aro-online-form-2026": {
-      "publishedDate": "2026-10-25T12:40:03+05:30",
-      "publishedAt": "2026-10-25T07:10:03.000Z",
+      "publishedDate": "2026-10-27T16:52:21+05:30",
+      "publishedAt": "2026-10-27T11:22:21.000Z",
       "lastDate": "26 November 2026"
     },
     "nta-jee-mains-session-i-2027": {
@@ -17027,8 +17043,8 @@
       "lastDate": "22 November 2026"
     },
     "upessc-up-tgt-online-form-2026": {
-      "publishedDate": "2026-10-24T12:36:52+05:30",
-      "publishedAt": "2026-10-24T07:06:52.000Z",
+      "publishedDate": "2026-10-27T16:52:11+05:30",
+      "publishedAt": "2026-10-27T11:22:11.000Z",
       "lastDate": "23 November 2026"
     },
     "upessc-up-principal-inter-level-2026": {
@@ -17070,12 +17086,37 @@
       "publishedDate": "2026-10-24T14:09:49+05:30",
       "publishedAt": "2026-10-24T08:39:49.000Z",
       "lastDate": "29 October 2026"
+    },
+    "cisf-constable-fire-2024": {
+      "publishedDate": "2026-10-27T15:52:43+05:30",
+      "publishedAt": "2026-10-27T10:22:43.000Z",
+      "lastDate": "30 September 2024"
+    },
+    "cisf-constable-driver-trade-test-dv-admit-card-2025": {
+      "publishedDate": "2026-10-27T16:02:24+05:30",
+      "publishedAt": "2026-10-27T10:32:24.000Z",
+      "lastDate": "04 March 2025"
+    },
+    "cisf-constable-tradesmen-2025": {
+      "publishedDate": "2026-10-27T16:19:20+05:30",
+      "publishedAt": "2026-10-27T10:49:20.000Z",
+      "lastDate": "03 April 2025"
+    },
+    "isro-ursc-various-post-2026": {
+      "publishedDate": "2026-10-26T16:40:36+05:30",
+      "publishedAt": "2026-10-26T11:10:36.000Z",
+      "lastDate": "13 November 2026"
+    },
+    "bihar-bpsc-auditor-2026": {
+      "publishedDate": "2026-10-27T15:15:20+05:30",
+      "publishedAt": "2026-10-27T09:45:20.000Z",
+      "lastDate": "26 February 2026"
     }
   },
-  "fetchedAt": "2026-10-25T08:47:37.846Z",
+  "fetchedAt": "2026-10-28T02:22:48.622Z",
   "seo": {
-    "lastOptimized": "2026-10-25T08:49:13.916Z",
-    "totalPosts": 1345,
+    "lastOptimized": "2026-10-28T02:23:31.807Z",
+    "totalPosts": 1350,
     "websiteName": "All India Exam Result",
     "websiteUrl": "https://www.aiexamresult.com",
     "description": "Sarkari Result 2026 - Get fastest government job alerts, sarkari naukri, exam results, admit cards & answer keys. SSC, UPSC, Railway, Banking, UP, Bihar & all India exams."
