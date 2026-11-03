@@ -243,18 +243,23 @@ export function JobHuntConstellation({
     let width = container.clientWidth;
     let height = container.clientHeight;
 
-    // 1. Scene
+    // In background mode: nucleus sits right-center (matching jobhunt.asmcleod.com)
+    // In card mode: nucleus centered
+    const isBackground = variant === "background";
+
+    // 1. Scene — pitch-black deep space like jobhunt.asmcleod.com
     const scene = new THREE.Scene();
-    scene.fog = new THREE.FogExp2(0x020610, 0.045);
+    scene.fog = new THREE.FogExp2(0x010408, isBackground ? 0.032 : 0.045);
     animStateRef.current.scene = scene;
 
-    // 2. Camera
+    // 2. Camera — exact jobhunt.asmcleod.com FOV=40, camera offset right in bg mode
     const camera = new THREE.PerspectiveCamera(40, width / height, 0.1, 100);
-    camera.position.set(0, 2.5, animStateRef.current.zoom);
-    camera.lookAt(0, 0, 0);
+    const initialZoom = animStateRef.current.zoom;
+    camera.position.set(isBackground ? -2.5 : 0, 1.5, initialZoom);
+    camera.lookAt(isBackground ? 1.5 : 0, 0, 0);
     animStateRef.current.camera = camera;
 
-    // 3. WebGL Renderer
+    // 3. WebGL Renderer — alpha so HeroBackground shows through
     let renderer: THREE.WebGLRenderer;
     try {
       renderer = new THREE.WebGLRenderer({
@@ -266,112 +271,131 @@ export function JobHuntConstellation({
       renderer.setSize(width, height);
       renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
       renderer.toneMapping = THREE.ACESFilmicToneMapping;
-      renderer.toneMappingExposure = 1.25;
+      renderer.toneMappingExposure = 1.2;
       animStateRef.current.renderer = renderer;
     } catch (e) {
       console.warn("WebGL initialization failed:", e);
       return;
     }
 
-    // 4. Lights
-    const ambientLight = new THREE.AmbientLight(0xffffff, 0.8);
+    // 4. Lights — bioluminescent cyan + warm amber (jobhunt palette)
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
     scene.add(ambientLight);
 
-    const cyanLight = new THREE.PointLight(0x00f0ff, 2.5, 20);
-    cyanLight.position.set(4, 5, 4);
+    const cyanLight = new THREE.PointLight(0x00f5d4, 3.2, 25);
+    cyanLight.position.set(3, 4, 5);
     scene.add(cyanLight);
 
-    const amberLight = new THREE.PointLight(0xff9500, 2.0, 20);
-    amberLight.position.set(-4, -4, 4);
+    const cyanLight2 = new THREE.PointLight(0x00b4d8, 1.8, 18);
+    cyanLight2.position.set(-3, -2, 3);
+    scene.add(cyanLight2);
+
+    const amberLight = new THREE.PointLight(0xff9500, 1.5, 18);
+    amberLight.position.set(-5, -4, 4);
     scene.add(amberLight);
 
-    // 5. Central Nucleus (Bioluminescent energy core from jobhunt.asmcleod.com)
+    // 5. Central Nucleus — exact jobhunt.asmcleod.com bioluminescent energy core
+    // In background mode: nucleus offset to right-center so left text stays clear
+    const nucleusOffsetX = isBackground ? 1.8 : 0;
     const nucleusGroup = new THREE.Group();
+    nucleusGroup.position.set(nucleusOffsetX, 0, 0);
     scene.add(nucleusGroup);
 
     // Inner glowing sphere
-    const nucleusGeo = new THREE.SphereGeometry(0.55, 32, 32);
+    const nucleusGeo = new THREE.SphereGeometry(0.52, 32, 32);
     const nucleusMat = new THREE.MeshStandardMaterial({
       color: 0xffffff,
-      emissive: 0x00f0ff,
-      emissiveIntensity: 1.8,
-      roughness: 0.2,
-      metalness: 0.8,
+      emissive: 0x00f5d4,
+      emissiveIntensity: 2.2,
+      roughness: 0.15,
+      metalness: 0.9,
     });
     const nucleusMesh = new THREE.Mesh(nucleusGeo, nucleusMat);
     nucleusGroup.add(nucleusMesh);
     animStateRef.current.nucleus = nucleusMesh;
 
-    // Outer pulsating halo / corona
-    const coronaGeo = new THREE.SphereGeometry(0.85, 32, 32);
+    // Mid glow sphere (second corona layer, jobhunt-style)
+    const midCoronaGeo = new THREE.SphereGeometry(0.72, 32, 32);
+    const midCoronaMat = new THREE.MeshBasicMaterial({
+      color: 0x00f5d4,
+      transparent: true,
+      opacity: 0.07,
+    });
+    nucleusGroup.add(new THREE.Mesh(midCoronaGeo, midCoronaMat));
+
+    // Outer pulsating wireframe corona
+    const coronaGeo = new THREE.SphereGeometry(0.92, 24, 24);
     const coronaMat = new THREE.MeshBasicMaterial({
       color: 0x00f5d4,
       transparent: true,
-      opacity: 0.35,
+      opacity: 0.28,
       wireframe: true,
     });
     const coronaMesh = new THREE.Mesh(coronaGeo, coronaMat);
     nucleusGroup.add(coronaMesh);
     animStateRef.current.corona = coronaMesh;
 
-    // Nucleus quantum spark ring
-    const sparkCount = 80;
+    // Nucleus quantum spark ring — tight golden sparks orbiting the core
+    const sparkCount = 100;
     const sparkGeo = new THREE.BufferGeometry();
     const sparkPos = new Float32Array(sparkCount * 3);
     for (let i = 0; i < sparkCount; i++) {
       const theta = (i / sparkCount) * Math.PI * 2;
-      const r = 0.9 + Math.random() * 0.45;
+      const r = 0.95 + Math.random() * 0.5;
       sparkPos[i * 3] = Math.cos(theta) * r;
-      sparkPos[i * 3 + 1] = (Math.random() - 0.5) * 0.35;
+      sparkPos[i * 3 + 1] = (Math.random() - 0.5) * 0.4;
       sparkPos[i * 3 + 2] = Math.sin(theta) * r;
     }
     sparkGeo.setAttribute("position", new THREE.BufferAttribute(sparkPos, 3));
     const sparkMat = new THREE.PointsMaterial({
       color: 0xffd84d,
-      size: 0.08,
+      size: 0.07,
       transparent: true,
-      opacity: 0.85,
+      opacity: 0.9,
       blending: THREE.AdditiveBlending,
+      sizeAttenuation: true,
     });
     const sparkRing = new THREE.Points(sparkGeo, sparkMat);
     nucleusGroup.add(sparkRing);
 
-    // 6. Deep background stardust field
-    const starsCount = 350;
+    // 6. Deep stardust field — scattered across the whole scene
+    const starsCount = isBackground ? 500 : 350;
     const starsGeo = new THREE.BufferGeometry();
     const starsPos = new Float32Array(starsCount * 3);
     for (let i = 0; i < starsCount; i++) {
-      starsPos[i * 3] = (Math.random() - 0.5) * 45;
-      starsPos[i * 3 + 1] = (Math.random() - 0.5) * 35;
-      starsPos[i * 3 + 2] = (Math.random() - 0.5) * 45;
+      starsPos[i * 3] = (Math.random() - 0.5) * 55;
+      starsPos[i * 3 + 1] = (Math.random() - 0.5) * 40;
+      starsPos[i * 3 + 2] = (Math.random() - 0.5) * 55;
     }
     starsGeo.setAttribute("position", new THREE.BufferAttribute(starsPos, 3));
     const starsMat = new THREE.PointsMaterial({
       color: 0x7dd3fc,
-      size: 0.05,
+      size: 0.04,
       transparent: true,
-      opacity: 0.45,
+      opacity: 0.35,
+      sizeAttenuation: true,
     });
     const starField = new THREE.Points(starsGeo, starsMat);
     scene.add(starField);
     animStateRef.current.starParticles = starField;
 
-    // 7. Generate Tendril Curves for each Job
+    // 7. Generate Tendril Curves for each Job — starting FROM nucleusGroup origin
     const tendrilLines: typeof animStateRef.current.tendrilLines = [];
     const count = constellationData.length;
 
-    const baseRadius = 0.55;
-    const phi = (1 + Math.sqrt(5)) / 2; // Golden ratio for spherical distribution
+    const baseRadius = 0.52;
+    const phi = (1 + Math.sqrt(5)) / 2; // Golden ratio
 
     const tendrilGroup = new THREE.Group();
+    tendrilGroup.position.set(nucleusOffsetX, 0, 0); // anchor to nucleus
     scene.add(tendrilGroup);
 
     const pulsePointsList: THREE.Vector3[] = [];
 
     constellationData.forEach((item, idx) => {
-      // Fibonacci sphere distribution for harmonious 3D fanning
-      const y = 1 - (idx / (count - 1 || 1)) * 2; // -1 to 1
-      const radiusAtY = Math.sqrt(1 - y * y);
+      // Fibonacci sphere distribution
+      const y = 1 - (idx / (count - 1 || 1)) * 2;
+      const radiusAtY = Math.sqrt(Math.max(0, 1 - y * y));
       const theta = 2 * Math.PI * idx / phi;
 
       const dirX = Math.cos(theta) * radiusAtY;
@@ -380,15 +404,15 @@ export function JobHuntConstellation({
 
       const normDir = new THREE.Vector3(dirX, dirY, dirZ).normalize();
 
-      // Base point on nucleus
+      // Base point on nucleus surface
       const p0 = normDir.clone().multiplyScalar(baseRadius);
 
-      // Randomised, biological wave curve
-      const strandLen = 4.8 + (idx % 5) * 0.45 + (idx % 2 === 0 ? 0.3 : -0.2);
+      // Strand length — jobhunt.asmcleod.com uses longer, more elegant tendrils
+      const strandLen = 5.2 + (idx % 6) * 0.38 + (idx % 2 === 0 ? 0.25 : -0.15);
 
-      // Mid points curving naturally
-      const curveVariation = 0.7;
-      const p1 = normDir.clone().multiplyScalar(strandLen * 0.35).add(
+      // Organic curve variation (bioluminescent tendrils)
+      const curveVariation = 0.65;
+      const p1 = normDir.clone().multiplyScalar(strandLen * 0.33).add(
         new THREE.Vector3(
           Math.sin(idx * 1.7) * curveVariation,
           Math.cos(idx * 2.1) * curveVariation * 0.7,
@@ -396,7 +420,7 @@ export function JobHuntConstellation({
         )
       );
 
-      const p2 = normDir.clone().multiplyScalar(strandLen * 0.7).add(
+      const p2 = normDir.clone().multiplyScalar(strandLen * 0.68).add(
         new THREE.Vector3(
           Math.cos(idx * 1.9) * (curveVariation * 0.8),
           Math.sin(idx * 2.5) * (curveVariation * 0.5),
@@ -404,18 +428,16 @@ export function JobHuntConstellation({
         )
       );
 
-      // Tip point
       const tipVec = normDir.clone().multiplyScalar(strandLen);
 
       const curve = new THREE.CatmullRomCurve3([p0, p1, p2, tipVec]);
 
-      // Geometry for primary strand
-      const samplePoints = curve.getPoints(42);
+      // Primary strand geometry with vertex color gradient (white→sector color)
+      const samplePoints = curve.getPoints(48);
       const curveGeo = new THREE.BufferGeometry().setFromPoints(samplePoints);
 
-      // Color gradient attribute along strand
       const colors = new Float32Array(samplePoints.length * 3);
-      const baseCol = new THREE.Color(0xffffff);
+      const baseCol = new THREE.Color(0xddfffe);
       const targetCol = new THREE.Color(item.hexColor);
 
       for (let s = 0; s < samplePoints.length; s++) {
@@ -430,27 +452,27 @@ export function JobHuntConstellation({
       const curveMat = new THREE.LineBasicMaterial({
         vertexColors: true,
         transparent: true,
-        opacity: 0.75,
+        opacity: 0.72,
         blending: THREE.AdditiveBlending,
       });
 
       const line = new THREE.Line(curveGeo, curveMat);
       tendrilGroup.add(line);
 
-      // 2 Companion sub-hairs fanning out toward the tip (as in jobhunt fibre optics)
+      // Fiber-optic sub-hairs (jobhunt uses 2 companion strands)
       const companionLines: THREE.Line[] = [];
-      [-0.15, 0.15].forEach((offsetVal) => {
+      [-0.13, 0.13].forEach((offsetVal) => {
         const subTip = tipVec.clone().add(
           new THREE.Vector3(
-            Math.sin(idx + offsetVal) * 0.3,
-            offsetVal * 0.4,
-            Math.cos(idx + offsetVal) * 0.3
+            Math.sin(idx + offsetVal) * 0.28,
+            offsetVal * 0.35,
+            Math.cos(idx + offsetVal) * 0.28
           )
         );
         const subCurve = new THREE.CatmullRomCurve3([
           p0,
           p1.clone().multiplyScalar(0.95),
-          p2.clone().add(new THREE.Vector3(offsetVal * 0.2, 0, offsetVal * 0.2)),
+          p2.clone().add(new THREE.Vector3(offsetVal * 0.18, 0, offsetVal * 0.18)),
           subTip
         ]);
         const subPoints = subCurve.getPoints(24);
@@ -458,7 +480,7 @@ export function JobHuntConstellation({
         const subMat = new THREE.LineBasicMaterial({
           color: item.hexColor,
           transparent: true,
-          opacity: 0.25,
+          opacity: 0.22,
           blending: THREE.AdditiveBlending,
         });
         const subLine = new THREE.Line(subGeo, subMat);
@@ -466,12 +488,12 @@ export function JobHuntConstellation({
         companionLines.push(subLine);
       });
 
-      // Tip node particle
-      const tipGeo = new THREE.SphereGeometry(0.08, 16, 16);
+      // Glowing tip node sphere
+      const tipGeo = new THREE.SphereGeometry(0.07, 16, 16);
       const tipMat = new THREE.MeshBasicMaterial({
         color: item.hexColor,
         transparent: true,
-        opacity: 0.9,
+        opacity: 0.92,
       });
       const tipMesh = new THREE.Mesh(tipGeo, tipMat);
       tipMesh.position.copy(tipVec);
@@ -493,7 +515,7 @@ export function JobHuntConstellation({
 
     // 8. Glowing Data Pulse Particles traveling down strands
     const pulseCount = tendrilLines.length;
-    const pulseGeo = new THREE.SphereGeometry(0.06, 12, 12);
+    const pulseGeo = new THREE.SphereGeometry(0.055, 12, 12);
     const pulseMat = new THREE.MeshBasicMaterial({
       color: 0xffffff,
       blending: THREE.AdditiveBlending,
@@ -524,39 +546,45 @@ export function JobHuntConstellation({
 
       // Smooth camera position damping / orbit
       if (state.autoRotate && !state.isPointerDown) {
-        state.targetRotY += 0.0022; // gentle cosmic spin
+        state.targetRotY += 0.0018; // gentle cosmic spin matching jobhunt.asmcleod.com
       }
 
       state.rotX += (state.targetRotX - state.rotX) * 0.08;
       state.rotY += (state.targetRotY - state.rotY) * 0.08;
       state.zoom += (state.targetZoom - state.zoom) * 0.08;
 
-      const camX = Math.sin(state.rotY) * Math.cos(state.rotX) * state.zoom;
+      // In background mode: camera orbits around nucleus (right-shifted), giving left space for text
+      const lookAtX = isBackground ? 1.8 : 0;
+      const camBaseX = isBackground ? -1.8 : 0;
+
+      const camX = camBaseX + Math.sin(state.rotY) * Math.cos(state.rotX) * state.zoom;
       const camY = Math.sin(state.rotX) * state.zoom;
       const camZ = Math.cos(state.rotY) * Math.cos(state.rotX) * state.zoom;
 
       camera.position.set(camX, camY, camZ);
-      camera.lookAt(0, 0, 0);
+      camera.lookAt(lookAtX, 0, 0);
 
-      // Pulsate central nucleus
+      // Pulsate central nucleus — jobhunt.asmcleod.com pulse rhythm
       if (nucleusMesh) {
-        const pulseScale = 1 + Math.sin(elapsedTime * 2.8) * 0.06;
+        const pulseScale = 1 + Math.sin(elapsedTime * 2.5) * 0.065;
         nucleusMesh.scale.set(pulseScale, pulseScale, pulseScale);
       }
       if (coronaMesh) {
-        coronaMesh.rotation.y = elapsedTime * 0.4;
-        coronaMesh.rotation.x = elapsedTime * 0.25;
+        coronaMesh.rotation.y = elapsedTime * 0.38;
+        coronaMesh.rotation.x = elapsedTime * 0.22;
       }
       if (sparkRing) {
-        sparkRing.rotation.y = -elapsedTime * 0.6;
+        sparkRing.rotation.y = -elapsedTime * 0.55;
       }
 
-      // Update data pulses traveling along curves
+      // Update data pulses traveling along curves — from nucleus outward
       if (pulsesMesh) {
         tendrilLines.forEach((tLine, i) => {
-          const tProgress = ((elapsedTime * 0.4 + tLine.pulseOffset) % 1);
+          const tProgress = ((elapsedTime * 0.38 + tLine.pulseOffset) % 1);
           const pos = tLine.curve.getPointAt(tProgress);
-          dummyMatrix.setPosition(pos);
+          // Offset by nucleus group position
+          const worldPos = pos.clone().add(new THREE.Vector3(lookAtX, 0, 0));
+          dummyMatrix.setPosition(worldPos);
           pulsesMesh.setMatrixAt(i, dummyMatrix);
         });
         pulsesMesh.instanceMatrix.needsUpdate = true;
@@ -597,41 +625,38 @@ export function JobHuntConstellation({
           const matchesSec = activeSector === "all" || tLine.item.sector === activeSector;
           if (!matchesSec) return;
 
-          const tipVec3 = tLine.tipVec.clone();
-          const distToCam = tipVec3.distanceTo(camera.position);
+          // In background mode, project from nucleus-offset world position
+          const tipWorld = tLine.tipVec.clone();
+          if (isBackground) tipWorld.x += 1.8;
 
-          // Project to Normalized Device Coordinates (-1 to +1)
-          tipVec3.project(camera);
+          const distToCam = tipWorld.distanceTo(camera.position);
 
-          // Check if in front of camera
-          if (tipVec3.z < 1) {
-            const screenX = tipVec3.x * halfW + halfW;
-            const screenY = -(tipVec3.y * halfH) + halfH;
+          // Project to NDC (-1 to +1)
+          tipWorld.project(camera);
 
-            // Only show labels on screen bounds with padding
-            if (screenX >= 20 && screenX <= w - 20 && screenY >= 20 && screenY <= h - 20) {
+          if (tipWorld.z < 1) {
+            const screenX = tipWorld.x * halfW + halfW;
+            const screenY = -(tipWorld.y * halfH) + halfH;
+
+            if (screenX >= 15 && screenX <= w - 15 && screenY >= 15 && screenY <= h - 15) {
               const isHovered = activeHoverId === tLine.item.id;
 
-              // In background mode, keep the central reading area clear of labels unless hovered
-              if (variant === "background" && !isHovered) {
-                const dxFromCenter = Math.abs(screenX - halfW);
-                const dyFromCenter = Math.abs(screenY - halfH);
-                if (dxFromCenter < 340 && dyFromCenter < 170) {
-                  return;
-                }
+              // In background mode: block labels from left 48% so text stays readable
+              if (isBackground && !isHovered && screenX < w * 0.46) {
+                return;
               }
 
-              // Front-facing depth opacity fading (fade back-facing strands)
-              let depthOpacity = Math.max(0, 1 - (distToCam - 4.5) / 8.5);
+              // Depth opacity fade
+              let depthOpacity = Math.max(0, 1 - (distToCam - 4.0) / 9.0);
               if (isHovered) depthOpacity = 1;
 
               newLabels.push({
                 item: tLine.item,
                 x: screenX,
                 y: screenY,
-                visible: depthOpacity > 0.15 || isHovered,
+                visible: depthOpacity > 0.12 || isHovered,
                 opacity: depthOpacity,
-                scale: isHovered ? 1.08 : 1,
+                scale: isHovered ? 1.1 : 1,
                 isHovered,
                 distance: distToCam,
               });
@@ -639,11 +664,11 @@ export function JobHuntConstellation({
           }
         });
 
-        // Sort by distance so closer labels render cleanly on top
+        // Sort by distance — closest on top
         newLabels.sort((a, b) => a.distance - b.distance);
 
-        // Cap to top labels to avoid clutter
-        setProjectedLabels(newLabels.slice(0, variant === "background" ? 14 : 10));
+        // Cap labels — jobhunt shows ~12 max
+        setProjectedLabels(newLabels.slice(0, isBackground ? 12 : 10));
       }
 
       renderer.render(scene, camera);
@@ -727,12 +752,30 @@ export function JobHuntConstellation({
       {/* 1. Canvas element for WebGL 3D rendering */}
       <canvas ref={canvasRef} className="absolute inset-0 w-full h-full cursor-grab active:cursor-grabbing" />
 
-      {/* Ambient Vignette for Background Mode */}
+      {/* Layered overlays for Background Mode — matches jobhunt.asmcleod.com edge darkening */}
       {variant === "background" && (
-        <div
-          className="absolute inset-0 pointer-events-none z-[1] bg-[radial-gradient(ellipse_at_center,rgba(7,19,34,0.6)_0%,rgba(7,19,34,0.35)_45%,rgba(7,19,34,0.92)_100%)]"
-          aria-hidden="true"
-        />
+        <>
+          {/* Left-side gradient: text stays perfectly readable over the 3D scene */}
+          <div
+            className="absolute inset-0 pointer-events-none z-[1]"
+            style={{
+              background: "linear-gradient(to right, rgba(7,19,34,0.92) 0%, rgba(7,19,34,0.72) 30%, rgba(7,19,34,0.2) 52%, rgba(7,19,34,0.0) 65%)"
+            }}
+            aria-hidden="true"
+          />
+          {/* Top fade */}
+          <div
+            className="absolute top-0 left-0 right-0 h-24 pointer-events-none z-[1]"
+            style={{ background: "linear-gradient(to bottom, rgba(7,19,34,0.75) 0%, transparent 100%)" }}
+            aria-hidden="true"
+          />
+          {/* Bottom fade */}
+          <div
+            className="absolute bottom-0 left-0 right-0 h-32 pointer-events-none z-[1]"
+            style={{ background: "linear-gradient(to top, rgba(7,19,34,0.95) 0%, transparent 100%)" }}
+            aria-hidden="true"
+          />
+        </>
       )}
 
       {/* 2. Top Controls Bar */}
