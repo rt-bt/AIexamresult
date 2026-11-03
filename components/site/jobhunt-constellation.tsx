@@ -151,6 +151,7 @@ interface JobHuntConstellationProps {
   subtitle?: string;
   className?: string;
   height?: string;
+  variant?: "card" | "background";
 }
 
 export function JobHuntConstellation({
@@ -158,7 +159,8 @@ export function JobHuntConstellation({
   title = "Live Recruitment Constellation",
   subtitle = "Bioluminescent 3D job galaxy · Synced with All India Exam Result",
   className = "",
-  height = "h-[480px] sm:h-[520px]"
+  height = "h-[480px] sm:h-[520px]",
+  variant = "card",
 }: JobHuntConstellationProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -198,8 +200,8 @@ export function JobHuntConstellation({
     rotY: 0,
     targetRotX: 0.18,
     targetRotY: 0,
-    zoom: 8.4,
-    targetZoom: 8.4,
+    zoom: variant === "background" ? 9.8 : 8.4,
+    targetZoom: variant === "background" ? 9.8 : 8.4,
     isPointerDown: false,
     pointerStartX: 0,
     pointerStartY: 0,
@@ -229,8 +231,8 @@ export function JobHuntConstellation({
   const handleResetCamera = useCallback(() => {
     animStateRef.current.targetRotX = 0.18;
     animStateRef.current.targetRotY = 0;
-    animStateRef.current.targetZoom = 8.4;
-  }, []);
+    animStateRef.current.targetZoom = variant === "background" ? 9.8 : 8.4;
+  }, [variant]);
 
   // Set up Three.js scene
   useEffect(() => {
@@ -610,6 +612,15 @@ export function JobHuntConstellation({
             if (screenX >= 20 && screenX <= w - 20 && screenY >= 20 && screenY <= h - 20) {
               const isHovered = activeHoverId === tLine.item.id;
 
+              // In background mode, keep the central reading area clear of labels unless hovered
+              if (variant === "background" && !isHovered) {
+                const dxFromCenter = Math.abs(screenX - halfW);
+                const dyFromCenter = Math.abs(screenY - halfH);
+                if (dxFromCenter < 340 && dyFromCenter < 170) {
+                  return;
+                }
+              }
+
               // Front-facing depth opacity fading (fade back-facing strands)
               let depthOpacity = Math.max(0, 1 - (distToCam - 4.5) / 8.5);
               if (isHovered) depthOpacity = 1;
@@ -631,8 +642,8 @@ export function JobHuntConstellation({
         // Sort by distance so closer labels render cleanly on top
         newLabels.sort((a, b) => a.distance - b.distance);
 
-        // Cap to top 10 most prominent labels to avoid clutter
-        setProjectedLabels(newLabels.slice(0, 10));
+        // Cap to top labels to avoid clutter
+        setProjectedLabels(newLabels.slice(0, variant === "background" ? 14 : 10));
       }
 
       renderer.render(scene, camera);
@@ -683,6 +694,9 @@ export function JobHuntConstellation({
 
   // Zoom wheel handler
   const handleWheel = (e: React.WheelEvent) => {
+    if (variant === "background" && !isFullscreen) {
+      return; // Do not intercept page scrolling when constellation is in hero background
+    }
     e.preventDefault();
     const zoomDelta = e.deltaY * 0.005;
     animStateRef.current.targetZoom = Math.max(
@@ -694,9 +708,15 @@ export function JobHuntConstellation({
   return (
     <div
       ref={containerRef}
-      className={`relative w-full rounded-2xl border border-white/15 bg-[#020610] overflow-hidden select-none shadow-[0_12px_48px_rgba(0,0,0,0.6)] ${
-        isFullscreen ? "fixed inset-0 z-50 rounded-none h-screen" : height
-      } ${className}`}
+      className={
+        variant === "background"
+          ? `absolute inset-0 w-full h-full overflow-hidden select-none z-0 ${
+              isFullscreen ? "fixed inset-0 z-50 h-screen bg-[#020610]" : ""
+            } ${className}`
+          : `relative w-full rounded-2xl border border-white/15 bg-[#020610] overflow-hidden select-none shadow-[0_12px_48px_rgba(0,0,0,0.6)] ${
+              isFullscreen ? "fixed inset-0 z-50 rounded-none h-screen" : height
+            } ${className}`
+      }
       onPointerDown={handlePointerDown}
       onPointerMove={handlePointerMove}
       onPointerUp={handlePointerUp}
@@ -707,26 +727,39 @@ export function JobHuntConstellation({
       {/* 1. Canvas element for WebGL 3D rendering */}
       <canvas ref={canvasRef} className="absolute inset-0 w-full h-full cursor-grab active:cursor-grabbing" />
 
-      {/* 2. Top Glass Header Bar: Title, Live Pulse, Actions */}
-      <div className="absolute top-3 left-3 right-3 z-20 flex items-center justify-between gap-2 pointer-events-none">
-        <div className="flex items-center gap-2 rounded-full border border-white/10 bg-black/50 backdrop-blur-md px-3.5 py-1.5 shadow-sm">
-          <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
-          </span>
-          <span className="text-[11px] sm:text-xs font-bold tracking-wider uppercase text-emerald-300 font-mono">
-            LIVE JOB CONSTELLATION
-          </span>
-          <span className="hidden sm:inline text-white/30">|</span>
-          <span className="hidden sm:inline text-[11px] text-white/60 font-mono">
-            {constellationData.length} Tendrils
-          </span>
-        </div>
+      {/* Ambient Vignette for Background Mode */}
+      {variant === "background" && (
+        <div
+          className="absolute inset-0 pointer-events-none z-[1] bg-[radial-gradient(ellipse_at_center,rgba(7,19,34,0.6)_0%,rgba(7,19,34,0.35)_45%,rgba(7,19,34,0.92)_100%)]"
+          aria-hidden="true"
+        />
+      )}
+
+      {/* 2. Top Controls Bar */}
+      <div className={`absolute top-3 right-3 z-20 flex items-center justify-between gap-2 pointer-events-none ${
+        variant === "background" ? "left-auto" : "left-3"
+      }`}>
+        {variant !== "background" && (
+          <div className="flex items-center gap-2 rounded-full border border-white/10 bg-black/50 backdrop-blur-md px-3.5 py-1.5 shadow-sm">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
+            </span>
+            <span className="text-[11px] sm:text-xs font-bold tracking-wider uppercase text-emerald-300 font-mono">
+              LIVE JOB CONSTELLATION
+            </span>
+            <span className="hidden sm:inline text-white/30">|</span>
+            <span className="hidden sm:inline text-[11px] text-white/60 font-mono">
+              {constellationData.length} Tendrils
+            </span>
+          </div>
+        )}
 
         {/* Action Controls */}
         <div className="flex items-center gap-1.5 pointer-events-auto">
           {/* Play/Pause Rotation */}
           <button
+            type="button"
             onClick={() => setAutoRotate((prev) => !prev)}
             className="flex h-8 w-8 items-center justify-center rounded-full border border-white/10 bg-black/60 text-white/70 backdrop-blur-md transition hover:border-[#00f0ff] hover:text-[#00f0ff]"
             title={autoRotate ? "Pause Orbit" : "Play Orbit"}
@@ -737,6 +770,7 @@ export function JobHuntConstellation({
 
           {/* Reset View */}
           <button
+            type="button"
             onClick={handleResetCamera}
             className="flex h-8 w-8 items-center justify-center rounded-full border border-white/10 bg-black/60 text-white/70 backdrop-blur-md transition hover:border-[#00f0ff] hover:text-[#00f0ff]"
             title="Reset 3D Camera"
@@ -747,6 +781,7 @@ export function JobHuntConstellation({
 
           {/* Fullscreen Expand */}
           <button
+            type="button"
             onClick={() => setIsFullscreen((prev) => !prev)}
             className="flex h-8 w-8 items-center justify-center rounded-full border border-white/10 bg-black/60 text-white/70 backdrop-blur-md transition hover:border-[#00f0ff] hover:text-[#00f0ff]"
             title={isFullscreen ? "Exit Fullscreen" : "Fullscreen Galaxy Mode"}
@@ -817,19 +852,27 @@ export function JobHuntConstellation({
       </div>
 
       {/* 4. Bottom Controls: Sector Category Filtering Pills */}
-      <div className="absolute bottom-3 left-3 right-3 z-20 flex flex-col sm:flex-row items-center justify-between gap-2 pointer-events-none">
+      <div className={`absolute z-20 pointer-events-none ${
+        variant === "background"
+          ? "bottom-14 sm:bottom-16 left-4 right-4 flex flex-col items-center justify-center gap-2"
+          : "bottom-3 left-3 right-3 flex flex-col sm:flex-row items-center justify-between gap-2"
+      }`}>
         {/* Sector Tabs */}
-        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 max-w-full scrollbar-hide pointer-events-auto">
+        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 max-w-full scrollbar-hide pointer-events-auto bg-black/40 backdrop-blur-md p-1 px-2.5 rounded-full border border-white/10 shadow-lg">
+          <span className="hidden sm:inline text-[10px] uppercase font-mono text-white/50 px-1 font-semibold">
+            Sector:
+          </span>
           {Object.entries(SECTOR_CONFIG).map(([secKey, sec]) => {
             const isSelected = selectedSector === secKey;
             return (
               <button
                 key={secKey}
+                type="button"
                 onClick={() => setSelectedSector(secKey)}
                 className={`whitespace-nowrap rounded-full px-2.5 py-1 text-[10px] sm:text-[11px] font-semibold transition backdrop-blur-md border ${
                   isSelected
                     ? "bg-white text-slate-950 border-white shadow-sm font-bold scale-[1.02]"
-                    : "bg-black/40 border-white/10 text-white/70 hover:bg-black/70 hover:text-white"
+                    : "bg-white/5 border-white/10 text-white/70 hover:bg-white/15 hover:text-white"
                 }`}
               >
                 {sec.label}
@@ -838,10 +881,11 @@ export function JobHuntConstellation({
           })}
         </div>
 
-        {/* Orbit Interaction Hint */}
-        <div className="hidden lg:flex items-center gap-2 text-[10px] text-white/40 font-mono tracking-wider uppercase bg-black/40 backdrop-blur-sm px-3 py-1 rounded-full border border-white/5 pointer-events-auto">
-          <span>{isOrbiting ? "Orbiting Galaxy..." : "Drag to Orbit · Tap Strand to View"}</span>
-        </div>
+        {variant !== "background" && (
+          <div className="hidden lg:flex items-center gap-2 text-[10px] text-white/40 font-mono tracking-wider uppercase bg-black/40 backdrop-blur-sm px-3 py-1 rounded-full border border-white/5 pointer-events-auto">
+            <span>{isOrbiting ? "Orbiting Galaxy..." : "Drag to Orbit · Tap Strand to View"}</span>
+          </div>
+        )}
       </div>
 
       {/* 5. Active Hover Card Snapshot (Desktop Drawer) */}
