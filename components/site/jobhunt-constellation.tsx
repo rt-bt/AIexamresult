@@ -72,6 +72,54 @@ function getHeatColor(d: number, sectorTint?: THREE.Color): THREE.Color {
   return result;
 }
 
+// 3D Simplex noise for organic gaseous star turbulence (exact jobhunt.asmcleod.com math)
+const SNOISE_GLSL = `
+vec4 permute(vec4 x){return mod(((x*34.0)+1.0)*x, 289.0);}
+vec4 taylorInvSqrt(vec4 r){return 1.79284291400159 - 0.85373472095314 * r;}
+float snoise(vec3 v){
+  const vec2 C = vec2(1.0/6.0, 1.0/3.0);
+  const vec4 D = vec4(0.0, 0.5, 1.0, 2.0);
+  vec3 i  = floor(v + dot(v, C.yyy));
+  vec3 x0 = v - i + dot(i, C.xxx);
+  vec3 g = step(x0.yzx, x0.xyz);
+  vec3 l = 1.0 - g;
+  vec3 i1 = min(g.xyz, l.zxy);
+  vec3 i2 = max(g.xyz, l.zxy);
+  vec3 x1 = x0 - i1 + 1.0 * C.xxx;
+  vec3 x2 = x0 - i2 + 2.0 * C.xxx;
+  vec3 x3 = x0 - 1.0 + 3.0 * C.xxx;
+  i = mod(i, 289.0);
+  vec4 p = permute(permute(permute(
+             i.z + vec4(0.0, i1.z, i2.z, 1.0))
+           + i.y + vec4(0.0, i1.y, i2.y, 1.0))
+           + i.x + vec4(0.0, i1.x, i2.x, 1.0));
+  float n_ = 0.142857142857;
+  vec3  ns = n_ * D.wyz - D.xzx;
+  vec4 j = p - 49.0 * floor(p * ns.z * ns.z);
+  vec4 x_ = floor(j * ns.z);
+  vec4 y_ = floor(j - 7.0 * x_);
+  vec4 x = x_ *ns.x + ns.yyyy;
+  vec4 y = y_ *ns.x + ns.yyyy;
+  vec4 h = 1.0 - abs(x) - abs(y);
+  vec4 b0 = vec4(x.xy, y.xy);
+  vec4 b1 = vec4(x.zw, y.zw);
+  vec4 s0 = floor(b0)*2.0 + 1.0;
+  vec4 s1 = floor(b1)*2.0 + 1.0;
+  vec4 sh = -step(h, vec4(0.0));
+  vec4 a0 = b0.xzyw + s0.xzyw*sh.xxyy;
+  vec4 a1 = b1.xzyw + s1.xzyw*sh.zzww;
+  vec3 p0 = vec3(a0.xy, h.x);
+  vec3 p1 = vec3(a0.zw, h.y);
+  vec3 p2 = vec3(a1.xy, h.z);
+  vec3 p3 = vec3(a1.zw, h.w);
+  vec4 norm = taylorInvSqrt(vec4(dot(p0,p0), dot(p1,p1), dot(p2, p2), dot(p3,p3)));
+  p0 *= norm.x; p1 *= norm.y; p2 *= norm.z; p3 *= norm.w;
+  vec4 m = max(0.6 - vec4(dot(x0,x0), dot(x1,x1), dot(x2,x2), dot(x3,x3)), 0.0);
+  m = m * m;
+  return 42.0 * dot(m*m, vec4(dot(p0,x0), dot(p1,x1), dot(p2,x2), dot(p3,x3)));
+}
+`;
+
 function parseItem(item: PostCard, index: number): JobConstellationItem {
   const t = item.title;
   let org = "GOVT OF INDIA";
@@ -239,8 +287,9 @@ export function JobHuntConstellation({
     camera: null as THREE.PerspectiveCamera | null,
     renderer: null as THREE.WebGLRenderer | null,
     nucleus: null as THREE.Mesh | null,
-    corona: null as THREE.Mesh | null,
-    sparkRing: null as THREE.Points | null,
+    starGlowMesh: null as THREE.Mesh | null,
+    starHaloMesh: null as THREE.Mesh | null,
+    starGlowMat: null as THREE.ShaderMaterial | null,
     starParticles: null as THREE.Points | null,
     tendrilEntries: [] as TendrilEntry[],
     branchEntries: [] as BranchEntry[],
@@ -359,60 +408,118 @@ export function JobHuntConstellation({
     cyanLight2.position.set(-3, -2, 3);
     scene.add(cyanLight2);
 
-    // 5. Central Nucleus Core — Hot glowing solar organism
+    // 5. Central Solar Organism — EXACT jobhunt.asmcleod.com Gaseous Star
+    // Replaces wireframe icosahedron cage & square pixels with true volumetric solar gas shaders
     const nucleusGroup = new THREE.Group();
     nucleusGroup.position.set(0, 0, 0);
     scene.add(nucleusGroup);
 
-    // Inner glowing sphere
-    const nucleusGeo = new THREE.SphereGeometry(0.55, 32, 32);
-    const nucleusMat = new THREE.MeshStandardMaterial({
+    // 5a. Core white-hot inner sphere (anchors tendril origins)
+    const nucleusGeo = new THREE.SphereGeometry(0.38, 32, 32);
+    const nucleusMat = new THREE.MeshBasicMaterial({
       color: 0xffffff,
-      emissive: 0xff7700,
-      emissiveIntensity: 2.4,
-      roughness: 0.12,
-      metalness: 0.9,
     });
     const nucleusMesh = new THREE.Mesh(nucleusGeo, nucleusMat);
     nucleusGroup.add(nucleusMesh);
     animStateRef.current.nucleus = nucleusMesh;
 
-    // Geodesic wireframe corona (organic cage)
-    const coronaGeo = new THREE.IcosahedronGeometry(0.85, 2);
-    const coronaMat = new THREE.MeshBasicMaterial({
-      color: 0x8adfff,
-      wireframe: true,
-      transparent: true,
-      opacity: 0.38,
-      blending: THREE.AdditiveBlending,
-    });
-    const coronaMesh = new THREE.Mesh(coronaGeo, coronaMat);
-    nucleusGroup.add(coronaMesh);
-    animStateRef.current.corona = coronaMesh;
+    // 5b. Billboard Gaseous Corona with turbulent snoise flares & filaments
+    const starGlowGeo = new THREE.PlaneGeometry(3.15, 3.15);
+    const starGlowMat = new THREE.ShaderMaterial({
+      vertexShader: `
+        varying vec2 vUv;
+        void main() {
+          vUv = uv;
+          gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+        }
+      `,
+      fragmentShader: `
+        ${SNOISE_GLSL}
+        uniform float uTime;
+        uniform float uBreath;
+        uniform float uIntensity;
+        uniform vec3 uCore;
+        uniform vec3 uHot;
+        uniform vec3 uDeep;
+        varying vec2 vUv;
 
-    // Nucleus quantum spark ring
-    const sparkCount = 120;
-    const sparkGeo = new THREE.BufferGeometry();
-    const sparkPos = new Float32Array(sparkCount * 3);
-    for (let i = 0; i < sparkCount; i++) {
-      const theta = (i / sparkCount) * Math.PI * 2;
-      const r = 0.95 + Math.random() * 0.45;
-      sparkPos[i * 3] = Math.cos(theta) * r;
-      sparkPos[i * 3 + 1] = (Math.random() - 0.5) * 0.35;
-      sparkPos[i * 3 + 2] = Math.sin(theta) * r;
-    }
-    sparkGeo.setAttribute("position", new THREE.BufferAttribute(sparkPos, 3));
-    const sparkMat = new THREE.PointsMaterial({
-      color: 0xffd84d,
-      size: 0.07,
+        void main() {
+          vec2 p = (vUv - 0.5) * 2.0;
+          float r = length(p);
+          float t = uTime;
+
+          vec2 dir = p / max(r, 1e-4);
+          float n = snoise(vec3(dir * 1.6, r * 3.0 - t * 0.35)) * 0.6
+                  + snoise(vec3(p * 4.5, t * 0.3)) * 0.4;
+          float rr = r * (1.0 + n * 0.22 * smoothstep(0.02, 0.35, r));
+          float s = 1.0 + uBreath;
+
+          float heart  = exp(-pow(rr / (0.085 * s), 2.0));
+          float body   = exp(-pow(rr / (0.2 * s), 1.5));
+          float corona = exp(-rr * (4.2 / s));
+
+          float wisps = smoothstep(0.25, 0.9, snoise(vec3(dir * 3.0, t * 0.12 - r * 1.5))) * corona * 0.5;
+
+          vec3 col = uDeep * (corona * 0.55 + wisps)
+                   + uCore * body * 1.5
+                   + uHot * heart * 1.9;
+          col *= uIntensity;
+          float edge = 1.0 - smoothstep(0.75, 1.0, r);
+          gl_FragColor = vec4(col * edge, edge);
+        }
+      `,
+      uniforms: {
+        uTime: { value: 0 },
+        uBreath: { value: 0 },
+        uIntensity: { value: 1.0 },
+        uCore: { value: new THREE.Color("#FF6A00") },
+        uHot: { value: new THREE.Color("#FF9500") },
+        uDeep: { value: new THREE.Color("#E04A00") },
+      },
       transparent: true,
-      opacity: 0.9,
+      depthWrite: false,
       blending: THREE.AdditiveBlending,
-      sizeAttenuation: true,
     });
-    const sparkRing = new THREE.Points(sparkGeo, sparkMat);
-    nucleusGroup.add(sparkRing);
-    animStateRef.current.sparkRing = sparkRing;
+    const starGlowMesh = new THREE.Mesh(starGlowGeo, starGlowMat);
+    starGlowMesh.renderOrder = 5;
+    nucleusGroup.add(starGlowMesh);
+    animStateRef.current.starGlowMesh = starGlowMesh;
+    animStateRef.current.starGlowMat = starGlowMat;
+
+    // 5c. Outer soft radial glow halo
+    const starHaloGeo = new THREE.PlaneGeometry(3.8, 3.8);
+    const starHaloMat = new THREE.ShaderMaterial({
+      vertexShader: `
+        varying vec2 vUv;
+        void main() {
+          vUv = uv;
+          gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+        }
+      `,
+      fragmentShader: `
+        uniform vec3 uColor;
+        uniform float uStrength;
+        uniform float uFalloff;
+        varying vec2 vUv;
+        void main() {
+          float r = length(vUv - 0.5) * 2.0;
+          float a = exp(-r * r * uFalloff) * (1.0 - smoothstep(0.85, 1.0, r));
+          gl_FragColor = vec4(uColor * uStrength, a);
+        }
+      `,
+      uniforms: {
+        uColor: { value: new THREE.Color("#FF5A00") },
+        uStrength: { value: 0.22 },
+        uFalloff: { value: 3.8 },
+      },
+      transparent: true,
+      depthWrite: false,
+      blending: THREE.AdditiveBlending,
+    });
+    const starHaloMesh = new THREE.Mesh(starHaloGeo, starHaloMat);
+    starHaloMesh.renderOrder = 4;
+    nucleusGroup.add(starHaloMesh);
+    animStateRef.current.starHaloMesh = starHaloMesh;
 
     // 6. Deep stardust particle field
     const starsCount = isBackground ? 500 : 350;
@@ -444,7 +551,7 @@ export function JobHuntConstellation({
     const branchEntries: BranchEntry[] = [];
     const crossLinks: CrossLinkEntry[] = [];
     const count = constellationData.length;
-    const baseRadius = 0.55;
+    const baseRadius = 0.38; // roots emerge right from the star core
     const phi = (1 + Math.sqrt(5)) / 2; // Golden ratio
     const MAIN_SEGMENTS = 52;
     const allNodeTips: THREE.Vector3[] = [];
@@ -646,7 +753,6 @@ export function JobHuntConstellation({
     });
 
     // 8. Interconnected Constellation Cross-Links (Neural Web Mesh)
-    // Find nearby nodes and connect them with delicate bioluminescent web lines
     for (let i = 0; i < allNodeTips.length; i++) {
       for (let j = i + 1; j < allNodeTips.length; j++) {
         const dist = allNodeTips[i].distanceTo(allNodeTips[j]);
@@ -710,26 +816,29 @@ export function JobHuntConstellation({
       camera.position.set(camX, camY, camZ);
       camera.lookAt(0, 0, 0);
 
-      // Pulsate central nucleus core
+      // BILLBOARDS: Keep solar star corona facing camera at all angles
+      if (starGlowMesh && starHaloMesh) {
+        starGlowMesh.quaternion.copy(camera.quaternion);
+        starHaloMesh.quaternion.copy(camera.quaternion);
+      }
+
+      // Animate solar gas turbulence and breathing glow
+      if (starGlowMat) {
+        starGlowMat.uniforms.uTime.value = elapsedTime;
+        starGlowMat.uniforms.uBreath.value = Math.sin(elapsedTime * 1.8) * 0.08;
+      }
+
+      // Pulsate central white-hot nucleus core
       if (nucleusMesh) {
-        const pulseScale = 1 + Math.sin(elapsedTime * 2.0) * 0.06;
+        const pulseScale = 1 + Math.sin(elapsedTime * 2.2) * 0.04;
         nucleusMesh.scale.set(pulseScale, pulseScale, pulseScale);
-      }
-      if (coronaMesh) {
-        coronaMesh.rotation.y = elapsedTime * 0.22;
-        coronaMesh.rotation.x = elapsedTime * 0.12;
-      }
-      if (sparkRing) {
-        sparkRing.rotation.y = -elapsedTime * 0.35;
       }
 
       // ORGANIC INTRO GROWTH SIMULATION:
-      // Tendrils grow out from the nucleus like living neurons
       const activeSector = state.sector;
       const activeHoverId = state.activeHoverId;
 
       tendrilEntries.forEach((tEntry) => {
-        // Eased unhurried growth formula: 1 - pow(1 - k, 1.6)
         let growth = 0;
         if (elapsedTime > tEntry.growStart) {
           const k = Math.min(1, (elapsedTime - tEntry.growStart) / tEntry.growDur);
@@ -799,7 +908,6 @@ export function JobHuntConstellation({
         const newLabels: ProjectedLabel[] = [];
 
         tendrilEntries.forEach((tEntry) => {
-          // Only show labels for tendrils that have finished growing (growth >= 0.90)
           if (tEntry.currentGrowth < 0.90) return;
 
           const matchesSec = activeSector === "all" || tEntry.item.sector === activeSector;
