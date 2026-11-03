@@ -59,7 +59,20 @@ export function Hero() {
     syllabus: syllabusItems.length || 25,
   };
 
-  return <HeroSection liveUpdates={liveUpdates} counts={counts} />;
+  // Sync real-time government jobs, results & admit cards for 3D JobHunt Constellation
+  const constellationJobs = [
+    ...latestJobs.slice(0, 24),
+    ...featuredResults.slice(0, 8),
+    ...admitCards.slice(0, 6),
+  ];
+
+  return (
+    <HeroSection
+      liveUpdates={liveUpdates}
+      counts={counts}
+      constellationJobs={constellationJobs}
+    />
+  );
 }
 
 export { HeroSection };
