@@ -1227,7 +1227,7 @@ export function JobHuntConstellation({
       {/* 4. Bottom Controls: Sector Category Filtering Pills */}
       <div className={`absolute z-20 pointer-events-none ${
         variant === "background"
-          ? "bottom-14 sm:bottom-16 left-4 right-4 flex flex-col items-center justify-center gap-2"
+          ? "bottom-4 sm:bottom-5 left-4 right-4 flex flex-col items-center justify-center gap-2"
           : "bottom-3 left-3 right-3 flex flex-col sm:flex-row items-center justify-between gap-2"
       }`}>
         {/* Sector Tabs */}

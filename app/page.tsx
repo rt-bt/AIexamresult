@@ -30,7 +30,7 @@ export default function HomePage() {
         <Hero />
 
         {/* 2. Trending Notifications */}
-        <section className="pt-20 sm:pt-24 pb-12 sm:pb-16 bg-white border-b border-gray-100 font-sans">
+        <section className="pt-10 sm:pt-14 pb-12 sm:pb-16 bg-white border-b border-gray-100 font-sans">
           <div className="container-page">
 
             {/* Section header */}

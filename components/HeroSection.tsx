@@ -7,7 +7,7 @@ import { Search, ArrowRight } from "lucide-react";
 import { VoiceSearchBtn } from "./site/voice-search";
 import { HeroBackground } from "./HeroBackground";
 import { LiveUpdateItem } from "./LiveUpdatesCard";
-import { CategoryTiles, CategoryCounts } from "./CategoryTiles";
+import type { CategoryCounts } from "./CategoryTiles";
 import { JobHuntConstellation } from "./site/jobhunt-constellation";
 import type { PostCard } from "@/lib/data";
 
@@ -166,11 +166,6 @@ export function HeroSection({
 
           </div>
         </div>
-      </div>
-
-      {/* Category tiles overlapping bottom */}
-      <div className="relative z-20 container-page translate-y-8 sm:translate-y-12 -mb-8 sm:-mb-12">
-        <CategoryTiles counts={counts} />
       </div>
     </section>
   );
