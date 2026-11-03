@@ -290,6 +290,7 @@ export function JobHuntConstellation({
     starGlowMesh: null as THREE.Mesh | null,
     starHaloMesh: null as THREE.Mesh | null,
     starGlowMat: null as THREE.ShaderMaterial | null,
+    dustMat: null as THREE.ShaderMaterial | null,
     starParticles: null as THREE.Points | null,
     tendrilEntries: [] as TendrilEntry[],
     branchEntries: [] as BranchEntry[],
@@ -415,13 +416,8 @@ export function JobHuntConstellation({
     scene.add(nucleusGroup);
 
     // 5a. Core white-hot inner sphere (anchors tendril origins)
-    const nucleusGeo = new THREE.SphereGeometry(0.38, 32, 32);
-    const nucleusMat = new THREE.MeshBasicMaterial({
-      color: 0xffffff,
-    });
-    const nucleusMesh = new THREE.Mesh(nucleusGeo, nucleusMat);
-    nucleusGroup.add(nucleusMesh);
-    animStateRef.current.nucleus = nucleusMesh;
+    // 5a. Pure volumetric gaseous star — NO solid opaque sphere or wireframe
+    animStateRef.current.nucleus = null;
 
     // 5b. Billboard Gaseous Corona with turbulent snoise flares & filaments
     const starGlowGeo = new THREE.PlaneGeometry(3.15, 3.15);
@@ -465,7 +461,7 @@ export function JobHuntConstellation({
                    + uHot * heart * 1.9;
           col *= uIntensity;
           float edge = 1.0 - smoothstep(0.75, 1.0, r);
-          gl_FragColor = vec4(col * edge, edge);
+          gl_FragColor = vec4(col * edge, 1.0);
         }
       `,
       uniforms: {
@@ -521,26 +517,69 @@ export function JobHuntConstellation({
     nucleusGroup.add(starHaloMesh);
     animStateRef.current.starHaloMesh = starHaloMesh;
 
-    // 6. Deep stardust particle field
-    const starsCount = isBackground ? 500 : 350;
-    const starsGeo = new THREE.BufferGeometry();
-    const starsPos = new Float32Array(starsCount * 3);
-    for (let i = 0; i < starsCount; i++) {
-      starsPos[i * 3] = (Math.random() - 0.5) * 55;
-      starsPos[i * 3 + 1] = (Math.random() - 0.5) * 40;
-      starsPos[i * 3 + 2] = (Math.random() - 0.5) * 55;
+    // 6. Deep stardust particle field — exact soft circular drifting dust from jobhunt
+    const dustCount = isBackground ? 600 : 400;
+    const dustGeo = new THREE.BufferGeometry();
+    const dustPos = new Float32Array(dustCount * 3);
+    const dustSeed = new Float32Array(dustCount * 4);
+    for (let i = 0; i < dustCount; i++) {
+      const dir = new THREE.Vector3(
+        Math.random() * 2 - 1,
+        (Math.random() * 2 - 1) * 0.8,
+        Math.random() * 2 - 1
+      ).normalize();
+      const r = 1.2 + Math.pow(Math.random(), 0.75) * 16;
+      dir.multiplyScalar(r);
+      dustPos[i * 3] = dir.x;
+      dustPos[i * 3 + 1] = dir.y;
+      dustPos[i * 3 + 2] = dir.z;
+      dustSeed[i * 4] = Math.random();
+      dustSeed[i * 4 + 1] = Math.random();
+      dustSeed[i * 4 + 2] = Math.random();
+      dustSeed[i * 4 + 3] = 0;
     }
-    starsGeo.setAttribute("position", new THREE.BufferAttribute(starsPos, 3));
-    const starsMat = new THREE.PointsMaterial({
-      color: 0x7dd3fc,
-      size: 0.04,
+    dustGeo.setAttribute("position", new THREE.BufferAttribute(dustPos, 3));
+    dustGeo.setAttribute("aSeed", new THREE.BufferAttribute(dustSeed, 4));
+
+    const dustMat = new THREE.ShaderMaterial({
+      vertexShader: `
+        attribute vec4 aSeed;
+        uniform float uTime;
+        uniform float uSize;
+        void main() {
+          vec3 p = position;
+          p += 0.25 * vec3(
+            sin(uTime * 0.05 + aSeed.x * 6.28),
+            sin(uTime * 0.04 + aSeed.y * 6.28),
+            sin(uTime * 0.045 + aSeed.z * 6.28)
+          );
+          vec4 mv = viewMatrix * vec4(p, 1.0);
+          gl_PointSize = uSize;
+          gl_Position = projectionMatrix * mv;
+        }
+      `,
+      fragmentShader: `
+        uniform float uOpacity;
+        void main() {
+          float r = length(gl_PointCoord - 0.5) * 2.0;
+          float dot = 1.0 - smoothstep(0.55, 1.0, r);
+          if (dot <= 0.0) discard;
+          gl_FragColor = vec4(vec3(0.82, 0.9, 1.0), dot * uOpacity);
+        }
+      `,
+      uniforms: {
+        uTime: { value: 0 },
+        uSize: { value: 2.2 },
+        uOpacity: { value: 0.35 },
+      },
       transparent: true,
-      opacity: 0.32,
-      sizeAttenuation: true,
+      depthWrite: false,
+      blending: THREE.AdditiveBlending,
     });
-    const starField = new THREE.Points(starsGeo, starsMat);
+    const starField = new THREE.Points(dustGeo, dustMat);
     scene.add(starField);
     animStateRef.current.starParticles = starField;
+    animStateRef.current.dustMat = dustMat;
 
     // 7. Dynamic Tendril & Neural Graph Network System
     const tendrilGroup = new THREE.Group();
@@ -551,7 +590,7 @@ export function JobHuntConstellation({
     const branchEntries: BranchEntry[] = [];
     const crossLinks: CrossLinkEntry[] = [];
     const count = constellationData.length;
-    const baseRadius = 0.38; // roots emerge right from the star core
+    const baseRadius = 0.25;
     const phi = (1 + Math.sqrt(5)) / 2; // Golden ratio
     const MAIN_SEGMENTS = 52;
     const allNodeTips: THREE.Vector3[] = [];
@@ -822,17 +861,17 @@ export function JobHuntConstellation({
         starHaloMesh.quaternion.copy(camera.quaternion);
       }
 
-      // Animate solar gas turbulence and breathing glow
       if (starGlowMat) {
-        starGlowMat.uniforms.uTime.value = elapsedTime;
-        starGlowMat.uniforms.uBreath.value = Math.sin(elapsedTime * 1.8) * 0.08;
+        const s = elapsedTime;
+        const c = Math.sin(s * 0.9) * 0.5 + Math.sin(s * 0.37) * 0.5;
+        starGlowMat.uniforms.uTime.value = s;
+        starGlowMat.uniforms.uBreath.value = c * 0.08;
+      }
+      if (animStateRef.current.dustMat) {
+        animStateRef.current.dustMat.uniforms.uTime.value = elapsedTime;
       }
 
       // Pulsate central white-hot nucleus core
-      if (nucleusMesh) {
-        const pulseScale = 1 + Math.sin(elapsedTime * 2.2) * 0.04;
-        nucleusMesh.scale.set(pulseScale, pulseScale, pulseScale);
-      }
 
       // ORGANIC INTRO GROWTH SIMULATION:
       const activeSector = state.sector;
