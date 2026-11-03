@@ -296,7 +296,7 @@ export function JobHuntConstellation({
 
     // 5. Central Nucleus — exact jobhunt.asmcleod.com bioluminescent energy core
     // In background mode: nucleus offset to right-center so left text stays clear
-    const nucleusOffsetX = isBackground ? 1.8 : 0;
+    const nucleusOffsetX = isBackground ? 2.6 : 0;
     const nucleusGroup = new THREE.Group();
     nucleusGroup.position.set(nucleusOffsetX, 0, 0);
     scene.add(nucleusGroup);
@@ -546,7 +546,7 @@ export function JobHuntConstellation({
 
       // Smooth camera position damping / orbit
       if (state.autoRotate && !state.isPointerDown) {
-        state.targetRotY += 0.0018; // gentle cosmic spin matching jobhunt.asmcleod.com
+        state.targetRotY += 0.0010; // slow cosmic spin
       }
 
       state.rotX += (state.targetRotX - state.rotX) * 0.08;
@@ -554,8 +554,8 @@ export function JobHuntConstellation({
       state.zoom += (state.targetZoom - state.zoom) * 0.08;
 
       // In background mode: camera orbits around nucleus (right-shifted), giving left space for text
-      const lookAtX = isBackground ? 1.8 : 0;
-      const camBaseX = isBackground ? -1.8 : 0;
+      const lookAtX = isBackground ? 2.6 : 0;
+      const camBaseX = isBackground ? -2.6 : 0;
 
       const camX = camBaseX + Math.sin(state.rotY) * Math.cos(state.rotX) * state.zoom;
       const camY = Math.sin(state.rotX) * state.zoom;
@@ -566,24 +566,24 @@ export function JobHuntConstellation({
 
       // Pulsate central nucleus — jobhunt.asmcleod.com pulse rhythm
       if (nucleusMesh) {
-        const pulseScale = 1 + Math.sin(elapsedTime * 2.5) * 0.065;
+        const pulseScale = 1 + Math.sin(elapsedTime * 1.8) * 0.055;
         nucleusMesh.scale.set(pulseScale, pulseScale, pulseScale);
       }
       if (coronaMesh) {
-        coronaMesh.rotation.y = elapsedTime * 0.38;
-        coronaMesh.rotation.x = elapsedTime * 0.22;
+        coronaMesh.rotation.y = elapsedTime * 0.24;
+        coronaMesh.rotation.x = elapsedTime * 0.14;
       }
       if (sparkRing) {
-        sparkRing.rotation.y = -elapsedTime * 0.55;
+        sparkRing.rotation.y = -elapsedTime * 0.36;
       }
 
       // Update data pulses traveling along curves — from nucleus outward
       if (pulsesMesh) {
         tendrilLines.forEach((tLine, i) => {
-          const tProgress = ((elapsedTime * 0.38 + tLine.pulseOffset) % 1);
+          const tProgress = ((elapsedTime * 0.25 + tLine.pulseOffset) % 1);
           const pos = tLine.curve.getPointAt(tProgress);
           // Offset by nucleus group position
-          const worldPos = pos.clone().add(new THREE.Vector3(lookAtX, 0, 0));
+          const worldPos = pos.clone().add(new THREE.Vector3(2.6, 0, 0));
           dummyMatrix.setPosition(worldPos);
           pulsesMesh.setMatrixAt(i, dummyMatrix);
         });
@@ -627,7 +627,7 @@ export function JobHuntConstellation({
 
           // In background mode, project from nucleus-offset world position
           const tipWorld = tLine.tipVec.clone();
-          if (isBackground) tipWorld.x += 1.8;
+          if (isBackground) tipWorld.x += 2.6;
 
           const distToCam = tipWorld.distanceTo(camera.position);
 
