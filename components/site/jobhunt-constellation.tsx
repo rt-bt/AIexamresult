@@ -254,9 +254,26 @@ export function JobHuntConstellation({
 
     // 2. Camera â€” exact jobhunt.asmcleod.com FOV=40, camera offset right in bg mode
     const camera = new THREE.PerspectiveCamera(40, width / height, 0.1, 100);
+    const updateCameraProjection = (w: number, h: number) => {
+      camera.aspect = w / h;
+      if (isBackground) {
+        // Desktop: shift viewport offset so nucleus renders at ~72% screen width (right side)
+        // Leaving left side open for H1 title and search bar
+        const offsetRatio = w >= 1024 ? 0.22 : w >= 768 ? 0.14 : 0;
+        if (offsetRatio > 0) {
+          camera.setViewOffset(w, h, -w * offsetRatio, 0, w, h);
+        } else {
+          camera.clearViewOffset();
+        }
+      } else {
+        camera.clearViewOffset();
+      }
+      camera.updateProjectionMatrix();
+    };
+    updateCameraProjection(width, height);
     const initialZoom = animStateRef.current.zoom;
-    camera.position.set(isBackground ? -2.5 : 0, 1.5, initialZoom);
-    camera.lookAt(isBackground ? 1.5 : 0, 0, 0);
+    camera.position.set(0, 1.5, initialZoom);
+    camera.lookAt(0, 0, 0);
     animStateRef.current.camera = camera;
 
     // 3. WebGL Renderer â€” alpha so HeroBackground shows through
@@ -296,9 +313,8 @@ export function JobHuntConstellation({
 
     // 5. Central Nucleus â€” exact jobhunt.asmcleod.com bioluminescent energy core
     // In background mode: nucleus offset to right-center so left text stays clear
-    const nucleusOffsetX = isBackground ? 5.5 : 0;
     const nucleusGroup = new THREE.Group();
-    nucleusGroup.position.set(nucleusOffsetX, 0, 0);
+    nucleusGroup.position.set(0, 0, 0);
     scene.add(nucleusGroup);
 
     // Inner glowing sphere
@@ -387,7 +403,7 @@ export function JobHuntConstellation({
     const phi = (1 + Math.sqrt(5)) / 2; // Golden ratio
 
     const tendrilGroup = new THREE.Group();
-    tendrilGroup.position.set(nucleusOffsetX, 0, 0); // anchor to nucleus
+    tendrilGroup.position.set(0, 0, 0); // anchor to nucleus
     scene.add(tendrilGroup);
 
     const pulsePointsList: THREE.Vector3[] = [];
@@ -529,8 +545,7 @@ export function JobHuntConstellation({
       if (!containerRef.current || !animStateRef.current.renderer || !animStateRef.current.camera) return;
       const w = containerRef.current.clientWidth;
       const h = containerRef.current.clientHeight;
-      animStateRef.current.camera.aspect = w / h;
-      animStateRef.current.camera.updateProjectionMatrix();
+      updateCameraProjection(w, h);
       animStateRef.current.renderer.setSize(w, h);
     };
 
@@ -554,15 +569,12 @@ export function JobHuntConstellation({
       state.zoom += (state.targetZoom - state.zoom) * 0.08;
 
       // In background mode: camera orbits around nucleus (right-shifted), giving left space for text
-      const lookAtX = isBackground ? 5.5 : 0;
-      const camBaseX = isBackground ? -5.5 : 0;
-
-      const camX = camBaseX + Math.sin(state.rotY) * Math.cos(state.rotX) * state.zoom;
+      const camX = Math.sin(state.rotY) * Math.cos(state.rotX) * state.zoom;
       const camY = Math.sin(state.rotX) * state.zoom;
       const camZ = Math.cos(state.rotY) * Math.cos(state.rotX) * state.zoom;
 
       camera.position.set(camX, camY, camZ);
-      camera.lookAt(lookAtX, 0, 0);
+      camera.lookAt(0, 0, 0);
 
       // Pulsate central nucleus â€” jobhunt.asmcleod.com pulse rhythm
       if (nucleusMesh) {
@@ -627,8 +639,6 @@ export function JobHuntConstellation({
 
           // In background mode, project from nucleus-offset world position
           const tipWorld = tLine.tipVec.clone();
-          if (isBackground) tipWorld.x += 5.5;
-
           const distToCam = tipWorld.distanceTo(camera.position);
 
           // Project to NDC (-1 to +1)
