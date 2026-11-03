@@ -6,6 +6,9 @@ import { Header } from "@/components/site/header";
 import { Footer } from "@/components/site/footer";
 import { VoiceSearchBtn } from "@/components/site/voice-search";
 import { QuickAccess } from "@/components/site/quick-access";
+import { HeroBackground } from "@/components/HeroBackground";
+import { JobHuntConstellation } from "@/components/site/jobhunt-constellation";
+import { latestJobs, featuredResults, admitCards } from "@/lib/data";
 
 type SearchResult = {
   title: string;
@@ -29,6 +32,11 @@ function fetchSearch(q: string, signal?: AbortSignal): Promise<SearchResult[]> {
 }
 
 export default function SearchPage() {
+  const constellationJobs = [
+    ...latestJobs.slice(0, 24),
+    ...featuredResults.slice(0, 8),
+    ...admitCards.slice(0, 6),
+  ];
   const searchParams = useSearchParams();
   const initialQ = searchParams.get("q") ?? "";
 
@@ -67,35 +75,42 @@ export default function SearchPage() {
     <>
       <Header />
       <main className="bg-white min-h-screen font-sans">
-        <div className="border-b border-black/10 bg-[#eb1942] min-h-[460px] sm:min-h-[520px] md:min-h-[580px] flex items-center justify-center py-10 sm:py-16 md:py-24 px-4 sm:px-6 relative overflow-hidden">
-          {/* Fullscreen uncropped animation video (fits completely without any cropping) */}
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            src="https://pub-86dc5b5484314368ac5436a674b0d919.r2.dev/cloudinarry%20to%20cloudflare/202606021731-e_hqa6sn.mp4"
-            className="absolute inset-0 w-full h-full object-contain z-0 pointer-events-none"
-            style={{ objectPosition: "center center" }}
+        <div className="relative w-full bg-[#071322] text-white font-sans border-b border-white/10 overflow-hidden min-h-[480px] sm:min-h-[540px] md:min-h-[600px] flex items-center justify-center py-12 sm:py-16 md:py-20 px-4 sm:px-6">
+          {/* 1. Base dark navy background */}
+          <HeroBackground />
+
+          {/* 2. Full-bleed 3D JobHunt Constellation Animation */}
+          <JobHuntConstellation
+            items={constellationJobs}
+            variant="background"
           />
 
-          <div className="w-full max-w-4xl relative z-10 flex flex-col items-center text-center -mt-1 sm:-mt-3">
+          <div className="w-full max-w-4xl relative z-10 flex flex-col items-center text-center -mt-1 sm:-mt-3 pointer-events-none">
+            {/* Live Pill badge */}
+            <div className="inline-flex items-center gap-2 mb-4 px-3.5 py-1.5 rounded-full bg-black/50 border border-white/15 text-[11px] font-semibold text-white/85 backdrop-blur-md shadow-sm tracking-wide uppercase pointer-events-auto">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-70" />
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-400" />
+              </span>
+              Live • All India Exam &amp; Job Search
+            </div>
+
             {/* Cinematic H1 Heading - Fluid Responsive Scale */}
             <h1
               className="text-4xl xs:text-5xl sm:text-7xl md:text-8xl font-normal text-white tracking-tight sm:tracking-[-1.5px] max-w-4xl leading-[1.08] sm:leading-[1.02] animate-fade-rise"
               style={{ fontFamily: "'Instrument Serif', serif" }}
             >
-              Search <em className="not-italic text-neutral-300">Results</em>
+              Search <em className="not-italic text-[#00f5d4]">Results</em>
             </h1>
 
             {/* Subtext */}
-            <p className="mt-2.5 sm:mt-4 text-xs sm:text-base md:text-lg text-neutral-200/90 font-sans max-w-xl leading-relaxed px-2 sm:px-0 animate-fade-rise-delay">
+            <p className="mt-2.5 sm:mt-4 text-xs sm:text-base md:text-lg text-neutral-300 font-sans max-w-xl leading-relaxed px-2 sm:px-0 animate-fade-rise-delay">
               Find exams, scorecards, admit cards &amp; government jobs across India
             </p>
 
             {/* Liquid-Glass Search Input - Mobile Optimized */}
-            <div className="relative mt-5 sm:mt-8 w-full max-w-2xl mx-auto text-left animate-fade-rise-delay-2">
-              <div className="liquid-glass rounded-xl sm:rounded-2xl p-1 sm:p-1.5 shadow-xl transition hover:shadow-[0_0_30px_rgba(255,255,255,0.18)]">
+            <div className="relative mt-5 sm:mt-8 w-full max-w-2xl mx-auto text-left animate-fade-rise-delay-2 pointer-events-auto">
+              <div className="liquid-glass rounded-xl sm:rounded-2xl p-1 sm:p-1.5 shadow-xl transition hover:shadow-[0_0_30px_rgba(0,245,212,0.18)]">
                 <div className="relative flex items-center">
                   <input
                     ref={inputRef}
@@ -103,11 +118,11 @@ export default function SearchPage() {
                     onChange={(e) => setQuery(e.target.value)}
                     placeholder="Search exam, result, job..."
                     aria-label="Search exams, results, jobs"
-                    className="w-full rounded-lg sm:rounded-xl bg-black/40 pl-4 pr-12 sm:pl-5 sm:pr-20 py-3 sm:py-4 text-[15px] sm:text-base text-white placeholder-white/50 outline-none transition focus:bg-black/50 font-sans"
+                    className="w-full rounded-lg sm:rounded-xl bg-black/60 pl-4 pr-12 sm:pl-5 sm:pr-20 py-3 sm:py-4 text-[15px] sm:text-base text-white placeholder-white/50 outline-none transition focus:bg-black/70 font-sans border border-white/10"
                   />
                   <div className="absolute right-2 sm:right-3 top-1/2 -translate-y-1/2 flex items-center gap-1 sm:gap-1.5">
                     {loading && (
-                      <div className="h-4 w-4 animate-spin rounded-full border-2 border-white/30 border-t-[#FF5B3E]" />
+                      <div className="h-4 w-4 animate-spin rounded-full border-2 border-white/30 border-t-[#00f5d4]" />
                     )}
                     <VoiceSearchBtn
                       onResult={(q) => {
@@ -122,9 +137,9 @@ export default function SearchPage() {
             </div>
 
             {/* Quick Badges in Liquid Glass */}
-            <div className="mt-3.5 sm:mt-4 flex flex-wrap items-center justify-center gap-1.5 sm:gap-2 px-1 animate-fade-rise-delay-2 text-xs">
+            <div className="mt-3.5 sm:mt-4 flex flex-wrap items-center justify-center gap-1.5 sm:gap-2 px-1 animate-fade-rise-delay-2 text-xs pointer-events-auto">
               <span className="text-white/60 text-[11px] sm:text-[12px] font-sans">Trending:</span>
-              {["SSC CGL", "RRB NTPC", "UPSC IAS", "NEET UG", "CTET"].map((tag) => (
+              {["SSC CGL", "RRB NTPC", "UPSC IAS", "NEET UG", "CTET", "UP Police"].map((tag) => (
                 <button
                   key={tag}
                   type="button"
@@ -132,7 +147,7 @@ export default function SearchPage() {
                     setQuery(tag);
                     doSearch(tag);
                   }}
-                  className="liquid-glass rounded-full px-2.5 py-0.5 sm:px-3 sm:py-1 text-[11px] sm:text-xs text-white/90 hover:text-white active:scale-95 transition font-sans"
+                  className="rounded-full px-3 py-1 bg-white/10 hover:bg-white/20 border border-white/15 text-[11px] sm:text-xs text-white/90 hover:text-white active:scale-95 transition font-sans backdrop-blur-md"
                 >
                   {tag}
                 </button>
@@ -140,6 +155,7 @@ export default function SearchPage() {
             </div>
           </div>
         </div>
+
 
         {query.length < 2 ? (
           <div className="container-page py-6 sm:py-10 pb-28 lg:pb-16 px-4 sm:px-6">
