@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { useEffect, useRef, useState, useMemo, useCallback } from "react";
 import Link from "next/link";
@@ -107,13 +107,13 @@ function parseItem(item: PostCard, index: number): JobConstellationItem {
   let cleanTitle = t
     .replace(/\s*Online Form\s*\d{4}.*$/i, "")
     .replace(/\s*Recruitment\s*\d{4}.*$/i, "")
-    .replace(/\s*–\s*Out.*$/i, "")
-    .replace(/\s*–\s*Start.*$/i, "")
+    .replace(/\s*â€“\s*Out.*$/i, "")
+    .replace(/\s*â€“\s*Start.*$/i, "")
     .replace(/\s*\(.*?\)/g, "")
     .trim();
 
   if (cleanTitle.length > 32) {
-    cleanTitle = cleanTitle.substring(0, 30) + "…";
+    cleanTitle = cleanTitle.substring(0, 30) + "â€¦";
   }
 
   const cfg = SECTOR_CONFIG[sector] || SECTOR_CONFIG.all;
@@ -157,7 +157,7 @@ interface JobHuntConstellationProps {
 export function JobHuntConstellation({
   items = [],
   title = "Live Recruitment Constellation",
-  subtitle = "Bioluminescent 3D job galaxy · Synced with All India Exam Result",
+  subtitle = "Bioluminescent 3D job galaxy Â· Synced with All India Exam Result",
   className = "",
   height = "h-[480px] sm:h-[520px]",
   variant = "card",
@@ -247,19 +247,19 @@ export function JobHuntConstellation({
     // In card mode: nucleus centered
     const isBackground = variant === "background";
 
-    // 1. Scene — pitch-black deep space like jobhunt.asmcleod.com
+    // 1. Scene â€” pitch-black deep space like jobhunt.asmcleod.com
     const scene = new THREE.Scene();
     scene.fog = new THREE.FogExp2(0x010408, isBackground ? 0.032 : 0.045);
     animStateRef.current.scene = scene;
 
-    // 2. Camera — exact jobhunt.asmcleod.com FOV=40, camera offset right in bg mode
+    // 2. Camera â€” exact jobhunt.asmcleod.com FOV=40, camera offset right in bg mode
     const camera = new THREE.PerspectiveCamera(40, width / height, 0.1, 100);
     const initialZoom = animStateRef.current.zoom;
     camera.position.set(isBackground ? -2.5 : 0, 1.5, initialZoom);
     camera.lookAt(isBackground ? 1.5 : 0, 0, 0);
     animStateRef.current.camera = camera;
 
-    // 3. WebGL Renderer — alpha so HeroBackground shows through
+    // 3. WebGL Renderer â€” alpha so HeroBackground shows through
     let renderer: THREE.WebGLRenderer;
     try {
       renderer = new THREE.WebGLRenderer({
@@ -278,7 +278,7 @@ export function JobHuntConstellation({
       return;
     }
 
-    // 4. Lights — bioluminescent cyan + warm amber (jobhunt palette)
+    // 4. Lights â€” bioluminescent cyan + warm amber (jobhunt palette)
     const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
     scene.add(ambientLight);
 
@@ -294,9 +294,9 @@ export function JobHuntConstellation({
     amberLight.position.set(-5, -4, 4);
     scene.add(amberLight);
 
-    // 5. Central Nucleus — exact jobhunt.asmcleod.com bioluminescent energy core
+    // 5. Central Nucleus â€” exact jobhunt.asmcleod.com bioluminescent energy core
     // In background mode: nucleus offset to right-center so left text stays clear
-    const nucleusOffsetX = isBackground ? 2.6 : 0;
+    const nucleusOffsetX = isBackground ? 5.5 : 0;
     const nucleusGroup = new THREE.Group();
     nucleusGroup.position.set(nucleusOffsetX, 0, 0);
     scene.add(nucleusGroup);
@@ -335,7 +335,7 @@ export function JobHuntConstellation({
     nucleusGroup.add(coronaMesh);
     animStateRef.current.corona = coronaMesh;
 
-    // Nucleus quantum spark ring — tight golden sparks orbiting the core
+    // Nucleus quantum spark ring â€” tight golden sparks orbiting the core
     const sparkCount = 100;
     const sparkGeo = new THREE.BufferGeometry();
     const sparkPos = new Float32Array(sparkCount * 3);
@@ -358,7 +358,7 @@ export function JobHuntConstellation({
     const sparkRing = new THREE.Points(sparkGeo, sparkMat);
     nucleusGroup.add(sparkRing);
 
-    // 6. Deep stardust field — scattered across the whole scene
+    // 6. Deep stardust field â€” scattered across the whole scene
     const starsCount = isBackground ? 500 : 350;
     const starsGeo = new THREE.BufferGeometry();
     const starsPos = new Float32Array(starsCount * 3);
@@ -379,7 +379,7 @@ export function JobHuntConstellation({
     scene.add(starField);
     animStateRef.current.starParticles = starField;
 
-    // 7. Generate Tendril Curves for each Job — starting FROM nucleusGroup origin
+    // 7. Generate Tendril Curves for each Job â€” starting FROM nucleusGroup origin
     const tendrilLines: typeof animStateRef.current.tendrilLines = [];
     const count = constellationData.length;
 
@@ -407,7 +407,7 @@ export function JobHuntConstellation({
       // Base point on nucleus surface
       const p0 = normDir.clone().multiplyScalar(baseRadius);
 
-      // Strand length — jobhunt.asmcleod.com uses longer, more elegant tendrils
+      // Strand length â€” jobhunt.asmcleod.com uses longer, more elegant tendrils
       const strandLen = 5.2 + (idx % 6) * 0.38 + (idx % 2 === 0 ? 0.25 : -0.15);
 
       // Organic curve variation (bioluminescent tendrils)
@@ -432,7 +432,7 @@ export function JobHuntConstellation({
 
       const curve = new THREE.CatmullRomCurve3([p0, p1, p2, tipVec]);
 
-      // Primary strand geometry with vertex color gradient (white→sector color)
+      // Primary strand geometry with vertex color gradient (whiteâ†’sector color)
       const samplePoints = curve.getPoints(48);
       const curveGeo = new THREE.BufferGeometry().setFromPoints(samplePoints);
 
@@ -554,8 +554,8 @@ export function JobHuntConstellation({
       state.zoom += (state.targetZoom - state.zoom) * 0.08;
 
       // In background mode: camera orbits around nucleus (right-shifted), giving left space for text
-      const lookAtX = isBackground ? 2.6 : 0;
-      const camBaseX = isBackground ? -2.6 : 0;
+      const lookAtX = isBackground ? 5.5 : 0;
+      const camBaseX = isBackground ? -5.5 : 0;
 
       const camX = camBaseX + Math.sin(state.rotY) * Math.cos(state.rotX) * state.zoom;
       const camY = Math.sin(state.rotX) * state.zoom;
@@ -564,7 +564,7 @@ export function JobHuntConstellation({
       camera.position.set(camX, camY, camZ);
       camera.lookAt(lookAtX, 0, 0);
 
-      // Pulsate central nucleus — jobhunt.asmcleod.com pulse rhythm
+      // Pulsate central nucleus â€” jobhunt.asmcleod.com pulse rhythm
       if (nucleusMesh) {
         const pulseScale = 1 + Math.sin(elapsedTime * 1.8) * 0.055;
         nucleusMesh.scale.set(pulseScale, pulseScale, pulseScale);
@@ -577,7 +577,7 @@ export function JobHuntConstellation({
         sparkRing.rotation.y = -elapsedTime * 0.36;
       }
 
-      // Update data pulses traveling along curves — from nucleus outward
+      // Update data pulses traveling along curves â€” from nucleus outward
       if (pulsesMesh) {
         tendrilLines.forEach((tLine, i) => {
           const tProgress = ((elapsedTime * 0.25 + tLine.pulseOffset) % 1);
@@ -627,7 +627,7 @@ export function JobHuntConstellation({
 
           // In background mode, project from nucleus-offset world position
           const tipWorld = tLine.tipVec.clone();
-          if (isBackground) tipWorld.x += 2.6;
+          if (isBackground) tipWorld.x += 5.5;
 
           const distToCam = tipWorld.distanceTo(camera.position);
 
@@ -642,7 +642,7 @@ export function JobHuntConstellation({
               const isHovered = activeHoverId === tLine.item.id;
 
               // In background mode: block labels from left 48% so text stays readable
-              if (isBackground && !isHovered && screenX < w * 0.46) {
+              if (isBackground && !isHovered && screenX < w * 0.54) {
                 return;
               }
 
@@ -664,10 +664,10 @@ export function JobHuntConstellation({
           }
         });
 
-        // Sort by distance — closest on top
+        // Sort by distance â€” closest on top
         newLabels.sort((a, b) => a.distance - b.distance);
 
-        // Cap labels — jobhunt shows ~12 max
+        // Cap labels â€” jobhunt shows ~12 max
         setProjectedLabels(newLabels.slice(0, isBackground ? 12 : 10));
       }
 
@@ -752,7 +752,7 @@ export function JobHuntConstellation({
       {/* 1. Canvas element for WebGL 3D rendering */}
       <canvas ref={canvasRef} className="absolute inset-0 w-full h-full cursor-grab active:cursor-grabbing" />
 
-      {/* Layered overlays for Background Mode — matches jobhunt.asmcleod.com edge darkening */}
+      {/* Layered overlays for Background Mode â€” matches jobhunt.asmcleod.com edge darkening */}
       {variant === "background" && (
         <>
           {/* Left-side gradient: text stays perfectly readable over the 3D scene */}
@@ -926,7 +926,7 @@ export function JobHuntConstellation({
 
         {variant !== "background" && (
           <div className="hidden lg:flex items-center gap-2 text-[10px] text-white/40 font-mono tracking-wider uppercase bg-black/40 backdrop-blur-sm px-3 py-1 rounded-full border border-white/5 pointer-events-auto">
-            <span>{isOrbiting ? "Orbiting Galaxy..." : "Drag to Orbit · Tap Strand to View"}</span>
+            <span>{isOrbiting ? "Orbiting Galaxy..." : "Drag to Orbit Â· Tap Strand to View"}</span>
           </div>
         )}
       </div>
@@ -963,3 +963,5 @@ export function JobHuntConstellation({
 }
 
 export default JobHuntConstellation;
+
+
