@@ -53,7 +53,7 @@ export function Header() {
   }, []);
 
   return (
-    <header className="sticky top-0 z-50 bg-[#343A46] border-b border-white/[0.22] font-sans">
+    <header className="sticky top-0 z-50 bg-[#071322] border-b border-white/10 font-sans backdrop-blur-md">
       {/* Compact Main Navigation Bar */}
       <div className="container-page flex h-14 sm:h-16 items-center justify-between gap-4">
         {/* Left: Logo + Brand Title */}
@@ -88,7 +88,7 @@ export function Header() {
                   <ChevronDown className="h-3.5 w-3.5 transition-transform duration-200 group-hover:rotate-180 opacity-70" />
                 </Link>
                 <div className="invisible absolute left-0 top-full z-50 pt-2 w-52 opacity-0 -translate-y-1 scale-95 transition-all duration-150 group-hover:visible group-hover:translate-y-0 group-hover:scale-100 group-hover:opacity-100">
-                  <div className="rounded-xl border border-white/[0.22] bg-[#343A46] p-1.5 shadow-2xl backdrop-blur-xl">
+                  <div className="rounded-xl border border-white/10 bg-[#0B1A2F]/95 p-1.5 shadow-2xl backdrop-blur-xl">
                     {dropdown.map(([subLabel, subHref]) => {
                       const isSubActive = pathname === subHref;
                       return (
@@ -136,7 +136,7 @@ export function Header() {
           <Link
             href="/search"
             aria-label="Search exams"
-            className="flex items-center gap-1.5 rounded-lg border border-white/[0.22] bg-white/[0.06] hover:bg-white/[0.12] hover:text-white px-2.5 py-1.5 text-xs font-semibold text-[#D7D9DC] transition"
+            className="flex items-center gap-1.5 rounded-lg border border-white/15 bg-white/[0.06] hover:bg-white/[0.12] hover:text-white px-2.5 py-1.5 text-xs font-semibold text-[#D7D9DC] transition"
           >
             <Search className="h-3.5 w-3.5" />
             <span className="hidden md:inline">{t("nav.search")}</span>
@@ -146,7 +146,7 @@ export function Header() {
           <button
             onClick={() => setOpen((value) => !value)}
             aria-label="Toggle navigation menu"
-            className="rounded-lg border border-white/[0.22] bg-white/[0.06] hover:bg-white/[0.14] p-1.5 text-white transition active:scale-95"
+            className="rounded-lg border border-white/15 bg-white/[0.06] hover:bg-white/[0.14] p-1.5 text-white transition active:scale-95"
           >
             {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </button>
@@ -157,7 +157,7 @@ export function Header() {
       <div
         role="region"
         aria-label="Breaking Exam Updates"
-        className="overflow-hidden border-t border-white/[0.22] bg-[#2E333D]"
+        className="overflow-hidden border-t border-white/10 bg-[#050D18]"
       >
         <div className="container-page flex items-center gap-3 py-1.5 text-xs">
           <span className="flex shrink-0 items-center gap-1.5 rounded bg-[#F28A2E]/15 border border-[#F28A2E]/30 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-widest text-[#F28A2E]">
@@ -189,11 +189,11 @@ export function Header() {
       <div
         className={cn(
           "container-page grid transition-all duration-300",
-          open ? "grid-rows-[1fr] py-4 border-t border-white/[0.22]" : "grid-rows-[0fr]"
+          open ? "grid-rows-[1fr] py-4 border-t border-white/10" : "grid-rows-[0fr]"
         )}
       >
         <div className="overflow-hidden">
-          <div className="rounded-xl bg-[#2E333D] border border-white/[0.22] p-4 text-white">
+          <div className="rounded-xl bg-[#081526] border border-white/10 p-4 text-white">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
               {/* Primary Routes */}
               <div>
