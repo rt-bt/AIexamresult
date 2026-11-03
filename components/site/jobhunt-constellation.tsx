@@ -347,7 +347,9 @@ export function JobHuntConstellation({
 
     // 1. Scene — pitch-black deep cosmos
     const scene = new THREE.Scene();
-    scene.fog = new THREE.FogExp2(0x010408, isBackground ? 0.028 : 0.040);
+    if (!isBackground) {
+      scene.fog = new THREE.FogExp2(0x010408, 0.040);
+    }
     animStateRef.current.scene = scene;
 
     // 2. Camera — FOV=40, optical view offset shifts center to ~72% width on desktop
@@ -442,8 +444,9 @@ export function JobHuntConstellation({
         void main() {
           vec2 p = (vUv - 0.5) * 2.0;
           float r = length(p);
-          float t = uTime;
+          if (r >= 0.98) discard;
 
+          float t = uTime;
           vec2 dir = p / max(r, 1e-4);
           float n = snoise(vec3(dir * 1.6, r * 3.0 - t * 0.35)) * 0.6
                   + snoise(vec3(p * 4.5, t * 0.3)) * 0.4;
@@ -460,8 +463,10 @@ export function JobHuntConstellation({
                    + uCore * body * 1.5
                    + uHot * heart * 1.9;
           col *= uIntensity;
-          float edge = 1.0 - smoothstep(0.75, 1.0, r);
-          gl_FragColor = vec4(col * edge, 1.0);
+          float edge = 1.0 - smoothstep(0.65, 0.98, r);
+          float a = clamp(edge * (col.r + col.g + col.b) * 0.45, 0.0, 1.0);
+          if (a <= 0.003) discard;
+          gl_FragColor = vec4(col * edge, a);
         }
       `,
       uniforms: {
@@ -498,9 +503,12 @@ export function JobHuntConstellation({
         uniform float uFalloff;
         varying vec2 vUv;
         void main() {
-          float r = length(vUv - 0.5) * 2.0;
-          float a = exp(-r * r * uFalloff) * (1.0 - smoothstep(0.85, 1.0, r));
-          gl_FragColor = vec4(uColor * uStrength, a);
+          vec2 p = (vUv - 0.5) * 2.0;
+          float r = length(p);
+          if (r >= 0.98) discard;
+          float a = exp(-r * r * uFalloff) * (1.0 - smoothstep(0.65, 0.98, r));
+          if (a <= 0.003) discard;
+          gl_FragColor = vec4(uColor * (uStrength * a), a * uStrength);
         }
       `,
       uniforms: {
