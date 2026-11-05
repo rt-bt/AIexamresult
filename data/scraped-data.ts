@@ -2,7 +2,71 @@
 export const scrapedData = {
   "results": [
     {
-      "title": "UPSC CDS-I Final Result 2026 – Out",
+      "title": "SSC JHT 2025 FRTA Result",
+      "url": "/post/ssc-jht-2025",
+      "category": "results",
+      "slug": "ssc-jht-2025",
+      "publishedDate": "2026-11-05T17:24:51+05:30",
+      "publishedAt": "2026-11-05T11:54:51.000Z"
+    },
+    {
+      "title": "PFRDA Assistant Manager Phase-I Result 2026",
+      "url": "/post/pfrda-assistant-manager-2026",
+      "category": "results",
+      "slug": "pfrda-assistant-manager-2026",
+      "publishedDate": "2026-11-05T17:24:27+05:30",
+      "publishedAt": "2026-11-05T11:54:27.000Z"
+    },
+    {
+      "title": "BPSC DSO Result 2026",
+      "url": "/post/bpsc-dso-2026",
+      "category": "results",
+      "slug": "bpsc-dso-2026",
+      "publishedDate": "2026-11-05T17:11:52+05:30",
+      "publishedAt": "2026-11-05T11:41:52.000Z"
+    },
+    {
+      "title": "RSSB Female Supervisor Result 2026",
+      "url": "/post/rssb-female-supervisor-2026",
+      "category": "results",
+      "slug": "rssb-female-supervisor-2026",
+      "publishedDate": "2026-11-05T17:00:47+05:30",
+      "publishedAt": "2026-11-05T11:30:47.000Z"
+    },
+    {
+      "title": "RBI Office Attendant Score Card & Cutoff 2026",
+      "url": "/post/rbi-office-attendant-2026",
+      "category": "results",
+      "slug": "rbi-office-attendant-2026",
+      "publishedDate": "2026-11-04T17:24:51+05:30",
+      "publishedAt": "2026-11-04T11:54:51.000Z"
+    },
+    {
+      "title": "BSF Head Constable RO / RM Answer Key 2026",
+      "url": "/post/bsf-head-constable-ro-rm-2025",
+      "category": "results",
+      "slug": "bsf-head-constable-ro-rm-2025",
+      "publishedDate": "2026-11-04T10:42:25+05:30",
+      "publishedAt": "2026-11-04T05:12:25.000Z"
+    },
+    {
+      "title": "SSC GD Constable Final Answer Key & Marks 2026",
+      "url": "/post/ssc-gd-constable-2025",
+      "category": "results",
+      "slug": "ssc-gd-constable-2025",
+      "publishedDate": "2026-11-03T17:28:11+05:30",
+      "publishedAt": "2026-11-03T11:58:11.000Z"
+    },
+    {
+      "title": "Indian Bank Specialist Officer SO Result 2026",
+      "url": "/post/indian-bank-specialist-officer-so-2026",
+      "category": "results",
+      "slug": "indian-bank-specialist-officer-so-2026",
+      "publishedDate": "2026-11-03T13:18:13+05:30",
+      "publishedAt": "2026-11-03T07:48:13.000Z"
+    },
+    {
+      "title": "UPSC CDS-I Final Result 2026",
       "url": "/post/upsc-cds-i-2025",
       "category": "results",
       "slug": "upsc-cds-i-2025",
@@ -18,7 +82,7 @@ export const scrapedData = {
       "publishedAt": "2026-10-31T05:40:35.000Z"
     },
     {
-      "title": "UPCISB UP Cooperative Bank Various Post Result 2026 – Out",
+      "title": "UPCISB UP Cooperative Bank Various Post Result 2026",
       "url": "/post/up-co-operative-bank-various-post-2026",
       "category": "results",
       "slug": "up-co-operative-bank-various-post-2026",
@@ -58,14 +122,6 @@ export const scrapedData = {
       "publishedAt": "2026-10-29T12:08:14.000Z"
     },
     {
-      "title": "SSC CPO SI PET/ PST Result 2026",
-      "url": "/post/ssc-cpo-si-paper-i-2025",
-      "category": "results",
-      "slug": "ssc-cpo-si-paper-i-2025",
-      "publishedDate": "2026-10-29T15:18:16+05:30",
-      "publishedAt": "2026-10-29T09:48:16.000Z"
-    },
-    {
       "title": "RPSC 2nd Grade Teacher Result 2026 – Update",
       "url": "/post/rpsc-2nd-grade-teacher-2025",
       "category": "results",
@@ -90,52 +146,36 @@ export const scrapedData = {
       "publishedAt": "2026-10-27T10:54:00.000Z"
     },
     {
-      "title": "UP Home Guard Final Marks 2026",
-      "url": "/post/up-home-guard-2025",
+      "title": "Railway RRB ALP CEN 01/2025 CBAT Exam City Details 2026",
+      "url": "/post/railway-rrb-alp-advt-01-2025",
       "category": "results",
-      "slug": "up-home-guard-2025",
-      "publishedDate": "2026-10-24T12:04:57+05:30",
-      "publishedAt": "2026-10-24T06:34:57.000Z"
+      "slug": "railway-rrb-alp-advt-01-2025",
+      "publishedDate": "2026-11-05T15:18:17+05:30",
+      "publishedAt": "2026-11-05T09:48:17.000Z"
     },
     {
-      "title": "CCI Various Post Result 2026",
-      "url": "/post/cci-various-post-2026",
+      "title": "UPSSSC Junior Assistant 12/2024 Typing Test Admit Card 2026",
+      "url": "/post/upsssc-junior-assistant-advt-12-2024",
       "category": "results",
-      "slug": "cci-various-post-2026",
-      "publishedDate": "2026-10-23T22:15:25+05:30",
-      "publishedAt": "2026-10-23T16:45:25.000Z"
+      "slug": "upsssc-junior-assistant-advt-12-2024",
+      "publishedDate": "2026-11-03T17:06:20+05:30",
+      "publishedAt": "2026-11-03T11:36:20.000Z"
     },
     {
-      "title": "SSC GD Constable Revised Result 2026 – Out",
-      "url": "/post/ssc-gd-constable-2025",
+      "title": "SSC CPO SI 2025 Paper II Exam Date 2026",
+      "url": "/post/ssc-cpo-si-paper-i-2025",
       "category": "results",
-      "slug": "ssc-gd-constable-2025",
-      "publishedDate": "2026-10-23T13:43:48+05:30",
-      "publishedAt": "2026-10-23T08:13:48.000Z"
+      "slug": "ssc-cpo-si-paper-i-2025",
+      "publishedDate": "2026-11-03T14:49:28+05:30",
+      "publishedAt": "2026-11-03T09:19:28.000Z"
     },
     {
-      "title": "HPSC HCS and Allied Services Final Result 2026",
-      "url": "/post/hpsc-haryana-civil-service-hsc-2026",
+      "title": "SSB Head Constable Ministerial Typing Test Date 2026",
+      "url": "/post/ssb-head-constable-ministerial-2021",
       "category": "results",
-      "slug": "hpsc-haryana-civil-service-hsc-2026",
-      "publishedDate": "2026-10-17T13:10:42+05:30",
-      "publishedAt": "2026-10-17T07:40:42.000Z"
-    },
-    {
-      "title": "RBI Officer Grade B Final Result 2026",
-      "url": "/post/rbi-grade-b-2026",
-      "category": "results",
-      "slug": "rbi-grade-b-2026",
-      "publishedDate": "2026-10-15T20:07:12+05:30",
-      "publishedAt": "2026-10-15T14:37:12.000Z"
-    },
-    {
-      "title": "SBI PO Pre Mains Result 2026",
-      "url": "/post/sbi-po-2026",
-      "category": "results",
-      "slug": "sbi-po-2026",
-      "publishedDate": "2026-10-15T16:26:04+05:30",
-      "publishedAt": "2026-10-15T10:56:04.000Z"
+      "slug": "ssb-head-constable-ministerial-2021",
+      "publishedDate": "2026-11-03T14:34:31+05:30",
+      "publishedAt": "2026-11-03T09:04:31.000Z"
     },
     {
       "title": "RRB NTPC 10+2 UG CBTST Exam Date 2026",
@@ -144,14 +184,6 @@ export const scrapedData = {
       "slug": "rrb-ntpc-102-inter-level-2025",
       "publishedDate": "2026-11-02T15:27:42+05:30",
       "publishedAt": "2026-11-02T09:57:42.000Z"
-    },
-    {
-      "title": "BSF Head Constable RO / RM Admit Card 2026",
-      "url": "/post/bsf-head-constable-ro-rm-2025",
-      "category": "results",
-      "slug": "bsf-head-constable-ro-rm-2025",
-      "publishedDate": "2026-10-31T11:37:02+05:30",
-      "publishedAt": "2026-10-31T06:07:02.000Z"
     },
     {
       "title": "UPSC EPFO 2025 Interview Schedule 2026",
@@ -178,14 +210,6 @@ export const scrapedData = {
       "publishedAt": "2026-10-27T10:32:24.000Z"
     },
     {
-      "title": "BPSC Auditor Mains Online Form 2026",
-      "url": "/post/bihar-bpsc-auditor-2026",
-      "category": "results",
-      "slug": "bihar-bpsc-auditor-2026",
-      "publishedDate": "2026-10-29T11:58:49+05:30",
-      "publishedAt": "2026-10-29T06:28:49.000Z"
-    },
-    {
       "title": "ISRO ICRB Assistant, UDC, JPA, Stenographer Final Answer Key 2026",
       "url": "/post/isro-assistant-udc-jpa-stenographer-2026",
       "category": "results",
@@ -210,6 +234,14 @@ export const scrapedData = {
       "publishedAt": "2024-10-05T15:19:38.000Z"
     },
     {
+      "title": "BPSC Auditor Mains Online Form 2026",
+      "url": "/post/bihar-bpsc-auditor-2026",
+      "category": "results",
+      "slug": "bihar-bpsc-auditor-2026",
+      "publishedDate": "2026-10-29T11:58:49+05:30",
+      "publishedAt": "2026-10-29T06:28:49.000Z"
+    },
+    {
       "title": "BSSC Field Assistant Mains Online Form 2026",
       "url": "/post/bssc-field-assistant-2025",
       "category": "results",
@@ -218,20 +250,52 @@ export const scrapedData = {
       "publishedAt": "2026-10-31T08:30:04.000Z"
     },
     {
+      "title": "UP Home Guard Final Marks 2026",
+      "url": "/post/up-home-guard-2025",
+      "category": "results",
+      "slug": "up-home-guard-2025",
+      "publishedDate": "2026-10-24T12:04:57+05:30",
+      "publishedAt": "2026-10-24T06:34:57.000Z"
+    },
+    {
+      "title": "CCI Various Post Result 2026",
+      "url": "/post/cci-various-post-2026",
+      "category": "results",
+      "slug": "cci-various-post-2026",
+      "publishedDate": "2026-10-23T22:15:25+05:30",
+      "publishedAt": "2026-10-23T16:45:25.000Z"
+    },
+    {
+      "title": "HPSC HCS and Allied Services Final Result 2026",
+      "url": "/post/hpsc-haryana-civil-service-hsc-2026",
+      "category": "results",
+      "slug": "hpsc-haryana-civil-service-hsc-2026",
+      "publishedDate": "2026-10-17T13:10:42+05:30",
+      "publishedAt": "2026-10-17T07:40:42.000Z"
+    },
+    {
+      "title": "RBI Officer Grade B Final Result 2026",
+      "url": "/post/rbi-grade-b-2026",
+      "category": "results",
+      "slug": "rbi-grade-b-2026",
+      "publishedDate": "2026-10-15T20:07:12+05:30",
+      "publishedAt": "2026-10-15T14:37:12.000Z"
+    },
+    {
+      "title": "SBI PO Pre Mains Result 2026",
+      "url": "/post/sbi-po-2026",
+      "category": "results",
+      "slug": "sbi-po-2026",
+      "publishedDate": "2026-10-15T16:26:04+05:30",
+      "publishedAt": "2026-10-15T10:56:04.000Z"
+    },
+    {
       "title": "UP Police Constable Final Result 2026 – Out",
       "url": "/post/up-police-constable-2026",
       "category": "results",
       "slug": "up-police-constable-2026",
       "publishedDate": "2026-10-14T15:08:22+05:30",
       "publishedAt": "2026-10-14T09:38:22.000Z"
-    },
-    {
-      "title": "SSB Head Constable Ministerial Result 2026",
-      "url": "/post/ssb-head-constable-ministerial-2021",
-      "category": "results",
-      "slug": "ssb-head-constable-ministerial-2021",
-      "publishedDate": "2026-10-14T13:43:07+05:30",
-      "publishedAt": "2026-10-14T08:13:07.000Z"
     },
     {
       "title": "India Post Office GDS 1st Merit List 2026 – Out",
@@ -296,14 +360,6 @@ export const scrapedData = {
       "slug": "ibps-so-16th-2026",
       "publishedDate": "2026-10-22T16:18:15+05:30",
       "publishedAt": "2026-10-22T10:48:15.000Z"
-    },
-    {
-      "title": "Railway RRB ALP CEN 01/2025 CBAT Exam City Details 2026",
-      "url": "/post/railway-rrb-alp-advt-01-2025",
-      "category": "results",
-      "slug": "railway-rrb-alp-advt-01-2025",
-      "publishedDate": "2026-10-22T11:52:26+05:30",
-      "publishedAt": "2026-10-22T06:22:26.000Z"
     },
     {
       "title": "UPSSSC Forest Guard/ Wild Life Guard Answer Key 2026",
@@ -634,28 +690,12 @@ export const scrapedData = {
       "publishedAt": "2026-09-26T07:52:15.000Z"
     },
     {
-      "title": "UPSSSC Junior Assistant 12/2024 Typing Test New Exam Date 2026",
-      "url": "/post/upsssc-junior-assistant-advt-12-2024",
-      "category": "results",
-      "slug": "upsssc-junior-assistant-advt-12-2024",
-      "publishedDate": "2026-09-25T18:12:03+05:30",
-      "publishedAt": "2026-09-25T12:42:03.000Z"
-    },
-    {
       "title": "UP Police Constable Re-Exam Result & Cutoff 2026",
       "url": "/post/up-police-constable-re-exam-result-cutoff-2026",
       "category": "results",
       "slug": "up-police-constable-re-exam-result-cutoff-2026",
       "publishedDate": "28 September 2026",
       "publishedAt": "2026-09-28T03:11:18.849Z"
-    },
-    {
-      "title": "SSC JHT Option Cum Preference Form 2026",
-      "url": "/post/ssc-jht-2025",
-      "category": "results",
-      "slug": "ssc-jht-2025",
-      "publishedDate": "8 September 2026",
-      "publishedAt": "2026-09-08T15:00:00.000Z"
     },
     {
       "title": "RPSC Assistant Professor Result 2026",
@@ -2040,14 +2080,6 @@ export const scrapedData = {
       "slug": "bank-of-baroda-office-assistant-2025",
       "publishedDate": "28 July 2026",
       "publishedAt": "2026-07-28T14:42:22.000Z"
-    },
-    {
-      "title": "BPSC DSO Marks 2026",
-      "url": "/post/bpsc-dso-2026",
-      "category": "results",
-      "slug": "bpsc-dso-2026",
-      "publishedDate": "28 July 2026",
-      "publishedAt": "2026-07-28T11:12:24.000Z"
     },
     {
       "title": "Bank of Baroda BOB Office Assistant (Peon) Recruitment 2025 Final Result for 500 Post",
@@ -3970,46 +4002,278 @@ export const scrapedData = {
       "publishedAt": "2026-01-26T18:30:00.000Z"
     },
     {
-      "title": "All India Exam Result Air Force Airmen Group Y Recruitment 2026, Exam Result - All India Exam Result",
-      "url": "/post/air-force-airmen-group-y-recruitment-2026",
+      "title": "SSC Combined Hindi Translators JHT 2025 FRTA Result",
+      "url": "https://www.sarkariresult.com/ssc/ssc-jht-2025/",
       "category": "results",
-      "slug": "air-force-airmen-group-y-recruitment-2026",
-      "publishedDate": "12 January 2026",
-      "publishedAt": "2026-01-11T18:30:00.000Z"
+      "slug": "ssc-jht-2025",
+      "publishedDate": "2026-11-05T17:24:51+05:30",
+      "publishedAt": "2026-11-05T11:54:51.000Z"
     },
     {
-      "title": "Railway RRB NTPC Graduate Level CEN No. 06/2025 Recruitment 2025 CBT-II Result / Cutoff/ Score Card 2026 Out for 5810 Post",
-      "url": "/post/RRB-NTPC-Graduate-Level-CEN-06-2025",
+      "title": "PFRDA Officer Grade A Assistant Manager Stage I Result 2026",
+      "url": "https://www.sarkariresult.com/2026/pfrda-assistant-manager-sep26/",
       "category": "results",
-      "slug": "RRB-NTPC-Graduate-Level-CEN-06-2025",
-      "publishedDate": "27 November 2025",
-      "publishedAt": "2025-11-26T18:30:00.000Z"
+      "slug": "pfrda-assistant-manager-sep26",
+      "publishedDate": "5 September 2026",
+      "publishedAt": "2026-09-04T18:30:00.000Z"
     },
     {
-      "title": "IBPS RRB XIV Office Assistant, Scale-I, II & III Final Result/ Reserve List 2026: Out for 13294 Posts!",
-      "url": "/post/IBPS-RRB-XIV-14th-2025",
+      "title": "RSSB Women Supervisor Result 2026",
+      "url": "https://www.sarkariresult.com/rpsc/rssb-women-supervisor-01-2026/",
       "category": "results",
-      "slug": "IBPS-RRB-XIV-14th-2025",
-      "publishedDate": "28 September 2025",
-      "publishedAt": "2025-09-27T18:30:00.000Z"
+      "slug": "rssb-women-supervisor-01-2026",
+      "publishedDate": "17 July 2026",
+      "publishedAt": "2026-07-16T18:30:00.000Z"
     },
     {
-      "title": "Jute Corporation of India Ltd JCI Various Post 2024 Result",
-      "url": "/post/JIC-Various-90-Post_2024",
+      "title": "RBI Office Attendant Score Card 2026",
+      "url": "https://www.sarkariresult.com/bank/rbi-office-attendant-jan26/",
       "category": "results",
-      "slug": "JIC-Various-90-Post_2024",
-      "publishedDate": "12 August 2025",
-      "publishedAt": "2025-08-11T18:30:00.000Z"
+      "slug": "rbi-office-attendant-jan26",
+      "publishedDate": "22 June 2026",
+      "publishedAt": "2026-06-21T18:30:00.000Z"
+    },
+    {
+      "title": "SSC GD Constable 2026 Marks / Score Card",
+      "url": "https://www.sarkariresult.com/ssc/ssc-gd-2025-exam-2026/",
+      "category": "results",
+      "slug": "ssc-gd-2025-exam-2026",
+      "publishedDate": "15 June 2026",
+      "publishedAt": "2026-06-14T18:30:00.000Z"
+    },
+    {
+      "title": "UPSC CDS I 2026 Final Result",
+      "url": "https://www.sarkariresult.com/upsc/upsc-cds-i-2026/",
+      "category": "results",
+      "slug": "upsc-cds-i-2026",
+      "publishedDate": "2 November 2026",
+      "publishedAt": "2026-11-01T18:30:00.000Z"
+    },
+    {
+      "title": "Indian Bank Specialist Officer SO Result 2026 | Score Card | Interview Details",
+      "url": "https://www.sarkariresult.com/bank/indian-bank-so-apr26/",
+      "category": "results",
+      "slug": "indian-bank-so-apr26",
+      "publishedDate": "2 November 2026",
+      "publishedAt": "2026-11-01T18:30:00.000Z"
+    },
+    {
+      "title": "UPSC Combined Geo Scientist 2026 Marks",
+      "url": "https://www.sarkariresult.com/upsc/upsc-geo-scientist-2026/",
+      "category": "results",
+      "slug": "upsc-geo-scientist-2026",
+      "publishedDate": "2026-10-31T11:10:35+05:30",
+      "publishedAt": "2026-10-31T05:40:35.000Z"
+    },
+    {
+      "title": "UPCISB UP Cooperative Bank Various Post Result 2026",
+      "url": "https://www.sarkariresult.com/2026/upcisb-various-post-mar26/",
+      "category": "results",
+      "slug": "upcisb-various-post-mar26",
+      "publishedDate": "7 September 2026",
+      "publishedAt": "2026-09-06T18:30:00.000Z"
+    },
+    {
+      "title": "BPSC AES Assistant Environmental Scientist Result 2026",
+      "url": "https://www.sarkariresult.com/2026/bpsc-aes-88-2025/",
+      "category": "results",
+      "slug": "bpsc-aes-88-2025",
+      "publishedDate": "2 June 2026",
+      "publishedAt": "2026-06-01T18:30:00.000Z"
+    },
+    {
+      "title": "Railway RRB NTPC 10+2 UG Level CBT II Result | CEN 07/2025",
+      "url": "https://www.sarkariresult.com/railway/rrb-ntpc-ug-07-2025/",
+      "category": "results",
+      "slug": "rrb-ntpc-ug-07-2025",
+      "publishedDate": "5 June 2026",
+      "publishedAt": "2026-06-04T18:30:00.000Z"
+    },
+    {
+      "title": "Rajasthan RSSB Driver 2024 Result",
+      "url": "https://www.sarkariresult.com/rpsc/rssb-driver-advt-20-2024/",
+      "category": "results",
+      "slug": "rssb-driver-advt-20-2024",
+      "publishedDate": "29 October 2026",
+      "publishedAt": "2026-10-28T18:30:00.000Z"
+    },
+    {
+      "title": "SSC CPO SI 2025 PET Result 2026",
+      "url": "https://www.sarkariresult.com/ssc/ssc-cpo-si-2025/",
+      "category": "results",
+      "slug": "ssc-cpo-si-2025",
+      "publishedDate": "2 November 2026",
+      "publishedAt": "2026-11-01T18:30:00.000Z"
+    },
+    {
+      "title": "RPSC TGT Senior Teacher Gr II Result 2026 | Updated",
+      "url": "https://www.sarkariresult.com/2026/rajasthan-rpsc-senior-teacher-07-2025/",
+      "category": "results",
+      "slug": "rajasthan-rpsc-senior-teacher-07-2025",
+      "publishedDate": "1 July 2026",
+      "publishedAt": "2026-06-30T18:30:00.000Z"
+    },
+    {
+      "title": "UPPSC LT Grade Assistant Teacher 2025 Mains Result | Updated",
+      "url": "https://www.sarkariresult.com/2025/uppsc-lt-grade-teacher-2025/",
+      "category": "results",
+      "slug": "uppsc-lt-grade-teacher-2025",
+      "publishedDate": "8 June 2026",
+      "publishedAt": "2026-06-07T18:30:00.000Z"
+    },
+    {
+      "title": "BPSC Assistant Section Officer ASO 2025 Mains Result",
+      "url": "https://www.sarkariresult.com/bihar/bpsc-aso-37-2025/",
+      "category": "results",
+      "slug": "bpsc-aso-37-2025",
+      "publishedDate": "27 October 2026",
+      "publishedAt": "2026-10-26T18:30:00.000Z"
+    },
+    {
+      "title": "UPSSSC Stenographer 2023 Skill Test Result 2026",
+      "url": "https://www.sarkariresult.com/upsssc/upsssc-stenographer-09-2023/",
+      "category": "results",
+      "slug": "upsssc-stenographer-09-2023",
+      "publishedDate": "29 July 2026",
+      "publishedAt": "2026-07-28T18:30:00.000Z"
+    },
+    {
+      "title": "UPSSSC Stenographer 2024 Skill Test Result 2026",
+      "url": "https://www.sarkariresult.com/upsssc/upsssc-steno-13-exam-2024/",
+      "category": "results",
+      "slug": "upsssc-steno-13-exam-2024",
+      "publishedDate": "29 July 2026",
+      "publishedAt": "2026-07-28T18:30:00.000Z"
+    },
+    {
+      "title": "UPSC CDS II Result 2026 | Name Wise List",
+      "url": "https://www.sarkariresult.com/upsc/upsc-cds-ii-exam-2026/",
+      "category": "results",
+      "slug": "upsc-cds-ii-exam-2026",
+      "publishedDate": "26 October 2026",
+      "publishedAt": "2026-10-25T18:30:00.000Z"
+    },
+    {
+      "title": "ISRO ICRB Assistant and Other Post Result 2026",
+      "url": "https://www.sarkariresult.com/2026/isro-various-post-jul26/",
+      "category": "results",
+      "slug": "isro-various-post-jul26",
+      "publishedDate": "10 September 2026",
+      "publishedAt": "2026-09-09T18:30:00.000Z"
+    },
+    {
+      "title": "UP Police Home Guard Marks 2026",
+      "url": "https://www.sarkariresult.com/2025/up-police-home-guard-02-2025/",
+      "category": "results",
+      "slug": "up-police-home-guard-02-2025",
+      "publishedDate": "4 July 2026",
+      "publishedAt": "2026-07-03T18:30:00.000Z"
+    },
+    {
+      "title": "Cotton Corporation of India CCI Various Post Result 2026",
+      "url": "https://www.sarkariresult.com/2026/ccl-various-post-july26/",
+      "category": "results",
+      "slug": "ccl-various-post-july26",
+      "publishedDate": "21 August 2026",
+      "publishedAt": "2026-08-20T18:30:00.000Z"
+    },
+    {
+      "title": "IBPS SO 16th Pre Score Card 2026",
+      "url": "https://www.sarkariresult.com/2026/ibps-so-16th-june26/",
+      "category": "results",
+      "slug": "ibps-so-16th-june26",
+      "publishedDate": "1 July 2026",
+      "publishedAt": "2026-06-30T18:30:00.000Z"
+    },
+    {
+      "title": "SBI Junior Associates Clerk Backlog Pre Result 2026",
+      "url": "https://www.sarkariresult.com/2026/sbi-clerk-backlog-aug26/",
+      "category": "results",
+      "slug": "sbi-clerk-backlog-aug26",
+      "publishedDate": "9 September 2026",
+      "publishedAt": "2026-09-08T18:30:00.000Z"
+    },
+    {
+      "title": "SBI Probationary Officers PO Mains Result 2026",
+      "url": "https://www.sarkariresult.com/2026/sbi-po-june26/",
+      "category": "results",
+      "slug": "sbi-po-june26",
+      "publishedDate": "18 June 2026",
+      "publishedAt": "2026-06-17T18:30:00.000Z"
+    },
+    {
+      "title": "UP Police Constable Final Result 2026",
+      "url": "https://www.sarkariresult.com/2026/up-police-constable-jan26/",
+      "category": "results",
+      "slug": "up-police-constable-jan26",
+      "publishedDate": "20 June 2026",
+      "publishedAt": "2026-06-19T18:30:00.000Z"
+    },
+    {
+      "title": "SSB Head Constable Ministerial 2020 Result / Marks 2026",
+      "url": "https://www.sarkariresult.com/force/ssb-hc-ministerial-jul21/",
+      "category": "results",
+      "slug": "ssb-hc-ministerial-jul21",
+      "publishedDate": "11 June 2026",
+      "publishedAt": "2026-06-10T18:30:00.000Z"
+    },
+    {
+      "title": "UPSC NDA II Written Exam Result 2026 | Name Wise List",
+      "url": "https://www.sarkariresult.com/upsc/upsc-nda-ii-exam-2026/",
+      "category": "results",
+      "slug": "upsc-nda-ii-exam-2026",
+      "publishedDate": "13 October 2026",
+      "publishedAt": "2026-10-12T18:30:00.000Z"
+    },
+    {
+      "title": "UPSC CPF CAPF AC 2024 Marks Details 2026",
+      "url": "https://www.sarkariresult.com/upsc/upsc-cpf-ac-2024/",
+      "category": "results",
+      "slug": "upsc-cpf-ac-2024",
+      "publishedDate": "12 June 2026",
+      "publishedAt": "2026-06-11T18:30:00.000Z"
+    },
+    {
+      "title": "DSSSB Assistant Teacher Primary Result 2026",
+      "url": "https://www.sarkariresult.com/delhi/dsssb-latest-result/",
+      "category": "results",
+      "slug": "dsssb-latest-result",
+      "publishedDate": "31 July 2026",
+      "publishedAt": "2026-07-30T18:30:00.000Z"
+    },
+    {
+      "title": "UP Board Time Table 2027",
+      "url": "https://www.sarkariresult.com/2027/up-board-exam-2027/",
+      "category": "results",
+      "slug": "up-board-exam-2027",
+      "publishedDate": "13 October 2026",
+      "publishedAt": "2026-10-12T18:30:00.000Z"
+    },
+    {
+      "title": "UPSSSC Moharir 2022 Eligibility Result 2026 for 92 Post",
+      "url": "https://www.sarkariresult.com/upsssc/upsssc-moharir-07-2022/",
+      "category": "results",
+      "slug": "upsssc-moharir-07-2022",
+      "publishedDate": "12 October 2026",
+      "publishedAt": "2026-10-11T18:30:00.000Z"
+    },
+    {
+      "title": "UPSSSC UP Ganna Parvekshak Cane Supervisor Eligibility Result 2026",
+      "url": "https://www.sarkariresult.com/upsssc/upsssc-cane-13-exam-2026/",
+      "category": "results",
+      "slug": "upsssc-cane-13-exam-2026",
+      "publishedDate": "12 October 2026",
+      "publishedAt": "2026-10-11T18:30:00.000Z"
     }
   ],
   "admitCards": [
     {
-      "title": "RRB ALP CEN 01/2026 Admit Card 2026 – Out",
+      "title": "RRB ALP CEN 01/2026 Admit Card 2026",
       "url": "/post/rrb-alp-cen-01-2026",
       "category": "admitCards",
       "slug": "rrb-alp-cen-01-2026",
-      "publishedDate": "2026-11-02T18:12:59+05:30",
-      "publishedAt": "2026-11-02T12:42:59.000Z"
+      "publishedDate": "2026-11-03T17:07:06+05:30",
+      "publishedAt": "2026-11-03T11:37:06.000Z"
     },
     {
       "title": "Bihar Board Class 10th & 12th Dummy Admit Card 2027",
@@ -4060,6 +4324,14 @@ export const scrapedData = {
       "publishedAt": "2026-10-27T10:22:43.000Z"
     },
     {
+      "title": "CIPET Admit Card 2025",
+      "url": "/post/cipet-admit-card-2025",
+      "category": "admitCards",
+      "slug": "cipet-admit-card-2025",
+      "publishedDate": "2025-06-10T16:29:09+05:30",
+      "publishedAt": "2025-06-10T10:59:09.000Z"
+    },
+    {
       "title": "MPESB MP Police SI, Subedar Admit Card 2026",
       "url": "/post/mpesb-mp-police-si-subedar-2026",
       "category": "admitCards",
@@ -4082,22 +4354,6 @@ export const scrapedData = {
       "slug": "up-special-tet-2026",
       "publishedDate": "2026-10-24T11:58:02+05:30",
       "publishedAt": "2026-10-24T06:28:02.000Z"
-    },
-    {
-      "title": "CIPET Admit Card 2025",
-      "url": "/post/cipet-admit-card-2025",
-      "category": "admitCards",
-      "slug": "cipet-admit-card-2025",
-      "publishedDate": "2025-06-10T16:29:09+05:30",
-      "publishedAt": "2025-06-10T10:59:09.000Z"
-    },
-    {
-      "title": "SSC CGL Admit Card 2026",
-      "url": "/post/ssc-cgl-2026",
-      "category": "admitCards",
-      "slug": "ssc-cgl-2026",
-      "publishedDate": "2026-10-30T10:46:22+05:30",
-      "publishedAt": "2026-10-30T05:16:22.000Z"
     },
     {
       "title": "UPPSC Lecturer 2023 Exam City Details",
@@ -4506,14 +4762,6 @@ export const scrapedData = {
       "slug": "bpssc-police-havildar-instructor-bihar-home-guard-2026",
       "publishedDate": "30 July 2026",
       "publishedAt": "2026-07-30T12:41:16.000Z"
-    },
-    {
-      "title": "RSSB Female Supervisor Correction Form 2026",
-      "url": "/post/rssb-female-supervisor-2026",
-      "category": "admitCards",
-      "slug": "rssb-female-supervisor-2026",
-      "publishedDate": "28 July 2026",
-      "publishedAt": "2026-07-28T07:22:00.000Z"
     },
     {
       "title": "RPSC Junior Legal Officer JLO Admit Card 2026",
@@ -5018,6 +5266,254 @@ export const scrapedData = {
       "slug": "Indian-Navy-SSR-Medical-Assistant_02-2024-Batch",
       "publishedDate": "17 September 2024",
       "publishedAt": "2024-09-16T18:30:00.000Z"
+    },
+    {
+      "title": "UPSSSC Junior Assistant Admit Card 2026 Advt. No. 12-Exam/2024",
+      "url": "https://www.sarkariresult.com/upsssc/upsssc-jr-assistant-12-exam-2024/",
+      "category": "admitCards",
+      "slug": "upsssc-jr-assistant-12-exam-2024",
+      "publishedDate": "16 September 2026",
+      "publishedAt": "2026-09-15T18:30:00.000Z"
+    },
+    {
+      "title": "Bihar STET Admit Card 2026",
+      "url": "https://www.sarkariresult.com/2026/bseb-stet-august26/",
+      "category": "admitCards",
+      "slug": "bseb-stet-august26",
+      "publishedDate": "2 September 2026",
+      "publishedAt": "2026-09-01T18:30:00.000Z"
+    },
+    {
+      "title": "UPESSC UP Special TET Admit Card 2026",
+      "url": "https://www.sarkariresult.com/2026/up-special-tet-exam/",
+      "category": "admitCards",
+      "slug": "up-special-tet-exam",
+      "publishedDate": "7 September 2026",
+      "publishedAt": "2026-09-06T18:30:00.000Z"
+    },
+    {
+      "title": "Indian Coast Guard Navik / Yantrik CGEPT Exam Date 2026",
+      "url": "https://www.sarkariresult.com/2026/coast-guard-navik-gd-db-cgpet-01-2027/",
+      "category": "admitCards",
+      "slug": "coast-guard-navik-gd-db-cgpet-01-2027",
+      "publishedDate": "2 November 2026",
+      "publishedAt": "2026-11-01T18:30:00.000Z"
+    },
+    {
+      "title": "Concor Management Trainee, Assistant Officer Exam Date 2026",
+      "url": "https://www.sarkariresult.com/2026/concor-mt-ao-august26/",
+      "category": "admitCards",
+      "slug": "concor-mt-ao-august26",
+      "publishedDate": "1 September 2026",
+      "publishedAt": "2026-08-31T18:30:00.000Z"
+    },
+    {
+      "title": "UPSSSC PET Admit Card 2026",
+      "url": "https://www.sarkariresult.com/2026/upsssc-pet-exam-jun26/",
+      "category": "admitCards",
+      "slug": "upsssc-pet-exam-jun26",
+      "publishedDate": "1 September 2026",
+      "publishedAt": "2026-08-31T18:30:00.000Z"
+    },
+    {
+      "title": "Bihar Board BSEB 10th, 12th Dummy Admit Card 2026",
+      "url": "https://www.sarkariresult.com/2027/bihar-board-2027/",
+      "category": "admitCards",
+      "slug": "bihar-board-2027",
+      "publishedDate": "31 October 2026",
+      "publishedAt": "2026-10-30T18:30:00.000Z"
+    },
+    {
+      "title": "DHC Delhi High Court Personal Assistant SPA PA Exam Date 2026",
+      "url": "https://www.sarkariresult.com/2026/dhc-pa-spa-sep26/",
+      "category": "admitCards",
+      "slug": "dhc-pa-spa-sep26",
+      "publishedDate": "6 September 2026",
+      "publishedAt": "2026-09-05T18:30:00.000Z"
+    },
+    {
+      "title": "Railway RRB ALP CEN 01/2026 Admit Card",
+      "url": "https://www.sarkariresult.com/railway/rrb-alp-cen-01-2026/",
+      "category": "admitCards",
+      "slug": "rrb-alp-cen-01-2026",
+      "publishedDate": "2026-11-03T17:07:06+05:30",
+      "publishedAt": "2026-11-03T11:37:06.000Z"
+    },
+    {
+      "title": "SSC Junior Engineer JE Paper I Admit Card 2026",
+      "url": "https://www.sarkariresult.com/2026/ssc-junior-engineer-2026/",
+      "category": "admitCards",
+      "slug": "ssc-junior-engineer-2026",
+      "publishedDate": "2 September 2026",
+      "publishedAt": "2026-09-01T18:30:00.000Z"
+    },
+    {
+      "title": "Rajasthan RVUNL Various Post Exam Date 2026",
+      "url": "https://www.sarkariresult.com/2026/rvunl-june26/",
+      "category": "admitCards",
+      "slug": "rvunl-june26",
+      "publishedDate": "25 June 2026",
+      "publishedAt": "2026-06-24T18:30:00.000Z"
+    },
+    {
+      "title": "Jharkhand JAC JHTET Admit Card 2026",
+      "url": "https://www.sarkariresult.com/2026/jac-jhtet-2026/",
+      "category": "admitCards",
+      "slug": "jac-jhtet-2026",
+      "publishedDate": "3 June 2026",
+      "publishedAt": "2026-06-02T18:30:00.000Z"
+    },
+    {
+      "title": "Jawahar Navodaya Vidyalaya JNV NVS Class 6th Admit Card 2027",
+      "url": "https://www.sarkariresult.com/2026/nvs-class-6th-admission-july26/",
+      "category": "admitCards",
+      "slug": "nvs-class-6th-admission-july26",
+      "publishedDate": "31 July 2026",
+      "publishedAt": "2026-07-30T18:30:00.000Z"
+    },
+    {
+      "title": "CISF Constable / Fire Exam Date 2026",
+      "url": "https://www.sarkariresult.com/force/cisf-constable-fire-aug24/",
+      "category": "admitCards",
+      "slug": "cisf-constable-fire-aug24",
+      "publishedDate": "27 October 2026",
+      "publishedAt": "2026-10-26T18:30:00.000Z"
+    },
+    {
+      "title": "MPESB MP Police Sub Inspector SI Admit Card 2026",
+      "url": "https://www.sarkariresult.com/2026/mpesb-sub-inspector-subedar-sep26/",
+      "category": "admitCards",
+      "slug": "mpesb-sub-inspector-subedar-sep26",
+      "publishedDate": "1 September 2026",
+      "publishedAt": "2026-08-31T18:30:00.000Z"
+    },
+    {
+      "title": "Bank of Baroda Specialist Officer SO Admit Card 2026",
+      "url": "https://www.sarkariresult.com/2026/bank-of-baroda-so-august26/",
+      "category": "admitCards",
+      "slug": "bank-of-baroda-so-august26",
+      "publishedDate": "24 October 2026",
+      "publishedAt": "2026-10-23T18:30:00.000Z"
+    },
+    {
+      "title": "UPPSC Lecturer 2023 Exam City Details",
+      "url": "https://www.sarkariresult.com/2023/uppsc-various-june23/",
+      "category": "admitCards",
+      "slug": "uppsc-various-june23",
+      "publishedDate": "24 October 2026",
+      "publishedAt": "2026-10-23T18:30:00.000Z"
+    },
+    {
+      "title": "Railway RRB Junior Engineer JE Admit Card 2026",
+      "url": "https://www.sarkariresult.com/2026/railway-rrb-junior-engineer-cen-04-2026/",
+      "category": "admitCards",
+      "slug": "railway-rrb-junior-engineer-cen-04-2026",
+      "publishedDate": "21 July 2026",
+      "publishedAt": "2026-07-20T18:30:00.000Z"
+    },
+    {
+      "title": "National Insurance NICL Assistant Phase II Mains Admit Card 2026",
+      "url": "https://www.sarkariresult.com/2026/nicl-assistant-july26/",
+      "category": "admitCards",
+      "slug": "nicl-assistant-july26",
+      "publishedDate": "21 August 2026",
+      "publishedAt": "2026-08-20T18:30:00.000Z"
+    },
+    {
+      "title": "BSF HC RO / RM 2025 CBT Exam Admit Card 2026",
+      "url": "https://tinyurl.com/mrxs93fc",
+      "category": "admitCards",
+      "slug": "mrxs93fc",
+      "publishedDate": "",
+      "publishedAt": "2026-11-05T12:18:26.225Z"
+    },
+    {
+      "title": "MPPSC ADPO Admit Card 2026",
+      "url": "https://www.sarkariresult.com/mp/mppsc-adpo-2026/",
+      "category": "admitCards",
+      "slug": "mppsc-adpo-2026",
+      "publishedDate": "2026-10-22T11:51:49+05:30",
+      "publishedAt": "2026-10-22T06:21:49.000Z"
+    },
+    {
+      "title": "RRB ALP CEN 01/2025 CBAT Exam City Details",
+      "url": "https://www.sarkariresult.com/railway/rrb-alp-cen-01-2025/",
+      "category": "admitCards",
+      "slug": "rrb-alp-cen-01-2025",
+      "publishedDate": "12 June 2026",
+      "publishedAt": "2026-06-11T18:30:00.000Z"
+    },
+    {
+      "title": "United India Insurance UIIC AO Admit Card 2026 for 225 Post",
+      "url": "https://www.sarkariresult.com/2026/uiic-ao-sep26/",
+      "category": "admitCards",
+      "slug": "uiic-ao-sep26",
+      "publishedDate": "9 September 2026",
+      "publishedAt": "2026-09-08T18:30:00.000Z"
+    },
+    {
+      "title": "AAI Manager, Junior Executive Admit Card 2026 for 389 Post",
+      "url": "https://www.sarkariresult.com/2026/aai-manager-junior-executive-july26/",
+      "category": "admitCards",
+      "slug": "aai-manager-junior-executive-july26",
+      "publishedDate": "24 July 2026",
+      "publishedAt": "2026-07-23T18:30:00.000Z"
+    },
+    {
+      "title": "Rajasthan High Court Stenographer Admit Card 2026",
+      "url": "https://www.sarkariresult.com/2026/rajasthan-high-court-july26/",
+      "category": "admitCards",
+      "slug": "rajasthan-high-court-july26",
+      "publishedDate": "22 July 2026",
+      "publishedAt": "2026-07-21T18:30:00.000Z"
+    },
+    {
+      "title": "Delhi High Court HJS Mains Admit Card 2026",
+      "url": "https://www.sarkariresult.com/2026/delhi-hc-hjs-july26/",
+      "category": "admitCards",
+      "slug": "delhi-hc-hjs-july26",
+      "publishedDate": "1 July 2026",
+      "publishedAt": "2026-06-30T18:30:00.000Z"
+    },
+    {
+      "title": "SSC Combined Graduate Level CGL 2026 Tier I Admit Card",
+      "url": "https://www.sarkariresult.com/ssc/ssc-cgl-2026/",
+      "category": "admitCards",
+      "slug": "ssc-cgl-2026",
+      "publishedDate": "2026-11-04T17:52:22+05:30",
+      "publishedAt": "2026-11-04T12:22:22.000Z"
+    },
+    {
+      "title": "Bihar BPSC 72 Pre Exam Postponed 2026",
+      "url": "https://www.sarkariresult.com/bihar/bpsc-72-pre-exam-2026/",
+      "category": "admitCards",
+      "slug": "bpsc-72-pre-exam-2026",
+      "publishedDate": "18 July 2026",
+      "publishedAt": "2026-07-17T18:30:00.000Z"
+    },
+    {
+      "title": "UP Cooperative Bank Various Post Exam Date 2026 | Advt No. : A-2/G.R./2026",
+      "url": "https://www.sarkariresult.com/2026/upcisb-various-post-may26/",
+      "category": "admitCards",
+      "slug": "upcisb-various-post-may26",
+      "publishedDate": "6 September 2026",
+      "publishedAt": "2026-09-05T18:30:00.000Z"
+    },
+    {
+      "title": "Railway RRB Section Controller Admit Card 2026",
+      "url": "https://www.sarkariresult.com/2026/rrb-section-controller-03-2026/",
+      "category": "admitCards",
+      "slug": "rrb-section-controller-03-2026",
+      "publishedDate": "11 September 2026",
+      "publishedAt": "2026-09-10T18:30:00.000Z"
+    },
+    {
+      "title": "SKAU Kurukshetra Non Teaching Clerk Admit Card 2026",
+      "url": "https://www.sarkariresult.com/2026/skau-non-teaching-post-july26/",
+      "category": "admitCards",
+      "slug": "skau-non-teaching-post-july26",
+      "publishedDate": "8 October 2026",
+      "publishedAt": "2026-10-07T18:30:00.000Z"
     }
   ],
   "latestJobs": [
@@ -5054,60 +5550,132 @@ export const scrapedData = {
       "publishedAt": "2026-10-27T09:46:09.000Z"
     },
     {
-      "title": "SSC CPO SI CAPF Revised Exam Date 2026",
-      "url": "/post/ssc-cpo-si-capf-2026",
+      "title": "Railway RRB Ministerial & Isolated Online Form 2026",
+      "url": "/post/railway-rrb-ministerial-isolated-2026",
       "category": "latestJobs",
-      "slug": "ssc-cpo-si-capf-2026",
-      "publishedDate": "2026-10-27T11:06:13+05:30",
-      "publishedAt": "2026-10-27T05:36:13.000Z"
+      "slug": "railway-rrb-ministerial-isolated-2026",
+      "publishedDate": "2026-11-05T15:02:59+05:30",
+      "publishedAt": "2026-11-05T09:32:59.000Z"
     },
     {
-      "title": "BPSC School Teacher TRE 4.0 Online Form 2026 (33,320 Posts) – Fee Payment Last Date",
-      "url": "/post/bpsc-school-teacher-tre-4-0-2026",
+      "title": "UPESSC PRT Assistant Teacher Correction Form 2026",
+      "url": "/post/upessc-prt-assistant-teacher-2026",
       "category": "latestJobs",
-      "slug": "bpsc-school-teacher-tre-4-0-2026",
-      "publishedDate": "2026-11-02T18:12:53+05:30",
-      "publishedAt": "2026-11-02T12:42:53.000Z"
+      "slug": "upessc-prt-assistant-teacher-2026",
+      "publishedDate": "2026-11-05T14:41:56+05:30",
+      "publishedAt": "2026-11-05T09:11:56.000Z"
     },
     {
-      "title": "UPESSC UP TGT Online Form 2026 (17,735 Posts)",
-      "url": "/post/upessc-up-tgt-online-form-2026",
+      "title": "UPPSC Various Post Online Form 2026",
+      "url": "/post/uppsc-various-post-2026",
       "category": "latestJobs",
-      "slug": "upessc-up-tgt-online-form-2026",
-      "publishedDate": "2026-11-02T18:12:49+05:30",
-      "publishedAt": "2026-11-02T12:42:49.000Z"
+      "slug": "uppsc-various-post-2026",
+      "publishedDate": "2026-11-04T16:25:05+05:30",
+      "publishedAt": "2026-11-04T10:55:05.000Z"
+    },
+    {
+      "title": "Railway RRC CR Apprentice Online Form 2026",
+      "url": "/post/railway-rrc-cr-apprentice-nov-2026",
+      "category": "latestJobs",
+      "slug": "railway-rrc-cr-apprentice-nov-2026",
+      "publishedDate": "2026-11-04T16:10:56+05:30",
+      "publishedAt": "2026-11-04T10:40:56.000Z"
+    },
+    {
+      "title": "Indian Bank Apprentice Online Form 2026",
+      "url": "/post/indian-bank-apprentice-2026",
+      "category": "latestJobs",
+      "slug": "indian-bank-apprentice-2026",
+      "publishedDate": "2026-11-04T14:09:53+05:30",
+      "publishedAt": "2026-11-04T08:39:53.000Z"
+    },
+    {
+      "title": "Bihar Vidhan Sabha Office Attendant Online Form 2026",
+      "url": "/post/bihar-vidhan-sabha-office-attendant-2026",
+      "category": "latestJobs",
+      "slug": "bihar-vidhan-sabha-office-attendant-2026",
+      "publishedDate": "2026-11-04T12:49:52+05:30",
+      "publishedAt": "2026-11-04T07:19:52.000Z"
+    },
+    {
+      "title": "Bihar Vidhan Sabha Junior Secretariat Assistant JSA Online Form 2026",
+      "url": "/post/bihar-vidhan-sabha-junior-secretariat-assistant-jsa-2026",
+      "category": "latestJobs",
+      "slug": "bihar-vidhan-sabha-junior-secretariat-assistant-jsa-2026",
+      "publishedDate": "2026-11-04T12:15:13+05:30",
+      "publishedAt": "2026-11-04T06:45:13.000Z"
     },
     {
       "title": "RRB NTPC 10+2 UG Level 07/2026 Online Form 2026",
       "url": "/post/rrb-ntpc-102-ug-level-07-2026",
       "category": "latestJobs",
       "slug": "rrb-ntpc-102-ug-level-07-2026",
-      "publishedDate": "2026-11-02T18:12:41+05:30",
-      "publishedAt": "2026-11-02T12:42:41.000Z"
+      "publishedDate": "2026-11-03T16:34:21+05:30",
+      "publishedAt": "2026-11-03T11:04:21.000Z"
     },
     {
       "title": "RRB NTPC Graduate Level 06/2026 Online Form 2026 (3548 Posts)",
       "url": "/post/rrb-ntpc-graduate-level-06-2026",
       "category": "latestJobs",
       "slug": "rrb-ntpc-graduate-level-06-2026",
-      "publishedDate": "2026-11-02T18:12:35+05:30",
-      "publishedAt": "2026-11-02T12:42:35.000Z"
+      "publishedDate": "2026-11-03T16:34:17+05:30",
+      "publishedAt": "2026-11-03T11:04:17.000Z"
+    },
+    {
+      "title": "UPESSC UP TGT Online Form 2026 (17,735 Posts)",
+      "url": "/post/upessc-up-tgt-online-form-2026",
+      "category": "latestJobs",
+      "slug": "upessc-up-tgt-online-form-2026",
+      "publishedDate": "2026-11-03T16:34:13+05:30",
+      "publishedAt": "2026-11-03T11:04:13.000Z"
     },
     {
       "title": "UPPSC RO / ARO Online Form 2026",
       "url": "/post/uppsc-ro-aro-online-form-2026",
       "category": "latestJobs",
       "slug": "uppsc-ro-aro-online-form-2026",
-      "publishedDate": "2026-11-02T18:12:28+05:30",
-      "publishedAt": "2026-11-02T12:42:28.000Z"
+      "publishedDate": "2026-11-03T16:34:09+05:30",
+      "publishedAt": "2026-11-03T11:04:09.000Z"
     },
     {
       "title": "Railway RRB Station Master Online Form 2026 (1265 Posts)",
       "url": "/post/railway-rrb-station-master-2026",
       "category": "latestJobs",
       "slug": "railway-rrb-station-master-2026",
-      "publishedDate": "2026-11-02T18:12:24+05:30",
-      "publishedAt": "2026-11-02T12:42:24.000Z"
+      "publishedDate": "2026-11-03T16:34:05+05:30",
+      "publishedAt": "2026-11-03T11:04:05.000Z"
+    },
+    {
+      "title": "Semi Conductor SCL Various Post Online Form 2026",
+      "url": "/post/semi-conductor-scl-various-post-2026",
+      "category": "latestJobs",
+      "slug": "semi-conductor-scl-various-post-2026",
+      "publishedDate": "2026-11-03T15:12:00+05:30",
+      "publishedAt": "2026-11-03T09:42:00.000Z"
+    },
+    {
+      "title": "UPSSSC Junior Engineer JE Mechanical Online Form 2026",
+      "url": "/post/upsssc-junior-engineer-je-mechanical-2026",
+      "category": "latestJobs",
+      "slug": "upsssc-junior-engineer-je-mechanical-2026",
+      "publishedDate": "2026-11-03T14:57:21+05:30",
+      "publishedAt": "2026-11-03T09:27:21.000Z"
+    },
+    {
+      "title": "Supreme Court SCI Court Assistant Online Form 2026",
+      "url": "/post/supreme-court-sci-court-assistant-2026",
+      "category": "latestJobs",
+      "slug": "supreme-court-sci-court-assistant-2026",
+      "publishedDate": "2026-11-03T14:55:03+05:30",
+      "publishedAt": "2026-11-03T09:25:03.000Z"
+    },
+    {
+      "title": "PGCIL Engineer Trainee Online Form 2026",
+      "url": "/post/pgcil-engineer-trainee-2026",
+      "category": "latestJobs",
+      "slug": "pgcil-engineer-trainee-2026",
+      "publishedDate": "2026-11-03T14:53:12+05:30",
+      "publishedAt": "2026-11-03T09:23:12.000Z"
     },
     {
       "title": "ONGC Apprentice Online Form 2026 (3047 Posts)",
@@ -5134,14 +5702,6 @@ export const scrapedData = {
       "publishedAt": "2026-11-02T11:12:16.000Z"
     },
     {
-      "title": "UPESSC PRT Assistant Teacher Online Form 2026 (12405 Posts) – Extend",
-      "url": "/post/upessc-prt-assistant-teacher-2026",
-      "category": "latestJobs",
-      "slug": "upessc-prt-assistant-teacher-2026",
-      "publishedDate": "2026-10-31T13:59:49+05:30",
-      "publishedAt": "2026-10-31T08:29:49.000Z"
-    },
-    {
       "title": "Bihar BCECE Sr. Resident/ Tutor Phase 3 Online Form 2026",
       "url": "/post/bihar-bcece-sr-resident-tutor-phase-3-2026",
       "category": "latestJobs",
@@ -5150,68 +5710,20 @@ export const scrapedData = {
       "publishedAt": "2026-10-31T08:07:04.000Z"
     },
     {
-      "title": "Armed Forces AFMS SSC Medical Officer Online Form 2026",
-      "url": "/post/armed-forces-afms-ssc-medical-officer-2026",
+      "title": "BPSC School Teacher TRE 4.0 Online Form 2026 (33,320 Posts)",
+      "url": "/post/bpsc-school-teacher-tre-4-0-2026",
       "category": "latestJobs",
-      "slug": "armed-forces-afms-ssc-medical-officer-2026",
-      "publishedDate": "2026-10-31T12:07:43+05:30",
-      "publishedAt": "2026-10-31T06:37:43.000Z"
+      "slug": "bpsc-school-teacher-tre-4-0-2026",
+      "publishedDate": "2026-11-03T16:34:30+05:30",
+      "publishedAt": "2026-11-03T11:04:30.000Z"
     },
     {
-      "title": "UPESSC UP Principal Inter Level Online Form 2026 (1475 Posts)",
-      "url": "/post/upessc-up-principal-inter-level-2026",
+      "title": "NTA AISSEE Sainik School Admission Online Form 2027",
+      "url": "/post/nta-aissee-sainik-school-admission-2026",
       "category": "latestJobs",
-      "slug": "upessc-up-principal-inter-level-2026",
-      "publishedDate": "2026-10-29T12:01:12+05:30",
-      "publishedAt": "2026-10-29T06:31:12.000Z"
-    },
-    {
-      "title": "UPESSC UP Headmaster Online Form 2026 (1172 Posts)",
-      "url": "/post/upessc-up-headmaster-2026",
-      "category": "latestJobs",
-      "slug": "upessc-up-headmaster-2026",
-      "publishedDate": "2026-10-29T12:01:08+05:30",
-      "publishedAt": "2026-10-29T06:31:08.000Z"
-    },
-    {
-      "title": "UP Anganwadi Bharti Online Form 2026 (Update)",
-      "url": "/post/up-anganwadi-bharti-2026",
-      "category": "latestJobs",
-      "slug": "up-anganwadi-bharti-2026",
-      "publishedDate": "2026-10-29T12:01:04+05:30",
-      "publishedAt": "2026-10-29T06:31:04.000Z"
-    },
-    {
-      "title": "UPSSSC Inter Level Online Form 2026 (1784 Posts)",
-      "url": "/post/upsssc-inter-level-2026",
-      "category": "latestJobs",
-      "slug": "upsssc-inter-level-2026",
-      "publishedDate": "2026-10-29T12:00:54+05:30",
-      "publishedAt": "2026-10-29T06:30:54.000Z"
-    },
-    {
-      "title": "Rajasthan Safai Karamchari Correction Form 2026",
-      "url": "/post/rajasthan-safai-karamchari-2026",
-      "category": "latestJobs",
-      "slug": "rajasthan-safai-karamchari-2026",
-      "publishedDate": "2026-10-29T11:53:49+05:30",
-      "publishedAt": "2026-10-29T06:23:49.000Z"
-    },
-    {
-      "title": "ISRO URSC Various Post Online Form 2026",
-      "url": "/post/isro-ursc-various-post-2026",
-      "category": "latestJobs",
-      "slug": "isro-ursc-various-post-2026",
-      "publishedDate": "2026-10-26T16:40:36+05:30",
-      "publishedAt": "2026-10-26T11:10:36.000Z"
-    },
-    {
-      "title": "Supreme Court SCI Court Master Online Form 2026 – Start",
-      "url": "/post/sci-court-master-2026",
-      "category": "latestJobs",
-      "slug": "sci-court-master-2026",
-      "publishedDate": "2026-10-25T10:42:16+05:30",
-      "publishedAt": "2026-10-25T05:12:16.000Z"
+      "slug": "nta-aissee-sainik-school-admission-2026",
+      "publishedDate": "2026-11-03T16:57:51+05:30",
+      "publishedAt": "2026-11-03T11:27:51.000Z"
     },
     {
       "title": "NTA UGC NET JRF December Correction / Edit Form 2026",
@@ -5246,12 +5758,12 @@ export const scrapedData = {
       "publishedAt": "2026-10-14T15:53:25.000Z"
     },
     {
-      "title": "NTA SWAYAM July Online Form 2026",
-      "url": "/post/nta-swayam-2026-2",
+      "title": "UPESSC UP Principal Inter Level Online Form 2026 (1475 Posts)",
+      "url": "/post/upessc-up-principal-inter-level-2026",
       "category": "latestJobs",
-      "slug": "nta-swayam-2026-2",
-      "publishedDate": "2026-10-09T17:03:53+05:30",
-      "publishedAt": "2026-10-09T11:33:53.000Z"
+      "slug": "upessc-up-principal-inter-level-2026",
+      "publishedDate": "2026-10-29T12:01:12+05:30",
+      "publishedAt": "2026-10-29T06:31:12.000Z"
     },
     {
       "title": "Uttar Pradesh UP Scholarship Online Form 2026-27",
@@ -5382,36 +5894,44 @@ export const scrapedData = {
       "publishedAt": "2024-11-28T10:39:04.000Z"
     },
     {
-      "title": "UP Meerut ECCE Educator Online Form 2026",
-      "url": "/post/up-kasganj-ecce-educator-2026-2",
+      "title": "UP Fatehpur ECCE Educator Online Form 2026",
+      "url": "/post/up-fatehpur-ecce-educator-2026",
       "category": "latestJobs",
-      "slug": "up-kasganj-ecce-educator-2026-2",
-      "publishedDate": "2026-10-29T17:19:55+05:30",
-      "publishedAt": "2026-10-29T11:49:55.000Z"
-    },
-    {
-      "title": "UP Kasganj ECCE Educator Online Form 2026",
-      "url": "/post/up-kasganj-ecce-educator-2026",
-      "category": "latestJobs",
-      "slug": "up-kasganj-ecce-educator-2026",
-      "publishedDate": "2026-10-29T17:15:29+05:30",
-      "publishedAt": "2026-10-29T11:45:29.000Z"
-    },
-    {
-      "title": "UP Kushinagar ECCE Educator Online Form 2026",
-      "url": "/post/up-kushinagar-ecce-educator-2026",
-      "category": "latestJobs",
-      "slug": "up-kushinagar-ecce-educator-2026",
-      "publishedDate": "2026-10-29T17:09:21+05:30",
-      "publishedAt": "2026-10-29T11:39:21.000Z"
+      "slug": "up-fatehpur-ecce-educator-2026",
+      "publishedDate": "2026-11-03T16:40:39+05:30",
+      "publishedAt": "2026-11-03T11:10:39.000Z"
     },
     {
       "title": "UP Shahjahanpur ECCE Educator Online Form 2026",
       "url": "/post/up-shahjahanpur-ecce-educator-2026-2",
       "category": "latestJobs",
       "slug": "up-shahjahanpur-ecce-educator-2026-2",
-      "publishedDate": "2026-10-24T14:17:56+05:30",
-      "publishedAt": "2026-10-24T08:47:56.000Z"
+      "publishedDate": "2026-11-03T16:40:36+05:30",
+      "publishedAt": "2026-11-03T11:10:36.000Z"
+    },
+    {
+      "title": "UP Kasganj ECCE Educator Online Form 2026",
+      "url": "/post/up-kasganj-ecce-educator-2026",
+      "category": "latestJobs",
+      "slug": "up-kasganj-ecce-educator-2026",
+      "publishedDate": "2026-11-03T16:40:28+05:30",
+      "publishedAt": "2026-11-03T11:10:28.000Z"
+    },
+    {
+      "title": "UP Kushinagar ECCE Educator Online Form 2026",
+      "url": "/post/up-kushinagar-ecce-educator-2026",
+      "category": "latestJobs",
+      "slug": "up-kushinagar-ecce-educator-2026",
+      "publishedDate": "2026-11-03T16:40:25+05:30",
+      "publishedAt": "2026-11-03T11:10:25.000Z"
+    },
+    {
+      "title": "UP Meerut ECCE Educator Online Form 2026",
+      "url": "/post/up-kasganj-ecce-educator-2026-2",
+      "category": "latestJobs",
+      "slug": "up-kasganj-ecce-educator-2026-2",
+      "publishedDate": "2026-11-03T16:40:17+05:30",
+      "publishedAt": "2026-11-03T11:10:17.000Z"
     },
     {
       "title": "UP Hamirpur ECCE Educator Online Form 2026",
@@ -5428,14 +5948,6 @@ export const scrapedData = {
       "slug": "up-budaun-ecce-educator-2026",
       "publishedDate": "2026-10-24T14:09:49+05:30",
       "publishedAt": "2026-10-24T08:39:49.000Z"
-    },
-    {
-      "title": "UP Fatehpur ECCE Educator Online Form 2026",
-      "url": "/post/up-fatehpur-ecce-educator-2026",
-      "category": "latestJobs",
-      "slug": "up-fatehpur-ecce-educator-2026",
-      "publishedDate": "2026-10-24T14:04:59+05:30",
-      "publishedAt": "2026-10-24T08:34:59.000Z"
     },
     {
       "title": "UP Kanpur ECCE Educator Online Form 2026",
@@ -5460,6 +5972,14 @@ export const scrapedData = {
       "slug": "up-hapur-ecce-educator-2026",
       "publishedDate": "2026-10-16T17:38:19+05:30",
       "publishedAt": "2026-10-16T12:08:19.000Z"
+    },
+    {
+      "title": "Rajasthan Safai Karamchari Online Form 2026 (24752 Posts) Last Date",
+      "url": "/post/rajasthan-safai-karamchari-2026",
+      "category": "latestJobs",
+      "slug": "rajasthan-safai-karamchari-2026",
+      "publishedDate": "2026-10-29T11:53:49+05:30",
+      "publishedAt": "2026-10-29T06:23:49.000Z"
     },
     {
       "title": "Supreme Court SCI Junior Court Assistant Online Form 2026 – Last Date",
@@ -5494,12 +6014,20 @@ export const scrapedData = {
       "publishedAt": "2026-10-28T05:32:17.000Z"
     },
     {
-      "title": "Indian Coast Guard CGEPT 01/2027 & 02/2027 Online Correction Form – Last Date",
-      "url": "/post/indian-coast-guard-cgept-01-2027-02-2027",
+      "title": "ISRO URSC Various Post Online Form 2026",
+      "url": "/post/isro-ursc-various-post-2026",
       "category": "latestJobs",
-      "slug": "indian-coast-guard-cgept-01-2027-02-2027",
-      "publishedDate": "2026-10-28T11:00:00+05:30",
-      "publishedAt": "2026-10-28T05:30:00.000Z"
+      "slug": "isro-ursc-various-post-2026",
+      "publishedDate": "2026-10-26T16:40:36+05:30",
+      "publishedAt": "2026-10-26T11:10:36.000Z"
+    },
+    {
+      "title": "Supreme Court SCI Court Master Online Form 2026 – Start",
+      "url": "/post/sci-court-master-2026",
+      "category": "latestJobs",
+      "slug": "sci-court-master-2026",
+      "publishedDate": "2026-10-25T10:42:16+05:30",
+      "publishedAt": "2026-10-25T05:12:16.000Z"
     },
     {
       "title": "LIC HFL Apprentice Online Form 2026",
@@ -5508,6 +6036,14 @@ export const scrapedData = {
       "slug": "lic-hfl-apprentice-2026",
       "publishedDate": "2026-10-24T12:36:04+05:30",
       "publishedAt": "2026-10-24T07:06:04.000Z"
+    },
+    {
+      "title": "UPESSC UP Headmaster Online Form 2026 (1172 Posts)",
+      "url": "/post/upessc-up-headmaster-2026",
+      "category": "latestJobs",
+      "slug": "upessc-up-headmaster-2026",
+      "publishedDate": "2026-10-29T12:01:08+05:30",
+      "publishedAt": "2026-10-29T06:31:08.000Z"
     },
     {
       "title": "Railway RRC NWR Apprentice Online Form 2026 ( 2008 Posts)",
@@ -5522,8 +6058,8 @@ export const scrapedData = {
       "url": "/post/railway-rrb-isolated-categories-2026",
       "category": "latestJobs",
       "slug": "railway-rrb-isolated-categories-2026",
-      "publishedDate": "2026-10-22T12:23:01+05:30",
-      "publishedAt": "2026-10-22T06:53:01.000Z"
+      "publishedDate": "2026-11-05T15:02:59+05:30",
+      "publishedAt": "2026-11-05T09:32:59.000Z"
     },
     {
       "title": "BHEL Artisan Various Trade Online Form 2026",
@@ -5548,6 +6084,22 @@ export const scrapedData = {
       "slug": "supreme-court-spa-2026",
       "publishedDate": "2026-10-20T13:49:18+05:30",
       "publishedAt": "2026-10-20T08:19:18.000Z"
+    },
+    {
+      "title": "UP Anganwadi Bharti Online Form 2026 (Update)",
+      "url": "/post/up-anganwadi-bharti-2026",
+      "category": "latestJobs",
+      "slug": "up-anganwadi-bharti-2026",
+      "publishedDate": "2026-10-29T12:01:04+05:30",
+      "publishedAt": "2026-10-29T06:31:04.000Z"
+    },
+    {
+      "title": "UPSSSC Inter Level Online Form 2026 (1784 Posts)",
+      "url": "/post/upsssc-inter-level-2026",
+      "category": "latestJobs",
+      "slug": "upsssc-inter-level-2026",
+      "publishedDate": "2026-10-29T12:00:54+05:30",
+      "publishedAt": "2026-10-29T06:30:54.000Z"
     },
     {
       "title": "MP Police Constable Driver Online Form 2026",
@@ -5602,8 +6154,8 @@ export const scrapedData = {
       "url": "/post/upsssc-sports-directorate-2026",
       "category": "latestJobs",
       "slug": "upsssc-sports-directorate-2026",
-      "publishedDate": "2026-10-14T14:05:26+05:30",
-      "publishedAt": "2026-10-14T08:35:26.000Z"
+      "publishedDate": "2026-11-04T17:35:27+05:30",
+      "publishedAt": "2026-11-04T12:05:27.000Z"
     },
     {
       "title": "UCO Bank Apprentice Online Form 2026",
@@ -5612,14 +6164,6 @@ export const scrapedData = {
       "slug": "uco-bank-apprentice-2026",
       "publishedDate": "2026-10-29T14:38:31+05:30",
       "publishedAt": "2026-10-29T09:08:31.000Z"
-    },
-    {
-      "title": "Supreme Court SCI Court Assistant Online Form 2026",
-      "url": "/post/supreme-court-sci-court-assistant-2026",
-      "category": "latestJobs",
-      "slug": "supreme-court-sci-court-assistant-2026",
-      "publishedDate": "2026-10-13T19:29:04+05:30",
-      "publishedAt": "2026-10-13T13:59:04.000Z"
     },
     {
       "title": "MPESB Group 3 Sub Engineer & Other Post Online Form 2026 – Re-Open",
@@ -5636,14 +6180,6 @@ export const scrapedData = {
       "slug": "dsssb-sweeper-chowkidar-2026",
       "publishedDate": "2026-10-13T14:43:59+05:30",
       "publishedAt": "2026-10-13T09:13:59.000Z"
-    },
-    {
-      "title": "UPSSSC Junior Engineer JE Mechanical Online Form 2026",
-      "url": "/post/upsssc-junior-engineer-je-mechanical-2026",
-      "category": "latestJobs",
-      "slug": "upsssc-junior-engineer-je-mechanical-2026",
-      "publishedDate": "2026-10-12T17:43:04+05:30",
-      "publishedAt": "2026-10-12T12:13:04.000Z"
     },
     {
       "title": "UPSSSC Junior Engineer JE Electrical Online Form 2026",
@@ -5666,8 +6202,8 @@ export const scrapedData = {
       "url": "/post/dsssb-delhi-district-court-various-post-2026",
       "category": "latestJobs",
       "slug": "dsssb-delhi-district-court-various-post-2026",
-      "publishedDate": "2026-10-06T17:42:44+05:30",
-      "publishedAt": "2026-10-06T12:12:44.000Z"
+      "publishedDate": "2026-11-04T17:35:17+05:30",
+      "publishedAt": "2026-11-04T12:05:17.000Z"
     },
     {
       "title": "IBPS RRB XV 15th Scale-I, II, III Correction Form 2026",
@@ -5682,8 +6218,8 @@ export const scrapedData = {
       "url": "/post/iocl-apprentice-2026",
       "category": "latestJobs",
       "slug": "iocl-apprentice-2026",
-      "publishedDate": "2026-10-05T16:20:35+05:30",
-      "publishedAt": "2026-10-05T10:50:35.000Z"
+      "publishedDate": "2026-11-04T17:34:56+05:30",
+      "publishedAt": "2026-11-04T12:04:56.000Z"
     },
     {
       "title": "Indian Army TGC 145 Online Form 2026",
@@ -6092,6 +6628,30 @@ export const scrapedData = {
       "slug": "indian-army-ncc-special-entry-scheme-58th-course-recruitment-2025-start",
       "publishedDate": "2025-02-24T10:37:24+05:30",
       "publishedAt": "2025-02-24T05:07:24.000Z"
+    },
+    {
+      "title": "SSC CPO SI CAPF Revised Exam Date 2026",
+      "url": "/post/ssc-cpo-si-capf-2026",
+      "category": "latestJobs",
+      "slug": "ssc-cpo-si-capf-2026",
+      "publishedDate": "2026-10-27T11:06:13+05:30",
+      "publishedAt": "2026-10-27T05:36:13.000Z"
+    },
+    {
+      "title": "Armed Forces AFMS SSC Medical Officer Online Form 2026",
+      "url": "/post/armed-forces-afms-ssc-medical-officer-2026",
+      "category": "latestJobs",
+      "slug": "armed-forces-afms-ssc-medical-officer-2026",
+      "publishedDate": "2026-10-31T12:07:43+05:30",
+      "publishedAt": "2026-10-31T06:37:43.000Z"
+    },
+    {
+      "title": "NTA SWAYAM July Online Form 2026",
+      "url": "/post/nta-swayam-2026-2",
+      "category": "latestJobs",
+      "slug": "nta-swayam-2026-2",
+      "publishedDate": "2026-10-09T17:03:53+05:30",
+      "publishedAt": "2026-10-09T11:33:53.000Z"
     },
     {
       "title": "Bihar BSSC Stenographer 2025 Online Correction Form 2026",
@@ -6534,14 +7094,6 @@ export const scrapedData = {
       "publishedAt": "2026-09-28T03:11:18.686Z"
     },
     {
-      "title": "PFRDA Assistant Manager Online Form 2026 – Last Date",
-      "url": "/post/pfrda-assistant-manager-2026",
-      "category": "latestJobs",
-      "slug": "pfrda-assistant-manager-2026",
-      "publishedDate": "2026-09-24T13:46:57+05:30",
-      "publishedAt": "2026-09-24T08:16:57.000Z"
-    },
-    {
       "title": "Bihar BCECEB BSFC Various Post Online Form 2026 – Last Date",
       "url": "/post/bihar-bceceb-bsfc-various-post-2026",
       "category": "latestJobs",
@@ -6564,14 +7116,6 @@ export const scrapedData = {
       "slug": "railway-rrc-sr-apprentice-2026",
       "publishedDate": "2026-09-10T14:48:26+05:30",
       "publishedAt": "2026-09-10T09:18:26.000Z"
-    },
-    {
-      "title": "SSC JHT Option Cum Preference Form 2026",
-      "url": "/post/ssc-jht-2025",
-      "category": "latestJobs",
-      "slug": "ssc-jht-2025",
-      "publishedDate": "8 September 2026",
-      "publishedAt": "2026-09-08T15:00:00.000Z"
     },
     {
       "title": "NTPC NSPCL Various Post Online Form 2026 – Last Date",
@@ -8974,62 +9518,286 @@ export const scrapedData = {
       "publishedAt": "2025-09-18T18:30:00.000Z"
     },
     {
-      "title": "Bihar SHS Laboratory Technician Recruitment 2025 Notification Out",
-      "url": "/post/bihar-shs-laboratory-technician-online-form-2025",
+      "title": "UPESSC UP Primary Teacher (Super TET) Correction / Edit Form 2026",
+      "url": "https://www.sarkariresult.com/2026/upessc-up-primary-teacher-05-2026/",
       "category": "latestJobs",
-      "slug": "bihar-shs-laboratory-technician-online-form-2025",
-      "publishedDate": "3 September 2025",
-      "publishedAt": "2025-09-02T18:30:00.000Z"
+      "slug": "upessc-up-primary-teacher-05-2026",
+      "publishedDate": "17 September 2026",
+      "publishedAt": "2026-09-16T18:30:00.000Z"
     },
     {
-      "title": "Bombay High Court Personal Assistant Recruitment 2025",
-      "url": "/post/bombay-high-court-personal-assistant-recruitment-2025",
+      "title": "National Insurance NICL Graduate Apprentice Online Form 2026",
+      "url": "https://www.sarkariresult.com/2026/nicl-apprentice-nov26/",
       "category": "latestJobs",
-      "slug": "bombay-high-court-personal-assistant-recruitment-2025",
-      "publishedDate": "3 September 2025",
-      "publishedAt": "2025-09-02T18:30:00.000Z"
+      "slug": "nicl-apprentice-nov26",
+      "publishedDate": "5 November 2026",
+      "publishedAt": "2026-11-04T18:30:00.000Z"
     },
     {
-      "title": "Railway RRC ER Apprentices Recruitment 2025,For 3115 Posts, 10th Pass",
-      "url": "/post/railway-rrc-er-apprentices-recruitment-2025",
+      "title": "Railway RRB Ministerial and Isolated Post Online Form 2026",
+      "url": "https://www.sarkariresult.com/2026/rrb-ministerial-isolated-cen-09-2026/",
       "category": "latestJobs",
-      "slug": "railway-rrc-er-apprentices-recruitment-2025",
-      "publishedDate": "3 September 2025",
-      "publishedAt": "2025-09-02T18:30:00.000Z"
+      "slug": "rrb-ministerial-isolated-cen-09-2026",
+      "publishedDate": "5 November 2026",
+      "publishedAt": "2026-11-04T18:30:00.000Z"
     },
     {
-      "title": "RSSB Support Engineer Recruitment 2025 Short Notice Out",
-      "url": "/post/rssb-support-engineer-recruitment-2025",
+      "title": "Supreme Court of India Junior Court Attendant Online Form 2026",
+      "url": "https://www.sarkariresult.com/2026/supreme-court-of-india-jca-oct26/",
       "category": "latestJobs",
-      "slug": "rssb-support-engineer-recruitment-2025",
-      "publishedDate": "3 September 2025",
-      "publishedAt": "2025-09-02T18:30:00.000Z"
+      "slug": "supreme-court-of-india-jca-oct26",
+      "publishedDate": "4 November 2026",
+      "publishedAt": "2026-11-03T18:30:00.000Z"
     },
     {
-      "title": "Bank of Baroda Sales Manager & Officer Recruitment 2025",
-      "url": "/post/bank-of-baroda-sales-manager-officer-recruitment-2025",
+      "title": "Railway RRB Station Master Online Form 2026",
+      "url": "https://www.sarkariresult.com/2026/rrb-station-master-08-26/",
       "category": "latestJobs",
-      "slug": "bank-of-baroda-sales-manager-officer-recruitment-2025",
-      "publishedDate": "11 August 2025",
-      "publishedAt": "2025-08-10T18:30:00.000Z"
+      "slug": "rrb-station-master-08-26",
+      "publishedDate": "26 October 2026",
+      "publishedAt": "2026-10-25T18:30:00.000Z"
     },
     {
-      "title": "Indian Army JAG 123rd Course April 2026 Online Form",
-      "url": "/post/indian-army-jag-123rd-course-april-2026-online-form",
+      "title": "UPESSC UP TGT Online Form 2026",
+      "url": "https://www.sarkariresult.com/2026/upessc-up-tgt-07-2026/",
       "category": "latestJobs",
-      "slug": "indian-army-jag-123rd-course-april-2026-online-form",
-      "publishedDate": "11 August 2025",
-      "publishedAt": "2025-08-10T18:30:00.000Z"
+      "slug": "upessc-up-tgt-07-2026",
+      "publishedDate": "4 November 2026",
+      "publishedAt": "2026-11-03T18:30:00.000Z"
+    },
+    {
+      "title": "UPPSC RO / ARO Online Form 2026",
+      "url": "https://www.sarkariresult.com/2026/uppsc-ro-aro-jun26/",
+      "category": "latestJobs",
+      "slug": "uppsc-ro-aro-jun26",
+      "publishedDate": "26 October 2026",
+      "publishedAt": "2026-10-25T18:30:00.000Z"
+    },
+    {
+      "title": "DSSSB Delhi District Courts Various Post Online Form 2026",
+      "url": "https://www.sarkariresult.com/2026/dsssb-various-post-oct26/",
+      "category": "latestJobs",
+      "slug": "dsssb-various-post-oct26",
+      "publishedDate": "27 October 2026",
+      "publishedAt": "2026-10-26T18:30:00.000Z"
+    },
+    {
+      "title": "Railway RRB NTPC Graduate Level Online Form 2026 | CEN 06/2026",
+      "url": "https://www.sarkariresult.com/2026/rrb-ntpc-graduate-cen-06-2026/",
+      "category": "latestJobs",
+      "slug": "rrb-ntpc-graduate-cen-06-2026",
+      "publishedDate": "16 October 2026",
+      "publishedAt": "2026-10-15T18:30:00.000Z"
+    },
+    {
+      "title": "Railway RRB NTPC 10+2 Under Graduate Online Form 2026",
+      "url": "https://www.sarkariresult.com/railway/railway-rrb-ntpc-ug-level-07-2026/",
+      "category": "latestJobs",
+      "slug": "railway-rrb-ntpc-ug-level-07-2026",
+      "publishedDate": "16 October 2026",
+      "publishedAt": "2026-10-15T18:30:00.000Z"
+    },
+    {
+      "title": "PGCIL Engineer Trainee Online Form 2026",
+      "url": "https://www.sarkariresult.com/2026/pgcil-engineer-trainee-nov26/",
+      "category": "latestJobs",
+      "slug": "pgcil-engineer-trainee-nov26",
+      "publishedDate": "3 November 2026",
+      "publishedAt": "2026-11-02T18:30:00.000Z"
+    },
+    {
+      "title": "UPSSSC Combined Junior Engineer (Mechanical) Online Form 2026",
+      "url": "https://www.sarkariresult.com/2026/upsssc-junior-engg-adv-24-exam/",
+      "category": "latestJobs",
+      "slug": "upsssc-junior-engg-adv-24-exam",
+      "publishedDate": "3 November 2026",
+      "publishedAt": "2026-11-02T18:30:00.000Z"
+    },
+    {
+      "title": "Supreme Court of India Court Assistant Technical Online Form 2026",
+      "url": "https://www.sarkariresult.com/2026/supreme-court-of-india-cat-nov26/",
+      "category": "latestJobs",
+      "slug": "supreme-court-of-india-cat-nov26",
+      "publishedDate": "3 November 2026",
+      "publishedAt": "2026-11-02T18:30:00.000Z"
+    },
+    {
+      "title": "NTA UGC NET December 2026 Correction / Edit Form",
+      "url": "https://www.sarkariresult.com/railway/nta-csir-ugc-net-dec2026/",
+      "category": "latestJobs",
+      "slug": "nta-csir-ugc-net-dec2026",
+      "publishedDate": "10 October 2026",
+      "publishedAt": "2026-10-09T18:30:00.000Z"
+    },
+    {
+      "title": "BCECEB Senior Resident and Tutor Online Form 2026",
+      "url": "https://www.sarkariresult.com/2026/bceceb-sr-resident-tutor-oct26/",
+      "category": "latestJobs",
+      "slug": "bceceb-sr-resident-tutor-oct26",
+      "publishedDate": "1 November 2026",
+      "publishedAt": "2026-10-31T18:30:00.000Z"
+    },
+    {
+      "title": "AFMS Medical Officer Online Form 2026",
+      "url": "https://www.sarkariresult.com/2026/afms-ssc-medical-officer-oct26/",
+      "category": "latestJobs",
+      "slug": "afms-ssc-medical-officer-oct26",
+      "publishedDate": "1 November 2026",
+      "publishedAt": "2026-10-31T18:30:00.000Z"
+    },
+    {
+      "title": "RITES Assistant Manager Online Form 2026",
+      "url": "https://www.sarkariresult.com/2026/rites-assistant-manager-oct26/",
+      "category": "latestJobs",
+      "slug": "rites-assistant-manager-oct26",
+      "publishedDate": "31 October 2026",
+      "publishedAt": "2026-10-30T18:30:00.000Z"
+    },
+    {
+      "title": "AEES Teaching Various Post Online Form 2026",
+      "url": "https://www.sarkariresult.com/2026/aees-teaching-various-post-nov26/",
+      "category": "latestJobs",
+      "slug": "aees-teaching-various-post-nov26",
+      "publishedDate": "4 November 2026",
+      "publishedAt": "2026-11-03T18:30:00.000Z"
+    },
+    {
+      "title": "ONGC Various Trade Apprentice Online Form 2026",
+      "url": "https://www.sarkariresult.com/2026/ongc-various-trade-apprentice-oct26/",
+      "category": "latestJobs",
+      "slug": "ongc-various-trade-apprentice-oct26",
+      "publishedDate": "31 October 2026",
+      "publishedAt": "2026-10-30T18:30:00.000Z"
+    },
+    {
+      "title": "Dr RMLIMS Lucknow Non Teaching Various Post Online Form 2026",
+      "url": "https://www.sarkariresult.com/2026/drrmlims-lucknow-post-oct26/",
+      "category": "latestJobs",
+      "slug": "drrmlims-lucknow-post-oct26",
+      "publishedDate": "29 October 2026",
+      "publishedAt": "2026-10-28T18:30:00.000Z"
+    },
+    {
+      "title": "ISRO URSC Technician and Driver Online Form 2026",
+      "url": "https://www.sarkariresult.com/2026/isro-ursc-technician-driver-04-26/",
+      "category": "latestJobs",
+      "slug": "isro-ursc-technician-driver-04-26",
+      "publishedDate": "29 October 2026",
+      "publishedAt": "2026-10-28T18:30:00.000Z"
+    },
+    {
+      "title": "Rajasthan Safai Karamchari Online Correction / Edit Form 2026",
+      "url": "https://www.sarkariresult.com/2026/rajasthan-sanitation-worker-jul26/",
+      "category": "latestJobs",
+      "slug": "rajasthan-sanitation-worker-jul26",
+      "publishedDate": "28 July 2026",
+      "publishedAt": "2026-07-27T18:30:00.000Z"
+    },
+    {
+      "title": "Bihar BPSC School Teacher TRE 4 Online Form 2026 | Date Extended",
+      "url": "https://www.sarkariresult.com/bihar/bpsc-tre-4-2026/",
+      "category": "latestJobs",
+      "slug": "bpsc-tre-4-2026",
+      "publishedDate": "29 July 2026",
+      "publishedAt": "2026-07-28T18:30:00.000Z"
+    },
+    {
+      "title": "UPESSC UP Headmaster Online Form 2026",
+      "url": "https://www.sarkariresult.com/2026/upessc-up-headmaster-09-2026/",
+      "category": "latestJobs",
+      "slug": "upessc-up-headmaster-09-2026",
+      "publishedDate": "4 November 2026",
+      "publishedAt": "2026-11-03T18:30:00.000Z"
+    },
+    {
+      "title": "LIC HFL Apprentice Online Online Form 2026",
+      "url": "https://www.sarkariresult.com/2026/lic-hfl-apprentice-oct26/",
+      "category": "latestJobs",
+      "slug": "lic-hfl-apprentice-oct26",
+      "publishedDate": "23 October 2026",
+      "publishedAt": "2026-10-22T18:30:00.000Z"
+    },
+    {
+      "title": "UPESSC UP Principal Inter Level Online Form 2026",
+      "url": "https://www.sarkariresult.com/2026/upessc-up-principal-08-2026/",
+      "category": "latestJobs",
+      "slug": "upessc-up-principal-08-2026",
+      "publishedDate": "4 November 2026",
+      "publishedAt": "2026-11-03T18:30:00.000Z"
+    },
+    {
+      "title": "NWR RRC Jaipur Apprentices Online Form 2026",
+      "url": "https://www.sarkariresult.com/2026/nwr-rrc-jaipur-apprentices-04-2026/",
+      "category": "latestJobs",
+      "slug": "nwr-rrc-jaipur-apprentices-04-2026",
+      "publishedDate": "22 October 2026",
+      "publishedAt": "2026-10-21T18:30:00.000Z"
+    },
+    {
+      "title": "BHEL Artisan Various Trade Post Online Form 2026",
+      "url": "https://www.sarkariresult.com/2026/bhel-artisan-various-trade-oct26/",
+      "category": "latestJobs",
+      "slug": "bhel-artisan-various-trade-oct26",
+      "publishedDate": "30 October 2026",
+      "publishedAt": "2026-10-29T18:30:00.000Z"
+    },
+    {
+      "title": "UPSSSC Physical Instructor & Other Post Online Form 2026",
+      "url": "https://www.sarkariresult.com/2026/upsssc-23-exam-2026/",
+      "category": "latestJobs",
+      "slug": "upsssc-23-exam-2026",
+      "publishedDate": "23 October 2026",
+      "publishedAt": "2026-10-22T18:30:00.000Z"
+    },
+    {
+      "title": "Supreme Court of India Court Master Online Form 2026",
+      "url": "https://www.sarkariresult.com/2026/sci-court-master-oct26/",
+      "category": "latestJobs",
+      "slug": "sci-court-master-oct26",
+      "publishedDate": "19 October 2026",
+      "publishedAt": "2026-10-18T18:30:00.000Z"
+    },
+    {
+      "title": "ICSIL Data Entry Operator DEO Post Online Form 2026",
+      "url": "https://www.sarkariresult.com/2026/icsil-data-entry-operator-deo-oct26/",
+      "category": "latestJobs",
+      "slug": "icsil-data-entry-operator-deo-oct26",
+      "publishedDate": "17 October 2026",
+      "publishedAt": "2026-10-16T18:30:00.000Z"
+    },
+    {
+      "title": "CWC Assistant Manager and Junior Executive Online Form 2026",
+      "url": "https://www.sarkariresult.com/2026/cwc-am-je-oct26/",
+      "category": "latestJobs",
+      "slug": "cwc-am-je-oct26",
+      "publishedDate": "18 October 2026",
+      "publishedAt": "2026-10-17T18:30:00.000Z"
+    },
+    {
+      "title": "UPSSSC 10+2 Inter Level Various Post Online Form 2026",
+      "url": "https://www.sarkariresult.com/2026/upsssc-lower-pcs-26-exam-oct26/",
+      "category": "latestJobs",
+      "slug": "upsssc-lower-pcs-26-exam-oct26",
+      "publishedDate": "16 October 2026",
+      "publishedAt": "2026-10-15T18:30:00.000Z"
     }
   ],
   "answerKeys": [
+    {
+      "title": "SSC CGL Answer Key 2026 – Out",
+      "url": "/post/ssc-cgl-2026",
+      "category": "answerKeys",
+      "slug": "ssc-cgl-2026",
+      "publishedDate": "2026-11-04T17:52:22+05:30",
+      "publishedAt": "2026-11-04T12:22:22.000Z"
+    },
     {
       "title": "UPSSSC PET Answer Key 2026 – Out",
       "url": "/post/upsssc-pet-2026",
       "category": "answerKeys",
       "slug": "upsssc-pet-2026",
-      "publishedDate": "2026-11-02T20:55:46+05:30",
-      "publishedAt": "2026-11-02T15:25:46.000Z"
+      "publishedDate": "2026-11-03T13:18:56+05:30",
+      "publishedAt": "2026-11-03T07:48:56.000Z"
     },
     {
       "title": "Railway RRB Section Controller Answer Key 2026 – Out",
@@ -9622,6 +10390,214 @@ export const scrapedData = {
       "slug": "HPSC-Motor-Vehicle-Officer-2024",
       "publishedDate": "5 September 2024",
       "publishedAt": "2024-09-04T18:30:00.000Z"
+    },
+    {
+      "title": "Supreme Court of India Senior Personal Assistant Answer Key 2026",
+      "url": "https://www.sarkariresult.com/2026/sci-senior-personal-assistant-oct26/",
+      "category": "answerKeys",
+      "slug": "sci-senior-personal-assistant-oct26",
+      "publishedDate": "4 November 2026",
+      "publishedAt": "2026-11-03T18:30:00.000Z"
+    },
+    {
+      "title": "ISRO ICRB Scientist Engineer Revised Answer Key 2026",
+      "url": "https://www.sarkariresult.com/2026/isro-icrb-scientist-engineer-july26/",
+      "category": "answerKeys",
+      "slug": "isro-icrb-scientist-engineer-july26",
+      "publishedDate": "28 October 2026",
+      "publishedAt": "2026-10-27T18:30:00.000Z"
+    },
+    {
+      "title": "Railway RRB Technician CEN 02/2026 Answer Key 2026",
+      "url": "https://www.sarkariresult.com/railway/rrb-technician-cen-02-2026/",
+      "category": "answerKeys",
+      "slug": "rrb-technician-cen-02-2026",
+      "publishedDate": "10 September 2026",
+      "publishedAt": "2026-09-09T18:30:00.000Z"
+    },
+    {
+      "title": "SSC Selection Post 14th Answer Key 2026",
+      "url": "https://www.sarkariresult.com/ssc/ssc-selection-post-14th-2026/",
+      "category": "answerKeys",
+      "slug": "ssc-selection-post-14th-2026",
+      "publishedDate": "21 August 2026",
+      "publishedAt": "2026-08-20T18:30:00.000Z"
+    },
+    {
+      "title": "MPESB Group 2 Sub Group 4 Patwari and Other Post Answer Key 2026",
+      "url": "https://www.sarkariresult.com/2026/mpesb-group2-subgroup-4-aug26/",
+      "category": "answerKeys",
+      "slug": "mpesb-group2-subgroup-4-aug26",
+      "publishedDate": "19 September 2026",
+      "publishedAt": "2026-09-18T18:30:00.000Z"
+    },
+    {
+      "title": "Rajasthan State Eligibility Test SET Answer Key 2026",
+      "url": "https://www.sarkariresult.com/2026/rajasthan-set-jun/",
+      "category": "answerKeys",
+      "slug": "rajasthan-set-jun",
+      "publishedDate": "7 September 2026",
+      "publishedAt": "2026-09-06T18:30:00.000Z"
+    },
+    {
+      "title": "Uttarakhand UK TET UTET Answer Key 2026",
+      "url": "https://www.sarkariresult.com/2026/uttarakhand-utet-2026/",
+      "category": "answerKeys",
+      "slug": "uttarakhand-utet-2026",
+      "publishedDate": "5 October 2026",
+      "publishedAt": "2026-10-04T18:30:00.000Z"
+    },
+    {
+      "title": "NBEMS NAT Board Group A B C Various Post Answer Key 2026",
+      "url": "https://www.sarkariresult.com/2026/nbe-various-post-june26/",
+      "category": "answerKeys",
+      "slug": "nbe-various-post-june26",
+      "publishedDate": "11 September 2026",
+      "publishedAt": "2026-09-10T18:30:00.000Z"
+    },
+    {
+      "title": "UPSSSC Forest Guard / Wild Life Guard Mains Answer Key 2026",
+      "url": "https://www.sarkariresult.com/upsssc/upsssc-forest-guard-12-exam-2026/",
+      "category": "answerKeys",
+      "slug": "upsssc-forest-guard-12-exam-2026",
+      "publishedDate": "30 June 2026",
+      "publishedAt": "2026-06-29T18:30:00.000Z"
+    },
+    {
+      "title": "UPSSSC Scientific and Lab Assistant Mains Answer Key 2026",
+      "url": "https://www.sarkariresult.com/2026/upsssc-paramedical-fsl-15-exam-2026/",
+      "category": "answerKeys",
+      "slug": "upsssc-paramedical-fsl-15-exam-2026",
+      "publishedDate": "27 July 2026",
+      "publishedAt": "2026-07-26T18:30:00.000Z"
+    },
+    {
+      "title": "Indian Airforce Agniveervayu Intake 02/2027 Answer Key 2026",
+      "url": "https://www.sarkariresult.com/force/indian-airforce-agniveervayu-02-2027/",
+      "category": "answerKeys",
+      "slug": "indian-airforce-agniveervayu-02-2027",
+      "publishedDate": "11 September 2026",
+      "publishedAt": "2026-09-10T18:30:00.000Z"
+    },
+    {
+      "title": "Indian Air Force Airmen Group Y Medical Assistant INET 02/2027 Answer Key",
+      "url": "https://www.sarkariresult.com/2026/indian-air-force-medical-assistant/",
+      "category": "answerKeys",
+      "slug": "indian-air-force-medical-assistant",
+      "publishedDate": "11 September 2026",
+      "publishedAt": "2026-09-10T18:30:00.000Z"
+    },
+    {
+      "title": "UPESSC UP Principal Answer Key 2026",
+      "url": "https://www.sarkariresult.com/2026/upessc-principal-02-2026/",
+      "category": "answerKeys",
+      "slug": "upessc-principal-02-2026",
+      "publishedDate": "15 September 2026",
+      "publishedAt": "2026-09-14T18:30:00.000Z"
+    },
+    {
+      "title": "Patna High Court Assistant Group C Answer Key 2026",
+      "url": "https://www.sarkariresult.com/2026/patna-high-court-july26/",
+      "category": "answerKeys",
+      "slug": "patna-high-court-july26",
+      "publishedDate": "8 September 2026",
+      "publishedAt": "2026-09-07T18:30:00.000Z"
+    },
+    {
+      "title": "SSC Stenographer 2026 Answer Key",
+      "url": "https://www.sarkariresult.com/ssc/ssc-stenographer-2026/",
+      "category": "answerKeys",
+      "slug": "ssc-stenographer-2026",
+      "publishedDate": "23 September 2026",
+      "publishedAt": "2026-09-22T18:30:00.000Z"
+    },
+    {
+      "title": "UPSSSC Pharmacist Ayurvedic 2024 Answer Key 2026",
+      "url": "https://www.sarkariresult.com/upsssc/upsssc-pharmaceutical-01-2024/",
+      "category": "answerKeys",
+      "slug": "upsssc-pharmaceutical-01-2024",
+      "publishedDate": "28 July 2026",
+      "publishedAt": "2026-07-27T18:30:00.000Z"
+    },
+    {
+      "title": "UPSSSC UP Excise Constable Answer Key 2026",
+      "url": "https://www.sarkariresult.com/upsssc/upsssc-excise-constable-08-exam2026/",
+      "category": "answerKeys",
+      "slug": "upsssc-excise-constable-08-exam2026",
+      "publishedDate": "6 June 2026",
+      "publishedAt": "2026-06-05T18:30:00.000Z"
+    },
+    {
+      "title": "SSC Combined Hindi Translators JHT Answer Key 2026",
+      "url": "https://www.sarkariresult.com/ssc/ssc-jht-2026/",
+      "category": "answerKeys",
+      "slug": "ssc-jht-2026",
+      "publishedDate": "2026-09-22T13:50:27+05:30",
+      "publishedAt": "2026-09-22T08:20:27.000Z"
+    },
+    {
+      "title": "BSF HC Ministerial and ASI Steno Answer Key / Objection 2026",
+      "url": "https://www.sarkariresult.com/force/bsf-hcmin-asisteno-june24/",
+      "category": "answerKeys",
+      "slug": "bsf-hcmin-asisteno-june24",
+      "publishedDate": "10 September 2026",
+      "publishedAt": "2026-09-09T18:30:00.000Z"
+    },
+    {
+      "title": "MPESB Group 2 Sub Group 1 Krishi Vistar Adhikari Answer Key 2026",
+      "url": "https://www.sarkariresult.com/2026/mpesb-group2-sub1-krashi-vistar/",
+      "category": "answerKeys",
+      "slug": "mpesb-group2-sub1-krashi-vistar",
+      "publishedDate": "10 September 2026",
+      "publishedAt": "2026-09-09T18:30:00.000Z"
+    },
+    {
+      "title": "NTA AIAPGET Final Answer Key 2026",
+      "url": "https://www.sarkariresult.com/2026/nta-aiapget-admissions-july26/",
+      "category": "answerKeys",
+      "slug": "nta-aiapget-admissions-july26",
+      "publishedDate": "4 September 2026",
+      "publishedAt": "2026-09-03T18:30:00.000Z"
+    },
+    {
+      "title": "Rajasthan RSSB Computer Instructor Answer Key 2026",
+      "url": "https://www.sarkariresult.com/rpsc/rssb-computer-instructor-07-2026/",
+      "category": "answerKeys",
+      "slug": "rssb-computer-instructor-07-2026",
+      "publishedDate": "18 September 2026",
+      "publishedAt": "2026-09-17T18:30:00.000Z"
+    },
+    {
+      "title": "UPSSSC Teacher Cadre JTC Revised Answer Key 2026",
+      "url": "https://www.sarkariresult.com/upsssc/upsssc-teacher-03-exam-2026/",
+      "category": "answerKeys",
+      "slug": "upsssc-teacher-03-exam-2026",
+      "publishedDate": "12 September 2026",
+      "publishedAt": "2026-09-11T18:30:00.000Z"
+    },
+    {
+      "title": "UPSSSC Assistant Boring Technician Revised Answer Key 2026",
+      "url": "https://www.sarkariresult.com/upsssc/upsssc-asst-boring-tech-04-2026/",
+      "category": "answerKeys",
+      "slug": "upsssc-asst-boring-tech-04-2026",
+      "publishedDate": "12 September 2026",
+      "publishedAt": "2026-09-11T18:30:00.000Z"
+    },
+    {
+      "title": "Delhi DSSSB MTS Answer Key 2026",
+      "url": "https://www.sarkariresult.com/delhi/dsssb-admit-card-download/",
+      "category": "answerKeys",
+      "slug": "dsssb-admit-card-download",
+      "publishedDate": "15 June 2026",
+      "publishedAt": "2026-06-14T18:30:00.000Z"
+    },
+    {
+      "title": "NTA UGC NET Re Exam Answer Key 2026",
+      "url": "https://www.sarkariresult.com/2026/nta-ugc-net-june-2026/",
+      "category": "answerKeys",
+      "slug": "nta-ugc-net-june-2026",
+      "publishedDate": "2026-09-24T17:45:16+05:30",
+      "publishedAt": "2026-09-24T12:15:16.000Z"
     }
   ],
   "admissions": [
@@ -9928,9 +10904,153 @@ export const scrapedData = {
       "slug": "bihar-deled-admission-2025",
       "publishedDate": "5 February 2025",
       "publishedAt": "2025-02-04T18:30:00.000Z"
+    },
+    {
+      "title": "NTA All India Sainik School AISSEE 2027 Online Form",
+      "url": "https://www.sarkariresult.com/2027/nta-aissee-2027/",
+      "category": "admissions",
+      "slug": "nta-aissee-2027",
+      "publishedDate": "3 November 2026",
+      "publishedAt": "2026-11-02T18:30:00.000Z"
+    },
+    {
+      "title": "All India Bar Exam AIBE 22nd XXII Online Correction Edit Form 2026",
+      "url": "https://www.sarkariresult.com/2026/aibe-22nd-august26/",
+      "category": "admissions",
+      "slug": "aibe-22nd-august26",
+      "publishedDate": "22 August 2026",
+      "publishedAt": "2026-08-21T18:30:00.000Z"
+    },
+    {
+      "title": "NTA JEEMAIN 2027 Online Form",
+      "url": "https://www.sarkariresult.com/2027/nta-jeemain-session1-jan27/",
+      "category": "admissions",
+      "slug": "nta-jeemain-session1-jan27",
+      "publishedDate": "1 November 2026",
+      "publishedAt": "2026-10-31T18:30:00.000Z"
+    },
+    {
+      "title": "UP Scholarship Online Form 2026 (All Course)",
+      "url": "https://www.sarkariresult.com/2026/up-scholarship-postmatric-jul26/",
+      "category": "admissions",
+      "slug": "up-scholarship-postmatric-jul26",
+      "publishedDate": "25 July 2026",
+      "publishedAt": "2026-07-24T18:30:00.000Z"
+    },
+    {
+      "title": "NTA NIFTEE Admission Online Form 2027",
+      "url": "https://www.sarkariresult.com/2027/nta-niftee-admission/",
+      "category": "admissions",
+      "slug": "nta-niftee-admission",
+      "publishedDate": "16 October 2026",
+      "publishedAt": "2026-10-15T18:30:00.000Z"
+    },
+    {
+      "title": "IIT GATE 2027 Online Form | Re-Open",
+      "url": "https://www.sarkariresult.com/2027/gate-2027/",
+      "category": "admissions",
+      "slug": "gate-2027",
+      "publishedDate": "15 October 2026",
+      "publishedAt": "2026-10-14T18:30:00.000Z"
+    },
+    {
+      "title": "IIT JAM 2027 Online Form",
+      "url": "https://www.sarkariresult.com/2027/iit-jam-august26/",
+      "category": "admissions",
+      "slug": "iit-jam-august26",
+      "publishedDate": "5 September 2026",
+      "publishedAt": "2026-09-04T18:30:00.000Z"
+    },
+    {
+      "title": "UPRTOU Ph.D Entrance Exam Admission Online Form 2026",
+      "url": "https://www.sarkariresult.com/2026/uprtou-ph-d-entrance-exam-sep26/",
+      "category": "admissions",
+      "slug": "uprtou-ph-d-entrance-exam-sep26",
+      "publishedDate": "18 September 2026",
+      "publishedAt": "2026-09-17T18:30:00.000Z"
+    },
+    {
+      "title": "IIM CAT Admission Online Form 2026 Date Extended",
+      "url": "https://www.sarkariresult.com/2026/iim-cat-jul26/",
+      "category": "admissions",
+      "slug": "iim-cat-jul26",
+      "publishedDate": "30 July 2026",
+      "publishedAt": "2026-07-29T18:30:00.000Z"
+    },
+    {
+      "title": "Bihar Library Eligibility Test BLET Online Form 2026",
+      "url": "https://www.sarkariresult.com/2026/blet-september26/",
+      "category": "admissions",
+      "slug": "blet-september26",
+      "publishedDate": "4 September 2026",
+      "publishedAt": "2026-09-03T18:30:00.000Z"
+    },
+    {
+      "title": "NTA RIMCEE Class 8th Admissions Online Form 2027",
+      "url": "https://www.sarkariresult.com/2026/nta-rimcee-class-8th-sep26/",
+      "category": "admissions",
+      "slug": "nta-rimcee-class-8th-sep26",
+      "publishedDate": "4 September 2026",
+      "publishedAt": "2026-09-03T18:30:00.000Z"
+    },
+    {
+      "title": "Allahabad University PHd Admissions Online Form 2026",
+      "url": "https://www.sarkariresult.com/2026/university-of-allahabad-au-sep26/",
+      "category": "admissions",
+      "slug": "university-of-allahabad-au-sep26",
+      "publishedDate": "4 September 2026",
+      "publishedAt": "2026-09-03T18:30:00.000Z"
+    },
+    {
+      "title": "UP DELED Online Counselling 2026",
+      "url": "https://www.sarkariresult.com/2026/updeled-admissions-2/",
+      "category": "admissions",
+      "slug": "updeled-admissions-2",
+      "publishedDate": "16 June 2026",
+      "publishedAt": "2026-06-15T18:30:00.000Z"
+    },
+    {
+      "title": "NEET UG 2026 Online Counselling",
+      "url": "https://www.sarkariresult.com/2026/nta-neet-ug-2026/",
+      "category": "admissions",
+      "slug": "nta-neet-ug-2026",
+      "publishedDate": "21 August 2026",
+      "publishedAt": "2026-08-20T18:30:00.000Z"
+    },
+    {
+      "title": "SAV Jamui Bihar Class VI 6th Admission Online Form 2027",
+      "url": "https://www.sarkariresult.com/2026/sav-class-6th-admission-august26/",
+      "category": "admissions",
+      "slug": "sav-class-6th-admission-august26",
+      "publishedDate": "19 August 2026",
+      "publishedAt": "2026-08-18T18:30:00.000Z"
+    },
+    {
+      "title": "UP SCVTUP ITI Admissions Online Form 2026",
+      "url": "https://www.sarkariresult.com/2026/upiti-admission-july2026/",
+      "category": "admissions",
+      "slug": "upiti-admission-july2026",
+      "publishedDate": "13 July 2026",
+      "publishedAt": "2026-07-12T18:30:00.000Z"
+    },
+    {
+      "title": "CLAT 2027 Admission Online Form",
+      "url": "https://www.sarkariresult.com/2026/clat-admission-jul26/",
+      "category": "admissions",
+      "slug": "clat-admission-jul26",
+      "publishedDate": "30 July 2026",
+      "publishedAt": "2026-07-29T18:30:00.000Z"
     }
   ],
   "documents": [
+    {
+      "title": "Indian Coast Guard Navik / Yantrik CGEPT Exam Date 2026",
+      "url": "/post/indian-coast-guard-cgept-01-2027-02-2027",
+      "category": "documents",
+      "slug": "indian-coast-guard-cgept-01-2027-02-2027",
+      "publishedDate": "2026-11-03T14:09:01+05:30",
+      "publishedAt": "2026-11-03T08:39:01.000Z"
+    },
     {
       "title": "Aadhar Card PVC Download, Correction, Status 2026",
       "url": "/post/aadhar-card-print-verification-correction-form",
@@ -10556,7 +11676,7 @@ export const scrapedData = {
     "aai-manager-junior-executive-july26": {
       "publishedDate": "24 July 2026",
       "publishedAt": "2026-07-23T18:30:00.000Z",
-      "lastDate": "08/08/2026\nLast Date for Apply Online :07/09/2026\nPay Exam Fee Last Date 07/09/2026\nExam Date : As Per Schedule\nAdmit Card Available : Before Exam : Application Fee\n\nGeneral / OBC / EWS : 1000/-\nSC / ST / PH : 0/-\nFemale Candidate : 0/-\nPay the Exam Fee Through Online / Offline Fee Mode Only"
+      "lastDate": "Important Dates\n\nApplication Begin :08/08/2026\nLast Date for Apply Online :07/09/2026\nPay Exam Fee Last Date 07/09/2026\nExam Date : 21-26 October 2026\nAdmit Card Available : 14/10/2026 : Application Fee\n\nGeneral / OBC / EWS : 1000/-\nSC / ST / PH : 0/-\nFemale Candidate : 0/-\nPay the Exam Fee Through Online / Offline Fee Mode Only"
     },
     "abvmu-up-cnet-2026": {
       "publishedDate": "15 June 2026",
@@ -11114,7 +12234,7 @@ export const scrapedData = {
     "blet-september26": {
       "publishedDate": "4 September 2026",
       "publishedAt": "2026-09-03T18:30:00.000Z",
-      "lastDate": "01/10/2026\nLast Date for Apply Online : 21/10/2026\nPay Exam Fee Last Date: 21/10/2026\nBLET Exam Date : As per Schedule\nAdmit Card Available : Before Exam   \nResult Available : Notified Soon : Application Fee\n\nGeneral / BC / EWS : Soon\nSC / ST / PH : Soon\nPay the Exam Fee Through Online Mode Only : Debit Card / Credit Card / Net Banking"
+      "lastDate": "Important Dates\n\nApplication Begin : 01/10/2026\nLast Date for Apply Online : 31/10/2026\nPay Exam Fee Last Date: 31/10/2026\nBihar SLET Exam Date : As per Schedule\nAdmit Card Available : Before Exam   \nResult Available : Notified Soon : Application Fee\n\nGeneral / BC / EWS : 960/-\nSC / ST / PH : 760/-\nPay the Exam Fee Through Online Mode Only : Debit Card / Credit Card / Net Banking"
     },
     "bmhrc-group-b-and-c-recruitment-2026-apply-online-for-66-engineer-officer-and-more-posts-3068127": {
       "publishedDate": "18 September 2026",
@@ -11169,7 +12289,7 @@ export const scrapedData = {
     "bpsc-72-pre-exam-2026": {
       "publishedDate": "18 July 2026",
       "publishedAt": "2026-07-17T18:30:00.000Z",
-      "lastDate": "07/05/2026\nLast Date for Apply Online :31/05/2026\nPay Exam Fee Last Date :31/05/2026\nBPSC 72th Pre Exam Date : 26/07/2026 (Postponed) \nAdmit Card Available : Before Exam : Application Fee\n\nGeneral / BC/ Other State : 100/-\nSC / ST / PH : 100/-\nFemale Candidate (Bihar Dom.) : 100/-\nPay the Exam Fee Through Online / Offline Fee Mode Only"
+      "lastDate": "Important Dates\n\nApplication Begin :07/05/2026\nLast Date for Apply Online :31/05/2026\nPay Exam Fee Last Date :31/05/2026\nBPSC 72th Pre Exam Date : 25/10/2026\nAdmit Card Available : Before Exam : Application Fee\n\nGeneral / BC/ Other State : 100/-\nSC / ST / PH : 100/-\nFemale Candidate (Bihar Dom.) : 100/-\nPay the Exam Fee Through Online / Offline Fee Mode Only"
     },
     "bpsc-72nd-2026": {
       "publishedDate": "2026-10-12T16:32:59+05:30",
@@ -11184,7 +12304,7 @@ export const scrapedData = {
     "bpsc-aes-88-2025": {
       "publishedDate": "2 June 2026",
       "publishedAt": "2026-06-01T18:30:00.000Z",
-      "lastDate": "19/09/2025"
+      "lastDate": "Important Dates\n\nApplication Begin :27/08/2025\nLast Date for Apply Online :19/09/2025\nPay Exam Fee Last Date :19/09/2025\nBPSC AES Exam Date : 11/06/2026\nAdmit Card Available : 04/06/2026\nAnswer Key : 07/07/2026\nResult Available : 30/10/2026 : Application Fee\n\nGeneral / BC/ Other State : 100/-\nSC / ST / PH : 100/-\nFemale Candidate (Bihar Dom.) : 100/-\nPay the Exam Fee Through Online / Offline Fee Mode Only"
     },
     "BPSC-AES-Advt-88-2025": {
       "publishedDate": "8 June 2026",
@@ -11217,8 +12337,8 @@ export const scrapedData = {
       "lastDate": "03 February 2026"
     },
     "bpsc-dso-2026": {
-      "publishedDate": "28 July 2026",
-      "publishedAt": "2026-07-28T11:12:24.000Z",
+      "publishedDate": "2026-11-05T17:11:52+05:30",
+      "publishedAt": "2026-11-05T11:41:52.000Z",
       "lastDate": "26 September 2025"
     },
     "bpsc-exam-calendar-2026": {
@@ -11236,8 +12356,8 @@ export const scrapedData = {
       "lastDate": "27/02/2026\nLast Date for Apply Online :20/03/2026\nPay Exam Fee Last Date :20/03/2026\nExam Date : 15/07/2026\nAdmit Card Available :06/07/2026 : Application Fee\n\nGeneral / OBC/ Other State : 100/-\nSC / ST / PH : 100/-\nFemale Candidate (Bihar Dom.) : 100/-\nPay the Exam Fee Through Online / Offline Fee Mode Only"
     },
     "bpsc-school-teacher-tre-4-0-2026": {
-      "publishedDate": "2026-11-02T18:12:53+05:30",
-      "publishedAt": "2026-11-02T12:42:53.000Z",
+      "publishedDate": "2026-11-03T16:34:30+05:30",
+      "publishedAt": "2026-11-03T11:04:30.000Z",
       "lastDate": "02 November 2026"
     },
     "BPSC-Simultala-School-Teacher-2024": {
@@ -11268,7 +12388,7 @@ export const scrapedData = {
     "bpsc-tre-4-2026": {
       "publishedDate": "29 July 2026",
       "publishedAt": "2026-07-28T18:30:00.000Z",
-      "lastDate": "July / AUgust 2026\nLast Date for Apply Online :As per Schedule \nPay Exam Fee Last Date :As per Schedule \nLast Date with Late Fee :As per Schedule \nExam Date :As per Schedule : Application Fee\n\nGeneral / OBC/ Other State : 100/-\nSC / ST / PH : 100/-\nPay the Exam Fee Through Online / Offline Fee Mode Only"
+      "lastDate": "Important Dates \n\nApplication Begin :25/09/2026 \nLast Date for Apply Online : 02/11/2026 Date Extended\nPay Exam Fee Last Date : 02/11/2026\nComplete Form Last Date :03/11/2026\nExam Date :As per Schedule : Application Fee\n\nGeneral / OBC/ Other State : 100/-\nSC / ST / PH : 100/-\nPay the Exam Fee Through Online / Offline Fee Mode Only"
     },
     "bpssc-asi-technical-07-2026": {
       "publishedDate": "21 May 2026",
@@ -11386,7 +12506,7 @@ export const scrapedData = {
     "bseb-stet-august26": {
       "publishedDate": "2 September 2026",
       "publishedAt": "2026-09-01T18:30:00.000Z",
-      "lastDate": "17/08/2026\nLast Date for Apply Online : 15/09/2026\nPay Exam Fee Last Date: 15/09/2026\nBihar STET 2026 Paper I Exam Date : As per Schedule   \nBihar STET 2026 Paper II Exam Date : As per Schedule\nAdmit Card Available : Before Exam   \nResult Available : Notified Soon : Application Fee\n\nSingle Paper : \nGeneral / BC / EWS : 960/-\nSC / ST / PH : 760/-\nBoth Paper : \nGeneral / BC / EWS : 1440/-\nSC / ST / PH : 1140/-\nPay the Exam Fee Through Online Mode Only : Debit Card / Credit Card / Net Banking"
+      "lastDate": "Important Dates\n\nApplication Begin : 17/08/2026\nLast Date for Apply Online : 22/09/2026 Date Extended\nPay Exam Fee Last Date: 15/09/2026\nDummy Admit Card Available : 24/09/2026\nBihar STET 2026 Exam Date : 25/10/2026 to 20/11/2026 \nAdmit Card Available : 18/10/2026\nResult Available : Notified Soon : Application Fee\n\nSingle Paper : \nGeneral / BC / EWS : 960/-\nSC / ST / PH : 760/-\nBoth Paper : \nGeneral / BC / EWS : 1440/-\nSC / ST / PH : 1140/-\nPay the Exam Fee Through Online Mode Only : Debit Card / Credit Card / Net Banking"
     },
     "bsf-constable-tradesman-2025": {
       "publishedDate": "10 June 2026",
@@ -11415,7 +12535,7 @@ export const scrapedData = {
     "bsf-hcmin-asisteno-june24": {
       "publishedDate": "10 September 2026",
       "publishedAt": "2026-09-09T18:30:00.000Z",
-      "lastDate": "09/06/2024\nLast Date for Apply Online : 08/07/2024\nPay Exam Fee Last Date : 08/07/2024\nExam Date : As per Schedule\nAdmit Card Available : 19/08/2026\nAnswer Key Available : 10/09/2026 : Application Fee\n\nGeneral / OBC / EWS : 147.25/-\nSC / ST / PH : 0/-\nAll Category Female : 0/-\nPay the Examination Fee Through Debit Card, Credit Card, Net Banking."
+      "lastDate": "Important Dates\n\nApplication Begin : 09/06/2024\nLast Date for Apply Online : 08/07/2024\nPay Exam Fee Last Date : 08/07/2024\nExam Date : As per Schedule\nAdmit Card Available : 19/08/2026\nAnswer Key Available : 10/09/2026 : Application Fee\n\nGeneral / OBC / EWS : 147.25/-\nSC / ST / PH : 0/-\nAll Category Female : 0/-\nPay the Examination Fee Through Debit Card, Credit Card, Net Banking."
     },
     "bsnl-junior-telecom-officer-jto-2026": {
       "publishedDate": "29 August 2026",
@@ -11487,7 +12607,7 @@ export const scrapedData = {
     "ccl-various-post-july26": {
       "publishedDate": "21 August 2026",
       "publishedAt": "2026-08-20T18:30:00.000Z",
-      "lastDate": "09/07/2026\nLast Date for Apply : 24/07/2026\nFee Payment Last Date : 24/07/2026\nExam Date : As per Schedule\nAdmit Card Available : 21/08/2026 : Application Fees\n\nGeneral / OBC / EWS : 1770/-\nSC / ST : 590/-\nPay the Examination Fee Through Debit Card / Credit Card / Net Banking / Online Only."
+      "lastDate": "Important Dates\n\nApplication Begin : 09/07/2026\nLast Date for Apply : 24/07/2026\nFee Payment Last Date : 24/07/2026\nExam Date : As per Schedule\nAdmit Card Available : 21/08/2026 : Application Fees\n\nGeneral / OBC / EWS : 1770/-\nSC / ST : 590/-\nPay the Examination Fee Through Debit Card / Credit Card / Net Banking / Online Only."
     },
     "ccrum-various-post-jul26": {
       "publishedDate": "29 July 2026",
@@ -11608,7 +12728,7 @@ export const scrapedData = {
     "concor-mt-ao-august26": {
       "publishedDate": "1 September 2026",
       "publishedAt": "2026-08-31T18:30:00.000Z",
-      "lastDate": "31/08/2026\nLast Date for Apply Online :30/09/2026\nPay Exam Fee Last Date :30/09/2026\nConcor Exam Date : As per Schedule\nAdmit Card Available : Before Exam : Application Fee\n\nFor Management Trainee : \nGeneral / OBC / EWS : 750/-\nSC / ST / PH : 0/-\nFor Assistant Officer : \nGeneral / OBC / EWS : 500/–\nSC / ST / PH : 0/-\nPay the Exam Fee Through Online / Offline Fee Mode Only"
+      "lastDate": "Important Dates\n\nApplication Begin :31/08/2026\nLast Date for Apply Online :30/09/2026\nPay Exam Fee Last Date :30/09/2026\nConcor Exam Date : 21/11/2026\nAdmit Card Available : Before Exam : Application Fee\n\nFor Management Trainee : \nGeneral / OBC / EWS : 750/-\nSC / ST / PH : 0/-\nFor Assistant Officer : \nGeneral / OBC / EWS : 500/–\nSC / ST / PH : 0/-\nPay the Exam Fee Through Online / Offline Fee Mode Only"
     },
     "concor-mt-assistant-officer-2026": {
       "publishedDate": "2026-11-02T12:34:03+05:30",
@@ -11746,7 +12866,7 @@ export const scrapedData = {
     "delhi-hc-hjs-july26": {
       "publishedDate": "1 July 2026",
       "publishedAt": "2026-06-30T18:30:00.000Z",
-      "lastDate": "01/07/2026\nLast Date for Apply Online : 15/07/2026 upto 05:30 PM Only.\nPay Exam Fee Last Date : 15/07/2026\nPre Exam Date : 26/07/2026\nAdmit Card Available : Before Exam\nAnswer Key Available :After Exam\nPre Result Available : As per Schedule : Application Fee*\n\nGeneral : 2000/-\nSC / ST : 500/-\nPay the Examination Fee Through Debit Card, Credit Card, Net Banking Fee Mode Only"
+      "lastDate": "Important Dates\n\nApplication Begin : 01/07/2026\nLast Date for Apply Online : 15/07/2026 upto 05:30 PM Only.\nPay Exam Fee Last Date : 15/07/2026\nPre Exam Date : 26/07/2026\nAdmit Card Available : 21/07/2026\nAnswer Key Available :28/07/2026\nPre Result Available : 14/08/2026\nMains Exam Date : 22-23 October 2026\nAdmit Card Available : 13/10/2026 : Application Fee*\n\nGeneral : 2000/-\nSC / ST : 500/-\nPay the Examination Fee Through Debit Card, Credit Card, Net Banking Fee Mode Only"
     },
     "delhi-hc-jja-restorer-feb26": {
       "publishedDate": "8 September 2026",
@@ -11784,7 +12904,7 @@ export const scrapedData = {
     "dhc-pa-spa-sep26": {
       "publishedDate": "6 September 2026",
       "publishedAt": "2026-09-05T18:30:00.000Z",
-      "lastDate": "15/09/2026\nLast Date for Apply Online : 05/10/2026\nPay Exam Fee Last Date : 05/10/2026\nForm Correction Date : 12 – 14 October 2026\nExam Date : As per Schedule\nAdmit Card Available : Before Exam : Application Fee\n\nGen / OBC / EWS : 1500/-\nSC / ST : 1300/-\nPay the Exam Fee Through Debit Card, Credit Card, Net Banking Only."
+      "lastDate": "Important Dates\n\nApplication Begin : 15/09/2026\nLast Date for Apply Online : 05/10/2026\nPay Exam Fee Last Date : 05/10/2026\nForm Correction Date : 12 – 14 October 2026\nSAP Exam Date : 14/11/2026\nPA Exam Date : 27/11/2026\nAdmit Card Available : 24/11/2026 : Application Fee\n\nGen / OBC / EWS : 1500/-\nSC / ST : 1300/-\nPay the Exam Fee Through Debit Card, Credit Card, Net Banking Only."
     },
     "dhs-kanyakumari-recruitment-2026-apply-offline-for-81-mphw-deo-and-more-posts-3068181": {
       "publishedDate": "18 September 2026",
@@ -12244,7 +13364,7 @@ export const scrapedData = {
     "ibps-so-16th-june26": {
       "publishedDate": "1 July 2026",
       "publishedAt": "2026-06-30T18:30:00.000Z",
-      "lastDate": "01/07/2026\nLast Date for Apply Online : 21/07/2026\nPay Exam Fee Last Date : 21/07/2026\nIBPS SO Pre Exam Date : August 2026\nPre Admit Card Available : Before Exam\nPre Result Available : September / October 2026\nIBPS SO Mains Exam Date : November 2026\nMains Result Available : November 2026 : Application Fee\n\nGeneral / EWS / OBC : 850/-\nSC / ST / PH : 175/-\nPay the Exam Fee Through Online / Offline Fee Mode Only"
+      "lastDate": "Important Dates\n\nApplication Begin : 01/07/2026\nLast Date for Apply Online : 26/07/2026\nPay Exam Fee Last Date : 26/07/2026\nIBPS SO Pre Exam Date : August 2026\nPre Admit Card Available : 20/08/2026\nPre Result Available : 15 October 2026\nIBPS Admit Card Available : 22/10/2026\nIBPS SO Mains Exam Date : 01 November 2026\nMains Result Available : November 2026 : Application Fee\n\nGeneral / EWS / OBC : 850/-\nSC / ST / PH : 175/-\nPay the Exam Fee Through Online / Offline Fee Mode Only"
     },
     "ICES-Board-Result": {
       "publishedDate": "21 July 2026",
@@ -12287,7 +13407,7 @@ export const scrapedData = {
     "iim-cat-jul26": {
       "publishedDate": "30 July 2026",
       "publishedAt": "2026-07-29T18:30:00.000Z",
-      "lastDate": "03/08/2026\nLast Date for Apply Online : 15/09/2026 upto 05 PM Only.\nLast Date Pay Exam Fee :15/09/2026\nExam Date :29/11/2026\nAdmit Card Available : 04/11/2026\nResult Status :January 2027 : Application Fee\n\nGeneral / OBC / EWS: 2700/-\nSC / ST / PH : 1350/-\nPay the Examination Fee Through Debit Card, Credit Card, Net Banking Fee Mode or Pay Through E Challan."
+      "lastDate": "Important Dates\n\nApplication Begin : 03/08/2026\nLast Date for Apply Online : 22/09/2026 upto 05 PM Only.\nLast Date Pay Exam Fee :22/09/2026\nExam Date :29/11/2026\nAdmit Card Available : 04/11/2026\nResult Status :January 2027 : Application Fee\n\nGeneral / OBC / EWS: 2700/-\nSC / ST / PH : 1350/-\nPay the Examination Fee Through Debit Card, Credit Card, Net Banking Fee Mode or Pay Through E Challan."
     },
     "iiser-kolkata-non-teaching-recruitment-2026-apply-online-for-17-junior-assistant-junior-engineer-and-more-posts-3068311": {
       "publishedDate": "18 September 2026",
@@ -12307,7 +13427,7 @@ export const scrapedData = {
     "iit-jam-august26": {
       "publishedDate": "5 September 2026",
       "publishedAt": "2026-09-04T18:30:00.000Z",
-      "lastDate": "Indian Institute of Technology IIT Kharagpur has released the online application for Joint Admission Test for Masters JAM 2027 will start from 12 September 2026 and the last date to apply will be 12 October 2026. Various Institute are participating in JAM 2027, candidates should read the information brochure for all the information related to the Joint Admission Test for Masters 2027 Exam like syllabus, eligibility, Question Paper, age limit, Score Card, fees, JAM 2027 information and other types of information and then apply."
+      "lastDate": "Indian Institute of Technology IIT Kharagpur has released the online application for Joint Admission Test for Masters JAM 2027 will start from 12 September 2026 and the last date to apply will be 19 October 2026. Various Institute are participating in JAM 2027, candidates should read the information brochure for all the information related to the Joint Admission Test for Masters 2027 Exam like syllabus, eligibility, Question Paper, age limit, Score Card, fees, JAM 2027 information and other types of information and then apply."
     },
     "iit-jee-advanced-2026": {
       "publishedDate": "1 June 2026",
@@ -12332,7 +13452,7 @@ export const scrapedData = {
     "indian-air-force-medical-assistant": {
       "publishedDate": "11 September 2026",
       "publishedAt": "2026-09-10T18:30:00.000Z",
-      "lastDate": "06/07/2026\nLast Date for Apply : 26/07/2026\nFee Payment Last Date : 26/07/2026\nExam Date : 22-23 September 2026\nExam City / Admit Card Available : 11/09/2026 : Application Fees\n\nGeneral / OBC / EWS : 550/-\nSC / ST / PH : 550/-\nPay the Examination Fee Through Debit Card / Credit Card / Net Banking / Online Only."
+      "lastDate": "Important Dates\n\nApplication Begin : 06/07/2026\nLast Date for Apply : 26/07/2026\nFee Payment Last Date : 26/07/2026\nExam Date : 22-23 September 2026\nExam City / Admit Card Available : 11/09/2026\nAdmit Card Available : 19/09/2026\nAnswer Key Available : 26/09/2026 : Application Fees\n\nGeneral / OBC / EWS : 550/-\nSC / ST / PH : 550/-\nPay the Examination Fee Through Debit Card / Credit Card / Net Banking / Online Only."
     },
     "indian-airforce-agniveer-vayu-02-2026": {
       "publishedDate": "6 June 2026",
@@ -12357,7 +13477,7 @@ export const scrapedData = {
     "indian-airforce-agniveervayu-02-2027": {
       "publishedDate": "11 September 2026",
       "publishedAt": "2026-09-10T18:30:00.000Z",
-      "lastDate": "06/07/2026\n\nLast Date for Apply Online : 26/07/2026\n\nLast Date Pay Fees : 26/07/2026\n\nExam Date : 22-23 September 2026\nExam City Available : 11/09/2026 : Application Fee \n\nGeneral / OBC / EWS : 550/-\nSC / ST :550/-\nPay the Exam Fee Through Debit Card / Credit Card / Net Banking ."
+      "lastDate": "Important Dates\n\nApplication Begin : 06/07/2026\n\nLast Date for Apply Online : 26/07/2026\n\nLast Date Pay Fees : 26/07/2026\n\nExam Date : 22-23 September 2026\nExam City Available : 11/09/2026\nAdmit Card Available : 19/09/2026\nAnswer Key Available : 26/09/2026 : Application Fee \n\nGeneral / OBC / EWS : 550/-\nSC / ST :550/-\nPay the Exam Fee Through Debit Card / Credit Card / Net Banking ."
     },
     "indian-airforce-group-y-medical-assistant-airmen-02-2027": {
       "publishedDate": "2026-09-26T12:54:22+05:30",
@@ -12607,7 +13727,7 @@ export const scrapedData = {
     "isro-various-post-jul26": {
       "publishedDate": "10 September 2026",
       "publishedAt": "2026-09-09T18:30:00.000Z",
-      "lastDate": "27/07/2026\nLast Date for Apply Online :16/08/2026\nPay Exam Fee Last Date :16/08/2026\nCBT Exam Date : 21/09/2026\nAdmit Card Available : Before Exam : Application Fee\n\nFor Single Post All Category: 500/-\nFor Double Post All Category : 1000/-\nRefund After Appear CBT Exam : \nAfter deducting the Application Fee 100/- in respect of all other candidates: will be refunded\nas each applied post\nSC / ST / PH / Women : Full Amount Refunded\nNote : If Candidate Not Appear CBT / Written Exam Fee Will Not Refunded.\nPay the Exam Fee Through Online / Offline Fee Mode Only"
+      "lastDate": "Important Dates\n\nApplication Begin :27/07/2026\nLast Date for Apply Online :16/08/2026\nPay Exam Fee Last Date :16/08/2026\nCBT Exam Date : 21/09/2026\nAdmit Card Available : 10/09/2026\nAnswer key Available : 25/09/2026\nResult Available : 24/10/2026\nSkill Test Date : 01/11/2026 : Application Fee\n\nFor Single Post All Category: 500/-\nFor Double Post All Category : 1000/-\nRefund After Appear CBT Exam : \nAfter deducting the Application Fee 100/- in respect of all other candidates: will be refunded\nas each applied post\nSC / ST / PH / Women : Full Amount Refunded\nNote : If Candidate Not Appear CBT / Written Exam Fee Will Not Refunded.\nPay the Exam Fee Through Online / Offline Fee Mode Only"
     },
     "itbp-capf-medical-officer-2026": {
       "publishedDate": "8 September 2026",
@@ -12622,7 +13742,7 @@ export const scrapedData = {
     "jac-jhtet-2026": {
       "publishedDate": "3 June 2026",
       "publishedAt": "2026-06-02T18:30:00.000Z",
-      "lastDate": "20/06/2026"
+      "lastDate": "Important Dates\n\nApplication Begin :21/04/2026\nLast Date for Registration :20/07/2026\nPay Exam Fee Last Date :20/07/2026\nJAC JHTET Exam Date : 01/11/2026\n\nAdmit Card Available : 29/10/2026\nAnswer Key Available : After Exam\nResult Declared : Notified Soon : Application Fee\n\nFor Paper I or Paper II Only\nGeneral / BC / EWS: 1300/-\nSC / ST : 700/-\nFor Both Paper (Junior / Primary) \nGeneral / BC / EWS: 1500/-\nSC / ST : 800/-\nPay the Examination Fee Through Debit Card, Credit Card, Net Banking or Offline Fee Mode Only."
     },
     "jceceb-jharkhand-bed-2026": {
       "publishedDate": "4 June 2026",
@@ -13026,7 +14146,7 @@ export const scrapedData = {
     "mpesb-group2-sub1-krashi-vistar": {
       "publishedDate": "10 September 2026",
       "publishedAt": "2026-09-09T18:30:00.000Z",
-      "lastDate": "03/07/2026\nLast Date for Apply Online : 17/07/2026\nLast Date Pay Exam Fee :17/07/2026\nCorrection Last Date : 03-22 July 2026\nExam Date Start :17/09/2026 (Revised)\nAdmit Card Available :10/09/2026\nAnswer Key Available : After Exam\nResult Status :Notified Soon : Application Fee\n\nGeneral / Other State : 560/-\nOBC / SC / ST : 310/-\nPortal Charges: Rs. 60/-\nPay the Examination Fee Through Cast at E Challan or Debit Card, Credit Card, Net Banking"
+      "lastDate": "Important Dates\n\nApplication Begin : 03/07/2026\nLast Date for Apply Online : 17/07/2026\nLast Date Pay Exam Fee :17/07/2026\nCorrection Last Date : 03-22 July 2026\nExam Date Start :17/09/2026 (Revised)\nAdmit Card Available :10/09/2026\nAnswer Key Available : 21/09/2026\nResult Status :Notified Soon : Application Fee\n\nGeneral / Other State : 560/-\nOBC / SC / ST : 310/-\nPortal Charges: Rs. 60/-\nPay the Examination Fee Through Cast at E Challan or Debit Card, Credit Card, Net Banking"
     },
     "mpesb-group2-sub3-oct25": {
       "publishedDate": "31 August 2026",
@@ -13036,7 +14156,7 @@ export const scrapedData = {
     "mpesb-group2-subgroup-4-aug26": {
       "publishedDate": "19 September 2026",
       "publishedAt": "2026-09-18T18:30:00.000Z",
-      "lastDate": "04/08/2026\nLast Date for Apply Online : 21/08/2026\nLast Date Pay Exam Fee :21/08/2026\nCorrection Last Date : 23/08/2026\nExam Date Start : 22/09/2026\nAdmit Card Available :18/09/2026\nAnswer Key Available : After Exam\nResult Status :Notified Soon : Application Fee\n\nGeneral / Other State : 560/-\nOBC / SC / ST : 310/-\nPortal Charges: Rs. 60/-\nPay the Examination Fee Through Cast at E Challan or Debit Card, Credit Card, Net Banking"
+      "lastDate": "Important Dates\n\nApplication Begin : 04/08/2026\nLast Date for Apply Online : 21/08/2026\nLast Date Pay Exam Fee :21/08/2026\nCorrection Last Date : 23/08/2026\nExam Date Start : 22/09/2026\nAdmit Card Available :18/09/2026\nAnswer Key Available : 06/10/2026\nResult Status :Notified Soon : Application Fee\n\nGeneral / Other State : 560/-\nOBC / SC / ST : 310/-\nPortal Charges: Rs. 60/-\nPay the Examination Fee Through Cast at E Challan or Debit Card, Credit Card, Net Banking"
     },
     "mpesb-group2-subgroup3-oct25": {
       "publishedDate": "31 August 2026",
@@ -13131,7 +14251,7 @@ export const scrapedData = {
     "mpesb-sub-inspector-subedar-sep26": {
       "publishedDate": "1 September 2026",
       "publishedAt": "2026-08-31T18:30:00.000Z",
-      "lastDate": "09/09/2026\nLast Date for Apply Online : 23/09/2026\nPay Exam Fee Last Date : 23/09/2026\nCorrection Last Date : 28/09/2026\nMPESB SI / Subedar Exam Date Start : 28/10/2026\nAdmit Card Available : Before Exam : Application Fee\n\nGeneral / Other State : 560/-\nOBC / SC / ST : 310/-\nPortal Charges: Rs. 60/- (Include) \nPay the Examination Fee Through Cast at E Challan or Debit Card, Credit Card, Net Banking"
+      "lastDate": "Important Dates\n\nApplication Begin : 09/09/2026\nLast Date for Apply Online : 23/09/2026\nPay Exam Fee Last Date : 23/09/2026\nCorrection Last Date : 28/09/2026\nMPESB SI / Subedar Exam Date Start : 28/10/2026\nAdmit Card Available : 26/10/2026 : Application Fee\n\nGeneral / Other State : 560/-\nOBC / SC / ST : 310/-\nPortal Charges: Rs. 60/- (Include) \nPay the Examination Fee Through Cast at E Challan or Debit Card, Credit Card, Net Banking"
     },
     "mpesb-subedar-steno-asi-2026": {
       "publishedDate": "2026-09-25T10:23:25+05:30",
@@ -13299,7 +14419,7 @@ export const scrapedData = {
     "nbe-various-post-june26": {
       "publishedDate": "11 September 2026",
       "publishedAt": "2026-09-10T18:30:00.000Z",
-      "lastDate": "07/07/2026\nLast Date for Apply Online :31/07/2026\nPay Exam Fee Last Date :31/07/2026\nRevised Exam Date : 15-16 September 2026\nExam City Available : 18/08/2026\nAdmit Card Available : Before Exam : Application Fee\n\nGeneral / OBC / EWS : 1500/- \nGST Extra : 18%\nSC / ST / PH : 0/-\nFemale Candidate : 0/-\nPay the Exam Fee Through Debit Card / Credit Card / Net Banking / UPI Fee Mode Only."
+      "lastDate": "Important Dates\n\nApplication Begin :07/07/2026\nLast Date for Apply Online :31/07/2026\nPay Exam Fee Last Date :31/07/2026\nRevised Exam Date : 15-16 September 2026\nExam City Available : 18/08/2026\nAdmit Card Available : Before Exam : Application Fee\n\nGeneral / OBC / EWS : 1500/- \nGST Extra : 18%\nSC / ST / PH : 0/-\nFemale Candidate : 0/-\nPay the Exam Fee Through Debit Card / Credit Card / Net Banking / UPI Fee Mode Only."
     },
     "nbems-group-a-b-c-various-post-2026": {
       "publishedDate": "2026-10-02T16:12:38+05:30",
@@ -13392,7 +14512,7 @@ export const scrapedData = {
     "nicl-assistant-july26": {
       "publishedDate": "21 August 2026",
       "publishedAt": "2026-08-20T18:30:00.000Z",
-      "lastDate": "18/07/2026\nLast Date for Apply Online : 07/08/2026\nPay Fee Last Date : 07/08/2026\nPhase-I Exam Date : 27/08/2026\nAdmit Card Available : 20/08/2026\nPhase-II Exam Date : 30/10/2026\nResult Available : Notified Soon : Application Fee\n\nGeneral / OBC / EWS : 850/-\nSC / ST / PH : 0/-\nPay the Exam Fee Through Debit Card / Credit Card / Net Banking / UPI Fee Mode Only."
+      "lastDate": "Important Dates\n\nApplication Begin : 18/07/2026\nLast Date for Apply Online : 07/08/2026\nPay Fee Last Date : 07/08/2026\nPhase-I Exam Date : 27/08/2026\nAdmit Card Available : 20/08/2026\nPre Result Available : 08/10/2026\nPhase-II Exam Date : 30/10/2026\nPhase II Admit Card Available : 22/10/2026 : Application Fee\n\nGeneral / OBC / EWS : 850/-\nSC / ST / PH : 0/-\nPay the Exam Fee Through Debit Card / Credit Card / Net Banking / UPI Fee Mode Only."
     },
     "nielit-ccc-2026": {
       "publishedDate": "2026-09-03T15:09:38+05:30",
@@ -13505,7 +14625,7 @@ export const scrapedData = {
     "nta-ugc-net-june-2026": {
       "publishedDate": "2026-09-24T17:45:16+05:30",
       "publishedAt": "2026-09-24T12:15:16.000Z",
-      "lastDate": "24 May 2026"
+      "lastDate": "National Testing Agency (NTA)  has released the University Grant Commission UGC National Eligibility Test NET Assistant Professor / JRF June 2026 Examination online application Form 2026 will start from 29 April 2026 and the last date to apply will be 24 May 2026. candidates should read the NTA UGC NET June 2026 information brochure for all the information related to the NET / JRF exam like syllabus, eligibility, age limit, fees, Subject Details, information and other types of information and then apply.."
     },
     "ntpc-act-june26": {
       "publishedDate": "29 June 2026",
@@ -13550,7 +14670,7 @@ export const scrapedData = {
     "nvs-class-6th-admission-july26": {
       "publishedDate": "31 July 2026",
       "publishedAt": "2026-07-30T18:30:00.000Z",
-      "lastDate": "Jawahar Navodaya Vidyalaya JNV has released the online application for admission 2027 will start from 07 July 2026 and the last date to apply will be 07 August 2026. Pan India NVS Schools are participating in Class VI Admissions 2027, candidates should read the information brochure for all the information related to the entrance exam like syllabus, eligibility, age limit, fees, School List, information and other types of information and then apply."
+      "lastDate": "Jawahar Navodaya Vidyalaya JNV has released the online application for admission 2027 will start from 07 July 2026 and the last date to apply will be 10 August 2026. Pan India NVS Schools are participating in Class VI Admissions 2027, candidates should read the information brochure for all the information related to the entrance exam like syllabus, eligibility, age limit, fees, School List, information and other types of information and then apply."
     },
     "nvs-class-9th-2026": {
       "publishedDate": "2026-10-01T10:17:12+05:30",
@@ -13631,7 +14751,7 @@ export const scrapedData = {
     "patna-high-court-july26": {
       "publishedDate": "8 September 2026",
       "publishedAt": "2026-09-07T18:30:00.000Z",
-      "lastDate": "28/07/2026\nLast Date for Apply Online :27/08/2026\nPay Exam Fee Last Date :30/08/2026\nExam Date : 18/09/2026\nAdmit Card Available : Before Exam : Application Fee\n\nGeneral / BC / EBC / EWS : 1500/-\nSC / ST / PH : 750/-\nPay the Exam Fee Through Online / Offline Fee Mode Only"
+      "lastDate": "Important Dates\n\nApplication Begin :28/07/2026\nLast Date for Apply Online :27/08/2026\nPay Exam Fee Last Date :30/08/2026\nExam Date : 18/09/2026\nAdmit Card Available : 12/09/2026\nAnswer Key Available : 24/09/2026 : Application Fee\n\nGeneral / BC / EBC / EWS : 1500/-\nSC / ST / PH : 750/-\nPay the Exam Fee Through Online / Offline Fee Mode Only"
     },
     "patna-university-ug-2026": {
       "publishedDate": "29 May 2026",
@@ -13644,14 +14764,14 @@ export const scrapedData = {
       "lastDate": "05 June 2026"
     },
     "pfrda-assistant-manager-2026": {
-      "publishedDate": "2026-09-24T13:46:57+05:30",
-      "publishedAt": "2026-09-24T08:16:57.000Z",
+      "publishedDate": "2026-11-05T17:24:27+05:30",
+      "publishedAt": "2026-11-05T11:54:27.000Z",
       "lastDate": "24 September 2026"
     },
     "pfrda-assistant-manager-sep26": {
       "publishedDate": "5 September 2026",
       "publishedAt": "2026-09-04T18:30:00.000Z",
-      "lastDate": "03/09/2026\nLast Date for Apply Online : 24/09/2026\nPay Exam Fee Last Date : 24/09/2026\nPhase – I Examination Date : 15/10/2026\nPhase – II Examination Date : 20/11/2026\nAdmit Card Available : Before Exam\nInterview Date : As per Schedule : Application Fee\n\nGeneral / OBC / EWS : 1000/-\nSC / ST / PH / EXM : 0/-\nPay the Exam Fee Through Debit Card / Credit Card/ Net Banking / UPI Fee Mode Only"
+      "lastDate": "Important Dates\n\nApplication Begin : 03/09/2026\nLast Date for Apply Online : 24/09/2026\nPay Exam Fee Last Date : 24/09/2026\nPhase – I Examination Date : 15/10/2026\nPhase I Result Available : 04/11/2026\nPhase – II Examination Date : 20/11/2026\nAdmit Card Available : Before Exam\nInterview Date : As per Schedule : Application Fee\n\nGeneral / OBC / EWS : 1000/-\nSC / ST / PH / EXM : 0/-\nPay the Exam Fee Through Debit Card / Credit Card/ Net Banking / UPI Fee Mode Only"
     },
     "pgcil-diploma-trainee-2026": {
       "publishedDate": "16 June 2026",
@@ -13750,8 +14870,8 @@ export const scrapedData = {
       "lastDate": "20/07/2026\nLast Date for Apply Online :19/08/2026\nLast Date Pay Exam Fee :19/08/2026\nMerit List : As per Schedule : Application Fee\n\nGeneral / OBC / EWS: 100/-\nSC / ST : 0/-\nAll Category Female : 0/-\nPay the Examination Fees  Through Debit Card / Credit Card / Net Banking Fees Mode Only."
     },
     "railway-rrb-alp-advt-01-2025": {
-      "publishedDate": "2026-10-22T11:52:26+05:30",
-      "publishedAt": "2026-10-22T06:22:26.000Z",
+      "publishedDate": "2026-11-05T15:18:17+05:30",
+      "publishedAt": "2026-11-05T09:48:17.000Z",
       "lastDate": "19 May 2025"
     },
     "railway-rrb-group-d-2025": {
@@ -13767,7 +14887,7 @@ export const scrapedData = {
     "railway-rrb-junior-engineer-cen-04-2026": {
       "publishedDate": "21 July 2026",
       "publishedAt": "2026-07-20T18:30:00.000Z",
-      "lastDate": "14/08/2026\nLast Date for Apply Online :13/09/2026\nLast Date Pay Exam Fee :13/09/2026\nCorrection Date : As per Schedule\nRRB JE CEN 04/2026 Exam Date :  As per schedule\nAdmit Card Available : Before Exam : Application Fee\n\nGeneral / OBC / EWS : 500/-\nSC / ST / PH : 250/-\nAll Category Female : 250/-\nAfter Appear the Stage I Exam \nGeneral/OBC/EWS Fee Refund: Rs. 400/-\nSC / ST / PH / Female Refund : Rs. 250/-\nPay the Examination Fee Through Cast at E Challan or Debit Card, Credit Card, Net Banking"
+      "lastDate": "Important Dates\n\nApplication Begin : 14/08/2026\nLast Date for Apply Online :13/09/2026\nLast Date Pay Exam Fee :15/09/2026\nCorrection Date : 16-25 September 2026\nApplication Status : 07/10/2026\nRRB JE CEN 04/2026 Exam Date :  27 to 28 October 2026\nExam City Available : 10 Days Before Exam\nAdmit Card Available : 4 Days Before Exam : Application Fee\n\nGeneral / OBC / EWS : 500/-\nSC / ST / PH : 250/-\nAll Category Female : 250/-\nAfter Appear the Stage I Exam \nGeneral/OBC/EWS Fee Refund: Rs. 400/-\nSC / ST / PH / Female Refund : Rs. 250/-\nPay the Examination Fee Through Cast at E Challan or Debit Card, Credit Card, Net Banking"
     },
     "railway-rrb-ntpc-graduate-cen-06-2025": {
       "publishedDate": "27 August 2026",
@@ -13851,7 +14971,7 @@ export const scrapedData = {
     "rajasthan-high-court-july26": {
       "publishedDate": "22 July 2026",
       "publishedAt": "2026-07-21T18:30:00.000Z",
-      "lastDate": "22/07/2026\nLast Date for Apply Online :  10/08/2026 upto 05 PM\nLast Date Pay Exam Fee : 11/08/2025\nExam Date : As per Schedule \nAdmit Card Available : Before Exam : Application Fee\n\nGeneral / OBC / Other State : 750/-\nOBC NCL / EWS : 600/-\nSC / ST /: 450/-\nPay the Exam Fees Through Cash at Rajasthan E Mitra OR Pay Through Debit Card / Credit Card / Net Banking Fee Mode Only."
+      "lastDate": "Important Dates\n\nApplication Begin :22/07/2026\nLast Date for Apply Online :  10/08/2026 upto 05 PM\nLast Date Pay Exam Fee : 11/08/2025\nExam Date : 27 October 2026 to 04 November 2026\nAdmit Card Available : 13/10/2026 : Application Fee\n\nGeneral / OBC / Other State : 750/-\nOBC NCL / EWS : 600/-\nSC / ST /: 450/-\nPay the Exam Fees Through Cash at Rajasthan E Mitra OR Pay Through Debit Card / Credit Card / Net Banking Fee Mode Only."
     },
     "rajasthan-ldc-online-form": {
       "publishedDate": "15 June 2026",
@@ -13899,7 +15019,7 @@ export const scrapedData = {
     "rajasthan-rpsc-senior-teacher-07-2025": {
       "publishedDate": "1 July 2026",
       "publishedAt": "2026-06-30T18:30:00.000Z",
-      "lastDate": "19/08/2025\nLast Date for Apply : 17/09/2025\nFee Payment Last Date : 17/09/2025\nExam Date : 12-18 July 2026\nAdmit Card Available : Before Exam : Application Fees\n\nGeneral / Other State : 600/-\nOBC / BC / SC / ST / PH : 400/-\nPay the Examination Fee Through Debit Card / Credit Card / Net Banking / Online Only."
+      "lastDate": "Important Dates\n\nApplication Begin : 19/08/2025\nLast Date for Apply : 17/09/2025\nFee Payment Last Date : 17/09/2025\nExam Date : 12-18 July 2026\nAdmit Card Available : 09/07/2026\nAnswer Key Available : 28/07/2026\nResult Declared : October 2026 (Subject Wise) : Application Fees\n\nGeneral / Other State : 600/-\nOBC / BC / SC / ST / PH : 400/-\nPay the Examination Fee Through Debit Card / Credit Card / Net Banking / Online Only."
     },
     "rajasthan-rssb-junior-engineer-2026": {
       "publishedDate": "2026-08-18T16:45:37+05:30",
@@ -13914,7 +15034,7 @@ export const scrapedData = {
     "rajasthan-sanitation-worker-jul26": {
       "publishedDate": "28 July 2026",
       "publishedAt": "2026-07-27T18:30:00.000Z",
-      "lastDate": "15/08/2026\nLast Date for Apply Online : 28/09/2026\nLast Date Pay Exam Fee : 28/09/2026\nMerit List / Exam Date : As per Schedule : Application Fee (OTR)\n\nGeneral : 600/-\nOBC / SC / ST / PH : 400/-\nPay the Examination Fee Through Debit Card / Credit Card / Net Banking / Online Only"
+      "lastDate": "Important Dates\n\nApplication Begin : 15/08/2026\nLast Date for Apply Online : 28/10/2026\nLast Date Pay Exam Fee : 28/10/2026\nCorrection Date : 29/10/2026 to 04/11/2026\nMerit List / Exam Date : As per Schedule : Application Fee (OTR)\n\nGeneral : 600/-\nOBC / SC / ST / PH : 400/-\nPay the Examination Fee Through Debit Card / Credit Card / Net Banking / Online Only"
     },
     "rajasthan-scholarship-scooty-yojana-2025-26-start": {
       "publishedDate": "23 September 2025",
@@ -13924,7 +15044,7 @@ export const scrapedData = {
     "rajasthan-set-jun": {
       "publishedDate": "7 September 2026",
       "publishedAt": "2026-09-06T18:30:00.000Z",
-      "lastDate": "14/06/2026\nLast Date for Apply : 10/08/2026 (Date Extended)\nFee Payment Last Date : 10/08/2026\nForm Correction Date : 11/08/2026\nExam Date : 13/09/2026\nAdmit Card Available : 07/09/2026 : Application Fees\n\nGeneral / Other State : 1500/-\nEWS / SBC / OBC : 1200/-\nSC / ST / PH : 750/-\nPay the Exam Fee Through Debit Card / Credit Card / Net Banking Fee Mode Only."
+      "lastDate": "Important Dates\n\nApplication Begin : 14/06/2026\nLast Date for Apply : 10/08/2026 (Date Extended)\nFee Payment Last Date : 10/08/2026\nForm Correction Date : 11/08/2026\nExam Date : 13/09/2026\nAdmit Card Available : 07/09/2026\nAnswer Key Available : 05/10/2026 : Application Fees\n\nGeneral / Other State : 1500/-\nEWS / SBC / OBC : 1200/-\nSC / ST / PH : 750/-\nPay the Exam Fee Through Debit Card / Credit Card / Net Banking Fee Mode Only."
     },
     "rajasthan-state-eligibility-test-set-026": {
       "publishedDate": "2026-09-28T13:59:44+05:30",
@@ -13964,7 +15084,7 @@ export const scrapedData = {
     "rbi-office-attendant-jan26": {
       "publishedDate": "22 June 2026",
       "publishedAt": "2026-06-21T18:30:00.000Z",
-      "lastDate": "15/01/2026\nLast Date for Apply Online :04/02/2026\nLast Date Pay Exam Fee :04/02/2026\nExam Date :28/02/2026 & 01/03/2026\nAdmit Card Available : 23/02/2026\n\nResult Available : 22/06/2026 : Application Fee\n\nGeneral / OBC / EWS : 450/-\nSC / ST : 50/-\nPH (Divyang): 50/-\nPay the Examination Fee Through Cast at E Challan or Debit Card, Credit Card, Net Banking"
+      "lastDate": "Important Dates\n\nApplication Begin : 15/01/2026\nLast Date for Apply Online :04/02/2026\nLast Date Pay Exam Fee :04/02/2026\nExam Date :28/02/2026 & 01/03/2026\nAdmit Card Available : 23/02/2026\n\nResult Available : 22/06/2026 : Application Fee\n\nGeneral / OBC / EWS : 450/-\nSC / ST : 50/-\nPH (Divyang): 50/-\nPay the Examination Fee Through Cast at E Challan or Debit Card, Credit Card, Net Banking"
     },
     "rcfl-apprentice-2026": {
       "publishedDate": "2026-09-20T13:20:08+05:30",
@@ -14113,12 +15233,12 @@ export const scrapedData = {
     "rrb-alp-cen-01-2025": {
       "publishedDate": "12 June 2026",
       "publishedAt": "2026-06-11T18:30:00.000Z",
-      "lastDate": "19/05/2025"
+      "lastDate": "Important Dates\n\nApplication Begin : 12/04/2025\nLast Date for Apply Online : 19/05/2025\nLast Date Pay Exam Fee : 21/05/2025\nCorrection / Modified Form : 22-31 May 2025\nExam Date : 13-18 February 2026   \nExam City Available : 03/02/2026\nRe Schedule Candidate Exam Date : 11/03/2026\nAdmit Card Available : 4 Days Before Exam  \nAnswer Key Available : 20/03/2026\nCBT I Result Date : 12/06/2026\nCBT II Exam Date : 28/07/2026\nCBT II Exam City Available : 18/07/2026\nCBT II Admit Card Available : 24/07/2026\nAnswer Key Available : 05/08/2026\nCBT II Result Available : 01/10/2026\nCBAT Exam Date : 30/10/2026 : Application Fee\n\nGeneral / OBC / EWS : 500/-\nSC / ST / PH : 250/-\nAll Category Female : 250/-\nAfter Appear the Stage I Exam \nUR/OBC/EWS Fee Refund : 400/-\nSC / ST / PH / Female Refund : 250/-\nPay the Examination Fee Through Debit Card, Credit Card, Net Banking Fee Mode Only."
     },
     "rrb-alp-cen-01-2026": {
-      "publishedDate": "2026-11-02T18:12:59+05:30",
-      "publishedAt": "2026-11-02T12:42:59.000Z",
-      "lastDate": "14 June 2026"
+      "publishedDate": "2026-11-03T17:07:06+05:30",
+      "publishedAt": "2026-11-03T11:37:06.000Z",
+      "lastDate": "Important Dates\n\nApplication Begin :15/05/2026\nLast Date for Apply Online :14/06/2026\nLast Date Pay Exam Fee :16/06/2026\nCorrection / Modified Form : 17-26 June 2026\n\nRevised Application Status Available : 14/10/2026\nExam Date :03 to 05 November 2026\nExam City Available : 10 Days Before Exam\nAdmit Card Available : 30/10/2026 : Application Fee\n\nGeneral UR / OBC / EWS : 500/-\nSC / ST / PH : 250/-\nAll Category Female : 250/-\nAfter Appear the Stage I Exam \nUR/OBC/EWS Fee Refund : 400/-\nSC / ST / PH / Female Refund : 250/-\nPay the Examination Fee Through Debit Card, Credit Card, Net Banking Fee Mode Only."
     },
     "RRB-ALP-CEN-No-01-2026": {
       "publishedDate": "17 June 2026",
@@ -14222,7 +15342,7 @@ export const scrapedData = {
     "rrb-ntpc-ug-07-2025": {
       "publishedDate": "5 June 2026",
       "publishedAt": "2026-06-04T18:30:00.000Z",
-      "lastDate": "04/12/2025"
+      "lastDate": "Important Dates\n\nApplication Begin : 28/10/2025\nLast Date for Apply Online :04/12/2025\nLast Date Pay Exam Fee :06/12/2025\nCorrection / Modified Form : 07-16 December 2025\nApplication Status : Available : 06/02/2026\nExam Date :07-09 May, 13,14,15, 16-20 June 2026\nExam City Available : 10 Days Before Exam\nAdmit Card Available : 4 Days Before Exam\nAnswer Key Available : 27/06/2026\nCBT I Result Available : 24/08/2026\nCBT I Score Card Available : 26/08/2026\nCBT II Exam Date : 17/09/2026\nExam City Available : 07/09/2026\nCBT II Admit Card Available : 13/09/2026\nAnswer Key Available : 24/09/2026\nCBT II Result Available : 30/10/2026 : Application Fee\n\nGeneral / OBC / EWS : 500/-\nSC / ST / Female: 250/-\nPH (Divyang) : 250/-\nAfter Appear the Stage I Exam\nGeneral / OBC / EWS : 400/-\nSC / ST / Female: 250/-\nPH (Divyang) : 250/-\nPay the Examination Fee Through Cast at E Challan or Debit Card, Credit Card, Net Banking"
     },
     "RRB-NTPC-Under-Graduate-CEN-07-2025": {
       "publishedDate": "26 August 2026",
@@ -14280,7 +15400,7 @@ export const scrapedData = {
     "rrb-section-controller-03-2026": {
       "publishedDate": "11 September 2026",
       "publishedAt": "2026-09-10T18:30:00.000Z",
-      "lastDate": "15/07/2026\nLast Date for Apply Online :14/08/2026\nPay Exam Fee Last Date :16/08/2026\nCorrection Date : 17-26 August 2026\nRRB Section Controller Exam Date : 12-13 October 2026\nExam City Available : 10 Days Before Exam\nAdmit Card Available : 4 Days Before Exam : Application Fee\n\n\nGeneral / OBC / EWS : 500/-\nSC / ST : 250/-\nPH (Divyang) : 250/-\nAfter Appear the Stage I Exam\nUR/OBC/EWS Fee Refund : 400/-\nSC / ST / PH / Female Refund : 250/-\nPay the Examination Fee Through Cast at E Challan or Debit Card, Credit Card, Net Banking"
+      "lastDate": "Important Dates\n\nApplication Begin :15/07/2026\nLast Date for Apply Online :14/08/2026\nPay Exam Fee Last Date :16/08/2026\nCorrection Date : 17-26 August 2026\nCheck Application Status : 16/09/2026\nRRB Section Controller Exam Date : 12-13 October 2026\nExam City Available : 10 Days Before Exam\nAdmit Card Available : 4 Days Before Exam\nAnswer Key Available : 26/10/2026 at 04 PM : Application Fee\n\n\nGeneral / OBC / EWS : 500/-\nSC / ST : 250/-\nPH (Divyang) : 250/-\nAfter Appear the Stage I Exam\nUR/OBC/EWS Fee Refund : 400/-\nSC / ST / PH / Female Refund : 250/-\nPay the Examination Fee Through Cast at E Challan or Debit Card, Credit Card, Net Banking"
     },
     "rrb-section-controller-04-2025": {
       "publishedDate": "30 June 2026",
@@ -14428,11 +15548,11 @@ export const scrapedData = {
     "rssb-computer-instructor-07-2026": {
       "publishedDate": "18 September 2026",
       "publishedAt": "2026-09-17T18:30:00.000Z",
-      "lastDate": "25/05/2026\nLast Date for Apply Online : 23/06/2026\nComplete Form Last Date : 23/06/2026\nCorrection Date :As per Schedule \nExam Date : 22-23 August 2026\nAdmit Card Available :19/08/2026\nAnswer Key Available : 18/09/2026 : Application Fee\n\nGeneral / OBC : 600/-\nOBC NCL : 400/-\nSC / ST : 400/-\nCorrection Charge : 300/-\nThis fee is for one time registration, now after paying the OTR fee once, the candidate will not have to pay the application fee again and again.\nPay the Exam Fee Through Emitra CSC Center, Debit Card, Credit Card, Net Banking."
+      "lastDate": "Important Dates\n\nApplication Begin : 25/05/2026\nLast Date for Apply Online : 23/06/2026\nComplete Form Last Date : 23/06/2026\nCorrection Date :As per Schedule \nExam Date : 22-23 August 2026\nAdmit Card Available :19/08/2026\nAnswer Key Available : 18/09/2026 : Application Fee\n\nGeneral / OBC : 600/-\nOBC NCL : 400/-\nSC / ST : 400/-\nCorrection Charge : 300/-\nThis fee is for one time registration, now after paying the OTR fee once, the candidate will not have to pay the application fee again and again.\nPay the Exam Fee Through Emitra CSC Center, Debit Card, Credit Card, Net Banking."
     },
     "rssb-female-supervisor-2026": {
-      "publishedDate": "28 July 2026",
-      "publishedAt": "2026-07-28T07:22:00.000Z",
+      "publishedDate": "2026-11-05T17:00:47+05:30",
+      "publishedAt": "2026-11-05T11:30:47.000Z",
       "lastDate": "11 February 2026 (Extend)"
     },
     "rssb-forester-2026-for-259-post": {
@@ -14533,7 +15653,7 @@ export const scrapedData = {
     "rssb-women-supervisor-01-2026": {
       "publishedDate": "17 July 2026",
       "publishedAt": "2026-07-16T18:30:00.000Z",
-      "lastDate": "07/01/2026\nLast Date for Apply Online :11/02/2026\nLast Date Pay Exam Fee :11/02/2026\nExam Date :24/07/2026\nAdmit Card Available : 20/07/2026 : Application Fee\n\nGeneral / OBC: 600/-\nOBC NCL / SC / ST : 400/-\nCorrection Charges : 300/-\nNote: This fee is for one time registration, now after paying the OTR fee once, the candidate will not have to pay the application fee again and again.\nPay the Examination Fee Through Cast at E Challan or Debit Card, Credit Card, Net Banking"
+      "lastDate": "Important Dates\n\nApplication Begin : 07/01/2026\nLast Date for Apply Online :11/02/2026\nLast Date Pay Exam Fee :11/02/2026\nExam Date :24/07/2026\nAdmit Card Available : 20/07/2026\n\nResult Available : 04/11/2026 : Application Fee\n\nGeneral / OBC: 600/-\nOBC NCL / SC / ST : 400/-\nCorrection Charges : 300/-\nNote: This fee is for one time registration, now after paying the OTR fee once, the candidate will not have to pay the application fee again and again.\nPay the Examination Fee Through Cast at E Challan or Debit Card, Credit Card, Net Banking"
     },
     "rssb-women-supervisor-2026": {
       "publishedDate": "17 September 2026",
@@ -14553,7 +15673,7 @@ export const scrapedData = {
     "rvunl-june26": {
       "publishedDate": "25 June 2026",
       "publishedAt": "2026-06-24T18:30:00.000Z",
-      "lastDate": "July 2026\nLast Date for Apply : As per Schedule\nFee Payment Last Date : As per Schedule\nExam Date : As Per Schedule\nAdmit Card Available : Before Exam : Application Fees\n\nGeneral / / OBC / EWS : Soon\nSC / ST / PH : Soon\nPay the Examination Fee Through Debit Card / Credit Card / Net Banking / Online Only."
+      "lastDate": "Important Dates\n\nApplication Begin : 05/08/2026\nLast Date for Apply : 31/08/2026\nFee Payment Last Date : 31/08/2026\nExam Date : 19/11/2026 to 15/01/2027\nAdmit Card Available : Before Exam : Application Fees\n\nGeneral / : 1000/-\nEWS / BC / MBC SC / ST / PH : 500/-\nPay the Examination Fee Through Debit Card / Credit Card / Net Banking / Online Only."
     },
     "sail-rourkela-apprentice-july26": {
       "publishedDate": "23 July 2026",
@@ -14607,7 +15727,7 @@ export const scrapedData = {
     "sbi-clerk-backlog-aug26": {
       "publishedDate": "9 September 2026",
       "publishedAt": "2026-09-08T18:30:00.000Z",
-      "lastDate": "07/08/2026\nLast Date for Apply Online :27/08/2026\nPay Exam Fee Last Date :27/08/2026\nSBI Clerk Phase I Pre Exam Date : 16 September 2026\nAdmit Card Available : 09/09/2026\nSBI Clerk Phase II Main Exam Date : October / November 2026\nAdmit Card : Before Exam : Application Fee\n\nOBC : 750/-\nSC / ST / PH : 0/-\nPay the Exam Fee Through Debit Card / Credit Card / Net Banking / UPI Fee Mode Only."
+      "lastDate": "Important Dates\n\nApplication Begin :07/08/2026\nLast Date for Apply Online :27/08/2026\nPay Exam Fee Last Date :27/08/2026\nSBI Clerk Phase I Pre Exam Date : 16 September 2026\nAdmit Card Available : 09/09/2026\nPhase I Admit Card : Before Exam\nPre Result Available : 17/10/2026\nSBI Clerk Phase II Main Exam Date : 29 October 2026\nPhase II Admit Card : 19/10/2026 : Application Fee\n\nOBC : 750/-\nSC / ST / PH : 0/-\nPay the Exam Fee Through Debit Card / Credit Card / Net Banking / UPI Fee Mode Only."
     },
     "sbi-clerk-ja-2026": {
       "publishedDate": "17 September 2026",
@@ -14646,7 +15766,7 @@ export const scrapedData = {
     "sbi-po-june26": {
       "publishedDate": "18 June 2026",
       "publishedAt": "2026-06-17T18:30:00.000Z",
-      "lastDate": "08/07/2026"
+      "lastDate": "Important Dates\n\nApplication Begin :18/06/2026\nLast Date for Apply Online :08/07/2026\nPay Exam Fee Last Date :08/07/2026\nSBI PO Phase I Pre Exam Date : 01-02 August 2026\nAdmit Card Available : 22/07/2026\nPre Exam Result Available : 28/08/2026\nSBI PO Phase II Main Exam Date : September 2026\nMains Admit Card Admit Card : 02/09/2026\nMains Result Available : 15/10/2026 : Application Fee\n\nGeneral / OBC / EWS : 750/-\nSC / ST / PH : 0/-\nPay the Exam Fee Through Debit Card / Credit Card / Net Banking / UPI Fee Mode Only."
     },
     "sbi-sco-recruitment-2026-apply-online-for-07-marketing-executive-faculty-and-more-posts-3067922": {
       "publishedDate": "17 September 2026",
@@ -14749,7 +15869,7 @@ export const scrapedData = {
     "ssb-hc-ministerial-jul21": {
       "publishedDate": "11 June 2026",
       "publishedAt": "2026-06-10T18:30:00.000Z",
-      "lastDate": "22/08/2021"
+      "lastDate": "Important Dates\n\nApplication Begin : 24/07/2021\nLast Date for Apply Online : 22/08/2021 \nPay Examination Fee Last Date : 22/08/2021\nDOCUMENTATION AND DETAILED & REVIEW MEDICAL 2018 Recruitment Exam Date : 09/11/2021\nPET/PST Admit Card Available : 04/02/2026\nCBT Exam Date : 07/07/2026\nAdmit Card Available : 03/07/2026\nAnswer Key Available : 09/07/2026\nRe Open Answer Key : 14/07/2026\nCBT Result Available : 02/11/2026\nTyping Test Exam Date : 16-18 November 2026 : Application Fee\n\nGeneral / OBC / EWS : 100/-\nSC / ST / PH : 0/-\nAll Category Female : 0/-\nPay the Exam Fees Through Debit Card / Credit Card / Net Banking Mode."
     },
     "ssb-head-constable-medical-cader-2026": {
       "publishedDate": "30 July 2026",
@@ -14757,8 +15877,8 @@ export const scrapedData = {
       "lastDate": "04 May 2026 (Extend)"
     },
     "ssb-head-constable-ministerial-2021": {
-      "publishedDate": "2026-10-14T13:43:07+05:30",
-      "publishedAt": "2026-10-14T08:13:07.000Z",
+      "publishedDate": "2026-11-03T14:34:31+05:30",
+      "publishedAt": "2026-11-03T09:04:31.000Z",
       "lastDate": "28 August 2021"
     },
     "ssb-head-constable-non-gd-2026": {
@@ -14890,11 +16010,11 @@ export const scrapedData = {
     "ssc-gd-2025-exam-2026": {
       "publishedDate": "15 June 2026",
       "publishedAt": "2026-06-14T18:30:00.000Z",
-      "lastDate": "31/12/2025"
+      "lastDate": "Important Dates\n\nApplication Begin : 01/12/2025\nLast Date for Apply Online :31/12/2025\nLast Date Pay Exam Fee :01/01/2026\nCorrection Date: 10-13 January 2026\nChoose Exam Week Preference: 11-15 April 2026\nWeek 1 Exam Schedule :27/04/2026 to 02/05/2026\nWeek 2 Exam Schedule :04-09 May 2026\nWeek 3 Exam Schedule :18-23 May 2026\nWeek 4 Exam Schedule :25-30 May 2026\nExam City Available : Before Exam\nAdmit Card Available : 3 Before Exam\nAnswer Key Available : 15/06/2026\nResult Available : 12/10/2026\nRevised Result : 23/10/2026\nMarks Available : 03/11/2026 : Application Fee\n\nGeneral / OBC / EWS : 100/-\nSC / ST : 0/- Exempted\nFemale : 0/- Exempted\nCorrection Charge : 200/- First Time\nCorrection Charge : 500/- (Second Time)\nPay the Examination Fee Through Cast at E Challan or Debit Card, Credit Card, Net Banking"
     },
     "ssc-gd-constable-2025": {
-      "publishedDate": "2026-10-23T13:43:48+05:30",
-      "publishedAt": "2026-10-23T08:13:48.000Z",
+      "publishedDate": "2026-11-03T17:28:11+05:30",
+      "publishedAt": "2026-11-03T11:58:11.000Z",
       "lastDate": "31 December 2025"
     },
     "ssc-gd-constable-result-2": {
@@ -14915,9 +16035,9 @@ export const scrapedData = {
       "publishedAt": "2026-09-02T18:30:00.000Z"
     },
     "ssc-jht-2025": {
-      "publishedDate": "8 September 2026",
-      "publishedAt": "2026-09-08T15:00:00.000Z",
-      "lastDate": "26 June 2025"
+      "publishedDate": "2026-11-05T17:24:51+05:30",
+      "publishedAt": "2026-11-05T11:54:51.000Z",
+      "lastDate": "Important Dates\n\nApplication Begin :05/06/2025\nLast Date for Apply Online :26/06/2025 upto 11 PM\nPay Examination Fee Last Date :27/06/2025\nCorrection Date :01-02 July 2025\nExam Date : 12/08/2025\nAdmit Card Available : Before Exam\nPaper II Result Available : 04/06/2026\nFRTA Result Available : 05/11/2026 : Application Fee\n\nGeneral / OBC / EWS : 100/-\nSC / ST / PH / Female : 0/- (Nil)\nPay the Examination Fee Through Net Banking, Debit / Credit Card or Through E Challan Mode of State Bank of India."
     },
     "SSC-JHT-Rectt-2024": {
       "publishedDate": "25 August 2024",
@@ -14927,7 +16047,7 @@ export const scrapedData = {
     "ssc-junior-engineer-2026": {
       "publishedDate": "2 September 2026",
       "publishedAt": "2026-09-01T18:30:00.000Z",
-      "lastDate": "02/09/2026\nLast Date for Apply Online : 22/09/2026 upto 11 PM\nPay Fee Last Date : 23/09/2026\nCorrection Date : 28-30 September 2026\nSSC JE Paper I Exam Date : October / November 2026\nSSC JE Paper II Exam Date : December 2026\nAdmit Card Available : Before Exam : Application Fee\n\nGeneral / OBC / EWS : 100/-\nSC / ST / PH / Female : 0/-\nCorrection First Time : 200/-\nCorrection Second Time : 500/-\nPay the Exam Fee Through Debit Card / Credit Card / Net Banking / UPI Fee Mode Only."
+      "lastDate": "Important Dates\n\nApplication Begin : 02/09/2026\nLast Date for Apply Online : 22/09/2026 upto 11 PM\nPay Fee Last Date : 23/09/2026\nCorrection Date : 28-30 September 2026\nSSC JE Paper I Exam Date : 02-06 Nov 2026 and 30 Nov to 01 Dec 2026\nExam City Available : 24/10/2026\nSSC JE Paper II Exam Date : December 2026\nAdmit Card Available : 30/10/2026 : Application Fee\n\nGeneral / OBC / EWS : 100/-\nSC / ST / PH / Female : 0/-\nCorrection First Time : 200/-\nCorrection Second Time : 500/-\nPay the Exam Fee Through Debit Card / Credit Card / Net Banking / UPI Fee Mode Only."
     },
     "ssc-junior-engineer-je-2025": {
       "publishedDate": "27 March 2026",
@@ -14966,7 +16086,7 @@ export const scrapedData = {
     "ssc-selection-post-14th-2026": {
       "publishedDate": "21 August 2026",
       "publishedAt": "2026-08-20T18:30:00.000Z",
-      "lastDate": "13/04/2026\nLast Date for Apply Online :04/05/2026\nLast Date Pay Exam Fee:05/05/2026\nCorrection Date :11-13 May 2026\nSSC Selection Post 14th Exam Date : 16-26 September 2026\nAdmit Card Available : Before Exam : Application Fee\n\nGen / EWS / OBC : 100/-\nSC / ST / PH : 0/-\nAll Category Female : 0/-\nCorrection Edit Fee\nFirst Time : 200/-\nSecond Time : 500/-\nPay the Examination Fee Through online Debit Card, Credit Card, Net Banking or SBI E Challan Offline Mode Only"
+      "lastDate": "Important Dates\n\nApplication Begin :13/04/2026\nLast Date for Apply Online :04/05/2026\nLast Date Pay Exam Fee:05/05/2026\nCorrection Date :11-13 May 2026\nSSC Selection Post 14th Exam Date : 16-26 September 2026\nAdmit Card Available : Before Exam\nAnswer Key Available : 09/10/2026 : Application Fee\n\nGen / EWS / OBC : 100/-\nSC / ST / PH : 0/-\nAll Category Female : 0/-\nCorrection Edit Fee\nFirst Time : 200/-\nSecond Time : 500/-\nPay the Examination Fee Through online Debit Card, Credit Card, Net Banking or SBI E Challan Offline Mode Only"
     },
     "ssc-steno-ldce-final-answer-key-2026-3068124": {
       "publishedDate": "18 September 2026",
@@ -15079,7 +16199,7 @@ export const scrapedData = {
     "uiic-ao-sep26": {
       "publishedDate": "9 September 2026",
       "publishedAt": "2026-09-08T18:30:00.000Z",
-      "lastDate": "08/09/2026\nLast Date for Apply Online : 28/09/2026\nPay Exam Fee Last Date : 28/09/2026\nUIIC AO Tier I Exam Date : 22/10/2026 \nUIIC AO Tier II Main Exam Date : 30/11/2026 \nAdmit Card Available : Before Exam : Application Fee\n\nGeneral / OBC / EWS : 1000/- + GST\nSC / ST / PH : 250/- + GST\nPay the Exam Fee Through Online Debit Card / Credit Card/ Net Banking / UPI / Offline Mode."
+      "lastDate": "Important Dates\n\nApplication Begin : 08/09/2026\nLast Date for Apply Online : 01/10/2026\nPay Exam Fee Last Date : 01/10/2026\nUIIC AO Tier I Exam Date : 22/10/2026 \nUIIC AO Tier II Main Exam Date : 30/11/2026 \nAdmit Card Available : 15/10/2026 : Application Fee\n\nGeneral / OBC / EWS : 1000/- + GST\nSC / ST / PH : 250/- + GST\nPay the Exam Fee Through Online Debit Card / Credit Card/ Net Banking / UPI / Offline Mode."
     },
     "uiic-apprentice-recruitment-2025": {
       "publishedDate": "24 April 2025",
@@ -15168,7 +16288,7 @@ export const scrapedData = {
     "university-of-allahabad-au-sep26": {
       "publishedDate": "4 September 2026",
       "publishedAt": "2026-09-03T18:30:00.000Z",
-      "lastDate": "02/09/2026\nLast Date for Apply Online : 25/09/2026\nPay Exam Fee Last Date : 25/09/2026 : Application Fee\n\nGeneral / OBC / EWS : 600/-\nSC / ST : 300/-\nExempted Applicant : 1200/-\nPay the Exam Fee Through Debit Card / Credit Card / Net Banking Only."
+      "lastDate": "Important Dates\n\nApplication Begin : 02/09/2026\nLast Date for Apply Online : 25/09/2026\nPay Exam Fee Last Date : 25/09/2026 : Application Fee\n\nGeneral / OBC / EWS : 600/-\nSC / ST : 300/-\nExempted Applicant : 1200/-\nPay the Exam Fee Through Debit Card / Credit Card / Net Banking Only."
     },
     "up-aganwadi-bharti-online-form-2025-updated": {
       "publishedDate": "2025-02-08T13:30:57+05:30",
@@ -15368,12 +16488,12 @@ export const scrapedData = {
     "up-police-constable-jan26": {
       "publishedDate": "20 June 2026",
       "publishedAt": "2026-06-19T18:30:00.000Z",
-      "lastDate": "31/12/2025\nLast Date for Apply Online :30/01/2026\nLast Date Pay Exam Fee :30/01/2026\nCorrection Last Date : 31/01/2026 to 03/02/2026 Upto 06 AM\nExam Date : 08-10 June 2026\nAdmit Card Available : 3 Days Before Exam\n\nAnswer Key Available : 20/06/2026 : Application Fee\n\nGeneral / OBC / EWS : 500/-\nSC / ST : 400/-\nPay the Examination Fee Through Cast at E Challan or Debit Card, Credit Card, Net Banking"
+      "lastDate": "Important Dates\n\nApplication Begin : 31/12/2025\nLast Date for Apply Online :30/01/2026\nLast Date Pay Exam Fee :30/01/2026\nCorrection Last Date : 31/01/2026 to 03/02/2026 Upto 06 AM\nExam Date : 08-10 June 2026\nAdmit Card Available : 3 Days Before Exam\n\nAnswer Key Available : 20/06/2026 \nResult Available : 31/07/2026\nDV / PST Admit Card Available : 10/08/2026\nPET Exam Start : 01/10/2026\nPET Admit Card Available : 24/09/2026\nFinal Result Available : 14/10/2026 : Application Fee\n\nGeneral / OBC / EWS : 500/-\nSC / ST : 400/-\nPay the Examination Fee Through Cast at E Challan or Debit Card, Credit Card, Net Banking"
     },
     "up-police-home-guard-02-2025": {
       "publishedDate": "4 July 2026",
       "publishedAt": "2026-07-03T18:30:00.000Z",
-      "lastDate": "17/11/2025\nLast Date for Apply Online :17/12/2025\nLast Date Pay Exam Fee :17/12/2025\nCorrection Date : 18-21 December 2025\nSample OMR Sheet / Instruction: 05/02/2026\nExam Date :25-27 April 2026\nExam City Available : 18/04/2026\n\nAdmit Card Available : 3 Days Before Exam\n\nAnswer Key Available : 07/05/2026\n\nResult Available : 28/06/2026\nDV / PST Exam Date : 13/07/2026 to 07/08/2026\nDV / PST Admit Card Available : 06/07/2026 : Application Fee\n\nGeneral / OBC / EWS : 400/-\nSC / ST : 300/-\nPay the Examination Fee Through Cast at E Challan or Debit Card, Credit Card, Net Banking"
+      "lastDate": "Important Dates\n\nApplication Begin : 17/11/2025\nLast Date for Apply Online :17/12/2025\nLast Date Pay Exam Fee :17/12/2025\nCorrection Date : 18-21 December 2025\nSample OMR Sheet / Instruction: 05/02/2026\nExam Date :25-27 April 2026\nExam City Available : 18/04/2026\n\nAdmit Card Available : 3 Days Before Exam\n\nAnswer Key Available : 07/05/2026\n\nResult Available : 28/06/2026\nDV / PST Exam Date : 13/07/2026 to 07/08/2026\nDV / PST Admit Card Available : 06/07/2026\nPET / PST Exam Date Start : 15 September 2026\nAdmit Card Available : 13/09/2026\nFinal Result Available : 02/10/2026 (Tentative) : Application Fee\n\nGeneral / OBC / EWS : 400/-\nSC / ST : 300/-\nPay the Examination Fee Through Cast at E Challan or Debit Card, Credit Card, Net Banking"
     },
     "up-police-jail-warder-recruitment-2025-sarkari-result-notice-out": {
       "publishedDate": "1 December 2025",
@@ -15452,7 +16572,7 @@ export const scrapedData = {
     "up-special-tet-exam": {
       "publishedDate": "7 September 2026",
       "publishedAt": "2026-09-06T18:30:00.000Z",
-      "lastDate": "05/09/2026\nLast Date for Registration : 04/10/2026\nPay Exam Fee Last Date :04/10/2026 \nLast Date Correction :08/10/2026\nUP Special TET Exam Date :03/11/2026\nExam City Available : Before Exam\nAdmit Card Available :Before Exam\nAnswer Key Available : As Per Schedule\nResult Declared :As Per Schedule : Application Fee \n\nGeneral / OBC / EWS: 1000/-\nSC / ST : 500/-\nPH (Divyang) : 300/-\nPay the Examination Fee Debit Card, Credit Card, Net Banking, UPI Fee Mode Only."
+      "lastDate": "Important Dates\n\nApplication Begin : 05/09/2026\nLast Date for Registration : 04/10/2026\nPay Exam Fee Last Date :04/10/2026 \nLast Date Correction :08/10/2026\nUP Special TET Exam Date :03/11/2026\nExam City Available : 24/10/2026\nAdmit Card Available :Before Exam\nAnswer Key Available : As Per Schedule\nResult Declared :As Per Schedule : Application Fee \n\nGeneral / OBC / EWS: 1000/-\nSC / ST : 500/-\nPH (Divyang) : 300/-\nPay the Examination Fee Debit Card, Credit Card, Net Banking, UPI Fee Mode Only."
     },
     "up-tgt-01-2022": {
       "publishedDate": "2 July 2026",
@@ -15502,17 +16622,17 @@ export const scrapedData = {
     "upcisb-various-post-mar26": {
       "publishedDate": "7 September 2026",
       "publishedAt": "2026-09-06T18:30:00.000Z",
-      "lastDate": "25/03/2026\nLast Date for Apply Online :15/04/2026\nPay Exam Fee Last Date :15/04/2026\nExam Date : 07-08 September 2026\nAdmit Card Available : 2 Days Before Exam : Application Fee\n\nOBC :500\nSC: 250/-\nPH :0/-\nPay the Exam Fee Through Online Debit Card / Credit Card / Net Banking /UPI Only."
+      "lastDate": "Important Dates\n\nApplication Begin :25/03/2026\nLast Date for Apply Online :15/04/2026\nPay Exam Fee Last Date :15/04/2026\nExam Date : 07-08 September 2026\nAdmit Card Available : 2 Days Before Exam\nResult Available : 30/10/2026 : Application Fee\n\nOBC :500\nSC: 250/-\nPH :0/-\nPay the Exam Fee Through Online Debit Card / Credit Card / Net Banking /UPI Only."
     },
     "upcisb-various-post-may26": {
       "publishedDate": "6 September 2026",
       "publishedAt": "2026-09-05T18:30:00.000Z",
-      "lastDate": "A-2/G.R./2026 Short Details of Notification\nSarkari Result :  Official WWW.AIEXAMRESULT.COM\n\n\n\n\nImportant Dates\n\n\nApplication Fee\n\n\n\n\n\nApplication Begin :25/04/2026\nLast Date for Apply Online :15/05/2026\nPay Exam Fee Last Date :15/05/2026\nExam Date : 17-21 September 2026\nAdmit Card Available : Before Exam\n\n\n\n\nUR / OBC / EWS  :500\nSC: 250/-\nPH :0/-\nPay the Exam Fee Through Online Debit Card / Credit Card / Net Banking /UPI Only. : Important Dates"
+      "lastDate": "U.P. Co-Operative Institutional Service Board (UPCISB)\nUP Combined Co-Operative Banking, Non Banking & Technical Service Examination (General) Recruitment 2026\nUPCISB Advt No. : A-2/G.R./2026 Short Details of Notification\nSarkari Result :  Official WWW.SARKARIRESULT.COM\n\n\n\n\nImportant Dates\n\n\nApplication Fee\n\n\n\n\n\nApplication Begin :25/04/2026\nLast Date for Apply Online :15/05/2026\nPay Exam Fee Last Date :15/05/2026\nExam Date : 14, 16, 22, 26 October 2026\nAdmit Card Available : Before Exam \n\n\n\n\nUR / OBC / EWS  :500\nSC: 250/-\nPH :0/-\nPay the Exam Fee Through Online Debit Card / Credit Card / Net Banking /UPI Only. : Important Dates"
     },
     "updeled-admissions-2": {
       "publishedDate": "16 June 2026",
       "publishedAt": "2026-06-15T18:30:00.000Z",
-      "lastDate": "08/07/2026 upto 06:00 PM"
+      "lastDate": "Important Dates\n\nApplication Begin : 15/06/2026\nLast Date for Registration :03/08/2026 upto 06:00 PM (Date Extended)\n\nLast Date Fee Deposit : 04/08/2026\nLast Date Re Print Form :05/08/2026\nRank Card / Merit List : 10/08/2026\n\nCounseling Start Round 1 : 10 August to 14 September 2026\n\nChoice Filling Start Date : 11 to 13 August 2026\nTraining Start : Notified Soon\nCounseling Start Round 2 :07 to 10 August 2026 : Application Fees*\n\nGeneral / OBC : 700/-\nSC / ST : 500/-\nPH : 200/-\nPay the Examination Fee Through E Challan or Debit Card / Credit Card / Net Banking, SBI I Collect Fee Mode"
     },
     "upessc-assistant-professor-04-2026": {
       "publishedDate": "10 September 2026",
@@ -15546,11 +16666,11 @@ export const scrapedData = {
     "upessc-principal-02-2026": {
       "publishedDate": "15 September 2026",
       "publishedAt": "2026-09-14T18:30:00.000Z",
-      "lastDate": "21/07/2026\nLast Date for Apply Online :20/08/2026\nPay Exam Fee Last Date :20/08/2026\nCorrection Last Date : 23/08/2026\nUPESSC Principal Exam Date : 24/09/2026\nExam City Available : 14/09/2026\nAdmit Card Available : 21/09/2026 : Application Fee\n\nGeneral / OBC / EWS : 3000/-\nSC / ST / PH : 3000/-\nPay the Exam Fee Through Online / Offline Fee Mode Only"
+      "lastDate": "Important Dates\n\nApplication Begin :21/07/2026\nLast Date for Apply Online :20/08/2026\nPay Exam Fee Last Date :20/08/2026\nCorrection Last Date : 23/08/2026\nUPESSC Principal Exam Date : 24/09/2026\nExam City Available : 14/09/2026\nAdmit Card Available : 21/09/2026\nAnswer Key Available : 26/09/2026 : Application Fee\n\nGeneral / OBC / EWS : 3000/-\nSC / ST / PH : 3000/-\nPay the Exam Fee Through Online / Offline Fee Mode Only"
     },
     "upessc-prt-assistant-teacher-2026": {
-      "publishedDate": "2026-10-31T13:59:49+05:30",
-      "publishedAt": "2026-10-31T08:29:49.000Z",
+      "publishedDate": "2026-11-05T14:41:56+05:30",
+      "publishedAt": "2026-11-05T09:11:56.000Z",
       "lastDate": "04 November 2026"
     },
     "upessc-up-assistant-professor-2026": {
@@ -15566,7 +16686,7 @@ export const scrapedData = {
     "upessc-up-primary-teacher-05-2026": {
       "publishedDate": "17 September 2026",
       "publishedAt": "2026-09-16T18:30:00.000Z",
-      "lastDate": "16/09/2026\nLast Date for Registration : 15/10/2026\nPay Exam Fee Last Date :15/10/2026 \nLast Date Correction :19/10/2026\nUPESSC Primary Teacher Exam Date : 03-04 December 2026\nExam City Available : Before Exam\nAdmit Card Available :Before Exam\nAnswer Key Available : As Per Schedule\nResult Declared :As Per Schedule : Application Fee\n\nGeneral / OBC / EWS: 1000/-\nSC / ST : 500/-\nPH (Divyang) : 300/-\nPay the Examination Fee Debit Card, Credit Card, Net Banking, UPI Fee Mode Only."
+      "lastDate": "Important Dates\n\nApplication Begin : 16/09/2026\nLast Date for Registration : 04/11/2026\nPay Exam Fee Last Date :04/11/2026 \nLast Date Correction :07/11/2026\nUPESSC Primary Teacher Exam Date : 03-04 December 2026\nExam City Available : Before Exam\nAdmit Card Available :Before Exam\nAnswer Key Available : As Per Schedule\nResult Declared :As Per Schedule : Application Fee\n\nGeneral / OBC / EWS: 1000/-\nSC / ST : 500/-\nPH (Divyang) : 300/-\nPay the Examination Fee Debit Card, Credit Card, Net Banking, UPI Fee Mode Only."
     },
     "upessc-up-principal-2026": {
       "publishedDate": "2026-10-13T16:53:29+05:30",
@@ -15591,7 +16711,7 @@ export const scrapedData = {
     "upiti-admission-july2026": {
       "publishedDate": "13 July 2026",
       "publishedAt": "2026-07-12T18:30:00.000Z",
-      "lastDate": "State Council for Vocational Training, UP has released the SCVTUP ITI Admissions 2026 online application for admission 2026 will start from 11 July 2026 and the last date to apply will be As per Schedule. candidates should read the SCVTUP ITI Admissions 2026 information brochure for all the information related to the entrance exam like syllabus, eligibility, age limit, placement, fees, college information and other types of information and then apply."
+      "lastDate": "State Council for Vocational Training, UP has released the SCVTUP ITI Admissions 2026 online application for admission 2026 will start from 11 July 2026 and the last date to apply 07/08/2026. candidates should read the SCVTUP ITI Admissions 2026 information brochure for all the information related to the entrance exam like syllabus, eligibility, age limit, placement, fees, college information and other types of information and then apply."
     },
     "upmsp-june-2026": {
       "publishedDate": "6 June 2026",
@@ -15698,7 +16818,7 @@ export const scrapedData = {
     "uppsc-lt-grade-teacher-2025": {
       "publishedDate": "8 June 2026",
       "publishedAt": "2026-06-07T18:30:00.000Z",
-      "lastDate": "28/08/2025"
+      "lastDate": "Important Dates\n\nApplication Begin :28/07/2025\nLast Date for Apply Online :28/08/2025\nPay Exam Fee Last Date :28/08/2025\nCorrection Last Date :04/09/2025\nPhase I : Exam Date : 06-07 & 21 December 2025\nPhase II : 17-25 January 2026\nAnswer Key Available : After Exam\nMath, Hindi Result Available : 05/02/2026\nScience, Sanskrit, Home Science, Commerce Result Available : 18/02/2026\nEnglish, Biology Result Available : 24/02/2026\nUrdu, Music, Arts, Agri / Horti Result Available : 12/03/2026\nPhysical Education Result Available : 19/03/2026\nComputer Subject Exam Date : 05/04/2026\nAdmit Card Available : 26/03/2026\nSocial Science Result Available : 01/04/2026\nComputer Subject Answer Key : 07/04/2026\nCommerce Exam Date Mains : 22/04/2026\nSanskrit Exam Date Mains : 23/04/2026\nMaths, Science, Home Science, Agriculture, Horticulture Exam Date Mains : 16-17 May 2026\nSociology, Physical Education, Music, Hindi Exam Date Mains : 11/07/2026\nComputer Pre Available : 17/05/2026\nBiology, Urdu, Arts Mains Exam Date : 13/06/2026\nAdmit Card Available : 06/06/2026\nComputer Mains Form Available : 23/06/2026 to 07/07/2026\nMusic & Hindi Mains Exam Date : 11/07/2026\nComputer Science Mains Exam Date : 16/08/2026\nAdmit Card Available : 11/08/2026\nMains Commerce, Agriculture / Horticulture Result : 01/09/2026\nMains Result Available : 18/09/2026\nDocument Verification Schedule : 19/09/2026\nMains Result Sanskrit Subject : 07/10/2026\nMathematics Mains Result : 28/10/2026 : Application Fee\n\nGeneral / OBC / EWS : 125/-\nSC / ST : 65/-\nPH Candidates : 25/-\nPay the Examination Fee Through Debit Card, Credit Card, Net Banking or Pay Offline Through E Challan"
     },
     "UPPSC-PCS-2024": {
       "publishedDate": "10 June 2026",
@@ -15791,7 +16911,7 @@ export const scrapedData = {
     "uprtou-ph-d-entrance-exam-sep26": {
       "publishedDate": "18 September 2026",
       "publishedAt": "2026-09-17T18:30:00.000Z",
-      "lastDate": "15/09/2026\nLast Date for Apply Online : 14/10/2026\nFee Payment Last Date : 14/10/2026\nLate Fee Last Date : 15 to 21 October 2026\nForm Correction Date : 22 to 27 October 2026\nAdmit Card Available : 30/10/2026\nExam Date Available : 05/11/2026\nResult Date Available : 07/11/2026 : Application Fees\n\nGeneral / OBC / EWS : 2000/-\nSC / ST : 1000/-\nwith Late Fees General / OBC / EWS : 2500/-\nwith Late Fees SC / ST : 1500/-\nGeneral / OBC / EWS : 1000/- for Entrance Exam Exempted\nSC / ST : 500/- for Entrance Exam Exempted\nwith Late Fees General / OBC / EWS : 1500/- for Entrance Exam Exempted\nwith Late Fees SC / ST : 750/- for Entrance Exam Exempted\nPay the Examination Fee Through Debit Card / Credit Card / Net Banking / Online Only."
+      "lastDate": "Important Dates\n\nApplication Begin : 15/09/2026\nLast Date for Apply Online : 14/10/2026\nFee Payment Last Date : 14/10/2026\nLate Fee Last Date : 15 to 21 October 2026\nForm Correction Date : 22 to 27 October 2026\nAdmit Card Available : 30/10/2026\nExam Date Available : 05/11/2026\nResult Date Available : 07/11/2026 : Application Fees\n\nGeneral / OBC / EWS : 2000/-\nSC / ST : 1000/-\nwith Late Fees General / OBC / EWS : 2500/-\nwith Late Fees SC / ST : 1500/-\nGeneral / OBC / EWS : 1000/- for Entrance Exam Exempted\nSC / ST : 500/- for Entrance Exam Exempted\nwith Late Fees General / OBC / EWS : 1500/- for Entrance Exam Exempted\nwith Late Fees SC / ST : 750/- for Entrance Exam Exempted\nPay the Examination Fee Through Debit Card / Credit Card / Net Banking / Online Only."
     },
     "upsc-advt-no-11-2026": {
       "publishedDate": "14 September 2026",
@@ -15845,7 +16965,7 @@ export const scrapedData = {
     "upsc-cpf-ac-2024": {
       "publishedDate": "12 June 2026",
       "publishedAt": "2026-06-11T18:30:00.000Z",
-      "lastDate": "14/05/2024 Upto 06:00 PM Only"
+      "lastDate": "Important Dates\n\nApplication Begin : 26/04/2023\nLast Date for Apply Online : 14/05/2024 Upto 06:00 PM Only\nLast Date Fee Payment :14/05/2024\nCorrection Date : 15-21 May 2024\nExam Date : 04/08/2024\nAdmit Card Available : 26/07/2024\n\nResult Available : 24/09/2024\n\nInterview Schedule Available :04/04/2025\n\nMarks Available : 13/10/2026 : Application Fee\n\nGeneral / OBC : 200/-\nSC / ST : 0/- (Nil)\nAll Category Female : 0/- (Exempted)\nPay the Examination Fee Through Debit Card, Credit Card, Net Banking in State Bank of India or E Challan Fee Mode"
     },
     "upsc-cpf-ac-2026": {
       "publishedDate": "17 June 2026",
@@ -15904,7 +17024,7 @@ export const scrapedData = {
     "upsc-geo-scientist-2026": {
       "publishedDate": "2026-10-31T11:10:35+05:30",
       "publishedAt": "2026-10-31T05:40:35.000Z",
-      "lastDate": "23 September 2025"
+      "lastDate": "Important Dates\n\nApplication Begin :03/09/2025\nLast Date for Apply Online : 23/09/2025 06:00 PM Only\nLast Date for Fee Payment : 23/09/2025 \nPre Exam Date :08/02/2026\nAdmit Card Available :  31/01/2026\n\nPre Result Available :  02/03/2026\n\nMains Admit Card : 13/06/2026\nMains Result Available : 20/07/2026\nMarks Available : 31/10/2026 : Application Fee\n\nGeneral / OBC : 200/-\nSC / ST / PH : 0/- (Nil)\nAll Category Female : 0/- (Exempted)\nPay the Examination Fee Through Debit Card, Credit Card, Net Banking in Various State Bank and E Challan Fee Mode"
     },
     "upsc-geo-scientist-2027": {
       "publishedDate": "2026-10-27T15:16:09+05:30",
@@ -16028,7 +17148,7 @@ export const scrapedData = {
     "upsssc-asst-boring-tech-04-2026": {
       "publishedDate": "12 September 2026",
       "publishedAt": "2026-09-11T18:30:00.000Z",
-      "lastDate": "15/04/2026\nLast Date for Registration :05/05/2026\nFee Payment Last Date :05/05/2026\nCorrection Last Date :12/05/2026\nEligibility Result : 02/06/2026\nMains Fees Payment Start : 27/06/2026\nMains Exam Date : 12/07/2026\n\nAdmit Card Available : 08/07/2026\nExam City Available: 02/07/2026\nAnswer Key Available : 14/07/2026\nRevised Answer Key : 12/09/2026 : Application Fee\n\nGeneral / OBC / EWS : 25/-\nSC / ST : 25/-\nPH (Dviyang) : 25/-\nPay the Examination Fee Through State Bank of India SBI I Collect Fee Mode or Pay the Exam Fee Through E Challan"
+      "lastDate": "Important Dates\n\nApplication Begin : 15/04/2026\nLast Date for Registration :05/05/2026\nFee Payment Last Date :05/05/2026\nCorrection Last Date :12/05/2026\nEligibility Result : 02/06/2026\nMains Fees Payment Start : 27/06/2026\nMains Exam Date : 12/07/2026\n\nAdmit Card Available : 08/07/2026\nExam City Available: 02/07/2026\nAnswer Key Available : 14/07/2026\nRevised Answer Key : 12/09/2026 : Application Fee\n\nGeneral / OBC / EWS : 25/-\nSC / ST : 25/-\nPH (Dviyang) : 25/-\nPay the Examination Fee Through State Bank of India SBI I Collect Fee Mode or Pay the Exam Fee Through E Challan"
     },
     "upsssc-auditor-assistant-accountant-2026": {
       "publishedDate": "4 June 2026",
@@ -16067,7 +17187,7 @@ export const scrapedData = {
     "upsssc-excise-constable-08-exam2026": {
       "publishedDate": "6 June 2026",
       "publishedAt": "2026-06-05T18:30:00.000Z",
-      "lastDate": "24/06/2026"
+      "lastDate": "Important Dates\n\nApplication Begin : 04/06/2026\nLast Date for Registration :24/06/2026\nFee Payment Last Date :24/06/2026\nCorrection Last Date :01/07/2026\nEligibility Result Available : 28/07/2026\nExam Date : 20/09/2026\n\nExam City Available : 11/09/2026\nAdmit Card Available : 16/10/2026 : Application Fee\n\nGeneral / OBC / EWS : 25/-\nSC / ST : 25/-\nPH (Dviyang) : 25/-\nPay the Examination Fee Through State Bank of India SBI I Collect Fee Mode or Pay the Exam Fee Through E Challan"
     },
     "upsssc-excise-constable-admit-card-2026-3067926": {
       "publishedDate": "17 September 2026",
@@ -16102,7 +17222,7 @@ export const scrapedData = {
     "upsssc-forest-guard-12-exam-2026": {
       "publishedDate": "30 June 2026",
       "publishedAt": "2026-06-29T18:30:00.000Z",
-      "lastDate": "30/06/2026\nLast Date for Apply Online : 20/07/2026\nLast Date Pay Exam Fee : 20/07/2026\nCorrection Last Date: 27/07/2026\nUPSSSC Forest Guard Exam Date :As Per Schedule\nAdmit Card Available : Before Exam : Application Fee\n\nGeneral / OBC / EWS : 25/-\nSC / ST : 25/-\nPH (Divyang) : 25/-\nPay the Examination Fee Through Cast at E Challan or Debit Card, Credit Card, Net Banking"
+      "lastDate": "Important Dates\n\nApplication Begin : 30/06/2026\nLast Date for Apply Online : 20/07/2026\nLast Date Pay Exam Fee : 20/07/2026\nCorrection Last Date: 27/07/2026\nEligibility Result Available : 27/08/2026\nUPSSSC Forest Guard Mains Exam Date : 27/09/2026\nAdmit Card Available : 23/09/2026\nAnswer Key Available : 29/09/2026 : Application Fee\n\nGeneral / OBC / EWS : 25/-\nSC / ST : 25/-\nPH (Divyang) : 25/-\nPay the Examination Fee Through Cast at E Challan or Debit Card, Credit Card, Net Banking"
     },
     "upsssc-forest-guard-wild-guard-2023": {
       "publishedDate": "2026-10-05T10:08:04+05:30",
@@ -16167,7 +17287,7 @@ export const scrapedData = {
     "upsssc-jr-assistant-12-exam-2024": {
       "publishedDate": "16 September 2026",
       "publishedAt": "2026-09-15T18:30:00.000Z",
-      "lastDate": "23/12/2024\n\nLast Date for Registration :22/01/2025\nFee Payment Last Date : 22/01/2025\nCorrection Last Date : 29/01/2025\nExam Date : 01/02/2026\n\nExam City Available : 22/01/2026\nAdmit Card Available : 29/01/2026\nAnswer Key Available : 02/02/2026\nResult Available Date : 15/09/2026\nTyping Test Exam Date : 30/10/2026 : Application Fee\n\nGeneral / OBC / EWS : 25/-\nSC / ST : 25/-\nPH (Dviyang) : 25/-\nPay the Examination Fee Through State Bank of India SBI I Collect Fee Mode or Pay the Exam Fee Through E Challan"
+      "lastDate": "Important Dates\n\nApplication Begin : 23/12/2024\n\nLast Date for Registration :22/01/2025\nFee Payment Last Date : 22/01/2025\nCorrection Last Date : 29/01/2025\nExam Date : 01/02/2026\n\nExam City Available : 22/01/2026\nAdmit Card Available : 29/01/2026\nAnswer Key Available : 02/02/2026\nResult Available Date : 15/09/2026\nTyping Test Exam Date : 13/11/2026\nAdmit Card Available : 03/11/2026 : Application Fee\n\nGeneral / OBC / EWS : 25/-\nSC / ST : 25/-\nPH (Dviyang) : 25/-\nPay the Examination Fee Through State Bank of India SBI I Collect Fee Mode or Pay the Exam Fee Through E Challan"
     },
     "upsssc-junior-assistant-2025": {
       "publishedDate": "19 May 2026",
@@ -16175,8 +17295,8 @@ export const scrapedData = {
       "lastDate": "03 October 2023"
     },
     "upsssc-junior-assistant-advt-12-2024": {
-      "publishedDate": "2026-09-25T18:12:03+05:30",
-      "publishedAt": "2026-09-25T12:42:03.000Z",
+      "publishedDate": "2026-11-03T17:06:20+05:30",
+      "publishedAt": "2026-11-03T11:36:20.000Z",
       "lastDate": "22 January 2025"
     },
     "upsssc-junior-assistant-typing-test-2025": {
@@ -16242,11 +17362,11 @@ export const scrapedData = {
     "upsssc-paramedical-fsl-15-exam-2026": {
       "publishedDate": "27 July 2026",
       "publishedAt": "2026-07-26T18:30:00.000Z",
-      "lastDate": "27/07/2026\nLast Date for Apply Online :17/08/2026\nPay Exam Fee Last Date :17/08/2026\nForm Correction Last Date : 24/08/2026\nExam Date : As per Schedule\nExam City Available : Before Exam\nAdmit Card Available : Before Exam : Application Fee\n\nGeneral (UR) / OBC / EWS : 25/-\nSC / ST : 25/-\nPH (Divyang) : 25/-\nPay the Examination Fee Through UPI, Debit Card, Credit Card and Net Banking Mode Only."
+      "lastDate": "Important Dates\n\nApplication Begin :27/07/2026\nLast Date for Apply Online :24/08/2026\nPay Exam Fee Last Date :24/08/2026\nForm Correction Last Date : 24/08/2026\nEligibility Result Available : 27/08/2026\nExam Date : 27/09/2026\nExam City Available : 18/09/2026\nAdmit Card Available : 23/09/2026\nAnswer Key Available : 29/09/2026 : Application Fee\n\nGeneral (UR) / OBC / EWS : 25/-\nSC / ST : 25/-\nPH (Divyang) : 25/-\nPay the Examination Fee Through UPI, Debit Card, Credit Card and Net Banking Mode Only."
     },
     "upsssc-pet-2026": {
-      "publishedDate": "2026-11-02T20:55:46+05:30",
-      "publishedAt": "2026-11-02T15:25:46.000Z",
+      "publishedDate": "2026-11-03T13:18:56+05:30",
+      "publishedAt": "2026-11-03T07:48:56.000Z",
       "lastDate": "07 September 2026"
     },
     "upsssc-pet-all-form-2026": {
@@ -16260,7 +17380,7 @@ export const scrapedData = {
     "upsssc-pet-exam-jun26": {
       "publishedDate": "1 September 2026",
       "publishedAt": "2026-08-31T18:30:00.000Z",
-      "lastDate": "03/08/2026\nLast Date for Apply Online : 07/09/2026\nPay Exam Fee Last Date : 07/09/2026\nCorrection Date : 08/09/2026\nEligibility Result Available : As per Schedule\nExam Date : October 2026 (Tentative) \nExam City Available : Before Exam\nAdmit Card Available : Before Exam : Application Fee\n\nGeneral (UR) / OBC / EWS : 185/-\nSC / ST : 95/-\nPH (Divyang) : 25/-\nPay the Examination Fee Through UPI, Debit Card, Credit Card and Net Banking Mode Only."
+      "lastDate": "Important Dates\n\nApplication Begin : 03/08/2026\nLast Date for Apply Online : 07/09/2026\nPay Exam Fee Last Date : 07/09/2026\nCorrection Date : 08/09/2026\nEligibility Result Available : As per Schedule\nExam Date : 25,30 October 2026 & 01 November 2026\nExam City Available : 12/10/2026\nAdmit Card Available : 15/10/2026\nAnswer Key Available : 02/11/2026 : Application Fee\n\nGeneral (UR) / OBC / EWS : 185/-\nSC / ST : 95/-\nPH (Divyang) : 25/-\nPay the Examination Fee Through UPI, Debit Card, Credit Card and Net Banking Mode Only."
     },
     "upsssc-pet-online-form-2": {
       "publishedDate": "5 September 2026",
@@ -16273,7 +17393,7 @@ export const scrapedData = {
     "upsssc-pharmaceutical-01-2024": {
       "publishedDate": "28 July 2026",
       "publishedAt": "2026-07-27T18:30:00.000Z",
-      "lastDate": "12/02/2024\n\nLast Date for Registration : 03/03/2024\nFee Payment Last Date : 03/03/2024\nCorrection Last Date : 11/03/2024\nEligibility Result Available : 28/07/2026\nExam Date : As per Schedule\n\nAdmit Card Available : Before Exam : Application Fee\n\nGeneral / OBC / EWS : 25/-\nSC / ST : 25/-\nPH (Dviyang) : 25/-\nPay the Examination Fee Through State Bank of India SBI I Collect Fee Mode or Pay the Exam Fee Through E Challan"
+      "lastDate": "Important Dates\n\nApplication Begin : 12/02/2024\n\nLast Date for Registration : 03/03/2024\nFee Payment Last Date : 03/03/2024\nCorrection Last Date : 11/03/2024\nEligibility Result Available : 28/07/2026\nExam Date : 20/09/2026\n\nExam City Available : 11/09/2026\nAdmit Card Available : Before Exam\nAnswer key Available : 22/09/2026 : Application Fee\n\nGeneral / OBC / EWS : 25/-\nSC / ST : 25/-\nPH (Dviyang) : 25/-\nPay the Examination Fee Through State Bank of India SBI I Collect Fee Mode or Pay the Exam Fee Through E Challan"
     },
     "upsssc-pharmaceutical-ayurvedic-2024": {
       "publishedDate": "11 September 2026",
@@ -16311,7 +17431,7 @@ export const scrapedData = {
     "upsssc-steno-13-exam-2024": {
       "publishedDate": "29 July 2026",
       "publishedAt": "2026-07-28T18:30:00.000Z",
-      "lastDate": "26/12/2024\n\nLast Date for Registration :25/01/2025\nFee Payment Last Date : 25/01/2025\nCorrection Last Date : 01/02/2025\nExam Date : 20/01/2026\n\nAdmit Card Available : Before Exam\nAnswer Key Available : 22/01/2026\nRevised Answer Key Available : 01/04/2026\nResult Available : 22/07/2026\nSkill Test Exam Date : 01/09/2026 : Application Fee\n\nGeneral / OBC / EWS : 25/-\nSC / ST : 25/-\nPH (Dviyang) : 25/-\nPay the Examination Fee Through State Bank of India SBI I Collect Fee Mode or Pay the Exam Fee Through E Challan"
+      "lastDate": "Important Dates\n\nApplication Begin : 26/12/2024\n\nLast Date for Registration :25/01/2025\nFee Payment Last Date : 25/01/2025\nCorrection Last Date : 01/02/2025\nExam Date : 20/01/2026\n\nAdmit Card Available : Before Exam\nAnswer Key Available : 22/01/2026\nRevised Answer Key Available : 01/04/2026\nResult Available : 22/07/2026\nSkill Test Exam Date : 01/09/2026\nAdmit Card Available : 25/08/2026\nSkill Test Result : 27/10/2026\nDocument Upload : 29/10/2026 to 12/11/2026 : Application Fee\n\nGeneral / OBC / EWS : 25/-\nSC / ST : 25/-\nPH (Dviyang) : 25/-\nPay the Examination Fee Through State Bank of India SBI I Collect Fee Mode or Pay the Exam Fee Through E Challan"
     },
     "upsssc-steno-advt-no-09-exam-2023": {
       "publishedDate": "1 April 2026",
@@ -16320,7 +17440,7 @@ export const scrapedData = {
     "upsssc-stenographer-09-2023": {
       "publishedDate": "29 July 2026",
       "publishedAt": "2026-07-28T18:30:00.000Z",
-      "lastDate": "17/10/2023\n\nLast Date for Registration : 06/11/2023\nFee Payment Last Date : 06/11/2023\nCorrection Last Date : 15/11/2023\nEligibility Result : 04/10/2024\n\nExam Date : As per Schedule\n\nRevised Answer Key Available : 01/04/2026\nResult Declared : 22/07/2026\nSkill Test Exam Date : 01/09/2026 : Application Fee\n\nGeneral / OBC / EWS : 25/-\nSC / ST : 25/-\nPH (Dviyang) : 25/-\nPay the Examination Fee Through State Bank of India SBI I Collect Fee Mode or Pay the Exam Fee Through E Challan"
+      "lastDate": "Important Dates\n\nApplication Begin : 17/10/2023\n\nLast Date for Registration : 06/11/2023\nFee Payment Last Date : 06/11/2023\nCorrection Last Date : 15/11/2023\nEligibility Result : 04/10/2024\n\nExam Date : As per Schedule\n\nRevised Answer Key Available : 01/04/2026\nResult Declared : 22/07/2026\nSkill Test Exam Date : 01/09/2026\nAdmit Card Available : 25/08/2026\nDocument Upload : 28/10/2026 to 11/11/2026 : Application Fee\n\nGeneral / OBC / EWS : 25/-\nSC / ST : 25/-\nPH (Dviyang) : 25/-\nPay the Examination Fee Through State Bank of India SBI I Collect Fee Mode or Pay the Exam Fee Through E Challan"
     },
     "upsssc-stenographer-2023": {
       "publishedDate": "2026-10-29T18:02:17+05:30",
@@ -16339,7 +17459,7 @@ export const scrapedData = {
     "upsssc-teacher-03-exam-2026": {
       "publishedDate": "12 September 2026",
       "publishedAt": "2026-09-11T18:30:00.000Z",
-      "lastDate": "06/04/2026\nLast Date for Registration :27/04/2026\nFee Payment Last Date :27/04/2026\nCorrection Last Date :04/05/2026\nEligibility Result Available : 16/06/2026 \nMains Fees Payment Start : 27/06/2026\nMains Exam Date : 12/07/2026\n\nExam City Available : 02/07/2026\nAdmit Card Available : 08/07/2026\nAnswer Key Available : 13/07/2026\nRevised Answer Key Available : 12/09/2026 : Application Fee\n\nGeneral / OBC / EWS : 25/-\nSC / ST : 25/-\nPH (Dviyang) : 25/-\nPay the Examination Fee Through State Bank of India SBI I Collect Fee Mode or Pay the Exam Fee Through E Challan"
+      "lastDate": "Important Dates\n\nApplication Begin : 06/04/2026\nLast Date for Registration :27/04/2026\nFee Payment Last Date :27/04/2026\nCorrection Last Date :04/05/2026\nEligibility Result Available : 16/06/2026 \nMains Fees Payment Start : 27/06/2026\nMains Exam Date : 12/07/2026\n\nExam City Available : 02/07/2026\nAdmit Card Available : 08/07/2026\nAnswer Key Available : 13/07/2026\nRevised Answer Key Available : 12/09/2026 : Application Fee\n\nGeneral / OBC / EWS : 25/-\nSC / ST : 25/-\nPH (Dviyang) : 25/-\nPay the Examination Fee Through State Bank of India SBI I Collect Fee Mode or Pay the Exam Fee Through E Challan"
     },
     "upsssc-teacher-cadre-jtc-2026": {
       "publishedDate": "2026-09-12T14:55:56+05:30",
@@ -16541,18 +17661,18 @@ export const scrapedData = {
       "lastDate": "03 July 2026"
     },
     "ssc-cgl-2026": {
-      "publishedDate": "2026-10-30T10:46:22+05:30",
-      "publishedAt": "2026-10-30T05:16:22.000Z",
-      "lastDate": "25 June 2026"
+      "publishedDate": "2026-11-04T17:52:22+05:30",
+      "publishedAt": "2026-11-04T12:22:22.000Z",
+      "lastDate": "Important Dates\n\nApplication Begin : 21/05/2026\nLast Date for Apply Online : 25/06/2026  upto 11 PM Only\n\nOnline Fee Payment Last Date :  26/06/2026\nCorrection Date : 01-07 July 2026\nExam Date Tier I :  30 September to 30 October 2026\nAnswer Key Available : 04/11/2026\nExam Date Tier II : December 2026 : Application Fee\n\nGeneral / OBC / EWS: 100/-\nSC / ST / PH : 0/- (Nil)\nAll Category Female : 0/- (Exempted)\nCorrection Fee First Time : 200/-\nCorrection Fee Second Time : 500/-\nPay the Examination Fee Through Debit Card, Credit Card, Net Banking, UPI Fee Mode Only."
     },
     "rrb-ntpc-102-ug-level-07-2026": {
-      "publishedDate": "2026-11-02T18:12:41+05:30",
-      "publishedAt": "2026-11-02T12:42:41.000Z",
+      "publishedDate": "2026-11-03T16:34:21+05:30",
+      "publishedAt": "2026-11-03T11:04:21.000Z",
       "lastDate": "13 November 2026"
     },
     "rrb-ntpc-graduate-level-06-2026": {
-      "publishedDate": "2026-11-02T18:12:35+05:30",
-      "publishedAt": "2026-11-02T12:42:35.000Z",
+      "publishedDate": "2026-11-03T16:34:17+05:30",
+      "publishedAt": "2026-11-03T11:04:17.000Z",
       "lastDate": "06 November 2026"
     },
     "itbp-head-constable-motor-mechanic-2026": {
@@ -16578,7 +17698,7 @@ export const scrapedData = {
     "ssc-jht-2026": {
       "publishedDate": "2026-09-22T13:50:27+05:30",
       "publishedAt": "2026-09-22T08:20:27.000Z",
-      "lastDate": "14 May 2026"
+      "lastDate": "Important Dates\n\nApplication Begin :23/04/2026\nLast Date for Apply Online :14/05/2026 upto 11 PM\nPay Examination Fee Last Date :15/05/2026\nCorrection Date :19-20 May 20265\nExam Date Paper I : 08/09/2026\nExam City Available : 31/08/2026\nAdmit Card Available : Before Exam\nAnswer Key Available : 21/09/2026 : Application Fee\n\nGeneral / OBC / EWS : 100/-\nSC / ST / PH / Female : 0/- (Nil)\nPay the Examination Fee Through Net Banking, Debit / Credit Card or UPI Fee Mode Only."
     },
     "rpsc-assistant-professor-2026": {
       "publishedDate": "2026-09-23T17:50:00+05:30",
@@ -16701,8 +17821,8 @@ export const scrapedData = {
       "publishedAt": "2026-09-29T08:35:27.000Z"
     },
     "dsssb-delhi-district-court-various-post-2026": {
-      "publishedDate": "2026-10-06T17:42:44+05:30",
-      "publishedAt": "2026-10-06T12:12:44.000Z",
+      "publishedDate": "2026-11-04T17:35:17+05:30",
+      "publishedAt": "2026-11-04T12:05:17.000Z",
       "lastDate": "04 November 2026"
     },
     "railway-rrc-nwr-apprentice-2026": {
@@ -16721,8 +17841,8 @@ export const scrapedData = {
       "lastDate": "06 November 2026"
     },
     "upsssc-sports-directorate-2026": {
-      "publishedDate": "2026-10-14T14:05:26+05:30",
-      "publishedAt": "2026-10-14T08:35:26.000Z",
+      "publishedDate": "2026-11-04T17:35:27+05:30",
+      "publishedAt": "2026-11-04T12:05:27.000Z",
       "lastDate": "04 November 2026"
     },
     "bihar-library-eligibility-test-blet-2026": {
@@ -16761,13 +17881,13 @@ export const scrapedData = {
       "lastDate": "12 October 2026"
     },
     "indian-coast-guard-cgept-01-2027-02-2027": {
-      "publishedDate": "2026-10-28T11:00:00+05:30",
-      "publishedAt": "2026-10-28T05:30:00.000Z",
+      "publishedDate": "2026-11-03T14:09:01+05:30",
+      "publishedAt": "2026-11-03T08:39:01.000Z",
       "lastDate": "21 October 2026"
     },
     "iocl-apprentice-2026": {
-      "publishedDate": "2026-10-05T16:20:35+05:30",
-      "publishedAt": "2026-10-05T10:50:35.000Z",
+      "publishedDate": "2026-11-04T17:34:56+05:30",
+      "publishedAt": "2026-11-04T12:04:56.000Z",
       "lastDate": "04 November 2026"
     },
     "chhattisgarh-state-eligibility-test-set-026": {
@@ -16905,8 +18025,8 @@ export const scrapedData = {
       "lastDate": "27 November 2026"
     },
     "upsssc-junior-engineer-je-mechanical-2026": {
-      "publishedDate": "2026-10-12T17:43:04+05:30",
-      "publishedAt": "2026-10-12T12:13:04.000Z",
+      "publishedDate": "2026-11-03T14:57:21+05:30",
+      "publishedAt": "2026-11-03T09:27:21.000Z",
       "lastDate": "25 November 2026"
     },
     "wcl-mining-sirdar-assistant-foreman-2026": {
@@ -16945,8 +18065,8 @@ export const scrapedData = {
       "lastDate": "25 November 2026"
     },
     "supreme-court-sci-court-assistant-2026": {
-      "publishedDate": "2026-10-13T19:29:04+05:30",
-      "publishedAt": "2026-10-13T13:59:04.000Z",
+      "publishedDate": "2026-11-03T14:55:03+05:30",
+      "publishedAt": "2026-11-03T09:25:03.000Z",
       "lastDate": "24 November 2026"
     },
     "uco-bank-apprentice-2026": {
@@ -16990,8 +18110,8 @@ export const scrapedData = {
       "lastDate": "16 November 2026"
     },
     "bsf-head-constable-ro-rm-2025": {
-      "publishedDate": "2026-10-31T11:37:02+05:30",
-      "publishedAt": "2026-10-31T06:07:02.000Z",
+      "publishedDate": "2026-11-04T10:42:25+05:30",
+      "publishedAt": "2026-11-04T05:12:25.000Z",
       "lastDate": "23 September 2025"
     },
     "isro-sdsc-shar-various-post-2026": {
@@ -17017,16 +18137,16 @@ export const scrapedData = {
     "mppsc-adpo-2026": {
       "publishedDate": "2026-10-22T11:51:49+05:30",
       "publishedAt": "2026-10-22T06:21:49.000Z",
-      "lastDate": "08 May 2026"
+      "lastDate": "Important Dates\n\nApplication Begin : 10/07/2026 Re-Open\nLast Date for Apply Online :24/07/2026\nLast Date Pay Exam Fee :24/07/2026\nForm Correction Last Date : 10-26 July 2026\nWith Late Fee Phase I Last Date :25/07/2026 to 31/07/2026\nWith Late Fee Phase II Last Date : 01/08/2026 to 23/09/2026\nExam Date :04/11/2026\nAdmit Card Available : 21/10/2026 : Application Fee\n\nGeneral / Other State : 540/-\nOBC / EWS / SC / ST: Rs. 290/–\nNote: Portal Charges Include: Rs. 40/-\nCorrection Charge: Rs. 50/-\nPhase I : 3000/- + Portal Fee\nPhase II : 25000/- + Portal Fee\nPay the Examination Fee Through Cast at E Challan or Debit Card, Credit Card, Net Banking, Authorized Kiosk"
     },
     "railway-rrb-station-master-2026": {
-      "publishedDate": "2026-11-02T18:12:24+05:30",
-      "publishedAt": "2026-11-02T12:42:24.000Z",
+      "publishedDate": "2026-11-03T16:34:05+05:30",
+      "publishedAt": "2026-11-03T11:04:05.000Z",
       "lastDate": "25 November 2026"
     },
     "railway-rrb-isolated-categories-2026": {
-      "publishedDate": "2026-10-22T12:23:01+05:30",
-      "publishedAt": "2026-10-22T06:53:01.000Z",
+      "publishedDate": "2026-11-05T15:02:59+05:30",
+      "publishedAt": "2026-11-05T09:32:59.000Z",
       "lastDate": "04 December 2026"
     },
     "bhel-artisan-various-trade-2026": {
@@ -17050,8 +18170,8 @@ export const scrapedData = {
       "lastDate": "14 July 2023"
     },
     "uppsc-ro-aro-online-form-2026": {
-      "publishedDate": "2026-11-02T18:12:28+05:30",
-      "publishedAt": "2026-11-02T12:42:28.000Z",
+      "publishedDate": "2026-11-03T16:34:09+05:30",
+      "publishedAt": "2026-11-03T11:04:09.000Z",
       "lastDate": "26 November 2026"
     },
     "nta-jee-mains-session-i-2027": {
@@ -17060,8 +18180,8 @@ export const scrapedData = {
       "lastDate": "22 November 2026"
     },
     "upessc-up-tgt-online-form-2026": {
-      "publishedDate": "2026-11-02T18:12:49+05:30",
-      "publishedAt": "2026-11-02T12:42:49.000Z",
+      "publishedDate": "2026-11-03T16:34:13+05:30",
+      "publishedAt": "2026-11-03T11:04:13.000Z",
       "lastDate": "23 November 2026"
     },
     "upessc-up-principal-inter-level-2026": {
@@ -17080,8 +18200,8 @@ export const scrapedData = {
       "lastDate": "22 November 2026"
     },
     "up-shahjahanpur-ecce-educator-2026-2": {
-      "publishedDate": "2026-10-24T14:17:56+05:30",
-      "publishedAt": "2026-10-24T08:47:56.000Z",
+      "publishedDate": "2026-11-03T16:40:36+05:30",
+      "publishedAt": "2026-11-03T11:10:36.000Z",
       "lastDate": "06 November 2026"
     },
     "up-hamirpur-ecce-educator-2026": {
@@ -17090,8 +18210,8 @@ export const scrapedData = {
       "lastDate": "29 October 2026"
     },
     "up-fatehpur-ecce-educator-2026": {
-      "publishedDate": "2026-10-24T14:04:59+05:30",
-      "publishedAt": "2026-10-24T08:34:59.000Z",
+      "publishedDate": "2026-11-03T16:40:39+05:30",
+      "publishedAt": "2026-11-03T11:10:39.000Z",
       "lastDate": "07 November 2026"
     },
     "up-rampur-ecce-educator-2026-2": {
@@ -17135,8 +18255,8 @@ export const scrapedData = {
       "lastDate": "28 March 2025"
     },
     "ssc-cpo-si-paper-i-2025": {
-      "publishedDate": "2026-10-29T15:18:16+05:30",
-      "publishedAt": "2026-10-29T09:48:16.000Z",
+      "publishedDate": "2026-11-03T14:49:28+05:30",
+      "publishedAt": "2026-11-03T09:19:28.000Z",
       "lastDate": "16 October 2025"
     },
     "bihar-bssc-stenographer-2025": {
@@ -17145,18 +18265,18 @@ export const scrapedData = {
       "lastDate": "21 November 2025"
     },
     "up-kushinagar-ecce-educator-2026": {
-      "publishedDate": "2026-10-29T17:09:21+05:30",
-      "publishedAt": "2026-10-29T11:39:21.000Z",
+      "publishedDate": "2026-11-03T16:40:25+05:30",
+      "publishedAt": "2026-11-03T11:10:25.000Z",
       "lastDate": "04 November 2026"
     },
     "up-kasganj-ecce-educator-2026": {
-      "publishedDate": "2026-10-29T17:15:29+05:30",
-      "publishedAt": "2026-10-29T11:45:29.000Z",
+      "publishedDate": "2026-11-03T16:40:28+05:30",
+      "publishedAt": "2026-11-03T11:10:28.000Z",
       "lastDate": "05 November 2026"
     },
     "up-kasganj-ecce-educator-2026-2": {
-      "publishedDate": "2026-10-29T17:19:55+05:30",
-      "publishedAt": "2026-10-29T11:49:55.000Z",
+      "publishedDate": "2026-11-03T16:40:17+05:30",
+      "publishedAt": "2026-11-03T11:10:17.000Z",
       "lastDate": "04 November 2026"
     },
     "upsc-cds-i-2025": {
@@ -17197,12 +18317,349 @@ export const scrapedData = {
       "publishedDate": "2026-10-31T12:07:43+05:30",
       "publishedAt": "2026-10-31T06:37:43.000Z",
       "lastDate": "18 November 2026"
+    },
+    "rbi-office-attendant-2026": {
+      "publishedDate": "2026-11-04T17:24:51+05:30",
+      "publishedAt": "2026-11-04T11:54:51.000Z",
+      "lastDate": "04 February 2026"
+    },
+    "indian-bank-specialist-officer-so-2026": {
+      "publishedDate": "2026-11-03T13:18:13+05:30",
+      "publishedAt": "2026-11-03T07:48:13.000Z",
+      "lastDate": "28 April 2026"
+    },
+    "railway-rrb-ministerial-isolated-2026": {
+      "publishedDate": "2026-11-05T15:02:59+05:30",
+      "publishedAt": "2026-11-05T09:32:59.000Z",
+      "lastDate": "04 December 2026"
+    },
+    "indian-bank-apprentice-2026": {
+      "publishedDate": "2026-11-04T14:09:53+05:30",
+      "publishedAt": "2026-11-04T08:39:53.000Z",
+      "lastDate": "25 November 2026"
+    },
+    "railway-rrc-cr-apprentice-nov-2026": {
+      "publishedDate": "2026-11-04T16:10:56+05:30",
+      "publishedAt": "2026-11-04T10:40:56.000Z",
+      "lastDate": "02 December 2026"
+    },
+    "bihar-vidhan-sabha-office-attendant-2026": {
+      "publishedDate": "2026-11-04T12:49:52+05:30",
+      "publishedAt": "2026-11-04T07:19:52.000Z",
+      "lastDate": "06 December 2026"
+    },
+    "uppsc-various-post-2026": {
+      "publishedDate": "2026-11-04T16:25:05+05:30",
+      "publishedAt": "2026-11-04T10:55:05.000Z",
+      "lastDate": "04 December 2026"
+    },
+    "bihar-vidhan-sabha-junior-secretariat-assistant-jsa-2026": {
+      "publishedDate": "2026-11-04T12:15:13+05:30",
+      "publishedAt": "2026-11-04T06:45:13.000Z",
+      "lastDate": "06 December 2026"
+    },
+    "semi-conductor-scl-various-post-2026": {
+      "publishedDate": "2026-11-03T15:12:00+05:30",
+      "publishedAt": "2026-11-03T09:42:00.000Z",
+      "lastDate": "30 November 2026"
+    },
+    "pgcil-engineer-trainee-2026": {
+      "publishedDate": "2026-11-03T14:53:12+05:30",
+      "publishedAt": "2026-11-03T09:23:12.000Z",
+      "lastDate": "18 November 2026"
+    },
+    "nta-aissee-sainik-school-admission-2026": {
+      "publishedDate": "2026-11-03T16:57:51+05:30",
+      "publishedAt": "2026-11-03T11:27:51.000Z",
+      "lastDate": "02 December 2026"
+    },
+    "upsc-cds-i-2026": {
+      "lastDate": "Important Dates\n\nApplication Begin : 10/12/2025\nLast Date for Apply Online :30/12/2025\nLast Date Pay Exam Fee :30/12/2025\nExam Date:12/04/2026\nAdmit Card Available : 02/04/2026\nResult Available : 08/05/2026\nFinal Result Available : 02/11/2026 : Application Fee\n\nGeneral / OBC / EWS : 100/-\nSC / ST : 0/-\nFemale : 0/-\nPay the Examination Fee Through Cast at E Challan or Debit Card, Credit Card, Net Banking",
+      "publishedDate": "2 November 2026",
+      "publishedAt": "2026-11-01T18:30:00.000Z"
+    },
+    "indian-bank-so-apr26": {
+      "lastDate": "Important Dates\n\nApplication Begin : 08/04/2026\nLast Date for Apply Online :  28/04/2026\nLast Date for Pay Exam Fee : 28/04/2026\nExam Date :As per Schedule\nAdmit Card Available : Before Exam : Application Fee\n\nGeneral / OBC / EWS : 1000/ \nSC / ST / PH : 175/ \nPay the Examination Fee Through Debit Card / Credit Card / Net Banking.",
+      "publishedDate": "2 November 2026",
+      "publishedAt": "2026-11-01T18:30:00.000Z"
+    },
+    "rssb-driver-advt-20-2024": {
+      "lastDate": "Important Dates\n\nApplication Begin : 27/02/2025\nLast Date for Apply Online : 28/03/2025\nComplete Form Last Date : 28/03/2025\nRajasthan Driver CBT Exam Date : 22-23 November 2025 \nAdmit Card Available : Before Exam\nResult Available : 29/10/2026 : Application Fee\n\nGeneral / OBC : 600/-\nOBC NCL : 400/-\nSC / ST : 400/-\nCorrection Charge : 300/-\nThis fee is for one time registration, now after paying the OTR fee once, the candidate will not have to pay the application fee again and again.\nPay the Exam Fee Through Emitra CSC Center, Debit Card, Credit Card, Net Banking.",
+      "publishedDate": "29 October 2026",
+      "publishedAt": "2026-10-28T18:30:00.000Z"
+    },
+    "ssc-cpo-si-2025": {
+      "lastDate": "Important Dates\n\nApplication Begin : 26/09/2025\nLast Date for Apply Online : 16/10/2025 upto 11 PM \nFee Payment Last Date : 17/10/2025\n\nCorrection Date : 24-26 October 2025 \nSelf Slot Booking : 17-21 November 2025\nExam Date Paper I : 09 to 12 December 2025 \nAnswer Key Available : 24/12/2025\nPaper I Result Available : 30/03/2026\nPaper I Marks Available : 21/04/2026\nExam Date Paper II : 28/11/2026 : Application Fee\n\nGeneral / OBC / EWS : 100/-\nSC / ST / EXs : 0/-\nAll Category Female : 0/- (Exempted)\nCorrection Charge : 200/- First Time\nCorrection Charge : 500/- (Second Time) \nPay the Examination Fee Through Debit Card, Credit Card, Net Banking.",
+      "publishedDate": "2 November 2026",
+      "publishedAt": "2026-11-01T18:30:00.000Z"
+    },
+    "bpsc-aso-37-2025": {
+      "lastDate": "Important Dates\n\nApplication Begin : 29/05/2025\nLast Date for Apply Online : 23/06/2025\nPay Exam Fee Last Date : 23/06/2025\nMains Exam Date :27/02/2026\n\nAdmit Card Available :20/02/2026\n\nResult Available Mains : 27/10/2026 : Application Fee\n\nGeneral / OBC/ Other State : 600/-\nSC / ST / PH : 150/-\nFemale Candidate (Bihar Dom.) : 150/-\nPay the Exam Fee Through Online / Offline Fee Mode Only",
+      "publishedDate": "27 October 2026",
+      "publishedAt": "2026-10-26T18:30:00.000Z"
+    },
+    "upsc-cds-ii-exam-2026": {
+      "lastDate": "Important Dates\n\nApplication Begin : 20/05/2026\nLast Date for Apply Online : 11/06/2026\nPay Exam Fee Last Date : 11/06/2026\nCorrection Date : As per Schedule \nExam Date : 13/09/2026\nAdmit Card Available : 03/09/2026\n\nAnswer key Available : 16/09/2026\nResult Available : 19/10/2026 : Application Fee\n\nGeneral / OBC / EWS : 200/-\nSC / ST / Female : 0/-\nPay the Examination Fee Through Debit Card / Credit Card / Net Banking or Pay the Exam Fee Through E Challan",
+      "publishedDate": "26 October 2026",
+      "publishedAt": "2026-10-25T18:30:00.000Z"
+    },
+    "upsc-nda-ii-exam-2026": {
+      "lastDate": "Important Dates\n\nApplication Begin : 20/05/2026\nLast Date for Apply Online : 11/06/2026 upto 06:00 PM only\n\nFee Payment Last Date : 11/06/2026\nCorrection Form: As per Schedule \nExam Held on : 13/09/2026\nAdmit Card Available : 03/09/2026\n\nAnswer Key Available : 16/09/2026\nResult Available : 09/10/2026 : Application Fee\n\nGeneral UR / EWS  / OBC : 100/-\nSC / ST : 0/-\nPay the Examination Fee Through Net Banking, Debit Card, Credit Card and Offline Fee Mode Through E Challan",
+      "publishedDate": "13 October 2026",
+      "publishedAt": "2026-10-12T18:30:00.000Z"
+    },
+    "up-board-exam-2027": {
+      "publishedDate": "13 October 2026",
+      "publishedAt": "2026-10-12T18:30:00.000Z"
+    },
+    "upsssc-moharir-07-2022": {
+      "lastDate": "Important Dates\n\nApplication Begin : 29/10/2022\n\nLast Date for Registration : 18/11/2022\nFee Payment Last Date : 18/11/2022\nCorrection Last Date : 25/11/2022\nPostponed Notice Available : 23/12/2022\nSyllabus Available : 20/07/2026\nEligibility Result Available : 12/10/2026\nExam Date : Notified Soon\nAdmit Card Available : Before Exam : Application Fee\n\nGeneral / OBC / EWS : 25/-\nSC / ST : 25/-\nPH (Dviyang) : 25/-\nPay the Examination Fee Through State Bank of India SBI I Collect Fee Mode or Pay the Exam Fee Through E Challan",
+      "publishedDate": "12 October 2026",
+      "publishedAt": "2026-10-11T18:30:00.000Z"
+    },
+    "upsssc-cane-13-exam-2026": {
+      "lastDate": "Important Dates\n\nApplication Begin : 07/07/2026\nLast Date for Apply Online : 28/07/2026\nLast Date Pay Exam Fee : 28/07/2026\nCorrection Last Date: 04/08/2026\nEligibility Result Available : 12/10/2026\nUPSSSC Cane Supervisor Exam Date :As Per Schedule\nAdmit Card Available : Before Exam : Application Fee\n\nGeneral / OBC / EWS : 25/-\nSC / ST : 25/-\nPH (Divyang) : 25/-\nPay the Examination Fee Through Cast at E Challan or Debit Card, Credit Card, Net Banking",
+      "publishedDate": "12 October 2026",
+      "publishedAt": "2026-10-11T18:30:00.000Z"
+    },
+    "coast-guard-navik-gd-db-cgpet-01-2027": {
+      "lastDate": "Important Dates\n\nApplication Begin : 06/10/2026\nLast Date for Apply Online :21/10/2026 upto 05:30 PM\nPay Exam Fee Last Date : 21/10/2026\nStage I Exam Date : 17-18 November 2026\nAdmit Card Available : Before Exam\nStage II Exam Date : February 2027 : Application Fee\n\nGeneral / OBC / EWS : 550/-\nSC / ST : 0/-\nPay the Exam Fee Through Debit Card / Credit Card / Net Banking / UPI Fee Mode Only.",
+      "publishedDate": "2 November 2026",
+      "publishedAt": "2026-11-01T18:30:00.000Z"
+    },
+    "bihar-board-2027": {
+      "publishedDate": "31 October 2026",
+      "publishedAt": "2026-10-30T18:30:00.000Z"
+    },
+    "cisf-constable-fire-aug24": {
+      "lastDate": "Important Dates\n\nApplication Begin : 31/08/2024\nLast Date for Apply Online : 30/09/2024\nPay Exam Fee Last Date : 30/09/2024\nDV/PET/PST Exam Date : 24/12/2024 to 20/01/2024\nAdmit Card Available : 16/12/2024\nExam Date Available : 01/12/2026 : Application Fee\n\nGen/EWS/OBC : 100/-\nSC / ST / ESM : 0/-\nPay the Exam Fee Through  Debit Card, Credit Card, Net Banking.",
+      "publishedDate": "27 October 2026",
+      "publishedAt": "2026-10-26T18:30:00.000Z"
+    },
+    "bank-of-baroda-so-august26": {
+      "lastDate": "Important Dates\n\nApplication Begin : 06/08/2026\nLast Date for Apply Online :26/08/2026\nPay Exam Fee Last Date : 26/08/2026\nBOB Exam Date : 01/11/2026\nAdmit Card Available : Before Exam : Application Fee\n\nGeneral / OBC / EWS : 850/-\nSC / ST / PH : 175/-\nFemale Candidate : 175/-\nPay the Exam Fee Through Online / Offline Fee Mode Only",
+      "publishedDate": "24 October 2026",
+      "publishedAt": "2026-10-23T18:30:00.000Z"
+    },
+    "uppsc-various-june23": {
+      "lastDate": "Important Dates\n\nApplication Begin : 14/06/2023\nLast Date for Apply Online : 14/07/2023\nPay Exam Fee Last Date : 14/07/2023\nLast Date Receipt Hard Copy  : 28/07/2023\nDental Surgeon Exam Date : 01/10/2023\n\nHomoeopathic Medical Officer Exam Date : 15/09/2024\n\nHomoeopathic Residential Medical Officer Exam Date : 18/09/2024\n\nUnani Medical Officer Exam Date : 06/10/2024\n\nScientific Officer Exam Date : 18/05/2025\n\nLecturer Exam Date : 02-06 November 2026\nAdmit Card Available : 24/10/2026 : Application Fee  \n\nGeneral / OBC / EWS : 105/-\nSC / ST : 65/-\nPH Candidates : 25/-\nPay the Examination Fee Through Debit Card, Credit Card, Net Banking or Pay Offline Through E Challan",
+      "publishedDate": "24 October 2026",
+      "publishedAt": "2026-10-23T18:30:00.000Z"
+    },
+    "mrxs93fc": {
+      "publishedDate": "",
+      "publishedAt": "2026-11-05T12:18:26.225Z"
+    },
+    "skau-non-teaching-post-july26": {
+      "lastDate": "Important Dates\n\nApplication Begin :30/07/2026\nLast Date for Apply Online :21/08/2026\nPay Exam Fee Last Date :21/08/2026\nClerk Exam Date : 10-14 October 2026\nAdmit Card Available : 08/10/2026 : Application Fee\n\nMale : General / Other State : 1500/-\nFemale General (Haryana Domicile) : 750/-\nHaryana Reserve Category Male & Female : 375/-\nPH Divyang Candidate : 0/- (Exempted)\nPay the Exam Fee Through Online / Offline Fee Mode Only",
+      "publishedDate": "8 October 2026",
+      "publishedAt": "2026-10-07T18:30:00.000Z"
+    },
+    "nicl-apprentice-nov26": {
+      "lastDate": "Important Dates\n\nApplication Begin : 04/11/2026\nLast Date for Apply Online : 18/11/2026\nMerit List / Result : As per Schedule : Application Fee\n\nGeneral / OBC / EWS : 0/-\nSC / ST / PH : 0/-\nNo Application Fees for the All Candidates.",
+      "publishedDate": "5 November 2026",
+      "publishedAt": "2026-11-04T18:30:00.000Z"
+    },
+    "rrb-ministerial-isolated-cen-09-2026": {
+      "lastDate": "Important Dates\n\nApplication Begin : 05/11/2026\nLast Date for Apply Online : 04/12/2026\nLast Date Pay Exam Fee : 06/12/2026\nCorrection Date : 07-16 December 2026\nRRB CEN 09/2026 Exam Date : As Per Schedule \nExam City Available : 10 Days Before Exam\nAdmit Card Available : 4 Days Before Exam : Application Fee\n\nGeneral / OBC / EWS : 500/-\nSC / ST / PH : 250/-\nAll Category Female : 250/-\nAfter Appear the Stage I Exam \nGeneral/OBC/EWS Fee Refund: Rs. 400/-\nSC / ST / PH / Female Refund : Rs. 250/-\nPay the Examination Fee Through Debit Card, Credit Card, Net Banking, UPI Fee Mode Only.",
+      "publishedDate": "5 November 2026",
+      "publishedAt": "2026-11-04T18:30:00.000Z"
+    },
+    "supreme-court-of-india-jca-oct26": {
+      "lastDate": "Important Dates\n\nApplication Begin : 04/11/2026\nLast Date for Apply : 25/11/2026\nPay Exam Fee Last Date : 25/11/2026\nExam Date : As Per Schedule\nAdmit Card Available : Before Exam : Application Fees\n\nGeneral : 1500/-\nOBC/ SC / ST / PH : 750/-\nPay the Examination Fee Through Debit Card / Credit Card / Net Banking / Online Only.",
+      "publishedDate": "4 November 2026",
+      "publishedAt": "2026-11-03T18:30:00.000Z"
+    },
+    "rrb-station-master-08-26": {
+      "lastDate": "Important Dates\n\nApplication Begin : 27/10/2026\nLast Date for Apply Online : 25/11/2026\nPay Exam Fee Last Date : 27/11/2026\nCorrection Date : 28 November to 07 December 2026\nCheck Application Status : As per Schedule\nRRB Station Master Exam Date : As per Schedule\nExam City Available : 10 Days Before Exam\nAdmit Card Available : 4 Days Before Exam\nAnswer Key Available : As per Schedule : Application Fee\n\n\nGeneral / OBC / EWS : 500/-\nSC / ST : 250/-\nPH (Divyang) : 250/-\nAfter Appear the Stage I Exam\nUR/OBC/EWS Fee Refund : 400/-\nSC / ST / PH / Female Refund : 250/-\nPay the Examination Fee Through Cast at E Challan or Debit Card, Credit Card, Net Banking",
+      "publishedDate": "26 October 2026",
+      "publishedAt": "2026-10-25T18:30:00.000Z"
+    },
+    "upessc-up-tgt-07-2026": {
+      "lastDate": "Important Dates\n\nApplication Begin : 24/10/2026\nLast Date for Registration : 23/11/2026\nPay Exam Fee Last Date :23/11/2026 \nLast Date Correction :26/11/2026\nUPESSC TGT 2026 Exam Date : 23-24 December 2026\nExam City Available : Before Exam\nAdmit Card Available :Before Exam\nAnswer Key Available : As Per Schedule\nResult Declared :As Per Schedule : Application Fee\n\nGeneral / OBC / EWS: 1000/-\nSC / ST : 500/-\nPH (Divyang) : 300/-\nPay the Examination Fee Debit Card, Credit Card, Net Banking, UPI Fee Mode Only.",
+      "publishedDate": "4 November 2026",
+      "publishedAt": "2026-11-03T18:30:00.000Z"
+    },
+    "uppsc-ro-aro-jun26": {
+      "lastDate": "Important Dates\n\nApplication Begin : 26/10/2026\nLast Date for Apply Online :26/11/2026\nPay Exam Fee Last Date :26/11/2026 \nCorrection Date : 03/12/2026\nUPPSC RO / ARO Exam Date : As per Schedule\nAdmit Card Available : Before Exam : Application Fee\n\nGeneral / OBC / EWS : 125/-\nSC / ST  : 65/-\nPH Candidates : 25/-\nPay the Exam Fee Through SBI Mops Debit Card, Credit Card, Net Banking or SBI E Challan Mode Onl",
+      "publishedDate": "26 October 2026",
+      "publishedAt": "2026-10-25T18:30:00.000Z"
+    },
+    "dsssb-various-post-oct26": {
+      "lastDate": "Important Dates\n\nApplication Begin :06/10/2026\nLast Date for Apply Online :04/11/2026\nPay Exam Fee Last Date :04/11/2026\nDSSSB Exam Date : As per Schedule\nAdmit Card Available : Before Exam : Application Fee\n\nGeneral / OBC / EWS : 100/-\nSC / ST / PH : 0/-\nFemale Candidate : 0/-\nPay the Exam Fee Through Online / Offline Fee Mode Only",
+      "publishedDate": "27 October 2026",
+      "publishedAt": "2026-10-26T18:30:00.000Z"
+    },
+    "rrb-ntpc-graduate-cen-06-2026": {
+      "lastDate": "Important Dates\n\nApplication Begin : 08/10/2026\nLast Date for Apply Online : 06/11/2026\nLast Date Pay Exam Fee : 08/11/2026\nCorrection Date : 09-18 November 2026\nRRB NTPC CEN 06/2026 Exam Date : December 2026\nExam City Available : 10 Days Before Exam\nAdmit Card Available : 4 Days Before Exam : Application Fee\n\nGeneral / OBC / EWS : 500/-\nSC / ST / PH : 250/-\nAll Category Female : 250/-\nAfter Appear the Stage I Exam \nGeneral/OBC/EWS Fee Refund: Rs. 400/-\nSC / ST / PH / Female Refund : Rs. 250/-\nPay the Examination Fee Through Debit Card, Credit Card, Net Banking, UPI Fee Mode Only.",
+      "publishedDate": "16 October 2026",
+      "publishedAt": "2026-10-15T18:30:00.000Z"
+    },
+    "railway-rrb-ntpc-ug-level-07-2026": {
+      "lastDate": "Important Dates\n\nApplication Begin : 15/10/2026\nLast Date for Apply Online : 13/11/2026\nLast Date Pay Exam Fee : 15/11/2026\nCorrection Date : 16-25 November 2026\nRRB NTPC CEN 07/2026 Exam Date : As per Schedule\nExam City Available : 10 Days Before Exam\nAdmit Card Available : 4 Days Before Exam : Application Fee\n\nGeneral / OBC / EWS : 500/-\nSC / ST / PH : 250/-\nAll Category Female : 250/-\nAfter Appear the Stage I Exam \nGeneral/OBC/EWS Fee Refund: Rs. 400/-\nSC / ST / PH / Female Refund : Rs. 250/-\nPay the Examination Fee Through Debit Card, Credit Card, Net Banking, UPI Fee Mode Only.",
+      "publishedDate": "16 October 2026",
+      "publishedAt": "2026-10-15T18:30:00.000Z"
+    },
+    "pgcil-engineer-trainee-nov26": {
+      "lastDate": "Important Dates\n\nApplication Begin : 03/11/2026\nLast Date for Apply Online : 18/11/2026\nPay Exam Fee Last Date : 18/11/2026\nExam Date  : As per Schedule\nAdmit Card Available : Notified Soon : Application Fee\n\nGen / OBC/ EWS : 500/-\nSC / ST / Exs : 0/-\nPay the Exam Fee Through Online / Offline Fee Mode Only",
+      "publishedDate": "3 November 2026",
+      "publishedAt": "2026-11-02T18:30:00.000Z"
+    },
+    "upsssc-junior-engg-adv-24-exam": {
+      "lastDate": "Important Dates\n\nApplication Begin : 03/11/2026\nLast Date for Apply Online : 25/11/2026\nPay Exam Fee Last Date :25/11/2026\nForm Correction Last Date : 02/12/2026\nUPSSSC JE Mechanical Main Exam Date : As per Schedule\nExam City Available : Before Exam\nAdmit Card Available : Before Exam : Application Fee\n\nGeneral (UR) / OBC / EWS : 25/-\nSC / ST : 25/-\nPH (Divyang) : 25/-\nPay the Examination Fee Through UPI, Debit Card, Credit Card and Net Banking Mode Only.",
+      "publishedDate": "3 November 2026",
+      "publishedAt": "2026-11-02T18:30:00.000Z"
+    },
+    "supreme-court-of-india-cat-nov26": {
+      "lastDate": "Important Dates\n\nApplication Begin : 03/11/2026\nLast Date for Apply : 24/11/2026\nPay Exam Fee Last Date : 24/11/2026\nExam Date : As Per Schedule\nAdmit Card Available : Before Exam : Application Fees\n\nGeneral : 1500/-\nOBC/ SC / ST / PH : 750/-\nPay the Examination Fee Through Debit Card / Credit Card / Net Banking / Online Only.",
+      "publishedDate": "3 November 2026",
+      "publishedAt": "2026-11-02T18:30:00.000Z"
+    },
+    "nta-csir-ugc-net-dec2026": {
+      "lastDate": "National Testing Agency (NTA)  has released the Council of Scientific & Industrial Research CSIR UGC National Eligibility Test NET Assistant Professor / JRF December 2026 Examination online application Form 2026 will start from 07 October 2026 and the last date to apply will be 05 November 2026. candidates should read the NTA CSIR UGC NET December 2026 information brochure for all the information related to the NET / JRF exam like syllabus, eligibility, age limit, fees, Subject Details, information and other types of information and then apply.",
+      "publishedDate": "10 October 2026",
+      "publishedAt": "2026-10-09T18:30:00.000Z"
+    },
+    "bceceb-sr-resident-tutor-oct26": {
+      "lastDate": "Important Dates\n\nApplication Begin : 02/11/2026\nLast Date for Apply Online : 23/11/2026\nPay Exam Fee Last Date : 23/11/2026\nForm Correction Date : 24/11/2026 \nExam Date : As per Schedule\nAdmit Card Available : Before Exam : Application Fee\n\nGeneral / BC / EWS / EBC : 2250/-\nSC / ST / : 2250/-\nPay the Exam Fee Through Online / Offline Fee Mode Only",
+      "publishedDate": "1 November 2026",
+      "publishedAt": "2026-10-31T18:30:00.000Z"
+    },
+    "afms-ssc-medical-officer-oct26": {
+      "lastDate": "Important Dates\n\nApplication Begin :09/11/2026\nLast Date for Apply Online :18/11/2026\nPay Exam Fee Last Date :18/11/2026\nAFMS Medical Officer Exam Date : As Per Schedule\nAdmit Card Available : Before Exam : Application Fee\n\nAll Candidate : 200/-\nPay the Exam Fee Through Debit Card / Credit / Net Banking.",
+      "publishedDate": "1 November 2026",
+      "publishedAt": "2026-10-31T18:30:00.000Z"
+    },
+    "rites-assistant-manager-oct26": {
+      "lastDate": "Important Dates\n\nApplication Begin : 30/10/2026\nLast Date for Apply Online : 20/11/2026\nPay Exam Fee Last Date : 20/11/2026\nRITES Exam Date : 29/11/2026\nAdmit Card Available : Before Exam : Application Fee\n\nGeneral / OBC : 600/-\nEWS / SC / ST / PH : 300/-\nPay the Exam Fee Through Debit Card / Credit Card/ Net Banking / UPI Fee Mode Only",
+      "publishedDate": "31 October 2026",
+      "publishedAt": "2026-10-30T18:30:00.000Z"
+    },
+    "aees-teaching-various-post-nov26": {
+      "lastDate": "Important Dates\n\nApplication Begin :02/11/2026\nLast Date for Apply Online :22/11/2026\nPay Exam Fee Last Date :22/11/2026\nAEES Exam Date : As per Schedule\nAdmit Card Available : Before Exam : Application Fee\n\nGeneral / OBC / EWS : 1000/-\nSC / ST / PH / Female : 250/-\nPay the Exam Fee Through Online / Offline Fee Mode Only",
+      "publishedDate": "4 November 2026",
+      "publishedAt": "2026-11-03T18:30:00.000Z"
+    },
+    "ongc-various-trade-apprentice-oct26": {
+      "lastDate": "Important Dates\n\nApplication Begin : 29/10/2026\nLast Date for Apply Online : 20/11/2026\n\nResult Declared Date : 15/12/2026 : Application Fee\n\nGen / OBC / EWS: 0/-\nSC / ST / PH : 0/-",
+      "publishedDate": "31 October 2026",
+      "publishedAt": "2026-10-30T18:30:00.000Z"
+    },
+    "drrmlims-lucknow-post-oct26": {
+      "lastDate": "Important Dates\n\nApplication Begin :19/10/2026\nLast Date for Apply Online :20/11/2026\nPay Exam Fee Last Date :20/11/2026\nDr. RMLIMS Exam Date : As per Schedule\nAdmit Card Available : Before Exam : Application Fee\n\nGeneral / OBC / EWS : 1180/-\nSC / ST : 708/-\nPH Candidates : 0/-\nInclude GST 18%\nPay the Exam Fee Through Online / Offline Fee Mode Only",
+      "publishedDate": "29 October 2026",
+      "publishedAt": "2026-10-28T18:30:00.000Z"
+    },
+    "isro-ursc-technician-driver-04-26": {
+      "lastDate": "Important Dates\n\nApplication Begin : 24/10/2026\nLast Date for Apply Online : 13/11/2026\nPay Exam Fee Last Date : 13/11/2026\nExam Date : As per Schedule\nAdmit Card Available : Before Exam : Application Fee\n\nAll Candidates : 500/-\nAfter the CBT Exam : 400/– Refunded only for CBT Exam Appear Candidates.\nPay the Exam Fee Through Online / Offline Fee Mode Only",
+      "publishedDate": "29 October 2026",
+      "publishedAt": "2026-10-28T18:30:00.000Z"
+    },
+    "upessc-up-headmaster-09-2026": {
+      "lastDate": "Important Dates\n\nApplication Begin : 23/10/2026\nLast Date for Registration : 22/11/2026\nPay Exam Fee Last Date :22/11/2026 \nLast Date Correction :25/11/2026\nUPESSC Headmaster 2026 Exam Date : 07/01/2027\nExam City Available : Before Exam\nAdmit Card Available :Before Exam\nAnswer Key Available : As Per Schedule\nResult Declared :As Per Schedule : Application Fee\n\nGeneral / OBC / EWS: 1500/-\nSC / ST : 1500/-\nPH (Divyang) : 1500/-\nPay the Examination Fee Debit Card, Credit Card, Net Banking, UPI Fee Mode Only.",
+      "publishedDate": "4 November 2026",
+      "publishedAt": "2026-11-03T18:30:00.000Z"
+    },
+    "lic-hfl-apprentice-oct26": {
+      "lastDate": "Important Dates\n\nApplication Begin : 20/10/2026\nLast Date for Apply Online :01/11/2026 \nPay Exam Fee Last Date : 01/11/2026\nExam Date : 07/11/2026 \nAdmit Card Available : Before Exam\nResult Date Available : As per Schedule : Application Fee\n\nGeneral / OBC / EWS : 800/- for Male \nGeneral / OBC / EWS : 600/- for Female \nSC / ST / PH : 200/-\nPay the Exam Fee Through Debit Card, Credit Card, Net Banking, UPI Fee Mode Only",
+      "publishedDate": "23 October 2026",
+      "publishedAt": "2026-10-22T18:30:00.000Z"
+    },
+    "upessc-up-principal-08-2026": {
+      "lastDate": "Important Dates\n\nApplication Begin : 23/10/2026\nLast Date for Registration : 22/11/2026\nPay Exam Fee Last Date :22/11/2026 \nLast Date Correction :25/11/2026\nUPESSC Principal 2026 Exam Date : 07/01/2027\nExam City Available : Before Exam\nAdmit Card Available :Before Exam\nAnswer Key Available : As Per Schedule\nResult Declared :As Per Schedule : Application Fee\n\nGeneral / OBC / EWS: 2000/-\nSC / ST : 2000/-\nPH (Divyang) : 2000/-\nPay the Examination Fee Debit Card, Credit Card, Net Banking, UPI Fee Mode Only.",
+      "publishedDate": "4 November 2026",
+      "publishedAt": "2026-11-03T18:30:00.000Z"
+    },
+    "nwr-rrc-jaipur-apprentices-04-2026": {
+      "lastDate": "Important Dates\n\nApplication Begin : 23/10/2026\nLast Date for Apply Online : 22/11/2026\n\nPay Exam Fee Last Date : 22/11/2026 : Application Fee\n\nGen / OBC / EWS: 100/-\nSC / ST / PH : 0/-\nAll Category Female : 0/-\nPay the Examination Fee Through Cast at E Challan or Debit Card, Credit Card, Net Banking",
+      "publishedDate": "22 October 2026",
+      "publishedAt": "2026-10-21T18:30:00.000Z"
+    },
+    "bhel-artisan-various-trade-oct26": {
+      "lastDate": "Important Dates\n\nApplication Begin : 21/10/2026\nLast Date for Apply Online : 18/11/2026\nPay Exam Fee Last Date : 18/11/2026\nBHEL Exam Date : 11/12/2026 \nAdmit Card Available : Before Exam : Application Fee\n\nGeneral / OBC / EWS : 1072/-\nSC / ST / PH / EXM : 472/-\nIncluding Processing Fee 400+GST\nPay the Exam Fee Through Debit Card / Credit Card/ Net Banking / UPI Fee Mode Only",
+      "publishedDate": "30 October 2026",
+      "publishedAt": "2026-10-29T18:30:00.000Z"
+    },
+    "upsssc-23-exam-2026": {
+      "lastDate": "Important Dates\n\nApplication Begin : 16/10/2026\nLast Date for Apply Online : 06/11/2026\nPay Exam Fee Last Date :06/11/2026\nForm Correction Last Date : 13/11/2026\nUPSSSC Main Exam Date : As per Schedule\nExam City Available : Before Exam\nAdmit Card Available : Before Exam : Application Fee\n\nGeneral (UR) / OBC / EWS : 25/-\nSC / ST : 25/-\nPH (Divyang) : 25/-\nPay the Examination Fee Through UPI, Debit Card, Credit Card and Net Banking Mode Only.",
+      "publishedDate": "23 October 2026",
+      "publishedAt": "2026-10-22T18:30:00.000Z"
+    },
+    "sci-court-master-oct26": {
+      "lastDate": "Important Dates\n\nApplication Begin : 25/10/2026\nLast Date for Apply : 15/11/2026\nPay Exam Fee Last Date : 15/11/2026\nExam Date : As Per Schedule\nAdmit Card Available : Before Exam : Application Fees\n\nGeneral : 1500/-\nOBC/ SC / ST / PH : 750/-\nPay the Examination Fee Through Debit Card / Credit Card / Net Banking / Online Only.",
+      "publishedDate": "19 October 2026",
+      "publishedAt": "2026-10-18T18:30:00.000Z"
+    },
+    "icsil-data-entry-operator-deo-oct26": {
+      "lastDate": "Important Dates\n\nApplication Begin : 15/10/2026\nLast Date for Apply : 18/10/2026 upto 05:00 PM\nUpdate Fee Payment Last Date : 18/10/2026\nExam Date : As per Schedule\nAdmit Card Available : Before Exam : Application Fees\n\nAll Category : 590/- Non Refundable\nPay the Examination Fee Through Debit Card / Credit Card / Net Banking / Online Only.",
+      "publishedDate": "17 October 2026",
+      "publishedAt": "2026-10-16T18:30:00.000Z"
+    },
+    "cwc-am-je-oct26": {
+      "lastDate": "Important Dates\n\nApplication Begin : 17/10/2026\nLast Date for Apply Online : 15/11/2026\nPay Exam Fee Last Date : 15/11/2026\nCWC Exam Date : As per Schedule\nAdmit Card Available : Before Exam : Application Fee\n\nGeneral / OBC / EWS : 1350/-\nSC / ST / PH / Female : 500/-\nPay the Exam Fee Through Debit Card / Credit Card/ Net Banking / UPI Fee Mode Only",
+      "publishedDate": "18 October 2026",
+      "publishedAt": "2026-10-17T18:30:00.000Z"
+    },
+    "upsssc-lower-pcs-26-exam-oct26": {
+      "lastDate": "Important Dates\n\nApplication Begin : 10/11/2026\nLast Date for Apply Online : 01/12/2026\nPay Exam Fee Last Date :01/12/2026\nForm Correction Last Date : 08/12/2026\nUPSSSC Lower PCS Main Exam Date : As per Schedule\nExam City Available : Before Exam\nAdmit Card Available : Before Exam : Application Fee\n\nGeneral (UR) / OBC / EWS : 25/-\nSC / ST : 25/-\nPH (Divyang) : 25/-\nPay the Examination Fee Through UPI, Debit Card, Credit Card and Net Banking Mode Only.",
+      "publishedDate": "16 October 2026",
+      "publishedAt": "2026-10-15T18:30:00.000Z"
+    },
+    "sci-senior-personal-assistant-oct26": {
+      "lastDate": "Important Dates\n\nApplication Begin : 20/10/2026\nLast Date for Apply : 10/11/2026\nPay Exam Fee Last Date : 10/11/2026\nExam Date : 02/11/2026\nAnswer Key Available : 04/11/2026 : Application Fees\n\nGeneral : 1500/-\nOBC/ SC / ST / PH : 750/-\nPay the Examination Fee Through Debit Card / Credit Card / Net Banking / Online Only.",
+      "publishedDate": "4 November 2026",
+      "publishedAt": "2026-11-03T18:30:00.000Z"
+    },
+    "isro-icrb-scientist-engineer-july26": {
+      "lastDate": "Important Dates\n\nApplication Begin :28/07/2026\nLast Date for Apply Online :17/08/2026\nPay Exam Fee Last Date :19/08/2026\nExam Date : 25/09/2026\nRevised Answer Key Available : 28/10/2026 : Application Fee\n\nGeneral / OBC / EWS : 250/-\nSC / ST / PH : 0/-  (Exempted)\nAll Category Female : 0/-\nPay the Exam Fee Through Online / Offline Fee Mode Only",
+      "publishedDate": "28 October 2026",
+      "publishedAt": "2026-10-27T18:30:00.000Z"
+    },
+    "rrb-technician-cen-02-2026": {
+      "lastDate": "Important Dates\n\nApplication Begin : 30/06/2026\nLast Date for Apply Online :29/07/2026\nLast Date Pay Exam Fee :29/07/2026\nExam Date: 06-09 October 2026\nExam City Available : 10 Days Before Exam\nAdmit Card Available : 4 days Before Exam\n\nAnswer Key Available : 15/10/2026 : Application Fee\n\nGeneral / OBC / EWS : 500/-\nSC / ST : 250/-\nPH (Divyang) : 250/-\nAfter Appear the Stage I Exam\nUR/OBC/EWS Fee Refund : 400/-\nSC / ST / PH / Female Refund : 250/-\nPay the Examination Fee Through Cast at E Challan or Debit Card, Credit Card, Net Banking",
+      "publishedDate": "10 September 2026",
+      "publishedAt": "2026-09-09T18:30:00.000Z"
+    },
+    "uttarakhand-utet-2026": {
+      "lastDate": "Important Dates\n\nApplication Begin : 14/07/2026\nLast Date for Apply Online : 03/08/2026\nLast Date Pay Exam Fee :06/08/2026\nCorrection Last Date : 08-11 August 2026\nExam Date :29/09/2026\nAdmit Card Available : 22/09/2026\nAnswer Key Available : 05/10/2026\nResult Status :Notified Soon : Application Fee\n\nFor Paper I Only\nGeneral / OBC / EWS: 600/-\nSC / ST : 300/-\nFor Both Paper (Junior / Primary) \nGeneral / OBC / EWS: 1000/-\nSC / ST : 500/-\nPay the Examination Fee Through Debit Card, Credit Card, Net Banking or Offline Fee Mode Only.",
+      "publishedDate": "5 October 2026",
+      "publishedAt": "2026-10-04T18:30:00.000Z"
+    },
+    "ssc-stenographer-2026": {
+      "lastDate": "Important Dates\n\nApplication Begin  : 24/04/2026\nLast Date for Apply Online : 15/05/2026 upto 11 PM\nPay Exam Fee Last Date : 16/05/2026\nCorrection Date : 20-21 May 2026\nCBT Exam Date: 09-15 September 2026\nExam City Available : 31/08/2026\nSkill Test Exam Date : As per Schedule : Application Fee\n\nGeneral / OBC / EWS : 100/-\nSC / ST : 0/- (Nil)\nAll Category Female : 0/- (Exempted)\nCorrection Charge : 200/- First Time\nCorrection Charge : 500/- Second Time\nPay the Exam Fee Through Debit Card, Credit Card, Net Banking or E Challan Offline Fee Mode Only",
+      "publishedDate": "23 September 2026",
+      "publishedAt": "2026-09-22T18:30:00.000Z"
+    },
+    "nta-aissee-2027": {
+      "lastDate": "National Testing Agency (NTA) has released the All India Sainik Schools Entrance Exam AISSEE 2027 Examination online application Form 2026 will start from 03 November 2026 and the last date to apply will be 02 December 2026. candidates should read the NTA AISSEE 2027 information brochure for all the information related to the Sainik Schools exam like syllabus, eligibility, age limit, fees, Subject Details, information and other types of information and then apply.",
+      "publishedDate": "3 November 2026",
+      "publishedAt": "2026-11-02T18:30:00.000Z"
+    },
+    "nta-jeemain-session1-jan27": {
+      "lastDate": "Important Dates\n\nApplication Begin :24/10/2026\nLast Date for Apply Online : 22/11/2026\nLast Date Fee Payment : 22/11/2026\nWith Late Fee Rs. 500/- Last Date :26/11/2026\nCorrection Date : 27-29 November 2026\nNTA JEEMAIN 2027 Exam Date : 20-28 January 2027\nExam City Available : 30/12/2026\nAdmit Card Available : 13/01/2027 : Application Fee\n\nFor Paper 1 Only : \nGeneral Male : 1000/-\nEWS / OBC NCL Male : 900/-\nGeneral / OBC / EWS (Female) : 800/-\nSC / ST (Male) : 500/-\nSC / ST : (Female) : 500/\nFor Paper 1 & 2 Both Paper\nGeneral / OBC / EWS (Male) : 2000/-\nGeneral / OBC / EWS (Female) : 1600/-\nSC / ST (Male) : 1000/-\nSC / ST : (Female) : 1000/-\nPay the Exam Fee Through Online Debit Card, Credit Card or Net Banking, UPI Fee Mode",
+      "publishedDate": "1 November 2026",
+      "publishedAt": "2026-10-31T18:30:00.000Z"
+    },
+    "nta-niftee-admission": {
+      "lastDate": "Important Dates\n\nApplication Begin :16/10/2026\nLast Date for Apply Online : 16/11/2026\nLast Date Fee Payment : 16/11/2026\nWith Late Fee Last Date :21/11/2026\nCorrection Date : 22-25 November 2026\nNIFTEE Exam Date : 10/01/2027\nExam City Available : 21/12/2026\nAdmit Card Available : 04/01/2027 : Application Fee\n\nFor Two Program : \nGeneral / OBC / EWS : 3000/-\nSC / ST / PH : 750/-\nFor Two Program : \nGeneral / OBC / EWS : 2000/-\nSC / ST / PH : 500/-\nLate Fees : 5000/-\nPay Additional Fee if Add More Papers\nPay the Exam Fee Through Online Debit Card, Credit Card or Net Banking, UPI Fee Mode",
+      "publishedDate": "16 October 2026",
+      "publishedAt": "2026-10-15T18:30:00.000Z"
+    },
+    "gate-2027": {
+      "lastDate": "Important Dates\n\nApplication Begin : 27/08/2026\nLast Date for Apply Online Phase I : 05/10/2026\nLast Date for Apply Online Phase II (Extended Period) : 12/10/2026\nGATE 2027 : 15/10/2026 to 16/10/2026 (Re-Open)\nGATE 2027 Recertificate Date : 14-21 October 2026\nExam Date : 06-21 February 2027\n\nExam City Available : 04/01/2027\nAdmit Card Available : Before Exam\nAnswer Key Available : Notified Soon\nResult Declared : 19/03/2027 : Application Fee\n\nGeneral / OBC / EWS : 2000/-\nSC / ST / PH : 1000/-\nAll Category Female : 1000/-\nPhase II with Late Fees:\nGeneral / OBC / EWS : 2500/-\nSC / ST / PH : 1500/-\nAll Category Female : 1500/-\nPay the Exam Fee Through Online Fee Mode Only.",
+      "publishedDate": "15 October 2026",
+      "publishedAt": "2026-10-14T18:30:00.000Z"
+    },
+    "nta-neet-ug-2026": {
+      "lastDate": "Important Dates\n\nApplication Begin : 08/02/2026\nLast Date for Apply Online : 11/03/2026 upto 09 PM\nLast Date Online Payment :11/03/2026\nCorrection Date : 12-14 March 2026\nNEET UG 2026 Exam Date : 03/05/2026 (Cancelled)\n\nUpdate Exam City Details : 15-21 May 2026\n\nFee Refund Bank Details Update : 22-27 May 2026\n\nNEET UG 2026 Re Exam Date : 21/06/2026\n\nExam City Available : 07/06/2026\nRe-Exam Admit Card Available :14/06/2026\nRe Exam Answer Key Available :25/06/2026\nOMR Answer Sheet Available : 13/07/2026\nResult Declared : 16/07/2026\nFinal Answer Key Available : 16/07/2026\nOnline Counselling Start : 05/08/2026 : Application Fee \n\nGeneral : 1700/-\nEWS / OBC : 1600/-\nSC / ST / PH : 1000/-\nOut Side India : 9500/-\nPay the Examination Fee Through E Challan Offline Mode or Pay the Exam Fee Through Online Debit Card, Credit Card or Net Banking Fee Mode",
+      "publishedDate": "21 August 2026",
+      "publishedAt": "2026-08-20T18:30:00.000Z"
     }
   },
-  "fetchedAt": "2026-11-03T03:16:13.580Z",
+  "fetchedAt": "2026-11-05T12:19:07.825Z",
   "seo": {
-    "lastOptimized": "2026-11-03T03:16:58.180Z",
-    "totalPosts": 1364,
+    "lastOptimized": "2026-11-05T12:19:18.670Z",
+    "totalPosts": 1431,
     "websiteName": "All India Exam Result",
     "websiteUrl": "https://www.aiexamresult.com",
     "description": "Sarkari Result 2026 - Get fastest government job alerts, sarkari naukri, exam results, admit cards & answer keys. SSC, UPSC, Railway, Banking, UP, Bihar & all India exams."
